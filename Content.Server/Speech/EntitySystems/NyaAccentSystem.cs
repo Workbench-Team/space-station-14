@@ -16,11 +16,8 @@ public sealed class NyaAccentSystem : EntitySystem
         {"stupid", "baka" },
 
         {"now", "nyow"},
-        {"many", "meuny"},
-        {"machine", "meochine"},
         {"magic", "mewgic"},
 
-        {"maint", "meoint"},
         {"maintenance", "meowintenance"},
         {"manifest", "meownifest"},
 
@@ -90,19 +87,6 @@ public sealed class NyaAccentSystem : EntitySystem
             //final_msg = Regex.Replace(final_msg, $@"(?<!\w){first}(?!\w)", replace, RegexOptions.IgnoreCase);
             final_msg = final_msg.Replace(first, replace, true, null);
         }
-
-        //Some word parts replacements
-        final_msg = final_msg.Replace("per", "pro");
-        final_msg = final_msg.Replace("Per", "Pro");
-
-        final_msg = final_msg.Replace("pro", "pro");
-        final_msg = final_msg.Replace("Pro", "Pro");
-        
-        final_msg = final_msg.Replace("mor", "murr");
-        final_msg = final_msg.Replace("Mor", "Murr");
-
-        final_msg = final_msg.Replace("mo", "meo");
-        final_msg = final_msg.Replace("Mo", "Meo");
 
         // Trimming and uppering first char (Because it can be replaced with lower char)
         final_msg = final_msg.Trim();
