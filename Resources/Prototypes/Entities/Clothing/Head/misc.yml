@@ -168,3 +168,4 @@
   - type: Clothing
     sprite: Clothing/Head/Misc/squiddy.rsi
   - type: IngestionBlocker
+    accent: NyaAccent
