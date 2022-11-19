@@ -9,31 +9,37 @@ public sealed class NyaAccentSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _random = default!;
     
     private static readonly Dictionary<string, string> DirectReplacements = new() {
-        {"fuck you", "hiiiss" },
-        {"fuck", "fish" },
-        {"fck", "fsh" },
-        {"shit", "damn" },
-        {"stupid", "baka" },
+        {"иди нахуй", "хиииссс" },  
+        {"иди нах", "хиииссс" },
+        
+        {"дибил", "бака" }, // :skull:
+        {"еблан", "бака" },
 
-        {"now", "nyow"},
-        {"magic", "mewgic"},
+        {"хуй", "буй" },
+        {"хуе", "буе" },
+        {"хуи", "буи" },
+        
+        {"блять", "блин" },
+        {"бля", "блин" },
 
-        {"maintenance", "meowintenance"},
-        {"manifest", "meownifest"},
+        {"сук", "фуг" },
 
-        {"syndicate", "syndiCat"},
-        {"nanotrasen", "nyanotrasen"},
-        {"drugs", "cat mint"},
-        {"cargonia", "catgonia"}
+        {"маги", "мяуги"}, //мяугия
+        {"замечател", "замурчател"}, //замурчательно
+
+        {"синдикат", "синдикэт"},
+        {"нанотразен", "ньянотразен"},
+        {"наркотики", "кошачья мята"},
+        {"каргония", "кэтгония"}
         
     };
 
     private static readonly IReadOnlyList<string> Ending = new List<string> {
-        "nya",
-        "meow",
-        "mewp",
-        "mew",
-        "mrrr"
+        "ня",
+        "мяу",
+        "мевп",
+        "мев",
+        "мррр"
     }.AsReadOnly();
 
     public override void Initialize()
