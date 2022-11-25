@@ -123,6 +123,12 @@ namespace Content.Server.Light.EntitySystems
                     light.ForciblyEnabled = false;
                     UpdateState(light);
                 }
+
+                if (details.DisableEmergencyLightsSounds)
+                    light.SoundsDisabled = true;
+                else
+                    light.SoundsDisabled = false;
+                UpdateState(light);
             }
         }
 
@@ -187,6 +193,10 @@ namespace Content.Server.Light.EntitySystems
             {
                 TurnOn(component);
                 SetState(component, EmergencyLightState.On);
+                if (receiver.Powered && component.ForciblyEnabled && component.SoundsDisabled)
+                {
+                    _ambient.SetAmbience(component.Owner, false);
+                }
             }
         }
 

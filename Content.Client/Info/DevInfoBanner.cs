@@ -27,6 +27,14 @@ namespace Content.Client.Info
             creditsButton.OnPressed += args => new CreditsWindow().Open();
             buttons.AddChild(reportButton);
             buttons.AddChild(creditsButton);
+
+            var boostyButton = new Button {Text = Loc.GetString("server-info-boosty-button")};
+            boostyButton.OnPressed += args => uriOpener.OpenUri(UILinks.Boosty);
+            buttons.AddChild(boostyButton);
+
+            var gitHubButton = new Button {Text = Loc.GetString("server-info-github-button")};
+            gitHubButton.OnPressed += args => uriOpener.OpenUri(UILinks.GitHub);
+            buttons.AddChild(gitHubButton);
         }
     }
 }

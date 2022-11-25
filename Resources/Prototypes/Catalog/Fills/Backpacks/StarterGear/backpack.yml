@@ -211,3 +211,12 @@
       contents:
         - id: BoxSurvival
 
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpack
+  id: ClothingBackpackIAAFilled
+  components:
+    - type: StorageFill
+      contents:
+        - id: BoxSurvival
+        - id: BriefcaseIAAFilled

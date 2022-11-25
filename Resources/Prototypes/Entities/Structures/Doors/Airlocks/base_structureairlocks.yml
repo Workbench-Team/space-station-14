@@ -28,7 +28,7 @@
     - state: emergency_unlit
       map: ["enum.DoorVisualLayers.BaseEmergencyAccess"]
       shader: unshaded
-    - state: panel_open
+    - state: panel_closed
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Physics
   - type: Fixtures
@@ -64,6 +64,7 @@
   - type: Appearance
     visuals:
     - type: AirlockVisualizer
+      openUnlitVisible: true
   - type: WiresVisuals
   - type: ApcPowerReceiver
     powerLoad: 20

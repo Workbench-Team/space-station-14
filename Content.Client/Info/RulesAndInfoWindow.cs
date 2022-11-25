@@ -25,6 +25,9 @@ namespace Content.Client.Info
             var tutorialList = new Info();
 
             rootContainer.AddChild(rulesList);
+            var rulesLinksSection = new RulesLinksSection();
+            rulesList.InfoContainer.AddChild(rulesLinksSection);
+
             rootContainer.AddChild(tutorialList);
 
             TabContainer.SetTabTitle(rulesList, Loc.GetString("ui-info-tab-rules"));
@@ -44,7 +47,7 @@ namespace Content.Client.Info
             var infoControlSection = new InfoControlsSection();
             tutorialList.InfoContainer.AddChild(infoControlSection);
             AddSection(tutorialList, Loc.GetString("ui-info-header-gameplay"), "Gameplay.txt", true);
-            AddSection(tutorialList, Loc.GetString("ui-info-header-sandbox"), "Sandbox.txt", true);
+            // AddSection(tutorialList, Loc.GetString("ui-info-header-sandbox"), "Sandbox.txt", true); // Hide sandbox tutorial from guide
 
             infoControlSection.ControlsButton.OnPressed += _ => UserInterfaceManager.GetUIController<OptionsUIController>().OpenWindow();
         }

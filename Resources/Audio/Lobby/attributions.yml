@@ -78,3 +78,33 @@
   license: "CC-BY-NC-SA-3.0"
   copyright: "every light is blinking at once by Alexander Divine."
   source: "https://soundcloud.com/alexanderdivine/every-light-is-blinking-at-once"
+
+- files: ["midnight.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Midnight by Nomyn"
+  source: "https://www.toneden.io/nomyn/post/nomyn-midnight"
+
+- files: ["synthesis_of_life.ogg"]
+  license: "CC-BY-NC-3.0"
+  copyright: "Synthesis of Life (Lambda Wars OST) by YIA"
+  source: "https://store.steampowered.com/app/270370/Lambda_Wars/"
+
+- files: ["neutral03.ogg"]
+  license: "Custom"
+  copyright: "Lobotomy Corporation OST - Neutral 03"
+  source: "https://store.steampowered.com/app/568220"
+
+- files: ["we-are-finally-landing.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "We're finally landing by HOME"
+  source: "https://soundcloud.com/home-2001/home-before-the-night-01-were"
+
+- files: ["cascade.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Cascade by Kubbi"
+  source: "https://kubbi.bandcamp.com/album/ember"
+
+- files: ["shitsuboo-shita.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "失望した by EVA"
+  source: "https://joshlis.bandcamp.com/album/rear-view"

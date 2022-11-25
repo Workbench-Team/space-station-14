@@ -91,6 +91,16 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
             _console.ExecuteCommand("quit");
         };
 
+        _escapeWindow.DiscordButton.OnPressed += _ =>
+        {
+            _uri.OpenUri(UILinks.Discord);
+        };
+
+        _escapeWindow.BoostyButton.OnPressed += _ =>
+        {
+            _uri.OpenUri(UILinks.Boosty);
+        };
+
         _escapeWindow.WikiButton.OnPressed += _ =>
         {
             _uri.OpenUri(UILinks.Wiki);

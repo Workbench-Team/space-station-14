@@ -5,6 +5,7 @@ using Content.Server.Chat.Managers;
 using Content.Server.Chat.Systems;
 using Content.Server.Database;
 using Content.Server.Ghost;
+using Content.Server.Humanoid;
 using Content.Server.Maps;
 using Content.Server.Players.PlayTimeTracking;
 using Content.Server.Preferences.Managers;
@@ -85,10 +86,7 @@ namespace Content.Server.GameTicking
 
         private void SendServerMessage(string message)
         {
-            var msg = new MsgChatMessage();
-            msg.Channel = ChatChannel.Server;
-            msg.Message = message;
-            IoCManager.Resolve<IServerNetManager>().ServerSendToAll(msg);
+            _chatManager.ChatMessageToAll(ChatChannel.Server, message, "", default, false, true);
         }
 
         public override void Update(float frameTime)

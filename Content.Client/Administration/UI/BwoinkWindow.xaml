@@ -1,7 +1,7 @@
 ﻿<DefaultWindow
     xmlns="https://spacestation14.io"
     xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
-    SetSize="900 500"
+    SetSize="1100 600"
     HeaderClass="windowHeaderAlert"
     TitleClass="windowTitleAlert"
     Title="{Loc 'bwoink-user-title'}" >

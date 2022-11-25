@@ -1,12 +1,12 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
+  - Angle
   - Bagel
   - Box
   - Cluster
   - Kettle
-  - Lighthouse
   - Marathon
   - Omega
   - Pillar
-  - Saltern
+  - Moose

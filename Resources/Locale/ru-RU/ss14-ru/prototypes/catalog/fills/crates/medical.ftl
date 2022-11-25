@@ -1,0 +1,15 @@
+ent-CrateMedicalDefib = { ent-CrateMedical }
+    .desc = { ent-CrateMedical.desc }
+    .suffix = { "" }
+ent-CrateMedicalSupplies = { ent-CrateMedical }
+    .desc = { ent-CrateMedical.desc }
+    .suffix = { "" }
+ent-CrateChemistrySupplies = { ent-CrateMedical }
+    .desc = { ent-CrateMedical.desc }
+    .suffix = { "" }
+ent-CrateMedicalSurgery = { ent-CrateSurgery }
+    .desc = { ent-CrateSurgery.desc }
+    .suffix = { "" }
+ent-CrateMedicalScrubs = { ent-CrateMedical }
+    .desc = { ent-CrateMedical.desc }
+    .suffix = { "" }
