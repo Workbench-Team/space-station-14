@@ -30,6 +30,8 @@
     RLeg: MobHumanRLeg
     LFoot: MobHumanLFoot
     RFoot: MobHumanRFoot
+    Tail: MobHumanoidAnyMarking # for cat parts
+    HeadTop: MobHumanoidAnyMarking
 
 - type: markingPoints
   id: MobHumanMarkingLimits

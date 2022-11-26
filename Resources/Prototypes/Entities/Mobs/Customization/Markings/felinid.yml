@@ -1,0 +1,42 @@
+# All ears
+- type: marking
+  id: FelinidEarsDefault
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Felinid]
+  sprites:
+  - sprite: Mobs/Customization/felinid.rsi
+    state: ears_default_outer
+  - sprite: Mobs/Customization/felinid.rsi
+    state: ears_default_inner
+
+- type: marking
+  id: FelinidEarsStatic
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Felinid]
+  sprites:
+  - sprite: Mobs/Customization/felinid.rsi
+    state: ears_static_outer
+  - sprite: Mobs/Customization/felinid.rsi
+    state: ears_static_inner
+
+
+# All tails
+- type: marking
+  id: FelinidTailDefault
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Felinid]
+  sprites:
+  - sprite: Mobs/Customization/felinid.rsi
+    state: tail_default
+
+- type: marking
+  id: FelinidTailStatic
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Felinid]
+  sprites:
+  - sprite: Mobs/Customization/felinid.rsi
+    state: tail_static

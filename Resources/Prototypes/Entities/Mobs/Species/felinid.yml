@@ -1,0 +1,41 @@
+# Anything human specific (e.g. UI, input) goes under MobHuman
+- type: entity
+  name: Urist McCat
+  parent: BaseMobOrganic
+  id: BaseMobFelinid
+  abstract: true
+  components:
+  - type: Humanoid
+    species: Felinid
+  - type: Hunger
+  - type: Thirst
+  - type: Perishable
+  - type: Reactive
+    groups:
+      Flammable: [ Touch ]
+      Extinguish: [ Touch ]
+    reactions:
+    - reagents: [ Water, SpaceCleaner ]
+      methods: [ Touch ]
+      effects:
+      - !type:WashCreamPieReaction
+    - reagents: [ Water ]
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: 0
+      - !type:PopupMessage
+        type: Local
+        messages: [ "slime-hurt-by-water-popup" ]
+        probability: 0.25
+
+- type: entity
+  name: Urist McHands
+  id: MobFelinidDummy
+  parent: BaseMobOrganicDummy
+  noSpawn: true
+  components:
+  - type: Humanoid
+    species: Felinid
