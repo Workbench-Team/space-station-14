@@ -8,5 +8,6 @@ namespace Content.Server.Flash.Components
     {
         [DataField("range")] internal float Range = 1.0f;
         [DataField("duration")] internal float Duration = 8.0f;
+        [DataField("bang")] public bool Bang = false;
     }
 }

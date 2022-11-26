@@ -62,6 +62,7 @@
     delay: 3.5
   - type: FlashOnTrigger
     range: 7
+    bang: true
   - type: EmitSoundOnTrigger
     sound:
       path: "/Audio/Effects/flash_bang.ogg"

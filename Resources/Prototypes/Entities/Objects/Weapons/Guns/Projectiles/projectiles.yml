@@ -359,6 +359,7 @@
     layers:
       - state: grenade
   - type: FlashOnTrigger
+    bang: true
     range: 7
 
 # This is supposed to spawn shrapnel and stuff so uhh... TODO?
