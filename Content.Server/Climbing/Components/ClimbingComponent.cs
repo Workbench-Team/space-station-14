@@ -6,7 +6,13 @@ namespace Content.Server.Climbing.Components;
 [ComponentReference(typeof(SharedClimbingComponent))]
 [Access(typeof(ClimbSystem))]
 public sealed class ClimbingComponent : SharedClimbingComponent
-{
+{   
+    /// <summary>
+    ///     Delay Multiplier to climb onto tables
+    /// </summary>
+    [DataField("tableClimbMultiplier")]
+    public float TableClimbMultiplier = 1f;
+
     [ViewVariables(VVAccess.ReadWrite)]
     public override bool IsClimbing
     {

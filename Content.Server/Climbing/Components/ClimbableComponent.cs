@@ -21,6 +21,11 @@ public sealed class ClimbableComponent : SharedClimbableComponent
     [DataField("bonk")] public bool Bonk = false;
 
     /// <summary>
+    /// If true, then entities with multiplier for table climb will use it when trying to climb
+    /// </summary>
+    [DataField("useTableMultiplier")] public bool UseTableMultiplier = true;
+
+    /// <summary>
     /// Chance of bonk triggering if the user is clumsy.
     /// </summary>
     [DataField("bonkClumsyChance")]

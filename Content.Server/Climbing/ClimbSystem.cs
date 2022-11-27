@@ -118,7 +118,15 @@ public sealed class ClimbSystem : SharedClimbSystem
         if (TryBonk(component, user))
             return;
 
-        _doAfterSystem.DoAfter(new DoAfterEventArgs(entityToMove, component.ClimbDelay, default, climbable, user)
+        // Time to climb. If someone tries to put someone other to a table, it will not use multiplier
+        float climbDelay = component.ClimbDelay;
+        if (component.UseTableMultiplier & user == entityToMove)
+        {
+            climbDelay *= climbingComponent.TableClimbMultiplier;
+        }
+        //
+
+        _doAfterSystem.DoAfter(new DoAfterEventArgs(entityToMove, climbDelay, default, climbable, user)
         {
             BreakOnTargetMove = true,
             BreakOnUserMove = true,
