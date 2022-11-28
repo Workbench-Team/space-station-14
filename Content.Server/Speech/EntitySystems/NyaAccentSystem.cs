@@ -97,7 +97,10 @@ public sealed class NyaAccentSystem : EntitySystem
         // Direct replacements
         foreach (var (first, replace) in DirectReplacements)
         {
-            //final_msg = Regex.Replace(final_msg, $@"(?<!\w){first}(?!\w)", replace, RegexOptions.IgnoreCase);
+            final_msg = final_msg.Replace(first.ToUpper(), replace.ToUpper());
+        }
+        foreach (var (first, replace) in DirectReplacements)
+        {
             final_msg = final_msg.Replace(first, replace, true, null);
         }
 
