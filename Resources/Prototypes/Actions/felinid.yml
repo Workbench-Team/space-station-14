@@ -1,0 +1,13 @@
+- type: entityTargetAction
+  id: WoundLicking
+  name: action-name-lick-wounds
+  description: action-desc-lick-wounds
+  icon: Mobs/Species/Human/organs.rsi/tongue.png
+  whitelist:
+    components:
+    - Body
+  interactOnMiss: false
+  icon:
+    sprite: Objects/Magic/magicactions.rsi
+    state: gib
+  serverEvent: !type:WoundLickingTargetActionEvent

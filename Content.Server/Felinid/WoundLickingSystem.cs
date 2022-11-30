@@ -16,45 +16,52 @@ namespace Content.Server.Felinid
         [Dependency] private readonly PopupSystem _popupSystem = default!;
         [Dependency] private readonly SharedActionsSystem _actionsSystem = default!;
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+        
+        private const string WouldLickingActionPrototype = "WoundLicking";
 
         public override void Initialize()
         {
             base.Initialize();
-            SubscribeLocalEvent<WoundLickingComponent, WoundLickingActionEvent>(OnActionPerform);
             SubscribeLocalEvent<WoundLickingComponent, ComponentInit>(OnInit);
+            SubscribeLocalEvent<WoundLickingComponent, WoundLickingEvent>(OnWouldLick);
+
+            SubscribeLocalEvent<WoundLickingTargetActionEvent>(OnActionPerform);
         }
 
         private void OnInit(EntityUid uid, WoundLickingComponent comp, ComponentInit args)
         {
-            _actionsSystem.AddAction(uid, comp.Action, null);
+            var action = new InstantAction(_prototypeManager.Index<InstantActionPrototype>(WouldLickingActionPrototype));
+            _actionsSystem.AddAction(uid, action, null);
         }
 
-        private void OnActionPerform(EntityUid uid, WoundLickingComponent comp, WoundLickingActionEvent args)
+        private void OnActionPerform(WoundLickingTargetActionEvent ev)
         {
-            if (args.Handled)
+            if (ev.Handled)
             return;
 
-            //  i have no idea how i must do it
-            _doAfterSystem.DoAfter(new DoAfterEventArgs(uid, 5, default, uid)
+            var performer = ev.Performer;
+            var target = ev.Target;
+
+            _doAfterSystem.DoAfter(new DoAfterEventArgs(performer, 5, default, target)
             {
                 BreakOnTargetMove = true,
                 BreakOnUserMove = true,
                 BreakOnDamage = true,
                 BreakOnStun = true,
-                UserFinishedEvent = new WoundLickingEvent(uid, uid)
+                UserFinishedEvent = new WoundLickingEvent(performer, target)
             });
 
-            args.Handled = true;
+            ev.Handled = true;
         }
 
-        private void OnWouldLick(EntityUid uid, WoundLickingComponent comp, WoundLickingActionEvent args)
+        private void OnWouldLick(EntityUid uid, WoundLickingComponent comp, WoundLickingEvent args)
         {
             LickWound(uid, uid, comp);
         }
 
-        private void LickWound(EntityUid target, EntityUid performer, WoundLickingComponent comp)
+        private void LickWound(EntityUid performer, EntityUid target, WoundLickingComponent comp)
         {
-            _popupSystem.PopupEntity("WIP", target, Filter.Entities(target));
+            _popupSystem.PopupEntity($"{performer} > {target}", performer, Filter.Entities(performer));
         }
     }
 
@@ -63,13 +70,15 @@ namespace Content.Server.Felinid
 
     internal sealed class WoundLickingEvent : EntityEventArgs
     {
-        public WoundLickingEvent(EntityUid user, EntityUid target)
+        public EntityUid Performer { get; }
+        public EntityUid Target { get; }
+
+        public WoundLickingEvent(EntityUid performer, EntityUid target)
         {
-            User = user;
+            Performer = performer;
             Target = target;
         }
-
-        public EntityUid User { get; }
-        public EntityUid Target { get; }
     }
+
+    public sealed class WoundLickingTargetActionEvent : EntityTargetActionEvent {}
 }

@@ -16,11 +16,11 @@ namespace Content.Server.Felinid
         public float DiseaseChance { get; set; } = 0.1f;
 
         /// <summary>
-        /// If true, then wound-licking can be applied only on entities with this component (Felinids in e.x.)
+        /// If true, then wound-licking can be applied only on other entities
         /// </summary>
-        [DataField("onlyForWoundLickers")]
+        [DataField("canSelfApply")]
         [ViewVariables(VVAccess.ReadWrite)]
-        public bool OnlyForWoundLickers { get; set; } = false;
+        public bool CanSelfApply { get; set; } = false;
 
 
         /// <summary>
@@ -29,19 +29,6 @@ namespace Content.Server.Felinid
         [DataField("possibleDiseases")]
         public List<String> PossibleDiseases { get; set; } = new(){
             "Plague"
-        };
-
-        /// <summary>
-        /// Action that will be used to activate wound-licking
-        /// </summary>
-        [DataField("action")]
-        public InstantAction Action = new()
-        {
-            Icon = new SpriteSpecifier.Texture(new ResourcePath("Mobs/Species/Human/organs.rsi/tongue.png")),
-            DisplayName = "action-name-lick-wounds",
-            Description = "action-desc-lick-wounds",
-            Priority = -1,
-            Event = new WoundLickingActionEvent(),
         };
     }
 }
