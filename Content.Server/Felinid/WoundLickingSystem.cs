@@ -35,11 +35,41 @@ namespace Content.Server.Felinid
             return;
 
             //  i have no idea how i must do it
-            _popupSystem.PopupEntity("WIP", uid, Filter.Entities(uid));
+            _doAfterSystem.DoAfter(new DoAfterEventArgs(uid, 5, default, uid)
+            {
+                BreakOnTargetMove = true,
+                BreakOnUserMove = true,
+                BreakOnDamage = true,
+                BreakOnStun = true,
+                UserFinishedEvent = new WoundLickingEvent(uid, uid)
+            });
 
             args.Handled = true;
         }
+
+        private void OnWouldLick(EntityUid uid, WoundLickingComponent comp, WoundLickingActionEvent args)
+        {
+            LickWound(uid, uid, comp);
+        }
+
+        private void LickWound(EntityUid target, EntityUid performer, WoundLickingComponent comp)
+        {
+            _popupSystem.PopupEntity("WIP", target, Filter.Entities(target));
+        }
     }
 
+
     public sealed class WoundLickingActionEvent : InstantActionEvent { };
+
+    internal sealed class WoundLickingEvent : EntityEventArgs
+    {
+        public WoundLickingEvent(EntityUid user, EntityUid target)
+        {
+            User = user;
+            Target = target;
+        }
+
+        public EntityUid User { get; }
+        public EntityUid Target { get; }
+    }
 }
