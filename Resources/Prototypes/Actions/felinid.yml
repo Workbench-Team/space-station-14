@@ -2,6 +2,7 @@
   id: WoundLicking
   name: action-name-lick-wounds
   description: action-desc-lick-wounds
+  priority: -1
   whitelist:
     components:
     - Body

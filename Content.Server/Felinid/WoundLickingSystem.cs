@@ -30,7 +30,7 @@ namespace Content.Server.Felinid
 
         private void OnInit(EntityUid uid, WoundLickingComponent comp, ComponentInit args)
         {
-            var action = new InstantAction(_prototypeManager.Index<InstantActionPrototype>(WouldLickingActionPrototype));
+            var action = new EntityTargetAction(_prototypeManager.Index<EntityTargetActionPrototype>(WouldLickingActionPrototype));
             _actionsSystem.AddAction(uid, action, null);
         }
 
@@ -56,7 +56,7 @@ namespace Content.Server.Felinid
 
         private void OnWouldLick(EntityUid uid, WoundLickingComponent comp, WoundLickingEvent args)
         {
-            LickWound(uid, uid, comp);
+            LickWound(args.Performer, args.Target, comp);
         }
 
         private void LickWound(EntityUid performer, EntityUid target, WoundLickingComponent comp)
