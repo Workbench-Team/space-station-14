@@ -16,6 +16,13 @@ namespace Content.Server.Felinid
         public float DiseaseChance { get; set; } = 0.1f;
 
         /// <summary>
+        /// How long it requires to lick wounds
+        /// </summary>
+        [DataField("delay")]
+        [ViewVariables(VVAccess.ReadWrite)]
+        public float Delay { get; set; } = 5f;
+
+        /// <summary>
         /// If true, then wound-licking can be applied only on other entities
         /// </summary>
         [DataField("canSelfApply")]

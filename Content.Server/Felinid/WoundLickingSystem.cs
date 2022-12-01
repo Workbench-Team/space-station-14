@@ -4,6 +4,8 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Player;
 using Content.Shared.Actions;
 using Content.Shared.Actions.ActionTypes;
+using Content.Server.Body.Components;
+using Content.Shared.IdentityManagement;
 
 namespace Content.Server.Felinid
 {
@@ -42,13 +44,45 @@ namespace Content.Server.Felinid
             var performer = ev.Performer;
             var target = ev.Target;
 
-            _doAfterSystem.DoAfter(new DoAfterEventArgs(performer, 5, default, target)
+            if (!TryComp<WoundLickingComponent>(performer, out var woundLicking))
+            { return; }
+
+            if (!TryComp<BloodstreamComponent>(target, out var bloodstrComponent))
+            { return; }
+
+            if (performer == target & !woundLicking.CanSelfApply)
+            {
+                _popupSystem.PopupEntity(Loc.GetString("lick-wounds-yourself-impossible"), performer, Filter.Entities(performer));
+                return;
+            }
+
+            if (bloodstrComponent.BleedAmount == 0)
+            {
+                if (performer == target)
+                {
+                    _popupSystem.PopupEntity(Loc.GetString("lick-wounds-yourself-no-wounds"), performer, Filter.Entities(performer));
+                    return;
+                }
+                _popupSystem.PopupEntity(Loc.GetString("lick-wounds-performer-no-wounds", ("target", target)), performer, Filter.Entities(performer));
+                return;
+            }
+
+            var targetIdentity = Identity.Entity(target, EntityManager);
+            var performerIdentity = Identity.Entity(performer, EntityManager);
+
+            _popupSystem.PopupEntity(Loc.GetString("lick-wounds-performer-begin", ("target", targetIdentity)), performer, Filter.Entities(performer));
+            _popupSystem.PopupEntity(Loc.GetString("lick-wounds-target-begin", ("performer", performerIdentity)), target, Filter.Entities(target));
+
+            var otherFilter = Filter.Pvs(performer, entityManager: EntityManager).RemoveWhereAttachedEntity(e => e == performer || e == target);
+            _popupSystem.PopupEntity(Loc.GetString("lick-wounds-other-begin", ("performer", performerIdentity), ("target", targetIdentity)), target, otherFilter);
+
+            _doAfterSystem.DoAfter(new DoAfterEventArgs(performer, woundLicking.Delay, default, target)
             {
                 BreakOnTargetMove = true,
                 BreakOnUserMove = true,
                 BreakOnDamage = true,
                 BreakOnStun = true,
-                UserFinishedEvent = new WoundLickingEvent(performer, target)
+                UserFinishedEvent = new WoundLickingEvent(performer, target, bloodstrComponent)
             });
 
             ev.Handled = true;
@@ -56,12 +90,19 @@ namespace Content.Server.Felinid
 
         private void OnWouldLick(EntityUid uid, WoundLickingComponent comp, WoundLickingEvent args)
         {
-            LickWound(args.Performer, args.Target, comp);
+            LickWound(args.Performer, args.Target);
         }
 
-        private void LickWound(EntityUid performer, EntityUid target, WoundLickingComponent comp)
+        private void LickWound(EntityUid performer, EntityUid target, bool CanSelfApply = false)
         {
-            _popupSystem.PopupEntity($"{performer} > {target}", performer, Filter.Entities(performer));
+            var targetIdentity = Identity.Entity(target, EntityManager);
+            var performerIdentity = Identity.Entity(performer, EntityManager);
+
+            _popupSystem.PopupEntity(Loc.GetString("lick-wounds-performer-success", ("target", targetIdentity)), performer, Filter.Entities(performer));
+            _popupSystem.PopupEntity(Loc.GetString("lick-wounds-target-success", ("performer", performerIdentity)), target, Filter.Entities(target));
+
+            var otherFilter = Filter.Pvs(performer, entityManager: EntityManager).RemoveWhereAttachedEntity(e => e == performer || e == target);
+            _popupSystem.PopupEntity(Loc.GetString("lick-wounds-other-success", ("performer", performerIdentity), ("target", targetIdentity)), target, otherFilter);
         }
     }
 
@@ -73,7 +114,7 @@ namespace Content.Server.Felinid
         public EntityUid Performer { get; }
         public EntityUid Target { get; }
 
-        public WoundLickingEvent(EntityUid performer, EntityUid target)
+        public WoundLickingEvent(EntityUid performer, EntityUid target, BloodstreamComponent bloodstream)
         {
             Performer = performer;
             Target = target;

@@ -1,16 +1,25 @@
-action-name-lick-wounds = Lick your wounds
+action-name-lick-wounds = Lick wounds
 action-desc-lick-wounds = Reduce bleeding, but unsanitary and can cause diseases.
 
-lick-wounds-yourself-no-wounds = You don't have bleeding to lick.
-lick-wounds-yourself-begin = You start licking your wounds.
-lick-wounds-yourself-success = You succesfully licked your wounds.
-lick-wounds-yourself-failure = You tried to lick your wounds, but it was unsuccesfully.
+lick-wounds-yourself-impossible = You can't lick your own wounds
+lick-wounds-yourself-no-wounds = You don't have bleeding
 
-lick-wounds-someone-no-wounds = TARGET don't have bleeding to lick.
-lick-wounds-someone-begin = TARGET tries to lick your wounds.
-lick-wounds-someone-success = TARGET succesfully licked your wounds.
-lick-wounds-someone-failure = TARGET tried to lick your wounds, but it was unsuccesfully.
+lick-wounds-yourself-begin = You begin licking your wounds
+lick-wounds-yourself-success = You lick your wounds
+lick-wounds-yourself-failure = You failed to lick your wounds
+lick-wounds-yourself-other-begin = {CAPITALIZE(THE($performer))} begins licking his wounds
+lick-wounds-yourself-other-success = {CAPITALIZE(THE($performer))} licks his wounds
+lick-wounds-yourself-other-failure = {CAPITALIZE(THE($performer))} failed to lick his wounds
 
-lick-wounds-victim-begin = TARGET tries to lick your wounds.
-lick-wounds-victim-success = TARGET succesfully licked your wounds.
-lick-wounds-victim-failure = TARGET tried to lick your wounds, but it was unsuccesfully.
+lick-wounds-performer-no-wounds = {CAPITALIZE(THE($target))} don't have bleeding
+lick-wounds-performer-begin = You begin linking {THE($target)} wounds
+lick-wounds-performer-success = You licks {THE($target)} wounds
+lick-wounds-performer-failure = You failed to lick {THE($target)} wounds
+
+lick-wounds-target-begin = {CAPITALIZE(THE($performer))} begins to lick your wounds 
+lick-wounds-target-success = {CAPITALIZE(THE($performer))} licks your wounds, reducing your bleeding
+lick-wounds-target-failure = {CAPITALIZE(THE($performer))} failed to lick your wounds
+
+lick-wounds-other-begin = {CAPITALIZE(THE($performer))} begins licking {THE($target)} wounds
+lick-wounds-other-success = {CAPITALIZE(THE($performer))} licks {THE($target)} wounds
+lick-wounds-other-failure = {CAPITALIZE(THE($performer))} failed to lick {THE($target)} wounds
