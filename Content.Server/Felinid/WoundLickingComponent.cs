@@ -1,6 +1,7 @@
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 using Content.Shared.Actions.ActionTypes;
 using Robust.Shared.Utility;
+using System.Threading;
 
 namespace Content.Server.Felinid
 {
@@ -13,7 +14,14 @@ namespace Content.Server.Felinid
         /// </summary>
         [DataField("diseaseChance")]
         [ViewVariables(VVAccess.ReadWrite)]
-        public float DiseaseChance { get; set; } = 0.1f;
+        public float DiseaseChance { get; set; } = 0.25f;
+
+        /// <summary>
+        /// Maximal reduce bleeding. Human max bleeding is 20f, many weapons deals near 15f bleeding
+        /// </summary>
+        [DataField("maxHeal")]
+        [ViewVariables(VVAccess.ReadWrite)]
+        public float MaxHeal { get; set; } = 15f;
 
         /// <summary>
         /// How long it requires to lick wounds
@@ -37,5 +45,11 @@ namespace Content.Server.Felinid
         public List<String> PossibleDiseases { get; set; } = new(){
             "Plague"
         };
+
+        /// <summary>
+        ///     Token for interrupting a do-after action. If not null, implies component is
+        ///     currently "in use".
+        /// </summary>
+        public CancellationTokenSource? CancelToken;
     }
 }
