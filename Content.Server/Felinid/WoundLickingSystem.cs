@@ -1,12 +1,17 @@
 using Content.Server.DoAfter;
 using Content.Server.Popups;
-using Robust.Shared.Prototypes;
-using Robust.Shared.Player;
+using Content.Server.Disease;
+using Content.Server.Disease.Components;
+using Content.Server.Body.Systems;
+using Content.Server.Body.Components;
 using Content.Shared.Actions;
 using Content.Shared.Actions.ActionTypes;
-using Content.Server.Body.Components;
 using Content.Shared.IdentityManagement;
+using Robust.Shared.Random;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Player;
 using System.Threading;
+using System.Linq;
 
 namespace Content.Server.Felinid
 {
@@ -17,8 +22,11 @@ namespace Content.Server.Felinid
     {
         [Dependency] private readonly DoAfterSystem _doAfterSystem = default!;
         [Dependency] private readonly PopupSystem _popupSystem = default!;
+        [Dependency] private readonly DiseaseSystem _disease = default!;
         [Dependency] private readonly SharedActionsSystem _actionsSystem = default!;
+        [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+        [Dependency] private readonly BloodstreamSystem _bloodstreamSystem = default!;
         
         private const string WouldLickingActionPrototype = "WoundLicking";
 
@@ -74,13 +82,15 @@ namespace Content.Server.Felinid
                 return;
             }
 
+            // Popup
             var targetIdentity = Identity.Entity(target, EntityManager);
             var performerIdentity = Identity.Entity(performer, EntityManager);
             var otherFilter = Filter.Pvs(performer, entityManager: EntityManager).RemoveWhereAttachedEntity(e => e == performer || e == target);
             _popupSystem.PopupEntity(Loc.GetString("lick-wounds-performer-begin", ("target", targetIdentity)), performer, Filter.Entities(performer));
             _popupSystem.PopupEntity(Loc.GetString("lick-wounds-target-begin", ("performer", performerIdentity)), target, Filter.Entities(target));
             _popupSystem.PopupEntity(Loc.GetString("lick-wounds-other-begin", ("performer", performerIdentity), ("target", targetIdentity)), target, otherFilter);
-
+            
+            // DoAfter
             woundLicking.CancelToken = new CancellationTokenSource();
             _doAfterSystem.DoAfter(new DoAfterEventArgs(performer, woundLicking.Delay, woundLicking.CancelToken.Token, target)
             {
@@ -98,7 +108,7 @@ namespace Content.Server.Felinid
         private void OnWouldLick(EntityUid uid, WoundLickingComponent comp, WoundLickingEvent args)
         {
             comp.CancelToken = null;
-            LickWound(args.Performer, args.Target);
+            LickWound(args.Performer, args.Target, args.Bloodstream, comp.PossibleDiseases, comp.MaxHeal, comp.DiseaseChance);
         }
 
         private void OnWouldLickCancel(WoundLickingEventCancel args)
@@ -106,10 +116,28 @@ namespace Content.Server.Felinid
             args.WoundLicking.CancelToken = null;
         }
 
-        private void LickWound(EntityUid performer, EntityUid target, float diseaseChance = 0.5f, float maxHeal = 15f)
+        private void LickWound(EntityUid performer, EntityUid target, BloodstreamComponent bloodstream, List<String> diseases, float maxHeal = 15f, float diseaseChance = 0.25f)
         {
-            var chance = 0f;
+            // The more you heal, the more is disease chance
+            // For 15 maxHeal and 50% diseaseChance
+            //  Heal 15 > chance 50%
+            //  Heal 7.5 > chance 25%
+            //  Heal 0 > chance 0%
+
+            var healed = bloodstream.BleedAmount;
+            if (maxHeal - bloodstream.BleedAmount < 0) healed = maxHeal;
+            var chance = diseaseChance*(1/maxHeal*healed);
             
+            if(diseaseChance > 0f & diseases.Any())
+            {
+                if (TryComp<DiseaseCarrierComponent>(target, out var disCarrier))
+                {
+                    var diseaseName = diseases[_random.Next(0, diseases.Count())];
+                    _disease.TryInfect(disCarrier, diseaseName, chance);
+                }
+            }
+
+            _bloodstreamSystem.TryModifyBleedAmount(target, -healed, bloodstream);
 
             var targetIdentity = Identity.Entity(target, EntityManager);
             var performerIdentity = Identity.Entity(performer, EntityManager);

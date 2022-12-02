@@ -10,14 +10,14 @@ namespace Content.Server.Felinid
     public sealed class WoundLickingComponent : Component
     {
         /// <summary>
-        /// How frequent wound-licking will cause diseases? Scales with amount of reduced bleeding
+        /// How frequent wound-licking will cause diseases. Scales with amount of reduced bleeding
         /// </summary>
         [DataField("diseaseChance")]
         [ViewVariables(VVAccess.ReadWrite)]
         public float DiseaseChance { get; set; } = 0.25f;
 
         /// <summary>
-        /// Maximal reduce bleeding. Human max bleeding is 20f, many weapons deals near 15f bleeding
+        /// Max possible bleeding reduce. Human max bleeding is 20f, many weapons deals near 15f bleeding
         /// </summary>
         [DataField("maxHeal")]
         [ViewVariables(VVAccess.ReadWrite)]
@@ -43,7 +43,11 @@ namespace Content.Server.Felinid
         /// </summary>
         [DataField("possibleDiseases")]
         public List<String> PossibleDiseases { get; set; } = new(){
-            "Plague"
+            "Plague",
+            "BirdFlew",
+            "SpaceFlu",
+            "SpaceCold",
+            "VentCough"
         };
 
         /// <summary>
