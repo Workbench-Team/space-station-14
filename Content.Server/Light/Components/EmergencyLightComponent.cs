@@ -18,8 +18,6 @@ namespace Content.Server.Light.Components
         /// </summary>
         public bool ForciblyEnabled = false;
 
-        public bool SoundsDisabled = false;
-
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("wattage")]
         public float Wattage = 5;

@@ -437,3 +437,9 @@
   name: holiday-name-friday-thirteenth
   shouldCelebrate:
     !type:FridayThirteenth { }
+
+- type: holiday
+  id: BeatAFurryDay
+  name: holiday-name-beat-a-furry-day
+  beginDay: 27
+  beginMonth: November

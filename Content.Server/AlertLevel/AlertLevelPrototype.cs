@@ -68,11 +68,6 @@ public sealed class AlertLevelDetail
     [DataField("forceEnableEmergencyLights")] public bool ForceEnableEmergencyLights { get; } = false;
 
     /// <summary>
-    /// Will this alert level force disable emergency lights sounds?
-    /// </summary>
-    [DataField("disableEmergencyLightsSounds")] public bool DisableEmergencyLightsSounds { get; } = false;
-
-    /// <summary>
     /// How long it takes for the shuttle to arrive when called.
     /// </summary>
     [DataField("shuttleTime")] public TimeSpan ShuttleTime { get; } = TimeSpan.FromMinutes(5);
