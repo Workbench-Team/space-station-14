@@ -51,6 +51,15 @@ namespace Content.Server.Felinid
         };
 
         /// <summary>
+        /// If Target's bloodstream don't use one of these reagents, then ability can't be performed on it.
+        /// </summary>
+        [DataField("reagentWhitelist")]
+        public List<String> ReagentWhitelist { get; set; } = new(){
+            "Blood",
+            "Slime"
+        };
+
+        /// <summary>
         ///     Token for interrupting a do-after action. If not null, implies component is
         ///     currently "in use".
         /// </summary>

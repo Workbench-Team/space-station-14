@@ -5,7 +5,7 @@
   priority: -1
   whitelist:
     components:
-    - Body
+    - Humanoid
   interactOnMiss: false
   icon: Mobs/Species/Human/organs.rsi/tongue.png
   serverEvent: !type:WoundLickingTargetActionEvent

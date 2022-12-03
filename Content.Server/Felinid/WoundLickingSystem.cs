@@ -70,6 +70,9 @@ namespace Content.Server.Felinid
                 _popupSystem.PopupEntity(Loc.GetString("lick-wounds-yourself-impossible"), performer, Filter.Entities(performer));
                 return;
             }
+            
+            if (woundLicking.ReagentWhitelist.Any() && !woundLicking.ReagentWhitelist.Contains(bloodstream.BloodReagent))
+            { return; }
 
             if (bloodstream.BleedAmount == 0)
             {

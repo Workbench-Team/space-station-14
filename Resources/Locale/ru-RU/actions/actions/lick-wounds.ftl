@@ -6,21 +6,16 @@ lick-wounds-yourself-no-wounds = У вас нету кровотечения
 
 lick-wounds-yourself-begin = Вы начинаете зализывать свои раны
 lick-wounds-yourself-success = Вы зализываете ваши раны, уменьшая кровотечение
-lick-wounds-yourself-failure = Вы не смогли зализать ваши раны
 lick-wounds-yourself-other-begin = {CAPITALIZE($performer)} начинает зализывать свои раны
 lick-wounds-yourself-other-success = {CAPITALIZE($performer)} зализывает свои раны
-lick-wounds-yourself-other-failure = {CAPITALIZE($performer)} не смог зализать свои раны
 
 lick-wounds-performer-no-wounds = {CAPITALIZE($target)} не имеет кровотечения
 lick-wounds-performer-begin = Вы начинаете зализывать раны {$target}
 lick-wounds-performer-success = Вы зализали раны {$target}
-lick-wounds-performer-failure = Вы не смогли зализать раны {$target}
 
 lick-wounds-target-begin = {CAPITALIZE($performer)} начинает зализывать ваши раны
 lick-wounds-target-success = {CAPITALIZE($performer)} зализывает ваши раны, уменьшая кровотечение
-lick-wounds-target-failure = {CAPITALIZE(THE($performer))} не смог зализать ваши раны
 
 lick-wounds-other-begin = {CAPITALIZE($performer)} начинает зализывать раны {$target}
 lick-wounds-other-success = {CAPITALIZE($performer)} успешно зализывает раны {$target}
-lick-wounds-other-failure = {CAPITALIZE($performer)} не смог зализать раны {$target}
 
