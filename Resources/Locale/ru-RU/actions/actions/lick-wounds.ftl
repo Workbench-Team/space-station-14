@@ -18,4 +18,3 @@ lick-wounds-target-success = {CAPITALIZE($performer)} зализывает ва�
 
 lick-wounds-other-begin = {CAPITALIZE($performer)} начинает зализывать раны {$target}
 lick-wounds-other-success = {CAPITALIZE($performer)} успешно зализывает раны {$target}
-
