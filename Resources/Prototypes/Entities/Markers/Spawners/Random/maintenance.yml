@@ -21,7 +21,6 @@
         - BalloonCorgi
         - PonderingOrb
         - Skub
-        - ClothingHeadHatCatEars
         - DrinkMugDog
       rareChance: 0.01
       prototypes:
@@ -40,6 +39,7 @@
         - ClothingUnderSocksBee
         - ClothingUnderSocksCoder
         - ClothingHeadHatSquid
+        - ClothingHeadHatCatEars
       chance: 0.6
       offset: 0.0
 

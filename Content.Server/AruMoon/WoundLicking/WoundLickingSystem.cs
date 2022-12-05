@@ -99,7 +99,8 @@ namespace Content.Server.Felinid
             // Popup
             var targetIdentity = Identity.Entity(target, EntityManager);
             var performerIdentity = Identity.Entity(performer, EntityManager);
-            var otherFilter = Filter.Pvs(performer, entityManager: EntityManager).RemoveWhereAttachedEntity(e => e == performer || e == target);
+            var otherFilter = Filter.Pvs(performer, entityManager: EntityManager)
+                .RemoveWhereAttachedEntity(e => e == performer || e == target);
 
             _popupSystem.PopupEntity(Loc.GetString("lick-wounds-performer-begin", ("target", targetIdentity)),
                 performer, Filter.Entities(performer));
