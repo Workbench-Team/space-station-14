@@ -109,18 +109,18 @@ namespace Content.Server.Flash
 
             if (attempt.Cancelled)
                 return;
+            
+            float flashdur = flashDuration;
 
             flashable.LastFlash = _gameTiming.CurTime;
             if (bang == true)
             {
-                flashDuration *=  flashable.DurationBangMultiplier;
-            } else {
-                flashDuration *=  flashable.DurationMultiplier;
+                flashdur += flashDuration * flashable.BangAddMultiplier;
             }
-            flashable.Duration = flashDuration / 1000f; // TODO: Make this sane...
+            flashable.Duration = flashdur / 1000f; // TODO: Make this sane...
             Dirty(flashable);
 
-            _stunSystem.TrySlowdown(target, TimeSpan.FromSeconds(flashDuration/1000f), true,
+            _stunSystem.TrySlowdown(target, TimeSpan.FromSeconds(flashdur/1000f), true,
                 slowTo, slowTo);
 
             if (displayPopup && user != null && target != user && EntityManager.EntityExists(user.Value))

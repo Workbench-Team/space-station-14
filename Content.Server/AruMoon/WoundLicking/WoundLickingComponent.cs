@@ -21,7 +21,7 @@ namespace Content.Server.Felinid
         /// </summary>
         [DataField("maxHeal")]
         [ViewVariables(VVAccess.ReadWrite)]
-        public float MaxHeal { get; set; } = 15f;
+        public float MaxHeal { get; set; } = 10f;
 
         /// <summary>
         /// How long it requires to lick wounds

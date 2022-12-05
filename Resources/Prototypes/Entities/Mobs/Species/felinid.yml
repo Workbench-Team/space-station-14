@@ -14,7 +14,7 @@
     tableClimbMultiplier: 0.8
   - type: Flashable   # Felinids get longer flashes from flashbangs because of their sensetive ears
     durationMultiplier: 1
-    durationBangMultiplier: 2
+    bangAddMultiplier: 0.5
   - type: WoundLicking
   - type: Reactive
     groups:
@@ -25,14 +25,7 @@
       methods: [ Touch ]
       effects:
       - !type:WashCreamPieReaction
-    - reagents: [ Water ]
-      methods: [ Touch ]
-      effects:
       - !type:CancelDoAfters
-      - !type:PopupMessage
-        type: Local
-        messages: [ "slime-hurt-by-water-popup" ]
-        probability: 0.25
 
 - type: entity
   name: Urist McHands
