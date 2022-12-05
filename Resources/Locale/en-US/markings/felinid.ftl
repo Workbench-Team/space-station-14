@@ -1,5 +1,14 @@
-marking-FelinidEarsDefault = Cat Ears
-marking-FelinidTailDefault = Cat Tail
+marking-FelinidEarsDefault = Cat ears
+marking-FelinidEarsDefault-ears_default_outer = Outer part
+marking-FelinidEarsDefault-ears_default_inner = Inner part
 
-marking-FelinidEarsStatic = Cat Ears (Static)
-marking-FelinidTailStatic = Cat Tail (Static)
+marking-FelinidEarsStatic = Cat ears (Static)
+marking-FelinidEarsStatic-ears_default_outer = Outer part
+marking-FelinidEarsStatic-ears_default_inner = Inner part
+
+
+marking-FelinidTailStatic = Cat tail (Static)
+marking-FelinidTailStatic_tail_static = Tail
+
+marking-FelinidTailDefault = Cat tail
+marking-FelinidTailDefault_tail_default = Tail
