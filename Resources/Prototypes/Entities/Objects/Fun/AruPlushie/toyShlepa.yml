@@ -1,0 +1,29 @@
+- type: entity
+  parent: BaseItem
+  id: toyShlepa
+  name: Shlepa the war criminal
+  description: Where he was at 24th february
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/toy_shlepa.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Misc/toy_shlepa.rsi
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Items/Toys/pelmeni.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/Toys/pelmeni.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/pelmeni.ogg
+  - type: ItemCooldown
+  - type: UseDelay
+    delay: 2.0
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Items/Toys/pelmeni.ogg
+    damage:
+      types:
+        Blunt: 0

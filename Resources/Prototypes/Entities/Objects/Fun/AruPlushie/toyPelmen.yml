@@ -1,0 +1,29 @@
+- type: entity
+  parent: BaseItem
+  id: toyDumpling
+  name: Dumpling the king
+  description: So much meat
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/toy_dumpling.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Misc/toy_dumpling.rsi
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Items/Toys/pelmeni1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/Toys/pelmeni1.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/pelmeni1.ogg
+  - type: ItemCooldown
+  - type: UseDelay
+    delay: 2.0
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Items/Toys/pelmeni1.ogg
+    damage:
+      types:
+        Blunt: 0

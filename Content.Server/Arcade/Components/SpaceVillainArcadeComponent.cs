@@ -60,7 +60,9 @@ namespace Content.Server.Arcade.Components
             "FoamCrossbow", "RevolverCapGun", "PlushieLizard", "PlushieSpaceLizard",
             "PlushieNuke", "PlushieCarp", "PlushieRatvar", "PlushieNar", "PlushieSnake", "Basketball", "Football",
             "PlushieRouny", "PlushieBee", "PlushieSlime", "BalloonCorgi", "ToySword", "CrayonBox", "BoxDonkSoftBox", "BoxCartridgeCap",
-            "HarmonicaInstrument", "OcarinaInstrument", "RecorderInstrument", "GunpetInstrument", "BirdToyInstrument"
+            "HarmonicaInstrument", "OcarinaInstrument", "RecorderInstrument", "GunpetInstrument", "BirdToyInstrument",
+            "toyShlepa", "toyDumpling"
+
         };
 
         protected override void Initialize()
