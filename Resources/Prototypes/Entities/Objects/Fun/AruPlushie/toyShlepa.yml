@@ -11,19 +11,19 @@
     sprite: Objects/Misc/toy_shlepa.rsi
   - type: EmitSoundOnUse
     sound:
-      path: /Audio/Items/Toys/pelmeni.ogg
+      path: /Audio/Items/Toys/meow.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/Items/Toys/pelmeni.ogg
+      path: /Audio/Items/Toys/meow.ogg
   - type: EmitSoundOnActivate
     sound:
-      path: /Audio/Items/Toys/pelmeni.ogg
+      path: /Audio/Items/Toys/meow.ogg
   - type: ItemCooldown
   - type: UseDelay
     delay: 2.0
   - type: MeleeWeapon
     soundHit:
-      path: /Audio/Items/Toys/pelmeni.ogg
+      path: /Audio/Items/Toys/meow.ogg
     damage:
       types:
         Blunt: 0
