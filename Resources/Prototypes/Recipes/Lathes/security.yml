@@ -231,3 +231,113 @@
   completetime: 5
   materials:
     Steel: 10
+
+# Magazines for SecurityTechFab
+# Resource logic. [Number of rounds in magazine]*[Cartridge material] + 100 steel
+# Complete time logic. [Number of rounds in magazine]*[Cartridge complete time] + 5
+- type: latheRecipe
+  id: MagazinePistolRubber
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
+    state: rubber
+  result: MagazinePistolRubber
+  completetime: 25
+  materials:
+    Plastic: 50
+    Steel: 150
+
+- type: latheRecipe
+  id: MagazineMagnumRubber
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Magnum/magnum_mag.rsi
+    state: rubber
+  result: MagazineMagnumRubber
+  completetime: 25
+  materials:
+    Plastic: 50
+    Steel: 150
+
+- type: latheRecipe
+  id: MagazineCaselessRifleRubber
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag.rsi
+    state: rubber
+  result: MagazineCaselessRifleRubber
+  completetime: 65
+  materials:
+    Plastic: 300
+    Steel: 250
+
+- type: latheRecipe
+  id: MagazineLightRifleRubber
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_mag.rsi
+    state: rubber
+  result: MagazineLightRifleRubber
+  completetime: 65
+  materials:
+    Plastic: 300
+    Steel: 250
+
+- type: latheRecipe
+  id: MagazineRifleRubber
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Rifle/rifle_mag.rsi
+    state: rubber
+  result: MagazineRifleRubber
+  completetime: 55
+  materials:
+    Plastic: 250
+    Steel: 225
+
+- type: latheRecipe
+  id: MagazinePistol
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
+    state: red
+  result: MagazinePistol
+  completetime: 25
+  materials:
+    Steel: 200
+
+- type: latheRecipe
+  id: MagazineMagnum
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Magnum/magnum_mag.rsi
+    state: red
+  result: MagazineMagnum
+  completetime: 25
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: MagazineCaselessRifle
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag.rsi
+    state: red
+  result: MagazineCaselessRifle
+  completetime: 65
+  materials:
+    Plastic: 300
+    Steel: 250
+
+- type: latheRecipe
+  id: MagazineLightRifle
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_mag.rsi
+    state: red
+  result: MagazineLightRifle
+  completetime: 65
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: MagazineRifle
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Rifle/rifle_mag.rsi
+    state: red
+  result: MagazineRifle
+  completetime: 55
+  materials:
+    Plastic: 250
+    Steel: 225

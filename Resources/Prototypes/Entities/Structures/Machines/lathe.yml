@@ -221,7 +221,7 @@
       - VoiceTrigger
       - PowerCellSmall
       - PowerCellMedium
-      - PowerCellHigh  
+      - PowerCellHigh
       - SynthesizerInstrument
       - RPED
       - HolofanProjector
@@ -397,6 +397,17 @@
       - TargetHuman
       - TargetSyndicate
       - TargetClown
+      # Magazines
+      - MagazinePistolRubber
+      - MagazineMagnumRubber
+      - MagazineCaselessRifleRubber
+      - MagazineLightRifleRubber
+      - MagazineRifleRubber
+      - MagazinePistol
+      - MagazineMagnum
+      - MagazineCaselessRifle
+      - MagazineLightRifle
+      - MagazineRifle
   - type: MaterialStorage
     whitelist:
       tags:
