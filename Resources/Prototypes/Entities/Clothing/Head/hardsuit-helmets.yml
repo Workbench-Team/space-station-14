@@ -45,7 +45,7 @@
     coefficient: 0.005
 
 - type: entity
-  parent: ClothingHeadHardsuitBase
+  parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitCap
   noSpawn: true
   name: captain's hardsuit helmet
