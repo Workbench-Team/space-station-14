@@ -20,7 +20,8 @@
             "program": "${workspaceFolder}/bin/Content.Server/Content.Server.dll",
             "args": [],
             "console": "integratedTerminal",
-            "stopAtEntry": false
+            "stopAtEntry": false,
+            "requireExactSource": false,
         },
         {
             "name": "YAML Linter",

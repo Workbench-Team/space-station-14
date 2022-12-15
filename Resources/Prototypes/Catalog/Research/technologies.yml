@@ -225,7 +225,6 @@
     - WeaponSniperMosin
     - WeaponRifleAk
     - WeaponPistolMk58
-    - WeaponLightMachineGunL6
     - WeaponSubMachineGunVector
 
 - type: technology
@@ -241,10 +240,8 @@
     - ElectromagneticTheory
   unlockedRecipes:
     - WeaponDisabler
-    - WeaponAntiqueLaser
     - WeaponLaserCarbine
     - WeaponDisablerPractice
-    - WeaponPulseRifle
 #
 # - type: technology
 #   name: "explosives technology"

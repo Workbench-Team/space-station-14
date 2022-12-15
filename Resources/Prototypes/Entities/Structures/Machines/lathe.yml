@@ -359,6 +359,8 @@
   name: security techfab
   description: Prints equipment for use by security crew.
   components:
+  - type: AccessReader
+    access: [["Brig"]]
   - type: Sprite
     netsync: false
     sprite: Structures/Machines/techfab.rsi
@@ -426,6 +428,8 @@
   name: Weapon techfab
   description: Prints weapons for use by security crew.
   components:
+  - type: AccessReader
+    access: [["Brig"]]
   - type: Sprite
     netsync: false
     sprite: Structures/Machines/techfab.rsi
@@ -464,14 +468,11 @@
       - WeaponSniperMosin
       - WeaponRifleAk
       - WeaponPistolMk58
-      - WeaponLightMachineGunL6
       - WeaponSubMachineGunVector
       # Weapons energy
       - WeaponDisabler
       - WeaponDisablerPractice
-      - WeaponAntiqueLaser
       - WeaponLaserCarbine
-      - WeaponPulseRifle
 
   - type: MaterialStorage
     whitelist:
