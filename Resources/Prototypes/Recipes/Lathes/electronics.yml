@@ -508,3 +508,23 @@
   materials:
     Steel: 100
     Glass: 900
+
+# Security machinery
+- type: latheRecipe
+  id: WeaponTechFabCircuitboard
+  icon: { sprite: Objects/Misc/module.rsi, state: security }
+  result: WeaponTechFabCircuitboard
+  completetime: 4
+  materials:
+     Steel: 100
+     Glass: 900
+     Gold: 100
+
+- type: latheRecipe
+  id: SecurityTechFabCircuitboard
+  icon: { sprite: Objects/Misc/module.rsi, state: security }
+  result: SecurityTechFabCircuitboard
+  completetime: 4
+  materials:
+     Steel: 100
+     Glass: 900

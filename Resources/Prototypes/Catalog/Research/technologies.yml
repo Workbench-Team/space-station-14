@@ -1,4 +1,4 @@
-# In order to make this list somewhat organized, please place 
+# In order to make this list somewhat organized, please place
 # new technologies underneath their overarching "base" technology.
 
 # Base Technology
@@ -181,27 +181,70 @@
   - SurveillanceWirelessCameraMonitorCircuitboard
   - ComputerTelevisionCircuitboard
 
-#- type: technology
-#   name: "ballistic technology"
-#   id: BallisticTechnology
-#   description: Just a fancy term for guns.
-#   icon:
-#     sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
-#     state: icon
-#   requiredPoints: 15000
-#   requiredTechnologies:
-#     - SecurityTechnology
-#
-# - type: technology
-#   name: "direct energy technology"
-#   id: DirectEnergyTechnology
-#   description: Basically laser guns.
-#   icon:
-#     sprite: Objects/Weapons/Guns/Battery/taser.rsi
-#     state: icon
-#   requiredPoints: 15000
-#   requiredTechnologies:
-#     - SecurityTechnology
+##  Technology for a weapon production
+- type: technology
+  name: technologies-weapon-machinery
+  id: WeaponMachinery
+  description: technologies-weapon-machinery-description
+  icon:
+    sprite: Structures/Machines/techfab.rsi
+    state: icon
+  requiredPoints: 10000
+  requiredTechnologies:
+  - IndustrialEngineering
+  unlockedRecipes:
+  - WeaponTechFabCircuitboard
+  - SecurityTechFabCircuitboard
+
+- type: technology
+  name: technologies-ballistic
+  id: BallisticTechnology
+  description: technologies-ballistic-description
+  icon:
+    sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
+    state: icon
+  requiredPoints: 15000
+  requiredTechnologies:
+    - WeaponMachinery
+  unlockedRecipes:
+    - MagazinePistolRubber
+    - MagazineMagnumRubber
+    - MagazineCaselessRifleRubber
+    - MagazineLightRifleRubber
+    - MagazineRifleRubber
+    - MagazinePistol
+    - MagazineMagnum
+    - MagazineCaselessRifle
+    - MagazineLightRifle
+    - MagazineRifle
+    # Weapons kinetic
+    - WeaponRevolverInspector
+    - WeaponSubMachineGunWt550
+    - WeaponRifleLecter
+    - WeaponShotgunDoubleBarreled
+    - WeaponSniperMosin
+    - WeaponRifleAk
+    - WeaponPistolMk58
+    - WeaponLightMachineGunL6
+    - WeaponSubMachineGunVector
+
+- type: technology
+  name: technologies-direct-energy
+  id: DirectEnergyTechnology
+  description: technologies-direct-energy-description
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/taser.rsi
+    state: icon
+  requiredPoints: 15000
+  requiredTechnologies:
+    - WeaponMachinery
+    - ElectromagneticTheory
+  unlockedRecipes:
+    - WeaponDisabler
+    - WeaponAntiqueLaser
+    - WeaponLaserCarbine
+    - WeaponDisablerPractice
+    - WeaponPulseRifle
 #
 # - type: technology
 #   name: "explosives technology"
@@ -386,7 +429,7 @@
   name: technologies-rapid-upgrade
   id: RapidUpgrade
   description: technologies-rapid-upgrade-description
-  icon: 
+  icon:
     sprite: Objects/Specific/Research/rped.rsi
     state: icon
   requiredPoints: 7500

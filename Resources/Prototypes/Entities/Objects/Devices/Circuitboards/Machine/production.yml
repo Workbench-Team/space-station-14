@@ -40,14 +40,25 @@
     - type: MachineBoard
       prototype: SecurityTechFab
       requirements:
+        MatterBin: 1
+        Manipulator: 1
+        Laser: 1
+        ScanningModule: 1
+- type: entity
+  id: WeaponTechFabCircuitboard
+  parent: BaseMachineCircuitboard
+  name: weapon techfab machine board
+  description: A machine printed circuit board for a weapon's techfab
+  components:
+    - type: Sprite
+      state: security
+    - type: MachineBoard
+      prototype: WeaponTechFab
+      requirements:
         MatterBin: 2
         Manipulator: 2
-      tagRequirements:
-        GlassBeaker:
-          Amount: 2
-          DefaultPrototype: Beaker
-          ExamineName: Glass Beaker
-
+        Laser: 2
+        ScanningModule: 2
 - type: entity
   id: MedicalTechFabCircuitboard
   parent: BaseMachineCircuitboard
@@ -176,7 +187,7 @@
         ScanningModule: 1
         Capacitor: 2
       materialRequirements:
-        Steel: 5 
+        Steel: 5
         Cable: 1
 
 - type: entity

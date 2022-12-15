@@ -306,6 +306,8 @@
       - ExosuitFabricatorMachineCircuitboard
       - ArtifactAnalyzerMachineCircuitboard
       - TraversalDistorterMachineCircuitboard
+      - SecurityTechFabCircuitboard
+      - WeaponTechFabCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:
@@ -416,6 +418,68 @@
         - Sheet
         - RawMaterial
         - Ingot
+
+# Machine which makes weapons and ammunition
+- type: entity
+  parent: Protolathe
+  id: WeaponTechFab
+  name: Weapon techfab
+  description: Prints weapons for use by security crew.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: weapon
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.LatheVisualLayers.IsInserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: WeaponTechFabCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: icon
+    dynamicRecipes:
+      # Magazines
+      - MagazinePistolRubber
+      - MagazineMagnumRubber
+      - MagazineCaselessRifleRubber
+      - MagazineLightRifleRubber
+      - MagazineRifleRubber
+      - MagazinePistol
+      - MagazineMagnum
+      - MagazineCaselessRifle
+      - MagazineLightRifle
+      - MagazineRifle
+      # Weapons kinetic
+      - WeaponRevolverInspector
+      - WeaponSubMachineGunWt550
+      - WeaponRifleLecter
+      - WeaponShotgunDoubleBarreled
+      - WeaponSniperMosin
+      - WeaponRifleAk
+      - WeaponPistolMk58
+      - WeaponLightMachineGunL6
+      - WeaponSubMachineGunVector
+      # Weapons energy
+      - WeaponDisabler
+      - WeaponDisablerPractice
+      - WeaponAntiqueLaser
+      - WeaponLaserCarbine
+      - WeaponPulseRifle
+
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+        - Wood
 
 - type: entity
   parent: Protolathe

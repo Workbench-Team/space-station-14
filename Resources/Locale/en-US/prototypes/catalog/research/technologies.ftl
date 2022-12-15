@@ -81,3 +81,12 @@ technologies-ripley-technology-description = The latest and greatest in mechaniz
 
 technologies-adv-parts-technology-description = Like the previous ones, but better!
 technologies-adv-parts-technology = Advanced parts technology
+
+technologies-weapon-machinery = Weapon's machinery
+technologies-weapon-machinery-description = Machines for producing weaponry.
+
+technologies-ballistic = Ballistic technology
+technologies-ballistic-description = Just a fancy term for guns.
+
+technologies-direct-energy = Energy weapons
+technologies-direct-energy-description = Basically laser guns

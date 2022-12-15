@@ -232,7 +232,7 @@
   materials:
     Steel: 10
 
-# Magazines for SecurityTechFab
+# Magazines for SecurityTechFab and WeaponsTechFab
 # Resource logic. [Number of rounds in magazine]*[Cartridge material] + 100 steel
 # Complete time logic. [Number of rounds in magazine]*[Cartridge complete time] + 5
 - type: latheRecipe
@@ -341,3 +341,161 @@
   materials:
     Plastic: 250
     Steel: 225
+# Magazines for SecurityTechFab
+# Weapons kinetic
+- type: latheRecipe
+  id: WeaponRevolverInspector
+  icon:
+    sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
+    state: icon
+  result: WeaponRevolverInspector
+  completetime: 30
+  materials:
+    Steel: 500
+
+- type: latheRecipe
+  id: WeaponSubMachineGunWt550
+  icon:
+    sprite: Objects/Weapons/Guns/SMGs/wt550.rsi
+    state: base
+  result: WeaponSubMachineGunWt550
+  completetime: 75
+  materials:
+    Plastic: 200
+    Steel: 1000
+
+- type: latheRecipe
+  id: WeaponRifleLecter
+  icon:
+    sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
+    state: base
+  result: WeaponRifleLecter
+  completetime: 90
+  materials:
+    Plastic: 200
+    Steel: 1300
+
+- type: latheRecipe
+  id: WeaponShotgunDoubleBarreled
+  icon:
+    sprite: Objects/Weapons/Guns/Shotguns/db_shotgun.rsi
+    state: icon
+  result: WeaponShotgunDoubleBarreled
+  completetime: 60
+  materials:
+    Wood: 500
+    Steel: 500
+
+- type: latheRecipe
+  id: WeaponSniperMosin
+  icon:
+    sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
+    state: base
+  result: WeaponSniperMosin
+  completetime: 60
+  materials:
+    Wood: 500
+    Steel: 500
+
+- type: latheRecipe
+  id: WeaponRifleAk
+  icon:
+    sprite: Objects/Weapons/Guns/Rifles/ak.rsi
+    state: base
+  result: WeaponRifleAk
+  completetime: 75
+  materials:
+    Wood: 200
+    Steel: 1000
+
+- type: latheRecipe
+  id: WeaponPistolMk58
+  icon:
+    sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
+    state: base
+  result: WeaponPistolMk58
+  completetime: 30
+  materials:
+    Steel: 500
+
+- type: latheRecipe
+  id: WeaponLightMachineGunL6
+  icon:
+    sprite: Objects/Weapons/Guns/LMGs/l6.rsi
+    state: base
+  result: WeaponLightMachineGunL6
+  completetime: 190
+  materials:
+    Plastic: 500
+    Glass: 500
+    Steel: 2000
+
+- type: latheRecipe
+  id: WeaponSubMachineGunVector
+  icon:
+    sprite: Objects/Weapons/Guns/SMGs/vector.rsi
+    state: base
+  result: WeaponSubMachineGunVector
+  completetime: 60
+  materials:
+    Plastic: 200
+    Steel: 800
+
+# Weapons energy
+- type: latheRecipe
+  id: WeaponDisabler
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/disabler.rsi
+    state: base
+  result: WeaponDisabler
+  completetime: 35
+  materials:
+    Glass: 300
+    Steel: 300
+
+- type: latheRecipe
+  id: WeaponDisablerPractice
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/practice_disabler.rsi
+    state: base
+  result: WeaponDisablerPractice
+  completetime: 25
+  materials:
+    Glass: 200
+    Steel: 200
+
+- type: latheRecipe
+  id: WeaponAntiqueLaser
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/antiquelasergun.rsi
+    state: base
+  result: WeaponAntiqueLaser
+  completetime: 50
+  materials:
+    Glass: 200
+    Plastic: 300
+    Steel: 300
+
+- type: latheRecipe
+  id: WeaponLaserCarbine
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi
+    state: base
+  result: WeaponLaserCarbine
+  completetime: 90
+  materials:
+    Glass: 500
+    Plastic: 500
+    Steel: 500
+
+- type: latheRecipe
+  id: WeaponPulseRifle
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/pulse_rifle.rsi
+    state: base
+  result: WeaponPulseRifle
+  completetime: 120
+  materials:
+    Glass: 500
+    Plastic: 500
+    Steel: 1000
