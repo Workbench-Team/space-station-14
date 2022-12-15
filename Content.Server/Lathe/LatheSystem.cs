@@ -20,7 +20,7 @@ using Robust.Server.Player;
 using Robust.Shared.Players;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
-using Robust.Shared.Audio;
+using Robust.Shared.Player;
 
 namespace Content.Server.Lathe
 {
@@ -301,7 +301,7 @@ namespace Content.Server.Lathe
                 return;
             if (!_accessReaderSystem.IsAllowed(player, uid))
             {
-                ConsolePopup(args.Session, Loc.GetString("cargo-console-order-not-allowed"));
+                ConsolePopup(args.Session, Loc.GetString("lathe-production-not-allowed"));
                 PlayDenySound(uid, component);
                 return;
             }
@@ -319,12 +319,15 @@ namespace Content.Server.Lathe
 
         private void ConsolePopup(ICommonSession session, string text)
         {
-            _popup.PopupCursor(text, Robust.Shared.Player.Filter.SinglePlayer(session));
+            _popup.PopupCursor(text, Filter.SinglePlayer(session));
         }
 
         private void PlayDenySound(EntityUid uid, LatheComponent component)
         {
-            SoundSystem.Play(component.ErrorSound.GetSound(), Robust.Shared.Player.Filter.Pvs(uid, entityManager: EntityManager), uid);
+            if (component.ErrorSound != null)
+            {
+                _audio.Play(_audio.GetSound(component.ErrorSound), Filter.Pvs(uid, entityManager: EntityManager), uid, false);
+            }
         }
 
         private void OnLatheSyncRequestMessage(EntityUid uid, LatheComponent component, LatheSyncRequestMessage args)

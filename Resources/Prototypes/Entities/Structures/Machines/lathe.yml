@@ -248,6 +248,7 @@
     board: CircuitImprinterMachineCircuitboard
   - type: Lathe
     producingSound: /Audio/Machines/circuitprinter.ogg
+    errorSound: /Audio/Machines/custom_deny.ogg
     idleState: icon
     runningState: building
     dynamicRecipes:
@@ -377,6 +378,8 @@
   - type: Machine
     board: SecurityTechFabCircuitboard
   - type: Lathe
+    producingSound: /Audio/Machines/circuitprinter.ogg
+    soundError: /Audio/Machines/custom_deny.ogg
     idleState: icon
     runningState: icon
     staticRecipes:
@@ -446,6 +449,8 @@
   - type: Machine
     board: WeaponTechFabCircuitboard
   - type: Lathe
+    producingSound: /Audio/Machines/circuitprinter.ogg
+    soundError: /Audio/Machines/custom_deny.ogg
     idleState: icon
     runningState: icon
     dynamicRecipes:
