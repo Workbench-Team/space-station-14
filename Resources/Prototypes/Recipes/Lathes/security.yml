@@ -387,17 +387,6 @@
     Steel: 500
 
 - type: latheRecipe
-  id: WeaponSniperMosin
-  icon:
-    sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
-    state: base
-  result: WeaponSniperMosin
-  completetime: 60
-  materials:
-    Wood: 500
-    Steel: 500
-
-- type: latheRecipe
   id: WeaponRifleAk
   icon:
     sprite: Objects/Weapons/Guns/Rifles/ak.rsi
