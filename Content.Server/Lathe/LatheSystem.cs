@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using Content.Server.Access.Systems;
 using Content.Shared.Access.Systems;
 using Content.Server.Construction;
 using Content.Server.Lathe.Components;
@@ -18,7 +17,6 @@ using Content.Shared.Research.Prototypes;
 using JetBrains.Annotations;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
-using Robust.Shared.Player;
 using Robust.Shared.Players;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
@@ -301,8 +299,6 @@ namespace Content.Server.Lathe
         {
             if (args.Session.AttachedEntity is not {Valid: true} player)
                 return;
-            Console.WriteLine(player);
-            Console.WriteLine(_accessReaderSystem);
             if (!_accessReaderSystem.IsAllowed(player, uid))
             {
                 ConsolePopup(args.Session, Loc.GetString("cargo-console-order-not-allowed"));
