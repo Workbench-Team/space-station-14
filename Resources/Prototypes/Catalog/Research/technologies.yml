@@ -233,8 +233,8 @@
   id: DirectEnergyTechnology
   description: technologies-direct-energy-description
   icon:
-    sprite: Objects/Weapons/Guns/Battery/taser.rsi
-    state: icon
+    sprite: Objects/Weapons/Guns/Battery/disabler.rsi
+    state: base
   requiredPoints: 15000
   requiredTechnologies:
     - WeaponMachinery
