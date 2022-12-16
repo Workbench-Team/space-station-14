@@ -17,6 +17,7 @@
   - Command
   - Maintenance
   - ResearchDirector
+  - External
 
 - type: startingGear
   id: ResearchDirectorGear
