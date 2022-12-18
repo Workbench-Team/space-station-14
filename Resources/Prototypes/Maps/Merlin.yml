@@ -1,0 +1,13 @@
+- type: gameMap
+  id: Merlin
+  mapName: Merlin Organisation Station
+  mapPath: /Maps/Merlin/merlin.yml
+  minPlayers: 0
+  stations:
+    Merlin:
+      mapNameTemplate: "Merlin"
+      overflowJobs:
+        - Passenger
+      availableJobs:
+        Passenger: [ -1, -1 ]
+
