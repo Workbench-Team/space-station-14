@@ -14,13 +14,12 @@
     sprite: Structures/Holo/wetfloor.rsi
     state: icon
     netsync: false
-  - type: TimedDespawn
-    lifetime: 30
+  - type: HolosignBarrier
 
 - type: entity
   id: HoloFan
   parent: HolosignWetFloor
-  name: holofan
+  name: holofan atmos
   description: A barrier of hard light that blocks air, but nothing else.
   components:
   - type: Sprite
@@ -32,7 +31,76 @@
     - shape:
         !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
-  - type: TimedDespawn
-    lifetime: 180
   - type: Airtight
     noAirWhenFullyAirBlocked: false
+
+- type: entity
+  id: HoloFanTram
+  parent: HoloFan
+  name: tram atmos barrier
+  description: A barrier of hard light that blocks air, but nothing else.
+  components:
+  - type: Sprite
+    sprite: Structures/Holo/atmos_tram.rsi
+    state: icon
+    netsync: false
+
+- type: entity
+  id: HolosignEngineering
+  name: holobarrier
+  description: A short holographic barrier which can only be passed by walking.
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+    - type: Sprite
+      sprite: Structures/Holo/engi.rsi
+      state: icon
+      drawdepth: Overdoors
+      netsync: false
+    - type: Transform
+      anchored: true
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+      - hard: false
+        density: 7
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        layer:
+        - MidImpassable
+    - type: AtmosExposed
+    - type: SlowContacts
+      walkSpeedModifier: 1
+      sprintSpeedModifier: 0.0
+    - type: HolosignBarrier
+
+- type: entity
+  id: HolosignSecurity
+  parent: HolosignEngineering
+  name: holobarrier
+  description: A short holographic barrier which can only be passed by walking.
+  components:
+  - type: Sprite
+    sprite: Structures/Holo/sec.rsi
+    state: icon
+    netsync: false
+
+- type: entity
+  id: HolosignMedical
+  parent: HolosignWetFloor
+  name: improper PENLITE holobarrier
+  description: A holobarrier that uses biometrics to detect human viruses. Denies passing to personnel with easily-detected, malicious viruses. Good for quarantines.
+  components:
+  - type: Sprite
+    sprite: Structures/Holo/penlite.rsi
+    state: icon
+    netsync: false
+  - type: Fixtures
+    fixtures:
+    - shape:
+        !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+  - type: HolosignBarrier

@@ -15,5 +15,20 @@ namespace Content.Server.Holosign
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite), DataField("chargeUse")]
         public float ChargeUse = 50f;
+
+        /// <summary>
+        /// How much signs can be for one holoprojector.
+        /// </summary>
+        [ViewVariables(VVAccess.ReadWrite), DataField("maxSigns")]
+        public int MaxSigns = 10;
+
+        /// <summary>
+        /// Time in seconds need to set up hoosign.
+        /// </summary>
+        [ViewVariables(VVAccess.ReadWrite), DataField("deployTime")]
+        public float DeployTime = 0;
+
+        [ViewVariables]
+        public readonly List<EntityUid> Childs = new();
     }
 }

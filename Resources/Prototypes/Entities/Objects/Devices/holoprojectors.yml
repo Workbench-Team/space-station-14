@@ -35,6 +35,7 @@
   - type: HolosignProjector
     signProto: HoloFan
     chargeUse: 120
+    maxSigns: 6
   - type: Sprite
     sprite: Objects/Devices/Holoprojectors/atmos.rsi
     state: icon
@@ -42,5 +43,65 @@
   - type: Tag
     tags:
       - HolofanProjector
+  - type: StaticPrice
+    price: 80
+
+- type: entity
+  parent: Holoprojector
+  id: HoloprojectorEngineering
+  name: engineering holobarrier projector
+  description: A holographic projector that creates holographic engineering barriers.
+  components:
+  - type: HolosignProjector
+    signProto: HolosignEngineering
+    chargeUse: 120
+    maxSigns: 6
+  - type: Sprite
+    sprite: Objects/Devices/Holoprojectors/engineer.rsi
+    state: icon
+    netsync: false
+  - type: Tag
+    tags:
+      - HolosignProjector
+  - type: StaticPrice
+    price: 80
+
+- type: entity
+  parent: Holoprojector
+  id: HoloprojectorSecurity
+  name: security holobarrier projector
+  description: A holographic projector that creates holographic security barriers.
+  components:
+  - type: HolosignProjector
+    signProto: HolosignSecurity
+    chargeUse: 120
+    maxSigns: 6
+  - type: Sprite
+    sprite: Objects/Devices/Holoprojectors/sec.rsi
+    state: icon
+    netsync: false
+  - type: Tag
+    tags:
+      - HolosignProjector
+  - type: StaticPrice
+    price: 80
+
+- type: entity
+  parent: Holoprojector
+  id: HoloprojectorMedical
+  name: improper PENLITE barrier projector
+  description: A holographic projector that creates PENLITE holobarriers. Useful during quarantines since they halt those with malicious diseases.
+  components:
+  - type: HolosignProjector
+    signProto: HolosignMedical
+    chargeUse: 120
+    maxSigns: 3
+  - type: Sprite
+    sprite: Objects/Devices/Holoprojectors/med.rsi
+    state: icon
+    netsync: false
+  - type: Tag
+    tags:
+      - HolosignProjector
   - type: StaticPrice
     price: 80
