@@ -34,12 +34,12 @@
   - type: MechDrill
   - type: Sprite
     state: mecha_drill
-  # - type: GatheringTool
-  #   damage:
-  #     types:
-  #       Structural: 125
-  #     gatheringTime: 0.50
-  #     MaxGatheringEntities: 3
+  - type: GatheringTool
+    damage:
+      types:
+        Structural: 200
+    gatheringTime: 0.8
+    MaxGatheringEntities: 2
   - type: ItemCooldown
 
 

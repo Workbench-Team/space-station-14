@@ -1,4 +1,4 @@
-﻿using System.Threading;
+using System.Threading;
 using Robust.Shared.Audio;
 using Robust.Shared.Containers;
 
@@ -28,18 +28,3 @@ public sealed class MechDrillComponent : Component
     public CancellationTokenSource? Token;
 }
 
-/// <summary>
-/// Event raised on the user when the grab is complete.
-/// </summary>
-public sealed class MechDrillDrillFinishedEvent : EntityEventArgs
-{
-
-}
-
-/// <summary>
-/// Event raised on the user when the grab fails
-/// </summary>
-public sealed class MechDrillDrillCancelledEvent : EntityEventArgs
-{
-
-}

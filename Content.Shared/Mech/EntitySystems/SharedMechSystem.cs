@@ -130,7 +130,6 @@ public abstract class SharedMechSystem : EntitySystem
 
         if (component.CurrentSelectedEquipment != null)
         {
-            var p = component.CurrentSelectedEquipment;
             RaiseLocalEvent(component.CurrentSelectedEquipment.Value, args);
         }
     }
