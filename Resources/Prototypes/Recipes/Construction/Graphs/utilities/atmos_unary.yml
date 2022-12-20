@@ -10,6 +10,12 @@
         amount: 2
         doAfter: 1
 
+    - to: devicefantiny
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 1
+
     - to: passivevent
       steps:
       - material: Steel
@@ -39,6 +45,24 @@
       - !type:SpawnPrototype
         prototype: SheetSteel1
         amount: 2
+      - !type:DeleteEntity
+      steps:
+      - tool: Screwing
+        doAfter: 1
+      - tool: Welding
+        doAfter: 1
+
+  - node: devicefantiny
+    entity: AtmosDeviceFanTiny
+    edges:
+    - to: start
+      conditions:
+      - !type:EntityAnchored
+        anchored: false
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
       - !type:DeleteEntity
       steps:
       - tool: Screwing

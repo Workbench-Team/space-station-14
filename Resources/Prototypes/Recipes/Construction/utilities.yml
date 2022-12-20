@@ -404,6 +404,22 @@
     - !type:TileNotBlocked {}
 
 - type: construction
+  name: tiny fan
+  description:  A tiny fan, releasing a thin gust of air.
+  id: AtmosDeviceFanTiny
+  graph: GasUnary
+  startNode: start
+  targetNode: devicefantiny
+  category: construction-category-utilities
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  icon:
+    sprite: Structures/Piping/Atmospherics/tinyfan.rsi
+    state: icon
+  conditions:
+    - !type:TileNotBlocked {}
+
+- type: construction
   name: air scrubber
   description: Sucks gas into connected pipes.
   id: GasVentScrubber

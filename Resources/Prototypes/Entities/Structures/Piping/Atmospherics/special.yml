@@ -6,6 +6,9 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: Construction
+    graph: GasUnary
+    node: devicefantiny
   - type: Transform
     anchored: true
   - type: Physics
