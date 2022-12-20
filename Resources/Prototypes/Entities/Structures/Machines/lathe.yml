@@ -433,7 +433,7 @@
   description: Prints weapons for use by security crew.
   components:
   - type: AccessReader
-    access: [["Brig"], ["ResearchDirector"]]
+    access: [["Brig"]]
   - type: Sprite
     netsync: false
     sprite: Structures/Machines/techfab.rsi
@@ -489,6 +489,7 @@
         - Ingot
         - Wood
         - Uranium
+        - Gold
 
 - type: entity
   parent: Protolathe
