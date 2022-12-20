@@ -1302,6 +1302,13 @@
     interactSuccessString: petting-success-tarantula
     interactFailureString: petting-failure-generic
   - type: Puller
+  - type: MeleeWeapon
+    hidden: true
+    angle: 0
+    animation: WeaponArcBite
+    damage:
+      groups:
+        Brute: 12
 
 - type: entity
   name: tarantula
