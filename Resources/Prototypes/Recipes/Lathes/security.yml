@@ -461,6 +461,6 @@
   result: WeaponAdvancedLaser
   completetime: 30
   materials:
-    Gold: 500
+    Gold: 1500
     Steel: 500
-    Uranium: 200
+    Uranium: 500
