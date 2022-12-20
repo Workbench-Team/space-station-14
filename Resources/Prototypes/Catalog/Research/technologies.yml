@@ -203,7 +203,7 @@
   icon:
     sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
     state: icon
-  requiredPoints: 15000
+  requiredPoints: 7500
   requiredTechnologies:
     - WeaponMachinery
   unlockedRecipes:
@@ -233,14 +233,14 @@
   icon:
     sprite: Objects/Weapons/Guns/Battery/disabler.rsi
     state: base
-  requiredPoints: 15000
+  requiredPoints: 10000
   requiredTechnologies:
     - WeaponMachinery
     - ElectromagneticTheory
   unlockedRecipes:
     - WeaponDisabler
     - WeaponLaserCarbine
-    - WeaponDisablerPractice
+    - WeaponAdvancedLaser
 #
 # - type: technology
 #   name: "explosives technology"

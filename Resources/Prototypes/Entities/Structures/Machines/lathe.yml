@@ -433,7 +433,7 @@
   description: Prints weapons for use by security crew.
   components:
   - type: AccessReader
-    access: [["Brig"]]
+    access: [["Brig"], ["ResearchDirector"]]
   - type: Sprite
     netsync: false
     sprite: Structures/Machines/techfab.rsi
@@ -455,6 +455,8 @@
     soundError: /Audio/Machines/custom_deny.ogg
     idleState: icon
     runningState: icon
+    staticRecipes:
+      - WeaponDisablerPractice
     dynamicRecipes:
       # Magazines
       - MagazinePistolRubber
@@ -477,8 +479,8 @@
       - WeaponSubMachineGunVector
       # Weapons energy
       - WeaponDisabler
-      - WeaponDisablerPractice
       - WeaponLaserCarbine
+      - WeaponAdvancedLaser
   - type: MaterialStorage
     whitelist:
       tags:
@@ -486,6 +488,7 @@
         - RawMaterial
         - Ingot
         - Wood
+        - Uranium
 
 - type: entity
   parent: Protolathe

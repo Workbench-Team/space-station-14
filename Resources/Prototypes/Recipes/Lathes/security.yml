@@ -241,7 +241,7 @@
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
     state: rubber
   result: MagazinePistolRubber
-  completetime: 25
+  completetime: 10
   materials:
     Plastic: 50
     Steel: 150
@@ -252,7 +252,7 @@
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/Magnum/magnum_mag.rsi
     state: rubber
   result: MagazineMagnumRubber
-  completetime: 25
+  completetime: 10
   materials:
     Plastic: 50
     Steel: 150
@@ -263,7 +263,7 @@
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag.rsi
     state: rubber
   result: MagazineCaselessRifleRubber
-  completetime: 65
+  completetime: 20
   materials:
     Plastic: 300
     Steel: 250
@@ -274,7 +274,7 @@
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_mag.rsi
     state: rubber
   result: MagazineLightRifleRubber
-  completetime: 65
+  completetime: 20
   materials:
     Plastic: 300
     Steel: 250
@@ -285,7 +285,7 @@
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/Rifle/rifle_mag.rsi
     state: rubber
   result: MagazineRifleRubber
-  completetime: 55
+  completetime: 20
   materials:
     Plastic: 250
     Steel: 225
@@ -296,7 +296,7 @@
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
     state: red
   result: MagazinePistol
-  completetime: 25
+  completetime: 10
   materials:
     Steel: 200
 
@@ -306,7 +306,7 @@
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/Magnum/magnum_mag.rsi
     state: red
   result: MagazineMagnum
-  completetime: 25
+  completetime: 10
   materials:
     Steel: 300
 
@@ -316,7 +316,7 @@
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag.rsi
     state: red
   result: MagazineCaselessRifle
-  completetime: 65
+  completetime: 20
   materials:
     Plastic: 300
     Steel: 250
@@ -327,7 +327,7 @@
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_mag.rsi
     state: red
   result: MagazineLightRifle
-  completetime: 65
+  completetime: 20
   materials:
     Steel: 1000
 
@@ -337,7 +337,7 @@
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/Rifle/rifle_mag.rsi
     state: red
   result: MagazineRifle
-  completetime: 55
+  completetime: 20
   materials:
     Plastic: 250
     Steel: 225
@@ -349,7 +349,7 @@
     sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
     state: icon
   result: WeaponRevolverInspector
-  completetime: 30
+  completetime: 15
   materials:
     Steel: 500
 
@@ -359,7 +359,7 @@
     sprite: Objects/Weapons/Guns/SMGs/wt550.rsi
     state: base
   result: WeaponSubMachineGunWt550
-  completetime: 75
+  completetime: 30
   materials:
     Plastic: 200
     Steel: 1000
@@ -370,7 +370,7 @@
     sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
     state: base
   result: WeaponRifleLecter
-  completetime: 90
+  completetime: 30
   materials:
     Plastic: 200
     Steel: 1300
@@ -381,7 +381,7 @@
     sprite: Objects/Weapons/Guns/Shotguns/db_shotgun.rsi
     state: icon
   result: WeaponShotgunDoubleBarreled
-  completetime: 60
+  completetime: 20
   materials:
     Wood: 500
     Steel: 500
@@ -392,7 +392,7 @@
     sprite: Objects/Weapons/Guns/Rifles/ak.rsi
     state: base
   result: WeaponRifleAk
-  completetime: 75
+  completetime: 30
   materials:
     Wood: 200
     Steel: 1000
@@ -403,7 +403,7 @@
     sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
     state: base
   result: WeaponPistolMk58
-  completetime: 30
+  completetime: 15
   materials:
     Steel: 500
 
@@ -413,7 +413,7 @@
     sprite: Objects/Weapons/Guns/SMGs/vector.rsi
     state: base
   result: WeaponSubMachineGunVector
-  completetime: 60
+  completetime: 30
   materials:
     Plastic: 200
     Steel: 800
@@ -425,7 +425,7 @@
     sprite: Objects/Weapons/Guns/Battery/disabler.rsi
     state: base
   result: WeaponDisabler
-  completetime: 35
+  completetime: 15
   materials:
     Glass: 300
     Steel: 300
@@ -436,7 +436,7 @@
     sprite: Objects/Weapons/Guns/Battery/practice_disabler.rsi
     state: base
   result: WeaponDisablerPractice
-  completetime: 25
+  completetime: 15
   materials:
     Glass: 200
     Steel: 200
@@ -447,9 +447,21 @@
     sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi
     state: base
   result: WeaponLaserCarbine
-  completetime: 90
+  completetime: 30
   materials:
     Glass: 500
     Plastic: 500
     Steel: 500
 
+- type: latheRecipe
+  id: WeaponAdvancedLaser
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
+    state: base
+  result: WeaponAdvancedLaser
+  completetime: 30
+  materials:
+    Glass: 500
+    Plastic: 500
+    Steel: 500
+    Uranium: 200
