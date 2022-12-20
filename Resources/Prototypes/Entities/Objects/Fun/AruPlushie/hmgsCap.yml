@@ -3,7 +3,7 @@
   name: MiniJoke
   id: WeaponMinigunJoke
   parent: ToyGunBase
-  description: Vzzzzzt! Rahrahrahrah! Vrrrrr! IT A JOKE, STOP
+  description: Vzzzzzt! Rahrahrahrah! Vrrrrr! IT'S A JOKE, STOP
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/HMGs/minigun.rsi
