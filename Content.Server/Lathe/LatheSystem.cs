@@ -301,7 +301,7 @@ namespace Content.Server.Lathe
                 return;
             if (!_accessReaderSystem.IsAllowed(player, uid))
             {
-                ConsolePopup(args.Session, Loc.GetString("lathe-production-not-allowed"));
+                ConsolePopup(args.Session, uid, Loc.GetString("lathe-production-not-allowed"));
                 PlayDenySound(uid, component);
                 return;
             }
@@ -317,9 +317,9 @@ namespace Content.Server.Lathe
             UpdateUserInterfaceState(uid, component);
         }
 
-        private void ConsolePopup(ICommonSession session, string text)
+        private void ConsolePopup(ICommonSession session, EntityUid uid, string text)
         {
-            _popup.PopupCursor(text, session);
+            _popup.PopupEntity(text, uid, session);
         }
 
         private void PlayDenySound(EntityUid uid, LatheComponent component)
