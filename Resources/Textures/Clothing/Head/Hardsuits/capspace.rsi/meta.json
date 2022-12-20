@@ -11,8 +11,15 @@
       "name": "icon"
     },
     {
-      "name": "equipped-HELMET",
+    "name": "icon-flash"
+    },
+    {
+      "name": "off-equipped-HELMET",
       "directions": 4
+    },
+    {
+        "name": "on-equipped-HELMET",
+        "directions": 4
     },
     {
       "name": "inhand-left",
@@ -21,9 +28,6 @@
     {
       "name": "inhand-right",
       "directions": 4
-    },
-    {
-        "name": "icon-flash"
     }
   ]
 }
