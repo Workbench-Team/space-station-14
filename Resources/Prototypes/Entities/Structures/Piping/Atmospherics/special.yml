@@ -11,6 +11,7 @@
     node: devicefantiny
   - type: Transform
     anchored: true
+  - type: Anchorable
   - type: Physics
     bodyType: Static
   - type: Sprite
