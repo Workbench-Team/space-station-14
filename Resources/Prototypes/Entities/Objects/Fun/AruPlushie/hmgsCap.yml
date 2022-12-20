@@ -21,7 +21,7 @@
       path: /Audio/Weapons/Guns/Gunshots/minigun.ogg
   - type: BallisticAmmoProvider
     proto: CartridgeCap
-    capacity: 1000
+    capacity: 500
   - type: MagazineVisuals
     magState: mag
     steps: 4
