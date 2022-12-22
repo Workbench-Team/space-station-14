@@ -103,6 +103,7 @@
       - id: OxygenTankFilled
       - id: NitrogenTankFilled
       - id: ClothingShoesBootsMag
+      - id: HoloprojectorEngineering
 
 - type: entity
   id: ClosetRadiationSuitFilled

@@ -345,6 +345,9 @@
   - AirAlarmElectronics
   - FireAlarmElectronics
   - MailingUnitElectronics
+  - Holoprojector
+  - HoloprojectorEngineering
+  - HoloprojectorSecurity
 
 - type: technology
   name: technologies-material-sheet-printing

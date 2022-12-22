@@ -11,12 +11,6 @@ namespace Content.Server.Holosign
         public string SignProto = "HolosignWetFloor";
 
         /// <summary>
-        /// How much charge a single use expends.
-        /// </summary>
-        [ViewVariables(VVAccess.ReadWrite), DataField("chargeUse")]
-        public float ChargeUse = 50f;
-
-        /// <summary>
         /// How much signs can be for one holoprojector.
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite), DataField("maxSigns")]

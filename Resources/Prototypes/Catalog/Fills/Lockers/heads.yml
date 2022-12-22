@@ -111,6 +111,8 @@
       - id: RubberStampCE
       - id: JetpackVoidFilled
       - id: ClothingHeadsetAltEngineering
+      - id: HolofanProjector
+      - id: HoloprojectorEngineering
 
 - type: entity
   id: LockerChiefMedicalOfficerFilled

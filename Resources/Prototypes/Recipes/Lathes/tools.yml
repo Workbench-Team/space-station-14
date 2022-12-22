@@ -178,6 +178,42 @@
     Steel: 50
 
 - type: latheRecipe
+  id: Holoprojector
+  icon:
+    sprite: Objects/Devices/Holoprojectors/custodial.rsi
+    state: icon
+  result: Holoprojector
+  completetime: 8
+  materials:
+    Steel: 300
+    Glass: 200
+    Plastic: 150
+
+- type: latheRecipe
+  id: HoloprojectorEngineering
+  icon:
+    sprite: Objects/Devices/Holoprojectors/engineer.rsi
+    state: icon
+  result: HoloprojectorEngineering
+  completetime: 8
+  materials:
+    Steel: 300
+    Glass: 200
+    Plastic: 150
+
+- type: latheRecipe
+  id: HoloprojectorSecurity
+  icon:
+    sprite: Objects/Devices/Holoprojectors/sec.rsi
+    state: icon
+  result: Holoprojector
+  completetime: 8
+  materials:
+    Steel: 300
+    Glass: 200
+    Plastic: 150
+
+- type: latheRecipe
   id: HolofanProjector
   icon:
     sprite: Objects/Devices/Holoprojectors/atmos.rsi
@@ -185,8 +221,8 @@
   result: HolofanProjector
   completetime: 8
   materials: # Inherited materials and time from PowerCellMedium recipe
-    Steel: 600
-    Glass: 350
+    Steel: 300
+    Glass: 200
     Plastic: 150
     Gold: 10
 

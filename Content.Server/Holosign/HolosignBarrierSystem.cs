@@ -14,27 +14,6 @@ namespace Content.Server.Holosign
         public override void Initialize()
         {
             base.Initialize();
-//            SubscribeLocalEvent<HolosignBarrierComponent, OnDestroyed>(OnDestroyed);
-        }
-/*
-        private void OnDestroyed(EntityUid uid, HolosignBarrierComponent component, DestructionEventArgs args)
-        {
-            RaiseLocalEvent(component.Parent, new HoloBarrierDestroyed(component.Parent, uid));
-        }
-*/
-    }
-
-/*
-    internal sealed class HoloBarrierDestroyed : EntityEventArgs
-    {
-     	public EntityUid Parent { get; }
-        public EntityUid Child { get; }
-
-        public WoundLickingEvent(EntityUid parent, EntityUid child)
-        {
-            Parent = parent;
-            Child = child;
         }
     }
-*/
 }

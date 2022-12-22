@@ -25,6 +25,7 @@
         - CigPack
         - Radio
         - HolofanProjector
+        - HolosignProjector
       components:
         - AirlockPainter
         - SignalLinker
@@ -89,6 +90,7 @@
         - CigPack
         - Radio
         - HolofanProjector
+        - HolosignProjector
       components:
         - AirlockPainter
         - SignalLinker
@@ -150,6 +152,7 @@
       tags:
         - CigPack
         - Taser
+        - HolosignProjector
       components:
         - Stunbaton
         - FlashOnTrigger
@@ -343,6 +346,7 @@
         - Taser
         - SecBeltEquip
         - Radio
+        - HolosignProjector
       components:
         - Stunbaton
         - FlashOnTrigger

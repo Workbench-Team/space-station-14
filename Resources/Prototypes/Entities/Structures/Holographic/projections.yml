@@ -14,7 +14,6 @@
     sprite: Structures/Holo/wetfloor.rsi
     state: icon
     netsync: false
-  - type: HolosignBarrier
 
 - type: entity
   id: HoloFan
@@ -33,6 +32,8 @@
           bounds: "-0.5,-0.5,0.5,0.5"
   - type: Airtight
     noAirWhenFullyAirBlocked: false
+  - type: RadiationBlocker
+    resistance: 100
 
 - type: entity
   id: HoloFanTram
@@ -75,7 +76,6 @@
     - type: SlowContacts
       walkSpeedModifier: 1
       sprintSpeedModifier: 0.0
-    - type: HolosignBarrier
 
 - type: entity
   id: HolosignSecurity
@@ -88,19 +88,26 @@
     state: icon
     netsync: false
 
-- type: entity
-  id: HolosignMedical
-  parent: HolosignWetFloor
-  name: improper PENLITE holobarrier
-  description: A holobarrier that uses biometrics to detect human viruses. Denies passing to personnel with easily-detected, malicious viruses. Good for quarantines.
-  components:
-  - type: Sprite
-    sprite: Structures/Holo/penlite.rsi
-    state: icon
-    netsync: false
-  - type: Fixtures
-    fixtures:
-    - shape:
-        !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,0.5"
-  - type: HolosignBarrier
+#- type: entity
+#  id: HolosignMedical
+#  name: improper PENLITE holobarrier
+#  description: A holobarrier that uses biometrics to detect human viruses. Denies passing to personnel with easily-detected, malicious viruses. Good for quarantines.
+#  components:
+#    - type: Sprite
+#      sprite: Structures/Holo/penlite.rsi
+#      state: icon
+#      drawdepth: Overdoors
+#      netsync: false
+#    - type: Transform
+#      anchored: true
+#    - type: Physics
+#      bodyType: Static
+#    - type: Fixtures
+#      fixtures:
+#        shape:
+#          !type:PhysShapeAabb
+#          bounds: "-0.5,-0.5,0.5,0.5"
+#        layer:
+#        - WallLayer
+#    - type: AtmosExposed
+#    - type: HolosignBarrierMedical

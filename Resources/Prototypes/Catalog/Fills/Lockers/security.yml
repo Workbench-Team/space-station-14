@@ -20,6 +20,7 @@
       - id: ClothingOuterWinterWarden
       - id: RubberStampWarden
       - id: DoorRemoteArmory
+      - id: HoloprojectorSecurity
 
 - type: entity
   id: LockerSecurityFilled
@@ -41,6 +42,7 @@
       - id: ClothingHeadsetSecurity
       - id: ClothingHandsGlovesColorBlack
       - id: ClothingShoesBootsJack
+      - id: HoloprojectorSecurity
 
 - type: entity
   id: LockerDetectiveFilled

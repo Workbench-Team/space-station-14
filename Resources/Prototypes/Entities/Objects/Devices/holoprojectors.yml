@@ -8,16 +8,6 @@
   - type: ItemCooldown
   - type: UseDelay
     delay: 1.0
-  - type: ContainerContainer
-    containers:
-      cell_slot: !type:ContainerSlot {}
-  - type: PowerCellSlot
-    cellSlotId: cell_slot
-  - type: ItemSlots
-    slots:
-      cell_slot:
-        name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellMedium
   - type: Sprite
     sprite: Objects/Devices/Holoprojectors/custodial.rsi
     state: icon
@@ -34,7 +24,6 @@
   components:
   - type: HolosignProjector
     signProto: HoloFan
-    chargeUse: 120
     maxSigns: 6
   - type: Sprite
     sprite: Objects/Devices/Holoprojectors/atmos.rsi
@@ -54,7 +43,6 @@
   components:
   - type: HolosignProjector
     signProto: HolosignEngineering
-    chargeUse: 120
     maxSigns: 6
   - type: Sprite
     sprite: Objects/Devices/Holoprojectors/engineer.rsi
@@ -74,7 +62,6 @@
   components:
   - type: HolosignProjector
     signProto: HolosignSecurity
-    chargeUse: 120
     maxSigns: 6
   - type: Sprite
     sprite: Objects/Devices/Holoprojectors/sec.rsi
@@ -86,22 +73,21 @@
   - type: StaticPrice
     price: 80
 
-- type: entity
-  parent: Holoprojector
-  id: HoloprojectorMedical
-  name: improper PENLITE barrier projector
-  description: A holographic projector that creates PENLITE holobarriers. Useful during quarantines since they halt those with malicious diseases.
-  components:
-  - type: HolosignProjector
-    signProto: HolosignMedical
-    chargeUse: 120
-    maxSigns: 3
-  - type: Sprite
-    sprite: Objects/Devices/Holoprojectors/med.rsi
-    state: icon
-    netsync: false
-  - type: Tag
-    tags:
-      - HolosignProjector
-  - type: StaticPrice
-    price: 80
+#- type: entity
+#  parent: Holoprojector
+#  id: HoloprojectorMedical
+#  name: improper PENLITE barrier projector
+#  description: A holographic projector that creates PENLITE holobarriers. Useful during quarantines since they halt those with malicious diseases.
+#  components:
+#  - type: HolosignProjector
+#    signProto: HolosignMedical
+#    maxSigns: 3
+#  - type: Sprite
+#    sprite: Objects/Devices/Holoprojectors/med.rsi
+#    state: icon
+#    netsync: false
+#  - type: Tag
+#    tags:
+#      - HolosignProjector
+#  - type: StaticPrice
+#    price: 80
