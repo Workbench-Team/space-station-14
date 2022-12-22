@@ -1,0 +1,33 @@
+
+- type: entity
+  name: MiniJoke
+  id: WeaponMinigunJoke
+  parent: ToyGunBase
+  description: Vzzzzzt! Rahrahrahrah! Vrrrrr! IT'S A JOKE, STOP
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/HMGs/minigun.rsi
+    layers:
+    - state: icon
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    sprite: Objects/Weapons/Guns/HMGs/minigun.rsi
+  - type: Gun
+    fireRate: 15
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/minigun.ogg
+  - type: BallisticAmmoProvider
+    proto: CartridgeCap
+    capacity: 500
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []

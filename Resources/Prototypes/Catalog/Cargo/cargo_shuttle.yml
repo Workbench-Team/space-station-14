@@ -18,6 +18,17 @@
   category: Shuttle
   group: market
 
+
+- type: cargoProduct
+  id: ShuttleGravityGenerator
+  icon:
+    sprite: Structures/Machines/gravity_generator_mini.rsi
+    state: on
+  product: GravityGeneratorMini
+  cost: 3000
+  category: Shuttle
+  group: market
+
 # - type: cargoProduct
   # id: ShuttlePowerKit
   # icon:

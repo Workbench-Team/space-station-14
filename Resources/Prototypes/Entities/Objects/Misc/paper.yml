@@ -449,3 +449,14 @@
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
     state: stamp-ce
+- type: entity
+  name: law office's rubber stamp
+  parent: RubberStampMime
+  id: RubberStampIAA
+  components:
+    - type: Stamp
+      stampedName: stamp-component-stamped-name-iaa
+      stampState: "paper_stamp-iaa"
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      state: stamp-iaa

@@ -1,0 +1,20 @@
+- type: entity
+  parent: BaseItem
+  id: PortalRadio
+  name: Aperture radio
+  description: It plays only 85.2 FM. So nice music.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/portal_radio.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Fun/portal_radio.rsi
+  - type: AmbientSound
+    enabled: true
+    volume: -6
+    range: 4
+    sound:
+      path: /Audio/Items/85.2_fm.ogg
+  - type: PointLight
+    radius: 1.3
+    color: "#0E8489"

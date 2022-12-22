@@ -511,6 +511,10 @@ namespace Content.Shared.CCVar
 
         public static readonly CVarDef<bool> AdminSoundsEnabled =
             CVarDef.Create("audio.admin_sounds_enabled", true, CVar.ARCHIVE | CVar.CLIENTONLY);
+        public static readonly CVarDef<string> AdminChatSoundPath =
+            CVarDef.Create("audio.admin_chat_sound_path", "/Audio/Items/pop.ogg", CVar.ARCHIVE | CVar.CLIENT | CVar.REPLICATED);
+        public static readonly CVarDef<float> AdminChatSoundVolume =
+            CVarDef.Create("audio.admin_chat_sound_volume", -5f, CVar.ARCHIVE | CVar.CLIENT | CVar.REPLICATED);
 
         /*
          * HUD
@@ -911,12 +915,11 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<bool> VoteEnabled =
             CVarDef.Create("vote.enabled", true, CVar.SERVERONLY);
 
-        // TODO HUD REFACTOR REENABLE
         /// <summary>
         ///     See vote.enabled, but specific to restart votes
         /// </summary>
         public static readonly CVarDef<bool> VoteRestartEnabled =
-            CVarDef.Create("vote.restart_enabled", false, CVar.SERVERONLY);
+            CVarDef.Create("vote.restart_enabled", true, CVar.SERVERONLY);
 
         /// <summary>
         ///     See vote.enabled, but specific to preset votes
@@ -1403,23 +1406,29 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<string> InfoLinksBugReport =
             CVarDef.Create("infolinks.bug_report", "", CVar.SERVER | CVar.REPLICATED);
 
-       /// <summary>
-       /// Link to wiki page with roles description in Rules menu.
-       /// </summary>
-       public static readonly CVarDef<string> InfoLinksRoles =
+        /// <summary>
+        /// Link to wiki page with roles description in Rules menu.
+        /// </summary>
+        public static readonly CVarDef<string> InfoLinksRoles =
             CVarDef.Create("infolinks.roles", "", CVar.SERVER | CVar.REPLICATED);
 
-       /// <summary>
-       /// Link to wiki page with space laws in Rules menu.
-       /// </summary>
-       public static readonly CVarDef<string> InfoLinksLaws =
+        /// <summary>
+        /// Link to wiki page with space laws in Rules menu.
+        /// </summary>
+        public static readonly CVarDef<string> InfoLinksLaws =
             CVarDef.Create("infolinks.laws", "", CVar.SERVER | CVar.REPLICATED);
 
-       /// <summary>
-       /// Link to Boosty.
-       /// </summary>
-       public static readonly CVarDef<string> InfoLinksBoosty =
+        /// <summary>
+        /// Link to Boosty.
+        /// </summary>
+        public static readonly CVarDef<string> InfoLinksBoosty =
             CVarDef.Create("infolinks.boosty", "", CVar.SERVER | CVar.REPLICATED);
+
+        /// <summary>
+        /// Link to Donation shop.
+        /// </summary>
+        public static readonly CVarDef<string> InfoLinksShop =
+            CVarDef.Create("infolinks.shop", "", CVar.SERVER | CVar.REPLICATED);
         /*
          * CONFIG
          */

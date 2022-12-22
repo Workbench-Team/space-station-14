@@ -1,0 +1,29 @@
+- type: entity
+  parent: BaseItem
+  id: ToyPadoru
+  name: Padoru Padoru
+  description: UMU!
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/toy_padoru.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Fun/toy_padoru.rsi
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Items/Toys/padoru.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/padoru.ogg
+  - type: ItemCooldown
+  - type: UseDelay
+    delay: 15.0
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Items/Toys/padoru.ogg
+    damage:
+      types:
+        Blunt: 0

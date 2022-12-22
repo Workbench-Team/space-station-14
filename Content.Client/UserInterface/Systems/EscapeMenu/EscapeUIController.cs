@@ -103,6 +103,11 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
             _uri.OpenUri(_cfg.GetCVar(CCVars.InfoLinksBoosty));
         };
 
+        _escapeWindow.ShopButton.OnPressed += _ =>
+        {
+            _uri.OpenUri(_cfg.GetCVar(CCVars.InfoLinksShop));
+        };
+
         _escapeWindow.WikiButton.OnPressed += _ =>
         {
             _uri.OpenUri(_cfg.GetCVar(CCVars.InfoLinksWiki));

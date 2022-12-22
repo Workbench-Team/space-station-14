@@ -131,7 +131,7 @@ public sealed class AFKSystem : EntitySystem
                 if(((_timing.CurTime - startAfkTime >= TimeSpan.FromSeconds(_kickDelay - 60) && !isAdmin) ||
                     (_timing.CurTime - startAfkTime >= TimeSpan.FromSeconds(_kickAdminDelay - 60) && isAdmin)))
                 {
-                    _euiManager.OpenEui(new AfkCheckEui(pSession), pSession);
+                    _euiManager.OpenEui(new AfkCheckEui(pSession, _afkManager), pSession);
                 }
             }
         }

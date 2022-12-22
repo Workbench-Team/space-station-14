@@ -94,13 +94,13 @@ public sealed class GatherableSystem : EntitySystem
         tool.GatheringEntities.Remove(ev.Resource);
     }
 
-    private sealed class GatheringDoafterCancel : EntityEventArgs
+    public sealed class GatheringDoafterCancel : EntityEventArgs
     {
         public EntityUid Tool;
         public EntityUid Resource;
     }
 
-    private sealed class GatheringDoafterSuccess : EntityEventArgs
+    public sealed class GatheringDoafterSuccess : EntityEventArgs
     {
         public EntityUid Tool;
         public EntityUid Resource;

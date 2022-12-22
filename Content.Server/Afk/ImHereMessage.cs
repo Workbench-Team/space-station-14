@@ -8,12 +8,13 @@ namespace Content.Server.Afk
 {
     public sealed class AfkCheckEui : BaseEui
     {
-        [Dependency] private readonly IAfkManager _afkManager = default!;
+        private readonly IAfkManager _afkManager;
         private readonly IPlayerSession _player;
 
-        public AfkCheckEui(IPlayerSession player)
+        public AfkCheckEui(IPlayerSession player, IAfkManager afkmanager)
         {
             _player = player;
+            _afkManager = afkmanager;
         }
 
         public override void HandleMessage(EuiMessageBase msg)

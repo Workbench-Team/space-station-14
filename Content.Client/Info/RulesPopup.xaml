@@ -9,6 +9,7 @@
         <PanelContainer StyleClasses="windowPanel" />
         <ScrollContainer HScrollEnabled="False">
             <BoxContainer Orientation="Vertical" SeparationOverride="10">
+                <info:RulesLinksSection />
                 <info:RulesControl />
                 <Label Name="WaitLabel" />
                 <BoxContainer Orientation="Horizontal">

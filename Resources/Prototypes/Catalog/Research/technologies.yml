@@ -295,8 +295,8 @@
   unlockedRecipes:
   - ShuttleConsoleCircuitboard
   - RadarConsoleCircuitboard
-#TODO- Gyroscope
-#TODO- Thruster
+  - ThrusterMachineCircuitboard
+  - GyroscopeMachineCircuitboard
 
 - type: technology
   name: technologies-ripley-technology
@@ -312,6 +312,7 @@
   - RipleyCentralElectronics
   - RipleyPeripheralsElectronics
   - MechEquipmentGrabber
+  - MechEquipmentDrill
   - RipleyHarness
   - RipleyLArm
   - RipleyRArm
@@ -396,8 +397,7 @@
   - ElectromagneticTheory
   - IndustrialEngineering
   unlockedRecipes:
-  - RCD
-  - RCDAmmo
+  - PowerDrill
   - SMESMachineCircuitboard
   - PowerComputerCircuitboard
   - GeneratorPlasmaMachineCircuitboard
@@ -428,10 +428,12 @@
   icon:
     sprite: Objects/Specific/Research/rped.rsi
     state: icon
-  requiredPoints: 7500
+  requiredPoints: 10000
   requiredTechnologies:
   - ElectricalEngineering
   unlockedRecipes:
+  - RCD
+  - RCDAmmo
   - RPED
 
 - type: technology
@@ -517,11 +519,13 @@
   requiredTechnologies:
   - BasicResearch
   unlockedRecipes:
+  - TechDiskComputerCircuitboard
   - CapacitorStockPart
   - MatterBinStockPart
   - MicroLaserStockPart
   - MicroManipulatorStockPart
   - ScanningModuleStockPart
+  - NodeScanner
 
 - type: technology
   name: technologies-robotics-technology
