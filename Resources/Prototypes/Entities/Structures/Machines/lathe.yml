@@ -231,6 +231,9 @@
       - RPED
       - NodeScanner
       - HolofanProjector
+      - Holoprojector
+      - HoloprojectorEngineering
+      - HoloprojectorSecurity
 
 - type: entity
   parent: Protolathe
