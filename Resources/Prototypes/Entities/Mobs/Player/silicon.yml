@@ -70,6 +70,7 @@
   parent: PlayerSiliconBase
   components:
   - type: Drone
+    interactionBlockRange : 0.01
   - type: InnateTool
     tools:
       - id: ClothingBackpackSatchelDrone
