@@ -53,6 +53,7 @@
     uiKey: enum.PDAUiKey.Key
     preinstalled:
       - NotekeeperCartridge
+      - CorporateLawCartridge
     cartridgeSlot:
       priority: -1
       name: Cartridge

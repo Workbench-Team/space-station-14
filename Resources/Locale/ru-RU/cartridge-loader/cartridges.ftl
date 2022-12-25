@@ -1,5 +1,6 @@
 default-program-name = Программа
 notekeeper-program-name = Блокнот
+corporatelaw-program-name = Корп. Закон
 net-probe-program-name = Сетевой зонд
 net-probe-scan = Сканировано устройство { $device }!
 net-probe-label-name = Имя

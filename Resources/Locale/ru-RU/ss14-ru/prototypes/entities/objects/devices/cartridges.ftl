@@ -4,3 +4,6 @@ ent-NotekeeperCartridge = картридж Блокнот
 ent-NetProbeCartridge = картридж Сетевой зонд
     .desc = Программа для получения адресов и частот сетевых устройств
     .suffix = { "" }
+ent-CorporateLawCartridge = картридж Корп. Закон
+    .desc = Программа для просмотра корпоративного закона
+    .suffix = { "" }
