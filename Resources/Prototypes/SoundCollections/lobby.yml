@@ -1,6 +1,7 @@
 - type: soundCollection
   id: LobbyMusic
   files:
+    - /Audio/Lobby/we_will_fly.ogg
     - /Audio/Lobby/space_asshole.ogg
     - /Audio/Lobby/atomicamnesiammx.ogg
     - /Audio/Lobby/lasers_rip_apart_the_bulkhead.ogg
