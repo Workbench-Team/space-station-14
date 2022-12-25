@@ -11,8 +11,13 @@
         doAfter: 1
 
     - to: devicefantiny
+      completed:
+      - !type:SnapToGrid { }
       steps:
       - material: Steel
+        amount: 1
+        doAfter: 1
+      - material: Plastic
         amount: 1
         doAfter: 1
 
@@ -61,7 +66,10 @@
         anchored: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
+        prototype: SheetSteel
+        amount: 1
+      - !type:SpawnPrototype
+        prototype: SheetPlastic
         amount: 1
       - !type:DeleteEntity
       steps:
