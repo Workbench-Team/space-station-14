@@ -223,7 +223,7 @@
 
 - type: entity
   noSpawn: true
-  parent: ClothingBackpack
+  parent: ClothingBackpackIAA
   id: ClothingBackpackIAAFilled
   components:
     - type: StorageFill

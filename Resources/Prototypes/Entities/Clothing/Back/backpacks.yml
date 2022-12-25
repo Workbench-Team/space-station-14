@@ -92,6 +92,15 @@
 
 - type: entity
   parent: ClothingBackpack
+  id: ClothingBackpackIAA
+  name: agent backpack
+  description: It's a backpack made for the IAA
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/iaa.rsi
+
+- type: entity
+  parent: ClothingBackpack
   id: ClothingBackpackHydroponics
   name: botany backpack
   description: It's a backpack made of all-natural fibers.
