@@ -1,6 +1,9 @@
 ent-ClothingBackpack = рюкзак
     .desc = Вы носите это на спине и кладете в него предметы.
     .suffix = { "" }
+ent-ClothingBackpackIAA = кожанный рюкзак АВД
+    .desc = Это кожанный рюкзак сшитый LV специально по заказу НТ
+    .suffix = { "" }
 ent-ClothingBackpackClown = хихишкин фон хонкертон
     .desc = Это рюкзак, изготовленный компанией «Honk! Co».
     .suffix = { "" }
