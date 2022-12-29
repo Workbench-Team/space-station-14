@@ -22,6 +22,7 @@
     sprite: Structures/Holo/wetfloor.rsi
     state: icon
     netsync: false
+  - type: Clickable
   - type: Damageable
     damageModifierSet: Holosign
   - type: Destructible
