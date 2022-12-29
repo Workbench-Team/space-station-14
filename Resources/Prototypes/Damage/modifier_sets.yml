@@ -307,3 +307,27 @@
     Heat: .6
   flatReductions:
     Heat: 1
+
+- type: damageModifierSet
+  id: Holosign
+  coefficients:
+    Blunt: 1
+    Slash: 1
+    Piercing: 1
+    Shock: 0
+    Cold: 1
+    Heat: 1
+    Poison: 0.0
+    Radiation: 0.0
+
+- type: damageModifierSet
+  id: HolosignAtmos
+  coefficients:
+    Blunt: 1
+    Slash: 1
+    Piercing: 1
+    Shock: 0
+    Cold: 0
+    Heat: 0
+    Poison: 0.0
+    Radiation: 0.0

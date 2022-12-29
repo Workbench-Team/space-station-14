@@ -10,10 +10,28 @@
   - type: Physics
     bodyType: Static
     canCollide: false
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path:
+          "/Audio/Weapons/egloves.ogg"
+      Burn:
+        path:
+          "/Audio/Weapons/egloves.ogg"
   - type: Sprite
     sprite: Structures/Holo/wetfloor.rsi
     state: icon
     netsync: false
+  - type: Damageable
+    damageModifierSet: Holosign
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
 
 - type: entity
   id: HoloFan
@@ -32,8 +50,19 @@
           bounds: "-0.5,-0.5,0.5,0.5"
   - type: Airtight
     noAirWhenFullyAirBlocked: false
+  - type: Clickable
+  - type: Damageable
+    damageModifierSet: HolosignAtmos
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
   - type: RadiationBlocker
-    resistance: 100
+    resistance: 1000
 
 - type: entity
   id: HoloFanTram
@@ -55,6 +84,14 @@
     snap:
       - Wall
   components:
+    - type: MeleeSound
+      soundGroups:
+        Brute:
+          path:
+            "/Audio/Weapons/egloves.ogg"
+        Burn:
+          path:
+            "/Audio/Weapons/egloves.ogg"
     - type: Sprite
       sprite: Structures/Holo/engi.rsi
       state: icon
@@ -76,6 +113,17 @@
     - type: SlowContacts
       walkSpeedModifier: 1
       sprintSpeedModifier: 0.0
+    - type: Clickable
+    - type: Damageable
+      damageModifierSet: Holosign
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 50
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
 
 - type: entity
   id: HolosignSecurity
