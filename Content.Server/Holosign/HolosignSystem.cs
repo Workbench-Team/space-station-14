@@ -44,7 +44,7 @@ namespace Content.Server.Holosign
             }
 
             // Not a holosign or holosign what put on map by mapper.
-            if((args.Target == null) || !EntityManager.TryGetComponent(args.Target.Value, out HolosignProjectorComponent? holoprojector))
+            if((args.Target == null) || !EntityManager.TryGetComponent(args.Target.Value, out HolosignBarrierComponent? holosigncomponent))
             {
                 return;
             }
