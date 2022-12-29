@@ -69,7 +69,7 @@ namespace Content.Server.Holosign
 
             if(component.Childs.Count >= component.MaxSigns)
             {
-                _popupSystem.PopupEntity(Loc.GetString("holoprojector-component-limit"), args.User, args.User);
+                _popupSystem.PopupEntity(Loc.GetString("holoprojector-component-holosigns-limit"), args.User, args.User);
             }
             else
             {
@@ -124,7 +124,7 @@ namespace Content.Server.Holosign
                 Verb clear = new ()
                 {
              	    Act = () => ClearHolosignsVerb(uid, component, args.User),
-                    Text = Loc.GetString("holoprojector-verb-clear"),
+                    Text = Loc.GetString("holoprojector-component-verb-clear"),
                     IconTexture =  "/Textures/Interface/VerbIcons/rotate_cw.svg.192dpi.png",
                     Priority = 1,
                     CloseMenu = true, // allow for easy double rotations.
