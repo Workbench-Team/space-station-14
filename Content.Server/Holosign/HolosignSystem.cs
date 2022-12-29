@@ -43,14 +43,19 @@ namespace Content.Server.Holosign
                 return;
             }
 
-            if(!component.Childs.Contains(args.Target))
+            if(args.Target == null)
+            {
+                return;
+            }
+
+            if(!component.Childs.Contains(args.Target.Value))
             {
                 _popupSystem.PopupEntity(Loc.GetString("holoprojector-component-player-not-a-child"), args.User, args.User);
                 return;
             }
 
             // Would be fun see removing holoprojection without holosign component.
-            _entManager.DeleteEntity(args.Target);
+            _entManager.DeleteEntity(args.Target.Value);
             _popupSystem.PopupEntity(Loc.GetString("holoprojector-component-holosign-removed"), args.User, args.User);
 
             args.Handled = true;
