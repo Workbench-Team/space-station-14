@@ -75,7 +75,7 @@ namespace Content.Server.Holosign
             {
                 var holo = EntityManager.SpawnEntity(component.SignProto, Transform(args.User).Coordinates.SnapToGrid(EntityManager));
                 var holosigncomp = _entManager.AddComponent<HolosignBarrierComponent>(holo);
-                holosigncomp.Parent = uid;
+                holosigncomp.Holoprojector = uid;
                 component.Childs.Add(holo);
             }
 
@@ -135,11 +135,11 @@ namespace Content.Server.Holosign
 
         private void OnChildRemove(EntityUid uid, HolosignBarrierComponent component, ComponentRemove args)
         {
-            if(!_entManager.EntityExists(component.Parent))
+            if(!_entManager.EntityExists(component.Holoprojector))
                 return;
 
             // Holoprojector without Holoprojector component. BRUH
-            if(EntityManager.TryGetComponent(component.Parent, out HolosignProjectorComponent? holoprojector))
+            if(EntityManager.TryGetComponent(component.Holoprojector, out HolosignProjectorComponent? holoprojector))
             {
                 holoprojector.Childs.Remove(uid);
             }
@@ -147,11 +147,11 @@ namespace Content.Server.Holosign
 
         private void OnChildDestroyed(EntityUid uid, HolosignBarrierComponent component, DestructionEventArgs args)
         {
-            if(!_entManager.EntityExists(component.Parent))
+            if(!_entManager.EntityExists(component.Holoprojector))
                 return;
 
             // Holoprojector without Holoprojector component. BRUH
-            if(EntityManager.TryGetComponent(component.Parent, out HolosignProjectorComponent? holoprojector))
+            if(EntityManager.TryGetComponent(component.Holoprojector, out HolosignProjectorComponent? holoprojector))
             {
                 holoprojector.Childs.Remove(uid);
             }

@@ -10,6 +10,6 @@ namespace Content.Server.Holosign
         /// Solution to notify Holoprojector about holobarrier remove.
         /// </summary>
         [ViewVariables]
-        public EntityUid Parent = new();
+        public EntityUid Holoprojector = new();
     }
 }
