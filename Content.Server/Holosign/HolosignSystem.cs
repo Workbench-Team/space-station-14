@@ -7,6 +7,8 @@ using Content.Shared.Destructible;
 using Content.Server.Power.Components;
 using Content.Server.PowerCell;
 using Content.Shared.PowerCell.Components;
+using Content.Shared.Interaction;
+using Content.Shared.Interaction.Events;
 using Robust.Shared.Timing;
 using Content.Shared.Verbs;
 using Robust.Shared.Prototypes;
