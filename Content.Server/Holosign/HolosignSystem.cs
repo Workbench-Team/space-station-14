@@ -39,19 +39,19 @@ namespace Content.Server.Holosign
         {
             if (!args.CanReach)
             {
-                _popup.PopupEntity(Loc.GetString("gas-analyzer-component-player-cannot-reach-message"), args.User, args.User);
+                _popupSystem.PopupEntity(Loc.GetString("gas-analyzer-component-player-cannot-reach-message"), args.User, args.User);
                 return;
             }
 
             if(!component.Childs.Contains(args.Target))
             {
-                _popup.PopupEntity(Loc.GetString("holoprojector-component-player-not-a-child"), args.User, args.User);
+                _popupSystem.PopupEntity(Loc.GetString("holoprojector-component-player-not-a-child"), args.User, args.User);
                 return;
             }
 
             // Would be fun see removing holoprojection without holosign component.
             _entManager.DeleteEntity(args.Target);
-            _popupSystem.PopupEntity(Loc.GetString("holoprojector-component-holosign-removed"), player, player);
+            _popupSystem.PopupEntity(Loc.GetString("holoprojector-component-holosign-removed"), args.User, args.User);
 
             args.Handled = true;
         }
