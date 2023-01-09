@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseItem
-  id: toyShlepa
+  id: ToyShlepa
   name: Shlepa the cat
   description: He loves dumplings so much
   components:

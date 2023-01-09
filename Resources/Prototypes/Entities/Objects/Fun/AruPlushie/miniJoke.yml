@@ -1,6 +1,6 @@
 - type: entity
   id: CartridgeCapCaseless
-  name: cap gun cartridge
+  name: Cap gun cartridge(Caseless)
   parent: BaseCartridgeCap
   components:
   - type: CartridgeAmmo

@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseItem
-  id: toyDumpling
+  id: ToyDumpling
   name: Dumpling the king
   description: So much meat
   components:
