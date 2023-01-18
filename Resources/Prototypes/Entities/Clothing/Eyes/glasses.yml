@@ -77,6 +77,18 @@
 
 - type: entity
   parent: ClothingEyesBase
+  id: ClothingEyesGlassesScience
+  name: science goggles
+  description: These glasses scan the contents of chemical containers and projects their contents to the user in an easy to read format.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/science.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/science.rsi
+  - type: ScienceGoggles
+
+- type: entity
+  parent: ClothingEyesBase
   id: ClothingEyesGlasses
   name: glasses
   description: A pair of spectacular spectacles with prescription lenses.
