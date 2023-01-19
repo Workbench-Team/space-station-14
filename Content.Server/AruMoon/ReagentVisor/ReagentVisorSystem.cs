@@ -7,7 +7,7 @@ using Content.Shared.Inventory;
 namespace Content.Server.ReagentVisor
 {
     /// <summary>
-    /// ""
+    /// "Allows item or entity to see list of reagents in chemical containers"
     /// </summary>
     public sealed class ReagentVisorSystem : EntitySystem
     {
