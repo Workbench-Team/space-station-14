@@ -188,6 +188,7 @@
       - Beaker
       - LargeBeaker
       - CryostasisBeaker
+      - ClothingEyesGlassesScience
       - Dropper
       - Syringe
       - MiningDrill
@@ -550,6 +551,7 @@
       - Beaker
       - LargeBeaker
       - CryostasisBeaker
+      - ClothingEyesGlassesScience
       - Dropper
       - Syringe
       - Implanter

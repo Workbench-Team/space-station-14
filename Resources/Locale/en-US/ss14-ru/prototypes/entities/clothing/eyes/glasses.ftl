@@ -25,3 +25,6 @@ ent-ClothingEyesGlassesSecurity = security sunglasses
 ent-ClothingEyesGlassesThermal = optical thermal scanner
     .desc = Thermals in the shape of glasses.
     .suffix = { "" }
+ent-ClothingEyesGlassesScience = science goggles
+    .desc = These glasses scan the contents of chemical containers and projects their contents to the user in an easy to read format.
+    .suffix = { "" }

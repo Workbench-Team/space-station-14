@@ -10,6 +10,7 @@ using Content.Shared.FixedPoint;
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using static Content.Server.ReagentVisor.ReagentVisorSystem;
 
 namespace Content.Server.Chemistry.EntitySystems;
 
@@ -91,6 +92,9 @@ public sealed partial class SolutionContainerSystem : EntitySystem
                 ? "shared-solution-container-component-on-examine-worded-amount-one-reagent"
                 : "shared-solution-container-component-on-examine-worded-amount-multiple-reagents")),
             ("desc", proto.LocalizedPhysicalDescription)));
+        
+        var attempt = new ReagentVisorAttemptEvent(solutionHolder, args);
+        RaiseLocalEvent(args.Examiner, attempt);
     }
 
     public void UpdateAppearance(EntityUid uid, Solution solution,

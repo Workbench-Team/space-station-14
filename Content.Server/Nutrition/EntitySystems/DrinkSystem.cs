@@ -82,7 +82,7 @@ namespace Content.Server.Nutrition.EntitySystems
             args.Message.AddMarkup($"\n{Loc.GetString("drink-component-on-examine-details-text", ("colorName", color), ("text", openedText))}");
             if (!IsEmpty(uid, component))
             {
-                if (TryComp<ExaminableSolutionComponent>(component.Owner, out var comp))
+                if (TryComp<ExaminableSolutionComponent>(component.Owner, out var comp) && comp.AllowShowQuantity)
                 {
                     //provide exact measurement for beakers
                     args.Message.AddMarkup($" - {Loc.GetString("drink-component-on-examine-exact-volume", ("amount", _solutionContainerSystem.DrainAvailable(uid)))}");

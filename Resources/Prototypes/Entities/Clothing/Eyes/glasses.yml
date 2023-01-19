@@ -8,6 +8,7 @@
     sprite: Clothing/Eyes/Glasses/beergoggles.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/beergoggles.rsi
+  - type: ReagentVisor
 
 - type: entity
   parent: ClothingEyesBase
@@ -85,7 +86,7 @@
     sprite: Clothing/Eyes/Glasses/science.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/science.rsi
-  - type: ScienceGoggles
+  - type: ReagentVisor
 
 - type: entity
   parent: ClothingEyesBase

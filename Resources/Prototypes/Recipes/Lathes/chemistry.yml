@@ -21,6 +21,14 @@
     Plastic: 50
 
 - type: latheRecipe
+  id: ClothingEyesGlassesScience
+  result: ClothingEyesGlassesScience
+  completetime: 2
+  materials:
+    Glass: 250
+    Steel: 250
+
+- type: latheRecipe
   id: Dropper
   result: Dropper
   completetime: 2

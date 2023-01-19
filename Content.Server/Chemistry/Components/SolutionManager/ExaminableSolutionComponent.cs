@@ -6,5 +6,9 @@
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("solution")]
         public string Solution { get; set; } = "default";
+
+        [ViewVariables(VVAccess.ReadWrite)]
+        [DataField("allowShowQuantity")]
+        public bool AllowShowQuantity { get; set; } = true;
     }
 }

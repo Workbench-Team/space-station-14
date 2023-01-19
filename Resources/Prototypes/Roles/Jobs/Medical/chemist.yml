@@ -27,6 +27,8 @@
     belt: ClothingBeltMedical
     pocket1: HandLabeler
     # the purple glasses?
+    # here - csqrb
+    eyes: ClothingEyesGlassesScience
   innerclothingskirt: ClothingUniformJumpskirtChemistry
   satchel: ClothingBackpackSatchelChemistryFilled
   duffelbag: ClothingBackpackDuffelChemistryFilled

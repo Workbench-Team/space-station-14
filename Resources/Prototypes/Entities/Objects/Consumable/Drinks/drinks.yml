@@ -36,6 +36,9 @@
   components:
   - type: Drink
     isOpen: true
+  - type: ExaminableSolution
+    solution: drink
+    allowShowQuantity: false
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Glass
