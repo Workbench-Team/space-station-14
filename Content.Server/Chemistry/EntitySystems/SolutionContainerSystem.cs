@@ -93,8 +93,10 @@ public sealed partial class SolutionContainerSystem : EntitySystem
                 : "shared-solution-container-component-on-examine-worded-amount-multiple-reagents")),
             ("desc", proto.LocalizedPhysicalDescription)));
         
-        var attempt = new ReagentVisorAttemptEvent(solutionHolder, args);
-        RaiseLocalEvent(args.Examiner, attempt);
+        // ReagentVisor Behaviour
+        var ev = new ReagentVisorAttemptEvent(solutionHolder);
+        RaiseLocalEvent(args.Examiner, ev);
+        if (ev.Handled && ev.Text != null) args.PushMarkup(ev.Text);
     }
 
     public void UpdateAppearance(EntityUid uid, Solution solution,

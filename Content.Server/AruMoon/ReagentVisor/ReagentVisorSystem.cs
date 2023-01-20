@@ -21,11 +21,11 @@ namespace Content.Server.ReagentVisor
             SubscribeLocalEvent<ReagentVisorComponent, ReagentVisorAttemptEvent>(OnReagentVisorAttempt);
         }
 
-        public void PushScanMarkup(Solution? solution, ExaminedEvent examEvent)
+        public string? GetReagentMarkup(Solution? solution)
         {
             if (solution == null ||
                 solution.Contents.Count == 0  
-            ) return;
+            ) return null;
 
             var text = Loc.GetString("science-goggles-examine-header");
             
@@ -43,7 +43,8 @@ namespace Content.Server.ReagentVisor
                     ("quantity", reagent.Quantity)
                 );
             }
-            examEvent.PushMarkup(text);
+
+            return text;
         }
 
         private void OnInventoryReagentVisorAttempt(EntityUid uid, InventoryComponent component, ReagentVisorAttemptEvent args)
@@ -59,19 +60,19 @@ namespace Content.Server.ReagentVisor
 
         private void OnReagentVisorAttempt(EntityUid uid, ReagentVisorComponent component, ReagentVisorAttemptEvent args)
         {
-            PushScanMarkup(args.Solution, args.ExaminedEvent);
+            if (!component.Enabled) return;
+            args.Text = GetReagentMarkup(args.Solution);
             args.Handled = true;
         }
 
         public sealed class ReagentVisorAttemptEvent : HandledEntityEventArgs
         {   
-            public ExaminedEvent ExaminedEvent;
+            public string? Text;
             public Solution? Solution;
 
-            public ReagentVisorAttemptEvent(Solution? solution, ExaminedEvent exEvent)
+            public ReagentVisorAttemptEvent(Solution? solution)
             {
                 Solution = solution;
-                ExaminedEvent = exEvent;
             }
         }
     }
