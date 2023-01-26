@@ -5,7 +5,7 @@
        "y":32
     },
     "license":"CC-BY-SA-3.0",
-    "copyright":"https://github.com/tgstation/tgstation/blob/master/icons/mob/mutant_bodyparts.dmi",
+    "copyright":"Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/e9cc620e9f908e18949031c6e1b5811e3fc5af4e",
     "states":[
        {
          "name": "ears_default_inner",
@@ -51,6 +51,16 @@
                    [0.2, 0.2, 0.2, 0.2, 0.2],
                    [0.2, 0.2, 0.2, 0.2, 0.2]
                ]
+       },
+       {
+         "name": "tail_resprite",
+         "directions": 4,
+         "delays": [
+           [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1],
+           [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1],
+           [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1],
+           [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+         ]
        }
     ]
  }

@@ -4,6 +4,12 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Felinid]
+  coloring:
+    default:
+      type: HairColor
+    layers:
+      ears_default_inner:
+        type: SimpleColor
   sprites:
   - sprite: Mobs/Customization/felinid.rsi
     state: ears_default_outer
@@ -15,6 +21,12 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Felinid]
+  coloring:
+    default:
+      type: HairColor
+    layers:
+      ears_static_inner:
+        type: SimpleColor
   sprites:
   - sprite: Mobs/Customization/felinid.rsi
     state: ears_static_outer
@@ -28,15 +40,33 @@
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Felinid]
+  coloring:
+    default:
+      type: HairColor
   sprites:
   - sprite: Mobs/Customization/felinid.rsi
     state: tail_default
+
+- type: marking
+  id: FelinidTailResprite
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Felinid]
+  coloring:
+    default:
+      type: HairColor
+  sprites:
+  - sprite: Mobs/Customization/felinid.rsi
+    state: tail_resprite
 
 - type: marking
   id: FelinidTailStatic
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Felinid]
+  coloring:
+    default:
+      type: HairColor
   sprites:
   - sprite: Mobs/Customization/felinid.rsi
     state: tail_static

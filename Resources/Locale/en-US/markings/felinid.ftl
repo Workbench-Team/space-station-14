@@ -10,5 +10,8 @@ marking-FelinidEarsStatic-ears_static_inner = Inner part
 marking-FelinidTailStatic = Cat tail (Static)
 marking-FelinidTailStatic_tail_static = Tail
 
-marking-FelinidTailDefault = Cat tail
+marking-FelinidTailDefault = Cat tail (Classic)
 marking-FelinidTailDefault_tail_default = Tail
+
+marking-FelinidTailResprite = Cat tail
+marking-FelinidTailResprite_tail_resprite = Tail

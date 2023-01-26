@@ -6,5 +6,9 @@ namespace Content.Server.Flash.Components
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("enabled")]
         public bool Enabled { get; set; } = true;
+        
+        [ViewVariables(VVAccess.ReadWrite)]
+        [DataField("protectFromBangs")]
+        public bool ProtectFromBangs { get; set; } = false;
     }
 }

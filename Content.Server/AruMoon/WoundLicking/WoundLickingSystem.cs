@@ -61,15 +61,12 @@ namespace Content.Server.Felinid
             var performer = ev.Performer;
             var target = ev.Target;
 
-            if (!TryComp<WoundLickingComponent>(performer, out var woundLicking))
-            { return; }
-
-            // Prevents DoAfter from being called multiple times
-            if (woundLicking.CancelToken != null)
-            { return; }
-
-            if (!TryComp<BloodstreamComponent>(target, out var bloodstream))
-            { return; }
+            if (
+                !TryComp<WoundLickingComponent>(performer, out var woundLicking) || 
+                !TryComp<BloodstreamComponent>(target, out var bloodstream) ||
+                woundLicking.CancelToken != null // Prevents action from multitasking
+            )
+            return;
 
             // Logic
             if (performer == target & !woundLicking.CanSelfApply)

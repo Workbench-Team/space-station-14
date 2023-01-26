@@ -104,19 +104,17 @@ namespace Content.Server.Flash
         {
             if (!Resolve(target, ref flashable, false)) return;
 
-            var attempt = new FlashAttemptEvent(target, user, used);
-            RaiseLocalEvent(target, attempt, true);
+            var ev = new FlashAttemptEvent(target, user, used);
+            RaiseLocalEvent(target, ev, true);
 
-            if (attempt.Cancelled)
-                return;
-            
-            float flashdur = flashDuration;
-
+            // flash system must be refactored. This looks very bad.
             flashable.LastFlash = _gameTiming.CurTime;
-            if (bang == true)
-            {
-                flashdur += flashDuration * flashable.BangAddMultiplier;
-            }
+
+            float flashdur = ev.AddBaseFlash ? flashDuration * flashable.DurationMultiplier : 0f;
+            if (bang && ev.AddBangFlash) flashdur += flashDuration * flashable.BangAddMultiplier;
+
+            if (flashdur == 0f) return;
+
             flashable.Duration = flashdur / 1000f; // TODO: Make this sane...
             Dirty(flashable);
 
@@ -184,7 +182,7 @@ namespace Content.Server.Flash
         {
             foreach (var slot in new[] { "head", "eyes", "mask" })
             {
-                if (args.Cancelled)
+                if (!args.AddBaseFlash)
                     break;
                 if (_inventorySystem.TryGetSlotEntity(uid, slot, out var item, component))
                     RaiseLocalEvent(item.Value, args, true);
@@ -193,16 +191,21 @@ namespace Content.Server.Flash
 
         private void OnFlashImmunityFlashAttempt(EntityUid uid, FlashImmunityComponent component, FlashAttemptEvent args)
         {
-            if(component.Enabled)
-                args.Cancel();
+            if(component.Enabled) {
+                args.AddBaseFlash = false;
+                if (component.ProtectFromBangs) args.AddBangFlash = false;
+            }
+                
         }
     }
 
-    public sealed class FlashAttemptEvent : CancellableEntityEventArgs
+    public sealed class FlashAttemptEvent : HandledEntityEventArgs
     {
         public readonly EntityUid Target;
         public readonly EntityUid? User;
         public readonly EntityUid? Used;
+        public bool AddBangFlash = true;
+        public bool AddBaseFlash = true;
 
         public FlashAttemptEvent(EntityUid target, EntityUid? user, EntityUid? used)
         {
