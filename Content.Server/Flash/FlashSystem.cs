@@ -120,13 +120,15 @@ namespace Content.Server.Flash
                 if (flashable.BangFlash) flashdur += debuffDur;
             }
 
-            if (flashdur == 0f) return;
+            if (flashdur > 0f)
+            {
+                flashable.Duration = flashdur / 1000f; // TODO: Make this sane...
+                Dirty(flashable);
+            }
 
-            flashable.Duration = flashdur / 1000f; // TODO: Make this sane...
-            Dirty(flashable);
-
-            _stunSystem.TrySlowdown(target, TimeSpan.FromSeconds(slowdur/1000f), true,
-                slowTo, slowTo);
+            if (slowdur > 0f)
+                _stunSystem.TrySlowdown(target, TimeSpan.FromSeconds(slowdur/1000f), true,
+                    slowTo, slowTo);
 
             if (displayPopup && user != null && target != user && EntityManager.EntityExists(user.Value))
             {
