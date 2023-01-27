@@ -117,7 +117,7 @@ namespace Content.Server.Flash
             {
                 var debuffDur = flashDuration * flashable.BangAddMultiplier;
                 slowdur += debuffDur;
-                if (flashable.BangFlash) flashdur += debuffDur;
+                if (ev.AddBaseFlash || flashable.BangFlash) flashdur += debuffDur;
             }
 
             if (flashdur > 0f)
