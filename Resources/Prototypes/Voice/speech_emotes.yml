@@ -2,7 +2,7 @@
 - type: emote
   id: Scream
   category: Vocal
-  chatMessages: [screams, yells]
+  chatMessages: [кричит, орёт]
   chatTriggers:
     - scream
     - screams
@@ -30,7 +30,7 @@
 - type: emote
   id: Laugh
   category: Vocal
-  chatMessages: [laughs]
+  chatMessages: [смеётся]
   chatTriggers:
     - laugh
     - laughs
@@ -71,7 +71,7 @@
 - type: emote
   id: Snap
   category: Hands
-  chatMessages: [snaps fingers]
+  chatMessages: [щёлкает пальцами]
   chatTriggers:
     - snap
     - snaps
