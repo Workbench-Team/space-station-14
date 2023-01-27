@@ -5,7 +5,7 @@
   priority: -1
   whitelist:
     components:
-    - Humanoid
+    - HumanoidAppearance
   interactOnMiss: false
   icon: 
     sprite: Mobs/Species/Human/organs.rsi

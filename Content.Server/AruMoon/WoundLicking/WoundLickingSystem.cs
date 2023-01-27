@@ -1,15 +1,17 @@
+using Content.Server.Disease.Components;
+using Content.Server.Disease;
+using Content.Server.Body.Components;
+using Content.Server.Body.Systems;
 using Content.Server.DoAfter;
 using Content.Server.Popups;
-using Content.Server.Disease;
-using Content.Server.Disease.Components;
-using Content.Server.Body.Systems;
-using Content.Server.Body.Components;
-using Content.Shared.Actions;
-using Content.Shared.Actions.ActionTypes;
 using Content.Shared.IdentityManagement;
-using Robust.Shared.Random;
+using Content.Shared.Actions.ActionTypes;
+using Content.Shared.Actions;
+using Content.Shared.Mobs.Components;
+using Content.Shared.Mobs;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Player;
+using Robust.Shared.Random;
 using System.Threading;
 using System.Linq;
 
@@ -64,11 +66,14 @@ namespace Content.Server.Felinid
             if (
                 !TryComp<WoundLickingComponent>(performer, out var woundLicking) || 
                 !TryComp<BloodstreamComponent>(target, out var bloodstream) ||
+                !TryComp<MobStateComponent>(target, out var mobState) ||
                 woundLicking.CancelToken != null // Prevents action from multitasking
             )
             return;
 
             // Logic
+            if (mobState.CurrentState == MobState.Dead) return;
+
             if (performer == target & !woundLicking.CanSelfApply)
             {
                 _popupSystem.PopupEntity(Loc.GetString("lick-wounds-yourself-impossible"),

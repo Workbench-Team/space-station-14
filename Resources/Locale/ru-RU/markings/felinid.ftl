@@ -8,10 +8,10 @@ marking-FelinidEarsStatic-ears_static_inner = Внутренняя часть
 
 
 marking-FelinidTailStatic = Кошачий хвост (Статичный)
-marking-FelinidTailStatic_tail_static = Хвост
+marking-FelinidTailStatic-tail_static = Хвост
 
 marking-FelinidTailDefault = Кошачий хвост (Классический)
 marking-FelinidTailDefault_tail_default = Хвост
 
 marking-FelinidTailResprite = Кошачий хвост
-marking-FelinidTailResprite_tail_resprite = Хвост
+marking-FelinidTailResprite-tail_resprite = Хвост

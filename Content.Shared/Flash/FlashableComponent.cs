@@ -24,6 +24,13 @@ namespace Content.Shared.Flash
         [DataField("bangAddMultiplier")]
         [ViewVariables(VVAccess.ReadWrite)]
         public float BangAddMultiplier { get; set; } = 0;
+
+        /// <summary>
+        /// Additional duration coefficent if entity was flashed with flashbang
+        /// </summary>
+        [DataField("bangFlash")]
+        [ViewVariables(VVAccess.ReadWrite)]
+        public bool BangFlash { get; set; } = true;
     }
 
     [Serializable, NetSerializable]

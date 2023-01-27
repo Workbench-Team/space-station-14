@@ -111,14 +111,21 @@ namespace Content.Server.Flash
             flashable.LastFlash = _gameTiming.CurTime;
 
             float flashdur = ev.AddBaseFlash ? flashDuration * flashable.DurationMultiplier : 0f;
-            if (bang && ev.AddBangFlash) flashdur += flashDuration * flashable.BangAddMultiplier;
+            float slowdur = flashdur;
+
+            if (bang && ev.AddBangFlash)
+            {
+                var debuffDur = flashDuration * flashable.BangAddMultiplier;
+                slowdur += debuffDur;
+                if (flashable.BangFlash) flashdur += debuffDur;
+            }
 
             if (flashdur == 0f) return;
 
             flashable.Duration = flashdur / 1000f; // TODO: Make this sane...
             Dirty(flashable);
 
-            _stunSystem.TrySlowdown(target, TimeSpan.FromSeconds(flashdur/1000f), true,
+            _stunSystem.TrySlowdown(target, TimeSpan.FromSeconds(slowdur/1000f), true,
                 slowTo, slowTo);
 
             if (displayPopup && user != null && target != user && EntityManager.EntityExists(user.Value))
