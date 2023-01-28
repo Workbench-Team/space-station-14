@@ -43,6 +43,6 @@ ent-ClothingHeadsetSecurity = security headset
 ent-ClothingHeadsetService = service headset
     .desc = Headset used by the service staff, tasked with keeping the station full, happy and clean.
     .suffix = { "" }
-ent-ClothingHeadsetGrey = passenger headset
+ent-ClothingHeadsetGrey = assistant headset
     .desc = An updated, modular intercom that fits over the head. Takes encryption keys.
     .suffix = { "" }

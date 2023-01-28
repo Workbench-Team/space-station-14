@@ -1,7 +1,7 @@
 ent-BasePDA = PDA
     .desc = Personal Data Assistant.
     .suffix = { "" }
-ent-PassengerPDA = passenger PDA
+ent-PassengerPDA = assistant PDA
     .desc = Why isn't it gray?
     .suffix = { "" }
 ent-TechnicalAssistantPDA = technical assistant PDA
@@ -86,7 +86,7 @@ ent-WardenPDA = warden PDA
     .desc = The OS appears to have been jailbroken.
     .suffix = { "" }
 ent-SecurityPDA = security PDA
-    .desc = Red to hide the stains of passenger blood.
+    .desc = Red to hide the stains of assistant blood.
     .suffix = { "" }
 ent-CentcomPDA = CentCom PDA
     .desc = Colored the numbing grey of bureaucracy.

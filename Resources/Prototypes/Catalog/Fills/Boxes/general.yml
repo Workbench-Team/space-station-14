@@ -137,7 +137,7 @@
   name: headset box
   parent: BoxCardboard
   id: BoxHeadset
-  description: A box of spare passenger headsets.
+  description: A box of spare assistant headsets.
   components:
   - type: StorageFill
     contents:

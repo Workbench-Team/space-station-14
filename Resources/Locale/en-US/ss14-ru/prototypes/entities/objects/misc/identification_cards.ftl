@@ -1,7 +1,7 @@
 ent-IDCardStandard = identification card
     .desc = A card necessary to access various areas aboard the station.
     .suffix = { "" }
-ent-PassengerIDCard = passenger ID card
+ent-PassengerIDCard = assistant ID card
     .desc = { ent-IDCardStandard.desc }
     .suffix = { "" }
 ent-TechnicalAssistantIDCard = technical assistant ID card
