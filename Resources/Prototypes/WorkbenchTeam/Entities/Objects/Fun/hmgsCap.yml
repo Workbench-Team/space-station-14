@@ -1,3 +1,15 @@
+- type: entity
+  id: CartridgeCapCaseless
+  name: cap gun cartridge
+  parent: BaseCartridgeCap
+  components:
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: BulletCap
+
+
+
+
 
 - type: entity
   name: MiniJoke
@@ -13,14 +25,14 @@
   - type: Item
     sprite: Objects/Weapons/Guns/HMGs/minigun.rsi
   - type: Gun
-    fireRate: 15
+    fireRate: 10
     selectedMode: FullAuto
     availableModes:
     - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/minigun.ogg
   - type: BallisticAmmoProvider
-    proto: CartridgeCap
+    proto: CartridgeCapCaseless
     capacity: 500
   - type: MagazineVisuals
     magState: mag
