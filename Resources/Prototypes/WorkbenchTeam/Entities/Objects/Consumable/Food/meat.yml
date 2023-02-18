@@ -1,0 +1,8 @@
+- type: entity
+  name: the shaurma
+  parent: FoodMeatBase
+  id: FoodMeatShaurma
+  description: Fried meat wrapped in pita bread.
+  components:
+  - type: Sprite
+    state: shaurma

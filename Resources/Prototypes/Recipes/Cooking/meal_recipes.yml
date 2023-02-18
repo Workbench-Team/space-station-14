@@ -1089,3 +1089,14 @@
   solids:
     FoodMeatLizard: 1
     FoodKebabSkewer: 1
+
+- type: microwaveMealRecipe
+  id: RecipeShaurma
+  name: shaurma recipe
+  result: FoodMeatShaurma
+  time: 5
+  solids:
+    FoodMeat: 1
+    FoodBreadPlainSlice: 1 # TODO: Add pita bread (лаваш) instead of classic bread
+    FoodTomato: 1
+    FoodOnionSlice: 1
