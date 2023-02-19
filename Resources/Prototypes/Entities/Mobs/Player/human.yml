@@ -58,3 +58,21 @@
   components:
     - type: NukeOperative
     - type: RandomHumanoidAppearance
+    - type: Faction
+      factions:
+      - Syndicate
+
+# Пассажир, за которого могут зайти игроки. Чтобы каждый раз не спавнить уристов, менять одежду и выдавать роль призрака
+- type: entity
+  parent: MobHuman
+  id: MobHumanPlayablePassenger
+  name: Пассажир
+  components:
+    - type: RandomHumanoidAppearance
+    - type: Loadout
+      prototype: PassengerGear
+      prototypes: [PassengerGear]
+    - type: GhostTakeoverAvailable
+    makeSentient: true
+    description: Вы - прибывающий или уже прибывший на станцию пассажир.
+    rules: Вы обычный игрок, и подчиняетесь правилам как при начале игры за пассажира.
