@@ -22,8 +22,9 @@ Structural: 20
 damage:
 types:
 Blunt: 20
-Structural: 50
-- type: Item
+Structural: 80
+
+- type: Item
 size: 150
 - type: Clothing
 sprite:Objects/Weapons/Melee/sledgehammer.rsi
