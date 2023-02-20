@@ -115,3 +115,37 @@
     - Write
   - type: DisarmMalus
     malus: 0
+
+    - type: entity
+  name: Двойной лазерный меч
+  parent: EnergySword
+  id: DualEnergySword
+  description: Вдвойне опасный энергетический меч. Какому безумцу придёт на ум использовать это?
+  components:
+  - type: EnergySword
+  - type: Sharp
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/dual_energy_sword.rsi
+    state: icon
+  - type: MeleeWeapon
+    attackRate: 0.75
+    damage:
+      types:
+        Heat: 5
+        Blunt: 5
+        Slash: 10
+        Structural: 10
+        litDisarmMalus: 0.7
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Heat: 10
+        Blunt: 10
+        Slash: 15
+        Structural: 30
+        litDisarmMalus: 1
+  - type: Item
+    size: 150
+    sprite: Objects/Weapons/Melee/dual_e_sword.rsi
+    quickEquip: false
