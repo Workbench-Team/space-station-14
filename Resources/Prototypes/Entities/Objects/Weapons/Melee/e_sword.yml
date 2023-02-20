@@ -117,10 +117,10 @@
     malus: 0
 
     - type: entity
-  name: Двойной лазерный меч
+  name: Dual Energy Sword
   parent: EnergySword
   id: DualEnergySword
-  description: Вдвойне опасный энергетический меч. Какому безумцу придёт на ум использовать это?
+  description: A doubly dangerous double energy sword. What madman would think of using it?
   components:
   - type: EnergySword
   - type: Sharp
