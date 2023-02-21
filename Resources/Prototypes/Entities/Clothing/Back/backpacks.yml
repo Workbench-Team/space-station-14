@@ -201,3 +201,126 @@
     equippedPrefix: holding
   - type: Storage
     capacity: 9999
+
+- type: entity
+  parent: Clothing
+  id: ClothingHandpack
+  name: handpack
+  description: You wear this on your back and put items into it. Additional pair of manipulators allow for on-foot lathe-like crafting.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/handpack.rsi
+    state: icon
+  - type: Item
+    size: 9999
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+  - type: Storage
+    capacity: 70
+   - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+  - type: ActivatableUI
+    key: enum.LatheUiKey.Key
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+    - key: enum.StorageUiKey.Key
+      type: StorageBoundUserInterface
+    - key: enum.LatheUiKey.Key
+      type: LatheBoundUserInterface
+    - key: enum.ResearchClientUiKey.Key
+      type: ResearchClientBoundUserInterface
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    dynamicRecipes:
+      - LightTube
+      - LightBulb
+      - SheetSteel #these sheet recipe costs don't scale with upgrades
+      - SheetGlass1
+      - SheetRGlass
+      - SheetPlastic
+      - CableStack
+      - CableMVStack
+      - CableHVStack
+      - PowerDrill
+      - MiningDrill
+      - ConveyorBeltAssembly
+      - AppraisalTool
+      - AnomalyScanner
+      - RCD
+      - RCDAmmo
+      - HydroponicsToolScythe
+      - HydroponicsToolHatchet
+      - Clippers
+      - MiniHoe
+      - Shovel
+      - Spade
+      - HandheldCrewMonitor
+      - Scalpel
+      - Retractor
+      - Cautery
+      - Drill
+      - Saw
+      - Hemostat
+      - Beaker
+      - LargeBeaker
+      - CryostasisBeaker
+      - Dropper
+      - Syringe
+      - Implanter
+      - PillCanister
+      - ChemistryEmptyBottle01
+      - Drone
+      - Flash
+      - MicroManipulatorStockPart
+      - ScanningModuleStockPart
+      - MicroLaserStockPart
+      - MatterBinStockPart
+      - CapacitorStockPart
+      - AdvancedCapacitorStockPart
+      - AdvancedMatterBinStockPart
+      - HighPowerMicroLaserStockPart
+      - NanoManipulatorStockPart
+      - AdvancedScanningModuleStockPart
+      - SuperCapacitorStockPart
+      - SuperMatterBinStockPart
+      - UltraHighPowerMicroLaserStockPart
+      - PicoManipulatorStockPart
+      - PhasicScanningModuleStockPart
+      - FirelockElectronics
+      - DoorElectronics
+      - APCElectronics
+      - AirAlarmElectronics
+      - FireAlarmElectronics
+      - IntercomElectronics
+      - MailingUnitElectronics
+      - Bucket
+      - MopItem
+      - SprayBottle
+      - FireExtinguisher
+      - KitchenKnife
+      - ButchCleaver
+      - FlashlightLantern
+      - TimerTrigger
+      - ChemicalPayload
+      - FlashPayload
+      - Signaller
+      - SignalTrigger
+      - VoiceTrigger
+      - PowerCellSmall
+      - PowerCellMedium
+      - PowerCellHigh  
+      - SynthesizerInstrument
+      - RPED
+      - NodeScanner
+      - HolofanProjector
