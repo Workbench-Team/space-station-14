@@ -58,3 +58,6 @@
   components:
     - type: NukeOperative
     - type: RandomHumanoidAppearance
+    - type: Faction
+      factions:
+      - Syndicate
