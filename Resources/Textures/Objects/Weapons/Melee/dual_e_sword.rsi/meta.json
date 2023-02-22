@@ -11,14 +11,14 @@
       "name": "icon"
     },
     {
-      "name": "dual_e_sword"
+      "name": "on_dual_e_sword"
     },
     {
-      "name": "dual_e_sword_inhand-left",
+      "name": "on_inhand_left_dual_e_sword",
       "directions": 4
     },
     {
-      "name": "dual_e_sword_inhand-right",
+      "name": "on_inhand_right_dual_e_sword",
       "directions": 4
 
     }
