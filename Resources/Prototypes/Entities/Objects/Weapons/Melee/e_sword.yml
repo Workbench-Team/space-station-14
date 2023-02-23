@@ -148,4 +148,3 @@
   - type: Item
     size: 150
     sprite: Objects/Weapons/Melee/dual_e_sword.rsi
-    quickEquip: false
