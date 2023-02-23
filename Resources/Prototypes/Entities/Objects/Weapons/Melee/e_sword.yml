@@ -127,6 +127,8 @@
     state: icon
   - type: MeleeWeapon
     attackRate: 1.4
+    soundHit:
+      path: /Audio/Weapons/genhit1.ogg
     damage:
       types:
         Heat: 10
