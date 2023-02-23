@@ -117,10 +117,10 @@
     malus: 0
 
  - type: entity
-  name: Dual Energy Sword
-  parent: BaseItem
-  id: dualesword
-  description: A doubly dangerous double energy sword. What madman would think of using it?
+   name: Dual Energy Sword
+   parent: BaseItem
+   id: dualesword
+   description: A doubly dangerous double energy sword. What madman would think of using it?
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/dual_energy_sword.rsi
@@ -140,4 +140,4 @@
         Slash: 20
         Structural: 30
   - type: Item
-    size: 150
+  - size: 150
