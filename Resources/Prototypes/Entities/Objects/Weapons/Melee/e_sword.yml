@@ -118,7 +118,7 @@
 
     - type: entity
   name: Dual Energy Sword
-  parent: EnergySword
+  parent: BaseItem
   id: DualEnergySword
   description: A doubly dangerous double energy sword. What madman would think of using it?
   components:
