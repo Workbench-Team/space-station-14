@@ -116,22 +116,18 @@
   - type: DisarmMalus
     malus: 0
 
- 
-      types:
-        Heat: 5
-        Blunt: 5
-        Slash: 10
-        Structural: 10
-        litDisarmMalus: 0.7
-  - type: Wieldable
-  - type: IncreaseDamageOnWield
+    - type: entity
+  name: Dual Energy Sword
+  parent: BaseItem
+  id: dualenergysword
+  description: A doubly dangerous double energy sword. What madman would think of using it?
+  components:
+  - type: EnergySword
+  - type: Sharp
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/dual_energy_sword.rsi
+    state: icon
+  - type: MeleeWeapon
+    attackRate: 1.4
     damage:
-      types:
-        Heat: 10
-        Blunt: 10
-        Slash: 15
-        Structural: 30
-        litDisarmMalus: 1
-  - type: Item
-    size: 150
-    sprite: Objects/Weapons/Melee/dual_e_sword.rsi
+   
