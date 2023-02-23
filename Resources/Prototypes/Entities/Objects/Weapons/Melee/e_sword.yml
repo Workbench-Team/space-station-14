@@ -136,15 +136,6 @@
         Slash: 10
         Structural: 10
         litDisarmMalus: 0.7
-  - type: Wieldable
-  - type: IncreaseDamageOnWield
-    damage:
-      types:
-        Heat: 10
-        Blunt: 10
-        Slash: 15
-        Structural: 30
-        litDisarmMalus: 1
   - type: Item
     size: 150
     sprite: Objects/Weapons/Melee/dual_e_sword.rsi
