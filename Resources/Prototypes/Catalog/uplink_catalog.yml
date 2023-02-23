@@ -47,7 +47,7 @@
   name: uplink-dualesword-name
   description: uplink-dualesword-desc
   icon: { sprite: /Textures/Objects/Weapons/Melee/dual_e_sword.rsi, state: icon }
-  productEntity: DualEnergySword
+  productEntity: dualesword
   cost:
     Telecrystal: 12
   categories:
