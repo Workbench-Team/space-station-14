@@ -142,4 +142,4 @@
         Slash: 20
         Structural: 30
   - type: Item
-  - size: 9999
+    size: 9999
