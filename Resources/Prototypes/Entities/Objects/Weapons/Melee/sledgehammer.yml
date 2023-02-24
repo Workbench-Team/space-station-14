@@ -14,6 +14,7 @@ state: icon
 attackRate: 0.65
 damage:
 types:
+
 Blunt: 15
 Structural: 20
 - type: Wieldable
@@ -22,6 +23,7 @@ damage:
 types:
 Blunt: 20
 Structural: 80
+
 - type: Item
 size: 150
 - type: Clothing
