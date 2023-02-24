@@ -21,8 +21,3 @@
         Structural: 80
   - type: Item
     size: 150
-  - type: Clothing
-    sprite: Objects/Weapons/Melee/sledgehammer.rsi
-  quickEquip: false
-  slots:
-  - back
