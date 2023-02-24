@@ -537,6 +537,14 @@
   - type: Sprite
     state: poster56_contraband
 
+- type: entity
+  parent: PosterBase
+  id: PosterContrabandSOPIsShit
+  name: "SOP is shit"
+  description: "A poster encouraging people crew to stop using 'standard operating procedures' because they are inefficient and boring."
+  components:
+  - type: Sprite
+    state: poster57_contraband
 
 # Legit
 - type: entity
