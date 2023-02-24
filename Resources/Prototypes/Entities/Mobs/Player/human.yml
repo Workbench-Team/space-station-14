@@ -61,3 +61,17 @@
     - type: Faction
       factions:
       - Syndicate
+
+- type: entity
+  noSpawn: true
+  name: Arriving Assistant
+  parent: MobHuman
+  id: MobHumanArrivingAss
+  components:
+    - type: RandomHumanoidAppearance
+    - type: GhostTakeoverAvailable
+      name: Arriving Assistant
+      description: You are one of assistants arriving or already arrived assistans.
+      rules: You don't know anything about what happened previously on this shift. You are not an antagonist.
+    - type: Loadout
+      prototypes: [ PassengerGear ]
