@@ -123,7 +123,7 @@
   description: A doubly dangerous double energy sword. What madman would think of using it?
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Melee/dual_energy_sword.rsi
+    sprite: Objects/Weapons/Melee/dual_e_sword.rsi
     state: icon
   - type: MeleeWeapon
     attackRate: 1.4
@@ -139,7 +139,7 @@
     damage:
       types:
         Heat: 15
-        Slash: 20
+        Slash: 5
         Structural: 30
   - type: Item
     size: 9999
