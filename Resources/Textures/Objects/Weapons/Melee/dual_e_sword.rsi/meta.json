@@ -11,13 +11,20 @@
       "name": "on_inhand_right_dual_e_sword"
     },
     {
+      "name": "on_inhand_left_dual_e_sword"
+    }
+  ]
+}
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
       "name": "icon"
     },
     {
       "name": "on_dual_e_sword"
-    },
-    {
-      "name": "on_inhand_left_dual_e_sword"
     }
   ]
 }
