@@ -3,15 +3,17 @@
   "license": "CC-BY-SA-3.0",
   "copyright": "by Tamioki#7474",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 64,
+    "y": 64
   },
   "states": [
     {
-      "name": "on_inhand_left_dual_e_sword"
+      "name": "on_inhand_left_dual_e_sword",
+      "directions": 4
     },
     {
-      "name": "on_inhand_right_dual_e_sword"
+      "name": "on_inhand_right_dual_e_sword",
+      "directions": 4
     },
     {
       "name": "on_dual_e_sword"
