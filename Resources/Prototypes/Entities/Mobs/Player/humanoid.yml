@@ -357,3 +357,16 @@
   id: NukeOp
   components:
     - type: NukeOperative
+    
+- type: randomHumanoidSettings
+  randomizeName: true
+  name: Arriving Assistant
+  parent: MobHuman
+  id: MobHumanArrivingAss
+  components:
+    - type: GhostTakeoverAvailable
+      name: Arriving Assistant
+      description: You are one of arriving or already arrived assistants.
+      rules: You don't know anything about what happened previously on this shift. You are not an antagonist.
+    - type: Loadout
+      prototypes: [ PassengerGear ]
