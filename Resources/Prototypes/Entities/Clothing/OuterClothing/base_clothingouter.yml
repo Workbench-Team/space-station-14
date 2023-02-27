@@ -29,9 +29,9 @@
   id: ClothingOuterStorageBase
   components:
   - type: Item
-    size: 13
+    size: 15
   - type: Storage
-    capacity: 13
+    capacity: 15
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
