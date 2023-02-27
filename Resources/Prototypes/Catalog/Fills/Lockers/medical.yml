@@ -84,6 +84,7 @@
     contents:
       - id: BoxSyringe
       - id: BoxBeaker
+      - id: BoxPlasticBottle
       - id: BoxPillCanister
       - id: BoxBottle
       - id: BoxBottle
