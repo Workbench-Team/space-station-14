@@ -121,6 +121,88 @@
     fillBaseName: beakerlarge
   - type: StaticPrice
     price: 40
+  
+- type: entity
+  name: small bottle
+  parent: BaseBeaker
+  description: Used to contain a moderate amount of chemicals or solutions.
+  id: SmallBottle
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/bottle_small.rsi
+    layers:
+      - state: bottlesmall
+      - state: bottlesmall1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Item
+    size: 5
+    sprite: Objects/Specific/Chemistry/bottle_small.rsi
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 50
+        canMix: true
+  - type: Appearance
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Inflatable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:SpillBehavior
+        solution: beaker
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: bottlesmall
+  - type: StaticPrice
+    price: 30
+  
+- type: entity
+  name: large bottle
+  parent: BaseBeaker
+  description: Used to contain a large amount of chemicals or solutions.
+  id: LargeBottle
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/bottle_large.rsi
+    layers:
+      - state: bottlelarge
+      - state: bottlelarge1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Item
+    size: 5
+    sprite: Objects/Specific/Chemistry/bottle_large.rsi
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 100
+        canMix: true
+  - type: Appearance
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Inflatable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:SpillBehavior
+        solution: beaker
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: bottlelarge
+  - type: StaticPrice
+    price: 40
 
 - type: entity
   name: cryostasis beaker
