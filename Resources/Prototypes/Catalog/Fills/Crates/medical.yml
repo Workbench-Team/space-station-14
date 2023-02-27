@@ -34,6 +34,8 @@
         amount: 1
       - id: BoxBeaker
         amount: 1
+      - id: BoxPlasticBottle
+        amount: 1
       - id: BoxPillCanister
         amount: 1
       - id: Dropper
