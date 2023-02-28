@@ -4,6 +4,7 @@ using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
 using Content.Server.DoAfter;
 using Content.Server.Popups;
+using Content.Shared.DoAfter;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Actions.ActionTypes;
 using Content.Shared.Actions;
@@ -12,7 +13,6 @@ using Content.Shared.Mobs;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Player;
 using Robust.Shared.Random;
-using System.Threading;
 using System.Linq;
 
 namespace Content.Server.Felinid
@@ -29,7 +29,7 @@ namespace Content.Server.Felinid
         [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly BloodstreamSystem _bloodstreamSystem = default!;
-        
+
         private const string WouldLickingActionPrototype = "WoundLicking";
 
         public override void Initialize()
@@ -37,9 +37,7 @@ namespace Content.Server.Felinid
             base.Initialize();
             SubscribeLocalEvent<WoundLickingComponent, ComponentInit>(OnInit);
             SubscribeLocalEvent<WoundLickingComponent, ComponentRemove>(OnRemove);
-            SubscribeLocalEvent<WoundLickingComponent, WoundLickingEvent>(OnWouldLick);
-
-            SubscribeLocalEvent<WoundLickingEventCancel>(OnWouldLickCancel);
+            SubscribeLocalEvent<WoundLickingComponent, DoAfterEvent<WoundLickData>>(OnDoAfter);
             SubscribeLocalEvent<WoundLickingTargetActionEvent>(OnActionPerform);
         }
 
@@ -58,16 +56,15 @@ namespace Content.Server.Felinid
         private void OnActionPerform(WoundLickingTargetActionEvent ev)
         {
             if (ev.Handled)
-            return;
+                return;
 
             var performer = ev.Performer;
             var target = ev.Target;
 
             if (
-                !TryComp<WoundLickingComponent>(performer, out var woundLicking) || 
+                !TryComp<WoundLickingComponent>(performer, out var woundLicking) ||
                 !TryComp<BloodstreamComponent>(target, out var bloodstream) ||
-                !TryComp<MobStateComponent>(target, out var mobState) ||
-                woundLicking.CancelToken != null // Prevents action from multitasking
+                !TryComp<MobStateComponent>(target, out var mobState)
             )
             return;
 
@@ -80,7 +77,7 @@ namespace Content.Server.Felinid
                     performer, Filter.Entities(performer), true);
                 return;
             }
-            
+
             if (woundLicking.ReagentWhitelist.Any() &&
                 !woundLicking.ReagentWhitelist.Contains(bloodstream.BloodReagent)
             )  return;
@@ -110,31 +107,30 @@ namespace Content.Server.Felinid
                 target, target);
             _popupSystem.PopupEntity(Loc.GetString("lick-wounds-other-begin", ("performer", performerIdentity), ("target", targetIdentity)),
                 performer, otherFilter, true);
-            
+
+            var WoundLickData = new WoundLickData(bloodstream);
+
             // DoAfter
-            woundLicking.CancelToken = new CancellationTokenSource();
-            _doAfterSystem.DoAfter(new DoAfterEventArgs(performer, woundLicking.Delay, woundLicking.CancelToken.Token, target)
+            var doAfterEventArgs = new DoAfterEventArgs(performer, woundLicking.Delay, target: target)
             {
                 BreakOnTargetMove = true,
                 BreakOnUserMove = true,
                 BreakOnDamage = true,
-                BreakOnStun = true,
-                UserFinishedEvent = new WoundLickingEvent(performer, target, woundLicking, bloodstream),
-                BroadcastCancelledEvent = new WoundLickingEventCancel(woundLicking)
-            });
+                BreakOnStun = true
+            };
+
+            _doAfterSystem.DoAfter(doAfterEventArgs, WoundLickData);
 
             ev.Handled = true;
         }
 
-        private void OnWouldLick(EntityUid uid, WoundLickingComponent comp, WoundLickingEvent args)
+        private void OnDoAfter(EntityUid uid, WoundLickingComponent comp, DoAfterEvent<WoundLickData> args)
         {
-            comp.CancelToken = null;
-            LickWound(args.Performer, args.Target, args.Bloodstream, comp.PossibleDiseases, comp.MaxHeal, comp.DiseaseChance);
-        }
-
-        private void OnWouldLickCancel(WoundLickingEventCancel args)
-        {
-            args.WoundLicking.CancelToken = null;
+            if (args.Cancelled || args.Handled || args.Args.Target == null)
+            {
+                return;
+            }
+            LickWound(uid, args.Args.Target.Value, args.AdditionalData.bloodstream, comp.PossibleDiseases, comp.MaxHeal, comp.DiseaseChance);
         }
 
         private void LickWound(EntityUid performer, EntityUid target, BloodstreamComponent bloodstream, List<String> diseases, float maxHeal = 15f, float diseaseChance = 0.25f)
@@ -148,7 +144,7 @@ namespace Content.Server.Felinid
             var healed = bloodstream.BleedAmount;
             if (maxHeal - bloodstream.BleedAmount < 0) healed = maxHeal;
             var chance = diseaseChance*(1/maxHeal*healed);
-            
+
             if(diseaseChance > 0f & diseases.Any())
             {
                 if (TryComp<DiseaseCarrierComponent>(target, out var disCarrier))
@@ -172,31 +168,10 @@ namespace Content.Server.Felinid
             _popupSystem.PopupEntity(Loc.GetString("lick-wounds-other-success", ("performer", performerIdentity), ("target", targetIdentity)),
                 performer, otherFilter, true);
         }
-    }
-    
-    internal sealed class WoundLickingEvent : EntityEventArgs
-    {
-        public EntityUid Performer { get; }
-        public EntityUid Target { get; }
-        public WoundLickingComponent WoundLicking;
-        public BloodstreamComponent Bloodstream;
 
-        public WoundLickingEvent(EntityUid performer, EntityUid target, WoundLickingComponent woundLicking, BloodstreamComponent bloodstream)
+        private record struct WoundLickData(BloodstreamComponent bloodstream)
         {
-            Performer = performer;
-            Target = target;
-            WoundLicking = woundLicking;
-            Bloodstream = bloodstream;
-        }
-    }
-
-    internal sealed class WoundLickingEventCancel : EntityEventArgs
-    {
-        public WoundLickingComponent WoundLicking;
-
-        public WoundLickingEventCancel(WoundLickingComponent woundLicking)
-        {
-            WoundLicking = woundLicking;
+            public readonly BloodstreamComponent bloodstream = bloodstream;
         }
     }
 

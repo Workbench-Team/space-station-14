@@ -25,21 +25,21 @@
     containers:
       item-container: !type:Container
 
-- type: entity
-  id: MechEquipmentDrill
-  parent: BaseMechEquipment
-  name: drill
-  description: Gives the mech the ability to drill
-  components:
-  - type: MechDrill
-  - type: Sprite
-    state: mecha_drill
-  - type: GatheringTool
-    damage:
-      types:
-        Structural: 200
-    gatheringTime: 0.8
-    MaxGatheringEntities: 2
-  - type: ItemCooldown
+# - type: entity
+#   id: MechEquipmentDrill
+#   parent: BaseMechEquipment
+#   name: drill
+#   description: Gives the mech the ability to drill
+#   components:
+#   - type: MechDrill
+#   - type: Sprite
+#     state: mecha_drill
+#   - type: GatheringTool
+#     damage:
+#       types:
+#         Structural: 200
+#     gatheringTime: 0.8
+#     MaxGatheringEntities: 2
+#   - type: ItemCooldown
 
 

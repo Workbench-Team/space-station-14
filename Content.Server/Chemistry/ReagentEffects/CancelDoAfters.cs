@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using Content.Server.DoAfter;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Damage;
+using Content.Shared.DoAfter;
 using Content.Shared.FixedPoint;
 using JetBrains.Annotations;
 
@@ -19,7 +19,7 @@ namespace Content.Server.Chemistry.ReagentEffects
         [DataField("damageLike")]
         [JsonPropertyName("damageLike")]
         public bool DamageLike = true;
-        
+
         /// <summary>
         /// Should DoAfter be cancelled if it breaks after user movement
         /// </summary>
@@ -51,7 +51,7 @@ namespace Content.Server.Chemistry.ReagentEffects
             if (!args.EntityManager.TryGetComponent(args.SolutionEntity, out DoAfterComponent? doAfterComp))
             { return; }
 
-            foreach (var (doAfter, _) in doAfterComp.DoAfters)
+            foreach (var doAfter in doAfterComp.DoAfters.Values)
             {
                 if (
                     (DamageLike && doAfter.EventArgs.BreakOnDamage && Damage > doAfter.EventArgs.DamageThreshold) ||
@@ -59,7 +59,7 @@ namespace Content.Server.Chemistry.ReagentEffects
                     (StunLike && doAfter.EventArgs.BreakOnStun)
                 )
                 {
-                    doAfter.Cancel();
+                    // doAfter.Cancel(); TODO FIXME !!!!!
                 }
             }
         }

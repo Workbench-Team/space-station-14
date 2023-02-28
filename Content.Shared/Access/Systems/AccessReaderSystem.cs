@@ -30,7 +30,11 @@ namespace Content.Shared.Access.Systems
         {
             component.InvertedAccess = args.Inverted;
             component.AccessLists.Clear();
-            component.AccessLists.Add(new HashSet<string>(args.AccessList.ToArray()));
+            //TODO: clean this mess?
+            foreach(var substr in args.AccessList.ToArray())
+            {
+                  component.AccessLists.Add(new HashSet<string> { substr });
+            }
         }
 
         private void OnLinkAttempt(EntityUid uid, AccessReaderComponent component, LinkAttemptEvent args)
@@ -109,7 +113,7 @@ namespace Content.Shared.Access.Systems
                 return false;
             }
 
-            return reader.AccessLists.Count == 0 || (reader.AccessLists.Any(a => a.IsSubsetOf(accessTags) && !reader.InvertedAccess));
+            return reader.AccessLists.Count == 0 || (reader.AccessLists.Any(a => a.IsSubsetOf(accessTags)) ^ reader.InvertedAccess);
         }
 
         /// <summary>

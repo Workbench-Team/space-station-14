@@ -330,8 +330,6 @@
       - APECircuitboard
       - ArtifactAnalyzerMachineCircuitboard
       - TraversalDistorterMachineCircuitboard
-      - SecurityTechFabCircuitboard
-      - WeaponTechFabCircuitboard
       - BoozeDispenserMachineCircuitboard
       - SodaDispenserMachineCircuitboard
   - type: MaterialStorage
@@ -372,7 +370,7 @@
     - RipleyLLeg
     - RipleyRLeg
     - MechEquipmentGrabber
-    - MechEquipmentDrill
+    # - MechEquipmentDrill
   - type: MaterialStorage
     whitelist:
       tags:
@@ -507,13 +505,11 @@
       - WeaponSubMachineGunWt550
       - WeaponRifleLecter
       - WeaponShotgunDoubleBarreled
-      - WeaponRifleAk
       - WeaponPistolMk58
       - WeaponSubMachineGunVector
       # Weapons energy
       - WeaponDisabler
       - WeaponLaserCarbine
-      - WeaponAdvancedLaser
   - type: MaterialStorage
     whitelist:
       tags:

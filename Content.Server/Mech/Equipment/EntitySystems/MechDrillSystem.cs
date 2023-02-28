@@ -3,13 +3,17 @@ using Content.Server.Destructible;
 using Content.Server.DoAfter;
 using Content.Server.Gatherable.Components;
 using Content.Shared.Destructible;
+using Content.Shared.EntityList;
 using Content.Server.Interaction;
 using Content.Server.Mech.Components;
 using Content.Server.Mech.Equipment.Components;
 using Content.Server.Mech.Systems;
+using Content.Shared.DoAfter;
 using Content.Shared.Interaction;
 using Content.Shared.Mech.Equipment.Components;
-using static Content.Server.Gatherable.GatherableSystem;
+using Content.Shared.Tag;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Random;
 
 namespace Content.Server.Mech.Equipment.EntitySystems;
 
@@ -18,17 +22,20 @@ namespace Content.Server.Mech.Equipment.EntitySystems;
 /// </summary>
 public sealed class MechDrillSystem : EntitySystem
 {
+    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+    [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly MechSystem _mech = default!;
     [Dependency] private readonly DoAfterSystem _doAfter = default!;
     [Dependency] private readonly InteractionSystem _interaction = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly DestructibleSystem _destructible = default!;
+    [Dependency] private readonly TagSystem _tagSystem = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
     {
         SubscribeLocalEvent<MechDrillComponent, InteractNoHandEvent>(OnInteract);
-        SubscribeLocalEvent<MechDrillComponent, DrillDoafterSuccess>(OnDrillFinished);
-        SubscribeLocalEvent<MechDrillComponent, DrillDoafterCancel>(OnDrillCancelled);
+        SubscribeLocalEvent<MechDrillComponent, DoAfterEvent>(OnDoAfter);
     }
 
     /// <summary>
@@ -58,25 +65,19 @@ public sealed class MechDrillSystem : EntitySystem
         var damageTime = (damageRequired / gatheringTool.Damage.Total).Float();
         damageTime = Math.Max(1f, damageTime);
 
-        var cancelToken = new CancellationTokenSource();
-        var doAfter = new DoAfterEventArgs(args.User, damageTime, cancelToken.Token, component.Owner)
+        var doAfter = new DoAfterEventArgs(args.User, damageTime, target: component.Owner, used: uid)
         {
             BreakOnDamage = true,
             BreakOnStun = true,
             BreakOnTargetMove = true,
             BreakOnUserMove = true,
-            MovementThreshold = 0.25f,
-            BroadcastCancelledEvent = new DrillDoafterCancel { Tool = uid, Resource = args.Target.Value },
-            TargetFinishedEvent = new DrillDoafterSuccess { Tool = uid, Resource = args.Target.Value, Player = args.User }
+            MovementThreshold = 0.25f
         };
 
         _doAfter.DoAfter(doAfter);
     }
 
-    /// <summary>
-    /// When drilling is complete
-    /// </summary>
-    private void OnDrillFinished(EntityUid uid, MechDrillComponent component, DrillDoafterSuccess args)
+    private void OnDoAfter(EntityUid uid, MechDrillComponent component, DoAfterEvent args)
     {
         component.Token = null;
 
@@ -85,31 +86,8 @@ public sealed class MechDrillSystem : EntitySystem
         if (!_mech.TryChangeEnergy(equipmentComponent.EquipmentOwner.Value, component.DrillEnergyDelta))
             return;
 
-        RaiseLocalEvent(args.Resource, new GatheringDoafterSuccess { Tool = uid, Resource = args.Resource, Player = args.Player }, true);
+        // TODO FIXME RaiseLocalEvent(args.Resource, new GatheringDoafterSuccess { Tool = uid, Resource = args.Resource, Player = args.Player }, true);
 
         _mech.UpdateUserInterface(equipmentComponent.EquipmentOwner.Value);
-    }
-
-    /// <summary>
-    /// When drilling is cancelled
-    /// </summary>
-    private void OnDrillCancelled(EntityUid uid, MechDrillComponent component, DrillDoafterCancel args)
-    {
-        component.AudioStream?.Stop();
-        component.Token = null;
-        RaiseLocalEvent(args.Resource, new GatheringDoafterCancel { Tool = uid, Resource = args.Tool }, true);
-    }
-
-    public sealed class DrillDoafterCancel : EntityEventArgs
-    {
-        public EntityUid Tool;
-        public EntityUid Resource;
-    }
-
-    private sealed class DrillDoafterSuccess : EntityEventArgs
-    {
-        public EntityUid Tool;
-        public EntityUid Resource;
-        public EntityUid Player;
     }
 }

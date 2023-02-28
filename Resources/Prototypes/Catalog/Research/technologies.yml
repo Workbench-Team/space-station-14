@@ -255,7 +255,6 @@
     - WeaponSubMachineGunWt550
     - WeaponRifleLecter
     - WeaponShotgunDoubleBarreled
-    - WeaponRifleAk
     - WeaponPistolMk58
     - WeaponSubMachineGunVector
 
@@ -273,7 +272,6 @@
   unlockedRecipes:
     - WeaponDisabler
     - WeaponLaserCarbine
-    - WeaponAdvancedLaser
 #
 # - type: technology
 #   name: "explosives technology"
@@ -345,7 +343,7 @@
   - RipleyCentralElectronics
   - RipleyPeripheralsElectronics
   - MechEquipmentGrabber
-  - MechEquipmentDrill
+  # - MechEquipmentDrill
   - RipleyHarness
   - RipleyLArm
   - RipleyRArm
