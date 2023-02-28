@@ -214,21 +214,6 @@
   - SurveillanceWirelessCameraMonitorCircuitboard
   - ComputerTelevisionCircuitboard
 
-##  Technology for a weapon production
-- type: technology
-  name: technologies-weapon-machinery
-  id: WeaponMachinery
-  description: technologies-weapon-machinery-description
-  icon:
-    sprite: Structures/Machines/techfab.rsi
-    state: icon
-  requiredPoints: 10000
-  requiredTechnologies:
-  - IndustrialEngineering
-  unlockedRecipes:
-  - WeaponTechFabCircuitboard
-  - SecurityTechFabCircuitboard
-
 - type: technology
   name: technologies-ballistic
   id: BallisticTechnology
