@@ -17,7 +17,7 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 25
+        Blunt: 20
         Structural: 80
   - type: StaminaDamageOnHit
     damage: 25
