@@ -19,5 +19,7 @@
       types:
         Blunt: 25
         Structural: 80
+  - type: StaminaDamageOnHit
+    damage: 25
   - type: Item
     size: 150
