@@ -12,7 +12,7 @@ namespace Content.Server.Chemistry.Components
 
         [DataField("clumsyFailChance")]
         [ViewVariables(VVAccess.ReadWrite)]
-        public float ClumsyFailChance { get; set; } = 0.5f;
+        public float ClumsyFailChance { get; set; } = 0.0f;
 
         [DataField("transferAmount")]
         [ViewVariables(VVAccess.ReadWrite)]
