@@ -1,6 +1,3 @@
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
-using Content.Shared.Actions.ActionTypes;
-using Robust.Shared.Utility;
 using System.Threading;
 
 namespace Content.Server.Felinid

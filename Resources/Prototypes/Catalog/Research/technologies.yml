@@ -216,21 +216,6 @@
   - SurveillanceWirelessCameraMonitorCircuitboard
   - ComputerTelevisionCircuitboard
 
-##  Technology for a weapon production
-- type: technology
-  name: technologies-weapon-machinery
-  id: WeaponMachinery
-  description: technologies-weapon-machinery-description
-  icon:
-    sprite: Structures/Machines/techfab.rsi
-    state: icon
-  requiredPoints: 10000
-  requiredTechnologies:
-  - IndustrialEngineering
-  unlockedRecipes:
-  - WeaponTechFabCircuitboard
-  - SecurityTechFabCircuitboard
-
 - type: technology
   name: technologies-ballistic
   id: BallisticTechnology
@@ -257,7 +242,6 @@
     - WeaponSubMachineGunWt550
     - WeaponRifleLecter
     - WeaponShotgunDoubleBarreled
-    - WeaponRifleAk
     - WeaponPistolMk58
     - WeaponSubMachineGunVector
 
@@ -275,7 +259,6 @@
   unlockedRecipes:
     - WeaponDisabler
     - WeaponLaserCarbine
-    - WeaponAdvancedLaser
 #
 # - type: technology
 #   name: "explosives technology"
@@ -347,7 +330,7 @@
   - RipleyCentralElectronics
   - RipleyPeripheralsElectronics
   - MechEquipmentGrabber
-  - MechEquipmentDrill
+  # - MechEquipmentDrill
   - RipleyHarness
   - RipleyLArm
   - RipleyRArm
