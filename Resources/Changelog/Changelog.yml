@@ -1,47 +1,4 @@
 Entries:
-- author: keronshb
-  changes:
-  - {message: Fixed an issue where crates would clip through firelocks., type: Fix}
-  id: 2569
-  time: '2022-11-04T01:18:59.0000000+00:00'
-- author: Vordenburg
-  changes:
-  - {message: Allowed gas filters to be reset to filter no gases., type: Add}
-  id: 2570
-  time: '2022-11-04T01:27:20.0000000+00:00'
-- author: ShadowCommander
-  changes:
-  - {message: Alt-clicking can now be used on hands again., type: Fix}
-  id: 2571
-  time: '2022-11-04T01:36:45.0000000+00:00'
-- author: metalgearsloth
-  changes:
-  - {message: Fixed the damage/death overlay being off-centre while using the "separated"
-      HUD layout., type: Fix}
-  id: 2572
-  time: '2022-11-04T01:44:51.0000000+00:00'
-- author: Rane
-  changes:
-  - {message: Objectives involving other traitors should be more reliable at providing
-      traitors that are alive and not SSD., type: Fix}
-  id: 2573
-  time: '2022-11-04T02:58:19.0000000+00:00'
-- author: keronshb
-  changes:
-  - {message: Stealth boxes are now available via traitor uplinks., type: Add}
-  - {message: 'Stealth boxes have been rebalanced. They now require players to move
-      slower to stay hidden, collide with bullets, and can no longer trap simple mobs.',
-    type: Tweak}
-  - {message: Fixed a bug that allowed sleeping mobs to still control vehicles and
-      boxes., type: Fix}
-  id: 2574
-  time: '2022-11-04T03:16:24.0000000+00:00'
-- author: 25203
-  changes:
-  - {message: Upgradeable machines can now be examined to show the effects that the
-      upgrades have., type: Add}
-  id: 2575
-  time: '2022-11-04T03:27:47.0000000+00:00'
 - author: rolfero
   changes:
   - {message: You can now link airlocks and windoors to buttons and levers!, type: Add}
@@ -2916,3 +2873,43 @@ Entries:
   - {message: Syringes - Prevents multi use on injecting self/targets., type: Fix}
   id: 3068
   time: '2023-02-26T05:33:06.0000000+00:00'
+- author: metalgearsloth
+  changes:
+  - {message: Fix console warnings about rsi sprite access, type: Fix}
+  - {message: Fix issue with device configurators out of line-of-sight not closing
+      properly., type: Fix}
+  id: 3069
+  time: '2023-02-26T07:48:58.0000000+00:00'
+- author: PJB3005
+  changes:
+  - {message: Game changelogs are now sent to Discord. Assuming everything works you
+      might even be reading this there right now!, type: Add}
+  id: 3070
+  time: '2023-02-26T16:45:07.0000000+00:00'
+- author: Hypospray Nerfer
+  changes:
+  - {message: 'Hypospray, Hypopen, and Gorlax Hypospray now all have short cooldowns.',
+    type: Tweak}
+  id: 3071
+  time: '2023-02-27T21:19:53.0000000+00:00'
+- author: metalgearsloth
+  changes:
+  - {message: Fix tile definition reloads., type: Fix}
+  id: 3072
+  time: '2023-02-28T05:32:05.0000000+00:00'
+- author: pofitlo
+  changes:
+  - {message: added ability to drag something for animals, type: Add}
+  id: 3073
+  time: '2023-02-28T12:57:09.0000000+00:00'
+- author: crazybrain
+  changes:
+  - {message: 'Changed ID card examine icon, at least until someone makes a better
+      icon.', type: Tweak}
+  id: 3074
+  time: '2023-02-28T13:00:23.0000000+00:00'
+- author: Slava0135
+  changes:
+  - {message: meat spike no longer vaporizes victim items, type: Fix}
+  id: 3075
+  time: '2023-02-28T13:14:14.0000000+00:00'

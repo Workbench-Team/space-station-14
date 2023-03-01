@@ -323,17 +323,6 @@
     Steel: 500
 
 - type: latheRecipe
-  id: WeaponRifleAk
-  icon:
-    sprite: Objects/Weapons/Guns/Rifles/ak.rsi
-    state: base
-  result: WeaponRifleAk
-  completetime: 30
-  materials:
-    Wood: 200
-    Steel: 1000
-
-- type: latheRecipe
   id: WeaponPistolMk58
   icon:
     sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
@@ -388,18 +377,6 @@
     Glass: 500
     Plastic: 500
     Steel: 500
-
-- type: latheRecipe
-  id: WeaponAdvancedLaser
-  icon:
-    sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
-    state: base
-  result: WeaponAdvancedLaser
-  completetime: 30
-  materials:
-    Gold: 1500
-    Steel: 500
-    Uranium: 500
 
 - type: latheRecipe
   id: MagazineBoxPistol

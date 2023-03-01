@@ -14,7 +14,7 @@
     sprite: Objects/Specific/Chemistry/beaker.rsi
     state: beaker
   product: CrateChemistrySupplies
-  cost: 750
+  cost: 900
   category: Medical
   group: market
 
