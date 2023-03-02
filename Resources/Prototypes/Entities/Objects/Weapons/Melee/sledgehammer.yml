@@ -4,6 +4,9 @@
   id: SledgeHammer
   description: he best tool for demolishing walls, kneecaps, and skulls of your foes! Just be careful with it, eh?
   components:
+  - type: Tag
+    tags:
+    - SledgeHammer
   - type: Sprite
     sprite: Objects/Weapons/Melee/sledgehammer.rsi
     state: icon
@@ -11,15 +14,20 @@
     attackRate: 0.65
     damage:
       types:
-        Blunt: 20
-        Structural: 20
+        Blunt: 15
+        Structural: 15
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
         Blunt: 20
-        Structural: 80
+        Structural: 60
   - type: StaminaDamageOnHit
     damage: 25
   - type: Item
     size: 150
+  - type: Clothing
+    sprite: Objects/Weapons/Melee/sledgehammer.rsi
+    quickEquip: false
+    slots:
+    - back
