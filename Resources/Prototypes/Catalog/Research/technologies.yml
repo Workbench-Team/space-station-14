@@ -129,6 +129,8 @@
   unlockedRecipes:
   - Beaker
   - LargeBeaker
+  - LargeBottle
+  - SmallBottle
   - CryostasisBeaker
   - Dropper
   - Syringe

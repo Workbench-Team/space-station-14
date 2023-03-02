@@ -187,6 +187,8 @@
       - Hemostat
       - Beaker
       - LargeBeaker
+      - LargeBottle
+      - SmallBottle
       - CryostasisBeaker
       - ClothingEyesGlassesScience
       - Dropper
@@ -559,6 +561,8 @@
       - Hemostat
       - Beaker
       - LargeBeaker
+      - LargeBottle
+      - SmallBottle
       - CryostasisBeaker
       - ClothingEyesGlassesScience
       - Dropper
