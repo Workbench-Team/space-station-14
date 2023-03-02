@@ -332,6 +332,8 @@
       - APECircuitboard
       - ArtifactAnalyzerMachineCircuitboard
       - TraversalDistorterMachineCircuitboard
+      - SecurityTechFabCircuitboard
+      - WeaponTechFabCircuitboard
       - BoozeDispenserMachineCircuitboard
       - SodaDispenserMachineCircuitboard
   - type: MaterialStorage
@@ -466,7 +468,7 @@
   description: Prints weapons for use by security crew.
   components:
   - type: AccessReader
-    access: [["Brig"]]
+    access: [["Armory"]]
   - type: Sprite
     netsync: false
     sprite: Structures/Machines/techfab.rsi
@@ -512,6 +514,7 @@
       # Weapons energy
       - WeaponDisabler
       - WeaponLaserCarbine
+      - WeaponAdvancedLaser
   - type: MaterialStorage
     whitelist:
       tags:
