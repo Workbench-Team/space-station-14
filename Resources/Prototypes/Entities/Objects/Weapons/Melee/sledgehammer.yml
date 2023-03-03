@@ -26,7 +26,6 @@
     damage: 25
   - type: Item
     size: 150
-  - type: Item
     sprite: Objects/Weapons/Melee/sledgehammer.rsi
     quickEquip: false
     slots:
