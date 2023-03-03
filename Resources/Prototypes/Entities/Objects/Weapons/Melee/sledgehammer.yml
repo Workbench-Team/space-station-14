@@ -4,9 +4,6 @@
   id: SledgeHammer
   description: he best tool for demolishing walls, kneecaps, and skulls of your foes! Just be careful with it, eh?
   components:
-  - type: Tag
-    tags:
-    - SledgeHammer
   - type: Sprite
     sprite: Objects/Weapons/Melee/sledgehammer.rsi
     state: icon
