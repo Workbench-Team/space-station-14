@@ -152,6 +152,21 @@
 
 - type: entity
   parent: ClothingHandsBase
+  id: ClothingHandsGlovesColorRainbow
+  name: rainbow gloves
+  description: Those gloves look very fancy.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/rainbow.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Color/rainbow.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-rainbow
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
   id: ClothingHandsGlovesColorYellow
   name: insulated gloves
   description: These gloves will protect the wearer from electric shocks.
@@ -198,3 +213,39 @@
         - 1.5
         - 1.5
         - 1.5
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesAtmos
+  name: atmospheric extrication gloves
+  description: Heavy duty gloves for firefighters. These are thick, non-flammable and let you carry people faster.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/atmos.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/atmos.rsi
+  - type: GloveHeatResistance
+    heatResistance: 5000
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+    fiberColor: fibers-yellow
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesCE
+  name: advanced insulated gloves
+  description: These gloves provide excellent heat and electric insulation. They are so thin you can barely feel them.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/ce.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/ce.rsi
+  - type: GloveHeatResistance
+    heatResistance: 6000
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+    fiberColor: fibers-yellow
+  - type: FingerprintMask
