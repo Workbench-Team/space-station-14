@@ -13,6 +13,7 @@
         - FoamBlade
       rareChance: 0.03
       prototypes:
+        - PlushieTomsky
         - PlushieBee
         - PlushieAtmosian
         - PlushieNuke

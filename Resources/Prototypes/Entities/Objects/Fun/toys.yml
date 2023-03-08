@@ -129,6 +129,17 @@
     soundHit:
       path: /Audio/Items/Toys/muffled_weh.ogg
 
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieTomsky
+  name: Tomsky plushie
+  description:
+  components:
+  - type: Sprite
+    state: plushie_tomsky
+
+
 - type: entity
   parent: BasePlushie
   id: PlushieSharkBlue
@@ -607,7 +618,7 @@
       revolver-ammo: !type:Container
 
 - type: entity
-  parent: RevolverCapGun 
+  parent: RevolverCapGun
   id: RevolverCapGunFake
   name: cap gun
   description: Looks almost like the real thing! Ages 8 and up.

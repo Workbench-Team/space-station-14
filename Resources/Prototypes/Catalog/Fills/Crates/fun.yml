@@ -32,6 +32,9 @@
         amount: 1
       - id: PlushieAtmosian
         amount: 1
+      - id: PlushieTomsky
+        amount: 1
+
 
 
 - type: entity
