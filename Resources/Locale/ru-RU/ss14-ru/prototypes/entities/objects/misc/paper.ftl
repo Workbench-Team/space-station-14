@@ -100,6 +100,3 @@ ent-RubberStampSyndicate = печать Синдиката
 ent-RubberStampCE = печать старшего инженера
     .desc = { ent-RubberStampMime.desc }
     .suffix = { "" }
-ent-RubberStampIAA = печать юридического бюро
-    .desc = { ent-RubberStampMime.desc }
-    .suffix = { "" }

@@ -6,6 +6,26 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
+      
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelHeadOfPersonnelFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: TelescopicBaton
+      
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelQuartermasterFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: TelescopicBaton
 
 - type: entity
   noSpawn: true
@@ -35,6 +55,16 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalMedical
+      
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDuffelMedical
+  id: ClothingBackpackDuffelChiefMedicalOfficerFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalMedical
+      - id: TelescopicBaton
 
 - type: entity
   noSpawn: true
@@ -45,7 +75,17 @@
     contents:
       - id: BoxSurvival
       #- name: StationCharter
-      #- name: TelescopicBaton
+      - id: TelescopicBaton
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDuffelEngineering
+  id: ClothingBackpackDuffelChiefEngineerFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalEngineering
+      - id: TelescopicBaton
 
 - type: entity
   noSpawn: true
@@ -55,6 +95,16 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalEngineering
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDuffelScience
+  id: ClothingBackpackDuffelResearchDirectorFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: TelescopicBaton
 
 - type: entity
   noSpawn: true

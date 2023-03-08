@@ -1,6 +1,9 @@
 ent-Stunbaton = stun baton
     .desc = A stun baton for incapacitating people with. Actively harming with this is considered bad tone.
     .suffix = { "" }
+ent-TelescopicBaton = telescopic baton
+    .desc = A telescopic baton for incapacitating people with.
+    .suffix = { "" }
 ent-Flash = flash
     .desc = An ultrabright flashbulb with a trigger, which causes the victim to be dazed and lose their eyesight for a moment. Useless when burnt out.
     .suffix = { "" }

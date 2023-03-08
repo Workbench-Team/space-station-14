@@ -31,6 +31,16 @@
 - type: entity
   noSpawn: true
   parent: ClothingBackpackMedical
+  id: ClothingBackpackChiefMedicalOfficerFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalMedical
+      - id: TelescopicBaton
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackMedical
   id: ClothingBackpackMedicalFilled
   components:
   - type: StorageFill
@@ -46,7 +56,27 @@
     contents:
       - id: BoxSurvival
       #- name: StationCharter
-      #- name: TelescopicBaton
+      - id: TelescopicBaton
+      
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpack
+  id: ClothingBackpackQuartermasterFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalMedical
+      - id: TelescopicBaton
+      
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackEngineering
+  id: ClothingBackpackChiefEngineerFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalEngineering
+      - id: TelescopicBaton
 
 - type: entity
   noSpawn: true
@@ -56,6 +86,26 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalEngineering
+      
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackHeadOfPersonnelFilled
+  noSpawn: true
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: TelescopicBaton
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackScience
+  id: ClothingBackpackResearchDirectorFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: TelescopicBaton
 
 - type: entity
   noSpawn: true
@@ -154,6 +204,7 @@
         - id: MagazinePistolHighCapacityRubber
         - id: MagazinePistol
         - id: Handcuffs
+        - id: TelescopicBaton
 
 
 - type: entity
@@ -169,6 +220,7 @@
         - id: WeaponPulseCarbine
         - id: BoxHandcuff
         - id: Handcuffs
+        - id: TelescopicBaton
 
 - type: entity
   noSpawn: true
@@ -181,7 +233,7 @@
         - id: WeaponPulseCarbine
         - id: Hypospray
         - id: MedkitAdvancedFilled
-
+        - id: TelescopicBaton
 
 - type: entity
   noSpawn: true
@@ -197,6 +249,7 @@
         - id: RCDAmmo
         - id: RCDAmmo
         - id: RCDAmmo
+        - id: TelescopicBaton
 
 - type: entity
   noSpawn: true
@@ -211,6 +264,7 @@
         - id: BoxLightMixed
         - id: BoxLightMixed
         - id: Soap
+        - id: TelescopicBaton
 
 - type: entity
   noSpawn: true

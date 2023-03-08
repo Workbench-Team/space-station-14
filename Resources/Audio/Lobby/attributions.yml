@@ -38,7 +38,7 @@
   copyright: "Insomnia by Nomyn"
   source: "https://www.toneden.io/nomyn/post/nomyn-insomnia"
 
-- files: ["we_will_fly.ogg"]
+- files: ["мы-улетим.ogg"]
   license: "Custom"
   copyright: "Песня Мы улетим из Космические рейнджеры 2 от Василий Шестовец и Ксения Ларионова. Лицензия для этой песни была не найдена или отсутствует"
   source: "https://www.youtube.com/watch?v=CwlB5P-rMGc"
@@ -62,3 +62,8 @@
   license: "CC-BY-3.0"
   copyright: "Stellar by Nomyn"
   source: "https://soundcloud.com/nomyn/stellar"
+
+- files: ["родина.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Родина от Проект Лазарь"
+  source: "https://www.youtube.com/watch?v=XnY7Q-ULqpA"
