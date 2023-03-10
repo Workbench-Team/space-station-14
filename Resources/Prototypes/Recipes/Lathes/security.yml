@@ -287,7 +287,7 @@
   result: WeaponRevolverInspector
   completetime: 15
   materials:
-    Steel: 500
+    Steel: 600
 
 - type: latheRecipe
   id: WeaponSubMachineGunWt550
@@ -297,8 +297,8 @@
   result: WeaponSubMachineGunWt550
   completetime: 30
   materials:
-    Plastic: 200
-    Steel: 1000
+    Plastic: 250
+    Steel: 1200
 
 - type: latheRecipe
   id: WeaponRifleLecter
@@ -308,8 +308,8 @@
   result: WeaponRifleLecter
   completetime: 30
   materials:
-    Plastic: 200
-    Steel: 1300
+    Plastic: 250
+    Steel: 1600
 
 - type: latheRecipe
   id: WeaponShotgunDoubleBarreled
@@ -319,8 +319,8 @@
   result: WeaponShotgunDoubleBarreled
   completetime: 20
   materials:
-    Wood: 500
-    Steel: 500
+    Wood: 600
+    Steel: 600
 
 - type: latheRecipe
   id: WeaponPistolMk58
@@ -330,7 +330,7 @@
   result: WeaponPistolMk58
   completetime: 15
   materials:
-    Steel: 500
+    Steel: 600
 
 - type: latheRecipe
   id: WeaponSubMachineGunVector
@@ -340,8 +340,8 @@
   result: WeaponSubMachineGunVector
   completetime: 30
   materials:
-    Plastic: 200
-    Steel: 800
+    Plastic: 400
+    Steel: 1200
 
 # Weapons energy
 - type: latheRecipe
@@ -352,8 +352,8 @@
   result: WeaponDisabler
   completetime: 15
   materials:
-    Glass: 300
-    Steel: 300
+    Glass: 350
+    Steel: 350
 
 - type: latheRecipe
   id: WeaponDisablerPractice
@@ -363,8 +363,8 @@
   result: WeaponDisablerPractice
   completetime: 15
   materials:
-    Glass: 200
-    Steel: 200
+    Glass: 250
+    Steel: 250
 
 - type: latheRecipe
   id: WeaponLaserCarbine
@@ -374,10 +374,22 @@
   result: WeaponLaserCarbine
   completetime: 30
   materials:
-    Glass: 500
-    Plastic: 500
-    Steel: 500
+    Glass: 600
+    Plastic: 600
+    Steel: 600
 
+- type: latheRecipe
+  id: WeaponAdvancedLaser
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
+    state: base
+  result: WeaponAdvancedLaser
+  completetime: 30
+  materials:
+    Gold: 2000
+    Steel: 600
+    Uranium: 600
+    
 - type: latheRecipe
   id: MagazineBoxPistol
   result: MagazineBoxPistol
