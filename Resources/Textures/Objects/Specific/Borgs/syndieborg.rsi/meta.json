@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "taken from https://github.com/TauCetiStation/TauCetiClassic",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "syndieborg-broken",
+      "directions": 4
+    },
+    {
+      "name": "syndieborg",
+      "directions": 4
+    }
+  ]
+}

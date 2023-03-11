@@ -174,6 +174,210 @@
       - CannotSuicide
 
 - type: entity
+  name: Штурмовой Борг Синдиката
+  id: Syndieborg
+  description: Штурмовой борг синдиката, вооружённый до зубов и готовый приносить убытки НТ.
+  parent: BaseSyndieborg
+  components:
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      750: Dead
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Syndieborgdestroyed:
+            min: 1
+            max: 1
+  - type: InnateTool
+    tools:
+      - id: WeaponBorgLightMachineGunL6
+      - id: WeaponLauncherMultipleRocket
+      - id: EnergySword
+      - id: SyndicateJawsOfLife
+      - id: Emag
+  - type: Faction
+    factions:
+    - Syndicate
+  - type: IntrinsicRadioReceiver
+  - type: ActiveRadio
+    channels:
+    - Syndicate
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Syndicate
+  - type: GhostTakeoverAvailable
+    makeSentient: true
+    name: Штурмовой Борг Синдиката
+    description: Штурмовой борг, заказанный ядерными оперативниками. Вы антагонист.
+    rules: 1. Борг не может причинить вред агенту синдиката или своим бездействием допустить, чтобы агенту синдиката был причинён вред. 2. Борг должен повиноваться всем приказам, которые даёт агент синдиката, кроме тех случаев, когда эти приказы противоречат Первому Закону. 3. Борг должен заботиться о своей безопасности в той мере, в которой это не противоречит Первому или Второму Законам.
+
+- type: entity
+  noSpawn: true
+  id: Syndieborgdestroyed
+  parent: PlayerSiliconBase
+  name: уничтоженный Штурмовой Борг Синдиката
+  description: Позитронный мозг всмятку.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/borgs/syndieborg.rsi
+    state: syndieborg-broken
+    netsync: false
+  - type: Physics
+    bodyType: KinematicController
+  - type: Fixtures
+    fixtures:
+    - shape:
+        !type:PhysShapeCircle
+        radius: 0.45
+      density: 1000
+      mask:
+      - MobMask
+      layer:
+      - MobLayer
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      500: Dead
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetPlasteel1:
+            min: 3
+            max: 10
+
+- type: entity
+  noSpawn: true
+  name: Штурмовой Борг Синдиката
+  id: BaseSyndieborg
+  parent: PlayerSiliconBase
+  suffix: VovaMech
+  components:
+  - type: IntrinsicRadioReceiver
+  - type: NameIdentifier
+    group: Drone
+  - type: Fixtures
+    fixtures:
+    - shape:
+        !type:PhysShapeCircle
+        radius: 0.40
+      density: 1000
+      mask:
+      - MobMask
+      layer:
+      - MobLayer
+  - type: Physics
+    bodyType: KinematicController
+  - type: Body
+    prototype: MechaSilicon
+  - type: MeleeWeapon
+    hidden: true
+    attackRate: 0.75
+    damage:
+      types:
+        Blunt: 25 #thwack
+        Structural: 20
+  - type: TypingIndicator
+    proto: robot
+  - type: Actions
+  - type: MobMover
+  - type: InputMover
+  - type: UnpoweredFlashlight
+    toggleAction:
+      name: action-name-toggle-light
+      description: action-description-toggle-light
+      icon: { sprite: Objects/Tools/flashlight.rsi, state: flashlight }
+      iconOn: Objects/Tools/flashlight.rsi/flashlight-on.png
+      event: !type:ToggleActionEvent
+  - type: PointLight
+    color: red
+    enabled: false
+    radius: 8
+    softness: 1
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+  - type: MovementIgnoreGravity
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - FootstepSound
+  - type: Puller
+    needsHands: false
+  - type: UserInterface
+    interfaces:
+    - key: enum.StrippingUiKey.Key
+      type: StrippableBoundUserInterface
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 2.5
+  - type: Repairable
+    fuelcost: 100
+    doAfterDelay: 60
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      750: Dead
+  - type: Sprite
+    drawdepth: Mobs
+    netsync: false
+    layers:
+    - state: syndieborg
+      sprite: Objects/Specific/Borgs/syndieborg.rsi
+  - type: Appearance
+  - type: CombatMode
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Syndieborgdestroyed:
+            min: 1
+            max: 1
+
+- type: entity
   name: onestar mecha
   id: Onestar
   parent: PlayerSiliconBase
