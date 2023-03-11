@@ -209,7 +209,7 @@
       - id: WeaponBorgLightMachineGunL6
       - id: WeaponLauncherMultipleRocket
       - id: EnergySword
-      - id: SyndicateJawsOfLife
+      - id: Crowbar
       - id: Emag
       - id: Pinpointer
   - type: Faction
@@ -299,7 +299,7 @@
   - type: Physics
     bodyType: KinematicController
   - type: Body
-    prototype: SiliconBase
+    prototype: Drone
   - type: MeleeWeapon
     hidden: true
     attackRate: 0.75
