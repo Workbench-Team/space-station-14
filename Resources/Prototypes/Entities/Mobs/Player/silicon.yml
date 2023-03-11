@@ -211,7 +211,7 @@
       - id: EnergySword
       - id: Crowbar
       - id: Emag
-      - id: Pinpointer
+      - id: PinpointerNuclear
   - type: Faction
     factions:
     - Syndicate
