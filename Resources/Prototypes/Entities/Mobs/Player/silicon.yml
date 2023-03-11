@@ -236,7 +236,7 @@
   description: Позитронный мозг всмятку.
   components:
   - type: Sprite
-    sprite: Objects/Specific/borgs/syndieborg.rsi
+    sprite: Objects/Specific/Borgs/syndieborg.rsi
     state: syndieborg-broken
     netsync: false
   - type: Physics
