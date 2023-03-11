@@ -270,6 +270,26 @@
   - UplinkUtility
 
 - type: listing
+  id: UplinkReinforcementRadioSyndicateBorg
+  name: uplink-reinforcement-radio-borg-name
+  description: uplink-reinforcement-radio-borg-desc
+  productEntity: ReinforcementRadioSyndicateBorg
+  icon: { sprite: Objects/Devices/communication.rsi, state: old-radio }
+  cost:
+    Telecrystal: 60
+  categories:
+  - UplinkUtility
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+  - !type:BuyerWhitelistCondition
+    blacklist:
+      components:
+      - SurplusBundle
+
+- type: listing
   id: UplinkStealthBox
   name: uplink-stealth-box-name
   description: uplink-stealth-box-desc
@@ -568,7 +588,7 @@
     blacklist:
       components:
       - SurplusBundle
-  
+
 - type: listing
   id: uplinkRevolverCapGunFake
   name: uplink-revolver-cap-gun-fake-name
@@ -750,7 +770,7 @@
     Telecrystal: 8
   categories:
   - UplinkMisc
-  
+
 - type: listing
   id: UplinkStimkit
   name: uplink-stimkit-name
@@ -760,7 +780,7 @@
     Telecrystal: 12
   categories:
   - UplinkMisc
-  
+
 - type: listing
   id: UplinkStimpackExperimental
   name: uplink-experimental-stimpack-name
