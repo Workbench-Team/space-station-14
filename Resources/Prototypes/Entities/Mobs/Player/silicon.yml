@@ -206,7 +206,7 @@
             max: 1
   - type: InnateTool
     tools:
-      - id: WeaponBorgLightMachineGunL6
+      - id: WeaponLightMachineGunL6
       - id: WeaponLauncherMultipleRocket
       - id: EnergySword
       - id: Crowbar
