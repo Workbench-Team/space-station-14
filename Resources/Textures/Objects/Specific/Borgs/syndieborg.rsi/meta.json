@@ -8,8 +8,7 @@
   },
   "states": [
     {
-      "name": "syndieborg-broken",
-      "directions": 4
+      "name": "syndieborg-broken"
     },
     {
       "name": "syndieborg",
