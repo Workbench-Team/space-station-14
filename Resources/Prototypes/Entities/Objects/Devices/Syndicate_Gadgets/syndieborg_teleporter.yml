@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: ReinforcementRadioSyndicateBorg
-  name: странный телепортер подкрепления
-  description: Обычное радио. Обычное?..
+  name: strange reinforcement teleporter
+  description: Just a radio. Radio?..
   components:
   - type: Sprite
     sprite: Objects/Devices/communication.rsi
