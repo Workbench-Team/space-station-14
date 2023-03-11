@@ -174,9 +174,9 @@
       - CannotSuicide
 
 - type: entity
-  name: Штурмовой Борг Синдиката
+  name: Assault Syndicate Borg
   id: Syndieborg
-  description: Штурмовой борг синдиката, вооружённый до зубов и готовый приносить убытки НТ.
+  description: The Syndicate's assault Borg, armed to the teeth and ready to bring losses to the NT.
   parent: BaseSyndieborg
   components:
   - type: MobState
@@ -232,8 +232,8 @@
   noSpawn: true
   id: Syndieborgdestroyed
   parent: PlayerSiliconBase
-  name: уничтоженный Штурмовой Борг Синдиката
-  description: Позитронный мозг всмятку.
+  name: Destroyed Assault Syndicate Borg
+  description: The positron brain is squashed.
   components:
   - type: Sprite
     sprite: Objects/Specific/Borgs/syndieborg.rsi
@@ -279,7 +279,7 @@
 
 - type: entity
   noSpawn: true
-  name: Штурмовой Борг Синдиката
+  name: Assault Syndicate Borg
   id: BaseSyndieborg
   parent: PlayerSiliconBase
   suffix: VovaMech
@@ -300,7 +300,7 @@
   - type: Physics
     bodyType: KinematicController
   - type: Body
-    prototype: MechaSilicon
+    prototype: PlayerSiliconBase
   - type: MeleeWeapon
     hidden: true
     attackRate: 0.75
