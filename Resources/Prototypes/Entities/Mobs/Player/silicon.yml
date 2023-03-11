@@ -211,6 +211,7 @@
       - id: EnergySword
       - id: SyndicateJawsOfLife
       - id: Emag
+      - id: Pinpointer
   - type: Faction
     factions:
     - Syndicate
