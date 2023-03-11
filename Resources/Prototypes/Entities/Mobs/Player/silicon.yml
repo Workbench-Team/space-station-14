@@ -232,7 +232,7 @@
   noSpawn: true
   id: Syndieborgdestroyed
   parent: PlayerSiliconBase
-  name: Destroyed Assault Syndicate Borg
+  name: Assault Syndicate Borg
   description: The positron brain is squashed.
   components:
   - type: Sprite
