@@ -282,7 +282,6 @@
   name: Assault Syndicate Borg
   id: BaseSyndieborg
   parent: PlayerSiliconBase
-  suffix: VovaMech
   components:
   - type: IntrinsicRadioReceiver
   - type: NameIdentifier
@@ -300,7 +299,7 @@
   - type: Physics
     bodyType: KinematicController
   - type: Body
-    prototype: PlayerSiliconBase
+    prototype: SiliconBase
   - type: MeleeWeapon
     hidden: true
     attackRate: 0.75
@@ -328,10 +327,6 @@
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: MovementIgnoreGravity
-  - type: Tag
-    tags:
-    - DoorBumpOpener
-    - FootstepSound
   - type: Puller
     needsHands: false
   - type: UserInterface
