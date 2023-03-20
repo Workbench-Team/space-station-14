@@ -421,6 +421,7 @@
       - ClothingEyesGlassesSecurity
       - RiotShield
       - CartridgePistol
+      - CartridgePistolUranium
       - CartridgeMagnum
       - CartridgePistolRubber
       - CartridgeMagnumRubber
@@ -436,6 +437,7 @@
       - TargetSyndicate
       - TargetClown
       - MagazineBoxPistol
+      - MagazineBoxPistolUranium
       - MagazineBoxPistolRubber
       - MagazineBoxMagnum
       - MagazineBoxMagnumRubber

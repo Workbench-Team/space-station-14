@@ -21,6 +21,18 @@
         Piercing: 19
 
 - type: entity
+  id: BulletPistolUranium
+  name: bullet (.35 auto uranium)
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 17
+        Radiation: 2
+
+- type: entity
   id: BulletPistolPractice
   name: bullet (.35 auto practice)
   parent: BaseBulletPractice

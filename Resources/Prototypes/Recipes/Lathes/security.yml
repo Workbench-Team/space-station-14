@@ -107,6 +107,14 @@
     Steel: 10
 
 - type: latheRecipe
+  id: CartridgePistolUranium
+  result: CartridgePistolUranium
+  completetime: 10
+  materials:
+    Uranium: 1
+    Steel: 10
+
+- type: latheRecipe
   id: ShellShotgun
   result: ShellShotgun
   completetime: 2
@@ -407,6 +415,14 @@
   completetime: 5
   materials:
     Steel: 650
+
+- type: latheRecipe
+  id: MagazineBoxPistolUranium
+  result: MagazineBoxPistolUranium
+  completetime: 25
+  materials:
+    Steel: 650
+    Uranium: 60
 
 - type: latheRecipe
   id: MagazineBoxPistolRubber
