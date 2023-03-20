@@ -445,15 +445,16 @@
       - MagazineBoxLightRifleRubber
       # Magazines
       - MagazinePistolRubber
-      - MagazineMagnumRubber
-      - MagazineCaselessRifleRubber
+      - SpeedLoaderMagnumRubber
       - MagazineLightRifleRubber
       - MagazineRifleRubber
+      - MagazineMagnumSubMachineGunRubber
       - MagazinePistol
-      - MagazineMagnum
-      - MagazineCaselessRifle
+      - SpeedLoaderMagnum
       - MagazineLightRifle
       - MagazineRifle
+      - MagazineMagnumSubMachineGun
+      - MagazinePistolSubMachineGunTopMounted
   - type: MaterialStorage
     whitelist:
       tags:
@@ -496,15 +497,16 @@
     dynamicRecipes:
       # Magazines
       - MagazinePistolRubber
-      - MagazineMagnumRubber
-      - MagazineCaselessRifleRubber
+      - SpeedLoaderMagnumRubber
       - MagazineLightRifleRubber
       - MagazineRifleRubber
+      - MagazineMagnumSubMachineGunRubber
       - MagazinePistol
-      - MagazineMagnum
-      - MagazineCaselessRifle
+      - SpeedLoaderMagnum
       - MagazineLightRifle
       - MagazineRifle
+      - MagazineMagnumSubMachineGun
+      - MagazinePistolSubMachineGunTopMounted
       # Weapons kinetic
       - WeaponRevolverInspector
       - WeaponSubMachineGunWt550
