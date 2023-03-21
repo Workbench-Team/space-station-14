@@ -12,7 +12,7 @@
     proto: BulletPistol
   - type: Sprite
     netsync: false
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -36,6 +36,10 @@
   components:
   - type: CartridgeAmmo
     proto: BulletPistolHighVelocity
+  - type: Sprite
+    layers:
+    - state: hv
+      map: ["enum.AmmoVisualLayers.Base"]
 
 - type: entity
   id: CartridgePistolUranium
@@ -44,6 +48,10 @@
   components:
   - type: CartridgeAmmo
     proto: BulletPistolUranium
+  - type: Sprite
+    layers:
+    - state: uranium
+      map: ["enum.AmmoVisualLayers.Base"]
 
 - type: entity
   id: CartridgePistolPractice
@@ -52,6 +60,10 @@
   components:
   - type: CartridgeAmmo
     proto: BulletPistolPractice
+  - type: Sprite
+    layers:
+    - state: practice
+      map: ["enum.AmmoVisualLayers.Base"]
 
 - type: entity
   id: CartridgePistolRubber
@@ -60,3 +72,7 @@
   components:
   - type: CartridgeAmmo
     proto: BulletPistolRubber
+  - type: Sprite
+    layers:
+    - state: rubber
+      map: ["enum.AmmoVisualLayers.Base"]
