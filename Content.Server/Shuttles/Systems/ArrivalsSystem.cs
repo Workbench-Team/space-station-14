@@ -295,7 +295,7 @@ public sealed class ArrivalsSystem : EntitySystem
     private void OnRoundStarting(RoundStartingEvent ev)
     {
         // Setup arrivals station
-        if (!Enabled)
+        if (Enabled)
             return;
 
         SetupArrivalsStation();
