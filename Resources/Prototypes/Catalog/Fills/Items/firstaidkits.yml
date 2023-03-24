@@ -71,7 +71,9 @@
         amount: 3
       - id: SyringeInaprovaline
         amount: 1
-
+      - id: BloodPack
+        amount: 1
+        
 - type: entity
   id: MedkitRadiationFilled
   suffix: Filled

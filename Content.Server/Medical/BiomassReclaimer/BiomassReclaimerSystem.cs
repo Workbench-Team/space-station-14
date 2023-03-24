@@ -77,7 +77,8 @@ namespace Content.Server.Medical.BiomassReclaimer
                 {
                     continue;
                 }
-
+                
+                Spawn("BloodPack", Transform(reclaimer.Owner).Coordinates);
                 _material.SpawnMultipleFromMaterial(reclaimer.CurrentExpectedYield, "Biomass", Transform(reclaimer.Owner).Coordinates);
 
                 reclaimer.BloodReagent = null;

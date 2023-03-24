@@ -238,6 +238,53 @@
     - Cryobeaker
 
 - type: entity
+  name: Blood pack
+  parent: BaseBeaker
+  description: Thanks science for all races have the same blood type.
+  id: BloodPack
+  components:
+  - type: Spillable
+    solution: beaker
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/blood_pack.rsi
+    netsync: false
+    layers:
+      - state: bloodpack
+      - state: bloodpack1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Item
+    size: 5
+    sprite: Objects/Specific/Chemistry/blood_pack.rsi
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 50
+        canMix: true
+        reagents:
+        - ReagentId: Blood
+          Quantity: 50
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: desecration
+      - !type:SpillBehavior
+        solution: beaker
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: bloodpack
+  - type: StaticPrice
+    price: 40
+
+- type: entity
   name: bluespace beaker
   parent: BaseBeaker
   description: Powered by experimental bluespace technology.

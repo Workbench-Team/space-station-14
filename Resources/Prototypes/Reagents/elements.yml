@@ -118,7 +118,7 @@
     Medicine:
       effects:
       - !type:ModifyBloodLevel
-        amount: 2
+        amount: 0.5
 
 - type: reagent
   id: Lithium

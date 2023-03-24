@@ -1,0 +1,32 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from and modified https://barotraumagame.com/wiki/File:Blood_Pack.png",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "bloodpack"
+        },
+        {
+            "name": "bloodpack1"
+        },
+        {
+            "name": "bloodpack2"
+        },
+        {
+            "name": "bloodpack3"
+        },
+        {
+            "name": "bloodpack4"
+        },
+        {
+            "name": "bloodpack5"
+        },
+        {
+            "name": "bloodpack6"
+        }
+    ]
+}

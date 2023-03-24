@@ -7,11 +7,10 @@
   color: "#800000"
   physicalDesc: reagent-physical-desc-ferrous
   metabolisms:
-    Drink:
-      # Quenching!
+    Medicine:
       effects:
-      - !type:SatiateThirst
-        factor: 1.5
+      - !type:ModifyBloodLevel
+        amount: 1
   plantMetabolism:
   - !type:PlantAdjustWater
     amount: 0.5
