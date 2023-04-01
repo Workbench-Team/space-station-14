@@ -14,3 +14,5 @@ trait-muted-name = Молчун
 trait-muted-desc = Вы не можете говорить
 trait-paracusia-name = Паракузия
 trait-paracusia-desc = Вы слышите звуки, которых на самом деле нет
+trait-truly-good-and-honest-pure-of-heart-christian-boy-name = Истинно добрый и честный чистый сердцем христианский мальчик
+trait-truly-good-and-honest-pure-of-heart-christian-boy-desc = Через славный свет Отца нашего вы понимаете, что нечистая речь - это приговор в один конец, в Ад.

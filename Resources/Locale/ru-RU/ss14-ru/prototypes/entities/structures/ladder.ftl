@@ -1,0 +1,9 @@
+ent-BaseLadder = { ent-BaseStructure }
+    .desc = { ent-BaseStructure.desc }
+    .suffix = { "" }
+ent-Ladder = лестница
+    .desc = Это выглядит не очень безопасно.
+    .suffix = { "" }
+ent-LadderLower = лестница
+    .desc = Это выглядит не очень безопасно.
+    .suffix = { "" }
