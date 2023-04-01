@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: AutolatheMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: autolathe machine board
@@ -653,6 +653,8 @@
       materialRequirements:
         Glass: 2
         Cable: 2
+    - type: ExplosionResistance
+      damageCoefficient: 0
 
 - type: entity
   id: EmitterCircuitboard

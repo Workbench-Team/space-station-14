@@ -6,6 +6,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
+      - id: WeaponPistolMk58
 
 - type: entity
   noSpawn: true
@@ -17,6 +18,7 @@
       - id: BoxHug
       - id: RubberStampClown
       - id: CrayonRainbow
+      - id: WeaponPistolMk58
 
 - type: entity
   noSpawn: true
@@ -27,6 +29,7 @@
     contents:
       - id: BoxSurvivalSecurity
       - id: Flash
+      - id: WeaponPistolMk58
 
 - type: entity
   noSpawn: true
@@ -36,6 +39,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalMedical
+      - id: WeaponPistolMk58
 
 - type: entity
   noSpawn: true
@@ -45,6 +49,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
+      - id: WeaponPistolMk58
       #- id: Flash
       #- name: StationCharter
       - id: TelescopicBaton
@@ -57,6 +62,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalEngineering
+      - id: WeaponPistolMk58
       #- id: Flash
       - id: TelescopicBaton
 
@@ -68,6 +74,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
+      - id: WeaponPistolMk58
       #- id: Flash
       - id: TelescopicBaton
 
@@ -79,6 +86,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
+      - id: WeaponPistolMk58
       #- id: Flash
       - id: TelescopicBaton
 
@@ -90,6 +98,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
+      - id: WeaponPistolMk58
       #- id: Flash
       - id: TelescopicBaton
 
@@ -101,6 +110,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
+      - id: WeaponPistolMk58
       #- id: Flash
       - id: TelescopicBaton
 
@@ -112,6 +122,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
+      - id: WeaponPistolMk58
       - id: Flash
 
 - type: entity
@@ -122,6 +133,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalEngineering
+      - id: WeaponPistolMk58
 
 - type: entity
   noSpawn: true
@@ -131,6 +143,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
+      - id: WeaponPistolMk58
 
 - type: entity
   noSpawn: true
@@ -140,6 +153,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
+      - id: WeaponPistolMk58
 
 - type: entity
   noSpawn: true
@@ -149,6 +163,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
+      - id: WeaponPistolMk58
       - id: RubberStampMime
 
 - type: entity
@@ -159,6 +174,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
+      - id: WeaponPistolMk58
 
 - type: entity
   noSpawn: true
@@ -168,6 +184,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
+      - id: WeaponPistolMk58
       - id: Bible
       - id: RubberStampChaplain
 
@@ -179,6 +196,7 @@
     - type: StorageFill
       contents:
         - id: BoxSurvival
+        - id: WeaponPistolMk58
         - id: AcousticGuitarInstrument
         - id: SaxophoneInstrument
 
@@ -190,6 +208,7 @@
     - type: StorageFill
       contents:
         - id: BoxSurvival
+        - id: WeaponPistolMk58
         - id: BookRandom
 
 - type: entity
@@ -200,6 +219,7 @@
     - type: StorageFill
       contents:
       - id: BoxSurvival
+      - id: WeaponPistolMk58
       - id: Lighter
       - id: CigPackBlack
       - id: HandLabeler
@@ -215,6 +235,7 @@
     - type: StorageFill
       contents:
         - id: BoxSurvival
+        - id: WeaponPistolMk58
         - id: TelescopicBaton
         - id: WeaponPulsePistol
         - id: WeaponPistolMk58
@@ -231,6 +252,7 @@
     - type: StorageFill
       contents:
         - id: BoxSurvival
+        - id: WeaponPistolMk58
         - id: WeaponDisabler
         - id: WeaponPulsePistol
         - id: WeaponPulseCarbine
@@ -245,6 +267,7 @@
     - type: StorageFill
       contents:
         - id: BoxSurvival
+        - id: WeaponPistolMk58
         - id: TelescopicBaton
         - id: WeaponPulseCarbine
         - id: Hypospray
@@ -259,6 +282,7 @@
     - type: StorageFill
       contents:
         - id: BoxSurvival
+        - id: WeaponPistolMk58
         - id: TelescopicBaton
         - id: trayScanner
         - id: WeaponPulseCarbine
@@ -275,6 +299,7 @@
     - type: StorageFill
       contents:
         - id: BoxSurvival
+        - id: WeaponPistolMk58
         - id: TelescopicBaton
         - id: WeaponPulsePistol
         - id: MedkitFilled
@@ -290,4 +315,5 @@
     - type: StorageFill
       contents:
         - id: BoxSurvival
+        - id: WeaponPistolMk58
 
