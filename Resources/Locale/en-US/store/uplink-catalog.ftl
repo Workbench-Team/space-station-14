@@ -46,6 +46,9 @@ uplink-exploding-pen-name = Exploding pen
 uplink-exploding-pen-desc = A class IV explosive device contained within a standard pen. Comes with a 4 second fuse.
 
 # Ammo
+uplink-smg-magazine-name = Submachine gun Magazine (.35 auto)
+uplink-smg-magazine-desc = Submachine magazine with 30 catridges. Compatible with C-20r.
+
 uplink-pistol-magazine-name = Pistol Magazine (.35 auto)
 uplink-pistol-magazine-desc = Pistol magazine with 10 catridges. Compatible with Viper.
 
