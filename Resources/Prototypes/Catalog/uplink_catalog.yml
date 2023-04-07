@@ -163,15 +163,26 @@
   - UplinkExplosives
 
 # Ammo
-
 - type: listing
   id: UplinkPistol9mmMagazine
   name: uplink-pistol-magazine-name
   description: uplink-pistol-magazine-desc
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: red-icon }
-  productEntity: MagazinePistol
+  productEntity: MagazinePistolSubMachineGun
   cost:
     Telecrystal: 1
+  categories:
+  - UplinkAmmo
+
+# For the C-20r
+- type: listing
+  id: UplinkSmg9mmMagazine
+  name: uplink-smg-magazine-name
+  description: uplink-smg-magazine-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: red }
+  productEntity: MagazinePistolSubMachineGun
+  cost:
+    Telecrystal: 3
   categories:
   - UplinkAmmo
 
