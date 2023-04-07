@@ -163,12 +163,13 @@
   - UplinkExplosives
 
 # Ammo
+
 - type: listing
   id: UplinkPistol9mmMagazine
   name: uplink-pistol-magazine-name
   description: uplink-pistol-magazine-desc
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: red-icon }
-  productEntity: MagazinePistolSubMachineGun
+  productEntity: MagazinePistol
   cost:
     Telecrystal: 1
   categories:
