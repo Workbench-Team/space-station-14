@@ -114,6 +114,7 @@
     sprite: Objects/Tanks/Jetpacks/black.rsi
     slots:
       - Back
+      - suitStorage
 
 # Filled black
 - type: entity
