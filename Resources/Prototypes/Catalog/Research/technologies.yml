@@ -92,6 +92,7 @@
   - MedkitAdvanced
   - MedkitRadiation
   - MedkitCombat
+  - ClothingEyesHudMedical
 
 - type: technology
   name: technologies-advanced-botany
