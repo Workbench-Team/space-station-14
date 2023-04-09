@@ -3,6 +3,7 @@ using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.FixedPoint;
+using Content.Shared.Disease.Components;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Shared.Enums;
@@ -22,6 +23,9 @@ public sealed class EntityHealthBarOverlay : Overlay
     private readonly MobStateSystem _mobStateSystem;
     private readonly MobThresholdSystem _mobThresholdSystem;
     private readonly Texture _barTexture;
+    private readonly Texture _lifeStateTexture;
+    private readonly Texture _sickStateTexture;
+    private readonly Texture _deadStateTexture;
     private readonly ShaderInstance _shader;
     public override OverlaySpace Space => OverlaySpace.WorldSpaceBelowFOV;
     public string? DamageContainer;
@@ -35,6 +39,13 @@ public sealed class EntityHealthBarOverlay : Overlay
 
         var sprite = new SpriteSpecifier.Rsi(new ResourcePath("/Textures/Interface/Misc/health_bar.rsi"), "icon");
         _barTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(sprite);
+
+        var life_state_sprite = new SpriteSpecifier.Rsi(new ResourcePath("/Textures/Interface/Misc/health_state.rsi"), "life_state");
+        _lifeStateTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(life_state_sprite);
+        var sick_state_sprite = new SpriteSpecifier.Rsi(new ResourcePath("/Textures/Interface/Misc/health_state.rsi"), "sick_state");
+        _sickStateTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(sick_state_sprite);
+        var dead_state_sprite = new SpriteSpecifier.Rsi(new ResourcePath("/Textures/Interface/Misc/health_state.rsi"), "dead_state");
+        _deadStateTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(dead_state_sprite);
 
         _shader = protoManager.Index<ShaderPrototype>("unshaded").Instance();
     }
@@ -71,13 +82,19 @@ public sealed class EntityHealthBarOverlay : Overlay
             handle.SetTransform(matty);
 
             float yOffset;
+            float xIconOffset;
+            float yIconOffset;
             if (spriteQuery.TryGetComponent(mob.Owner, out var sprite))
             {
                 yOffset = sprite.Bounds.Height + 10f;
+                yIconOffset = sprite.Bounds.Height + 11f;
+                xIconOffset = sprite.Bounds.Width + 11f;
             }
             else
             {
                 yOffset = 1f;
+                yIconOffset = 1f;
+                xIconOffset = 1f;
             }
 
             var position = new Vector2(-_barTexture.Width / 2f / EyeManager.PixelsPerMeter,
@@ -85,6 +102,20 @@ public sealed class EntityHealthBarOverlay : Overlay
 
             // Draw the underlying bar texture
             handle.DrawTexture(_barTexture, position);
+
+            // Draw state icon
+            Texture current_state;
+            if (_entManager.TryGetComponent<DiseasedComponent>(mob.Owner, out var bebra) && _mobStateSystem.IsAlive(mob.Owner, mob))
+                current_state = _sickStateTexture; //TryComp<DiseasedComponent>
+            else if (_mobStateSystem.IsAlive(mob.Owner, mob))
+                current_state = _lifeStateTexture;
+            else
+                current_state = _deadStateTexture;
+
+            var icon_position = new Vector2(xIconOffset / EyeManager.PixelsPerMeter,
+                yIconOffset / EyeManager.PixelsPerMeter);
+
+            handle.DrawTexture(current_state, icon_position);
 
             // we are all progressing towards death every day
             (float ratio, bool inCrit) deathProgress = CalcProgress(mob.Owner, mob, dmg, thresholds);
