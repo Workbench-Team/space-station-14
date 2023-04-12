@@ -35,10 +35,25 @@
     - trigger:
         !type:DamageTrigger
         damage: 100
+        triggersOnce: true
       behaviors:
       - !type:DoActsBehavior
         acts: ["Breakage"]
-      - !type:EjectVendorItems
+      - !type:EjectVendorItems      
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 3
   - type: ActivatableUI
     key: enum.VendingMachineUiKey.Key
   - type: ActivatableUIRequiresPower
