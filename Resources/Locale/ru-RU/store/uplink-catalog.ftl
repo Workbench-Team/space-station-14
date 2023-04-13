@@ -31,8 +31,8 @@ uplink-emp-grenade-desc = Выпускает электромагнитные и
 uplink-exploding-pen-name = Взрывающаяся ручка
 uplink-exploding-pen-desc = Взрывное устройство класса IV, заключенное в стандартную ручку. Поставляется с 4-секундным взрывателем.
 # Боеприпасы
-uplink-pistol-magazine-name = Магазин для пистолета-пулемёта (.35 авто)
-uplink-pistol-magazine-desc = Магазин для пистолета-пулемёта с 30 патронами. Подходит для С20-r.
+uplink-smg-magazine-name = Магазин для пистолета-пулемёта (.35 авто)
+uplink-smg-magazine-desc = Магазин для пистолета-пулемёта с 30 патронами. Подходит для С20-r.
 uplink-pistol-magazine-name = Пистолетный магазин (.35 авто)
 uplink-pistol-magazine-desc = Пистолетый магазин с 10 патронами. Подходит для Гадюки.
 uplink-pistol-magazine-caseless-name = Пистолетный магазин (.25 безгильзовые)
