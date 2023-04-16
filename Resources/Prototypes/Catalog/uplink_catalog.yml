@@ -175,6 +175,18 @@
   categories:
   - UplinkAmmo
 
+# For the C-20r
+- type: listing
+  id: UplinkSmg9mmMagazine
+  name: uplink-smg-magazine-name
+  description: uplink-smg-magazine-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: red }
+  productEntity: MagazinePistolSubMachineGun
+  cost:
+    Telecrystal: 3
+  categories:
+  - UplinkAmmo
+
 # For the Cobra
 - type: listing
   id: UplinkMagazinePistolCaselessRifle
