@@ -588,6 +588,7 @@
       - MedkitAdvanced
       - MedkitRadiation
       - MedkitCombat
+      - ClothingEyesHudMedical
   - type: Machine
     board: MedicalTechFabCircuitboard
 
