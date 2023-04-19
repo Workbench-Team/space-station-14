@@ -114269,7 +114269,7 @@ entities:
     parent: 1
     type: Transform
 - uid: 14711
-  type: EnergySword
+  type: ToySword
   components:
   - pos: -24.319366,-20.472809
     parent: 1
