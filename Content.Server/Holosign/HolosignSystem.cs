@@ -126,7 +126,7 @@ namespace Content.Server.Holosign
                 {
              	    Act = () => ClearHolosignsVerb(uid, component, args.User),
                     Text = Loc.GetString("holoprojector-component-verb-clear"),
-                    Icon = new SpriteSpecifier.Texture(new ResourcePath("/Textures/Interface/VerbIcons/rotate_cw.svg.192dpi.png")),
+                    Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/rotate_cw.svg.192dpi.png")),
                     Priority = 1,
                     CloseMenu = true, // allow for easy double rotations.
                 };

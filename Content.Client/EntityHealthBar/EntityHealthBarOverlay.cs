@@ -37,14 +37,14 @@ public sealed class EntityHealthBarOverlay : Overlay
         _mobStateSystem = _entManager.EntitySysManager.GetEntitySystem<MobStateSystem>();
         _mobThresholdSystem = _entManager.EntitySysManager.GetEntitySystem<MobThresholdSystem>();
 
-        var sprite = new SpriteSpecifier.Rsi(new ResourcePath("/Textures/Interface/Misc/health_bar.rsi"), "icon");
+        var sprite = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/health_bar.rsi"), "icon");
         _barTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(sprite);
 
-        var life_state_sprite = new SpriteSpecifier.Rsi(new ResourcePath("/Textures/Interface/Misc/health_state.rsi"), "life_state");
+        var life_state_sprite = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/health_state.rsi"), "life_state");
         _lifeStateTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(life_state_sprite);
-        var sick_state_sprite = new SpriteSpecifier.Rsi(new ResourcePath("/Textures/Interface/Misc/health_state.rsi"), "sick_state");
+        var sick_state_sprite = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/health_state.rsi"), "sick_state");
         _sickStateTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(sick_state_sprite);
-        var dead_state_sprite = new SpriteSpecifier.Rsi(new ResourcePath("/Textures/Interface/Misc/health_state.rsi"), "dead_state");
+        var dead_state_sprite = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/health_state.rsi"), "dead_state");
         _deadStateTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(dead_state_sprite);
 
         _shader = protoManager.Index<ShaderPrototype>("unshaded").Instance();

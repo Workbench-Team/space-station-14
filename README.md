@@ -4,7 +4,7 @@
 
 Space Station 14 это ремейк SS13, который работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
 
-Это репозиторий форка Space Station 14 от Workbench Team который используется на нашем основном сервере Космическая станция им. Aru Moon, и его также можете использовать и вы для получения эксклюзивных фишек форка. Если вам нужен только русский перевод для игры без наших фишек, перейдите в [master-ru ветку](https://git.arumoon.ru/Workbench-Team/space-station-14/-/tree/master-ru).
+Это репозиторий форка Space Station 14 от Workbench Team который используется на нашем основном сервере Космическая станция им. Aru Moon, и его также можете использовать и Вы для получения эксклюзивных фишек форка. Если Вам нужен только русский перевод для игры без наших фишек, перейдите в [master-ru ветку](https://git.arumoon.ru/Workbench-Team/space-station-14/-/tree/master-ru).
 
 Вы можете использовать эту ветку как для создания собственного сервера, так и для контрибьюта в работу нашего сервера.
 
@@ -18,13 +18,13 @@ Space Station 14 это ремейк SS13, который работает на 
 
 ## Вклад
 
-Если вы хотите предложить добавление нового контента или редактирование существующего, мы с радостью ждём ваши изменения на нашем [основном репозитории GitLab](https://git.arumoon.ru/Workbench-Team/space-station-14/-/tree/arumoon-server) (рекомендуется) или [зеркале GitHub](https://github.com/Workbench-Team/space-station-14/tree/arumoon-server). Если вам нужна помощь, посмотрите текущие [обсуждения в GitLab](https://git.arumoon.ru/Workbench-Team/space-station-14/-/issues) или лучше перейдите на Discord или Revolt сервер Workbench Team для более удобной коммуникации.
+Если Вы хотите предложить добавление нового контента или редактирование существующего, мы с радостью ждём Ваши изменения на нашем [основном репозитории GitLab](https://git.arumoon.ru/Workbench-Team/space-station-14/-/tree/arumoon-server) (рекомендуется) или [зеркале GitHub](https://github.com/Workbench-Team/space-station-14/tree/arumoon-server). Если Вам нужна помощь, посмотрите текущие [обсуждения в GitLab](https://git.arumoon.ru/Workbench-Team/space-station-14/-/issues) или лучше перейдите на Discord или Revolt сервер Workbench Team для более удобной коммуникации.
 
 ## Готовая сборка
 
 Статус сборки: [![pipeline status](https://git.arumoon.ru/Workbench-Team/space-station-14/badges/arumoon-server/pipeline.svg)](https://git.arumoon.ru/Workbench-Team/space-station-14/-/commits/arumoon-server)
 
-Готовые билды сборки вы можете скачать из [CDN хостинга (быстро)](https://ss14.lolicon.monster/builds/arumoon-server-builds.html) или [артефактов CI/CD (медленно)](https://git.arumoon.ru/Workbench-Team/space-station-14/-/pipelines?page=1&scope=all&ref=arumoon-server&status=success)
+Готовые билды сборки Вы можете скачать из [CDN хостинга (быстро)](https://ss14.lolicon.monster/builds/arumoon-server-builds.html) или [артефактов CI/CD (медленно)](https://git.arumoon.ru/Workbench-Team/space-station-14/-/pipelines?page=1&scope=all&ref=arumoon-server&status=success)
 
 ## Самостоятельная сборка
 
@@ -41,4 +41,4 @@ Space Station 14 это ремейк SS13, который работает на 
 
 Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) если не имеют иное. Ассеты имеют свою лицензию и авторские права в файле метаданных. [Пример](https://git.arumoon.ru/Workbench-Team/space-station-14/blob/master-ru/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 
-Обратите внимание, что некоторые ассеты лицензированы на некоммерческой основе [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или аналогичной некоммерческой лицензией, и их необходимо удалить, если вы хотите использовать этот проект в коммерческих целях.
+Обратите внимание, что некоторые ассеты лицензированы на некоммерческой основе [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или аналогичной некоммерческой лицензией, и их необходимо удалить, если Вы хотите использовать этот проект в коммерческих целях.
