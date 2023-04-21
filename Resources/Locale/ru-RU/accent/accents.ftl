@@ -10,6 +10,11 @@ accent-words-dog-2 = Тяв!
 accent-words-dog-3 = Вуф!
 accent-words-dog-4 = Гаф.
 accent-words-dog-5 = Гррр.
+# Mothroach
+accent-words-mothroach-1 = Бззз!
+accent-words-mothroach-2 = Жжж!
+accent-words-mothroach-3 = Бзззт!
+accent-words-mothroach-4 = Бзз.
 # Mouse
 accent-words-mouse-1 = Пииии!
 accent-words-mouse-2 = Пиип!
