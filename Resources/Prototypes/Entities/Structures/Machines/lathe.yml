@@ -240,6 +240,7 @@
       - PowerCellHigh
       - SynthesizerInstrument
       - RPED
+      - ClothingShoesBootsMag
       - NodeScanner
       - HolofanProjector
       - Holoprojector
@@ -314,6 +315,7 @@
       - DawInstrumentMachineCircuitboard
       - CloningConsoleComputerCircuitboard
       - StasisBedMachineCircuitboard
+      - MaterialReclaimerMachineCircuitboard
       - OreProcessorMachineCircuitboard
       - RipleyCentralElectronics
       - RipleyPeripheralsElectronics
@@ -555,13 +557,11 @@
     idleState: icon
     runningState: icon
     machinePartPrintSpeed: Laser
-    dynamicRecipes:
+    staticRecipes:
       - HandheldHealthAnalyzer
       - ClothingHandsGlovesLatex
-      - ClothingHandsGlovesNitrile
       - ClothingMaskSterile
       - DiseaseSwab
-      - HandheldCrewMonitor
       - Scalpel
       - Retractor
       - Cautery
@@ -588,6 +588,9 @@
       - MedkitAdvanced
       - MedkitRadiation
       - MedkitCombat
+    dynamicRecipes:
+      - HandheldCrewMonitor
+      - ClothingHandsGlovesNitrile
       - ClothingEyesHudMedical
   - type: Machine
     board: MedicalTechFabCircuitboard

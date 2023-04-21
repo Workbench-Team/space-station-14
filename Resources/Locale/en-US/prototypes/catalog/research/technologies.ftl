@@ -102,3 +102,6 @@ technologies-ballistic-description = Just a fancy term for guns.
 
 technologies-direct-energy = Energy weapons
 technologies-direct-energy-description = Basically laser guns
+
+technologies-magboots-technology = Magboots technology
+technologies-magboots-technology-description = Magboots for a space escape from the assistant.

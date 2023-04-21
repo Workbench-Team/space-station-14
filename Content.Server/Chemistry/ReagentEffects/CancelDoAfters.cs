@@ -51,15 +51,15 @@ namespace Content.Server.Chemistry.ReagentEffects
             if (!args.EntityManager.TryGetComponent(args.SolutionEntity, out DoAfterComponent? doAfterComp))
             { return; }
 
+            var doAfterSystem = args.EntityManager.EntitySysManager.GetEntitySystem<SharedDoAfterSystem>();
+
             foreach (var doAfter in doAfterComp.DoAfters.Values)
             {
                 if (
-                    (DamageLike && doAfter.EventArgs.BreakOnDamage && Damage > doAfter.EventArgs.DamageThreshold) ||
-                    (MovementLike && doAfter.EventArgs.BreakOnUserMove && Movement > doAfter.EventArgs.MovementThreshold) ||
-                    (StunLike && doAfter.EventArgs.BreakOnStun)
-                )
+                    (DamageLike && doAfter.Args.BreakOnDamage && Damage > doAfter.Args.DamageThreshold) ||
+                    (MovementLike && doAfter.Args.BreakOnUserMove && Movement > doAfter.Args.MovementThreshold))
                 {
-                    // doAfter.Cancel(); TODO FIXME !!!!!
+                    doAfterSystem.Cancel(doAfter.Id, doAfterComp);
                 }
             }
         }

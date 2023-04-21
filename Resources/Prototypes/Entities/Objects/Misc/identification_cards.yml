@@ -107,6 +107,10 @@
     heldPrefix: gold
   - type: PresetIdCard
     job: Captain
+  - type: Tag
+    tags:
+      - WhitelistChameleon
+      - HighRiskItem
 
 - type: entity
   parent: IDCardStandard
@@ -393,6 +397,18 @@
     heldPrefix: silver
   - type: PresetIdCard
     job: HeadOfSecurity
+
+- type: entity
+  parent: IDCardStandard
+  id: BrigmedIDCard
+  name: brigmedic ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idbrigmedic
+  - type: PresetIdCard
+    job: Brigmedic
 
 - type: entity
   parent: IDCardStandard

@@ -76,8 +76,6 @@ public sealed class DoorComponent : Component, ISerializationHooks
     public bool Partial;
     #endregion
 
-    public bool BeingPried;
-
     #region Sounds
     /// <summary>
     /// Sound to play when the door opens.

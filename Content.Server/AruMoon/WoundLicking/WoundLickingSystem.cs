@@ -2,9 +2,9 @@ using Content.Server.Disease.Components;
 using Content.Server.Disease;
 using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
-using Content.Server.DoAfter;
 using Content.Server.Popups;
 using Content.Shared.DoAfter;
+using Content.Shared.Felinid;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Actions.ActionTypes;
 using Content.Shared.Actions;
@@ -17,12 +17,13 @@ using System.Linq;
 
 namespace Content.Server.Felinid
 {
+
     /// <summary>
     /// "Lick your or other felinid wounds. Reduce bleeding, but unsanitary and can cause diseases."
     /// </summary>
     public sealed class WoundLickingSystem : EntitySystem
     {
-        [Dependency] private readonly DoAfterSystem _doAfterSystem = default!;
+        [Dependency] private readonly SharedDoAfterSystem _doAfterSystem = default!;
         [Dependency] private readonly PopupSystem _popupSystem = default!;
         [Dependency] private readonly DiseaseSystem _disease = default!;
         [Dependency] private readonly SharedActionsSystem _actionsSystem = default!;
@@ -37,7 +38,7 @@ namespace Content.Server.Felinid
             base.Initialize();
             SubscribeLocalEvent<WoundLickingComponent, ComponentInit>(OnInit);
             SubscribeLocalEvent<WoundLickingComponent, ComponentRemove>(OnRemove);
-            SubscribeLocalEvent<WoundLickingComponent, DoAfterEvent<WoundLickData>>(OnDoAfter);
+            SubscribeLocalEvent<WoundLickingComponent, WoundLickingDoAfterEvent>(OnDoAfter);
             SubscribeLocalEvent<WoundLickingTargetActionEvent>(OnActionPerform);
         }
 
@@ -108,32 +109,30 @@ namespace Content.Server.Felinid
             _popupSystem.PopupEntity(Loc.GetString("lick-wounds-other-begin", ("performer", performerIdentity), ("target", targetIdentity)),
                 performer, otherFilter, true);
 
-            var WoundLickData = new WoundLickData(bloodstream);
-
             // DoAfter
-            var doAfterEventArgs = new DoAfterEventArgs(performer, woundLicking.Delay, target: target)
+            var doAfterEventArgs = new DoAfterArgs(performer, woundLicking.Delay, new WoundLickingDoAfterEvent(), performer, target: target)
             {
                 BreakOnTargetMove = true,
                 BreakOnUserMove = true,
-                BreakOnDamage = true,
-                BreakOnStun = true
+                BreakOnDamage = true
             };
 
-            _doAfterSystem.DoAfter(doAfterEventArgs, WoundLickData);
+            _doAfterSystem.TryStartDoAfter(doAfterEventArgs);
 
             ev.Handled = true;
         }
 
-        private void OnDoAfter(EntityUid uid, WoundLickingComponent comp, DoAfterEvent<WoundLickData> args)
+        private void OnDoAfter(EntityUid uid, WoundLickingComponent comp, WoundLickingDoAfterEvent args)
         {
             if (args.Cancelled || args.Handled || args.Args.Target == null)
             {
                 return;
             }
-            LickWound(uid, args.Args.Target.Value, args.AdditionalData.bloodstream, comp.PossibleDiseases, comp.MaxHeal, comp.DiseaseChance);
+            if(TryComp<BloodstreamComponent>(args.Args.Target, out var bloodstream))
+                LickWound(uid, args.Args.Target.Value, bloodstream, comp);
         }
 
-        private void LickWound(EntityUid performer, EntityUid target, BloodstreamComponent bloodstream, List<String> diseases, float maxHeal = 15f, float diseaseChance = 0.25f)
+        private void LickWound(EntityUid performer, EntityUid target, BloodstreamComponent bloodstream, WoundLickingComponent comp)
         {
             // The more you heal, the more is disease chance
             // For 15 maxHeal and 50% diseaseChance
@@ -142,14 +141,14 @@ namespace Content.Server.Felinid
             //  Heal 0 > chance 0%
 
             var healed = bloodstream.BleedAmount;
-            if (maxHeal - bloodstream.BleedAmount < 0) healed = maxHeal;
-            var chance = diseaseChance*(1/maxHeal*healed);
+            if (comp.MaxHeal - bloodstream.BleedAmount < 0) healed = comp.MaxHeal;
+            var chance = comp.DiseaseChance*(1/comp.MaxHeal*healed);
 
-            if(diseaseChance > 0f & diseases.Any())
+            if(comp.DiseaseChance > 0f & comp.PossibleDiseases.Any())
             {
                 if (TryComp<DiseaseCarrierComponent>(target, out var disCarrier))
                 {
-                    var diseaseName = diseases[_random.Next(0, diseases.Count())];
+                    var diseaseName = comp.PossibleDiseases[_random.Next(0, comp.PossibleDiseases.Count())];
                     _disease.TryInfect(disCarrier, diseaseName, chance);
                 }
             }
@@ -167,11 +166,6 @@ namespace Content.Server.Felinid
                 target, target);
             _popupSystem.PopupEntity(Loc.GetString("lick-wounds-other-success", ("performer", performerIdentity), ("target", targetIdentity)),
                 performer, otherFilter, true);
-        }
-
-        private record struct WoundLickData(BloodstreamComponent bloodstream)
-        {
-            public readonly BloodstreamComponent bloodstream = bloodstream;
         }
     }
 

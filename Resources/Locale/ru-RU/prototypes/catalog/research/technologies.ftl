@@ -68,3 +68,5 @@ technologies-ballistic = Баллистика
 technologies-ballistic-description = На самом деле это просто пушки.
 technologies-direct-energy = Энергетическое оружие
 technologies-direct-energy-description = Лазерное и энергетическое оружие
+technologies-magboots-technology = Технология магнитных ботинок
+technologies-magboots-technology-description = Магнитные ботинки для выхода в космос от ассистентов.

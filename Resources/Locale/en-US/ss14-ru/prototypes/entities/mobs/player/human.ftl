@@ -10,3 +10,6 @@ ent-MobHumanNukeOp = Nuclear Operative
 ent-MobHumanArrivingAss = Arriving Assistant
     .desc = { ent-MobHuman.desc }
     .suffix = { "" }
+ent-MobHumanLoneNuclearOperative = Lone Operative
+    .desc = { ent-MobHuman.desc }
+    .suffix = { "" }

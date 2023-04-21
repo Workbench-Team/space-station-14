@@ -86,9 +86,9 @@ public sealed class EntityHealthBarOverlay : Overlay
             float yIconOffset;
             if (spriteQuery.TryGetComponent(mob.Owner, out var sprite))
             {
-                yOffset = sprite.Bounds.Height + 6f;
-                yIconOffset = sprite.Bounds.Height + 0f;
-                xIconOffset = sprite.Bounds.Width + 4f;
+                yOffset = sprite.Bounds.Height + 10f;
+                yIconOffset = sprite.Bounds.Height + 11f;
+                xIconOffset = sprite.Bounds.Width + 11f;
             }
             else
             {
@@ -123,12 +123,12 @@ public sealed class EntityHealthBarOverlay : Overlay
             var color = GetProgressColor(deathProgress.ratio, deathProgress.inCrit);
 
             // Hardcoded width of the progress bar because it doesn't match the texture.
-            const float startX = 1f;
-            const float endX = 21f;
+            const float startX = 2f;
+            const float endX = 22f;
 
             var xProgress = (endX - startX) * deathProgress.ratio + startX;
 
-            var box = new Box2(new Vector2(startX, 1f) / EyeManager.PixelsPerMeter, new Vector2(xProgress, 4f) / EyeManager.PixelsPerMeter);
+            var box = new Box2(new Vector2(startX, 2f) / EyeManager.PixelsPerMeter, new Vector2(xProgress, 5f) / EyeManager.PixelsPerMeter);
             box = box.Translated(position);
             handle.DrawRect(box, color);
         }
