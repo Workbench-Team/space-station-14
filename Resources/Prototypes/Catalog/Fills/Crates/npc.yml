@@ -96,6 +96,15 @@
       - id: MonkeyCubeBox
 
 - type: entity
+  id: CrateNPCMothroach
+  parent: CrateLivestock
+  components:
+  - type: StorageFill
+    contents:
+      - id: MobMothroach
+        amount: 5
+
+- type: entity
   id: CrateNPCMouse
   parent: CrateLivestock
   components:

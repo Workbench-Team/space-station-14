@@ -817,7 +817,7 @@ type: entity
           Quantity: 50
   - type: Butcherable
     spawned:
-    - id: FoodMeatRat
+    - id: FoodMeatXeno
       amount: 1
   - type: ReplacementAccent
     accent: mothroach
