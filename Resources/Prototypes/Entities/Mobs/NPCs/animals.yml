@@ -745,18 +745,19 @@
   components:
     - type: GuidebookControlsTest
     
-type: entity
+- type: entity
   name: mothroach
   parent: SimpleMobBase
   id: MobMothroach
   description: Bzzzt!
   components:
-  - type: GhostTakeoverAvailable
+  - type: GhostRole
     makeSentient: true
     allowSpeech: true
     allowMovement: true
     name: ghost-role-information-mothroach-name
     description: ghost-role-information-mothroach-description
+  - type: GhostTakeoverAvailable
   - type: Speech
     speechSounds: Mothroach_scream
   - type: Sprite
@@ -825,7 +826,6 @@ type: entity
     tags:
     - Trash
     - CannotSuicide
-  - type: Recyclable
   - type: Respirator
     damage:
       types:
