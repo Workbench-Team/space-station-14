@@ -2230,15 +2230,15 @@ entities:
           2742: 34,-8
           2743: 32,-8
           2744: 34,-11
-          2792: -19,-32
-          2793: -20,-33
-          2794: -20,-36
-          2795: -21,-36
-          2796: -22,-35
-          2797: -22,-36
-          2798: -21,-33
-          2799: -22,-33
-          2800: -22,-32
+          2783: -19,-32
+          2784: -20,-33
+          2785: -20,-36
+          2786: -21,-36
+          2787: -22,-35
+          2788: -22,-36
+          2789: -21,-33
+          2790: -22,-33
+          2791: -22,-32
       - node:
           cleanable: True
           color: '#FFFFFFFF'
@@ -2666,9 +2666,9 @@ entities:
           181: -19,26
           186: -7,20
           2753: 7,1
-          2776: -21,-32
-          2777: -20,-32
-          2778: -19,-32
+          2767: -21,-32
+          2768: -20,-32
+          2769: -19,-32
       - node:
           cleanable: True
           color: '#A4610696'
@@ -2845,9 +2845,9 @@ entities:
           188: -7,18
           209: -15,14
           210: -14,14
-          2779: -21,-36
-          2780: -20,-36
-          2781: -19,-36
+          2770: -21,-36
+          2771: -20,-36
+          2772: -19,-36
       - node:
           cleanable: True
           color: '#169C9CFF'
@@ -3117,9 +3117,9 @@ entities:
           1029: -10,-4
           1051: -14,-4
           1052: -14,0
-          2785: -22,-33
-          2786: -22,-34
-          2787: -22,-35
+          2776: -22,-33
+          2777: -22,-34
+          2778: -22,-35
       - node:
           cleanable: True
           color: '#9FED5896'
@@ -3289,9 +3289,9 @@ entities:
           1030: -12,-4
           1053: -16,0
           1054: -16,-4
-          2782: -18,-35
-          2783: -18,-34
-          2784: -18,-33
+          2773: -18,-35
+          2774: -18,-34
+          2775: -18,-33
       - node:
           cleanable: True
           color: '#334E6DC8'
@@ -3362,15 +3362,15 @@ entities:
           color: '#52B4E996'
           id: MiniTileCheckerBOverlay
         decals:
-          2767: -21,-33
-          2768: -20,-33
-          2769: -19,-33
-          2770: -19,-34
-          2771: -19,-35
-          2772: -20,-35
-          2773: -20,-34
-          2774: -21,-34
-          2775: -21,-35
+          2758: -21,-33
+          2759: -20,-33
+          2760: -19,-33
+          2761: -19,-34
+          2762: -19,-35
+          2763: -20,-35
+          2764: -20,-34
+          2765: -21,-34
+          2766: -21,-35
       - node:
           cleanable: True
           color: '#FFFFFFFF'
@@ -4065,7 +4065,7 @@ entities:
           149: -14,19
           150: -20,26
           164: -8,20
-          2788: -22,-32
+          2779: -22,-32
       - node:
           cleanable: True
           color: '#52B4E996'
@@ -4078,7 +4078,7 @@ entities:
           168: -13,21
           169: -19,18
           170: -19,21
-          2791: -18,-36
+          2782: -18,-36
       - node:
           cleanable: True
           color: '#EFB34196'
@@ -4200,7 +4200,7 @@ entities:
           161: -20,24
           162: -14,18
           163: -8,18
-          2790: -22,-36
+          2781: -22,-36
       - node:
           cleanable: True
           color: '#169C9CFF'
@@ -4269,7 +4269,7 @@ entities:
           156: -19,22
           157: -6,20
           2752: 8,1
-          2789: -18,-32
+          2780: -18,-32
       - node:
           cleanable: True
           color: '#D4D4D428'
@@ -4926,12 +4926,14 @@ entities:
           0: 65535
         -6,-8:
           0: 65523
+          3: 12
         -6,-7:
           0: 65535
         -6,-6:
           0: 65535
         -5,-8:
           0: 65528
+          3: 7
         -5,-7:
           0: 65535
         -5,-6:
@@ -4996,8 +4998,10 @@ entities:
           0: 35562
         -5,-10:
           0: 36608
+          3: 28672
         -5,-9:
           0: 34952
+          3: 30583
         -4,-10:
           0: 65280
         -4,-9:
@@ -5741,8 +5745,10 @@ entities:
           0: 13107
         -6,-10:
           0: 16179
+          3: 49152
         -6,-9:
           0: 13107
+          3: 52428
         -5,-12:
           0: 255
         -4,-12:
@@ -65954,7 +65960,7 @@ entities:
   - bodyType: Static
     type: Physics
 - uid: 8321
-  type: GasPipeBend
+  type: GasPipeTJunction
   components:
   - rot: 3.141592653589793 rad
     pos: -14.5,-32.5
@@ -66463,7 +66469,7 @@ entities:
   - enabled: True
     type: AmbientSound
 - uid: 8367
-  type: GasPipeBend
+  type: GasPipeTJunction
   components:
   - rot: 3.141592653589793 rad
     pos: -15.5,-34.5
@@ -79889,6 +79895,8 @@ entities:
     - 8368
     - 8282
     - 8280
+    - 15903
+    - 15902
     type: DeviceList
 - uid: 9725
   type: FireAlarm
@@ -123225,4 +123233,113 @@ entities:
   - pos: 10.5,40.5
     parent: 1
     type: Transform
+- uid: 15894
+  type: SpawnMobShiva
+  components:
+  - pos: 1.5,-23.5
+    parent: 1
+    type: Transform
+- uid: 15895
+  type: GasPipeStraight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -15.5,-32.5
+    parent: 1
+    type: Transform
+  - color: '#0055CCFF'
+    type: AtmosPipeColor
+  - bodyType: Static
+    type: Physics
+- uid: 15896
+  type: GasPipeStraight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -16.5,-32.5
+    parent: 1
+    type: Transform
+  - color: '#0055CCFF'
+    type: AtmosPipeColor
+  - bodyType: Static
+    type: Physics
+  - enabled: True
+    type: AmbientSound
+- uid: 15897
+  type: GasPipeStraight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -17.5,-32.5
+    parent: 1
+    type: Transform
+  - color: '#0055CCFF'
+    type: AtmosPipeColor
+  - bodyType: Static
+    type: Physics
+- uid: 15898
+  type: GasPipeStraight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -18.5,-32.5
+    parent: 1
+    type: Transform
+  - color: '#0055CCFF'
+    type: AtmosPipeColor
+  - bodyType: Static
+    type: Physics
+- uid: 15899
+  type: GasPipeStraight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -16.5,-34.5
+    parent: 1
+    type: Transform
+  - color: '#990000FF'
+    type: AtmosPipeColor
+  - bodyType: Static
+    type: Physics
+  - enabled: True
+    type: AmbientSound
+- uid: 15900
+  type: GasPipeStraight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -17.5,-34.5
+    parent: 1
+    type: Transform
+  - color: '#990000FF'
+    type: AtmosPipeColor
+  - bodyType: Static
+    type: Physics
+- uid: 15901
+  type: GasPipeStraight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -18.5,-34.5
+    parent: 1
+    type: Transform
+  - color: '#990000FF'
+    type: AtmosPipeColor
+  - bodyType: Static
+    type: Physics
+- uid: 15902
+  type: GasVentPump
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -19.5,-32.5
+    parent: 1
+    type: Transform
+  - color: '#0055CCFF'
+    type: AtmosPipeColor
+  - bodyType: Static
+    type: Physics
+- uid: 15903
+  type: GasVentScrubber
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -19.5,-34.5
+    parent: 1
+    type: Transform
+  - color: '#990000FF'
+    type: AtmosPipeColor
+  - bodyType: Static
+    type: Physics
 ...
