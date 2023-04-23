@@ -20,7 +20,7 @@
 
 - type: accent
   id: mothroach
-  words:
+  fullReplacements:
   - accent-words-mothroach-1
   - accent-words-mothroach-2
   - accent-words-mothroach-3

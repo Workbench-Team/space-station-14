@@ -38,7 +38,11 @@
   id: Mothroach_scream
   saySound:
     path: /Audio/Voice/Moth/scream_moth.ogg
-    
+  askSound:
+    path: /Audio/Voice/Moth/scream_moth.ogg
+  exclaimSound:
+    path: /Audio/Voice/Moth/scream_moth.ogg
+        
 - type: speechSounds
   id: Squeak
   saySound:
