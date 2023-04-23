@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/tgstation/tgstation/blob/master/icons/mob/animal_item_head.dmi, https://github.com/tgstation/tgstation/blob/master/icons/mob/simple/animal.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "mothroach",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "mothroach_dead",
+      "directions": 4
+    },
+    {
+      "name": "0-equipped-HELMET",
+      "directions": 4
+    },
+    {
+      "name": "icon-0"
+    }
+  ]
+}

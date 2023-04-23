@@ -19,6 +19,14 @@
   - accent-words-dog-5
 
 - type: accent
+  id: mothroach
+  words:
+  - accent-words-mothroach-1
+  - accent-words-mothroach-2
+  - accent-words-mothroach-3
+  - accent-words-mothroach-4
+  
+- type: accent
   id: mouse
   fullReplacements:
   - accent-words-mouse-1

@@ -1,6 +1,21 @@
 # Base
 
 - type: entity
+  name: Mothroach Spawner
+  id: SpawnMobMothroach
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Mobs/Animals/mothroach.rsi
+        state: icon-0
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MobMothroach
+
+- type: entity
   name: Mouse Spawner
   id: SpawnMobMouse
   parent: MarkerBase

@@ -12,6 +12,12 @@ accent-words-dog-3 = Woof!
 accent-words-dog-4 = Arf.
 accent-words-dog-5 = Grrr.
 
+# Mothroach
+accent-words-mothroach-1 = Bzzz!
+accent-words-mothroach-2 = Zhzhzh!
+accent-words-mothroach-3 = Bzzzt!
+accent-words-mouse-4 = Bzz.
+
 # Mouse
 accent-words-mouse-1 = Squeak!
 accent-words-mouse-2 = Piep!

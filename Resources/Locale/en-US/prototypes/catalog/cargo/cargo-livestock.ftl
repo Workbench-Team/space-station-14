@@ -31,6 +31,9 @@ ent-LivestockGorilla = { ent-CrateNPCGorilla }
 ent-LivestockMonkeyCube = { ent-CrateNPCMonkeyCube }
     .desc = { ent-CrateNPCMonkeyCube.desc }
 
+ent-LivestockMothroach = { ent-CrateNPCMothroach }
+    .desc = { ent-CrateNPCMothroach.desc }
+
 ent-LivestockMouse = { ent-CrateNPCMouse }
     .desc = { ent-CrateNPCMouse.desc }
 

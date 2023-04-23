@@ -3,6 +3,8 @@ ghost-role-component-default-rules =
     Вы не помните ничего из своей предыдущей жизни, если администратор не сказал Вам обратное.
     Вам разрешается помнить знания об игре в целом, например, как готовить, как использовать предметы и т.д.
     Вам [color=red]НЕ[/color] разрешается помнить, имя, внешность и т.д. вашего предыдущего персонажа.
+ghost-role-information-mothroach-name = Таракан
+ghost-role-information-mothroach-description = Голодный и милый таракан.
 ghost-role-information-mouse-name = Мышь
 ghost-role-information-mouse-description = Голодная и озорная мышь.
 ghost-role-information-giant-spider-name = Гигантский паук
