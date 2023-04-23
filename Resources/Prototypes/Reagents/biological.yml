@@ -10,8 +10,8 @@
   metabolisms:
     Medicine:
       effects:
-      - !type:ModifyBloodLevel
-        amount: 1
+      - !type:SatiateThirst
+        factor: 1.5
   plantMetabolism:
   - !type:PlantAdjustWater
     amount: 0.5
