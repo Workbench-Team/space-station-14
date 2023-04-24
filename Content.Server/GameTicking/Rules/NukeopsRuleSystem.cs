@@ -32,7 +32,10 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
-
+///////////////////////////////////////////////////////
+using Robust.Shared.Configuration;
+using Content.Shared.CCVar;
+//////////////////////////////////////////////////////
 namespace Content.Server.GameTicking.Rules;
 
 public sealed class NukeopsRuleSystem : GameRuleSystem
@@ -53,7 +56,11 @@ public sealed class NukeopsRuleSystem : GameRuleSystem
     [Dependency] private readonly GameTicker _ticker = default!;
     [Dependency] private readonly MapLoaderSystem _map = default!;
     [Dependency] private readonly ShuttleSystem _shuttle = default!;
-
+    ///////////////////////////////////////////////////////////////////////
+    [Dependency] private readonly IPrototypeManager _prototypes = default!;
+    [Dependency] private readonly IConfigurationManager _cfg = default!;
+    [Dependency] private readonly Content.Server.Players.PlayTimeTracking.PlayTimeTrackingManager _tracking = default!;
+    ///////////////////////////////////////////////////////////////////////
 
     private enum WinType
     {
@@ -461,7 +468,20 @@ public sealed class NukeopsRuleSystem : GameRuleSystem
         if(ev.NewMobState == MobState.Dead)
             CheckRoundShouldEnd();
     }
+    ////////////////////////////////////////////////////////////////////////Shitcode
+    public bool IsAllowed(IPlayerSession player, string role)
+    {
+        if (!_prototypes.TryIndex<JobPrototype>(role, out var job) ||
+            job.Requirements == null ||
+            !_cfg.GetCVar(CCVars.GameRoleTimers))
+            return true;
 
+        //var playTimes = _tracking.GetTrackerTimes(player);
+
+        //return JobRequirements.TryRequirementsMet(job, playTimes, out _, _prototypes);
+        return false;
+    }
+    ///////////////////////////////////////////////////////////////////////
     private void OnPlayersSpawning(RulePlayerSpawningEvent ev)
     {
         if (!RuleAdded)
@@ -493,11 +513,15 @@ public sealed class NukeopsRuleSystem : GameRuleSystem
             var profile = ev.Profiles[player.UserId];
             if (profile.AntagPreferences.Contains(_nukeopsRuleConfig.OperativeRoleProto))
             {
-                prefList.Add(player);
+                if (IsAllowed(player, "SecurityOfficer")){
+                    prefList.Add(player);
+                }
             }
             if (profile.AntagPreferences.Contains(_nukeopsRuleConfig.CommanderRolePrototype))
             {
-                cmdrPrefList.Add(player);
+                if (IsAllowed(player, "SecurityOfficer")){
+                    cmdrPrefList.Add(player);
+                }
             }
         }
 
