@@ -164,7 +164,7 @@
   components:
     - type: StorageFill
       contents:
-        - id: MobHamsterHamlet
+        - id: MobMothroach
 
 - type: entity
   id: CrateNPCLizard
