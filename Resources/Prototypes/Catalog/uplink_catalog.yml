@@ -679,23 +679,6 @@
     - Clown
 
 - type: listing
-  id: uplinkHotPotato
-  name: uplink-hot-potato-name
-  description: uplink-hot-potato-desc
-  productEntity: HotPotato
-  cost:
-    Telecrystal: 4
-  categories:
-  - UplinkJob
-  conditions:
-  - !type:BuyerJobCondition
-    whitelist:
-    - Chef
-    - Botanist
-    - Clown
-    - Mime
-
-- type: listing
   id: uplinkBananaPeelExplosive
   name: uplink-banana-peel-explosive-name
   description: uplink-banana-peel-explosive-desc
@@ -712,6 +695,24 @@
     blacklist:
       components:
       - SurplusBundle
+
+- type: listing
+  id: uplinkHotPotato
+  name: uplink-hot-potato-name
+  description: uplink-hot-potato-desc
+  productEntity: HotPotato
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Chef
+    - Botanist
+    - Clown
+    - Mime
+
 # Armor
 
 - type: listing
