@@ -108,13 +108,13 @@
   # eyes: Night Vision Goggles whenever they're made
     eyes: ClothingEyesGlassesMeson
     ears: ClothingHeadsetAltSyndicate
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitSyndie
+  #  gloves: ClothingHandsGlovesCombat (Nukie's rework)
+  #  outerClothing: ClothingOuterHardsuitSyndie (Nukie's rework)
     shoes: ClothingShoesBootsCombatFilled
     id: AgentIDCard
     pocket1: ExtendedEmergencyOxygenTankFilled
-    pocket2: BaseUplinkRadio30TC
-    belt: ClothingBeltMilitaryWebbing
+    pocket2: BaseUplinkRadio40TC
+  #  belt: ClothingBeltMilitaryWebbing (Nukie's rework)
   innerclothingskirt: ClothingUniformJumpskirtOperative
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
@@ -128,13 +128,13 @@
   # eyes: Night Vision Goggles whenever they're made
     eyes: ClothingEyesGlassesMeson
     ears: ClothingHeadsetAltSyndicate
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitSyndieCommander
+  #  gloves: ClothingHandsGlovesCombat (Nukie's rework)
+  #  outerClothing: ClothingOuterHardsuitSyndieCommander (Nukie's rework)
     shoes: ClothingShoesBootsCombatFilled
     id: SyndiPDA
     pocket1: ExtendedEmergencyOxygenTankFilled
-    pocket2: BaseUplinkRadio30TC
-    belt: ClothingBeltMilitaryWebbing
+    pocket2: BaseUplinkRadio40TC
+  #  belt: ClothingBeltMilitaryWebbing (Nukie's rework)
   innerclothingskirt: ClothingUniformJumpskirtOperative
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
@@ -147,12 +147,12 @@
     mask: ClothingMaskBreathMedical
     eyes: ClothingEyesHudMedical
     ears: ClothingHeadsetAltSyndicate
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitSyndieElite
+  #  gloves: ClothingHandsGlovesCombat (Nukie's rework)
+  #  outerClothing: ClothingOuterHardsuitSyndieElite (Nukie's rework)
     shoes: ClothingShoesBootsMagSyndie
     id: SyndiPDA
     pocket1: DoubleEmergencyOxygenTankFilled
-    pocket2: BaseUplinkRadio30TC
+    pocket2: BaseUplinkRadio40TC
     belt: ClothingBeltMilitaryWebbingMedFilled
   innerclothingskirt: ClothingUniformJumpskirtOperative
   satchel: ClothingBackpackDuffelSyndicateOperativeMedic

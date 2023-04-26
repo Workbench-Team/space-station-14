@@ -27,6 +27,9 @@ uplink-explosive-grenade-desc = Grenade that creates a small but devastating exp
 uplink-flash-grenade-name = Flashbang
 uplink-flash-grenade-desc = Eeeeeeeeeeeeeeeeeeeeee
 
+uplink-flash-grenade-bundle-name = Box of flashbangs
+uplink-flash-grenade-bundle-desc = Eeeeeeeeeeeeee! Eeeeeeeeeeeeeeeeeeeee! Eeeeeeeeeeeeeeeeee!
+
 uplink-mini-bomb-name = Minibomb
 uplink-mini-bomb-desc = A precision sabotage explosive for quickly destroying a machine, dead body, or whatever else needs to go.
 
@@ -176,6 +179,9 @@ uplink-clothing-outer-vest-web-desc = A synthetic armor vest. This one has added
 uplink-hardsuit-syndie-name = Syndicate Hardsuit
 uplink-hardsuit-syndie-desc = The Syndicate's well known armored blood red hardsuit, capable of space walks and bullet resistant.
 
+uplink-elite-hardsuit-syndie-name = Elite Syndicate Hardsuit
+uplink-elite-hardsuit-syndie-desc = Elite black hardsuit, With good protection against bullets and explosions, as well as the ability to enter outer space. Produced by Gorlex Marauders for elite operatives.
+
 uplink-clothing-shoes-boots-mag-syndie-name = Blood-red Magboots
 uplink-clothing-shoes-boots-mag-syndie-desc = A pair of magnetic boots that will keep you on the ground if the gravity fails or is sabotaged, giving you a mobility advantage. If activated with gravity they will protect from slips, but they will slow you down.
 
@@ -186,6 +192,9 @@ uplink-clothing-outer-hardsuit-juggernaut-name = Cybersun Juggernaut Suit
 uplink-clothing-outer-hardsuit-juggernaut-desc = Hyper resilient armor made of materials tested in the Tau chromosphere facility. The only thing that's going to be slowing you down is this suit... and tasers.
 
 # Misc
+uplink-medkit-name = Advanced Medkit
+uplink-medkit-desc = An advanced aid kit for first aid in combat.
+
 uplink-cyberpen-name = Cybersun Pen
 uplink-cyberpen-desc = Cybersun's legal department pen. Smells vaguely of hard-light and war profiteering.
 

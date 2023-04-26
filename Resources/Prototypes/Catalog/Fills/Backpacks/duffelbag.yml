@@ -233,6 +233,20 @@
   - type: StorageFill
     contents:
       - id: ClothingOuterHardsuitSyndie
+      - id: ClothingMaskGas
+      - id: DoubleEmergencyOxygenTankFilled
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateEliteHardsuitBundle
+  name: syndicate elite hardsuit bundle
+  description: "Contains the Syndicate's elite black hardsuit."
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitSyndieElite
+      - id: ClothingMaskGas
+      - id: DoubleEmergencyOxygenTankFilled
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
