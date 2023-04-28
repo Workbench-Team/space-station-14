@@ -113,6 +113,9 @@ uplink-macro-bomb-implanter-desc = Inject this and on death you'll create a larg
 uplink-c20r-bundle-name = C-20r Bundle
 uplink-c20r-bundle-desc = Old faithful: The classic C-20r Submachine Gun, bundled with three magazines.
 
+uplink-kr51-bundle-name = KR51 Bundle
+uplink-kr51-bundle-desc = Hidden threat: The classic KR51 automatic rifle, bundled with three magazines.
+
 uplink-buldog-bundle-name = Bulldog Bundle
 uplink-buldog-bundle-desc = Lean and mean: Contains the popular Bulldog Shotgun, a 12g beanbag drum and 2 12g buckshot drums.
 
