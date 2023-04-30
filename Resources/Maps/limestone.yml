@@ -172,7 +172,7 @@ entities:
         tiles: RAAAAEQAAABEAAAAXgAAAEQAAAA5AAAARAAAAF4AAAAAAAAAAAAAAF4AAABPAAAATwAAAE8AAABPAAAATwAAAF4AAABeAAAAXgAAAF4AAABEAAAARAAAAEQAAABeAAAAAAAAAAAAAABeAAAATwAAAE8AAABPAAAATwAAAE8AAABEAAAARAAAAEQAAABeAAAARAAAAEQAAABEAAAAXgAAAAAAAAAAAAAAXgAAAF4AAABeAAAAXgAAAF4AAABPAAAARAAAAEQAAABEAAAAXgAAAEQAAABEAAAARAAAAF4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAATwAAAEQAAABEAAAARAAAAF4AAABEAAAARAAAAEQAAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAE8AAABeAAAAXgAAAF4AAABeAAAARAAAAEQAAABEAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABeAAAARAAAAEQAAABEAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABeAAAARAAAAEQAAABEAAAAWwAAAFsAAABbAAAAXgAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAAXgAAAEQAAABEAAAARAAAAFsAAABbAAAAWwAAAF4AAABEAAAARAAAAEQAAABeAAAARAAAAEQAAABEAAAARAAAAF4AAABEAAAARAAAAEQAAABbAAAAWwAAAFsAAABeAAAARAAAAEQAAABEAAAAXgAAAF4AAABEAAAARAAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAFsAAABbAAAAWwAAAF4AAABEAAAAOQAAAEQAAABEAAAARAAAADkAAABEAAAARAAAAEQAAAA5AAAARAAAAEQAAABbAAAAWwAAAFsAAABeAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAAWwAAAFsAAABbAAAAXgAAAEQAAABEAAAARAAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAA==
       -1,-4:
         ind: -1,-4
-        tiles: RAAAAEQAAABEAAAAXgAAAFsAAABbAAAAWwAAAFsAAABeAAAAXgAAAF4AAABPAAAATwAAAE8AAABeAAAAXgAAAEQAAABEAAAARAAAAF4AAABbAAAAWwAAAFsAAABbAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABEAAAARAAAAEQAAABeAAAAWwAAAFsAAABbAAAAWwAAAF4AAABeAAAAXgAAAE8AAABPAAAATwAAAF4AAABeAAAARAAAAF4AAABeAAAAXgAAAF4AAABeAAAARAAAAF4AAABeAAAAXgAAAF4AAABPAAAATwAAAE8AAABeAAAAXgAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAAXgAAAF4AAABeAAAATwAAAE8AAABPAAAAXgAAAF4AAABEAAAAXgAAAF4AAABeAAAAXgAAAF4AAABEAAAAXgAAAF4AAABeAAAAXgAAAF4AAABPAAAAXgAAAF4AAABeAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAF4AAABeAAAAXgAAAF4AAABeAAAATwAAAE8AAABPAAAATwAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABeAAAAXgAAAF4AAABeAAAAXgAAAE8AAABPAAAATwAAAE8AAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAAXgAAAAAAAAAAAAAAAAAAAF4AAABeAAAATwAAAE8AAABPAAAARAAAAF4AAABeAAAAXgAAAEQAAABEAAAARAAAAF4AAAAAAAAAAAAAAAAAAAAAAAAAXgAAAF4AAABPAAAATwAAAEQAAABEAAAARAAAAF4AAABEAAAARAAAAEQAAABeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAAXgAAAE8AAABEAAAARAAAAEQAAABeAAAARAAAAEQAAABEAAAAXgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABPAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAF4AAAAAAAAAAAAAAF4AAABeAAAAXgAAAF4AAABeAAAATwAAAEQAAABEAAAARAAAAF4AAABEAAAARAAAAEQAAABeAAAAAAAAAAAAAABeAAAATwAAAE8AAABPAAAATwAAAE8AAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAAXgAAAAAAAAAAAAAAXgAAAE8AAABPAAAATwAAAE8AAABPAAAARAAAAEQAAABEAAAAXgAAAEQAAABEAAAARAAAAF4AAAAAAAAAAAAAAF4AAABPAAAATwAAAE8AAABPAAAATwAAAA==
+        tiles: RAAAAEQAAABEAAAAXgAAAFsAAABbAAAAWwAAAFsAAABeAAAAXgAAAF4AAABPAAAATwAAAE8AAABeAAAAXgAAAEQAAABEAAAARAAAAF4AAABbAAAAWwAAAFsAAABbAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABEAAAARAAAAEQAAABEAAAAWwAAAFsAAABbAAAAWwAAAF4AAABeAAAAXgAAAE8AAABPAAAATwAAAF4AAABeAAAARAAAAF4AAABeAAAAXgAAAF4AAABeAAAARAAAAF4AAABeAAAAXgAAAF4AAABPAAAATwAAAE8AAABeAAAAXgAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAAXgAAAF4AAABeAAAATwAAAE8AAABPAAAAXgAAAF4AAABEAAAAXgAAAF4AAABeAAAAXgAAAF4AAABEAAAAXgAAAF4AAABeAAAAXgAAAF4AAABPAAAAXgAAAF4AAABeAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAF4AAABeAAAAXgAAAF4AAABeAAAATwAAAE8AAABPAAAATwAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABeAAAAXgAAAF4AAABeAAAAXgAAAE8AAABPAAAATwAAAE8AAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAAXgAAAAAAAAAAAAAAAAAAAF4AAABeAAAATwAAAE8AAABPAAAARAAAAF4AAABeAAAAXgAAAEQAAABEAAAARAAAAF4AAAAAAAAAAAAAAAAAAAAAAAAAXgAAAF4AAABPAAAATwAAAEQAAABEAAAARAAAAF4AAABEAAAARAAAAEQAAABeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAAXgAAAE8AAABEAAAARAAAAEQAAABeAAAARAAAAEQAAABEAAAAXgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABPAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAF4AAAAAAAAAAAAAAF4AAABeAAAAXgAAAF4AAABeAAAATwAAAEQAAABEAAAARAAAAF4AAABEAAAARAAAAEQAAABeAAAAAAAAAAAAAABeAAAATwAAAE8AAABPAAAATwAAAE8AAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAAXgAAAAAAAAAAAAAAXgAAAE8AAABPAAAATwAAAE8AAABPAAAARAAAAEQAAABEAAAAXgAAAEQAAABEAAAARAAAAF4AAAAAAAAAAAAAAF4AAABPAAAATwAAAE8AAABPAAAATwAAAA==
       -2,-5:
         ind: -2,-5
         tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAF4AAABeAAAAFgAAAA8AAAAWAAAAFgAAABYAAAAWAAAAFgAAAF4AAABeAAAAXgAAAAAAAAAAAAAAAAAAAF4AAABeAAAAXgAAAF4AAAAWAAAAFgAAABYAAAAWAAAAFgAAABYAAABPAAAATwAAAF4AAAAAAAAAAAAAAAAAAABdAAAAXgAAAF4AAABeAAAAXgAAABYAAABeAAAAXgAAAF4AAAAWAAAATwAAAE8AAABeAAAAAAAAAAAAAAAAAAAAXQAAAAAAAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAE8AAABPAAAAXgAAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAAXgAAAF4AAAAAAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAXgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAF4AAABeAAAAAAAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAF4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABeAAAAXgAAAAAAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAABeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAAXgAAAF4AAAAAAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAXgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAF4AAABeAAAAAAAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAF4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABeAAAAXgAAAAAAAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAAXgAAAEQAAABEAAAARAAAAEQAAABeAAAAXgAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAF4AAABEAAAARAAAAEQAAABEAAAAXgAAAA==
@@ -1264,7 +1264,7 @@ entities:
           4368: 36.803673,44.123318
           4508: -4.5810785,-14.640093
           4509: -7.2060785,-9.686968
-          4570: 71.09589,24.028797
+          4569: 71.09589,24.028797
       - node:
           color: '#FFFFFFFF'
           id: Bushk2
@@ -2884,7 +2884,7 @@ entities:
           4551: -6.7122335,-15.014876
           4557: 6.0867567,-15.045386
           4558: 6.1336317,-13.248511
-          4568: 71.09589,23.888172
+          4567: 71.09589,23.888172
       - node:
           color: '#FFFFFFFF'
           id: Flowerspv2
@@ -2901,7 +2901,7 @@ entities:
           id: Flowersy1
         decals:
           4408: 12.00434,-62.707676
-          4569: 70.08026,22.888172
+          4568: 70.08026,22.888172
       - node:
           color: '#FFFFFFFF'
           id: Flowersy2
@@ -6677,8 +6677,7 @@ entities:
         -1,-3:
           0: 65535
         -1,-2:
-          0: 65531
-          1: 4
+          0: 65535
         -1,-4:
           0: 65535
         -4,0:
@@ -7207,8 +7206,8 @@ entities:
           0: 15
         -17,4:
           0: 4593
-          2: 14
-          3: 60928
+          1: 14
+          2: 60928
         -17,5:
           0: 20479
         -17,6:
@@ -7233,18 +7232,18 @@ entities:
           0: 52428
         -17,0:
           0: 8191
-          4: 57344
+          3: 57344
         -17,1:
           0: 4593
-          4: 14
-          5: 60928
+          3: 14
+          4: 60928
         -17,2:
           0: 61727
-          3: 3808
+          2: 3808
         -17,3:
           0: 7953
-          3: 238
-          2: 57344
+          2: 238
+          1: 57344
         -19,-1:
           0: 34944
         -18,-1:
@@ -7743,21 +7742,21 @@ entities:
           0: 61440
         0,-8:
           0: 13311
-          6: 52224
+          5: 52224
         0,-7:
           0: 13107
-          6: 52428
+          5: 52428
         0,-6:
           0: 65523
-          6: 12
+          5: 12
         1,-8:
           0: 35071
-          6: 30464
+          5: 30464
         1,-7:
-          6: 30583
+          5: 30583
           0: 34952
         1,-6:
-          6: 7
+          5: 7
           0: 65528
         2,-8:
           0: 61167
@@ -7773,21 +7772,21 @@ entities:
           0: 65535
         -2,-8:
           0: 8943
-          6: 52224
+          5: 52224
         -2,-7:
           0: 9011
-          6: 52428
+          5: 52428
         -2,-6:
           0: 65506
-          6: 12
+          5: 12
         -1,-8:
           0: 35071
-          6: 30464
+          5: 30464
         -1,-7:
-          6: 30583
+          5: 30583
           0: 34952
         -1,-6:
-          6: 7
+          5: 7
           0: 65528
         -2,-11:
           0: 65535
@@ -7985,7 +7984,7 @@ entities:
           0: 65535
         5,-1:
           0: 30719
-          6: 34816
+          5: 34816
         6,-4:
           0: 65535
         6,-3:
@@ -7994,7 +7993,7 @@ entities:
           0: 65535
         6,-1:
           0: 52479
-          6: 13056
+          5: 13056
         7,-4:
           0: 65535
         7,-3:
@@ -8007,7 +8006,7 @@ entities:
           0: 65535
         5,0:
           0: 65527
-          6: 8
+          5: 8
         8,-8:
           0: 65535
         8,-7:
@@ -8167,7 +8166,7 @@ entities:
         5,2:
           0: 65535
         6,0:
-          6: 3
+          5: 3
           0: 65532
         6,1:
           0: 65535
@@ -8261,19 +8260,19 @@ entities:
           0: 65535
         16,-4:
           0: 32639
-          6: 32768
+          5: 32768
         16,-3:
           0: 65399
-          6: 136
+          5: 136
         16,-2:
           0: 65535
         16,-1:
           0: 65535
         17,-4:
           0: 53199
-          6: 12288
+          5: 12288
         17,-3:
-          6: 51
+          5: 51
           0: 65484
         17,-2:
           0: 65535
@@ -8410,15 +8409,15 @@ entities:
         25,-5:
           0: 4369
         16,4:
-          0: 65407
+          0: 65535
         17,4:
-          0: 64399
+          0: 65535
         18,4:
-          0: 59632
+          0: 65520
         18,5:
-          0: 8754
+          0: 65535
         19,4:
-          0: 62708
+          0: 62964
         15,4:
           0: 57292
         20,4:
@@ -8432,8 +8431,7 @@ entities:
         3,6:
           0: 65535
         3,7:
-          0: 65527
-          1: 8
+          0: 65535
         2,8:
           0: 4095
         3,8:
@@ -8821,13 +8819,13 @@ entities:
         17,5:
           0: 65535
         17,6:
-          0: 30715
+          0: 30719
         17,7:
           0: 29559
         18,6:
-          0: 227
+          0: 255
         19,6:
-          0: 30704
+          0: 30705
         19,7:
           0: 30583
         14,4:
@@ -8845,7 +8843,7 @@ entities:
         15,7:
           0: 56799
         20,6:
-          0: 30704
+          0: 30708
         20,7:
           0: 30583
         21,6:
@@ -9312,27 +9310,16 @@ entities:
           0: 19532
         -16,-20:
           0: 250
+        19,5:
+          0: 14199
+        20,5:
+          0: 17476
       uniqueMixes:
       - volume: 2500
         temperature: 293.15
         moles:
         - 21.824879
         - 82.10312
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-      - volume: 2500
-        temperature: 293.14996
-        moles:
-        - 20.078888
-        - 75.53487
         - 0
         - 0
         - 0
@@ -72501,13 +72488,13 @@ entities:
   - bodyType: Static
     type: Physics
 - uid: 8724
-  type: GasPipeTJunction
+  type: GasVentPump
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -11.5,-3.5
+  - rot: 1.5707963267948966 rad
+    pos: -10.5,-13.5
     parent: 1
     type: Transform
-  - color: '#990000FF'
+  - color: '#0055CCFF'
     type: AtmosPipeColor
   - bodyType: Static
     type: Physics
@@ -72719,16 +72706,11 @@ entities:
   - bodyType: Static
     type: Physics
 - uid: 8744
-  type: GasPipeTJunction
+  type: FirelockGlass
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -9.5,-4.5
+  - pos: -9.5,-15.5
     parent: 1
     type: Transform
-  - color: '#0055CCFF'
-    type: AtmosPipeColor
-  - bodyType: Static
-    type: Physics
 - uid: 8745
   type: GasPipeStraight
   components:
@@ -73233,9 +73215,10 @@ entities:
   - bodyType: Static
     type: Physics
 - uid: 8793
-  type: GasPipeStraight
+  type: GasPipeTJunction
   components:
-  - pos: -11.5,-28.5
+  - rot: 1.5707963267948966 rad
+    pos: -11.5,-28.5
     parent: 1
     type: Transform
   - color: '#990000FF'
@@ -73284,10 +73267,10 @@ entities:
   - bodyType: Static
     type: Physics
 - uid: 8798
-  type: GasPipeTJunction
+  type: GasVentScrubber
   components:
-  - rot: 1.5707963267948966 rad
-    pos: -11.5,-23.5
+  - rot: -1.5707963267948966 rad
+    pos: -10.5,-28.5
     parent: 1
     type: Transform
   - color: '#990000FF'
@@ -73325,10 +73308,9 @@ entities:
   - bodyType: Static
     type: Physics
 - uid: 8802
-  type: GasPipeTJunction
+  type: GasPipeStraight
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -9.5,-30.5
+  - pos: -9.5,-30.5
     parent: 1
     type: Transform
   - color: '#0055CCFF'
@@ -73349,7 +73331,7 @@ entities:
   type: GasPipeTJunction
   components:
   - rot: 1.5707963267948966 rad
-    pos: -9.5,-19.5
+    pos: -9.5,-12.5
     parent: 1
     type: Transform
   - color: '#0055CCFF'
@@ -73436,11 +73418,11 @@ entities:
 - uid: 8813
   type: GasPipeTJunction
   components:
-  - rot: 1.5707963267948966 rad
-    pos: -11.5,-8.5
+  - rot: -1.5707963267948966 rad
+    pos: -9.5,-13.5
     parent: 1
     type: Transform
-  - color: '#990000FF'
+  - color: '#0055CCFF'
     type: AtmosPipeColor
   - bodyType: Static
     type: Physics
@@ -73553,10 +73535,10 @@ entities:
 - uid: 8825
   type: GasPipeStraight
   components:
-  - pos: -9.5,-13.5
+  - pos: -11.5,-19.5
     parent: 1
     type: Transform
-  - color: '#0055CCFF'
+  - color: '#990000FF'
     type: AtmosPipeColor
   - bodyType: Static
     type: Physics
@@ -73727,7 +73709,7 @@ entities:
   type: GasPipeTJunction
   components:
   - rot: 1.5707963267948966 rad
-    pos: -11.5,-19.5
+    pos: -11.5,-3.5
     parent: 1
     type: Transform
   - color: '#990000FF'
@@ -76559,15 +76541,15 @@ entities:
   - bodyType: Static
     type: Physics
 - uid: 9108
-  type: GasPipeFourway
+  type: HolofanProjector
   components:
-  - pos: -9.5,-12.5
-    parent: 1
+  - flags: InContainer
+    type: MetaData
+  - parent: 13701
     type: Transform
-  - color: '#0055CCFF'
-    type: AtmosPipeColor
-  - bodyType: Static
+  - canCollide: False
     type: Physics
+  - type: InsideEntityStorage
 - uid: 9109
   type: GasPipeStraight
   components:
@@ -81293,6 +81275,8 @@ entities:
     pos: 8.5,-14.5
     parent: 1
     type: Transform
+  - enabled: True
+    type: AmbientSound
   - color: '#990000FF'
     type: AtmosPipeColor
   - bodyType: Static
@@ -111024,36 +111008,156 @@ entities:
   - pos: -43.5,8.5
     parent: 1
     type: Transform
+  - air:
+      volume: 200
+      immutable: False
+      temperature: 293.1496
+      moles:
+      - 1.7459903
+      - 6.568249
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    type: EntityStorage
+  - containers:
+      entity_storage: !type:Container
+        showEnts: False
+        occludes: True
+        ents:
+        - 9108
+        - 13705
+        - 13706
+        - 13709
+    type: ContainerContainer
 - uid: 13702
   type: LockerAtmosphericsFilled
   components:
   - pos: -43.5,7.5
     parent: 1
     type: Transform
+  - air:
+      volume: 200
+      immutable: False
+      temperature: 293.1496
+      moles:
+      - 1.7459903
+      - 6.568249
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    type: EntityStorage
+  - containers:
+      entity_storage: !type:Container
+        showEnts: False
+        occludes: True
+        ents:
+        - 13710
+        - 13711
+        - 13712
+        - 13713
+    type: ContainerContainer
 - uid: 13703
   type: LockerAtmosphericsFilled
   components:
   - pos: -43.5,6.5
     parent: 1
     type: Transform
+  - air:
+      volume: 200
+      immutable: False
+      temperature: 293.1496
+      moles:
+      - 1.7459903
+      - 6.568249
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    type: EntityStorage
+  - containers:
+      entity_storage: !type:Container
+        showEnts: False
+        occludes: True
+        ents:
+        - 13714
+        - 13715
+        - 13716
+        - 16222
+    type: ContainerContainer
 - uid: 13704
   type: LockerAtmosphericsFilled
   components:
   - pos: -43.5,5.5
     parent: 1
     type: Transform
+  - air:
+      volume: 200
+      immutable: False
+      temperature: 293.1496
+      moles:
+      - 1.7459903
+      - 6.568249
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    type: EntityStorage
+  - containers:
+      entity_storage: !type:Container
+        showEnts: False
+        occludes: True
+        ents:
+        - 16223
+        - 16224
+        - 17189
+        - 17461
+    type: ContainerContainer
 - uid: 13705
-  type: TableReinforced
+  type: WelderIndustrialAdvanced
   components:
-  - pos: -40.5,8.5
-    parent: 1
+  - flags: InContainer
+    type: MetaData
+  - parent: 13701
     type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
 - uid: 13706
-  type: TableReinforced
+  type: HandLabeler
   components:
-  - pos: -40.5,7.5
-    parent: 1
+  - flags: InContainer
+    type: MetaData
+  - parent: 13701
     type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
 - uid: 13707
   type: TableReinforced
   components:
@@ -111069,51 +111173,83 @@ entities:
 - uid: 13709
   type: ClothingShoesBootsMag
   components:
-  - pos: -40.63258,8.64054
-    parent: 1
+  - flags: InContainer
+    type: MetaData
+  - parent: 13701
     type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
 - uid: 13710
-  type: ClothingShoesBootsMag
+  type: WelderIndustrialAdvanced
   components:
-  - pos: -40.648205,8.39054
-    parent: 1
+  - flags: InContainer
+    type: MetaData
+  - parent: 13702
     type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
 - uid: 13711
-  type: ClothingShoesBootsMag
+  type: HolofanProjector
   components:
-  - pos: -40.44508,8.64054
-    parent: 1
+  - flags: InContainer
+    type: MetaData
+  - parent: 13702
     type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
 - uid: 13712
   type: ClothingShoesBootsMag
   components:
-  - pos: -40.44508,8.406165
-    parent: 1
+  - flags: InContainer
+    type: MetaData
+  - parent: 13702
     type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
 - uid: 13713
-  type: HolofanProjector
+  type: HandLabeler
   components:
-  - pos: -40.616955,7.843665
-    parent: 1
+  - flags: InContainer
+    type: MetaData
+  - parent: 13702
     type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
 - uid: 13714
   type: HolofanProjector
   components:
-  - pos: -40.491955,7.656165
-    parent: 1
+  - flags: InContainer
+    type: MetaData
+  - parent: 13703
     type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
 - uid: 13715
-  type: HolofanProjector
+  type: WelderIndustrialAdvanced
   components:
-  - pos: -40.648205,7.45304
-    parent: 1
+  - flags: InContainer
+    type: MetaData
+  - parent: 13703
     type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
 - uid: 13716
-  type: HolofanProjector
+  type: ClothingShoesBootsMag
   components:
-  - pos: -40.47633,7.23429
-    parent: 1
+  - flags: InContainer
+    type: MetaData
+  - parent: 13703
     type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
 - uid: 13717
   type: RCD
   components:
@@ -128435,23 +128571,35 @@ entities:
     parent: 1
     type: Transform
 - uid: 16222
-  type: FirelockGlass
+  type: HandLabeler
   components:
-  - pos: -11.5,-10.5
-    parent: 1
+  - flags: InContainer
+    type: MetaData
+  - parent: 13703
     type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
 - uid: 16223
-  type: FirelockGlass
+  type: WelderIndustrialAdvanced
   components:
-  - pos: -10.5,-10.5
-    parent: 1
+  - flags: InContainer
+    type: MetaData
+  - parent: 13704
     type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
 - uid: 16224
-  type: FirelockGlass
+  type: HandLabeler
   components:
-  - pos: -9.5,-10.5
-    parent: 1
+  - flags: InContainer
+    type: MetaData
+  - parent: 13704
     type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
 - uid: 16225
   type: FirelockGlass
   components:
@@ -138348,16 +138496,15 @@ entities:
   - bodyType: Static
     type: Physics
 - uid: 17189
-  type: GasPipeStraight
+  type: HolofanProjector
   components:
-  - rot: 1.5707963267948966 rad
-    pos: 47.5,-12.5
-    parent: 1
+  - flags: InContainer
+    type: MetaData
+  - parent: 13704
     type: Transform
-  - color: '#990000FF'
-    type: AtmosPipeColor
-  - bodyType: Static
+  - canCollide: False
     type: Physics
+  - type: InsideEntityStorage
 - uid: 17190
   type: GasPipeStraight
   components:
@@ -141282,27 +141429,21 @@ entities:
   - bodyType: Static
     type: Physics
 - uid: 17461
-  type: GasVentScrubber
+  type: ClothingShoesBootsMag
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -10.5,-8.5
-    parent: 1
+  - flags: InContainer
+    type: MetaData
+  - parent: 13704
     type: Transform
-  - color: '#990000FF'
-    type: AtmosPipeColor
-  - bodyType: Static
+  - canCollide: False
     type: Physics
+  - type: InsideEntityStorage
 - uid: 17462
-  type: GasVentPump
+  type: DrinkTeapot
   components:
-  - rot: 1.5707963267948966 rad
-    pos: -10.5,-4.5
+  - pos: -45.497616,20.63
     parent: 1
     type: Transform
-  - color: '#0055CCFF'
-    type: AtmosPipeColor
-  - bodyType: Static
-    type: Physics
 - uid: 17463
   type: GasVentPump
   components:
@@ -141464,9 +141605,9 @@ entities:
     parent: 1
     type: Transform
   - devices:
-    - 16224
-    - 16223
-    - 16222
+    - invalid
+    - invalid
+    - invalid
     - 16219
     - 16220
     - 16221
@@ -141474,8 +141615,13 @@ entities:
     - 16217
     - 16216
     - 17466
-    - 17462
-    - 17461
+    - invalid
+    - invalid
+    - 22334
+    - 8744
+    - 23592
+    - 8724
+    - 23594
     type: DeviceList
 - uid: 17477
   type: FireAlarm
@@ -141485,9 +141631,9 @@ entities:
     parent: 1
     type: Transform
   - devices:
-    - 16224
-    - 16223
-    - 16222
+    - invalid
+    - invalid
+    - invalid
     - 16219
     - 16220
     - 16221
@@ -141495,6 +141641,9 @@ entities:
     - 16217
     - 16216
     - 17466
+    - 22334
+    - 8744
+    - 23592
     type: DeviceList
 - uid: 17478
   type: AirAlarm
@@ -141569,49 +141718,31 @@ entities:
     - 17468
     type: DeviceList
 - uid: 17482
-  type: GasVentPump
+  type: VendingMachineYouTool
   components:
-  - rot: 1.5707963267948966 rad
-    pos: -10.5,-12.5
+  - flags: SessionSpecific
+    type: MetaData
+  - pos: -40.5,8.5
     parent: 1
     type: Transform
-  - color: '#0055CCFF'
-    type: AtmosPipeColor
-  - bodyType: Static
-    type: Physics
 - uid: 17483
-  type: GasVentPump
+  type: DrinkTeacup
   components:
-  - rot: 1.5707963267948966 rad
-    pos: -10.5,-30.5
+  - pos: -45.372616,20.426874
     parent: 1
     type: Transform
-  - color: '#0055CCFF'
-    type: AtmosPipeColor
-  - bodyType: Static
-    type: Physics
 - uid: 17484
-  type: GasVentScrubber
+  type: DrinkTeacup
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -10.5,-19.5
+  - pos: -45.716366,20.84875
     parent: 1
     type: Transform
-  - color: '#990000FF'
-    type: AtmosPipeColor
-  - bodyType: Static
-    type: Physics
 - uid: 17485
-  type: GasVentScrubber
+  type: MaterialCardboard
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -10.5,-23.5
+  - pos: -50.45806,-73.37739
     parent: 1
     type: Transform
-  - color: '#990000FF'
-    type: AtmosPipeColor
-  - bodyType: Static
-    type: Physics
 - uid: 17486
   type: GasVentScrubber
   components:
@@ -141939,14 +142070,19 @@ entities:
     - 16227
     - 16226
     - 16225
-    - 16224
-    - 16223
-    - 16222
+    - invalid
+    - invalid
+    - invalid
     - 17532
-    - 17484
-    - 17485
-    - 17482
-    - 17483
+    - invalid
+    - invalid
+    - invalid
+    - invalid
+    - 22334
+    - 8744
+    - 23592
+    - 23596
+    - 8798
     type: DeviceList
 - uid: 17535
   type: FireAlarm
@@ -141963,10 +142099,13 @@ entities:
     - 16227
     - 16226
     - 16225
-    - 16224
-    - 16223
-    - 16222
+    - invalid
+    - invalid
+    - invalid
     - 17532
+    - 22334
+    - 8744
+    - 23592
     type: DeviceList
 - uid: 17536
   type: AirAlarm
@@ -149871,8 +150010,6 @@ entities:
   - pos: -12.5,-61.5
     parent: 1
     type: Transform
-  - enabled: True
-    type: AmbientSound
 - uid: 18418
   type: CableApcExtension
   components:
@@ -173860,14 +173997,11 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 21955
-  type: Poweredlight
+  type: PlushieNuke
   components:
-  - rot: 3.141592653589793 rad
-    pos: -36.5,10.5
+  - pos: -34.54939,-40.519833
     parent: 1
     type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
 - uid: 21956
   type: Poweredlight
   components:
@@ -176897,39 +177031,43 @@ entities:
     parent: 1
     type: Transform
 - uid: 22330
-  type: TableReinforced
+  type: ComfyChair
   components:
-  - pos: -48.5,17.5
+  - pos: -45.5,21.5
     parent: 1
     type: Transform
 - uid: 22331
-  type: WelderIndustrialAdvanced
+  type: ComfyChair
   components:
-  - pos: -48.45475,17.447329
+  - rot: 3.141592653589793 rad
+    pos: -45.5,19.5
     parent: 1
     type: Transform
 - uid: 22332
-  type: WelderIndustrialAdvanced
+  type: TableStone
   components:
-  - pos: -48.2985,17.275454
+  - pos: -45.5,20.5
     parent: 1
     type: Transform
 - uid: 22333
-  type: TableReinforced
+  type: VendingMachineEngivend
   components:
-  - pos: -48.5,16.5
+  - flags: SessionSpecific
+    type: MetaData
+  - pos: -40.5,7.5
     parent: 1
     type: Transform
 - uid: 22334
-  type: HandLabeler
+  type: FirelockGlass
   components:
-  - pos: -48.50155,16.787231
+  - pos: -11.5,-15.5
     parent: 1
     type: Transform
 - uid: 22335
-  type: HandLabeler
+  type: Table
   components:
-  - pos: -48.454674,16.552856
+  - rot: 1.5707963267948966 rad
+    pos: 51.5,-12.5
     parent: 1
     type: Transform
 - uid: 22336
@@ -182253,48 +182391,72 @@ entities:
   - pos: -15.480612,-60.375675
     parent: 1
     type: Transform
+  missingComponents:
+  - Item
+  - Pullable
 - uid: 23044
   type: DeskBell
   components:
   - pos: -23.486288,16.568142
     parent: 1
     type: Transform
+  missingComponents:
+  - Item
+  - Pullable
 - uid: 23045
   type: DeskBell
   components:
   - pos: -33.464336,5.515867
     parent: 1
     type: Transform
+  missingComponents:
+  - Item
+  - Pullable
 - uid: 23046
   type: DeskBell
   components:
   - pos: 18.50777,9.581762
     parent: 1
     type: Transform
+  missingComponents:
+  - Item
+  - Pullable
 - uid: 23047
   type: DeskBell
   components:
   - pos: 28.583784,3.5458822
     parent: 1
     type: Transform
+  missingComponents:
+  - Item
+  - Pullable
 - uid: 23048
   type: DeskBell
   components:
   - pos: 18.514229,-2.4825606
     parent: 1
     type: Transform
+  missingComponents:
+  - Item
+  - Pullable
 - uid: 23049
   type: DeskBell
   components:
-  - pos: 59.44516,-2.4993725
+  - pos: 59.500706,-2.3579905
     parent: 1
     type: Transform
+  missingComponents:
+  - Item
+  - Pullable
 - uid: 23050
   type: DeskBell
   components:
   - pos: 25.551859,14.629276
     parent: 1
     type: Transform
+  missingComponents:
+  - Item
+  - Pullable
 - uid: 23051
   type: SpawnMobMothroach
   components:
@@ -185938,6 +186100,477 @@ entities:
   type: Lighter
   components:
   - pos: 67.77927,16.462904
+    parent: 1
+    type: Transform
+- uid: 23591
+  type: GasPipeStraight
+  components:
+  - pos: -9.5,-4.5
+    parent: 1
+    type: Transform
+  - color: '#0055CCFF'
+    type: AtmosPipeColor
+  - bodyType: Static
+    type: Physics
+- uid: 23592
+  type: FirelockGlass
+  components:
+  - pos: -10.5,-15.5
+    parent: 1
+    type: Transform
+- uid: 23593
+  type: GasPipeStraight
+  components:
+  - pos: -11.5,-8.5
+    parent: 1
+    type: Transform
+  - color: '#990000FF'
+    type: AtmosPipeColor
+  - bodyType: Static
+    type: Physics
+- uid: 23594
+  type: GasVentScrubber
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -10.5,-3.5
+    parent: 1
+    type: Transform
+  - color: '#990000FF'
+    type: AtmosPipeColor
+  - bodyType: Static
+    type: Physics
+- uid: 23595
+  type: GasPipeFourway
+  components:
+  - pos: -9.5,-19.5
+    parent: 1
+    type: Transform
+  - color: '#0055CCFF'
+    type: AtmosPipeColor
+  - bodyType: Static
+    type: Physics
+- uid: 23596
+  type: GasVentPump
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -10.5,-19.5
+    parent: 1
+    type: Transform
+  - color: '#0055CCFF'
+    type: AtmosPipeColor
+  - bodyType: Static
+    type: Physics
+- uid: 23597
+  type: Poweredlight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -38.5,11.5
+    parent: 1
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 23598
+  type: DrinkMugBlue
+  components:
+  - pos: 50.720303,20.500225
+    parent: 1
+    type: Transform
+- uid: 23599
+  type: Paper
+  components:
+  - pos: -25.7078,-12.438142
+    parent: 1
+    type: Transform
+- uid: 23600
+  type: Poweredlight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -26.5,-13.5
+    parent: 1
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 23601
+  type: PottedPlantRandom
+  components:
+  - pos: 13.5,-55.5
+    parent: 1
+    type: Transform
+- uid: 23602
+  type: WaterCooler
+  components:
+  - pos: 51.5,20.5
+    parent: 1
+    type: Transform
+- uid: 23603
+  type: FaxMachineBase
+  components:
+  - pos: -26.5,-12.5
+    parent: 1
+    type: Transform
+  - name: библиотека
+    type: FaxMachine
+- uid: 23604
+  type: GasPipeStraight
+  components:
+  - pos: -11.5,-23.5
+    parent: 1
+    type: Transform
+  - color: '#990000FF'
+    type: AtmosPipeColor
+  - bodyType: Static
+    type: Physics
+- uid: 23605
+  type: Table
+  components:
+  - pos: 50.5,20.5
+    parent: 1
+    type: Transform
+- uid: 23606
+  type: FoodMeatRatdoubleKebab
+  components:
+  - pos: 48.526516,20.617924
+    parent: 1
+    type: Transform
+- uid: 23607
+  type: PottedPlantRandom
+  components:
+  - pos: 13.5,-69.5
+    parent: 1
+    type: Transform
+- uid: 23608
+  type: d20Dice
+  components:
+  - pos: -25.067175,-12.453767
+    parent: 1
+    type: Transform
+- uid: 23609
+  type: TableGlass
+  components:
+  - pos: 48.5,20.5
+    parent: 1
+    type: Transform
+- uid: 23610
+  type: Chair
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 47.5,20.5
+    parent: 1
+    type: Transform
+- uid: 23611
+  type: PoweredSmallLight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 9.5,32.5
+    parent: 1
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 23612
+  type: Paper
+  components:
+  - pos: -25.848425,-12.266267
+    parent: 1
+    type: Transform
+- uid: 23613
+  type: Chair
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 49.5,20.5
+    parent: 1
+    type: Transform
+- uid: 23614
+  type: DrinkMugBlue
+  components:
+  - pos: 50.407803,20.7346
+    parent: 1
+    type: Transform
+- uid: 23615
+  type: TableGlass
+  components:
+  - pos: 51.5,-14.5
+    parent: 1
+    type: Transform
+- uid: 23616
+  type: Chair
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 52.5,-14.5
+    parent: 1
+    type: Transform
+- uid: 23617
+  type: Chair
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 50.5,-14.5
+    parent: 1
+    type: Transform
+- uid: 23618
+  type: WaterCooler
+  components:
+  - pos: 52.5,-12.5
+    parent: 1
+    type: Transform
+- uid: 23619
+  type: GasPipeStraight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 47.5,-12.5
+    parent: 1
+    type: Transform
+  - color: '#990000FF'
+    type: AtmosPipeColor
+  - bodyType: Static
+    type: Physics
+- uid: 23620
+  type: DrinkMugRed
+  components:
+  - pos: 51.37778,-12.2464
+    parent: 1
+    type: Transform
+- uid: 23621
+  type: DrinkMugRed
+  components:
+  - pos: 51.705906,-12.46515
+    parent: 1
+    type: Transform
+- uid: 23622
+  type: FoodMeatRatdoubleKebab
+  components:
+  - pos: 51.50289,-14.387025
+    parent: 1
+    type: Transform
+- uid: 23623
+  type: Table
+  components:
+  - pos: 46.5,-26.5
+    parent: 1
+    type: Transform
+- uid: 23624
+  type: DeskBell
+  components:
+  - pos: 24.535856,-6.3907814
+    parent: 1
+    type: Transform
+  missingComponents:
+  - Item
+  - Pullable
+- uid: 23625
+  type: KitchenMicrowave
+  components:
+  - pos: 46.5,-26.5
+    parent: 1
+    type: Transform
+- uid: 23626
+  type: DeskBell
+  components:
+  - pos: -39.51204,-69.45263
+    parent: 1
+    type: Transform
+  missingComponents:
+  - Item
+  - Pullable
+- uid: 23627
+  type: TableReinforced
+  components:
+  - pos: -5.5,26.5
+    parent: 1
+    type: Transform
+- uid: 23628
+  type: TableReinforced
+  components:
+  - pos: -5.5,25.5
+    parent: 1
+    type: Transform
+- uid: 23629
+  type: TableReinforced
+  components:
+  - pos: -5.5,24.5
+    parent: 1
+    type: Transform
+- uid: 23630
+  type: TableReinforced
+  components:
+  - pos: 6.5,26.5
+    parent: 1
+    type: Transform
+- uid: 23631
+  type: TableReinforced
+  components:
+  - pos: 6.5,25.5
+    parent: 1
+    type: Transform
+- uid: 23632
+  type: TableReinforced
+  components:
+  - pos: 6.5,24.5
+    parent: 1
+    type: Transform
+- uid: 23633
+  type: TableReinforced
+  components:
+  - pos: 1.5,31.5
+    parent: 1
+    type: Transform
+- uid: 23634
+  type: TableReinforced
+  components:
+  - pos: 0.5,31.5
+    parent: 1
+    type: Transform
+- uid: 23635
+  type: TableReinforced
+  components:
+  - pos: -0.5,31.5
+    parent: 1
+    type: Transform
+- uid: 23636
+  type: ProtolatheMachineCircuitboard
+  components:
+  - pos: -0.4558556,31.577154
+    parent: 1
+    type: Transform
+- uid: 23637
+  type: AutolatheMachineCircuitboard
+  components:
+  - pos: 0.48164436,31.577154
+    parent: 1
+    type: Transform
+- uid: 23638
+  type: CircuitImprinterMachineCircuitboard
+  components:
+  - pos: 1.4660194,31.577154
+    parent: 1
+    type: Transform
+- uid: 23639
+  type: CloningPodMachineCircuitboard
+  components:
+  - pos: 6.5282335,25.488165
+    parent: 1
+    type: Transform
+- uid: 23640
+  type: CloningConsoleComputerCircuitboard
+  components:
+  - pos: 6.5227227,24.701143
+    parent: 1
+    type: Transform
+- uid: 23641
+  type: MedicalScannerMachineCircuitboard
+  components:
+  - pos: 6.5438585,26.394415
+    parent: 1
+    type: Transform
+- uid: 23642
+  type: ArtifactAnalyzerMachineCircuitboard
+  components:
+  - pos: -5.4948087,26.420494
+    parent: 1
+    type: Transform
+- uid: 23643
+  type: AnomalyVesselCircuitboard
+  components:
+  - pos: -5.5104337,24.68612
+    parent: 1
+    type: Transform
+- uid: 23644
+  type: AnalysisComputerCircuitboard
+  components:
+  - pos: -5.4948087,25.514244
+    parent: 1
+    type: Transform
+- uid: 23645
+  type: CrateArtifactContainer
+  components:
+  - pos: 93.5,-2.5
+    parent: 1
+    type: Transform
+  - air:
+      volume: 200
+      immutable: False
+      temperature: 293.1496
+      moles:
+      - 1.7459903
+      - 6.568249
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    type: EntityStorage
+  - containers:
+      entity_storage: !type:Container
+        showEnts: False
+        occludes: True
+        ents:
+        - 23646
+      paper_label: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null
+    type: ContainerContainer
+- uid: 23646
+  type: MediumXenoArtifactItem
+  components:
+  - flags: SessionSpecific, InContainer
+    type: MetaData
+  - parent: 23645
+    type: Transform
+  - isSuppressed: True
+    type: Artifact
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 23647
+  type: RandomArtifactSpawner
+  components:
+  - pos: 95.5,-13.5
+    parent: 1
+    type: Transform
+- uid: 23648
+  type: PlushieCarp
+  components:
+  - pos: 74.58763,23.135841
+    parent: 1
+    type: Transform
+- uid: 23649
+  type: DehydratedSpaceCarp
+  components:
+  - pos: 61.482586,-69.45891
+    parent: 1
+    type: Transform
+- uid: 23650
+  type: ClothingMaskGasSyndicate
+  components:
+  - pos: 2.5001516,-111.00567
+    parent: 1
+    type: Transform
+- uid: 23651
+  type: TorsoSkeleton
+  components:
+  - pos: 2.5001516,-111.42754
+    parent: 1
+    type: Transform
+- uid: 23652
+  type: AirlockGlass
+  components:
+  - pos: -11.5,-54.5
+    parent: 1
+    type: Transform
+- uid: 23653
+  type: AirlockGlass
+  components:
+  - pos: -10.5,-54.5
+    parent: 1
+    type: Transform
+- uid: 23654
+  type: AirlockGlass
+  components:
+  - pos: -9.5,-54.5
     parent: 1
     type: Transform
 ...
