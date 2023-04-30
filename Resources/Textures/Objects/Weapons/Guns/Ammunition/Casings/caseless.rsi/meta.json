@@ -5,7 +5,7 @@
         "y": 32
     },
     "license": "CC-BY-SA-3.0",
-    "copyright": "None",
+    "copyright": "https://github.com/tgstation/tgstation/blob/master/icons/obj/weapons/guns/ammo.dmi",
     "states": [
         {
             "name": "base"
