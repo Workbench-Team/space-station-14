@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "https://github.com/tgstation/tgstation/tree/master/icons/obj/weapons/guns/ballistic.dmi",
+    "copyright": "Taken/modified from tgstation at https://github.com/tgstation/tgstation/blob/23bf156fb0eb366075691eae8c3f080e61e09902/icons/obj/guns/projectile.dmi",
     "size": {
         "x": 32,
         "y": 32
