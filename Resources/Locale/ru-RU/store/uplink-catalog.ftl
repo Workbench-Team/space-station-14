@@ -78,8 +78,8 @@ uplink-macro-bomb-implanter-desc = Введи это и после смерти 
 # Наборы
 uplink-c20r-bundle-name = Набор С-20r
 uplink-c20r-bundle-desc = Старый и верный: Классический пистолет-пулемет C-20r, в наборе с 3 магазинами.
-uplink-c20r-bundle-desc = Старый и верный: Классический пистолет-пулемет C-20r, в наборе с 3 магазинами.
 uplink-kr51-bundle-name = Набор КР51
+uplink-kr51-bundle-desc = Скрытая угроза: Классическая автоматическая винтовка КР51, в наборе с 3 магазинами.
 uplink-buldog-bundle-name = Набор "Бульдог"
 uplink-buldog-bundle-desc = Содержит популярный дробовик "Бульдог", 1 травматический барабан с 12 зарядами и 2 с картечью.
 uplink-grenade-launcher-bundle-name = Набор "Чайна-Лэйк"

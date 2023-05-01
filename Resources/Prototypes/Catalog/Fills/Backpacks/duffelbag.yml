@@ -79,7 +79,7 @@
   - type: StorageFill
     contents:
       - id: WeaponRifleKR51
-      - id: MagazineCaselessRifle
+      - id: MagazineCaselessRifleShort
         amount: 2
 
 - type: entity
