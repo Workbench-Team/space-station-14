@@ -48418,30 +48418,45 @@ entities:
   - pos: 8.49482,24.478458
     parent: 1
     type: Transform
+  missingComponents:
+  - Item
+  - Pullable
 - uid: 5954
   type: DeskBell
   components:
   - pos: 8.49482,26.415958
     parent: 1
     type: Transform
+  missingComponents:
+  - Item
+  - Pullable
 - uid: 5955
   type: DeskBell
   components:
   - pos: -4.4328623,19.62728
     parent: 1
     type: Transform
+  missingComponents:
+  - Item
+  - Pullable
 - uid: 5956
   type: DeskBell
   components:
   - pos: 7.4021363,-18.344965
     parent: 1
     type: Transform
+  missingComponents:
+  - Item
+  - Pullable
 - uid: 5957
   type: DeskBell
   components:
   - pos: 29.500292,-21.441092
     parent: 1
     type: Transform
+  missingComponents:
+  - Item
+  - Pullable
 - uid: 5958
   type: TableReinforced
   components:
