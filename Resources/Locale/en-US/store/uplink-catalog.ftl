@@ -61,6 +61,9 @@ uplink-speedloader-magnu-desc = Revolver speedloader with 6 catridges. Compatibl
 uplink-mosin-ammo-name = Box of .30 rifle magazines
 uplink-mosin-ammo-desc = A box of cartridges for the surplus rifle.
 
+uplink-syringe-cartridge-name = Box of Syringe cartridges
+uplink-syringe-cartridge-desc = A box of syringe cartridges for the syringe pistol.
+
 # Utility
 uplink-holopara-kit-name = Holoparasite Kit
 uplink-holopara-kit-desc = The pride and joy of Cybersun. Contains an injector that hosts a sentient metaphysical guardian made of hard light which resides in the user's body when not active.

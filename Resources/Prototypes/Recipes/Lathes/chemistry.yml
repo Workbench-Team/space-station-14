@@ -20,6 +20,14 @@
     Plastic: 200
 
 - type: latheRecipe
+  id: Syringecartridge
+  result: Syringecartridge
+  completetime: 1
+  materials:
+    Plastic: 67
+    Glass: 67
+
+- type: latheRecipe
   id: SmallBottle
   result: SmallBottle
   completetime: 2

@@ -496,3 +496,16 @@
     contents:
       - id: MagazineRifleRubber
         amount: 6
+
+- type: entity
+  name: Syringe Cartridges box
+  parent: BoxMagazine
+  id: BoxSyringeCartridge
+  description: A box full of pistol .35 auto magazines.
+  components:
+  - type: StorageFill
+    contents:
+      - id: Syringecartridge
+        amount: 6
+      - id: SyringeGunMagazine
+        amount: 2

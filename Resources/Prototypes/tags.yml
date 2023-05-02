@@ -629,6 +629,13 @@
   id: Syringe
 
 - type: Tag
+  id: Syringecartridge
+
+- type: Tag
+  id: SyringeGunMagazine
+
+
+- type: Tag
   id: Taser
 
 - type: Tag
