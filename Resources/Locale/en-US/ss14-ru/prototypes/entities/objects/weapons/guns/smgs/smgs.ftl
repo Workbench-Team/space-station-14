@@ -20,5 +20,5 @@ ent-SyringeGun = Syringe pistol
     .desc = A syringe pistol developed by the Syndicate organization. Uses syringe cartridges.
     .suffix = { "" }
 ent-DnaSyringeGun = Syringe Gun
-    .desc = A single-shot syringe gun provided by HT specifically for medics. Uses syringe cartridges
+    .desc = A single-shot syringe gun provided by NT specifically for medics. Uses syringe cartridges
     .suffix = { "" }
