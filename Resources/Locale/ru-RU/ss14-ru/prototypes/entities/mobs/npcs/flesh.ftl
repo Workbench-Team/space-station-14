@@ -13,6 +13,6 @@ ent-MobFleshClamp = { ent-BaseMobFlesh }
 ent-MobFleshLover = { ent-BaseMobFlesh }
     .desc = { ent-BaseMobFlesh.desc }
     .suffix = { "" }
-ent-MobAbomination = abomination
+ent-MobAbomination = мерзость
     .desc = Отвергнутый клон, испытывающий постоянную боль и жаждущий мести.
     .suffix = { "" }
