@@ -14,5 +14,5 @@ ent-MobFleshLover = { ent-BaseMobFlesh }
     .desc = { ent-BaseMobFlesh.desc }
     .suffix = { "" }
 ent-MobAbomination = abomination
-    .desc = A rejected clone, in constant pain and seeking revenge.
+    .desc = Отвергнутый клон, испытывающий постоянную боль и жаждущий мести.
     .suffix = { "" }
