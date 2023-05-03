@@ -501,7 +501,7 @@
   name: Syringe Cartridges box
   parent: BoxMagazine
   id: BoxSyringeCartridge
-  description: A box full of pistol .35 auto magazines.
+  description: A box full of syringe cartridges.
   components:
   - type: StorageFill
     contents:
