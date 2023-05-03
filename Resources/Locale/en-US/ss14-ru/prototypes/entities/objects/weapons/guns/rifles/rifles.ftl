@@ -10,3 +10,6 @@ ent-WeaponRifleM90GrenadeLauncher = M-90gl
 ent-WeaponRifleLecter = Lecter
     .desc = A high end military grade assault rifle. Uses .20 rifle ammo.
     .suffix = { "" }
+ent-WeaponRifleKR51 = KR51
+    .desc = Silent automatic rifle. Uses .25 caseless ammo
+    .suffix = { "" }

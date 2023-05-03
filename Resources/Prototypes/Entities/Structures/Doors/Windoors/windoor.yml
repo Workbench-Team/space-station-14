@@ -18,7 +18,7 @@
   id: WindoorBarLocked
   suffix: Bar, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Bar"]]
   - type: ContainerFill
     containers:
@@ -29,7 +29,7 @@
   id: WindoorBarKitchenLocked
   suffix: Bar&Kitchen, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Bar"], ["Kitchen"]]
   - type: ContainerFill
     containers:
@@ -40,7 +40,7 @@
   id: WindoorCargoLocked
   suffix: Cargo, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Cargo"]]
   - type: ContainerFill
     containers:
@@ -51,7 +51,7 @@
   id: WindoorChapelLocked
   suffix: Chapel, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Chapel"]]
   - type: ContainerFill
     containers:
@@ -62,7 +62,7 @@
   id: WindoorHydroponicsLocked
   suffix: Hydroponics, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Hydroponics"]]
   - type: ContainerFill
     containers:
@@ -73,7 +73,7 @@
   id: WindoorJanitorLocked
   suffix: Janitor, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Janitor"]]
   - type: ContainerFill
     containers:
@@ -84,7 +84,7 @@
   id: WindoorKitchenLocked
   suffix: Kitchen, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Kitchen"]]
   - type: ContainerFill
     containers:
@@ -95,7 +95,7 @@
   id: WindoorKitchenHydroponicsLocked
   suffix: Kitchen&Hydroponics, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Kitchen"], ["Hydroponics"]]
   - type: ContainerFill
     containers:
@@ -106,7 +106,7 @@
   id: WindoorServiceLocked
   suffix: Service, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Service"]]
   - type: ContainerFill
     containers:
@@ -117,7 +117,7 @@
   id: WindoorTheatreLocked
   suffix: Theatre, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Theatre"]]
   - type: ContainerFill
     containers:
@@ -130,7 +130,7 @@
   id: WindoorArmoryLocked
   suffix: Armory, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Armory"]]
   - type: ContainerFill
     containers:
@@ -141,7 +141,7 @@
   id: WindoorBrigLocked
   suffix: Brig, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Brig"]]
   - type: ContainerFill
     containers:
@@ -152,7 +152,7 @@
   id: WindoorSecureCargoLocked
   suffix: Cargo, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Cargo"]]
   - type: ContainerFill
     containers:
@@ -163,7 +163,7 @@
   id: WindoorSecureChapelLocked
   suffix: Chapel, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Chapel"]]
   - type: ContainerFill
     containers:
@@ -174,7 +174,7 @@
   id: WindoorChemistryLocked
   suffix: Chemistry, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Chemistry"]]
   - type: ContainerFill
     containers:
@@ -185,7 +185,7 @@
   id: WindoorCommandLocked
   suffix: Command, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Command"]]
   - type: ContainerFill
     containers:
@@ -196,7 +196,7 @@
   id: WindoorEngineeringLocked
   suffix: Engineering, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Engineering"]]
   - type: ContainerFill
     containers:
@@ -207,7 +207,7 @@
   id: WindoorExternalLocked
   suffix: External, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["External"]]
   - type: ContainerFill
     containers:
@@ -218,7 +218,7 @@
   id: WindoorSecureJanitorLocked
   suffix: Janitor, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Janitor"]]
   - type: ContainerFill
     containers:
@@ -229,7 +229,7 @@
   id: WindoorSecureKitchenLocked
   suffix: Kitchen, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Kitchen"]]
   - type: ContainerFill
     containers:
@@ -240,7 +240,7 @@
   id: WindoorMedicalLocked
   suffix: Medical, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Medical"]]
   - type: ContainerFill
     containers:
@@ -251,7 +251,7 @@
   id: WindoorSecureSalvageLocked
   suffix: Salvage, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Salvage"]]
   - type: ContainerFill
     containers:
@@ -262,7 +262,7 @@
   id: WindoorSecurityLocked
   suffix: Security, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Security"]]
   - type: ContainerFill
     containers:
@@ -273,7 +273,7 @@
   id: WindoorScienceLocked
   suffix: Science, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Research"]]
   - type: ContainerFill
     containers:
@@ -284,7 +284,7 @@
   id: WindoorHeadOfPersonnelLocked
   suffix: HeadOfPersonnel, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["HeadOfPersonnel"]]
   - type: ContainerFill
     containers:

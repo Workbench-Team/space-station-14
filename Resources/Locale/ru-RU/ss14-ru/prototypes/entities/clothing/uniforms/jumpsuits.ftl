@@ -274,3 +274,6 @@ ent-ClothingUniformJumpsuitDameDane = якудза костюм
 ent-ClothingUniformJumpsuitPirate = пиратские шлепанцы
     .desc = Пиратская вариация комбинезона космического моряка.
     .suffix = { "" }
+ent-ClothingUniformJumpsuitCossack = костюм казака
+    .desc = старые добрые штаны и бригантина.
+    .suffix = { "" }

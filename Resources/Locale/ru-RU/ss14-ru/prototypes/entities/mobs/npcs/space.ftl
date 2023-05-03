@@ -1,0 +1,15 @@
+ent-MobSpaceBasic = basic
+    .desc = Он выглядит дружелюбным. Почему бы тебе не обнять его?
+    .suffix = { "" }
+ent-MobBearSpace = космический медведь
+    .desc = Он выглядит дружелюбным. Почему бы тебе не обнять его?
+    .suffix = { "" }
+ent-MobBearSpaceSalvage = { ent-MobBearSpace }
+    .suffix = Salvage Ruleset
+    .desc = { ent-MobBearSpace.desc }
+ent-MobKangarooSpace = космический кенгуру
+    .desc = Он выглядит дружелюбным. Почему бы тебе не обнять его?
+    .suffix = { "" }
+ent-MobKangarooSpaceSalvage = { ent-MobKangarooSpace }
+    .suffix = Salvage Ruleset
+    .desc = { ent-MobKangarooSpace.desc }

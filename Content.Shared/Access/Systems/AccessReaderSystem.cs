@@ -25,11 +25,11 @@ namespace Content.Shared.Access.Systems
             SubscribeLocalEvent<AccessReaderComponent, ComponentInit>(OnInit);
             SubscribeLocalEvent<AccessReaderComponent, GotEmaggedEvent>(OnEmagged);
             SubscribeLocalEvent<AccessReaderComponent, LinkAttemptEvent>(OnLinkAttempt);
-            SubscribeLocalEvent<AccessReaderComponent, WriteToTargetAccessReaderMessage>(OnTargetWriteMessage);
+//            SubscribeLocalEvent<AccessReaderComponent, WriteToTargetAccessReaderMessage>(OnTargetWriteMessage);
             SubscribeLocalEvent<AccessReaderComponent, ComponentGetState>(OnGetState);
             SubscribeLocalEvent<AccessReaderComponent, ComponentHandleState>(OnHandleState);
         }
-
+/*
         private void OnTargetWriteMessage(EntityUid uid, AccessReaderComponent component, WriteToTargetAccessReaderMessage args)
         {
             component.AccessLists.Clear();
@@ -44,7 +44,7 @@ namespace Content.Shared.Access.Systems
                   component.DenyTags.Add(substr);
             }
         }
-
+*/
         private void OnGetState(EntityUid uid, AccessReaderComponent component, ref ComponentGetState args)
         {
             args.State = new AccessReaderComponentState(component.Enabled, component.DenyTags, component.AccessLists,

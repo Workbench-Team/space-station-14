@@ -29,7 +29,7 @@ namespace Content.Server.Doors.Systems;
 
 public sealed class DoorSystem : SharedDoorSystem
 {
-    [Dependency] private readonly AccessReaderSystem _accessReaderSystem = default!;
+    [Dependency] private readonly AccessReaderBoardSystem _accessReaderBoardSystem = default!;
     [Dependency] private readonly AirlockSystem _airlock = default!;
     [Dependency] private readonly AirtightSystem _airtightSystem = default!;
     [Dependency] private readonly ConstructionSystem _constructionSystem = default!;
@@ -215,7 +215,7 @@ public sealed class DoorSystem : SharedDoorSystem
     /// <summary>
     ///     Does the user have the permissions required to open this door?
     /// </summary>
-    public override bool HasAccess(EntityUid uid, EntityUid? user = null, AccessReaderComponent? access = null)
+    public override bool HasAccess(EntityUid uid, EntityUid? user = null, AccessReaderBoardComponent? access = null, AccessStorageComponent? storage = null)
     {
         // TODO network AccessComponent for predicting doors
 
@@ -227,25 +227,20 @@ public sealed class DoorSystem : SharedDoorSystem
         if (TryComp<AirlockComponent>(uid, out var airlock) && airlock.EmergencyAccess)
             return true;
 
-        if (airlock != null)
-        {
-            if(!TryComp(airlock.BoardContainer.ContainedEntities[0], out access))
-                return true;
-        }
-        else
-        {
-            if (!Resolve(uid, ref access, false))
-                return true;
-        }
+        if (!Resolve(uid, ref access, false))
+            return true;
 
-        var isExternal = access.AccessLists.Any(list => list.Contains("External"));
+        if (!Resolve(access.BoardContainer.ContainedEntities[0], ref storage, false))
+            return true;
+
+        var isExternal = storage.AccessLists.Any(list => list.Contains("External"));
 
         return AccessType switch
         {
             // Some game modes modify access rules.
-            AccessTypes.AllowAllIdExternal => !isExternal || _accessReaderSystem.IsAllowed(user.Value, access),
+            AccessTypes.AllowAllIdExternal => !isExternal || _accessReaderBoardSystem.IsAllowed(user.Value, access, storage),
             AccessTypes.AllowAllNoExternal => !isExternal,
-            _ => _accessReaderSystem.IsAllowed(user.Value, access)
+            _ => _accessReaderBoardSystem.IsAllowed(user.Value, access, storage)
         };
     }
 
@@ -274,9 +269,6 @@ public sealed class DoorSystem : SharedDoorSystem
         {
             if (airlockComponent.BoltsDown || !this.IsPowered(uid, EntityManager))
                 return;
-
-            if(TryComp<AccessReaderComponent>(airlockComponent.BoardContainer.ContainedEntities[0], out var access))
-                EntityManager.AddComponent<EmaggedComponent>(airlockComponent.BoardContainer.ContainedEntities[0]);
 
             if (door.State == DoorState.Closed)
             {

@@ -218,7 +218,7 @@
           Quantity: 60
   - type: Hypospray
     solutionName: pen
-    transferAmount: 60
+    transferAmount: 15
   - type: StaticPrice
     price: 1000
   - type: Tag

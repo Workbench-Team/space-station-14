@@ -8,13 +8,13 @@
       sprite: Objects/Misc/module.rsi
       state: door_electronics
     - type: ActivatableUI
-      key: enum.AccessReaderUiKey.Key
+      key: enum.AccessStorageUiKey.Key
       closeOnHandDeselect: true
     - type: UserInterface
       interfaces:
-        - key: enum.AccessReaderUiKey.Key
-          type: AccessReaderBoundUserInterface
-    - type: AccessReader
+        - key: enum.AccessStorageUiKey.Key
+          type: AccessStorageBoundUserInterface
+    - type: AccessStorage
     - type: Tag
       tags:
         - DoorElectronics
@@ -25,7 +25,7 @@
   parent: DoorElectronics
   suffix: Service
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Service"]]
 
 - type: entity
@@ -33,7 +33,7 @@
   parent: DoorElectronics
   suffix: Theatre
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Theatre"]]
 
 - type: entity
@@ -41,7 +41,7 @@
   parent: DoorElectronics
   suffix: Chapel
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Chapel"]]
 
 - type: entity
@@ -49,7 +49,7 @@
   parent: DoorElectronics
   suffix: Janitor
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Janitor"]]
 
 - type: entity
@@ -57,7 +57,7 @@
   parent: DoorElectronics
   suffix: Kitchen
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Kitchen"]]
 
 - type: entity
@@ -65,7 +65,7 @@
   parent: DoorElectronics
   suffix: Bar
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Bar"]]
 
 - type: entity
@@ -73,7 +73,7 @@
   parent: DoorElectronics
   suffix: Bar
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Bar"], ["Kitchen"]]
 
 - type: entity
@@ -81,7 +81,7 @@
   parent: DoorElectronics
   suffix: Hydroponics
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Hydroponics"]]
 
 - type: entity
@@ -89,7 +89,7 @@
   parent: DoorElectronics
   suffix: External
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["External"]]
 
 - type: entity
@@ -97,7 +97,7 @@
   parent: DoorElectronics
   suffix: Cargo
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Cargo"]]
 
 - type: entity
@@ -105,7 +105,7 @@
   parent: DoorElectronics
   suffix: External, Engineering
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Engineering"]]
 
 - type: entity
@@ -113,7 +113,7 @@
   parent: DoorElectronics
   suffix: External, Atmospherics
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Atmospherics"]]
 
 - type: entity
@@ -121,7 +121,7 @@
   parent: DoorElectronics
   suffix: Kitchen/Hydroponics
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Kitchen"], ["Hydroponics"]]
 
 - type: entity
@@ -129,7 +129,7 @@
   parent: DoorElectronics
   suffix: Engineering
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Engineering"]]
 
 - type: entity
@@ -137,7 +137,7 @@
   parent: DoorElectronics
   suffix: Atmospherics
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Atmospherics"]]
 
 - type: entity
@@ -145,7 +145,7 @@
   parent: DoorElectronics
   suffix: Salvage
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Salvage"]]
 
 - type: entity
@@ -153,7 +153,7 @@
   parent: DoorElectronics
   suffix: Quartermaster
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Quartermaster"]]
 
 - type: entity
@@ -161,7 +161,7 @@
   parent: DoorElectronics
   suffix: Medical
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Medical"]]
 
 - type: entity
@@ -169,7 +169,7 @@
   parent: DoorElectronics
   suffix: Virology
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Medical"]]
 
 - type: entity
@@ -177,7 +177,7 @@
   parent: DoorElectronics
   suffix: Science
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Research"]]
 
 - type: entity
@@ -185,7 +185,7 @@
   parent: DoorElectronics
   suffix: Medical/Science
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Research"], ["Medical"]]
 
 - type: entity
@@ -193,7 +193,7 @@
   parent: DoorElectronics
   suffix: Command
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Command"]]
 
 - type: entity
@@ -201,7 +201,7 @@
   parent: DoorElectronics
   suffix: Captain
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Captain"]]
 
 - type: entity
@@ -209,7 +209,7 @@
   parent: DoorElectronics
   suffix: ChiefMedicalOfficer
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["ChiefMedicalOfficer"]]
 
 - type: entity
@@ -217,7 +217,7 @@
   parent: DoorElectronics
   suffix: ChiefEngineer
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["ChiefEngineer"]]
 
 - type: entity
@@ -225,7 +225,7 @@
   parent: DoorElectronics
   suffix: HeadOfSecurity
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["HeadOfSecurity"]]
 
 - type: entity
@@ -233,7 +233,7 @@
   parent: DoorElectronics
   suffix: ResearchDirector
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["ResearchDirector"]]
 
 - type: entity
@@ -241,7 +241,7 @@
   parent: DoorElectronics
   suffix: HeadOfPersonnel
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["HeadOfPersonnel"]]
 
 - type: entity
@@ -249,7 +249,7 @@
   parent: DoorElectronics
   suffix: Security
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Security"]]
 
 - type: entity
@@ -257,7 +257,7 @@
   parent: DoorElectronics
   suffix: Detective
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Detective"]]
 
 - type: entity
@@ -265,7 +265,7 @@
   parent: DoorElectronics
   suffix: Security
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Security", "Command"]]
 
 - type: entity
@@ -273,7 +273,7 @@
   parent: DoorElectronics
   suffix: Brig
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Brig"]]
 
 - type: entity
@@ -281,7 +281,7 @@
   parent: DoorElectronics
   suffix: Armory
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Armory"]]
 
 - type: entity
@@ -289,7 +289,7 @@
   parent: DoorElectronics
   suffix: EVA
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["External"]]
 
 - type: entity
@@ -297,7 +297,7 @@
   parent: DoorElectronics
   suffix: HeadOfSecurity
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Maintenance"]]
 
 - type: entity
@@ -305,5 +305,5 @@
   parent: DoorElectronics
   suffix: Chemistry
   components:
-  - type: AccessReader
+  - type: AccessStorage
     access: [["Chemistry"]]

@@ -4,7 +4,7 @@
   id: AirlockServiceLocked
   suffix: Service, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Service"]]
   - type: ContainerFill
     containers:
@@ -15,7 +15,7 @@
   id: AirlockTheatreLocked
   suffix: Theatre, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Theatre"]]
   - type: ContainerFill
     containers:
@@ -26,7 +26,7 @@
   id: AirlockChapelLocked
   suffix: Chapel, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Chapel"]]
   - type: ContainerFill
     containers:
@@ -37,7 +37,7 @@
   id: AirlockJanitorLocked
   suffix: Janitor, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Janitor"]]
   - type: ContainerFill
     containers:
@@ -48,7 +48,7 @@
   id: AirlockKitchenLocked
   suffix: Kitchen, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Kitchen"]]
   - type: ContainerFill
     containers:
@@ -59,7 +59,7 @@
   id: AirlockBarLocked
   suffix: Bar, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Bar"]]
   - type: ContainerFill
     containers:
@@ -70,7 +70,7 @@
   id: AirlockHydroponicsLocked
   suffix: Hydroponics, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Hydroponics"]]
   - type: ContainerFill
     containers:
@@ -81,7 +81,7 @@
   id: AirlockServiceCaptainLocked
   suffix: Captain, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Captain"]]
   - type: ContainerFill
     containers:
@@ -92,8 +92,8 @@
   id: AirlockExternalLocked
   suffix: External, Locked
   components:
-  - type: AccessReader
-    access: [["External"]]
+  - type: AccessReaderBoard
+#    access: [["External"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsExternal ]
@@ -103,8 +103,8 @@
   id: AirlockExternalCargoLocked
   suffix: External, Cargo, Locked
   components:
-  - type: AccessReader
-    access: [["Cargo"]]
+  - type: AccessReaderBoard
+#    access: [["Cargo"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCargo ]
@@ -114,7 +114,7 @@
   id: AirlockExternalEngineeringLocked
   suffix: External, Engineering, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Engineering"]]
   - type: ContainerFill
     containers:
@@ -125,8 +125,8 @@
   id: AirlockExternalAtmosphericsLocked
   suffix: External, Atmospherics, Locked
   components:
-  - type: AccessReader
-    access: [["Atmospherics"]]
+  - type: AccessReaderBoard
+#    access: [["Atmospherics"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsAtmospherics ]
@@ -136,7 +136,7 @@
   id: AirlockFreezerLocked
   suffix: Service, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Kitchen"]]
   - type: ContainerFill
     containers:
@@ -147,7 +147,7 @@
   id: AirlockFreezerKitchenHydroLocked
   suffix: Kitchen/Hydroponics, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Kitchen"], ["Hydroponics"]]
   - type: ContainerFill
     containers:
@@ -158,7 +158,7 @@
   id: AirlockEngineeringLocked
   suffix: Engineering, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Engineering"]]
   - type: ContainerFill
     containers:
@@ -169,7 +169,7 @@
   id: AirlockAtmosphericsLocked
   suffix: Atmospherics, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Atmospherics"]]
   - type: ContainerFill
     containers:
@@ -180,7 +180,7 @@
   id: AirlockCargoLocked
   suffix: Cargo, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Cargo"]]
   - type: ContainerFill
     containers:
@@ -191,7 +191,7 @@
   id: AirlockSalvageLocked
   suffix: Salvage, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Salvage"]]
   - type: ContainerFill
     containers:
@@ -202,7 +202,7 @@
   id: AirlockQuartermasterLocked
   suffix: Quartermaster, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Quartermaster"]]
   - type: ContainerFill
     containers:
@@ -213,7 +213,7 @@
   id: AirlockMedicalLocked
   suffix: Medical, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Medical"]]
   - type: ContainerFill
     containers:
@@ -224,7 +224,7 @@
   id: AirlockVirologyLocked
   suffix: Virology, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Medical"]]
   - type: ContainerFill
     containers:
@@ -235,7 +235,7 @@
   id: AirlockChemistryLocked
   suffix: Chemistry, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Chemistry"]]
   - type: ContainerFill
     containers:
@@ -246,7 +246,7 @@
   id: AirlockScienceLocked
   suffix: Science, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Research"]]
   - type: ContainerFill
     containers:
@@ -257,7 +257,7 @@
   id: AirlockMedicalScienceLocked
   suffix: Medical/Science, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Research"], ["Medical"]]
   - type: ContainerFill
     containers:
@@ -268,7 +268,7 @@
   id: AirlockCommandLocked
   suffix: Command, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Command"]]
   - type: ContainerFill
     containers:
@@ -281,7 +281,7 @@
   id: AirlockCaptainLocked
   suffix: Captain, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Captain"]]
   - type: ContainerFill
     containers:
@@ -292,7 +292,7 @@
   id: AirlockChiefMedicalOfficerLocked
   suffix: ChiefMedicalOfficer, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["ChiefMedicalOfficer"]]
   - type: ContainerFill
     containers:
@@ -303,7 +303,7 @@
   id: AirlockChiefEngineerLocked
   suffix: ChiefEngineer, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["ChiefEngineer"]]
   - type: ContainerFill
     containers:
@@ -314,7 +314,7 @@
   id: AirlockHeadOfSecurityLocked
   suffix: HeadOfSecurity, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["HeadOfSecurity"]]
   - type: ContainerFill
     containers:
@@ -325,7 +325,7 @@
   id: AirlockResearchDirectorLocked
   suffix: ResearchDirector, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["ResearchDirector"]]
   - type: ContainerFill
     containers:
@@ -336,7 +336,7 @@
   id: AirlockHeadOfPersonnelLocked
   suffix: HeadOfPersonnel, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["HeadOfPersonnel"]]
   - type: ContainerFill
     containers:
@@ -347,7 +347,7 @@
   id: AirlockSecurityLocked
   suffix: Security, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Security"]]
   - type: ContainerFill
     containers:
@@ -360,7 +360,7 @@
   id: AirlockDetectiveLocked
   suffix: Detective, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Detective"]]
   - type: ContainerFill
     containers:
@@ -373,7 +373,7 @@
   id: AirlockBrigLocked
   suffix: Brig, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Brig"]]
   - type: ContainerFill
     containers:
@@ -386,7 +386,7 @@
   id: AirlockArmoryLocked
   suffix: Armory, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Armory"]]
   - type: ContainerFill
     containers:
@@ -399,7 +399,7 @@
   id: AirlockVaultLocked
   suffix: Vault, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Security", "Command"]]
   - type: ContainerFill
     containers:
@@ -410,7 +410,7 @@
   id: AirlockEVALocked
   suffix: EVA, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["External"]]
   - type: ContainerFill
     containers:
@@ -422,7 +422,7 @@
   id: AirlockServiceGlassLocked
   suffix: Service, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Service"]]
   - type: ContainerFill
     containers:
@@ -433,7 +433,7 @@
   id: AirlockBarGlassLocked
   suffix: Bar, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Bar"]]
   - type: ContainerFill
     containers:
@@ -444,7 +444,7 @@
   id: AirlockExternalGlassLocked
   suffix: External, Glass, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["External"]]
   - type: ContainerFill
     containers:
@@ -455,8 +455,8 @@
   id: AirlockExternalGlassCargoLocked
   suffix: External, Glass, Cargo, Locked
   components:
-  - type: AccessReader
-    access: [["Cargo"]]
+  - type: AccessReaderBoard
+#    access: [["Cargo"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCargo ]
@@ -466,8 +466,8 @@
   id: AirlockExternalGlassEngineeringLocked
   suffix: External, Glass, Engineering, Locked
   components:
-  - type: AccessReader
-    access: [["Engineering"]]
+  - type: AccessReaderBoard
+#    access: [["Engineering"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsEngineering ]
@@ -477,8 +477,8 @@
   id: AirlockExternalGlassAtmosphericsLocked
   suffix: External, Glass, Atmospherics, Locked
   components:
-  - type: AccessReader
-    access: [["Atmospherics"]]
+  - type: AccessReaderBoard
+#    access: [["Atmospherics"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsAtmospherics ]
@@ -488,7 +488,7 @@
   id: AirlockKitchenGlassLocked
   suffix: Kitchen, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Kitchen"]]
   - type: ContainerFill
     containers:
@@ -499,7 +499,7 @@
   id: AirlockHydroGlassLocked
   suffix: Hydroponics, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Hydroponics"]]
   - type: ContainerFill
     containers:
@@ -510,7 +510,7 @@
   id: AirlockChapelGlassLocked
   suffix: Chapel, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Chapel"]]
   - type: ContainerFill
     containers:
@@ -521,7 +521,7 @@
   id: AirlockEngineeringGlassLocked
   suffix: Engineering, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Engineering"]]
   - type: ContainerFill
     containers:
@@ -532,7 +532,7 @@
   id: AirlockAtmosphericsGlassLocked
   suffix: Atmospherics, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Atmospherics"]]
   - type: ContainerFill
     containers:
@@ -543,7 +543,7 @@
   id: AirlockCargoGlassLocked
   suffix: Cargo, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Cargo"]]
   - type: ContainerFill
     containers:
@@ -554,7 +554,7 @@
   id: AirlockSalvageGlassLocked
   suffix: Salvage, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Salvage"]]
   - type: ContainerFill
     containers:
@@ -565,7 +565,7 @@
   id: AirlockQuartermasterGlassLocked
   suffix: Quartermaster, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Quartermaster"]]
   - type: ContainerFill
     containers:
@@ -576,7 +576,7 @@
   id: AirlockMedicalGlassLocked
   suffix: Medical, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Medical"]]
   - type: ContainerFill
     containers:
@@ -587,7 +587,7 @@
   id: AirlockVirologyGlassLocked
   suffix: Virology, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Medical"]]
   - type: ContainerFill
     containers:
@@ -598,7 +598,7 @@
   id: AirlockScienceGlassLocked
   suffix: Science, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Research"]]
   - type: ContainerFill
     containers:
@@ -609,7 +609,7 @@
   id: AirlockMedicalScienceGlassLocked
   suffix: Medical/Science, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Research"], ["Medical"]]
   - type: ContainerFill
     containers:
@@ -620,7 +620,7 @@
   id: AirlockCommandGlassLocked
   suffix: Command, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Command"]]
   - type: ContainerFill
     containers:
@@ -631,7 +631,7 @@
   id: AirlockCaptainGlassLocked
   suffix: Captain, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Captain"]]
   - type: ContainerFill
     containers:
@@ -642,7 +642,7 @@
   id: AirlockChiefMedicalOfficerGlassLocked
   suffix: ChiefMedicalOfficer, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["ChiefMedicalOfficer"]]
   - type: ContainerFill
     containers:
@@ -653,7 +653,7 @@
   id: AirlockChiefEngineerGlassLocked
   suffix: ChiefEngineer, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["ChiefEngineer"]]
   - type: ContainerFill
     containers:
@@ -664,7 +664,7 @@
   id: AirlockHeadOfSecurityGlassLocked
   suffix: HeadOfSecurity, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["HeadOfSecurity"]]
   - type: ContainerFill
     containers:
@@ -675,7 +675,7 @@
   id: AirlockResearchDirectorGlassLocked
   suffix: ResearchDirector, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["ResearchDirector"]]
   - type: ContainerFill
     containers:
@@ -686,7 +686,7 @@
   id: AirlockHeadOfPersonnelGlassLocked
   suffix: HeadOfPersonnel, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["HeadOfPersonnel"]]
   - type: ContainerFill
     containers:
@@ -697,7 +697,7 @@
   id: AirlockSecurityGlassLocked
   suffix: Security, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Security"]]
   - type: ContainerFill
     containers:
@@ -708,15 +708,15 @@
   id: AirlockDetectiveGlassLocked
   suffix: Detective, Locked
   components:
-  - type: AccessReader
-    access: [["Detective"]]
+  - type: AccessReaderBoard
+#    access: [["Detective"]]
 
 - type: entity
   parent: AirlockSecurityGlass
   id: AirlockBrigGlassLocked
   suffix: Brig, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Brig"]]
   - type: ContainerFill
     containers:
@@ -727,7 +727,7 @@
   id: AirlockArmoryGlassLocked
   suffix: Armory, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Armory"]]
   - type: ContainerFill
     containers:
@@ -738,7 +738,7 @@
   id: AirlockEVAGlassLocked
   suffix: EVA, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["External"]]
   - type: ContainerFill
     containers:
@@ -750,7 +750,7 @@
   id: AirlockMaintLocked
   suffix: Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Maintenance"]]
   - type: ContainerFill
     containers:
@@ -761,7 +761,7 @@
   id: AirlockMaintGlassLocked
   suffix: Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Maintenance"]]
   - type: ContainerFill
     containers:
@@ -772,7 +772,7 @@
   id: AirlockMaintSalvageLocked
   suffix: Salvage, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Salvage"]]
   - type: ContainerFill
     containers:
@@ -783,7 +783,7 @@
   id: AirlockMaintCargoLocked
   suffix: Cargo, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Cargo"]]
   - type: ContainerFill
     containers:
@@ -794,7 +794,7 @@
   id: AirlockMaintCommandLocked
   suffix: Command, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Command"]]
   - type: ContainerFill
     containers:
@@ -805,7 +805,7 @@
   id: AirlockMaintCommonLocked
   suffix: Common, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Maintenance"]]
   - type: ContainerFill
     containers:
@@ -816,7 +816,7 @@
   id: AirlockMaintEngiLocked
   suffix: Engineering, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Engineering"]]
   - type: ContainerFill
     containers:
@@ -827,7 +827,7 @@
   id: AirlockMaintAtmoLocked
   suffix: Atmospherics, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Atmospherics"]]
   - type: ContainerFill
     containers:
@@ -838,7 +838,7 @@
   id: AirlockMaintBarLocked
   suffix: Bar, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Bar"]]
   - type: ContainerFill
     containers:
@@ -849,7 +849,7 @@
   id: AirlockMaintChapelLocked
   suffix: Chapel, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Chapel"]]
   - type: ContainerFill
     containers:
@@ -860,7 +860,7 @@
   id: AirlockMaintHydroLocked
   suffix: Hydroponics, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Hydroponics"]]
   - type: ContainerFill
     containers:
@@ -871,7 +871,7 @@
   id: AirlockMaintJanitorLocked
   suffix: Janitor, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Janitor"]]
   - type: ContainerFill
     containers:
@@ -882,7 +882,7 @@
   id: AirlockMaintTheatreLocked
   suffix: Theatre, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Theatre"]]
   - type: ContainerFill
     containers:
@@ -893,7 +893,7 @@
   id: AirlockMaintKitchenLocked
   suffix: Kitchen, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Kitchen"]]
   - type: ContainerFill
     containers:
@@ -904,7 +904,7 @@
   id: AirlockMaintIntLocked
   suffix: Interior, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Maintenance"]]
   - type: ContainerFill
     containers:
@@ -915,7 +915,7 @@
   id: AirlockMaintMedLocked
   suffix: Medical, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Medical"]]
   - type: ContainerFill
     containers:
@@ -926,7 +926,7 @@
   id: AirlockMaintChemLocked
   suffix: Chemistry, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Chemistry"]]
   - type: ContainerFill
     containers:
@@ -937,7 +937,7 @@
   id: AirlockMaintRnDLocked
   suffix: Science, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Research"]]
   - type: ContainerFill
     containers:
@@ -948,7 +948,7 @@
   id: AirlockMaintRnDMedLocked
   suffix: Medical/Science, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Research"], ["Medical"]]
   - type: ContainerFill
     containers:
@@ -959,7 +959,7 @@
   id: AirlockMaintSecLocked
   suffix: Security, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Security"]]
   - type: ContainerFill
     containers:
@@ -970,15 +970,15 @@
   id: AirlockMaintDetectiveLocked
   suffix: Detective, Locked
   components:
-  - type: AccessReader
-    access: [["Detective"]]
+  - type: AccessReaderBoard
+#    access: [["Detective"]]
 
 - type: entity
   parent: AirlockMaint
   id: AirlockMaintHOPLocked
   suffix: HeadOfPersonnel, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["HeadOfPersonnel"]]
   - type: ContainerFill
     containers:
@@ -989,7 +989,7 @@
   id: AirlockMaintCaptainLocked
   suffix: Captain, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Captain"]]
   - type: ContainerFill
     containers:
@@ -1001,7 +1001,7 @@
   id: AirlockExternalShuttleLocked
   suffix: External, Docking, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["External"]]
   - type: ContainerFill
     containers:
@@ -1012,7 +1012,7 @@
   id: AirlockExternalGlassShuttleLocked
   suffix: External, Glass, Docking, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["External"]]
   - type: ContainerFill
     containers:
@@ -1025,8 +1025,8 @@
   components:
     - type: PriorityDock
       tag: DockEmergency
-    - type: AccessReader
-      access: [["External"]]
+    - type: AccessReaderBoard
+#      access: [["External"]]
     - type: ContainerFill
       containers:
         board: [ DoorElectronicsExternal ]
@@ -1052,7 +1052,7 @@
   id: HighSecCommandLocked
   suffix: Command, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Command"]]
   - type: ContainerFill
     containers:
@@ -1063,7 +1063,7 @@
   id: HighSecCaptainLocked
   suffix: Captain, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Captain"]]
   - type: ContainerFill
     containers:
@@ -1074,7 +1074,7 @@
   id: HighSecArmoryLocked
   suffix: Armory, Locked
   components:
-#  - type: AccessReader
+  - type: AccessReaderBoard
 #    access: [["Armory"]]
   - type: ContainerFill
     containers:

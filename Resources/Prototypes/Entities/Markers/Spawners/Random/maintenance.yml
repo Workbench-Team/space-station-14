@@ -35,6 +35,7 @@
         - ClothingNeckPansexualPin
         - ClothingNeckTransPin
         - CluwneHorn
+        - ClothingMaskRat
       rareChance: 0.01
       prototypes:
         - Lighter
@@ -53,6 +54,12 @@
         - ClothingUnderSocksCoder
         - ClothingHeadHatSquid
         - ClothingHeadHatCatEars
+        - ClothingMaskFox
+        - ClothingMaskBee
+        - ClothingMaskBear
+        - ClothingMaskRaven
+        - ClothingMaskJackal
+        - ClothingMaskBat
       chance: 0.6
       offset: 0.0
 

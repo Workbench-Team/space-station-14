@@ -49,3 +49,6 @@ ent-MobHamsterHamlet = Гамлет
 ent-MobSpiderShiva = Шива
     .desc = Первый защитник станции.
     .suffix = { "" }
+ent-MobKangarooWillow = Уиллоу
+    .desc = Кенгуру-боксёр Уиллоу
+    .suffix = { "" }

@@ -236,7 +236,7 @@
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeCaselessRifle
-    capacity: 20
+    capacity: 25
   - type: Sprite
     layers:
     - state: red
@@ -251,7 +251,7 @@
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeCaselessRifleHighVelocity
-    capacity: 20
+    capacity: 25
   - type: Sprite
     layers:
     - state: high_velocity
@@ -266,7 +266,7 @@
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeCaselessRiflePractice
-    capacity: 20
+    capacity: 25
   - type: Sprite
     layers:
     - state: practice
@@ -281,7 +281,7 @@
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeCaselessRifleRubber
-    capacity: 20
+    capacity: 25
   - type: Sprite
     layers:
     - state: rubber

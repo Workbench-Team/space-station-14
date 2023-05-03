@@ -6,7 +6,7 @@ traitor-round-end-result =
         [one] Был один предатель.
        *[other] Было { $traitorCount } предателей.
     }
-traitor-round-end-codewords = Кодовые слова были: [color=White]{ $codewords }[/color].
+traitor-round-end-codewords = Кодовыми слова были: [color=White]{ $codewords }[/color].
 # Shown at the end of a round of Traitor
 traitor-user-was-a-traitor = [color=gray]{ $user }[/color] был(а) предателем.
 traitor-user-was-a-traitor-named = [color=White]{ $name }[/color] ([color=gray]{ $user }[/color]) был(а) предателем.
@@ -41,6 +41,14 @@ traitor-role-greeting =
     Ваши цели и кодовые слова перечислены в меню персонажа.
     Воспользуйтесь аплинком, встроенным в Ваш КПК, чтобы приобрести всё необходимое для выполнения целей.
     Смерть NanoTrasen!
+traitor-role-uplink-code =
+    Установите свой рингтон на ноты { $code } для блокировки или разблокировки аплинка.
+    Не забывайте блокировать и менять его, иначе экипаж станции легко откроет и его!
+# don't need all the flavour text for character menu
+traitor-role-codewords-short =
+    Кодовые слова:
+    { $codewords }.
+traitor-role-uplink-code-short = Ваш код аплинка - { $code }.
 traitor-role-codewords =
     Кодовые слова: { $codewords }.
     Кодовые слова можно использовать в обычном разговоре, чтобы незаметно идентифицировать себя для других агентов Синдиката.
