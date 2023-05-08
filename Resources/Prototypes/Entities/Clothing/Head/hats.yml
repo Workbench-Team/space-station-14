@@ -739,4 +739,4 @@
     sprite: Clothing/Head/Hats/hetman_hat.rsi
   - type: Tag
     tags:
-      - DogWearables
+      - DogWearable
