@@ -23,6 +23,12 @@ public sealed class MechDrillComponent : Component
     [DataField("drillDelay")]
     public float DrillDelay = 2.5f;
 
+    /// <summary>
+    /// The sound played when a mech is drilling something
+    /// </summary>
+    [DataField("drillSound")]
+    public SoundSpecifier DrillSound = new SoundPathSpecifier("/Audio/Mecha/sound_mecha_hydraulic.ogg");
+
     public IPlayingAudioStream? AudioStream;
 
     public CancellationTokenSource? Token;

@@ -1,4 +1,5 @@
 using System.Threading;
+using Content.Server.Gatherable;
 using Content.Server.Destructible;
 using Content.Server.Gatherable.Components;
 using Content.Shared.Destructible;
@@ -14,6 +15,7 @@ using Content.Shared.Mech.Equipment.Components;
 using Content.Shared.Tag;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Content.Shared.Gatherable;
 
 namespace Content.Server.Mech.Equipment.EntitySystems;
 
@@ -22,15 +24,12 @@ namespace Content.Server.Mech.Equipment.EntitySystems;
 /// </summary>
 public sealed class MechDrillSystem : EntitySystem
 {
-
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly MechSystem _mech = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly InteractionSystem _interaction = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly DestructibleSystem _destructible = default!;
-    [Dependency] private readonly TagSystem _tagSystem = default!;
+    [Dependency] private readonly GatherableSystem _gatherableSystem = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -44,7 +43,7 @@ public sealed class MechDrillSystem : EntitySystem
     /// </summary>
     private void OnInteract(EntityUid uid, MechDrillComponent component, InteractNoHandEvent args)
     {
-        if (args.Handled || args.Target == null)
+        if (args.Handled || args.Target is not { } target)
             return;
 
         if (!TryComp<MechComponent>(args.User, out var mech))
@@ -65,20 +64,23 @@ public sealed class MechDrillSystem : EntitySystem
         var damageRequired = _destructible.DestroyedAt(args.Target.Value);
         var damageTime = (damageRequired / gatheringTool.Damage.Total).Float();
         damageTime = Math.Max(1f, damageTime);
-
-        var doAfter = new DoAfterArgs(args.User, damageTime, new MechDrillDoAfterEvent(), uid, target: component.Owner, used: uid)
+        component.AudioStream = _audio.PlayPvs(component.DrillSound, uid);
+        var doAfter = new DoAfterArgs(args.User, damageTime, new MechDrillDoAfterEvent(), uid, target: target, used: uid)
         {
             BreakOnDamage = true,
             BreakOnTargetMove = true,
             BreakOnUserMove = true,
-            MovementThreshold = 0.25f
+            MovementThreshold = 0.25f,
         };
 
         _doAfter.TryStartDoAfter(doAfter);
     }
 
-    private void OnDoAfter(EntityUid uid, MechDrillComponent component, DoAfterEvent args)
+    private void OnDoAfter(EntityUid uid, MechDrillComponent component, MechDrillDoAfterEvent args)
     {
+        if (args?.Args?.Target is not { } target)
+            return;
+
         component.Token = null;
 
         if (!TryComp<MechEquipmentComponent>(uid, out var equipmentComponent) || equipmentComponent.EquipmentOwner == null)
@@ -87,7 +89,7 @@ public sealed class MechDrillSystem : EntitySystem
         if (!_mech.TryChangeEnergy(equipmentComponent.EquipmentOwner.Value, component.DrillEnergyDelta))
             return;
 
-        //FIXME RaiseLocalEvent(args.Args.Target, new GatherableDoAfterEvent(), true);
+        _gatherableSystem.OnDoAfter(target, new GatherableComponent(), args);
         _mech.UpdateUserInterface(equipmentComponent.EquipmentOwner.Value);
     }
 }

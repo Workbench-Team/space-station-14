@@ -51,7 +51,7 @@ public sealed class GatherableSystem : EntitySystem
         _doAfterSystem.TryStartDoAfter(doAfter);
     }
 
-    private void OnDoAfter(EntityUid uid, GatherableComponent component, GatherableDoAfterEvent args)
+    public void OnDoAfter(EntityUid uid, GatherableComponent component, DoAfterEvent args)
     {
         if(!TryComp<GatheringToolComponent>(args.Args.Used, out var tool) || args.Args.Target == null)
             return;

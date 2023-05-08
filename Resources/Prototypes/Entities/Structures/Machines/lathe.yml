@@ -382,7 +382,7 @@
     - RipleyLLeg
     - RipleyRLeg
     - MechEquipmentGrabber
-    # - MechEquipmentDrill
+    - MechEquipmentDrill
   - type: MaterialStorage
     whitelist:
       tags:
