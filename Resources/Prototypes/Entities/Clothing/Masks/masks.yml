@@ -172,6 +172,9 @@
     sprite: Clothing/Mask/clown.rsi
   - type: BreathMask
   - type: IdentityBlocker
+  - type: Tag
+    tags:
+      - PetWearable
 
 - type: entity
   parent: ClothingMaskBase

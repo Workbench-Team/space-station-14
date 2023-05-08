@@ -45,7 +45,17 @@
     },
     {
       "name": "corgi_dead",
+      "directions": 4,
       "delays": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
         [
           1
         ]
@@ -71,7 +81,17 @@
     },
     {
       "name": "ian_dead",
+      "directions": 4,
       "delays": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
         [
           1
         ]
@@ -113,7 +133,17 @@
     },
     {
       "name": "ian_shaved_dead",
+      "directions": 4,
       "delays": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
         [
           1
         ]
@@ -175,7 +205,17 @@
     },
     {
       "name": "lisa_dead",
+      "directions": 4,
       "delays": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
         [
           1
         ]
@@ -201,7 +241,17 @@
     },
     {
       "name": "lisa_shaved_dead",
+      "directions": 4,
       "delays": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
         [
           1
         ]

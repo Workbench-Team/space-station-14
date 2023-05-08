@@ -8,6 +8,9 @@
     sprite: Clothing/Head/Hats/beaver_hat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beaver_hat.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -19,6 +22,9 @@
     sprite: Clothing/Head/Hats/beret.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beret.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -30,6 +36,9 @@
     sprite: Clothing/Head/Hats/beret_rnd.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beret_rnd.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -41,7 +50,10 @@
     sprite: Clothing/Head/Hats/beret_engineering.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beret_engineering.rsi
-
+  - type: Tag
+    tags:
+      - DogWearable
+  
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatBeretHoS
@@ -52,6 +64,9 @@
     sprite: Clothing/Head/Hats/beret_hos.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beret_hos.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -63,6 +78,9 @@
     sprite: Clothing/Head/Hats/beret_warden.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beret_warden.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -74,6 +92,9 @@
     sprite: Clothing/Head/Hats/beret_brigmedic.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beret_brigmedic.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -85,6 +106,9 @@
     sprite: Clothing/Head/Hats/bowler_hat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/bowler_hat.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -96,6 +120,9 @@
     sprite: Clothing/Head/Hats/captain.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/captain.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -111,6 +138,9 @@
     proto: robot
   - type: IdentityBlocker
   - type: IngestionBlocker
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -122,6 +152,9 @@
     sprite: Clothing/Head/Hats/centcom.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/centcom.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -142,6 +175,9 @@
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
+    - type: Tag
+      tags:
+        - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -153,6 +189,9 @@
     sprite: Clothing/Head/Hats/brownfedora.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/brownfedora.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -164,6 +203,9 @@
     sprite: Clothing/Head/Hats/greyfedora.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/greyfedora.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -175,6 +217,9 @@
     sprite: Clothing/Head/Hats/fez.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/fez.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -186,6 +231,9 @@
     sprite: Clothing/Head/Hats/hopcap.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/hopcap.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -197,6 +245,9 @@
     sprite: Clothing/Head/Hats/hoshat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/hoshat.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -208,6 +259,9 @@
     sprite: Clothing/Head/Hats/outlawhat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/outlawhat.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -219,6 +273,9 @@
     sprite: Clothing/Head/Hats/witchhat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/witchhat.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -230,6 +287,9 @@
     sprite: Clothing/Head/Hats/paper.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/paper.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -241,6 +301,9 @@
     sprite: Clothing/Head/Hats/pirate.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/pirate.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -252,6 +315,9 @@
     sprite: Clothing/Head/Hats/plaguedoctor.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/plaguedoctor.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -263,6 +329,9 @@
     sprite: Clothing/Head/Hats/redwizard.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/redwizard.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -274,6 +343,9 @@
     sprite: Clothing/Head/Hats/santahat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/santahat.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -285,6 +357,9 @@
     sprite: Clothing/Head/Hats/sombrero.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/sombrero.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -296,6 +371,9 @@
     sprite: Clothing/Head/Hats/surgcap_blue.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/surgcap_blue.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -307,6 +385,9 @@
     sprite: Clothing/Head/Hats/surgcap_green.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/surgcap_green.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -318,6 +399,9 @@
     sprite: Clothing/Head/Hats/surgcap_purple.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/surgcap_purple.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -329,6 +413,9 @@
     sprite: Clothing/Head/Hats/tophat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/tophat.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -342,6 +429,9 @@
     sprite: Clothing/Head/Hats/ushanka.rsi
   - type: AddAccentClothing
     accent: RussianAccent
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -353,6 +443,9 @@
     sprite: Clothing/Head/Hats/violetwizard.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/violetwizard.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -364,6 +457,9 @@
     sprite: Clothing/Head/Hats/warden.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/warden.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -375,6 +471,9 @@
     sprite: Clothing/Head/Hats/witch.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/witch.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -397,6 +496,9 @@
     sprite: Clothing/Head/Hats/wizardhat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/wizardhat.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -408,6 +510,9 @@
     sprite: Clothing/Head/Hats/xmascrown.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/xmascrown.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -419,6 +524,9 @@
     sprite: Clothing/Head/Hats/truckershat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/truckershat.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -430,6 +538,9 @@
     sprite: Clothing/Head/Hats/pyjamasyndicateblack.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/pyjamasyndicateblack.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -441,6 +552,9 @@
     sprite: Clothing/Head/Hats/pyjamasyndicatepink.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/pyjamasyndicatepink.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -452,6 +566,9 @@
     sprite: Clothing/Head/Hats/pyjamasyndicatered.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/pyjamasyndicatered.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -463,6 +580,9 @@
     sprite: Clothing/Head/Hats/papersack.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/papersack.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -474,6 +594,9 @@
     sprite: Clothing/Head/Hats/papersacksmile.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/papersacksmile.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -485,6 +608,9 @@
     sprite: Clothing/Head/Hats/fishcap.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/fishcap.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -496,6 +622,9 @@
     sprite: Clothing/Head/Hats/nursehat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/nursehat.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -507,6 +636,9 @@
     sprite: Clothing/Head/Hats/rasta.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/rasta.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -518,6 +650,9 @@
     sprite: Clothing/Head/Hats/safarihat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/safarihat.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -529,6 +664,10 @@
       sprite: Clothing/Head/Hats/jester.rsi
     - type: Clothing
       sprite: Clothing/Head/Hats/jester.rsi
+    - type: Tag
+      tags:
+        - DogWearable
+    
 
 - type: entity
   parent: ClothingHeadHatJester
@@ -538,6 +677,9 @@
       sprite: Clothing/Head/Hats/jester2.rsi
     - type: Clothing
       sprite: Clothing/Head/Hats/jester2.rsi
+    - type: Tag
+      tags:
+        - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -549,6 +691,9 @@
     sprite: Clothing/Head/Hats/beret_cmo.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beret_cmo.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -560,6 +705,9 @@
     sprite: Clothing/Head/Hats/piratetricord.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/piratetricord.rsi
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -575,6 +723,9 @@
     modifiers:
       coefficients:
         Blunt: 0.95
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -586,3 +737,6 @@
     sprite: Clothing/Head/Hats/hetman_hat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/hetman_hat.rsi
+  - type: Tag
+    tags:
+      - DogWearables
