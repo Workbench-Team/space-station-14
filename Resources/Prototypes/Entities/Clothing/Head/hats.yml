@@ -175,9 +175,9 @@
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
-    - type: Tag
-      tags:
-        - DogWearable
+  - type: Tag
+    tags:
+      - DogWearable
 
 - type: entity
   parent: ClothingHeadBase
