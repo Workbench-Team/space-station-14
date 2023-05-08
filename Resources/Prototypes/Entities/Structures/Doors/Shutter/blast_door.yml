@@ -17,7 +17,6 @@
     openTimeTwo: 0.4
     openingAnimationTime: 1.0
     closingAnimationTime: 1.0
-    pryingQuality: NotPrying
     pryTime: -1
     crushDamage:
       types:
