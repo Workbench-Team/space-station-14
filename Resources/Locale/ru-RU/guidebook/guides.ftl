@@ -23,5 +23,5 @@ guide-entry-ss14 = Space Station 14
 guide-entry-security = Служба безопасности
 guide-entry-dna = ДНК
 
-guide-entry-arumoon = Arumoon
+guide-entry-arumoon = Станция им. Aru Moon
 guide-entry-arumoon-corplaw = Корпоративный Закон
