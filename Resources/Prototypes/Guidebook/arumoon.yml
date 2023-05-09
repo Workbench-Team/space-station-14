@@ -1,0 +1,12 @@
+- type: guideEntry
+  id: Arumoon
+  name: guide-entry-arumoon
+  text: "/ServerInfo/Guidebook/Arumoon/AruMoon.xml"
+  children:
+    - CorpLaw
+
+- type: guideEntry
+  id: CorpLaw
+  name: guide-entry-arumoon-corplaw
+  text: "/ServerInfo/Guidebook/Arumoon/CorpLaw.xml"
+
