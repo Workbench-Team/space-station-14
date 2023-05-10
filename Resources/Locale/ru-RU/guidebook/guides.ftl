@@ -24,4 +24,4 @@ guide-entry-security = Служба безопасности
 guide-entry-dna = ДНК
 
 guide-entry-arumoon = Станция им. Aru Moon
-guide-entry-arumoon-corplaw = Корпоративный Закон
+guide-entry-arumoon-spacelaw = Космический Закон
