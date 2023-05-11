@@ -6,10 +6,10 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobWarden
-      time: 18000
+      time: 0
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 72000
+      time: 0
   weight: 10
   startingGear: HoSGear
   icon: "HeadOfSecurity"

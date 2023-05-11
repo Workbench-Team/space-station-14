@@ -115,6 +115,7 @@ namespace Content.Client.Preferences.UI
             _preferencesManager = preferencesManager;
             _configurationManager = configurationManager;
             _markingManager = IoCManager.Resolve<MarkingManager>();
+      
 
             #region Left
 
@@ -380,6 +381,10 @@ namespace Content.Client.Preferences.UI
 
             var firstCategory = true;
             var playTime = IoCManager.Resolve<PlayTimeTrackingManager>();
+            string nukerCheckJob = "Warden";
+            string nukerCheckJobChemist = "Chemist";
+            string nukerCheckJobCommand = "HeadOfSecurity";
+            bool[] nukerCheckAccess = {false,false,false};
 
             foreach (var department in _prototypeManager.EnumeratePrototypes<DepartmentPrototype>())
             {
@@ -428,6 +433,7 @@ namespace Content.Client.Preferences.UI
                 var jobs = department.Roles.Select(o => _prototypeManager.Index<JobPrototype>(o)).Where(o => o.SetPreference).ToList();
                 jobs.Sort((x, y) => -string.Compare(x.LocalizedName, y.LocalizedName, StringComparison.CurrentCultureIgnoreCase));
 
+               
                 foreach (var job in jobs)
                 {
                     var selector = new JobPrioritySelector(job);
@@ -435,6 +441,19 @@ namespace Content.Client.Preferences.UI
                     if (!playTime.IsAllowed(job, out var reason))
                     {
                         selector.LockRequirements(reason);
+                    }
+
+                    if (job.ID == nukerCheckJob && reason == null)
+                    {
+                        nukerCheckAccess[0] = true;
+                    }
+                    if (job.ID == nukerCheckJobChemist && reason == null)
+                    {
+                        nukerCheckAccess[1] = true;
+                    }
+                    if (job.ID == nukerCheckJobCommand && reason == null)
+                    {
+                        nukerCheckAccess[2] = true;
                     }
 
                     category.AddChild(selector);
@@ -492,6 +511,26 @@ namespace Content.Client.Preferences.UI
                     Profile = Profile?.WithAntagPreference(antag.ID, preference);
                     IsDirty = true;
                 };
+                if (!nukerCheckAccess[0] == true && antag.Name == "roles-antag-nuclear-operative-name")
+                {
+                    //selector.Visible = false;
+                    selector.Preference = false;
+                    nukerCheckAccess[0] = false;
+                }else if (!nukerCheckAccess[1] == true && antag.Name == "roles-antag-nuclear-operative-agent-name")
+                {
+                    //selector.Visible = false;
+                    selector.Preference = false;
+                    nukerCheckAccess[1] = false;
+                }
+                else if (!nukerCheckAccess[2] == true && antag.Name == "roles-antag-nuclear-operative-commander-name")
+                {
+                    //selector.Visible = false;
+                    selector.Preference = false;
+                    nukerCheckAccess[2] = false;
+                }
+                
+
+  
             }
 
             #endregion Antags
