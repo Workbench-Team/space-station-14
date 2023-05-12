@@ -15,6 +15,7 @@ using Content.Shared.Access.Systems;
 using Content.Shared.CCVar;
 using Content.Shared.Communications;
 using Content.Shared.Database;
+using Content.Shared.Doors.Components;
 using Content.Shared.Emag.Components;
 using Content.Shared.Examine;
 using Content.Shared.Popups;
@@ -104,6 +105,29 @@ namespace Content.Server.Communications
                 if (args.Station == entStation)
                 {
                     UpdateCommsConsoleInterface(comp);
+                }
+            }
+
+            // Gives an access to appropriate departments to doors of other departments in case of emergency 
+            foreach (var (_, access) in EntityQuery<AirlockComponent, AccessReaderBoardComponent>(true))
+            {
+                if (TryComp(access.BoardContainer.ContainedEntities.FirstOrDefault(), out AccessStorageComponent? accessStorage)
+                     && IsAirlockSupportAlertLevel(accessStorage.AccessLists))
+                {
+                    switch (args.AlertLevel)
+                    {
+                        case "green":
+                            ClearAlertLevelAccess(accessStorage);
+                            break;
+                        case "yellow":
+                            ClearAlertLevelAccess(accessStorage);
+                            accessStorage.AccessLists.Add(new HashSet<string>() { "Engineering" });
+                            break;
+                        case "red":
+                            ClearAlertLevelAccess(accessStorage);
+                            accessStorage.AccessLists.Add(new HashSet<string>() { "Brig" });
+                            break;
+                    }
                 }
             }
         }
@@ -307,6 +331,31 @@ namespace Content.Server.Communications
 
             _roundEndSystem.CancelRoundEndCountdown(uid);
             _adminLogger.Add(LogType.Action, LogImpact.Extreme, $"{ToPrettyString(mob):player} has recalled the shuttle.");
+        }
+
+        private bool IsAirlockSupportAlertLevel (List<HashSet<string>> accessLists)
+        {
+            var exceptions = new List<string>() { "Captain",
+                    "HeadOfPersonnel",
+                    "HeadOfSecurity",
+                    "Quartermaster",
+                    "ResearchDirector",
+                    "ChiefEngineer",
+                    "ChiefMedicalOfficer",
+                    "Command",
+                    "Armory"
+                };
+            return accessLists.Count > 0 && !accessLists[0].Any(a => exceptions.Contains(a));
+        }
+
+
+
+        private void ClearAlertLevelAccess(AccessStorageComponent accessStorage)
+        {
+            if (accessStorage.AccessLists.ElementAtOrDefault(1) != null)
+            {
+                accessStorage.AccessLists.RemoveAt(1);
+            }
         }
     }
 }
