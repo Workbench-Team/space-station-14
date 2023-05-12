@@ -116,9 +116,6 @@ namespace Content.Server.Communications
                 {
                     switch (args.AlertLevel)
                     {
-                        case "green":
-                            ClearAlertLevelAccess(accessStorage);
-                            break;
                         case "yellow":
                             ClearAlertLevelAccess(accessStorage);
                             accessStorage.AccessLists.Add(new HashSet<string>() { "Engineering" });
@@ -126,6 +123,9 @@ namespace Content.Server.Communications
                         case "red":
                             ClearAlertLevelAccess(accessStorage);
                             accessStorage.AccessLists.Add(new HashSet<string>() { "Brig" });
+                            break;
+                        default:
+                            ClearAlertLevelAccess(accessStorage);
                             break;
                     }
                 }
