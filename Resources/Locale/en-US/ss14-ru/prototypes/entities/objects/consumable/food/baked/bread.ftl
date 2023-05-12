@@ -70,3 +70,6 @@ ent-FoodBreadGarlicSlice = garlic bread
 ent-FoodBreadButteredToast = buttered toast
     .desc = Crunchy.
     .suffix = { "" }
+ent-FoodBreadButterDog = butter dog
+    .desc = A very strange hot... butter dog?!
+    .suffix = { "" }

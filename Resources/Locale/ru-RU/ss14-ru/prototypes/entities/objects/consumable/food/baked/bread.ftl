@@ -70,3 +70,6 @@ ent-FoodBreadGarlicSlice = чесночный хлеб
 ent-FoodBreadButteredToast = тост с маслом
     .desc = Хрустящий.
     .suffix = { "" }
+ent-FoodBreadButterDog = баттер-дог
+    .desc = Очень странный хот... баттер-дог?!
+    .suffix = { "" }

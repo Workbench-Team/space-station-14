@@ -1,32 +1,77 @@
-﻿- files: ["endless_space.ogg"]
+﻿- files: ["thunderdome.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "-Sector11 by MashedByMachines. Converted from MP3 to OGG."
+  source: "https://www.newgrounds.com/audio/listen/312622"
+
+- files: ["endless_space.ogg"]
   license: "CC-BY-3.0"
   copyright: "Endless Space by SolusLunes. Converted from MP3 to OGG."
   source: "https://www.newgrounds.com/audio/listen/67583"
+
+- files: ["absconditus.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Absconditus by ZhayTee. Converted from MP3 to OGG."
+  source: "https://bandcamp.zhaytee.net/track/absconditus"
+
+- files: ["atomicamnesiammx.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Atomic Amnesia MMX by Phillip Dyer. Converted from MP3 to OGG."
+  source: "https://soundcloud.com/3kliksphilip/atomic-amnesia-mmx-1"
+
+- files: ["singuloose.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Singuloose by Janis Schiedková. Converted from MP3 to OGG."
+  source: "https://soundcloud.com/js_m/singuloose"
 
 - files: ["vibe_ace.ogg"]
   license: "CC-BY-3.0"
   copyright: "Vibe Ace by Kevin MacLeod. Converted from MP3 to OGG."
   source: "https://freemusicarchive.org/music/Kevin_MacLeod/Jazz_Sampler/Vibe_Ace"
 
-- files: ["midnight.ogg"]
-  license: "CC-BY-3.0"
-  copyright: "Midnight by Nomyn"
-  source: "https://www.toneden.io/nomyn/post/nomyn-midnight"
+- files: ["title3.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Title3 by Cuboos. It is a remix of the song 'Tintin on the Moon'. Converted from MP3 to OGG."
+  source: "https://www.youtube.com/watch?v=YKVmXn-Gv0M"
 
-- files: ["neutral03.ogg"]
-  license: "Custom"
-  copyright: "Lobotomy Corporation OST - Neutral 03. There is no any license found for that music or other content of this game"
-  source: "https://store.steampowered.com/app/568220"
+- files: ["marhaba.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Marhaba by Ian Alex Mac. Converted from MP3 to OGG."
+  source: "https://freemusicarchive.org/music/Ian_Alex_Mac/Cues/Marhaba"
+
+- files: ["comet_haley.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Comet Haley by Stellardrone. Converted from MP3 to OGG."
+  source: "https://freemusicarchive.org/music/Stellardrone/Light_Years_1227/07_Comet_Halley"
+
+- files: ["Monument.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Monument by Six Umbrellas."
+  source: "https://sixumbrellas.bandcamp.com/album/the-psychedelic-and"
+
+- files: ["Spac_Stac.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Spac Stac by Hayabusa. Converted from MP3 to OGG."
+  source: "https://www.youtube.com/watch?v=grUBe-SZgr0"
+
+- files: ["pwmur.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "phoron will make us rich by Alexander Divine."
+  source: "https://soundcloud.com/alexanderdivine/phoron-will-make-us-rich"
+
+- files: ["lasers_rip_apart_the_bulkhead.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "lasers rip apart the bulkhead by Alexander Divine."
+  source: "https://soundcloud.com/alexanderdivine/lasers-rip-apart-the-bulkhead"
+
+- files: ["every_light_is_blinking_at_once.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "every light is blinking at once by Alexander Divine."
+  source: "https://soundcloud.com/alexanderdivine/every-light-is-blinking-at-once"
 
 - files: ["we-are-finally-landing.ogg"]
   license: "CC-BY-3.0"
   copyright: "We're finally landing by HOME"
   source: "https://soundcloud.com/home-2001/home-before-the-night-01-were"
-
-- files: ["cascade.ogg"]
-  license: "CC-BY-SA-3.0"
-  copyright: "Cascade by Kubbi"
-  source: "https://kubbi.bandcamp.com/album/ember"
 
 - files: ["shitsuboo-shita.ogg"]
   license: "CC-BY-3.0"
@@ -38,30 +83,15 @@
   copyright: "Insomnia by Nomyn"
   source: "https://www.toneden.io/nomyn/post/nomyn-insomnia"
 
-- files: ["мы-улетим.ogg"]
-  license: "Custom"
-  copyright: "Песня Мы улетим из Космические рейнджеры 2 от Василий Шестовец и Ксения Ларионова. Лицензия для этой песни была не найдена или отсутствует"
-  source: "https://www.youtube.com/watch?v=CwlB5P-rMGc"
-
 - files: ["clown.ogg"]
   license: "Custom"
-  copyright: "Clown taken from tgstation, that was created specially for April Fools"
+  copyright: "Clown taken from tgstation, that was modified specially for April Fools from title2.ogg"
   source: "https://github.com/tgstation/tgstation/commit/5dbd2d49a6e2c38e446db5e3051df2d0addc1390"
-
-- files: ["aurora_caelus.ogg"]
-  license: "CC-BY-3.0"
-  copyright: "Music for Manatees by Kevin MacLeod. Taken from tgstation Aurora Caelus event"
-  source: "https://github.com/tgstation/tgstation/commit/4a6e0c6b00a6e7a172637d93039ec9bef23caa5b"
 
 - files: ["lightness.ogg"]
   license: "CC-BY-3.0"
   copyright: "Lightness by Nomyn"
   source: "https://soundcloud.com/nomyn/lightness"
-
-- files: ["stellar.ogg"]
-  license: "CC-BY-3.0"
-  copyright: "Stellar by Nomyn"
-  source: "https://soundcloud.com/nomyn/stellar"
 
 - files: ["родина.ogg"]
   license: "CC-BY-3.0"

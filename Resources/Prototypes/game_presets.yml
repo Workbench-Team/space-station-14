@@ -47,7 +47,7 @@
     - traitor
   name: traitor-title
   description: traitor-description
-  showInVote: true
+  showInVote: false
   rules:
     - Traitor
     - BasicStationEventScheduler
@@ -69,7 +69,7 @@
     - nukeops
   name: nukeops-title
   description: nukeops-description
-  showInVote: true
+  showInVote: false
   rules:
     - Nukeops
     - BasicStationEventScheduler
@@ -84,7 +84,7 @@
     - zomber
   name: zombie-title
   description: zombie-description
-  showInVote: true
+  showInVote: false
   rules:
     - Zombie
     - BasicStationEventScheduler

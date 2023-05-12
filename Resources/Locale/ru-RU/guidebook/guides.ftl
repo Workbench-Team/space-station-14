@@ -22,3 +22,6 @@ guide-entry-traversal-distorter = Исказитель обхода
 guide-entry-ss14 = Space Station 14
 guide-entry-security = Служба безопасности
 guide-entry-dna = ДНК
+
+guide-entry-arumoon = Станция им. Aru Moon
+guide-entry-arumoon-spacelaw = Космический Закон

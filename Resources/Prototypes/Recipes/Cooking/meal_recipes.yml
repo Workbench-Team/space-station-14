@@ -365,6 +365,15 @@
     FoodButter: 1
 
 - type: microwaveMealRecipe
+  id: RecipeButterDog
+  name: butter dog recipe
+  result: FoodBreadButterDog
+  time: 10
+  solids:
+    FoodBreadPlain: 1
+    FoodButter: 1
+
+- type: microwaveMealRecipe
   id: RecipeChowMein
   name: chow mein recipe
   result: FoodNoodlesChowmein

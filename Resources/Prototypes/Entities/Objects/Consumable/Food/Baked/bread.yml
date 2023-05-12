@@ -515,3 +515,30 @@
         - ReagentId: Vitamin
           Quantity: 1
 # Tastes like bread, butter.
+
+- type: entity
+  name: butter dog
+  parent: FoodBreadBase
+  id: FoodBreadButterDog
+  description: A very strange hot... butter dog?!
+  components:
+  - type: FlavorProfile
+    flavors:
+      - butter
+      - bread
+  - type: Food
+  - type: Sprite
+    layers:
+    - state: butterdog
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 45
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 30
+        - ReagentId: Omnizine
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 2
+# Tastes like bread, butter.
