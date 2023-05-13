@@ -1,0 +1,65 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsModsuitCorp
+  noSpawn: true
+  name: Modsuit gloves "Corp"
+  description: Insulating impact gloves. Provide sealing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/corp.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/corp.rsi
+    equipSound: /Audio/Items/ballin.ogg
+    unequipSound: /Audio/Items/ballout.ogg
+  - type: GloveHeatResistance
+    heatResistance: 1400
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-durathread
+    fiberColor: fibers-regal-blue
+  - type: FingerprintMask
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesCorp
+    slot: shoes
+    requiredSlot: gloves
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingHandsModsuitCorp
+  id: ClothingHandsModsuitAdmem
+  noSpawn: true
+  name: Modsuit gloves "Admem"
+  description: Insulating impact gloves. Provide sealing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/admem.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/admem.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesAdmem
+    slot: shoes
+    requiredSlot: gloves
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingHandsModsuitCorp
+  id: ClothingHandsModsuitChrono
+  noSpawn: true
+  name: Modsuit gloves "Chrono Legionnaire"
+  description: Insulating impact gloves. Provide sealing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/chrono.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/chrono.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesChrono
+    slot: shoes
+    requiredSlot: gloves
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}

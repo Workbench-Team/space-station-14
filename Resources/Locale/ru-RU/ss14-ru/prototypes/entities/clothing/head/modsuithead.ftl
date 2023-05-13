@@ -1,0 +1,9 @@
+ent-ClothingHeadHelmetModsuitCorp = шлем модсьюта "Корпорат"
+    .desc = Протиударний шлем, с встроенным освещением, версии "Копрорат".
+    .suffix = { "" }
+ent-ClothingHeadHelmetModsuitAdmem = шлем модсьюта "Адмем"
+    .desc = Протиударний шлем, с встроенным освещением, версии "Адмем".
+    .suffix = { "" }
+ent-ClothingHeadHelmetModsuitChrono = шлем модсьюта "Хронолегионер"
+    .desc = Протиударний шлем, с встроенным освещением, версии "Хронолегионер".
+    .suffix = { "" }
