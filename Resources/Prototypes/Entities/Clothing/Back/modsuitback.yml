@@ -1,20 +1,33 @@
 - type: entity
-  parent: ClothingBackpack
+  parent: Clothing
   id: ClothingModsuitbackCorp
   name: Modsuit core "Corp"
   description: Modsuit core version Centcom
   components:
   - type: Storage
     capacity: 150
+  - type: Item
+    size: 9999
   - type: Sprite
     sprite: Clothing/Back/Modsuit/corp.rsi
+    state: icon
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterModsuitBodyCorp
     requiredSlot: back
     slot: outerClothing
-#  - type: ContainerContainer
-#    containers:
-#      toggleable-clothing: !type:ContainerSlot {}
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+    - key: enum.StorageUiKey.Key
+      type: StorageBoundUserInterface
 
 - type: entity
   parent: ClothingModsuitbackCorp
@@ -30,9 +43,6 @@
     clothingPrototype: ClothingOuterModsuitBodyAdmem
     requiredSlot: back
     slot: outerClothing
-#  - type: ContainerContainer
-#    containers:
-#      toggleable-clothing: !type:ContainerSlot {}
 
 - type: entity
   parent: ClothingModsuitbackCorp
@@ -48,6 +58,3 @@
     clothingPrototype: ClothingOuterModsuitBodyChrono
     requiredSlot: back
     slot: outerClothing
-#  - type: ContainerContainer
-#    containers:
-#      toggleable-clothing: !type:ContainerSlot {}
