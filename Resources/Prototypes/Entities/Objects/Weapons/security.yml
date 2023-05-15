@@ -62,12 +62,12 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 10
+        Blunt: 3
     bluntStaminaDamageFactor: 2.0
     angle: 60
     animation: WeaponArcSlash
   - type: StaminaDamageOnHit
-    damage: 55
+    damage: 20
   - type: ItemCooldown
   - type: Item
     heldPrefix: off
