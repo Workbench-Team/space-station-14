@@ -57,6 +57,13 @@
       type: AMEControllerBoundUserInterface
   - type: Appearance
   - type: AMEControllerVisuals
+  - type: Electrified
+    onHandInteract: false
+    onInteractUsing: false
+    onBump: false
+    requirePower: true
+    highVoltageNode: input
+    chanceOfShock: 0.33
   - type: NodeContainer
     examinable: true
     nodes:

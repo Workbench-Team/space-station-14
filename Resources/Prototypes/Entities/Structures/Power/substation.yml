@@ -37,6 +37,14 @@
       output:
         !type:CableDeviceNode
         nodeGroupID: MVPower
+  - type: Electrified
+    onHandInteract: false
+    onInteractUsing: false
+    onBump: false
+    requirePower: true
+    mediumVoltageNode: output
+    highVoltageNode: input
+    chanceOfShock: 0.33
   - type: BatteryCharger
     voltage: High
   - type: BatteryDischarger

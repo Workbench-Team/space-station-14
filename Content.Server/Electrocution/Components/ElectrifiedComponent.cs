@@ -73,4 +73,7 @@ public sealed class ElectrifiedComponent : Component
 
     [DataField("shockVolume")]
     public float ShockVolume = 20;
+
+    [DataField("chanceOfShock"), ViewVariables(VVAccess.ReadWrite)]
+    public float ChanceOfShock = 1f;
 }
