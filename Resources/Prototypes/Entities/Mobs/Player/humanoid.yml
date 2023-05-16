@@ -310,6 +310,34 @@
       nameSegments:
       - NamesFirstMilitary
       - names_last
+
+## Death Squad
+
+- type: entity
+  id: RandomHumanoidSpawnerDeathSquadOfficer
+  name: Death Squad officer
+  components:
+    - type: Sprite
+      netsync: false
+      sprite: Markers/jobs.rsi
+      state: death_squad
+    - type: RandomHumanoidSpawner
+      settings: DSOfficer
+
+- type: randomHumanoidSettings
+  id: DSOfficer
+  components:
+    - type: Loadout
+      prototypes: [DeadsquadGear]
+    - type: GhostRole
+      name: Death Squad Officer
+      description: A highly trained CentCom agent, capable of dealing with various threats.
+    - type: GhostTakeoverAvailable
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - names_last
+
 ## Central Command
 
 - type: entity

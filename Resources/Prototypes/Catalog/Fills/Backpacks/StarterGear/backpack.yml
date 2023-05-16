@@ -218,8 +218,8 @@
         - id: TelescopicBaton
         - id: WeaponPulsePistol
         - id: WeaponPistolMk58
-        - id: MagazinePistolHighCapacityRubber
-        - id: MagazinePistol
+        - id: MagazinePistolHighVelocity
+        - id: MagazinePistolHighVelocity
         - id: Handcuffs
         - id: CrowbarRed
 
@@ -248,7 +248,6 @@
         - id: BoxSurvival
         - id: TelescopicBaton
         - id: WeaponPulseCarbine
-        - id: Hypospray
         - id: MedkitAdvancedFilled
         - id: CrowbarRed
 
@@ -277,12 +276,45 @@
       contents:
         - id: BoxSurvival
         - id: TelescopicBaton
-        - id: WeaponPulsePistol
-        - id: MedkitFilled
-        - id: BoxLightMixed
+        - id: Bucket
+        - id: AdvMopItem
         - id: BoxLightMixed
         - id: Soap
         - id: CrowbarRed
+        - id: LightReplacer
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackERTEngineer
+  id: ClothingBackpackCBURNAgentFilled
+  components:
+    - type: StorageFill
+      contents:
+        - id: WeaponShotgunEnforcer
+        - id: BoxShotgunIncendiary
+        - id: BoxLethalshot
+        - id: GrenadeFlashBang
+        - id: Flash
+        - id: PillCanisterCBURNFilled
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackERTSecurity
+  id: ClothingBackpackDeathSquadOfficerFilled
+  components:
+    - type: StorageFill
+      contents:
+        - id: WeaponPulseRifle
+        - id: WeaponPulseCarbine
+        - id: TelescopicBaton
+        - id: WeaponRevolverMateba
+        - id: SpeedLoaderMagnumHighVelocity
+        - id: MagazineBoxMagnumHighVelocity
+        - id: PinpointerNuclear
+        - id: C4
+          amount: 2
+        - id: MedkitDeathSquadFilled
+        - id: BoxFlashbang
 
 - type: entity
   noSpawn: true

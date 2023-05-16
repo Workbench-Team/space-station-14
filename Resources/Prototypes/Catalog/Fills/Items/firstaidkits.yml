@@ -126,3 +126,22 @@
     contents:
       - id: StimpackMini
         amount: 6
+
+- type: entity
+  id: MedkitDeathSquadFilled
+  suffix: Filled
+  parent: MedkitCombat
+  components:
+  - type: Item
+    heldPrefix: blackkit  
+    size: 35
+  - type: Storage
+    capacity: 35
+  - type: StorageFill
+    contents:
+      - id: EmergencyMedipen
+        amount: 2
+      - id: StimpackMini
+        amount: 4
+      - id: AntiPoisonMedipen
+        amount: 2

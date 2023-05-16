@@ -20,12 +20,12 @@
     shoes: ClothingShoesBootsJack
     head: ClothingHeadHelmetHelmet
     eyes: ClothingEyesGlassesSecurity
-    gloves: ClothingHandsGlovesColorBlack
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterVestKevlar
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltSecurityWebbing
-    pocket1: Flare
+    pocket1: FlashlightSeclite
 
 - type: startingGear
   id: ERTLeaderGearEVA
@@ -33,15 +33,15 @@
     jumpsuit: ClothingUniformJumpsuitERTLeader
     back: ClothingBackpackERTLeaderFilled
     shoes: ClothingShoesBootsMag
-    mask: ClothingMaskBreath
+    mask: ClothingMaskGas
     eyes: ClothingEyesGlassesSecurity
-    gloves: ClothingHandsGlovesColorBlack
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTLeader
     suitstorage: OxygenTankFilled
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
-    belt: ClothingBeltSecurityFilled
-    pocket1: Flare
+    ears: ClothingHeadsetAltCentCom
+    belt: ClothingBeltSecurityWebbing
+    pocket1: FlashlightSeclite
 
 # Engineer
 - type: job
@@ -65,12 +65,12 @@
     shoes: ClothingShoesBootsWork
     head: ClothingHeadHelmetHelmet
     eyes: ClothingEyesGlassesMeson
-    gloves: ClothingHandsGlovesColorYellow
+    gloves: ClothingHandsGlovesCE
     outerClothing: ClothingOuterVestKevlar
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltChiefEngineerFilled
-    pocket1: Flare
+    pocket1: FlashlightSeclite
 
 - type: startingGear
   id: ERTEngineerGearEVA
@@ -78,15 +78,15 @@
     jumpsuit: ClothingUniformJumpsuitERTEngineer
     back: ClothingBackpackERTEngineerFilled
     shoes: ClothingShoesBootsMagAdv
-    mask: ClothingMaskBreath
+    mask: ClothingMaskGasAtmos
     eyes: ClothingEyesGlassesMeson
-    gloves: ClothingHandsGlovesColorYellow
+    gloves: ClothingHandsGlovesCE
     outerClothing: ClothingOuterHardsuitERTEngineer
-    suitstorage: OxygenTankFilled
+    suitstorage: JetpackVoidFilled
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltChiefEngineerFilled
-    pocket1: Flare
+    pocket1: FlashlightSeclite
 
 # Security
 - type: job
@@ -110,12 +110,12 @@
     shoes: ClothingShoesBootsJack
     head: ClothingHeadHelmetHelmet
     eyes: ClothingEyesGlassesSecurity
-    gloves: ClothingHandsGlovesColorBlack
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterVestKevlar
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltSecurityWebbing
-    pocket1: Flare
+    pocket1: FlashlightSeclite
 
 - type: startingGear
   id: ERTSecurityGearEVA
@@ -123,15 +123,15 @@
     jumpsuit: ClothingUniformJumpsuitERTSecurity
     back: ClothingBackpackERTSecurityFilled
     shoes: ClothingShoesBootsMag
-    mask: ClothingMaskBreath
+    mask: ClothingMaskGasSecurity
     eyes: ClothingEyesGlassesSecurity
-    gloves: ClothingHandsGlovesColorBlack
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTSecurity
     suitstorage: OxygenTankFilled
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltSecurityWebbing
-    pocket1: Flare
+    pocket1: FlashlightSeclite
 
 # Medical
 - type: job
@@ -155,13 +155,12 @@
     shoes: ClothingShoesBootsJack
     head: ClothingHeadHelmetHelmet
     eyes: ClothingEyesHudMedical
-    gloves: ClothingHandsGlovesColorBlack
+    gloves: ClothingHandsGlovesNitrile
     outerClothing: ClothingOuterVestKevlar
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMedicalFilled
-    pocket1: HandheldHealthAnalyzer
-    pocket2: Flare
+    pocket1: FlashlightSeclite
 
 - type: startingGear
   id: ERTMedicalGearEVA
@@ -169,16 +168,15 @@
     jumpsuit: ClothingUniformJumpsuitERTMedic
     back: ClothingBackpackERTMedicalFilled
     shoes: ClothingShoesBootsMag
-    mask: ClothingMaskBreath
+    mask: ClothingMaskBreathMedical
     eyes: ClothingEyesHudMedical
-    gloves: ClothingHandsGlovesColorBlack
+    gloves: ClothingHandsGlovesNitrile
     outerClothing: ClothingOuterHardsuitERTMedical
     suitstorage: OxygenTankFilled
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
-    belt: ClothingBeltMedicalFilled
-    pocket1: HandheldHealthAnalyzer
-    pocket2: Flare
+    ears: ClothingHeadsetAltCentCom
+    belt: ClothingBeltMilitaryWebbingMedNTFilled
+    pocket1: FlashlightSeclite
 
 # Janitor
 - type: job
@@ -201,12 +199,12 @@
     back: ClothingBackpackERTJanitorFilled
     shoes: ClothingShoesGaloshes
     head: ClothingHeadHelmetHelmet
-    gloves: ClothingHandsGlovesColorBlack
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterVestKevlar
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltJanitorFilled
-    pocket1: Flare
+    pocket1: FlashlightSeclite
 
 - type: startingGear
   id: ERTJanitorGearEVA
@@ -215,10 +213,10 @@
     back: ClothingBackpackERTJanitorFilled
     shoes: ClothingShoesBootsMag
     mask: ClothingMaskBreath
-    gloves: ClothingHandsGlovesColorBlack
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTJanitor
     suitstorage: OxygenTankFilled
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltJanitorFilled
-    pocket1: Flare
+    pocket1: FlashlightSeclite

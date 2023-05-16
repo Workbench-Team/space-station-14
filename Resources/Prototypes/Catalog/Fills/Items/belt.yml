@@ -120,6 +120,20 @@
       - id: MedkitCombatFilled
 
 - type: entity
+  id: ClothingBeltMilitaryWebbingMedNTFilled
+  parent: ClothingBeltMilitaryWebbingMed
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: Hypospray
+      - id: EpinephrineChemistryBottle
+        amount: 2
+      - id: EphedrineChemistryBottle
+        amount: 2
+      - id: MedkitCombatFilled
+
+- type: entity
   parent: ClothingBeltWand
   id: ClothingBeltWandFilled
   suffix: Filled
