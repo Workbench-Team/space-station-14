@@ -14,22 +14,6 @@
       - id: Scalpel
 
 - type: entity
-  id: ClothingBackpackDuffelCBURN
-  parent: ClothingBackpackDuffel
-  name: CBURN duffel bag
-  description: A duffel bag containing a variety of biological containment equipment.
-  components:
-  - type: StorageFill
-    contents:
-      - id: WeaponShotgunDoubleBarreled
-      - id: BoxShotgunFlare
-        amount: 2
-      - id: GrenadeFlashBang
-        amount: 2
-      - id: PillRomerol
-        amount: 5
-
-- type: entity
   parent: ClothingBackpackDuffelSyndicateMedicalBundle
   id: ClothingBackpackDuffelSyndicateFilledMedical
   name: syndicate surgical duffel bag
@@ -280,15 +264,8 @@
   components:
   - type: StorageFill
     contents:
-      - id: Hemostat
-      - id: SawAdvanced
-      - id: Drill
-      - id: Cautery
-      - id: Retractor
-      - id: ScalpelAdvanced
       - id: BoxSurvivalSyndicate
       - id: CombatKnife
       - id: WeaponPistolViper
       - id: PinpointerNuclear
       - id: HandheldHealthAnalyzer
-#      - id: SyringeGun

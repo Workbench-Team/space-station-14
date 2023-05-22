@@ -156,19 +156,18 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
             TryDoElectrifiedAct(uid, args.OtherFixture.Body.Owner, 1, electrified);
     }
 
-        private void OnElectrifiedAttacked(EntityUid uid, ElectrifiedComponent electrified, AttackedEvent args)
+    private void OnElectrifiedAttacked(EntityUid uid, ElectrifiedComponent electrified, AttackedEvent args)
+    {
+        if (!electrified.OnAttacked ||
+            !_random.Prob(electrified.ChanceOfShock))
+            return;
+        //Dont shock if the attacker used a toy
+        if (EntityManager.TryGetComponent<MeleeWeaponComponent>(args.Used, out var meleeWeaponComponent))
         {
-            if (!electrified.OnAttacked)
+            if (meleeWeaponComponent.Damage.Total == 0)
                 return;
-
-            //Dont shock if the attacker used a toy
-            if (EntityManager.TryGetComponent<MeleeWeaponComponent>(args.Used, out var meleeWeaponComponent))
-            {
-                if (meleeWeaponComponent.Damage.Total == 0)
-                    return;
-            }
-
-            TryDoElectrifiedAct(uid, args.User, 1, electrified);
+        }
+        TryDoElectrifiedAct(uid, args.User, 1, electrified);
     }
 
     private void OnElectrifiedHandInteract(EntityUid uid, ElectrifiedComponent electrified, InteractHandEvent args)

@@ -46,6 +46,13 @@
       path: /Audio/Weapons/emitter.ogg
   - type: PowerConsumer
     voltage: Medium
+  - type: Electrified
+    onHandInteract: false
+    onInteractUsing: false
+    onBump: false
+    requirePower: true
+    mediumVoltageNode: input
+    chanceOfShock: 0.33
   - type: NodeContainer
     examinable: true
     nodes:

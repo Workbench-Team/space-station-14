@@ -710,6 +710,9 @@
   components:
   - type: AccessReaderBoard
 #    access: [["Detective"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDetective ]
 
 - type: entity
   parent: AirlockSecurityGlass
@@ -972,6 +975,9 @@
   components:
   - type: AccessReaderBoard
 #    access: [["Detective"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDetective ]
 
 - type: entity
   parent: AirlockMaint

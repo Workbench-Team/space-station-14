@@ -1030,6 +1030,40 @@
         Piercing: 0.8
 
 - type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCBURNAgent
+  name: CBURN agent uniform
+  description: A special suit made for cburn under CentCom.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/ert_engineer.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/ert_engineer.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitDeathSquadOfficer
+  name: Death Squad Officer uniform
+  description: A special suit made for the Death Squad Officer under CentCom.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/ert_security.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/ert_security.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+
+- type: entity
   parent: ClothingUniformJumpsuitClown
   id: ClothingUniformJumpsuitCluwne
   name: cluwne suit

@@ -11,6 +11,8 @@ using Content.Shared.MachineLinking.Events;
 using Content.Shared.StationRecords;
 using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
+using Content.Shared.Doors.Components;
+using Content.Shared.AlertLevel;
 
 namespace Content.Shared.Access.Systems
 {
@@ -24,6 +26,7 @@ namespace Content.Shared.Access.Systems
         public override void Initialize()
         {
             base.Initialize();
+            SubscribeLocalEvent<AlertLevelChangedEvent>(OnAlertLevelChanged);
             SubscribeLocalEvent<AccessReaderBoardComponent, ComponentInit>(OnInit);
             SubscribeLocalEvent<AccessReaderBoardComponent, GotEmaggedEvent>(OnEmagged);
             SubscribeLocalEvent<AccessReaderBoardComponent, LinkAttemptEvent>(OnLinkAttempt);
@@ -48,6 +51,31 @@ namespace Content.Shared.Access.Systems
             foreach(var substr in args.DenyTags.ToArray())
             {
                   component.DenyTags.Add(substr);
+            }
+        }
+        private void OnAlertLevelChanged(AlertLevelChangedEvent args)
+        {
+            // Gives an access to appropriate departments to doors of other departments in case of emergency 
+            foreach (var (_, access) in EntityQuery<AirlockComponent, AccessReaderBoardComponent>(true))
+            {
+                if (TryComp(access.BoardContainer.ContainedEntities.FirstOrDefault(), out AccessStorageComponent? accessStorage)
+                     && IsAirlockSupportAlertLevel(accessStorage.AccessLists))
+                {
+                    switch (args.AlertLevel)
+                    {
+                        case "yellow":
+                            ClearAlertLevelAccess(accessStorage);
+                            accessStorage.AccessLists.Add(new HashSet<string>() { "Engineering" });
+                            break;
+                        case "red":
+                            ClearAlertLevelAccess(accessStorage);
+                            accessStorage.AccessLists.Add(new HashSet<string>() { "Brig" });
+                            break;
+                        default:
+                            ClearAlertLevelAccess(accessStorage);
+                            break;
+                    }
+                }
             }
         }
 
@@ -333,6 +361,32 @@ namespace Content.Shared.Access.Systems
 
             key = null;
             return false;
+        }
+
+        
+        private bool IsAirlockSupportAlertLevel (List<HashSet<string>> accessLists)
+        {
+            var exceptions = new List<string>() { "Captain",
+                    "HeadOfPersonnel",
+                    "HeadOfSecurity",
+                    "Quartermaster",
+                    "ResearchDirector",
+                    "ChiefEngineer",
+                    "ChiefMedicalOfficer",
+                    "Command",
+                    "Armory"
+                };
+            return accessLists.Count > 0 && !accessLists[0].Any(a => exceptions.Contains(a));
+        }
+
+
+
+        private void ClearAlertLevelAccess(AccessStorageComponent accessStorage)
+        {
+            if (accessStorage.AccessLists.ElementAtOrDefault(1) != null)
+            {
+                accessStorage.AccessLists.RemoveAt(1);
+            }
         }
     }
 }

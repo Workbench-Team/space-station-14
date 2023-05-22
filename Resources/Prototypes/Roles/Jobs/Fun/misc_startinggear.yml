@@ -54,21 +54,18 @@
 - type: startingGear
   id: DeadsquadGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBlack
-    back: ClothingBackpackDuffelSyndicateAmmo
-    mask: ClothingMaskBreath
-    eyes: ClothingEyesGlassesSecurity
-    ears: ClothingHeadsetAltCommand
+    jumpsuit: ClothingUniformJumpsuitDeathSquadOfficer
+    back: ClothingBackpackDeathSquadOfficerFilled
+    mask: ClothingMaskGasSwat
+    eyes: ClothingEyesHudMedical
+    ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitDeathsquad
-    suitstorage: YellowOxygenTankFilled
-    shoes: ClothingShoesChameleonNoSlips
-    id: CentcomPDA
+    suitstorage: JetpackVoidFilled
+    shoes: ClothingShoesBootsMagAdv
+    id: ERTLeaderPDA
     pocket1: EnergySword
     belt: ClothingBeltChiefEngineerFilled
-  innerclothingskirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackDuffelSyndicateAmmo
-  duffelbag: ClothingBackpackDuffelSyndicateAmmo
 
 
 # Syndicate Operative Outfit - Poverty
@@ -162,22 +159,18 @@
 - type: startingGear
   id: CBURNGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBrown
-    back: ClothingBackpackDuffelCBURN
-    mask: ClothingMaskGasExplorer
+    jumpsuit: ClothingUniformJumpsuitCBURNAgent
+    back: ClothingBackpackCBURNAgentFilled
+    mask: ClothingMaskGasSwat
     eyes: ClothingEyesHudMedical
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURN
     shoes: ClothingShoesBootsCombatFilled
     id: CBURNPDA
-    pocket1: RadioHandheld
-    pocket2: WeaponLaserGun
+    pocket1: WeaponLaserGun
     suitstorage: YellowOxygenTankFilled
-    belt: ClothingBeltBandolier
-  innerclothingskirt: ClothingUniformJumpsuitColorBrown
-  satchel: ClothingBackpackDuffelCBURN
-  duffelbag: ClothingBackpackDuffelCBURN
+    belt: ClothingBeltSecurityWebbing
 
 - type: startingGear
   id: BoxingKangarooGear
