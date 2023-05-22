@@ -4,6 +4,9 @@
   antagonist: true
   setPreference: true
   objective: roles-antag-nuclear-operative-objective
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 108000
 
 - type: antag
   id: NukeopsMedic
@@ -11,6 +14,9 @@
   antagonist: true
   setPreference: true
   objective: roles-antag-nuclear-operative-agent-objective
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 216000
 
 - type: antag
   id: NukeopsCommander
@@ -18,3 +24,6 @@
   antagonist: true
   setPreference: true
   objective: roles-antag-nuclear-operative-commander-objective
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 324000
