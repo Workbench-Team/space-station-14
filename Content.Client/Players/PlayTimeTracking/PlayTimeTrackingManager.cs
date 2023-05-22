@@ -1,5 +1,4 @@
-using System.Diagnostics.CodeAnalysis;
-using System.Security.Cryptography.X509Certificates;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Text;
 using Content.Shared.CCVar;
 using Content.Shared.Players.PlayTimeTracking;
@@ -55,7 +54,6 @@ public sealed class PlayTimeTrackingManager
         }*/
     }
 
-  
     public bool IsAllowed(JobPrototype job, [NotNullWhen(false)] out string? reason)
     {
         reason = null;

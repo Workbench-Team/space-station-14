@@ -83,7 +83,6 @@ namespace Content.Shared.Roles
             return true;
         }
 
-
         /// <summary>
         /// Returns a string with the reason why a particular requirement may not be met.
         /// </summary>
