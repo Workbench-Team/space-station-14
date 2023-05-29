@@ -119,13 +119,17 @@ public sealed class AHelpUIController: UIController, IOnStateChanged<GameplaySta
     {
         Logger.InfoS("c.s.go.es.bwoink", $"@{message.UserId}: {message.Text}");
         var localPlayer = _playerManager.LocalPlayer;
+        var bwoink = _playerManager.LocalPlayer?.AhelpSoundEnabled;
         if (localPlayer == null)
         {
             return;
         }
         if (localPlayer.UserId != message.TrueSender)
         {
-            SoundSystem.Play("/Audio/Effects/adminhelp.ogg", Filter.Local());
+            if (bwoink == true)
+            {
+                SoundSystem.Play("/Audio/Effects/adminhelp.ogg", Filter.Local());
+            }
             _clyde.RequestWindowAttention();
         }
 

@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Text;
 using System.Threading;
 using Content.Client.Administration.Managers;
@@ -17,6 +17,8 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Network;
 using Robust.Shared.Utility;
 using Timer = Robust.Shared.Timing.Timer;
+using Robust.Client.Player;
+using TerraFX.Interop.Windows;
 
 namespace Content.Client.Administration.UI.Bwoink
 {
@@ -29,6 +31,7 @@ namespace Content.Client.Administration.UI.Bwoink
         [Dependency] private readonly IClientAdminManager _adminManager = default!;
         [Dependency] private readonly IClientConsoleHost _console = default!;
         [Dependency] private readonly IUserInterfaceManager _ui = default!;
+        [Dependency] private readonly IPlayerManager _playerManager = default!;
         public AdminAHelpUIHandler AHelpHelper = default!;
 
         //private readonly BwoinkSystem _bwoinkSystem;
@@ -164,6 +167,28 @@ namespace Content.Client.Administration.UI.Bwoink
             {
                 uiController.PopOut();
             };
+
+            
+
+            Sound.OnPressed += _ =>
+            {
+                if (Sound.Pressed == true)
+                {
+                    Sound.Pressed = false;
+                    if (_playerManager.LocalPlayer != null)
+                    {
+                        _playerManager.LocalPlayer.AhelpSoundEnabled = false;
+                    }
+                }
+                else if (Sound.Pressed == false)
+                {
+                    Sound.Pressed = true;
+                    if (_playerManager.LocalPlayer != null)
+                    {
+                        _playerManager.LocalPlayer.AhelpSoundEnabled = true;
+                    }
+                }
+            };
         }
 
         private Dictionary<Control, (CancellationTokenSource cancellation, string? originalText)> Confirmations { get; } = new();
@@ -211,6 +236,9 @@ namespace Content.Client.Administration.UI.Bwoink
 
             Respawn.Visible = _adminManager.CanCommand("respawn");
             Respawn.Disabled = !Respawn.Visible;
+
+            Sound.Visible = true;
+            Sound.Disabled = !Respawn.Visible;
         }
 
         private string FormatTabTitle(ItemList.Item li, PlayerInfo? pl = default)
