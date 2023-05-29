@@ -2,6 +2,7 @@ using Content.Shared.Administration;
 using Content.Shared.Administration.Managers;
 using Robust.Client.Console;
 using Robust.Client.Player;
+using Robust.Client.State;
 using Robust.Shared.ContentPack;
 using Robust.Shared.Network;
 using Robust.Shared.Utility;
@@ -21,6 +22,7 @@ namespace Content.Client.Administration.Managers
         private readonly AdminCommandPermissions _localCommandPermissions = new();
 
         public event Action? AdminStatusUpdated;
+        public bool BwoinkSound = true;
 
         public bool IsActive()
         {
@@ -120,6 +122,15 @@ namespace Content.Client.Administration.Managers
             return uid == _player.LocalPlayer?.ControlledEntity
                 ? _adminData
                 : null;
+        }
+        public bool SetBwoink(bool state)
+        {
+            BwoinkSound = state;
+            return BwoinkSound;
+        }
+        public bool GetBwoink()
+        {
+            return BwoinkSound;
         }
     }
 }

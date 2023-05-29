@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Text;
 using System.Threading;
 using Content.Client.Administration.Managers;
@@ -164,6 +164,20 @@ namespace Content.Client.Administration.UI.Bwoink
             {
                 uiController.PopOut();
             };
+
+            Sound.OnPressed += _ =>
+            {
+                if (Sound.Pressed == true)
+                {
+                    _adminManager.SetBwoink(false);
+                    Sound.Pressed = false;
+                }
+                else if (Sound.Pressed == false)
+                {
+                    _adminManager.SetBwoink(true);
+                    Sound.Pressed = true;
+                }
+            };
         }
 
         private Dictionary<Control, (CancellationTokenSource cancellation, string? originalText)> Confirmations { get; } = new();
@@ -211,6 +225,12 @@ namespace Content.Client.Administration.UI.Bwoink
 
             Respawn.Visible = _adminManager.CanCommand("respawn");
             Respawn.Disabled = !Respawn.Visible;
+
+            Respawn.Visible = true;
+            Respawn.Disabled = !Respawn.Visible;
+
+            Sound.Visible = true;
+            Sound.Disabled = !Sound.Visible;
         }
 
         private string FormatTabTitle(ItemList.Item li, PlayerInfo? pl = default)
