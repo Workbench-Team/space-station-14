@@ -226,9 +226,6 @@ namespace Content.Client.Administration.UI.Bwoink
             Respawn.Visible = _adminManager.CanCommand("respawn");
             Respawn.Disabled = !Respawn.Visible;
 
-            Respawn.Visible = true;
-            Respawn.Disabled = !Respawn.Visible;
-
             Sound.Visible = true;
             Sound.Disabled = !Sound.Visible;
         }
