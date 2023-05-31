@@ -1085,3 +1085,25 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsArmory ]
+
+- type: entity
+  parent: AirlockSyndicateGlass
+  id: AirlockSyndicateGlass
+  suffix: Syndicate, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Syndicate"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSyndicate ]
+
+- type: entity
+  parent: AirlockSyndicate
+  id: AirlockSyndicate
+  suffix: Syndicate, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Syndicate"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSyndicate ]
