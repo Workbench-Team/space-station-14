@@ -1,5 +1,5 @@
-ent-WorldChunk = World Chunk
+ent-WorldChunk = Кусок мира
     .desc =
-        It's rude to stare.
-        It's also a bit odd you're looking at the abstract representation of the grid of reality.
+        Невежливо пялиться.
+        Также немного странно, что вы смотрите на абстрактное представление грида реальности.
     .suffix = { "" }
