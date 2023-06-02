@@ -1,3 +1,3 @@
-ent-ReinforcedUraniumWindow = reinforced uranium window
+ent-ReinforcedUraniumWindow = армированное уранивое окно
     .desc = { ent-Window.desc }
     .suffix = { "" }
