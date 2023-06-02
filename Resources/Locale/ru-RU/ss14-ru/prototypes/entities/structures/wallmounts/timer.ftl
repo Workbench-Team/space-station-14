@@ -8,5 +8,5 @@ ent-BrigTimer = бриг таймер
     .desc = Это таймер для бриг клеток.
     .suffix = { "" }
 ent-TimerFrame = каркас таймера
-    .desc = A construction frame for a timer.
+    .desc = Строительный каркас для таймера.
     .suffix = { "" }

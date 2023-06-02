@@ -2,16 +2,16 @@
 
 research-console-menu-title = Консоль R&D
 research-console-menu-unlocked-technologies-label = Изученные технологии
-research-console-menu-main-discipline = Main Discipline: [color={ $color }]{ $name }[/color]
+research-console-menu-main-discipline = Основная дисциплина: [color={ $color }]{ $name }[/color]
 research-console-menu-unlockable-technologies-label = Доступные технологии
 research-console-menu-future-technologies-label = Будущие технологии
-research-console-menu-server-research-button = Research
-research-console-available-text = Researchable Technologies
-research-console-unlocked-text = Unlocked Technologies
-research-console-tier-discipline-info = Tier { $tier }, [color={ $color }]{ $discipline }[/color]
-research-console-tier-info-small = : Tier { $tier }
-research-console-cost = Cost: [color=orchid]{ $amount }[/color]
-research-console-unlocks-list-start = Unlocks:
+research-console-menu-server-research-button = Изучить
+research-console-available-text = Доступные технологии
+research-console-unlocked-text = Изученные технологии
+research-console-tier-discipline-info = Уровень { $tier }, [color={ $color }]{ $discipline }[/color]
+research-console-tier-info-small = : Уровень { $tier }
+research-console-cost = Стоимость: [color=orchid]{ $amount }[/color]
+research-console-unlocks-list-start = Открывает:
 research-console-unlocks-list-entry = - [color=yellow]{ $name }[/color]
 research-console-unlocks-list-entry-generic = - [color=green]{ $text }[/color]
 research-console-menu-research-points-text = Исследовательские очки: { $points }

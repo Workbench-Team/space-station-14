@@ -1,3 +1,3 @@
-ent-CrateCrewMonitoringBoards = { ent-CrateEngineeringSecure }
-    .desc = { ent-CrateEngineeringSecure.desc }
+ent-CrateCrewMonitoringBoards = платы мониторинга экипажа
+    .desc = Имеет две платы консоли мониторинга экипажа и две на замену серверов. Для открытия требуется инженерный доступ.
     .suffix = { "" }

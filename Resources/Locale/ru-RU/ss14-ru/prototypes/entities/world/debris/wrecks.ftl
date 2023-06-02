@@ -1,12 +1,12 @@
-ent-BaseScrapDebris = Кусок мусора
+ent-BaseScrapDebris = Обломок конструкци
     .desc = { ent-BaseDebris.desc }
     .suffix = { "" }
-ent-ScrapDebrisSmall = Маленький кусок мусора
+ent-ScrapDebrisSmall = Маленький обломок конструкци
     .desc = { ent-BaseScrapDebris.desc }
     .suffix = { "" }
-ent-ScrapDebrisMedium = Средний кусок мусора
+ent-ScrapDebrisMedium = Средний обломок конструкции
     .desc = { ent-BaseScrapDebris.desc }
     .suffix = { "" }
-ent-ScrapDebrisLarge = Большой кусок мусора
+ent-ScrapDebrisLarge = Большой обломок конструкции
     .desc = { ent-BaseScrapDebris.desc }
     .suffix = { "" }

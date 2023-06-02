@@ -1,9 +1,9 @@
-ent-SignalTimerElectronics = signal timer electronics
-    .desc = An electronics board used in timer circuitry. Looks like you could use a screwdriver to change the board type.
+ent-SignalTimerElectronics = сигнал таймер (машинная плата)
+    .desc = Машинная плата, используемая в схемах таймера. Похоже, вы могли бы использовать отвертку, чтобы изменить тип платы.
     .suffix = { "" }
-ent-ScreenTimerElectronics = screen timer electronics
+ent-ScreenTimerElectronics = экран таймер (машинная плата)
     .desc = { ent-SignalTimerElectronics.desc }
     .suffix = { "" }
-ent-BrigTimerElectronics = brig timer electronics
+ent-BrigTimerElectronics = бриг таймер (машинная плата)
     .desc = { ent-SignalTimerElectronics.desc }
     .suffix = { "" }
