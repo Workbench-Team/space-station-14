@@ -7,7 +7,7 @@ ui-options-tab-audio = Аудио
 ui-options-tab-network = Сеть
 ui-options-apply = Применить
 ui-options-reset-all = Сбросить всё
-ui-options-default = По-умолчанию
+ui-options-default = По умолчанию
 
 ## Audio menu
 

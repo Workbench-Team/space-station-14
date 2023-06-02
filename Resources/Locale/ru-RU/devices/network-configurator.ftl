@@ -15,7 +15,7 @@ network-configurator-switched-mode = Переключён режим на: { $mo
 network-configurator-save-device = Сохранить устройство
 network-configurator-configure = Настроить
 network-configurator-switch-mode = Переключить режим
-network-configurator-link-defaults = Связать по-умолчанию
+network-configurator-link-defaults = Связать по умолчанию
 network-configurator-start-link = Начать связывание
 network-configurator-link = Связать
 # ui

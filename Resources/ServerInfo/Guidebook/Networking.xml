@@ -19,6 +19,7 @@
     <GuideEntityEmbed Entity="SignalSwitch"/>
     <GuideEntityEmbed Entity="Airlock"/>
   </Box>
-С помощью связывания вы можете соединить выходы устройства, например [color=gray]Вкл[/color] или [color=gray]Выкл[/color], со входами устройства, например входами шлюза[color=gray]Открыть[/color] или [color=gray]Закрыть[/color].
+С помощью связывания вы можете соединить выходы устройства, например [color=gray]Вкл[/color] или [color=gray]Выкл[/color],
+со входами устройства, например шлюза [color=gray]Открыть[/color] или [color=gray]Закрыть[/color].
 Сетевой конфигуратор также используется для связывания устройств друг с другом.
 </Document>
