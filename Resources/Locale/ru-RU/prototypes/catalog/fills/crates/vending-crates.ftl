@@ -60,7 +60,7 @@ ent-CrateVendingMachineRestockChangFilled = ящик пополнения Мис
 ent-CrateVendingMachineRestockDiscountDansFilled = ящик пополнения Дискаунтер Дэна
     .desc = Содержит два набора пополнения торгоматов Дискаунтер Дэна.
 
-ent-CrateVendingMachineRestockDonutFilled = ящик пополнения Пончиков Монкис
+ent-CrateVendingMachineRestockDonutFilled = ящик пополнения Пончиков Монкинс
     .desc = Содержит два набора пополнения торгоматов Пончики Монкинс.
 
 ent-CrateVendingMachineRestockHappyHonkFilled = ящик пополнения Счастливый Хонк
