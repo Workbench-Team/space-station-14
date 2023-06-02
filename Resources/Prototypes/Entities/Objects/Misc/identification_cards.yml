@@ -462,8 +462,8 @@
   - type: IdCard
     jobTitle: Central Commander
   - type: Access
-    tags:
-    - Maintenance
+    groups:
+    - AllAccess
 
 - type: entity
   parent: IDCardStandard
@@ -520,12 +520,41 @@
   id: SyndicateIDCard
   name: Syndicate ID card
   components:
+  - type: AgentIDCard
+  - type: ActivatableUI
+    key: enum.AgentIDCardUiKey.Key
+  - type: UserInterface
+    interfaces:
+      - key: enum.AgentIDCardUiKey.Key
+        type: AgentIDCardBoundUserInterface
   - type: Sprite
     layers:
     - state: syndie
+    - state: idheadofsecurity
   - type: Access
     tags:
     - NuclearOperative
+    - Syndicate
+
+- type: entity
+  parent: IDCardStandard
+  id: SyndicateNuclearIDCard
+  name: Syndicate ID card
+  components:
+  - type: AgentIDCard
+  - type: ActivatableUI
+    key: enum.AgentIDCardUiKey.Key
+  - type: UserInterface
+    interfaces:
+      - key: enum.AgentIDCardUiKey.Key
+        type: AgentIDCardBoundUserInterface
+  - type: Sprite
+    layers:
+    - state: syndie
+    - state: idsecurityofficer
+  - type: Access
+    tags:
+    - Syndicate
 
 - type: entity
   parent: IDCardStandard

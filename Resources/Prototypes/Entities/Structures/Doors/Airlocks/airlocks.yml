@@ -80,6 +80,22 @@
 
 - type: entity
   parent: Airlock
+  id: AirlockSyndicate
+  suffix: Syndicate
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/syndicate.rsi
+
+- type: entity
+  parent: Airlock
+  id: AirlockSyndicateCommand
+  suffix: Syndicate, Command
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/syndicatecommand.rsi
+
+- type: entity
+  parent: Airlock
   id: AirlockMaint
   name: maintenance hatch
   components:
@@ -216,9 +232,8 @@
     sprite: Structures/Doors/Airlocks/Glass/security.rsi
   - type: PaintableAirlock
     group: Glass
-
 - type: entity
-  parent: AirlockSyndicateGlass
+  parent: AirlockGlass
   id: AirlockSyndicateGlass
   suffix: Syndicate
   components:
@@ -228,11 +243,11 @@
     group: Glass
 
 - type: entity
-  parent: AirlockSyndicate
-  id: AirlockSyndicate
-  suffix: Syndicate
+  parent: AirlockGlass
+  id: AirlockSyndicateCommandGlass
+  suffix: Syndicate, Command
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/syndicate.rsi
+    sprite: Structures/Doors/Airlocks/Glass/syndicatecommand.rsi
   - type: PaintableAirlock
     group: Glass

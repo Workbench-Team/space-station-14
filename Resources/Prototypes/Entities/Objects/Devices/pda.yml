@@ -473,7 +473,7 @@
     scanDelay: 1.2
     scanningEndSound:
       path: "/Audio/Items/Medical/healthscanner.ogg"
-      
+
 - type: entity
   parent: BasePDA
   id: ParamedicPDA
@@ -492,7 +492,7 @@
     scanDelay: 0.5
     scanningEndSound:
       path: "/Audio/Items/Medical/healthscanner.ogg"
-      
+
 - type: entity
   parent: BasePDA
   id: ChemistryPDA
@@ -580,11 +580,6 @@
   - type: PDA
     id: CentcomIDCardSyndie
     state: pda-centcom
-    penSlot:
-      startingItem: PenCentcom
-      whitelist:
-        tags:
-        - Write
   - type: PDABorderColor
     borderColor: "#32CD32"
   - type: Icon

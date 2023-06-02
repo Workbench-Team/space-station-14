@@ -12,7 +12,8 @@
     science:     Structures/Doors/Airlocks/Standard/science.rsi
     security:    Structures/Doors/Airlocks/Standard/security.rsi
     virology:    Structures/Doors/Airlocks/Standard/virology.rsi
-
+    syndicate:   Structures/Doors/Airlocks/Standard/syndicate.rsi
+    syndicatecommand: Structures/Doors/Airlocks/Standard/syndicatecommand.rsi
 - type: AirlockGroup
   id: Glass
   iconPriority: 90
@@ -26,6 +27,8 @@
     medical:     Structures/Doors/Airlocks/Glass/medical.rsi
     security:    Structures/Doors/Airlocks/Glass/security.rsi
     virology:    Structures/Doors/Airlocks/Glass/virology.rsi
+    syndicate:   Structures/Doors/Airlocks/Glass/syndicate.rsi
+    syndicatecommand: Structures/Doors/Airlocks/Glass/syndicatecommand.rsi
 
 - type: AirlockGroup
   id: Windoor

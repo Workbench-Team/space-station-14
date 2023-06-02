@@ -111,7 +111,7 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitSyndie
     shoes: ClothingShoesBootsCombatFilled
-    id: AgentIDCard
+    id: SyndicateNuclearIDCard
     pocket1: ExtendedEmergencyOxygenTankFilled
     pocket2: BaseUplinkRadio30TC
     belt: ClothingBeltMilitaryWebbing

@@ -15,12 +15,15 @@
   id: CentcomGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitCentcomOfficial
+    back: ClothingBackpackSatchelCaptainFilled
+    mask: ClothingMaskGasCentcom
     shoes: ClothingShoesBootsJack
     head: ClothingHeadHatCentcom
     eyes: ClothingEyesGlassesSunglasses
-    gloves: ClothingHandsGlovesColorBlack
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterVestKevlar
     id: CentcomPDA
-    ears: ClothingHeadsetAltCommand
-    pocket1: Paper
-    pocket2: Pen
+    ears: ClothingHeadsetAltCentCom
+    belt: WeaponDisabler
+    pocket1: RubberStampCentcom
+    pocket2: BoxFolderBlue

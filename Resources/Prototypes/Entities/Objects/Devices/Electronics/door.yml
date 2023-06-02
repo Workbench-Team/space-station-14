@@ -315,3 +315,11 @@
   components:
   - type: AccessStorage
     access: [["Syndicate"]]
+
+- type: entity
+  id: DoorElectronicsSyndicateCommand
+  parent: DoorElectronics
+  suffix: SyndicateCommand
+  components:
+  - type: AccessStorage
+    access: [["NuclearOperative"]]
