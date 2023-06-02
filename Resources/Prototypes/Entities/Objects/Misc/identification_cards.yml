@@ -520,6 +520,18 @@
   id: SyndicateIDCard
   name: Syndicate ID card
   components:
+  - type: Sprite
+    layers:
+    - state: syndie
+  - type: Access
+    tags:
+    - Syndicate
+
+- type: entity
+  parent: SyndicateIDCard
+  id: SyndicateEliteIDCard
+  name: Syndicate Elite ID card
+  components:
   - type: AgentIDCard
   - type: ActivatableUI
     key: enum.AgentIDCardUiKey.Key
@@ -534,10 +546,9 @@
   - type: Access
     tags:
     - NuclearOperative
-    - Syndicate
 
 - type: entity
-  parent: IDCardStandard
+  parent: SyndicateIDCard
   id: SyndicateNuclearIDCard
   name: Syndicate ID card
   components:
@@ -552,12 +563,9 @@
     layers:
     - state: syndie
     - state: idsecurityofficer
-  - type: Access
-    tags:
-    - Syndicate
 
 - type: entity
-  parent: IDCardStandard
+  parent: SyndicateIDCard
   id: PsychologistIDCard
   name: psychologist ID card
   components:
