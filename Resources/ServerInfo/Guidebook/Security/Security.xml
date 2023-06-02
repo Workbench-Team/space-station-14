@@ -1,26 +1,26 @@
 ﻿<Document>
-  # Security
-  Ensuring the safety of both station and crew is number one for Security. Be it Syndicate Agents, Nuclear Operatives, Infestations or just unruly staff. Security are on hand to maintain order and control crowds.
+  # Служба безопасности
+  Обеспечение безопасности станции и экипажа является первостепенной задачей службы безопасности. Будь то Агенты Синдиката, Ядерные Оперативники, Зомби или просто буйный персонал. Служба безопасности всегда наготове, чтобы сохранить порядок и сдержать толпу.
 
-  ## Gear
-  First we have non-lethals a step above simply telling someone to cooperate with instructions. Both the stunbaton and disabler are capable of limiting the movement of an assailant, whereas handcuffs can be applied to deny a criminal free movement and access to their hands.
+  ## Снаряжение
+  Для начала у нас есть нелетальная экипировка, способная заставить любого следовать правилам. И [color=#f0a105]дубинка-шокер[/color], и [color=#00ffff]дизейблер[/color] способны ограничить движение злоумышленника, в то время как наручники могут быть применены для того, чтобы лишить преступника свободы движения и доступа к своим рукам.
   <Box>
     <GuideEntityEmbed Entity="Stunbaton"/>
     <GuideEntityEmbed Entity="Handcuffs"/>
     <GuideEntityEmbed Entity="WeaponDisabler"/>
   </Box>
 
-  ## Flashes
-  Flashes are an effective tool for dispersing crowds and apprehending particularly evasive targets, with a large area of effect blinding all those without protection.
-  Security and [color=#a4885c]some[/color] other members of staff have eye protection from flashbangs and flashes.
+  ## Вспышки
+  [color=#00fa9a]Вспышки[/color] являются эффективным средством для разгона толпы и задержания особо прытких целей. Они обладают большой площадью поражения и ослепляют всех, кто не имеет защиту глаз.
+  Служба безопасности и [color=#a4885c]некоторые[/color] другие сотрудники имеют средства защиты глаз от [color=#f0a105]светошумовых гранат[/color] и [color=#00fa9a]вспышек[/color].
   <Box>
     <GuideEntityEmbed Entity="Flash"/>
     <GuideEntityEmbed Entity="ClothingEyesGlassesSecurity"/>
     <GuideEntityEmbed Entity="GrenadeFlashBang"/>
 
   </Box>
-  ## Lethals
-  Should the situation dictate, Security have access to laser rifles, shotguns, handguns and automatic rifles able to put down substancial fire against any who would stand against the station.
+  ## Летальное
+  Если ситуация вынудит, служба безопасности имеет доступ к лазерным карабинам, дробовикам, пистолетам и автоматическим винтовкам, способным вести огонь на поражение против любого, кто выступит против станции.
   <Box>
   <GuideEntityEmbed Entity="WeaponLaserCarbine"/>
   <GuideEntityEmbed Entity="WeaponShotgunKammerer"/>
