@@ -36,7 +36,7 @@ network-configurator-tooltip-set = Создание списка целевых 
 network-configurator-tooltip-add = Добавление в список целевых устройств
 network-configurator-tooltip-edit = Редактирование списка целевых устройств
 network-configurator-tooltip-clear = Очистка списка целевых устройств
-network-configurator-tooltip-copy = Копирование списка целевых устройств в мультитул
+network-configurator-tooltip-copy = Копирование списка целевых устройств в удерживаемый инструмент
 network-configurator-tooltip-show = Показывать голографическую визуализацию списка целевых устройств
 # examine
 network-configurator-examine-mode-link = [color=red]Link[/color]

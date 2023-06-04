@@ -1,5 +1,5 @@
 admin-logs-title = Панель админ логов
-admin-logs-count = Показ { $showing }/{ $total } строк
+admin-logs-count = Показ { $showing }/{ $total } строк из {$round}
 admin-logs-pop-out = В окно
 # Round
 admin-logs-round = Раунд{ " " }
