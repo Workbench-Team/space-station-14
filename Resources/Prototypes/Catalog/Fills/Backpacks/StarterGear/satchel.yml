@@ -60,6 +60,16 @@
 
 - type: entity
   noSpawn: true
+  parent: ClothingBackpackSatchelCentcom
+  id: ClothingBackpackSatchelCentcomFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: Paper
+        amount: 4
+- type: entity
+  noSpawn: true
   parent: ClothingBackpackSatchelEngineering
   id: ClothingBackpackSatchelChiefEngineerFilled
   components:

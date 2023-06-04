@@ -131,6 +131,15 @@
 
 - type: entity
   parent: ClothingBackpackSatchel
+  id: ClothingBackpackSatchelCentcom
+  name: centcom satchel
+  description: An exclusive satchel for CentCom officers.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Satchels/centcom.rsi
+
+- type: entity
+  parent: ClothingBackpackSatchel
   id: ClothingBackpackSatchelHydroponics
   name: hydroponics satchel
   description: A satchel made of all natural fibers.
