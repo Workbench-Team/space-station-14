@@ -68,6 +68,7 @@
       - id: BoxSurvival
       - id: Paper
         amount: 4
+
 - type: entity
   noSpawn: true
   parent: ClothingBackpackSatchelEngineering

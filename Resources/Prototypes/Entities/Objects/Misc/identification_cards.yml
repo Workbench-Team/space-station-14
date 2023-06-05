@@ -547,6 +547,7 @@
     tags:
     - NuclearOperative
     - Syndicate
+
 - type: entity
   parent: IDCardStandard
   id: SyndicateNuclearIDCard
