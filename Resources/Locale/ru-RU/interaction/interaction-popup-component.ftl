@@ -42,7 +42,7 @@ petting-failure-bear = Вы протягиваете руку, чтобы пог
 ## Knocking on windows
 
 petting-success-honkbot = Вы гладите { $target } по его скользкой металлической голове.
-petting-success-mimebot = Вы гладите { $target } по его { $target } холодной металлической голове.
+petting-success-mimebot = Вы гладите { $target } по его холодной металлической голове.
 petting-success-cleanbot = Вы гладите { $target } по его влажной металлической голове.
 petting-success-medibot = Вы гладите { $target } по его стерильной металлической голове.
 petting-failure-honkbot = Вы тянетесь погладить { $target }, но { $target } хонкает и уворачивается!
