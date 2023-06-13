@@ -17,7 +17,6 @@ using System.Linq;
 
 namespace Content.Server.Felinid
 {
-
     /// <summary>
     /// "Lick your or other felinid wounds. Reduce bleeding, but unsanitary and can cause diseases."
     /// </summary>
@@ -62,27 +61,38 @@ namespace Content.Server.Felinid
             var performer = ev.Performer;
             var target = ev.Target;
 
+            // Ensure components
             if (
                 !TryComp<WoundLickingComponent>(performer, out var woundLicking) ||
                 !TryComp<BloodstreamComponent>(target, out var bloodstream) ||
                 !TryComp<MobStateComponent>(target, out var mobState)
             )
-            return;
+                return;
 
-            // Logic
+            // Check target
             if (mobState.CurrentState == MobState.Dead) return;
 
-            if (performer == target & !woundLicking.CanSelfApply)
+            // Check "CanApplyOnSelf" field
+            if (performer == target & !woundLicking.CanApplyOnSelf)
             {
                 _popupSystem.PopupEntity(Loc.GetString("lick-wounds-yourself-impossible"),
                     performer, Filter.Entities(performer), true);
                 return;
             }
 
+            // Check "CanApplyOnOther" field
+            if (performer != target & !woundLicking.CanApplyOnOther)
+            {
+                _popupSystem.PopupEntity(Loc.GetString("lick-wounds-other-impossible"),
+                    performer, Filter.Entities(performer), true);
+                return;
+            }
+
             if (woundLicking.ReagentWhitelist.Any() &&
                 !woundLicking.ReagentWhitelist.Contains(bloodstream.BloodReagent)
-            )  return;
+            ) return;
 
+            // Check bloodstream
             if (bloodstream.BleedAmount == 0)
             {
                 if (performer == target)
@@ -97,17 +107,35 @@ namespace Content.Server.Felinid
             }
 
             // Popup
-            var targetIdentity = Identity.Entity(target, EntityManager);
-            var performerIdentity = Identity.Entity(performer, EntityManager);
-            var otherFilter = Filter.Pvs(performer, entityManager: EntityManager)
-                .RemoveWhereAttachedEntity(e => e == performer || e == target);
+            
 
-            _popupSystem.PopupEntity(Loc.GetString("lick-wounds-performer-begin", ("target", targetIdentity)),
+            if (performer == target)
+            {
+                // Applied on yourself
+                var performerIdentity = Identity.Entity(performer, EntityManager);
+                var otherFilter = Filter.Pvs(performer, entityManager: EntityManager)
+                    .RemoveWhereAttachedEntity(e => e == performer);
+
+                _popupSystem.PopupEntity(Loc.GetString("lick-wounds-yourself-begin"),
                 performer, performer);
-            _popupSystem.PopupEntity(Loc.GetString("lick-wounds-target-begin", ("performer", performerIdentity)),
-                target, target);
-            _popupSystem.PopupEntity(Loc.GetString("lick-wounds-other-begin", ("performer", performerIdentity), ("target", targetIdentity)),
-                performer, otherFilter, true);
+                _popupSystem.PopupEntity(Loc.GetString("lick-wounds-yourself-other-begin", ("performer", performerIdentity)),
+                    performer, otherFilter, true);
+            }
+            else
+            {
+                // Applied on someone else
+                var targetIdentity = Identity.Entity(target, EntityManager);
+                var performerIdentity = Identity.Entity(performer, EntityManager);
+                var otherFilter = Filter.Pvs(performer, entityManager: EntityManager)
+                    .RemoveWhereAttachedEntity(e => e == performer || e == target);
+
+                _popupSystem.PopupEntity(Loc.GetString("lick-wounds-performer-begin", ("target", targetIdentity)),
+                performer, performer);
+                _popupSystem.PopupEntity(Loc.GetString("lick-wounds-target-begin", ("performer", performerIdentity)),
+                    target, target);
+                _popupSystem.PopupEntity(Loc.GetString("lick-wounds-other-begin", ("performer", performerIdentity), ("target", targetIdentity)),
+                    performer, otherFilter, true);
+            }
 
             // DoAfter
             var doAfterEventArgs = new DoAfterArgs(performer, woundLicking.Delay, new WoundLickingDoAfterEvent(), performer, target: target)
@@ -128,7 +156,7 @@ namespace Content.Server.Felinid
             {
                 return;
             }
-            if(TryComp<BloodstreamComponent>(args.Args.Target, out var bloodstream))
+            if (TryComp<BloodstreamComponent>(args.Args.Target, out var bloodstream))
                 LickWound(uid, args.Args.Target.Value, bloodstream, comp);
         }
 
@@ -142,32 +170,48 @@ namespace Content.Server.Felinid
 
             var healed = bloodstream.BleedAmount;
             if (comp.MaxHeal - bloodstream.BleedAmount < 0) healed = comp.MaxHeal;
-            var chance = comp.DiseaseChance*(1/comp.MaxHeal*healed);
+            var chance = comp.DiseaseChance * (1 / comp.MaxHeal * healed);
 
-            if(comp.DiseaseChance > 0f & comp.PossibleDiseases.Any())
+            if (comp.DiseaseChance > 0f & comp.PossibleDiseases.Any())
             {
                 if (TryComp<DiseaseCarrierComponent>(target, out var disCarrier))
                 {
-                    var diseaseName = comp.PossibleDiseases[_random.Next(0, comp.PossibleDiseases.Count())];
+                    var diseaseName = comp.PossibleDiseases[_random.Next(0, comp.PossibleDiseases.Count)];
                     _disease.TryInfect(disCarrier, diseaseName, chance);
                 }
             }
 
             _bloodstreamSystem.TryModifyBleedAmount(target, -healed, bloodstream);
 
-            var targetIdentity = Identity.Entity(target, EntityManager);
-            var performerIdentity = Identity.Entity(performer, EntityManager);
-            var otherFilter = Filter.Pvs(performer, entityManager: EntityManager)
-                .RemoveWhereAttachedEntity(e => e == performer || e == target);
+            if (performer == target)
+            {
+                // Applied on yourself
+                var performerIdentity = Identity.Entity(performer, EntityManager);
+                var otherFilter = Filter.Pvs(performer, entityManager: EntityManager)
+                    .RemoveWhereAttachedEntity(e => e == performer);
 
-            _popupSystem.PopupEntity(Loc.GetString("lick-wounds-performer-success", ("target", targetIdentity)),
+                _popupSystem.PopupEntity(Loc.GetString("lick-wounds-yourself-success"),
                 performer, performer);
-            _popupSystem.PopupEntity(Loc.GetString("lick-wounds-target-success", ("performer", performerIdentity)),
-                target, target);
-            _popupSystem.PopupEntity(Loc.GetString("lick-wounds-other-success", ("performer", performerIdentity), ("target", targetIdentity)),
-                performer, otherFilter, true);
+                _popupSystem.PopupEntity(Loc.GetString("lick-wounds-yourself-other-success", ("performer", performerIdentity)),
+                    performer, otherFilter, true);
+            }
+            else
+            {
+                // Applied on someone else
+                var targetIdentity = Identity.Entity(target, EntityManager);
+                var performerIdentity = Identity.Entity(performer, EntityManager);
+                var otherFilter = Filter.Pvs(performer, entityManager: EntityManager)
+                    .RemoveWhereAttachedEntity(e => e == performer || e == target);
+
+                _popupSystem.PopupEntity(Loc.GetString("lick-wounds-performer-success", ("target", targetIdentity)),
+                performer, performer);
+                _popupSystem.PopupEntity(Loc.GetString("lick-wounds-target-success", ("performer", performerIdentity)),
+                    target, target);
+                _popupSystem.PopupEntity(Loc.GetString("lick-wounds-other-success", ("performer", performerIdentity), ("target", targetIdentity)),
+                    performer, otherFilter, true);
+            }
         }
     }
 
-    public sealed class WoundLickingTargetActionEvent : EntityTargetActionEvent {}
+    public sealed class WoundLickingTargetActionEvent : EntityTargetActionEvent { }
 }

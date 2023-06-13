@@ -2,6 +2,7 @@ action-name-lick-wounds = Lick wounds
 action-desc-lick-wounds = Reduce bleeding, but unsanitary and can cause diseases.
 
 lick-wounds-yourself-impossible = You can't lick your own wounds
+lick-wounds-other-impossible = You can't lick someone's wounds
 lick-wounds-yourself-no-wounds = You don't have bleeding
 
 lick-wounds-yourself-begin = You begin licking your wounds

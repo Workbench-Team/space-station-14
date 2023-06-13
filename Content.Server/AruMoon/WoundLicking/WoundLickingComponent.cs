@@ -28,11 +28,19 @@ namespace Content.Server.Felinid
         public float Delay { get; set; } = 5f;
 
         /// <summary>
+        /// If true, then wound-licking can be applied only on yourself
+        /// </summary>
+        [DataField("canApplyOnSelf")]
+        [ViewVariables(VVAccess.ReadWrite)]
+        public bool CanApplyOnSelf { get; set; } = true;
+
+        /// <summary>
         /// If true, then wound-licking can be applied only on other entities
         /// </summary>
-        [DataField("canSelfApply")]
+        [DataField("canApplyOnOther")]
         [ViewVariables(VVAccess.ReadWrite)]
-        public bool CanSelfApply { get; set; } = false;
+        public bool CanApplyOnOther { get; set; } = false;
+
 
 
         /// <summary>
