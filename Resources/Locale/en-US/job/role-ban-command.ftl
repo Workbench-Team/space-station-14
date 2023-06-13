@@ -49,3 +49,4 @@ cmd-roleban-until =  until {$expires}
 # Department bans
 cmd-departmentban-desc = Bans a player from the roles comprising a department
 cmd-departmentban-help = Usage: departmentban <name or user ID> <department> <reason> [duration in minutes, leave out or 0 for permanent ban]
+cmd-departmentban-job-parse = Department {$department} does not exist.

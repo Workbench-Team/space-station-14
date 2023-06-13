@@ -4,6 +4,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using Content.Server.Arumoon.BansNotifications;
 using Content.Server.Database;
 using Content.Shared.Roles;
 using Robust.Server.Player;
@@ -20,6 +21,7 @@ public sealed class RoleBanManager
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IPlayerLocator _playerLocator = default!;
+    [Dependency] private readonly IBansNotificationsSystem _arumoonBans = default!;
 
     private const string JobPrefix = "Job:";
 
@@ -100,7 +102,7 @@ public sealed class RoleBanManager
     #region Job Bans
     public async void CreateJobBan(IConsoleShell shell, string target, string job, string reason, uint minutes)
     {
-        if (!_prototypeManager.TryIndex(job, out JobPrototype? _))
+        if (!_prototypeManager.TryIndex(job, out JobPrototype? jobPrototype))
         {
             shell.WriteError(Loc.GetString("cmd-roleban-job-parse", ("job", job)));
             return;
@@ -108,8 +110,28 @@ public sealed class RoleBanManager
 
         job = string.Concat(JobPrefix, job);
         CreateRoleBan(shell, target, job, reason, minutes);
+
+        var expires = DateTimeOffset.Now + TimeSpan.FromMinutes(minutes);
+        _arumoonBans.RaiseLocalJobBanEvent(target, expires, jobPrototype, reason);
     }
 
+    public async void CreateDepartmentJobBan(IConsoleShell shell, string target, string department, string reason, uint minutes)
+    {
+        if (!_prototypeManager.TryIndex(department, out DepartmentPrototype? departmentProto))
+        {
+            shell.WriteError(Loc.GetString("cmd-departmentban-job-parse", ("department", department)));
+            return;
+        }
+
+        foreach (var role in departmentProto.Roles)
+        {
+            var job = string.Concat(JobPrefix, role);
+            CreateRoleBan(shell, target, job, reason, minutes);
+        }
+
+        var expires = DateTimeOffset.Now + TimeSpan.FromMinutes(minutes);
+        _arumoonBans.RaiseLocalDepartmentBanEvent(target, expires, departmentProto, reason);
+    }
     public HashSet<string>? GetJobBans(NetUserId playerUserId)
     {
         if (!_cachedRoleBans.TryGetValue(playerUserId, out var roleBans))

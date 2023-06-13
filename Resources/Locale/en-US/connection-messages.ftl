@@ -34,6 +34,12 @@ ban-banned-1 = You, or another user of this computer or connection, are banned f
 ban-banned-2 = The ban reason is: "{$reason}"
 ban-banned-3 = Attempts to circumvent this ban such as creating a new account will be logged.
 
+discord-expires-at = until { $date }
+discord-permanent = permanently
+discord-ban-msg = Player { $username } has banned { $expires } for reason: { $reason }
+discord-jobban-msg = Player { $username } has banned for role { $role } { $expires } for reason: { $reason }
+discord-departmentban-msg = Player { $username } has banned for department { $department } { $expires } for reason: { $reason }
+
 soft-player-cap-full = The server is full!
 panic-bunker-account-denied = This server is in panic bunker mode. New connections are not being accepted at this time. Try again later
 panic-bunker-account-denied-reason = This server is in panic bunker mode and you were rejected. Reason: "{$reason}"

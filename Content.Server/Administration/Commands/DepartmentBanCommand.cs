@@ -55,10 +55,7 @@ public sealed class DepartmentBanCommand : IConsoleCommand
 
         var banManager = IoCManager.Resolve<RoleBanManager>();
 
-        foreach (var job in departmentProto.Roles)
-        {
-            banManager.CreateJobBan(shell, target, job, reason, minutes);
-        }
+        banManager.CreateDepartmentJobBan(shell, target, department, reason, minutes);
     }
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)

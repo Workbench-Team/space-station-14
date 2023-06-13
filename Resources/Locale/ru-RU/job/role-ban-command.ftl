@@ -45,3 +45,4 @@ cmd-roleban-until = до { $expires }
 # Department bans
 cmd-departmentban-desc = Запрещает пользователю играть на ролях, входящих в отдел
 cmd-departmentban-help = Использование: departmentban <name or user ID> <department> <reason> [продолжительность в минутах, не указывать или 0 для навсегда]
+cmd-departmentban-job-parse = Департамент {$department} не существует.
