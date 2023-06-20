@@ -72,6 +72,14 @@
 
 - type: entity
   parent: Airlock
+  id: AirlockCentcom
+  suffix: Centcom
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/centcom.rsi
+
+- type: entity
+  parent: Airlock
   id: AirlockSecurity
   suffix: Security
   components:
@@ -216,6 +224,16 @@
 
 - type: entity
   parent: AirlockGlass
+  id: AirlockCentcomGlass
+  suffix: Cemtcom
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/centcom.rsi
+  - type: PaintableAirlock
+    group: Glass
+
+- type: entity
+  parent: AirlockGlass
   id: AirlockCommandGlass
   suffix: Command
   components:
@@ -233,6 +251,7 @@
     sprite: Structures/Doors/Airlocks/Glass/security.rsi
   - type: PaintableAirlock
     group: Glass
+
 - type: entity
   parent: AirlockGlass
   id: AirlockSyndicateGlass

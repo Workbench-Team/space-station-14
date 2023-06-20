@@ -25,15 +25,6 @@
         - PonderingOrb
         - Skub
         - DrinkMugDog
-        - ClothingNeckLGBTPin
-        - ClothingNeckAromanticPin
-        - ClothingNeckAsexualPin
-        - ClothingNeckBisexualPin
-        - ClothingNeckIntersexPin
-        - ClothingNeckLesbianPin
-        - ClothingNeckNonBinaryPin
-        - ClothingNeckPansexualPin
-        - ClothingNeckTransPin
         - CluwneHorn
         - ClothingMaskRat
       rareChance: 0.01
@@ -129,5 +120,6 @@
         - LidSalami
         - ClothingEyesBlindfold
         - PortalRadio
+        - Station17Radio
       chance: 0.6
       offset: 0.0

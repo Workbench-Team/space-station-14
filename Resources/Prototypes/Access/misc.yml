@@ -1,6 +1,7 @@
 - type: accessGroup
   id: AllAccess
   tags:
+  - Centcom
   - EmergencyShuttleRepealAll
   - Captain
   - HeadOfPersonnel
@@ -30,3 +31,10 @@
   - Chapel
   - Hydroponics
   - Atmospherics
+
+- type: accessGroup
+  id: AllSyndicateAccess
+  tags:
+  - Syndicate
+  - NuclearOperative
+

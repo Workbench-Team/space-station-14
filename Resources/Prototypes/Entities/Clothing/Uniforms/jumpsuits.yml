@@ -1148,3 +1148,25 @@
     sprite: Clothing/Uniforms/Jumpsuit/hawaiyellow.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/hawaiyellow.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformHECU
+  name: HECU uniform
+  description: The HECU jumpsuit is used to protect against foreign environmental factors (besides, real American patriots like to wear it)
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/hecu.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/hecu.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCitizen
+  name: Citizen jumpsuit
+  description: jumpsuit that will definitely make you look like a victim
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/civilian.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/civilian.rsi
