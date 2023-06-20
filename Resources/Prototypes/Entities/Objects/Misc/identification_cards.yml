@@ -526,6 +526,7 @@
     - state: syndie
   - type: Access
     tags:
+    - NuclearOperative
     - Syndicate
 
 - type: entity
