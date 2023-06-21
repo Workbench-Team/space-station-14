@@ -323,11 +323,3 @@
   components:
   - type: AccessStorage
     access: [["NuclearOperative"]]
-
-- type: entity
-  id: DoorElectronicsCentcom
-  parent: DoorElectronics
-  suffix: Centcom
-  components:
-  - type: AccessStorage
-    access: [["Centcom"]]
