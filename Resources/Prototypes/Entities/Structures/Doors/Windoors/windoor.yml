@@ -190,6 +190,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCommand ]
+
 - type: entity
   parent: WindoorSecure
   id: WindoorCaptainLocked
