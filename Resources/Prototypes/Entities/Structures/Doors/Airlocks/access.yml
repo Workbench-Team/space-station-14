@@ -133,17 +133,6 @@
 
 - type: entity
   parent: AirlockExternal
-  id: AirlockExternalCentcomLocked
-  suffix: External, Centcom, Locked
-  components:
-  - type: AccessReaderBoard
-#    access: [["Centcom"]]
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsCentcom ]
-
-- type: entity
-  parent: AirlockExternal
   id: AirlockExternalSyndicateLocked
   suffix: External, Syndicate, Locked
   components:
@@ -284,17 +273,6 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsMedicalScience ]
-
-- type: entity
-  parent: AirlockCentcom
-  id: AirlockCentcomLocked
-  suffix: Centcom, Locked
-  components:
-  - type: AccessReaderBoard
-#    access: [["Centcom"]]
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsCentcom ]
 
 - type: entity
   parent: AirlockCommand
@@ -540,17 +518,6 @@
 
 - type: entity
   parent: AirlockExternalGlass
-  id: AirlockExternalGlassCentcomLocked
-  suffix: External, Centcom, Locked
-  components:
-  - type: AccessReaderBoard
-#    access: [["Centcom"]]
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsCentcom ]
-
-- type: entity
-  parent: AirlockExternalGlass
   id: AirlockExternalGlassAtmosphericsLocked
   suffix: External, Glass, Atmospherics, Locked
   components:
@@ -702,17 +669,6 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCommand ]
-
-- type: entity
-  parent: AirlockCentcomGlass
-  id: AirlockCentcomGlassLocked
-  suffix: Centcom, Locked
-  components:
-  - type: AccessReaderBoard
-#    access: [["Centcom"]]
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsCentcom ]
 
 - type: entity
   parent: AirlockCommandGlass
@@ -1163,17 +1119,6 @@
     - type: GridFill
 
 #HighSecDoors
-- type: entity
-  parent: HighSecDoor
-  id: HighSecCentcomLocked
-  suffix: Centcom, Locked
-  components:
-  - type: AccessReaderBoard
-#    access: [["Centcom"]]
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsCentcom ]
-
 - type: entity
   parent: HighSecDoor
   id: HighSecCommandLocked
