@@ -347,7 +347,7 @@
 
 #Cybersun Juggernaut Hardsuit
 - type: entity
-  parent: ClothingHeadHardsuitBase
+  parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitCybersun
   noSpawn: true
   name: cybersun juggernaut helmet
@@ -357,6 +357,8 @@
     sprite: Clothing/Head/Hardsuits/cybersun.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/cybersun.rsi
+  - type: PointLight
+    color: red
   - type: PressureProtection
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
