@@ -14,7 +14,7 @@
     volume: -6
     range: 4
     sound:
-      path: /Audio/Items/unityFM.ogg
+      path: /Audio/Items/halfliferadio.ogg
   - type: PointLight
     radius: 1.3
     color: "#0E8489"
