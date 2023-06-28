@@ -7,3 +7,6 @@ ent-BodyBag_Folded = body bag
 ent-Ash = ash
     .desc = This used to be something, but now it's not.
     .suffix = { "" }
+ent-Ectoplasm = ectoplasm
+    .desc = Much less deadly in this form.
+    .suffix = { "" }

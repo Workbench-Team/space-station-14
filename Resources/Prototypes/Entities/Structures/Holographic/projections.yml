@@ -21,7 +21,6 @@
   - type: Sprite
     sprite: Structures/Holo/wetfloor.rsi
     state: icon
-    netsync: false
   - type: TimedDespawn
     lifetime: 90
 
@@ -34,7 +33,6 @@
   - type: Sprite
     sprite: Structures/Holo/holofan.rsi
     state: icon
-    netsync: false
   - type: Fixtures
     fixtures:
       fix1:
@@ -112,8 +110,13 @@
 - type: entity
   id: HolosignSecurity
   parent: HolosignWetFloor
+<<<<<<< HEAD
   name: holobarrier
   description: A short holographic barrier which can only be passed by walking.
+=======
+  name: holographic barrier
+  description: A barrier of hard light that blocks movement, but pretty weak.
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07
   components:
     - type: Physics
       bodyType: Static
@@ -121,7 +124,6 @@
     - type: Sprite
       sprite: Structures/Holo/security.rsi
       state: icon
-      netsync: false
     - type: Fixtures
       fixtures:
         fix1:

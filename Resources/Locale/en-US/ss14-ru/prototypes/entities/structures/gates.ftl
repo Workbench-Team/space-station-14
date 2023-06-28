@@ -1,3 +1,9 @@
-ent-OrGate = MS7432
-    .desc = Dual 2-Input OR Gate
+ent-BaseLogicItem = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
+    .suffix = { "" }
+ent-LogicGate = logic gate
+    .desc = A logic gate with two inputs and one output. Technicians can change its mode of operation using a screwdriver.
+    .suffix = { "" }
+ent-EdgeDetector = edge detector
+    .desc = Splits rising and falling edges into unique pulses and detects how edgy you are.
     .suffix = { "" }

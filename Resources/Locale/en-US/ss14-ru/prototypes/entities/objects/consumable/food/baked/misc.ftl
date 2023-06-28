@@ -64,3 +64,6 @@ ent-FoodBakedPretzel = poppy pretzel
 ent-FoodBakedCannoli = cannoli
     .desc = A Sicilian treat that makes you into a wise guy.
     .suffix = { "" }
+ent-FoodBakedDumplings = dumplings
+    .desc = Average recipe for meat in doughs.
+    .suffix = { "" }

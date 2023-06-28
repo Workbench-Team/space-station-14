@@ -19,4 +19,8 @@ fibers-orange = оранжевые
 fibers-white = белые
 fibers-yellow = жёлтые
 fibers-regal-blue = королевские синие
+<<<<<<< HEAD
 fibers-rainbow = радужные
+=======
+fibers-olive = оливковые
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07

@@ -21,4 +21,8 @@ fibers-orange = orange
 fibers-white = white
 fibers-yellow = yellow
 fibers-regal-blue = regal blue
+<<<<<<< HEAD
 fibers-rainbow = rainbow
+=======
+fibers-olive = olive
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07

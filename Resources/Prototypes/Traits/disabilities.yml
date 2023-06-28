@@ -44,8 +44,16 @@
     - type: Muted
 
 - type: trait
+<<<<<<< HEAD
   id: Colorblindness
   name: trait-colorblindness-name
   description: trait-colorblindness-desc
   components:
     - type: DogVision
+=======
+  id: Uncloneable
+  name: trait-uncloneable-name
+  description: trait-uncloneable-desc
+  components:
+    - type: Uncloneable
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07

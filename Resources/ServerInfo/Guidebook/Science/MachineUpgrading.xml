@@ -15,7 +15,11 @@
 Части более высокого уровня могут быть изучены и созданы, получены с помощью артефактов, либо найдены на обломках.
 <Box>
 <GuideEntityEmbed Entity="AdvancedMatterBinStockPart"/>
+</Box>
+<Box>
 <GuideEntityEmbed Entity="SuperMatterBinStockPart"/>
+</Box>
+<Box>
 <GuideEntityEmbed Entity="BluespaceMatterBinStockPart"/>
 </Box>
 

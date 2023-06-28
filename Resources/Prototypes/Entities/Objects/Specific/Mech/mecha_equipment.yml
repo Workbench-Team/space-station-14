@@ -29,6 +29,7 @@
       item-container: !type:Container
 
 - type: entity
+<<<<<<< HEAD
   id: MechEquipmentDrill
   parent: BaseMechEquipment
   name: drill
@@ -44,6 +45,27 @@
     gatheringTime: 0.8
     MaxGatheringEntities: 2
   - type: ItemCooldown
+=======
+  id: MechEquipmentGrabberSmall
+  parent: BaseMechEquipment
+  name: small hydraulic clamp
+  description: Gives the mech the ability to grab things and drag them around.
+  components:
+  - type: Sprite
+    state: mecha_clamp_small
+  - type: MechGrabber
+    maxContents: 4
+    grabDelay: 3
+    grabEnergyDelta: 20
+  - type: Tag
+    tags:
+    - SmallMech
+  - type: UIFragment
+    ui: !type:MechGrabberUi
+  - type: ContainerContainer
+    containers:
+      item-container: !type:Container
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07
 
 - type: entity
   id: MechEquipmentHorn

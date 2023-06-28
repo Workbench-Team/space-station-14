@@ -12,7 +12,6 @@
   - type: Sprite
     sprite: Objects/Devices/Holoprojectors/custodial.rsi
     state: icon
-    netsync: false
   - type: Tag
     tags:
       - HolosignProjector
@@ -29,7 +28,6 @@
   - type: Sprite
     sprite: Objects/Devices/Holoprojectors/atmos.rsi
     state: icon
-    netsync: false
   - type: Tag
     tags:
       - HolofanProjector
@@ -61,6 +59,7 @@
   name: security holobarrier projector
   description: A holographic projector that creates holographic security barriers.
   components:
+<<<<<<< HEAD
   - type: HolosignProjector
     signProto: HolosignSecurity
     maxSigns: 6
@@ -92,3 +91,16 @@
 #      - HolosignProjector
 #  - type: StaticPrice
 #    price: 80
+=======
+    - type: HolosignProjector
+      signProto: HolosignSecurity
+      chargeUse: 120
+    - type: Sprite
+      sprite: Objects/Devices/Holoprojectors/security.rsi
+      state: icon
+    - type: Tag
+      tags:
+        - HolofanProjector
+    - type: StaticPrice
+      price: 80
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07

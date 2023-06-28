@@ -1,3 +1,6 @@
+ent-VirtualElectrocutionLoadBase = { "" }
+    .desc = { "" }
+    .suffix = { "" }
 ent-VirtualElectrocutionLoadHVPower = ЭЛЕКТРИЧЕСКИЙ УДАР, ВЫ НЕ ДОЛЖНЫ ВИДЕТЬ ЭТО
     .desc = { "" }
     .suffix = { "" }

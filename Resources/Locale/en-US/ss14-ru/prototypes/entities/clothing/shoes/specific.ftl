@@ -34,3 +34,6 @@ ent-ClothingShoesJester = jester shoes
 ent-ClothingShoesCluwne = cluwne shoes
     .desc = Cursed pair of cluwne shoes.
     .suffix = Unremoveable
+ent-ClothingShoesClownLarge = large clown shoes
+    .desc = When you need to stand out in a room full of clowns!
+    .suffix = { "" }

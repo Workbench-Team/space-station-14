@@ -9,6 +9,10 @@ namespace Content.Server.Administration.Commands;
 [AdminCommand(AdminFlags.Ban)]
 public sealed class DepartmentBanCommand : IConsoleCommand
 {
+    [Dependency] private readonly IPlayerLocator _locater = default!;
+    [Dependency] private readonly IPrototypeManager _protoManager = default!;
+    [Dependency] private readonly RoleBanManager _bans = default!;
+
     public string Command => "departmentban";
     public string Description => Loc.GetString("cmd-departmentban-desc");
     public string Help => Loc.GetString("cmd-departmentban-help");
@@ -46,16 +50,29 @@ public sealed class DepartmentBanCommand : IConsoleCommand
                 return;
         }
 
-        var protoManager = IoCManager.Resolve<IPrototypeManager>();
-
-        if (!protoManager.TryIndex<DepartmentPrototype>(department, out var departmentProto))
+        if (!_protoManager.TryIndex<DepartmentPrototype>(department, out var departmentProto))
         {
             return;
         }
 
-        var banManager = IoCManager.Resolve<RoleBanManager>();
+        var located = await _locater.LookupIdByNameOrIdAsync(target);
 
+        if (located == null)
+        {
+            shell.WriteError(Loc.GetString("cmd-roleban-name-parse"));
+            return;
+        }
+
+<<<<<<< HEAD
         banManager.CreateDepartmentJobBan(shell, target, department, reason, minutes);
+=======
+        foreach (var job in departmentProto.Roles)
+        {
+            _bans.CreateJobBan(shell, located, job, reason, minutes);
+        }
+
+        _bans.SendRoleBans(located);
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07
     }
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)

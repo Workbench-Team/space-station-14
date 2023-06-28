@@ -19,3 +19,6 @@ ent-WeaponWandPolymorphDoor = wand of entrance
 ent-WeaponWandCluwne = wand of cluwning
     .desc = Make their situation worse by turning them into a cluwne.
     .suffix = { "" }
+ent-WeaponWandPolymorphBread = magic bread wand
+    .desc = Turn all your friends into bread! Your boss! Your enemies! Your dog! Make everything bread!
+    .suffix = { "" }

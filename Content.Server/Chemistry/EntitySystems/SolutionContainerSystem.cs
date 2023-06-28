@@ -1,5 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Text;
 using Content.Server.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry;
 using Content.Shared.Chemistry.Components;
@@ -66,7 +67,9 @@ public sealed partial class SolutionContainerSystem : EntitySystem
         SolutionContainerManagerComponent? solutionsManager = null;
         if (!Resolve(args.Examined, ref solutionsManager)
             || !solutionsManager.Solutions.TryGetValue(examinableComponent.Solution, out var solutionHolder))
+        {
             return;
+        }
 
         var primaryReagent = solutionHolder.GetPrimaryReagentId();
 
@@ -76,7 +79,7 @@ public sealed partial class SolutionContainerSystem : EntitySystem
             return;
         }
 
-        if (!_prototypeManager.TryIndex(primaryReagent, out ReagentPrototype? proto))
+        if (!_prototypeManager.TryIndex(primaryReagent, out ReagentPrototype? primary))
         {
             Logger.Error(
                 $"{nameof(Solution)} could not find the prototype associated with {primaryReagent}.");
@@ -92,12 +95,62 @@ public sealed partial class SolutionContainerSystem : EntitySystem
             ("wordedAmount", Loc.GetString(solutionHolder.Contents.Count == 1
                 ? "shared-solution-container-component-on-examine-worded-amount-one-reagent"
                 : "shared-solution-container-component-on-examine-worded-amount-multiple-reagents")),
+<<<<<<< HEAD
             ("desc", proto.LocalizedPhysicalDescription)));
         
         // ReagentVisor Behaviour
         var ev = new ReagentVisorAttemptEvent(solutionHolder);
         RaiseLocalEvent(args.Examiner, ev);
         if (ev.Handled && ev.Text != null) args.PushMarkup(ev.Text);
+=======
+            ("desc", primary.LocalizedPhysicalDescription)));
+
+        // Add descriptions of immediately recognizable reagents, like water or beer
+        var recognized = new List<ReagentPrototype>();
+        foreach (var (id, _) in solutionHolder)
+        {
+            if (!_prototypeManager.TryIndex<ReagentPrototype>(id, out var proto))
+            {
+                continue;
+            }
+
+            if (!proto.Recognizable)
+            {
+                continue;
+            }
+
+            recognized.Add(proto);
+        }
+
+        // Skip if there's nothing recognizable
+        if (recognized.Count == 0)
+            return;
+
+        var msg = new StringBuilder();
+        foreach (var reagent in recognized)
+        {
+            string part;
+            if (reagent == recognized[0])
+            {
+                part = "examinable-solution-recognized-first";
+            }
+            else if (reagent == recognized[^1])
+            {
+                // this loc specifically  requires space to be appended, fluent doesnt support whitespace
+                msg.Append(' ');
+                part = "examinable-solution-recognized-last";
+            }
+            else
+            {
+                part = "examinable-solution-recognized-next";
+            }
+
+            msg.Append(Loc.GetString(part, ("color", reagent.SubstanceColor.ToHexNoAlpha()),
+                ("chemical", reagent.LocalizedName)));
+        }
+
+        args.PushMarkup(Loc.GetString("examinable-solution-has-recognizable-chemicals", ("recognizedString", msg.ToString())));
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07
     }
 
     public void UpdateAppearance(EntityUid uid, Solution solution,

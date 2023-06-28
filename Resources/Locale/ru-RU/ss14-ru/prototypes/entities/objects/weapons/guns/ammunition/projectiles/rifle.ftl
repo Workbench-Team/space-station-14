@@ -10,3 +10,6 @@ ent-BulletRiflePractice = пуля (0.20 винтовочная учебная)
 ent-BulletRifleRubber = пуля (0.20 винтовочная резиновая)
     .desc = { ent-BaseBulletRubber.desc }
     .suffix = { "" }
+ent-BulletRifleIncendiary = пуля (0.20 винтовочная зажигательная)
+    .desc = { ent-BaseBulletIncendiary.desc }
+    .suffix = { "" }

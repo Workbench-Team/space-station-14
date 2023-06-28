@@ -6,7 +6,7 @@ namespace Content.Client.PDA;
 
 [Virtual]
 [GenerateTypedNameReferences]
-public partial class PDAWindow : BaseWindow
+public partial class PdaWindow : BaseWindow
 {
 
     public string? BorderColor
@@ -22,7 +22,7 @@ public partial class PDAWindow : BaseWindow
 
         set
         {
-            AccentH.ModulateSelfOverride = Color. FromHex(value, Color.White);
+            AccentH.ModulateSelfOverride = Color.FromHex(value, Color.White);
             AccentH.Visible = value != null;
         }
     }
@@ -33,12 +33,12 @@ public partial class PDAWindow : BaseWindow
 
         set
         {
-            AccentV.ModulateSelfOverride = Color. FromHex(value, Color.White);
+            AccentV.ModulateSelfOverride = Color.FromHex(value, Color.White);
             AccentV.Visible = value != null;
         }
     }
 
-    public PDAWindow()
+    public PdaWindow()
     {
         RobustXamlLoader.Load(this);
 

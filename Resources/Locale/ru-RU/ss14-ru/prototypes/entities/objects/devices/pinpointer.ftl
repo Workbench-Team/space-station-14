@@ -4,3 +4,6 @@ ent-PinpointerBase = поисковый навигатор
 ent-PinpointerNuclear = поисковый навигатор
     .desc = { ent-PinpointerBase.desc }
     .suffix = { "" }
+ent-PinpointerUniversal = универсиальный поисковый навигатор
+    .desc = Портативное устройство слежения, которое фиксирует любой физический объект когда выключен.
+    .suffix = { "" }

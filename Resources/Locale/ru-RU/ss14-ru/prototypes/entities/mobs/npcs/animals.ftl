@@ -43,18 +43,21 @@ ent-MobKangaroo = кенгуру
 ent-MobBoxingKangaroo = кенгуру-боксёр
     .desc = { ent-MobKangaroo.desc }
     .suffix = { "" }
-ent-MobKangarooBoxer = кенгуру-боксёр
-    .desc = Крупное сумчатое травоядное. У него мощные задние лапы и... боксерские перчатки?
-    .suffix = { "" }
 ent-MobMonkey = обезьяна
     .desc = Новая церковь неодарвинистов действительно верит, что КАЖДОЕ животное произошло от обезьяны. На вкус они как свинина, а убивать их весело и приятно.
     .suffix = { "" }
 ent-MobGuidebookMonkey = обезьяна-путеводитель
     .desc = Надеюсь, полезная обезьяна, чья единственная цель в жизни — чтобы Вы нажали на нее. Это считается, что обезьяна обучает Вас?
     .suffix = { "" }
+<<<<<<< HEAD
 ent-MobMothroach = таракан
     .desc = Бззз!
     .suffix = { "" }
+=======
+ent-MobMouseAdmeme = { ent-MobMouse }
+    .suffix = Адмемы
+    .desc = { ent-MobMouse.desc }
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07
 ent-MobMouse = мышь
     .desc = Пии!
     .suffix = { "" }
@@ -87,6 +90,9 @@ ent-MobSnake = змея
     .suffix = { "" }
 ent-MobGiantSpider = тарантул
     .desc = Общепризнанно, что это буквально худшее существо на свете.
+    .suffix = { "" }
+ent-MobClownSpider = паук-клоун
+    .desc = Сочетает в себе две самые страшные вещи на свете - пауков и клоунов.
     .suffix = { "" }
 ent-MobGiantSpiderAngry = тарантул
     .desc = { ent-MobGiantSpider.desc }

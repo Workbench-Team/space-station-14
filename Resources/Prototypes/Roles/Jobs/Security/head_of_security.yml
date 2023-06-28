@@ -6,10 +6,23 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobWarden
+<<<<<<< HEAD
       time: 18000
     - !type:DepartmentTimeRequirement
       department: Security
       time: 72000
+=======
+      time: 21600 #6 hrs
+    - !type:RoleTimeRequirement
+      role: JobDetective
+      time: 7200 #2 hrs
+    - !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 36000 #10 hrs
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 108000 # 30 hrs
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07
   weight: 10
   startingGear: HoSGear
   icon: "HeadOfSecurity"

@@ -8,7 +8,7 @@ network-configurator-device-already-saved = Сетевое устройство:
 network-configurator-device-access-denied = Нет доступа!
 network-configurator-link-mode-started = Начато связывание устройства: { $device }
 network-configurator-link-mode-stopped = Связывание прекращено.
-network-configurator-mode-link = Связывание	
+network-configurator-mode-link = Связывание
 network-configurator-mode-list = Список
 network-configurator-switched-mode = Переключён режим на: { $mode }
 # Verbs

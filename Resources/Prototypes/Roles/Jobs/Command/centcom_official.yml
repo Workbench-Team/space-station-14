@@ -24,5 +24,10 @@
     outerClothing: ClothingOuterVestKevlar
     id: CentcomPDA
     ears: ClothingHeadsetAltCommand
+<<<<<<< HEAD
     pocket1: RubberStampCentcom
     pocket2: BoxFolderBlue
+=======
+    pocket1: PaperOffice
+    pocket2: PenCentcom
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07

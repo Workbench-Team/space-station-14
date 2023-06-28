@@ -34,3 +34,6 @@ ent-ClothingShoesJester = шутовские туфли
 ent-ClothingShoesCluwne = туфли клувна
     .desc = Проклятая пара туфель клувна.
     .suffix = Неснимаемые
+ent-ClothingShoesClownLarge = большие клоунские ботинки
+    .desc = Когда вам нужно выделиться в комнате, полной клоунов!
+    .suffix = { "" }

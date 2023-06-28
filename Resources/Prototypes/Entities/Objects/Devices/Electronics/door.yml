@@ -19,6 +19,7 @@
       tags:
         - DoorElectronics
         - DroneUsable
+<<<<<<< HEAD
 
 - type: entity
   id: DoorElectronicsService
@@ -323,3 +324,7 @@
   components:
   - type: AccessStorage
     access: [["NuclearOperative"]]
+=======
+    - type: StaticPrice
+      price: 55
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07

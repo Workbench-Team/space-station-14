@@ -49,6 +49,22 @@
     Plastic: 300
 
 - type: latheRecipe
+  id: Brutepack
+  result: Brutepack1
+  completetime: 1
+  materials:
+    Steel: 25
+    Plastic: 25
+
+- type: latheRecipe
+  id: Ointment
+  result: Ointment1
+  completetime: 1
+  materials:
+    Glass: 25
+    Plastic: 25
+
+- type: latheRecipe
   id: HandheldCrewMonitor
   result: HandheldCrewMonitorEmpty
   completetime: 2
@@ -171,6 +187,7 @@
   result: ClothingEyesHudMedical
   completetime: 2
   materials:
+<<<<<<< HEAD
     Glass: 100
     Steel: 100
 
@@ -179,4 +196,6 @@
   result: HandLabeler
   completetime: 2
   materials:
+=======
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07
     Plastic: 100

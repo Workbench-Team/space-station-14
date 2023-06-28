@@ -130,11 +130,11 @@
 - type: damageModifierSet
   id: Zombie #Blunt resistent and immune to biological threats, but can be hacked apart and burned
   coefficients:
-    Blunt: 0.5
-    Slash: 0.7
-    Piercing: 0.7
+    Blunt: 0.7
+    Slash: 1.1
+    Piercing: 0.9
     Shock: 1.5
-    Cold: 0.2
+    Cold: 0.3
     Heat: 2.0
     Poison: 0.0
     Radiation: 0.0
@@ -193,6 +193,7 @@
     Cellular: 0.0
     Radiation: 0.2
     Caustic: 0.0
+<<<<<<< HEAD
 
 # Represents what a riot shield should block passively
 # Each shield will probably have their own passive and active modifier sets
@@ -353,3 +354,5 @@
     Heat: 0
     Poison: 0.0
     Radiation: 0.0
+=======
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07

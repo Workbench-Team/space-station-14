@@ -19,3 +19,6 @@ ent-MagazineBoxRiflePractice = ammunition box (.20 rifle practice)
 ent-MagazineBoxRifleRubber = ammunition box (.20 rifle rubber)
     .desc = { ent-BaseMagazineBoxRifle.desc }
     .suffix = { "" }
+ent-MagazineBoxRifleIncendiary = ammunition box (.20 rifle incendiary)
+    .desc = { ent-BaseMagazineBoxRifle.desc }
+    .suffix = { "" }

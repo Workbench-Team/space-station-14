@@ -1,6 +1,3 @@
-ent-CrateMedicalDefib = { ent-CrateMedical }
-    .desc = { ent-CrateMedical.desc }
-    .suffix = { "" }
 ent-CrateMedicalSupplies = { ent-CrateMedical }
     .desc = { ent-CrateMedical.desc }
     .suffix = { "" }

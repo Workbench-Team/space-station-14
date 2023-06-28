@@ -1,9 +1,6 @@
 ent-ClothingOuterSuitBomb = сапёрный костюм
     .desc = Тяжелый костюм, предназначенный для защиты от осколков и давления, создаваемого взрывом.
     .suffix = { "" }
-ent-ClothingOuterSuitEmergency = аварийный костюм
-    .desc = Аварийный костюм на случай... аварии.
-    .suffix = { "" }
 ent-ClothingOuterSuitFire = пожарный костюм
     .desc = Костюм, который помогает защититься от огня и жары.
     .suffix = { "" }

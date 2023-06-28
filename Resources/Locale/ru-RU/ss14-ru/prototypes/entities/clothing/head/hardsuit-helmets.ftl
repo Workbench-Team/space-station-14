@@ -1,3 +1,6 @@
+ent-ClothingHeadHelmetHardsuitBasic = базовый шлем скафандра
+    .desc = Базовый шлем для скафандра, обеспечивающий незначительную защиту от большинства повреждений.
+    .suffix = { "" }
 ent-ClothingHeadHelmetHardsuitAtmos = шлем скафандра атмос-техника
     .desc = Специальный шлем скафандра, предназначенный для работы в условиях низкого давления и высокой температуры.
     .suffix = { "" }
@@ -15,9 +18,6 @@ ent-ClothingHeadHelmetHardsuitEngineering = шлем скафандра инже
     .suffix = { "" }
 ent-ClothingHeadHelmetHardsuitEngineeringWhite = шлем скафандра старшего инженера
     .desc = Специальный шлем скафандра, изготовленный для старшего инженера станции.
-    .suffix = { "" }
-ent-ClothingHeadHelmetIHSVoidHelm = шлем скафандра IHS
-    .desc = Прочный, тактический шлем скафандра IHS.
     .suffix = { "" }
 ent-ClothingHeadHelmetHardsuitMedical = шлем скафандра главного врача
     .desc = Легкий медицинский шлем скафандра, не стесняющий движений головы.

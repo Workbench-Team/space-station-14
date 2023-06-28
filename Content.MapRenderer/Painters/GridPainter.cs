@@ -2,6 +2,7 @@ using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using Content.Shared.Decals;
 using Robust.Client.GameObjects;
 using Robust.Shared.GameObjects;
@@ -57,7 +58,7 @@ namespace Content.MapRenderer.Painters
 
             // Decals are always painted before entities, and are also optional.
             if (_decals.TryGetValue(grid.Owner, out var decals))
-                _decalPainter.Run(gridCanvas, decals);
+                _decalPainter.Run(gridCanvas, CollectionsMarshal.AsSpan(decals));
 
 
             _entityPainter.Run(gridCanvas, entities);
@@ -73,7 +74,11 @@ namespace Content.MapRenderer.Painters
 
             foreach (var entity in _sEntityManager.GetEntities())
             {
+<<<<<<< HEAD
                 if (!_cEntityManager.HasComponent<SpriteComponent>(entity))
+=======
+                if (!_cEntityManager.TryGetComponent(entity, out SpriteComponent? sprite))
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07
                 {
                     continue;
                 }
@@ -82,12 +87,6 @@ namespace Content.MapRenderer.Painters
                 if (prototype == null)
                 {
                     continue;
-                }
-
-                if (!_cEntityManager.TryGetComponent(entity, out SpriteComponent? sprite))
-                {
-                    throw new InvalidOperationException(
-                        $"No sprite component found on an entity for which a server sprite component exists. Prototype id: {prototype.ID}");
                 }
 
                 var transform = _sEntityManager.GetComponent<TransformComponent>(entity);

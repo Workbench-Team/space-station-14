@@ -6,7 +6,11 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Science
+<<<<<<< HEAD
       time: 72000
+=======
+      time: 108000 # 30 hrs
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "ResearchDirector"

@@ -28,3 +28,6 @@ ent-WallRockUranium = { ent-WallRock }
 ent-WallRockBananium = { ent-WallRock }
     .desc = Рудная жила, богатая бананиумом.
     .suffix = Бананиум
+ent-WallRockArtifactFragment = { ent-WallRock }
+    .desc = Обыкновенная порода. Погодите, что это торчит из нее?
+    .suffix = Фрагмент Артефакта

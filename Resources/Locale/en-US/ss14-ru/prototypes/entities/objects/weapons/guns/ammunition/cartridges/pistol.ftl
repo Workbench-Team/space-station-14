@@ -16,3 +16,6 @@ ent-CartridgePistolPractice = cartridge (.35 auto practice)
 ent-CartridgePistolRubber = cartridge (.35 auto rubber)
     .desc = { ent-BaseCartridgePistol.desc }
     .suffix = { "" }
+ent-CartridgePistolIncendiary = cartridge (.35 auto incendiary)
+    .desc = { ent-BaseCartridgePistol.desc }
+    .suffix = { "" }

@@ -1,6 +1,15 @@
-ent-CrateSalvageEquipment = ящик со снаряжением для утилизации
+ent-CrateSalvageEquipment = ящик снаряжения утилизатора
     .desc = Для отважных.
     .suffix = Заполненный
 ent-CrateSalvageAssortedGoodies = { ent-CrateGenericSteel }
     .suffix = Заполненный, Случайный утиль
     .desc = { ent-CrateGenericSteel.desc }
+ent-CratePartsT3 = ящик деталей 3 уровня
+    .desc = Содержит 5 случайных деталей 3 уровня для улучшения оборудования.
+    .suffix = { "" }
+ent-CratePartsT3T4 = ящик деталей 3/4 уровня
+    .desc = Содержит 5 случайных деталей 3 или 4 уровня для улучшения оборудования.
+    .suffix = { "" }
+ent-CratePartsT4 = ящик деталей 4 уровня
+    .desc = Содержит 5 случайных деталей 4 уровня для улучшения оборудования.
+    .suffix = { "" }

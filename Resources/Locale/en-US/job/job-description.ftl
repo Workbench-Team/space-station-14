@@ -31,8 +31,13 @@ job-description-lawyer = Ensure that every prisoner or criminal receives a fair 
 job-description-librarian = Manage the library, give out knowledge to any who seek it, and report on activities aboard the station.
 job-description-mime = Entertain the crew through non-vocal means, and engage with light rivalry with the clown.
 job-description-musician = Entertain the crew with your unique musical talent, and acquire new instruments to mess around with.
+<<<<<<< HEAD
 job-description-passenger = Get your space legs, assist people, ask the HoP to give you a job
 job-description-psychologist = Provide emotional support to traumatized crew. Currently available on Marathon Station.
+=======
+job-description-passenger = Enjoy your stay aboard the station with no obligations!
+job-description-psychologist = Provide emotional support to traumatized crew. Currently available on Marathon and Origin Stations.
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07
 job-description-qm = Manage the supplies of the station & the cargo department, keep the salvage specialists working, make sure all orders are fulfilled, and keep the money flowing.
 job-description-rd = Manage the science department, unlocking technologies, acquiring & researching artifacts, and performing experiments.
 job-description-research-assistant = Learn the basics of how to research various artifacts and anomalies.

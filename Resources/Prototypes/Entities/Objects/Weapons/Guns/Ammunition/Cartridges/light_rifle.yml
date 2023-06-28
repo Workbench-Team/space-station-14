@@ -11,8 +11,12 @@
   - type: CartridgeAmmo
     proto: BulletLightRifle
   - type: Sprite
+<<<<<<< HEAD
     netsync: false
     sprite: Objects/Weapons/Guns/Ammunition/Casings/light_rifle.rsi
+=======
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -60,7 +64,18 @@
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleRubber
+<<<<<<< HEAD
   - type: Sprite
     layers:
     - state: rubber
       map: ["enum.AmmoVisualLayers.Base"]
+=======
+
+- type: entity
+  id: CartridgeLightRifleIncendiary
+  name: cartridge (.30 rifle incendiary)
+  parent: BaseCartridgeLightRifle
+  components:
+  - type: CartridgeAmmo
+    proto: BulletLightRifleIncendiary
+>>>>>>> a2425cf7b1ef0a400695113a6ccc2bfb7985db07

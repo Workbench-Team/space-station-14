@@ -15,9 +15,8 @@
   Служба безопасности и [color=#a4885c]некоторые[/color] другие сотрудники имеют средства защиты глаз от [color=#f0a105]светошумовых гранат[/color] и [color=#00fa9a]вспышек[/color].
   <Box>
     <GuideEntityEmbed Entity="Flash"/>
-    <GuideEntityEmbed Entity="ClothingEyesGlassesSecurity"/>
+    <GuideEntityEmbed Entity="ClothingEyesGlassesSecurity" Caption="очки охраны"/>
     <GuideEntityEmbed Entity="GrenadeFlashBang"/>
-
   </Box>
   ## Летальное
   Если ситуация вынудит, служба безопасности имеет доступ к лазерным карабинам, дробовикам, пистолетам и автоматическим винтовкам, способным вести огонь на поражение против любого, кто выступит против станции.

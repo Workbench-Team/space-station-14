@@ -1,0 +1,36 @@
+<Document>
+
+# Основные Медикаменты
+
+Эти препараты почти всегда так или иначе полезны для медицинского отдела.
+
+<GuideReagentEmbed Reagent="Bicaridine"/>
+<GuideReagentEmbed Reagent="Kelotane"/>
+<GuideReagentEmbed Reagent="Dermaline"/>
+<GuideReagentEmbed Reagent="Dylovene"/>
+<GuideReagentEmbed Reagent="Inaprovaline"/>
+<GuideReagentEmbed Reagent="Dexalin"/>
+<GuideReagentEmbed Reagent="DexalinPlus"/>
+<GuideReagentEmbed Reagent="Iron"/>
+
+# Специализированные Медикаменты
+
+Эти препараты, как правило, имеют конкретные случаи применения.
+
+<GuideReagentEmbed Reagent="Cryoxadone"/>
+<GuideReagentEmbed Reagent="Epinephrine"/>
+<GuideReagentEmbed Reagent="Hyronalin"/>
+<GuideReagentEmbed Reagent="Arithrazine"/>
+<GuideReagentEmbed Reagent="Phalanximine"/>
+<GuideReagentEmbed Reagent="Tricordrazine"/>
+<GuideReagentEmbed Reagent="TranexamicAcid"/>
+<GuideReagentEmbed Reagent="Romerol"/>
+<GuideReagentEmbed Reagent="Oculine"/>
+
+# Все Медикаменты
+
+Это список всех доступных медицинских препаратов, включая ранее перечисленные.
+
+<GuideReagentGroupEmbed Group="Medicine"/>
+
+</Document>
