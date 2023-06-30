@@ -16096,7 +16096,7 @@ entities:
   entities:
   - uid: 1453
     components:
-    - pos: 49.471886,3.4856305
+    - pos: 49.5,3.5
       parent: 3
       type: Transform
     - enabled: False
@@ -19137,68 +19137,6 @@ entities:
   - uid: 2195
     components:
     - pos: 20.5,-5.5
-      parent: 3
-      type: Transform
-- proto: WeaponTurretSyndicate
-  entities:
-  - uid: 2166
-    components:
-    - flags: SessionSpecific
-      type: MetaData
-    - rot: 3.141592653589793 rad
-      pos: 32.5,-12.5
-      parent: 3
-      type: Transform
-  - uid: 2168
-    components:
-    - flags: SessionSpecific
-      type: MetaData
-    - rot: 3.141592653589793 rad
-      pos: 38.5,-12.5
-      parent: 3
-      type: Transform
-  - uid: 2177
-    components:
-    - flags: SessionSpecific
-      type: MetaData
-    - pos: 37.5,-17.5
-      parent: 3
-      type: Transform
-  - uid: 2178
-    components:
-    - flags: SessionSpecific
-      type: MetaData
-    - rot: 3.141592653589793 rad
-      pos: 37.5,-11.5
-      parent: 3
-      type: Transform
-  - uid: 2179
-    components:
-    - flags: SessionSpecific
-      type: MetaData
-    - rot: 3.141592653589793 rad
-      pos: 33.5,-11.5
-      parent: 3
-      type: Transform
-  - uid: 2190
-    components:
-    - flags: SessionSpecific
-      type: MetaData
-    - pos: 38.5,-16.5
-      parent: 3
-      type: Transform
-  - uid: 2212
-    components:
-    - flags: SessionSpecific
-      type: MetaData
-    - pos: 32.5,-16.5
-      parent: 3
-      type: Transform
-  - uid: 2253
-    components:
-    - flags: SessionSpecific
-      type: MetaData
-    - pos: 33.5,-17.5
       parent: 3
       type: Transform
 - proto: WheatBushel
