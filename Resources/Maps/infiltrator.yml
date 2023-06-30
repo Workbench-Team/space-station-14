@@ -58,6 +58,13 @@ entities:
             10: -7,2
             11: -7,3
         - node:
+            color: '#505050CC'
+            id: HalfTileOverlayGreyscale
+          decals:
+            39: -8,-11
+            40: -7,-11
+            41: -6,-11
+        - node:
             color: '#B02E2672'
             id: HalfTileOverlayGreyscale
           decals:
@@ -77,6 +84,11 @@ entities:
             16: -5,3
             18: 3,2
             26: 0,-3
+        - node:
+            color: '#D1A02372'
+            id: HalfTileOverlayGreyscale270
+          decals:
+            51: -8,-9
         - node:
             color: '#73BAE6B2'
             id: HalfTileOverlayGreyscale90
@@ -106,6 +118,21 @@ entities:
           decals:
             29: 0,-2
         - node:
+            color: '#B02E2672'
+            id: QuarterTileOverlayGreyscale
+          decals:
+            37: -2,9
+        - node:
+            color: '#D1A02372'
+            id: QuarterTileOverlayGreyscale
+          decals:
+            50: -8,-8
+        - node:
+            color: '#EFBE414C'
+            id: QuarterTileOverlayGreyscale
+          decals:
+            43: 2,-6
+        - node:
             color: '#73BAE6B2'
             id: QuarterTileOverlayGreyscale180
           decals:
@@ -115,7 +142,17 @@ entities:
             color: '#B02E2672'
             id: QuarterTileOverlayGreyscale180
           decals:
+            36: 2,12
+        - node:
+            color: '#B02E2672'
+            id: QuarterTileOverlayGreyscale180
+          decals:
             24: -2,-2
+        - node:
+            color: '#EFBE414C'
+            id: QuarterTileOverlayGreyscale180
+          decals:
+            45: 5,-10
         - node:
             color: '#73BAE6B2'
             id: QuarterTileOverlayGreyscale270
@@ -123,10 +160,45 @@ entities:
             5: -8,-11
         - node:
             color: '#B02E2672'
+            id: QuarterTileOverlayGreyscale270
+          decals:
+            35: -4,12
+        - node:
+            color: '#D1A02372'
+            id: QuarterTileOverlayGreyscale270
+          decals:
+            49: -8,-10
+        - node:
+            color: '#EFBE414C'
+            id: QuarterTileOverlayGreyscale270
+          decals:
+            46: 2,-10
+        - node:
+            color: '#B02E2672'
+            id: QuarterTileOverlayGreyscale90
+          decals:
+            38: 0,9
+        - node:
+            color: '#B02E2672'
             id: QuarterTileOverlayGreyscale90
           decals:
             23: -2,-3
             30: -2,-4
+        - node:
+            color: '#EFBE414C'
+            id: QuarterTileOverlayGreyscale90
+          decals:
+            44: 5,-6
+        - node:
+            color: '#B02E2672'
+            id: ThreeQuarterTileOverlayGreyscale180
+          decals:
+            34: 2,11
+        - node:
+            color: '#B02E2672'
+            id: ThreeQuarterTileOverlayGreyscale270
+          decals:
+            33: -4,11
         - node:
             color: '#FFFFFFFF'
             id: WarnCornerSW
