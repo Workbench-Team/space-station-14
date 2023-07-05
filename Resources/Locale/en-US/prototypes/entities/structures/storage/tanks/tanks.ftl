@@ -25,7 +25,7 @@ ent-KvassTank = КВАС
 ent-KvassTankFull = { ent-KvassTank }
     .desc = { ent-KvassTank.desc }
 
-ent-BeerKeg = ПИВО
+ent-BeerKeg = BEER
     .desc = A cool refreshing drink with a taste of piss.
 
 ent-BeerKegFull = { ent-BeerKeg }
