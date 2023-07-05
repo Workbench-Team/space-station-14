@@ -69,6 +69,16 @@
   group: market
 
 - type: cargoProduct
+  id: FoodCrateBeerKeg
+  icon:
+    sprite: Structures/Storage/beerkeg.rsi
+    state: beerkeg
+  product: BeerKegFull
+  cost: 1500
+  category: Food
+  group: market
+
+- type: cargoProduct
   id: FoodSoftdrinks
   icon:
     sprite: Objects/Consumable/Drinks/beerglass.rsi

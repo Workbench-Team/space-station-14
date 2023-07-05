@@ -25,3 +25,10 @@ ent-KvassTank = { ent-StorageTank }
 ent-KvassTankFull = { ent-KvassTank }
     .suffix = Full
     .desc = { ent-KvassTank.desc }
+ent-BeerKeg = { ent-StorageTank }
+    .suffix = Empty
+    .desc = { ent-StorageTank.desc }
+ent-BeerKegFull = { ent-BeerKeg }
+    .suffix = Full
+    .desc = { ent-BeerKeg.desc }
+

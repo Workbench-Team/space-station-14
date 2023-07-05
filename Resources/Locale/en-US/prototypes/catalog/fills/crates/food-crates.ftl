@@ -15,3 +15,5 @@ ent-CrateFoodBarSupply = Bartending supplies crate
 
 ent-CrateFoodKvassTank = Kvass tank crate
     .desc = A tank with refreshing kvass, which helps so much in the heat.
+ent-CrateFoodBeerKeg = Beer Keg crate
+    .desc = A Keg with refreshing beer.
