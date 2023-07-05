@@ -105,11 +105,20 @@
       - map: [ "head" ]
       - map: [ "pocket1" ]
       - map: [ "pocket2" ]
+      - map: [ "clownedon" ] # Dynamically generated
+        sprite: "Effects/creampie.rsi"
+        state: "creampie_moth"
+        visible: false
   - type: Reactive
     groups:
-      Medicine: [ Ingestion, Touch, Injection ]
-      Botanical: [ Ingestion, Touch, Injection ]
+      Flammable: [ Touch ]
+      Extinguish: [ Touch ]
+      Acidic: [Touch, Ingestion]
     reactions:
+    - reagents: [Water, SpaceCleaner]
+      methods: [Touch]
+      effects:
+      - !type:WashCreamPieReaction
     - reagents: [ PestKiller, PlantBGone ]
       methods: [ Touch, Ingestion, Injection ]
       effects:
