@@ -9,7 +9,7 @@
       time: 14400
   icon: "ShaftMiner"
   startingGear: SalvageSpecialistGear
-  supervisors: job-supervisors-hop-qm
+  supervisors: job-supervisors-qm
   access:
   - Cargo
   - Salvage

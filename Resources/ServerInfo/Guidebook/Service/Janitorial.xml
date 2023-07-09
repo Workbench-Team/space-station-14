@@ -31,6 +31,10 @@
 <GuideEntityEmbed Entity="Holoprojector" Caption="голопроектор"/>
 <GuideEntityEmbed Entity="LightReplacer"/>
 </Box>
+<Box>
+<GuideEntityEmbed Entity="AdvMopItem" Caption="Продвинутая швабра, попросите у РНД"/>
+</Box>
+
 ## Сбор и слив жидкостей
 <Box>
 <GuideEntityEmbed Entity="WaterTankFull"/>
@@ -56,4 +60,5 @@
 ## Дополнительная информация:
 <GuideReagentEmbed Reagent="SpaceCleaner"/>
 <GuideReagentEmbed Reagent="Ammonia"/>
+
 </Document>

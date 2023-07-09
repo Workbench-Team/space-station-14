@@ -71,6 +71,9 @@
   id: BrassInstrument
 
 - type: Tag
+  id: Bread
+
+- type: Tag
   id: Briefcase
 
 - type: Tag
@@ -90,6 +93,9 @@
 
 - type: Tag
   id: Carrot
+
+- type: Tag
+  id: CarrotFries
 
 - type: Tag
   id: Carpet
@@ -167,6 +173,9 @@
 - type: Tag
   id: CluwneHorn
 
+- type: Tag #Ohioans die happy
+  id: Corn
+
 - type: Tag
   id: Crayon
 
@@ -214,6 +223,9 @@
 
 - type: Tag
   id: ComputerTelevisionCircuitboard
+
+- type: Tag
+  id: CubanCarp
 
 - type: Tag
   id: Debug
@@ -315,6 +327,9 @@
   id: ForceNoFixRotations # fixrotations command WON'T target this
 
 - type: Tag
+  id: Galaxythistle
+
+- type: Tag
   id: GasScrubber
 
 - type: Tag
@@ -341,6 +356,9 @@
 
 - type: Tag
   id: Hamster
+
+- type: Tag
+  id: HamsterWearable
 
 - type: Tag
   id: HamtrCentralControlModule
@@ -448,6 +466,12 @@
 
 - type: Tag
   id: LavaBrig
+
+- type: Tag
+  id: Lemon
+
+- type: Tag
+  id: Lime
 
 - type: Tag
   id: Machete
@@ -572,6 +596,9 @@
   id: PaintableAirlock
 
 - type: Tag
+  id: Pancake
+
+- type: Tag
   id: PercussionInstrument
 
 - type: Tag
@@ -579,6 +606,9 @@
 
 - type: Tag
   id: Pickaxe
+
+- type: Tag
+  id: Pie
 
 - type: Tag
   id: PillCanister
@@ -605,10 +635,17 @@
   id: Plastic
 
 - type: Tag
+  id: Plunger
+  
+- type: Tag
   id: PlushieGhost
+
 
 - type: Tag
   id: Powerdrill
+
+- type: Tag
+  id: PrisonUniform
 
 - type: Tag
   id: ProximitySensor
@@ -672,6 +709,9 @@
   id: ShellShotgun
 
 - type: Tag
+  id: Shiv
+
+- type: Tag
   id: ShoesRequiredStepTriggerImmune
 
 - type: Tag
@@ -694,6 +734,9 @@
 
 - type: Tag
   id: SolarTrackerElectronics
+
+- type: Tag
+  id: Soup
 
 - type: Tag
   id: Spray
@@ -769,6 +812,9 @@
 
 - type: Tag
   id: TrashBag
+  
+- type: Tag
+  id: Unstackable # To prevent things like atmos devices (filters etc) being stacked on one tile. See NoUnstackableInTile
 
 - type: Tag
   id: UraniumGlassShard

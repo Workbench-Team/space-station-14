@@ -28,3 +28,6 @@ ent-CrateEngineeringMiniJetpack = ящик мини-джетпаков
 ent-CrateAirlockKit = ящик компонентов шлюзов
     .desc = Набор для постройки 6 шлюзов. Не включает в себя инструменты.
     .suffix = { "" }
+ent-CrateEvaKit = ящик набора EVA
+    .desc = Набор, состоящий из двух престижных костюмов EVA и шлемов.
+    .suffix = { "" }

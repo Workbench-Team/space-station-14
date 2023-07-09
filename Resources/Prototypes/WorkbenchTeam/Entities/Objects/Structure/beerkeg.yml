@@ -1,0 +1,21 @@
+#BeerKeg
+- type: entity
+  id: BeerKeg
+  parent: StorageTank
+  suffix: Empty
+  components:
+    - type: Sprite
+      sprite: Structures/Storage/beerkeg.rsi
+      state: beerkeg
+
+- type: entity
+  parent: BeerKeg
+  id: BeerKegFull
+  suffix: Full
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        tank:
+          reagents:
+            - ReagentId: Beer
+              Quantity: 1000

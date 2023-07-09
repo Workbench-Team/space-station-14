@@ -16,3 +16,7 @@ ent-KvassTank = КВАС
     .desc = Прохладный освежающий напиток с привкусом социализма.
 ent-KvassTankFull = { ent-KvassTank }
     .desc = { ent-KvassTank.desc }
+ent-BeerKeg = ПИВО
+    .desc = Напиток древней расы как-то связанной с древними чешуйчатыми.
+ent-BeerKegFull = { ent-BeerKeg }
+    .desc = { ent-BeerKeg.desc }

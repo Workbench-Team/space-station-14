@@ -1,6 +1,9 @@
 ent-BaseBeaker = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
     .suffix = { "" }
+ent-BaseBeakerMetallic = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
+    .suffix = { "" }
 ent-Beaker = beaker
     .desc = Used to contain a moderate amount of chemicals and solutions.
     .suffix = { "" }

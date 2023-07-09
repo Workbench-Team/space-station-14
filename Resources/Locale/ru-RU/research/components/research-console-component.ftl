@@ -14,3 +14,4 @@ research-console-unlocks-list-entry-generic = - [color=green]{ $text }[/color]
 research-console-menu-research-points-text = Исследовательские очки: { $points }
 research-console-menu-server-selection-button = Список серверов
 research-console-menu-server-sync-button = Синхронизировать
+research-console-no-access-popup = Нет доступа!

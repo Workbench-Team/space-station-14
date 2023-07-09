@@ -76,3 +76,6 @@ ent-FoodMealEnchiladas = enchiladas
 ent-FoodSaladWatermelonFruitBowl = melon fruit bowl
     .desc = The only salad where you can eat the bowl.
     .suffix = { "" }
+ent-FoodMealTaco = taco
+    .desc = Take a bite!
+    .suffix = { "" }

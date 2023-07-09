@@ -1,9 +1,9 @@
 using Content.Shared.Interaction.Events;
 using Content.Shared.Examine;
-using Content.Server.Coordinates.Helpers;
 using Content.Server.DoAfter;
 using Content.Server.Popups;
 using Content.Shared.Destructible;
+using Content.Shared.Coordinates.Helpers;
 using Content.Server.Power.Components;
 using Content.Server.PowerCell;
 using Content.Shared.PowerCell.Components;

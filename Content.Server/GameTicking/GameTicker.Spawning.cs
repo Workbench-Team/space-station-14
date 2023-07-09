@@ -273,7 +273,6 @@ namespace Content.Server.GameTicking
 
             PlayerJoinGame(player);
             SpawnObserver(player);
-            RaiseNetworkEvent(GetStatusSingle(player, PlayerGameStatus.JoinedGame));
         }
 
         /// <summary>

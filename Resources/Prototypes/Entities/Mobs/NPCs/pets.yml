@@ -13,7 +13,6 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: ian
-  - type: Appearance
   - type: DamageStateVisuals
     states:
       Alive:
@@ -176,7 +175,6 @@
         - MobMask
         layer:
         - MobLayer
-  - type: Appearance
   - type: Inventory
     speciesId: cat
     templateId: pet
@@ -235,7 +233,6 @@
         - MobMask
         layer:
         - MobLayer
-  - type: Appearance
   - type: Inventory
     speciesId: puppy
     templateId: pet
@@ -286,7 +283,6 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: paperwork
-  - type: Appearance
   - type: DamageStateVisuals
     states:
       Alive:
@@ -335,7 +331,6 @@
         - MobMask
         layer:
         - MobLayer
-  - type: Appearance
   - type: Inventory
     speciesId: dog
     templateId: pet
@@ -447,6 +442,12 @@
   id: MobHamsterHamlet
   description: A grumpy, cute and fluffy hamster.
   components:
+  - type: Sprite
+    drawdepth: SmallMobs
+    sprite: Mobs/Pets/hamlet.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: hamster-0
   - type: GhostRole
     makeSentient: true
     allowSpeech: true
@@ -499,7 +500,6 @@
         - MobMask
         layer:
         - MobLayer
-  - type: Appearance
   - type: DamageStateVisuals
     states:
       Alive:

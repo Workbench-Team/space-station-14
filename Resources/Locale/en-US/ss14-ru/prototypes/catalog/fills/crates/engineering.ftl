@@ -28,3 +28,6 @@ ent-CrateEngineeringMiniJetpack = { ent-CrateGenericSteel }
 ent-CrateAirlockKit = { ent-CrateGenericSteel }
     .desc = { ent-CrateGenericSteel.desc }
     .suffix = { "" }
+ent-CrateEvaKit = { ent-CrateCommandSecure }
+    .desc = { ent-CrateCommandSecure.desc }
+    .suffix = { "" }

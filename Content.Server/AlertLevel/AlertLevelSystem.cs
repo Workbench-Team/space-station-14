@@ -1,8 +1,10 @@
 using System.Linq;
 using Content.Server.Chat.Systems;
 using Content.Server.Station.Systems;
+using Content.Shared.CCVar;
 using Content.Shared.PDA;
 using Robust.Shared.Audio;
+using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 using Content.Shared.AlertLevel;
 
@@ -13,6 +15,7 @@ public sealed class AlertLevelSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly ChatSystem _chatSystem = default!;
     [Dependency] private readonly StationSystem _stationSystem = default!;
+    [Dependency] private readonly IConfigurationManager _cfg = default!;
 
     // Until stations are a prototype, this is how it's going to have to be.
     public const string DefaultAlertLevelSet = "stationAlerts";
@@ -139,7 +142,7 @@ public sealed class AlertLevelSystem : EntitySystem
                 return;
             }
 
-            component.CurrentDelay = AlertLevelComponent.Delay;
+            component.CurrentDelay = _cfg.GetCVar(CCVars.GameAlertLevelChangeDelay);
             component.ActiveDelay = true;
         }
 
@@ -187,12 +190,6 @@ public sealed class AlertLevelSystem : EntitySystem
         }
 
         RaiseLocalEvent(new AlertLevelChangedEvent(station, level));
-
-        var pdas = EntityQueryEnumerator<PdaComponent>();
-        while (pdas.MoveNext(out var ent, out var comp))
-        {
-            RaiseLocalEvent(ent,new AlertLevelChangedEvent(station, level));
-        }
     }
 }
 
