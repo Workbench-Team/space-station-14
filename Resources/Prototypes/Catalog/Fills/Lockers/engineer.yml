@@ -104,7 +104,6 @@
       - id: GasAnalyzer
       - id: MedkitOxygenFilled
       - id: HolofanProjector
-      - id: ClothingHandsGlovesAtmos
 
 - type: entity
   id: LockerEngineerFilledHardsuit
