@@ -171,6 +171,7 @@
       - id: RubberStampCE
       - id: ClothingHeadsetAltEngineering
       - id: BoxEncryptionKeyEngineering
+      - id: ClothingHandsGlovesCE
 
 - type: entity
   id: LockerChiefMedicalOfficerFilledHardsuit
