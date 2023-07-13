@@ -33,7 +33,6 @@
   - type: Access
     groups:
     - AllAccess
-    - AllAccessSyndicate
   - type: UserInterface
     interfaces:
       - key: enum.SolarControlConsoleUiKey.Key
