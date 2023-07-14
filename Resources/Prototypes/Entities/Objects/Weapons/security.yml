@@ -58,15 +58,17 @@
       map: [ "enum.ToggleVisuals.Layer" ]
   - type: Policebaton
     telescopic: true
+  - type: UseDelay
+    delay: 0.75
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 10
+        Blunt: 5
     bluntStaminaDamageFactor: 2.0
     angle: 60
     animation: WeaponArcSlash
   - type: StaminaDamageOnHit
-    damage: 55
+    damage: 35
   - type: ItemCooldown
   - type: Item
     heldPrefix: off
