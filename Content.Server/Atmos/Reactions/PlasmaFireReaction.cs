@@ -10,6 +10,10 @@ namespace Content.Server.Atmos.Reactions
     {
         public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem)
         {
+            var initialHyperNoblium = mixture.GetMoles(Gas.HyperNoblium);
+            if (initialHyperNoblium >= 5.0f)
+                return ReactionResult.NoReaction;
+
             var energyReleased = 0f;
             var oldHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture);
             var temperature = mixture.Temperature;

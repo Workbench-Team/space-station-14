@@ -32,7 +32,40 @@ ent-NitrousOxideCanister = Nitrous oxide canister
     .desc = A canister that can contain any type of gas. This one is supposed to contain nitrous oxide. It can be attached to connector ports using a wrench.
 
 ent-FrezonCanister = Frezon canister
-    .desc = A coolant with light hallucinogenic properties. Proceed.
+    .desc = A canister that can contain any type of gas. This one is supposed to contain frezon. It can be attached to connector ports using a wrench.
+
+ent-BZCanister = BZ canister
+    .desc = A canister that can contain any type of gas. This one is supposed to contain BZ. It can be attached to connector ports using a wrench.
+
+ent-PluoxiumCanister = Pluoxium canister
+    .desc = A canister that can contain any type of gas. This one is supposed to contain pluoxium. It can be attached to connector ports using a wrench.
+
+ent-HydrogenCanister = Hydrogen canister
+    .desc = A canister that can contain any type of gas. This one is supposed to contain hydrogen. It can be attached to connector ports using a wrench.
+
+ent-NitriumCanister = Nitrium canister
+    .desc = A canister that can contain any type of gas. This one is supposed to contain nitrium. It can be attached to connector ports using a wrench.
+
+ent-HealiumCanister = Healium canister
+    .desc = A canister that can contain any type of gas. This one is supposed to contain healium. It can be attached to connector ports using a wrench.
+
+ent-HyperNobliumCanister = Hyper-Noblium canister
+    .desc = A canister that can contain any type of gas. This one is supposed to contain hyper-noblium. It can be attached to connector ports using a wrench.
+
+ent-ProtoNitrateCanister = Proto-Nitrate canister
+    .desc = A canister that can contain any type of gas. This one is supposed to contain proto-nitrate. It can be attached to connector ports using a wrench.
+
+ent-ZaukerCanister = Zauker canister
+    .desc = A canister that can contain any type of gas. This one is supposed to contain zauker. It can be attached to connector ports using a wrench.
+
+ent-HalonCanister = Halon canister
+    .desc = A canister that can contain any type of gas. This one is supposed to contain halon. It can be attached to connector ports using a wrench.
+
+ent-HeliumCanister = Helium canister
+    .desc = A canister that can contain any type of gas. This one is supposed to contain helium. It can be attached to connector ports using a wrench.
+
+ent-AntiNobliumCanister = Anti-Noblium canister
+    .desc = A canister that can contain any type of gas. This one is supposed to contain anti-noblium. It can be attached to connector ports using a wrench.
 
 ent-GasCanisterBrokenBase = Broken gas canister
     .desc = A broken gas canister. Not useless yet, as it can be salvaged for high quality materials.
@@ -68,4 +101,37 @@ ent-NitrousOxideCanisterBroken = { ent-GasCanisterBrokenBase }
     .desc = { ent-GasCanisterBrokenBase.desc }
 
 ent-FrezonCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+
+ent-BZCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+
+ent-PluoxiumCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+
+ent-HydrogenCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+
+ent-NitriumCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+
+ent-HealiumCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+
+ent-HyperNobliumCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+
+ent-ProtoNitrateCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+
+ent-ZaukerCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+
+ent-HalonCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+
+ent-HeliumCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+
+ent-AntiNobliumCanisterBroken = { ent-GasCanisterBrokenBase }
     .desc = { ent-GasCanisterBrokenBase.desc }
