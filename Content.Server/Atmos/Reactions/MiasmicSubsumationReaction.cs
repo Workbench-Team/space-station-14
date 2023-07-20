@@ -13,7 +13,7 @@ public sealed class MiasmicSubsumationReaction : IGasReactionEffect
     public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem)
     {
         var initialHyperNoblium = mixture.GetMoles(Gas.HyperNoblium);
-        if (initialHyperNoblium >= 5.0f)
+        if (initialHyperNoblium >= 5.0f && mixture.Temperature > 20f)
             return ReactionResult.NoReaction;
 
         var initialMiasma = mixture.GetMoles(Gas.Miasma);

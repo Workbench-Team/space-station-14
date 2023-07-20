@@ -10,7 +10,7 @@ public sealed class HyperNobliumProductionReaction : IGasReactionEffect
     public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem)
     {
         var initialHyperNoblium = mixture.GetMoles(Gas.HyperNoblium);
-        if (initialHyperNoblium >= 5.0f)
+        if (initialHyperNoblium >= 5.0f && mixture.Temperature > 20f)
             return ReactionResult.NoReaction;
 
         var initialNitrogen = mixture.GetMoles(Gas.Nitrogen);

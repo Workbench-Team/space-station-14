@@ -10,7 +10,7 @@ public sealed class ProtoNitrateBZaseConversionReaction : IGasReactionEffect
     public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem)
     {
         var initialHyperNoblium = mixture.GetMoles(Gas.HyperNoblium);
-        if (initialHyperNoblium >= 5.0f)
+        if (initialHyperNoblium >= 5.0f && mixture.Temperature > 20f)
             return ReactionResult.NoReaction;
 
         var initialProtoNitrate = mixture.GetMoles(Gas.ProtoNitrate);

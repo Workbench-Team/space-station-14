@@ -115,7 +115,7 @@ namespace Content.Server.Atmos.EntitySystems
             {
                 if (soh)
                 {
-                    if (plasma > 0.5f && hypernoblium < 5f|| tritium > 0.5f && hypernoblium < 5f|| hydrogen > 0.5f && hypernoblium < 5f)
+                    if (plasma > 0.5f && hypernoblium < 5f || tritium > 0.5f && hypernoblium < 5f || hydrogen > 0.5f && hypernoblium < 5f)
                     {
                         if (tile.Hotspot.Temperature < exposedTemperature)
                             tile.Hotspot.Temperature = exposedTemperature;
@@ -127,7 +127,7 @@ namespace Content.Server.Atmos.EntitySystems
                 return;
             }
 
-            if ((exposedTemperature > Atmospherics.PlasmaMinimumBurnTemperature) && (plasma > 0.5f || tritium > 0.5f || hydrogen > 0.5f && hypernoblium < 5f))
+            if ((exposedTemperature > Atmospherics.PlasmaMinimumBurnTemperature) && (plasma > 0.5f && hypernoblium < 5f || tritium > 0.5f && hypernoblium < 5f || hydrogen > 0.5f && hypernoblium < 5f))
             {
                 if (sparkSourceUid.HasValue)
                     _adminLog.Add(LogType.Flammable, LogImpact.High, $"Heat/spark of {ToPrettyString(sparkSourceUid.Value)} caused atmos ignition of gas: {tile.Air.Temperature.ToString():temperature}K - {oxygen}mol Oxygen, {plasma}mol Plasma, {tritium}mol Tritium, {hydrogen}mol Hydrogen");
