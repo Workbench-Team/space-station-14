@@ -115,7 +115,7 @@ namespace Content.Server.Atmos.EntitySystems
             {
                 if (soh)
                 {
-                    if (plasma > 0.5f || tritium > 0.5f || hydrogen > 0.5f && hypernoblium < 5f)
+                    if (plasma > 0.5f && hypernoblium < 5f|| tritium > 0.5f && hypernoblium < 5f|| hydrogen > 0.5f && hypernoblium < 5f)
                     {
                         if (tile.Hotspot.Temperature < exposedTemperature)
                             tile.Hotspot.Temperature = exposedTemperature;
