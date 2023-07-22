@@ -1,0 +1,127 @@
+- type: entity
+  name: handheld cargo monitor
+  parent:
+  - BaseItem
+  id: HandheldCargoMonitor
+  description: A hand-held crew monitor displaying the status of suit sensors.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Tablets/cargo.rsi
+    state: icon
+  - type: CargoOrderConsole
+  - type: ActivatableUI
+    key: enum.CargoConsoleUiKey.Orders
+    closeOnHandDeselect: true
+  - type: UserInterface
+    interfaces:
+      - key: enum.CargoConsoleUiKey.Orders
+        type: CargoOrderConsoleBoundUserInterface
+  - type: AccessReader
+    access: [["Cargo"]]
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSource
+    range: 200
+    ports:
+      - OrderSender
+  - type: StaticPrice
+    price: 500
+
+- type: entity
+  name: handheld intercom monitor
+  parent:
+  - BaseItem
+  id: HandheldIntercomMonitor
+  description: A hand-held crew monitor displaying the status of suit sensors.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Tablets/intercom.rsi
+    state: icon
+  - type: AccessReader
+    access: [[ "Command" ]]
+  - type: CommunicationsConsole
+    title: comms-console-announcement-title-station
+  - type: ActivatableUI
+    key: enum.CommunicationsConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+    - key: enum.CommunicationsConsoleUiKey.Key
+      type: CommunicationsConsoleBoundUserInterface
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSource
+    range: 200
+    ports:
+      - OrderSender
+  - type: StaticPrice
+    price: 500
+
+- type: entity
+  name: handheld research monitor
+  parent:
+  - BaseItem
+  id: HandheldRndMonitor
+  description: A hand-held crew monitor displaying the status of suit sensors.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Tablets/rnd.rsi
+    state: icon
+  - type: ResearchClient
+  - type: ResearchConsole
+  - type: TechnologyDatabase
+  - type: ActivatableUI
+    key: enum.ResearchConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+    - key: enum.ResearchConsoleUiKey.Key
+      type: ResearchConsoleBoundUserInterface
+    - key: enum.ResearchClientUiKey.Key
+      type: ResearchClientBoundUserInterface
+  - type: AccessReader
+    access: [["Research"]]
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSource
+    range: 200
+    ports:
+      - OrderSender
+  - type: StaticPrice
+    price: 500
+
+- type: entity
+  name: handheld Solar monitor
+  parent:
+  - BaseItem
+  id: HandheldSolarMonitor
+  description: A hand-held crew monitor displaying the status of suit sensors.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Tablets/solar.rsi
+    state: icon
+  - type: SolarControlConsole
+  - type: ActivatableUI
+    key: enum.SolarControlConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+    - key: enum.SolarControlConsoleUiKey.Key
+      type: SolarControlConsoleBoundUserInterface
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSource
+    range: 200
+    ports:
+      - OrderSender
+  - type: StaticPrice
+    price: 500

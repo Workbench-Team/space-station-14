@@ -128,6 +128,45 @@
     radius: 7
     energy: 3
 
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitKm
+  noSpawn: true
+  name: km hardsuit helmet
+  description: A special helmet designed for work in a hazardous, low pressure environment. Has reinforced plating for wildlife encounters and dual floodlights.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hardsuits/kmsuit.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hardsuits/kmsuit.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 10000
+  - type: PointLight
+    radius: 7
+    energy: 3
+  - type: CargoOrderConsole
+  - type: ActivatableUI
+    key: enum.CargoConsoleUiKey.Orders
+    closeOnHandDeselect: false
+  - type: UserInterface
+    interfaces:
+      - key: enum.CargoConsoleUiKey.Orders
+        type: CargoOrderConsoleBoundUserInterface
+  - type: AccessReader
+    access: [["Cargo"]]
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSource
+    range: 200
+    ports:
+      - OrderSender
+  - type: StaticPrice
+    price: 500
+
 #Security Hardsuit
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase

@@ -18,6 +18,8 @@
         prob: 0.8
       - id: CargoRequestComputerCircuitboard
       - id: CargoShuttleComputerCircuitboard
+      - id: ClothingOuterHardsuitKm
+      - id: HandheldCargoMonitor
       - id: CargoShuttleConsoleCircuitboard
       - id: SalvageShuttleConsoleCircuitboard
       - id: CargoBountyComputerCircuitboard
@@ -78,6 +80,7 @@
       - id: ClothingHandsGlovesCaptain
       - id: WeaponDisabler
       - id: CommsComputerCircuitboard
+      - id: HandheldIntercomMonitor
       - id: ClothingHeadsetAltCommand
       - id: SpaceCash1000
       - id: PlushieNuke
@@ -164,6 +167,7 @@
       - id: ClothingEyesGlassesMeson
       - id: ClothingBeltChiefEngineerFilled
       - id: ClothingHeadHatBeretEngineering
+      - id: HandheldSolarMonitor
       - id: CigarCase
         prob: 0.15
       - id: DoorRemoteEngineering
@@ -269,6 +273,7 @@
         prob: 0.1
       - id: DoorRemoteResearch
       - id: ClothingHeadHatBeretRND
+      - id: HandheldRndMonitor
       - id: RubberStampRd
       - id: ClothingHeadsetAltScience
       - id: BoxEncryptionKeyScience
