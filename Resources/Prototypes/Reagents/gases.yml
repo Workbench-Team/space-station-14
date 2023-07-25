@@ -496,8 +496,9 @@
             min: 6
         key: ForcedSleep
         component: ForcedSleeping
-        time: 15
-        type: Remove
+        time: 0
+        type: Set
+        refresh: false
       - !type:HealthChange
         conditions:
           - !type:ReagentThreshold
