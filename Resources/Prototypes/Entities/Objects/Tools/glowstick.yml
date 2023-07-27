@@ -61,6 +61,15 @@
           startValue: 5.0
           endValue: 1.5
           property: Radius
+  - grindableSolutionName: glowstick
+  - type: SolutionContainerManager
+     solutions:
+     glowstick:
+       reagents:
+       - ReagentId: Oxygen
+         Quantity: 10
+       - ReagentId: Hydrogen
+         Quantity: 10
 
 - type: entity
   name: red glowstick

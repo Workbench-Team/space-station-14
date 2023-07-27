@@ -155,6 +155,8 @@
           Quantity: 4
         - ReagentId: Vitamin
           Quantity: 2
+        - ReagentId: Potassium
+          Quantity: 3
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/banana.rsi
   - type: Produce

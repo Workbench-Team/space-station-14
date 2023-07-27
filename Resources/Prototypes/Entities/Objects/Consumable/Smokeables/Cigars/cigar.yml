@@ -50,6 +50,13 @@
     equippedPrefix: unlit
   - type: Item
     size: 1
+  - grindableSolutionName: cigarGold
+  - type: SolutionContainerManager
+     solutions:
+     cigarGold:
+       reagents:
+       - ReagentId: Gold
+         Quantity: 1
 
 - type: entity
   id: CigarGoldSpent

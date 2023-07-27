@@ -35,3 +35,10 @@
     materialComposition:
       Steel: 400
       Glass: 100
+  - grindableSolutionName: gasAnalyser
+  - type: SolutionContainerManager
+     solutions:
+     gasAnalyser:
+      reagents:
+       - ReagentId: Luthium
+       - Quantity: 15
