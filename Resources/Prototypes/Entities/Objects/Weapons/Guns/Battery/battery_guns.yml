@@ -483,7 +483,7 @@
     autoRechargeRate: 400
   - type: MagazineVisuals
     magState: mag
-    steps: 5
+    steps: 2
     zeroVisible: true
 
 - type: entity
