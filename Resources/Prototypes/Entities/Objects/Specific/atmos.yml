@@ -37,9 +37,9 @@
       Glass: 100
   - type: SolutionContainerManager
     solutions:
-     gasanalyser:
-       reagents:
-       - ReagentId: Mercury
-         Quantity: 15
+      gasanalyser:
+        reagents:
+        - ReagentId: Mercury
+          Quantity: 15
   - type: Extractable
-    grinableSolutionName: gasanalyser
+  - grindableSolutionName: gasanalyser

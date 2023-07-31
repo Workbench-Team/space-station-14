@@ -65,12 +65,12 @@
   - type: SpaceGarbage
   - type: SolutionContainerManager
     solutions:
-     bulb:
-       reagents:
-       - ReagentId: Nitrogen
-         Quantity: 15
+      glowstick:
+        reagents:
+          - ReagentId: Nitrogen
+            Quantity: 15
   - type: Extractable
-    grinableSolutionName: bulb
+  - grindableSolutionName: glowstick
 
 - type: entity
   parent: BaseLightbulb

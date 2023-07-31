@@ -226,10 +226,10 @@
       Steel: 25
   - type: SolutionContainerManager
     solutions:
-     pen:
-       reagents:
-       - ReagentId: Iodine
-         Quantity: 5
+      pen:
+        reagents:
+         - ReagentId: Iodine
+           Quantity: 5
   - type: Extractable
     grinableSolutionName: pen
 

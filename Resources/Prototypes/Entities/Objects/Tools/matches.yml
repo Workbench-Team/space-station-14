@@ -42,10 +42,10 @@
     burntIcon: match_burnt
   - type: SolutionContainerManager
     solutions:
-     match:
-       reagents:
-       - ReagentId: Phosphorus
-         Quantity: 2
+      match:
+        reagents:
+        - ReagentId: Phosphorus
+          Quantity: 2
   - type: Extractable
     grinableSolutionName: match
 
@@ -61,10 +61,10 @@
     state: Burnt
   - type: SolutionContainerManager
     solutions:
-     match:
-       reagents:
-       - ReagentId: Carbon
-         Quantity: 5
+      match:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 5
   - type: Extractable
     grinableSolutionName: match
 
