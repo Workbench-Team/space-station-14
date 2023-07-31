@@ -69,7 +69,7 @@
        reagents:
        - ReagentId: Nitrogen
          Quantity: 15
-  - type: extractable
+  - type: Extractable
     grinableSolutionName: bulb
 
 - type: entity

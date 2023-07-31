@@ -296,8 +296,8 @@
           Quantity: 1
         - ReagentId: Sugar
           Quantity: 3
-    grinableSolutionName: food
   - type: Extractable
+    grinableSolutionName: food
   - type: Item
     sprite: Objects/Consumable/Food/snacks.rsi
     heldPrefix: packet
