@@ -1323,7 +1323,7 @@
   id: UplinkMiniatureEnergyCrossbow
   name: uplink-miniature-energy-crossbow-syndie-green-name
   description: uplink-miniature-energy-crossbow-syndie-green-desc
-  icon: { sprite: Objects/Weapons/Guns/Battery/MiniatureEnergyCrossbow.rsi, state: icon }
+  icon: { sprite: Objects/Weapons/Guns/Battery/miniature_ebow.rsi, state: icon }
   productEntity: MiniatureEnergyCrossbow
   cost:
     Telecrystal: 10
