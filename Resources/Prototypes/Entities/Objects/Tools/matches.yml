@@ -41,7 +41,7 @@
     litIcon: match_lit
     burntIcon: match_burnt
   - type: SolutionContainerManager
-     solutions:
+    solutions:
      match:
        reagents:
        - ReagentId: Phosphorus
@@ -60,7 +60,7 @@
   - type: Matchstick
     state: Burnt
   - type: SolutionContainerManager
-     solutions:
+    solutions:
      match:
        reagents:
        - ReagentId: Carbon

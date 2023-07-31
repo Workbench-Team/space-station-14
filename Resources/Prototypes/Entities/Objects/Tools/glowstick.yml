@@ -62,7 +62,7 @@
           endValue: 1.5
           property: Radius
   - type: SolutionContainerManager
-     solutions:
+    solutions:
      glowstick:
        reagents:
        - ReagentId: Oxygen

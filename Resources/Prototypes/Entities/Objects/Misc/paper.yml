@@ -225,7 +225,7 @@
     materialComposition:
       Steel: 25
   - type: SolutionContainerManager
-     solutions:
+    solutions:
      pen:
        reagents:
        - ReagentId: Iodine

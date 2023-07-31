@@ -36,7 +36,7 @@
       Steel: 400
       Glass: 100
   - type: SolutionContainerManager
-     solutions:
+    solutions:
      gasanalyser:
        reagents:
        - ReagentId: Mercury

@@ -64,7 +64,7 @@
       Glass: 25
   - type: SpaceGarbage
   - type: SolutionContainerManager
-     solutions:
+    solutions:
      bulb:
        reagents:
        - ReagentId: Nitrogen
