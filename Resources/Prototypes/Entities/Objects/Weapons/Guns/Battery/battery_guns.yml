@@ -466,18 +466,17 @@
   description: The syndicate's energy crossbow, small, silent and deadly.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Battery/MiniatureEnergyCrossbow.rsi
+    sprite: Objects/Weapons/Guns/Battery/miniature_ebow.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-unshaded-
-      map: ["enum.GunVisualLayers.MagUnshaded"]
-      shader: unshaded
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/heavy_shot_suppressed.ogg
   - type: ProjectileBatteryAmmoProvider
-    proto: BulletMIC
+    proto: BulletMic
     fireCost: 900
   - type: BatterySelfRecharger
     autoRecharge: true

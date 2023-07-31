@@ -746,21 +746,17 @@
     - type: GrapplingProjectile
 
 - type: entity
-  id: BulletMIC
+  id: BulletMic
   name: MIC bolt
   parent: BaseBullet
   noSpawn: true
   description: Not too bad, but you still don't want to get hit by it.
   components:
-  - type: Reflective
-    reflective:
-      - NonEnergy
   - type: Sprite
     noRot: false
     sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
     layers:
     - state: cbbolt
-      shader: unshaded
   - type: GatheringProjectile
   - type: Projectile
     damage:
