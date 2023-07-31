@@ -22,3 +22,29 @@
       tags:
         - Ore
   - type: Dumpable
+
+- type: entity
+  name: ore bag bluespace
+  id: OreBagBluespace
+  parent: BaseStorageItem
+  description: A robust bag for salvage specialists and miners alike to carry large amounts of ore.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mining/ore_bag_bluespace.rsi
+    state: icon
+  - type: Clothing
+    sprite: Objects/Specific/Mining/ore_bag_bluespace.rsi
+    quickEquip: false
+    slots:
+    - belt
+  - type: Item
+    size: 176
+  - type: Storage
+    capacity: 2400
+    quickInsert: true
+    areaInsert: true
+    areaInsertRadius: 14
+    whitelist:
+      tags:
+        - Ore
+  - type: Dumpable
