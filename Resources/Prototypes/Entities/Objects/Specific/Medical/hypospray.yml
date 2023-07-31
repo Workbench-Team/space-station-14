@@ -277,3 +277,40 @@
     - id: Hypopen
     sound:
       path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: Luxury Medipen 
+  parent: ChemicalMedipen
+  id: Luxurymedpen
+  description: Contains enough stimulants for you to have the chemical's effect for 30 seconds. Use it when you're sure you're ready to throw down.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: luxpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: Item
+    sprite: Objects/Specific/Medical/medipen.rsi
+    size: 5
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 34
+        reagents:
+        - ReagentId: Epinephrine
+          Quantity: 15
+        - ReagentId: Ichor
+          Quantity: 15
+        - ReagentId: TranexamicAcid
+          Quantity: 4
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: luxpen_empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 30
+  - type: StaticPrice
+    price: 500
+  - type: Tag
+    tags: []

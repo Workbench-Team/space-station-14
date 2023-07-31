@@ -146,3 +146,32 @@
     contents:
     - id: SalvagePartsT4Spawner
       amount: 5
+
+- type: entity
+  id: CrateMinerEquipment
+  name: "mining"
+  description: For the daring.
+  suffix: Filled
+  parent: CrateGenericSteel
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponCutter
+        amount: 2
+      - id: OreBagBluespace
+        amount: 2
+
+- type: entity
+  id: CrateMinerAdvancedEquipment
+  name: "mining advanced"
+  description: For the daring.
+  suffix: Filled
+  parent: CrateGenericSteel
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponCutterAdv
+        amount: 2
+      - id: OreBagBluespace
+        amount: 2
+

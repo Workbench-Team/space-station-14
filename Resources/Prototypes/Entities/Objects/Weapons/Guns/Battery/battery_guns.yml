@@ -483,5 +483,41 @@
     autoRechargeRate: 400
   - type: MagazineVisuals
     magState: mag
-    steps: 2
+    steps: 5
     zeroVisible: true
+
+- type: entity
+  name: Cutter
+  parent: BaseWeaponBatterySmall
+  id: WeaponCutter
+  description: A self-defense weapon that exhausts organic targets, weakening them until they collapse.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Battery/cutter.rsi
+      state: icon
+    - type: Gun
+      fireRate: 6
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/plasma_cutter.ogg
+    - type: ProjectileBatteryAmmoProvider
+      proto: BulletCutter
+      fireCost: 10
+    - type: Appearance
+
+- type: entity
+  name: Advanced Cutter
+  parent: BaseWeaponBatterySmall
+  id: WeaponCutterAdv
+  description: A self-defense weapon that exhausts organic targets, weakening them until they collapse.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Battery/cutteradv.rsi
+      state: icon
+    - type: Gun
+      fireRate: 8
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/plasma_cutter.ogg
+    - type: ProjectileBatteryAmmoProvider
+      proto: BulletCutter
+      fireCost: 5
+    - type: Appearance
