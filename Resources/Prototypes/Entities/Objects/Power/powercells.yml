@@ -23,8 +23,8 @@
   - type: Extractable
     juiceSolution:
       reagents:
-        - ReagentId: Zinc
-          Quantity: 5
+        - ReagentId: Lithium
+          Quantity: 15
   - type: Tag
     tags:
       - DroneUsable

@@ -63,6 +63,14 @@
     materialComposition:
       Glass: 25
   - type: SpaceGarbage
+  - type: SolutionContainerManager
+     solutions:
+     bulb:
+       reagents:
+       - ReagentId: Nitrogen
+         Quantity: 15
+  - type: extractable
+    grinableSolutionName: bulb
 
 - type: entity
   parent: BaseLightbulb
