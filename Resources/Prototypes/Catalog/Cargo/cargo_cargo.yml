@@ -7,24 +7,3 @@
   cost: 250
   category: Cargo
   group: market
-
-- type: cargoProduct
-  id: CargoCrateMinerEquipment
-  icon:
-    sprite: Objects/Weapons/Guns/Battery/cutter.rsi
-    state: icon
-  product: CrateMinerEquipment
-  cost: 7500
-  category: Cargo
-  group: market
-
-- type: cargoProduct
-  id: CargoCrateMinerAdvancedEquipment
-  icon:
-    sprite: Objects/Weapons/Guns/Battery/cutteradv.rsi
-    state: icon
-  product: CrateMinerAdvancedEquipment
-  cost: 12500
-  category: Cargo
-  group: market
-  

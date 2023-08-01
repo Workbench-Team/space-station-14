@@ -13,3 +13,6 @@ ent-CratePartsT3T4 = tier 3/4 parts crate
 ent-CratePartsT4 = tier 4 parts crate
     .desc = Contains 5 random tier 4 parts for upgrading machines.
     .suffix = { "" }
+ent-CrateAdvSalvageEquipment = advanced salvage equipment crate
+    .desc = Contains one advanced set of miner's tools.
+    .suffix = Filled

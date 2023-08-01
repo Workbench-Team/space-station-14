@@ -30,6 +30,7 @@ research-technology-bluespace-chemistry = Bluespace Chemistry
 research-technology-cloning = Cloning
 
 research-technology-salvage-weapons = Salvage Weapons
+research-technology-salvage-cutters = Ion weapons
 research-technology-draconic-munitions = Draconic Munitions
 research-technology-explosive-technology = Explosive Technology
 research-technology-advanced-laser-manipulation = Advanced Laser Manipulation

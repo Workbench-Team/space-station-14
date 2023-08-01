@@ -65,6 +65,8 @@
     CrateArmoryLaser: 1.0
     CrateArmoryShotgun: 1.0
     BoxCursedKatana: 1.0
+    # rare equipment
+    CrateAdvSalvageEquipment: 1.0
     # rare armor
     ClothingOuterArmorRiot: 1.0
     # rare chemicals

@@ -496,17 +496,22 @@
       sprite: Objects/Weapons/Guns/Battery/cutter.rsi
       state: icon
     - type: Gun
-      fireRate: 6
+      fireRate: 0.6
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/plasma_cutter.ogg
+    - type: Item
+      size: 25
     - type: ProjectileBatteryAmmoProvider
       proto: BulletCutter
-      fireCost: 10
+      fireCost: 200
+    - type: Battery
+      maxCharge: 5000
+      startingCharge: 5000
     - type: Appearance
 
 - type: entity
   name: Advanced Cutter
-  parent: BaseWeaponBatterySmall
+  parent: WeaponCutter
   id: WeaponCutterAdv
   description: A self-defense weapon that exhausts organic targets, weakening them until they collapse.
   components:
@@ -514,10 +519,10 @@
       sprite: Objects/Weapons/Guns/Battery/cutteradv.rsi
       state: icon
     - type: Gun
-      fireRate: 8
+      fireRate: 1
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/plasma_cutter.ogg
     - type: ProjectileBatteryAmmoProvider
-      proto: BulletCutter
-      fireCost: 5
+      proto: BulletCutterAdv
+      fireCost: 100
     - type: Appearance
