@@ -70,7 +70,7 @@
           - ReagentId: Nitrogen
             Quantity: 15
   - type: Extractable
-  - grindableSolutionName: glowstick
+    grindableSolutionName: glowstick
 
 - type: entity
   parent: BaseLightbulb
