@@ -147,9 +147,13 @@
   - type: SolutionContainerManager
     solutions:
       food:
+        maxVol: 30
         reagents:
         - ReagentId: Sugar
           Quantity: 5
+        - ReagentId: Nutriment
+          Quantity: 10
+  - type: Extractable
     grinableSolutionName: food
 
 - type: entity
@@ -216,11 +220,14 @@
   - type: SolutionContainerManager
     solutions:
       food:
+        maxVol: 30
         reagents:
         - ReagentId: Sugar
           Quantity: 5
-    grinableSolutionName: food
+        - ReagentId: Nutriment
+          Quantity: 10
   - type: Extractable
+    grinableSolutionName: food
     trash: FoodPacketSyndiTrash
 
 - type: entity

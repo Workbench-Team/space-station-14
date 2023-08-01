@@ -69,8 +69,8 @@
             Quantity: 10
           - ReagentId: Hydrogen
             Quantity: 10
-  - type: Extractable
-  - grindableSolutionName: glowstick
+    - type: Extractable
+      grindableSolutionName: glowstick
 
 - type: entity
   name: red glowstick

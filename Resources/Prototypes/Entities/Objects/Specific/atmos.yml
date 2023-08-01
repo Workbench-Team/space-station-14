@@ -42,4 +42,4 @@
         - ReagentId: Mercury
           Quantity: 15
   - type: Extractable
-  - grindableSolutionName: gasanalyser
+    grindableSolutionName: gasanalyser
