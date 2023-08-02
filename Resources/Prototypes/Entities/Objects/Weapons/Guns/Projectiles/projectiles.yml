@@ -307,7 +307,7 @@
     sprite: Objects/Weapons/Guns/Projectiles/bullet_cutter.rsi
     layers:
     - state: icon
-      shader: Unshaded
+      shader: unshaded
   - type: GatheringProjectile
     amount: 30
   - type: Projectile
