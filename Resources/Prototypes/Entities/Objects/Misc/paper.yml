@@ -231,7 +231,7 @@
          - ReagentId: Iodine
            Quantity: 5
   - type: Extractable
-    grinableSolutionName: pen
+    grindableSolutionName: pen
 
 - type: entity
   name: Cybersun pen
