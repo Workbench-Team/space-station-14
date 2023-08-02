@@ -78,4 +78,4 @@ ent-FoodDonutJellySlugcat = слизнекотовый желейный понч
     .suffix = { "" }
 ent-FoodDonutPoison = { ent-FoodDonutPink }
     .desc = { ent-FoodDonutPink.desc }
-    .suffix = { "" }
+    .suffix = Ядовитый

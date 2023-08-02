@@ -63,6 +63,14 @@
     materialComposition:
       Glass: 25
   - type: SpaceGarbage
+  - type: SolutionContainerManager
+    solutions:
+      glowstick:
+        reagents:
+          - ReagentId: Nitrogen
+            Quantity: 15
+  - type: Extractable
+    grindableSolutionName: glowstick
 
 - type: entity
   parent: BaseLightbulb

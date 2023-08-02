@@ -100,7 +100,7 @@
       blacklist:
         tags:
           - NukeOpsUplink
-          
+
 # Explosives
 
 - type: listing
@@ -264,6 +264,17 @@
   categories:
   - UplinkAmmo
 
+# for the hristov
+- type: listing
+  id: UplinkHristovAmmo
+  name: uplink-sniper-ammo-name
+  description: uplink-sniper-ammo-desc
+  productEntity: MagazineBoxAntiMateriel
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkAmmo
+
 #- type: listing
 #  id: UplinkSyringeCartridge
 #  name: uplink-syringe-cartridge-name
@@ -372,7 +383,7 @@
       whitelist:
         tags:
           - NukeOpsUplink
-          
+
 - type: listing
   id: UplinkReinforcementRadioSyndicateMonkey
   name: uplink-reinforcement-radio-monkey-name
@@ -921,6 +932,7 @@
     - !type:BuyerJobCondition
       whitelist:
         - Scientist
+        - SeniorResearcher
 
 - type: listing
   id: uplinkProximityMine
@@ -955,6 +967,7 @@
     whitelist:
     - Zookeeper
     - Scientist
+    - SeniorResearcher
     - Chef
 
 - type: listing
@@ -972,6 +985,8 @@
         - StationEngineer
         - AtmosphericTechnician
         - Scientist
+        - SeniorEngineer
+        - SeniorResearcher
 
 # Armor
 

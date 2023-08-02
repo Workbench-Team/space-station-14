@@ -224,6 +224,14 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 25
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        reagents:
+         - ReagentId: Iodine
+           Quantity: 5
+  - type: Extractable
+    grindableSolutionName: pen
 
 - type: entity
   name: Cybersun pen

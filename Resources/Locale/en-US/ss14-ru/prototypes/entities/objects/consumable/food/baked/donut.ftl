@@ -77,5 +77,5 @@ ent-FoodDonutJellySlugcat = slugcat jelly-donut
     .desc = No holes in this donut in case a suspicious looking pole shows up.
     .suffix = { "" }
 ent-FoodDonutPoison = { ent-FoodDonutPink }
+    .suffix = Poison
     .desc = { ent-FoodDonutPink.desc }
-    .suffix = { "" }

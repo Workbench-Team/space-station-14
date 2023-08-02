@@ -252,6 +252,8 @@
     contents:
       - id: ClothingHeadHelmetSyndicate
       - id: ClothingOuterHardsuitSyndicate
+      - id: ClothingMaskGasSyndicate
+      - id: DoubleEmergencyOxygenTankFilled
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -262,6 +264,8 @@
   - type: StorageFill
     contents:
       - id: ClothingOuterHardsuitSyndie
+      - id: ClothingMaskGasSyndicate
+      - id: ClothingHandsGlovesCombat
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle

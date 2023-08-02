@@ -85,3 +85,6 @@ ent-CrateWoodenGrave = могила
 ent-CrateStoneGrave = могила
     .desc = Здесь кто-то умер...
     .suffix = Каменная
+ent-CrateSyndicate = ящик синдиката
+    .desc = Ящик из тёмной стали с красными полосами и выбитой на передней части буквой S.
+    .suffix = { "" }

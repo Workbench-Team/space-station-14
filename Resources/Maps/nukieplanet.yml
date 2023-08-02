@@ -7800,7 +7800,7 @@ entities:
       type: Transform
     - color: '#990000FF'
       type: AtmosPipeColor
-- proto: GeneratorUranium
+- proto: GeneratorBasic15kW
   entities:
   - uid: 38
     components:

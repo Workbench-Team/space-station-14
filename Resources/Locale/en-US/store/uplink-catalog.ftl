@@ -70,6 +70,9 @@ uplink-speedloader-magnu-desc = Revolver speedloader with 6 armor-piercing catri
 uplink-mosin-ammo-name = ammunition box (.30 rifle)
 uplink-mosin-ammo-desc = A box of cartridges for the surplus rifle.
 
+uplink-sniper-ammo-name = ammunition box (.60 antimateriel)
+uplink-sniper-ammo-desc = a box of 10 cartridges for the hristov sniper rifle
+
 uplink-syringe-cartridge-name = Box of Syringe cartridges
 uplink-syringe-cartridge-desc = A box of syringe cartridges for the syringe pistol.
 

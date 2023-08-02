@@ -185,13 +185,13 @@ reagent-effect-guidebook-cure-eye-damage =
     { $chance ->
         [1]
             { $deltasign ->
-                [1] Лечит
-               *[-1] Наносит
+                [1] Наносит
+               *[-1] Лечит
             }
        *[other]
             { $deltasign ->
-                [1] вылечить
-               *[-1] нанести
+                [1] нанести
+               *[-1] вылечить
             }
     } повреждения глаз
 reagent-effect-guidebook-chem-vomit =

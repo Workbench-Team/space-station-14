@@ -1518,7 +1518,7 @@
   name: medicated suture recipe
   result: MedicatedSuture
   time: 10
-  solids: 
+  solids:
     FoodPoppy: 1
     Brutepack: 1
     MaterialCloth1: 1
@@ -1537,7 +1537,7 @@
     MaterialCloth1: 1
   reagents:
     Sigynate: 50
-    Dermaline: 50 
+    Dermaline: 50
 
 # Suppermatter
 - type: microwaveMealRecipe
@@ -1641,6 +1641,14 @@
   solids:
     FoodChevreSlice: 1
     FoodBreadBaguetteSlice: 1
+
+- type: microwaveMealRecipe
+  id: RecipeCookedSpaceshroom
+  name: cooked spaceshroom recipe
+  result: FoodSpaceshroomCooked
+  time: 5
+  solids:
+    FoodSpaceshroom: 1
 
 - type: microwaveMealRecipe
   id: RecipeShaurma
