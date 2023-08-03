@@ -42,9 +42,9 @@
     slots:
     - belt
   - type: Item
-    size: 176
+    size: 12
   - type: Storage
-    capacity: 2400
+    capacity: 9999
     quickInsert: true
     areaInsert: true
     areaInsertRadius: 14
