@@ -1,0 +1,9 @@
+ent-BaseGateway = gateway
+    .desc = A mysterious gateway built by unknown hands, it allows for faster than light travel to far-flung locations.
+    .suffix = { "" }
+ent-Gateway = { ent-BaseGateway }
+    .desc = { ent-BaseGateway.desc }
+    .suffix = { "" }
+ent-GatewayDestination = { ent-BaseGateway }
+    .suffix = Destination
+    .desc = { ent-BaseGateway.desc }

@@ -1,6 +1,9 @@
 ent-MobCivilian = Гражданский
     .desc = Жалкая кучка тайн.
     .suffix = { "" }
+ent-MobSalvager = Утилизатор
+    .desc = { ent-BaseMobHuman.desc }
+    .suffix = NPC
 ent-MobSpirate = Космопират
     .desc = Яррр!
     .suffix = { "" }

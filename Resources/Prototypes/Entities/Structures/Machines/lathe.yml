@@ -178,7 +178,6 @@
       - LargeBottle
       - SmallBottle
       - CryostasisBeaker
-      - ClothingEyesGlassesScience
       - Dropper
       - Syringe
       - MiningDrill
@@ -231,6 +230,7 @@
       - ClothingBackpackDuffelHolding
       - WelderExperimental
       - JawsOfLife
+      - ClothingEyesGlassesChemical
 
 - type: entity
   id: CircuitImprinter
@@ -644,7 +644,6 @@
       - HandheldCrewMonitor
       - ClothingHandsGlovesNitrile
       - ClothingEyesHudMedical
-      - ClothingEyesGlassesScience
       - CryostasisBeaker
       - LargeBeaker
       - LargeBottle

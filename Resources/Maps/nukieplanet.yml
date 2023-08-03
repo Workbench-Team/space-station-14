@@ -5677,7 +5677,7 @@ entities:
     - pos: -3.5,-2.5
       parent: 3
       type: Transform
-- proto: ClothingEyesGlassesScience
+- proto: ClothingEyesGlassesChemical
   entities:
   - uid: 1792
     components:

@@ -1,6 +1,9 @@
 ent-MobCivilian = Civilian
     .desc = A miserable pile of secrets.
     .suffix = { "" }
+ent-MobSalvager = Salvager
+    .desc = { ent-BaseMobHuman.desc }
+    .suffix = { "" }
 ent-MobSpirate = Spirate
     .desc = Yarr!
     .suffix = { "" }
