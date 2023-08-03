@@ -38,6 +38,16 @@
     Plastic: 500
 
 - type: latheRecipe
+  id: WeaponCutter
+  result: WeaponCutter
+  completetime: 10
+  materials:
+    Steel: 1100
+    Glass: 200
+    Gold: 300
+    Plasma: 800
+  
+- type: latheRecipe
   id: WeaponAdvancedLaser
   result: WeaponAdvancedLaser
   completetime: 20

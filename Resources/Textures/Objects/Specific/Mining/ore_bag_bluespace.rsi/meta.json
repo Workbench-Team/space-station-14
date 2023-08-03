@@ -30,6 +30,18 @@
     {
       "name": "inhand-right",
       "directions": 4
+    },
+    {
+      "name": "icon-unlit",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
     }
   ]
 }

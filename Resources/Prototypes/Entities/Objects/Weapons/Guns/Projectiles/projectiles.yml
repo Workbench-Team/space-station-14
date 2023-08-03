@@ -293,6 +293,49 @@
     soundForce: true
 
 - type: entity
+  id: BulletCutter
+  name: cutter bolt
+  parent: BaseBullet
+  noSpawn: true
+  description: Not too bad, but you still don't want to get hit by it.
+  components:
+  - type: Reflective
+    reflective:
+      - NonEnergy
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Projectiles/bullet_cutter.rsi
+    layers:
+    - state: icon
+      shader: unshaded
+  - type: GatheringProjectile
+    amount: 30
+  - type: Projectile
+    deleteOnCollide: false
+    damage:
+      types:
+        Heat: 10
+  - type: TimedDespawn
+    lifetime: 0.2
+  - type: PointLight
+    radius: 2
+    color: purple
+    energy: 1
+
+- type: entity
+  id: BulletCutterAdv
+  name: cutter bolt advanced
+  parent: BulletCutter
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Heat: 15
+  - type: TimedDespawn
+    lifetime: 0.25
+  
+- type: entity
   name: emitter bolt
   id: EmitterBolt
   parent: BaseBullet
@@ -766,27 +809,3 @@
     lifetime: 0.4
   - type: StaminaDamageOnCollide
     damage: 65
-
-- type: entity
-  id: BulletCutter
-  name: Cutter bolt
-  parent: BaseBullet
-  noSpawn: true
-  description: Not too bad, but you still don't want to get hit by it.
-  components:
-  - type: Reflective
-    reflective:
-      - NonEnergy
-  - type: Sprite
-    noRot: false
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
-    layers:
-    - state: scatterlaser
-  - type: GatheringProjectile
-  - type: Projectile
-    damage:
-      types:
-        Heat: 0.5
-  # Short lifespan
-  - type: TimedDespawn
-    lifetime: 0.4

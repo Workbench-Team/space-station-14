@@ -148,30 +148,13 @@
       amount: 5
 
 - type: entity
-  id: CrateMinerEquipment
-  name: "mining"
-  description: For the daring.
-  suffix: Filled
   parent: CrateGenericSteel
+  id: CrateAdvSalvageEquipment
+  name: advanced salvage equipment
+  suffix: Filled
+  description: Contains one advanced plasma cutter and bluespace ore bag.
   components:
   - type: StorageFill
     contents:
-      - id: WeaponCutter
-        amount: 2
-      - id: OreBagBluespace
-        amount: 2
-
-- type: entity
-  id: CrateMinerAdvancedEquipment
-  name: "mining advanced"
-  description: For the daring.
-  suffix: Filled
-  parent: CrateGenericSteel
-  components:
-  - type: StorageFill
-    contents:
-      - id: WeaponCutterAdv
-        amount: 2
-      - id: OreBagBluespace
-        amount: 2
-
+    - id: WeaponCutterAdv
+    - id: OreBagBluespace

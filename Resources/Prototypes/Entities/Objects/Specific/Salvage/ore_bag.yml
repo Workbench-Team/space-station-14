@@ -32,6 +32,10 @@
   - type: Sprite
     sprite: Objects/Specific/Mining/ore_bag_bluespace.rsi
     state: icon
+    layers:
+    - state: icon
+    - state: icon-unlit
+      shader: unshaded
   - type: Clothing
     sprite: Objects/Specific/Mining/ore_bag_bluespace.rsi
     quickEquip: false
