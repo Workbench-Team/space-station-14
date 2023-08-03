@@ -204,3 +204,48 @@
     enabled: true
     reflectProb: .75
     spread: 75
+
+- type: entity
+  name: Double Bladed Energy Sword
+  parent: EnergySword
+  id: EnergyAxe
+  description: Syndicate Command Interns thought that having one blade on the energy sword was not enough. This can be stored in pockets.
+  components:
+  - type: Wieldable
+    wieldTime: 1
+  - type: EnergySword
+    litDamageBonus:
+        types:
+            Slash: 20
+            Heat: 20
+            Structural: 60
+    litDisarmMalus: 0.7
+  - type: MeleeWeapon
+    attackRate: 0.9
+    angle: 100
+    heavyWindupModifier: .9
+    heavyDamageModifier: 1.5
+    soundHit:
+      path: /Audio/Weapons/eblade1.ogg
+    damage:
+      types:
+        Blunt: 4.5
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/e_axe.rsi
+    layers:
+      - state: e_axe
+      - state: e_axe_blade
+        color: "#FFFFFF"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: Item
+    size: 35
+    sprite: Objects/Weapons/Melee/e_axe.rsi
+  - type: Tool
+    qualities:
+      - Prying
+  - type: Reflect
+    enabled: true
+    reflectProb: .75
+    spread: 75

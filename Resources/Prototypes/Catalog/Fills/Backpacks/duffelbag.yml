@@ -81,7 +81,7 @@
   - type: StorageFill
     contents:
       - id: WeaponRifleKR51
-      - id: MagazineCaselessRifleShort
+      - id: MagazineCaselessRifle
         amount: 2
 
 - type: entity
@@ -152,6 +152,60 @@
       - id: MagazineShotgun
         amount: 4
       - id: MagazineLightRifleBox
+        amount: 2
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateAmmo
+  id: ClothingBackpackDuffelSyndicateAmmoPistolFilled
+  name: ammo bundle
+  description: "Reloading! Contains 4 magazines for the C-20r, 4 drums for the Bulldog, and 2 ammo boxes for the L6 SAW."
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazinePistolHighCapacityHighVelocity
+        amount: 2
+      - id: MagazinePistolHighCapacity
+        amount: 2
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateAmmo
+  id: ClothingBackpackDuffelSyndicateAmmoPistolSubMachineGunBundle
+  name: ammo bundle
+  description: "Reloading! Contains 4 magazines for the C-20r, 4 drums for the Bulldog, and 2 ammo boxes for the L6 SAW."
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazinePistolSubMachineGunHighVelocity
+        amount: 2
+      - id: MagazinePistolSubMachineGun
+        amount: 2
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateAmmo
+  id: ClothingBackpackDuffelSyndicateAmmoShotGunBundle
+  name: ammo bundle
+  description: "Reloading! Contains 4 magazines for the C-20r, 4 drums for the Bulldog, and 2 ammo boxes for the L6 SAW."
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineShotgun
+        amount: 2
+      - id: MagazineShotgunSlug
+        amount: 2
+      - id: MagazineShotgunIncendiary
+        amount: 1
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateAmmo
+  id: ClothingBackpackDuffelSyndicateAmmoCaselessRifleBundle
+  name: ammo bundle
+  description: "Reloading! Contains 4 magazines for the C-20r, 4 drums for the Bulldog, and 2 ammo boxes for the L6 SAW."
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineCaselessRifleHighVelocity
+        amount: 2
+      - id: MagazineCaselessRifle
         amount: 2
 
 - type: entity
