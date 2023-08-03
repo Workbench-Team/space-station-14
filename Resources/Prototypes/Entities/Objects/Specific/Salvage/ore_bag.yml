@@ -44,7 +44,7 @@
   - type: Item
     size: 176
   - type: Storage
-    capacity: 9999
+    capacity: 2400
     quickInsert: true
     areaInsert: true
     areaInsertRadius: 14
