@@ -19,6 +19,8 @@ public sealed class RulesManager : SharedRulesManager
     [Dependency] private readonly IClientConsoleHost _consoleHost = default!;
     [Dependency] private readonly INetManager _netManager = default!;
     [Dependency] private readonly IEntitySystemManager _sysMan = default!;
+    [Dependency] private readonly IUriOpener _uri = default!;
+    [Dependency] private readonly IConfigurationManager _cfg = default!;
 
     private InfoSection rulesSection = new InfoSection("", "", false);
     private bool _shouldShowRules = false;
@@ -73,6 +75,7 @@ public sealed class RulesManager : SharedRulesManager
 
         _activePopup.OnQuitPressed += OnQuitPressed;
         _activePopup.OnAcceptPressed += OnAcceptPressed;
+        _activePopup.OnToWikiSend += OnToWikiSendPressed;
         _userInterfaceManager.WindowRoot.AddChild(_activePopup);
         LayoutContainer.SetAnchorPreset(_activePopup, LayoutContainer.LayoutPreset.Wide);
     }
@@ -88,6 +91,10 @@ public sealed class RulesManager : SharedRulesManager
 
         _activePopup?.Orphan();
         _activePopup = null;
+    }
+    private void OnToWikiSendPressed()
+    {
+        _uri.OpenUri(_cfg.GetCVar(CCVars.InfoLinksWikiRules));
     }
 
     public void UpdateRules()

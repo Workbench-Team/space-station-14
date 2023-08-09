@@ -12,6 +12,7 @@ namespace Content.Client.Info;
 public sealed partial class RulesPopup : Control
 {
     private float _timer;
+    private bool _wikiPressed = false ;
 
     public float Timer
     {
@@ -25,6 +26,7 @@ public sealed partial class RulesPopup : Control
 
     public event Action? OnQuitPressed;
     public event Action? OnAcceptPressed;
+    public event Action? OnToWikiSend;
 
     public RulesPopup()
     {
@@ -32,6 +34,7 @@ public sealed partial class RulesPopup : Control
 
         AcceptButton.OnPressed += OnAcceptButtonPressed;
         QuitButton.OnPressed += OnQuitButtonPressed;
+        ToWikiSend.OnPressed += OnToWikiSendPressed;
     }
 
     private void OnQuitButtonPressed(BaseButton.ButtonEventArgs obj)
@@ -43,6 +46,11 @@ public sealed partial class RulesPopup : Control
     {
         OnAcceptPressed?.Invoke();
     }
+    private void OnToWikiSendPressed(BaseButton.ButtonEventArgs obj)
+    {
+        _wikiPressed = true;
+        OnToWikiSend?.Invoke();
+    }
 
     protected override void FrameUpdate(FrameEventArgs args)
     {
@@ -50,17 +58,19 @@ public sealed partial class RulesPopup : Control
 
         if (!AcceptButton.Disabled)
             return;
-
-        if (Timer > 0.0)
+        if (_wikiPressed)
         {
-            if (Timer - args.DeltaSeconds < 0)
-                Timer = 0;
+            if (Timer > 0.0)
+            {
+                if (Timer - args.DeltaSeconds < 0)
+                    Timer = 0;
+                else
+                    Timer -= args.DeltaSeconds;
+            }
             else
-                Timer -= args.DeltaSeconds;
-        }
-        else
-        {
-            AcceptButton.Disabled = false;
+            {
+                AcceptButton.Disabled = false;
+            }
         }
     }
 }

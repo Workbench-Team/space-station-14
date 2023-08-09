@@ -8,3 +8,4 @@ ui-rules-header-links = Links
 ui-rules-roles = Roles wiki
 ui-rules-discord = Discord
 ui-rules-laws = Space Law
+ui-rules-wikirules = Switch to rules
