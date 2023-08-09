@@ -431,6 +431,9 @@
   components:
   - type: Sprite
     state: dough-pie
+  - type: SliceableFood
+    count: 3
+    slice: FoodDoughPastryBaseRaw
 
 - type: entity
   name: flat dough

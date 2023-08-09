@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "From tgstation, commit: https://github.com/tgstation/tgstation/commit/317528881774ce0ddd285dbd2a1bebbf7b017650",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "gondola",
+      "directions": 4
+    },
+    {
+      "name": "gondola_dead"
+    }
+  ]
+}

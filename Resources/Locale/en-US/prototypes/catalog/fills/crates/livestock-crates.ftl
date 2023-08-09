@@ -13,6 +13,9 @@ ent-CrateNPCChicken = Chicken crate
 ent-CrateNPCCrab = Crab crate
     .desc = A crate containing three huge crabs.
 
+ent-CrateNPCGondola = Gondola crate
+    .desc = A crate containing a single gondola.
+
 ent-CrateNPCDuck = Duck crate
     .desc = A crate containing six fully grown ducks.
 

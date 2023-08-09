@@ -2461,3 +2461,50 @@
   - type: NpcFactionMember
     factions:
     - Passive
+    
+- type: entity
+  name: gondola
+  parent: SimpleMobBase
+  id: MobGondola
+  description: Gondola.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: gondola
+      sprite: Mobs/Animals/gondola.rsi
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.25
+        density: 100
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: gondola
+      Critical:
+        Base: gondola_dead
+      Dead:
+        Base: gondola_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatGondola
+      amount: 1
+  - type: InteractionPopup
+    successChance: 0.8
+    interactSuccessString: petting-success-bear
+    interactFailureString: petting-failure-generic
+    interactSuccessSound:
+      path: /Audio/Animals/sloth_squeak.ogg
+  - type: NpcFactionMember
+    factions:
+    - Passive
+    

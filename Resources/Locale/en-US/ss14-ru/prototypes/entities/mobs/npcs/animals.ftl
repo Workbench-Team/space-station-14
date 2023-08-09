@@ -145,3 +145,6 @@ ent-MobHamster = hamster
 ent-MobPig = pig
     .desc = Oink.
     .suffix = { "" }
+ent-MobGondola = gondola
+    .desc = Gondola.
+    .suffix = { "" }

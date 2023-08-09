@@ -1235,6 +1235,89 @@
     FoodDoughSlice: 3
 
 #Donks i guess
+
+- type: microwaveMealRecipe
+  id: RecipeDonkpocket
+  name: donk pocket recipe
+  result: FoodDonkpocket
+  time: 5
+  solids:
+    FoodDoughPastryBaseRaw: 1
+    FoodMeatMeatball: 1
+    
+- type: microwaveMealRecipe
+  id: RecipeGondolapocket
+  name: gondola pocket recipe
+  result: FoodDonkpocketGondola
+  time: 5
+  solids:
+    FoodMeatGondola: 1
+    FoodDoughPastryBaseRaw: 1
+    FoodMeatMeatball: 1
+ 
+- type: microwaveMealRecipe
+  id: RecipeDonkpocketHonk
+  name: donk pocket recipe
+  result: FoodDonkpocketHonk
+  time: 5
+  reagents:
+    Sugar: 5
+  solids:
+    FoodDoughPastryBaseRaw: 1
+    FoodMeatMeatball: 1
+    FoodBanana: 1
+
+- type: microwaveMealRecipe
+  id: RecipeDonkpocketBerry
+  name: berry-pocket recipe
+  result: FoodDonkpocketBerry
+  time: 5
+  solids:
+    FoodDoughPastryBaseRaw: 1
+    FoodGrape: 1
+    
+- type: microwaveMealRecipe
+  id: RecipeDankpocket
+  name: dank pocket recipe
+  result: FoodDonkpocketDank
+  time: 5
+  solids:
+    FoodDoughPastryBaseRaw: 1
+    FoodAmbrosiaVulgaris: 1
+
+- type: microwaveMealRecipe
+  id: RecipeDonkpocketPizzaPocket
+  name: pizza-pocket recipe
+  result: FoodDonkpocketPizza
+  time: 5
+  solids:
+    FoodDoughPastryBaseRaw: 1
+    FoodMeatMeatball: 1
+    FoodTomato: 1
+
+- type: microwaveMealRecipe
+  id: RecipeDonkpocketSpicy
+  name: spicy donk-pocket recipe
+  result: FoodDonkpocketSpicy
+  time: 5
+  solids:
+    FoodDoughPastryBaseRaw: 1
+    FoodMeatMeatball: 1
+    FoodChili: 1
+ 
+- type: microwaveMealRecipe
+  id: RecipeDonkpocketTeriyaki
+  name: teriyaki-pocket recipe
+  result: FoodDonkpocketTeriyaki
+  time: 5
+  reagents:
+    Soysauce: 5
+  solids:
+    FoodDoughPastryBaseRaw: 1
+    FoodMeatMeatball: 1
+
+#Warm pockets
+
 - type: microwaveMealRecipe
   id: RecipeWarmDonkpocket
   name: warm donk pocket recipe
@@ -1242,7 +1325,8 @@
   time: 5
   solids:
     FoodDonkpocket: 1
-
+    
+    
 - type: microwaveMealRecipe
   id: RecipeWarmDankpocket
   name: warm dank pocket recipe
@@ -1276,7 +1360,7 @@
     FoodDonkpocketPizza: 1
 
 - type: microwaveMealRecipe
-  id: RecipeDonkpocketHonk
+  id: RecipeWarmDonkpocketHonk
   name: warm honk-pocket recipe
   result: FoodDonkpocketHonkWarm
   time: 5
@@ -1284,7 +1368,7 @@
     FoodDonkpocketHonk: 1
 
 - type: microwaveMealRecipe
-  id: RecipeDonkpocketBerry
+  id: RecipeWarmDonkpocketBerry
   name: warm berry-pocket recipe
   result: FoodDonkpocketBerryWarm
   time: 5
@@ -1292,7 +1376,7 @@
     FoodDonkpocketBerry: 1
 
 - type: microwaveMealRecipe
-  id: RecipeDonkpocketGondola
+  id: RecipeWarmDonkpocketGondola
   name: warm gondola-pocket recipe
   result: FoodDonkpocketGondolaWarm
   time: 5

@@ -169,3 +169,7 @@ ent-FoodMeatSpiderCutletCooked = паучья котлета
 ent-FoodMeatXenoCutletCooked = ксено котлета
     .desc = Котлета из ксеноса, сочащаяся... вкусом?
     .suffix = { "" }
+ent-FoodMeatGondola = сырое мясо гондолы
+    .desc = Сырой кусок гондолы. Липкое.
+    .suffix = { "" }
+	

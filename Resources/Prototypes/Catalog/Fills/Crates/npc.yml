@@ -54,6 +54,15 @@
         amount: 3
 
 - type: entity
+  id: CrateNPCGondola
+  parent: CrateLivestock
+  components:
+  - type: StorageFill
+    contents:
+      - id: MobGondola
+        amount: 1
+
+- type: entity
   id: CrateNPCDuck
   parent: CrateLivestock
   components:

@@ -72,6 +72,31 @@
     defaultTarget: meat steak
 
 - type: entity
+  name: raw gondola meat
+  parent: FoodMeatBase
+  id: FoodMeatGondola
+  description: A raw piece of gondola. Stinky.
+  components:
+  - type: Tag
+    tags:
+    - Raw
+  - type: Sprite
+    state: gondola
+  - type: FlavorProfile
+    flavors:
+      - shocking
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 10
+        - ReagentId: Fat
+          Quantity: 5
+        - ReagentId: Toxin
+          Quantity: 5
+
+- type: entity
   name: raw human meat
   parent: FoodMeatBase
   id: FoodMeatHuman
