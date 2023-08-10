@@ -42,6 +42,9 @@ guide-entry-security = Служба безопасности
 guide-entry-dna = ДНК
 guide-entry-antagonists = Антагонисты
 guide-entry-nuclear-operatives = Ядерные Оперативники
+guide-entry-traitors = Предатели
+guide-entry-zombies = Зомби
+guide-entry-minor-antagonists = Малые Антагонисты
 
 guide-entry-arumoon = Станция им. Aru Moon
 guide-entry-arumoon-spacelaw = Космический Закон

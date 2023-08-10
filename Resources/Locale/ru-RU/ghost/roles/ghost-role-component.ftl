@@ -103,3 +103,5 @@ ghost-role-information-centcom-official-name = Представитель Цен
 ghost-role-information-centcom-official-description = Проинспектируйте станцию, запишите отзывы о работе глав отделов, прослушайте Капитана.
 ghost-role-information-behonker-name = Бехонкер
 ghost-role-information-behonker-description = Вы - антагонист, сейте смерть и хонки тем, кто не следует за хонкоматерью.
+ghost-role-information-taxibot-name = ТаксиБот
+ghost-role-information-taxibot-description = Доставьте экипаж станции к месту их назначения.

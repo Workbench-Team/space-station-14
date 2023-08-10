@@ -20,30 +20,40 @@
   - type: Body
     prototype: Moth
     requiredLegs: 2
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Moth # moff
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeat
+      amount: 5
   - type: Vocal
     sounds:
       Male: UnisexMoth
       Female: UnisexMoth
       Unsexed: UnisexMoth
-  - type: Flammable
-    damage:
-      types:
-        Heat: 2 # moths should burn more easily
   - type: SlowOnDamage # Moths are weaker than everyone else, so they should take less speed penalties
     speedModifierThresholds:
       70: 0.8
-  - type: MobState
   - type: MobThresholds
     thresholds:
       0: Alive
       85: Critical
       175: Dead
-  - type: Damageable
-    damageContainer: Biological
-    damageModifierSet: Moth # moff
-  - type: Temperature
-    heatDamageThreshold: 330
-    coldDamageThreshold: 195
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.5
+    baseSprintSpeed: 5.5
+    weightlessAcceleration: 1.5 # Move around more easily in space.
+    weightlessFriction: 1
+    weightlessModifier: 1
+  - type: Flammable
+    damage:
+      types:
+        Heat: 2 # moths burn more easily
+  - type: Temperature # Moths hate the heat and thrive in the cold.
+    heatDamageThreshold: 335
+    coldDamageThreshold: 230
     currentTemperature: 310.15
     specificHeat: 46
     coldDamage:
@@ -51,15 +61,8 @@
         Cold : 0.05 #per second, scales with temperature & other constants
     heatDamage:
       types:
-        Heat : 0.25 #per second, scales with temperature & other constants
-  - type: MovementAlwaysTouching
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 3.5
-    baseSprintSpeed: 5.5
-    weightlessAcceleration: 1.6
-    weightlessModifier: 0.4
+        Heat : 0.2 #per second, scales with temperature & other constants
   - type: Sprite # sprite again because we want different layer ordering
-    netsync: false
     noRot: true
     drawdepth: Mobs
     layers:
@@ -79,7 +82,7 @@
       - shader: StencilMask
         map: [ "enum.HumanoidVisualLayers.StencilMask" ]
         sprite: Mobs/Customization/masking_helpers.rsi
-        state: female_full
+        state: unisex_full
         visible: false
       - map: [ "jumpsuit" ]
       - map: [ "enum.HumanoidVisualLayers.LHand" ]
@@ -113,30 +116,6 @@
         sprite: "Effects/creampie.rsi"
         state: "creampie_moth"
         visible: false
-  - type: Reactive
-    groups:
-      Flammable: [ Touch ]
-      Extinguish: [ Touch ]
-      Acidic: [Touch, Ingestion]
-    reactions:
-    - reagents: [Water, SpaceCleaner]
-      methods: [Touch]
-      effects:
-      - !type:WashCreamPieReaction
-    - reagents: [ PestKiller, PlantBGone ]
-      methods: [ Touch, Ingestion, Injection ]
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Poison: 1.5
-    - reagents: [ Diethylamine ]
-      methods: [ Touch, Ingestion, Injection ]
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Poison: 0.25
 
 - type: entity
   save: false
@@ -148,5 +127,3 @@
   components:
   - type: HumanoidAppearance
     species: Moth
-
-#Weh

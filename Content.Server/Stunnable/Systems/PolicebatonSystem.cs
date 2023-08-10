@@ -7,6 +7,7 @@ using Content.Shared.Examine;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Item;
 using Content.Shared.Popups;
+using Content.Shared.Stunnable;
 using Content.Shared.Toggleable;
 using Content.Shared.Weapons.Melee.Events;
 using Robust.Server.GameObjects;
@@ -42,8 +43,6 @@ namespace Content.Server.Stunnable.Systems
                 args.Cancelled = true;
                 return;
             }
-
-            args.HitSoundOverride = component.StunSound;
         }
 
         private void OnUseInHand(EntityUid uid, PolicebatonComponent comp, UseInHandEvent args)
@@ -85,6 +84,7 @@ namespace Content.Server.Stunnable.Systems
             SoundSystem.Play(comp.ToggleSound.GetSound(), Filter.Pvs(comp.Owner), comp.Owner, AudioHelpers.WithVariation(0.25f));
 
             comp.Activated = false;
+            Dirty(comp);
         }
 
         private void TurnOn(EntityUid uid, PolicebatonComponent comp, EntityUid user)
@@ -102,6 +102,7 @@ namespace Content.Server.Stunnable.Systems
             var playerFilter = Filter.Pvs(comp.Owner, entityManager: EntityManager);
             SoundSystem.Play(comp.ToggleSound.GetSound(), playerFilter, comp.Owner, AudioHelpers.WithVariation(0.25f));
             comp.Activated = true;
+            Dirty(comp);
         }
     }
 }

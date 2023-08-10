@@ -20,5 +20,7 @@ trait-archaic-accent-name = Архаичный акцент
 trait-archaic-accent-desc = Вы говорите так, как многие другие считают устаревшим
 trait-accentless-name = Без акцента
 trait-accentless-desc = У вас нет акцента, который обычно присущ представителям вашего вида
+trait-wheelchair-bound-name = Прикованный к инвалидному креслу
+trait-wheelchair-bound-desc = Вы не можете передвигаться без инвалидного кресла. Инвалидное кресло прилагается.
 trait-paracusia-name = Паракузия
 trait-paracusia-desc = Вы слышите звуки, которых на самом деле нет

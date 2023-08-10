@@ -199,3 +199,6 @@ ent-ClothingUniformJumpskirtSeniorPhysician = юбка врача-инструк
 ent-ClothingUniformJumpskirtSeniorOfficer = юбка офицера-инструктора
     .desc = Показатель мастерства и престижа в отделе службы безопасности.
     .suffix = { "" }
+ent-ClothingUniformJumpskirtSecGrey = серый комбинезон охраны
+    .desc = Тактический пережиток прошлых лет, когда Nanotrasen решила, что дешевле красить костюмы в красный цвет вместо того, чтобы смывать кровь.
+    .suffix = { "" }

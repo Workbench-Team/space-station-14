@@ -29,18 +29,6 @@
     proto: BulletMagnum
 
 - type: entity
-  id: CartridgeMagnumHighVelocity
-  name: cartridge (.45 magnum high-velocity)
-  parent: BaseCartridgeMagnum
-  components:
-  - type: CartridgeAmmo
-    proto: BulletMagnumHighVelocity
-  - type: Sprite
-    layers:
-    - state: hv
-      map: ["enum.AmmoVisualLayers.Base"]
-
-- type: entity
   id: CartridgeMagnumPractice
   name: cartridge (.45 magnum practice)
   parent: BaseCartridgeMagnum

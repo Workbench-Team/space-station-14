@@ -25,3 +25,6 @@ ent-GasDualPortVentPump = dual-port air vent
 ent-GasRecycler = gas recycler
     .desc = Recycles carbon dioxide and nitrous oxide. Heater and compressor not included.
     .suffix = { "" }
+ent-HeatExchanger = radiator
+    .desc = Transfers heat between the pipe and its surroundings.
+    .suffix = { "" }

@@ -1,9 +1,6 @@
 ent-BulletPistol = пуля (.35 авто)
     .desc = { ent-BaseBullet.desc }
     .suffix = { "" }
-ent-BulletPistolHighVelocity = пуля (.35 авто высокоскоростная)
-    .desc = { ent-BaseBulletHighVelocity.desc }
-    .suffix = { "" }
 ent-BulletPistolUranium = пуля (.35 авто урановая)
     .desc = { ent-BaseBullet.desc }
     .suffix = { "" }

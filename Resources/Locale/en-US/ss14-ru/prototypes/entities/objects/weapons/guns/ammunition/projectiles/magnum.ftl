@@ -1,9 +1,6 @@
 ent-BulletMagnum = bullet (.45 magnum)
     .desc = { ent-BaseBullet.desc }
     .suffix = { "" }
-ent-BulletMagnumHighVelocity = bullet (.45 magnum high-velocity)
-    .desc = { ent-BaseBulletHighVelocity.desc }
-    .suffix = { "" }
 ent-BulletMagnumPractice = bullet (.45 magnum practice)
     .desc = { ent-BaseBulletPractice.desc }
     .suffix = { "" }

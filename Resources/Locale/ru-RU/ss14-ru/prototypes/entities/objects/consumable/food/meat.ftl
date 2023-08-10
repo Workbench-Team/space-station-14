@@ -1,6 +1,9 @@
 ent-FoodMeatBase = { ent-FoodInjectableBase }
     .desc = { ent-FoodInjectableBase.desc }
     .suffix = { "" }
+ent-FoodMeatRawBase = { ent-FoodMeatBase }
+    .desc = { ent-FoodMeatBase.desc }
+    .suffix = { "" }
 ent-FoodMeat = сырое мясо
     .desc = Кусок сырого мяса.
     .suffix = { "" }

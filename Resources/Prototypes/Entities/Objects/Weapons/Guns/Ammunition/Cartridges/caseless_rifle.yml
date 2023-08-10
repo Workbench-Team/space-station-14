@@ -30,18 +30,6 @@
     proto: BulletCaselessRifle
 
 - type: entity
-  id: CartridgeCaselessRifleHighVelocity
-  name: cartridge (.25 caseless high-velocity)
-  parent: BaseCartridgeCaselessRifle
-  components:
-  - type: CartridgeAmmo
-    proto: BulletCaselessRifleHighVelocity
-  - type: Sprite
-    layers:
-    - state: hv
-      map: ["enum.AmmoVisualLayers.Base"]
-
-- type: entity
   id: CartridgeCaselessRiflePractice
   name: cartridge (.25 caseless practice)
   parent: BaseCartridgeCaselessRifle

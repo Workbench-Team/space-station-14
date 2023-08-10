@@ -8,6 +8,11 @@
         [1] Вызывает
        *[other] вызвать
     }
+reagent-effect-guidebook-emp-reaction-effect =
+    { $chance ->
+        [1] Вызывает
+       *[other] вызвать
+    } электромагнитный импульс
 -satiate-3rd-person =
     { $chance ->
         [1] Утоляет

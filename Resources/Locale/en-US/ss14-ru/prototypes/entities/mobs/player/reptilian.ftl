@@ -1,3 +1,4 @@
 ent-MobReptilian = Urisst' Mzhand
-    .desc = { ent-BaseMobReptilian.desc }
-    .suffix = { "" }
+
+  .desc = { ent-['BaseMobReptilian', 'BaseMob'].desc }
+  .suffix = { "" }

@@ -68,6 +68,8 @@
       - id: ClothingHandsGlovesColorBlack
       - id: ClothingShoesBootsJack
       - id: HoloprojectorSecurity
+      - id: WeaponMeleeNeedle
+        prob: 0.1
 
 - type: entity
   id: LockerBrigmedicFilled

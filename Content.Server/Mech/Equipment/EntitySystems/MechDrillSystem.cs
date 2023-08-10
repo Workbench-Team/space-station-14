@@ -15,7 +15,6 @@ using Content.Shared.Mech.Equipment.Components;
 using Content.Shared.Tag;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
-using Content.Shared.Gatherable;
 
 namespace Content.Server.Mech.Equipment.EntitySystems;
 
@@ -49,8 +48,8 @@ public sealed class MechDrillSystem : EntitySystem
         if (!TryComp<MechComponent>(args.User, out var mech))
             return;
 
-        if (!TryComp<GatheringToolComponent>(uid, out var gatheringTool))
-            return;
+//        if (!TryComp<GatheringToolComponent>(uid, out var gatheringTool))
+//            return;
 
         if (mech.Energy + component.DrillEnergyDelta < 0)
             return;
@@ -62,7 +61,7 @@ public sealed class MechDrillSystem : EntitySystem
         component.Token = new();
 
         var damageRequired = _destructible.DestroyedAt(args.Target.Value);
-        var damageTime = (damageRequired / gatheringTool.Damage.Total).Float();
+/*        var damageTime = (damageRequired / gatheringTool.Damage.Total).Float();
         damageTime = Math.Max(1f, damageTime);
         component.AudioStream = _audio.PlayPvs(component.DrillSound, uid);
         var doAfter = new DoAfterArgs(args.User, damageTime, new MechDrillDoAfterEvent(), uid, target: target, used: uid)
@@ -74,7 +73,7 @@ public sealed class MechDrillSystem : EntitySystem
         };
 
         _doAfter.TryStartDoAfter(doAfter);
-    }
+*/    }
 
     private void OnDoAfter(EntityUid uid, MechDrillComponent component, MechDrillDoAfterEvent args)
     {
@@ -89,7 +88,7 @@ public sealed class MechDrillSystem : EntitySystem
         if (!_mech.TryChangeEnergy(equipmentComponent.EquipmentOwner.Value, component.DrillEnergyDelta))
             return;
 
-        _gatherableSystem.OnDoAfter(target, new GatherableComponent(), args);
+//        _gatherableSystem.OnDoAfter(target, new GatherableComponent(), args);
         _mech.UpdateUserInterface(equipmentComponent.EquipmentOwner.Value);
     }
 }
