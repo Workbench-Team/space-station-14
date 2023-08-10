@@ -352,3 +352,22 @@
   - type: Clothing
     sprite: Clothing/Hands/Gloves/forensic.rsi
   - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsChronoLegionnaire
+  name: chrono legionnaire combat gloves
+  description: High-quality combat gloves form pa... Future.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/chronogloves.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/chronogloves.rsi
+  - type: GloveHeatResistance
+    heatResistance: 1400
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+    fiberColor: fibers-olive
+  - type: FingerprintMask
+  - type: Unremoveable
