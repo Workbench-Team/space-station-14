@@ -1,4 +1,4 @@
-﻿<BoxContainer xmlns="https://spacestation14.io"
+<BoxContainer xmlns="https://spacestation14.io"
               Orientation="Vertical">
     <Label Text="{Loc 'ui-rules-header-links'}" StyleClasses="LabelHeading"/>
     <BoxContainer Orientation="Horizontal"
@@ -11,6 +11,9 @@
                 Access="Public"/>
         <Button Name="LawsButton"
                 Text="{Loc 'ui-rules-laws'}"
+                Access="Public"/>
+        <Button Name="ToWikiSend"
+                Text ="{Loc 'ui-rules-wikirules'}"
                 Access="Public"/>
     </BoxContainer>
 </BoxContainer>
