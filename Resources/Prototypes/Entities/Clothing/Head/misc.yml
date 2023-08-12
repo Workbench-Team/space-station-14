@@ -166,8 +166,8 @@
     sprite: Clothing/Head/Hats/catears.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/catears.rsi
-  - type: AddAccentClothing
-    accent: NyaAccent
+#  - type: AddAccentClothing
+#    accent: NyaAccent
 
 - type: entity
   parent: ClothingHeadBase
