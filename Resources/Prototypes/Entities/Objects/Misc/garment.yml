@@ -1,0 +1,154 @@
+- type: entity
+  parent: BaseStorageItem
+  abstract: true
+  id: GarmentBagBase
+  description: Useful for carrying items in your hands.
+  components:
+  - type: Item
+    size: 100
+  - type: Storage
+    capacity: 100
+
+- type: entity
+  name: garment bag
+  parent: GarmentBagBase
+  id: GarmentBag
+  description: A handy bag.
+  components:
+  - type: Sprite
+    sprite: Objects/Storage/Briefcases/garment_bag.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Storage/Briefcases/garment_bag.rsi
+
+- type: entity
+  name: captain's garment bag
+  parent: GarmentBag
+  id: GarmentBagCaptain
+  description: A handy bag.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckCloakCap
+      - id: ClothingNeckCloakCapFormal
+      - id: ClothingOuterWinterCap
+      - id: ClothingHandsGlovesCaptain
+      - id: ClothingHeadHatCaptain
+      - id: ClothingHeadHatCapcap
+      - id: ClothingUniformJumpsuitCaptain
+      - id: ClothingUniformJumpskirtCaptain
+      - id: ClothingUniformJumpsuitCapFormal
+      - id: ClothingUniformJumpskirtCapFormalDress
+      - id: ClothingShoesBootsLaceup
+
+- type: entity
+  name:  head of personnel's garment
+  parent: GarmentBag
+  id: GarmentBagHoP
+  description: A handy bag.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckCloakHop
+      - id: ClothingOuterWinterHoP
+      - id: ClothingHeadHatHopcap
+      - id: ClothingEyesGlassesSunglasses
+      - id: ClothingUniformJumpsuitHoP
+      - id: ClothingUniformJumpskirtHoP
+      - id: ClothingShoesBootsLaceup
+
+- type: entity
+  name: head of security's garment bag
+  parent: GarmentBag
+  id: GarmentBagHoS
+  description: A handy bag.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckCloakHos
+      - id: ClothingOuterWinterHoS
+      - id: ClothingOuterCoatHoSTrench
+      - id: ClothingHeadHatBeretHoS
+      - id: ClothingHeadHatHoshat
+      - id: ClothingUniformJumpsuitHoS
+      - id: ClothingUniformJumpskirtHoS
+      - id: ClothingUniformJumpsuitHoSAlt
+      - id: ClothingUniformJumpskirtHoSAlt
+      - id: ClothingUniformJumpsuitHoSParadeMale
+      - id: ClothingUniformJumpskirtHoSParadeMale
+      - id: ClothingUniformJumpsuitHosFormal
+      - id: ClothingUniformJumpskirtHosFormal
+      - id: ClothingUniformJumpsuitHoSBlue
+      - id: ClothingUniformJumpsuitHoSGrey
+      - id: ClothingShoesBootsJack
+
+- type: entity
+  name: chief engineer's garment bag
+  parent: GarmentBag
+  id: GarmentBagCE
+  description: A handy bag.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckCloakCe
+      - id: ClothingOuterWinterCE
+      - id: ClothingHandsGlovesCE
+      - id: ClothingEyesGlassesMeson
+      - id: ClothingHeadHatHardhatWhite
+      - id: ClothingHeadHatBeretEngineering
+      - id: ClothingUniformJumpsuitChiefEngineer
+      - id: ClothingUniformJumpskirtChiefEngineer
+      - id: ClothingShoesColorBrown
+
+- type: entity
+  name: research director's garment bag
+  parent: GarmentBag
+  id: GarmentBagRD
+  description: A handy bag.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckCloakRd
+      - id: ClothingOuterWinterRD
+      - id: ClothingHandsGlovesColorBlack
+      - id: ClothingHeadHatBeretRND
+      - id: ClothingUniformJumpsuitResearchDirector
+      - id: ClothingUniformJumpskirtResearchDirector
+      - id: ClothingShoesBootsJack
+
+- type: entity
+  name: quartermasters's garment bag
+  parent: GarmentBag
+  id: GarmentBagQM
+  description: A handy bag.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckCloakQm
+      - id: ClothingOuterWinterQM
+      - id: ClothingHandsGlovesColorBrown
+      - id: ClothingHandsGlovesFingerless
+      - id: ClothingHeadHatQMsoft
+      - id: ClothingHeadHatQMsoftFlipped
+      - id: ClothingMaskGas
+      - id: ClothingUniformJumpsuitQM
+      - id: ClothingUniformJumpskirtQM
+      - id: ClothingShoesColorBrown
+
+- type: entity
+  name: chief medical officer's garment bag
+  parent: GarmentBag
+  id: GarmentBagCMO
+  description: A handy bag.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingCloakCmo
+      - id: ClothingOuterWinterCMO
+      - id: ClothingOuterCoatLabCmo
+      - id: ClothingHandsGlovesNitrile
+      - id: ClothingHeadHatBeretCmo
+      - id: ClothingHeadHatSurgcapBlue
+      - id: ClothingUniformJumpsuitCMO
+      - id: ClothingUniformJumpskirtCMO
+      - id: ClothingShoesColorBlue
