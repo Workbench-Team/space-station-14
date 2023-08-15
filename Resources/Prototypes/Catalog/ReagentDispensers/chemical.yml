@@ -43,13 +43,13 @@
   tier: 3
   inventory:
   - Acetone
-  - Diethylamine
   - Phenol
+  - SodiumCarbonate
+  - Water
   
 - type: reagentDispenserInventoryTiered
   id: ChemDispenserTier4Inventory
   tier: 4
   inventory:
   - Plasma
-  - UnstableMutagen
   
