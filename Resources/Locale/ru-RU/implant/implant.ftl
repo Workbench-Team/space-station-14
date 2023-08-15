@@ -29,6 +29,5 @@ use-emp-implant-action-description = Вызывает небольшой ЭМИ 
 use-dna-scrambler-implant-action-name = Исказить ДНК
 use-dna-scrambler-implant-action-description = ЧЕНДЖЛИНГ В ТЕХАХ!
 deathrattle-implant-dead-message = { $user } умер по координатам: { $position }.
-scramble-attempt-while-scrambled-popup = Обнаружена искажённая ДНК, пожалуйста, извлеките имплантат перед отменой текущего искажения.
 scramble-implant-activated-popup = Вы трансформировались в { $identity }
 deathrattle-implant-critical-message = Жизненные показатели { $user } критические, требуется неотложная помощь по координатам: { $position }.

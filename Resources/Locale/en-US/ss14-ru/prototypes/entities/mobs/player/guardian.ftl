@@ -7,3 +7,6 @@ ent-MobHoloparasiteGuardian = Holoparasite
 ent-MobIfritGuardian = Ifrit
     .desc = A corrupted jinn, ripped from fitra to serve the wizard's petty needs. It stands wicked, tuning into it's owner's life to sustain itself.
     .suffix = { "" }
+ent-MobHoloClownGuardian = HoloClown
+    .desc = A mesmerising whirl of hard-light patterns weaves a blue colored clown of dubious origin.
+    .suffix = { "" }

@@ -48,6 +48,7 @@ admin-note-editor-type-message = Сообщение
 admin-note-editor-type-watchlist = Наблюдение
 admin-note-editor-type-server-ban = Бан
 admin-note-editor-type-role-ban = Бан роли
+admin-note-editor-severity-select = Выбрать
 admin-note-editor-severity-none = Никакая
 admin-note-editor-severity-low = Небольшая
 admin-note-editor-severity-medium = Средняя

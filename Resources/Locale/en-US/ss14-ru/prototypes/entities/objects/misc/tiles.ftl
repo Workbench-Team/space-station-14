@@ -142,3 +142,6 @@ ent-FloorTileItemSteelMaint = steel maint floor
 ent-FloorTileItemGratingMaint = grating maint floor
     .desc = { ent-FloorTileItemBase.desc }
     .suffix = { "" }
+ent-FloorTileItemWeb = web tile
+    .desc = { ent-FloorTileItemBase.desc }
+    .suffix = { "" }

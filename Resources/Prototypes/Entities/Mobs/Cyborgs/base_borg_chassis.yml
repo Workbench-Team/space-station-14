@@ -11,6 +11,7 @@
   - type: Input
     context: "human"
   - type: InputMover
+  - type: MobMover
   - type: DamageOnHighSpeedImpact
     damage:
       types:

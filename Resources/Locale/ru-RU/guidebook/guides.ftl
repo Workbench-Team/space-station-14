@@ -1,11 +1,13 @@
 guide-entry-engineering = Инженерия
 guide-entry-construction = Строительство
+guide-entry-airlock-security = Улучшения Шлюзов
 guide-entry-atmospherics = Атмосфера
 guide-entry-botany = Ботаника
 guide-entry-fires = Пожары & Космос
 guide-entry-shuttle-craft = Шаттло-строй
 guide-entry-networking = Налаживание Сети
 guide-entry-network-configurator = Конфигуратор Сети
+guide-entry-access-configurator = Конфигуратор Доступа
 guide-entry-power = Электроснабжение
 guide-entry-ame = Двигатель антиматерии (ДАМ)
 guide-entry-singularity = Сингулярный двигатель

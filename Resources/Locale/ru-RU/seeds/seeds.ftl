@@ -74,3 +74,5 @@ seeds-watermelon-name = арбуз
 seeds-watermelon-display-name = арбузного растения
 seeds-grape-name = виноград
 seeds-grape-display-name = виноградного растения
+seeds-cocoa-name = какао
+seeds-cocoa-display-name = какао растения

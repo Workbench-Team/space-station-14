@@ -33,7 +33,6 @@ research-technology-draconic-munitions = Драконовые боеприпас
 research-technology-explosive-technology = Технология взрывчаток
 research-technology-advanced-laser-manipulation = Продвинутое лазерное оружие
 research-technology-nonlethal-ammunition = Нелетальная аммуниция
-research-technology-optimized-ballistics = Улучшенная баллистика
 research-technology-concentrated-laser-weaponry = Кучное лазерное оружие
 research-technology-wave-particle-harnessing = Использование рентген-частиц
 research-technology-advanced-riot-control = Боевой контроль беспорядков

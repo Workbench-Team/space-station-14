@@ -57,14 +57,6 @@
       factions:
       - Syndicate
 
-# DNA Scrambler
-- type: entity
-  parent: MobHuman
-  id: MobHumanScrambled
-  name: Scrambled Human
-  components:
-    - type: RandomHumanoidAppearance
-
 - type: entity
   name: Arriving Assistant
   parent: MobHuman
