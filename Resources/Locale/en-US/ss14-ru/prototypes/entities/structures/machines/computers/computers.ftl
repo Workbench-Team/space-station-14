@@ -91,3 +91,6 @@ ent-ComputerPalletConsole = cargo sale computer
 ent-ComputerMassMedia = mass-media console
     .desc = Write your message to the world!
     .suffix = { "" }
+ent-ComputerSensorMonitoring = sensor monitoring computer
+    .desc = A flexible console for monitoring all kinds of sensors.
+    .suffix = TESTING, DO NOT MAP

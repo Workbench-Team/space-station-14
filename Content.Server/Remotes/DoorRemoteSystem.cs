@@ -39,10 +39,14 @@ namespace Content.Server.Remotes
                     component.Mode = OperatingMode.ToggleBolts;
                     switchMessageId = "door-remote-switch-state-toggle-bolts";
                     break;
+
+                    // Skip toggle bolts mode and move on from there (to emergency access)
                 case OperatingMode.ToggleBolts:
                     component.Mode = OperatingMode.ToggleEmergencyAccess;
                     switchMessageId = "door-remote-switch-state-toggle-emergency-access";
                     break;
+
+                    // Skip ToggleEmergencyAccess mode and move on from there (to door toggle)
                 case OperatingMode.ToggleEmergencyAccess:
                     component.Mode = OperatingMode.OpenClose;
                     switchMessageId = "door-remote-switch-state-open-close";
@@ -56,15 +60,18 @@ namespace Content.Server.Remotes
 
         private void OnBeforeInteract(EntityUid uid, DoorRemoteComponent component, BeforeRangedInteractEvent args)
         {
+            bool isAirlock = TryComp<AirlockComponent>(args.Target, out var airlockComp);
+
             if (args.Handled
                 || args.Target == null
                 || !TryComp<DoorComponent>(args.Target, out var doorComp) // If it isn't a door we don't use it
-                || !TryComp<AirlockComponent>(args.Target, out var airlockComp) // Remotes only work on airlocks
                 // The remote can be used anywhere the user can see the door.
                 // This doesn't work that well, but I don't know of an alternative
                 || !_interactionSystem.InRangeUnobstructed(args.User, args.Target.Value,
                     SharedInteractionSystem.MaxRaycastRange, CollisionGroup.Opaque))
+            {
                 return;
+            }
 
             args.Handled = true;
 
@@ -85,7 +92,10 @@ namespace Content.Server.Remotes
             switch (component.Mode)
             {
                 case OperatingMode.OpenClose:
-                    if (_doorSystem.TryToggleDoor(args.Target.Value, doorComp, args.Used))
+                    // Note we provide args.User here to TryToggleDoor as the "user"
+                    // This means that the door will look at all access items carryed by the player for access, including
+                    // this remote, but also including anything else they are carrying such as a PDA or ID card.
+                    if (_doorSystem.TryToggleDoor(args.Target.Value, doorComp, args.User))
                         _adminLogger.Add(LogType.Action, LogImpact.Medium, $"{ToPrettyString(args.User):player} used {ToPrettyString(args.Used)} on {ToPrettyString(args.Target.Value)}: {doorComp.State}");
                     break;
                 case OperatingMode.ToggleBolts:
@@ -99,8 +109,12 @@ namespace Content.Server.Remotes
                     }
                     break;
                 case OperatingMode.ToggleEmergencyAccess:
-                    _airlock.ToggleEmergencyAccess(args.Target.Value, airlockComp);
-                    _adminLogger.Add(LogType.Action, LogImpact.Medium, $"{ToPrettyString(args.User):player} used {ToPrettyString(args.Used)} on {ToPrettyString(args.Target.Value)} to set emergency access {(airlockComp.EmergencyAccess ? "on" : "off")}");
+                    if (airlockComp != null)
+                    {
+                        _airlock.ToggleEmergencyAccess(args.Target.Value, airlockComp);
+                        _adminLogger.Add(LogType.Action, LogImpact.Medium,
+                            $"{ToPrettyString(args.User):player} used {ToPrettyString(args.Used)} on {ToPrettyString(args.Target.Value)} to set emergency access {(airlockComp.EmergencyAccess ? "on" : "off")}");
+                    }
                     break;
                 default:
                     throw new InvalidOperationException(

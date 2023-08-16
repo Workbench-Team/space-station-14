@@ -34,3 +34,6 @@ ent-CrateServiceBox = { ent-CratePlastic }
 ent-CrateJanitorBiosuit = { ent-CratePlastic }
     .desc = { ent-CratePlastic.desc }
     .suffix = { "" }
+ent-CrateTrashCartFilled = { ent-CrateTrashCart }
+    .suffix = Filled
+    .desc = { ent-CrateTrashCart.desc }

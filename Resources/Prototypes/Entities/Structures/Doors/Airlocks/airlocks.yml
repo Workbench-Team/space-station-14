@@ -21,6 +21,8 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/atmospherics.rsi
+  - type: Construction
+    node: airlockMedSecurity
 
 - type: entity
   parent: Airlock
@@ -69,6 +71,8 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/command.rsi
+  - type: Construction
+    node: airlockMaxSecurity
 
 - type: entity
   parent: Airlock
@@ -77,6 +81,8 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/security.rsi
+  - type: Construction
+    node: airlockMedSecurity
 
 - type: entity
   parent: Airlock
@@ -85,6 +91,8 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/syndicate.rsi
+  - type: Construction
+    node: airlockMedSecurity
 
 - type: entity
   parent: Airlock
@@ -93,6 +101,8 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/syndicatecommand.rsi
+  - type: Construction
+    node: airlockMaxSecurity
 
 - type: entity
   parent: Airlock
@@ -173,6 +183,8 @@
     sprite: Structures/Doors/Airlocks/Glass/atmospherics.rsi
   - type: PaintableAirlock
     group: Glass
+  - type: Construction
+    node: glassAirlockMedSecurity
 
 - type: entity
   parent: AirlockGlass
@@ -223,6 +235,8 @@
     sprite: Structures/Doors/Airlocks/Glass/command.rsi
   - type: PaintableAirlock
     group: Glass
+  - type: Construction
+    node: glassAirlockMaxSecurity
 
 - type: entity
   parent: AirlockGlass
@@ -233,6 +247,9 @@
     sprite: Structures/Doors/Airlocks/Glass/security.rsi
   - type: PaintableAirlock
     group: Glass
+  - type: Construction
+    node: glassAirlockMedSecurity
+
 - type: entity
   parent: AirlockGlass
   id: AirlockSyndicateGlass
@@ -242,6 +259,8 @@
     sprite: Structures/Doors/Airlocks/Glass/syndicate.rsi
   - type: PaintableAirlock
     group: Glass
+  - type: Construction
+    node: glassAirlockMedSecurity
 
 - type: entity
   parent: AirlockGlass
@@ -252,3 +271,5 @@
     sprite: Structures/Doors/Airlocks/Glass/syndicatecommand.rsi
   - type: PaintableAirlock
     group: Glass
+  - type: Construction
+    node: glassAirlockMaxSecurity

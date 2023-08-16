@@ -1,11 +1,11 @@
 nuke-component-cant-anchor-floor = Не удаётся закрутить крепёжные болты к полу!
-nuke-component-cant-anchor = Похоже, что без диска болты заблокированы!
 nuke-component-announcement-sender = Ядерная боеголовка
 nuke-component-announcement-armed = Внимание! Механизм самоуничтожения станции был активирован по координатам { $position }. До детонации { $time } секунд.
 nuke-component-announcement-unarmed = Механизм самоуничтожение станции деактивирован! Хорошего дня!
 nuke-component-announcement-send-codes = Внимание! Коды самоуничтожения были отправлены по факсу.
 nuke-component-doafter-warning = Вы начинаете перебирать провода и кнопки, в попытке обезвредить ядерную бомбу. Это может занять некоторое время.
 nuke-user-interface-title = Ядерная Боеголовка
+nuke-user-interface-disarm-button = ОБЕЗВРЕД.
 nuke-user-interface-arm-button = ВЗВЕСТИ
 nuke-user-interface-anchor-button = ЗАКРЕПИТЬ
 nuke-user-interface-eject-button = ИЗВЛЕЧЬ

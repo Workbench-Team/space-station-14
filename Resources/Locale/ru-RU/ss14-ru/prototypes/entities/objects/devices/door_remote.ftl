@@ -1,5 +1,5 @@
 ent-DoorRemoteDefault = пульт от дверей
-    .desc = Гаджет, который может открывать и закрывать двери дистанционно
+    .desc = Гаджет, позволяющий дистанционно открывать и болтировать двери.
     .suffix = { "" }
 ent-DoorRemoteCommand = пульт от дверей командования
     .desc = { ent-DoorRemoteDefault.desc }
@@ -24,6 +24,9 @@ ent-DoorRemoteMedical = пульт от дверей медотсека
     .suffix = { "" }
 ent-DoorRemoteEngineering = пульт от дверей инженерного отдела
     .desc = { ent-DoorRemoteDefault.desc }
+    .suffix = { "" }
+ent-DoorRemoteFirefight = пульт от пожарных шлюзов
+    .desc = Гаджет, позволяющий дистанционно открывать и болтировать Пожарные Шлюзы.
     .suffix = { "" }
 ent-DoorRemoteAll = супер пульт от дверей
     .suffix = Адмемы

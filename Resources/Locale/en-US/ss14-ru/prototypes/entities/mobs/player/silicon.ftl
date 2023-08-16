@@ -7,3 +7,6 @@ ent-Drone = drone
 ent-Onestar = onestar mecha
     .desc = { ent-PlayerSiliconBase.desc }
     .suffix = { "" }
+ent-PlayerBorgGeneric = { ent-BorgChassisGeneric }
+    .desc = { ent-BorgChassisGeneric.desc }
+    .suffix = { "" }

@@ -1,7 +1,7 @@
 ent-BaseStationNanotrasen = { "" }
     .desc = { "" }
     .suffix = { "" }
-ent-StandardNanotrasenStation = { ent-['BaseStation', 'BaseStationCargo', 'BaseStationJobsSpawning', 'BaseStationRecords', 'BaseStationArrivals', 'BaseStationEvacuation', 'BaseStationAlertLevels', 'BaseStationExpeditions', 'BaseStationAllEventsEligible', 'BaseStationNanotrasen'] }
+ent-StandardNanotrasenStation = { ent-['BaseStation', 'BaseStationCargo', 'BaseStationJobsSpawning', 'BaseStationRecords', 'BaseStationArrivals', 'BaseStationEvacuation', 'BaseStationAlertLevels', 'BaseStationExpeditions', 'BaseStationSiliconLawCrewsimov', 'BaseStationAllEventsEligible', 'BaseStationNanotrasen'] }
 
   .desc = { ent-['BaseStation', 'BaseStationCargo', 'BaseStationJobsSpawning', 'BaseStationRecords', 'BaseStationArrivals', 'BaseStationEvacuation', 'BaseStationAlertLevels', 'BaseStationExpeditions', 'BaseStationAllEventsEligible', 'BaseStationNanotrasen'].desc }
   .suffix = { "" }

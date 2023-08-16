@@ -7,3 +7,6 @@ ent-Drone = дрон
 ent-Onestar = ванстар меха
     .desc = Вы - экспериментальный меха, созданный неизвестно кем, все, что Вы знаете, это то, что у Вас есть оружие и вы обнаруживаете поблизости движущиеся плотские цели...
     .suffix = { "" }
+ent-PlayerBorgGeneric = { ent-BorgChassisGeneric }
+    .desc = { ent-BorgChassisGeneric.desc }
+    .suffix = { "" }

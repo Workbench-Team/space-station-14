@@ -7,6 +7,11 @@
     contents:
       - id: GarmentBagQM
       - id: ClothingHeadsetCargo
+      - id: ClothingUniformJumpsuitQMTurtleneck
+      - id: ClothingUniformJumpskirtQMTurtleneck
+      - id: ClothingHandsGlovesColorBrown
+      - id: ClothingShoesColorBrown
+      - id: ClothingHeadHatQMsoft
       - id: CargoRequestComputerCircuitboard
       - id: CargoShuttleComputerCircuitboard
       - id: ClothingOuterHardsuitKm
@@ -258,6 +263,7 @@
   components:
   - type: StorageFill
     contents:
+      - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
       - id: ClothingHeadHatBeretHoS
       - id: ClothingHeadHatHoshat
@@ -282,6 +288,7 @@
       - id: BoxEncryptionKeySecurity
       - id: WeaponTechFabCircuitboard
       - id: HoloprojectorSecurity
+      - id: BookSecretDocuments
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -291,6 +298,7 @@
   - type: StorageFill
     contents:
       - id: GarmentBagHoS
+      - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
       - id: ClothingBeltSecurityFilled
       - id: ClothingHeadsetAltSecurity

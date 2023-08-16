@@ -64,3 +64,5 @@
            Chaplain: [ 2, 2 ]
            Librarian: [ 2, 2 ]
            Janitor: [ 3, 3 ]
+        #Silicon
+           Borg: [ 1, 2 ]

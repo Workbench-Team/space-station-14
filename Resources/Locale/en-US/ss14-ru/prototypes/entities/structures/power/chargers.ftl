@@ -7,3 +7,6 @@ ent-WeaponCapacitorRecharger = recharger
 ent-WallWeaponCapacitorRecharger = wall recharger
     .desc = { "" }
     .suffix = { "" }
+ent-BorgCharger = cyborg recharging station
+    .desc = A stationary charger for various robotic and cyborg entities. Surprisingly spacious.
+    .suffix = { "" }

@@ -153,3 +153,10 @@
   files:
   - /Audio/Effects/Footsteps/clownspiderstep1.ogg
   - /Audio/Effects/Footsteps/clownspiderstep2.ogg
+
+- type: soundCollection
+  id: LimbstepBorg
+  files:
+  - /Audio/Effects/Footsteps/borgwalk1.ogg
+  - /Audio/Effects/Footsteps/borgwalk2.ogg
+  - /Audio/Effects/Footsteps/borgwalk3.ogg

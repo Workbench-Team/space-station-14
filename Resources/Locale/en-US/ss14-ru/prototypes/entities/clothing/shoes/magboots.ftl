@@ -8,5 +8,5 @@ ent-ClothingShoesBootsMagBlinding = magboots of blinding speed
     .desc = These would look fetching on a fetcher like you.
     .suffix = { "" }
 ent-ClothingShoesBootsMagSyndie = blood-red magboots
-    .desc = Reverse-engineered magnetic boots that have a heavy magnetic pull. Property of Gorlex Marauders.
+    .desc = Reverse-engineered magnetic boots that have a heavy magnetic pull and integrated thrusters.
     .suffix = { "" }

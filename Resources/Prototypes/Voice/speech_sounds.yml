@@ -62,6 +62,15 @@
     path: /Audio/Machines/vending_jingle.ogg
 
 - type: speechSounds
+  id: Borg
+  saySound:
+    path: /Audio/Voice/Talk/borg.ogg
+  askSound:
+    path: /Audio/Voice/Talk/borg_ask.ogg
+  exclaimSound:
+    path: /Audio/Voice/Talk/borg_exclaim.ogg
+
+- type: speechSounds
   id: Pai
   saySound:
     path: /Audio/Voice/Talk/pai.ogg

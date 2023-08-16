@@ -13,3 +13,4 @@ chat-radio-supply = Поставки
 chat-radio-syndicate = Синдикат
 # not headset but whatever
 chat-radio-handheld = Рация
+chat-radio-binary = Бинарный

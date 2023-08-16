@@ -100,3 +100,6 @@ ent-ComputerIFFSyndicateCircuitboard = syndicate IFF console board
 ent-ComputerMassMediaCircuitboard = mass-media console board
     .desc = Write your message to the world!
     .suffix = { "" }
+ent-SensorConsoleCircuitboard = sensor monitoring console board
+    .desc = A computer printed circuit board for a sensor monitoring console.
+    .suffix = { "" }

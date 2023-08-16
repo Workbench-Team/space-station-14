@@ -169,6 +169,8 @@ public sealed class BanManager : IBanManager, IPostInjectInit
         _sawmill.Info(logMessage);
         _chat.SendAdminAlert(logMessage);
 
+        _arumoonBans.RaiseLocalBanEvent(targetUsername ?? Loc.GetString("system-user"), expires, reason, severity, adminName);
+
         // If we're not banning a player we don't care about disconnecting people
         if (target == null)
             return;
@@ -179,8 +181,6 @@ public sealed class BanManager : IBanManager, IPostInjectInit
         // If they are, kick them
         var message = banDef.FormatBanMessage(_cfg, _localizationManager);
         targetPlayer.ConnectedClient.Disconnect(message);
-
-        _arumoonBans.RaiseLocalBanEvent(targetUsername ?? "null", expires, reason);
     }
     #endregion
 
@@ -204,6 +204,9 @@ public sealed class BanManager : IBanManager, IPostInjectInit
         _systems.TryGetEntitySystem(out GameTicker? ticker);
         int? roundId = ticker == null || ticker.RoundId == 0 ? null : ticker.RoundId;
         var playtime = target == null ? TimeSpan.Zero : (await _db.GetPlayTimes(target.Value)).Find(p => p.Tracker == PlayTimeTrackingShared.TrackerOverall)?.TimeSpent ?? TimeSpan.Zero;
+        var adminName = banningAdmin == null
+            ? Loc.GetString("system-user")
+            : (await _db.GetPlayerRecordByUserId(banningAdmin.Value))?.LastSeenUserName ?? Loc.GetString("system-user");
 
         var banDef = new ServerRoleBanDef(
             null,
@@ -234,7 +237,7 @@ public sealed class BanManager : IBanManager, IPostInjectInit
             SendRoleBans(target.Value);
         }
 
-        _arumoonBans.RaiseLocalJobBanEvent(targetUsername ?? "null", expires, jobPrototype, reason);
+        _arumoonBans.RaiseLocalJobBanEvent(targetUsername ?? "null", expires, jobPrototype, reason, severity, adminName);
     }
 
     public HashSet<string>? GetJobBans(NetUserId playerUserId)

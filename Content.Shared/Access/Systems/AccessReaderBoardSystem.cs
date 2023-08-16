@@ -13,11 +13,13 @@ using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
 using Content.Shared.Doors.Components;
 using Content.Shared.AlertLevel;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Access.Systems
 {
     public sealed class AccessReaderBoardSystem : EntitySystem
     {
+        [Dependency] private readonly IPrototypeManager _prototype = default!;
         [Dependency] protected readonly SharedContainerSystem _container = default!;
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly InventorySystem _inventorySystem = default!;
@@ -318,24 +320,26 @@ namespace Content.Shared.Access.Systems
         ///     Try to find <see cref="AccessComponent"/> on this item
         ///     or inside this item (if it's pda)
         /// </summary>
-        private bool FindAccessTagsItem(EntityUid uid, [NotNullWhen(true)] out HashSet<string>? tags)
+        private bool FindAccessTagsItem(EntityUid uid, out HashSet<string> tags)
         {
-            if (TryComp(uid, out AccessComponent? access))
-            {
-                tags = access.Tags;
-                return true;
-            }
-
-            if (TryComp(uid, out PdaComponent? pda) &&
-                pda.ContainedId is {Valid: true} id)
-            {
-                tags = EntityManager.GetComponent<AccessComponent>(id).Tags;
-                return true;
-            }
-
-            tags = null;
-            return false;
+        tags = new();
+        if (TryComp(uid, out AccessComponent? access))
+        {
+            tags.UnionWith(access.Tags);
         }
+
+	    if (TryComp(uid, out PdaComponent? pda) &&
+            pda.ContainedId is { Valid: true } id)
+        {
+            tags.UnionWith(EntityManager.GetComponent<AccessComponent>(id).Tags);
+        }
+
+	    var ev = new GetAccessTagsEvent(tags, _prototype);
+            RaiseLocalEvent(uid, ref ev);
+
+            return tags.Count != 0;
+        }
+
 
         /// <summary>
         ///     Try to find <see cref="StationRecordKeyStorageComponent"/> on this item
