@@ -7,7 +7,6 @@
     contents:
       - id: GarmentBagQM
       - id: ClothingHeadsetCargo
-      - id: ClothingHeadHatQMsoft
       - id: CargoRequestComputerCircuitboard
       - id: CargoShuttleComputerCircuitboard
       - id: ClothingOuterHardsuitKm
