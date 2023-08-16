@@ -5,9 +5,9 @@
   description: Useful for carrying items in your hands.
   components:
   - type: Item
-    size: 100
+    size: 105
   - type: Storage
-    capacity: 100
+    capacity: 105
 
 - type: entity
   name: garment bag
@@ -133,6 +133,8 @@
       - id: ClothingMaskGas
       - id: ClothingUniformJumpsuitQM
       - id: ClothingUniformJumpskirtQM
+      - id: ClothingUniformJumpsuitQMTurtleneck
+      - id: ClothingUniformJumpskirtQMTurtleneck
       - id: ClothingShoesColorBrown
 
 - type: entity
