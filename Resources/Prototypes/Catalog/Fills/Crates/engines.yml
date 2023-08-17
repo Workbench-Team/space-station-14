@@ -116,3 +116,21 @@
       - id: WallmountGeneratorAPUElectronics
       - id: HandheldGPSBasic
       - id: InflatableDoorStack1
+
+- type: entity
+  name: Crate with center thermo electric generator
+  id: CrateEngineeringTegCenter
+  parent: CrateEngineeringSecure
+  components:
+  - type: StorageFill
+    contents:
+      - id: TegCenter
+
+- type: entity
+  name: Crate with circulator thermo electric generator
+  id: CrateEngineeringTegCirculator
+  parent: CrateEngineeringSecure
+  components:
+  - type: StorageFill
+    contents:
+      - id: TegCirculator
