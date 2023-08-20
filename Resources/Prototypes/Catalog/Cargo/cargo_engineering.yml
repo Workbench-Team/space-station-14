@@ -91,7 +91,7 @@
 - type: cargoProduct
   id: TegCenterCargo
   icon:
-    sprite: Structures\Power\Generation\teg.rsi
+    sprite: Structures/Power/Generation/teg.rsi
     state: icon_mid
   product: CrateEngineeringTegCenter
   cost: 10000
@@ -101,7 +101,7 @@
 - type: cargoProduct
   id: TegCirculatorCargo
   icon:
-    sprite: Structures\Power\Generation\teg.rsi
+    sprite: Structures/Power/Generation/teg.rsi
     state: icon_circ
   product: CrateEngineeringTegCirculator
   cost: 5000
