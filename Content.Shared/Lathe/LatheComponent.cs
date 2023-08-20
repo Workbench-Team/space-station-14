@@ -54,6 +54,12 @@ namespace Content.Shared.Lathe
         [ViewVariables]
         public LatheRecipePrototype? CurrentRecipe;
 
+        /// <summary>
+        /// Whether the lathe can eject the materials stored within it
+        /// </summary>
+        [DataField("canEjectStoredMaterials")]
+        public bool CanEjectStoredMaterials = true;
+
         #region MachineUpgrading
         /// <summary>
         /// A modifier that changes how long it takes to print a recipe

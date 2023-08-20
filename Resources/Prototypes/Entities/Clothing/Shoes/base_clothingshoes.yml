@@ -19,6 +19,7 @@
           Quantity: 10
   - type: Tag
     tags:
+    - Clothing
     - ClothMade
     - WhitelistChameleon
 

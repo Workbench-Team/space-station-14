@@ -10,7 +10,7 @@
     capacity: 105
     whitelist:
       tags:
-        - ClothMade
+        - Clothing
 
 - type: entity
   name: garment bag

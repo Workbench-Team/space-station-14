@@ -25,6 +25,7 @@
   # for H.O.N.K. construction
   - type: Tag
     tags:
+    - Clothing
     - ClownShoes
     - WhitelistChameleon
 
@@ -112,7 +113,8 @@
   description: Stylish black shoes.
   components:
     - type: Tag
-      tags: [] # ignore "WhitelistChameleon" tag
+      tags:
+        - Clothing # ignore "WhitelistChameleon" tag
     - type: Sprite
       sprite: Clothing/Shoes/Color/black.rsi
     - type: Clothing

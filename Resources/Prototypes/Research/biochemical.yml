@@ -8,7 +8,7 @@
     state: beakerlarge
   discipline: Biochemical
   tier: 1
-  cost: 10000
+  cost: 5000
   recipeUnlocks:
   - LargeBeaker
   - LargeBottle
@@ -26,7 +26,7 @@
     state: saw
   discipline: Biochemical
   tier: 1
-  cost: 5000
+  cost: 2500 #this is useless so heavy decrease
   recipeUnlocks:
   - Scalpel
   - Retractor
@@ -43,7 +43,7 @@
     state: icon
   discipline: Biochemical
   tier: 1
-  cost: 10000
+  cost: 7500
   recipeUnlocks:
   - CryostasisBeaker
   - StasisBedMachineCircuitboard

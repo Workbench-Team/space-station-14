@@ -21,6 +21,7 @@
     sprite: Clothing/Head/Hats/beret.rsi
   - type: Tag
     tags:
+    - Clothing
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
@@ -48,6 +49,7 @@
     sprite: Clothing/Head/Hats/beret_rnd.rsi
   - type: Tag
     tags:
+    - Clothing
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
@@ -64,6 +66,7 @@
     sprite: Clothing/Head/Hats/beret_engineering.rsi
   - type: Tag
     tags:
+    - Clothing
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
@@ -80,6 +83,7 @@
     sprite: Clothing/Head/Hats/beret_hos.rsi
   - type: Tag
     tags:
+    - Clothing
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
@@ -140,6 +144,7 @@
     sprite: Clothing/Head/Hats/captain.rsi
   - type: Tag
     tags:
+    - Clothing
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
@@ -191,6 +196,7 @@
       storagebase: !type:Container
   - type: Tag
     tags:
+    - Clothing
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
@@ -207,6 +213,7 @@
     sprite: Clothing/Head/Hats/brownfedora.rsi
   - type: Tag
     tags:
+    - Clothing
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
@@ -245,6 +252,7 @@
     sprite: Clothing/Head/Hats/hopcap.rsi
   - type: Tag
     tags:
+    - Clothing
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
@@ -261,6 +269,7 @@
     sprite: Clothing/Head/Hats/hoshat.rsi
   - type: Tag
     tags:
+    - Clothing
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
@@ -365,6 +374,7 @@
     sprite: Clothing/Head/Hats/surgcap_blue.rsi
   - type: Tag
     tags:
+    - Clothing
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
@@ -403,6 +413,7 @@
     sprite: Clothing/Head/Hats/tophat.rsi
   - type: Tag
     tags:
+    - Clothing
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
@@ -476,6 +487,7 @@
     sprite: Clothing/Head/Hats/wizardhat.rsi
   - type: Tag
     tags:
+    - Clothing
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
@@ -582,6 +594,7 @@
     sprite: Clothing/Head/Hats/nursehat.rsi
   - type: Tag
     tags:
+    - Clothing
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
@@ -641,6 +654,7 @@
     sprite: Clothing/Head/Hats/beret_cmo.rsi
   - type: Tag
     tags:
+    - Clothing
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
@@ -759,6 +773,7 @@
     sprite: Clothing/Head/Hats/capcap.rsi
   - type: Tag
     tags:
+    - Clothing
     - ClothMade
     - WhitelistChameleon
     - HamsterWearable

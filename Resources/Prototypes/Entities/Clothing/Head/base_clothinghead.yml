@@ -20,6 +20,7 @@
   - type: Tag
     tags:
       - DogWearable
+      - Clothing
       - ClothMade
       - DroneUsable
       - WhitelistChameleon
@@ -36,6 +37,9 @@
       amount: 1
   - type: Tag
     tags:
+      - DogWearable
+      - Clothing
+      - ClothMade
       - WhitelistChameleon
 
 - type: entity

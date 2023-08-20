@@ -288,6 +288,9 @@
   id: CigPack
 
 - type: Tag
+  id: Clothing
+
+- type: Tag
   id: ClothMade
 
 - type: Tag

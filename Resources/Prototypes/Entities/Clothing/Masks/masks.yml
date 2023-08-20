@@ -13,6 +13,7 @@
   - type: IdentityBlocker
   - type: Tag
     tags:
+    - Clothing
     - HamsterWearable
     - WhitelistChameleon
 
@@ -113,6 +114,7 @@
   - type: IngestionBlocker
   - type: Tag
     tags:
+    - Clothing
     - PetWearable
     - WhitelistChameleon
 
@@ -168,8 +170,8 @@
   - type: IdentityBlocker
   - type: Tag
     tags:
+    - Clothing
     - PetWearable
-    - WhitelistChameleon
   # for H.O.N.K. construction
     - ClownMask
     - WhitelistChameleon
@@ -180,6 +182,7 @@
   components:
   - type: Tag
     tags:
+    - Clothing
     - ClownMask
     - HamsterWearable
     - WhitelistChameleon
@@ -211,6 +214,7 @@
   - type: IdentityBlocker
   - type: Tag
     tags:
+    - Clothing
     - HamsterWearable
     - WhitelistChameleon
 
@@ -340,6 +344,7 @@
   - type: BreathMask
   - type: Tag
     tags:
+    - Clothing
     - HamsterWearable
     - WhitelistChameleon
   - type: IdentityBlocker
@@ -435,6 +440,7 @@
   - type: IdentityBlocker
   - type: Tag
     tags:
+    - Clothing
     - WhitelistChameleon
 
 - type: entity
