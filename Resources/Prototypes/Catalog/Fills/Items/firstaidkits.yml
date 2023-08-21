@@ -127,3 +127,16 @@
     contents:
       - id: StimpackMini
         amount: 6
+
+- type: entity
+  id: MedkitDeathsquadFilled
+  suffix: Filled
+  parent: MedkitCombat
+  components:
+  - type: StorageFill
+    contents:
+      - id: HandheldHealthAnalyzer
+      - id: CombatMedipen
+        amount: 3
+      - id: Stimpack
+        amount: 3

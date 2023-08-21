@@ -39,13 +39,13 @@
   id: DeathSquadGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitDeathSquad
-    back: ClothingBackpackDuffelSyndicateAmmo
+    back: ClothingBackpackDeathsquad
     mask: ClothingMaskGasDeathSquad
     eyes: ClothingEyesGlassesSecurity
     ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitDeathsquad
-    suitstorage: OxygenTankFilled
+    suitstorage: JetpackVoidFilled
     shoes: ClothingShoesBootsMagAdv
     id: DeathsquadPDA
     pocket1: EnergySword

@@ -186,6 +186,23 @@
       - state: writing
 
 - type: entity
+  name: A.M.R.E.
+  parent: BoxCardboard
+  id: BoxAMRE
+  description: A box of new generation army rations.
+  components:
+  - type: StorageFill
+    contents:
+      - id: SalineMedipen
+        amount: 3
+      - id: NutrimentMedipen
+        amount: 3
+  - type: Sprite
+    layers:
+      - state: box_olive
+      - state: dna
+
+- type: entity
   name: box of hugs
   parent: BoxCardboard
   id: BoxHugHealing

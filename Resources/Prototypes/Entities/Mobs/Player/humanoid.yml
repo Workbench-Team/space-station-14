@@ -299,6 +299,33 @@
       nameSegments:
       - NamesFirstMilitary
       - names_last
+## Death Squad
+
+- type: entity
+  id: RandomHumanoidSpawnerDeathSquadOfficer
+  name: Death Squad officer
+  components:
+    - type: Sprite
+      netsync: false
+      sprite: Markers/jobs.rsi
+      state: death_squad
+    - type: RandomHumanoidSpawner
+      settings: DSOfficer
+
+- type: randomHumanoidSettings
+  id: DSOfficer
+  components:
+    - type: Loadout
+      prototypes: [ DeathSquadGear ]
+    - type: GhostRole
+      name: ghost-role-information-death-squad-name
+      description: ghost-role-information-death-squad-description
+    - type: GhostTakeoverAvailable
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - names_last
+
 ## Central Command
 
 - type: entity
