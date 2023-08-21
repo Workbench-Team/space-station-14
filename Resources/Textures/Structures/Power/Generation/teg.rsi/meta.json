@@ -274,12 +274,6 @@
     {
       "name": "circ-0-light",
       "directions": 4
-    },
-    {
-      "name": "icon_circ"
-    },
-    {
-      "name": "icon_mid"
     }
   ]
 }
