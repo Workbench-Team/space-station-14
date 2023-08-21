@@ -188,3 +188,76 @@
         whitelist:
           tags:
             - CartridgePistol
+
+- type: entity
+  name: PPAI raisen
+  parent: BaseItem
+  id: WeaponPistolRaisen
+  description: Semi-automatic high-precision pistol, with an unlocked bolt, for fast firing. There is advanced AI built in that makes it a rare and smart custom made pistol. He smells of witty jokes and gunpowder, so he is the best and only friend of any Overseer.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Pistols/raison.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: 15
+    channels:
+    - common
+    - security
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/hpistolX.ogg
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+  - type: ItemSlots
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+       - CartridgeMagnum
+    capacity: 12
+  - type: MagazineVisuals
+    magState: mag
+    steps: 13
+    zeroVisible: true
+  - type: GhostRole
+    name: ghost-role-information-raisen-name
+    description: ghost-role-information-raisen-description
+    allowSpeech: true
+  - type: Speech
+    speechVerb: Robotic
+    speechSounds: Pai
+  - type: GhostTakeoverAvailable
+    name: ghost-role-information-raisen-name
+    description: ghost-role-information-raisen-description
+  - type: PAI
+    midiAction:
+      name: action-name-pai-play-midi
+      checkCanInteract: false
+      icon: Interface/Actions/pai-midi.png
+      description: action-description-pai-play-midi
+      event: !type:OpenUiActionEvent
+        key: enum.InstrumentUiKey.Key
+  - type: MobState
+    allowedStates:
+      - Alive
+  - type: BlockMovement
+  - type: UserInterface
+    interfaces:
+    - key: enum.InstrumentUiKey.Key
+      type: InstrumentBoundUserInterface
+  - type: Instrument
+    allowPercussion: true
+    handheld: false
+    bank: 1
+    program: 2
+  - type: ShowSecurityIcons
+  - type: Tag
+    tags:
+    - HighRiskItem

@@ -237,3 +237,19 @@
   conditions:
     - !type:RandomTraitorProgressCondition {}
   canBeDuplicate: true
+
+- type: objective
+  id: WardenGunStealObjective
+  issuer: syndicate
+  difficultyOverride: 2.75
+  requirements:
+    - !type:TraitorRequirement {}
+    - !type:IncompatibleConditionsRequirement
+      conditions:
+        - DieCondition
+    - !type:NotRoleRequirement
+      roleId: Warden
+  conditions:
+    - !type:StealCondition
+      prototype: WeaponPistolRaisen
+      owner: job-name-warden

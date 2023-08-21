@@ -107,3 +107,5 @@ ghost-role-information-behonker-name = Бехонкер
 ghost-role-information-behonker-description = Вы - антагонист, сейте смерть и хонки тем, кто не следует за хонкоматерью.
 ghost-role-information-taxibot-name = ТаксиБот
 ghost-role-information-taxibot-description = Доставьте экипаж станции к месту их назначения.
+ghost-role-information-raisen-name = ПпИИ «Райсен»
+ghost-role-information-raisen-description = Разум запертый внутри стильного, но маленького пистолета.
