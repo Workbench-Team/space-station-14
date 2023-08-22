@@ -25,5 +25,3 @@
     size: 150
     sprite: Objects/Weapons/Melee/sledgehammer.rsi
     quickEquip: false
-    slots:
-    - back
