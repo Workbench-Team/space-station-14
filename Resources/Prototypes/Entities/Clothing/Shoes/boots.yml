@@ -23,7 +23,7 @@
     whitelist:
       tags:
         - Knife
-  
+
 - type: entity
   parent: ClothingShoesBaseButcherable
   id: ClothingShoesBootsSalvage
@@ -86,3 +86,19 @@
     sprite: Clothing/Shoes/Boots/laceups.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/laceups.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ChronoLegionnaireBoots
+  name: advanced chrono boots
+  description: Minimalist shoes with magnetic soles, allowing the wearer to move at an impressive speed and not worry about clowns with banana peels.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/chronoboots.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/chronoboots.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.5
+    sprintModifier: 1.5
+  - type: NoSlip

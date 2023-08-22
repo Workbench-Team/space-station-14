@@ -388,4 +388,3 @@
     fiberMaterial: fibers-insulative
     fiberColor: fibers-olive
   - type: FingerprintMask
-  - type: Unremoveable
