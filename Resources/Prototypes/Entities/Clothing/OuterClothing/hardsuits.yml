@@ -909,4 +909,3 @@
     sprintModifier: 1
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitChronoLegionnaire
-  - type: Unremoveable
