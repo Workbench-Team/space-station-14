@@ -8,7 +8,10 @@
   },
   "states": [
     {
-      "name": "weilded-inhand-right"
+      "name": "wielded-inhand-right"
+    },
+    {
+      "name": "wielded-inhand-left"
     },
     {
       "name": "icon"
@@ -18,9 +21,6 @@
     },
     {
       "name": "inhand-right"
-    },
-    {
-      "name": "weilded-inhand-left"
     }
   ]
 }
