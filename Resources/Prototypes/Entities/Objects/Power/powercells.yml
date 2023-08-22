@@ -25,6 +25,8 @@
       reagents:
         - ReagentId: Lithium
           Quantity: 15
+        - ReagentId: Lead
+          Qunatity: 5
   - type: Tag
     tags:
       - DroneUsable
