@@ -28951,13 +28951,6 @@ entities:
     - pos: -6.5,-10.5
       parent: 1668
       type: Transform
-- proto: LockerWardenFilled
-  entities:
-  - uid: 2713
-    components:
-    - pos: 6.5,17.5
-      parent: 1668
-      type: Transform
 - proto: LockerWeldingSuppliesFilled
   entities:
   - uid: 129
