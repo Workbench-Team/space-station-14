@@ -48,7 +48,6 @@
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
       - id: ClothingEyesHudMedical
-      - id: DnaSyringeGun
       - id: ClothingBeltMedical
       - id: ClothingHeadHatSurgcapGreen
         prob: 0.1
@@ -84,7 +83,7 @@
         prob: 0.6
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
-     # - id: ClothingEyesHudMedical #Removed until working properly
+      - id: ClothingEyesHudMedical
       - id: ClothingBeltMedical
       - id: ClothingHeadHatSurgcapGreen
         prob: 0.1
@@ -121,7 +120,7 @@
       - id: BoxPillCanister
       - id: BoxBottle
         amount: 2
-        
+
 - type: entity
   id: LockerParamedicFilled
   suffix: Filled
@@ -136,4 +135,3 @@
       - id: ClothingUniformJumpsuitParamedic
       - id: ClothingUniformJumpskirtParamedic
       - id: ClothingEyesHudMedical
-      

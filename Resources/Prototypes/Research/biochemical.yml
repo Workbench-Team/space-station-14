@@ -97,10 +97,12 @@
     state: industrial-working
   discipline: Biochemical
   tier: 2
-  cost: 10000
+  cost: 12500
   recipeUnlocks:
   - ChemMasterMachineCircuitboard
   - ChemDispenserMachineCircuitboard
+  - DnaSyringeGun
+  - Syringecartridge
   technologyPrerequisites:
   - Chemistry
 
