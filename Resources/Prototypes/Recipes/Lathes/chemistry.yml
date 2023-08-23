@@ -20,7 +20,7 @@
     Plastic: 200
 
 - type: latheRecipe
-  id: DnaSyrineGun
+  id: DnaSyringeGun
   result: DnaSyringeGun
   completetime: 5
   materials:
