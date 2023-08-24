@@ -807,3 +807,15 @@
     lifetime: 0.4
   - type: StaminaDamageOnCollide
     damage: 65
+
+- type: entity
+  name: emitter bolt
+  id: EmitterBoltGun
+  parent: EmitterBolt
+  noSpawn: true
+  components:
+  - type: Projectile
+#   soundHit:  Waiting on serv3
+    damage:
+      types:
+        Heat: 30

@@ -808,6 +808,10 @@
       materialRequirements:
         CableHV: 5
         Glass: 2
+    - type: Tag
+      tags:
+        - DroneUsable
+        - EmitterCircuitBoard
 
 - type: entity
   id: SurveillanceCameraRouterCircuitboard

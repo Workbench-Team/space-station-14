@@ -1,0 +1,39 @@
+#In its own file and not improvised-shotgun.yml in case anyone ever wants to add more guns that use it.
+- type: constructionGraph
+  id: EmitterGun
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: emittergunnode
+      steps:
+      - tag: Pipe
+        icon:
+          sprite: Structures/Piping/Atmospherics/pipe.rsi
+          state: pipeStraight
+        name: pipe
+      - tag: CapacitorStockPart
+        icon:
+          sprite: Objects/Misc/stock_parts.rsi
+          state: capacitor
+        name: capacitor
+      - tag: PowerCellSmall
+        icon:
+          sprite: Objects/Power/power_cells.rsi
+          state: small
+        name: power cell small
+      - tag: PowerCellSmall
+        icon:
+          sprite: Objects/Power/power_cells.rsi
+          state: small
+        name: power cell small
+      - tag: EmitterCircuitBoard
+        icon:
+          sprite: Objects/Misc/module.rsi
+          state: engineering
+        name: emitter circuit board
+      - material: Plasteel
+        amount: 10
+        doAfter: 10
+  - node: emittergunnode
+    entity: WeaponEmitterGun

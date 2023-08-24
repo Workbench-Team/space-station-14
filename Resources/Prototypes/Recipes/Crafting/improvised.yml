@@ -162,3 +162,16 @@
   icon:
     sprite: Objects/Misc/rifle_stock.rsi
     state: icon
+
+- type: construction
+  name: emitter gun
+  id: emittergun
+  graph: EmitterGun
+  startNode: start
+  targetNode: emittergunnode
+  category: construction-category-weapons
+  objectType: Item
+  description: A gun that used to be a simple emitter.
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/emitter_gun.rsi
+    state: emittercannon
