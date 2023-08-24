@@ -603,12 +603,10 @@
     rules: ghost-role-information-MechDurand-rules
   - type: ActiveRadio
     channels:
-    - AI
     - Common
     - Security
   - type: IntrinsicRadioTransmitter
     channels:
-    - AI
     - Common
     - Security
   - type: Destructible
@@ -986,12 +984,10 @@
       - id: MechaAnalyzer9000
   - type: ActiveRadio
     channels:
-    - AI
     - Common
     - Supply
   - type: IntrinsicRadioTransmitter
     channels:
-    - AI
     - Common
     - Supply
   - type: PointLight
