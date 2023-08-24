@@ -584,3 +584,29 @@
       proto: BulletCutterAdv
       fireCost: 100
     - type: Appearance
+
+- type: entity
+  name: Emitter Gun
+  id: WeaponEmitterGun
+  parent: BaseWeaponBattery
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/emitter_gun.rsi
+    state: emittercannon
+  - type: Item
+    size: 30
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 0.5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/emitter.ogg
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 500
+  - type: ProjectileBatteryAmmoProvider
+    proto: EmitterBoltGun
+    fireCost: 200
+  - type: Construction
+    graph: EmitterGun
+    node: emittergunnode
