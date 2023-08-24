@@ -72,6 +72,19 @@
 
 - type: entity
   noSpawn: true
+  parent: ClothingBackpackSatchelCentcom
+  id: ClothingBackpackSatchelCentcomInternFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: WeaponSniperMosin
+      - id: SpeedLoaderLightRifle
+      - id: MagazineBoxLightRifle
+      - id: Handcuffs
+
+- type: entity
+  noSpawn: true
   parent: ClothingBackpackSatchelEngineering
   id: ClothingBackpackSatchelChiefEngineerFilled
   components:

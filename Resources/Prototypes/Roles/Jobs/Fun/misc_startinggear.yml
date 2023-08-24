@@ -34,6 +34,31 @@
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
 
+#CentCom Interns
+- type: startingGear
+  id: CentcomInternGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomIntern
+    back: ClothingBackpackSatchelCentcomInternFilled
+    eyes: ClothingEyesGlassesSunglasses
+    ears: ClothingHeadsetAltCentCom
+    shoes: ClothingShoesColorBlack
+    id: CentcomInternPDA
+    belt: Baton
+
+- type: startingGear
+  id: CentcomInternLeaderGear
+  equipment:
+    head: ClothingHeadHatCentcomintern
+    jumpsuit: ClothingUniformJumpsuitCentcomIntern
+    back: ClothingBackpackSatchelCentcomInternFilled
+    eyes: ClothingEyesGlassesSunglasses
+    ears: ClothingHeadsetAltCentCom
+    outerClothing: ClothingOuterArmorBasicSlim
+    shoes: ClothingShoesColorBlack
+    id: CentcomInternPDA
+    belt: Stunbaton
+
 #Deathsquad Outfit
 - type: startingGear
   id: DeathSquadGear
