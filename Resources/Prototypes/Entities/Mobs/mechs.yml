@@ -343,15 +343,9 @@
   - type: ActiveRadio
     channels:
     - CentCom
-    - CentComDeath
-    - CentComOBR
-    - AI
   - type: IntrinsicRadioTransmitter
     channels:
-    - CentCom
-    - CentComDeath
-    - CentComOBR
-    - AI
+    - CentComn
   - type: Destructible
     thresholds:
     - trigger:
@@ -610,13 +604,11 @@
   - type: ActiveRadio
     channels:
     - AI
-    - AID
     - Common
     - Security
   - type: IntrinsicRadioTransmitter
     channels:
     - AI
-    - AID
     - Common
     - Security
   - type: Destructible
@@ -685,15 +677,9 @@
   - type: ActiveRadio
     channels:
     - CentCom
-    - CentComDeath
-    - CentComOBR
-    - AI
   - type: IntrinsicRadioTransmitter
     channels:
     - CentCom
-    - CentComDeath
-    - CentComOBR
-    - AI
   - type: Destructible
     thresholds:
     - trigger:
@@ -823,14 +809,10 @@
         - MobLayer
   - type: ActiveRadio
     channels:
-    - AI
-    - AID
     - Common
     - Medical
   - type: IntrinsicRadioTransmitter
     channels:
-    - AI
-    - AID
     - Common
     - Medical
   - type: Sprite
@@ -1005,13 +987,11 @@
   - type: ActiveRadio
     channels:
     - AI
-    - AID
     - Common
     - Supply
   - type: IntrinsicRadioTransmitter
     channels:
     - AI
-    - AID
     - Common
     - Supply
   - type: PointLight
