@@ -159,7 +159,7 @@
   - type: Item
     size: 20
   - type: Clothing
-    sprite: Objects\Weapons\Melee\baton.rsi
+    sprite: Objects/Weapons/Melee/baton.rsi
     quickEquip: false
     slots:
     - Belt
