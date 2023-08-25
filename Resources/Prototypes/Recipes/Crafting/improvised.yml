@@ -164,14 +164,14 @@
     state: icon
 
 - type: construction
-  name: emitter gun
-  id: emittergun
-  graph: EmitterGun
+  name: emitter cannon
+  id: emittercannon
+  graph: EmitterCannonGraph
   startNode: start
-  targetNode: emittergunnode
+  targetNode: emittercannon
   category: construction-category-weapons
   objectType: Item
-  description: A gun that used to be a simple emitter.
+  description: An underrated handheld emitter that can be used as a tool as well as a weapon.
   icon:
-    sprite: Objects/Weapons/Guns/Battery/emitter_gun.rsi
-    state: emittercannon
+    sprite: Objects/Weapons/Guns/Battery/emitter_cannon.rsi
+    state: icon

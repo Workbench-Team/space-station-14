@@ -586,27 +586,30 @@
     - type: Appearance
 
 - type: entity
-  name: Emitter Gun
-  id: WeaponEmitterGun
+  name: Emitter Cannon
+  id: WeaponEmitterCannon
   parent: BaseWeaponBattery
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Battery/emitter_gun.rsi
-    state: emittercannon
-  - type: Item
-    size: 30
-  - type: AmmoCounter
+    sprite: Objects/Weapons/Guns/Battery/emitter_cannon.rsi
+    layers:
+    - state: idle
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
   - type: Gun
     fireRate: 0.5
     soundGunshot:
-      path: /Audio/Weapons/Guns/emitter.ogg
-    zeroVisible: false
-  - type: Appearance
-  - type: StaticPrice
-    price: 500
+      path: /Audio/Weapons/emitter.ogg
   - type: ProjectileBatteryAmmoProvider
-    proto: EmitterBoltGun
+    proto: EmitterCannonBolt
     fireCost: 200
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
   - type: Construction
-    graph: EmitterGun
-    node: emittergunnode
+    graph: EmitterCannonGraph
+    node: emittercannon
