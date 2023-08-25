@@ -55,3 +55,6 @@ ent-WeaponPistolCHIMPUpgraded = experimental C.H.I.M.P. handcannon
 ent-WeaponBehonkerLaser = Eye of a behonker
     .desc = The eye of a behonker, it fires a laser when squeezed.
     .suffix = { "" }
+ent-WeaponEmitterGun = emitter gun
+    .desc = A homemade emitter cannon, powerful, but the charging is poor.
+    .suffix = { "" }
