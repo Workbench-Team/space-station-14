@@ -31,8 +31,6 @@
     steps: 5
     zeroVisible: false
   - type: Appearance
-  - type: StaticPrice
-    price: 500
   - type: MechEquipment
   - type: UIFragment
 
@@ -129,8 +127,6 @@
       steps: 5
       zeroVisible: true
     - type: Appearance
-    - type: StaticPrice
-      price: 500
     - type: AmmoCounter
     - type: MechEquipment
     - type: UIFragment
