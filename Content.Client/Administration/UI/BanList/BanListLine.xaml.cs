@@ -41,7 +41,7 @@ public sealed partial class BanListLine : BoxContainer
 
     private static string FormatDate(DateTimeOffset date)
     {
-        return date.ToString("MM/dd/yyyy h:mm tt");
+        return date.ToString("dd/MM/yyyy h:mm tt");
     }
 
     private void IdsPressed(BaseButton.ButtonEventArgs buttonEventArgs)

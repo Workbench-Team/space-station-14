@@ -177,6 +177,28 @@
 
 - type: entity
   parent: ClothingHeadBase
+  id: ClothingHeadHatCentcomcap
+  name: CentCom brand hat
+  description: "Good centcom cap"
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/centcomcap.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/centcomcap.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCentcomintern
+  name: CentCom brand hat
+  description: "It's bad to be an intern."
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/centcominterncap.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/centcominterncap.rsi
+
+- type: entity
+  parent: ClothingHeadBase
   id: ClothingHeadHatChef
   name: chef's hat
   description: "It's a hat used by chefs to keep hair out of your food. Judging by the food in the mess, they don't work."

@@ -4,6 +4,6 @@ using Robust.Shared.Serialization;
 namespace Content.Shared.Felinid;
 
 [Serializable, NetSerializable]
-public sealed class WoundLickingDoAfterEvent : SimpleDoAfterEvent
+public sealed partial class WoundLickingDoAfterEvent : SimpleDoAfterEvent
 {
 }

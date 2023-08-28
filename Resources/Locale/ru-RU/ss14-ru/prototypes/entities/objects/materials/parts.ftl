@@ -10,3 +10,6 @@ ent-PartRodMetal10 = { ent-PartRodMetal }
 ent-PartRodMetal1 = { ent-PartRodMetal }
     .suffix = Один
     .desc = { ent-PartRodMetal.desc }
+ent-PartRodMetalLingering0 = { ent-PartRodMetal }
+    .suffix = Постоянный, 0
+    .desc = { ent-PartRodMetal.desc }

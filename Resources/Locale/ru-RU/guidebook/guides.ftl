@@ -9,6 +9,7 @@ guide-entry-networking = Налаживание Сети
 guide-entry-network-configurator = Конфигуратор Сети
 guide-entry-access-configurator = Конфигуратор Доступа
 guide-entry-power = Электроснабжение
+guide-entry-portable-generator = Портативные Генераторы
 guide-entry-ame = Двигатель антиматерии (ДАМ)
 guide-entry-singularity = Сингулярный двигатель
 guide-entry-teg = Термо-электрический Генератор (ТЭГ)
@@ -48,6 +49,7 @@ guide-entry-nuclear-operatives = Ядерные Оперативники
 guide-entry-traitors = Предатели
 guide-entry-zombies = Зомби
 guide-entry-minor-antagonists = Малые Антагонисты
+guide-entry-writing = Написание
 
 guide-entry-arumoon = Станция им. Aru Moon
 guide-entry-arumoon-spacelaw = Космический Закон

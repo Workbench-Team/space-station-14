@@ -12,7 +12,7 @@ namespace Content.Server.Chemistry.ReagentEffects
     /// Cancel any actions in progress
     /// </summary>
     [UsedImplicitly]
-    public sealed class CancelDoAfters : ReagentEffect
+    public sealed partial class CancelDoAfters : ReagentEffect
     {
         /// <summary>
         /// Should DoAfter be cancelled if it breaks after damage

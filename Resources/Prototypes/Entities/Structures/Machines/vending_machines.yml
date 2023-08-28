@@ -65,7 +65,7 @@
       type: WiresBoundUserInterface
   - type: WiresPanel
   - type: Wires
-    BoardName: "Vending Machine"
+    BoardName: wires-board-name-vendingmachine
     LayoutId: Vending
   - type: Anchorable
   - type: TypingIndicator

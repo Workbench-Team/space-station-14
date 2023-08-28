@@ -213,5 +213,5 @@ namespace Content.Server.Felinid
         }
     }
 
-    public sealed class WoundLickingTargetActionEvent : EntityTargetActionEvent { }
+    public sealed partial class WoundLickingTargetActionEvent : EntityTargetActionEvent { }
 }

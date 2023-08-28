@@ -4,7 +4,7 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototy
 namespace Content.Server.Holosign
 {
     [RegisterComponent]
-    public sealed class HolosignBarrierComponent : Component
+    public sealed partial class HolosignBarrierComponent : Component
     {
         /// <summary>
         /// Solution to notify Holoprojector about holobarrier remove.

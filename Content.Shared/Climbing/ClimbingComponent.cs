@@ -4,7 +4,7 @@ using Robust.Shared.Serialization;
 namespace Content.Shared.Climbing;
 
 [RegisterComponent, NetworkedComponent]
-public sealed class ClimbingComponent : Component
+public sealed partial class ClimbingComponent : Component
 {
     /// <summary>
     ///     Delay Multiplier to climb onto tables

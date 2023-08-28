@@ -84,7 +84,7 @@ public sealed class MappingSystem : EntitySystem
             var saveDir = Path.Combine(_cfg.GetCVar(CCVars.AutosaveDirectory), name);
             _resMan.UserData.CreateDir(new ResPath(saveDir).ToRootedPath());
 
-            var path = Path.Combine(saveDir, $"{DateTime.Now.ToString("yyyy-M-dd_HH.mm.ss")}-AUTO.yml");
+            var path = Path.Combine(saveDir, $"{DateTime.Now.ToString("dd-M-yyyy_HH.mm.ss")}-AUTO.yml");
             _currentlyAutosaving[map] = (CalculateNextTime(), name);
             _sawmill.Info($"Autosaving map {name} ({map}) to {path}. Next save in {ReadableTimeLeft(map)} seconds.");
             _map.SaveMap(map, path);

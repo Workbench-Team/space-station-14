@@ -47,7 +47,7 @@ namespace Content.Client.Screenshot
 
         private async void Take<T>(Image<T> screenshot) where T : unmanaged, IPixel<T>
         {
-            var time = DateTime.Now.ToString("yyyy-M-dd_HH.mm.ss");
+            var time = DateTime.Now.ToString("dd-M-yyyy_HH.mm.ss");
 
             if (!_resourceManager.UserData.IsDir(BaseScreenshotPath))
             {

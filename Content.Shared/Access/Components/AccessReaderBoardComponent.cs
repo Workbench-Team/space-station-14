@@ -11,7 +11,7 @@ namespace Content.Shared.Access.Components;
 ///     and allows checking if something or somebody is authorized with these access levels.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
-public sealed class AccessReaderBoardComponent : Component
+public sealed partial class AccessReaderBoardComponent : Component
 {
     /// <summary>
     /// Whether or not the accessreader is enabled.
@@ -31,7 +31,7 @@ public sealed class AccessReaderBoardComponent : Component
 }
 
 [Serializable, NetSerializable]
-public sealed class AccessReaderBoardComponentState : ComponentState
+public sealed partial class AccessReaderBoardComponentState : ComponentState
 {
     public bool Enabled;
 

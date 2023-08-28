@@ -3,7 +3,7 @@ using Content.Server.StationEvents.Events;
 namespace Content.Server.StationEvents.Components;
 
 [RegisterComponent, Access(typeof(MeteorSwarmSmallRule))]
-public sealed class MeteorSwarmSmallRuleComponent : Component
+public sealed partial class MeteorSwarmSmallRuleComponent : Component
 {
     [DataField("cooldown")]
     public float Cooldown;

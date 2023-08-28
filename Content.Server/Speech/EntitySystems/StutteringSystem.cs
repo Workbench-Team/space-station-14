@@ -13,7 +13,7 @@ namespace Content.Server.Speech.EntitySystems
         [Dependency] private readonly IRobustRandom _random = default!;
 
         // Regex of characters to stutter.
-        private static readonly Regex Stutter = new(@"[b-df-hj-np-tv-wxyz]",
+        private static readonly Regex Stutter = new(@"[b-df-hj-np-tv-wxyz-б-джзк-нп-тф-щ]", // AruMoon-Localization
             RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         public override void Initialize()

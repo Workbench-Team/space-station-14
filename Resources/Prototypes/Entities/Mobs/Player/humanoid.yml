@@ -348,6 +348,50 @@
     - type: Loadout
       prototypes: [ CentcomGear ]
 
+## Central Command Interns
+
+- type: entity
+  id: RandomHumanoidSpawnerCentcomIntern
+  name: Centcom Intert
+  components:
+    - type: Sprite
+      netsync: false
+      sprite: Markers/jobs.rsi
+      state: centcom
+    - type: RandomHumanoidSpawner
+      settings: CentcomIntern
+
+- type: randomHumanoidSettings
+  id: CentcomIntern
+  components:
+    - type: Loadout
+      prototypes: [ CentcomInternGear ]
+    - type: GhostRole
+      name: ghost-role-information-centcom-intern-name
+      description: ghost-role-information-centcom-intern-description
+    - type: GhostTakeoverAvailable
+
+- type: entity
+  id: RandomHumanoidSpawnerCentcomInternLeader
+  name: Centcom Intert Leader
+  components:
+    - type: Sprite
+      netsync: false
+      sprite: Markers/jobs.rsi
+      state: centcom
+    - type: RandomHumanoidSpawner
+      settings: CentcomInternLeader
+
+- type: randomHumanoidSettings
+  id: CentcomInternLeader
+  components:
+    - type: Loadout
+      prototypes: [ CentcomInternLeaderGear ]
+    - type: GhostRole
+      name: ghost-role-information-centcom-intern-leader-name
+      description: ghost-role-information-centcom-intern-leader-description
+    - type: GhostTakeoverAvailable
+
 ## Syndicate
 
 - type: entity

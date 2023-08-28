@@ -61,13 +61,17 @@ public sealed class SlurredSystem : SharedSlurredSystem
                 var lower = char.ToLowerInvariant(character);
                 var newString = lower switch
                 {
-                    'o' => "u",
-                    's' => "ch",
-                    'a' => "ah",
-                    'u' => "oo",
-                    'c' => "k",
+                    'ж' => "ш",
+                    'з' => "с",
+                    'и' => "у",
+                    'ю' => "уу",
+                    'б' => "п",
+                    'я' => "йа",
+                    'е' => "а",
+                    'ё' => "о",
+                    'ч' => "щ",
                     _ => $"{character}",
-                };
+                }; // AruMoon-Localization
 
                 sb.Append(newString);
             }

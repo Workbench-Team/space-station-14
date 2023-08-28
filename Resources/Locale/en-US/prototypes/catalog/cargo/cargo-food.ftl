@@ -1,6 +1,9 @@
 ent-FoodPizza = { ent-CrateFoodPizza }
     .desc = { ent-CrateFoodPizza.desc }
 
+ent-FoodPizzaLarge = { ent-CrateFoodPizzaLarge }
+    .desc = { ent-CrateFoodPizzaLarge.desc }
+
 ent-FoodMRE = { ent-CrateFoodMRE }
     .desc = { ent-CrateFoodMRE.desc }
 
@@ -15,5 +18,12 @@ ent-FoodBarSupply = { ent-CrateFoodBarSupply }
 
 ent-FoodCrateKvassTank = { ent-CrateFoodKvassTank }
     .desc = { ent-CrateFoodKvassTank.desc }
+
 ent-FoodCrateBeerKeg = { ent-CrateFoodBeerKeg }
     .desc = { ent-CrateFoodBeerKeg.desc }
+
+ent-FoodSoftdrinks = { ent-CrateFoodSoftdrinks }
+    .desc = { ent-CrateFoodSoftdrinks.desc }
+
+ent-FoodSoftdrinksLarge = { ent-CrateFoodSoftdrinksLarge }
+    .desc = { ent-CrateFoodSoftdrinksLarge.desc }

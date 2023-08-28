@@ -11,6 +11,12 @@
       "name": "omnilaser"
     },
     {
+      "name": "omnilaser_greyscale"
+    },
+    {
+      "name": "cbbolt"
+    },
+    {
       "name": "impact_bullet",
       "delays": [
         [
@@ -34,7 +40,15 @@
       ]
     },
     {
-      "name": "cbbolt"
+      "name": "impact_laser_greyscale",
+      "delays": [
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ]
+      ]
     }
   ]
 }

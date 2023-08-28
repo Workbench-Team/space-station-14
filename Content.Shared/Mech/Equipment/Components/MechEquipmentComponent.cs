@@ -1,4 +1,4 @@
-using Content.Shared.DoAfter;
+﻿using Content.Shared.DoAfter;
 using Content.Shared.Mech.Components;
 using Linguini.Syntax.Ast;
 using Robust.Shared.Serialization;
@@ -9,7 +9,7 @@ namespace Content.Shared.Mech.Equipment.Components;
 /// A piece of equipment that can be installed into <see cref="MechComponent"/>
 /// </summary>
 [RegisterComponent]
-public sealed class MechEquipmentComponent : Component
+public sealed partial class MechEquipmentComponent : Component
 {
     /// <summary>
     /// How long does it take to install this piece of equipment
@@ -43,17 +43,16 @@ public sealed class MechEquipmentInstallCancelled : EntityEventArgs
 }
 
 [Serializable, NetSerializable]
-public sealed class GrabberDoAfterEvent : SimpleDoAfterEvent
+public sealed partial class GrabberDoAfterEvent : SimpleDoAfterEvent
 {
 }
 
 [Serializable, NetSerializable]
-public sealed class MechDrillDoAfterEvent : SimpleDoAfterEvent
-{ 
-}
-
-[Serializable, NetSerializable]
-public sealed class InsertEquipmentEvent : SimpleDoAfterEvent
+public sealed partial class InsertEquipmentEvent : SimpleDoAfterEvent
 {
 }
 
+[Serializable, NetSerializable]
+public sealed partial class MechDrillDoAfterEvent : SimpleDoAfterEvent
+{
+}

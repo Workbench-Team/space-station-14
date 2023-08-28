@@ -5,7 +5,7 @@ using Robust.Shared.GameStates;
 namespace Content.Shared.Holosign
 {
     [RegisterComponent, NetworkedComponent]
-    public sealed class HolosignBarrierMedicalComponent : Component
+    public sealed partial class HolosignBarrierMedicalComponent : Component
     {
         /// <summary>
         /// Allow all personel pass throught barrier.

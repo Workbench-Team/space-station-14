@@ -62,7 +62,7 @@ admin-note-editor-expiry-placeholder = Введите срок действия 
 admin-note-editor-submit = Отправить
 admin-note-editor-submit-confirm = Вы уверены?
 # Watchlist and message login
-admin-notes-watchlist = Список наблюдения для { $player }: { $message }
+admin-notes-watchlist = Наблюдение за { $player }: { $message }
 admin-notes-new-message = Вы получили сообщение администратора от { $admin }: { $message }
 # Admin remarks
 admin-remarks-command-description = Открывает страницу замечаний администратора

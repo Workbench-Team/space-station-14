@@ -5,7 +5,7 @@ using JetBrains.Annotations;
 namespace Content.Server.Atmos.Reactions;
 
 [UsedImplicitly]
-public sealed class ProtoNitrateHydrogenConversionReaction : IGasReactionEffect
+public sealed partial class ProtoNitrateHydrogenConversionReaction : IGasReactionEffect
 {
     public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem)
     {

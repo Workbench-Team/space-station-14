@@ -11,7 +11,7 @@ namespace Content.Shared.Access.Components;
 ///     and allows checking if something or somebody is authorized with these access levels.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
-public sealed class AccessStorageComponent : Component
+public sealed partial class AccessStorageComponent : Component
 {
     /// <summary>
     ///     The set of tags that will automatically deny an allowed check, if any of them are present.
@@ -67,7 +67,7 @@ public sealed class AccessStorageComponent : Component
 }
 
 [Serializable, NetSerializable]
-public sealed class AccessStorageComponentState : ComponentState
+public sealed partial class AccessStorageComponentState : ComponentState
 {
     public HashSet<string> DenyTags;
     public List<HashSet<string>> AccessLists;

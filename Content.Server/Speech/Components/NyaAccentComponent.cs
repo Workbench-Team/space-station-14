@@ -1,7 +1,7 @@
 namespace Content.Server.Speech.Components
 {
     [RegisterComponent]
-    public sealed class NyaAccentComponent : Component
+    public sealed partial class NyaAccentComponent : Component
     {
     }
 }

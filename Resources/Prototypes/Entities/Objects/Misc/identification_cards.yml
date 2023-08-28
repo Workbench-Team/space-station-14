@@ -470,6 +470,23 @@
 
 - type: entity
   parent: IDCardStandard
+  id: CentcomInternIDCard
+  name: centcom intern ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: centcom
+    - state: idpassenger
+  - type: Item
+    heldPrefix: blue
+  - type: IdCard
+    jobTitle: Centcom Intern
+  - type: Access
+    groups:
+    - AllAccess
+
+- type: entity
+  parent: IDCardStandard
   id: MusicianIDCard
   name: musician ID card
   components:

@@ -29,7 +29,7 @@ gun-chamber-bolt-opened = Затвор открыт
 gun-chamber-bolt-close = Закрыть затвор
 gun-chamber-bolt-open = Открыть затвор
 gun-chamber-bolt-closed-state = открыт
-gun-chamber-bolt-open-state = закрыт	
+gun-chamber-bolt-open-state = закрыт
 gun-chamber-rack = Передёрнуть затвор
 # MagazineAmmoProvider
 gun-magazine-examine = Осталось [color={ $color }]{ $count }[/color] выстрелов.

@@ -1701,7 +1701,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      150: Dead
+      90: Dead
   - type: MeleeWeapon
     hidden: true
     angle: 0
@@ -1710,8 +1710,8 @@
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Piercing: 12
-        Poison: 4
+        Piercing: 6
+        Poison: 6
   - type: ReplacementAccent
     accent: xeno
   - type: InteractionPopup

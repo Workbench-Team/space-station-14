@@ -59,6 +59,10 @@ ent-BorgModuleGasAnalyzer = gas analyzer cyborg module
 
   .desc = { ent-['BaseBorgModuleEngineering', 'BaseProviderBorgModule'].desc }
   .suffix = { "" }
+ent-BorgModuleConstruction = construction cyborg module
+
+  .desc = { ent-['BaseBorgModuleEngineering', 'BaseProviderBorgModule'].desc }
+  .suffix = { "" }
 ent-BorgModuleRCD = RCD cyborg module
 
   .desc = { ent-['BaseBorgModuleEngineering', 'BaseProviderBorgModule'].desc }
@@ -104,6 +108,10 @@ ent-BorgModuleMusique = musique cyborg module
   .desc = { ent-['BaseBorgModuleService', 'BaseProviderBorgModule'].desc }
   .suffix = { "" }
 ent-BorgModuleGardening = gardening cyborg module
+
+  .desc = { ent-['BaseBorgModuleService', 'BaseProviderBorgModule'].desc }
+  .suffix = { "" }
+ent-BorgModuleHarvesting = harvesting cyborg module
 
   .desc = { ent-['BaseBorgModuleService', 'BaseProviderBorgModule'].desc }
   .suffix = { "" }

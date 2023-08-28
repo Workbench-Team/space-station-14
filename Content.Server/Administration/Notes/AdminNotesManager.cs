@@ -109,7 +109,7 @@ public sealed class AdminNotesManager : IAdminNotesManager, IPostInjectInit
 
         if (expiryTime is not null)
         {
-            sb.Append($" which expires on {expiryTime.Value.ToUniversalTime(): yyyy-MM-dd HH:mm:ss} UTC");
+            sb.Append($" which expires on {expiryTime.Value.ToUniversalTime(): dd-MM-yyyy HH:mm:ss} UTC");
         }
 
         _sawmill.Info(sb.ToString());
@@ -254,14 +254,14 @@ public sealed class AdminNotesManager : IAdminNotesManager, IPostInjectInit
             if (note.ExpiryTime is null)
                 sb.Append("never");
             else
-                sb.Append($"{note.ExpiryTime.Value.ToUniversalTime(): yyyy-MM-dd HH:mm:ss} UTC");
+                sb.Append($"{note.ExpiryTime.Value.ToUniversalTime(): dd-MM-yyyy HH:mm:ss} UTC");
 
             sb.Append(" to ");
 
             if (expiryTime is null)
                 sb.Append("never");
             else
-                sb.Append($"{expiryTime.Value.ToUniversalTime(): yyyy-MM-dd HH:mm:ss} UTC");
+                sb.Append($"{expiryTime.Value.ToUniversalTime(): dd-MM-yyyy HH:mm:ss} UTC");
         }
 
         _sawmill.Info(sb.ToString());

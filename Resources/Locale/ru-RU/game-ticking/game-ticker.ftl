@@ -40,4 +40,5 @@ latejoin-arrival-announcement =
        *[neuter] прибыл
     } на станцию!
 latejoin-arrival-sender = Станции
-latejoin-arrivals-direction = Вскоре прибудет шаттл, который доставит Вас на станцию.
+latejoin-arrivals-direction = Шаттл, который доставит вас на станцию скоро прибудет.
+latejoin-arrivals-direction-time = Шаттл, который доставит вас на станцию прибудет через { $time }.

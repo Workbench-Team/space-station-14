@@ -34,7 +34,7 @@ namespace Content.Server.Chemistry.EntitySystems
 
         private void HandleInjection(EntityUid uid, SolutionInjectOnCollideComponent component, ref StartCollideEvent args)
         {
-            if (args.OurFixture.ID != component.FixtureID) return;
+            if (args.OurFixtureId != component.FixtureID) return;
 
             var target = args.OtherEntity;
 

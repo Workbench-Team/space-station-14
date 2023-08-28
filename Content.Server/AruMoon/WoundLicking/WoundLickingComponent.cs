@@ -4,7 +4,7 @@ namespace Content.Server.Felinid
 {
     [RegisterComponent]
     [Access(typeof(WoundLickingSystem))]
-    public sealed class WoundLickingComponent : Component
+    public sealed partial class WoundLickingComponent : Component
     {
         /// <summary>
         /// How frequent wound-licking will cause diseases. Scales with amount of reduced bleeding

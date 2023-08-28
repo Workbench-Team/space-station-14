@@ -5,7 +5,7 @@ using Robust.Shared.Audio;
 namespace Content.Server.Stunnable.Components
 {
     [RegisterComponent, Access(typeof(PolicebatonSystem))]
-    public sealed class PolicebatonComponent : Component
+    public sealed partial class PolicebatonComponent : Component
     {
         public bool Activated = false;
 
@@ -15,7 +15,7 @@ namespace Content.Server.Stunnable.Components
 
         [DataField("stunSound")]
         public SoundSpecifier StunSound { get; set; } = new SoundPathSpecifier("/Audio/Weapons/egloves.ogg");
-        
+
         [DataField("toggleSound")]
         public SoundSpecifier ToggleSound { get; set; } = new SoundPathSpecifier("/Audio/Weapons/batonextend.ogg");
     }
