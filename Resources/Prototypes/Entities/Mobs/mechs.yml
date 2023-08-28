@@ -316,7 +316,7 @@
     - CentCom
   - type: IntrinsicRadioTransmitter
     channels:
-    - CentComn
+    - CentCom
   - type: Destructible
     thresholds:
     - trigger:
