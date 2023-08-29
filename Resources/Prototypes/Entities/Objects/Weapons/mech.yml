@@ -89,10 +89,6 @@
       - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
-  - type: BallisticAmmoProvider
-    whitelist:
-      tags:
-        - CartridgeRocket
     capacity: 6
     proto: CartridgeRocket
     soundInsert:
