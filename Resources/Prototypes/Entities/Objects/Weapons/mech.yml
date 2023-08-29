@@ -341,7 +341,7 @@
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
-        ents: [GrenadeFlash]
+        ents: []
 
 - type: entity
   name: Mounted fire extinguisher.
