@@ -400,7 +400,6 @@
       - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
-  - type: BallisticAmmoProvider
     autoCycle: true
     whitelist:
       tags:
@@ -409,10 +408,10 @@
     proto: GrenadeFrag
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-        ents: []
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - Grenade
 
 - type: entity
   name: AC 2 "Ultra"
