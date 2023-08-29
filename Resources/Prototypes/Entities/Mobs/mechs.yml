@@ -226,6 +226,8 @@
   - type: Access
     groups:
     - AllAccess
+  - type: StaticPrice
+    price: 10000
 
 - type: entity
   id: MechMaulerDestroyed
