@@ -36,7 +36,7 @@
 
 - type: entity
   name: SRM-8 Missile Launcher
-  parent: BaseItem
+  parent: BaseWeaponLauncher
   id: WeaponLauncherMultipleRocket9000
   description: Mounted Rocket Launcher.
   components:
@@ -68,10 +68,6 @@
   - type: Appearance
   - type: MechEquipment
   - type: UIFragment
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot 
 
 - type: entity
   name: SRM-6 Missile Launcher
@@ -89,14 +85,10 @@
       - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
-    capacity: 6
+    capacity: 20
     proto: CartridgeRocket
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-        ents: []
 
 - type: entity
   name: Mounted Disabler PBT "Enforcer"
@@ -253,7 +245,7 @@
       - SemiAuto
   - type: BallisticAmmoProvider
     proto: BFGBullet
-    capacity: 10
+    capacity: 20
   - type: Appearance
   - type: MechEquipment
   - type: UIFragment
@@ -331,6 +323,7 @@
   - type: Sprite
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_grenadelnchr
+  - type: AmmoCounter
   - type: Gun
     fireRate: 1
     selectedMode: SemiAuto
@@ -338,10 +331,14 @@
       - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-        ents: []
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - Grenade
+    capacity: 20
+    proto: GrenadeFlash
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
 
 - type: entity
   name: Mounted fire extinguisher.
@@ -393,6 +390,7 @@
   - type: Sprite
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_grenadelnchr
+  - type: AmmoCounter
   - type: Gun
     fireRate: 1
     selectedMode: SemiAuto
@@ -400,18 +398,14 @@
       - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
-    autoCycle: true
-    whitelist:
-      tags:
-        - Grenade
-    capacity: 6
-    proto: GrenadeFrag
-    soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: BallisticAmmoProvider
     whitelist:
       tags:
         - Grenade
+    capacity: 10
+    proto: GrenadeFrag
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
 
 - type: entity
   name: AC 2 "Ultra"
@@ -503,10 +497,6 @@
     proto: Mousetrap
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-        ents: []
 
 - type: entity
   name: Banana Mortar
@@ -533,10 +523,6 @@
     proto: TrashBananaPeelOneTime
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-        ents: []
 
 - type: entity
   name: Disposable Banana Peel
@@ -671,10 +657,6 @@
     proto: LandMineExplosiveBanana
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-        ents: []
 
 - type: entity
   name: Banana Peel Mine
