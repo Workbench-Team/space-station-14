@@ -807,3 +807,26 @@
     lifetime: 0.4
   - type: StaminaDamageOnCollide
     damage: 65
+
+- type: entity
+  id: BFGBullet
+  name: Bullet BSG
+  noSpawn: true
+  parent: BaseBullet
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
+    layers:
+    - state: bluespace
+  - type: Projectile
+    ignoreResistances: true
+    damage:
+      types:
+        Brute: 20
+        Burn: 20
+        Structural: 100
+  - type: PointLight
+    enabled: true
+    color: "#0000FF"
+    radius: 5.0
+    energy: 4.0
