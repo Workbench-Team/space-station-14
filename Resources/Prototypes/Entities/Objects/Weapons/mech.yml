@@ -26,6 +26,9 @@
   - type: Battery
     maxCharge: 40000
     startingCharge: 40000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 10
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -129,39 +132,29 @@
 
 - type: entity
   name: LBX AC 10 "Salvo"
-  parent: BaseItem
+  parent: BaseWeaponBatterySmall
   id: WeaponShotgunEnforcer9000
   description: Mounted firearm that fires shotgun rounds.
   components:
   - type: Sprite
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_scatter
-  - type: BallisticAmmoProvider
-    autoCycle: true
-    whitelist:
-      tags:
-      - ShellShotgun
-    capacity: 50
-    proto: ShellShotgun
-    soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
-  - type: AmmoCounter
   - type: Gun
-    fireRate: 1
-    selectedMode: FullAuto
-    availableModes:
-    - FullAuto
-  - type: MechEquipment
-  - type: UIFragment
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-        ents: []
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
+    fireRate: 0.7
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletAntiMateriel
+    fireCost: 200
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 10
+  - type: Appearance
 
 - type: entity
   name: Carbine FNX-99 "Aid"
   id: WeaponLightMachineGunL69000
-  parent: BaseItem
+  parent: WeaponAS2Ultra9000
   description: Mounted carbine with armor-piercing rounds.
   components:
   - type: Sprite
@@ -182,49 +175,10 @@
       path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
-  - type: ChamberMagazineAmmoProvider
-  - type: AmmoCounter
-  - type: MagazineVisuals
-    magState: mag
-    steps: 4
-    zeroVisible: true
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineLightRifleBox9000
-        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazineLightRifleBox
-      gun_chamber:
-        name: Chamber
-        startingItem: CartridgeLightRifle
-        priority: 1
-        whitelist:
-          tags:
-            - CartridgeLightRifle
-  - type: Appearance
-  - type: MechEquipment
-  - type: UIFragment
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot 
-
-- type: entity
-  name: Magazine for FNX-99 Carbine
-  parent: MagazineLightRifleBox
-  id: MagazineLightRifleBox9000
-  components:
-  - type: BallisticAmmoProvider
-    capacity: 300
 
 - type: entity
   name: Tesla Cannon P-X
-  parent: BaseItem
+  parent: BaseWeaponBatterySmall
   id: WeaponBFG9000
   description: Weapon for combat mechanoids that fires energy spheres, based on the principle of an experimental Tesla engine
   components:
@@ -234,25 +188,23 @@
     state: mecha_wholegen
   - type: Item
     size: 80
-  - type: AmmoCounter
   - type: Gun
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/laser_cannon2.ogg
+      path: /Audio/Weapons/Guns/Gunshots/plasma_cutter.ogg
     fireRate: 1
     projectileSpeed: 2
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
-  - type: BallisticAmmoProvider
+  - type: ProjectileBatteryAmmoProvider
     proto: BFGBullet
-    capacity: 20
+    fireCost: 200
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 40
   - type: Appearance
   - type: MechEquipment
   - type: UIFragment
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-        ents: []
 
 - type: entity
   name: Incinerator Cannon ZFI
@@ -410,7 +362,7 @@
 - type: entity
   name: AC 2 "Ultra"
   id: WeaponAS2Ultra9000
-  parent: BaseItem
+  parent: BaseWeaponBatterySmall
   description: Mounted machine gun.
   components:
   - type: Sprite
@@ -431,46 +383,15 @@
       path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
-  - type: ChamberMagazineAmmoProvider
-  - type: AmmoCounter
-  - type: MagazineVisuals
-    magState: mag
-    steps: 4
-    zeroVisible: true
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineLightRifleBox9000
-        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazineLightRifleBox
-      gun_chamber:
-        name: Chamber
-        startingItem: CartridgeLightRifle
-        priority: 1
-        whitelist:
-          tags:
-            - CartridgeLightRifle
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletRifle
+    fireCost: 10
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 1
   - type: Appearance
   - type: MechEquipment
   - type: UIFragment
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot 
-
-
-- type: entity
-  name: Magazine for AC 2 "Ultra".
-  parent: MagazineLightRifleBox
-  id: MagazineLightRifleBoxAS29000
-  components:
-  - type: BallisticAmmoProvider
-    capacity: 500
 
 - type: entity
   name: Mouse Trap Mortar
@@ -724,26 +645,3 @@
     interfaces:
       - key: enum.RadarConsoleUiKey.Key
         type: RadarConsoleBoundUserInterface
-
-- type: entity
-  id: BFGBullet
-  name: Bullet BSG
-  noSpawn: true
-  parent: BaseBullet
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
-    layers:
-    - state: bluespace
-  - type: Projectile
-    ignoreResistances: true
-    damage:
-      types:
-        Brute: 20
-        Burn: 20
-        Structural: 100
-  - type: PointLight
-    enabled: true
-    color: "#0000FF"
-    radius: 5.0
-    energy: 4.0
