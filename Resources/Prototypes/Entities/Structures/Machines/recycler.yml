@@ -97,6 +97,7 @@
       - Material
       - Pda
       - IdCard
+      - HumanoidAppearance
       tags:
       - HighRiskItem
     sound:
