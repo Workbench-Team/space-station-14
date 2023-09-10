@@ -29,6 +29,7 @@
 - type: startingGear
   id: CaptainGear
   equipment:
+    socks: ClothingUnderSocksCapKneeSocks
     jumpsuit: ClothingUniformJumpsuitCaptain
     back: ClothingBackpackCaptainFilled
     shoes: ClothingShoesColorBlack
@@ -39,5 +40,6 @@
     id: CaptainPDA
     ears: ClothingHeadsetAltCommand
   innerclothingskirt: ClothingUniformJumpskirtCaptain
+  femaleSocks: ClothingUnderSocksCapStockings
   satchel: ClothingBackpackSatchelCaptainFilled
   duffelbag: ClothingBackpackDuffelCaptainFilled

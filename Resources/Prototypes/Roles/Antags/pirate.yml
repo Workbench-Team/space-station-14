@@ -1,6 +1,7 @@
 - type: startingGear
   id: PirateGear
   equipment:
+    socks: ClothingUnderSocksBlackSocks
     jumpsuit: ClothingUniformJumpsuitPirate
     back: ClothingBackpackPirateFilled
     head: ClothingHeadBandBlack
@@ -9,12 +10,14 @@
     belt: ClothingBeltUtility
     pocket1: AppraisalTool
   innerclothingskirt: ClothingUniformJumpsuitPirate
+  femaleSocks: ClothingUnderSocksBlackKneeSocks
   satchel: ClothingBackpackPirateFilled
   duffelbag: ClothingBackpackPirateFilled
 
 - type: startingGear
   id: PirateCaptainGear
   equipment:
+    socks: ClothingUnderSocksBlackKneeSocks
     jumpsuit: ClothingUniformJumpsuitPirate
     back: ClothingBackpackPirateFilled
     head: ClothingHeadHatPirate
@@ -25,12 +28,14 @@
     pocket2: EnergyCutlass
     outerClothing: ClothingOuterCoatPirate
   innerclothingskirt: ClothingUniformJumpskirtColorLightBrown
+  femaleSocks: ClothingUnderSocksBlackStockings
   satchel: ClothingBackpackPirateFilled
   duffelbag: ClothingBackpackPirateFilled
 
 - type: startingGear
   id: PirateFirstmateGear
   equipment:
+    socks: ClothingUnderSocksWhiteKneeSocks
     jumpsuit: ClothingUniformJumpsuitPirate
     back: ClothingBackpackPirateFilled
     head: ClothingHeadHatPirateTricord
@@ -40,5 +45,6 @@
     pocket1: AppraisalTool
     outerClothing: ClothingOuterCoatGentle
   innerclothingskirt: ClothingUniformJumpsuitPirate
+  femaleSocks: ClothingUnderSocksWhiteKneeSocks
   satchel: ClothingBackpackPirateFilled
   duffelbag: ClothingBackpackPirateFilled

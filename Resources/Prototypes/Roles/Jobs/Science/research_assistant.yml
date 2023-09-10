@@ -19,11 +19,13 @@
 - type: startingGear
   id: ResearchAssistantGear
   equipment:
+    socks: ClothingUnderSocksWhiteSocks
     jumpsuit: ClothingUniformJumpsuitColorWhite
     back: ClothingBackpackScienceFilled
     shoes: ClothingShoesColorWhite
     id: ResearchAssistantPDA
     ears: ClothingHeadsetScience
   innerclothingskirt: ClothingUniformJumpskirtColorWhite
+  femaleSocks: ClothingUnderSocksWhiteKneeSocks
   satchel: ClothingBackpackSatchelScienceFilled
   duffelbag: ClothingBackpackDuffelScienceFilled

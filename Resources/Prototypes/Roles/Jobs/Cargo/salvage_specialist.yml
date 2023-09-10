@@ -21,10 +21,12 @@
 - type: startingGear
   id: SalvageSpecialistGear
   equipment:
+    socks: ClothingUnderSocksWhiteKneeSocks
     jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
     back: ClothingBackpackSalvageFilled
     shoes: ClothingShoesBootsSalvage
     id: SalvagePDA
     ears: ClothingHeadsetCargo
+  femaleSocks: ClothingUnderSocksWhiteStockings
   satchel: ClothingBackpackSatchelSalvageFilled
   duffelbag: ClothingBackpackDuffelSalvageFilled

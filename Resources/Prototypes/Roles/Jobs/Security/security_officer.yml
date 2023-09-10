@@ -21,6 +21,7 @@
 - type: startingGear
   id: SecurityOfficerGear
   equipment:
+    socks: ClothingUnderSocksBlackKneeSocks
     jumpsuit: ClothingUniformJumpsuitSec
     back: ClothingBackpackSecurityFilled
     shoes: ClothingShoesBootsCombatFilled
@@ -32,5 +33,6 @@
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponPistolMk58Nonlethal
   innerclothingskirt: ClothingUniformJumpskirtSec
+  femaleSocks: ClothingUnderSocksBlackStockings
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled

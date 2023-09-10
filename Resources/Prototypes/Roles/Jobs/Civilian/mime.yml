@@ -20,6 +20,7 @@
 - type: startingGear
   id: MimeGear
   equipment:
+    socks: ClothingUnderSocksMonochromeKneeSocks
     jumpsuit: ClothingUniformJumpsuitMime
     back: ClothingBackpackMimeFilled
     head: ClothingHeadHatBeret
@@ -32,5 +33,6 @@
     id: MimePDA
     ears: ClothingHeadsetService
   innerclothingskirt: ClothingUniformJumpskirtMime
+  femaleSocks: ClothingUnderSocksMonochromeStockings
   satchel: ClothingBackpackSatchelMimeFilled
   duffelbag: ClothingBackpackDuffelMimeFilled

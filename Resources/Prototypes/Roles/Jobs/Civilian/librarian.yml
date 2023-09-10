@@ -13,6 +13,7 @@
 - type: startingGear
   id: LibrarianGear
   equipment:
+    socks: ClothingUnderSocksRedSocks
     jumpsuit: ClothingUniformJumpsuitLibrarian
     back: ClothingBackpackLibrarianFilled
     shoes: ClothingShoesBootsLaceup
@@ -24,5 +25,6 @@
   inhand:
     right hand: BriefcaseBrownFilled
   innerclothingskirt: ClothingUniformJumpskirtColorLightBrown
+  femaleSocks: ClothingUnderSocksRedKneeSocks
   satchel: ClothingBackpackSatchelLibrarianFilled
   duffelbag: ClothingBackpackDuffelLibrarianFilled

@@ -17,6 +17,7 @@
 - type: startingGear
   id: JanitorGear
   equipment:
+    socks: ClothingUnderSocksPurpleSocks
     jumpsuit: ClothingUniformJumpsuitJanitor
     back: ClothingBackpackFilled
     shoes: ClothingShoesGaloshes
@@ -25,12 +26,14 @@
     ears: ClothingHeadsetService
     belt: ClothingBeltJanitorFilled
   innerclothingskirt: ClothingUniformJumpskirtJanitor
+  femaleSocks: ClothingUnderSocksPurpleKneeSocks
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
 
 - type: startingGear
   id: JanitorMaidGear
   equipment:
+    socks: ClothingUnderSocksWhiteStockings
     jumpsuit: ClothingUniformJumpskirtJanimaid
     back: ClothingBackpackFilled
     id: JanitorPDA
@@ -38,5 +41,6 @@
     ears: ClothingHeadsetService
     belt: ClothingBeltJanitorFilled
   innerclothingskirt: ClothingUniformJumpskirtJanimaid
+  femaleSocks: ClothingUnderSocksWhiteStockings
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

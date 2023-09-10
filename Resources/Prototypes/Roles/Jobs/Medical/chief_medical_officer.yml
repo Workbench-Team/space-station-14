@@ -33,6 +33,7 @@
 - type: startingGear
   id: CMOGear
   equipment:
+    socks: ClothingUnderSocksCyanKneeSocks
     jumpsuit: ClothingUniformJumpsuitCMO
     back: ClothingBackpackCMOFilled
     shoes: ClothingShoesColorBrown
@@ -41,5 +42,6 @@
     ears: ClothingHeadsetCMO
     belt: ClothingBeltMedicalFilled
   innerclothingskirt: ClothingUniformJumpskirtCMO
+  femaleSocks: ClothingUnderSocksCyanStockings
   satchel: ClothingBackpackSatchelCMOFilled
   duffelbag: ClothingBackpackDuffelCMOFilled

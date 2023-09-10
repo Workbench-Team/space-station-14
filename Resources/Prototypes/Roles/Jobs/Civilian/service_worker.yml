@@ -18,11 +18,13 @@
 - type: startingGear
   id: ServiceWorkerGear
   equipment:
+    socks: ClothingUnderSocksWhiteSocks
     jumpsuit: ClothingUniformJumpsuitBartender
     back: ClothingBackpackFilled
     shoes: ClothingShoesColorBlack
     id: ServiceWorkerPDA
     ears: ClothingHeadsetService
   innerclothingskirt: ClothingUniformJumpskirtBartender
+  femaleSocks: ClothingUnderSocksWhiteKneeSocks
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

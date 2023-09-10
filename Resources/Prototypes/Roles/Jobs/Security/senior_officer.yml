@@ -30,6 +30,7 @@
 - type: startingGear
   id: SeniorOfficerGear
   equipment:
+    socks: ClothingUnderSocksBlackKneeSocks
     jumpsuit: ClothingUniformJumpsuitSeniorOfficer
     back: ClothingBackpackSecurityFilled
     shoes: ClothingShoesBootsCombatFilled
@@ -41,5 +42,6 @@
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponPistolMk58Nonlethal
   innerclothingskirt: ClothingUniformJumpskirtSeniorOfficer
+  femaleSocks: ClothingUnderSocksBlackStockings
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled

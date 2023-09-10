@@ -32,6 +32,7 @@
 - type: startingGear
   id: ChiefEngineerGear
   equipment:
+    socks: ClothingUnderSocksOrangeKneeSocks
     head: ClothingHeadHatHardhatWhite
     jumpsuit: ClothingUniformJumpsuitChiefEngineer
     back: ClothingBackpackChiefEngineerFilled
@@ -41,5 +42,6 @@
     ears: ClothingHeadsetCE
     belt: ClothingBeltUtilityEngineering
   innerclothingskirt: ClothingUniformJumpskirtChiefEngineer
+  femaleSocks: ClothingUnderSocksOrangeStockings
   satchel: ClothingBackpackSatchelChiefEngineerFilled
   duffelbag: ClothingBackpackDuffelChiefEngineerFilled

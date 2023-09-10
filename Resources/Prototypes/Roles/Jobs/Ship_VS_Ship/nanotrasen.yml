@@ -7,6 +7,7 @@
 - type: startingGear
   id: RecruitNTGear
   equipment:
+    socks: ClothingUnderSocksAzureKneeSocks
     jumpsuit: ClothingUniformJumpsuitRecruitNT
     back: ClothingBackpackFilled
     shoes: ClothingShoesColorBlack
@@ -14,6 +15,7 @@
     id: PassengerPDA
     ears: ClothingHeadsetGrey
   innerclothingskirt: ClothingUniformJumpsuitRecruitNT #Wearing a jumpskirt into combat is a little unfitting and silly, so there is no jumpskirt counterpart for any of the Ship VS. Ship suits.
+  femaleSocks: ClothingUnderSocksAzureKneeSocks
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
 
@@ -21,6 +23,7 @@
 - type: startingGear
   id: RepairmanNTGear
   equipment:
+    socks: ClothingUnderSocksYellowKneeSocks
     head: ClothingHeadHatHardhatYellow
     jumpsuit: ClothingUniformJumpsuitRepairmanNT
     back: ClothingBackpackEngineeringFilled
@@ -31,6 +34,7 @@
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetAltCommand #Should use the "alt" engineering headset sprite.
   innerclothingskirt: ClothingUniformJumpsuitRepairmanNT
+  femaleSocks: ClothingUnderSocksYellowKneeSocks
   satchel: ClothingBackpackSatchelEngineeringFilled
   duffelbag: ClothingBackpackDuffelEngineeringFilled
 
@@ -38,6 +42,7 @@
 - type: startingGear
   id: ParamedicNTGear
   equipment:
+    socks: ClothingUnderSocksAzureKneeSocks
     jumpsuit: ClothingUniformJumpsuitParamedicNT
     back: ClothingBackpackFilled #The medical backpack sprite looks way worse so this will do for now.
     shoes: ClothingShoesColorBlue
@@ -47,6 +52,7 @@
     gloves: ClothingHandsGlovesLatex
     belt: ClothingBeltMedicalFilled
   innerclothingskirt: ClothingUniformJumpskirtMedicalDoctor
+  femaleSocks: ClothingUnderSocksAzureKneeSocks
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
 
@@ -55,6 +61,7 @@
 - type: startingGear
   id: ChiefEngineerNTGear
   equipment:
+    socks: ClothingUnderSocksGreyKneeSocks
     head: ClothingHeadHatHardhatArmored
     jumpsuit: ClothingUniformJumpsuitChiefEngineerNT
     back: ClothingBackpackFilled #Again, the regular sprite here looks way worse than the regular backpack.
@@ -65,5 +72,6 @@
     ears: ClothingHeadsetAltCommand #Same as repairman - make this use the alt headset sprite.
     belt: ClothingBeltUtilityEngineering
   innerclothingskirt: ClothingUniformJumpsuitChiefEngineerNT
+  femaleSocks: ClothingUnderSocksGreyKneeSocks
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

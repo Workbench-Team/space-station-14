@@ -22,6 +22,7 @@
 - type: startingGear
   id: ParamedicGear
   equipment:
+    socks: ClothingUnderSocksAzureKneeSocks
     jumpsuit: ClothingUniformJumpsuitParamedic
     back: ClothingBackpackMedicalFilled
     shoes: ClothingShoesColorWhite
@@ -29,5 +30,6 @@
     ears: ClothingHeadsetMedical
     belt: ClothingBeltParamedicFilled
   innerclothingskirt: ClothingUniformJumpskirtParamedic
+  femaleSocks: ClothingUnderSocksAzureStockings
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled
