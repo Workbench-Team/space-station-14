@@ -14,12 +14,15 @@
       time: 21600 #6 hrs
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 72000
+      time: 36000 #10 hrs
+    - !type:OverallPlaytimeRequirement
+      time: 144000 #40 hrs
   weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"
   requireAdminNotify: true
   supervisors: job-supervisors-captain
+  whitelistRequired: true
   access:
   - Medical
   - Command

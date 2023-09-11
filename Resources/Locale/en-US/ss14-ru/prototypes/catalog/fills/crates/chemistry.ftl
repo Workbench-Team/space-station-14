@@ -7,3 +7,6 @@ ent-CrateChemistryS = { ent-CrateChemistrySecure }
 ent-CrateChemistryD = { ent-CrateChemistrySecure }
     .desc = { ent-CrateChemistrySecure.desc }
     .suffix = { "" }
+ent-CratePlantBGone = { ent-CrateGenericSteel }
+    .desc = { ent-CrateGenericSteel.desc }
+    .suffix = { "" }

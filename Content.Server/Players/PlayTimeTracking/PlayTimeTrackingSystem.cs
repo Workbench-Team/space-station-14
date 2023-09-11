@@ -1,12 +1,16 @@
 using System.Linq;
+using System.Threading.Tasks;
 using Content.Server.Afk;
 using Content.Server.Afk.Events;
 using Content.Server.GameTicking;
 using Content.Server.Roles;
+using Content.Server.Database;
+using Content.Server.Mind;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
+using Content.Shared.Players;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Roles;
 using Robust.Server.GameObjects;
@@ -27,7 +31,9 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypes = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
+    [Dependency] private readonly MindSystem _minds = default!;
     [Dependency] private readonly PlayTimeTrackingManager _tracking = default!;
+    [Dependency] private readonly IServerDbManager _db = default!;
 
     public override void Initialize()
     {
@@ -77,14 +83,17 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         return state.CurrentState is MobState.Alive or MobState.Critical;
     }
 
-    public IEnumerable<string> GetTimedRoles(Mind.Mind mind)
+    public IEnumerable<string> GetTimedRoles(EntityUid mindId)
     {
-        foreach (var role in mind.AllRoles)
+        var ev = new MindGetAllRolesEvent(new List<RoleInfo>());
+        RaiseLocalEvent(mindId, ref ev);
+
+        foreach (var role in ev.Roles)
         {
-            if (role is not IRoleTimer timer)
+            if (string.IsNullOrWhiteSpace(role.PlayTimeTrackerId))
                 continue;
 
-            yield return _prototypes.Index<PlayTimeTrackerPrototype>(timer.Timer).ID;
+            yield return _prototypes.Index<PlayTimeTrackerPrototype>(role.PlayTimeTrackerId).ID;
         }
     }
 
@@ -95,23 +104,19 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         if (contentData?.Mind == null)
             return Enumerable.Empty<string>();
 
-        return GetTimedRoles(contentData.Mind);
+        return GetTimedRoles(contentData.Mind.Value);
     }
 
     private void OnRoleRemove(RoleRemovedEvent ev)
     {
-        if (ev.Mind.Session == null)
-            return;
-
-        _tracking.QueueRefreshTrackers(ev.Mind.Session);
+        if (_minds.TryGetSession(ev.Mind, out var session))
+            _tracking.QueueRefreshTrackers(session);
     }
 
     private void OnRoleAdd(RoleAddedEvent ev)
     {
-        if (ev.Mind.Session == null)
-            return;
-
-        _tracking.QueueRefreshTrackers(ev.Mind.Session);
+        if (_minds.TryGetSession(ev.Mind, out var session))
+            _tracking.QueueRefreshTrackers(session);
     }
 
     private void OnRoundEnd(RoundRestartCleanupEvent ev)
@@ -161,6 +166,13 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
             job.Requirements == null ||
             !_cfg.GetCVar(CCVars.GameRoleTimers))
             return true;
+
+        if (_cfg.GetCVar(CCVars.WhitelistEnabled) &&
+            job.WhitelistRequired &&
+            !player.ContentData()!.Whitelisted)
+        {
+            return false;
+        }
 
         var playTimes = _tracking.GetTrackerTimes(player);
 

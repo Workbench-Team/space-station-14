@@ -1,0 +1,70 @@
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetModsuitCorp
+  noSpawn: true
+  name: Modsuit helmet "Corp"
+  description: Anti-impact helmet, with built-in lighting.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuits/corp.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuits/corp.rsi
+    equipSound: /Audio/Items/ballin.ogg
+    unequipSound: /Audio/Items/ballout.ogg
+  - type: PointLight
+    color: "#00ff00"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitCorp
+    slot: gloves
+    requiredSlot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitCorp
+  id: ClothingHeadHelmetModsuitAdmem
+  noSpawn: true
+  name: Modsuit helmet "Admem"
+  description: Anti-impact helmet, with built-in lighting.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuits/admem.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuits/admem.rsi
+  - type: PointLight
+    color: "#87ceeb"
+    radius: 7
+    energy: 3
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitAdmem
+    slot: gloves
+    requiredSlot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitCorp
+  id: ClothingHeadHelmetModsuitChrono
+  noSpawn: true
+  name: Modsuit helmet "Chrono Legionnaire"
+  description: Anti-impact helmet, with built-in lighting.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuits/chrono.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuits/chrono.rsi
+  - type: PointLight
+    color: "#fffafa"
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitChrono
+    slot: gloves
+    requiredSlot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}

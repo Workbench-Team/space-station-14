@@ -1,6 +1,9 @@
 ent-ClothingOuterApron = фартук
     .desc = Модный фартук для стильных людей.
     .suffix = { "" }
+ent-ClothingOuterApronBar = фартук
+    .desc = Темный фартук, предназначенный для барменов
+    .suffix = Бармена
 ent-ClothingOuterApronBotanist = фартук
     .desc = Толстый синий фартук, идеально подходящий для защиты Вашей нежной плоти от пятен, грязи и колючек.
     .suffix = Ботанический

@@ -24,7 +24,7 @@
     damageContainer: Biological
     damageModifierSet: Moth # moff
   - type: Speech
-    speechVerb: Insect
+    speechVerb: Moth
   - type: Butcherable
     butcheringType: Spike
     spawned:

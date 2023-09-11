@@ -12,6 +12,9 @@ namespace Content.Server.Ghost.Roles.Components
 
         [DataField("rules")] private string _roleRules = "";
 
+        [DataField("whitelistRequired")]
+        public bool WhitelistRequired = false;
+
         /// <summary>
         /// Whether the <see cref="MakeSentientCommand"/> should run on the mob.
         /// </summary>

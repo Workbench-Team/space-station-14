@@ -22,3 +22,6 @@ ent-SilverDoor = silver door
 ent-BananiumDoor = bananium door
     .desc = A door, where will it lead?
     .suffix = { "" }
+ent-WebDoor = web door
+    .desc = A door, leading to the lands of the spiders... or a spaced room.
+    .suffix = { "" }

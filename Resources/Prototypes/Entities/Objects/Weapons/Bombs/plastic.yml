@@ -60,3 +60,66 @@
         base:
           Primed: { state: primed }
           Unprimed: { state: complete }
+
+- type: entity
+  name: explosion package
+  description: A special explosive device for storming premises.
+  parent: BaseItem
+  id: ExplosionPackage
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Bombs/explosion_package.rsi
+    state: icon
+    layers:
+    - state: icon
+      map: ["base"]
+  - type: Item
+    sprite: Objects/Weapons/Bombs/explosion_package.rsi
+    size: 5
+  - type: OnUseTimerTrigger
+    delay: 5
+    delayOptions: [5, 10, 15, 20, 30]
+    initialBeepDelay: 0
+    beepSound: /Audio/Machines/Nuke/general_beep.ogg
+    startOnStick: true
+    canToggleStartOnStick: true
+  - type: TriggerOnSignal
+  - type: DeviceLinkSink
+    ports:
+      - Trigger
+  - type: Sticky
+    stickDelay: 1
+    unstickDelay: 1
+    stickPopupStart: comp-sticky-start-stick-bomb
+    stickPopupSuccess: comp-sticky-success-stick-bomb
+    unstickPopupStart: comp-sticky-start-unstick-bomb
+    unstickPopupSuccess: comp-sticky-success-unstick-bomb
+    blacklist: # can't stick it to other items
+      components:
+        - Item
+  - type: Explosive # Powerful explosion in a very small radius. Doesn't break underplating.
+    explosionType: DemolitionCharge
+    totalIntensity: 15
+    intensitySlope: 20
+    maxIntensity: 20
+    canCreateVacuum: false
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+          - !type:DoActsBehavior
+            acts: ["Destruction"]
+          - !type:ExplodeBehavior
+  - type: StickyVisualizer
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.Trigger.TriggerVisuals.VisualState:
+        base:
+          Primed: { state: primed }
+          Unprimed: { state: complete }

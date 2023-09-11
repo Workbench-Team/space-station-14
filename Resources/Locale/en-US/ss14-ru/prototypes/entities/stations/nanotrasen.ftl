@@ -9,3 +9,7 @@ ent-NanotrasenCentralCommand = { ent-['BaseStation', 'BaseStationAlertLevels', '
 
   .desc = { ent-['BaseStation', 'BaseStationAlertLevels', 'BaseStationNanotrasen'].desc }
   .suffix = { "" }
+ent-StandardStationArena = { ent-['BaseStation', 'BaseStationJobsSpawning', 'BaseStationRecords', 'BaseStationNanotrasen'] }
+
+  .desc = { ent-['BaseStation', 'BaseStationJobsSpawning', 'BaseStationRecords', 'BaseStationNanotrasen'].desc }
+  .suffix = { "" }

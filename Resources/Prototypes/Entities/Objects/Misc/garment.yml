@@ -101,6 +101,8 @@
       - id: ClothingHeadHatBeretEngineering
       - id: ClothingUniformJumpsuitChiefEngineer
       - id: ClothingUniformJumpskirtChiefEngineer
+      - id: ClothingUniformJumpsuitChiefEngineerTurtle
+      - id: ClothingUniformJumpskirtChiefEngineerTurtle
       - id: ClothingShoesColorBrown
 
 - type: entity

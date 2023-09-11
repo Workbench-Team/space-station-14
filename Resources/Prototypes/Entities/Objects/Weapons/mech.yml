@@ -1,0 +1,647 @@
+- type: entity
+  name: Heavy Pulse Carbine M-4
+  parent: BaseItem
+  id: WeaponPulseRifle9000
+  description: Mounted Pulse Weapon, operating on the same principle as the handheld Pulse Carbine. Extremely effective against everything.
+  components:
+  - type: Sprite
+    netsync: false
+    state: mecha_pulse
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+  - type: Item
+    size: 80
+  - type: AmmoCounter
+  - type: Gun
+    maxAngle: 60
+    minAngle: 60
+    fireRate: 3
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: Pulse
+    fireCost: 100
+  - type: Battery
+    maxCharge: 40000
+    startingCharge: 40000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 10
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: false
+  - type: Appearance
+  - type: MechEquipment
+  - type: UIFragment
+
+- type: entity
+  name: SRM-8 Missile Launcher
+  parent: BaseWeaponLauncher
+  id: WeaponLauncherMultipleRocket9000
+  description: Mounted Rocket Launcher.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_missilerack
+  - type: Item
+    size: 80
+  - type: Gun
+    fireRate: 1
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+  - type: AmmoCounter
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeRocket
+    capacity: 10
+    proto: CartridgeRocketSlow
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: MechEquipment
+  - type: UIFragment
+
+- type: entity
+  name: SRM-6 Missile Launcher
+  parent: WeaponLauncherMultipleRocket9000
+  id: WeaponLauncherRocket9000
+  description: Mounted Rocket Launcher.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_missilerack_six
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+    capacity: 20
+    proto: CartridgeRocket
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+
+- type: entity
+  name: Mounted Disabler PBT "Enforcer"
+  parent: BaseItem
+  id: WeaponTaser9000
+  description: Mounted non-lethal disabler, designed to incapacitate perpetrators.
+  components:
+    - type: Tag
+      tags:
+        - Taser
+    - type: Sprite
+      netsync: false
+      sprite: Objects/Specific/Mech/mecha_equipment.rsi
+      state: mecha_disabler
+    - type: Gun
+      maxAngle: 30
+      minAngle: 30
+      fireRate: 2
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+      selectedMode: FullAuto
+      availableModes:
+      - FullAuto
+    - type: ProjectileBatteryAmmoProvider
+      proto: BulletDisabler
+      fireCost: 100
+    - type: Battery
+      maxCharge: 20000
+      startingCharge: 20000
+    - type: MagazineVisuals
+      magState: mag
+      steps: 5
+      zeroVisible: true
+    - type: Appearance
+    - type: AmmoCounter
+    - type: MechEquipment
+    - type: UIFragment
+
+- type: entity
+  name: LBX AC 10 "Salvo"
+  parent: BaseWeaponBatterySmall
+  id: WeaponShotgunEnforcer9000
+  description: Mounted firearm that fires shotgun rounds.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_scatter
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
+    fireRate: 0.7
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletAntiMateriel
+    fireCost: 200
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 10
+  - type: Appearance
+
+- type: entity
+  name: Carbine FNX-99 "Aid"
+  id: WeaponLightMachineGunL69000
+  parent: WeaponAS2Ultra9000
+  description: Mounted carbine with armor-piercing rounds.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_carbine
+  - type: Item
+    size: 80
+  - type: Gun
+    angleIncrease: 4
+    angleDecay: 16
+    fireRate: 8
+    maxAngle: 60
+    minAngle: 60
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+
+- type: entity
+  name: Tesla Cannon P-X
+  parent: BaseWeaponBatterySmall
+  id: WeaponBFG9000
+  description: Weapon for combat mechanoids that fires energy spheres, based on the principle of an experimental Tesla engine
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_wholegen
+  - type: Item
+    size: 80
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/plasma_cutter.ogg
+    fireRate: 1
+    projectileSpeed: 2
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ProjectileBatteryAmmoProvider
+    proto: BFGBullet
+    fireCost: 200
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 40
+  - type: Appearance
+  - type: MechEquipment
+  - type: UIFragment
+
+- type: entity
+  name: Incinerator Cannon ZFI
+  parent: BaseItem
+  id: WeaponXrayCannon9000
+  description: Weapon for combat mechanoids that fires high-temperature beams.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_ion
+  - type: Item
+    size: 80
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 1000
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+  - type: AmmoCounter
+  - type: HitscanBatteryAmmoProvider
+    proto: XrayLaser
+    fireCost: 10
+  - type: MechEquipment
+  - type: UIFragment
+
+- type: entity
+  name: Laser "Incinerator" CH-PS
+  parent: WeaponXrayCannon9000
+  id: WeaponLaserCHPS9000
+  description: Standard combat armament for mechanoids, a mounted combat laser.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_laser
+  - type: Battery
+    maxCharge: 200000
+    startingCharge: 200000
+  - type: Gun
+    maxAngle: 30
+    minAngle: 30
+    fireRate: 4
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: RedLaser
+    fireCost: 1000
+
+- type: entity
+  name: SGL-6 Flashbang Grenade Launcher
+  parent: WeaponLauncherMultipleRocket9000
+  id: WeaponGrenadeLauncher9000
+  description: Mounted launcher for flashbang grenades.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_grenadelnchr
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - Grenade
+    capacity: 20
+    proto: GrenadeFlash
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+
+- type: entity
+  name: Mounted fire extinguisher.
+  parent: BaseItem
+  id: WeaponFireExtinguisher9000
+  description: Mounted fire extinguisher effective in combating slimes. Emits fast, controlled streams of water.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_exting
+  - type: Item
+    size: 80
+  - type: SolutionContainerManager
+    solutions:
+      spray:
+        maxVol: 10000
+        reagents:
+        - ReagentId: Water
+          Quantity: 10000
+  - type: RefillableSolution
+    solution: spray
+  - type: DrainableSolution
+    solution: spray
+  - type: ItemCooldown
+  - type: Spray
+    spraySound:
+      path: /Audio/Effects/extinguish.ogg
+    sprayedPrototype: ExtinguisherSpray
+    sprayDistance: 50
+    vaporAmount: 7
+    vaporSpread: 90
+    sprayVelocity: 2.0
+    sprayTimeAlive: 9.75
+    transferAmount: 20
+    impulse: 100.0
+  - type: FireExtinguisher
+    hasSafety: false
+  - type: Appearance
+  - type: MechEquipment
+  - type: UIFragment
+
+- type: entity
+  name: SGL-8 Fragmentation Grenade Launcher
+  parent: WeaponLauncherMultipleRocket9000
+  id: WeaponGrenadeFragLauncher9000
+  description: Mounted launcher for fragmentation grenades.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_grenadelnchr
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - Grenade
+    capacity: 10
+    proto: GrenadeFrag
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+
+- type: entity
+  name: AC 2 "Ultra"
+  id: WeaponAS2Ultra9000
+  parent: BaseWeaponBatterySmall
+  description: Mounted machine gun.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_uac2
+  - type: Item
+    size: 80
+  - type: Gun
+    angleIncrease: 4
+    angleDecay: 16
+    fireRate: 5
+    maxAngle: 60
+    minAngle: 60
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletRifle
+    fireCost: 10
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 1
+  - type: Appearance
+  - type: MechEquipment
+  - type: UIFragment
+
+- type: entity
+  name: Mouse Trap Mortar
+  parent: WeaponLauncherMultipleRocket9000
+  id: WeaponMousetrapLauncher9000
+  description: Mounted launcher for mouse traps.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_mousetrapmrtr
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: BallisticAmmoProvider
+    autoCycle: true
+    whitelist:
+      tags:
+        - Grenade
+    capacity: 100
+    proto: Mousetrap
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+
+- type: entity
+  name: Banana Mortar
+  parent: WeaponLauncherMultipleRocket9000
+  id: WeaponBananaPeelLauncher9000
+  description: Mounted launcher for banana peels.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_bananamrtr
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: BallisticAmmoProvider
+    autoCycle: true
+    whitelist:
+      tags:
+        - Grenade
+    capacity: 100
+    proto: TrashBananaPeelOneTime
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+
+- type: entity
+  name: Disposable Banana Peel
+  parent: TrashBananaPeel
+  id: TrashBananaPeelOneTime
+  components:
+  - type: DeleteOnTrigger
+  - type: TriggerOnSlip
+
+- type: entity
+  parent: BaseItem
+  id: WeaponBikeHorn9000
+  name: HoNkBoOm 5000
+  description: Incredibly loud noise emitter.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_honker
+  - type: ItemCooldown
+  - type: UseDelay
+    delay: 0.1
+  - type: EmitSoundOnUse
+    sound:
+      collection: BikeHorn
+      params:
+        volume: 50
+        maxdistance: 30
+        variation: 0.125
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: BikeHorn
+      params:
+        volume: 50
+        maxdistance: 30
+        variation: 0.125
+  - type: Tag
+    tags:
+    - BikeHorn
+  - type: MeleeWeapon
+    soundHit:
+      collection: BikeHorn
+      params:
+        volume: 50
+        maxdistance: 30
+        variation: 0.125
+    damage:
+      types:
+        Blunt: 0
+  - type: Item
+    size: 80
+  - type: Appearance
+  - type: MechEquipment
+  - type: UIFragment
+
+- type: entity
+  name: Industrial Hypo-Spray
+  parent: BaseItem
+  description: Industrial sterile injector for rapid administration of medications to patients.
+  id: HyposprayPromisliniy9000
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_taser
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 20
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+  - type: UseDelay
+    delay: 1.0
+
+- type: entity
+  name: Hydraulic Claw
+  description: Provides the mech with the ability to open doors or hatches.
+  parent: BaseItem
+  id: JawsOfLife9000
+  components:
+  - type: ItemCooldown
+  - type: Tag
+    tags:
+    - JawsOfLife
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_clamp
+  - type: Item
+    size: 80
+  - type: TilePrying
+  - type: Tool
+    qualities:
+      - Prying
+    speed: 1.5
+    useSound: /Audio/Items/jaws_pry.ogg
+  - type: ToolForcePowered
+
+- type: entity
+  parent: JawsOfLife9000
+  id: JawsOfLifeHarm9000
+  suffix: lethal
+  components:
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 20
+
+- type: entity
+  name: MineBanana Mortar
+  parent: WeaponLauncherMultipleRocket9000
+  id: WeaponBananaPeelMineLauncher9000
+  description: Mounted launcher for banana peel projectiles.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_bananamrtr
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: BallisticAmmoProvider
+    autoCycle: true
+    whitelist:
+      tags:
+        - Grenade
+    capacity: 30
+    proto: LandMineExplosiveBanana
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+
+- type: entity
+  name: Banana Peel Mine
+  parent: TrashBananaPeel
+  id: LandMineExplosiveBanana
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Objects/Specific/Hydroponics/banana.rsi
+    state: peel2
+  - type: TriggerOnSlip
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 3
+    intensitySlope: 3
+    totalIntensity: 30
+    canCreateVacuum: false
+  - type: DeleteOnTrigger
+  - type: AnimationPlayer
+
+- type: entity
+  name: Drill
+  parent: BaseItem
+  id: MechaDrill9000
+  description: Drill. Stronger, better, faster, more powerful.
+  components:
+  - type: Tag
+    tags:
+      - Pickaxe
+  - type: Sprite
+    netsync: false
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_drill
+    damage:
+      types:
+        Structural: 200
+    sound: /Audio/Effects/saw.ogg
+    gatheringTime: 0.50
+    MaxGatheringEntities: 2
+  - type: ItemCooldown
+  - type: MeleeWeapon
+    damage:
+      types:
+        Structural: 50
+        Piercing: 20
+        Blunt: 10
+    soundHit:
+      path: /Audio/Effects/saw.ogg
+
+- type: entity
+  name: Mining Scanner
+  parent: BaseItem
+  id: MechaAnalyzer9000
+  description: Device that scans nearby rocks for the presence of valuable minerals.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_analyzer
+  - type: RadarConsole
+  - type: ActivatableUI
+    key: enum.RadarConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+      - key: enum.RadarConsoleUiKey.Key
+        type: RadarConsoleBoundUserInterface

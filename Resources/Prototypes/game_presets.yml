@@ -60,8 +60,9 @@
   name: death-match-title
   description: death-match-description
   showInVote: true
+  supportedMaps: DeathMatchMapPool
   rules:
-    - DeathMatch
+    - DeathMatch31
 
 - type: gamePreset
   id: Nukeops

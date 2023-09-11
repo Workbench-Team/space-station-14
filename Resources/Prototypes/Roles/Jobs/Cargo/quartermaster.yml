@@ -9,14 +9,17 @@
       time: 21600 #6 hrs
     - !type:RoleTimeRequirement
       role: JobSalvageSpecialist
-      time: 18000
+      time: 10800 #3 hrs
     - !type:DepartmentTimeRequirement
       department: Cargo
-      time: 72000
+      time: 36000 #10 hours
+    - !type:OverallPlaytimeRequirement
+      time: 144000 #40 hrs
   weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
   supervisors: job-supervisors-captain
+  whitelistRequired: true
   access:
   - Cargo
   - Salvage

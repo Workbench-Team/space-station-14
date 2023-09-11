@@ -439,13 +439,12 @@
 
 - type: entity
   parent: BasePlushie
-  id: PlushieMoff
+  id: PlushieMoth
   name: moth plushie
   description: A plushie depicting an adorable mothperson. It's a huggable bug!
   components:
   - type: Sprite
-    state: plushie_moff
-    netsync: false
+    state: plushie_moth
   - type: EmitSoundOnUse
     sound:
       path: /Audio/Voice/Moth/moth_scream.ogg

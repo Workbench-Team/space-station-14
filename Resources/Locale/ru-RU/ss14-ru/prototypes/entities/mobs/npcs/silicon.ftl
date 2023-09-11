@@ -1,8 +1,14 @@
 ent-MobSiliconBase = { "" }
     .desc = { "" }
     .suffix = { "" }
+ent-MobSiliconBaseVehicle = { ent-MobSiliconBase }
+    .desc = { ent-MobSiliconBase.desc }
+    .suffix = { "" }
 ent-MobTaxiBot = таксибот
     .desc = Подвезти?
+    .suffix = { "" }
+ent-MobSupplyBot = снабжебот
+    .desc = Доставляет грузы!
     .suffix = { "" }
 ent-MobHonkBot = хонкбот
     .desc = Ужасающе.

@@ -6,21 +6,23 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 36000
+      time: 36000 # 10 hours
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 36000
+      time: 36000 # 10 hours
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 36000
-    - !type:OverallPlaytimeRequirement
-      time: 144000
+      time: 36000 # 10 hours
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 36000 # 10 hours
   weight: 20
   startingGear: HoPGear
   icon: "JobIconHeadOfPersonnel"
   requireAdminNotify: true
   supervisors: job-supervisors-captain
   canBeAntag: false
+  whitelistRequired: true
   access:
   - Command
   - HeadOfPersonnel

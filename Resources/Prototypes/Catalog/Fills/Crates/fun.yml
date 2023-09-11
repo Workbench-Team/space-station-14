@@ -13,7 +13,7 @@
       - id: PlushieLizard
       - id: PlushieSpaceLizard
       - id: PlushieVox
-      - id: PlushieMoff
+      - id: PlushieMoth
       - id: PlushieRouny
       - id: PlushieRatvar
       - id: PlushieSharkBlue
@@ -204,8 +204,9 @@
   - type: StorageFill
     contents:
       - id: WeaponWaterBlaster
+        amount: 2
       - id: WeaponWaterPistol
-        amount: 5
+        amount: 4
 
 - type: entity
   id: CrateFunSyndicateSegway

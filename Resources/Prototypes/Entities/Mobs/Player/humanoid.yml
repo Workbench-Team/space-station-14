@@ -23,6 +23,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
       description: ghost-role-information-ert-leader-description
+      whitelistRequired: true
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ ERTLeaderGear ]
@@ -50,6 +51,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
       description: ghost-role-information-ert-leader-description
+      whitelistRequired: true
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ ERTLeaderGearEVA ]
@@ -344,6 +346,7 @@
     - type: GhostRole
       name: ghost-role-information-centcom-official-name
       description: ghost-role-information-centcom-official-description
+      whitelistRequired: true
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ CentcomGear ]

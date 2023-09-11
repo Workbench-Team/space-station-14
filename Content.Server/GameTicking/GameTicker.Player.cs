@@ -1,14 +1,15 @@
 using Content.Server.Database;
 using Content.Server.Players;
+using Content.Server.Players.PlayTimeTracking;
 using Content.Shared.GameTicking;
 using Content.Shared.GameWindow;
+using Content.Shared.Players;
 using Content.Shared.Preferences;
 using JetBrains.Annotations;
 using Robust.Server.Player;
 using Robust.Shared.Enums;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
-using PlayerData = Content.Server.Players.PlayerData;
 
 namespace Content.Server.GameTicking
 {
@@ -16,6 +17,7 @@ namespace Content.Server.GameTicking
     public sealed partial class GameTicker
     {
         [Dependency] private readonly IPlayerManager _playerManager = default!;
+        [Dependency] private readonly PlayTimeTrackingManager _playTimeTrackingManager = default!;
         [Dependency] private readonly IServerDbManager _dbManager = default!;
 
         private void InitializePlayer()
@@ -27,7 +29,7 @@ namespace Content.Server.GameTicking
         {
             var session = args.Session;
 
-            if (_mind.TryGetMind(session.UserId, out var mind))
+            if (_mind.TryGetMind(session.UserId, out var mindId, out var mind))
             {
                 if (args.OldStatus == SessionStatus.Connecting && args.NewStatus == SessionStatus.Connected)
                     mind.Session = session;
@@ -35,7 +37,7 @@ namespace Content.Server.GameTicking
                 DebugTools.Assert(mind.Session == session);
             }
 
-            DebugTools.Assert(session.GetMind() == mind);
+            DebugTools.Assert(session.GetMind() == mindId);
 
             switch (args.NewStatus)
             {
@@ -47,8 +49,11 @@ namespace Content.Server.GameTicking
                     if (session.Data.ContentDataUncast == null)
                     {
                         var data = new PlayerData(session.UserId, args.Session.Name);
-                        data.Mind = mind;
+                        data.Mind = mindId;
+                        data.Whitelisted = await _db.GetWhitelistStatusAsync(session.UserId);
                         session.Data.ContentDataUncast = data;
+
+                        _playTimeTrackingManager.SendWhitelistCached(session);
                     }
 
                     // Make the player actually join the game.
@@ -145,9 +150,10 @@ namespace Content.Server.GameTicking
             return (HumanoidCharacterProfile) _prefsManager.GetPreferences(p.UserId).SelectedCharacter;
         }
 
-        public void PlayerJoinGame(IPlayerSession session)
+        public void PlayerJoinGame(IPlayerSession session, bool silent = false)
         {
-            _chatManager.DispatchServerMessage(session, Loc.GetString("game-ticker-player-join-game-message"));
+            if (!silent)
+                _chatManager.DispatchServerMessage(session, Loc.GetString("game-ticker-player-join-game-message"));
 
             _playerGameStatuses[session.UserId] = PlayerGameStatus.JoinedGame;
             _db.AddRoundPlayers(RoundId, session.UserId);

@@ -10,6 +10,9 @@
         {
             "name": "plushie_ratvar"
         },
+		{
+            "name": "plushie_moth"
+        },
         {
             "name": "plushie_rouny",
             "directions": 4
@@ -288,9 +291,6 @@
         },
         {
             "name": "toyShlepa"
-        },
-        {
-            "name": "plushie_moff"
         }
     ]
 }

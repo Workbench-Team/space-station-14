@@ -67,3 +67,6 @@ ent-JugNitrogen = jug (nitrogen)
 ent-JugOxygen = jug (oxygen)
     .desc = { ent-Jug.desc }
     .suffix = { "" }
+ent-JugPlantBGone = jug (Plant-B-Gone)
+    .desc = { ent-Jug.desc }
+    .suffix = { "" }

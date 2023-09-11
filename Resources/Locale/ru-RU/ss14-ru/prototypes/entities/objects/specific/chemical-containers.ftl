@@ -67,3 +67,6 @@ ent-JugNitrogen = кувшин (азот)
 ent-JugOxygen = кувшин (кислород)
     .desc = { ent-Jug.desc }
     .suffix = { "" }
+ent-JugPlantBGone = кувшин (Plant-B-Gone)
+    .desc = { ent-Jug.desc }
+    .suffix = { "" }

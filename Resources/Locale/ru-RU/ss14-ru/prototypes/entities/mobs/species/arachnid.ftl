@@ -1,4 +1,4 @@
-ent-BaseMobArachnid = Урист МакВеб
+ent-BaseMobArachnid = Урист МакВебс
     .desc = { ent-BaseMobOrganic.desc }
     .suffix = { "" }
 ent-MobArachnidDummy = Урист МакШёлк

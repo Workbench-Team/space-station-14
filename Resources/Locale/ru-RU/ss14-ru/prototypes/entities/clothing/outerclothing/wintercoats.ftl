@@ -1,6 +1,9 @@
 ent-ClothingOuterWinterCoat = зимнее пальто
     .desc = Тяжелая куртка из 'синтетического' меха животных.
     .suffix = { "" }
+ent-ClothingOuterWinterCoatToggleable = зимнее пальто с капюшоном
+    .desc = { ent-ClothingOuterWinterCoat.desc }
+    .suffix = { "" }
 ent-ClothingOuterWinterAtmos = зимнее пальто атмос-техника
     .desc = { ent-ClothingOuterWinterCoat.desc }
     .suffix = { "" }
@@ -93,4 +96,7 @@ ent-ClothingOuterWinterSyndie = зимнее пальто синдиката
     .suffix = { "" }
 ent-ClothingOuterWinterMusician = зимнее пальто музыканта
     .desc = Безразмерный пластилиновый космический фрак, который заставит людей спрашивать: "Вы меня знаете?".
+    .suffix = { "" }
+ent-ClothingOuterWinterWeb = паутинное зимнее пальто
+    .desc = Ощущение, словно внутри кокона, но это не уменьшает ваш страх оказаться в нём.
     .suffix = { "" }

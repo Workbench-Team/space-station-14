@@ -1,7 +1,7 @@
 ent-BaseGameRule = { "" }
     .desc = { "" }
     .suffix = { "" }
-ent-DeathMatch = { ent-BaseGameRule }
+ent-DeathMatch31 = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
     .suffix = { "" }
 ent-InactivityTimeRestart = { ent-BaseGameRule }

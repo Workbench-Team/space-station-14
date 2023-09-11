@@ -118,7 +118,7 @@
     ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsGlovesCombat
     shoes: ClothingShoesBootsCombatFilled
-    pocket1: BaseUplinkRadio30TC
+    pocket1: BaseUplinkRadio40TC
     id: AgentIDCard
   innerclothingskirt: ClothingUniformJumpsuitOperative
   femaleSocks: ClothingUnderSocksRedSyndieStockings
@@ -141,7 +141,7 @@
     shoes: ClothingShoesBootsCombatFilled
     id: SyndicateNuclearIDCard
     pocket1: DoubleEmergencyOxygenTankFilled
-    pocket2: BaseUplinkRadio30TC
+    pocket2: BaseUplinkRadio40TC
     belt: ClothingBeltMilitaryWebbing
   innerclothingskirt: ClothingUniformJumpskirtOperative
   femaleSocks: ClothingUnderSocksRedSyndieStockings
@@ -164,8 +164,10 @@
     shoes: ClothingShoesBootsCombatFilled
     id: SyndiPDA
     pocket1: DoubleEmergencyOxygenTankFilled
-    pocket2: BaseUplinkRadio30TC
+    pocket2: BaseUplinkRadio40TC
     belt: ClothingBeltMilitaryWebbing
+  inhand:
+    right hand: NukeOpsDeclarationOfWar
   innerclothingskirt: ClothingUniformJumpskirtOperative
   femaleSocks: ClothingUnderSocksRedSyndieStockings
   satchel: ClothingBackpackDuffelSyndicateOperative
@@ -186,7 +188,7 @@
     shoes: ClothingShoesBootsMagSyndie
     id: SyndiPDA
     pocket1: DoubleEmergencyOxygenTankFilled
-    pocket2: BaseUplinkRadio30TC
+    pocket2: BaseUplinkRadio40TC
     belt: ClothingBeltMilitaryWebbingMedFilled
   innerclothingskirt: ClothingUniformJumpskirtOperative
   femaleSocks: ClothingUnderSocksRedSyndieStockings
@@ -324,8 +326,22 @@
   id: MobMonkeyGear
   equipment:
     head: ClothingHeadHatTophat
+    ears: ClothingHeadsetService
     jumpsuit: ClothingUniformJumpsuitJacketMonkey
     id: BartenderIDCard
+
+# DeathMatch Gear
+
+- type: startingGear
+  id: DeathMatchGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorWhite
+    shoes: ClothingShoesBootsJack
+    ears: ClothingHeadsetGrey
+    gloves: ClothingHandsGlovesFingerless
+  innerclothingskirt: ClothingUniformJumpskirtColorWhite
+  inhand:
+    left hand: WeaponMeleeToolboxRobust
 
 #Brigmedic
 

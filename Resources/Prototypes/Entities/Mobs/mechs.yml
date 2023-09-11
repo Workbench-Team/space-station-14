@@ -1,0 +1,1038 @@
+- type: entity
+  name: AIM «Mauler»
+  id: MechMaulerReal
+  description: The Marauder, repainted by the Syndicate, has undergone significant modifications, yet remains the same old good Marauder.
+  parent: MechMauler
+  suffix: Mech
+  components:
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      900: Dead
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 900
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MechMaulerDestroyed:
+            min: 1
+            max: 1
+  - type: InnateTool
+    tools:
+      - id: WeaponLightMachineGunL69000
+      - id: WeaponLauncherMultipleRocket9000
+      - id: WeaponBFG9000
+      - id: JawsOfLifeHarm9000
+      - id: WeaponGrenadeFragLauncher9000
+      - id: WeaponLightMachineGunL69000
+  - type: Damageable
+    id: MechMauler
+  - type: IntrinsicRadioReceiver
+  - type: ActiveRadio
+    channels:
+    - Syndicate
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Syndicate
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: ghost-role-information-MechMaulerReal-name
+    description: ghost-role-information-MechMaulerReal-description
+    rules: ghost-role-information-MechMaulerReal-rules
+    whitelistRequired: true
+
+- type: body
+  id: MechaSilicon
+  name: "mecha"
+  root: hand 1
+  slots:
+    hand 1:
+      part: LeftArmBorg
+      connections:
+      - hand 2
+    hand 2:
+      part: LeftArmBorg
+      connections:
+      - hand 3
+    hand 3:
+      part: LeftArmBorg
+      connections:
+      - hand 4
+    hand 4:
+      part: RightArmBorg
+      connections:
+      - hand 5
+    hand 5:
+      part: RightArmBorg
+      connections:
+      - hand 6
+    hand 6:
+      part: RightArmBorg
+      connections:
+      - hand 7
+    hand 7:
+      part: RightArmBorg
+
+- type: body
+  id: DurandSilicon
+  name: "mecha"
+  root: hand 1
+  slots:
+    hand 1:
+      part: LeftArmBorg
+      connections:
+      - hand 2
+    hand 2:
+      part: LeftArmBorg
+      connections:
+      - hand 3
+    hand 3:
+      part: LeftArmBorg
+      connections:
+      - hand 4
+    hand 4:
+      part: RightArmBorg
+      connections:
+      - hand 5
+    hand 5:
+      part: RightArmBorg
+      connections:
+      - hand 6
+    hand 6:
+      part: RightArmBorg
+      connections:
+      - hand 7
+    hand 7:
+      part: RightArmBorg
+
+- type: entity
+  noSpawn: true
+  name: mauler
+  id: MechMauler
+  parent: PlayerSiliconBase
+  suffix: Mech
+  components:
+  - type: IntrinsicRadioReceiver
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 1000
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Physics
+    bodyType: Dynamic
+  - type: Body
+    prototype: Drone
+  - type: MeleeWeapon
+    hidden: true
+    attackRate: 0.75
+    damage:
+      types:
+        Blunt: 25 #thwack
+        Structural: 20
+  - type: TypingIndicator
+    proto: robot
+  - type: Actions
+  - type: MobMover
+  - type: InputMover
+  - type: UnpoweredFlashlight
+    toggleAction:
+      name: action-name-toggle-light
+      description: action-description-toggle-light
+      icon: { sprite: Objects/Tools/flashlight.rsi, state: flashlight }
+      iconOn: Objects/Tools/flashlight.rsi/flashlight-on.png
+      event: !type:ToggleActionEvent
+  - type: PointLight
+    color: red
+    enabled: false
+    radius: 8
+    softness: 1
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+  - type: MovementIgnoreGravity
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - FootstepSound
+    - CannotSuicide
+  - type: Puller
+    needsHands: false
+  - type: FootstepModifier
+    footstepSoundCollection:
+      path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+  - type: UserInterface
+    interfaces:
+    - key: enum.StrippingUiKey.Key
+      type: StrippableBoundUserInterface
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 2
+  - type: Repairable
+    fuelcost: 60
+    doAfterDelay: 40
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      600: Dead
+  - type: Sprite
+    drawdepth: Mobs
+    netsync: false
+    layers:
+    - state: mauler
+      sprite: Objects/Specific/Mech/mecha.rsi
+  - type: Appearance
+  - type: CombatMode
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MechMaulerDestroyed:
+            min: 1
+            max: 1
+  - type: Access
+    groups:
+    - AllAccess
+  - type: StaticPrice
+    price: 10000
+  - type: ShowSecurityIcons
+
+- type: entity
+  id: MechMaulerDestroyed
+  parent: PlayerSiliconBase
+  name: Broken Syndicate AIM "Mauler"
+  description: It won't fire anymore, now it's a pile of metal and microchips. Use its remains as you see fit.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: mauler-broken
+    netsync: false
+  - type: Physics
+    bodyType: KinematicController
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 1000
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      2000: Dead
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 2000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetPlasteel1:
+            min: 5
+            max: 20
+          SheetSteel1:
+            min: 10
+            max: 60
+  - type: StaticPrice
+    price: 1000
+#----------------------------------------------------------------------------
+
+- type: entity
+  name: APC "Marauder"
+  description: Armored Infantry Mech "Marauder." Utilized by NT forces in various combat spheres.
+  id: MechMarauder
+  parent: MechMauler
+  components:
+  - type: PointLight
+    color: cyan
+  - type: InnateTool
+    tools:
+      - id: WeaponAS2Ultra9000
+      - id: WeaponShotgunEnforcer9000
+      - id: JawsOfLifeHarm9000
+      - id: WeaponXrayCannon9000
+      - id: WeaponLauncherMultipleRocket9000
+      - id: WeaponPulseRifle9000
+  - type: Sprite
+    drawdepth: Mobs
+    netsync: false
+    layers:
+    - state: marauder
+      sprite: Objects/Specific/Mech/mecha.rsi
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: ghost-role-information-MechMarauder-name
+    description: ghost-role-information-MechMarauder-description
+    rules: ghost-role-information-MechMarauder-rules
+    whitelistRequired: true
+  - type: ActiveRadio
+    channels:
+    - CentCom
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - CentCom
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MechMarauderDestroyed:
+            min: 1
+            max: 1
+
+- type: entity
+  id: MechMarauderDestroyed
+  parent: MechMaulerDestroyed
+  name: Broken Armored Infantry Mech "Marauder"
+  description: It won't fire anymore, now it's just a pile of metal and circuits.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: marauder-broken
+    netsync: false
+
+
+
+#----------------------------------------------------------------------------
+
+
+
+- type: entity
+  name: SABM "Gaigex"
+  description: Repainted by the Syndicate, the Armored Battle Mechanoid "Gaigex" is battered and heavily worn, yet still operational in its standard mode. Just like from the last corporate war.
+  id: MechDarkGygax
+  parent: MechMauler
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: ghost-role-information-MechDarkGygax-name
+    description: ghost-role-information-MechDarkGygax-description
+    rules: ghost-role-information-MechDarkGygax-rules
+    whitelistRequired: true
+  - type: InnateTool
+    tools:
+      - id: WeaponLightMachineGunL69000
+      - id: WeaponShotgunEnforcer9000
+      - id: EnergySword
+      - id: JawsOfLifeHarm9000
+      - id: WeaponLauncherMultipleRocket9000
+      - id: WeaponLightMachineGunL69000
+  - type: Sprite
+    drawdepth: Mobs
+    netsync: false
+    layers:
+    - state: darkgygax
+      sprite: Objects/Specific/Mech/mecha.rsi
+  - type: ActiveRadio
+    channels:
+    - Syndicate
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Syndicate
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MechDarkGygaxDestroyed:
+            min: 1
+            max: 1
+
+- type: entity
+  id: MechDarkGygaxDestroyed
+  parent: MechMaulerDestroyed
+  name: Broken Syndicate Armored Battle Mechanoid "Gaigex"
+  description: It won't help anymore in the right moment, you can assemble a table from it, it will be grateful.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: darkgygax-broken
+    netsync: false
+
+
+
+#----------------------------------------------------------------------------
+
+- type: entity
+  name: ACM «Seraphim»
+  description: Armored Command Mech "Seraphim." This is a special model used exclusively by high-ranking military personnel.
+  id: MechSeraph
+  parent: MechMauler
+  components:
+  - type: PointLight
+    color: cyan
+  - type: InnateTool
+    tools:
+      - id: WeaponPulseRifle9000
+      - id: WeaponBFG9000
+      - id: JawsOfLifeHarm9000
+      - id: WeaponAS2Ultra9000
+      - id: WeaponLauncherRocket9000
+      - id: WeaponGrenadeFragLauncher9000
+  - type: Sprite
+    drawdepth: Mobs
+    netsync: false
+    layers:
+    - state: seraph
+      sprite: Objects/Specific/Mech/mecha.rsi
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: ghost-role-information-MechSeraph-name
+    description: ghost-role-information-MechSeraph-description
+    rules: ghost-role-information-MechSeraph-rules
+    whitelistRequired: true
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      400: Dead
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MechSeraphDestroyed:
+            min: 1
+            max: 1
+
+- type: entity
+  id: MechSeraphDestroyed
+  parent: MechMaulerDestroyed
+  name: Broken Armored Command Mech "Seraphim"
+  description: He orchestrated his final massacre, don't let him fall into the hands of the Syndicate!
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: seraph-broken
+    netsync: false
+
+
+
+#----------------------------------------------------------------------------
+
+- type: entity
+  id: MechDurandDestroyed
+  parent: MechMaulerDestroyed
+  name: Broken PMV "Durand" Combat Mechanoid.
+  description: Unable to patrol anymore, but he will serve as a not-so-lively shield.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: durand-broken
+    netsync: false
+
+- type: entity
+  parent: BoxHandcuff
+  id: BoxHandcuffDurand
+  components:
+  - type: Item
+    size: 40
+  - type: Storage
+    capacity: 60
+    whitelist:
+      tags:
+        - Handcuffs
+
+- type: entity
+  name: PMV "Durand"
+  description: An outdated third-generation combat mechanoid, PMV "Durand," utilized by the United Earth Government.
+  id: MechDurand
+  parent: MechMauler
+  components:
+  - type: PointLight
+    color: green
+  - type: InnateTool
+    tools:
+      - id: WeaponFireExtinguisher9000
+      - id: WeaponGrenadeLauncher9000
+      - id: JawsOfLifeHarm9000
+      - id: WeaponAS2Ultra9000
+      - id: BoxHandcuff
+      - id: WeaponTaser9000
+  - type: Body
+    prototype: DurandSilicon
+  - type: Sprite
+    drawdepth: Mobs
+    netsync: false
+    layers:
+    - state: durand
+      sprite: Objects/Specific/Mech/mecha.rsi
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: ghost-role-information-MechDurand-name
+    description: ghost-role-information-MechDurand-description
+    rules: ghost-role-information-MechDurand-rules
+    whitelistRequired: true
+  - type: ActiveRadio
+    channels:
+    - Common
+    - Security
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Common
+    - Security
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MechDurandDestroyed:
+            min: 1
+            max: 1
+
+#----------------------------------------------------------------------------
+
+- type: entity
+  id: MechGygaxDestroyed
+  parent: MechMaulerDestroyed
+  name: AISM Mech Pod "Gaigex".
+  description: He won't be of help in critical moments anymore; you can repurpose him into a table, and he'll be appreciative.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: gygax-broken
+    netsync: false
+
+- type: entity
+  name: БПМП «Гайгэкс»
+  description: Armored Infantry Support Mechanoid "Gaigex," one of the older models but well-established. Used by NanoTrasen as a secondary support mechanoid.
+  id: MechGygax
+  parent: MechMauler
+  components:
+  - type: PointLight
+    color: green
+  - type: InnateTool
+    tools:
+      - id: WeaponAS2Ultra9000
+      - id: WeaponShotgunEnforcer9000
+      - id: JawsOfLifeHarm9000
+      - id: WeaponTaser9000
+      - id: WeaponLauncherMultipleRocket9000
+      - id: WeaponLaserCHPS9000
+  - type: Sprite
+    drawdepth: Mobs
+    netsync: false
+    layers:
+    - state: gygax
+      sprite: Objects/Specific/Mech/mecha.rsi
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: ghost-role-information-MechGygax-name
+    description: ghost-role-information-MechGygax-description
+    rules: ghost-role-information-MechGygax-rules
+    whitelistRequired: true
+  - type: ActiveRadio
+    channels:
+    - CentCom
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - CentCom
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MechGygaxDestroyed:
+            min: 1
+            max: 1
+
+#----------------------------------------------------------------------------
+
+- type: entity
+  name: SABMS "H.O.N.K."
+  description: Praise the greatness of the mighty Honkmother with this mech! HONK!
+  id: MechDarkHonker
+  parent: MechMauler
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: ghost-role-information-MechDarkHonker-name
+    description: ghost-role-information-MechDarkHonker-description
+    rules: ghost-role-information-MechDarkHonker-rules
+    whitelistRequired: true
+  - type: InnateTool
+    tools:
+      - id: WeaponBikeHorn9000
+      - id: WeaponLightMachineGunL69000
+      - id: ToyHammer
+      - id: JawsOfLifeHarm9000
+      - id: WeaponBananaPeelLauncher9000
+      - id: WeaponBananaPeelMineLauncher9000
+  - type: ActiveRadio
+    channels:
+    - Syndicate
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Syndicate
+  - type: Sprite
+    drawdepth: Mobs
+    netsync: false
+    layers:
+    - state: darkhonker
+      sprite: Objects/Specific/Mech/mecha.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MechDarkHonkerDestroyed:
+            min: 1
+            max: 1
+
+- type: entity
+  id: MechDarkHonkerDestroyed
+  parent: MechMaulerDestroyed
+  name: Broken Syndicate Armored Battle Mechanoid "Honk".
+  description: Given your current state, you've reached a pun.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: darkhonker-broken
+    netsync: false
+
+#----------------------------------------------------------------------------
+
+- type: entity
+  name: Odysseus
+  description: With this mechanoid, if you put in the effort, you can save countless lives.
+  id: MechOdysseus
+  parent: MechMauler
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: ghost-role-information-MechOdysseus-name
+    description: ghost-role-information-MechOdysseus-description
+    rules: ghost-role-information-MechOdysseus-rules
+    whitelistRequired: true
+  - type: PointLight
+    color: cyan
+  - type: Body
+    prototype: odySilicon
+  - type: InnateTool
+    tools:
+      - id: HyposprayPromisliniy9000
+      - id: JawsOfLifeHarm9000
+      - id: HandheldCrewMonitor
+      - id: ClothingBackpackSatchelMedical
+      - id: HandheldHealthAnalyzer
+      - id: DefibrillatorOneHandedUnpowered
+  - type: Strap
+    position: Stand
+    buckleOffset: "0,0.15"
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 3
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 1000
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: ActiveRadio
+    channels:
+    - Common
+    - Medical
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Common
+    - Medical
+  - type: Sprite
+    drawdepth: Mobs
+    netsync: false
+    layers:
+    - state: odysseus
+      sprite: Objects/Specific/Mech/mecha.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MechOdysseusDestroyed:
+            min: 1
+            max: 1
+- type: body
+  id: odySilicon
+  name: "mecha"
+  root: hand 1
+  slots:
+    hand 1:
+      part: LeftArmBorg
+      connections:
+      - hand 2
+    hand 2:
+      part: LeftArmBorg
+      connections:
+      - hand 3
+    hand 3:
+      part: LeftArmBorg
+      connections:
+      - hand 4
+    hand 4:
+      part: RightArmBorg
+      connections:
+      - hand 5
+    hand 5:
+      part: RightArmBorg
+      connections:
+      - hand 6
+    hand 6:
+      part: LeftArmBorg
+      connections:
+      - hand 7
+    hand 7:
+      part: LeftArmBorg
+
+- type: entity
+  id: MechOdysseusDestroyed
+  parent: MechMaulerDestroyed
+  name: Broken Civilian Medical Mech "Odyssey".
+  description:  already healed the last crew member, from now on, they are a beautiful decoration.
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 500
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: odysseus-broken
+    netsync: false
+
+#----------------------------------------------------------------------------
+
+- type: entity
+  name: ATME "Hauler".
+  description: Autonomous Traction Mechanized Unit "Hauler"
+  id: MechHauler
+  parent: MechMauler
+  components:
+  - type: Body
+    prototype: MechaSilicon
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: ghost-role-information-MechHauler-name
+    description: ghost-role-information-MechHauler-description
+    rules: ghost-role-information-MechHauler-rules
+    whitelistRequired: true
+  - type: PointLight
+    enabled: false
+    radius: 10
+    energy: 2.5
+    offset: "0, 0.2"
+    color: "#f08635"
+    mask: /Textures/Effects/LightMasks/cone.png
+  - type: InnateTool
+    tools:
+      - id: ClothingBackpackSatchelEngineering
+      - id: trayScanner
+      - id: JawsOfLifeHarm9000
+      - id: Omnitool
+      - id: WelderExperimental
+      - id: HandheldStationMap
+  - type: ActiveRadio
+    channels:
+    - Common
+    - Engineering
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Common
+    - Engineering
+  - type: Sprite
+    drawdepth: Mobs
+    netsync: false
+    layers:
+    - state: hauler
+      sprite: Objects/Specific/Mech/mecha.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MechHaulerDestroyed:
+            min: 1
+            max: 1
+
+- type: entity
+  id: MechHaulerDestroyed
+  parent: MechMaulerDestroyed
+  name: Broken ATME "Hauler"
+  description: He's worked too much. Finish the tasks for him, he's occupied with nothing now.
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 500
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: hauler-broken
+    netsync: false
+
+#----------------------------------------------------------------------------
+
+- type: entity
+  name: ATMU "Clark"
+  id: MechClarke
+  parent: MechMauler
+  description: Autonomous Traction Mechanized Unit "Clark".
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: ghost-role-information-MechClarke-name
+    description: ghost-role-information-MechClarke-description
+    rules: ghost-role-information-MechClarke-rules
+    whitelistRequired: true
+  - type: Body
+    prototype: ClarkeSilicon
+  - type: InnateTool
+    tools:
+      - id: JawsOfLifeHarm9000
+      - id: OreBag
+      - id: MechaDrill9000
+      - id: MechaAnalyzer9000
+  - type: ActiveRadio
+    channels:
+    - Common
+    - Supply
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Common
+    - Supply
+  - type: PointLight
+    color: yellow
+  - type: FootstepModifier
+    footstepSoundCollection:
+      path: /Audio/Effects/Vehicle/vehicleengineidle.ogg
+      params:
+        volume: 15
+        maxdistance: 20
+  - type: AmbientSound
+    volume: -15
+    range: 5
+    sound:
+      path: /Audio/Ambience/Objects/server_fans.ogg
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 2
+  - type: Sprite
+    layers:
+    - state: clarke
+      sprite: Objects/Specific/Mech/mecha.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MechClarkeDestroyed:
+            min: 1
+            max: 1
+- type: body
+  id: ClarkeSilicon
+  name: "mecha"
+  root: hand 1
+  slots:
+    hand 1:
+      part: LeftArmBorg
+      connections:
+      - hand 2
+    hand 2:
+      part: LeftArmBorg
+      connections:
+      - hand 3
+    hand 3:
+      part: LeftArmBorg
+      connections:
+      - hand 4
+    hand 4:
+      part: RightArmBorg
+      connections:
+      - hand 5
+    hand 5:
+      part: RightArmBorg
+
+- type: entity
+  id: MechClarkeDestroyed
+  parent: MechMaulerDestroyed
+  name: KSUG "Clark"
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: clarke-broken
+    netsync: false

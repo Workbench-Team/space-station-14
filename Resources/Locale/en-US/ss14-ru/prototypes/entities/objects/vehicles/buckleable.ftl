@@ -1,5 +1,8 @@
-ent-BaseVehicle = Vehicle
+ent-BaseVehicle = { "" }
     .desc = { "" }
+    .suffix = { "" }
+ent-BaseVehicleRideable = Vehicle
+    .desc = { ent-BaseVehicle.desc }
     .suffix = { "" }
 ent-VehicleJanicart = janicart
     .desc = The janitor's trusty steed.

@@ -19,3 +19,6 @@ ent-ClothingHeadHardsuitBase = base hardsuit helmet
 ent-ClothingHeadHardsuitWithLightBase = base hardsuit helmet with light
     .desc = { ent-ClothingHeadHardsuitBase.desc }
     .suffix = { "" }
+ent-ClothingHeadHatHoodWinterBase = base winter coat hood
+    .desc = A hood, made to keep your head warm.
+    .suffix = { "" }

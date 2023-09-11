@@ -113,6 +113,7 @@
   - type: TypingIndicator
     proto: robot
   - type: Speech
+    speechVerb: Robotic
     speechSounds: Borg
   - type: FootstepModifier
     footstepSoundCollection:

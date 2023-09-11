@@ -101,13 +101,13 @@
 #this uplink MUST be used for nukeops, as it has the tag for filtering the listing.
 - type: entity
   parent: BaseUplinkRadio
-  id: BaseUplinkRadio30TC
-  suffix: 30 TC, NukeOps
+  id: BaseUplinkRadio40TC
+  suffix: 40 TC, NukeOps
   components:
   - type: Store
     preset: StorePresetUplink
     balance:
-      Telecrystal: 30
+      Telecrystal: 40
   - type: Tag
     tags:
     - NukeOpsUplink

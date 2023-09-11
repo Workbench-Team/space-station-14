@@ -5,6 +5,7 @@ using Content.Server.Construction;
 using Content.Server.Construction.Components;
 using Content.Shared.Chemistry;
 using Content.Shared.Chemistry.Dispenser;
+using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Construction.Components;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Database;
@@ -67,28 +68,30 @@ namespace Content.Server.Chemistry.EntitySystems
 
             if (_solutionContainerSystem.TryGetFitsInDispenser(container.Value, out var solution))
             {
-                var reagents = solution.Contents.Select(reagent => (reagent.ReagentId, reagent.Quantity)).ToList();
-                return new ContainerInfo(Name(container.Value), true, solution.Volume, solution.MaxVolume, reagents);
+                return new ContainerInfo(Name(container.Value), solution.Volume, solution.MaxVolume)
+                {
+                    Reagents = solution.Contents
+                };
             }
 
             return null;
         }
 
-        private List<string> GetInventory(ReagentDispenserComponent reagentDispenser)
+        private List<ReagentId> GetInventory(ReagentDispenserComponent reagentDispenser)
         {
-            var inventory = new List<string>();
+            var inventory = new List<ReagentId>();
 
             if (reagentDispenser.PackPrototypeId is not null
                 && _prototypeManager.TryIndex(reagentDispenser.PackPrototypeId, out ReagentDispenserInventoryPrototype? packPrototype))
             {
-                inventory.AddRange(packPrototype.Inventory);
+                inventory.AddRange(packPrototype.Inventory.Select(x => new ReagentId(x, null)));
             }
 
             if (HasComp<EmaggedComponent>(reagentDispenser.Owner)
                 && reagentDispenser.EmagPackPrototypeId is not null
                 && _prototypeManager.TryIndex(reagentDispenser.EmagPackPrototypeId, out ReagentDispenserInventoryPrototype? emagPackPrototype))
             {
-                inventory.AddRange(emagPackPrototype.Inventory);
+                inventory.AddRange(emagPackPrototype.Inventory.Select(x => new ReagentId(x, null)));
             }
 
             if (reagentDispenser.UpgradePacksPrototypeId is not null
@@ -106,7 +109,7 @@ namespace Content.Server.Chemistry.EntitySystems
                         if (_prototypeManager.TryIndex(upgradePackPrototypeId, out ReagentDispenserInventoryTieredPrototype? upgradePackPrototype)
                             && (upgradePackPrototype.Tier == null || upgradePackPrototype.Tier <= minRating))
                         {
-                            inventory.AddRange(upgradePackPrototype.Inventory);
+                            inventory.AddRange(upgradePackPrototype.Inventory.Select(x => new ReagentId(x, null)));
                         }
                     }
                 }
