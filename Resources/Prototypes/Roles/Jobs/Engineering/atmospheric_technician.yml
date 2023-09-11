@@ -21,6 +21,7 @@
 - type: startingGear
   id: AtmosphericTechnicianGear
   equipment:
+    socks: ClothingUnderSocksCyanSocks
     jumpsuit: ClothingUniformJumpsuitAtmos
     back: ClothingBackpackAtmosphericsFilled
     shoes: ClothingShoesColorWhite
@@ -29,5 +30,6 @@
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
   innerclothingskirt: ClothingUniformJumpskirtAtmos
+  femaleSocks: ClothingUnderSocksCyanKneeSocks
   satchel: ClothingBackpackSatchelAtmosphericsFilled
   duffelbag: ClothingBackpackDuffelAtmosphericsFilled

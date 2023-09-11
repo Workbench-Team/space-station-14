@@ -17,6 +17,7 @@
 - type: startingGear
   id: ScientistGear
   equipment:
+    socks: ClothingUnderSocksPurpleSocks
     jumpsuit: ClothingUniformJumpsuitScientist
     back: ClothingBackpackScienceFilled
     shoes: ClothingShoesColorWhite
@@ -24,5 +25,6 @@
     id: SciencePDA
     ears: ClothingHeadsetScience
   innerclothingskirt: ClothingUniformJumpskirtScientist
+  femaleSocks: ClothingUnderSocksPurpleKneeSocks
   satchel: ClothingBackpackSatchelScienceFilled
   duffelbag: ClothingBackpackDuffelScienceFilled

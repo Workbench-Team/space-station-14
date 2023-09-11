@@ -17,11 +17,13 @@
 - type: startingGear
   id: ChaplainGear
   equipment:
+    socks: ClothingUnderSocksWhiteKneeSocks
     jumpsuit: ClothingUniformJumpsuitChaplain
     back: ClothingBackpackChaplainFilled
     shoes: ClothingShoesColorBlack
     id: ChaplainPDA
     ears: ClothingHeadsetService
   innerclothingskirt: ClothingUniformJumpskirtChaplain
+  femaleSocks: ClothingUnderSocksWhiteStockings
   satchel: ClothingBackpackSatchelChaplainFilled
   duffelbag: ClothingBackpackDuffelChaplainFilled

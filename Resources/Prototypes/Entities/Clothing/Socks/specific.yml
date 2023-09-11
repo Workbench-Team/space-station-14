@@ -1,0 +1,30 @@
+- type: entity
+  parent: ClothingSocksBase
+  id: ClothingUnderSocksChameleonSocks
+  name: Pink stockings
+  description: It's time to code sisters!!11!
+  suffix: Chameleon
+  components:
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
+  - type: ChameleonClothing
+    slot: [SOCKS]
+    default: ClothingUnderSocksPinkStockings
+  - type: Sprite
+    sprite: Clothing/Under/Socks/pink_thigh.rsi
+  - type: Clothing
+    sprite: Clothing/Under/Socks/pink_thigh.rsi
+  - type: Storage
+    capacity: 6
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+    - key: enum.StorageUiKey.Key
+      type: StorageBoundUserInterface
+    - key: enum.ChameleonUiKey.Key
+      type: ChameleonBoundUserInterface
+  - type: TemperatureProtection
+    coefficient: 0.95

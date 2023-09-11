@@ -799,3 +799,19 @@
     - ClothMade
     - WhitelistChameleon
     - HamsterWearable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatOfficerUEGCap
+  name: UEG Officer's Cap
+  description: "It's good to be the human."
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/officercap.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/officercap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - WhitelistChameleon
+    - HamsterWearable

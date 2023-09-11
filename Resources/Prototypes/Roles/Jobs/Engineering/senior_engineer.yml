@@ -25,6 +25,7 @@
 - type: startingGear
   id: SeniorEngineerGear
   equipment:
+    socks: ClothingUnderSocksOrangeKneeSocks
     head: ClothingHeadHatBeretEngineering
     jumpsuit: ClothingUniformJumpsuitSeniorEngineer
     back: ClothingBackpackEngineeringFilled
@@ -34,5 +35,6 @@
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
   innerclothingskirt: ClothingUniformJumpskirtSeniorEngineer
+  femaleSocks: ClothingUnderSocksOrangeStockings
   satchel: ClothingBackpackSatchelEngineeringFilled
   duffelbag: ClothingBackpackDuffelEngineeringFilled

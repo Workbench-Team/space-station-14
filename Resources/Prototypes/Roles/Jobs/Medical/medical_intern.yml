@@ -19,6 +19,7 @@
 - type: startingGear
   id: MedicalInternGear
   equipment:
+    socks: ClothingUnderSocksWhiteSocks
     jumpsuit: ClothingUniformJumpsuitColorWhite
     back: ClothingBackpackMedicalFilled
     shoes: ClothingShoesColorWhite
@@ -26,5 +27,6 @@
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
   innerclothingskirt: ClothingUniformJumpskirtColorWhite
+  femaleSocks: ClothingUnderSocksWhiteKneeSocks
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled

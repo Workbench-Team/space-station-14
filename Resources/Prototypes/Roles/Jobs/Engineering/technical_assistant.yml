@@ -20,6 +20,7 @@
 - type: startingGear
   id: TechnicalAssistantGear
   equipment:
+    socks: ClothingUnderSocksYellowKneeSocks
     head: ClothingHeadHatWelding
     jumpsuit: ClothingUniformJumpsuitColorYellow
     back: ClothingBackpackEngineeringFilled
@@ -28,5 +29,6 @@
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
   innerclothingskirt: ClothingUniformJumpskirtColorYellow
+  femaleSocks: ClothingUnderSocksYellowStockings
   satchel: ClothingBackpackSatchelEngineeringFilled
   duffelbag: ClothingBackpackDuffelEngineeringFilled

@@ -17,6 +17,9 @@ namespace Content.Shared.Roles
         [DataField("innerclothingskirt", customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
         private string? _innerClothingSkirt;
 
+        [DataField("femaleSocks", customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
+        private string? _femaleSocks;
+
         [DataField("satchel", customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
         private string? _satchel;
 
@@ -40,6 +43,8 @@ namespace Content.Shared.Roles
             {
                 if (slot == "jumpsuit" && profile.Clothing == ClothingPreference.Jumpskirt && !string.IsNullOrEmpty(_innerClothingSkirt))
                     return _innerClothingSkirt;
+                if (slot == "socks" && profile.Clothing == ClothingPreference.Jumpskirt && !string.IsNullOrEmpty(_femaleSocks))
+                    return _femaleSocks;
                 if (slot == "back" && profile.Backpack == BackpackPreference.Satchel && !string.IsNullOrEmpty(_satchel))
                     return _satchel;
                 if (slot == "back" && profile.Backpack == BackpackPreference.Duffelbag && !string.IsNullOrEmpty(_duffelbag))

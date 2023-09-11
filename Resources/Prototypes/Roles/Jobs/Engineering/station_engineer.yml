@@ -20,6 +20,7 @@
 - type: startingGear
   id: StationEngineerGear
   equipment:
+    socks: ClothingUnderSocksOrangeSocks
     head: ClothingHeadHatHardhatYellow
     jumpsuit: ClothingUniformJumpsuitEngineering
     back: ClothingBackpackEngineeringFilled
@@ -30,5 +31,6 @@
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
   innerclothingskirt: ClothingUniformJumpskirtEngineering
+  femaleSocks: ClothingUnderSocksOrangeKneeSocks
   satchel: ClothingBackpackSatchelEngineeringFilled
   duffelbag: ClothingBackpackDuffelEngineeringFilled

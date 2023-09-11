@@ -13,6 +13,7 @@
 - type: startingGear
   id: BoxerGear
   equipment:
+    socks: ClothingUnderSocksWhiteSocks
     jumpsuit: UniformShortsRed
     back: ClothingBackpackFilled
     id: BoxerPDA
@@ -21,5 +22,6 @@
     shoes: ClothingShoesColorRed
     belt: ClothingBeltChampion
   innerclothingskirt: UniformShortsRedWithTop
+  femaleSocks: ClothingUnderSocksWhiteKneeSocks
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

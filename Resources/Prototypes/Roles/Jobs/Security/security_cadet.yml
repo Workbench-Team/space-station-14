@@ -22,6 +22,7 @@
 - type: startingGear
   id: SecurityCadetGear
   equipment:
+    socks: ClothingUnderSocksBlackSocks
     jumpsuit: ClothingUniformJumpsuitColorRed
     back: ClothingBackpackSecurityFilled
     shoes: ClothingShoesBootsCombatFilled
@@ -30,5 +31,6 @@
     ears: ClothingHeadsetSecurity
     pocket1: WeaponPistolMk58Nonlethal
   innerclothingskirt: ClothingUniformJumpskirtColorRed
+  femaleSocks: ClothingUnderSocksBlackKneeSocks
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled

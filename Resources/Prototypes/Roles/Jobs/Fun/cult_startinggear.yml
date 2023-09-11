@@ -2,6 +2,7 @@
 - type: startingGear
   id: CultLeaderGear
   equipment:
+    socks: ClothingUnderSocksBlackSocks
     jumpsuit: ClothingUniformJumpsuitColorBlack
     back: ClothingBackpackFilled
     head: ClothingHeadHelmetCult
@@ -11,12 +12,14 @@
     id: PassengerPDA
     ears: ClothingHeadsetService
   innerclothingskirt: ClothingUniformJumpskirtColorBlack
+  femaleSocks: ClothingUnderSocksBlackKneeSocks
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
 
 - type: startingGear
   id: CultistGear
   equipment:
+    socks: ClothingUnderSocksBlackSocks
     jumpsuit: ClothingUniformJumpsuitColorBlack
     back: ClothingBackpackFilled
     head: ClothingHeadHatHoodCulthood
@@ -25,5 +28,6 @@
     id: PassengerPDA
     ears: ClothingHeadsetService
   innerclothingskirt: ClothingUniformJumpskirtColorBlack
+  femaleSocks: ClothingUnderSocksBlackKneeSocks
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

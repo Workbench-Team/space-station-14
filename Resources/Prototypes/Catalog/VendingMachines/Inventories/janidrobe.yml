@@ -9,7 +9,12 @@
     ClothingHeadsetService: 2
     ClothingOuterWinterJani: 2
     ClothingNeckScarfStripedPurple: 3
+    ClothingUnderSocksPurpleStockings: 2
+    ClothingUnderSocksPurpleKneeSocks: 2
+    ClothingUnderSocksPurpleSocks: 2
 
   emaggedInventory:
     ClothingUniformJumpskirtJanimaid: 2
     ClothingUniformJumpskirtJanimaidmini: 1
+    ClothingUnderSocksWhiteStockings: 3
+    

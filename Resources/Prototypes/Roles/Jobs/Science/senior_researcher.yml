@@ -17,6 +17,7 @@
 - type: startingGear
   id: SeniorResearcherGear
   equipment:
+    socks: ClothingUnderSocksPurpleKneeSocks
     head: ClothingHeadHatBeretRND
     jumpsuit: ClothingUniformJumpsuitSeniorResearcher
     back: ClothingBackpackScienceFilled
@@ -25,5 +26,6 @@
     id: SeniorResearcherPDA
     ears: ClothingHeadsetScience
   innerclothingskirt: ClothingUniformJumpskirtSeniorResearcher
+  femaleSocks: ClothingUnderSocksPurpleStockings
   satchel: ClothingBackpackSatchelScienceFilled
   duffelbag: ClothingBackpackDuffelScienceFilled

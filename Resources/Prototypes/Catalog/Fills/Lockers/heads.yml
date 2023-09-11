@@ -20,6 +20,9 @@
       - id: RubberStampQm
       - id: ClothingHeadsetAltCargo
       - id: BoxEncryptionKeyCargo
+      - id: ClothingUnderSocksWhiteStockings
+      - id: ClothingUnderSocksWhiteKneeSocks
+      - id: ClothingUnderSocksWhiteSocks
 
 - type: entity
   id: LockerCaptainFilledHardsuit
@@ -49,6 +52,9 @@
       - id: WeaponAntiqueLaser
       - id: JetpackCaptainFilled
       - id: MedalCase
+      - id: ClothingUnderSocksCapStockings
+      - id: ClothingUnderSocksCapKnee
+      - id: ClothingUnderSocksCapSocks
 
 - type: entity
   id: LockerCaptainFilled
@@ -77,6 +83,9 @@
       - id: WeaponAntiqueLaser
       - id: JetpackCaptainFilled
       - id: MedalCase
+      - id: ClothingUnderSocksCapStockings
+      - id: ClothingUnderSocksCapKnee
+      - id: ClothingUnderSocksCapSocks
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -105,6 +114,9 @@
       - id: ClothingBackpackIan
         prob: 0.5
       - id: AccessConfigurator
+      - id: ClothingUnderSocksHOPStockings
+      - id: ClothingUnderSocksHOPKneeSocks
+      - id: ClothingUnderSocksHOPSocks
 
 - type: entity
   id: LockerChiefEngineerFilledHardsuit
@@ -116,6 +128,8 @@
       - id: GarmentBagCE
       - id: ClothingOuterHardsuitEngineeringWhite
       - id: ClothingMaskBreath
+      - id: ClothingUniformJumpsuitChiefEngineerTurtle
+      - id: ClothingUniformJumpskirtChiefEngineerTurtle
       - id: OxygenTankFilled
       - id: NitrogenTankFilled
       - id: ClothingBeltChiefEngineerFilled
@@ -130,6 +144,9 @@
       - id: HolofanProjector
       - id: HoloprojectorEngineering
       - id: AccessConfigurator
+      - id: ClothingUnderSocksOrangeStockings
+      - id: ClothingUnderSocksOrangeKneeSocks
+      - id: ClothingUnderSocksOrangeSocks
 
 - type: entity
   id: LockerChiefEngineerFilled
@@ -141,6 +158,7 @@
       - id: GarmentBagCE
       - id: ClothingBeltChiefEngineerFilled
       - id: HandheldSolarMonitor
+      - id: ClothingBeltChiefEngineerFilled
       - id: CigarCase
         prob: 0.15
       - id: DoorRemoteEngineering
@@ -150,6 +168,9 @@
       - id: HolofanProjector
       - id: HoloprojectorEngineering
       - id: AccessConfigurator
+      - id: ClothingUnderSocksOrangeStockings
+      - id: ClothingUnderSocksOrangeKneeSocks
+      - id: ClothingUnderSocksOrangeSocks
 
 - type: entity
   id: LockerChiefMedicalOfficerFilledHardsuit
@@ -171,6 +192,9 @@
       - id: RubberStampCMO
       - id: MedicalTechFabCircuitboard
       - id: BoxEncryptionKeyMedical
+      - id: ClothingUnderSocksCyanStockings
+      - id: ClothingUnderSocksCyanKneeSocks
+      - id: ClothingUnderSocksCyanSocks
 
 - type: entity
   id: LockerChiefMedicalOfficerFilled
@@ -191,6 +215,9 @@
       - id: RubberStampCMO
       - id: MedicalTechFabCircuitboard
       - id: BoxEncryptionKeyMedical
+      - id: ClothingUnderSocksCyanStockings
+      - id: ClothingUnderSocksCyanKneeSocks
+      - id: ClothingUnderSocksCyanSocks
 
 - type: entity
   id: LockerResearchDirectorFilledHardsuit
@@ -211,6 +238,9 @@
       - id: RubberStampRd
       - id: ClothingHeadsetAltScience
       - id: BoxEncryptionKeyScience
+      - id: ClothingUnderSocksPurpleStockings
+      - id: ClothingUnderSocksPurpleKneeSocks
+      - id: ClothingUnderSocksPurpleSocks
 
 - type: entity
   id: LockerResearchDirectorFilled
@@ -231,6 +261,9 @@
       - id: RubberStampRd
       - id: ClothingHeadsetAltScience
       - id: BoxEncryptionKeyScience
+      - id: ClothingUnderSocksPurpleStockings
+      - id: ClothingUnderSocksPurpleKneeSocks
+      - id: ClothingUnderSocksPurpleSocks
 
 - type: entity
   id: LockerHeadOfSecurityFilledHardsuit
@@ -257,6 +290,9 @@
       - id: WeaponTechFabCircuitboard
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: ClothingUnderSocksHOSStockings
+      - id: ClothingUnderSocksHOSKneeSocks
+      - id: ClothingUnderSocksHOSSocks
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -280,3 +316,6 @@
       - id: WeaponTechFabCircuitboard
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: ClothingUnderSocksHOSStockings
+      - id: ClothingUnderSocksHOSKneeSocks
+      - id: ClothingUnderSocksHOSSocks

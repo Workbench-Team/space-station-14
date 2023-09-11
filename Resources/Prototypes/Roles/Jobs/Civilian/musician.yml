@@ -17,11 +17,13 @@
 - type: startingGear
   id: MusicianGear
   equipment:
+    socks: ClothingUnderSocksBlackSocks
     jumpsuit: ClothingUniformJumpsuitMusician
     back: ClothingBackpackMusicianFilled
     eyes: ClothingEyesGlassesSunglasses
     shoes: ClothingShoesBootsLaceup
     id: MusicianPDA
     ears: ClothingHeadsetService
+  femaleSocks: ClothingUnderSocksPantyhose
   satchel: ClothingBackpackSatchelMusicianFilled
   duffelbag: ClothingBackpackDuffelMusicianFilled

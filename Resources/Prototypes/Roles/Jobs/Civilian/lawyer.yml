@@ -18,6 +18,7 @@
 - type: startingGear
   id: LawyerGear
   equipment:
+    socks: ClothingUnderSocksBlackSocks
     jumpsuit: ClothingUniformJumpsuitLawyerBlack  # TODO change jumpsuit to randomiser of the 4 variants
     back: ClothingBackpackFilled
     shoes: ClothingShoesBootsLaceup
@@ -27,5 +28,6 @@
   inhand:
     right hand: BriefcaseBrownFilled
   innerclothingskirt: ClothingUniformJumpskirtLawyerBlack
+  femaleSocks: ClothingUnderSocksBlackKneeSocks
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

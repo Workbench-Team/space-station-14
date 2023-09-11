@@ -50,6 +50,7 @@
 - type: startingGear
   id: HoPGear
   equipment:
+    socks: ClothingUnderSocksHOPKneeSocks
     jumpsuit: ClothingUniformJumpsuitHoP
     back: ClothingBackpackHOPFilled
     shoes: ClothingShoesColorBrown
@@ -57,5 +58,6 @@
     id: HoPPDA
     ears: ClothingHeadsetAltCommand
   innerclothingskirt: ClothingUniformJumpskirtHoP
+  femaleSocks: ClothingUnderSocksHOPStockings
   satchel: ClothingBackpackSatchelHOPFilled
   duffelbag: ClothingBackpackDuffelHOPFilled
