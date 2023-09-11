@@ -84,7 +84,7 @@
       - id: JetpackCaptainFilled
       - id: MedalCase
       - id: ClothingUnderSocksCapStockings
-      - id: ClothingUnderSocksCapKnee
+      - id: ClothingUnderSocksCapKneeSocks
       - id: ClothingUnderSocksCapSocks
 
 - type: entity
