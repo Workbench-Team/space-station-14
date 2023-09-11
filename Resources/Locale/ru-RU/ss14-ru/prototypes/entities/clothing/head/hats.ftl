@@ -181,6 +181,3 @@ ent-ClothingHeadHatMagician = шляпа фокусника.
 ent-ClothingHeadHatCapcap = капитанская фуражка
     .desc = Торжественная, стильная капитанская фуражка.
     .suffix = { "" }
-ent-ClothingHeadHatOfficerUEGCap = фуражка Офицера ОПЗ
-    .desc = Строгая и холодная фуражка Офицера ОПЗ. Показывает, на сколько серьёзны вы в своих намерениях.
-    .suffix = { "" }
