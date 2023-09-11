@@ -95,11 +95,6 @@
     Telecrystal: 16
   categories:
   - UplinkWeapons
-  conditions:
-    - !type:StoreWhitelistCondition
-      blacklist:
-        tags:
-          - NukeOpsUplink
 
 - type: listing
   id: UplinkDisposableTurret
@@ -1426,3 +1421,35 @@
     Telecrystal: 10
   categories:
   - UplinkWeapons
+
+- type: listing
+  id: UplinkSyndicateMauler
+  name: uplink-mauler-name
+  description: uplink-mauler-desc 
+  icon: { sprite: /Textures/Objects/Specific/Mech/mecha.rsi, state: mauler }
+  productEntity: MechMaulerReal
+  cost:
+    Telecrystal: 120
+  categories:
+  - UplinkWeapons
+  conditions:
+  - !type:BuyerWhitelistCondition
+    blacklist:
+      components:
+      - SurplusBundle
+
+- type: listing
+  id: UplinkSyndicateGygax
+  name: uplink-gygax-syndie-name
+  description: uplink-gygax-desc
+  icon: { sprite: /Textures/Objects/Specific/Mech/mecha.rsi, state: darkgygax }
+  productEntity: MechDarkGygax
+  cost:
+    Telecrystal: 70
+  categories:
+  - UplinkWeapons
+  conditions:
+  - !type:BuyerWhitelistCondition
+    blacklist:
+      components:
+      - SurplusBundle
