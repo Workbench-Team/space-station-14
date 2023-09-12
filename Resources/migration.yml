@@ -92,5 +92,5 @@ GeneratorUraniumMachineCircuitboard: PortableGeneratorSuperPacmanMachineCircuitb
 PlushieMoff: PlushieMoth
 
 # 11-09-2023 Starshine
-ClothingUnderSocksCoder: ClothingUnderSocksPinkStockings
-ClothingUnderSocksBee: ClothingUnderSocksBeeStockings
+ClothingUnderSocksPinkStockings: ClothingUnderSocksCoder
+ClothingUnderSocksBeeStockings: ClothingUnderSocksBee
