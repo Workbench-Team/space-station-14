@@ -1418,7 +1418,7 @@
   - type: Clothing
     sprite: Clothing/Under/Socks/pantyhose.rsi
   - type: Storage
-    capacity: 6
+    capacity: 5
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -1623,7 +1623,7 @@
   - type: Clothing
     sprite: Clothing/Under/Socks/syndie/syndie_green_thigh.rsi
   - type: Storage
-    capacity: 7
+    capacity: 5
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -1713,7 +1713,7 @@
   - type: Clothing
     sprite: Clothing/Under/Socks/syndie/syndie_red_thigh.rsi
   - type: Storage
-    capacity: 7
+    capacity: 5
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -2029,7 +2029,7 @@
   - type: Clothing
     sprite: Clothing/Under/Socks/centcom_thigh.rsi
   - type: Storage
-    capacity: 7
+    capacity: 5
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
