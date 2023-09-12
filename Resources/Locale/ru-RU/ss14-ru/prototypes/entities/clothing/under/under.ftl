@@ -1,4 +1,4 @@
-ent-ClothingUnderSocksBeeStockings = Чулки с пчёлками
+ent-ClothingUnderSocksBee = Чулки с пчёлками
     .desc = Тёплые и приятные, медовых оттенков чулки с патерном сот и пчёлками. Заставь их гудеть длинее! Бззз!
     .suffix = { "" }
 ent-ClothingUnderSocksBeeKneeSocks = Гольфы с пчёлками
@@ -10,7 +10,7 @@ ent-ClothingUnderSocksBeeSocks = Носки с пчёлками
 ent-ClothingUnderSocksPinkKillerStockings = Убийственные носки
     .desc = Приятные на ощупь носки. Что если ударить?
     .suffix = { "" }
-ent-ClothingUnderSocksPinkStockings = Розовые чулки
+ent-ClothingUnderSocksCoder = Розовые чулки
     .desc = Длинные розовые чулки в белую полоску, приятно греющие ножки. Пришло время кодить, сёстры!!11!
     .suffix = { "" }
 ent-ClothingUnderSocksPinkKneeSocks = Розовые гольфы

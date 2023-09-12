@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingSocksBase
-  id: ClothingUnderSocksBeeStockings
+  id: ClothingUnderSocksBee
   name: Bee stockings
   description: Make them loins buzz longer!
   components:
@@ -87,7 +87,7 @@
 
 - type: entity
   parent: ClothingSocksBase
-  id: ClothingUnderSocksPinkStockings
+  id: ClothingUnderSocksCoder
   name: Pink stockings
   description: It's time to code sisters!!11!
   components:
