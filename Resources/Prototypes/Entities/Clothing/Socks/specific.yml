@@ -9,7 +9,7 @@
     tags: [] # ignore "WhitelistChameleon" tag
   - type: ChameleonClothing
     slot: [SOCKS]
-    default: ClothingUnderSocksPinkStockings
+    default: ClothingUnderSocksCoder
   - type: Sprite
     sprite: Clothing/Under/Socks/pink_thigh.rsi
   - type: Clothing
