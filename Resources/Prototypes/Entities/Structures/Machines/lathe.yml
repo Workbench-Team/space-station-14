@@ -301,6 +301,11 @@
     idleState: icon
     runningState: building
     dynamicRecipes:
+      - ClarkHarness
+      - ClarkLArm
+      - ClarkLLeg
+      - ClarkRLeg
+      - ClarkRArm
       - ThermomachineFreezerMachineCircuitBoard
       - PortableScrubberMachineCircuitBoard
       - CloningPodMachineCircuitboard
@@ -484,6 +489,11 @@
     - HamtrLLeg
     - HamtrRLeg
     - VimHarness
+    - ClarkHarness
+    - ClarkLArm
+    - ClarkLLeg
+    - ClarkRLeg
+    - ClarkRArm
   - type: MaterialStorage
     whitelist:
       tags:

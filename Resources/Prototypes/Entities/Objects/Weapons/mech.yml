@@ -645,3 +645,17 @@
     interfaces:
       - key: enum.RadarConsoleUiKey.Key
         type: RadarConsoleBoundUserInterface
+
+- type: entity
+  name: WeaponCutterAdvr
+  parent: WeaponCutterAdv
+  id: WeaponCutter9000
+  description: A self-defense weapon that exhausts organic targets, weakening them until they collapse.
+  components:
+  - type: Item
+    size: 80
+  - type: ProjectileBatteryAmmoProvider
+    fireCost: 600
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 40

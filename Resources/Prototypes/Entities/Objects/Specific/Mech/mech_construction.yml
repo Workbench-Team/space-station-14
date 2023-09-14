@@ -483,3 +483,131 @@
     graph: Vim
     node: start
     defaultTarget: vim
+
+#clarke
+
+- type: entity
+  id: BaseClarkPart
+  parent: BaseMechPart
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: Items
+    noRot: false
+    sprite: Objects/Specific/Mech/clarke_construction.rsi
+
+- type: entity
+  id: BaseClarkPartItem
+  parent: BaseClarkPart
+  abstract: true
+  components:
+  - type: Item
+    size: 50
+
+- type: entity
+  parent: BaseClarkPart
+  id: ClarkHarness
+  name: Clark harness
+  description: The core of the Clark APLU.
+  components:
+  - type: Appearance
+  - type: ItemMapper
+    mapLayers:
+      clark_l_arm+o:
+        whitelist:
+          tags:
+          - ClarkLArm
+      clark_r_arm+o:
+        whitelist:
+          tags:
+          - ClarkRArm
+      clark_l_leg+o:
+        whitelist:
+          tags:
+          - ClarkLLeg
+      clark_r_leg+o:
+        whitelist:
+          tags:
+          - ClarkRLeg
+    sprite: Objects/Specific/Mech/clarke_construction.rsi
+  - type: ContainerContainer
+    containers:
+      mech-assembly-container: !type:Container
+  - type: MechAssembly
+    finishedPrototype: ClarkChassis
+    requiredParts:
+      ClarkLArm: false
+      ClarkRArm: false
+      ClarkLLeg: false
+      ClarkRLeg: false
+  - type: Sprite
+    state: clark_harness+o
+    noRot: true
+
+- type: entity
+  parent: BaseClarkPartItem
+  id: ClarkLArm
+  name: Clark left arm
+  description: The left arm of the Clark APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: clark_l_arm
+  - type: Tag
+    tags:
+    - ClarkLArm
+
+- type: entity
+  parent: BaseClarkPartItem
+  id: ClarkLLeg
+  name: Clark left leg
+  description: The left leg of the Clark APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: clark_l_leg
+  - type: Tag
+    tags:
+    - ClarkLLeg
+
+- type: entity
+  parent: BaseClarkPartItem
+  id: ClarkRLeg
+  name: Clark right leg
+  description: The right leg of the Clark APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: clark_r_leg
+  - type: Tag
+    tags:
+    - ClarkRLeg
+
+- type: entity
+  parent: BaseClarkPartItem
+  id: ClarkRArm
+  name:  Clark right arm
+  description: The right arm of the Ripley APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: clark_r_arm
+  - type: Tag
+    tags:
+    - ClarkRArm
+
+- type: entity
+  id: ClarkChassis
+  parent: BaseClarkPart
+  name: Clark chassis
+  description: An in-progress construction of the Ripley APLU mech.
+  components:
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      battery-container: !type:Container
+  - type: MechAssemblyVisuals
+    statePrefix: Clark
+  - type: Sprite
+    noRot: true
+    state: clark0
+  - type: Construction
+    graph: Clark
+    node: start
+    defaultTarget: Clark

@@ -63,3 +63,4 @@ research-technology-meat-manipulation = Манипуляции с мясом
 research-technology-honk-mech = Х.О.Н.К. Меха
 research-technology-advanced-spray = Продвинутый спрей
 research-technology-bluespace-cargo-transport = Блюспейс грузовой транспорт
+research-technology-clarke-aplu = КШГ Кларк

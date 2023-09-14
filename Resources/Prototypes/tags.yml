@@ -1056,3 +1056,14 @@
 - type: Tag
   id: EmitterCircuitBoard
 
+- type: Tag
+  id: ClarkLArm
+
+- type: Tag
+  id: ClarkLLeg
+
+- type: Tag
+  id: ClarkRLeg
+
+- type: Tag
+  id: ClarkRArm
