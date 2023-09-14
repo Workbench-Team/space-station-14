@@ -19,6 +19,7 @@
             - Passenger
           availableJobs:
             CargoTechnician: [ 3, 3 ]
+            Miner: [ 3,3 ]
             Passenger: [ -1, -1 ]
             Bartender: [ 1, 2 ]
             Botanist: [ 3, 4 ]

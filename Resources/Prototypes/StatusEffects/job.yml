@@ -195,6 +195,13 @@
 
 - type: statusIcon
   parent: JobIcon
+  id: JobIconSalvage
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Salvage
+
+- type: statusIcon
+  parent: JobIcon
   id: JobIconShaftMiner
   icon:
     sprite: Interface/Misc/job_icons.rsi

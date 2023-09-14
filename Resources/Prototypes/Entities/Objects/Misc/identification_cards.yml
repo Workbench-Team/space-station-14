@@ -205,9 +205,21 @@
   - type: Sprite
     layers:
     - state: default
-    - state: idshaftminer
+    - state: idsalvage
   - type: PresetIdCard
     job: SalvageSpecialist
+
+- type: entity
+  parent: IDCardStandard
+  id: MinerIDCard
+  name: salvage ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idshaftminer
+  - type: PresetIdCard
+    job: Miner
 
 - type: entity
   parent: IDCardStandard
@@ -545,6 +557,7 @@
     - JobIconHeadOfPersonnel
     - JobIconVirologist
     - JobIconShaftMiner
+    - JobIconSalvage
     - JobIconPassenger
     - JobIconChiefEngineer
     - JobIconBartender

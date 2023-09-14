@@ -1,0 +1,19 @@
+﻿- type: constructionGraph
+  id: ArmorSyndieMinerHeavy
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: armorsyndieminerheavy
+          steps:
+            - material: XenoScale
+              amount: 3
+              doAfter: 1
+            - tag: SyndieMinerArmor
+              name: An syndie Miner armor
+              icon:
+                sprite: Clothing/OuterClothing/Armor/miner_red.rsi
+                state: icon
+              doAfter: 1
+    - node: armorsyndieminerheavy
+      entity: ClothingOuterArmorMinerSyndieHeavy

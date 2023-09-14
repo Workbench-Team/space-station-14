@@ -940,6 +940,12 @@
   id: SuitEVA
 
 - type: Tag
+  id: MinerArmor
+
+- type: Tag
+  id: SyndieMinerArmor
+
+- type: Tag
   id: SurveillanceCameraMonitorCircuitboard
 
 - type: Tag

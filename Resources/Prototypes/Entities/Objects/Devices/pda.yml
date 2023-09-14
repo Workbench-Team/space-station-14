@@ -339,6 +339,22 @@
   - type: Icon
     state: pda-cargo
 
+
+- type: entity
+  parent: BasePDA
+  id: MinerPDA
+  name: salvage PDA
+  description: Smells like ash.
+  components:
+  - type: Pda
+    id: MinerIDCard
+    state: pda-mining
+  - type: PdaBorderColor
+    borderColor: "#af9366"
+    accentVColor: "#8900c9"
+  - type: Icon
+    state: pda-mining
+
 - type: entity
   parent: BasePDA
   id: SalvagePDA

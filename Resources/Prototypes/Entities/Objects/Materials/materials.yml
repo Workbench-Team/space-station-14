@@ -350,6 +350,56 @@
 
 - type: entity
   parent: MaterialBase
+  id: MaterialDragonSinew
+  name: refined diamond
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: DragonSinew
+    count: 10
+  - type: Sprite
+    state: dragonsinew
+  - type: Item
+    size: 60
+
+- type: entity
+  parent: MaterialDragonSinew
+  id: MaterialDragonSinew1
+  name: refined diamond
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+  - type: Item
+    size: 6
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialXenoScale
+  name: refined diamond
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: XenoScale
+    count: 10
+  - type: Sprite
+    state: alienplate
+  - type: Item
+    size: 60
+
+- type: entity
+  parent: MaterialXenoScale
+  id: MaterialXenoScale1
+  name: refined diamond
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+  - type: Item
+    size: 6
+
+- type: entity
+  parent: MaterialBase
   id: MaterialCotton
   name: cotton
   suffix: Full
