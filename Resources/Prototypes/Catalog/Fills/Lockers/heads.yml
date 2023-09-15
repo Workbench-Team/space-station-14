@@ -143,7 +143,6 @@
       - id: GarmentBagCE
       - id: ClothingBeltChiefEngineerFilled
       - id: HandheldSolarMonitor
-      - id: ClothingBeltChiefEngineerFilled
       - id: CigarCase
         prob: 0.15
       - id: DoorRemoteEngineering
