@@ -164,7 +164,7 @@
   name: chief medical officer's garment bag
   parent: GarmentBag
   id: GarmentBagCMO
-  description: A handy bag
+  description: A handy bag.
   components:
   - type: StorageFill
     contents:
