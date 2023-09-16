@@ -40,7 +40,7 @@
   id: ClothingSocksStorageBase
   components:
   - type: Storage
-    capacity: 5
+    capacity: 3
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
