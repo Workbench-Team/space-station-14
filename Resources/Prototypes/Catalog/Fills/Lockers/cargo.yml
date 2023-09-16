@@ -46,3 +46,23 @@
         prob: 0.3
       - id: Flare
         prob: 0.3
+        
+- type: entity
+  id: LockerMinerFilled
+  suffix: Filled
+  parent: LockerMiner
+  components:
+  - type: StorageFill
+    contents:
+# Currently do not function as 'true' mesons, so they're useless for salvagers.
+#      - id: ClothingEyesGlassesMeson
+      - id: WeaponCutter
+      - id: ClothingMaskGasExplorer
+      - id: ClothingBeltMinerWebbing
+      - id: ClothingOuterArmorMiner
+      - id: WeaponCrusher
+      - id: Pickaxe
+      - id: ClothingHandsGlovesColorBlack
+      - id: HandheldGPSBasic
+      - id: RadioHandheld
+      - id: OreBag

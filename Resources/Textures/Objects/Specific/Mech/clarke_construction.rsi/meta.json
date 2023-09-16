@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/tgstation/tgstation at at https://github.com/tgstation/tgstation/commit/40d89d11ea4a5cb81d61dc1018b46f4e7d32c62a",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "clark_chassis"
+    },
+    {
+      "name": "clark_harness"
+    },
+    {
+      "name": "clark_harness\u002Bo"
+    },
+    {
+      "name": "clark_r_arm"
+    },
+    {
+      "name": "clark_r_arm\u002Bo"
+    },
+    {
+      "name": "clark_l_arm"
+    },
+    {
+      "name": "clark_l_arm\u002Bo"
+    },
+    {
+      "name": "clark_r_leg"
+    },
+    {
+      "name": "clark_r_leg\u002Bo"
+    },
+    {
+      "name": "clark_l_leg"
+    },
+    {
+      "name": "clark_l_leg\u002Bo"
+    },
+    {
+      "name": "clark0"
+    },
+    {
+      "name": "Clark1"
+    },
+    {
+      "name": "Clark2"
+    },
+    {
+      "name": "Clark3"
+    },
+    {
+      "name": "Clark4"
+    },
+    {
+      "name": "Clark5"
+    },
+    {
+      "name": "Clark6"
+    },
+    {
+      "name": "Clark7"
+    },
+    {
+      "name": "Clark8"
+    },
+    {
+      "name": "Clark9"
+    },
+    {
+      "name": "Clark11",
+      "delays": [
+        [
+          0.5,
+          1,
+          0.5,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "Clark10"
+    },
+    {
+      "name": "Clark12"
+    }
+  ]
+}

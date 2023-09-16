@@ -24,6 +24,7 @@ ent-WindoorSecureScienceLocked = { ent-WindoorSecure }
     .desc = { ent-WindoorSecure.desc }
 ent-WindoorSecureCommandLocked = { ent-WindoorSecure }
     .suffix = Командный, Закрыто
+    .desc = { ent-WindoorSecure.desc }
 ent-WindoorCaptainLocked = { ent-WindoorSecure }
     .suffix = Капитан, Закрыто
     .desc = { ent-WindoorSecure.desc }

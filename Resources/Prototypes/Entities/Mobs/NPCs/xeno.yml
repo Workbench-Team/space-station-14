@@ -85,7 +85,6 @@
         Base: dead
   - type: Puller
   - type: Butcherable
-    butcheringType: Spike
     spawned:
     - id: FoodMeatXeno
       amount: 5
@@ -207,6 +206,14 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.8
     baseSprintSpeed: 3.8
+  - type: Butcherable
+    spawned: 
+    - id: FoodMeatXeno
+      amount: 5
+    - id: MaterialXenoScale1
+      prob: 0.5
+    - id: MaterialXenoScale1
+      prob: 0.5
   - type: MeleeWeapon
     hidden: true
     damage:

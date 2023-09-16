@@ -1,7 +1,6 @@
 ent-BaseLathe = lathe
-
-  .desc = { ent-['BaseMachinePowered', 'ConstructibleMachine'].desc }
-  .suffix = { "" }
+    .desc = { ent-BaseMachinePowered.desc }
+    .suffix = { "" }
 ent-Autolathe = autolathe
     .desc = It produces items using metal and glass.
     .suffix = { "" }

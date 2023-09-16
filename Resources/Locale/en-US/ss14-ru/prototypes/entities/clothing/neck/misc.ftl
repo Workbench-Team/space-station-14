@@ -10,3 +10,6 @@ ent-ClothingNeckBling = bling
 ent-ClothingNeckLawyerbadge = lawyer badge
     .desc = A badge to show that the owner is a 'legitimate' lawyer who passed the NT bar exam required to practice law.
     .suffix = { "" }
+ent-ActionStethoscope = Listen with stethoscope
+    .desc = { "" }
+    .suffix = { "" }

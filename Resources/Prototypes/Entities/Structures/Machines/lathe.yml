@@ -135,6 +135,7 @@
   - type: EmagLatheRecipes
     emagStaticRecipes:
        - CartridgePistol
+       - CartridgePistolUranium
        - CartridgeMagnum
        - ShellShotgun
        - ShellShotgunFlare
@@ -285,6 +286,7 @@
   components:
   - type: Sprite
     sprite: Structures/Machines/circuit_imprinter.rsi
+    snapCardinals: true
     layers:
     - state: icon
       map: ["enum.LatheVisualLayers.IsRunning"]
@@ -301,6 +303,11 @@
     idleState: icon
     runningState: building
     dynamicRecipes:
+      - ClarkHarness
+      - ClarkLArm
+      - ClarkLLeg
+      - ClarkRLeg
+      - ClarkRArm
       - ThermomachineFreezerMachineCircuitBoard
       - PortableScrubberMachineCircuitBoard
       - CloningPodMachineCircuitboard
@@ -484,6 +491,11 @@
     - HamtrLLeg
     - HamtrRLeg
     - VimHarness
+    - ClarkHarness
+    - ClarkLArm
+    - ClarkLLeg
+    - ClarkRLeg
+    - ClarkRArm
   - type: MaterialStorage
     whitelist:
       tags:
@@ -530,14 +542,14 @@
       - ForensicPad
       - ClothingEyesGlassesSecurity
       - RiotShield
-      - CartridgePistol
-      - CartridgePistolUranium
-      - CartridgeMagnum
       - ShellShotgun
       - ShellShotgunFlare
       - ShellTranquilizer
-      - CartridgeLightRifle
-      - CartridgeRifle
+      - MagazinePistol
+      - MagazinePistolSubMachineGun
+      - MagazinePistolSubMachineGunTopMounted
+      - MagazineRifle
+      - MagazineLightRifle
       - MagazineBoxPistol
       - MagazineBoxPistolUranium
       - MagazineBoxMagnum
@@ -572,6 +584,7 @@
       - VoiceTrigger
       - TimerTrigger
       - Truncheon
+      - TelescopicShield
       - FlashPayload
       - ExplosivePayload
       - WeaponLaserCarbine
@@ -618,13 +631,13 @@
     runningState: icon
     staticRecipes:
       - WeaponDisablerPractice
-    dynamicRecipes:
-      # Magazines
       - MagazinePistolRubber
       - SpeedLoaderMagnumRubber
       - MagazineLightRifleRubber
       - MagazineRifleRubber
       - MagazineMagnumSubMachineGunRubber
+    dynamicRecipes:
+      # Magazines
       - MagazinePistol
       - SpeedLoaderMagnum
       - MagazineLightRifle
@@ -677,6 +690,7 @@
       runningState: icon
       staticRecipes:
         - CartridgePistol
+        - CartridgePistolUranium
         - CartridgeMagnum
         - ShellShotgun
         - ShellShotgunFlare

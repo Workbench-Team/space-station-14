@@ -26,17 +26,24 @@
   id: SpaceNinjaGear
   equipment:
     socks: ClothingUnderSocksBlackKneeSocks
-    jumpsuit: ClothingUniformJumpsuitColorBlack
-    back: ClothingBackpackFilled
+    jumpsuit: ClothingUniformJumpsuitNinja
+    # belt holds katana so satchel has the tools for sabotaging things
+    back: ClothingBackpackSatchelTools
+    mask: ClothingMaskNinja
     head: ClothingHeadHelmetSpaceNinja
+    eyes: ClothingEyesVisorNinja
     gloves: ClothingHandsGlovesSpaceNinja
-    outerClothing: ClothingOuterSuitSpaceninja
+    outerClothing: ClothingOuterSuitSpaceNinja
     shoes: ClothingShoesSpaceNinja
-    id: PassengerPDA
-  innerclothingskirt: ClothingUniformJumpskirtColorBlack
+    id: AgentIDCard
+    ears: ClothingHeadsetGrey
+    pocket1: SpiderCharge
+    pocket2: PinpointerStation
+    belt: EnergyKatana
+    suitstorage: YellowOxygenTankFilled
   femaleSocks: ClothingUnderSocksBlackStockings
-  satchel: ClothingBackpackSatchelFilled
-  duffelbag: ClothingBackpackDuffelFilled
+  inhand:
+    left hand: JetpackBlackFilled
 
 #CentCom Interns
 - type: startingGear
@@ -139,7 +146,7 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitSyndie
     shoes: ClothingShoesBootsCombatFilled
-    id: SyndicateNuclearIDCard
+    id: NukieAgentIDCard
     pocket1: DoubleEmergencyOxygenTankFilled
     pocket2: BaseUplinkRadio40TC
     belt: ClothingBeltMilitaryWebbing

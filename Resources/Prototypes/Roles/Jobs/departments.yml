@@ -5,6 +5,7 @@
   roles:
   - CargoTechnician
   - Quartermaster
+  - Miner
   - SalvageSpecialist
 
 - type: department

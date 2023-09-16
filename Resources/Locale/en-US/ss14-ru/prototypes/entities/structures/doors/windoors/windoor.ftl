@@ -51,6 +51,7 @@ ent-WindoorSecureChemistryLocked = { ent-WindoorSecure }
     .desc = { ent-WindoorSecure.desc }
 ent-WindoorSecureCommandLocked = { ent-WindoorSecure }
     .suffix = Command, Locked
+    .desc = { ent-WindoorSecure.desc }
 ent-WindoorCaptainLocked = { ent-WindoorSecure }
     .suffix = Captain, Locked
     .desc = { ent-WindoorSecure.desc }

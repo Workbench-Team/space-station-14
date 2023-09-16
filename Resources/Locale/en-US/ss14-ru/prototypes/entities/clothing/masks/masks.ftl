@@ -103,3 +103,6 @@ ent-ClothingMaskScaredMime = scared mime mask
 ent-ClothingMaskItalianMoustache = italian moustache
     .desc = Made from authentic Italian moustache hairs. Gives the wearer an irresistable urge to gesticulate wildly.
     .suffix = { "" }
+ent-ClothingMaskNinja = ninja mask
+    .desc = A close-fitting nano-enhanced mask that acts both as an air filter and a post-modern fashion statement.
+    .suffix = { "" }

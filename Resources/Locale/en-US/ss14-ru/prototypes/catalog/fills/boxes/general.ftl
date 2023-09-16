@@ -76,3 +76,6 @@ ent-BoxEncryptionKeySyndie = syndicate encryption key box
 ent-BoxDeathRattleImplants = deathrattle implant box
     .desc = Six deathrattle implants and handheld GPS devices for the whole squad.
     .suffix = { "" }
+ent-BoxLeadLined = lead-lined box
+    .desc = This box stymies the transmission of harmful radiation.
+    .suffix = Debug

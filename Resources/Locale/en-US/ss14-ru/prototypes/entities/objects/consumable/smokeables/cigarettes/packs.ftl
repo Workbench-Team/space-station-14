@@ -1,11 +1,9 @@
 ent-CigPackBase = cigarette pack
-
-  .desc = { ent-['BaseStorageItem', 'BaseBagOpenClose'].desc }
-  .suffix = { "" }
+    .desc = { ent-BaseStorageItem.desc }
+    .suffix = { "" }
 ent-CigPackMixedBase = soaked cigarette pack
-
-  .desc = { ent-['BaseStorageItem', 'BaseBagOpenClose'].desc }
-  .suffix = { "" }
+    .desc = { ent-BaseStorageItem.desc }
+    .suffix = { "" }
 ent-CigPackGreen = Spessman's Smokes packet
     .desc = A label on the packaging reads, Wouldn't a slow death make a change?
     .suffix = { "" }

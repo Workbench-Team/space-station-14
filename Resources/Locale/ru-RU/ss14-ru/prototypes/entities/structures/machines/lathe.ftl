@@ -1,7 +1,6 @@
 ent-BaseLathe = лат
-
-  .desc = { ent-['BaseMachinePowered', 'ConstructibleMachine'].desc }
-  .suffix = { "" }
+    .desc = { ent-BaseMachinePowered.desc }
+    .suffix = { "" }
 ent-Autolathe = автолат
     .desc = Он производит изделия из металла и стекла.
     .suffix = { "" }

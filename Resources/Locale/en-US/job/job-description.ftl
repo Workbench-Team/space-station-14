@@ -39,6 +39,7 @@ job-description-rd = Manage the science department, unlocking technologies, acqu
 job-description-research-assistant = Learn the basics of how to research various artifacts and anomalies.
 job-description-reporter = Entertain & inform the crew with your vibrant journalism through wireless cameras and the radio. Currently available on Bagel Station and Core.
 job-description-salvagespec = Use the salvage magnet to draw in derelicts & asteroids to loot and enrich the station, and fight off any space fauna along the way.
+job-description-miner = Explore planetoids with abandoned stations thanks to your shuttle. Don't forget about mining ore! For rock and stone!
 job-description-scientist = Research alien artifacts, unlock new technologies, upgrade machines around the station, and make everything run more efficiently.
 job-description-security = Catch criminals and enemies of the station, enforce the law, and ensure that the station does not fall into disarray.
 job-description-serviceworker = Learn the basics of bartending, cooking, and growing plants.

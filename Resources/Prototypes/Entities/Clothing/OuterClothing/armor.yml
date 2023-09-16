@@ -79,6 +79,166 @@
 
 - type: entity
   parent: ClothingOuterArmorBasic
+  id: ClothingOuterArmorMiner
+  name: bulletproof vest
+  description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Armor/miner.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Armor/miner.rsi
+  - type: Item
+    size: 35
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.85
+        Heat: 0.75
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetMiner
+  - type: Tag
+    tags:
+    - MinerArmor
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingOuterArmorBasic
+  id: ClothingOuterArmorMinerSyndie
+  name: bulletproof vest
+  description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Armor/miner_red.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Armor/miner_red.rsi
+  - type: Item
+    size: 35
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.60
+        Heat: 0.60
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetMinerSyndie
+  - type: Tag
+    tags:
+    - SyndieMinerArmor
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingOuterArmorMinerSyndie
+  id: ClothingOuterArmorMinerSyndieHeavy
+  name: bulletproof vest
+  description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
+  components:
+  - type: Sprite
+    layers:
+    - state: icon-xeno
+  - type: Clothing
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING
+      - state: equipped-OUTERCLOTHING-xeno
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.40
+        Heat: 0.40
+        Caustic: 0.55
+  - type: Construction
+    graph: ArmorSyndieMinerHeavy
+    node: armorsyndieminerheavy
+
+- type: entity
+  parent: ClothingOuterArmorMiner
+  id: ClothingOuterArmorMinerHeavy
+  name: bulletproof vest
+  description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
+  components:
+  - type: Sprite
+    layers:
+    - state: icon-xeno
+  - type: Clothing
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING
+      - state: equipped-OUTERCLOTHING-xeno
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.65
+        Heat: 0.55
+        Caustic: 0.55
+  - type: Construction
+    graph: ArmorMinerHeavy
+    node: armorminerheavy
+
+- type: entity
+  parent: ClothingOuterArmorMinerSyndie
+  id: ClothingOuterArmorMinerSyndieLight
+  name: bulletproof vest
+  description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+    - state: icon-unshaded-layer
+      shader: unshaded
+  - type: Clothing
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING
+      - state: equipped-OUTERCLOTHING-unshaded
+        shader: unshaded
+  - type: ClothingSpeedModifier
+    walkModifier: 1.2
+    sprintModifier: 1.2
+  - type: Construction
+    graph: ArmorSyndieMinerLight
+    node: armorsyndieminerlight
+
+- type: entity
+  parent: ClothingOuterArmorMiner
+  id: ClothingOuterArmorMinerLight
+  name: bulletproof vest
+  description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+    - state: icon-unshaded-layer
+      shader: unshaded 
+  - type: Clothing
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING
+      - state: equipped-OUTERCLOTHING-unshaded
+        shader: unshaded
+  - type: ClothingSpeedModifier
+    walkModifier: 1.2
+    sprintModifier: 1.2
+  - type: Construction
+    graph: ArmorMinerLight
+    node: armorminerlight
+
+- type: entity
+  parent: ClothingOuterArmorBasic
   id: ClothingOuterArmorReflective
   name: reflective vest
   description: An armored vest with advanced shielding to protect against energy weapons.
@@ -255,3 +415,4 @@
   - type: ExplosionResistance
     damageCoefficient: 0.5
   - type: GroupExamine
+

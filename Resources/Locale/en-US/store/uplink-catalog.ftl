@@ -55,10 +55,13 @@ uplink-grenadier-rig-name = grenadier chest rig
 uplink-grenadier-rig-desc = All you need for a loud party: 4 explosive grenades, 2 EMP grenades and 2 minibombs in a chest rig.
 
 uplink-emp-grenade-name = EMP Grenade
-uplink-emp-grenade-desc = A grenade designed to disrupt electronic systems. Useful for disrupting communications, security's energy weapons, and APCs when you're in a tight spot."
+uplink-emp-grenade-desc = A grenade designed to disrupt electronic systems. Useful for disrupting communications, security's energy weapons, and APCs when you're in a tight spot.
 
 uplink-exploding-pen-name = Exploding pen
 uplink-exploding-pen-desc = A class IV explosive device contained within a standard pen. Comes with a 4 second fuse.
+
+uplink-exploding-syndicate-bomb-name = Syndicate Bomb
+uplink-exploding-syndicate-bomb-desc = A big, anchored bomb that can create a huge explosion if not defused in time. Useful as a distraction. Has an adjustable timer with a minimum setting of 120 seconds.
 
 # Ammo
 uplink-pistol-magazine-name = Pistol Magazine (.35 auto)
@@ -140,8 +143,6 @@ uplink-dna-scrambler-implanter-desc = A single use implant that can be activated
 uplink-emp-implanter-name = EMP Implanter
 uplink-emp-implanter-desc = Detonates a small EMP pulse on activation that drains nearby electronics of their power, can be used three times before the internal battery runs out.
 
-uplink-micro-bomb-implanter-name = Micro Bomb Implanter
-uplink-micro-bomb-implanter-desc = Explode on death or manual activation with this implant. Destroys the body with all equipment.
 
 uplink-macro-bomb-implanter-name = Macro Bomb Implanter
 uplink-macro-bomb-implanter-desc = Inject this and on death you'll create a large explosion. Huge team casualty cost, use at own risk. Replaces internal micro bomb.
@@ -208,6 +209,9 @@ uplink-carp-dehydrated-desc = Looks like a plush toy carp, but just add water an
 # Job Specific
 uplink-gatfruit-seeds-name = Packet Of Gatfruit Seeds
 uplink-gatfruit-seeds-desc = And who says guns don't grow on trees?
+
+uplink-syndie-miner-armor-name = Syndie miner armor
+uplink-syndie-miner-armor-desc = Syndie version of the miner's armor. We hope you bought it, the main thing you do.
 
 uplink-rigged-boxing-gloves-name = Rigged Boxing Gloves
 uplink-rigged-boxing-gloves-desc = Float like a butterfly, sting like a bee.

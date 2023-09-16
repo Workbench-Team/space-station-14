@@ -28,4 +28,3 @@ ent-ClothingHeadBandMerc = бандана наёмника
 ent-ClothingHeadBandBrown = коричневая бандана
     .desc = Коричневая бандана, чтобы выглядеть круто.
     .suffix = { "" }
-	

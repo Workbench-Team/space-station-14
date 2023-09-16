@@ -73,6 +73,19 @@
   - type: Sprite
     layers:
       - state: green
+      - state: salvager
+
+
+- type: entity
+  id: SpawnPointMiner
+  parent: SpawnPointJobBase
+  name: salvagespecialist
+  components:
+  - type: SpawnPoint
+    job_id: Miner
+  - type: Sprite
+    layers:
+      - state: green
       - state: miner
 
 # Civilian

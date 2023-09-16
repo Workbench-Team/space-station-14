@@ -18,6 +18,7 @@
   - type: ExaminableSolution
     solution: hypospray
   - type: Hypospray
+    onlyMobs: false
   - type: StaticPrice
     price: 750
   - type: Tag
@@ -44,6 +45,7 @@
   - type: ExaminableSolution
     solution: hypospray
   - type: Hypospray
+    onlyMobs: false
 
 - type: entity
   name: experimental hypospray
@@ -384,6 +386,7 @@
   - type: ExaminableSolution
     solution: hypospray
   - type: Hypospray
+    onlyMobs: false
   - type: StaticPrice # A new shitcurity meta
     price: 75
 

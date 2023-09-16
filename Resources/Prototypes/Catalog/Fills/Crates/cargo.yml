@@ -5,3 +5,11 @@
   - type: StorageFill
     contents:
     - id: ClothingOuterHardsuitLuxury
+
+- type: entity
+  id: CrateCargoMinerHardsuit
+  parent: CrateEngineering
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterHardsuitKm

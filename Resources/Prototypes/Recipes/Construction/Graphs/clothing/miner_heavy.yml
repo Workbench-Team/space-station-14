@@ -1,0 +1,19 @@
+﻿- type: constructionGraph
+  id: ArmorMinerHeavy
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: armorminerheavy
+          steps:
+            - material: XenoScale
+              amount: 3
+              doAfter: 1
+            - tag: MinerArmor
+              name: An Miner armor
+              icon:
+                sprite: Clothing/OuterClothing/Armor/miner.rsi
+                state: icon
+              doAfter: 1
+    - node: armorminerheavy
+      entity: ClothingOuterArmorMinerHeavy

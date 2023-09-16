@@ -512,6 +512,17 @@
 
 - type: entity
   parent: ClothingBeltStorageBase
+  id: ClothingBeltMinerWebbing
+  name: salvage rig
+  description: Universal unloading system for work in space.
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/miningwebbing.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/miningwebbing.rsi
+
+- type: entity
+  parent: ClothingBeltStorageBase
   id: ClothingBeltMilitaryWebbing
   name: chest rig
   description: A set of tactical webbing worn by Syndicate boarding parties.

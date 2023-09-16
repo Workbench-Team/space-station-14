@@ -33,6 +33,7 @@ job-name-botanist = Ботаник
 job-name-bartender = Бармен
 job-name-passenger = Ассистент
 job-name-salvagespec = Утилизатор
+job-name-miner = Шахтер
 job-name-qm = Квартирмейстер
 job-name-cargotech = Грузчик
 job-name-chef = Шеф-повар

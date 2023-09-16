@@ -51,12 +51,6 @@
     - idcard
     - Belt
   - type: UnpoweredFlashlight
-    toggleAction:
-      name: action-name-toggle-light
-      description: action-description-toggle-light
-      icon: { sprite: Objects/Tools/flashlight.rsi, state: flashlight }
-      iconOn: Objects/Tools/flashlight.rsi/flashlight-on.png
-      event: !type:ToggleActionEvent
   - type: PointLight
     enabled: false
     radius: 1.5
@@ -149,7 +143,7 @@
   - type: Icon
     state: pda-internmed
   - type: HealthAnalyzer
-    scanDelay: 1.4
+    scanDelay: 1
     scanningEndSound:
       path: "/Audio/Items/Medical/healthscanner.ogg"
   - type: GuideHelp
@@ -339,6 +333,22 @@
   - type: Icon
     state: pda-cargo
 
+
+- type: entity
+  parent: BasePDA
+  id: MinerPDA
+  name: salvage PDA
+  description: Smells like ash.
+  components:
+  - type: Pda
+    id: MinerIDCard
+    state: pda-mining
+  - type: PdaBorderColor
+    borderColor: "#af9366"
+    accentVColor: "#8900c9"
+  - type: Icon
+    state: pda-mining
+
 - type: entity
   parent: BasePDA
   id: SalvagePDA
@@ -516,7 +526,7 @@
   - type: Icon
     state: pda-medical
   - type: HealthAnalyzer
-    scanDelay: 1.2
+    scanDelay: 1
     scanningEndSound:
       path: "/Audio/Items/Medical/healthscanner.ogg"
   - type: GuideHelp
@@ -538,7 +548,7 @@
   - type: Icon
     state: pda-paramedic
   - type: HealthAnalyzer
-    scanDelay: 0.5
+    scanDelay: 1
     scanningEndSound:
       path: "/Audio/Items/Medical/healthscanner.ogg"
 
@@ -747,7 +757,7 @@
   description: Ok, time to be a productive member of- oh cool I'm a bad guy time to kill people!
   components:
   - type: Pda
-    id: SyndicateEliteIDCard
+    id: SyndicateIDCard
     state: pda-syndi
   - type: PdaBorderColor
     borderColor: "#891417"

@@ -4,3 +4,6 @@ ent-ClothingMaskBase = { ent-Clothing }
 ent-ClothingMaskPullableBase = { ent-ClothingMaskBase }
     .desc = { ent-ClothingMaskBase.desc }
     .suffix = { "" }
+ent-ActionToggleMask = Переключить Маску
+    .desc = Удобно, но не позволяет вставить пирог в ваше отверстие для пирога.
+    .suffix = { "" }

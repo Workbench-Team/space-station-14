@@ -137,10 +137,21 @@
   suffix: External, Syndicate, Locked
   components:
   - type: AccessReaderBoard
-#    access: [["Syndicate"]]
+#    access: [["SyndicateAgent"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSyndicate ]
+
+- type: entity
+  parent: AirlockExternal
+  id: AirlockExternalNukeopLocked
+  suffix: External, Nukeop, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["NuclearOperative"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNukeop ]
 
 - type: entity
   parent: AirlockFreezer
@@ -427,28 +438,6 @@
     containers:
       board: [ DoorElectronicsExternal ]
 
-- type: entity
-  parent: AirlockSyndicate
-  id: AirlockSyndicateLocked
-  suffix: Syndicate, Locked
-  components:
-  - type: AccessReaderBoard
-#    access: [["Syndicate"]]
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsSyndicate ]
-
-- type: entity
-  parent: AirlockSyndicateCommand
-  id: AirlockSyndicateCommandLocked
-  suffix: Syndicate, Command, Locked
-  components:
-  - type: AccessReaderBoard
-#    access: [["SyndicateCommand"]]
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsSyndicateCommand ]
-
 # Glass Airlocks
 - type: entity
   parent: AirlockGlass
@@ -496,6 +485,28 @@
 
 - type: entity
   parent: AirlockExternalGlass
+  id: AirlockExternalGlassSyndicateLocked
+  suffix: External, Glass, Syndicate, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["SyndicateAgent"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSyndicate ]
+
+- type: entity
+  parent: AirlockExternalGlass
+  id: AirlockExternalGlassNukeopLocked
+  suffix: External, Glass, Nukeop, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["NuclearOperative"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNukeop ]
+
+- type: entity
+  parent: AirlockExternalGlass
   id: AirlockExternalGlassEngineeringLocked
   suffix: External, Glass, Engineering, Locked
   components:
@@ -504,17 +515,6 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsEngineering ]
-
-- type: entity
-  parent: AirlockExternalGlass
-  id: AirlockExternalGlassSyndicateLocked
-  suffix: External, Syndicate, Locked
-  components:
-  - type: AccessReaderBoard
-#    access: [["Syndicate"]]
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsSyndicate ]
 
 - type: entity
   parent: AirlockExternalGlass
@@ -797,21 +797,32 @@
   suffix: Syndicate, Locked
   components:
   - type: AccessReaderBoard
-#    access: [["Syndicate"]]
+#    access: [["SyndicateAgent"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSyndicate ]
 
 - type: entity
-  parent: AirlockSyndicateCommandGlass
-  id: AirlockSyndicateCommandGlassLocked
-  suffix: Syndicate, Command, Locked
+  parent: AirlockSyndicateGlass
+  id: AirlockSyndicateNukeopGlassLocked
+  suffix: Nukeop, Locked
   components:
   - type: AccessReaderBoard
-#    access: [["SyndicateCommand"]]
+#    access: [["NuclearOperative"]]
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsSyndicateCommand ]
+      board: [ DoorElectronicsNukeop ]
+
+- type: entity
+  parent: AirlockSyndicateNukeopCommandGlass
+  id: AirlockSyndicateNukeopCommandGlassLocked
+  suffix: Nukeop, Command, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["NukeopCommand"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNukeopCommand ]
 
 # Maintenance Hatches
 - type: entity
@@ -1067,6 +1078,39 @@
     containers:
       board: [ DoorElectronicsCaptain ]
 
+- type: entity
+  parent: AirlockSyndicate
+  id: AirlockSyndicateLocked
+  suffix: Syndicate, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["SyndicateAgent"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSyndicate ]
+
+- type: entity
+  parent: AirlockSyndicate
+  id: AirlockSyndicateNukeopLocked
+  suffix: Nukeop, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["NuclearOperative"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNukeop ]
+
+- type: entity
+  parent: AirlockSyndicateNukeopCommand
+  id: AirlockSyndicateNukeopCommandLocked
+  suffix: Nukeop, Command, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["NukeopCommand"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNukeopCommand ]
+
 # Shuttle airlocks
 - type: entity
   parent: AirlockShuttle
@@ -1078,6 +1122,28 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsExternal ]
+
+- type: entity
+  parent: AirlockShuttle
+  id: AirlockExternalShuttleSyndicateLocked
+  suffix: External, Docking, Syndicate, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["SyndicateAgent"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSyndicate ]
+
+- type: entity
+  parent: AirlockShuttle
+  id: AirlockExternalShuttleNukeopLocked
+  suffix: External, Docking, Nukeop, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["NuclearOperative"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNukeop ]
 
 - type: entity
   parent: AirlockGlassShuttle

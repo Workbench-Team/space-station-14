@@ -71,9 +71,9 @@ public sealed partial class AccessStorageComponentState : ComponentState
 {
     public HashSet<string> DenyTags;
     public List<HashSet<string>> AccessLists;
-    public HashSet<StationRecordKey> AccessKeys;
+    public List<(NetEntity, uint)> AccessKeys;
 
-    public AccessStorageComponentState(HashSet<string> denyTags, List<HashSet<string>> accessLists, HashSet<StationRecordKey> accessKeys)
+    public AccessStorageComponentState(HashSet<string> denyTags, List<HashSet<string>> accessLists, List<(NetEntity, uint)> accessKeys)
     {
         DenyTags = denyTags;
         AccessLists = accessLists;

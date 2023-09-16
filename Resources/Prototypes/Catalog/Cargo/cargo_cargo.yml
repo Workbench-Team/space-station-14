@@ -17,3 +17,13 @@
   cost: 15000
   category: Cargo
   group: market
+
+- type: cargoProduct
+  id: CargoMinerHardsuit
+  icon:
+    sprite: Clothing/Head/Hardsuits/kmsuit.rsi
+    state: icon
+  product: CrateCargoMinerHardsuit
+  cost: 9500
+  category: Cargo
+  group: market

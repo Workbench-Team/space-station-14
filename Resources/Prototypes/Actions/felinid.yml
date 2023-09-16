@@ -1,13 +1,12 @@
-- type: entityTargetAction
-  id: WoundLicking
-  name: action-name-lick-wounds
-  description: action-desc-lick-wounds
-  priority: -1
-  whitelist:
-    components:
-    - HumanoidAppearance
-  interactOnMiss: false
-  icon: 
-    sprite: Mobs/Species/Human/organs.rsi
-    state: tongue
-  serverEvent: !type:WoundLickingTargetActionEvent
+- type: entity
+  id: ActionWoundLicking
+  name: Lick Wound
+  description: Stop bleeding by licking your wounds
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    whitelist: { components: [ HumanoidAppearance ] }
+    interactOnMiss: false
+    icon: { sprite: Mobs/Species/Human/organs.rsi, state: tongue }
+    priority: -1
+    event: !type:WoundLickingActionEvent

@@ -47,6 +47,22 @@
   itemSize: 2
 
 - type: stack
+  id: XenoScale
+  name: xenoscale
+  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: alienplate }
+  spawn: MaterialXenoScale1
+  maxCount: 10
+  itemSize: 6
+
+- type: stack
+  id: DragonSinew
+  name: dragonsinew
+  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: dragonsinew }
+  spawn: MaterialDragonSinew1
+  maxCount: 10
+  itemSize: 6
+
+- type: stack
   id: Cotton
   name: cotton
   icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: cotton }

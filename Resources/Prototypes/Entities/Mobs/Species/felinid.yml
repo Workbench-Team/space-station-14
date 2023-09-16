@@ -20,7 +20,6 @@
     durationMultiplier: 1
     bangAddMultiplier: 0.65
     bangFlash: false
-  - type: WoundLicking
   - type: Reactive
     groups:
       Flammable: [ Touch ]

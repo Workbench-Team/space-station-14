@@ -326,6 +326,27 @@
 
 - type: entity
   parent: MaterialBase
+  id: MaterialHideCorgi
+  name: corgi hide
+  description: Luxury pelt used in only the most elite fashion. Rumors say this is found when a corgi is sent to the nice farm.
+  components:
+  - type: Sprite
+    sprite: Objects/Materials/materials.rsi
+    state: corgihide
+  - type: Item
+    sprite: Clothing/Head/Misc/hides.rsi
+    heldPrefix: corgi
+  - type: Clothing
+    sprite: Clothing/Head/Misc/hides.rsi
+    equippedPrefix: corgi2
+    slots:
+    - HEAD
+  - type: Tag
+    tags:
+    - HideCorgi
+
+- type: entity
+  parent: MaterialBase
   id: MaterialDiamond
   name: refined diamond
   suffix: Full
@@ -347,6 +368,56 @@
     count: 1
   - type: Item
     size: 2
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialDragonSinew
+  name: refined diamond
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: DragonSinew
+    count: 10
+  - type: Sprite
+    state: dragonsinew
+  - type: Item
+    size: 60
+
+- type: entity
+  parent: MaterialDragonSinew
+  id: MaterialDragonSinew1
+  name: refined diamond
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+  - type: Item
+    size: 6
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialXenoScale
+  name: refined diamond
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: XenoScale
+    count: 10
+  - type: Sprite
+    state: alienplate
+  - type: Item
+    size: 60
+
+- type: entity
+  parent: MaterialXenoScale
+  id: MaterialXenoScale1
+  name: refined diamond
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+  - type: Item
+    size: 6
 
 - type: entity
   parent: MaterialBase
@@ -420,7 +491,7 @@
       - bananium
       - bananium_1
   - type: RadiationSource
-    intensity: 0.3
+    intensity: 0.1
   - type: FlavorProfile
     flavors:
       - banana

@@ -175,4 +175,3 @@ ent-FoodMeatXenoCutletCooked = ксено котлета
 ent-FoodMeatGondola = сырое мясо гондолы
     .desc = Сырой кусок гондолы. Липкое.
     .suffix = { "" }
-	

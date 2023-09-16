@@ -1,7 +1,7 @@
 objectives-round-end-result =
     { $count ->
         [one] Был один { $agent }.
-       *[other] Было { $count } { MAKEPLURAL($agent) }.
+       *[other] Было { $count } { $agent }.
     }
 objectives-player-user-named = [color=White]{ $name }[/color] ([color=gray]{ $user }[/color])
 objectives-player-user = [color=gray]{ $user }[/color]

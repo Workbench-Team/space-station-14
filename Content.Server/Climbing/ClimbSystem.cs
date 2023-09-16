@@ -135,7 +135,7 @@ public sealed class ClimbSystem : SharedClimbSystem
             climbDelay *= climbing.TableClimbMultiplier;
         }
 
-        var args = new DoAfterArgs(user, climbDelay, new ClimbDoAfterEvent(), entityToMove, target: climbable, used: entityToMove)
+        var args = new DoAfterArgs(EntityManager, user, climbDelay, new ClimbDoAfterEvent(), entityToMove, target: climbable, used: entityToMove)
         {
             BreakOnTargetMove = true,
             BreakOnUserMove = true,
