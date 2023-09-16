@@ -21,6 +21,7 @@
     tags:
     - ClothMade
     - WhitelistChameleon
+    - Clothing
 
 - type: entity
   abstract: true

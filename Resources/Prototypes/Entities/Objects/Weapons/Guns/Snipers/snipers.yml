@@ -16,7 +16,6 @@
     quickEquip: false
     slots:
     - Back
-    - suitStorage
   - type: AmmoCounter
   - type: Gun
     fireRate: 0.75
@@ -46,12 +45,6 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
-  - type: Clothing
-    sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
-    quickEquip: false
-    slots:
-    - Back
-    - suitStorage
 
 - type: entity
   name: Hristov

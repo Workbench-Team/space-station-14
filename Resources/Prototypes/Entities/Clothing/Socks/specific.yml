@@ -15,7 +15,7 @@
   - type: Clothing
     sprite: Clothing/Under/Socks/pink_thigh.rsi
   - type: Storage
-    capacity: 5
+    capacity: 3
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
