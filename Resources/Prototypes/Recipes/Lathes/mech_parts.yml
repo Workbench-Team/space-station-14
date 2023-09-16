@@ -169,3 +169,44 @@
   materials:
     Steel: 500
     Glass: 200
+
+#clark
+- type: latheRecipe
+  id: ClarkHarness
+  result: ClarkHarness
+  completetime: 10
+  materials:
+    Steel: 6500
+    Glass: 550
+
+- type: latheRecipe
+  id: ClarkLArm
+  result: ClarkLArm
+  completetime: 10
+  materials:
+    Steel: 4000
+    Glass: 1250
+
+- type: latheRecipe
+  id: ClarkLLeg
+  result: ClarkLLeg
+  completetime: 10
+  materials:
+    Steel: 4000
+    Glass: 1250
+
+- type: latheRecipe
+  id: ClarkRLeg
+  result: ClarkRLeg
+  completetime: 10
+  materials:
+    Steel: 4000
+    Glass: 1250
+
+- type: latheRecipe
+  id: ClarkRArm
+  result: ClarkRArm
+  completetime: 10
+  materials:
+    Steel: 4000
+    Glass: 1250

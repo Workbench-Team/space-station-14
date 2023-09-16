@@ -157,12 +157,6 @@
   - type: MobMover
   - type: InputMover
   - type: UnpoweredFlashlight
-    toggleAction:
-      name: action-name-toggle-light
-      description: action-description-toggle-light
-      icon: { sprite: Objects/Tools/flashlight.rsi, state: flashlight }
-      iconOn: Objects/Tools/flashlight.rsi/flashlight-on.png
-      event: !type:ToggleActionEvent
   - type: PointLight
     color: red
     enabled: false
@@ -950,14 +944,13 @@
     description: ghost-role-information-MechClarke-description
     rules: ghost-role-information-MechClarke-rules
     whitelistRequired: true
-  - type: Body
-    prototype: ClarkeSilicon
   - type: InnateTool
     tools:
       - id: JawsOfLifeHarm9000
       - id: OreBag
       - id: MechaDrill9000
       - id: MechaAnalyzer9000
+      - id: WeaponCutter9000
   - type: ActiveRadio
     channels:
     - Common
@@ -990,42 +983,24 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 400
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
+      - !type:ExplodeBehavior
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/Effects/metalbreak.ogg
-      - !type:ExplodeBehavior
       - !type:SpawnEntitiesBehavior
         spawn:
           MechClarkeDestroyed:
             min: 1
             max: 1
-- type: body
-  id: ClarkeSilicon
-  name: "mecha"
-  root: hand 1
-  slots:
-    hand 1:
-      part: LeftArmBorg
-      connections:
-      - hand 2
-    hand 2:
-      part: LeftArmBorg
-      connections:
-      - hand 3
-    hand 3:
-      part: LeftArmBorg
-      connections:
-      - hand 4
-    hand 4:
-      part: RightArmBorg
-      connections:
-      - hand 5
-    hand 5:
-      part: RightArmBorg
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 1.5
+    totalIntensity: 200
 
 - type: entity
   id: MechClarkeDestroyed

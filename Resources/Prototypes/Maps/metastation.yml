@@ -52,6 +52,7 @@
         #Cargo
            SalvageSpecialist: [ 3, 3 ]
            CargoTechnician: [ 3, 3 ]
+           Miner: [ 3,3 ]
         #Service
            Passenger: [ -1, -1 ]
            Bartender: [ 2, 2 ]

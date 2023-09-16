@@ -4,3 +4,6 @@ ent-LockerSalvageSpecialistFilledHardsuit = { ent-LockerSalvageSpecialist }
 ent-LockerSalvageSpecialistFilled = { ent-LockerSalvageSpecialist }
     .suffix = Заполненный
     .desc = { ent-LockerSalvageSpecialist.desc }
+ent-LockerMinerFilled = { ent-LockerMiner }
+    .suffix = Заполненный
+    .desc = { ent-LockerMiner.desc }

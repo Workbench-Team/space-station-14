@@ -1,0 +1,19 @@
+﻿- type: constructionGraph
+  id: ArmorSyndieMinerLight
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: armorsyndieminerlight
+          steps:
+            - material: DragonSinew
+              amount: 3
+              doAfter: 1
+            - tag: SyndieMinerArmor
+              name: An syndie Miner armor
+              icon:
+                sprite: Clothing/OuterClothing/Armor/miner_red.rsi
+                state: icon
+              doAfter: 1
+    - node: armorsyndieminerlight
+      entity: ClothingOuterArmorMinerSyndieLight

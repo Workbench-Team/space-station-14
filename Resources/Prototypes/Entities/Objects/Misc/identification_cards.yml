@@ -205,9 +205,21 @@
   - type: Sprite
     layers:
     - state: default
-    - state: idshaftminer
+    - state: idsalvage
   - type: PresetIdCard
     job: SalvageSpecialist
+
+- type: entity
+  parent: IDCardStandard
+  id: MinerIDCard
+  name: salvage ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idshaftminer
+  - type: PresetIdCard
+    job: Miner
 
 - type: entity
   parent: IDCardStandard
@@ -511,10 +523,21 @@
     jobTitle: Centcom Agent
 
 - type: entity
-  parent: PassengerIDCard
+  name: passenger ID card
+  parent: IDCardStandard
   id: AgentIDCard
   suffix: Agent
   components:
+  - type: IdCard
+    jobTitle: Passenger
+  - type: Access
+    tags:
+    - Maintenance
+    - SyndicateAgent
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idpassenger
   - type: AgentIDCard
     icons:
     # TODO figure out a better way of doing this.
@@ -545,6 +568,7 @@
     - JobIconHeadOfPersonnel
     - JobIconVirologist
     - JobIconShaftMiner
+    - JobIconSalvage
     - JobIconPassenger
     - JobIconChiefEngineer
     - JobIconBartender
@@ -577,6 +601,18 @@
         type: AgentIDCardBoundUserInterface
 
 - type: entity
+  name: passenger ID card
+  parent: AgentIDCard
+  id: NukieAgentIDCard
+  suffix: Nukie
+  components:
+  - type: Access
+    tags:
+    - Maintenance
+    - SyndicateAgent
+    - NuclearOperative
+
+- type: entity
   parent: IDCardStandard
   id: AtmosIDCard
   name: atmospheric technician ID card
@@ -598,51 +634,11 @@
     - state: syndie
   - type: Access
     tags:
-    - Syndicate
-
-- type: entity
-  parent: SyndicateIDCard
-  id: SyndicateEliteIDCard
-  name: Syndicate Elite ID card
-  components:
-  - type: AgentIDCard
-  - type: ActivatableUI
-    key: enum.AgentIDCardUiKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.AgentIDCardUiKey.Key
-        type: AgentIDCardBoundUserInterface
-  - type: Sprite
-    layers:
-    - state: syndie
-    - state: idheadofsecurity
-  - type: Access
-    tags:
     - NuclearOperative
-    - Syndicate
+    - SyndicateAgent
 
 - type: entity
   parent: IDCardStandard
-  id: SyndicateNuclearIDCard
-  name: Syndicate ID card
-  components:
-  - type: AgentIDCard
-  - type: ActivatableUI
-    key: enum.AgentIDCardUiKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.AgentIDCardUiKey.Key
-        type: AgentIDCardBoundUserInterface
-  - type: Sprite
-    layers:
-    - state: syndie
-    - state: idsecurityofficer
-  - type: Access
-    tags:
-    - Syndicate
-
-- type: entity
-  parent: SyndicateIDCard
   id: PsychologistIDCard
   name: psychologist ID card
   components:

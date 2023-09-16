@@ -117,6 +117,22 @@
   - BorgModuleRCD
 
 - type: technology
+  id: ClarkKSG
+  name: research-technology-clarke-aplu
+  icon:
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: clarke
+  discipline: Industrial
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - ClarkLArm
+  - ClarkLLeg
+  - ClarkRLeg
+  - ClarkRArm
+  - ClarkHarness
+
+- type: technology
   id: Shuttlecraft
   name: research-technology-shuttlecraft
   icon:

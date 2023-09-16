@@ -1,7 +1,6 @@
-ent-PortableGeneratorBase = { ent-['BaseMachine', 'ConstructibleMachine'] }
-
-  .desc = { ent-['BaseMachine', 'ConstructibleMachine'].desc }
-  .suffix = { "" }
+ent-PortableGeneratorBase = { ent-BaseMachine }
+    .desc = { ent-BaseMachine.desc }
+    .suffix = { "" }
 ent-PortableGeneratorSwitchableBase = { ent-PortableGeneratorBase }
     .desc = { ent-PortableGeneratorBase.desc }
     .suffix = { "" }

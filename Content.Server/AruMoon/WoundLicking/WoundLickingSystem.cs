@@ -6,11 +6,9 @@ using Content.Server.Popups;
 using Content.Shared.DoAfter;
 using Content.Shared.Felinid;
 using Content.Shared.IdentityManagement;
-using Content.Shared.Actions.ActionTypes;
 using Content.Shared.Actions;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Player;
 using Robust.Shared.Random;
 using System.Linq;
@@ -20,17 +18,14 @@ namespace Content.Server.Felinid
     /// <summary>
     /// "Lick your or other felinid wounds. Reduce bleeding, but unsanitary and can cause diseases."
     /// </summary>
-    public sealed class WoundLickingSystem : EntitySystem
+    public sealed partial class WoundLickingSystem : EntitySystem
     {
         [Dependency] private readonly SharedDoAfterSystem _doAfterSystem = default!;
         [Dependency] private readonly PopupSystem _popupSystem = default!;
 //        [Dependency] private readonly DiseaseSystem _disease = default!;
         [Dependency] private readonly SharedActionsSystem _actionsSystem = default!;
         [Dependency] private readonly IRobustRandom _random = default!;
-        [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly BloodstreamSystem _bloodstreamSystem = default!;
-
-        private const string WouldLickingActionPrototype = "WoundLicking";
 
         public override void Initialize()
         {
@@ -38,28 +33,27 @@ namespace Content.Server.Felinid
             SubscribeLocalEvent<WoundLickingComponent, ComponentInit>(OnInit);
             SubscribeLocalEvent<WoundLickingComponent, ComponentRemove>(OnRemove);
             SubscribeLocalEvent<WoundLickingComponent, WoundLickingDoAfterEvent>(OnDoAfter);
-            SubscribeLocalEvent<WoundLickingTargetActionEvent>(OnActionPerform);
+            SubscribeLocalEvent<WoundLickingActionEvent>(OnActionPerform);
         }
 
         private void OnInit(EntityUid uid, WoundLickingComponent comp, ComponentInit args)
         {
-            var action = new EntityTargetAction(_prototypeManager.Index<EntityTargetActionPrototype>(WouldLickingActionPrototype));
-            _actionsSystem.AddAction(uid, action, null);
+            _actionsSystem.AddAction(uid, ref comp.WoundLickingActionEntity, comp.WoundLickingAction);
         }
 
         private void OnRemove(EntityUid uid, WoundLickingComponent comp, ComponentRemove args)
         {
-            var action = new EntityTargetAction(_prototypeManager.Index<EntityTargetActionPrototype>(WouldLickingActionPrototype));
-            _actionsSystem.RemoveAction(uid, action);
+            _actionsSystem.RemoveAction(uid, comp.WoundLickingActionEntity);
         }
 
-        private void OnActionPerform(WoundLickingTargetActionEvent ev)
+        protected void OnActionPerform(WoundLickingActionEvent args)
         {
-            if (ev.Handled)
+            if (args.Handled)
                 return;
 
-            var performer = ev.Performer;
-            var target = ev.Target;
+            args.Handled = true;
+            var performer = args.Performer;
+            var target = args.Target;
 
             // Ensure components
             if (
@@ -70,7 +64,8 @@ namespace Content.Server.Felinid
                 return;
 
             // Check target
-            if (mobState.CurrentState == MobState.Dead) return;
+            if (mobState.CurrentState == MobState.Dead)
+                return;
 
             // Check "CanApplyOnSelf" field
             if (performer == target & !woundLicking.CanApplyOnSelf)
@@ -109,7 +104,7 @@ namespace Content.Server.Felinid
             // Popup
 
 
-            if (performer == target)
+            if (target == performer)
             {
                 // Applied on yourself
                 var performerIdentity = Identity.Entity(performer, EntityManager);
@@ -138,21 +133,17 @@ namespace Content.Server.Felinid
             }
 
             // DoAfter
-            var doAfterEventArgs = new DoAfterArgs(performer, woundLicking.Delay, new WoundLickingDoAfterEvent(), performer, target: target)
+            _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, performer, woundLicking.Delay, new WoundLickingDoAfterEvent(), performer, target: target)
             {
                 BreakOnTargetMove = true,
                 BreakOnUserMove = true,
                 BreakOnDamage = true
-            };
-
-            _doAfterSystem.TryStartDoAfter(doAfterEventArgs);
-
-            ev.Handled = true;
+            });
         }
 
         private void OnDoAfter(EntityUid uid, WoundLickingComponent comp, WoundLickingDoAfterEvent args)
         {
-            if (args.Cancelled || args.Handled || args.Args.Target == null)
+            if (args.Cancelled || args.Handled)
             {
                 return;
             }
@@ -211,7 +202,6 @@ namespace Content.Server.Felinid
                     performer, otherFilter, true);
             }
         }
+        public sealed partial class WoundLickingActionEvent : EntityTargetActionEvent { }
     }
-
-    public sealed partial class WoundLickingTargetActionEvent : EntityTargetActionEvent { }
 }

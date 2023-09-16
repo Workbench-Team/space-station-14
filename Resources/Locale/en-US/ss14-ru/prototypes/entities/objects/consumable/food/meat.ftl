@@ -175,4 +175,3 @@ ent-FoodMeatXenoCutletCooked = xeno cutlet
 ent-FoodMeatGondola = raw gondola meat
     .desc = A raw piece of gondola. Stinky.
     .suffix = { "" }
-	

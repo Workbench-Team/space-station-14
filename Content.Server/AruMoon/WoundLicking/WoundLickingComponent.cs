@@ -1,4 +1,6 @@
 using System.Threading;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Server.Felinid
 {
@@ -6,6 +8,12 @@ namespace Content.Server.Felinid
     [Access(typeof(WoundLickingSystem))]
     public sealed partial class WoundLickingComponent : Component
     {
+        [DataField("woundLickingAction", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+        public string? WoundLickingAction = "ActionWoundLicking";
+
+        [DataField("woundLickingActionEntity")]
+        public EntityUid? WoundLickingActionEntity;
+
         /// <summary>
         /// How frequent wound-licking will cause diseases. Scales with amount of reduced bleeding
         /// </summary>
@@ -47,7 +55,8 @@ namespace Content.Server.Felinid
         /// Which diseases can be caused because of wound-licking
         /// </summary>
         [DataField("possibleDiseases")]
-        public List<String> PossibleDiseases { get; set; } = new(){
+        public List<String> PossibleDiseases { get; set; } = new()
+        {
             "Plague",
             "BirdFlew",
             "SpaceFlu",
@@ -59,7 +68,8 @@ namespace Content.Server.Felinid
         /// If Target's bloodstream don't use one of these reagents, then ability can't be performed on it.
         /// </summary>
         [DataField("reagentWhitelist")]
-        public List<String> ReagentWhitelist { get; set; } = new(){
+        public List<String> ReagentWhitelist { get; set; } = new()
+        {
             "Blood",
             "Slime"
         };

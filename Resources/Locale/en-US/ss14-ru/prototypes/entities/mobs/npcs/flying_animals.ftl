@@ -1,0 +1,3 @@
+ent-FlyingMobBase = { "" }
+    .desc = { "" }
+    .suffix = { "" }

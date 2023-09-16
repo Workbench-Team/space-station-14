@@ -8,3 +8,47 @@
   description: A modified hardsuit fit for a clown.
   icon: { sprite: Clothing/OuterClothing/Hardsuits/clown.rsi, state: icon }
   objectType: Item
+
+- type: construction
+  name: miner light armor
+  id: ArmorMinerLight
+  graph: ArmorMinerLight
+  startNode: start
+  targetNode: armorminerlight
+  category: construction-category-clothing
+  description: A modified light armor for miners.
+  icon: { sprite: Clothing/OuterClothing/Armor/miner.rsi, state: icon-unshaded }
+  objectType: Item
+
+- type: construction
+  name: miner heavy armor
+  id: ArmorMinerHeavy
+  graph: ArmorMinerHeavy
+  startNode: start
+  targetNode: armorminerheavy
+  category: construction-category-clothing
+  description: A modified heavy armor for miners.
+  icon: { sprite: Clothing/OuterClothing/Armor/miner.rsi, state: icon-xeno }
+  objectType: Item
+
+- type: construction
+  name: syndie miner light armor
+  id: ArmorSyndieMinerLight
+  graph: ArmorSyndieMinerLight
+  startNode: start
+  targetNode: armorsyndieminerlight
+  category: construction-category-clothing
+  description: A modified sussy light armor for miners.
+  icon: { sprite: Clothing/OuterClothing/Armor/miner_red.rsi, state: icon-unshaded }
+  objectType: Item
+
+- type: construction
+  name: syndie miner heavy armor
+  id: ArmorSyndieMinerHeavy
+  graph: ArmorSyndieMinerHeavy
+  startNode: start
+  targetNode: armorsyndieminerheavy
+  category: construction-category-clothing
+  description: A modified sussy heavy armor for miners.
+  icon: { sprite: Clothing/OuterClothing/Armor/miner_red.rsi, state: icon-xeno }
+  objectType: Item

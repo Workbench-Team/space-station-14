@@ -1,0 +1,12 @@
+ent-ActionRevenantShop = Магазин
+    .desc = Открывает магазин способностей.
+    .suffix = { "" }
+ent-ActionRevenantDefile = Осквернение
+    .desc = Стоит 30 Эссенции.
+    .suffix = { "" }
+ent-ActionRevenantOverloadLights = Перегрузить лампы
+    .desc = Стоит 40 Эссенции.
+    .suffix = { "" }
+ent-ActionRevenantMalfunction = Поломка техники
+    .desc = Стоит 60 Эссенции.
+    .suffix = { "" }

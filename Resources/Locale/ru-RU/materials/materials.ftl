@@ -1,22 +1,24 @@
 # Glass
-materials-glass = стекло
-materials-reinforced-glass = бронестекло
-materials-plasma-glass = плазменное стекло
-materials-reinforced-plasma-glass = плазменное бронестекло
+materials-glass = стекла
+materials-reinforced-glass = бронестекла
+materials-plasma-glass = плазменного стекла
+materials-reinforced-plasma-glass = плазменного бронестекла
 # Metals
-materials-steel = сталь
-materials-gold = золото
-materials-silver = серебро
-materials-plasteel = пласталь
+materials-steel = стали
+materials-gold = золота
+materials-silver = серебра
+materials-plasteel = пластали
 # Other
-materials-biomass = биомасса
-materials-cloth = ткань
-materials-durathread = дюраткань
-materials-plasma = плазма
-materials-plastic = пластик
-materials-wood = дерево
-materials-uranium = уран
-materials-bananium = бананиум
-materials-meat = мясо
+materials-biomass = биомассы
+materials-cardboard = картона
+materials-cloth = ткани
+materials-durathread = дюраткани
+materials-plasma = плазмы
+materials-plastic = пластика
+materials-wood = дерева
+materials-uranium = урана
+materials-bananium = бананиума
+materials-meat = мяса
+materials-web = шёлка
 # Material Reclaimer
 material-reclaimer-upgrade-process-rate = Скорость процесса

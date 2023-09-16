@@ -22,7 +22,10 @@
 - type: startingGear
   id: MinerGear
   equipment:
+<<<<<<< HEAD
     socks: ClothingUnderSocksWhiteKneeSocks
+=======
+>>>>>>> 64563ca5c19004bd3d9c92680e519a731ac1b0b8
     jumpsuit: ClothingUniformJumpsuitMiner
     back: ClothingBackpackSalvageFilled
     shoes: ClothingShoesBootsSalvage
@@ -30,4 +33,7 @@
     ears: ClothingHeadsetMining
   satchel: ClothingBackpackSatchelSalvageFilled
   duffelbag: ClothingBackpackDuffelSalvageFilled
+<<<<<<< HEAD
   femaleSocks: ClothingUnderSocksWhiteStockings
+=======
+>>>>>>> 64563ca5c19004bd3d9c92680e519a731ac1b0b8

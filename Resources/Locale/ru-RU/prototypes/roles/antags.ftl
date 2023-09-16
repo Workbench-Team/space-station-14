@@ -16,3 +16,5 @@ roles-antag-nuclear-operative-name = Ядерный оперативник
 roles-antag-nuclear-operative-objective = Найдите ядерный диск и взорвите станцию.
 roles-antag-subverted-silicon-name = Взломанный робот
 roles-antag-subverted-silicon-objective = Следуйте своим новым законам и творите бесчинства на станции.
+roles-antag-space-ninja-name = Космический Ниндзя
+roles-antag-space-ninja-objective = Используя маскировку, устройте диверсию на станции на электрических проводах.

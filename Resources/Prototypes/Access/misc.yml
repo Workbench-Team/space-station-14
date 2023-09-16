@@ -34,5 +34,5 @@
 - type: accessGroup
   id: AllAccessSyndicate
   tags:
-  - Syndicate
+  - SyndicateAgent
   - NuclearOperative

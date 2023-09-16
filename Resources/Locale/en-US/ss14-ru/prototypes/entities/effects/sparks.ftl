@@ -1,0 +1,3 @@
+ent-EffectSparks = { "" }
+    .desc = { "" }
+    .suffix = { "" }

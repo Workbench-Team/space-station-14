@@ -1,0 +1,9 @@
+ent-ActionMechCycleEquipment = Cycle
+    .desc = Cycles currently selected equipment
+    .suffix = { "" }
+ent-ActionMechOpenUI = Control Panel
+    .desc = Opens the control panel for the mech
+    .suffix = { "" }
+ent-ActionMechEject = Eject
+    .desc = Ejects the pilot from the mech
+    .suffix = { "" }

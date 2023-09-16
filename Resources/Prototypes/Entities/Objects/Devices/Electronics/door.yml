@@ -324,12 +324,20 @@
   suffix: Syndicate
   components:
   - type: AccessStorage
-    access: [["Syndicate"]]
+    access: [["SyndicateAgent"]]
 
 - type: entity
-  id: DoorElectronicsSyndicateCommand
+  id: DoorElectronicsNukeop
   parent: DoorElectronics
-  suffix: SyndicateCommand
+  suffix: NuclearOperative
+  components:
+  - type: AccessStorage
+    access: [["NuclearOperative"]]
+
+- type: entity
+  id: DoorElectronicsNukeopCommand
+  parent: DoorElectronics
+  suffix: NukeopCommand
   components:
   - type: AccessStorage
     access: [["NuclearOperative"]]

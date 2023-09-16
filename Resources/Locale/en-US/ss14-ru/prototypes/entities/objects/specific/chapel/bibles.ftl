@@ -4,3 +4,6 @@ ent-Bible = bible
 ent-BibleNecronomicon = necronomicon
     .desc = There's a note: Klatuu, Verata, Nikto -- Don't forget it again!
     .suffix = { "" }
+ent-ActionBibleSummon = Summon familiar
+    .desc = Summon a familiar that will aid you and gain humanlike intelligence once inhabited by a soul.
+    .suffix = { "" }

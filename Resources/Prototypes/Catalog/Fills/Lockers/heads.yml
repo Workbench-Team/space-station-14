@@ -9,7 +9,6 @@
       - id: ClothingHeadsetCargo
       - id: CargoRequestComputerCircuitboard
       - id: CargoShuttleComputerCircuitboard
-      - id: ClothingOuterHardsuitKm
       - id: HandheldCargoMonitor
       - id: CargoShuttleConsoleCircuitboard
       - id: SalvageShuttleConsoleCircuitboard

@@ -33,6 +33,7 @@ job-name-botanist = Botanist
 job-name-bartender = Bartender
 job-name-passenger = Assistant
 job-name-salvagespec = Salvage specialist
+job-name-miner = Miner
 job-name-qm = Quartermaster
 job-name-cargotech = Cargo Technician
 job-name-chef = Chef

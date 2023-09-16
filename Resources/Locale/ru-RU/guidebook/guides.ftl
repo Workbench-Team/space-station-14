@@ -44,11 +44,13 @@ guide-entry-ss14 = Space Station 14
 guide-entry-robotics = Робототехника
 guide-entry-security = Служба безопасности
 guide-entry-dna = ДНК
+guide-entry-defusal = Обезвреживание Больших Бомб
 guide-entry-antagonists = Антагонисты
 guide-entry-nuclear-operatives = Ядерные Оперативники
 guide-entry-traitors = Предатели
 guide-entry-zombies = Зомби
 guide-entry-minor-antagonists = Малые Антагонисты
+guide-entry-space-ninja = Космический Ниндзя
 guide-entry-writing = Написание
 
 guide-entry-starshine = Starshine

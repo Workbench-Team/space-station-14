@@ -24,6 +24,7 @@ namespace Content.Shared.Access.Systems
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly InventorySystem _inventorySystem = default!;
         [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
+        [Dependency] private readonly SharedStationRecordsSystem _records = default!;
 
         public override void Initialize()
         {
@@ -96,14 +97,22 @@ namespace Content.Shared.Access.Systems
         private void OnGetStateStorage(EntityUid uid, AccessStorageComponent component, ref ComponentGetState args)
         {
             args.State = new AccessStorageComponentState(component.DenyTags, component.AccessLists,
-                component.AccessKeys);
+                _records.Convert(component.AccessKeys));
         }
 
         private void OnHandleStateStorage(EntityUid uid, AccessStorageComponent component, ref ComponentHandleState args)
         {
             if (args.Current is not AccessStorageComponentState state)
                 return;
-            component.AccessKeys = new (state.AccessKeys);
+            component.AccessKeys.Clear();
+            foreach (var key in state.AccessKeys)
+            {
+                var id = EnsureEntity<AccessReaderBoardComponent>(key.Item1, uid);
+                if (!id.IsValid())
+                    continue;
+
+                component.AccessKeys.Add(new StationRecordKey(key.Item2, id));
+            }
             component.AccessLists = new (state.AccessLists);
             component.DenyTags = new (state.DenyTags);
         }

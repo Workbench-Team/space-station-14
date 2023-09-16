@@ -34,3 +34,6 @@ ent-ClothingEyesGlassesThermal = optical thermal scanner
 ent-ClothingEyesGlassesChemical = chemical analysis goggles
     .desc = Goggles that can scan the chemical composition of a solution.
     .suffix = { "" }
+ent-ClothingEyesVisorNinja = ninja visor
+    .desc = An advanced visor protecting a ninja's eyes from flashing lights.
+    .suffix = { "" }
