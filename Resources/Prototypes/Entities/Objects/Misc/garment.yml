@@ -7,7 +7,7 @@
   - type: Item
     size: 105
   - type: Storage
-    capacity: 105
+    capacity: 120
     whitelist:
       tags:
         - Clothing
