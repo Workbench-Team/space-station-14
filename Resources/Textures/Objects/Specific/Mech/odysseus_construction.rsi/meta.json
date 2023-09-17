@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/tgstation/tgstation at at https://github.com/tgstation/tgstation",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "Odysseus_l_leg"
+    },
+    {
+      "name": "Odysseus_l_leg\u002Bo"
+    },
+    {
+      "name": "Odysseus_r_arm"
+    },
+    {
+      "name": "Odysseus_r_arm\u002Bo"
+    },
+    {
+      "name": "Odysseus_r_leg"
+    },
+    {
+      "name": "Odysseus_r_leg\u002Bo"
+    },
+    {
+      "name": "Odysseus_harness"
+    },
+    {
+      "name": "Odysseus_harness\u002Bo"
+    },
+    {
+      "name": "Odysseus_l_arm"
+    },
+    {
+      "name": "Odysseus_l_arm\u002Bo"
+    },
+    {
+      "name": "Odysseus9"
+    },
+    {
+      "name": "Odysseus10"
+    },
+    {
+      "name": "Odysseus8"
+    },
+    {
+      "name": "Odysseus11"
+    },
+    {
+      "name": "Odysseus0"
+    },
+    {
+      "name": "Odysseus1"
+    },
+    {
+      "name": "Odysseus2"
+    },
+    {
+      "name": "Odysseus3"
+    },
+    {
+      "name": "Odysseus4"
+    },
+    {
+      "name": "Odysseus5"
+    },
+    {
+      "name": "Odysseus6"
+    },
+    {
+      "name": "Odysseus7"
+    }
+  ]
+}

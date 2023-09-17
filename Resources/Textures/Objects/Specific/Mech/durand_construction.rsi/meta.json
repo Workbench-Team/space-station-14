@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/tgstation/tgstation at at https://github.com/tgstation/tgstation",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "Durand_harness\u002Bo"
+    },
+    {
+      "name": "Durand_l_arm"
+    },
+    {
+      "name": "Durand_l_arm\u002Bo"
+    },
+    {
+      "name": "Durand_l_leg"
+    },
+    {
+      "name": "Durand_l_leg\u002Bo"
+    },
+    {
+      "name": "Durand_r_arm"
+    },
+    {
+      "name": "Durand_r_arm\u002Bo"
+    },
+    {
+      "name": "Durand_r_leg"
+    },
+    {
+      "name": "Durand_r_leg\u002Bo"
+    },
+    {
+      "name": "Durand_armor"
+    },
+    {
+      "name": "Durand_harness"
+    },
+    {
+      "name": "Durand10"
+    },
+    {
+      "name": "Durand11"
+    },
+    {
+      "name": "Durand12"
+    },
+    {
+      "name": "Durand0"
+    },
+    {
+      "name": "Durand1"
+    },
+    {
+      "name": "Durand2"
+    },
+    {
+      "name": "Durand3"
+    },
+    {
+      "name": "Durand4"
+    },
+    {
+      "name": "Durand5"
+    },
+    {
+      "name": "Durand6"
+    },
+    {
+      "name": "Durand7"
+    },
+    {
+      "name": "Durand8"
+    },
+    {
+      "name": "Durand9"
+    }
+  ]
+}

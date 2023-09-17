@@ -210,3 +210,162 @@
   materials:
     Steel: 4000
     Glass: 1250
+
+#Odysseus
+- type: latheRecipe
+  id: OdysseusHarness
+  result: OdysseusHarness
+  completetime: 10
+  materials:
+    Steel: 5500
+    Glass: 600
+
+- type: latheRecipe
+  id: OdysseusLArm
+  result: OdysseusLArm
+  completetime: 10
+  materials:
+    Steel: 3500
+    Glass: 2000
+
+- type: latheRecipe
+  id: OdysseusLLeg
+  result: OdysseusLLeg
+  completetime: 10
+  materials:
+    Steel: 4000
+    Glass: 1500
+
+- type: latheRecipe
+  id: OdysseusRLeg
+  result: OdysseusRLeg
+  completetime: 10
+  materials:
+    Steel: 4000
+    Glass: 1500
+
+- type: latheRecipe
+  id: OdysseusRArm
+  result: OdysseusRArm
+  completetime: 10
+  materials:
+    Steel: 3500
+    Glass: 2500
+
+#Gygax
+
+- type: latheRecipe
+  id: GygaxHarness
+  result: GygaxHarness
+  completetime: 10
+  materials:
+    Steel: 7000
+    Glass: 1500
+    Gold: 500
+    Silver: 1000
+
+- type: latheRecipe
+  id: GygaxLArm
+  result: GygaxLArm
+  completetime: 10
+  materials:
+   Steel: 5500
+   Glass: 1500
+   Gold: 500
+   Silver: 1000
+
+- type: latheRecipe
+  id: GygaxLLeg
+  result: GygaxLLeg
+  completetime: 10
+  materials:
+   Steel: 7000
+   Silver: 2000
+   Gold: 500
+
+- type: latheRecipe
+  id: GygaxRLeg
+  result: GygaxRLeg
+  completetime: 10
+  materials:
+   Steel: 7000
+   Silver: 2000
+   Gold: 500
+
+- type: latheRecipe
+  id: GygaxRArm
+  result: GygaxRArm
+  completetime: 10
+  materials:
+   Steel: 5500
+   Glass: 1500
+   Gold: 500
+   Silver: 1000
+
+- type: latheRecipe
+  id: GygaxArmor
+  result: GygaxArmor
+  completetime: 10
+  materials:
+   Steel: 8000
+   Glass: 500
+   Silver: 2000
+   Gold: 1000
+
+#Durand
+
+- type: latheRecipe
+  id: DurandHarness
+  result: DurandHarness
+  completetime: 10
+  materials:
+   Steel: 6000
+   Glass: 1000
+   Silver: 500
+   Uranium: 1000
+
+- type: latheRecipe
+  id: DurandLArm
+  result: DurandLArm
+  completetime: 10
+  materials:
+   Steel: 5000
+   Glass: 2000
+   Silver: 500
+   Uranium: 500
+
+- type: latheRecipe
+  id: DurandLLeg
+  result: DurandLLeg
+  completetime: 10
+  materials:
+   Steel: 6000
+   Silver: 1000
+
+- type: latheRecipe
+  id: DurandRLeg
+  result: DurandRLeg
+  completetime: 10
+  materials:
+   Steel: 6000
+   Silver: 1000
+
+- type: latheRecipe
+  id: DurandRArm
+  result: DurandRArm
+  completetime: 10
+  materials:
+   Steel: 5000
+   Glass: 2000
+   Silver: 500
+   Uranium: 500
+
+- type: latheRecipe
+  id: DurandArmor
+  result: DurandArmor
+  completetime: 10
+  materials:
+   Steel: 8000
+   Glass: 1000
+   Silver: 1000
+   Uranium: 1000
