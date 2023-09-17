@@ -657,7 +657,7 @@
         whitelist:
           tags:
           - OdysseusRLeg
-    sprite: Objects/Specific/Mech/Odysseus_construction.rsi
+    sprite: Objects/Specific/Mech/odysseus_construction.rsi
   - type: ContainerContainer
     containers:
       mech-assembly-container: !type:Container
