@@ -513,8 +513,6 @@
       - RawMaterial
       - Ingot
       - Uranium
-      - Silver
-      - Gold
   - type: GuideHelp
     guides:
     - Robotics
