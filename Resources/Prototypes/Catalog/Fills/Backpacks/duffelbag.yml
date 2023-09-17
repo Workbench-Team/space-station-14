@@ -254,6 +254,7 @@
         - id: ClothingEyesChameleon
         - id: ClothingHeadsetChameleon
         - id: ClothingShoesChameleon
+        - id: ClothingUnderSocksChameleonSocks
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
