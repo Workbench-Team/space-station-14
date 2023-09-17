@@ -669,7 +669,7 @@
       OdysseusLLeg: false
       OdysseusRLeg: false
   - type: Sprite
-    state: odysseus_harness+o
+    state: Odysseus_harness+o
     noRot: true
 
 - type: entity
