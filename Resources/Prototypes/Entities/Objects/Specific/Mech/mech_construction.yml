@@ -669,7 +669,7 @@
       OdysseusLLeg: false
       OdysseusRLeg: false
   - type: Sprite
-    state: Odysseus_harness+o
+    state: odysseus_harness+o
     noRot: true
 
 - type: entity
@@ -679,7 +679,7 @@
   description: The left arm of the Odysseus APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Odysseus_l_arm
+    state: odysseus_l_arm
   - type: Tag
     tags:
     - OdysseusLArm
@@ -691,7 +691,7 @@
   description: The left leg of the Odysseus APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Odysseus_l_leg
+    state: odysseus_l_leg
   - type: Tag
     tags:
     - OdysseusLLeg
@@ -703,7 +703,7 @@
   description: The right leg of the Odysseus APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Odysseus_r_leg
+    state: odysseus_r_leg
   - type: Tag
     tags:
     - OdysseusRLeg
@@ -715,7 +715,7 @@
   description: The right arm of the Ripley APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Odysseus_r_arm
+    state: odysseus_r_arm
   - type: Tag
     tags:
     - OdysseusRArm
@@ -734,7 +734,7 @@
     statePrefix: Odysseus
   - type: Sprite
     noRot: true
-    state: Odysseus0
+    state: odysseus0
   - type: Construction
     graph: Odysseus
     node: start
