@@ -155,6 +155,23 @@
 # Tier 3
 
 - type: technology
+  id: gygaxabnt
+  name: research-technology-gygax
+  icon:
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: gygax
+  discipline: Arsenal
+  tier: 3
+  cost: 20000
+  recipeUnlocks:
+    - GygaxHarness
+    - GygaxLArm
+    - GygaxLLeg
+    - GygaxRLeg
+    - GygaxRArm
+    - GygaxArmor
+
+- type: technology
   id: HandheldElectricalPropulsion
   name: research-technology-handheld-electrical-propulsion
   icon:
@@ -177,20 +194,3 @@
   cost: 15000
   recipeUnlocks:
   - WeaponAdvancedLaser
-
-- type: technology
-  id: gygaxabnt
-  name: research-technology-gygax
-  icon:
-    sprite: Objects/Specific/Mech/mecha.rsi
-    state: gygax
-  discipline: Arsenal
-  tier: 3
-  cost: 20000
-  recipeUnlocks:
-    - GygaxHarness
-    - GygaxLArm
-    - GygaxLLeg
-    - GygaxRLeg
-    - GygaxRArm
-    - GygaxArmor
