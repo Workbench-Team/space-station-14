@@ -622,7 +622,7 @@
   - type: Sprite
     drawdepth: Items
     noRot: false
-    sprite: objects/Specific/Mech/odysseus_construction.rsi
+    sprite: Objects/Specific/Mech/odysseus_construction.rsi
 
 - type: entity
   id: BaseOdysseusPartItem
@@ -657,7 +657,7 @@
         whitelist:
           tags:
           - OdysseusRLeg
-    sprite: objects/Specific/Mech/odysseus_construction.rsi
+    sprite: Objects/Specific/Mech/odysseus_construction.rsi
   - type: ContainerContainer
     containers:
       mech-assembly-container: !type:Container
