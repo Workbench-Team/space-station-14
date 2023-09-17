@@ -41,7 +41,15 @@
       "name": "Durand_harness"
     },
     {
-      "name": "Durand10"
+      "name": "Durand10",
+      "delays": [
+        [
+          0.5,
+          1,
+          0.5,
+          1
+        ]
+      ]
     },
     {
       "name": "Durand11"

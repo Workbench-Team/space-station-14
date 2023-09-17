@@ -41,7 +41,15 @@
       "name": "odysseus9"
     },
     {
-      "name": "odysseus10"
+      "name": "odysseus10",
+      "delays": [
+        [
+          0.5,
+          1,
+          0.5,
+          1
+        ]
+      ]
     },
     {
       "name": "odysseus8"
