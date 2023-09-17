@@ -622,7 +622,7 @@
   - type: Sprite
     drawdepth: Items
     noRot: false
-    sprite: Objects/Specific/Mech/Odysseus_construction.rsi
+    sprite: objects/Specific/Mech/Odysseus_construction.rsi
 
 - type: entity
   id: BaseOdysseusPartItem
