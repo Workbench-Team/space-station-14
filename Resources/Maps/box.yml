@@ -12745,9 +12745,6 @@ entities:
     - pos: -34.5,-30.5
       parent: 8364
       type: Transform
-    - following:
-      - invalid
-      type: Followed
 - proto: AirlockResearchDirectorLocked
   entities:
   - uid: 20200
@@ -65835,9 +65832,6 @@ entities:
     - pos: -31.5,-26.5
       parent: 8364
       type: Transform
-    - following:
-      - invalid
-      type: Followed
   - uid: 18638
     components:
     - pos: 10.5,-27.5
@@ -85104,9 +85098,6 @@ entities:
     - pos: -36.5,-23.5
       parent: 8364
       type: Transform
-    - following:
-      - invalid
-      type: Followed
   - uid: 14652
     components:
     - pos: -36.5,-25.5
@@ -134993,9 +134984,6 @@ entities:
     - pos: -32.5,-39.5
       parent: 8364
       type: Transform
-    - following:
-      - invalid
-      type: Followed
   - uid: 27748
     components:
     - pos: -33.5,-39.5
@@ -135911,9 +135899,6 @@ entities:
     - pos: -27.5,-15.5
       parent: 8364
       type: Transform
-    - following:
-      - invalid
-      type: Followed
 - proto: MaterialWoodPlank1
   entities:
   - uid: 13234
@@ -144988,9 +144973,6 @@ entities:
     - pos: -19.5,-34.5
       parent: 8364
       type: Transform
-    - following:
-      - invalid
-      type: Followed
   - uid: 22288
     components:
     - pos: -19.5,-41.5
@@ -147052,9 +147034,6 @@ entities:
     - pos: -32.5,-35.5
       parent: 8364
       type: Transform
-    - following:
-      - invalid
-      type: Followed
   - uid: 1555
     components:
     - pos: -32.5,-32.5
@@ -149785,9 +149764,6 @@ entities:
     - pos: -9.5,-3.5
       parent: 8364
       type: Transform
-    - following:
-      - invalid
-      type: Followed
   - uid: 8354
     components:
     - pos: -8.5,-3.5
@@ -150654,9 +150630,6 @@ entities:
     - pos: -34.5,-27.5
       parent: 8364
       type: Transform
-    - following:
-      - invalid
-      type: Followed
   - uid: 21994
     components:
     - pos: 13.5,-26.5
@@ -151635,9 +151608,6 @@ entities:
     - links:
       - 17685
       type: DeviceLinkSink
-    - following:
-      - invalid
-      type: Followed
   - uid: 1455
     components:
     - rot: -1.5707963267948966 rad
@@ -164687,9 +164657,6 @@ entities:
     - pos: -29.5,-28.5
       parent: 8364
       type: Transform
-    - following:
-      - invalid
-      type: Followed
   - uid: 1480
     components:
     - pos: -60.5,17.5
@@ -166709,9 +166676,6 @@ entities:
     - pos: -34.5,-24.5
       parent: 8364
       type: Transform
-    - following:
-      - invalid
-      type: Followed
   - uid: 2883
     components:
     - pos: 86.5,-43.5
@@ -176838,9 +176802,6 @@ entities:
     - pos: -21.5,-32.5
       parent: 8364
       type: Transform
-    - following:
-      - invalid
-      type: Followed
   - uid: 1540
     components:
     - pos: -20.5,-32.5

@@ -32778,9 +32778,6 @@ entities:
       pos: 11.5,-10.5
       parent: 31
       type: Transform
-    - following:
-      - invalid
-      type: Followed
   - uid: 10280
     components:
     - rot: -1.5707963267948966 rad
@@ -37741,9 +37738,6 @@ entities:
       type: Transform
     - color: '#FF0000FF'
       type: AtmosPipeColor
-    - following:
-      - invalid
-      type: Followed
   - uid: 4682
     components:
     - pos: -9.5,-15.5
@@ -56934,9 +56928,6 @@ entities:
     - pos: 22.5,6.5
       parent: 31
       type: Transform
-    - following:
-      - invalid
-      type: Followed
   - uid: 1510
     components:
     - pos: 8.5,6.5
@@ -60580,9 +60571,6 @@ entities:
     - pos: 17.5,-0.5
       parent: 31
       type: Transform
-    - following:
-      - invalid
-      type: Followed
 - proto: SpawnPointAssistant
   entities:
   - uid: 496
@@ -62903,9 +62891,6 @@ entities:
     - pos: 14.5,-5.5
       parent: 31
       type: Transform
-    - following:
-      - invalid
-      type: Followed
   - uid: 2193
     components:
     - pos: 19.5,-20.5
