@@ -92,7 +92,7 @@
     emptySpriteName: medipen_empty
   - type: Tag
     tags:
-    - AutoInjector
+    - Trash
   - type: PhysicalComposition
     materialComposition:
       Plastic: 50
@@ -117,6 +117,8 @@
     maxFillLevels: 1
     changeColor: false
     emptySpriteName: firstaid_empty
+  - type: Tag
+    tags: [AutoInjector]
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -134,6 +136,8 @@
   id: AntiPoisonMedipen
   description: A rapid dose of anti-poison. Contains ultravasculine and epinephrine.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -159,6 +163,8 @@
   id: BruteAutoInjector
   description: A rapid dose of bicaridine and tranexamic acid, intended for combat applications
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -187,6 +193,8 @@
   id: BurnAutoInjector
   description: A rapid dose of dermaline and leporazine, intended for combat applications
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -215,6 +223,8 @@
   id: SpaceMedipen
   description: Contains a mix of chemicals that protect you from the deadly effects of space.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -244,6 +254,8 @@
   id: Stimpack
   description: Contains enough stimulants for you to have the chemical's effect for 30 seconds. Use it when you're sure you're ready to throw down.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -275,6 +287,8 @@
   id: StimpackMini
   description: A microinjector of stimulants that give you about fifteen seconds of the chemical's effects.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -303,6 +317,8 @@
   id: CombatMedipen
   description: A single-use medipen containing chemicals that regenerate most types of damage.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -336,6 +352,8 @@
   id: NutrimentMedipen
   description: A single-use medipen containing nutriment.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -367,6 +385,8 @@
   id: SalineMedipen
   description: A single-use medipen containing saline.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -433,6 +453,8 @@
   id: Luxurymedpen
   description: Contains enough stimulants for you to have the chemical's effect for 30 seconds. Use it when you're sure you're ready to throw down.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -468,6 +490,8 @@
   id: AmbuzolMedipen
   description: A single-use medipen containing ambuzol.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -501,6 +525,8 @@
   id: AmbuzolPlusMedipen
   description: A single-use medipen containing ambuzol.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -532,6 +558,8 @@
   id: SelfMadeMedipen
   description: A single-use medipen containing desoxyephedrine.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
