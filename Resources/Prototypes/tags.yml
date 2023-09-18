@@ -950,6 +950,15 @@
   id: SuitEVA
 
 - type: Tag
+  id: AutoInjector
+
+- type: Tag
+  id: AutoInjectorCase
+
+- type: Tag
+  id: BottleChem
+
+- type: Tag
   id: MinerArmor
 
 - type: Tag

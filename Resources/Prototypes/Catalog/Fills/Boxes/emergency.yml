@@ -132,8 +132,8 @@
       - id: ExtendedEmergencyOxygenTankFilled
       - id: SpaceMedipen
       - id: EmergencyMedipen
-      - id: Flare
-      - id: FoodTinMRE
+      - id: SalineMedipen
+      - id: NutrimentMedipen
   - type: Sprite
     layers:
       - state: internals

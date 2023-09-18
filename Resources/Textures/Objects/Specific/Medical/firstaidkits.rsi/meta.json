@@ -62,6 +62,17 @@
       "name": "radkit-inhand-left",
       "directions": 4
     },
+    {
+			"name": "injectorscase"
+		},
+		{
+      "name": "injectorscase-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "injectorscase-inhand-right",
+      "directions": 4
+    },
 		{
 			"name": "toxinkit"
 		},

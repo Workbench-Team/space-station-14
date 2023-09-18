@@ -12,6 +12,9 @@
   - type: SolutionTransfer
     canChangeTransferAmount: true
   - type: Drink
+  - type: Tag
+    tags:
+    - BottleChem
   - type: Sprite
     state: icon
   - type: MeleeWeapon

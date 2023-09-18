@@ -13,16 +13,19 @@
     slots:
     - belt
   - type: Item
-    size: 46
+    size: 100
   - type: Storage
-    capacity: 45
+    capacity: 65
     quickInsert: true
     areaInsert: true
     whitelist:
       components:
         - Pill
       tags:
+        - AutoInjectorCase
         - PillCanister
-        - Bottle
+        - BottleChem
         - Syringe
+        - GlassBeaker
+        - AutoInjector
   - type: Dumpable

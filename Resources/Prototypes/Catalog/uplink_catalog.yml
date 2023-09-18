@@ -1237,7 +1237,7 @@
   id: UplinkStimkit
   name: uplink-stimkit-name
   description: uplink-stimkit-desc
-  productEntity: StimkitFilled
+  productEntity: InjectorCaseStimpack
   cost:
     Telecrystal: 12
   categories:

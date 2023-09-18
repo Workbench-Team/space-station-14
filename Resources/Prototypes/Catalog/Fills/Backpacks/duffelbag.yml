@@ -26,9 +26,8 @@
         amount: 2
       - id: GrenadeFlashBang
         amount: 2
-      - id: PillAmbuzolPlus
-      - id: PillAmbuzol
-        amount: 4
+      - id: InjectorCaseCBURN
+        amount: 1
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateMedicalBundle
@@ -291,9 +290,8 @@
       - id: SyringeRomerol
       - id: WeaponRevolverPython
       - id: MagazineBoxMagnumIncendiary
-      - id: PillAmbuzolPlus
-      - id: PillAmbuzol
-        amount: 3
+      - id: InjectorCaseCBURN
+        amount: 1
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -322,8 +320,6 @@
       - id: CombatKnife
       - id: WeaponPistolViper
       - id: PinpointerNuclear
-      - id: HandheldHealthAnalyzer
-      - id: CombatMedipen
       - id: MicroBombImplanter
 #      - id: SyringeGun
 

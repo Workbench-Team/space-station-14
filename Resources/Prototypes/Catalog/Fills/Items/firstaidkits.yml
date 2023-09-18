@@ -111,12 +111,8 @@
       - id: HandheldHealthAnalyzer
       - id: MedicatedSuture
       - id: RegenerativeMesh
-      - id: BruteAutoInjector
-      - id: BurnAutoInjector
-      - id: SyringeEphedrine
-      - id: SyringeTranexamicAcid
-      - id: AntiPoisonMedipen
       - id: Bloodpack
+      - id: InjectorCaseNOMedic
 
 - type: entity
   id: StimkitFilled
