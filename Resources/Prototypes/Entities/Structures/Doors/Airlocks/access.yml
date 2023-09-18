@@ -220,6 +220,17 @@
       board: [ DoorElectronicsSalvage ]
 
 - type: entity
+  parent: AirlockMiner
+  id: AirlockMinerLocked
+  suffix: Miner, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Salvage"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMiner ]
+
+- type: entity
   parent: AirlockMedical
   id: AirlockMedicalLocked
   suffix: Medical, Locked
@@ -605,6 +616,17 @@
       board: [ DoorElectronicsSalvage ]
 
 - type: entity
+  parent: AirlockMinerGlass
+  id: AirlockMinerGlassLocked
+  suffix: Miner, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Salvage"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMiner ]
+
+- type: entity
   parent: AirlockMedicalGlass
   id: AirlockMedicalGlassLocked
   suffix: Medical, Locked
@@ -857,6 +879,17 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSalvage ]
+
+- type: entity
+  parent: AirlockMaint
+  id: AirlockMaintMinerLocked
+  suffix: Miner, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Salvage"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMiner ]
 
 - type: entity
   parent: AirlockMaint

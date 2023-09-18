@@ -8569,6 +8569,20 @@ entities:
     - pos: 76.5,7.5
       parent: 2
       type: Transform
+- proto: AirlockMinerGlassLocked
+  entities:
+  - uid: 13167
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: 9.5,29.5
+      parent: 2
+      type: Transform
+  - uid: 13168
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: 8.5,29.5
+      parent: 2
+      type: Transform
 - proto: AirlockQuartermasterGlassLocked
   entities:
   - uid: 2084
@@ -8595,18 +8609,6 @@ entities:
   - uid: 437
     components:
     - pos: 8.5,20.5
-      parent: 2
-      type: Transform
-  - uid: 13167
-    components:
-    - rot: -1.5707963267948966 rad
-      pos: 8.5,29.5
-      parent: 2
-      type: Transform
-  - uid: 13168
-    components:
-    - rot: -1.5707963267948966 rad
-      pos: 9.5,29.5
       parent: 2
       type: Transform
 - proto: AirlockScienceGlassLocked

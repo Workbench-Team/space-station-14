@@ -57,6 +57,7 @@ public sealed partial class AccessStorageComponent : Component
         "Maintenance",
         "Medical",
         "Quartermaster",
+        "Miner",
         "Research",
         "ResearchDirector",
         "Salvage",

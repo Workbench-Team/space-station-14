@@ -6447,6 +6447,20 @@ entities:
     - pos: -19.5,-13.5
       parent: 4812
       type: Transform
+- proto: AirlockMinerGlassLocked
+  entities:
+  - uid: 3037
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: 20.5,29.5
+      parent: 4812
+      type: Transform
+  - uid: 3045
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: 19.5,29.5
+      parent: 4812
+      type: Transform
 - proto: AirlockQuartermasterGlassLocked
   entities:
   - uid: 3015
@@ -6471,18 +6485,6 @@ entities:
   - uid: 5598
     components:
     - pos: 13.5,-19.5
-      parent: 4812
-      type: Transform
-- proto: AirlockSalvageGlassLocked
-  entities:
-  - uid: 3037
-    components:
-    - pos: 19.5,29.5
-      parent: 4812
-      type: Transform
-  - uid: 3045
-    components:
-    - pos: 20.5,29.5
       parent: 4812
       type: Transform
 - proto: AirlockSalvageLocked

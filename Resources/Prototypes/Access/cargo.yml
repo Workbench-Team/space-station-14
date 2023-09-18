@@ -10,9 +10,14 @@
   id: Salvage
   name: id-card-access-level-salvage
 
+- type: accessLevel
+  id: Miner
+  name: id-card-access-level-miner
+
 - type: accessGroup
   id: Cargo
   tags:
   - Quartermaster
   - Salvage
   - Cargo
+  - Miner

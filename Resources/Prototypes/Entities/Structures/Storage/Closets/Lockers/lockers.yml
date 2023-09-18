@@ -58,7 +58,7 @@
     stateDoorOpen: shaftminer_open
     stateDoorClosed: shaftminer_door
   - type: AccessReader
-    access: [["Salvage"]]
+    access: [["Miner"]]
 
 # Command
 - type: entity

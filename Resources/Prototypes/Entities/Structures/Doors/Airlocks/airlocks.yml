@@ -32,6 +32,14 @@
 
 - type: entity
   parent: Airlock
+  id: AirlockMiner
+  suffix: Miner
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/miner.rsi
+
+- type: entity
+  parent: Airlock
   id: AirlockMedical
   suffix: Medical
   components:
@@ -193,6 +201,16 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Glass/cargo.rsi
+  - type: PaintableAirlock
+    group: Glass
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockMinerGlass
+  suffix: Miner
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/miner.rsi
   - type: PaintableAirlock
     group: Glass
 

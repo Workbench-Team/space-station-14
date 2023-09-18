@@ -48,6 +48,7 @@
   - Cargo
   - Atmospherics
   - Medical
+  - Miner
 
 - type: startingGear
   id: HoPGear

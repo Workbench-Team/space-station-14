@@ -151,6 +151,14 @@
     access: [["Salvage"]]
 
 - type: entity
+  id: DoorElectronicsMiner
+  parent: DoorElectronics
+  suffix: Miner
+  components:
+  - type: AccessStorage
+    access: [["Miner"]]
+
+- type: entity
   id: DoorElectronicsQuartermaster
   parent: DoorElectronics
   suffix: Quartermaster
