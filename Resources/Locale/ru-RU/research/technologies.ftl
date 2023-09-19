@@ -65,3 +65,6 @@ research-technology-honk-mech = Х.О.Н.К. Меха
 research-technology-advanced-spray = Продвинутый спрей
 research-technology-bluespace-cargo-transport = Блюспейс грузовой транспорт
 research-technology-clarke-aplu = КШГ Кларк
+research-technology-Odyssey = ГМС Одиссей
+research-technology-gygax = АБНТ Гайгэкс
+research-technology-durand = БМП Дюранд

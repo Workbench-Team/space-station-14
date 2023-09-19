@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/tgstation/tgstation at at https://github.com/tgstation/tgstation/commit/d4391e19eaad2c9970ee5ec7547cda0980a223b1",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "Odysseus_l_leg"
+    },
+    {
+      "name": "Odysseus_l_leg\u002Bo"
+    },
+    {
+      "name": "Odysseus_r_arm"
+    },
+    {
+      "name": "Odysseus_r_arm\u002Bo"
+    },
+    {
+      "name": "Odysseus_r_leg"
+    },
+    {
+      "name": "Odysseus_r_leg\u002Bo"
+    },
+    {
+      "name": "Odysseus_harness"
+    },
+    {
+      "name": "Odysseus_harness\u002Bo"
+    },
+    {
+      "name": "Odysseus_l_arm"
+    },
+    {
+      "name": "Odysseus_l_arm\u002Bo"
+    },
+    {
+      "name": "odysseus9"
+    },
+    {
+      "name": "odysseus10",
+      "delays": [
+        [
+          0.5,
+          1,
+          0.5,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "odysseus8"
+    },
+    {
+      "name": "odysseus11"
+    },
+    {
+      "name": "odysseus0"
+    },
+    {
+      "name": "odysseus1"
+    },
+    {
+      "name": "odysseus2"
+    },
+    {
+      "name": "odysseus3"
+    },
+    {
+      "name": "odysseus4"
+    },
+    {
+      "name": "odysseus5"
+    },
+    {
+      "name": "odysseus6"
+    },
+    {
+      "name": "odysseus7"
+    }
+  ]
+}

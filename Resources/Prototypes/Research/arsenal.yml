@@ -136,7 +136,41 @@
   - TelescopicShield
   - HoloprojectorSecurity
 
+- type: technology
+  id: durandbmp
+  name: research-technology-durand
+  icon:
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: durand
+  discipline: Arsenal
+  tier: 2
+  cost: 15000
+  recipeUnlocks:
+    - DurandLArm
+    - DurandLLeg
+    - DurandRLeg
+    - DurandRArm
+    - DurandArmor
+    - DurandHarness
+
 # Tier 3
+
+- type: technology
+  id: gygaxabnt
+  name: research-technology-gygax
+  icon:
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: gygax
+  discipline: Arsenal
+  tier: 3
+  cost: 20000
+  recipeUnlocks:
+    - GygaxHarness
+    - GygaxLArm
+    - GygaxLLeg
+    - GygaxRLeg
+    - GygaxRArm
+    - GygaxArmor
 
 - type: technology
   id: HandheldElectricalPropulsion

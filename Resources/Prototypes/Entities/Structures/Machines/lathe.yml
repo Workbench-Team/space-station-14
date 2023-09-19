@@ -303,11 +303,6 @@
     idleState: icon
     runningState: building
     dynamicRecipes:
-      - ClarkHarness
-      - ClarkLArm
-      - ClarkLLeg
-      - ClarkRLeg
-      - ClarkRArm
       - ThermomachineFreezerMachineCircuitBoard
       - PortableScrubberMachineCircuitBoard
       - CloningPodMachineCircuitboard
@@ -496,12 +491,30 @@
     - ClarkLLeg
     - ClarkRLeg
     - ClarkRArm
+    - OdysseusHarness
+    - OdysseusLArm
+    - OdysseusLLeg
+    - OdysseusRLeg
+    - OdysseusRArm
+    - DurandHarness
+    - DurandLArm
+    - DurandLLeg
+    - DurandRLeg
+    - DurandRArm
+    - DurandArmor
+    - GygaxHarness
+    - GygaxLArm
+    - GygaxLLeg
+    - GygaxRLeg
+    - GygaxRArm
+    - GygaxArmor
   - type: MaterialStorage
     whitelist:
       tags:
       - Sheet
       - RawMaterial
       - Ingot
+      - Uranium
   - type: GuideHelp
     guides:
     - Robotics

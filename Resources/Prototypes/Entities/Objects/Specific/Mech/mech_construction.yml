@@ -611,3 +611,411 @@
     graph: Clark
     node: start
     defaultTarget: Clark
+
+#Odysseus
+
+- type: entity
+  id: BaseOdysseusPart
+  parent: BaseMechPart
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: Items
+    noRot: false
+    sprite: Objects/Specific/Mech/odysseus_construction.rsi
+
+- type: entity
+  id: BaseOdysseusPartItem
+  parent: BaseOdysseusPart
+  abstract: true
+  components:
+  - type: Item
+    size: 50
+
+- type: entity
+  parent: BaseOdysseusPart
+  id: OdysseusHarness
+  name: Odysseus harness
+  description: The core of the Odysseus APLU.
+  components:
+  - type: Appearance
+  - type: ItemMapper
+    mapLayers:
+      Odysseus_l_arm+o:
+        whitelist:
+          tags:
+          - OdysseusLArm
+      Odysseus_r_arm+o:
+        whitelist:
+          tags:
+          - OdysseusRArm
+      Odysseus_l_leg+o:
+        whitelist:
+          tags:
+          - OdysseusLLeg
+      Odysseus_r_leg+o:
+        whitelist:
+          tags:
+          - OdysseusRLeg
+    sprite: Objects/Specific/Mech/odysseus_construction.rsi
+  - type: ContainerContainer
+    containers:
+      mech-assembly-container: !type:Container
+  - type: MechAssembly
+    finishedPrototype: OdysseusChassis
+    requiredParts:
+      OdysseusLArm: false
+      OdysseusRArm: false
+      OdysseusLLeg: false
+      OdysseusRLeg: false
+  - type: Sprite
+    state: Odysseus_harness+o
+    noRot: true
+
+- type: entity
+  parent: BaseOdysseusPartItem
+  id: OdysseusLArm
+  name: Odysseus left arm
+  description: The left arm of the Odysseus APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: Odysseus_l_arm
+  - type: Tag
+    tags:
+    - OdysseusLArm
+
+- type: entity
+  parent: BaseOdysseusPartItem
+  id: OdysseusLLeg
+  name: Odysseus left leg
+  description: The left leg of the Odysseus APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: Odysseus_l_leg
+  - type: Tag
+    tags:
+    - OdysseusLLeg
+
+- type: entity
+  parent: BaseOdysseusPartItem
+  id: OdysseusRLeg
+  name: Odysseus right leg
+  description: The right leg of the Odysseus APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: Odysseus_r_leg
+  - type: Tag
+    tags:
+    - OdysseusRLeg
+
+- type: entity
+  parent: BaseOdysseusPartItem
+  id: OdysseusRArm
+  name:  Odysseus right arm
+  description: The right arm of the Ripley APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: Odysseus_r_arm
+  - type: Tag
+    tags:
+    - OdysseusRArm
+
+- type: entity
+  id: OdysseusChassis
+  parent: BaseOdysseusPart
+  name: Odysseus chassis
+  description: An in-progress construction of the Ripley APLU mech.
+  components:
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      battery-container: !type:Container
+  - type: MechAssemblyVisuals
+    statePrefix: Odysseus
+  - type: Sprite
+    noRot: true
+    state: odysseus0
+  - type: Construction
+    graph: Odysseus
+    node: start
+    defaultTarget: Odysseus
+
+#Durand
+
+- type: entity
+  id: BaseDurandPart
+  parent: BaseMechPart
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: Items
+    noRot: false
+    sprite: Objects/Specific/Mech/durand_construction.rsi
+
+- type: entity
+  id: BaseDurandPartItem
+  parent: BaseDurandPart
+  abstract: true
+  components:
+  - type: Item
+    size: 50
+
+- type: entity
+  parent: BaseDurandPart
+  id: DurandHarness
+  name: Durand harness
+  description: The core of the Durand APLU.
+  components:
+  - type: Appearance
+  - type: ItemMapper
+    mapLayers:
+      Durand_l_arm+o:
+        whitelist:
+          tags:
+          - DurandLArm
+      Durand_r_arm+o:
+        whitelist:
+          tags:
+          - DurandRArm
+      Durand_l_leg+o:
+        whitelist:
+          tags:
+          - DurandLLeg
+      Durand_r_leg+o:
+        whitelist:
+          tags:
+          - DurandRLeg
+    sprite: Objects/Specific/Mech/durand_construction.rsi
+  - type: ContainerContainer
+    containers:
+      mech-assembly-container: !type:Container
+  - type: MechAssembly
+    finishedPrototype: DurandChassis
+    requiredParts:
+      DurandLArm: false
+      DurandRArm: false
+      DurandLLeg: false
+      DurandRLeg: false
+  - type: Sprite
+    state: Durand_harness+o
+    noRot: true
+
+- type: entity
+  parent: BaseDurandPartItem
+  id: DurandLArm
+  name: Durand left arm
+  description: The left arm of the Durand APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: Durand_l_arm
+  - type: Tag
+    tags:
+    - DurandLArm
+
+- type: entity
+  parent: BaseDurandPartItem
+  id: DurandLLeg
+  name: Durand left leg
+  description: The left leg of the Durand APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: Durand_l_leg
+  - type: Tag
+    tags:
+    - DurandLLeg
+
+- type: entity
+  parent: BaseDurandPartItem
+  id: DurandRLeg
+  name: Durand right leg
+  description: The right leg of the Durand APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: Durand_r_leg
+  - type: Tag
+    tags:
+    - DurandRLeg
+
+- type: entity
+  parent: BaseDurandPartItem
+  id: DurandRArm
+  name:  Durand right arm
+  description: The right arm of the Ripley APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: Durand_r_arm
+  - type: Tag
+    tags:
+    - DurandRArm
+
+- type: entity
+  id: DurandChassis
+  parent: BaseDurandPart
+  name: Durand chassis
+  description: An in-progress construction of the Ripley APLU mech.
+  components:
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      battery-container: !type:Container
+  - type: MechAssemblyVisuals
+    statePrefix: Durand
+  - type: Sprite
+    noRot: true
+    state: Durand0
+  - type: Construction
+    graph: Durand
+    node: start
+    defaultTarget: Durand
+
+- type: entity
+  parent: BaseDurandPartItem
+  id: DurandArmor
+  name: Durand Armor
+  description: The armor of the Durand APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: Durand_armor
+  - type: Tag
+    tags:
+    - DurandArmor
+
+#Gygax
+
+- type: entity
+  id: BaseGygaxPart
+  parent: BaseMechPart
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: Items
+    noRot: false
+    sprite: Objects/Specific/Mech/gygax_construction.rsi
+
+- type: entity
+  id: BaseGygaxPartItem
+  parent: BaseGygaxPart
+  abstract: true
+  components:
+  - type: Item
+    size: 50
+
+- type: entity
+  parent: BaseGygaxPart
+  id: GygaxHarness
+  name: Gygax harness
+  description: The core of the Gygax APLU.
+  components:
+  - type: Appearance
+  - type: ItemMapper
+    mapLayers:
+      Gygax_l_arm+o:
+        whitelist:
+          tags:
+          - GygaxLArm
+      Gygax_r_arm+o:
+        whitelist:
+          tags:
+          - GygaxRArm
+      Gygax_l_leg+o:
+        whitelist:
+          tags:
+          - GygaxLLeg
+      Gygax_r_leg+o:
+        whitelist:
+          tags:
+          - GygaxRLeg
+    sprite: Objects/Specific/Mech/gygax_construction.rsi
+  - type: ContainerContainer
+    containers:
+      mech-assembly-container: !type:Container
+  - type: MechAssembly
+    finishedPrototype: GygaxChassis
+    requiredParts:
+      GygaxLArm: false
+      GygaxRArm: false
+      GygaxLLeg: false
+      GygaxRLeg: false
+  - type: Sprite
+    state: Gygax_harness+o
+    noRot: true
+
+- type: entity
+  parent: BaseGygaxPartItem
+  id: GygaxLArm
+  name: Gygax left arm
+  description: The left arm of the Gygax APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: Gygax_l_arm
+  - type: Tag
+    tags:
+    - GygaxLArm
+
+- type: entity
+  parent: BaseGygaxPartItem
+  id: GygaxLLeg
+  name: Gygax left leg
+  description: The left leg of the Gygax APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: Gygax_l_leg
+  - type: Tag
+    tags:
+    - GygaxLLeg
+
+- type: entity
+  parent: BaseGygaxPartItem
+  id: GygaxRLeg
+  name: Gygax right leg
+  description: The right leg of the Gygax APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: Gygax_r_leg
+  - type: Tag
+    tags:
+    - GygaxRLeg
+
+- type: entity
+  parent: BaseGygaxPartItem
+  id: GygaxRArm
+  name:  Gygax right arm
+  description: The right arm of the Ripley APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: Gygax_r_arm
+  - type: Tag
+    tags:
+    - GygaxRArm
+
+- type: entity
+  id: GygaxChassis
+  parent: BaseGygaxPart
+  name: Gygax chassis
+  description: An in-progress construction of the Ripley APLU mech.
+  components:
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      battery-container: !type:Container
+  - type: MechAssemblyVisuals
+    statePrefix: Gygax
+  - type: Sprite
+    noRot: true
+    state: Gygax0
+  - type: Construction
+    graph: Gygax
+    node: start
+    defaultTarget: Gygax
+
+- type: entity
+  parent: BaseGygaxPartItem
+  id: GygaxArmor
+  name: Gygax Armor
+  description: The armor of the Gygax APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: Gygax_armor
+  - type: Tag
+    tags:
+    - GygaxArmor
