@@ -70,8 +70,8 @@ uplink-pistol-magazine-desc = Пистолетый магазин с 15 патр
 uplink-pistol-magazine-HV-name = Pistol magazine (.35 high-velocity)
 uplink-pistol-magazine-HV-desc = Pistol magazine with 15 high-velocity rounds. Suitable for Viper.
 
-uplink-pistol-magazine-bundle-name = Boundle with pistol magazines (.35)
-uplink-pistol-magazine-bundle-desc = A boundle containing extended pistol magazines. 2 standard and 2 HV. Suitable for Viper.
+uplink-pistol-magazine-bundle-name = Bundle with pistol magazines (.35)
+uplink-pistol-magazine-bundle-desc = A bundle containing extended pistol magazines. 2 standard and 2 HV. Suitable for Viper.
 
 uplink-pistol-magazine-c20r-hv-name = SMG magazine (.35 high-velocity)
 uplink-pistol-magazine-c20r-hv-desc = Rifle magazine with 30 high-velocity rounds. Compatible with C-20r.
@@ -91,8 +91,8 @@ uplink-magazine-shotgun-slug-desc = Shotgun magazine with 8 bullet shells. Compa
 uplink-magazine-shotgun-incendiary-name = Magazine drum (.50 incendiary)
 uplink-magazine-shotgun-incendiary-desc = Shotgun magazine with 8 incendiary shells. Compatible with Bulldog.
 
-uplink-magazine-shotgun-bundle-name = Boundle with shotgun magazines (.50)
-uplink-magazine-shotgun-bundle-desc = A boundle containing magazines for a shotgun. 2 standard, 2 bullet and 1 incendiary. Compatible with Bulldog.
+uplink-magazine-shotgun-bundle-name = Bundle with shotgun magazines (.50)
+uplink-magazine-shotgun-bundle-desc = A bundle containing magazines for a shotgun. 2 standard, 2 bullet and 1 incendiary. Compatible with Bulldog.
 
 uplink-magazine-caseless-rifle-name = Rifle magazine (.25 caseless)
 uplink-magazine-caseless-rifle-desc = Rifle magazine with 30 caseless cartridges. Compatible with KR51.
@@ -100,8 +100,8 @@ uplink-magazine-caseless-rifle-desc = Rifle magazine with 30 caseless cartridges
 uplink-magazine-caseless-rifle-hv-name = Rifle magazine (.25 caseless high-velocity)
 uplink-magazine-caseless-rifle-hv-desc = Rifle magazine with 30 caseless high-velocity rounds. Compatible with KR51.
 
-uplink-magazine-caseless-rifle-bundle-name = Boundle with rifle magazines (.25)
-uplink-magazine-caseless-rifle-bundle-desc = A boundle containing magazines for a rifle. 2 standard and 2 high-rate. Compatible with KR51.
+uplink-magazine-caseless-rifle-bundle-name = Bundle with rifle magazines (.25)
+uplink-magazine-caseless-rifle-bundle-desc = A bundle containing magazines for a rifle. 2 standard and 2 high-rate. Compatible with KR51.
 
 uplink-pistol-magazine-caseless-name = Pistol Magazine (.25 caseless)
 uplink-pistol-magazine-caseless-desc = Pistol magazine with 10 catridges. Compatible with the Cobra.
