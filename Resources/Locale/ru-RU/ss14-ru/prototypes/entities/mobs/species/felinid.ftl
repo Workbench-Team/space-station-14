@@ -1,6 +1,6 @@
 ent-BaseMobFelinid = Урист МакКэт
-    .desc = { ent-BaseMobOrganic.desc }
+    .desc = { ent-BaseMobSpeciesOrganic.desc }
     .suffix = { "" }
 ent-MobFelinidDummy = Урист МакХэндс
-    .desc = Манекен-фелинид, используемый при создании персонажа.
+    .desc = { ent-BaseMobOrganicDummy.desc }
     .suffix = { "" }

@@ -1327,14 +1327,25 @@
 
 - type: entity
   parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitLoungewear
+  name: loungewear
+  description: A long stretch of fabric that wraps around your body for comfort.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/loungewear.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/loungewear.rsi
+
+- type: entity
+  parent: ClothingUniformBase
   id: ClothingUniformHECU
   name: HECU uniform
   description: The HECU jumpsuit is used to protect against foreign environmental factors (besides, real American patriots like to wear it)
   components:
-    - type: Sprite
-      sprite: Clothing/Uniforms/Jumpsuit/hecu.rsi
-    - type: Clothing
-      sprite: Clothing/Uniforms/Jumpsuit/hecu.rsi
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/hecu.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/hecu.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -1342,7 +1353,7 @@
   name: Citizen jumpsuit
   description: jumpsuit that will definitely make you look like a victim
   components:
-    - type: Sprite
-      sprite: Clothing/Uniforms/Jumpsuit/civilian.rsi
-    - type: Clothing
-      sprite: Clothing/Uniforms/Jumpsuit/civilian.rsi
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/civilian.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/civilian.rsi

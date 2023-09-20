@@ -135,6 +135,8 @@
           prob: 0.20
         - id: DrinkSpaceLube
           prob: 0.20
+        - id: SelfMadeMedipen
+          prob: 0.1
         # Syndicate loot
         - id: null
           prob: 0.95

@@ -52,6 +52,7 @@ namespace Content.Shared.Movement.Systems
                 .Register<SharedMoverController>();
 
             SubscribeLocalEvent<InputMoverComponent, ComponentInit>(OnInputInit);
+            SubscribeLocalEvent<InputMoverComponent, MapInitEvent>(OnInputMapInit);
             SubscribeLocalEvent<InputMoverComponent, ComponentGetState>(OnInputGetState);
             SubscribeLocalEvent<InputMoverComponent, ComponentHandleState>(OnInputHandleState);
             SubscribeLocalEvent<InputMoverComponent, EntParentChangedMessage>(OnInputParentChange);
@@ -93,6 +94,9 @@ namespace Content.Shared.Movement.Systems
             component.TargetRelativeRotation = state.TargetRelativeRotation;
             component.RelativeEntity = EnsureEntity<InputMoverComponent>(state.RelativeEntity, uid);
             component.LerpTarget = state.LerpAccumulator;
+            if (state.ActionEntity is not null)
+                component.MoveModeToggleActionEntity = EnsureEntity<ActionsComponent>(state.ActionEntity, uid);
+            component.SprintMove = state.SprintMove;
         }
 
         private void OnInputGetState(EntityUid uid, InputMoverComponent component, ref ComponentGetState args)
@@ -103,7 +107,9 @@ namespace Content.Shared.Movement.Systems
                 component.RelativeRotation,
                 component.TargetRelativeRotation,
                 GetNetEntity(component.RelativeEntity),
-                component.LerpTarget);
+                component.LerpTarget,
+                GetNetEntity(component.MoveModeToggleActionEntity),
+                component.SprintMove);
         }
 
         private void ShutdownInput()
@@ -278,7 +284,6 @@ namespace Content.Shared.Movement.Systems
             if (component.MoveModeToggleActionEntity != null)
                 _actionsSystem.SetToggled(component.MoveModeToggleActionEntity, component.SprintMove);
 
-            Dirty(uid, component);
             Dirty(uid, movementSpeed);
 
             args.Handled = true;
@@ -334,7 +339,10 @@ namespace Content.Shared.Movement.Systems
 
             component.RelativeEntity = xform.GridUid ?? xform.MapUid;
             component.TargetRelativeRotation = Angle.Zero;
+        }
 
+        private void OnInputMapInit(EntityUid uid, InputMoverComponent component, MapInitEvent args)
+        {
             _actionsSystem.AddAction(uid, ref component.MoveModeToggleActionEntity, component.MoveModeToggleAction);
         }
 
@@ -607,7 +615,10 @@ namespace Content.Shared.Movement.Systems
             public NetEntity? RelativeEntity;
             public TimeSpan LerpAccumulator;
 
-            public InputMoverComponentState(MoveButtons buttons, bool canMove, Angle relativeRotation, Angle targetRelativeRotation, NetEntity? relativeEntity, TimeSpan lerpTarget)
+            public NetEntity? ActionEntity;
+            public bool SprintMove;
+
+            public InputMoverComponentState(MoveButtons buttons, bool canMove, Angle relativeRotation, Angle targetRelativeRotation, NetEntity? relativeEntity, TimeSpan lerpTarget, NetEntity? actionEntity, bool sprintMove)
             {
                 Buttons = buttons;
                 CanMove = canMove;
@@ -615,6 +626,8 @@ namespace Content.Shared.Movement.Systems
                 TargetRelativeRotation = targetRelativeRotation;
                 RelativeEntity = relativeEntity;
                 LerpAccumulator = lerpTarget;
+                ActionEntity = actionEntity;
+                SprintMove = sprintMove;
             }
         }
 

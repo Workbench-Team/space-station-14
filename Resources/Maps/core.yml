@@ -10137,6 +10137,14 @@ entities:
       pos: 46.5,18.5
       parent: 2
       type: Transform
+- proto: AirlockMaintMinerLocked
+  entities:
+  - uid: 11813
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: 43.5,18.5
+      parent: 2
+      type: Transform
 - proto: AirlockMaintRnDLocked
   entities:
   - uid: 14688
@@ -10147,14 +10155,6 @@ entities:
   - uid: 14692
     components:
     - pos: 59.5,-10.5
-      parent: 2
-      type: Transform
-- proto: AirlockMaintSalvageLocked
-  entities:
-  - uid: 18289
-    components:
-    - rot: -1.5707963267948966 rad
-      pos: 43.5,18.5
       parent: 2
       type: Transform
 - proto: AirlockMaintSecLocked
@@ -10251,6 +10251,20 @@ entities:
     - pos: 53.5,18.5
       parent: 2
       type: Transform
+- proto: AirlockMinerGlassLocked
+  entities:
+  - uid: 16820
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: 39.5,18.5
+      parent: 2
+      type: Transform
+  - uid: 18289
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: 39.5,19.5
+      parent: 2
+      type: Transform
 - proto: AirlockQuartermasterGlassLocked
   entities:
   - uid: 357
@@ -10272,18 +10286,6 @@ entities:
     components:
     - rot: -1.5707963267948966 rad
       pos: 34.5,18.5
-      parent: 2
-      type: Transform
-  - uid: 11813
-    components:
-    - rot: -1.5707963267948966 rad
-      pos: 39.5,19.5
-      parent: 2
-      type: Transform
-  - uid: 16820
-    components:
-    - rot: -1.5707963267948966 rad
-      pos: 39.5,18.5
       parent: 2
       type: Transform
 - proto: AirlockSalvageLocked
@@ -89944,7 +89946,7 @@ entities:
     - pos: 44.5,7.5
       parent: 2
       type: Transform
-    - SecondsUntilStateChange: -17778.904
+    - SecondsUntilStateChange: -17828.938
       state: Opening
       type: Door
   - uid: 11091
@@ -89952,7 +89954,7 @@ entities:
     - pos: 62.5,21.5
       parent: 2
       type: Transform
-    - SecondsUntilStateChange: -157529.47
+    - SecondsUntilStateChange: -157579.5
       state: Opening
       type: Door
   - uid: 11092

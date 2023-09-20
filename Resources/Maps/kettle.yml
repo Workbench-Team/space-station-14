@@ -13917,6 +13917,20 @@ entities:
     - pos: -40.5,-45.5
       parent: 82
       type: Transform
+- proto: AirlockMaintMinerLocked
+  entities:
+  - uid: 1832
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: 47.5,43.5
+      parent: 82
+      type: Transform
+  - uid: 4141
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: 44.5,39.5
+      parent: 82
+      type: Transform
 - proto: AirlockMaintRnDLocked
   entities:
   - uid: 4114
@@ -13927,20 +13941,6 @@ entities:
   - uid: 10856
     components:
     - pos: 30.5,68.5
-      parent: 82
-      type: Transform
-- proto: AirlockMaintSalvageLocked
-  entities:
-  - uid: 1832
-    components:
-    - rot: 3.141592653589793 rad
-      pos: 44.5,39.5
-      parent: 82
-      type: Transform
-  - uid: 4141
-    components:
-    - rot: 3.141592653589793 rad
-      pos: 47.5,43.5
       parent: 82
       type: Transform
 - proto: AirlockMaintSecLocked
@@ -14048,6 +14048,20 @@ entities:
     - pos: -55.5,-29.5
       parent: 82
       type: Transform
+- proto: AirlockMinerGlassLocked
+  entities:
+  - uid: 10436
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: 46.5,38.5
+      parent: 82
+      type: Transform
+  - uid: 15394
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: 45.5,38.5
+      parent: 82
+      type: Transform
 - proto: AirlockQuartermasterLocked
   entities:
   - uid: 10269
@@ -14079,18 +14093,6 @@ entities:
   - uid: 6839
     components:
     - pos: 44.5,31.5
-      parent: 82
-      type: Transform
-  - uid: 10436
-    components:
-    - rot: 1.5707963267948966 rad
-      pos: 45.5,38.5
-      parent: 82
-      type: Transform
-  - uid: 15394
-    components:
-    - rot: 1.5707963267948966 rad
-      pos: 46.5,38.5
       parent: 82
       type: Transform
 - proto: AirlockSalvageLocked
@@ -18838,7 +18840,7 @@ entities:
     - pos: 34.5,12.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -498491.1
+    - SecondsUntilStateChange: -498523.12
       state: Opening
       type: Door
     - links:
@@ -18849,7 +18851,7 @@ entities:
     - pos: 34.5,14.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -498491.1
+    - SecondsUntilStateChange: -498523.12
       state: Opening
       type: Door
     - links:
@@ -18876,7 +18878,7 @@ entities:
     - pos: 34.5,13.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -498491.1
+    - SecondsUntilStateChange: -498523.12
       state: Opening
       type: Door
     - links:
@@ -18903,7 +18905,7 @@ entities:
     - pos: 53.5,-25.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -496756.03
+    - SecondsUntilStateChange: -496788.06
       state: Opening
       type: Door
     - links:
@@ -18914,7 +18916,7 @@ entities:
     - pos: 53.5,-26.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -496756.03
+    - SecondsUntilStateChange: -496788.06
       state: Opening
       type: Door
     - links:
@@ -18925,7 +18927,7 @@ entities:
     - pos: 53.5,-27.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -496756.03
+    - SecondsUntilStateChange: -496788.06
       state: Opening
       type: Door
     - links:
@@ -18936,7 +18938,7 @@ entities:
     - pos: 53.5,-28.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -496756.03
+    - SecondsUntilStateChange: -496788.06
       state: Opening
       type: Door
     - links:
@@ -18947,7 +18949,7 @@ entities:
     - pos: 53.5,-29.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -496756.03
+    - SecondsUntilStateChange: -496788.06
       state: Opening
       type: Door
     - links:
@@ -18958,7 +18960,7 @@ entities:
     - pos: 53.5,-30.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -496756.03
+    - SecondsUntilStateChange: -496788.06
       state: Opening
       type: Door
     - links:
@@ -18969,7 +18971,7 @@ entities:
     - pos: 56.5,-25.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -496756.03
+    - SecondsUntilStateChange: -496788.06
       state: Opening
       type: Door
     - links:
@@ -18980,7 +18982,7 @@ entities:
     - pos: 56.5,-26.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -496756.03
+    - SecondsUntilStateChange: -496788.06
       state: Opening
       type: Door
     - links:
@@ -18991,7 +18993,7 @@ entities:
     - pos: 56.5,-27.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -496756.03
+    - SecondsUntilStateChange: -496788.06
       state: Opening
       type: Door
     - links:
@@ -19002,7 +19004,7 @@ entities:
     - pos: 56.5,-28.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -496756.03
+    - SecondsUntilStateChange: -496788.06
       state: Opening
       type: Door
     - links:
@@ -19013,7 +19015,7 @@ entities:
     - pos: 56.5,-29.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -496756.03
+    - SecondsUntilStateChange: -496788.06
       state: Opening
       type: Door
     - links:
@@ -19024,7 +19026,7 @@ entities:
     - pos: 56.5,-30.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -496756.03
+    - SecondsUntilStateChange: -496788.06
       state: Opening
       type: Door
     - links:
@@ -19035,7 +19037,7 @@ entities:
     - pos: -21.5,50.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -437410.97
+    - SecondsUntilStateChange: -437443
       state: Opening
       type: Door
     - links:
@@ -19046,7 +19048,7 @@ entities:
     - pos: -21.5,48.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -437410.97
+    - SecondsUntilStateChange: -437443
       state: Opening
       type: Door
     - links:
@@ -19057,7 +19059,7 @@ entities:
     - pos: -21.5,49.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -437410.97
+    - SecondsUntilStateChange: -437443
       state: Opening
       type: Door
     - links:
@@ -19068,7 +19070,7 @@ entities:
     - pos: -21.5,47.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -437410.97
+    - SecondsUntilStateChange: -437443
       state: Opening
       type: Door
     - links:
@@ -19133,7 +19135,7 @@ entities:
     - pos: 23.5,14.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -498552.34
+    - SecondsUntilStateChange: -498584.38
       state: Closing
       type: Door
     - links:
@@ -19144,7 +19146,7 @@ entities:
     - pos: 23.5,13.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -498552.34
+    - SecondsUntilStateChange: -498584.38
       state: Closing
       type: Door
     - links:
@@ -19155,7 +19157,7 @@ entities:
     - pos: 23.5,12.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -498552.34
+    - SecondsUntilStateChange: -498584.38
       state: Closing
       type: Door
     - links:
@@ -123803,7 +123805,7 @@ entities:
     - pos: -41.5,-42.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -385519.78
+    - SecondsUntilStateChange: -385551.8
       state: Opening
       type: Door
   - uid: 2822
@@ -123811,7 +123813,7 @@ entities:
     - pos: -41.5,-44.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -385517.56
+    - SecondsUntilStateChange: -385549.6
       state: Opening
       type: Door
   - uid: 8896
@@ -123820,7 +123822,7 @@ entities:
       pos: -39.5,-42.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -385691.8
+    - SecondsUntilStateChange: -385723.84
       state: Opening
       type: Door
   - uid: 15911
@@ -123829,7 +123831,7 @@ entities:
       pos: -39.5,-44.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -385516.84
+    - SecondsUntilStateChange: -385548.88
       state: Opening
       type: Door
   - uid: 16963
@@ -123857,7 +123859,7 @@ entities:
     - pos: -41.5,-40.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -385518.75
+    - SecondsUntilStateChange: -385550.78
       state: Opening
       type: Door
 - proto: HospitalCurtainsOpen
@@ -143136,7 +143138,7 @@ entities:
     - pos: 58.5,-6.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -381588.28
+    - SecondsUntilStateChange: -381620.3
       state: Opening
       type: Door
     - links:
@@ -143147,7 +143149,7 @@ entities:
     - pos: 59.5,-6.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -381588.28
+    - SecondsUntilStateChange: -381620.3
       state: Opening
       type: Door
     - links:
@@ -143159,7 +143161,7 @@ entities:
       pos: 3.5,-19.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143171,7 +143173,7 @@ entities:
       pos: 2.5,-19.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143182,7 +143184,7 @@ entities:
     - pos: 1.5,-8.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143193,7 +143195,7 @@ entities:
     - pos: 2.5,-8.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143204,7 +143206,7 @@ entities:
     - pos: 3.5,-8.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143215,7 +143217,7 @@ entities:
     - pos: 5.5,-8.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143226,7 +143228,7 @@ entities:
     - pos: 6.5,-8.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143237,7 +143239,7 @@ entities:
     - pos: 7.5,-8.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143248,7 +143250,7 @@ entities:
     - pos: 8.5,-8.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143259,7 +143261,7 @@ entities:
     - pos: 9.5,-8.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143270,7 +143272,7 @@ entities:
     - pos: 11.5,-8.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143281,7 +143283,7 @@ entities:
     - pos: 12.5,-8.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143292,7 +143294,7 @@ entities:
     - pos: 13.5,-8.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143303,7 +143305,7 @@ entities:
     - pos: 14.5,-8.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143315,7 +143317,7 @@ entities:
       pos: 16.5,-11.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143327,7 +143329,7 @@ entities:
       pos: 16.5,-10.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143339,7 +143341,7 @@ entities:
       pos: -1.5,-11.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143351,7 +143353,7 @@ entities:
       pos: -1.5,-10.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143363,7 +143365,7 @@ entities:
       pos: 25.5,64.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -392740.53
+    - SecondsUntilStateChange: -392772.56
       state: Opening
       type: Door
     - links:
@@ -143398,7 +143400,7 @@ entities:
     - pos: 62.5,-6.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -381588.28
+    - SecondsUntilStateChange: -381620.3
       state: Opening
       type: Door
     - links:
@@ -143409,7 +143411,7 @@ entities:
     - pos: -8.5,32.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -391432.44
+    - SecondsUntilStateChange: -391464.47
       state: Opening
       type: Door
     - links:
@@ -143420,7 +143422,7 @@ entities:
     - pos: -9.5,32.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -391432.44
+    - SecondsUntilStateChange: -391464.47
       state: Opening
       type: Door
     - links:
@@ -143431,7 +143433,7 @@ entities:
     - pos: -7.5,32.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -391432.44
+    - SecondsUntilStateChange: -391464.47
       state: Opening
       type: Door
     - links:
@@ -143443,7 +143445,7 @@ entities:
       pos: -6.5,34.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -391432.44
+    - SecondsUntilStateChange: -391464.47
       state: Opening
       type: Door
     - links:
@@ -143455,7 +143457,7 @@ entities:
       pos: -6.5,35.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -391432.44
+    - SecondsUntilStateChange: -391464.47
       state: Opening
       type: Door
     - links:
@@ -143466,7 +143468,7 @@ entities:
     - pos: 60.5,-6.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -381588.28
+    - SecondsUntilStateChange: -381620.3
       state: Opening
       type: Door
     - links:
@@ -143478,7 +143480,7 @@ entities:
       pos: 44.5,12.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -80929.69
+    - SecondsUntilStateChange: -80961.72
       state: Opening
       type: Door
     - links:
@@ -143490,7 +143492,7 @@ entities:
       pos: 44.5,13.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -80929.69
+    - SecondsUntilStateChange: -80961.72
       state: Opening
       type: Door
     - links:
@@ -143502,7 +143504,7 @@ entities:
       pos: -46.5,-34.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -384373.6
+    - SecondsUntilStateChange: -384405.62
       state: Opening
       type: Door
     - links:
@@ -143514,7 +143516,7 @@ entities:
       pos: 12.5,-19.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143526,7 +143528,7 @@ entities:
       pos: 11.5,-19.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143538,7 +143540,7 @@ entities:
       pos: 10.5,-19.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143550,7 +143552,7 @@ entities:
       pos: 4.5,-19.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143561,7 +143563,7 @@ entities:
     - pos: 0.5,-8.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -492623.72
+    - SecondsUntilStateChange: -492655.75
       state: Opening
       type: Door
     - links:
@@ -143573,7 +143575,7 @@ entities:
       pos: 44.5,14.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -80929.69
+    - SecondsUntilStateChange: -80961.72
       state: Opening
       type: Door
     - links:
@@ -143585,7 +143587,7 @@ entities:
       pos: -6.5,33.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -391432.44
+    - SecondsUntilStateChange: -391464.47
       state: Opening
       type: Door
     - links:
@@ -143596,7 +143598,7 @@ entities:
     - pos: -10.5,32.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -391432.44
+    - SecondsUntilStateChange: -391464.47
       state: Opening
       type: Door
     - links:
@@ -143608,7 +143610,7 @@ entities:
       pos: 25.5,65.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -392740.53
+    - SecondsUntilStateChange: -392772.56
       state: Opening
       type: Door
     - links:
@@ -143619,7 +143621,7 @@ entities:
     - pos: 28.5,67.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -392740.53
+    - SecondsUntilStateChange: -392772.56
       state: Opening
       type: Door
     - links:
@@ -143630,7 +143632,7 @@ entities:
     - pos: 27.5,67.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -392740.53
+    - SecondsUntilStateChange: -392772.56
       state: Opening
       type: Door
     - links:
@@ -143641,7 +143643,7 @@ entities:
     - pos: 28.5,62.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -392740.53
+    - SecondsUntilStateChange: -392772.56
       state: Opening
       type: Door
     - links:
@@ -143652,7 +143654,7 @@ entities:
     - pos: 26.5,62.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -392740.53
+    - SecondsUntilStateChange: -392772.56
       state: Opening
       type: Door
     - links:
@@ -143663,7 +143665,7 @@ entities:
     - pos: 27.5,62.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -392740.53
+    - SecondsUntilStateChange: -392772.56
       state: Opening
       type: Door
     - links:
@@ -143675,7 +143677,7 @@ entities:
       pos: -6.5,36.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -391432.44
+    - SecondsUntilStateChange: -391464.47
       state: Opening
       type: Door
     - links:
@@ -143687,7 +143689,7 @@ entities:
       pos: -46.5,-35.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -384373.6
+    - SecondsUntilStateChange: -384405.62
       state: Opening
       type: Door
     - links:
@@ -143698,7 +143700,7 @@ entities:
     - pos: -45.5,-33.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -384373.6
+    - SecondsUntilStateChange: -384405.62
       state: Opening
       type: Door
     - links:
@@ -143709,7 +143711,7 @@ entities:
     - pos: -44.5,-33.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -384373.6
+    - SecondsUntilStateChange: -384405.62
       state: Opening
       type: Door
     - links:
@@ -143720,7 +143722,7 @@ entities:
     - pos: -42.5,-33.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -384373.6
+    - SecondsUntilStateChange: -384405.62
       state: Opening
       type: Door
     - links:
@@ -143731,7 +143733,7 @@ entities:
     - pos: -41.5,-33.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -384373.6
+    - SecondsUntilStateChange: -384405.62
       state: Opening
       type: Door
     - links:
@@ -143742,7 +143744,7 @@ entities:
     - pos: 61.5,-6.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -381588.28
+    - SecondsUntilStateChange: -381620.3
       state: Opening
       type: Door
     - links:
@@ -143754,7 +143756,7 @@ entities:
       pos: 57.5,-7.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -381588.28
+    - SecondsUntilStateChange: -381620.3
       state: Opening
       type: Door
     - links:
@@ -143766,7 +143768,7 @@ entities:
       pos: 57.5,-8.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -381588.28
+    - SecondsUntilStateChange: -381620.3
       state: Opening
       type: Door
     - links:
@@ -143778,7 +143780,7 @@ entities:
       pos: 57.5,-10.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -381588.28
+    - SecondsUntilStateChange: -381620.3
       state: Opening
       type: Door
     - links:
@@ -143790,7 +143792,7 @@ entities:
       pos: 57.5,-11.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -381588.28
+    - SecondsUntilStateChange: -381620.3
       state: Opening
       type: Door
     - links:
@@ -143802,7 +143804,7 @@ entities:
       pos: 57.5,-9.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -381588.28
+    - SecondsUntilStateChange: -381620.3
       state: Opening
       type: Door
     - links:
@@ -143814,7 +143816,7 @@ entities:
       pos: 59.5,-14.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -381588.28
+    - SecondsUntilStateChange: -381620.3
       state: Opening
       type: Door
     - links:
@@ -143826,7 +143828,7 @@ entities:
       pos: 59.5,-15.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -381588.28
+    - SecondsUntilStateChange: -381620.3
       state: Opening
       type: Door
     - links:
@@ -144005,7 +144007,7 @@ entities:
     - pos: -26.5,60.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -437424.3
+    - SecondsUntilStateChange: -437456.34
       state: Closing
       type: Door
     - links:
@@ -144016,7 +144018,7 @@ entities:
     - pos: -24.5,60.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -437424.3
+    - SecondsUntilStateChange: -437456.34
       state: Closing
       type: Door
     - links:
@@ -144027,7 +144029,7 @@ entities:
     - pos: -25.5,60.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -437424.3
+    - SecondsUntilStateChange: -437456.34
       state: Closing
       type: Door
     - links:
@@ -144038,7 +144040,7 @@ entities:
     - pos: -23.5,60.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -437424.3
+    - SecondsUntilStateChange: -437456.34
       state: Closing
       type: Door
     - links:
@@ -144049,7 +144051,7 @@ entities:
     - pos: -27.5,60.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -437424.3
+    - SecondsUntilStateChange: -437456.34
       state: Closing
       type: Door
     - links:
@@ -174596,7 +174598,7 @@ entities:
     - pos: -11.5,17.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -562531.7
+    - SecondsUntilStateChange: -562563.75
       state: Opening
       type: Door
   - uid: 4246
@@ -174604,7 +174606,7 @@ entities:
     - pos: -11.5,19.5
       parent: 82
       type: Transform
-    - SecondsUntilStateChange: -562529.94
+    - SecondsUntilStateChange: -562562
       state: Opening
       type: Door
   - uid: 8013

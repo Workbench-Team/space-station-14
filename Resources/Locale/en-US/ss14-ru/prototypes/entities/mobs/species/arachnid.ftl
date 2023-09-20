@@ -1,6 +1,6 @@
 ent-BaseMobArachnid = Urist McWebs
-    .desc = { ent-BaseMobOrganic.desc }
+    .desc = { ent-BaseMobSpeciesOrganic.desc }
     .suffix = { "" }
-ent-MobArachnidDummy = Urist McFluff
-    .desc = A dummy arachnid meant to be used in character setup.
+ent-MobArachnidDummy = { ent-BaseSpeciesDummy }
+    .desc = { ent-BaseSpeciesDummy.desc }
     .suffix = { "" }

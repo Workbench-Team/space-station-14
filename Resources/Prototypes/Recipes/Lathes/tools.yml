@@ -168,15 +168,6 @@
     Plastic: 150
 
 - type: latheRecipe
-  id: HoloprojectorSecurity
-  result: HoloprojectorSecurity
-  completetime: 8
-  materials:
-    Steel: 300
-    Glass: 200
-    Plastic: 150
-
-- type: latheRecipe
   id: HolofanProjector
   result: HolofanProjector
   completetime: 8

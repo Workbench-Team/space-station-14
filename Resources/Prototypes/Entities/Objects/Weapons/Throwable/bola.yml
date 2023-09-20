@@ -14,7 +14,7 @@
   - type: EmitSoundOnLand
     sound: /Audio/Effects/snap.ogg
   - type: StaminaDamageOnCollide
-    damage: 80
+    damage: 40
   - type: Construction
     graph: Bola
     node: bola

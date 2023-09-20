@@ -8566,7 +8566,15 @@ entities:
           - 0
         chunkSize: 4
       type: GridAtmosphere
-    - joints: {}
+    - joints:
+        docking46345: !type:WeldJoint
+          bodyB: 11906
+          bodyA: 8364
+          id: docking46345
+          localAnchorB: -0.5,-1
+          localAnchorA: -66.5,22
+          damping: 42.401
+          stiffness: 380.59048
       type: Joint
     - type: OccluderTree
     - type: Shuttle
@@ -8613,7 +8621,15 @@ entities:
         version: 2
         nodes: []
       type: DecalGrid
-    - joints: {}
+    - joints:
+        docking46345: !type:WeldJoint
+          bodyB: 11906
+          bodyA: 8364
+          id: docking46345
+          localAnchorB: -0.5,-1
+          localAnchorA: -66.5,22
+          damping: 42.401
+          stiffness: 380.59048
       type: Joint
     - type: OccluderTree
     - type: Shuttle
@@ -10624,18 +10640,6 @@ entities:
     - pos: -25.5,-19.5
       parent: 8364
       type: Transform
-  - uid: 15005
-    components:
-    - rot: 3.141592653589793 rad
-      pos: -24.5,-39.5
-      parent: 8364
-      type: Transform
-  - uid: 24687
-    components:
-    - rot: 3.141592653589793 rad
-      pos: -25.5,-39.5
-      parent: 8364
-      type: Transform
 - proto: AirlockChapelGlassLocked
   entities:
   - uid: 26881
@@ -11819,7 +11823,7 @@ entities:
     - dockJointId: docking46345
       dockedWith: 21828
       type: Docking
-    - SecondsUntilStateChange: -67639.61
+    - SecondsUntilStateChange: -67696.58
       changeAirtight: False
       state: Opening
       type: Door
@@ -11843,7 +11847,7 @@ entities:
     - dockJointId: docking46345
       dockedWith: 562
       type: Docking
-    - SecondsUntilStateChange: -67639.61
+    - SecondsUntilStateChange: -67696.58
       changeAirtight: False
       state: Opening
       type: Door
@@ -12479,6 +12483,14 @@ entities:
       pos: 33.5,-47.5
       parent: 8364
       type: Transform
+- proto: AirlockMaintMinerLocked
+  entities:
+  - uid: 15005
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: -23.5,-42.5
+      parent: 8364
+      type: Transform
 - proto: AirlockMaintRnDLocked
   entities:
   - uid: 20114
@@ -12705,6 +12717,20 @@ entities:
   - uid: 19129
     components:
     - pos: 48.5,-35.5
+      parent: 8364
+      type: Transform
+- proto: AirlockMinerGlassLocked
+  entities:
+  - uid: 3045
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: -25.5,-39.5
+      parent: 8364
+      type: Transform
+  - uid: 24687
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: -24.5,-39.5
       parent: 8364
       type: Transform
 - proto: AirlockQuartermasterGlassLocked
@@ -167007,11 +167033,6 @@ entities:
   - uid: 3044
     components:
     - pos: -24.5,-42.5
-      parent: 8364
-      type: Transform
-  - uid: 3045
-    components:
-    - pos: -23.5,-42.5
       parent: 8364
       type: Transform
   - uid: 3046

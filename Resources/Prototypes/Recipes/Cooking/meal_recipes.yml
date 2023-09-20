@@ -877,6 +877,18 @@
     FoodBanana: 1
     MonkeyCube: 1
 
+- type: microwaveMealRecipe
+  id: RecipeBungoSoup
+  name: bungo soup recipe
+  result: FoodSoupBungo
+  time: 10
+  reagents:
+    Water: 5
+  solids:
+    FoodBowlBig: 1
+    FoodBungo: 2
+    FoodChili: 1
+
 #Other
 
 - type: microwaveMealRecipe
@@ -969,6 +981,18 @@
     Egg: 6
 
 - type: microwaveMealRecipe
+  id: RecipeBlueberryPancake
+  name: blueberry pancake recipe
+  result: FoodBakedPancakeBb
+  time: 5
+  reagents:
+    Flour: 5
+    Milk: 5
+    Egg: 6
+  solids:
+    FoodBerries: 2
+
+- type: microwaveMealRecipe
   id: RecipeWaffles
   name: waffle recipe
   result: FoodBakedWaffle
@@ -1058,6 +1082,16 @@
     FoodPlateTin: 1
 
 - type: microwaveMealRecipe
+  id: RecipeBerryClafoutis
+  name: berry clafoutis
+  result: FoodPieClafoutis
+  time: 15
+  solids:
+    FoodDoughPie: 1
+    FoodBerries: 3
+    FoodPlateTin: 1
+
+- type: microwaveMealRecipe
   id: RecipeMeatPie
   name: meat pie recipe
   result: FoodPieMeat
@@ -1112,6 +1146,15 @@
   solids:
     FoodCakePlain: 1
     FoodOrange: 3
+
+- type: microwaveMealRecipe
+  id: RecipeBlueberryCake
+  name: blueberry cake recipe
+  result: FoodCakeBlueberry
+  time: 5
+  solids:
+    FoodCakePlain: 1
+    FoodBerries: 3
 
 - type: microwaveMealRecipe
   id: RecipeLimeCake
@@ -1632,6 +1675,113 @@
   reagents:
     Sigynate: 50
     Dermaline: 50
+
+- type: microwaveMealRecipe
+  id: RecipeSelfMadeMedipen
+  name: Self made medipen recipe
+  result: SelfMadeMedipen
+  time: 5
+  solids:
+    Syringe: 1
+  reagents:
+    Desoxyephedrine: 10
+    SpaceGlue: 5
+
+- type: microwaveMealRecipe
+  id: RecipeAmbuzolMedipen
+  name: Ambuzol medipen recipe
+  result: AmbuzolMedipen
+  time: 5
+  solids:
+    Syringe: 1
+  reagents:
+    Ambuzol: 15
+
+- type: microwaveMealRecipe
+  id: RecipeSalineMedipen
+  name: Saline medipen recipe
+  result: SalineMedipen
+  time: 5
+  solids:
+    Syringe: 2
+  reagents:
+    Saline: 30
+
+- type: microwaveMealRecipe
+  id: RecipeNutrimentMedipen
+  name: Nutriment medipen recipe
+  result: NutrimentMedipen
+  time: 5
+  solids:
+    Syringe: 2
+  reagents:
+    Nutriment: 30
+
+- type: microwaveMealRecipe
+  id: RecipeCombatMedipen
+  name: Combat medipen recipe
+  result: CombatMedipen
+  time: 5
+  solids:
+    Syringe: 2
+  reagents:
+    Omnizine: 25
+    TranexamicAcid: 5
+
+- type: microwaveMealRecipe
+  id: RecipeBurnAutoInjector
+  name: Burn auto injector recipe
+  result: BurnAutoInjector
+  time: 5
+  solids:
+    Syringe: 1
+  reagents:
+    Dermaline: 10
+    Leporazine: 5
+
+- type: microwaveMealRecipe
+  id: RecipeBruteAutoInjector
+  name: Brute auto injector recipe
+  result: BruteAutoInjector
+  time: 5
+  solids:
+    Syringe: 1
+  reagents:
+    Bicaridine: 10
+    TranexamicAcid: 5
+
+- type: microwaveMealRecipe
+  id: RecipeAntiPoisonMedipen
+  name: Anti poison medipen recipe
+  result: AntiPoisonMedipen
+  time: 5
+  solids:
+    Syringe: 1
+  reagents:
+    Dylovene: 10
+    Epinephrine: 5
+
+- type: microwaveMealRecipe
+  id: RecipeEmergencyMedipen
+  name: Emergency medipen recipe
+  result: EmergencyMedipen
+  time: 5
+  solids:
+    Syringe: 1
+  reagents:
+    Epinephrine: 12
+    TranexamicAcid: 3
+
+- type: microwaveMealRecipe
+  id: RecipeSpaceMedipen
+  name: Space medipen recipe
+  result: SpaceMedipen
+  time: 5
+  solids:
+    Syringe: 1
+    FoodAmbrosiaVulgaris: 1
+  reagents:
+    Leporazine: 15
 
 # Suppermatter
 - type: microwaveMealRecipe

@@ -133,6 +133,9 @@
         - trigger:
             !type:DamageTrigger
             damage: 30
+          behaviors:
+          - !type:DoActsBehavior
+             acts: [ "Destruction" ]
     - type: PointLight
       enabled: true
       radius: 3

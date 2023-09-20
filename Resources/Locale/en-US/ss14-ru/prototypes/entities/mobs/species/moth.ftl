@@ -1,6 +1,6 @@
 ent-BaseMobMoth = Urist McFluff
-    .desc = { ent-BaseMobOrganic.desc }
+    .desc = { ent-BaseMobSpeciesOrganic.desc }
     .suffix = { "" }
-ent-MobMothDummy = Urist McFluff
-    .desc = A dummy moth meant to be used in character setup.
+ent-MobMothDummy = { ent-BaseSpeciesDummy }
+    .desc = { ent-BaseSpeciesDummy.desc }
     .suffix = { "" }

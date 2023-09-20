@@ -174,13 +174,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.95
   - type: TemperatureProtection
     coefficient: 0.98
 
@@ -204,13 +197,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95 
-        Heat: 0.95
   - type: TemperatureProtection
     coefficient: 0.98
 
@@ -234,13 +220,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95 
-        Heat: 0.95
   - type: TemperatureProtection
     coefficient: 0.98
 
@@ -971,13 +950,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.95
   - type: TemperatureProtection
     coefficient: 0.98
 
@@ -1001,13 +973,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.95
   - type: TemperatureProtection
     coefficient: 0.98
 
@@ -1031,13 +996,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.95
   - type: TemperatureProtection
     coefficient: 0.98
 
@@ -1061,13 +1019,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.94
-        Slash: 0.94
-        Piercing: 0.94
-        Heat: 0.94
   - type: TemperatureProtection
     coefficient: 0.95
 
@@ -1091,13 +1042,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.94
-        Slash: 0.94
-        Piercing: 0.94
-        Heat: 0.94
   - type: TemperatureProtection
     coefficient: 0.95
 
@@ -1121,13 +1065,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.94
-        Slash: 0.94
-        Piercing: 0.94
-        Heat: 0.94
   - type: TemperatureProtection
     coefficient: 0.95
 
@@ -1632,13 +1569,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.94
-        Slash: 0.94
-        Piercing: 0.94
-        Heat: 0.94
   - type: TemperatureProtection
     coefficient: 0.95
 
@@ -1662,13 +1592,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.94
-        Slash: 0.94
-        Piercing: 0.94
-        Heat: 0.94
   - type: TemperatureProtection
     coefficient: 0.95
 
@@ -1692,13 +1615,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.94
-        Slash: 0.94
-        Piercing: 0.94
-        Heat: 0.94
   - type: TemperatureProtection
     coefficient: 0.95
 
@@ -1722,13 +1638,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.94
-        Slash: 0.94
-        Piercing: 0.94
-        Heat: 0.94
   - type: TemperatureProtection
     coefficient: 0.95
 
@@ -1752,13 +1661,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.94
-        Slash: 0.94
-        Piercing: 0.94
-        Heat: 0.94
   - type: TemperatureProtection
     coefficient: 0.95
 
@@ -1782,13 +1684,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.94
-        Slash: 0.94
-        Piercing: 0.94
-        Heat: 0.94
   - type: TemperatureProtection
     coefficient: 0.95
 
@@ -2038,13 +1933,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.94
-        Slash: 0.94
-        Piercing: 0.94
-        Heat: 0.94
   - type: TemperatureProtection
     coefficient: 0.95
 
@@ -2068,13 +1956,6 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.94
-        Slash: 0.94
-        Piercing: 0.94
-        Heat: 0.94
   - type: TemperatureProtection
     coefficient: 0.95   
 
@@ -2098,12 +1979,5 @@
     interfaces:
     - key: enum.StorageUiKey.Key
       type: StorageBoundUserInterface
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.94
-        Slash: 0.94
-        Piercing: 0.94
-        Heat: 0.94
   - type: TemperatureProtection
     coefficient: 0.95   

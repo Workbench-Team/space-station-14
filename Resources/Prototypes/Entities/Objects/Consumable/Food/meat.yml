@@ -647,6 +647,9 @@
   - type: SliceableFood
     count: 3
     slice: FoodMeatCutletCooked
+  - type: Construction
+    graph: MeatSteak
+    node: meat steak
 
 - type: entity
   name: bacon
@@ -701,6 +704,9 @@
   - type: SliceableFood
     count: 3
     slice: FoodMeatBearCutletCooked
+  - type: Construction
+    graph: BearSteak
+    node: filet migrawr
 
 - type: entity
   name: penguin filet
@@ -726,6 +732,9 @@
   - type: SliceableFood
     count: 3
     slice: FoodMeatPenguinCutletCooked
+  - type: Construction
+    graph: PenguinSteak
+    node: cooked penguin
 
 - type: entity
   name: cooked chicken
@@ -751,6 +760,9 @@
   - type: SliceableFood
     count: 3
     slice: FoodMeatChickenCutletCooked
+  - type: Construction
+    graph: ChickenSteak
+    node: cooked chicken
 
 - type: entity
   name: fried chicken
@@ -804,6 +816,9 @@
   - type: SliceableFood
     count: 3
     slice: FoodMeatDuckCutletCooked
+  - type: Construction
+    graph: DuckSteak
+    node: cooked duck
 
 - type: entity
   name: cooked crab
@@ -829,6 +844,9 @@
           Quantity: 5
         - ReagentId: Protein
           Quantity: 5
+  - type: Construction
+    graph: CrabSteak
+    node: cooked crab
 
 - type: entity
   name: goliath steak
@@ -851,6 +869,9 @@
           Quantity: 5
         - ReagentId: Protein
           Quantity: 5
+  - type: Construction
+    graph: GoliathSteak
+    node: goliath steak
 
 - type: entity
   name: lizard steak
@@ -876,6 +897,9 @@
   - type: SliceableFood
     count: 3
     slice: FoodMeatLizardCutletCooked
+  - type: Construction
+    graph: LizardSteak
+    node: lizard steak
 
 - type: entity
   name: boiled spider leg

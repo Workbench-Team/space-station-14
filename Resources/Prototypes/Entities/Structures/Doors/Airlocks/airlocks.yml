@@ -21,10 +21,6 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/atmospherics.rsi
-  - type: WiresPanel
-    securityLevel: Level2
-  - type: Construction
-    node: airlockMedSecurity
 
 - type: entity
   parent: Airlock
@@ -33,6 +29,14 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/cargo.rsi
+
+- type: entity
+  parent: Airlock
+  id: AirlockMiner
+  suffix: Miner
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/miner.rsi
 
 - type: entity
   parent: Airlock
@@ -74,9 +78,9 @@
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/command.rsi
   - type: WiresPanel
-    securityLevel: Level5
+    securityLevel: Level2
   - type: Construction
-    node: airlockMaxSecurity
+    node: airlockMedSecurity
 
 - type: entity
   parent: Airlock
@@ -85,10 +89,6 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/security.rsi
-  - type: WiresPanel
-    securityLevel: Level2
-  - type: Construction
-    node: airlockMedSecurity
 
 - type: entity
   parent: Airlock
@@ -193,10 +193,6 @@
     sprite: Structures/Doors/Airlocks/Glass/atmospherics.rsi
   - type: PaintableAirlock
     group: Glass
-  - type: WiresPanel
-    securityLevel: Level2
-  - type: Construction
-    node: glassAirlockMedSecurity
 
 - type: entity
   parent: AirlockGlass
@@ -205,6 +201,16 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Glass/cargo.rsi
+  - type: PaintableAirlock
+    group: Glass
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockMinerGlass
+  suffix: Miner
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/miner.rsi
   - type: PaintableAirlock
     group: Glass
 
@@ -248,9 +254,9 @@
   - type: PaintableAirlock
     group: Glass
   - type: WiresPanel
-    securityLevel: Level5
+    securityLevel: Level2
   - type: Construction
-    node: glassAirlockMaxSecurity
+    node: glassAirlockMedSecurity
 
 - type: entity
   parent: AirlockGlass
@@ -261,10 +267,6 @@
     sprite: Structures/Doors/Airlocks/Glass/security.rsi
   - type: PaintableAirlock
     group: Glass
-  - type: WiresPanel
-    securityLevel: Level2
-  - type: Construction
-    node: glassAirlockMedSecurity
 
 - type: entity
   parent: AirlockGlass

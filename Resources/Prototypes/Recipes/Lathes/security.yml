@@ -110,6 +110,15 @@
     Glass: 200
 
 - type: latheRecipe
+  id: HoloprojectorSecurity
+  result: HoloprojectorSecurity
+  completetime: 2
+  materials:
+    Steel: 300
+    Glass: 50
+    Plastic: 50
+
+- type: latheRecipe
   id: RiotShield
   result: RiotShield
   completetime: 4
@@ -317,16 +326,6 @@
     Steel: 250
 
 - type: latheRecipe
-  id: SpeedLoaderMagnum
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
-    state: base-6
-  result: SpeedLoaderMagnum
-  completetime: 10
-  materials:
-    Steel: 200
-
-- type: latheRecipe
   id: MagazineMagnumSubMachineGun
   icon:
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/Magnum/magnum_smg_mag.rsi
@@ -527,6 +526,13 @@
   materials:
     Steel: 350
     Plastic: 600
+
+- type: latheRecipe
+  id: SpeedLoaderMagnum
+  result: SpeedLoaderMagnum
+  completetime: 5
+  materials:
+    Steel: 200
 
 - type: latheRecipe
   id: ShellShotgunIncendiary

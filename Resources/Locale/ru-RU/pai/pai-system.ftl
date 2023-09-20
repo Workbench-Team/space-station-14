@@ -15,3 +15,6 @@ pai-system-wiped-device = пИИ был удалён.
 pai-system-stop-searching-verb-text = Прекратить поиск
 pai-system-stopped-searching = Поиск пИИ прекращён.
 pai-system-pai-name = пИИ { CAPITALIZE($owner) }
+pai-system-pai-name-raw = { $name } пИИ
+pai-system-brick-popup = Микросхемы пИИ громко хлопают и выходят из строя!
+pai-system-scramble-popup = Микросхемы пИИ перегружены электричеством!

@@ -10,3 +10,6 @@ ent-HoloprojectorEngineering = engineering holobarrier projector
 ent-HoloprojectorSecurity = security holobarrier projector
     .desc = A holographic projector that creates holographic security barriers.
     .suffix = { "" }
+ent-HoloprojectorSecurityEmpty = { ent-HoloprojectorSecurity }
+    .suffix = Empty
+    .desc = { ent-HoloprojectorSecurity.desc }

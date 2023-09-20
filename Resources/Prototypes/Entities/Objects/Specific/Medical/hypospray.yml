@@ -73,6 +73,7 @@
     - state: medipen
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: Item
+    heldPrefix: medipen
     sprite: Objects/Specific/Medical/medipen.rsi
     size: 3
   - type: SolutionContainerManager
@@ -107,6 +108,17 @@
   id: EmergencyMedipen
   description: A rapid and safe way to stabilize patients in critical condition for personnel without advanced medical knowledge. Beware, as it's easy to overdose on epinephrine and tranexmic acid.
   components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: firstaid
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: firstaid_empty
+  - type: Tag
+    tags: [AutoInjector]
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -116,8 +128,6 @@
           Quantity: 12
         - ReagentId: TranexamicAcid
           Quantity: 3
-  - type: Tag
-    tags: []
 
 
 - type: entity
@@ -126,11 +136,17 @@
   id: AntiPoisonMedipen
   description: A rapid dose of anti-poison. Contains ultravasculine and epinephrine.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
     - state: penacid
       map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: penacid_empty
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -140,8 +156,6 @@
           Quantity: 10
         - ReagentId: Epinephrine
           Quantity: 5
-  - type: Tag
-    tags: []
 
 - type: entity
   name: brute auto-injector
@@ -149,6 +163,8 @@
   id: BruteAutoInjector
   description: A rapid dose of bicaridine and tranexamic acid, intended for combat applications
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -157,6 +173,10 @@
   - type: Hypospray
     solutionName: pen
     transferAmount: 20
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: bicpen_empty
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -166,8 +186,6 @@
           Quantity: 15
         - ReagentId: TranexamicAcid
           Quantity: 5
-  - type: Tag
-    tags: []
 
 - type: entity
   name: burn auto-injector
@@ -175,6 +193,8 @@
   id: BurnAutoInjector
   description: A rapid dose of dermaline and leporazine, intended for combat applications
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -183,6 +203,10 @@
   - type: Hypospray
     solutionName: pen
     transferAmount: 20
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: dermpen_empty
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -192,8 +216,6 @@
           Quantity: 10
         - ReagentId: Leporazine
           Quantity: 10
-  - type: Tag
-    tags: []
 
 - type: entity
   name: space medipen
@@ -201,6 +223,8 @@
   id: SpaceMedipen
   description: Contains a mix of chemicals that protect you from the deadly effects of space.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -223,8 +247,6 @@
             Quantity: 10
           - ReagentId: Barozine
             Quantity: 20
-  - type: Tag
-    tags: []
 
 - type: entity
   name: stimulant injector
@@ -232,6 +254,8 @@
   id: Stimpack
   description: Contains enough stimulants for you to have the chemical's effect for 30 seconds. Use it when you're sure you're ready to throw down.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -240,6 +264,10 @@
   - type: Item
     sprite: Objects/Specific/Medical/medipen.rsi
     size: 10
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: stimpen_empty
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -252,8 +280,6 @@
     transferAmount: 30
   - type: StaticPrice
     price: 500
-  - type: Tag
-    tags: []
 
 - type: entity
   name: stimulant microinjector
@@ -261,6 +287,8 @@
   id: StimpackMini
   description: A microinjector of stimulants that give you about fifteen seconds of the chemical's effects.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -269,6 +297,10 @@
   - type: Item
     sprite: Objects/Specific/Medical/medipen.rsi
     size: 5
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: stimpen_empty
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -278,8 +310,6 @@
           Quantity: 15
   - type: StaticPrice
     price: 100
-  - type: Tag
-    tags: []
 
 - type: entity
   name: combat medipen
@@ -287,11 +317,17 @@
   id: CombatMedipen
   description: A single-use medipen containing chemicals that regenerate most types of damage.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
     - state: morphen
       map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: morphen_empty
   - type: Item
     sprite: Objects/Specific/Medical/medipen.rsi
     size: 5
@@ -309,8 +345,6 @@
     transferAmount: 30
   - type: StaticPrice
     price: 500
-  - type: Tag
-    tags: []
 
 - type: entity
   name: nutriment medipen
@@ -318,14 +352,20 @@
   id: NutrimentMedipen
   description: A single-use medipen containing nutriment.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
-    - state: hypovolemic
+    - state: salacid
       map: [ "enum.SolutionContainerLayers.Fill" ]
   - type: Item
     sprite: Objects/Specific/Medical/medipen.rsi
-    size: 5
+    size: 3
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: salacid_empty
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -338,8 +378,6 @@
     transferAmount: 10
   - type: StaticPrice
     price: 250
-  - type: Tag
-    tags: []
 
 - type: entity
   name: salin medipen
@@ -347,14 +385,20 @@
   id: SalineMedipen
   description: A single-use medipen containing saline.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
-    - state: morphen
+    - state: salpen
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: Item
     sprite: Objects/Specific/Medical/medipen.rsi
-    size: 5
+    size: 3
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: salpen_empty
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -367,8 +411,6 @@
     transferAmount: 10
   - type: StaticPrice
     price: 200
-  - type: Tag
-    tags: []
 
 - type: entity
   name: pen
@@ -411,6 +453,8 @@
   id: Luxurymedpen
   description: Contains enough stimulants for you to have the chemical's effect for 30 seconds. Use it when you're sure you're ready to throw down.
   components:
+  - type: Tag
+    tags: [AutoInjector]
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
@@ -436,8 +480,107 @@
     emptySpriteName: luxpen_empty
   - type: Hypospray
     solutionName: pen
-    transferAmount: 30
+    transferAmount: 34
   - type: StaticPrice
     price: 500
+
+- type: entity
+  name: ambuzol medipen
+  parent: ChemicalMedipen
+  id: AmbuzolMedipen
+  description: A single-use medipen containing ambuzol.
+  components:
   - type: Tag
-    tags: []
+    tags: [AutoInjector]
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: ambuzol
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: Item
+    sprite: Objects/Specific/Medical/medipen.rsi
+    size: 5
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: ambuzol_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Ambuzol
+          Quantity: 10
+        - ReagentId: Epinephrine
+          Quantity: 5
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 15
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  name: Ambuzol Plus medipen
+  parent: ChemicalMedipen
+  id: AmbuzolPlusMedipen
+  description: A single-use medipen containing ambuzol.
+  components:
+  - type: Tag
+    tags: [AutoInjector]
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: ambuzolplus
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: Item
+    sprite: Objects/Specific/Medical/medipen.rsi
+    size: 5
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: ambuzolplus_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20
+        reagents:
+        - ReagentId: AmbuzolPlus
+          Quantity: 20
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 10
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  name: self made medipen
+  parent: ChemicalMedipen
+  id: SelfMadeMedipen
+  description: A single-use medipen containing desoxyephedrine.
+  components:
+  - type: Tag
+    tags: [AutoInjector]
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: selfmade
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: Item
+    sprite: Objects/Specific/Medical/medipen.rsi
+    size: 5
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: selfmade_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Desoxyephedrine
+          Quantity: 15
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 15
+  - type: StaticPrice
+    price: 200

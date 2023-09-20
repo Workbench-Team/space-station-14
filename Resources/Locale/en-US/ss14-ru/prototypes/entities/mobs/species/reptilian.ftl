@@ -1,6 +1,6 @@
 ent-BaseMobReptilian = Urisst' Mzhand
-    .desc = { ent-BaseMobOrganic.desc }
+    .desc = { ent-BaseMobSpeciesOrganic.desc }
     .suffix = { "" }
-ent-MobReptilianDummy = Urist McHands
+ent-MobReptilianDummy = { ent-BaseSpeciesDummy }
     .desc = A dummy reptilian meant to be used in character setup.
     .suffix = { "" }

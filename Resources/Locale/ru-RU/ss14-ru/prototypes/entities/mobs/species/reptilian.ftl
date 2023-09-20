@@ -1,6 +1,6 @@
-ent-BaseMobReptilian = Урисст' МссХэндс
-    .desc = { ent-BaseMobOrganic.desc }
+ent-BaseMobReptilian = Урисст' МакХэндсс
+    .desc = { ent-BaseMobSpeciesOrganic.desc }
     .suffix = { "" }
-ent-MobReptilianDummy = Урист МакХэндс
-    .desc = Манекен-унатх, используемый при создании персонажа.
+ent-MobReptilianDummy = { ent-BaseSpeciesDummy }
+    .desc = { ent-BaseSpeciesDummy.desc }
     .suffix = { "" }

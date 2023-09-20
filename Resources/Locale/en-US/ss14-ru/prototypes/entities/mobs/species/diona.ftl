@@ -1,6 +1,6 @@
 ent-BaseMobDiona = Urist McPlants
-    .desc = { ent-BaseMobOrganic.desc }
+    .desc = { ent-BaseMobSpeciesOrganic.desc }
     .suffix = { "" }
-ent-MobDionaDummy = Urist McHands
-    .desc = A dummy diona meant to be used in character setup.
+ent-MobDionaDummy = { ent-BaseSpeciesDummy }
+    .desc = { ent-BaseSpeciesDummy.desc }
     .suffix = { "" }

@@ -116,6 +116,22 @@
   recipeUnlocks:
   - HandheldCrewMonitor
 
+- type: technology
+  id: Odysseygms
+  name: research-technology-Odyssey
+  icon:
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: odysseus
+  discipline: Biochemical
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - OdysseusRArm
+  - OdysseusLLeg
+  - OdysseusRLeg
+  - OdysseusRArm
+  - OdysseusHarness
+  - OdysseusLArm
 # Tier 3
 
 - type: technology

@@ -13,3 +13,6 @@ ent-HoloprojectorSecurity = охранный голобарьерный прое
 ent-HoloprojectorSecurity = голобарьерный проектор
     .desc = Создает прочный, но хрупкий голографический барьер.
     .suffix = { "" }
+ent-HoloprojectorSecurityEmpty = { ent-HoloprojectorSecurity }
+    .suffix = Пустой
+    .desc = { ent-HoloprojectorSecurity.desc }

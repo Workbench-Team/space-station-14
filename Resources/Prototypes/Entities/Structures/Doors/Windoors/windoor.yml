@@ -270,6 +270,17 @@
 
 - type: entity
   parent: WindoorSecure
+  id: WindoorSecureMinerLocked
+  suffix: Miner, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Salvage"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMiner ]
+
+- type: entity
+  parent: WindoorSecure
   id: WindoorSecureSecurityLocked
   suffix: Security, Locked
   components:

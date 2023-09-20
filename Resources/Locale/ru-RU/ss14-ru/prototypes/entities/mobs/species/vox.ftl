@@ -1,6 +1,6 @@
-ent-BaseMobVox = { ent-BaseMobOrganic }
-    .desc = { ent-BaseMobOrganic.desc }
+ent-BaseMobVox = { ent-BaseMobSpeciesOrganic }
+    .desc = { ent-BaseMobSpeciesOrganic.desc }
     .suffix = { "" }
-ent-MobVoxDummy = { ent-MobHumanDummy }
-    .desc = { ent-MobHumanDummy.desc }
+ent-MobVoxDummy = { ent-BaseSpeciesDummy }
+    .desc = { ent-BaseSpeciesDummy.desc }
     .suffix = { "" }

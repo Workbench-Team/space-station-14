@@ -5036,6 +5036,14 @@ entities:
       pos: 9.5,-18.5
       parent: 31
       type: Transform
+- proto: AirlockMaintMinerLocked
+  entities:
+  - uid: 222
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: -19.5,-33.5
+      parent: 31
+      type: Transform
 - proto: AirlockMaintRnDLocked
   entities:
   - uid: 184
@@ -5053,11 +5061,6 @@ entities:
   - uid: 58
     components:
     - pos: 26.5,14.5
-      parent: 31
-      type: Transform
-  - uid: 222
-    components:
-    - pos: -19.5,-33.5
       parent: 31
       type: Transform
 - proto: AirlockMaintSecLocked
@@ -5122,6 +5125,20 @@ entities:
     - pos: 16.5,-15.5
       parent: 31
       type: Transform
+- proto: AirlockMinerGlassLocked
+  entities:
+  - uid: 1888
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: -10.5,-38.5
+      parent: 31
+      type: Transform
+  - uid: 9940
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: -10.5,-39.5
+      parent: 31
+      type: Transform
 - proto: AirlockQuartermasterGlassLocked
   entities:
   - uid: 1744
@@ -5148,12 +5165,6 @@ entities:
       type: Transform
 - proto: AirlockSalvageGlassLocked
   entities:
-  - uid: 1888
-    components:
-    - rot: 3.141592653589793 rad
-      pos: -10.5,-39.5
-      parent: 31
-      type: Transform
   - uid: 4317
     components:
     - pos: 25.5,16.5
@@ -5162,12 +5173,6 @@ entities:
   - uid: 6212
     components:
     - pos: 25.5,17.5
-      parent: 31
-      type: Transform
-  - uid: 9940
-    components:
-    - rot: 3.141592653589793 rad
-      pos: -10.5,-38.5
       parent: 31
       type: Transform
 - proto: AirlockScienceGlassLocked

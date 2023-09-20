@@ -31,9 +31,9 @@
   description: Useful for carrying items in your hands.
   components:
   - type: Item
-    size: 80
+    size: 100
   - type: Storage
-    capacity: 80
+    capacity: 100
   - type: Tag
     tags:
     - Briefcase
@@ -49,3 +49,18 @@
     state: icon
   - type: Item
     sprite: Objects/Storage/Briefcases/briefcase_brown.rsi
+
+- type: entity
+  name: brown briefcase
+  parent: BriefcaseSyndieBase
+  id: WeaponcaseSyndie
+  description: A handy briefcase.
+  components:
+  - type: Sprite
+    sprite: Objects/Storage/Briefcases/weapon_case_syndie.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Storage/Briefcases/weapon_case_syndie.rsi
+  - type: Storage
+    storageOpenSound:
+      collection: WeaponCaseOpen

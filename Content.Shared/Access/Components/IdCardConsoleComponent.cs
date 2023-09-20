@@ -66,6 +66,7 @@ public sealed partial class IdCardConsoleComponent : Component
         "Maintenance",
         "Medical",
         "Quartermaster",
+        "Miner",
         "Research",
         "ResearchDirector",
         "Salvage",

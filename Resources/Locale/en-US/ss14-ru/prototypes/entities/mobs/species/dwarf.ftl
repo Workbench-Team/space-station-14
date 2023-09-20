@@ -1,6 +1,6 @@
 ent-BaseMobDwarf = Urist McHands The Dwarf
-    .desc = { ent-BaseMobOrganic.desc }
+    .desc = { ent-BaseMobSpeciesOrganic.desc }
     .suffix = { "" }
-ent-MobDwarfDummy = Urist McHands
-    .desc = A dummy human meant to be used in character setup.
+ent-MobDwarfDummy = { ent-BaseSpeciesDummy }
+    .desc = { ent-BaseSpeciesDummy.desc }
     .suffix = { "" }

@@ -26,7 +26,7 @@
   id: Balloon
 
 - type: Tag
-  id: BaseballBat 
+  id: BaseballBat
 
 - type: Tag
   id: BBQsauce
@@ -309,7 +309,7 @@
   id: CluwneHorn
 
 - type: Tag #Ohioans die happy
-  id: Corn 
+  id: Corn
 
 - type: Tag
   id: Coldsauce
@@ -732,6 +732,12 @@
   id: Mop
 
 - type: Tag
+  id: MopAdv
+
+- type: Tag
+  id: MopBasic
+
+- type: Tag
   id: Mouse
 
 - type: Tag
@@ -950,6 +956,15 @@
   id: SuitEVA
 
 - type: Tag
+  id: AutoInjector
+
+- type: Tag
+  id: AutoInjectorCase
+
+- type: Tag
+  id: BottleChem
+
+- type: Tag
   id: MinerArmor
 
 - type: Tag
@@ -1032,7 +1047,7 @@
 
 - type: Tag
   id: WallmountSubstationElectronics
-  
+
 - type: Tag
   id: WeaponPistolCHIMPUpgradeKit
 
@@ -1083,3 +1098,45 @@
 
 - type: Tag
   id: ClarkRArm
+
+- type: Tag
+  id: OdysseusLArm
+
+- type: Tag
+  id: OdysseusLLeg
+
+- type: Tag
+  id: OdysseusRLeg
+
+- type: Tag
+  id: OdysseusRArm
+
+- type: Tag
+  id: DurandLArm
+
+- type: Tag
+  id: DurandLLeg
+
+- type: Tag
+  id: DurandRLeg
+
+- type: Tag
+  id: DurandRArm
+
+- type: Tag
+  id: DurandArmor
+
+- type: Tag
+  id: GygaxLArm
+
+- type: Tag
+  id: GygaxLLeg
+
+- type: Tag
+  id: GygaxRLeg
+
+- type: Tag
+  id: GygaxRArm
+
+- type: Tag
+  id: GygaxArmor

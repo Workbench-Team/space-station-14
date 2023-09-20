@@ -258,7 +258,7 @@
 - type: entity
   id: ActionMoveModeToggle
   name: "Toggle sprint"
-  description: Toggles walk/sprint mode by default
+  description: Sets walk/sprint move mode by default
   noSpawn: true
   components:
   - type: InstantAction
