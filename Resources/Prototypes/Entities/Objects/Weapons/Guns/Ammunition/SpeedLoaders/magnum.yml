@@ -98,3 +98,64 @@
     steps: 7
     zeroVisible: false
   - type: Appearance
+
+- type: entity
+  id: BaseSpeedLoaderUniversal
+  name: "speed loader (12.7 rifle)"
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - SpeedLoaderUniversal
+  - type: SpeedLoader
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeUniversal
+    capacity: 6
+  - type: Sprite
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+
+- type: entity
+  id: SpeedLoaderUniversal
+  name: "speed loader (12.7 rifle)"
+  parent: BaseSpeedLoaderUniversal
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeCaselessUniversalPT1
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: base-6
+        map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: base
+    steps: 7
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: SpeedLoaderUniversalHV
+  name: "speed loader (12.7 rifle armor-piercing)"
+  parent: BaseSpeedLoaderUniversal
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeCaselessUniversalVPS
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: practice-6
+        map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: practice
+    steps: 7
+    zeroVisible: false
+  - type: Appearance

@@ -238,3 +238,112 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: BaseMagazineUniversal
+  name: "magazine (12.7 rifle)"
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - MagazineUniversal
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeUniversal
+    proto: CartridgeCaselessUniversalPT1
+    capacity: 20
+  - type: Item
+    size: 10
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/universal_rifle_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: MagazineUniversal
+  name: "magazine (12.7 rifle)"
+  parent: BaseMagazineUniversal
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeCaselessUniversalPT1
+  - type: Sprite
+    layers:
+    - state: red
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: MagazineUniversalHv
+  name: "magazine (12.7 rifle armor-piercing)"
+  parent: BaseMagazineUniversal
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeCaselessUniversalVPS
+  - type: Sprite
+    layers:
+    - state: hv
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: BaseMagazineUniversalShort
+  name: "magazine short (12.7 rifle)"
+  parent: BaseMagazineUniversal
+  abstract: true
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeCaselessUniversalPT1
+    capacity: 10
+  - type: Item
+    size: 5
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/universal_rifle_mag_short.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: MagazineUniversalShort
+  name: "magazine short (12.7 rifle)"
+  parent: BaseMagazineUniversalShort
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeCaselessUniversalPT1
+  - type: Sprite
+    layers:
+    - state: red
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: MagazineUniversalShortHv
+  name: "magazine short (12.7 rifle armor-piercing)"
+  parent: BaseMagazineUniversalShort
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeCaselessUniversalVPS
+  - type: Sprite
+    layers:
+    - state: hv
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

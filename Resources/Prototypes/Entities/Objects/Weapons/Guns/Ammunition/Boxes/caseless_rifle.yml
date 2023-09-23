@@ -129,3 +129,62 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: rubber
+
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: BaseMagazineBoxUniversal
+  name: ammunition box (12.7 rifle)
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeUniversal
+    proto: CartridgeCaselessUniversalPT1
+    capacity: 60
+  - type: Item
+    size: 5
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Boxes/caseless_rifle.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseMagazineBoxUniversal
+  id: MagazineBoxUniversalPT1
+  name: ammunition box (12.7 rifle)
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeCaselessUniversalPT1
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: BaseMagazineBoxCaselessRifle
+  id: MagazineBoxUniversalVPS
+  name: ammunition box (12.7 rifle armor-piercing)
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeCaselessUniversalVPS
+  - type: Sprite
+    layers:
+    - state: base-10x24
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag10-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag10
+    steps: 2
+    zeroVisible: false
+     

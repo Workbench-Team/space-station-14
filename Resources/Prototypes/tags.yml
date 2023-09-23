@@ -271,6 +271,9 @@
 - type: Tag
   id: CartridgeRocket
 
+- type: Tag
+  id: CartridgeUniversal
+
 # Allows you to walk over tile entities such as lava without steptrigger
 - type: Tag
   id: Catwalk
@@ -663,6 +666,12 @@
   id: MagazineCaselessRifle
 
 - type: Tag
+  id: MagazineUniversalShort
+
+- type: Tag
+  id: MagazineUniversal
+
+- type: Tag
   id: MagazineHeavyRifle
 
 - type: Tag
@@ -927,6 +936,9 @@
 
 - type: Tag
   id: SpeedLoaderMagnum
+
+- type: Tag
+  id: SpeedLoaderUniversal
 
 - type: Tag
   id: SpeedLoaderPistol

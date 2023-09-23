@@ -52,3 +52,50 @@
     layers:
     - state: rubber
       map: ["enum.AmmoVisualLayers.Base"]
+
+- type: entity
+  id: BaseCartridgeUniversal
+  name: cartridge (12.7 rifle)
+  parent: BaseCartridge
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - CartridgeUniversal
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/light_rifle.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 10
+
+- type: entity
+  id: CartridgeCaselessUniversalPT1
+  name: cartridge (12.7 rifle)
+  parent: BaseCartridgeUniversal
+  components:
+  - type: CartridgeAmmo
+    proto: BulletUniversalPT1
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+
+- type: entity
+  id: CartridgeCaselessUniversalVPS
+  name: cartridge (12.7 rifle armor-piercing)
+  parent: BaseCartridgeUniversal
+  components:
+  - type: CartridgeAmmo
+    proto: BulletUniversalVPS
+  - type: Sprite
+    layers:
+    - state: hv
+      map: ["enum.AmmoVisualLayers.Base"]
