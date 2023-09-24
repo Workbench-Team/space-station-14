@@ -37,7 +37,7 @@
       - id: WeaponBFG9000
       - id: JawsOfLifeHarm9000
       - id: WeaponGrenadeFragLauncher9000
-      - id: WeaponLightMachineGunL69000
+      - id: WeaponShotgunEnforcer9000
   - type: Damageable
     id: MechMauler
   - type: IntrinsicRadioReceiver

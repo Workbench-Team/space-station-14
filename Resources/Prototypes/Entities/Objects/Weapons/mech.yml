@@ -144,7 +144,7 @@
     fireCost: 200
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 10
+    autoRechargeRate: 40
   - type: Appearance
 
 - type: entity
@@ -162,8 +162,8 @@
     angleIncrease: 4
     angleDecay: 16
     fireRate: 8
-    maxAngle: 60
-    minAngle: 60
+    maxAngle: 35
+    minAngle: 35
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -364,8 +364,8 @@
     angleIncrease: 4
     angleDecay: 16
     fireRate: 5
-    maxAngle: 40
-    minAngle: 40
+    maxAngle: 20
+    minAngle: 10
     selectedMode: FullAuto
     availableModes:
     - FullAuto
