@@ -49,7 +49,7 @@
   - type: Item
     size: 80
   - type: Gun
-    fireRate: 1
+    fireRate: 2
     selectedMode: FullAuto
     availableModes:
       - FullAuto
@@ -60,7 +60,7 @@
     whitelist:
       tags:
         - CartridgeRocket
-    capacity: 10
+    capacity: 100
     proto: CartridgeRocketSlow
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
@@ -88,7 +88,7 @@
       - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
-    capacity: 20
+    capacity: 100
     proto: CartridgeRocket
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
@@ -107,8 +107,8 @@
       sprite: Objects/Specific/Mech/mecha_equipment.rsi
       state: mecha_disabler
     - type: Gun
-      maxAngle: 30
-      minAngle: 30
+      maxAngle: 10
+      minAngle: 0
       fireRate: 2
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
@@ -125,6 +125,9 @@
       magState: mag
       steps: 5
       zeroVisible: true
+    - type: BatterySelfRecharger
+      autoRecharge: true
+      autoRechargeRate: 40
     - type: Appearance
     - type: AmmoCounter
     - type: MechEquipment

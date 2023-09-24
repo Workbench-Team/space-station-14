@@ -10,7 +10,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 8  # Should have the same or less damage than a regular pellet
+        Piercing: 12  # Should have the same or less damage than a regular pellet
 
 - type: entity
   id: PelletShotgunBeanbag
@@ -26,7 +26,7 @@
       types:
         Blunt: 10
   - type: StaminaDamageOnCollide
-    damage: 55 # 2 hits to stun
+    damage: 40 # 3 hits to stun
 
 - type: entity
   id: PelletShotgun
@@ -74,7 +74,7 @@
   id: PelletShotgunImprovised
   name: improvised pellet
   noSpawn: true
-  parent: BaseBullet 
+  parent: BaseBullet
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi

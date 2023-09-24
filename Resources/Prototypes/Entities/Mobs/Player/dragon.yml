@@ -153,7 +153,6 @@
     thresholds:
       0: Alive
       300: Dead
-  # half damage, spread evenly
   - type: MeleeWeapon
     damage:
       groups:

@@ -84,3 +84,18 @@
       - id: WeaponCaseSaiga
         orGroup: WeaponCaseRandom
       - id: ClothingOuterHardsuitERTBlueShield
+  
+- type: entity
+  name: brown briefcase
+  parent: BriefcaseSyndieBase
+  id: WeaponcaseSyndie
+  description: A handy briefcase.
+  components:
+  - type: Sprite
+    sprite: Objects/Storage/Briefcases/weapon_case_syndie.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Storage/Briefcases/weapon_case_syndie.rsi
+  - type: Storage
+    storageOpenSound:
+      collection: WeaponCaseOpen
