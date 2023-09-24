@@ -31,6 +31,7 @@
   parent: BaseStorageItem
   description: A robust bag for salvage specialists and miners alike to carry large amounts of ore.
   components:
+  - type: MagnetPickup
   - type: Sprite
     sprite: Objects/Specific/Mining/ore_bag_bluespace.rsi
     state: icon
@@ -46,7 +47,7 @@
   - type: Item
     size: 176
   - type: Storage
-    capacity: 2400
+    capacity: 9999
     quickInsert: true
     areaInsert: true
     areaInsertRadius: 14
