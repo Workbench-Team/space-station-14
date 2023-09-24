@@ -68,6 +68,13 @@
   - chat-speech-verb-skeleton-3
 
 - type: speechVerb
+  id: Feline
+  speechVerbStrings:
+  - chat-speech-verb-feline-1
+  - chat-speech-verb-feline-2
+  - chat-speech-verb-feline-3
+
+- type: speechVerb
   id: Slime
   speechVerbStrings:
   - chat-speech-verb-slime-1

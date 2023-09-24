@@ -81,6 +81,10 @@ chat-speech-verb-plant-3 = creaks
 chat-speech-verb-robotic-1 = states
 chat-speech-verb-robotic-2 = beeps
 
+chat-speech-verb-feline-1 = meows
+chat-speech-verb-feline-2 = purrs
+chat-speech-verb-feline-3 = nya`vs
+
 chat-speech-verb-reptilian-1 = hisses
 chat-speech-verb-reptilian-2 = snorts
 chat-speech-verb-reptilian-3 = huffs
