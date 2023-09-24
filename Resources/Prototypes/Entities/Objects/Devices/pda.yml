@@ -456,7 +456,8 @@
         tags:
         - Write
   - type: PdaBorderColor
-    borderColor: "#7C5D00"
+    borderColor: "#1E1E32"
+    accentHColor: "#2851A4"
   - type: Icon
     state: pda-blueshield
 
