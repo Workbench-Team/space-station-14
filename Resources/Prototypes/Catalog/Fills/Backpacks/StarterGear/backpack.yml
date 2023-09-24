@@ -64,6 +64,15 @@
 
 - type: entity
   noSpawn: true
+  parent: ClothingBackpackBlueShield
+  id: ClothingBackpackBlueShieldFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalBlueShield
+
+- type: entity
+  noSpawn: true
   parent: ClothingBackpackEngineering
   id: ClothingBackpackChiefEngineerFilled
   components:

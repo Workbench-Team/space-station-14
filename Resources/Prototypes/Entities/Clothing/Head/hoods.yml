@@ -225,6 +225,18 @@
 
 - type: entity
   parent: ClothingHeadHatHoodWinterBase
+  id: ClothingHeadHatHoodWinterBlueShield
+  noSpawn: true
+  name: captain's winter coat hood
+  description: An expensive hood, to keep the captain's head warm.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hoods/Coat/hoodblueshield.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hoods/Coat/hoodblueshield.rsi
+
+- type: entity
+  parent: ClothingHeadHatHoodWinterBase
   id: ClothingHeadHatHoodWinterCargo
   noSpawn: true
   name: cargo winter coat hood

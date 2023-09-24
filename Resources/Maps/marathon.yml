@@ -15072,11 +15072,6 @@ entities:
     - pos: -50.49086,33.632812
       parent: 30
       type: Transform
-  - uid: 5060
-    components:
-    - pos: -22.523506,34.721382
-      parent: 30
-      type: Transform
   - uid: 7747
     components:
     - pos: 3.4849148,-6.354914
@@ -102950,7 +102945,7 @@ entities:
     - pos: -23.5,-11.5
       parent: 30
       type: Transform
-    - SecondsUntilStateChange: -7502.5947
+    - SecondsUntilStateChange: -7535.195
       state: Closing
       type: Door
   - uid: 21248
@@ -105294,6 +105289,13 @@ entities:
         - 0
         - 0
       type: EntityStorage
+- proto: LockerBlueShieldFilled
+  entities:
+  - uid: 5021
+    components:
+    - pos: -22.5,34.5
+      parent: 30
+      type: Transform
 - proto: LockerBoozeFilled
   entities:
   - uid: 451
@@ -124639,6 +124641,13 @@ entities:
     - pos: -9.5,18.5
       parent: 30
       type: Transform
+- proto: SpawnPointBlueShield
+  entities:
+  - uid: 5060
+    components:
+    - pos: -21.5,35.5
+      parent: 30
+      type: Transform
 - proto: SpawnPointBorg
   entities:
   - uid: 2371
@@ -129334,11 +129343,6 @@ entities:
   - uid: 5020
     components:
     - pos: -22.5,35.5
-      parent: 30
-      type: Transform
-  - uid: 5021
-    components:
-    - pos: -22.5,34.5
       parent: 30
       type: Transform
   - uid: 5037

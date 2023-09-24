@@ -34106,11 +34106,6 @@ entities:
       type: Transform
 - proto: filingCabinetRandom
   entities:
-  - uid: 4216
-    components:
-    - pos: 6.5,26.5
-      parent: 31
-      type: Transform
   - uid: 5628
     components:
     - pos: 6.5,-5.5
@@ -51496,6 +51491,13 @@ entities:
     - pos: 44.5,11.5
       parent: 31
       type: Transform
+- proto: LockerBlueShieldFilled
+  entities:
+  - uid: 4216
+    components:
+    - pos: 6.5,26.5
+      parent: 31
+      type: Transform
 - proto: LockerBoozeFilled
   entities:
   - uid: 584
@@ -60610,6 +60612,13 @@ entities:
   - uid: 721
     components:
     - pos: -11.5,-7.5
+      parent: 31
+      type: Transform
+- proto: SpawnPointBlueShield
+  entities:
+  - uid: 11311
+    components:
+    - pos: 7.5,23.5
       parent: 31
       type: Transform
 - proto: SpawnPointBorg

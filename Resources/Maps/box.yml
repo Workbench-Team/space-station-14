@@ -11823,7 +11823,7 @@ entities:
     - dockJointId: docking46345
       dockedWith: 21828
       type: Docking
-    - SecondsUntilStateChange: -67696.58
+    - SecondsUntilStateChange: -67735.96
       changeAirtight: False
       state: Opening
       type: Door
@@ -11847,7 +11847,7 @@ entities:
     - dockJointId: docking46345
       dockedWith: 562
       type: Docking
-    - SecondsUntilStateChange: -67696.58
+    - SecondsUntilStateChange: -67735.96
       changeAirtight: False
       state: Opening
       type: Door
@@ -133837,6 +133837,13 @@ entities:
     - pos: 5.5,-49.5
       parent: 8364
       type: Transform
+- proto: LockerBlueShieldFilled
+  entities:
+  - uid: 27842
+    components:
+    - pos: 9.5,-15.5
+      parent: 8364
+      type: Transform
 - proto: LockerBoozeFilled
   entities:
   - uid: 1718
@@ -156022,6 +156029,13 @@ entities:
   - uid: 10584
     components:
     - pos: 30.5,-0.5
+      parent: 8364
+      type: Transform
+- proto: SpawnPointBlueShield
+  entities:
+  - uid: 27841
+    components:
+    - pos: 9.5,-16.5
       parent: 8364
       type: Transform
 - proto: SpawnPointBorg

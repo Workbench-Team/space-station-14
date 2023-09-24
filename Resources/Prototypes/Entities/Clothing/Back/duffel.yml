@@ -50,6 +50,15 @@
 
 - type: entity
   parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelBlueShield
+  name: captain's duffel bag
+  description: A large duffel bag for holding extra captainly goods.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Duffels/blueshield.rsi
+
+- type: entity
+  parent: ClothingBackpackDuffel
   id: ClothingBackpackDuffelClown
   name: clown duffel bag
   description: A large duffel bag for holding extra honk goods.

@@ -84,6 +84,33 @@
         amount: 2
 
 - type: entity
+  parent: WeaponcaseBlueShield
+  id: WeaponCaseAsh9
+  name: case with Ash9
+  description: "Hidden threat: The classic KR51 automatic rifle, bundled with three magazines."
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponRifleAsh9
+      - id: MagazineUniversal
+        amount: 2
+      - id: MagazineUniversalShortHv
+      - id: WeaponRevolverRsh18
+
+- type: entity
+  parent: WeaponcaseBlueShield
+  id: WeaponCaseSaiga
+  name: KR51 bundle
+  description: "Hidden threat: The classic KR51 automatic rifle, bundled with three magazines."
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponShotgunSaiga
+      - id: MagazineShotgunSaiga
+        amount: 2
+      - id: WeaponRevolverRsh18
+
+- type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateFilledRevolver
   name: Python bundle

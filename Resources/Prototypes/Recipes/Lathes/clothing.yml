@@ -37,6 +37,14 @@
     Durathread: 100
 
 - type: latheRecipe
+  id: ClothingUniformJumpsuitBlueShield
+  result: ClothingUniformJumpsuitBlueShield
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
   id: ClothingUniformJumpskirtCaptain
   result: ClothingUniformJumpskirtCaptain
   completetime: 4

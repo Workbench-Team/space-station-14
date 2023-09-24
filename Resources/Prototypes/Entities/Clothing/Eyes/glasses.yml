@@ -114,6 +114,17 @@
     - WhitelistChameleon
 
 - type: entity
+  parent: ClothingEyesGlassesSunglasses
+  id: ClothingEyesGlassesSunglassesBlueShield
+  name: sun glasses
+  description: Useful both for security and cargonia.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/blueshieldglasses.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/blueshieldglasses.rsi
+
+- type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesSecurity
   name: security sunglasses

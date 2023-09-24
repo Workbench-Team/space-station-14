@@ -15,10 +15,6 @@
       "directions": 4
     },
     {
-      "name": "inhand-left",
-      "directions": 4
-    },
-    {
       "name": "inhand-right",
       "directions": 4
     },
@@ -55,6 +51,9 @@
     {
       "name": "pda-chaplain"
     },
+    {
+      "name": "pda-blueshield"
+    },    
     {
       "name": "pda-chemistry"
     },

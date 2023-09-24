@@ -208,3 +208,14 @@
     layers:
       - state: box_of_doom
       - state: dna
+
+- type: entity
+  name: box of magazines
+  parent: BoxCardboardMedPens
+  id: BoxCardboardTrackImp
+  description: A box full of medpens.
+  components:
+  - type: StorageFill
+    contents:
+      - id: TrackingImplanter
+        amount: 6

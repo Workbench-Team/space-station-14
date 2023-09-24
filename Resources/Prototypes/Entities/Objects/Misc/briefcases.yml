@@ -31,9 +31,9 @@
   description: Useful for carrying items in your hands.
   components:
   - type: Item
-    size: 80
+    size: 100
   - type: Storage
-    capacity: 80
+    capacity: 100
   - type: Tag
     tags:
     - Briefcase
@@ -49,3 +49,38 @@
     state: icon
   - type: Item
     sprite: Objects/Storage/Briefcases/briefcase_brown.rsi
+
+- type: entity
+  name: brown briefcase
+  parent: BriefcaseSyndieBase
+  id: WeaponcaseBlueShield
+  description: A handy briefcase.
+  components:
+  - type: Sprite
+    sprite: Objects/Storage/Briefcases/blueshield_case.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Storage/Briefcases/blueshield_case.rsi
+  - type: Storage
+    storageOpenSound:
+      collection: WeaponCaseOpen
+
+- type: entity
+  parent: PresentRandom
+  id: MysteryWeaponBox
+  name: mystery spacemen minifigure box
+  description: A box containing a mystery minifigure. The side of the box depicts a few blacked-out 'rare' figures, including one with a large, non-humanoid shilouette.
+  components:
+  - type: Item
+    sprite: Objects/Storage/Briefcases/blueshield_case.rsi
+  - type: Sprite
+    sprite: Objects/Storage/Briefcases/blueshield_case.rsi
+    layers:
+      - state: icon
+  - type: SpawnItemsOnUse
+    items:
+      - id: WeaponCaseAsh9
+        orGroup: WeaponCaseRandom
+      - id: WeaponCaseSaiga
+        orGroup: WeaponCaseRandom
+      - id: ClothingOuterHardsuitERTBlueShield

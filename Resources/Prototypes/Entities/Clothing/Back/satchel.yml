@@ -129,6 +129,15 @@
 
 - type: entity
   parent: ClothingBackpackSatchel
+  id: ClothingBackpackSatchelBlueShield
+  name: captain's satchel
+  description: An exclusive satchel for Nanotrasen officers.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Satchels/blueshield.rsi
+
+- type: entity
+  parent: ClothingBackpackSatchel
   id: ClothingBackpackSatchelCentcom
   name: centcom satchel
   description: An exclusive satchel for CentCom officers.

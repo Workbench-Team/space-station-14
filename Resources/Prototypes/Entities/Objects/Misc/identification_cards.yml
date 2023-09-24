@@ -139,6 +139,20 @@
 
 - type: entity
   parent: IDCardStandard
+  id: BlueShieldIDCard
+  name: blueshield ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - state: idblueshield
+  - type: Item
+    heldPrefix: blue
+  - type: PresetIdCard
+    job: BlueShield
+
+- type: entity
+  parent: IDCardStandard
   id: EngineeringIDCard
   name: engineer ID card
   components:

@@ -75,6 +75,20 @@
     access: [["Captain"]]
 
 - type: entity
+  id: LockerBlueShield
+  parent: LockerBase
+  name: salvage specialist's equipment
+  description: Nevermind the pickaxe.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: cap
+    stateDoorOpen: cap_open
+    stateDoorClosed: blueshield_door
+  - type: AccessReader
+    access: [["Captain"]]
+
+- type: entity
   id: LockerHeadOfPersonnel
   parent: LockerBaseSecure
   name: head of personnel's locker

@@ -25,6 +25,23 @@
     sprite: Objects/Storage/Briefcases/garment_bag.rsi
 
 - type: entity
+  name: blueshield's garment bag
+  parent: GarmentBag
+  id: GarmentBagBlueShield
+  description: A handy bag.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingShoesBootsCombatFilled
+      - id: ClothingUniformJumpsuitBlueShield
+      - id: ClothingUnderSocksCapStockings
+      - id: ClothingUnderSocksCapKneeSocks
+      - id: ClothingUnderSocksCapSocks
+      - id: ClothingEyesGlassesSunglassesBlueShield
+      - id: ClothingOuterWinterBS
+      - id: ClothingNeckMantleCap
+
+- type: entity
   name: captain's garment bag
   parent: GarmentBag
   id: GarmentBagCaptain

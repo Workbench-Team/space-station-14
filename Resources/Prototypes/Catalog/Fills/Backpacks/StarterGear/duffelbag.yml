@@ -73,6 +73,15 @@
 
 - type: entity
   noSpawn: true
+  parent: ClothingBackpackDuffelBlueShield
+  id: ClothingBackpackDuffelBlueShieldFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalBlueShield
+
+- type: entity
+  noSpawn: true
   parent: ClothingBackpackDuffelEngineering
   id: ClothingBackpackDuffelChiefEngineerFilled
   components:

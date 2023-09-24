@@ -10080,11 +10080,6 @@ entities:
       type: Transform
 - proto: Bookshelf
   entities:
-  - uid: 1952
-    components:
-    - pos: -13.5,25.5
-      parent: 4812
-      type: Transform
   - uid: 5374
     components:
     - pos: 20.5,-18.5
@@ -60293,6 +60288,13 @@ entities:
           occludes: True
           ent: null
       type: ContainerContainer
+- proto: LockerBlueShieldFilled
+  entities:
+  - uid: 1952
+    components:
+    - pos: -13.5,25.5
+      parent: 4812
+      type: Transform
 - proto: LockerBoozeFilled
   entities:
   - uid: 1648
@@ -71347,6 +71349,13 @@ entities:
   - uid: 1783
     components:
     - pos: 6.5,7.5
+      parent: 4812
+      type: Transform
+- proto: SpawnPointBlueShield
+  entities:
+  - uid: 3610
+    components:
+    - pos: -13.5,23.5
       parent: 4812
       type: Transform
 - proto: SpawnPointBorg

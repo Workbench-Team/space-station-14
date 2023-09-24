@@ -619,6 +619,19 @@
 #ERT Security Hardsuit
 - type: entity
   parent: ClothingHeadHelmetHardsuitSyndie
+  id: ClothingHeadHelmetHardsuitERTBlueShield
+  noSpawn: true
+  name: ERT security hardsuit helmet
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hardsuits/ERThelmets/ertblueshield.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hardsuits/ERThelmets/ertblueshield.rsi
+  - type: PointLight
+    color: "#6088FF"
+
+- type: entity
+  parent: ClothingHeadHelmetHardsuitSyndie
   id: ClothingHeadHelmetHardsuitERTSecurity
   noSpawn: true
   name: ERT security hardsuit helmet

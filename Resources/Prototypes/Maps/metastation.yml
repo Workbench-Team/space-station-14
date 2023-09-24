@@ -54,6 +54,7 @@
            CargoTechnician: [ 3, 3 ]
            Miner: [ 3,3 ]
         #Service
+           BlueShield: [1, 1]
            Passenger: [ -1, -1 ]
            Bartender: [ 2, 2 ]
            Botanist: [ 3, 3 ]

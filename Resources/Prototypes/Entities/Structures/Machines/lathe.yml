@@ -552,6 +552,9 @@
       - MagazineLightRifle
       - MagazineBoxPistol
       - MagazineBoxPistolUranium
+      - MagazineUniversalShortHv
+      - MagazineUniversal
+      - SpeedLoaderUniversal
       - MagazineBoxMagnum
       - MagazineBoxRifle
       - MagazineBoxLightRifle
@@ -703,6 +706,8 @@
         - MagazineBoxMagnum
         - MagazineBoxRifle
         - MagazineBoxLightRifle
+        - MagazineBoxUniversalVPS
+        - MagazineBoxUniversalPT1
     - type: MaterialStorage
       whitelist:
         tags:
@@ -801,6 +806,7 @@
       - ClothingUniformJumpsuitBartender
       - ClothingUniformJumpskirtBartender
       - ClothingUniformJumpsuitCaptain
+      - ClothingUniformJumpsuitBlueShield
       - ClothingUniformJumpskirtCaptain
       - ClothingUniformJumpsuitCargo
       - ClothingUniformJumpskirtCargo

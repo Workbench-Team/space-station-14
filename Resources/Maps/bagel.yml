@@ -114046,6 +114046,13 @@ entities:
     - pos: -26.5,32.5
       parent: 60
       type: Transform
+- proto: LockerBlueShieldFilled
+  entities:
+  - uid: 24277
+    components:
+    - pos: -4.5,-5.5
+      parent: 60
+      type: Transform
 - proto: LockerBoozeFilled
   entities:
   - uid: 2078
@@ -135231,6 +135238,13 @@ entities:
   - uid: 2248
     components:
     - pos: 10.5,-34.5
+      parent: 60
+      type: Transform
+- proto: SpawnPointBlueShield
+  entities:
+  - uid: 24257
+    components:
+    - pos: -3.5,-5.5
       parent: 60
       type: Transform
 - proto: SpawnPointBorg

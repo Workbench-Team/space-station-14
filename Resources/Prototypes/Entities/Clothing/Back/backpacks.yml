@@ -107,6 +107,15 @@
 
 - type: entity
   parent: ClothingBackpack
+  id: ClothingBackpackBlueShield
+  name: captain's backpack
+  description: It's a special backpack made exclusively for Nanotrasen officers.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/blueshield.rsi
+
+- type: entity
+  parent: ClothingBackpack
   id: ClothingBackpackMime
   name: mime backpack
   description: A silent backpack made for those silent workers. Silence Co.

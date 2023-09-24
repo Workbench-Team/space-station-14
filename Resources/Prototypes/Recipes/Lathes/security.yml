@@ -520,6 +520,41 @@
     Steel: 1800
 
 - type: latheRecipe
+  id: MagazineBoxUniversalPT1
+  result: MagazineBoxUniversalPT1
+  completetime: 5
+  materials:
+    Steel: 1800
+
+- type: latheRecipe
+  id: MagazineBoxUniversalVPS
+  result: MagazineBoxUniversalVPS
+  completetime: 5
+  materials:
+    Steel: 3200
+
+- type: latheRecipe
+  id: MagazineUniversalShortHv
+  result: MagazineUniversalShortHv
+  completetime: 5
+  materials:
+    Steel: 575
+
+- type: latheRecipe
+  id: MagazineUniversal
+  result: MagazineUniversal
+  completetime: 5
+  materials:
+    Steel: 430
+
+- type: latheRecipe
+  id: SpeedLoaderUniversal
+  result: SpeedLoaderUniversal
+  completetime: 5
+  materials:
+    Steel: 200
+
+- type: latheRecipe
   id: MagazineBoxLightRifleRubber
   result: MagazineBoxLightRifleRubber
   completetime: 5
