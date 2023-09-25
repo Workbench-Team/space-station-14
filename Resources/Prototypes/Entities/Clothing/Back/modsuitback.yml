@@ -41,8 +41,6 @@
     sprite: Clothing/Back/Modsuit/admem.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterModsuitBodyAdmem
-    requiredSlot: back
-    slot: outerClothing
 
 - type: entity
   parent: ClothingModsuitbackCorp
@@ -56,5 +54,107 @@
     sprite: Clothing/Back/Modsuit/chrono.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterModsuitBodyChrono
-    requiredSlot: back
-    slot: outerClothing
+
+- type: entity
+  parent: ClothingModsuitbackCorp
+  id: ClothingModsuitbackAtmospheric
+  name: Modsuit core "Admem"
+  description: Modsuit core version Admem
+  components:
+  - type: Storage
+    capacity: 100
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/atmospheric.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodyAtmospheric
+
+- type: entity
+  parent: ClothingModsuitbackCorp
+  id: ClothingModsuitbackClown
+  name: Modsuit core "Admem"
+  description: Modsuit core version Admem
+  components:
+  - type: Storage
+    capacity: 100
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/clown.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodyClown
+
+- type: entity
+  parent: ClothingModsuitbackCorp
+  id: ClothingModsuitbackEngineering
+  name: Modsuit core "Admem"
+  description: Modsuit core version Admem
+  components:
+  - type: Storage
+    capacity: 100
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/engineering.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodyEngineering
+
+- type: entity
+  parent: ClothingModsuitbackCorp
+  id: ClothingModsuitbackMedical
+  name: Modsuit core "Admem"
+  description: Modsuit core version Admem
+  components:
+  - type: Storage
+    capacity: 100
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/medical.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodyMedical
+
+- type: entity
+  parent: ClothingModsuitbackAdmem
+  id: ClothingModsuitbackMiningAdmem
+  name: Modsuit core "Admem"
+  description: Modsuit core version Admem
+  components:
+  - type: Storage
+    capacity: 100
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/mining.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodyMining
+
+- type: entity
+  parent: ClothingModsuitbackCorp
+  id: ClothingModsuitbackRescue
+  name: Modsuit core "Admem"
+  description: Modsuit core version Admem
+  components:
+  - type: Storage
+    capacity: 100
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/rescue.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodyRescue
+
+- type: entity
+  parent: ClothingModsuitbackCorp
+  id: ClothingModsuitbackSecurity
+  name: Modsuit core "Admem"
+  description: Modsuit core version Admem
+  components:
+  - type: Storage
+    capacity: 100
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/security.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodySecurity
+
+- type: entity
+  parent: ClothingModsuitbackCorp
+  id: ClothingModsuitbackStandart
+  name: Modsuit core "Admem"
+  description: Modsuit core version Admem
+  components:
+  - type: Storage
+    capacity: 100
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/standart.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodyStandart

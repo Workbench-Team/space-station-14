@@ -41,12 +41,6 @@
     energy: 3
   - type: ToggleableClothing
     clothingPrototype: ClothingHandsModsuitAdmem
-    slot: gloves
-    requiredSlot: head
-  - type: ContainerContainer
-    containers:
-      toggleable-clothing: !type:ContainerSlot {}
-
 
 - type: entity
   parent: ClothingHeadHelmetModsuitCorp
@@ -63,8 +57,115 @@
     color: "#fffafa"
   - type: ToggleableClothing
     clothingPrototype: ClothingHandsModsuitChrono
-    slot: gloves
-    requiredSlot: head
-  - type: ContainerContainer
-    containers:
-      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitCorp
+  id: ClothingHeadHelmetModsuitAtmospheric
+  noSpawn: true
+  name: Modsuit helmet "Admem"
+  description: Anti-impact helmet, with built-in lighting.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuits/atmospheric.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuits/atmospheric.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitAtmospheric
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitCorp
+  id: ClothingHeadHelmetModsuitClown
+  noSpawn: true
+  name: Modsuit helmet "Admem"
+  description: Anti-impact helmet, with built-in lighting.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuits/clown.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuits/clown.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitClown
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitCorp
+  id: ClothingHeadHelmetModsuitEngineering
+  noSpawn: true
+  name: Modsuit helmet "Admem"
+  description: Anti-impact helmet, with built-in lighting.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuits/engineering.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuits/engineering.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitEngineering
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitCorp
+  id: ClothingHeadHelmetModsuitMedical
+  noSpawn: true
+  name: Modsuit helmet "Admem"
+  description: Anti-impact helmet, with built-in lighting.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuits/medical.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuits/medical.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitMedical
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitCorp
+  id: ClothingHeadHelmetModsuitMining
+  noSpawn: true
+  name: Modsuit helmet "Admem"
+  description: Anti-impact helmet, with built-in lighting.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuits/mining.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuits/mining.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitMining
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitCorp
+  id: ClothingHeadHelmetModsuitRescue
+  noSpawn: true
+  name: Modsuit helmet "Admem"
+  description: Anti-impact helmet, with built-in lighting.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuits/rescue.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuits/rescue.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitRescue
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitCorp
+  id: ClothingHeadHelmetModsuitSecurity
+  noSpawn: true
+  name: Modsuit helmet "Admem"
+  description: Anti-impact helmet, with built-in lighting.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuits/security.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuits/security.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitSecurity
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitCorp
+  id: ClothingHeadHelmetModsuitStandart
+  noSpawn: true
+  name: Modsuit helmet "Admem"
+  description: Anti-impact helmet, with built-in lighting.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuits/standart.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuits/standart.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitStandart

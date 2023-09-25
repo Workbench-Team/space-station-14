@@ -14,7 +14,7 @@
     equipSound: /Audio/Items/ballin.ogg
     unequipSound: /Audio/Items/ballout.ogg
   - type: Magboots
-    toggleAction: ActionToggleMagboots
+    toggleAction: ActionToggleMagbootsModsuitShoesCorp
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1
@@ -24,7 +24,7 @@
     price: 750
 
 - type: entity
-  parent: ClothingShoesBootsMag
+  parent: ClothingModsuitShoesCorp
   id: ClothingModsuitShoesAdmem
   noSpawn: true
   name: Modsuit boots "Admem"
@@ -35,20 +35,11 @@
     state: icon
   - type: Clothing
     sprite: Clothing/Shoes/Boots/Modsuit/admem.rsi
-    equipSound: /Audio/Items/ballin.ogg
-    unequipSound: /Audio/Items/ballout.ogg
   - type: Magboots
-    toggleAction: ActionToggleMagboots
-  - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 1
-    enabled: false
-  - type: NoSlip
-  - type: StaticPrice
-    price: 750
+    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
 
 - type: entity
-  parent: ClothingShoesBootsMag
+  parent: ClothingModsuitShoesCorp
   id: ClothingModsuitShoesChrono
   noSpawn: true
   name: Modsuit boots "Chrono Legionnaire"
@@ -56,17 +47,157 @@
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/Modsuit/chrono.rsi
-    equipSound: /Audio/Items/ballin.ogg
-    unequipSound: /Audio/Items/ballout.ogg
     state: icon
   - type: Clothing
     sprite: Clothing/Shoes/Boots/Modsuit/chrono.rsi
   - type: Magboots
-    toggleAction: ActionToggleMagboots
-  - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 1
-    enabled: false
-  - type: NoSlip
-  - type: StaticPrice
-    price: 750
+    toggleAction: ActionToggleMagbootsModsuitShoesChrono
+
+- type: entity
+  parent: ClothingModsuitShoesCorp
+  id: ClothingModsuitShoesAtmospheric
+  noSpawn: true
+  name: Modsuit boots "Admem"
+  description: State-of-the-art magnetic boots that do not slow down their wearer.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/atmospheric.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/atmospheric.rsi
+  - type: Magboots
+    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
+
+- type: entity
+  parent: ClothingModsuitShoesCorp
+  id: ClothingModsuitShoesClown
+  noSpawn: true
+  name: Modsuit boots "Admem"
+  description: State-of-the-art magnetic boots that do not slow down their wearer.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/clown.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/clown.rsi
+  - type: Magboots
+    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
+
+- type: entity
+  parent: ClothingModsuitShoesCorp
+  id: ClothingModsuitShoesEngineering
+  noSpawn: true
+  name: Modsuit boots "Admem"
+  description: State-of-the-art magnetic boots that do not slow down their wearer.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/engineering.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/engineering.rsi
+  - type: Magboots
+    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
+
+- type: entity
+  parent: ClothingModsuitShoesCorp
+  id: ClothingModsuitShoesMedical
+  noSpawn: true
+  name: Modsuit boots "Admem"
+  description: State-of-the-art magnetic boots that do not slow down their wearer.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/medical.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/medical.rsi
+  - type: Magboots
+    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
+
+- type: entity
+  parent: ClothingModsuitShoesCorp
+  id: ClothingModsuitShoesMining
+  noSpawn: true
+  name: Modsuit boots "Admem"
+  description: State-of-the-art magnetic boots that do not slow down their wearer.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/mining.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/mining.rsi
+  - type: Magboots
+    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
+
+- type: entity
+  parent: ClothingModsuitShoesCorp
+  id: ClothingModsuitShoesRescue
+  noSpawn: true
+  name: Modsuit boots "Admem"
+  description: State-of-the-art magnetic boots that do not slow down their wearer.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/rescue.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/rescue.rsi
+  - type: Magboots
+    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
+
+- type: entity
+  parent: ClothingModsuitShoesCorp
+  id: ClothingModsuitShoesSecurity
+  noSpawn: true
+  name: Modsuit boots "Admem"
+  description: State-of-the-art magnetic boots that do not slow down their wearer.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/security.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/security.rsi
+  - type: Magboots
+    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
+
+- type: entity
+  parent: ClothingModsuitShoesCorp
+  id: ClothingModsuitShoesStandart
+  noSpawn: true
+  name: Modsuit boots "Admem"
+  description: State-of-the-art magnetic boots that do not slow down their wearer.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/standart.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/standart.rsi
+  - type: Magboots
+    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
+
+
+
+- type: entity
+  id: ActionToggleMagbootsModsuitShoesCorp
+  parent: ActionBaseToggleMagboots
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: { sprite: Clothing/Shoes/Boots/Modsuit/corp.rsi, state: icon }
+    iconOn: Clothing/Shoes/Boots/Modsuit/corp.rsi/icon-on.png
+
+- type: entity
+  id: ActionToggleMagbootsModsuitShoesAdmem
+  parent: ActionBaseToggleMagboots
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: { sprite: Clothing/Shoes/Boots/Modsuit/admem.rsi, state: icon }
+    iconOn: Clothing/Shoes/Boots/Modsuit/admem.rsi/icon-on.png
+
+- type: entity
+  id: ActionToggleMagbootsModsuitShoesChrono
+  parent: ActionBaseToggleMagboots
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: { sprite: Clothing/Shoes/Boots/Modsuit/chrono.rsi, state: icon }
+    iconOn: Clothing/Shoes/Boots/Modsuit/chrono.rsi/icon-on.png

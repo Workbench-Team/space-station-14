@@ -61,3 +61,115 @@
     sprite: Clothing/OuterClothing/Modsuit/chrono.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetModsuitChrono
+
+- type: entity
+  parent: ClothingOuterModsuitBodyCorp
+  id: ClothingOuterModsuitBodyAtmospheric
+  name: Modsuit cheastplate "Admem"
+  description: A suit made of adminium. Who comes up with these stupid mineral names?
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Modsuit/atmospheric.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Modsuit/atmospheric.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetModsuitAtmospheric
+
+- type: entity
+  parent: ClothingOuterModsuitBodyCorp
+  id: ClothingOuterModsuitBodyClown
+  name: Modsuit cheastplate "Admem"
+  description: A suit made of adminium. Who comes up with these stupid mineral names?
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Modsuit/clown.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Modsuit/clown.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetModsuitClown
+
+- type: entity
+  parent: ClothingOuterModsuitBodyCorp
+  id: ClothingOuterModsuitBodyEngineering
+  name: Modsuit cheastplate "Admem"
+  description: A suit made of adminium. Who comes up with these stupid mineral names?
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Modsuit/engineering.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Modsuit/engineering.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetModsuitEngineering
+
+- type: entity
+  parent: ClothingOuterModsuitBodyCorp
+  id: ClothingOuterModsuitBodyMedical
+  name: Modsuit cheastplate "Admem"
+  description: A suit made of adminium. Who comes up with these stupid mineral names?
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Modsuit/medical.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Modsuit/medical.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetModsuitMedical
+
+- type: entity
+  parent: ClothingOuterModsuitBodyCorp
+  id: ClothingOuterModsuitBodyMining
+  name: Modsuit cheastplate "Admem"
+  description: A suit made of adminium. Who comes up with these stupid mineral names?
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Modsuit/mining.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Modsuit/mining.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetModsuitMining
+
+- type: entity
+  parent: ClothingOuterModsuitBodyCorp
+  id: ClothingOuterModsuitBodyRescue
+  name: Modsuit cheastplate "Admem"
+  description: A suit made of adminium. Who comes up with these stupid mineral names?
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Modsuit/rescue.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Modsuit/rescue.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetModsuitRescue
+
+- type: entity
+  parent: ClothingOuterModsuitBodyCorp
+  id: ClothingOuterModsuitBodySecurity
+  name: Modsuit cheastplate "Admem"
+  description: A suit made of adminium. Who comes up with these stupid mineral names?
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Modsuit/security.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Modsuit/security.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetModsuitSecurity
+
+- type: entity
+  parent: ClothingOuterModsuitBodyCorp
+  id: ClothingOuterModsuitBodyStandart
+  name: Modsuit cheastplate "Admem"
+  description: A suit made of adminium. Who comes up with these stupid mineral names?
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Modsuit/standart.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Modsuit/standart.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetModsuitStandart

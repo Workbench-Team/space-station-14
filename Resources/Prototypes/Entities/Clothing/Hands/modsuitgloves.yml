@@ -39,11 +39,6 @@
     sprite: Clothing/Hands/Gloves/Modsuit/admem.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingModsuitShoesAdmem
-    slot: shoes
-    requiredSlot: gloves
-  - type: ContainerContainer
-    containers:
-      toggleable-clothing: !type:ContainerSlot {}
 
 - type: entity
   parent: ClothingHandsModsuitCorp
@@ -58,8 +53,116 @@
     sprite: Clothing/Hands/Gloves/Modsuit/chrono.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingModsuitShoesChrono
-    slot: shoes
-    requiredSlot: gloves
-  - type: ContainerContainer
-    containers:
-      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingHandsModsuitCorp
+  id: ClothingHandsModsuitAtmospheric
+  noSpawn: true
+  name: Modsuit gloves "Admem"
+  description: Insulating impact gloves. Provide sealing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/atmospheric.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/atmospheric.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesAtmospheric
+
+- type: entity
+  parent: ClothingHandsModsuitCorp
+  id: ClothingHandsModsuitClown
+  noSpawn: true
+  name: Modsuit gloves "Admem"
+  description: Insulating impact gloves. Provide sealing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/clown.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/clown.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesClown
+
+- type: entity
+  parent: ClothingHandsModsuitCorp
+  id: ClothingHandsModsuitEngineering
+  noSpawn: true
+  name: Modsuit gloves "Admem"
+  description: Insulating impact gloves. Provide sealing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/engineering.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/engineering.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesEngineering
+
+- type: entity
+  parent: ClothingHandsModsuitCorp
+  id: ClothingHandsModsuitMedical
+  noSpawn: true
+  name: Modsuit gloves "Admem"
+  description: Insulating impact gloves. Provide sealing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/medical.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/medical.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesMedical
+
+- type: entity
+  parent: ClothingHandsModsuitCorp
+  id: ClothingHandsModsuitMining
+  noSpawn: true
+  name: Modsuit gloves "Admem"
+  description: Insulating impact gloves. Provide sealing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/mining.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/mining.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesMining
+
+- type: entity
+  parent: ClothingHandsModsuitCorp
+  id: ClothingHandsModsuitRescue
+  noSpawn: true
+  name: Modsuit gloves "Admem"
+  description: Insulating impact gloves. Provide sealing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/rescue.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/rescue.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesRescue
+
+- type: entity
+  parent: ClothingHandsModsuitCorp
+  id: ClothingHandsModsuitSecurity
+  noSpawn: true
+  name: Modsuit gloves "Admem"
+  description: Insulating impact gloves. Provide sealing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/security.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/security.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesSecurity
+
+- type: entity
+  parent: ClothingHandsModsuitCorp
+  id: ClothingHandsModsuitStandart
+  noSpawn: true
+  name: Modsuit gloves "Admem"
+  description: Insulating impact gloves. Provide sealing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/standart.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/standart.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesStandart
+
