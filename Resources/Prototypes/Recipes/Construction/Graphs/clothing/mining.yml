@@ -9,13 +9,13 @@
             - tag: ModsuitPlateMining
               name: покрытие мода "Шахтерский"
               icon:
-                sprite: Objects\Specific\Mech\modcore_construction.rsi
+                sprite: Objects/Specific/Mech/modcore_construction.rsi
                 state: engineering
               doAfter: 2
             - tag: ModsuitAssembledPart
               name: собранный каркас модсьюта
               icon:
-                sprite: Objects\Specific\Mech\modcore_construction.rsi
+                sprite: Objects/Specific/Mech/modcore_construction.rsi
                 state: modcore8
               doAfter: 2
     - node: modsuitmining
