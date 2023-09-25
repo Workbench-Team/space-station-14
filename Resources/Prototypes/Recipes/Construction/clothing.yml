@@ -52,3 +52,80 @@
   description: A modified sussy heavy armor for miners.
   icon: { sprite: Clothing/OuterClothing/Armor/miner_red.rsi, state: icon-xeno }
   objectType: Item
+
+- type: construction
+  name: Модсьют "Атмосферный"
+  id: ModsuitAtmospheric
+  graph: ModsuitAtmospheric
+  startNode: start
+  targetNode: modsuitatmospheric
+  category: construction-category-clothing
+  description: Продвинутый модсьют в определенной сборке.
+  icon: { sprite: Clothing/Back/Modsuit/atmospheric.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  name: Модсьют "Клоун"
+  id: ModsuitClown
+  graph: ModsuitClown
+  startNode: start
+  targetNode: modsuitclown
+  category: construction-category-clothing
+  description: Продвинутый модсьют в определенной сборке.
+  icon: { sprite: Clothing/Back/Modsuit/clown.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  name: Модсьют "Инженер"
+  id: ModsuitEngineering
+  graph: ModsuitEngineering
+  startNode: start
+  targetNode: modsuitengineering
+  category: construction-category-clothing
+  description: Продвинутый модсьют в определенной сборке.
+  icon: { sprite: Clothing/Back/Modsuit/engineering.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  name: Модсьют "Медик"
+  id: ModsuitMedical
+  graph: ModsuitMedical
+  startNode: start
+  targetNode: modsuitmedical
+  category: construction-category-clothing
+  description: Продвинутый модсьют в определенной сборке.
+  icon: { sprite: Clothing/Back/Modsuit/medical.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  name: Модсьют "Шахтер"
+  id: ModsuitMining
+  graph: ModsuitMining
+  startNode: start
+  targetNode: modsuitmining
+  category: construction-category-clothing
+  description: Продвинутый модсьют в определенной сборке.
+  icon: { sprite: Clothing/Back/Modsuit/mining.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  name: Модсьют "Офицер"
+  id: ModsuitSecurity
+  graph: ModsuitSecurity
+  startNode: start
+  targetNode: modsuitsecurity
+  category: construction-category-clothing
+  description: Продвинутый модсьют в определенной сборке.
+  icon: { sprite: Clothing/Back/Modsuit/security.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  name: Модсьют "ЕВА"
+  id: ModsuitStandard
+  graph: ModsuitStandard
+  startNode: start
+  targetNode: modsuitstandard
+  category: construction-category-clothing
+  description: Продвинутый модсьют в определенной сборке.
+  icon: { sprite: Clothing/Back/Modsuit/standart.rsi, state: icon }
+  objectType: Item

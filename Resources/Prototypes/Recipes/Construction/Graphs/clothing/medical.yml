@@ -1,0 +1,22 @@
+﻿- type: constructionGraph
+  id: ModsuitMedical
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: modsuitmedical
+          steps:
+            - tag: ModsuitPlateMedical
+              name: покрытие мода "Медик"
+              icon:
+                sprite: Objects\Specific\Mech\modcore_construction.rsi
+                state: medical
+              doAfter: 2
+            - tag: ModsuitAssembledPart
+              name: собранный каркас модсьюта
+              icon:
+                sprite: Objects\Specific\Mech\modcore_construction.rsi
+                state: modcore8
+              doAfter: 2
+    - node: modsuitmedical
+      entity: ClothingModsuitbackMedical

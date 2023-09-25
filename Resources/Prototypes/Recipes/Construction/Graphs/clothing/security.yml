@@ -1,0 +1,22 @@
+﻿- type: constructionGraph
+  id: ModsuitSecurity
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: modsuitsecurity
+          steps:
+            - tag: ModsuitPlateSecurity
+              name: покрытие мода "Офицерский"
+              icon:
+                sprite: Objects\Specific\Mech\modcore_construction.rsi
+                state: security
+              doAfter: 2
+            - tag: ModsuitAssembledPart
+              name: собранный каркас модсьюта
+              icon:
+                sprite: Objects\Specific\Mech\modcore_construction.rsi
+                state: modcore8
+              doAfter: 2
+    - node: modsuitsecurity
+      entity: ClothingModsuitbackSecurity

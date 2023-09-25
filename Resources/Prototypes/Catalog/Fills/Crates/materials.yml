@@ -36,6 +36,15 @@
         amount: 3
 
 - type: entity
+  id: CrateMaterialModCore
+  parent: CrateGenericSteel
+  components:
+  - type: StorageFill
+    contents:
+      - id: ModsuitCoreEnergy
+        amount: 2
+
+- type: entity
   id: CrateMaterialWood
   parent: CrateGenericSteel
   components:

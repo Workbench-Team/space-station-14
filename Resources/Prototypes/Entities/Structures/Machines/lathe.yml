@@ -466,6 +466,18 @@
     - BorgModuleDiagnosis
     - BorgModuleTreatment
     - BorgModuleDefibrillator
+    - ModsuitHelmet
+    - ModsuitGauntlets
+    - ModsuitChestplate
+    - ModsuitBoots
+    - ModsuitPlateAtmospheric
+    - ModsuitPlateCosmohonk
+    - ModsuitPlateEngineering
+    - ModsuitPlateMedical
+    - ModsuitPlateSecurity
+    - ModsuitPlateStandard
+    - ModsuitPlateMining
+    - ModsuitAssembly
     - RipleyHarness
     - RipleyLArm
     - RipleyRArm

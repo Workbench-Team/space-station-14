@@ -1,0 +1,22 @@
+﻿- type: constructionGraph
+  id: ModsuitEngineering
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: modsuitengineering
+          steps:
+            - tag: ModsuitPlateEngineering
+              name: покрытие мода "Инженерный"
+              icon:
+                sprite: Objects\Specific\Mech\modcore_construction.rsi
+                state: engineering
+              doAfter: 2
+            - tag: ModsuitAssembledPart
+              name: собранный каркас модсьюта
+              icon:
+                sprite: Objects\Specific\Mech\modcore_construction.rsi
+                state: modcore8
+              doAfter: 2
+    - node: modsuitengineering
+      entity: ClothingModsuitbackEngineering

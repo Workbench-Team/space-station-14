@@ -1,3 +1,6 @@
+ent-CrateMaterialModCore = ящик ядер мода
+    .desc = 2 полностью заряженных ядра, готовых к сборке.
+    .suffix = { "" }
 ent-CrateMaterialGlass = ящик листов стекла
     .desc = 90 листов стекла, упакованных с заботой.
     .suffix = { "" }

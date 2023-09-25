@@ -1,7 +1,6 @@
-# TODO: Отсортировать эти прототипы
 - type: entity
-  parent: ClothingShoesBootsMag
-  id: ClothingModsuitShoesCorp
+  parent: ClothingShoesBase
+  id: ClothingModsuitShoesBase
   noSpawn: true
   name: Modsuit boots "Corp"
   description: State-of-the-art magnetic boots that do not slow down their wearer.
@@ -13,18 +12,45 @@
     sprite: Clothing/Shoes/Boots/Modsuit/corp.rsi
     equipSound: /Audio/Items/ballin.ogg
     unequipSound: /Audio/Items/ballout.ogg
-  - type: Magboots
-    toggleAction: ActionToggleMagbootsModsuitShoesCorp
-  - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 1
-    enabled: false
-  - type: NoSlip
   - type: StaticPrice
     price: 750
 
 - type: entity
-  parent: ClothingModsuitShoesCorp
+  parent: ClothingShoesBootsMag
+  id: ClothingModsuitShoesMagBase
+  noSpawn: true
+  name: Modsuit boots "Admem"
+  description: State-of-the-art magnetic boots that do not slow down their wearer.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/corp.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/corp.rsi
+    equipSound: /Audio/Items/ballin.ogg
+    unequipSound: /Audio/Items/ballout.ogg
+  - type: Magboots
+    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+    enabled: false
+
+- type: entity
+  parent: ClothingModsuitShoesBase
+  id: ClothingModsuitShoesCorp
+  noSpawn: true
+  name: Modsuit boots "Admem"
+  description: State-of-the-art magnetic boots that do not slow down their wearer.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/corp.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/corp.rsi
+
+- type: entity
+  parent: ClothingModsuitShoesMagBase
   id: ClothingModsuitShoesAdmem
   noSpawn: true
   name: Modsuit boots "Admem"
@@ -33,13 +59,14 @@
   - type: Sprite
     sprite: Clothing/Shoes/Boots/Modsuit/admem.rsi
     state: icon
+  - type: NoSlip  
   - type: Clothing
     sprite: Clothing/Shoes/Boots/Modsuit/admem.rsi
   - type: Magboots
     toggleAction: ActionToggleMagbootsModsuitShoesAdmem
 
 - type: entity
-  parent: ClothingModsuitShoesCorp
+  parent: ClothingModsuitShoesMagBase
   id: ClothingModsuitShoesChrono
   noSpawn: true
   name: Modsuit boots "Chrono Legionnaire"
@@ -48,13 +75,14 @@
   - type: Sprite
     sprite: Clothing/Shoes/Boots/Modsuit/chrono.rsi
     state: icon
+  - type: NoSlip
   - type: Clothing
     sprite: Clothing/Shoes/Boots/Modsuit/chrono.rsi
   - type: Magboots
     toggleAction: ActionToggleMagbootsModsuitShoesChrono
 
 - type: entity
-  parent: ClothingModsuitShoesCorp
+  parent: ClothingModsuitShoesMagBase
   id: ClothingModsuitShoesAtmospheric
   noSpawn: true
   name: Modsuit boots "Admem"
@@ -66,10 +94,10 @@
   - type: Clothing
     sprite: Clothing/Shoes/Boots/Modsuit/atmospheric.rsi
   - type: Magboots
-    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
+    toggleAction: ActionToggleMagbootsModsuitShoesAtmospheric
 
 - type: entity
-  parent: ClothingModsuitShoesCorp
+  parent: ClothingModsuitShoesBase
   id: ClothingModsuitShoesClown
   noSpawn: true
   name: Modsuit boots "Admem"
@@ -80,11 +108,9 @@
     state: icon
   - type: Clothing
     sprite: Clothing/Shoes/Boots/Modsuit/clown.rsi
-  - type: Magboots
-    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
 
 - type: entity
-  parent: ClothingModsuitShoesCorp
+  parent: ClothingModsuitShoesMagBase
   id: ClothingModsuitShoesEngineering
   noSpawn: true
   name: Modsuit boots "Admem"
@@ -96,10 +122,10 @@
   - type: Clothing
     sprite: Clothing/Shoes/Boots/Modsuit/engineering.rsi
   - type: Magboots
-    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
+    toggleAction: ActionToggleMagbootsModsuitShoesEngineering
 
 - type: entity
-  parent: ClothingModsuitShoesCorp
+  parent: ClothingModsuitShoesBase
   id: ClothingModsuitShoesMedical
   noSpawn: true
   name: Modsuit boots "Admem"
@@ -110,11 +136,9 @@
     state: icon
   - type: Clothing
     sprite: Clothing/Shoes/Boots/Modsuit/medical.rsi
-  - type: Magboots
-    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
 
 - type: entity
-  parent: ClothingModsuitShoesCorp
+  parent: ClothingModsuitShoesBase
   id: ClothingModsuitShoesMining
   noSpawn: true
   name: Modsuit boots "Admem"
@@ -125,11 +149,9 @@
     state: icon
   - type: Clothing
     sprite: Clothing/Shoes/Boots/Modsuit/mining.rsi
-  - type: Magboots
-    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
 
 - type: entity
-  parent: ClothingModsuitShoesCorp
+  parent: ClothingModsuitShoesBase
   id: ClothingModsuitShoesRescue
   noSpawn: true
   name: Modsuit boots "Admem"
@@ -140,11 +162,9 @@
     state: icon
   - type: Clothing
     sprite: Clothing/Shoes/Boots/Modsuit/rescue.rsi
-  - type: Magboots
-    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
 
 - type: entity
-  parent: ClothingModsuitShoesCorp
+  parent: ClothingModsuitShoesBase
   id: ClothingModsuitShoesSecurity
   noSpawn: true
   name: Modsuit boots "Admem"
@@ -155,11 +175,9 @@
     state: icon
   - type: Clothing
     sprite: Clothing/Shoes/Boots/Modsuit/security.rsi
-  - type: Magboots
-    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
 
 - type: entity
-  parent: ClothingModsuitShoesCorp
+  parent: ClothingModsuitShoesBase
   id: ClothingModsuitShoesStandart
   noSpawn: true
   name: Modsuit boots "Admem"
@@ -170,19 +188,6 @@
     state: icon
   - type: Clothing
     sprite: Clothing/Shoes/Boots/Modsuit/standart.rsi
-  - type: Magboots
-    toggleAction: ActionToggleMagbootsModsuitShoesAdmem
-
-
-
-- type: entity
-  id: ActionToggleMagbootsModsuitShoesCorp
-  parent: ActionBaseToggleMagboots
-  noSpawn: true
-  components:
-  - type: InstantAction
-    icon: { sprite: Clothing/Shoes/Boots/Modsuit/corp.rsi, state: icon }
-    iconOn: Clothing/Shoes/Boots/Modsuit/corp.rsi/icon-on.png
 
 - type: entity
   id: ActionToggleMagbootsModsuitShoesAdmem
@@ -201,3 +206,21 @@
   - type: InstantAction
     icon: { sprite: Clothing/Shoes/Boots/Modsuit/chrono.rsi, state: icon }
     iconOn: Clothing/Shoes/Boots/Modsuit/chrono.rsi/icon-on.png
+
+- type: entity
+  id: ActionToggleMagbootsModsuitShoesAtmospheric
+  parent: ActionBaseToggleMagboots
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: { sprite: Clothing/Shoes/Boots/Modsuit/atmospheric.rsi, state: icon }
+    iconOn: Clothing/Shoes/Boots/Modsuit/atmospheric.rsi/icon-on.png
+
+- type: entity
+  id: ActionToggleMagbootsModsuitShoesEngineering
+  parent: ActionBaseToggleMagboots
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: { sprite: Clothing/Shoes/Boots/Modsuit/engineering.rsi, state: icon }
+    iconOn: Clothing/Shoes/Boots/Modsuit/engineering.rsi/icon-on.png

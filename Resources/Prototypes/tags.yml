@@ -610,6 +610,9 @@
   id: ModsuitPlateMining
 
 - type: Tag
+  id: ModsuitAssembledPart
+
+- type: Tag
   id: ModsuitPlateAtmospheric
 
 - type: Tag

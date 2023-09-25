@@ -1,0 +1,22 @@
+﻿- type: constructionGraph
+  id: ModsuitClown
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: modsuitclown
+          steps:
+            - tag: ModsuitPlateCosmohonk
+              name: покрытие мода "Клоун"
+              icon:
+                sprite: Objects\Specific\Mech\modcore_construction.rsi
+                state: cosmohonk
+              doAfter: 2
+            - tag: ModsuitAssembledPart
+              name: собранный каркас модсьюта
+              icon:
+                sprite: Objects\Specific\Mech\modcore_construction.rsi
+                state: modcore8
+              doAfter: 2
+    - node: modsuitclown
+      entity: ClothingModsuitbackClown

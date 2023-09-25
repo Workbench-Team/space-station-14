@@ -7,7 +7,7 @@
     - to: modsuitassembled
       steps:
       - tag: ModsuitCoreEnergy
-        name: энергитическое ядро модсьюта
+        name: энергетическое ядро модсьюта
         doAfter: 1
         completed:
         - !type:VisualizerDataInt
@@ -22,7 +22,7 @@
           data: 2
 
       - component: PowerCell
-        name: power cell
+        name: батарейку
         store: battery-container
         icon:
           sprite: Objects/Power/power_cells.rsi

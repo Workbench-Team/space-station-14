@@ -346,6 +346,9 @@
   name: ripley chassis
   description: An in-progress construction of the Ripley APLU mech.
   components:
+  - type: Tag
+    tags:
+    - ModsuitAssembledPart
   - type: Sprite
     state: modcore8
 

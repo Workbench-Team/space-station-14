@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingHandsBase
-  id: ClothingHandsModsuitCorp
+  id: ClothingHandsModsuitBase
   noSpawn: true
   name: Modsuit gloves "Corp"
   description: Insulating impact gloves. Provide sealing.
@@ -27,7 +27,21 @@
       toggleable-clothing: !type:ContainerSlot {}
 
 - type: entity
-  parent: ClothingHandsModsuitCorp
+  parent: ClothingHandsModsuitBase
+  id: ClothingHandsModsuitCorp
+  noSpawn: true
+  name: Modsuit gloves "Admem"
+  description: Insulating impact gloves. Provide sealing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/corp.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/corp.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesCorp
+
+- type: entity
+  parent: ClothingHandsModsuitBase
   id: ClothingHandsModsuitAdmem
   noSpawn: true
   name: Modsuit gloves "Admem"
@@ -41,7 +55,7 @@
     clothingPrototype: ClothingModsuitShoesAdmem
 
 - type: entity
-  parent: ClothingHandsModsuitCorp
+  parent: ClothingHandsModsuitBase
   id: ClothingHandsModsuitChrono
   noSpawn: true
   name: Modsuit gloves "Chrono Legionnaire"
@@ -55,7 +69,7 @@
     clothingPrototype: ClothingModsuitShoesChrono
 
 - type: entity
-  parent: ClothingHandsModsuitCorp
+  parent: ClothingHandsModsuitBase
   id: ClothingHandsModsuitAtmospheric
   noSpawn: true
   name: Modsuit gloves "Admem"
@@ -67,9 +81,10 @@
     sprite: Clothing/Hands/Gloves/Modsuit/atmospheric.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingModsuitShoesAtmospheric
+  - type: Insulated
 
 - type: entity
-  parent: ClothingHandsModsuitCorp
+  parent: ClothingHandsModsuitBase
   id: ClothingHandsModsuitClown
   noSpawn: true
   name: Modsuit gloves "Admem"
@@ -83,7 +98,7 @@
     clothingPrototype: ClothingModsuitShoesClown
 
 - type: entity
-  parent: ClothingHandsModsuitCorp
+  parent: ClothingHandsModsuitBase
   id: ClothingHandsModsuitEngineering
   noSpawn: true
   name: Modsuit gloves "Admem"
@@ -95,9 +110,10 @@
     sprite: Clothing/Hands/Gloves/Modsuit/engineering.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingModsuitShoesEngineering
+  - type: Insulated
 
 - type: entity
-  parent: ClothingHandsModsuitCorp
+  parent: ClothingHandsModsuitBase
   id: ClothingHandsModsuitMedical
   noSpawn: true
   name: Modsuit gloves "Admem"
@@ -111,7 +127,7 @@
     clothingPrototype: ClothingModsuitShoesMedical
 
 - type: entity
-  parent: ClothingHandsModsuitCorp
+  parent: ClothingHandsModsuitBase
   id: ClothingHandsModsuitMining
   noSpawn: true
   name: Modsuit gloves "Admem"
@@ -123,9 +139,10 @@
     sprite: Clothing/Hands/Gloves/Modsuit/mining.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingModsuitShoesMining
+  - type: Insulated
 
 - type: entity
-  parent: ClothingHandsModsuitCorp
+  parent: ClothingHandsModsuitBase
   id: ClothingHandsModsuitRescue
   noSpawn: true
   name: Modsuit gloves "Admem"
@@ -139,7 +156,7 @@
     clothingPrototype: ClothingModsuitShoesRescue
 
 - type: entity
-  parent: ClothingHandsModsuitCorp
+  parent: ClothingHandsModsuitBase
   id: ClothingHandsModsuitSecurity
   noSpawn: true
   name: Modsuit gloves "Admem"
@@ -153,7 +170,7 @@
     clothingPrototype: ClothingModsuitShoesSecurity
 
 - type: entity
-  parent: ClothingHandsModsuitCorp
+  parent: ClothingHandsModsuitBase
   id: ClothingHandsModsuitStandart
   noSpawn: true
   name: Modsuit gloves "Admem"

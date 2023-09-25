@@ -102,6 +102,115 @@
     Glass: 150
 
 - type: latheRecipe
+  id: ModsuitHelmet
+  result: ModsuitHelmet
+  completetime: 2
+  materials:
+    Steel: 600
+    Glass: 600
+
+- type: latheRecipe
+  id: ModsuitGauntlets
+  result: ModsuitGauntlets
+  completetime: 2
+  materials:
+    Steel: 600
+    Glass: 600
+    
+- type: latheRecipe
+  id: ModsuitChestplate
+  result: ModsuitChestplate
+  completetime: 2
+  materials:
+    Steel: 600
+    Glass: 600
+    
+- type: latheRecipe
+  id: ModsuitBoots
+  result: ModsuitBoots
+  completetime: 2
+  materials:
+    Steel: 600
+    Glass: 600
+    
+- type: latheRecipe
+  id: ModsuitPlateAtmospheric
+  result: ModsuitPlateAtmospheric
+  completetime: 2
+  materials:
+    Steel: 1000
+    Glass: 200
+    Plastic: 250
+    Silver: 200
+    
+- type: latheRecipe
+  id: ModsuitPlateCosmohonk
+  result: ModsuitPlateCosmohonk
+  completetime: 2
+  materials:
+    Steel: 1000
+    Glass: 200
+    Plastic: 250
+    
+- type: latheRecipe
+  id: ModsuitPlateEngineering
+  result: ModsuitPlateEngineering
+  completetime: 2
+  materials:
+    Steel: 1000
+    Glass: 200
+    Plastic: 250
+    Silver: 200
+    
+- type: latheRecipe
+  id: ModsuitPlateMedical
+  result: ModsuitPlateMedical
+  completetime: 2
+  materials:
+    Steel: 1000
+    Glass: 200
+    Plastic: 250
+    Gold: 200
+    
+- type: latheRecipe
+  id: ModsuitPlateSecurity
+  result: ModsuitPlateSecurity
+  completetime: 2
+  materials:
+    Steel: 1000
+    Glass: 200
+    Plastic: 250
+    Silver: 200
+    Gold: 200
+    
+- type: latheRecipe
+  id: ModsuitPlateStandard
+  result: ModsuitPlateStandard
+  completetime: 2
+  materials:
+    Steel: 1000
+    Glass: 200
+    Plastic: 250
+    
+- type: latheRecipe
+  id: ModsuitPlateMining
+  result: ModsuitPlateMining
+  completetime: 2
+  materials:
+    Steel: 1000
+    Glass: 200
+    Plastic: 250
+    Gold: 200
+    
+- type: latheRecipe
+  id: ModsuitAssembly
+  result: ModsuitAssembly
+  completetime: 2
+  materials:
+    Steel: 600
+    Glass: 600
+    
+- type: latheRecipe
   id: TorsoBorgEngineer
   result: TorsoBorgEngineer
   completetime: 2

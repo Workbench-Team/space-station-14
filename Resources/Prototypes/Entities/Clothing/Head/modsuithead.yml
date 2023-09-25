@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: ClothingHeadHelmetModsuitCorp
+  id: ClothingHeadHelmetModsuitBase
   noSpawn: true
   name: Modsuit helmet "Corp"
   description: Anti-impact helmet, with built-in lighting.
@@ -11,11 +11,19 @@
     sprite: Clothing/Head/Modsuits/corp.rsi
     equipSound: /Audio/Items/ballin.ogg
     unequipSound: /Audio/Items/ballout.ogg
-  - type: PointLight
-    color: "#00ff00"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.95
+        Heat: 0.90
+        Radiation: 0.25
   - type: PressureProtection
     highPressureMultiplier: 0.1
     lowPressureMultiplier: 1000
+  - type: PointLight
+    color: "#adffe6"
   - type: ToggleableClothing
     clothingPrototype: ClothingHandsModsuitCorp
     slot: gloves
@@ -25,7 +33,23 @@
       toggleable-clothing: !type:ContainerSlot {}
 
 - type: entity
-  parent: ClothingHeadHelmetModsuitCorp
+  parent: ClothingHeadHelmetModsuitBase
+  id: ClothingHeadHelmetModsuitCorp
+  noSpawn: true
+  name: Modsuit helmet "Admem"
+  description: Anti-impact helmet, with built-in lighting.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuits/corp.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuits/corp.rsi
+  - type: PointLight
+    color: "#00ff00"
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitCorp
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitBase
   id: ClothingHeadHelmetModsuitAdmem
   noSpawn: true
   name: Modsuit helmet "Admem"
@@ -43,7 +67,7 @@
     clothingPrototype: ClothingHandsModsuitAdmem
 
 - type: entity
-  parent: ClothingHeadHelmetModsuitCorp
+  parent: ClothingHeadHelmetModsuitBase
   id: ClothingHeadHelmetModsuitChrono
   noSpawn: true
   name: Modsuit helmet "Chrono Legionnaire"
@@ -59,7 +83,7 @@
     clothingPrototype: ClothingHandsModsuitChrono
 
 - type: entity
-  parent: ClothingHeadHelmetModsuitCorp
+  parent: ClothingHeadHelmetModsuitBase
   id: ClothingHeadHelmetModsuitAtmospheric
   noSpawn: true
   name: Modsuit helmet "Admem"
@@ -71,9 +95,12 @@
     sprite: Clothing/Head/Modsuits/atmospheric.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHandsModsuitAtmospheric
+  - type: EyeProtection
+  - type: PointLight
+    color: "#adffe6"
 
 - type: entity
-  parent: ClothingHeadHelmetModsuitCorp
+  parent: ClothingHeadHelmetModsuitBase
   id: ClothingHeadHelmetModsuitClown
   noSpawn: true
   name: Modsuit helmet "Admem"
@@ -87,7 +114,7 @@
     clothingPrototype: ClothingHandsModsuitClown
 
 - type: entity
-  parent: ClothingHeadHelmetModsuitCorp
+  parent: ClothingHeadHelmetModsuitBase
   id: ClothingHeadHelmetModsuitEngineering
   noSpawn: true
   name: Modsuit helmet "Admem"
@@ -99,9 +126,12 @@
     sprite: Clothing/Head/Modsuits/engineering.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHandsModsuitEngineering
+  - type: EyeProtection
+  - type: PointLight
+    color: "#ffdbad"
 
 - type: entity
-  parent: ClothingHeadHelmetModsuitCorp
+  parent: ClothingHeadHelmetModsuitBase
   id: ClothingHeadHelmetModsuitMedical
   noSpawn: true
   name: Modsuit helmet "Admem"
@@ -113,9 +143,13 @@
     sprite: Clothing/Head/Modsuits/medical.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHandsModsuitMedical
+  - type: ClothingGrantComponent
+    component:
+    - type: ShowHealthBars
+      damageContainer: Biological
 
 - type: entity
-  parent: ClothingHeadHelmetModsuitCorp
+  parent: ClothingHeadHelmetModsuitBase
   id: ClothingHeadHelmetModsuitMining
   noSpawn: true
   name: Modsuit helmet "Admem"
@@ -127,9 +161,13 @@
     sprite: Clothing/Head/Modsuits/mining.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHandsModsuitMining
+  - type: PointLight
+    radius: 7
+    energy: 3
+    color: "#adffe6"
 
 - type: entity
-  parent: ClothingHeadHelmetModsuitCorp
+  parent: ClothingHeadHelmetModsuitBase
   id: ClothingHeadHelmetModsuitRescue
   noSpawn: true
   name: Modsuit helmet "Admem"
@@ -143,7 +181,7 @@
     clothingPrototype: ClothingHandsModsuitRescue
 
 - type: entity
-  parent: ClothingHeadHelmetModsuitCorp
+  parent: ClothingHeadHelmetModsuitBase
   id: ClothingHeadHelmetModsuitSecurity
   noSpawn: true
   name: Modsuit helmet "Admem"
@@ -155,9 +193,11 @@
     sprite: Clothing/Head/Modsuits/security.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHandsModsuitSecurity
+  - type: ShowSecurityIcons
+  - type: FlashImmunity
 
 - type: entity
-  parent: ClothingHeadHelmetModsuitCorp
+  parent: ClothingHeadHelmetModsuitBase
   id: ClothingHeadHelmetModsuitStandart
   noSpawn: true
   name: Modsuit helmet "Admem"

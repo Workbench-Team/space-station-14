@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterModsuitBodyCorp
+  id: ClothingOuterModsuitBodyBase
   name: Modsuit cheastplate "Corp"
   description: A fancy, high-tech suit for Nanotrasen's high ranking officers.
   noSpawn: true
@@ -23,19 +23,33 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.2 #best armor in the game
-        Slash: 0.2
-        Piercing: 0.2
-        Heat: 0.2
-        Radiation: 0.2
-        Caustic: 0.2
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+        Radiation: 0.8
+        Caustic: 0.8
   - type: ExplosionResistance
-    damageCoefficient: 0.2
+    damageCoefficient: 0.8
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetModsuitCorp
 
 - type: entity
-  parent: ClothingOuterModsuitBodyCorp
+  parent: ClothingOuterModsuitBodyBase
+  id: ClothingOuterModsuitBodyCorp
+  name: Modsuit cheastplate "Admem"
+  description: A suit made of adminium. Who comes up with these stupid mineral names?
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Modsuit/corp.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Modsuit/corp.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetModsuitCorp
+
+- type: entity
+  parent: ClothingOuterModsuitBodyBase
   id: ClothingOuterModsuitBodyAdmem
   name: Modsuit cheastplate "Admem"
   description: A suit made of adminium. Who comes up with these stupid mineral names?
@@ -47,9 +61,20 @@
     sprite: Clothing/OuterClothing/Modsuit/admem.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetModsuitAdmem
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.1
+        Slash: 0.1
+        Piercing: 0.1
+        Heat: 0.1
+        Radiation: 0.1
+        Caustic: 0.1
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
 
 - type: entity
-  parent: ClothingOuterModsuitBodyCorp
+  parent: ClothingOuterModsuitBodyBase
   id: ClothingOuterModsuitBodyChrono
   name: Modsuit cheastplate "Chrono Legionnaire"
   description: Quirky mod suite straight from the future. Equipped with technology beyond your imagination.
@@ -61,9 +86,20 @@
     sprite: Clothing/OuterClothing/Modsuit/chrono.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetModsuitChrono
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.1
+        Slash: 0.1
+        Piercing: 0.1
+        Heat: 0.1
+        Radiation: 0.1
+        Caustic: 0.1
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
 
 - type: entity
-  parent: ClothingOuterModsuitBodyCorp
+  parent: ClothingOuterModsuitBodyBase
   id: ClothingOuterModsuitBodyAtmospheric
   name: Modsuit cheastplate "Admem"
   description: A suit made of adminium. Who comes up with these stupid mineral names?
@@ -75,9 +111,28 @@
     sprite: Clothing/OuterClothing/Modsuit/atmospheric.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetModsuitAtmospheric
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    coefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.2
+        Radiation: 0.5
+        Caustic: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.7
+    sprintModifier: 0.7
 
 - type: entity
-  parent: ClothingOuterModsuitBodyCorp
+  parent: ClothingOuterModsuitBodyBase
   id: ClothingOuterModsuitBodyClown
   name: Modsuit cheastplate "Admem"
   description: A suit made of adminium. Who comes up with these stupid mineral names?
@@ -89,9 +144,24 @@
     sprite: Clothing/OuterClothing/Modsuit/clown.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetModsuitClown
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Caustic: 0.8
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
 
 - type: entity
-  parent: ClothingOuterModsuitBodyCorp
+  parent: ClothingOuterModsuitBodyBase
   id: ClothingOuterModsuitBodyEngineering
   name: Modsuit cheastplate "Admem"
   description: A suit made of adminium. Who comes up with these stupid mineral names?
@@ -103,9 +173,28 @@
     sprite: Clothing/OuterClothing/Modsuit/engineering.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetModsuitEngineering
+  - type: PressureProtection
+    highPressureMultiplier: 0.04
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    coefficient: 0.01
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Shock: 0.8
+        Caustic: 0.5
+        Radiation: 0.2
+  - type: ClothingSpeedModifier
+    walkModifier: 0.7
+    sprintModifier: 0.7
 
 - type: entity
-  parent: ClothingOuterModsuitBodyCorp
+  parent: ClothingOuterModsuitBodyBase
   id: ClothingOuterModsuitBodyMedical
   name: Modsuit cheastplate "Admem"
   description: A suit made of adminium. Who comes up with these stupid mineral names?
@@ -117,9 +206,21 @@
     sprite: Clothing/OuterClothing/Modsuit/medical.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetModsuitMedical
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    coefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Heat: 0.90
+        Radiation: 0.75
+        Caustic: 0.5
 
 - type: entity
-  parent: ClothingOuterModsuitBodyCorp
+  parent: ClothingOuterModsuitBodyBase
   id: ClothingOuterModsuitBodyMining
   name: Modsuit cheastplate "Admem"
   description: A suit made of adminium. Who comes up with these stupid mineral names?
@@ -131,9 +232,26 @@
     sprite: Clothing/OuterClothing/Modsuit/mining.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetModsuitMining
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 10000
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.85
+        Heat: 0.85
+        Radiation: 0.50
+        Caustic: 0.75
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
 
 - type: entity
-  parent: ClothingOuterModsuitBodyCorp
+  parent: ClothingOuterModsuitBodyBase
   id: ClothingOuterModsuitBodyRescue
   name: Modsuit cheastplate "Admem"
   description: A suit made of adminium. Who comes up with these stupid mineral names?
@@ -147,7 +265,7 @@
     clothingPrototype: ClothingHeadHelmetModsuitRescue
 
 - type: entity
-  parent: ClothingOuterModsuitBodyCorp
+  parent: ClothingOuterModsuitBodyBase
   id: ClothingOuterModsuitBodySecurity
   name: Modsuit cheastplate "Admem"
   description: A suit made of adminium. Who comes up with these stupid mineral names?
@@ -159,9 +277,25 @@
     sprite: Clothing/OuterClothing/Modsuit/security.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetModsuitSecurity
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Heat: 0.6
+        Piercing: 0.6
+        Caustic: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 0.75
+    sprintModifier: 0.75
 
 - type: entity
-  parent: ClothingOuterModsuitBodyCorp
+  parent: ClothingOuterModsuitBodyBase
   id: ClothingOuterModsuitBodyStandart
   name: Modsuit cheastplate "Admem"
   description: A suit made of adminium. Who comes up with these stupid mineral names?
@@ -173,3 +307,15 @@
     sprite: Clothing/OuterClothing/Modsuit/standart.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetModsuitStandart
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Caustic: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.80
+    sprintModifier: 0.80

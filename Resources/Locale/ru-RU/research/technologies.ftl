@@ -14,6 +14,7 @@ research-technology-industrial-engineering = Промышленная инжен
 research-technology-power-generation = Выработка электроэнергии
 research-technology-atmospheric-tech = Атмосферика
 research-technology-rapid-construction = Быстрое строительство
+research-technology-modsuitscraft = Производство модов
 research-technology-shuttlecraft = Шаттлостроение
 research-technology-ripley-aplu = Рипли АТМЕ
 research-technology-advanced-atmospherics = Продвинутая атмосферика

@@ -1,3 +1,5 @@
+ent-MaterialModCore = { ent-CrateMaterialModCore }
+    .desc = { ent-CrateMaterialModCore.desc }
 ent-MaterialGlass = { ent-CrateMaterialGlass }
     .desc = { ent-CrateMaterialGlass.desc }
 ent-MaterialSteel = { ent-CrateMaterialSteel }
