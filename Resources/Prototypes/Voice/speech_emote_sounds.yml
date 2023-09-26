@@ -175,14 +175,14 @@
     variation: 0.125
 
 - type: emoteSounds
-  id: UnisexFelenid
+  id: UnisexFelinid
   sounds:
     Scream:
-      path: /Audio/Voice/Felenid/felenidscream.ogg
+      path: /Audio/Voice/Felinid/felinidscream.ogg
     Laugh:
-      collection: FelenidLaugh
+      collection: FelinidLaugh
     Meows:
-      collection: FelenidMeow
+      collection: FelinidMeow
   params:
     variation: 0.125
 

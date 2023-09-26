@@ -32,18 +32,18 @@
     - /Audio/Voice/Diona/diona_rustle3.ogg
 
 - type: soundCollection
-  id: FelenidLaugh
+  id: FelinidLaugh
   files:
-    - /Audio/Voice/Felenid/felenidlaugh1.ogg
-    - /Audio/Voice/Felenid/felenidlaugh2.ogg
-    - /Audio/Voice/Felenid/felenidlaugh3.ogg
-    - /Audio/Voice/Felenid/felenidlaugh4.ogg
+    - /Audio/Voice/Felinid/felinidlaugh1.ogg
+    - /Audio/Voice/Felinid/felinidlaugh2.ogg
+    - /Audio/Voice/Felinid/felinidlaugh3.ogg
+    - /Audio/Voice/Felinid/felinidlaugh4.ogg
 
 - type: soundCollection
-  id: FelenidMeow
+  id: FelinidMeow
   files:
-    - /Audio/Voice/Felenid/felenidmeow1.ogg
-    - /Audio/Voice/Felenid/felenidmeow2.ogg
+    - /Audio/Voice/Felinid/felinidmeow1.ogg
+    - /Audio/Voice/Felinid/felinidmeow2.ogg
 
 - type: soundCollection
   id: MaleSigh

@@ -20,11 +20,13 @@
     durationMultiplier: 1
     bangAddMultiplier: 0.65
     bangFlash: false
+  - type: Speech
+    speechVerb: Felinid
   - type: Vocal
     sounds:
-      Male: UnisexFelenid
-      Female: UnisexFelenid
-      Unsexed: UnisexFelenid
+      Male: UnisexFelinid
+      Female: UnisexFelinid
+      Unsexed: UnisexFelinid
   - type: Reactive
     groups:
       Flammable: [ Touch ]
