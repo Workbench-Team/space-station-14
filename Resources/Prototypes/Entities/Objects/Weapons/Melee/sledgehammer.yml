@@ -43,7 +43,7 @@
     damage:
       types:
         Blunt: 15
-        Structural: 15
+        Structural: 1
   - type: StaminaDamageOnHit
     damage: 5
   - type: Item
