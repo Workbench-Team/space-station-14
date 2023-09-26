@@ -32,6 +32,20 @@
     - /Audio/Voice/Diona/diona_rustle3.ogg
 
 - type: soundCollection
+  id: FelenidLaugh
+  files:
+    - /Audio/Voice/Felenid/felenidlaugh1.ogg
+    - /Audio/Voice/Felenid/felenidlaugh2.ogg
+    - /Audio/Voice/Felenid/felenidlaugh3.ogg
+    - /Audio/Voice/Felenid/felenidlaugh4.ogg
+
+- type: soundCollection
+  id: FelenidMeow
+  files:
+    - /Audio/Voice/Felenid/felenidmeow1.ogg
+    - /Audio/Voice/Felenid/felenidmeow2.ogg
+
+- type: soundCollection
   id: MaleSigh
   files:
     - /Audio/Voice/Human/male_sigh.ogg

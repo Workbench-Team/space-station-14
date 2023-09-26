@@ -86,6 +86,27 @@
     - вздохнула.
 
 - type: emote
+  id: Meows
+  category: Vocal
+  chatMessages: [мяукает]
+  chatTriggers:
+    - meows
+    - meows.
+    - meows!
+    - meow
+    - meow.
+    - meow!
+    - мяукает
+    - мяукает.
+    - мяукает!
+    - мяукнула
+    - мяукнула.
+    - мяукнула!
+    - мяукнул
+    - мяукнул.
+    - мяукнул!
+
+- type: emote
   id: Whistle
   category: Vocal
   chatMessages: [свистит]

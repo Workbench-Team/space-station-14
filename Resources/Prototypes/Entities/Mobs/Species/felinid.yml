@@ -20,6 +20,11 @@
     durationMultiplier: 1
     bangAddMultiplier: 0.65
     bangFlash: false
+  - type: Vocal
+    sounds:
+      Male: UnisexFelenid
+      Female: UnisexFelenid
+      Unsexed: UnisexFelenid
   - type: Reactive
     groups:
       Flammable: [ Touch ]
