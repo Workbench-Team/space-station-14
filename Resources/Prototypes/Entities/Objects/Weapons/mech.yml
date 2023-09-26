@@ -14,7 +14,7 @@
   - type: Gun
     maxAngle: 60
     minAngle: 60
-    fireRate: 3
+    fireRate: 4
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -39,7 +39,7 @@
 
 - type: entity
   name: SRM-8 Missile Launcher
-  parent: BaseWeaponLauncher
+  parent: BaseWeaponBatterySmall
   id: WeaponLauncherMultipleRocket9000
   description: Mounted Rocket Launcher.
   components:
@@ -55,22 +55,13 @@
       - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
-  - type: AmmoCounter
-  - type: BallisticAmmoProvider
-    whitelist:
-      tags:
-        - CartridgeRocket
-    capacity: 100
-    proto: CartridgeRocketSlow
-    soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletWeakRocket
+    fireCost: 100
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 10
   - type: Appearance
-  - type: MechEquipment
-  - type: UIFragment
 
 - type: entity
   name: SRM-6 Missile Launcher
@@ -89,7 +80,9 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
     capacity: 100
-    proto: CartridgeRocket
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletWeakRocket
+    fireCost: 100
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
 
@@ -145,13 +138,13 @@
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
-    fireRate: 0.7
+    fireRate: 2
   - type: ProjectileBatteryAmmoProvider
     proto: BulletAntiMateriel
     fireCost: 200
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 10
+    autoRechargeRate: 40
   - type: Appearance
 
 - type: entity
@@ -169,8 +162,8 @@
     angleIncrease: 4
     angleDecay: 16
     fireRate: 8
-    maxAngle: 60
-    minAngle: 60
+    maxAngle: 35
+    minAngle: 35
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -278,7 +271,6 @@
   - type: Sprite
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_grenadelnchr
-  - type: AmmoCounter
   - type: Gun
     fireRate: 1
     selectedMode: SemiAuto
@@ -286,14 +278,10 @@
       - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
-  - type: BallisticAmmoProvider
-    whitelist:
-      tags:
-        - Grenade
     capacity: 20
-    proto: GrenadeFlash
-    soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletGrenadeFlash
+    fireCost: 200
 
 - type: entity
   name: Mounted fire extinguisher.
@@ -353,14 +341,13 @@
       - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
-  - type: BallisticAmmoProvider
-    whitelist:
-      tags:
-        - Grenade
-    capacity: 10
-    proto: GrenadeFrag
-    soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletGrenadeFrag
+    fireCost: 500
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 30
+  - type: Appearance
 
 - type: entity
   name: AC 2 "Ultra"
@@ -377,8 +364,8 @@
     angleIncrease: 4
     angleDecay: 16
     fireRate: 5
-    maxAngle: 60
-    minAngle: 60
+    maxAngle: 20
+    minAngle: 10
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -397,34 +384,8 @@
   - type: UIFragment
 
 - type: entity
-  name: Mouse Trap Mortar
-  parent: WeaponLauncherMultipleRocket9000
-  id: WeaponMousetrapLauncher9000
-  description: Mounted launcher for mouse traps.
-  components:
-  - type: Sprite
-    sprite: Objects/Specific/Mech/mecha_equipment.rsi
-    state: mecha_mousetrapmrtr
-  - type: Gun
-    fireRate: 1
-    selectedMode: SemiAuto
-    availableModes:
-      - SemiAuto
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
-  - type: BallisticAmmoProvider
-    autoCycle: true
-    whitelist:
-      tags:
-        - Grenade
-    capacity: 100
-    proto: Mousetrap
-    soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-
-- type: entity
   name: Banana Mortar
-  parent: WeaponLauncherMultipleRocket9000
+  parent: BaseWeaponLauncher
   id: WeaponBananaPeelLauncher9000
   description: Mounted launcher for banana peels.
   components:
@@ -558,7 +519,7 @@
 
 - type: entity
   name: MineBanana Mortar
-  parent: WeaponLauncherMultipleRocket9000
+  parent: BaseWeaponLauncher
   id: WeaponBananaPeelMineLauncher9000
   description: Mounted launcher for banana peel projectiles.
   components:

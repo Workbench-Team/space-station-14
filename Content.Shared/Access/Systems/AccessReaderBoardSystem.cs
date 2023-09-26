@@ -70,9 +70,9 @@ namespace Content.Shared.Access.Systems
                             ClearAlertLevelAccess(accessStorage);
                             accessStorage.AccessLists.Add(new HashSet<string>() { "Engineering" });
                             break;
-                        case "red":
+                        case "red" or "gamma" or "delta":
                             ClearAlertLevelAccess(accessStorage);
-                            accessStorage.AccessLists.Add(new HashSet<string>() { "Brig" });
+                            accessStorage.AccessLists.Add(new HashSet<string>() { "Security" });
                             break;
                         default:
                             ClearAlertLevelAccess(accessStorage);

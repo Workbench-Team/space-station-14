@@ -30,6 +30,7 @@
       effects:
       - !type:WashCreamPieReaction
       - !type:CancelDoAfters
+  - type: NyaAccent
 
 - type: entity
   name: Urist McHands
