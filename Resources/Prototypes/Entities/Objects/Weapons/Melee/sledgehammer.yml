@@ -42,7 +42,7 @@
     attackRate: 1
     damage:
       types:
-        Blunt: 15
+        Blunt: 10
         Structural: 1
   - type: StaminaDamageOnHit
     damage: 5
