@@ -29,6 +29,7 @@
   - External
   - Security
   - Brig
+  - Maintenance
 
 - type: startingGear
   id: BlueShieldGear
