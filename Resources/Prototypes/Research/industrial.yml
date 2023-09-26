@@ -140,7 +140,7 @@
     state: base
   discipline: Industrial
   tier: 2
-  cost: 15000
+  cost: 10000
   recipeUnlocks:
   - ShuttleConsoleCircuitboard
   - RadarConsoleCircuitboard
@@ -156,7 +156,7 @@
     state: modcore8
   discipline: Industrial
   tier: 2
-  cost: 10000
+  cost: 15000
   recipeUnlocks:
   - ModsuitHelmet
   - ModsuitGauntlets
