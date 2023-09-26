@@ -30,6 +30,8 @@
   - Security
   - Brig
   - Maintenance
+  - Cargo
+  - Research
 
 - type: startingGear
   id: BlueShieldGear
