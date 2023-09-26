@@ -131,7 +131,7 @@
   parent:
   - BaseItem
   id: HandheldMMMonitor
-  description: A hand-held crew monitor displaying the status of suit sensors.
+  description: A hand-held mass media monitor for posting fresh news.
   components:
   - type: Sprite
     sprite: Objects/Specific/Tablets/mm.rsi
