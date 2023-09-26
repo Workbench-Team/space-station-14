@@ -1,0 +1,195 @@
+- type: entity
+  id: BaseModsuitCorePart
+  parent: BaseMechPart
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: Items
+    noRot: false
+    sprite: Objects/Specific/Mech/modcore_construction.rsi
+
+- type: entity
+  id: BaseModsuitCorePartItem
+  parent: BaseModsuitCorePart
+  abstract: true
+  components:
+  - type: Item
+    size: 15
+
+- type: entity
+  parent: BaseModsuitCorePartItem
+  id: ModsuitHelmet
+  name: ripley left arm
+  description: The left arm of the Ripley APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: helmet
+  - type: Tag
+    tags:
+    - ModsuitHelmet
+
+- type: entity
+  parent: BaseModsuitCorePartItem
+  id: ModsuitGauntlets
+  name: ripley left arm
+  description: The left arm of the Ripley APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: gauntlets
+  - type: Tag
+    tags:
+    - ModsuitGauntlets
+
+- type: entity
+  parent: BaseModsuitCorePartItem
+  id: ModsuitCoreEnergy
+  name: ripley left arm
+  description: The left arm of the Ripley APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: mod-core-standard
+  - type: Tag
+    tags:
+    - ModsuitCoreEnergy
+
+- type: entity
+  parent: BaseModsuitCorePartItem
+  id: ModsuitChestplate
+  name: ripley left arm
+  description: The left arm of the Ripley APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: chestplate
+  - type: Tag
+    tags:
+    - ModsuitChestplate
+
+- type: entity
+  parent: BaseModsuitCorePartItem
+  id: ModsuitBoots
+  name: ripley left arm
+  description: The left arm of the Ripley APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: boots
+  - type: Tag
+    tags:
+    - ModsuitBoots
+
+- type: entity
+  parent: BaseModsuitCorePartItem
+  id: ModsuitPlateAtmospheric
+  name: ripley left arm
+  description: The left arm of the Ripley APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: atmospheric
+  - type: Tag
+    tags:
+    - ModsuitPlateAtmospheric
+
+- type: entity
+  parent: BaseModsuitCorePartItem
+  id: ModsuitPlateCosmohonk
+  name: ripley left arm
+  description: The left arm of the Ripley APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: cosmohonk
+  - type: Tag
+    tags:
+    - ModsuitPlateCosmohonk
+
+- type: entity
+  parent: BaseModsuitCorePartItem
+  id: ModsuitPlateEngineering
+  name: ripley left arm
+  description: The left arm of the Ripley APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: engineering
+  - type: Tag
+    tags:
+    - ModsuitPlateEngineering
+
+- type: entity
+  parent: BaseModsuitCorePartItem
+  id: ModsuitPlateMedical
+  name: ripley left arm
+  description: The left arm of the Ripley APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: medical
+  - type: Tag
+    tags:
+    - ModsuitPlateMedical
+
+- type: entity
+  parent: BaseModsuitCorePartItem
+  id: ModsuitPlateSecurity
+  name: ripley left arm
+  description: The left arm of the Ripley APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: security
+  - type: Tag
+    tags:
+    - ModsuitPlateSecurity
+  
+- type: entity
+  parent: BaseModsuitCorePartItem
+  id: ModsuitPlateStandard
+  name: ripley left arm
+  description: The left arm of the Ripley APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: standard
+  - type: Tag
+    tags:
+    - ModsuitPlateStandard
+
+- type: entity
+  parent: BaseModsuitCorePartItem
+  id: ModsuitPlateMining
+  name: ripley left arm
+  description: The left arm of the Ripley APLU. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: engineering
+  - type: Tag
+    tags:
+    - ModsuitPlateMining
+
+- type: entity
+  id: ModsuitAssembly
+  parent: BaseModsuitCorePart
+  name: ripley chassis
+  description: An in-progress construction of the Ripley APLU mech.
+  components:
+  - type: ContainerContainer
+    containers:
+      battery-container: !type:Container
+  - type: Item
+    size: 55
+  - type: Appearance
+  - type: MechAssemblyVisuals
+    statePrefix: modcore
+  - type: Sprite
+    noRot: true
+    state: modcore0
+  - type: Construction
+    graph: ModsuitAssembled
+    node: start
+    defaultTarget: modsuitassembled
+
+- type: entity
+  id: ModsuitAssembled
+  parent: BaseModsuitCorePartItem
+  name: ripley chassis
+  description: An in-progress construction of the Ripley APLU mech.
+  components:
+  - type: Tag
+    tags:
+    - ModsuitAssembledPart
+  - type: Sprite
+    state: modcore8
