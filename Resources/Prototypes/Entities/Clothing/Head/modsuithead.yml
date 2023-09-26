@@ -112,6 +112,8 @@
     sprite: Clothing/Head/Modsuits/clown.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHandsModsuitClown
+  - type: PointLight
+    color: "#FFFDE0"
 
 - type: entity
   parent: ClothingHeadHelmetModsuitBase
@@ -164,7 +166,7 @@
   - type: PointLight
     radius: 7
     energy: 3
-    color: "#adffe6"
+    color: "#FFFDE0"
 
 - type: entity
   parent: ClothingHeadHelmetModsuitBase
@@ -195,6 +197,8 @@
     clothingPrototype: ClothingHandsModsuitSecurity
   - type: ShowSecurityIcons
   - type: FlashImmunity
+  - type: PointLight
+    color: "#ffeead"
 
 - type: entity
   parent: ClothingHeadHelmetModsuitBase
@@ -209,3 +213,5 @@
     sprite: Clothing/Head/Modsuits/standart.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHandsModsuitStandart
+  - type: PointLight
+    color: "#ffeead"

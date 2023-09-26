@@ -108,6 +108,9 @@
     state: icon
   - type: Clothing
     sprite: Clothing/Shoes/Boots/Modsuit/clown.rsi
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepClown
 
 - type: entity
   parent: ClothingModsuitShoesMagBase
