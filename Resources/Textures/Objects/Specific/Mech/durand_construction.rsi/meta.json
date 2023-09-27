@@ -8,40 +8,70 @@
   },
   "states": [
     {
-      "name": "Durand_harness\u002Bo"
+      "name": "durand_harness"
     },
     {
-      "name": "Durand_l_arm"
+      "name": "durand_harness+o"
     },
     {
-      "name": "Durand_l_arm\u002Bo"
+      "name": "durand_r_arm"
     },
     {
-      "name": "Durand_l_leg"
+      "name": "durand_r_arm+o"
     },
     {
-      "name": "Durand_l_leg\u002Bo"
+      "name": "durand_l_arm"
     },
     {
-      "name": "Durand_r_arm"
+      "name": "durand_l_arm+o"
     },
     {
-      "name": "Durand_r_arm\u002Bo"
+      "name": "durand_r_leg"
     },
     {
-      "name": "Durand_r_leg"
+      "name": "durand_r_leg+o"
     },
     {
-      "name": "Durand_r_leg\u002Bo"
+      "name": "durand_l_leg"
     },
     {
-      "name": "Durand_armor"
+      "name": "durand_l_leg+o"
     },
     {
-      "name": "Durand_harness"
+      "name": "durand_armor"
     },
     {
-      "name": "Durand10",
+      "name": "durand0"
+    },
+    {
+      "name": "durand1"
+    },
+    {
+      "name": "durand2"
+    },
+    {
+      "name": "durand3"
+    },
+    {
+      "name": "durand4"
+    },
+    {
+      "name": "durand5"
+    },
+    {
+      "name": "durand6"
+    },
+    {
+      "name": "durand7"
+    },
+    {
+      "name": "durand8"
+    },
+    {
+      "name": "durand9"
+    },
+    {
+      "name": "durand10",
       "delays": [
         [
           0.5,
@@ -52,40 +82,10 @@
       ]
     },
     {
-      "name": "Durand11"
+      "name": "durand11"
     },
     {
-      "name": "Durand12"
-    },
-    {
-      "name": "Durand0"
-    },
-    {
-      "name": "Durand1"
-    },
-    {
-      "name": "Durand2"
-    },
-    {
-      "name": "Durand3"
-    },
-    {
-      "name": "Durand4"
-    },
-    {
-      "name": "Durand5"
-    },
-    {
-      "name": "Durand6"
-    },
-    {
-      "name": "Durand7"
-    },
-    {
-      "name": "Durand8"
-    },
-    {
-      "name": "Durand9"
+      "name": "durand12"
     }
   ]
 }

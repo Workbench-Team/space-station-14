@@ -1,3 +1,5 @@
+ent-CrateMaterialModCore = ящик МОД ядер
+    .desc = 2 полностью заряженных ядра для МОД-экзокостюмов, готовых к сборке.
 ent-CrateMaterialGlass = ящик листов стекла
     .desc = 90 листов стекла, упакованных с заботой.
 ent-CrateMaterialSteel = ящик листов стали

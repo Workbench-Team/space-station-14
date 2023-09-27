@@ -1,9 +1,7 @@
 ent-PortableGeneratorBase = { ent-BaseMachine }
     .desc = { ent-BaseMachine.desc }
-    .suffix = { "" }
 ent-PortableGeneratorSwitchableBase = { ent-PortableGeneratorBase }
     .desc = { ent-PortableGeneratorBase.desc }
-    .suffix = { "" }
 ent-PortableGeneratorPacman = портативный генератор П.А.К.М.А.Н.
     .desc =
         Гибкий резервный генератор для питания различного оборудования.

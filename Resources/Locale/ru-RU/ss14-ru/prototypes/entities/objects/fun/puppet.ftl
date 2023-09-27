@@ -3,4 +3,3 @@ ent-MrChips = мистер чипс
     .suffix = Кукла
 ent-MrDips = мистер дипс
     .desc = { ent-MrChips.desc }
-    .suffix = { "" }

@@ -67,7 +67,7 @@
     lifetime: 10
 
 - type: entity
-  id: syringeprojctile
+  id: SyringeProjctile
   parent: BaseBullet
   noSpawn: true
   components:

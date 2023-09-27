@@ -3,4 +3,3 @@ ent-ClothingBackpackChameleon = рюкзак
     .suffix = Хамелеон
 ent-ClothingBackpackWaterTank = рюкзак-бак для воды
     .desc = Вмещает большое количество жидкостей. Для использования, распылительные форсунки должны быть в Ваших руках.
-    .suffix = { "" }

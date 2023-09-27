@@ -1,72 +1,236 @@
-# TODO: Отсортировать эти прототипы
 - type: entity
-  parent: ClothingShoesBootsMag
-  id: ClothingModsuitShoesCorp
-  noSpawn: true
-  name: Modsuit boots "Corp"
-  description: State-of-the-art magnetic boots that do not slow down their wearer.
+  parent: ClothingShoesBase
+  id: ClothingModsuitShoesBase
+  abstract: true
+  name: base MOD boots
+  description: A pair of boots for a MODsuit.
   components:
   - type: Sprite
-    sprite: Clothing/Shoes/Boots/Modsuit/corp.rsi
+    sprite: Clothing/Shoes/Boots/Modsuit/standard.rsi
     state: icon
   - type: Clothing
-    sprite: Clothing/Shoes/Boots/Modsuit/corp.rsi
+    sprite: Clothing/Shoes/Boots/Modsuit/standard.rsi
     equipSound: /Audio/Items/ballin.ogg
     unequipSound: /Audio/Items/ballout.ogg
-  - type: Magboots
-    toggleAction: ActionToggleMagboots
-  - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 1
-    enabled: false
-  - type: NoSlip
   - type: StaticPrice
     price: 750
 
 - type: entity
   parent: ClothingShoesBootsMag
-  id: ClothingModsuitShoesAdmem
-  noSpawn: true
-  name: Modsuit boots "Admem"
-  description: State-of-the-art magnetic boots that do not slow down their wearer.
+  id: ClothingModsuitShoesMagBase
+  abstract: true
+  name: base MOD boots
+  description: A pair of boots for a MODsuit.
   components:
   - type: Sprite
-    sprite: Clothing/Shoes/Boots/Modsuit/admem.rsi
+    sprite: Clothing/Shoes/Boots/Modsuit/standard.rsi
     state: icon
   - type: Clothing
-    sprite: Clothing/Shoes/Boots/Modsuit/admem.rsi
+    sprite: Clothing/Shoes/Boots/Modsuit/standard.rsi
     equipSound: /Audio/Items/ballin.ogg
     unequipSound: /Audio/Items/ballout.ogg
   - type: Magboots
-    toggleAction: ActionToggleMagboots
+    toggleAction: ActionToggleMagbootsModsuitShoesAdmin
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1
     enabled: false
-  - type: NoSlip
-  - type: StaticPrice
-    price: 750
+
+# Security
+- type: entity
+  parent: ClothingModsuitShoesBase
+  id: ClothingModsuitShoesSecurity
+  noSpawn: true
+  name: security MOD boots
+  description: A pair of boots for a MODsuit. An Apadyne Technologies security suit, offering quicker speed at the cost of carrying capacity.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/security.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/security.rsi
+
+# Engineering
+- type: entity
+  parent: ClothingModsuitShoesMagBase
+  id: ClothingModsuitShoesAtmospheric
+  noSpawn: true
+  name: atmospheric MOD boots
+  description: A pair of boots for a MODsuit. An atmospheric-resistant suit by Nakamura Engineering, offering extreme heat resistance compared to the engineer suit.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/atmospheric.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/atmospheric.rsi
+  - type: Magboots
+    toggleAction: ActionToggleMagbootsModsuitShoesAtmospheric
 
 - type: entity
-  parent: ClothingShoesBootsMag
+  parent: ClothingModsuitShoesMagBase
+  id: ClothingModsuitShoesEngineering
+  noSpawn: true
+  name: engineering MOD boots
+  description: A pair of boots for a MODsuit. An engineer-fit suit with heat and shock resistance. Nakamura Engineering's classic.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/engineering.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/engineering.rsi
+  - type: Magboots
+    toggleAction: ActionToggleMagbootsModsuitShoesEngineering
+
+# Medical
+- type: entity
+  parent: ClothingModsuitShoesBase
+  id: ClothingModsuitShoesRescue
+  noSpawn: true
+  name: rescue MOD boots
+  description: A pair of boots for a MODsuit. An advanced version of DeForest Medical Corporation's medical suit, designed for quick rescue of bodies from the most dangerous environments.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/rescue.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/rescue.rsi
+
+- type: entity
+  parent: ClothingModsuitShoesBase
+  id: ClothingModsuitShoesMedical
+  noSpawn: true
+  name: medical MOD boots
+  description: A pair of boots for a MODsuit. A lightweight suit by DeForest Medical Corporation, allows for easier movement.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/medical.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/medical.rsi
+
+# Cargo
+- type: entity
+  parent: ClothingModsuitShoesBase
+  id: ClothingModsuitShoesMining
+  noSpawn: true
+  name: mining MOD boots
+  description: A pair of boots for a MODsuit. A Nanotrasen mining suit for on-site operations, fit with accreting ash armor and a sphere form.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/mining.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/mining.rsi
+
+# Service
+- type: entity
+  parent: ClothingModsuitShoesBase
+  id: ClothingModsuitShoesStandard
+  noSpawn: true
+  name: standard MOD boots
+  description: A pair of boots for a MODsuit. A civilian class suit by Nakamura Engineering, doesn't offer much other than slightly quicker movement.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/standard.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/standard.rsi
+
+- type: entity
+  parent: ClothingModsuitShoesBase
+  id: ClothingModsuitShoesClown
+  noSpawn: true
+  name: cosmohonk MOD boots
+  description: A pair of boots for a MODsuit. A suit by Honk Ltd. Protects against low humor environments. Most of the tech went to lower the power cost.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/clown.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/clown.rsi
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepClown
+
+# Admemes
+- type: entity
+  parent: ClothingModsuitShoesMagBase
+  id: ClothingModsuitShoesAdmin
+  noSpawn: true
+  name: administrative MOD boots
+  description: A pair of boots for a MODsuit. A suit made of adminium. Who comes up with these stupid mineral names?
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/admin.rsi
+    state: icon
+  - type: NoSlip  
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/admin.rsi
+  - type: Magboots
+    toggleAction: ActionToggleMagbootsModsuitShoesAdmin
+
+- type: entity
+  parent: ClothingModsuitShoesMagBase
   id: ClothingModsuitShoesChrono
   noSpawn: true
-  name: Modsuit boots "Chrono Legionnaire"
-  description: State-of-the-art magnetic boots that do not slow down their wearer.
+  name: chrono MOD boots
+  description: A pair of boots for a MODsuit. A suit beyond our time, beyond time itself. Used to traverse timelines and "correct their course".
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/Modsuit/chrono.rsi
-    equipSound: /Audio/Items/ballin.ogg
-    unequipSound: /Audio/Items/ballout.ogg
     state: icon
+  - type: NoSlip
   - type: Clothing
     sprite: Clothing/Shoes/Boots/Modsuit/chrono.rsi
   - type: Magboots
-    toggleAction: ActionToggleMagboots
-  - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 1
-    enabled: false
-  - type: NoSlip
-  - type: StaticPrice
-    price: 750
+    toggleAction: ActionToggleMagbootsModsuitShoesChrono
+
+- type: entity
+  parent: ClothingModsuitShoesBase
+  id: ClothingModsuitShoesCorp
+  noSpawn: true
+  name: corporate MOD boots
+  description: A pair of boots for a MODsuit. A fancy, high-tech suit for Nanotrasen's high ranking officers.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/Modsuit/corp.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/Modsuit/corp.rsi
+
+# Actions (Remove when the system is done)
+- type: entity
+  id: ActionToggleMagbootsModsuitShoesAdmin
+  parent: ActionBaseToggleMagboots
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: { sprite: Clothing/Shoes/Boots/Modsuit/admin.rsi, state: icon }
+    iconOn: Clothing/Shoes/Boots/Modsuit/admin.rsi/icon-on.png
+
+- type: entity
+  id: ActionToggleMagbootsModsuitShoesChrono
+  parent: ActionBaseToggleMagboots
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: { sprite: Clothing/Shoes/Boots/Modsuit/chrono.rsi, state: icon }
+    iconOn: Clothing/Shoes/Boots/Modsuit/chrono.rsi/icon-on.png
+
+- type: entity
+  id: ActionToggleMagbootsModsuitShoesAtmospheric
+  parent: ActionBaseToggleMagboots
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: { sprite: Clothing/Shoes/Boots/Modsuit/atmospheric.rsi, state: icon }
+    iconOn: Clothing/Shoes/Boots/Modsuit/atmospheric.rsi/icon-on.png
+
+- type: entity
+  id: ActionToggleMagbootsModsuitShoesEngineering
+  parent: ActionBaseToggleMagboots
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: { sprite: Clothing/Shoes/Boots/Modsuit/engineering.rsi, state: icon }
+    iconOn: Clothing/Shoes/Boots/Modsuit/engineering.rsi/icon-on.png

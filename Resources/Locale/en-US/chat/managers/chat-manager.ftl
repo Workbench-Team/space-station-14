@@ -62,6 +62,10 @@ chat-speech-verb-question = asks
 chat-speech-verb-stutter = stutters
 chat-speech-verb-mumble = mumbles
 
+chat-speech-verb-felinid-1 = meows
+chat-speech-verb-felinid-2 = purrs
+chat-speech-verb-felinid-3 = nyavs
+
 chat-speech-verb-insect-1 = chitters
 chat-speech-verb-insect-2 = chirps
 chat-speech-verb-insect-3 = clicks

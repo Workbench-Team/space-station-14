@@ -1,6 +1,4 @@
-ent-ModularReceiver = modular receiver
-    .desc = A vital part used in the creation of firearms.
-    .suffix = { "" }
-ent-RifleStock = rifle stock
-    .desc = A robust wooden stock, used in the creation of firearms.
-    .suffix = { "" }
+ent-ModularReceiver = модульная ствольная коробка
+    .desc = Важнейшая деталь, используемая при создании огнестрельного оружия.
+ent-RifleStock = приклад
+    .desc = Прочный деревянный приклад, используемый при создании огнестрельного оружия.

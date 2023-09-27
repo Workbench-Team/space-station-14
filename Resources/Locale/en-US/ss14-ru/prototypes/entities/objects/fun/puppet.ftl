@@ -3,4 +3,3 @@ ent-MrChips = mr chips
     .suffix = Dummy
 ent-MrDips = mr dips
     .desc = { ent-MrChips.desc }
-    .suffix = { "" }

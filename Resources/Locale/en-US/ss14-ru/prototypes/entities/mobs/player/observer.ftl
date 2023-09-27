@@ -1,15 +1,10 @@
 ent-MobObserver = observer
     .desc = Boo!
-    .suffix = { "" }
 ent-ActionGhostBoo = Boo!
     .desc = Scare your crew members because of boredom!
-    .suffix = { "" }
 ent-ActionToggleLighting = Toggle All Lighting
     .desc = Toggle all light rendering to better observe dark areas.
-    .suffix = { "" }
 ent-ActionToggleFov = Toggle FoV
     .desc = Toggles field-of-view in order to see what players see.
-    .suffix = { "" }
 ent-ActionToggleGhosts = Toggle Ghosts
     .desc = Toggle the visibility of other ghosts.
-    .suffix = { "" }

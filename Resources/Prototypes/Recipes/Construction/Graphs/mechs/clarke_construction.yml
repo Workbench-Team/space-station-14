@@ -4,7 +4,7 @@
   graph:
   - node: start
     edges:
-    - to: Clark
+    - to: clark
       steps:
       - tag: ConveyorAssembly
         doAfter: 1
@@ -101,7 +101,7 @@
       - tool: Welding
         doAfter: 5
 
-  - node: Clark
+  - node: clark
     actions:
     - !type:BuildMech
       mechPrototype: MechClarke

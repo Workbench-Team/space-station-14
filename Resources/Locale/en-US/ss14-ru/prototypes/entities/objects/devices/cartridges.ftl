@@ -1,12 +1,8 @@
 ent-NotekeeperCartridge = notekeeper cartridge
     .desc = A program for keeping notes
-    .suffix = { "" }
 ent-NewsReadCartridge = News Cartridge
     .desc = A program for reading news
-    .suffix = { "" }
 ent-CrewManifestCartridge = Crew Manifest Cartridge
     .desc = A program for listing your fellow crewmembers
-    .suffix = { "" }
 ent-NetProbeCartridge = NetProbe cartridge
     .desc = A program for getting the address and frequency of network devices
-    .suffix = { "" }

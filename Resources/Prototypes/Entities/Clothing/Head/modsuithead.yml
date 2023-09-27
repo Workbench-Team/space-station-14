@@ -1,23 +1,31 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: ClothingHeadHelmetModsuitCorp
-  noSpawn: true
-  name: Modsuit helmet "Corp"
-  description: Anti-impact helmet, with built-in lighting.
+  id: ClothingHeadHelmetModsuitBase
+  abstract: true
+  name: base MOD helmet
+  description: A helmet for a MODsuit.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Modsuits/corp.rsi
+    sprite: Clothing/Head/Modsuit/standard.rsi
   - type: Clothing
-    sprite: Clothing/Head/Modsuits/corp.rsi
+    sprite: Clothing/Head/Modsuit/standard.rsi
     equipSound: /Audio/Items/ballin.ogg
     unequipSound: /Audio/Items/ballout.ogg
-  - type: PointLight
-    color: "#00ff00"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.95
+        Heat: 0.90
+        Radiation: 0.25
   - type: PressureProtection
     highPressureMultiplier: 0.1
     lowPressureMultiplier: 1000
+  - type: PointLight
+    color: "#adffe6"
   - type: ToggleableClothing
-    clothingPrototype: ClothingHandsModsuitCorp
+    clothingPrototype: ClothingHandsModsuitStandard
     slot: gloves
     requiredSlot: head
   - type: ContainerContainer
@@ -25,46 +33,185 @@
       toggleable-clothing: !type:ContainerSlot {}
 
 - type: entity
-  parent: ClothingHeadHelmetModsuitCorp
-  id: ClothingHeadHelmetModsuitAdmem
+  parent: ClothingHeadHelmetModsuitBase
+  id: ClothingHeadHelmetModsuitCorp
   noSpawn: true
-  name: Modsuit helmet "Admem"
-  description: Anti-impact helmet, with built-in lighting.
+  name: corporate MOD helmet
+  description: A helmet for a MODsuit. A fancy, high-tech suit for Nanotrasen's high ranking officers.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Modsuits/admem.rsi
+    sprite: Clothing/Head/Modsuit/corp.rsi
   - type: Clothing
-    sprite: Clothing/Head/Modsuits/admem.rsi
+    sprite: Clothing/Head/Modsuit/corp.rsi
+  - type: PointLight
+    color: "#00ff00"
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitCorp
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitBase
+  id: ClothingHeadHelmetModsuitAdmin
+  noSpawn: true
+  name: administrative MOD helmet
+  description: A helmet for a MODsuit. A suit made of adminium. Who comes up with these stupid mineral names?
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuit/admin.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuit/admin.rsi
   - type: PointLight
     color: "#87ceeb"
     radius: 7
     energy: 3
   - type: ToggleableClothing
-    clothingPrototype: ClothingHandsModsuitAdmem
-    slot: gloves
-    requiredSlot: head
-  - type: ContainerContainer
-    containers:
-      toggleable-clothing: !type:ContainerSlot {}
-
+    clothingPrototype: ClothingHandsModsuitAdmin
 
 - type: entity
-  parent: ClothingHeadHelmetModsuitCorp
+  parent: ClothingHeadHelmetModsuitBase
   id: ClothingHeadHelmetModsuitChrono
   noSpawn: true
-  name: Modsuit helmet "Chrono Legionnaire"
-  description: Anti-impact helmet, with built-in lighting.
+  name: chrono MOD helmet
+  description: A helmet for a MODsuit. A suit beyond our time, beyond time itself. Used to traverse timelines and "correct their course".
   components:
   - type: Sprite
-    sprite: Clothing/Head/Modsuits/chrono.rsi
+    sprite: Clothing/Head/Modsuit/chrono.rsi
   - type: Clothing
-    sprite: Clothing/Head/Modsuits/chrono.rsi
+    sprite: Clothing/Head/Modsuit/chrono.rsi
   - type: PointLight
     color: "#fffafa"
   - type: ToggleableClothing
     clothingPrototype: ClothingHandsModsuitChrono
-    slot: gloves
-    requiredSlot: head
-  - type: ContainerContainer
-    containers:
-      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitBase
+  id: ClothingHeadHelmetModsuitAtmospheric
+  noSpawn: true
+  name: atmospheric MOD helmet
+  description: A helmet for a MODsuit. An atmospheric-resistant suit by Nakamura Engineering, offering extreme heat resistance compared to the engineer suit.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuit/atmospheric.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuit/atmospheric.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitAtmospheric
+  - type: EyeProtection
+  - type: PointLight
+    color: "#adffe6"
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitBase
+  id: ClothingHeadHelmetModsuitClown
+  noSpawn: true
+  name: cosmohonk MOD helmet
+  description: A helmet for a MODsuit. A suit by Honk Ltd. Protects against low humor environments. Most of the tech went to lower the power cost.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuit/clown.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuit/clown.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitClown
+  - type: PointLight
+    color: "#FFFDE0"
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitBase
+  id: ClothingHeadHelmetModsuitEngineering
+  noSpawn: true
+  name: engineering MOD helmet
+  description: A helmet for a MODsuit. An engineer-fit suit with heat and shock resistance. Nakamura Engineering's classic.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuit/engineering.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuit/engineering.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitEngineering
+  - type: EyeProtection
+  - type: PointLight
+    color: "#ffdbad"
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitBase
+  id: ClothingHeadHelmetModsuitMedical
+  noSpawn: true
+  name: medical MOD helmet
+  description: A helmet for a MODsuit. A lightweight suit by DeForest Medical Corporation, allows for easier movement.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuit/medical.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuit/medical.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitMedical
+  - type: ClothingGrantComponent
+    component:
+    - type: ShowHealthBars
+      damageContainer: Biological
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitBase
+  id: ClothingHeadHelmetModsuitMining
+  noSpawn: true
+  name: mining MOD helmet
+  description: A helmet for a MODsuit. A Nanotrasen mining suit for on-site operations, fit with accreting ash armor and a sphere form.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuit/mining.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuit/mining.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitMining
+  - type: PointLight
+    radius: 7
+    energy: 3
+    color: "#FFFDE0"
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitBase
+  id: ClothingHeadHelmetModsuitRescue
+  noSpawn: true
+  name: rescue MOD helmet
+  description: A helmet for a MODsuit. An advanced version of DeForest Medical Corporation's medical suit, designed for quick rescue of bodies from the most dangerous environments.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuit/rescue.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuit/rescue.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitRescue
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitBase
+  id: ClothingHeadHelmetModsuitSecurity
+  noSpawn: true
+  name: security MOD helmet
+  description: A helmet for a MODsuit. An Apadyne Technologies security suit, offering quicker speed at the cost of carrying capacity.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuit/security.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuit/security.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitSecurity
+  - type: ShowSecurityIcons
+  - type: FlashImmunity
+  - type: PointLight
+    color: "#ffeead"
+
+- type: entity
+  parent: ClothingHeadHelmetModsuitBase
+  id: ClothingHeadHelmetModsuitStandard
+  noSpawn: true
+  name: standard MOD helmet
+  description: A helmet for a MODsuit. A civilian class suit by Nakamura Engineering, doesn't offer much other than slightly quicker movement.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Modsuit/standard.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Modsuit/standard.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHandsModsuitStandard
+  - type: PointLight
+    color: "#ffeead"

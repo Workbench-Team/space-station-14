@@ -1,14 +1,14 @@
 - type: entity
   parent: ClothingHandsBase
-  id: ClothingHandsModsuitCorp
-  noSpawn: true
-  name: Modsuit gloves "Corp"
-  description: Insulating impact gloves. Provide sealing.
+  id: ClothingHandsModsuitBase
+  abstract: true
+  name: base MOD gauntlets
+  description: A pair of gauntlets for a MODsuit.
   components:
   - type: Sprite
-    sprite: Clothing/Hands/Gloves/Modsuit/corp.rsi
+    sprite: Clothing/Hands/Gloves/Modsuit/standard.rsi
   - type: Clothing
-    sprite: Clothing/Hands/Gloves/Modsuit/corp.rsi
+    sprite: Clothing/Hands/Gloves/Modsuit/standard.rsi
     equipSound: /Audio/Items/ballin.ogg
     unequipSound: /Audio/Items/ballout.ogg
   - type: GloveHeatResistance
@@ -19,38 +19,154 @@
     fiberColor: fibers-regal-blue
   - type: FingerprintMask
   - type: ToggleableClothing
-    clothingPrototype: ClothingModsuitShoesCorp
+    clothingPrototype: ClothingModsuitShoesStandard
     slot: shoes
     requiredSlot: gloves
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:ContainerSlot {}
 
+# Security
 - type: entity
-  parent: ClothingHandsModsuitCorp
-  id: ClothingHandsModsuitAdmem
+  parent: ClothingHandsModsuitBase
+  id: ClothingHandsModsuitSecurity
   noSpawn: true
-  name: Modsuit gloves "Admem"
-  description: Insulating impact gloves. Provide sealing.
+  name: security MOD gauntlets
+  description: A pair of gauntlets for a MODsuit. An Apadyne Technologies security suit, offering quicker speed at the cost of carrying capacity.
   components:
   - type: Sprite
-    sprite: Clothing/Hands/Gloves/Modsuit/admem.rsi
+    sprite: Clothing/Hands/Gloves/Modsuit/security.rsi
   - type: Clothing
-    sprite: Clothing/Hands/Gloves/Modsuit/admem.rsi
+    sprite: Clothing/Hands/Gloves/Modsuit/security.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingModsuitShoesAdmem
-    slot: shoes
-    requiredSlot: gloves
-  - type: ContainerContainer
-    containers:
-      toggleable-clothing: !type:ContainerSlot {}
+    clothingPrototype: ClothingModsuitShoesSecurity
+
+# Engineering
+- type: entity
+  parent: ClothingHandsModsuitBase
+  id: ClothingHandsModsuitAtmospheric
+  noSpawn: true
+  name: atmospheric MOD gauntlets
+  description: A pair of gauntlets for a MODsuit. An atmospheric-resistant suit by Nakamura Engineering, offering extreme heat resistance compared to the engineer suit.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/atmospheric.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/atmospheric.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesAtmospheric
+  - type: Insulated
 
 - type: entity
-  parent: ClothingHandsModsuitCorp
+  parent: ClothingHandsModsuitBase
+  id: ClothingHandsModsuitEngineering
+  noSpawn: true
+  name: engineering MOD gauntlets
+  description: A pair of gauntlets for a MODsuit. An engineer-fit suit with heat and shock resistance. Nakamura Engineering's classic.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/engineering.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/engineering.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesEngineering
+  - type: Insulated
+
+# Medical
+- type: entity
+  parent: ClothingHandsModsuitBase
+  id: ClothingHandsModsuitRescue
+  noSpawn: true
+  name: rescue MOD gauntlets
+  description: A pair of gauntlets for a MODsuit. A civilian class suit by Nakamura Engineering, doesn't offer much other than slightly quicker movement.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/rescue.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/rescue.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesRescue
+
+- type: entity
+  parent: ClothingHandsModsuitBase
+  id: ClothingHandsModsuitMedical
+  noSpawn: true
+  name: medical MOD gauntlets
+  description: A pair of gauntlets for a MODsuit. A lightweight suit by DeForest Medical Corporation, allows for easier movement.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/medical.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/medical.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesMedical
+
+# Cargo
+- type: entity
+  parent: ClothingHandsModsuitBase
+  id: ClothingHandsModsuitMining
+  noSpawn: true
+  name: mining MOD gauntlets
+  description: A pair of gauntlets for a MODsuit. A Nanotrasen mining suit for on-site operations, fit with accreting ash armor and a sphere form.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/mining.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/mining.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesMining
+  - type: Insulated
+
+# Service
+- type: entity
+  parent: ClothingHandsModsuitBase
+  id: ClothingHandsModsuitStandard
+  noSpawn: true
+  name: standard MOD gauntlets
+  description: A pair of gauntlets for a MODsuit. A civilian class suit by Nakamura Engineering, doesn't offer much other than slightly quicker movement.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/standard.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/standard.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesStandard
+
+- type: entity
+  parent: ClothingHandsModsuitBase
+  id: ClothingHandsModsuitClown
+  noSpawn: true
+  name: cosmohonk MOD gauntlets
+  description: A pair of gauntlets for a MODsuit. A suit by Honk Ltd. Protects against low humor environments. Most of the tech went to lower the power cost.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/clown.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/clown.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesClown
+
+# Admemes
+- type: entity
+  parent: ClothingHandsModsuitBase
+  id: ClothingHandsModsuitAdmin
+  noSpawn: true
+  name: administrative MOD gauntlets
+  description: A pair of gauntlets for a MODsuit. A suit made of adminium. Who comes up with these stupid mineral names?
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/admin.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/admin.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesAdmin
+
+- type: entity
+  parent: ClothingHandsModsuitBase
   id: ClothingHandsModsuitChrono
   noSpawn: true
-  name: Modsuit gloves "Chrono Legionnaire"
-  description: Insulating impact gloves. Provide sealing.
+  name: chrono MOD gauntlets
+  description: A pair of gauntlets for a MODsuit. A suit beyond our time, beyond time itself. Used to traverse timelines and "correct their course".
   components:
   - type: Sprite
     sprite: Clothing/Hands/Gloves/Modsuit/chrono.rsi
@@ -58,8 +174,18 @@
     sprite: Clothing/Hands/Gloves/Modsuit/chrono.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingModsuitShoesChrono
-    slot: shoes
-    requiredSlot: gloves
-  - type: ContainerContainer
-    containers:
-      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingHandsModsuitBase
+  id: ClothingHandsModsuitCorp
+  noSpawn: true
+  name: corporate MOD gauntlets
+  description: A pair of gauntlets for a MODsuit. A fancy, high-tech suit for Nanotrasen's high ranking officers.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Modsuit/corp.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Modsuit/corp.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingModsuitShoesCorp
+

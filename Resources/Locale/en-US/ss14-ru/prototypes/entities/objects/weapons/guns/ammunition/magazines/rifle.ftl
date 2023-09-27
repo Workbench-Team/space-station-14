@@ -1,12 +1,8 @@
 ent-BaseMagazineRifle = magazine (.20 rifle)
     .desc = { ent-BaseItem.desc }
-    .suffix = { "" }
 ent-MagazineRifle = magazine (.20 rifle)
     .desc = { ent-BaseMagazineRifle.desc }
-    .suffix = { "" }
 ent-MagazineRiflePractice = magazine (.20 rifle practice)
     .desc = { ent-BaseMagazineRifle.desc }
-    .suffix = { "" }
 ent-MagazineRifleRubber = magazine (.20 rifle rubber)
     .desc = { ent-BaseMagazineRifle.desc }
-    .suffix = { "" }

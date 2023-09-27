@@ -8,54 +8,34 @@
   },
   "states": [
     {
-      "name": "Odysseus_l_leg"
+      "name": "odysseus_harness"
     },
     {
-      "name": "Odysseus_l_leg\u002Bo"
+      "name": "odysseus_harness+o"
     },
     {
-      "name": "Odysseus_r_arm"
+      "name": "odysseus_r_arm"
     },
     {
-      "name": "Odysseus_r_arm\u002Bo"
+      "name": "odysseus_r_arm+o"
     },
     {
-      "name": "Odysseus_r_leg"
+      "name": "odysseus_l_arm"
     },
     {
-      "name": "Odysseus_r_leg\u002Bo"
+      "name": "odysseus_l_arm+o"
     },
     {
-      "name": "Odysseus_harness"
+      "name": "odysseus_r_leg"
     },
     {
-      "name": "Odysseus_harness\u002Bo"
+      "name": "odysseus_r_leg+o"
     },
     {
-      "name": "Odysseus_l_arm"
+      "name": "odysseus_l_leg"
     },
     {
-      "name": "Odysseus_l_arm\u002Bo"
-    },
-    {
-      "name": "odysseus9"
-    },
-    {
-      "name": "odysseus10",
-      "delays": [
-        [
-          0.5,
-          1,
-          0.5,
-          1
-        ]
-      ]
-    },
-    {
-      "name": "odysseus8"
-    },
-    {
-      "name": "odysseus11"
+      "name": "odysseus_l_leg+o"
     },
     {
       "name": "odysseus0"
@@ -80,6 +60,26 @@
     },
     {
       "name": "odysseus7"
+    },
+    {
+      "name": "odysseus8"
+    },
+    {
+      "name": "odysseus9"
+    },
+    {
+      "name": "odysseus10",
+      "delays": [
+        [
+          0.5,
+          1,
+          0.5,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "odysseus11"
     }
   ]
 }

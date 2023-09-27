@@ -603,7 +603,7 @@
     containers:
       battery-container: !type:Container
   - type: MechAssemblyVisuals
-    statePrefix: Clark
+    statePrefix: clark
   - type: Sprite
     noRot: true
     state: clark0
@@ -641,19 +641,19 @@
   - type: Appearance
   - type: ItemMapper
     mapLayers:
-      Odysseus_l_arm+o:
+      odysseus_l_arm+o:
         whitelist:
           tags:
           - OdysseusLArm
-      Odysseus_r_arm+o:
+      odysseus_r_arm+o:
         whitelist:
           tags:
           - OdysseusRArm
-      Odysseus_l_leg+o:
+      odysseus_l_leg+o:
         whitelist:
           tags:
           - OdysseusLLeg
-      Odysseus_r_leg+o:
+      odysseus_r_leg+o:
         whitelist:
           tags:
           - OdysseusRLeg
@@ -669,7 +669,7 @@
       OdysseusLLeg: false
       OdysseusRLeg: false
   - type: Sprite
-    state: Odysseus_harness+o
+    state: odysseus_harness+o
     noRot: true
 
 - type: entity
@@ -679,7 +679,7 @@
   description: The left arm of the Odysseus APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Odysseus_l_arm
+    state: odysseus_l_arm
   - type: Tag
     tags:
     - OdysseusLArm
@@ -691,7 +691,7 @@
   description: The left leg of the Odysseus APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Odysseus_l_leg
+    state: odysseus_l_leg
   - type: Tag
     tags:
     - OdysseusLLeg
@@ -703,7 +703,7 @@
   description: The right leg of the Odysseus APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Odysseus_r_leg
+    state: odysseus_r_leg
   - type: Tag
     tags:
     - OdysseusRLeg
@@ -715,7 +715,7 @@
   description: The right arm of the Ripley APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Odysseus_r_arm
+    state: odysseus_r_arm
   - type: Tag
     tags:
     - OdysseusRArm
@@ -731,7 +731,7 @@
     containers:
       battery-container: !type:Container
   - type: MechAssemblyVisuals
-    statePrefix: Odysseus
+    statePrefix: odysseus
   - type: Sprite
     noRot: true
     state: odysseus0
@@ -769,19 +769,19 @@
   - type: Appearance
   - type: ItemMapper
     mapLayers:
-      Durand_l_arm+o:
+      durand_l_arm+o:
         whitelist:
           tags:
           - DurandLArm
-      Durand_r_arm+o:
+      durand_r_arm+o:
         whitelist:
           tags:
           - DurandRArm
-      Durand_l_leg+o:
+      durand_l_leg+o:
         whitelist:
           tags:
           - DurandLLeg
-      Durand_r_leg+o:
+      durand_r_leg+o:
         whitelist:
           tags:
           - DurandRLeg
@@ -797,7 +797,7 @@
       DurandLLeg: false
       DurandRLeg: false
   - type: Sprite
-    state: Durand_harness+o
+    state: durand_harness+o
     noRot: true
 
 - type: entity
@@ -807,7 +807,7 @@
   description: The left arm of the Durand APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Durand_l_arm
+    state: durand_l_arm
   - type: Tag
     tags:
     - DurandLArm
@@ -819,7 +819,7 @@
   description: The left leg of the Durand APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Durand_l_leg
+    state: durand_l_leg
   - type: Tag
     tags:
     - DurandLLeg
@@ -831,7 +831,7 @@
   description: The right leg of the Durand APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Durand_r_leg
+    state: durand_r_leg
   - type: Tag
     tags:
     - DurandRLeg
@@ -843,7 +843,7 @@
   description: The right arm of the Ripley APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Durand_r_arm
+    state: durand_r_arm
   - type: Tag
     tags:
     - DurandRArm
@@ -859,10 +859,10 @@
     containers:
       battery-container: !type:Container
   - type: MechAssemblyVisuals
-    statePrefix: Durand
+    statePrefix: durand
   - type: Sprite
     noRot: true
-    state: Durand0
+    state: durand0
   - type: Construction
     graph: Durand
     node: start
@@ -875,7 +875,7 @@
   description: The armor of the Durand APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Durand_armor
+    state: durand_armor
   - type: Tag
     tags:
     - DurandArmor
@@ -909,19 +909,19 @@
   - type: Appearance
   - type: ItemMapper
     mapLayers:
-      Gygax_l_arm+o:
+      gygax_l_arm+o:
         whitelist:
           tags:
           - GygaxLArm
-      Gygax_r_arm+o:
+      gygax_r_arm+o:
         whitelist:
           tags:
           - GygaxRArm
-      Gygax_l_leg+o:
+      gygax_l_leg+o:
         whitelist:
           tags:
           - GygaxLLeg
-      Gygax_r_leg+o:
+      gygax_r_leg+o:
         whitelist:
           tags:
           - GygaxRLeg
@@ -937,7 +937,7 @@
       GygaxLLeg: false
       GygaxRLeg: false
   - type: Sprite
-    state: Gygax_harness+o
+    state: gygax_harness+o
     noRot: true
 
 - type: entity
@@ -947,7 +947,7 @@
   description: The left arm of the Gygax APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Gygax_l_arm
+    state: gygax_l_arm
   - type: Tag
     tags:
     - GygaxLArm
@@ -959,7 +959,7 @@
   description: The left leg of the Gygax APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Gygax_l_leg
+    state: gygax_l_leg
   - type: Tag
     tags:
     - GygaxLLeg
@@ -971,7 +971,7 @@
   description: The right leg of the Gygax APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Gygax_r_leg
+    state: gygax_r_leg
   - type: Tag
     tags:
     - GygaxRLeg
@@ -983,7 +983,7 @@
   description: The right arm of the Ripley APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Gygax_r_arm
+    state: gygax_r_arm
   - type: Tag
     tags:
     - GygaxRArm
@@ -999,10 +999,10 @@
     containers:
       battery-container: !type:Container
   - type: MechAssemblyVisuals
-    statePrefix: Gygax
+    statePrefix: gygax
   - type: Sprite
     noRot: true
-    state: Gygax0
+    state: gygax0
   - type: Construction
     graph: Gygax
     node: start
@@ -1015,7 +1015,7 @@
   description: The armor of the Gygax APLU. It belongs on the chassis of the mech.
   components:
   - type: Sprite
-    state: Gygax_armor
+    state: gygax_armor
   - type: Tag
     tags:
     - GygaxArmor

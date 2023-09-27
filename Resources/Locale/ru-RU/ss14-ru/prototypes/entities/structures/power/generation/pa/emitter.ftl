@@ -1,12 +1,9 @@
 ent-ParticleAcceleratorEmitterPort = сдерживающий эмиттер УЧ (Л)
     .desc = Запускает Альфа-частицы, не стоит стоять перед ним.
-    .suffix = { "" }
 ent-ParticleAcceleratorEmitterFore = сдерживающий эмиттер УЧ (Ц)
     .desc = Запускает Альфа-частицы, не стоит стоять перед ним.
-    .suffix = { "" }
 ent-ParticleAcceleratorEmitterStarboard = сдерживающий эмиттер УЧ (П)
     .desc = Запускает Альфа-частицы, не стоит стоять перед ним.
-    .suffix = { "" }
 ent-ParticleAcceleratorEmitterPortUnfinished = сдерживающий эмиттер УЧ (Л)
     .desc = Запускает Альфа-частицы, не стоит стоять перед ним. Выглядит незаконченным.
     .suffix = Незаконченный, Левый

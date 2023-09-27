@@ -1,0 +1,22 @@
+﻿- type: constructionGraph
+  id: ModsuitAtmospheric
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: modsuitatmospheric
+          steps:
+            - tag: ModsuitPlateAtmospheric
+              name: покрытие мода "Атмосферный"
+              icon:
+                sprite: Objects/Specific/Mech/modcore_construction.rsi
+                state: atmospheric
+              doAfter: 2
+            - tag: ModsuitAssembledPart
+              name: собранный каркас модсьюта
+              icon:
+                sprite: Objects/Specific/Mech/modcore_construction.rsi
+                state: modcore8
+              doAfter: 2
+    - node: modsuitatmospheric
+      entity: ClothingModsuitBackAtmospheric

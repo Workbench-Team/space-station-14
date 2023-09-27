@@ -1,6 +1,5 @@
 ent-BaseMobBehonker = behonker
     .desc = A floating demon aspect of the honkmother.
-    .suffix = { "" }
 ent-MobBehonkerElectrical = behonker
     .suffix = Pyro
     .desc = { ent-BaseMobBehonker.desc }

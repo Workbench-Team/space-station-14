@@ -1,0 +1,80 @@
+﻿- type: constructionGraph
+  id: ModsuitAssembled
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: modsuitassembled
+      steps:
+      - tag: ModsuitCoreEnergy
+        name: MOD standard core
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.MechAssemblyVisuals.State"
+          data: 1
+
+      - tool: Screwing
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.MechAssemblyVisuals.State"
+          data: 2
+
+      - component: PowerCell
+        name: battery
+        store: battery-container
+        icon:
+          sprite: Objects/Power/power_cells.rsi
+          state: small
+
+      - tag: ModsuitHelmet
+        name: MODsuit helmet
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.MechAssemblyVisuals.State"
+          data: 3
+
+      - tag: ModsuitChestplate
+        name: MODsuit chestplate
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.MechAssemblyVisuals.State"
+          data: 4
+
+      - tag: ModsuitGauntlets
+        name: MODsuit gauntlets
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.MechAssemblyVisuals.State"
+          data: 5
+
+      - tag: ModsuitBoots
+        name: MODsuit boots
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.MechAssemblyVisuals.State"
+          data: 6
+
+      - tool: Anchoring
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.MechAssemblyVisuals.State"
+          data: 7
+
+      - tool: Screwing
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.MechAssemblyVisuals.State"
+          data: 8
+
+  - node: modsuitassembled
+    actions:
+    - !type:BuildMech
+      mechPrototype: ModsuitAssembled

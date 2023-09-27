@@ -6,4 +6,3 @@ ent-StationMap = карта станции
     .desc = { ent-StationMapBroken.desc }
 ent-StationMapAssembly = каркас карты станции
     .desc = Каркас карты станции.
-    .suffix = { "" }

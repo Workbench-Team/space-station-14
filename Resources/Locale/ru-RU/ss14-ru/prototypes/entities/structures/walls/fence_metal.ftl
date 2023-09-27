@@ -1,9 +1,7 @@
 ent-BaseFenceMetal = забор из сетки-рабицы
     .desc = Металлический кусок ограждения, отгораживающий что-то, вероятно, очень важное.
-    .suffix = { "" }
 ent-FenceMetalBroken = порванный забор из сетки-рабицы
     .desc = Кто-то очень разозлился на неодушевленный предмет.
-    .suffix = { "" }
 ent-FenceMetalStraight = { ent-BaseFenceMetal }
     .suffix = Прямая
     .desc = { ent-BaseFenceMetal.desc }
@@ -15,4 +13,3 @@ ent-FenceMetalEnd = { ent-BaseFenceMetal }
     .desc = { ent-BaseFenceMetal.desc }
 ent-FenceMetalGate = калитка из сетки-рабицы
     .desc = Вы можете использовать калитку вместо того, чтобы перепрыгивать через забор. Если вы выбрали первый вариант, вы - ТРУС.
-    .suffix = { "" }

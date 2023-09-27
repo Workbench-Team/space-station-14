@@ -1,12 +1,8 @@
 ent-ActionFlashRune = Flash Rune
     .desc = Summons a rune that flashes if used.
-    .suffix = { "" }
 ent-ActionExplosionRune = Explosion Rune
     .desc = Summons a rune that explodes if used.
-    .suffix = { "" }
 ent-ActionIgniteRune = Ignite Rune
     .desc = Summons a rune that ignites if used.
-    .suffix = { "" }
 ent-ActionStunRune = Stun Rune
     .desc = Summons a rune that stuns if used.
-    .suffix = { "" }

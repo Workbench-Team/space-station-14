@@ -1,15 +1,10 @@
 ent-BaseSpeedLoaderMagnum = speed loader (.45 magnum)
     .desc = { ent-BaseItem.desc }
-    .suffix = { "" }
 ent-SpeedLoaderMagnum = speed loader (.45 magnum)
     .desc = { ent-BaseSpeedLoaderMagnum.desc }
-    .suffix = { "" }
 ent-SpeedLoaderMagnumPractice = speed loader (.45 magnum practice)
     .desc = { ent-BaseSpeedLoaderMagnum.desc }
-    .suffix = { "" }
 ent-SpeedLoaderMagnumRubber = speed loader (.45 magnum rubber)
     .desc = { ent-BaseSpeedLoaderMagnum.desc }
-    .suffix = { "" }
 ent-SpeedLoaderMagnumAP = speed loader (.45 magnum armor-piercing)
     .desc = { ent-BaseSpeedLoaderMagnum.desc }
-    .suffix = { "" }

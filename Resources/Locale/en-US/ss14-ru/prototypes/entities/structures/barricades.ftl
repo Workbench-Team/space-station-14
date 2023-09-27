@@ -1,12 +1,8 @@
 ent-BaseBarricade = wooden barricade
     .desc = A barricade made out of wood planks. It looks like it can take a few solid hits.
-    .suffix = { "" }
 ent-Barricade = { ent-BaseBarricade }
     .desc = { ent-BaseBarricade.desc }
-    .suffix = { "" }
 ent-BarricadeBlock = { ent-Barricade }
     .desc = { ent-Barricade.desc }
-    .suffix = { "" }
 ent-BarricadeDirectional = { ent-BaseBarricade }
     .desc = { ent-BaseBarricade.desc }
-    .suffix = { "" }

@@ -1,6 +1,5 @@
 ent-MaterialBase = { ent-BaseItem }
     .desc = A raw material.
-    .suffix = { "" }
 ent-MaterialCardboard = cardboard
     .suffix = Full
     .desc = { ent-MaterialBase.desc }
@@ -42,10 +41,8 @@ ent-MaterialBiomass1 = { ent-MaterialBiomass }
     .desc = { ent-MaterialBiomass.desc }
 ent-MaterialHideBear = bear hide
     .desc = { ent-MaterialBase.desc }
-    .suffix = { "" }
 ent-MaterialHideCorgi = corgi hide
     .desc = Luxury pelt used in only the most elite fashion. Rumors say this is found when a corgi is sent to the nice farm.
-    .suffix = { "" }
 ent-MaterialDiamond = refined diamond
     .suffix = Full
     .desc = { ent-MaterialBase.desc }

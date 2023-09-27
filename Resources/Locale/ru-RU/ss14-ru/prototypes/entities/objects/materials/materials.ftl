@@ -1,6 +1,5 @@
 ent-MaterialBase = { ent-BaseItem }
     .desc = Сырьё.
-    .suffix = { "" }
 ent-MaterialCardboard = картон
     .suffix = Полный
     .desc = { ent-MaterialBase.desc }
@@ -42,10 +41,8 @@ ent-MaterialBiomass1 = { ent-MaterialBiomass }
     .desc = { ent-MaterialBiomass.desc }
 ent-MaterialHideBear = медвежья шкура
     .desc = { ent-MaterialBase.desc }
-    .suffix = { "" }
 ent-MaterialHideCorgi = шкура корги
     .desc = Роскошная шкурка, используемая только в самой элитной моде. По слухам, её находят, когда корги отправляют на хорошую ферму.
-    .suffix = { "" }
 ent-MaterialDiamond = очищенный бриллиант
     .suffix = Полный
     .desc = { ent-MaterialBase.desc }
