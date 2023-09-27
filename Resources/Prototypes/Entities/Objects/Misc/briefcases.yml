@@ -53,6 +53,21 @@
 - type: entity
   name: brown briefcase
   parent: BriefcaseSyndieBase
+  id: BriefcaseRD
+  description: A handy briefcase.
+  components:
+  - type: Sprite
+    sprite: Objects/Storage/Briefcases/rd_case.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Storage/Briefcases/rd_case.rsi
+  - type: Storage
+    storageOpenSound:
+      collection: WeaponCaseOpen
+
+- type: entity
+  name: brown briefcase
+  parent: BriefcaseSyndieBase
   id: WeaponcaseBlueShield
   description: A handy briefcase.
   components:
