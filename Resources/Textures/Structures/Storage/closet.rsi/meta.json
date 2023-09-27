@@ -71,6 +71,12 @@
       "name": "blueshield_door"
     },
     {
+      "name": "blueshield_open"
+    },
+    {
+      "name": "blueshield"
+    },
+    {
       "name": "bio_jan_open"
     },
     {

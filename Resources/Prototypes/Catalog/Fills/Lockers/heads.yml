@@ -64,6 +64,8 @@
       - id: BoxCardboardTrackImp
       - id: ClothingBeltSecurityWebbing
       - id: GarmentBagBlueShield
+      - id: ClothingHeadsetAltBlueShield
+      - id: ClothingHeadsetBlueShield
 
 - type: entity
   id: LockerCaptainFilled

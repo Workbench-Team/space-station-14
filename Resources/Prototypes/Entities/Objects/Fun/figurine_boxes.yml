@@ -64,6 +64,8 @@
         orGroup: SpacemenFig
       - id: ToyFigurineResearchDirector
         orGroup: SpacemenFig
+      - id: ToyFigurineBlueshieldOfficer
+        orGroup: SpacemenFig
       - id: ToyFigurineScientist
         orGroup: SpacemenFig
       - id: ToyFigurineChiefMedicalOfficer

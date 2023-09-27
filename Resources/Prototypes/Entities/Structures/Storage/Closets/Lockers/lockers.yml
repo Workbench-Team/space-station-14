@@ -82,8 +82,8 @@
   components:
   - type: Appearance
   - type: EntityStorageVisuals
-    stateBaseClosed: cap
-    stateDoorOpen: cap_open
+    stateBaseClosed: blueshield
+    stateDoorOpen: blueshield_open
     stateDoorClosed: blueshield_door
   - type: AccessReader
     access: [["Captain"]]

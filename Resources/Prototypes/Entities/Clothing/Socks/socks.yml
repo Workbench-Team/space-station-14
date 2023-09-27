@@ -1981,3 +1981,49 @@
       type: StorageBoundUserInterface
   - type: TemperatureProtection
     coefficient: 0.95   
+
+- type: entity
+  parent: ClothingSocksBase
+  id: ClothingUnderSocksBlueshieldStockings
+  name: blueshield officer's stockings
+  description: To protect the warmth of the feet of the one who protects the heads of the station.
+  components:
+  - type: Sprite
+    sprite: Clothing/Under/Socks/blueshield_thigh.rsi
+  - type: Clothing
+    sprite: Clothing/Under/Socks/blueshield_thigh.rsi
+  - type: Storage
+    capacity: 3
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+    - key: enum.StorageUiKey.Key
+      type: StorageBoundUserInterface
+  - type: TemperatureProtection
+    coefficient: 0.95   
+
+- type: entity
+  parent: ClothingSocksBase
+  id: ClothingUnderSocksBlueshieldKneeSocks
+  name: blueshield officer's knee socks
+  description: To protect the warmth of the feet of the one who protects the heads of the station.
+  components:
+  - type: Sprite
+    sprite: Clothing/Under/Socks/blueshield_knee.rsi
+  - type: Clothing
+    sprite: Clothing/Under/Socks/blueshield_knee.rsi
+  - type: Storage
+    capacity: 2
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+    - key: enum.StorageUiKey.Key
+      type: StorageBoundUserInterface
+  - type: TemperatureProtection
+    coefficient: 0.95 

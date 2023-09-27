@@ -450,7 +450,7 @@
     id: BlueShieldIDCard
     state: pda-blueshield
     penSlot:
-      startingItem: PenCap
+      startingItem: PenCentcom
       priority: -1
       whitelist:
         tags:
