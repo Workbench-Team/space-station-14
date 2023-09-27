@@ -4,42 +4,47 @@
   id: Chainsaw
   description: A very large chainsaw. Usually you use this for cutting down trees... usually.
   components:
+  - type: Chainsaw
+    litDamageBonus:
+        types:
+            Slash: 18.75
+            Piercing: 6.25
+            Blunt: -4.5
+            Structural: 20
+    litDisarmMalus: 0.6
+    activateSound: !type:SoundPathSpecifier
+      path: /Audio/Weapons/chainsaw_start.ogg
+    deActivateSound: !type:SoundPathSpecifier
+      path: /Audio/Weapons/chainsaw_stop.ogg
+  - type: Sprite
+    sprite:  Objects/Weapons/Melee/chainsaw.rsi
+    layers:
+      - state: icon
+      - state: icon_on
+        visible: false
+        map: [ "on" ]
+  - type: MeleeWeapon
+    attackRate: 1
+    soundHit:
+      path: /Audio/Weapons/chainsawhit.ogg
+    damage:
+      types:
+        Blunt: 4.5
+  - type: Item
+    size: 30
+    sprite:  Objects/Weapons/Melee/chainsaw.rsi
+  - type: UseDelay
+    delay: 1.0
+  - type: Appearance
+  - type: ToggleableLightVisuals
+    spriteLayer: wielded
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
   - type: Wieldable
     wieldTime: 1
-    wieldSound: !type:SoundPathSpecifier
-      path: /Audio/Weapons/chainsawwield.ogg
-      params:
-        volume: -3
-  - type: Sharp
-  - type: Sprite
-    sprite: Objects/Weapons/Melee/chainsaw.rsi
-    state: icon
-  - type: MeleeWeapon
-    damage:
-      types:
-        Slash: 5
-        Blunt: 5
-        Structural: 10
-    soundHit:
-      path: /Audio/Weapons/chainsaw.ogg
-      params:
-        volume: -3
-  - type: IncreaseDamageOnWield
-    damage:
-      types:
-        Slash: 5
-        Blunt: 5
-        Structural: 20
-  - type: Item
-    size: 50
-    sprite: Objects/Weapons/Melee/chainsaw.rsi
-  - type: DisarmMalus
-  - type: RefillableSolution
-    solution: Welder
-  - type: SolutionContainerManager
-    solutions:
-      Welder:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 300
-        maxVol: 300
+  - type: Construction
+    graph: ChainsawGraph
+    node: chainsaw

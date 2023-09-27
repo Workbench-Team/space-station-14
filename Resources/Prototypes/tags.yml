@@ -1155,3 +1155,9 @@
 
 - type: Tag
   id: GygaxArmor
+
+- type: Tag
+  id: SawElectric
+
+- type: Tag
+  id: Welder
