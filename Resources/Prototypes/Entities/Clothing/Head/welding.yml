@@ -4,6 +4,7 @@
   name: welding mask
   abstract: true
   components:
+  - type: Blindfold
   - type: IngestionBlocker
   - type: FlashImmunity
   - type: IdentityBlocker
