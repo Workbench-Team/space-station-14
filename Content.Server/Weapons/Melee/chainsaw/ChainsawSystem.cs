@@ -3,24 +3,18 @@ using Content.Server.Kitchen.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Item;
-using Content.Shared.Light;
-using Content.Shared.Light.Components;
 using Content.Shared.Temperature;
 using Content.Shared.Toggleable;
-using Content.Shared.Tools.Components;
 using Content.Shared.Weapons.Melee;
 using Content.Shared.Weapons.Melee.Events;
 using Content.Shared.Wieldable;
 using Content.Shared.Wieldable.Components;
 using Robust.Shared.Player;
-using Robust.Shared.Random;
 
 namespace Content.Server.Weapons.Melee.Chainsaw;
 
 public sealed class ChainsawSystem : EntitySystem
 {
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly SharedRgbLightControllerSystem _rgbSystem = default!;
     [Dependency] private readonly SharedItemSystem _item = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
@@ -32,7 +26,6 @@ public sealed class ChainsawSystem : EntitySystem
         SubscribeLocalEvent<ChainsawComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<ChainsawComponent, GetMeleeDamageEvent>(OnGetMeleeDamage);
         SubscribeLocalEvent<ChainsawComponent, UseInHandEvent>(OnUseInHand);
-        SubscribeLocalEvent<ChainsawComponent, InteractUsingEvent>(OnInteractUsing);
         SubscribeLocalEvent<ChainsawComponent, IsHotEvent>(OnIsHotEvent);
         SubscribeLocalEvent<ChainsawComponent, ChainsawDeactivatedEvent>(TurnOff);
         SubscribeLocalEvent<ChainsawComponent, ChainsawActivatedEvent>(TurnOn);
@@ -149,19 +142,6 @@ public sealed class ChainsawSystem : EntitySystem
     {
         if (!TryComp(uid, out AppearanceComponent? appearanceComponent))
             return;
-
-    }
-
-    private void OnInteractUsing(EntityUid uid, ChainsawComponent comp, InteractUsingEvent args)
-    {
-        if (args.Handled)
-            return;
-
-        if (!TryComp(args.Used, out ToolComponent? tool) || !tool.Qualities.ContainsAny("Pulsing"))
-            return;
-
-        args.Handled = true;
-        comp.Hacked = !comp.Hacked;
 
     }
 

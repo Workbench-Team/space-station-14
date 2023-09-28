@@ -6,7 +6,6 @@ namespace Content.Server.Weapons.Melee.Chainsaw;
 [RegisterComponent]
 internal sealed partial class ChainsawComponent : Component
 {
-    public Color BladeColor = Color.DodgerBlue;
 
     public bool Hacked = false;
 
