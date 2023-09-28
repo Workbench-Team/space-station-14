@@ -1740,6 +1740,17 @@
     Leporazine: 5
 
 - type: microwaveMealRecipe
+  id: RecipeRadAutoInjector
+  name: Brute auto injector recipe
+  result: RadAutoInjector
+  time: 5
+  solids:
+    Syringe: 1
+  reagents:
+    Bicaridine: 5
+    Arithrazine: 10
+
+- type: microwaveMealRecipe
   id: RecipeBruteAutoInjector
   name: Brute auto injector recipe
   result: BruteAutoInjector

@@ -148,7 +148,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 15
+          min: 16
         damage:
           types:
             Asphyxiation: 0.5
@@ -161,7 +161,7 @@
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
-          min: 15
+          min: 16
     Alcohol:
       effects:
       - !type:Drunk
@@ -235,7 +235,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 10
+          min: 11
         damage:
           types:
             Asphyxiation: 1
@@ -245,7 +245,7 @@
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
-          min: 10
+          min: 11
 
 - type: reagent
   id: Dexalin
