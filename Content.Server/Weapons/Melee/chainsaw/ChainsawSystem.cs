@@ -23,7 +23,6 @@ public sealed class ChainsawSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<ChainsawComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<ChainsawComponent, GetMeleeDamageEvent>(OnGetMeleeDamage);
         SubscribeLocalEvent<ChainsawComponent, UseInHandEvent>(OnUseInHand);
         SubscribeLocalEvent<ChainsawComponent, IsHotEvent>(OnIsHotEvent);
@@ -33,11 +32,6 @@ public sealed class ChainsawSystem : EntitySystem
         SubscribeLocalEvent<ChainsawComponent, ItemUnwieldedEvent>(TurnOffonUnwielded);
         SubscribeLocalEvent<ChainsawComponent, ItemWieldedEvent>(TurnOnonWielded);
     }
-
-    private void OnMapInit(EntityUid uid, ChainsawComponent comp, MapInitEvent args)
-    {
-    }
-
     private void OnGetMeleeDamage(EntityUid uid, ChainsawComponent comp, ref GetMeleeDamageEvent args)
     {
         if (!comp.Activated)
