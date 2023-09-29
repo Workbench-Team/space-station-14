@@ -38254,6 +38254,13 @@ entities:
     - pos: -28.5,-7.5
       parent: 2
       type: Transform
+- proto: CrateFunInstrumentsVariety
+  entities:
+  - uid: 14322
+    components:
+    - pos: 6.5,-20.5
+      parent: 2
+      type: Transform
 - proto: CrateFunPirate
   entities:
   - uid: 11681
@@ -63610,7 +63617,7 @@ entities:
       pos: -60.5,16.5
       parent: 2
       type: Transform
-    - SecondsUntilStateChange: -9283.119
+    - SecondsUntilStateChange: -9695
       state: Opening
       type: Door
   - uid: 11811
@@ -66005,6 +66012,14 @@ entities:
   - uid: 10538
     components:
     - pos: 29.247456,3.4163864
+      parent: 2
+      type: Transform
+- proto: PianoInstrument
+  entities:
+  - uid: 14321
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: 5.5,-22.5
       parent: 2
       type: Transform
 - proto: Pickaxe
@@ -75512,6 +75527,13 @@ entities:
     - pos: -17.5,40.5
       parent: 2
       type: Transform
+- proto: SpawnPointBorg
+  entities:
+  - uid: 14319
+    components:
+    - pos: 21.5,3.5
+      parent: 2
+      type: Transform
 - proto: SpawnPointBotanist
   entities:
   - uid: 10359
@@ -75650,6 +75672,13 @@ entities:
     - pos: -61.5,-22.5
       parent: 2
       type: Transform
+- proto: SpawnPointLawyer
+  entities:
+  - uid: 14320
+    components:
+    - pos: -56.5,-32.5
+      parent: 2
+      type: Transform
 - proto: SpawnPointMedicalDoctor
   entities:
   - uid: 7669
@@ -75705,9 +75734,9 @@ entities:
       type: Transform
 - proto: SpawnPointMusician
   entities:
-  - uid: 10511
+  - uid: 14323
     components:
-    - pos: 3.5,-22.5
+    - pos: 6.5,-22.5
       parent: 2
       type: Transform
 - proto: SpawnPointObserver
@@ -75818,6 +75847,34 @@ entities:
     - pos: -35.5,8.5
       parent: 2
       type: Transform
+- proto: SpawnPointSeniorEngineer
+  entities:
+  - uid: 5254
+    components:
+    - pos: 0.5,22.5
+      parent: 2
+      type: Transform
+- proto: SpawnPointSeniorOfficer
+  entities:
+  - uid: 14317
+    components:
+    - pos: -30.5,7.5
+      parent: 2
+      type: Transform
+- proto: SpawnPointSeniorPhysician
+  entities:
+  - uid: 10511
+    components:
+    - pos: -18.5,-33.5
+      parent: 2
+      type: Transform
+- proto: SpawnPointSeniorResearcher
+  entities:
+  - uid: 14318
+    components:
+    - pos: 27.5,-1.5
+      parent: 2
+      type: Transform
 - proto: SpawnPointServiceWorker
   entities:
   - uid: 14247
@@ -75852,11 +75909,6 @@ entities:
   - uid: 3949
     components:
     - pos: 1.5,22.5
-      parent: 2
-      type: Transform
-  - uid: 5254
-    components:
-    - pos: 0.5,22.5
       parent: 2
       type: Transform
 - proto: SpawnPointWarden
