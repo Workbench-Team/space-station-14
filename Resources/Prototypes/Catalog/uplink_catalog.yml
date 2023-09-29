@@ -1596,3 +1596,13 @@
     blacklist:
       components:
       - SurplusBundle
+
+- type: listing
+  id: UplinkSyndieDrobe
+  name: uplink-syndie-drobe-name
+  description: uplink-syndie-drobe-desc
+  productEntity: VendingMachineSyndieDrobe
+  cost:
+    Telecrystal: 6
+  categories:
+  - UplinkPointless
