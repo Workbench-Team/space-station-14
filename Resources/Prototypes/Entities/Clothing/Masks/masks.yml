@@ -514,3 +514,41 @@
   - type: EyeProtection
   - type: BreathMask
   - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingMaskBalaclava
+  name: balaclava
+  description: A chunky fabric head cover that not only hides your face, but makes everyone put their money on the floor.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/balaclava.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/balaclava.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingMaskSyndieBalaclava
+  name: syndicate balaclava
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/syndiebalaclava.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/syndiebalaclava.rsi
+  - type: EyeProtection
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingMaskRussianBalaclava
+  name: russian balaclava
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/rusbalaclava.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/rusbalaclava.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
