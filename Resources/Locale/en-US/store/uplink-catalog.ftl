@@ -390,5 +390,5 @@ uplink-syndicate-pai-desc = A Syndicate variant of the pAI with access to the Sy
 uplink-bribe-name = Lobbying Bundle
 uplink-bribe-desc = A heartfelt gift that can help you sway someone's opinion. Real or counterfeit? Yes.
 
-uplink-miniature-energy-crossbow-syndie-green-name = Miniature Energy Crossbow
-uplink-miniature-energy-crossbow-syndie-green-desc = The syndicate's energy crossbow, small, silent and deadly.
+uplink-syndie-drobe-name = SyndieDrobe
+uplink-syndie-drobe-desc = Extremely beautiful, red, vending machine for only the most stylish agents.
