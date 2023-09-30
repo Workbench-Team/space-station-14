@@ -1,12 +1,9 @@
 ent-RollerBed = каталка
     .desc = Используется для транспортировки пациентов, не нанося вреда.
-    .suffix = { "" }
 ent-CheapRollerBed = каталка
     .desc = Потертая каталка. Используется для транспортировки пациентов.
-    .suffix = { "" }
 ent-EmergencyRollerBed = каталка
     .desc = Прочная на вид каталка, используемая в чрезвычайных ситуациях.
-    .suffix = { "" }
 ent-RollerBedSpawnFolded = { ent-RollerBed }
     .desc = { ent-RollerBed.desc }
     .suffix = сложенная

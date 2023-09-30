@@ -1,15 +1,11 @@
 ent-MobCivilian = Civilian
     .desc = A miserable pile of secrets.
-    .suffix = { "" }
 ent-MobSalvager = Salvager
     .desc = { ent-BaseMobHuman.desc }
-    .suffix = { "" }
 ent-MobSpirate = Spirate
     .desc = Yarr!
-    .suffix = { "" }
 ent-SalvageHumanCorpse = unidentified corpse
     .desc = I think he's dead.
     .suffix = Dead
 ent-MobCluwne = person
     .desc = A polymorphed unfortunate.
-    .suffix = { "" }

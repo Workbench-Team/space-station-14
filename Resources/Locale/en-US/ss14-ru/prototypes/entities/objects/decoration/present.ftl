@@ -1,6 +1,5 @@
 ent-PresentBase = Present
     .desc = A little box with incredible surprises inside.
-    .suffix = { "" }
 ent-Present = { ent-PresentBase }
     .suffix = Empty
     .desc = { ent-PresentBase.desc }
@@ -15,4 +14,3 @@ ent-PresentRandom = { ent-PresentBase }
     .desc = { ent-PresentBase.desc }
 ent-PresentTrash = Wrapping Paper
     .desc = Carefully folded, taped, and tied with a bow. Then ceremoniously ripped apart and tossed on the floor.
-    .suffix = { "" }

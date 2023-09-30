@@ -1,12 +1,8 @@
 ent-BaseMagazineMagnumSubMachineGun = магазин Вектора (.45 магнум)
     .desc = { ent-BaseItem.desc }
-    .suffix = { "" }
 ent-MagazineMagnumSubMachineGun = магазин Вектора (.45 магнум)
     .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }
-    .suffix = { "" }
 ent-MagazineMagnumSubMachineGunPractice = магазин Вектора (.45 магнум учебные)
     .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }
-    .suffix = { "" }
 ent-MagazineMagnumSubMachineGunRubber = магазин Вектора (.45 магнум резиновые)
     .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }
-    .suffix = { "" }

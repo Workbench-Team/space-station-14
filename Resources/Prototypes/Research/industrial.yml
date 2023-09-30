@@ -149,6 +149,29 @@
   - MiniGravityGeneratorCircuitboard
 
 - type: technology
+  id: ModsuitsCraft
+  name: research-technology-modsuitscraft
+  icon:
+    sprite: Objects/Specific/Mech/modcore_construction.rsi
+    state: modcore8
+  discipline: Industrial
+  tier: 2
+  cost: 15000
+  recipeUnlocks:
+  - ModsuitHelmet
+  - ModsuitGauntlets
+  - ModsuitChestplate
+  - ModsuitBoots
+  - ModsuitPlateAtmospheric
+  - ModsuitPlateCosmohonk
+  - ModsuitPlateEngineering
+  - ModsuitPlateMedical
+  - ModsuitPlateSecurity
+  - ModsuitPlateStandard
+  - ModsuitPlateMining
+  - ModsuitAssembly
+
+- type: technology
   id: RipleyAPLU
   name: research-technology-ripley-aplu
   icon:

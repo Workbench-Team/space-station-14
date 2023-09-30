@@ -1,6 +1,5 @@
 ent-WarpPoint = варп точка
     .desc = { ent-MarkerBase.desc }
-    .suffix = { "" }
 ent-WarpPointBeacon = { ent-WarpPoint }
     .desc = { ent-WarpPoint.desc }
     .suffix = Маяк

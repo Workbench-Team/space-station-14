@@ -4,7 +4,7 @@
   graph:
   - node: start
     edges:
-    - to: Odysseus
+    - to: odysseus
       steps:
       - tool: Anchoring
         doAfter: 1
@@ -92,7 +92,7 @@
       - tool: Welding
         doAfter: 5
 
-  - node: Odysseus
+  - node: odysseus
     actions:
     - !type:BuildMech
       mechPrototype: MechOdysseus

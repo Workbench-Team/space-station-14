@@ -14,64 +14,67 @@
       "name": "clark_harness"
     },
     {
-      "name": "clark_harness\u002Bo"
+      "name": "clark_harness+o"
     },
     {
       "name": "clark_r_arm"
     },
     {
-      "name": "clark_r_arm\u002Bo"
+      "name": "clark_r_arm+o"
     },
     {
       "name": "clark_l_arm"
     },
     {
-      "name": "clark_l_arm\u002Bo"
+      "name": "clark_l_arm+o"
     },
     {
       "name": "clark_r_leg"
     },
     {
-      "name": "clark_r_leg\u002Bo"
+      "name": "clark_r_leg+o"
     },
     {
       "name": "clark_l_leg"
     },
     {
-      "name": "clark_l_leg\u002Bo"
+      "name": "clark_l_leg+o"
     },
     {
       "name": "clark0"
     },
     {
-      "name": "Clark1"
+      "name": "clark1"
     },
     {
-      "name": "Clark2"
+      "name": "clark2"
     },
     {
-      "name": "Clark3"
+      "name": "clark3"
     },
     {
-      "name": "Clark4"
+      "name": "clark4"
     },
     {
-      "name": "Clark5"
+      "name": "clark5"
     },
     {
-      "name": "Clark6"
+      "name": "clark6"
     },
     {
-      "name": "Clark7"
+      "name": "clark7"
     },
     {
-      "name": "Clark8"
+      "name": "clark8"
     },
     {
-      "name": "Clark9"
+      "name": "clark9"
     },
     {
-      "name": "Clark11",
+      "name": "clark10"
+    },
+    {
+      "name": "clark11",
       "delays": [
         [
           0.5,
@@ -82,10 +85,7 @@
       ]
     },
     {
-      "name": "Clark10"
-    },
-    {
-      "name": "Clark12"
+      "name": "clark12"
     }
   ]
 }

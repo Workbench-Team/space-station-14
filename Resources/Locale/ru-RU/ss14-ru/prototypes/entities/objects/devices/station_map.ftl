@@ -1,6 +1,5 @@
 ent-BaseHandheldStationMap = карта станции
     .desc = Отображает данные о текущей станции.
-    .suffix = { "" }
 ent-HandheldStationMap = { ent-BaseHandheldStationMap }
     .suffix = Ручная, Заряжанная
     .desc = { ent-BaseHandheldStationMap.desc }

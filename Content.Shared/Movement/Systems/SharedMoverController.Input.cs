@@ -53,6 +53,7 @@ namespace Content.Shared.Movement.Systems
 
             SubscribeLocalEvent<InputMoverComponent, ComponentInit>(OnInputInit);
             SubscribeLocalEvent<InputMoverComponent, MapInitEvent>(OnInputMapInit);
+            SubscribeLocalEvent<InputMoverComponent, ComponentShutdown>(OnInputShutdown);
             SubscribeLocalEvent<InputMoverComponent, ComponentGetState>(OnInputGetState);
             SubscribeLocalEvent<InputMoverComponent, ComponentHandleState>(OnInputHandleState);
             SubscribeLocalEvent<InputMoverComponent, EntParentChangedMessage>(OnInputParentChange);
@@ -344,6 +345,11 @@ namespace Content.Shared.Movement.Systems
         private void OnInputMapInit(EntityUid uid, InputMoverComponent component, MapInitEvent args)
         {
             _actionsSystem.AddAction(uid, ref component.MoveModeToggleActionEntity, component.MoveModeToggleAction);
+        }
+
+        private void OnInputShutdown(EntityUid uid, InputMoverComponent component, ComponentShutdown args)
+        {
+            _actionsSystem.RemoveAction(uid, component.MoveModeToggleActionEntity);
         }
 
         private void HandleRunChange(EntityUid uid, ushort subTick, bool walking)

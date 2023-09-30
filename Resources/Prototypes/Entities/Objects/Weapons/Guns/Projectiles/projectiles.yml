@@ -67,7 +67,7 @@
     lifetime: 10
 
 - type: entity
-  id: syringeprojctile
+  id: SyringeProjctile
   parent: BaseBullet
   noSpawn: true
   components:
@@ -240,6 +240,26 @@
     soundHit:
       path: "/Audio/Weapons/tap.ogg"
     soundForce: true
+
+- type: entity
+  name : disabler bolt
+  id: BulletDisablerX01
+  parent: BulletDisabler
+  noSpawn: true
+  components:
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        mask:
+        - Opaque
+      fly-by: *flybyfixture
+  - type: Reflective
+    reflective:
+    - Energy
 
 - type: entity
   name : disabler bolt practice
@@ -879,6 +899,22 @@
     damage:
       types:
         Heat: 25
+
+- type: entity
+  name: emitter bolt
+  id: X01Attack
+  parent: EmitterBolt
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+    layers:
+    - state: redtrac
+      shader: unshaded
+  - type: Projectile
+    damage:
+      types:
+        Heat: 22
 
 - type: entity
   id: BFGBullet

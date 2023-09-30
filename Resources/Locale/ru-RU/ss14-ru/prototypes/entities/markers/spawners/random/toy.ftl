@@ -1,9 +1,7 @@
 ent-ToySpawner = спавнер игрушки
     .desc = { ent-MarkerBase.desc }
-    .suffix = { "" }
 ent-FigureSpawner = спавнер фигурки
     .desc = { ent-MarkerBase.desc }
-    .suffix = { "" }
 ent-SpacemenFigureSpawner = спавнер минифигурки персонажа
     .suffix = Только для библиотекарей, ставьте на картах с осторожностью!
     .desc = { ent-MarkerBase.desc }

@@ -25,3 +25,33 @@
     size: 150
     sprite: Objects/Weapons/Melee/sledgehammer.rsi
     quickEquip: false
+
+- type: entity
+  name: metal pipe
+  parent: BaseItem
+  id: MetalPipe
+  description: A legendary greytide weapon.
+  components:
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Effects/metal-pipe-falling.ogg
+      params:
+        volume: 10
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/metalpipe.rsi
+    state: icon
+  - type: MeleeWeapon
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 10
+        Structural: 1
+  - type: StaminaDamageOnHit
+    damage: 5
+  - type: Item
+    size: 25
+    sprite: Objects/Weapons/Melee/metalpipe.rsi
+    quickEquip: false
+  - type: Construction
+    graph: MetalPipeGraph
+    node: metalpipe

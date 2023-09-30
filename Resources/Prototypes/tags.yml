@@ -17,6 +17,9 @@
   id: ArtifactFragment
 
 - type: Tag
+  id: Arrow
+
+- type: Tag
   id: ATVKeys
 
 - type: Tag
@@ -590,6 +593,46 @@
 
 - type: Tag
   id: HonkerRArm
+
+- type: Tag
+  id: ModsuitHelmet
+
+- type: Tag
+  id: ModsuitGauntlets
+
+- type: Tag
+  id: ModsuitCoreEnergy
+
+- type: Tag
+  id: ModsuitChestplate
+
+- type: Tag
+  id: ModsuitBoots
+
+- type: Tag
+  id: ModsuitPlateMining
+
+- type: Tag
+  id: ModsuitAssembledPart
+
+- type: Tag
+  id: ModsuitPlateAtmospheric
+
+- type: Tag
+  id: ModsuitPlateCosmohonk
+
+- type: Tag
+  id: ModsuitPlateEngineering
+
+- type: Tag
+  id: ModsuitPlateMedical
+
+- type: Tag
+  id: ModsuitPlateSecurity
+
+- type: Tag
+  id: ModsuitPlateStandard
+
 
 - type: Tag
   id: Hotsauce

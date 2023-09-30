@@ -1,6 +1,5 @@
 ent-DoorElectronics = микросхема шлюза
     .desc = { ent-BaseItem.desc }
-    .suffix = { "" }
 ent-DoorElectronicsService = { ent-DoorElectronics }
     .suffix = Service
     .desc = { ent-DoorElectronics.desc }

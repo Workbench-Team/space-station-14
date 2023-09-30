@@ -125,3 +125,23 @@
       - OrderSender
   - type: StaticPrice
     price: 500
+
+- type: entity
+  name: handheld MM monitor
+  parent:
+  - BaseItem
+  id: HandheldMMMonitor
+  description: A hand-held mass media monitor for posting fresh news.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Tablets/mm.rsi
+    state: icon
+  - type: ActivatableUI
+    key: enum.NewsWriteUiKey.Key
+  - type: UserInterface
+    interfaces:
+      - key: enum.NewsWriteUiKey.Key
+        type: NewsWriteBoundUserInterface
+  - type: NewsWrite
+  - type: StaticPrice
+    price: 500

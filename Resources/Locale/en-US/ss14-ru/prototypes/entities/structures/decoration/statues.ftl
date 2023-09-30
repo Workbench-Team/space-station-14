@@ -6,4 +6,3 @@ ent-StatueVenusBlue = statue of a pure maiden
     .suffix = Blue
 ent-StatueBananiumClown = bananium savior statue
     .desc = A bananium statue. It portrays the return of the savior who will rise up and lead the clowns to the great honk.
-    .suffix = { "" }

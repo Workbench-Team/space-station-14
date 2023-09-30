@@ -1,15 +1,10 @@
 ent-BaseMechEquipment = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
-    .suffix = { "" }
 ent-MechEquipmentGrabber = гидравлический зажим
     .desc = Даёт мехе возможность хватать и перетаскивать предметы.
-    .suffix = { "" }
 ent-MechEquipmentGrabberSmall = маленький гидравлический зажим
     .desc = Даёт мехе возможность хватать и перетаскивать предметы.
-    .suffix = { "" }
 ent-MechEquipmentDrill = дрель
     .desc = Дает мехе возможность сверлить
-    .suffix = { "" }
 ent-MechEquipmentHorn = клаксон мехи
     .desc = Усовершенствованный велосипедный клаксон, который воспроизводит множество уморительных звуков для развлечения экипажа. ХОНК!
-    .suffix = { "" }

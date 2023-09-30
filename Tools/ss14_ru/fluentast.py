@@ -92,14 +92,14 @@ class FluentSerializedMessage:
         if not attributes:
             attributes = []
 
+        if isinstance(parent_id, list):
+            parent_id = parent_id[0]
+
         if len(list(filter(lambda attr: attr.id == 'desc', attributes))) == 0:
             if parent_id:
                 attributes.append(FluentAstAttribute('desc', '{ ' + FluentSerializedMessage.get_key(parent_id) + '.desc' + ' }'));
             else:
                 attributes.append(FluentAstAttribute('desc', '{ "" }'))
-
-        if len(list(filter(lambda attr: attr.id == 'suffix', attributes))) == 0:
-            attributes.append(FluentAstAttribute('suffix', '{ "" }'))
 
         message = f'{cls.get_key(id, raw_key)} = {cls.get_value(value, parent_id)}\n'
 

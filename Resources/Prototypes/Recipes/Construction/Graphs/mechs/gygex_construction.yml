@@ -4,7 +4,7 @@
   graph:
   - node: start
     edges:
-    - to: Gygax
+    - to: gygax
       steps:
       - tool: Anchoring
         doAfter: 1
@@ -96,7 +96,7 @@
       - tool: Screwing
         doAfter: 1
 
-  - node: Gygax
+  - node: gygax
     actions:
     - !type:BuildMech
       mechPrototype: MechGygax

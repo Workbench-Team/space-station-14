@@ -1,22 +1,15 @@
 - type: entity
-  parent: Clothing
-  id: ClothingModsuitbackCorp
-  name: Modsuit core "Corp"
-  description: Modsuit core version Centcom
+  parent: ClothingBackpack
+  id: ClothingModsuitBackBase
+  abstract: true
+  name: base MOD control unit
+  description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments.
   components:
-  - type: Storage
-    capacity: 150
-  - type: Item
-    size: 9999
   - type: Sprite
-    sprite: Clothing/Back/Modsuit/corp.rsi
+    sprite: Clothing/Back/Modsuit/standard.rsi
     state: icon
-  - type: Clothing
-    quickEquip: false
-    slots:
-    - back
   - type: ToggleableClothing
-    clothingPrototype: ClothingOuterModsuitBodyCorp
+    clothingPrototype: ClothingOuterModsuitBodyStandard
     requiredSlot: back
     slot: outerClothing
   - type: ContainerContainer
@@ -24,31 +17,152 @@
       toggleable-clothing: !type:ContainerSlot {}
       storagebase: !type:Container
         ents: []
-  - type: UserInterface
-    interfaces:
-    - key: enum.StorageUiKey.Key
-      type: StorageBoundUserInterface
+
+# Security
+- type: entity
+  parent: ClothingModsuitBackBase
+  id: ClothingModsuitBackSecurity
+  name: security MOD control unit
+  description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. An Apadyne Technologies security suit, offering quicker speed at the cost of carrying capacity.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/security.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodySecurity
+  - type: Construction
+    graph: ModsuitSecurity
+    node: modsuitsecurity
+
+# Engineering
+- type: entity
+  parent: ClothingModsuitBackBase
+  id: ClothingModsuitBackAtmospheric
+  name: atmospheric MOD control unit
+  description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. An atmospheric-resistant suit by Nakamura Engineering, offering extreme heat resistance compared to the engineer suit.
+  components:
+  - type: Storage
+    capacity: 120
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/atmospheric.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodyAtmospheric
+  - type: Construction
+    graph: ModsuitAtmospheric
+    node: modsuitatmospheric
 
 - type: entity
-  parent: ClothingModsuitbackCorp
-  id: ClothingModsuitbackAdmem
-  name: Modsuit core "Admem"
-  description: Modsuit core version Admem
+  parent: ClothingModsuitBackBase
+  id: ClothingModsuitBackEngineering
+  name: engineering MOD control unit
+  description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. An engineer-fit suit with heat and shock resistance. Nakamura Engineering's classic.
+  components:
+  - type: Storage
+    capacity: 120
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/engineering.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodyEngineering
+  - type: Construction
+    graph: ModsuitEngineering
+    node: modsuitengineering
+
+# Medical
+- type: entity
+  parent: ClothingModsuitBackBase
+  id: ClothingModsuitBackRescue
+  name: rescue MOD control unit
+  description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. An advanced version of DeForest Medical Corporation's medical suit, designed for quick rescue of bodies from the most dangerous environments.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/rescue.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodyRescue
+
+- type: entity
+  parent: ClothingModsuitBackBase
+  id: ClothingModsuitBackMedical
+  name: medical MOD control unit
+  description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. A lightweight suit by DeForest Medical Corporation, allows for easier movement.
+  components:
+  - type: Storage
+    capacity: 110
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/medical.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodyMedical
+  - type: Construction
+    graph: ModsuitMedical
+    node: modsuitmedical
+
+# Cargo
+- type: entity
+  parent: ClothingModsuitBackBase
+  id: ClothingModsuitBackMining
+  name: mining MOD control unit
+  description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. A Nanotrasen mining suit for on-site operations, fit with accreting ash armor and a sphere form.
+  components:
+  - type: Storage
+    capacity: 110
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/mining.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodyMining
+  - type: Construction
+    graph: ModsuitMining
+    node: modsuitmining
+
+# Service
+- type: entity
+  parent: ClothingModsuitBackBase
+  id: ClothingModsuitBackStandard
+  name: standard MOD control unit
+  description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. A civilian class suit by Nakamura Engineering, doesn't offer much other than slightly quicker movement.
+  components:
+  - type: Storage
+    capacity: 85
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/standard.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodyStandard
+  - type: Construction
+    graph: ModsuitStandard
+    node: modsuitstandard
+
+- type: entity
+  parent: ClothingModsuitBackBase
+  id: ClothingModsuitBackClown
+  name: cosmohonk MOD control unit
+  description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. A suit by Honk Ltd. Protects against low humor environments. Most of the tech went to lower the power cost.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/clown.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodyClown
+  - type: Construction
+    graph: ModsuitClown
+    node: modsuitclown
+
+# Admemes
+- type: entity
+  parent: ClothingModsuitBackBase
+  id: ClothingModsuitBackAdmin
+  name: administrative MOD control unit
+  description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. A suit made of adminium. Who comes up with these stupid mineral names?
+  suffix: Admeme
   components:
   - type: Storage
     capacity: 9999
   - type: Sprite
-    sprite: Clothing/Back/Modsuit/admem.rsi
+    sprite: Clothing/Back/Modsuit/admin.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingOuterModsuitBodyAdmem
-    requiredSlot: back
-    slot: outerClothing
+    clothingPrototype: ClothingOuterModsuitBodyAdmin
 
 - type: entity
-  parent: ClothingModsuitbackCorp
-  id: ClothingModsuitbackChrono
-  name: Modsuit core "Chrono Legionnaire"
-  description: Modsuit core version Chrono Legionnaire
+  parent: ClothingModsuitBackBase
+  id: ClothingModsuitBackChrono
+  name: chrono MOD control unit
+  description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. A suit beyond our time, beyond time itself. Used to traverse timelines and "correct their course".
+  suffix: Admeme
   components:
   - type: Storage
     capacity: 250
@@ -56,5 +170,16 @@
     sprite: Clothing/Back/Modsuit/chrono.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterModsuitBodyChrono
-    requiredSlot: back
-    slot: outerClothing
+
+- type: entity
+  parent: ClothingModsuitBackBase
+  id: ClothingModsuitBackCorp
+  name: corporate MOD control unit
+  description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. A fancy, high-tech suit for Nanotrasen's high ranking officers.
+  components:
+  - type: Storage
+    capacity: 150
+  - type: Sprite
+    sprite: Clothing/Back/Modsuit/corp.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterModsuitBodyCorp

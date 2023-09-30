@@ -1,6 +1,5 @@
 ent-BaseWeaponSubMachineGun = BaseSMG
     .desc = Дерзай — налетай, целься и стреляй.
-    .suffix = { "" }
 ent-WeaponSubMachineGunAtreides = Атрейдес
     .desc = Пле-ке-ке-ке-ке! Использует патроны калибра .35 авто.
     .suffix = Пистолет-пулемёт
@@ -9,7 +8,6 @@ ent-WeaponSubMachineGunC20r = C-20r
     .suffix = Пистолет-пулемёт
 ent-WeaponSubMachineGunDrozd = Дрозд
     .desc = Превосходный тяжелый автоматический пистолет-пулемёт.
-    .suffix = { "" }
 ent-WeaponSubMachineGunVector = Вектор
     .desc = Превосходный тяжелый пистолет-пулемёт. Использует патроны калибра .45 магнум.
     .suffix = Пистолет-пулемёт, Устаревший, используйте Дрозд

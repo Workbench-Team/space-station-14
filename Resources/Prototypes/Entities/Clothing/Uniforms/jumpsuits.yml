@@ -1382,6 +1382,17 @@
 
 - type: entity
   parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitGladiator
+  name: gladiator uniform
+  description: Made for true gladiators (or Ash Walkers).
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/gladiator.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/gladiator.rsi
+
+- type: entity
+  parent: ClothingUniformBase
   id: ClothingUniformHECU
   name: HECU uniform
   description: The HECU jumpsuit is used to protect against foreign environmental factors (besides, real American patriots like to wear it)

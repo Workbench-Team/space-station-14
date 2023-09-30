@@ -1,4 +1,5 @@
 ﻿using Content.Server.Mind.Commands;
+using Content.Shared.Roles;
 
 namespace Content.Server.Ghost.Roles.Components
 {
@@ -14,6 +15,9 @@ namespace Content.Server.Ghost.Roles.Components
 
         [DataField("whitelistRequired")]
         public bool WhitelistRequired = false;
+
+        [DataField("requirements")]
+        public HashSet<JobRequirement>? Requirements;
 
         /// <summary>
         /// Whether the <see cref="MakeSentientCommand"/> should run on the mob.

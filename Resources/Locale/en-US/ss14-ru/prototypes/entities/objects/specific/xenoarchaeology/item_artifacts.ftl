@@ -1,6 +1,5 @@
 ent-BaseXenoArtifactItem = alien artifact
     .desc = A strange handheld alien device.
-    .suffix = { "" }
 ent-SimpleXenoArtifactItem = { ent-BaseXenoArtifactItem }
     .suffix = Simple
     .desc = { ent-BaseXenoArtifactItem.desc }
@@ -15,4 +14,3 @@ ent-VariedXenoArtifactItem = { ent-BaseXenoArtifactItem }
     .desc = { ent-BaseXenoArtifactItem.desc }
 ent-ArtifactFragment = artifact fragment
     .desc = A broken piece of an artifact. You could probably repair it if you had more.
-    .suffix = { "" }

@@ -20,6 +20,8 @@
     durationMultiplier: 1
     bangAddMultiplier: 0.65
     bangFlash: false
+  - type: Speech
+    speechVerb: Felinid
   - type: Reactive
     groups:
       Flammable: [ Touch ]
@@ -30,7 +32,6 @@
       effects:
       - !type:WashCreamPieReaction
       - !type:CancelDoAfters
-  - type: NyaAccent
 
 - type: entity
   name: Urist McHands

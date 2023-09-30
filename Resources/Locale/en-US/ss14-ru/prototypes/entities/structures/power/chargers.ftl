@@ -1,12 +1,8 @@
 ent-PowerCellRecharger = cell recharger
     .desc = { ent-ConstructibleMachine.desc }
-    .suffix = { "" }
 ent-WeaponCapacitorRecharger = recharger
     .desc = { ent-PowerCellRecharger.desc }
-    .suffix = { "" }
 ent-WallWeaponCapacitorRecharger = wall recharger
     .desc = { "" }
-    .suffix = { "" }
 ent-BorgCharger = cyborg recharging station
     .desc = A stationary charger for various robotic and cyborg entities. Surprisingly spacious.
-    .suffix = { "" }

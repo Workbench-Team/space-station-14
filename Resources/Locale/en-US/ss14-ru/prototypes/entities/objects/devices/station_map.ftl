@@ -1,6 +1,5 @@
 ent-BaseHandheldStationMap = station map
     .desc = Displays a readout of the current station.
-    .suffix = { "" }
 ent-HandheldStationMap = { ent-BaseHandheldStationMap }
     .suffix = Handheld, Powered
     .desc = { ent-BaseHandheldStationMap.desc }

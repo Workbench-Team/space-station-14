@@ -1,16 +1,16 @@
 
-[color=#ffffff]Entity spawn panel options[/color]
-[color=#a4885c]Default[/color] spawns small entities like mugs without aligning them to anything, while aligning block entities like walls to the grid.
-[color=#a4885c]PlaceFree[/color] spawns all entities without aligning them.
-[color=#a4885c]PlaceNearby[/color] limits the spawn radius to around 2 tiles.
-[color=#a4885c]SnapgridCenter[/color] aligns the entity to the middle of the tile.
-[color=#a4885c]SnapgridBorder[/color] aligns the entity to the border of the tile.
+[color=#ffffff]Параметры панели создания entity[/color]
+[color=#a4885c]Default[/color] создаёт небольшие объекты, такие как кружки, не выравнивая их, в то время как крупные объекты, такие как стены, выравниваются по сетке.
+[color=#a4885c]PlaceFree[/color] создаёт объекты, не выравнивая их.
+[color=#a4885c]PlaceNearby[/color] уменьшает радиус создания объектов до 2-х клеток.
+[color=#a4885c]SnapgridCenter[/color] выравнивает объект по центру клетки.
+[color=#a4885c]SnapgridBorder[/color] выравнивает объект по краю клетки.
 
-[color=#ffffff]Grid aligned options[/color]
-[color=#a4885c]AlignSimilar[/color] snaps the entity to similar entities. Currently broken.
-[color=#a4885c]AlignTileAny[/color] aligns the entity to the grid.
-[color=#a4885c]AlignTileEmpty[/color] target tile must be empty
-[color=#a4885c]AlignTileNonDense[/color] no colliders allowed in the target tile.
-[color=#a4885c]AlignTileDense[/color] colliders must be in the target tile.
-[color=#a4885c]AlignWall[/color] snaps to vertical halftiles.
-[color=#a4885c]AlignWallProper[/color] snaps the entity to the middle of the tile edges
+[color=#ffffff]Параметры выравнивания по сетке[/color]
+[color=#a4885c]AlignSimilar[/color] привязывает объект к аналогичным. Не работает.
+[color=#a4885c]AlignTileAny[/color] выравнивает объект по сетке.
+[color=#a4885c]AlignTileEmpty[/color] целевая клетка должна быть пустой.
+[color=#a4885c]AlignTileNonDense[/color] в клетке не должно быть collider'ов.
+[color=#a4885c]AlignTileDense[/color] в клетке должны быть collider'ы.
+[color=#a4885c]AlignWall[/color] привязывает к вертикальным полуклеткам.
+[color=#a4885c]AlignWallProper[/color] привязывает объект к центру краёв клетки.

@@ -9,6 +9,16 @@
   group: market
 
 - type: cargoProduct
+  id: MaterialModCore
+  icon:
+    sprite: Objects/Specific/Mech/modcore_construction.rsi
+    state: mod-core-standard
+  product: CrateMaterialModCore
+  cost: 10000
+  category: Materials
+  group: market
+
+- type: cargoProduct
   id: MaterialSteel
   icon:
     sprite: Objects/Materials/Sheets/metal.rsi

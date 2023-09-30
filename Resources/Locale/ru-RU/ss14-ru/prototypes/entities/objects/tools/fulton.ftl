@@ -1,6 +1,5 @@
 ent-FultonBeacon = маяк фултона
     .desc = Маяк, что получает добычу фултона.
-    .suffix = { "" }
 ent-Fulton = фултон
     .desc = Используется для извлечения контейнеров, предметов или принудительной вербовки людей на вашу базу.
     .suffix = Полный
@@ -9,4 +8,3 @@ ent-Fulton1 = { ent-Fulton }
     .desc = { ent-Fulton.desc }
 ent-FultonEffect = эффект фултона
     .desc = { "" }
-    .suffix = { "" }

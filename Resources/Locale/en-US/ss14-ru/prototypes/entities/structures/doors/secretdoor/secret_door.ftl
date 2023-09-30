@@ -3,7 +3,5 @@ ent-BaseSecretDoor = solid wall
     .suffix = secret door
 ent-BaseSecretDoorAssembly = secret door assembly
     .desc = It opens, it closes, and maybe crushes you.
-    .suffix = { "" }
 ent-SolidSecretDoor = solid wall
     .desc = { ent-BaseSecretDoor.desc }
-    .suffix = { "" }

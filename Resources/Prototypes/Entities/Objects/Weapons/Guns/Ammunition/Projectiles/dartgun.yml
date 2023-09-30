@@ -2,7 +2,7 @@
   id: SyringeGunProject
   name: Syrgine
   noSpawn: true
-  parent: syringeprojctile
+  parent: SyringeProjctile
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi

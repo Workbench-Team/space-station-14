@@ -1,9 +1,6 @@
 ent-BaseMobSpecies = { ent-BaseMob }
     .desc = { ent-BaseMob.desc }
-    .suffix = { "" }
 ent-BaseMobSpeciesOrganic = { ent-MobBloodstream }
-    .desc = { BaseMobSpecies.desc }
-    .suffix = { "" }
+    .desc = { ent-MobBloodstream.desc }
 ent-BaseSpeciesDummy = { "" }
     .desc = { "" }
-    .suffix = { "" }

@@ -1,6 +1,5 @@
 ent-SheetGlassBase = glass
     .desc = A sheet of glass, used often on the station in various applications.
-    .suffix = { "" }
 ent-SheetGlass = { ent-SheetGlassBase }
     .suffix = Full
     .desc = { ent-SheetGlassBase.desc }
@@ -39,7 +38,6 @@ ent-SheetUGlass1 = uranium glass
     .desc = { ent-SheetUGlass.desc }
 ent-SheetRUGlass = reinforced uranium glass
     .desc = A reinforced sheet of uranium.
-    .suffix = { "" }
 ent-SheetRUGlass1 = reinforced uranium glass
     .suffix = Single
     .desc = { ent-SheetRUGlass.desc }

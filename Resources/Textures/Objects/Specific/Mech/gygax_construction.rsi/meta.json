@@ -8,79 +8,79 @@
   },
   "states": [
     {
-      "name": "Gygax0"
+      "name": "gygax_chassis"
     },
     {
-      "name": "Gygax1"
+      "name": "gygax_harness"
     },
     {
-      "name": "Gygax2"
+      "name": "gygax_harness+o"
     },
     {
-      "name": "Gygax9"
+      "name": "gygax_r_arm"
     },
     {
-      "name": "Gygax10"
+      "name": "gygax_r_arm+o"
     },
     {
-      "name": "Gygax8"
+      "name": "gygax_l_arm"
     },
     {
-      "name": "Gygax11"
+      "name": "gygax_l_arm+o"
     },
     {
-      "name": "Gygax12"
+      "name": "gygax_r_leg"
     },
     {
-      "name": "Gygax3"
+      "name": "gygax_r_leg+o"
     },
     {
-      "name": "Gygax4"
+      "name": "gygax_l_leg"
     },
     {
-      "name": "Gygax5"
+      "name": "gygax_l_leg+o"
     },
     {
-      "name": "Gygax7"
+      "name": "gygax_armor"
     },
     {
-      "name": "Gygax_chassis"
+      "name": "gygax0"
     },
     {
-      "name": "Gygax_harness\u002Bo"
+      "name": "gygax1"
     },
     {
-      "name": "Gygax_harness"
+      "name": "gygax2"
     },
     {
-      "name": "Gygax_l_arm\u002Bo"
+      "name": "gygax3"
     },
     {
-      "name": "Gygax_l_arm"
+      "name": "gygax4"
     },
     {
-      "name": "Gygax_l_leg\u002Bo"
+      "name": "gygax5"
     },
     {
-      "name": "Gygax_l_leg"
+      "name": "gygax6"
     },
     {
-      "name": "Gygax_r_arm\u002Bo"
+      "name": "gygax7"
     },
     {
-      "name": "Gygax_r_arm"
+      "name": "gygax8"
     },
     {
-      "name": "Gygax_r_leg\u002Bo"
+      "name": "gygax9"
     },
     {
-      "name": "Gygax_r_leg"
+      "name": "gygax10"
     },
     {
-      "name": "Gygax6"
+      "name": "gygax11"
     },
     {
-      "name": "Gygax_armor"
+      "name": "gygax12"
     }
   ]
 }

@@ -6,6 +6,8 @@ using Content.Shared.Ghost.Roles;
 using Content.Shared.CCVar;
 using Robust.Shared.Configuration;
 using JetBrains.Annotations;
+using Robust.Client.GameObjects;
+using Robust.Shared.Utility;
 
 namespace Content.Client.UserInterface.Systems.Ghost.Controls.Roles
 {
@@ -68,16 +70,19 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls.Roles
             _window.ClearEntries();
 
             var cfg = IoCManager.Resolve<IConfigurationManager>();
-            var playTime =  IoCManager.Resolve<JobRequirementsManager>();
+            var entityManager = IoCManager.Resolve<IEntityManager>();
+            var sysManager = entityManager.EntitySysManager;
+            var spriteSystem = sysManager.GetEntitySystem<SpriteSystem>();
+            var requirementsManager = IoCManager.Resolve<JobRequirementsManager>();
 
             var groupedRoles = ghostState.GhostRoles.GroupBy(
-                role => (role.Name, role.Description, role.WhitelistRequired));
+                role => (role.Name, role.Description, role.Requirements, role.WhitelistRequired));
 
             int denied = 0;
 
             foreach (var group in groupedRoles)
             {
-                if (group.Key.WhitelistRequired && cfg.GetCVar(CCVars.WhitelistEnabled) && !playTime.IsWhitelisted())
+                if (group.Key.WhitelistRequired && cfg.GetCVar(CCVars.WhitelistEnabled) && !requirementsManager.IsWhitelisted())
                 {
                     denied = denied + 1;
                     continue;
@@ -85,8 +90,15 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls.Roles
 
                 var name = group.Key.Name;
                 var description = group.Key.Description;
+                bool hasAccess = true;
+                FormattedMessage? reason;
 
-                _window.AddEntry(name, description, group);
+                if (!requirementsManager.CheckRoleTime(group.Key.Requirements, group.Key.WhitelistRequired, out reason))
+                {
+                    hasAccess = false;
+                }
+
+                _window.AddEntry(name, description, hasAccess, reason, group, spriteSystem);
             }
 
             _window.AddDenied(denied);

@@ -164,6 +164,19 @@
     state: icon
 
 - type: construction
+  name: metal pipe craft
+  id: metalpipe
+  graph: MetalPipeGraph
+  startNode: start
+  targetNode: metalpipe
+  category: construction-category-weapons
+  objectType: Item
+  description: A legendary metal pipe
+  icon:
+    sprite: Objects/Weapons/Melee/metalpipe.rsi
+    state: icon
+
+- type: construction
   name: emitter cannon
   id: emittercannon
   graph: EmitterCannonGraph

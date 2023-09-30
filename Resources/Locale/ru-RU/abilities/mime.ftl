@@ -1,4 +1,4 @@
-mime-cant-speak = Данный вами обет молчания не позволяет Вам говорить.
+mime-cant-speak = Данный Вами обет молчания не позволяет Вам говорить.
 mime-invisible-wall-popup = { CAPITALIZE($mime) } упирается в невидимую стену!
 mime-invisible-wall-failed = Вы не можете создать здесь невидимую стену.
 mime-not-ready-repent = Вы ещё не готовы покаяться за нарушенный обет.

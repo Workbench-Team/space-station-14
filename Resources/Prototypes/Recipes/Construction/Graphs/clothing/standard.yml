@@ -1,0 +1,22 @@
+﻿- type: constructionGraph
+  id: ModsuitStandard
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: modsuitstandard
+          steps:
+            - tag: ModsuitPlateStandard
+              name: покрытие мода "ЕВА"
+              icon:
+                sprite: Objects/Specific/Mech/modcore_construction.rsi
+                state: standard
+              doAfter: 2
+            - tag: ModsuitAssembledPart
+              name: собранный каркас модсьюта
+              icon:
+                sprite: Objects/Specific/Mech/modcore_construction.rsi
+                state: modcore8
+              doAfter: 2
+    - node: modsuitstandard
+      entity: ClothingModsuitBackStandard
