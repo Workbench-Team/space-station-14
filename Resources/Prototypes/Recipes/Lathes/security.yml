@@ -619,6 +619,30 @@
     Plastic: 1250
 
 - type: latheRecipe
+  id: BowCompound
+  result: BowCompound
+  completetime: 5
+  materials:
+    Steel: 1500
+    Plastic: 500
+
+- type: latheRecipe
+  id: ArrowCompound
+  result: ArrowCompound
+  completetime: 1
+  materials:
+    Steel: 150
+    Plastic: 50
+
+- type: latheRecipe
+  id: ClothingBeltQuiverComposit
+  result: ClothingBeltQuiverComposit
+  completetime: 5
+  materials:
+    Steel: 350
+    Plastic: 350
+
+- type: latheRecipe
   id: MagazineBoxLightRifleIncendiary
   result: MagazineBoxLightRifleIncendiary
   completetime: 5

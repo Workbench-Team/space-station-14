@@ -1,0 +1,25 @@
+- type: constructionGraph
+  id: ArrowExplosive
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: arrowexplosive
+      steps:
+      - tag: ArrowCompound
+        name: охотничью стрелу
+        icon:
+          sprite: Objects/Weapons/Guns/Bow/compoundbow.rsi
+          state: wielded-arrowcompound
+        amount: 1
+        doAfter: 0.5
+      - tag: PayloadExplosion
+        name: взрывной заряд
+        icon:
+          sprite: Objects/Devices/payload.rsi
+          state: payload-explosive-armed
+        amount: 1
+        doAfter: 0.5
+
+  - node: arrowexplosive
+    entity: ArrowCompoundExplosive

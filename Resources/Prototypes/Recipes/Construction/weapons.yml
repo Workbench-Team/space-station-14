@@ -131,6 +131,28 @@
   objectType: Item
 
 - type: construction
+  name: стрела с взрывным зарядом
+  id: ArrowExplosive
+  graph: ArrowExplosive
+  startNode: start
+  targetNode: arrowexplosive
+  category: construction-category-weapons
+  description: Стрела, скрепленная с взрывным зарядом.
+  icon: { sprite: Objects/Weapons/Guns/Bow/compoundbow.rsi, state: wielded-arrowexplosive }
+  objectType: Item
+
+- type: construction
+  name: стрела с с4
+  id: ArrowExplosiveC4
+  graph: ArrowExplosiveC4
+  startNode: start
+  targetNode: arrowexplosivec4
+  category: construction-category-weapons
+  description: Стрела, скрепленная с зарядом С4.
+  icon: { sprite: Objects/Weapons/Guns/Bow/compoundbow.rsi, state: wielded-arrowc4 }
+  objectType: Item
+
+- type: construction
   name: improvised bow
   id: ImprovisedBow
   graph: ImprovisedBow

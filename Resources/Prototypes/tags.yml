@@ -20,6 +20,24 @@
   id: Arrow
 
 - type: Tag
+  id: ArrowBaseCompound
+
+- type: Tag
+  id: ArrowCompound
+
+- type: Tag
+  id: ArrowCompoundExplosive
+
+- type: Tag
+  id: ArrowCompoundC4
+
+- type: Tag
+  id: PayloadExplosion
+
+- type: Tag
+  id: C4
+
+- type: Tag
   id: ATVKeys
 
 - type: Tag

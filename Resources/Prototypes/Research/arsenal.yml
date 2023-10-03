@@ -36,6 +36,20 @@
   - MagazineBoxRifleIncendiary
 
 - type: technology
+  id: CompBows
+  name: research-technology-comp-bows
+  icon:
+    sprite: Objects/Weapons/Guns/Bow/compoundbow.rsi
+    state: unwielded
+  discipline: Arsenal
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+  - BowCompound
+  - ArrowCompound
+  - ClothingBeltQuiverComposit
+
+- type: technology
   id: ExplosiveTechnology
   name: research-technology-explosive-technology
   icon:

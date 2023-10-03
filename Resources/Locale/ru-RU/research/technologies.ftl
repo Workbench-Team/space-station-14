@@ -32,6 +32,7 @@ research-technology-crew-monitoring = Мониторинг экипажа
 research-technology-bluespace-chemistry = Блюспейс Химия
 research-technology-cloning = Клонирование
 research-technology-draconic-munitions = Драконовые боеприпасы
+research-technology-comp-bows = Композитные луки
 research-technology-explosive-technology = Технология взрывчаток
 research-technology-weaponized-laser-manipulation = Манипуляция с лазерами
 research-technology-nonlethal-ammunition = Нелетальная аммуниция
