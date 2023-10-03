@@ -69,11 +69,11 @@
         Blunt: 5
   - type: MeleeWeapon
     soundHit:
-      collection: MetalPipeMelee
+      path: /Audio/Weapons/bat_hit.ogg
       params:
         volume: -10
     soundNoDamage:
-      collection: MetalPipeMelee
+      path: /Audio/Weapons/bat_hit.ogg
       params:
         volume: -10
     attackRate: 1.5
