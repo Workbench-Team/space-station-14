@@ -89,6 +89,8 @@
   name: Bow Bundle
   description: "Hidden threat: The classic KR51 automatic rifle, bundled with three magazines."
   components:
+  - type: Item
+    size: 210
   - type: Storage
     capacity: 210
   - type: StorageFill
