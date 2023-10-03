@@ -15714,6 +15714,11 @@ entities:
       type: Transform
 - proto: CableApcExtension
   entities:
+  - uid: 28
+    components:
+    - pos: 36.5,-17.5
+      parent: 2
+      type: Transform
   - uid: 29
     components:
     - pos: 24.5,26.5
@@ -22864,11 +22869,6 @@ entities:
     - pos: 20.5,1.5
       parent: 2
       type: Transform
-  - uid: 10148
-    components:
-    - pos: 33.5,-19.5
-      parent: 2
-      type: Transform
   - uid: 10151
     components:
     - pos: 37.5,-20.5
@@ -23509,6 +23509,11 @@ entities:
     - pos: 63.5,-3.5
       parent: 2
       type: Transform
+  - uid: 13379
+    components:
+    - pos: 35.5,-17.5
+      parent: 2
+      type: Transform
   - uid: 13439
     components:
     - pos: 69.5,-2.5
@@ -23789,6 +23794,16 @@ entities:
     - pos: 60.5,-6.5
       parent: 2
       type: Transform
+  - uid: 14291
+    components:
+    - pos: -17.5,9.5
+      parent: 2
+      type: Transform
+  - uid: 14324
+    components:
+    - pos: 37.5,-17.5
+      parent: 2
+      type: Transform
   - uid: 14329
     components:
     - pos: -24.5,21.5
@@ -23832,6 +23847,11 @@ entities:
   - uid: 14551
     components:
     - pos: 7.5,-25.5
+      parent: 2
+      type: Transform
+  - uid: 14555
+    components:
+    - pos: 37.5,-18.5
       parent: 2
       type: Transform
   - uid: 14566
@@ -23912,6 +23932,21 @@ entities:
   - uid: 14581
     components:
     - pos: -38.5,-13.5
+      parent: 2
+      type: Transform
+  - uid: 14609
+    components:
+    - pos: 34.5,-17.5
+      parent: 2
+      type: Transform
+  - uid: 14617
+    components:
+    - pos: 33.5,-17.5
+      parent: 2
+      type: Transform
+  - uid: 14618
+    components:
+    - pos: 33.5,-16.5
       parent: 2
       type: Transform
   - uid: 14634
@@ -24014,9 +24049,39 @@ entities:
     - pos: 15.5,-10.5
       parent: 2
       type: Transform
+  - uid: 14748
+    components:
+    - pos: 16.5,-0.5
+      parent: 2
+      type: Transform
   - uid: 14771
     components:
     - pos: 28.5,30.5
+      parent: 2
+      type: Transform
+  - uid: 14779
+    components:
+    - pos: 6.5,18.5
+      parent: 2
+      type: Transform
+  - uid: 14780
+    components:
+    - pos: 5.5,18.5
+      parent: 2
+      type: Transform
+  - uid: 14781
+    components:
+    - pos: 4.5,18.5
+      parent: 2
+      type: Transform
+  - uid: 14783
+    components:
+    - pos: 0.5,17.5
+      parent: 2
+      type: Transform
+  - uid: 14784
+    components:
+    - pos: 0.5,18.5
       parent: 2
       type: Transform
   - uid: 14828
@@ -24027,6 +24092,31 @@ entities:
   - uid: 14829
     components:
     - pos: -22.5,-38.5
+      parent: 2
+      type: Transform
+  - uid: 14954
+    components:
+    - pos: 0.5,19.5
+      parent: 2
+      type: Transform
+  - uid: 14955
+    components:
+    - pos: -2.5,23.5
+      parent: 2
+      type: Transform
+  - uid: 14956
+    components:
+    - pos: -17.5,8.5
+      parent: 2
+      type: Transform
+  - uid: 14957
+    components:
+    - pos: -17.5,7.5
+      parent: 2
+      type: Transform
+  - uid: 14958
+    components:
+    - pos: -30.5,-38.5
       parent: 2
       type: Transform
 - proto: CableApcStack
@@ -31050,6 +31140,11 @@ entities:
       type: Transform
 - proto: CarpetBlue
   entities:
+  - uid: 1719
+    components:
+    - pos: -30.5,-38.5
+      parent: 2
+      type: Transform
   - uid: 2024
     components:
     - pos: 22.5,-2.5
@@ -31134,11 +31229,6 @@ entities:
   - uid: 9021
     components:
     - pos: -30.5,-37.5
-      parent: 2
-      type: Transform
-  - uid: 9022
-    components:
-    - pos: -30.5,-38.5
       parent: 2
       type: Transform
   - uid: 9023
@@ -34569,7 +34659,7 @@ entities:
       type: Transform
 - proto: chem_master
   entities:
-  - uid: 28
+  - uid: 3213
     components:
     - pos: -26.5,-22.5
       parent: 2
@@ -36950,7 +37040,7 @@ entities:
       pos: 24.5,-1.5
       parent: 2
       type: Transform
-  - uid: 3213
+  - uid: 3590
     components:
     - rot: -1.5707963267948966 rad
       pos: 32.5,6.5
@@ -61665,11 +61755,6 @@ entities:
     - pos: 11.5,34.5
       parent: 2
       type: Transform
-  - uid: 8291
-    components:
-    - pos: -24.5,-23.5
-      parent: 2
-      type: Transform
   - uid: 8323
     components:
     - pos: -17.5,-36.5
@@ -61687,7 +61772,7 @@ entities:
       type: Transform
   - uid: 8356
     components:
-    - pos: -23.5,-22.5
+    - pos: -24.5,-23.5
       parent: 2
       type: Transform
   - uid: 8371
@@ -61815,6 +61900,11 @@ entities:
     components:
     - rot: 1.5707963267948966 rad
       pos: -5.5,-49.5
+      parent: 2
+      type: Transform
+  - uid: 9022
+    components:
+    - pos: -23.5,-22.5
       parent: 2
       type: Transform
   - uid: 9171
@@ -63779,7 +63869,7 @@ entities:
       type: Transform
 - proto: IngotGold
   entities:
-  - uid: 8125
+  - uid: 8140
     components:
     - pos: -9.1504,8.440313
       parent: 2
@@ -71826,11 +71916,6 @@ entities:
       pos: -16.5,27.5
       parent: 2
       type: Transform
-  - uid: 4301
-    components:
-    - pos: -23.5,-22.5
-      parent: 2
-      type: Transform
   - uid: 5026
     components:
     - rot: -1.5707963267948966 rad
@@ -71991,6 +72076,11 @@ entities:
   - uid: 6309
     components:
     - pos: 38.5,-25.5
+      parent: 2
+      type: Transform
+  - uid: 6387
+    components:
+    - pos: -23.5,-22.5
       parent: 2
       type: Transform
   - uid: 6526
@@ -72228,11 +72318,6 @@ entities:
     - pos: -27.5,-19.5
       parent: 2
       type: Transform
-  - uid: 8140
-    components:
-    - pos: -26.5,-23.5
-      parent: 2
-      type: Transform
   - uid: 8157
     components:
     - rot: 3.141592653589793 rad
@@ -72262,6 +72347,11 @@ entities:
   - uid: 8251
     components:
     - pos: -32.5,-27.5
+      parent: 2
+      type: Transform
+  - uid: 8291
+    components:
+    - pos: -26.5,-23.5
       parent: 2
       type: Transform
   - uid: 8322
@@ -72637,6 +72727,11 @@ entities:
     - pos: -37.5,17.5
       parent: 2
       type: Transform
+  - uid: 11736
+    components:
+    - pos: -24.5,-23.5
+      parent: 2
+      type: Transform
   - uid: 12725
     components:
     - pos: 40.5,-22.5
@@ -72646,11 +72741,6 @@ entities:
     components:
     - rot: -1.5707963267948966 rad
       pos: 5.5,-15.5
-      parent: 2
-      type: Transform
-  - uid: 13379
-    components:
-    - pos: -24.5,-23.5
       parent: 2
       type: Transform
   - uid: 13614
@@ -75446,7 +75536,7 @@ entities:
       type: Transform
 - proto: SpawnPointChemist
   entities:
-  - uid: 3590
+  - uid: 4301
     components:
     - pos: -25.5,-22.5
       parent: 2
@@ -79115,7 +79205,7 @@ entities:
       type: Transform
 - proto: ToolboxGoldFilled
   entities:
-  - uid: 11736
+  - uid: 10148
     components:
     - pos: -8.527353,8.372389
       parent: 2
@@ -79639,7 +79729,7 @@ entities:
       type: Transform
 - proto: VendingMachineChemDrobe
   entities:
-  - uid: 14291
+  - uid: 14320
     components:
     - pos: -27.5,-20.5
       parent: 2
@@ -85324,11 +85414,6 @@ entities:
       pos: 43.5,-30.5
       parent: 2
       type: Transform
-  - uid: 6387
-    components:
-    - pos: -27.5,-23.5
-      parent: 2
-      type: Transform
   - uid: 6420
     components:
     - pos: 37.5,-32.5
@@ -86003,6 +86088,11 @@ entities:
   - uid: 8124
     components:
     - pos: -30.5,-23.5
+      parent: 2
+      type: Transform
+  - uid: 8125
+    components:
+    - pos: -27.5,-23.5
       parent: 2
       type: Transform
   - uid: 8126
@@ -88047,11 +88137,6 @@ entities:
     components:
     - rot: 1.5707963267948966 rad
       pos: -48.5,-11.5
-      parent: 2
-      type: Transform
-  - uid: 1719
-    components:
-    - pos: 33.5,-19.5
       parent: 2
       type: Transform
   - uid: 1753
@@ -91651,6 +91736,11 @@ entities:
   - uid: 14205
     components:
     - pos: 11.5,-37.5
+      parent: 2
+      type: Transform
+  - uid: 14601
+    components:
+    - pos: 33.5,-19.5
       parent: 2
       type: Transform
   - uid: 14681
