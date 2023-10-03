@@ -71,11 +71,11 @@
     soundHit:
       collection: MetalPipeMelee
       params:
-        volume: -20
+        volume: -10
     soundNoDamage:
       collection: MetalPipeMelee
       params:
-        volume: -20
+        volume: -10
     attackRate: 1.5
     damage:
       types:
