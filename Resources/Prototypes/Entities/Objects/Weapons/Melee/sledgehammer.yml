@@ -35,8 +35,6 @@
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Effects/metal-pipe-falling.ogg
-      params:
-          volume: 1
   - type: Sprite
     sprite: Objects/Weapons/Melee/metalpipe.rsi
     state: icon
