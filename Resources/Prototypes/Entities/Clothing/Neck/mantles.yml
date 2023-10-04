@@ -73,6 +73,7 @@
   - type: Sprite
     sprite: Clothing/Neck/mantles/rdmantle.rsi
   - type: Clothing  
+    sprite: Clothing/Neck/mantles/rdmantle.rsi
 
 - type: entity
   parent: ClothingNeckBase
