@@ -389,82 +389,37 @@
 
 - type: entity
   name: energy blueshield
-  parent: BaseItem
+  parent: EnergyShield
   id: EnergyBlueshield
   description: Exotic energy blueshield, when folded, can even fit in your pocket, spacial for blueshield officer.
   components:
-    - type: ItemToggle
-      activatedDisarmMalus: 0.6
-      activateSound:
-        path: /Audio/Weapons/ebladeon.ogg
-      deActivateSound:
-        path: /Audio/Weapons/ebladeoff.ogg
-      offSize: 5
-    - type: Sprite
-      sprite: Objects/Weapons/Melee/e_blueshield.rsi
-      layers:
-        - state: eshield-icon
-        - state: eshield-on
-          color: "#FFFFFF"
-          visible: false
-          shader: unshaded
-          map: [ "shield" ]
-    - type: Item
-      size: 5
-      sprite: Objects/Weapons/Melee/e_blueshield.rsi
-      heldPrefix: eshield
-    - type: UseDelay
-      delay: 0.5
-    - type: ToggleableLightVisuals
-      spriteLayer: shield
-      inhandVisuals:
-        left:
-          - state: inhand-left-shield
-            shader: unshaded
-        right:
-          - state: inhand-right-shield
-            shader: unshaded
-    - type: PointLight
-      netsync: false
-      enabled: false
-      radius: 1.5
-      energy: 2
-      color: blue
-    - type: Reflect
-      enabled: false
-      reflectProb: 0.95
-      reflects:
-        - Energy
-    - type: Blocking
+   - type: Blocking
       passiveBlockModifier:
         coefficients:
-          Blunt: 1.0
-          Slash: 0.9
-          Piercing: 0.85
+          Blunt: 0.9
+          Slash: 0.8
+          Piercing: 0.80
           Heat: 0.6
       activeBlockModifier:
         coefficients:
-          Blunt: 1.2
+          Blunt: 1.0
           Slash: 0.85
           Piercing: 0.5
           Heat: 0.4
         flatReductions:
-          Heat: 1
-          Piercing: 1
-    - type: Appearance
-    - type: Damageable
-      damageContainer: Shield
-    - type: Destructible
+          Heat: 0.9
+          Piercing: 0.8
+  - type: Destructible
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 220
+            damage: 160
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 200
+            damage: 140
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -475,8 +430,6 @@
                 BrokenEnergyBlueshield:
                   min: 1
                   max: 1
-    - type: StaticPrice
-      price: 350
 
 - type: entity
   name: broken energy shield
