@@ -70,13 +70,6 @@
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Weapons/bat_hit.ogg
-      params:
-        volume: -10
-    soundNoDamage:
-      path: /Audio/Weapons/bat_hit.ogg
-      params:
-        volume: -10
-    attackRate: 1.5
     damage:
       types:
         Blunt: 5
