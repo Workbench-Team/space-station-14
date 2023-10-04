@@ -20,6 +20,24 @@
   id: Arrow
 
 - type: Tag
+  id: ArrowBaseCompound
+
+- type: Tag
+  id: ArrowCompound
+
+- type: Tag
+  id: ArrowCompoundExplosive
+
+- type: Tag
+  id: ArrowCompoundC4
+
+- type: Tag
+  id: PayloadExplosion
+
+- type: Tag
+  id: C4
+
+- type: Tag
   id: ATVKeys
 
 - type: Tag
@@ -957,6 +975,9 @@
   id: Shovel
 
 - type: Tag
+  id: Sidearm
+
+- type: Tag
   id: SkeletonMotorcycleKeys
 
 - type: Tag
@@ -1198,3 +1219,9 @@
 
 - type: Tag
   id: GygaxArmor
+
+- type: Tag
+  id: SawElectric
+
+- type: Tag
+  id: Welder

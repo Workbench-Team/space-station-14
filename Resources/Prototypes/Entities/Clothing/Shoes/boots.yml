@@ -25,6 +25,7 @@
     whitelist:
       tags:
         - Knife
+        - Sidearm
 
 - type: entity
   parent: ClothingShoesBaseButcherable
@@ -64,6 +65,7 @@
     whitelist:
       tags:
         - Knife
+        - Sidearm
 
 - type: entity
   parent: ClothingShoesStorageBase
@@ -80,6 +82,7 @@
     whitelist:
       tags:
         - Knife
+        - Sidearm
 
 - type: entity
   parent: ClothingShoesBaseButcherable
@@ -91,6 +94,19 @@
     sprite: Clothing/Shoes/Boots/laceups.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/laceups.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBootsWinter
+  name: winter boots
+  description: Fluffy boots to help survive even the coldest of winters.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/winterboots.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/winterboots.rsi
+  - type: TemperatureProtection
+    coefficient: 0.05
 
 - type: entity
   parent: ClothingShoesBaseButcherable

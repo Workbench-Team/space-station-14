@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by Arsik08",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "arrowcompound"
+    },
+    {
+      "name": "arrowc4"
+    },
+    {
+      "name": "arrowexplosive"
+    },
+    {
+      "name": "unwielded"
+    },
+    {
+      "name": "unwieldedred"
+    },
+    {
+      "name": "unwielded-arrowcompound"
+    },
+    {
+      "name": "unwielded-arrowc4"
+    },
+    {
+      "name": "unwielded-arrowexplosive"
+    },
+    {
+      "name": "wielded"
+    },
+    {
+      "name": "wieldedred"
+    },
+    {
+      "name": "wielded-arrowcompound"
+    },
+    {
+      "name": "wielded-arrowc4"
+    },
+    {
+      "name": "wielded-arrowexplosive"
+    },
+    {
+      "name": "equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "wielded-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "wielded-inhand-right",
+      "directions": 4
+    }
+  ]
+}

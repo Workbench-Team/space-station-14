@@ -54,4 +54,4 @@ guide-entry-space-ninja = Космический Ниндзя
 guide-entry-writing = Написание
 
 guide-entry-starshine = Starshine
-guide-entry-starshine-spacelaw = Космический Закон
+guide-entry-starshine-spacelaw = Корпоративный Закон

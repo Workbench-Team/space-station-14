@@ -26,7 +26,9 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      collection: BulletMiss
+      path: /Audio/Weapons/Guns/Gunshots/bowshot.ogg
+      params:
+        volume: -2
     soundEmpty: null
   - type: ItemSlots
     slots:
@@ -79,3 +81,133 @@
   - type: Construction
     graph: ImprovisedBow
     node: ImprovisedBow
+
+- type: entity
+  id: BowCompound
+  parent: BaseBow
+  components:
+  - type: Item
+    size: 40
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Bow/compoundbow.rsi
+    layers:
+    - state: unwielded
+      map: [ base ]
+    - state: unwielded-arrowcompound
+      map: [ arrowcompound ]
+      visible: false
+    - state: unwielded-arrowexplosive
+      map: [ arrowexplosive ]
+      visible: false
+    - state: unwielded-arrowc4
+      map: [ arrowc4 ]
+      visible: false
+  - type: Appearance
+  - type: ItemMapper
+    mapLayers:
+      arrowcompound:
+        whitelist:
+          tags:
+          - ArrowCompound
+      arrowexplosive:
+        whitelist:
+          tags:
+          - ArrowCompoundExplosive
+      arrowc4:
+        whitelist:
+          tags:
+          - ArrowCompoundC4
+  - type: GenericVisualizer
+    visuals:
+      enum.WieldableVisuals.Wielded:
+        arrowcompound:
+          True: { state: wielded-arrowcompound }
+          False: { state: unwielded-arrowcompound }
+        arrowexplosive:
+          True: { state: wielded-arrowexplosive }
+          False: { state: unwielded-arrowexplosive }
+        arrowc4:
+          True: { state: wielded-arrowc4 }
+          False: { state: unwielded-arrowc4 }
+        base:
+          True: { state: wielded }
+          False: { state: unwielded }
+  - type: Gun
+    minAngle: 0
+    maxAngle: 3
+    fireRate: 2
+    projectileSpeed: 35
+  - type: ItemSlots
+    slots:
+      arrow:
+        name: Arrow
+        startingItem: null
+        insertSound: /Audio/Weapons/Guns/Misc/arrow_nock.ogg
+        whitelist:
+          tags:
+          - ArrowBaseCompound
+
+- type: entity
+  id: BowCompoundRed
+  parent: BaseBow
+  components:
+  - type: Item
+    size: 20
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Bow/compoundbow.rsi
+    layers:
+    - state: unwieldedred
+      map: [ base ]
+    - state: unwielded-arrowcompound
+      map: [ arrowcompound ]
+      visible: false
+    - state: unwielded-arrowexplosive
+      map: [ arrowexplosive ]
+      visible: false
+    - state: unwielded-arrowc4
+      map: [ arrowc4 ]
+      visible: false
+  - type: Appearance
+  - type: ItemMapper
+    mapLayers:
+      arrowcompound:
+        whitelist:
+          tags:
+          - ArrowCompound
+      arrowexplosive:
+        whitelist:
+          tags:
+          - ArrowCompoundExplosive
+      arrowc4:
+        whitelist:
+          tags:
+          - ArrowCompoundC4
+  - type: GenericVisualizer
+    visuals:
+      enum.WieldableVisuals.Wielded:
+        arrowcompound:
+          True: { state: wielded-arrowcompound }
+          False: { state: unwielded-arrowcompound }
+        arrowexplosive:
+          True: { state: wielded-arrowexplosive }
+          False: { state: unwielded-arrowexplosive }
+        arrowc4:
+          True: { state: wielded-arrowc4 }
+          False: { state: unwielded-arrowc4 }
+        base:
+          True: { state: wieldedred }
+          False: { state: unwieldedred }
+  - type: Gun
+    minAngle: 0
+    maxAngle: 1
+    fireRate: 2
+    projectileSpeed: 125
+  - type: ItemSlots
+    slots:
+      arrow:
+        name: Arrow
+        startingItem: null
+        insertSound: /Audio/Weapons/Guns/Misc/arrow_nock.ogg
+        whitelist:
+          tags:
+          - ArrowBaseCompound
