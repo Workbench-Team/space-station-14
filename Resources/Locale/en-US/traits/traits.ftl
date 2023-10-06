@@ -17,8 +17,14 @@ permanent-blindness-trait-examined = [color=lightblue]{CAPITALIZE(POSS-ADJ($targ
 trait-lightweight-name = Lightweight Drunk
 trait-lightweight-desc = Alcohol has a stronger effect on you
 
+trait-hardweight-name = Hardweight Drunk
+trait-hardweight-desc = Alcohol has a weakes effect on you
+
 trait-muted-name = Muted
 trait-muted-desc = You can't speak
+
+trait-nya-accent-name = Nya!
+trait-nya-accent-desc = Nya! Nya?
 
 trait-paracusia-name = Paracusia
 trait-paracusia-desc = You hear sounds that aren't really there

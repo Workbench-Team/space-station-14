@@ -21,6 +21,10 @@ public abstract class SharedDrunkSystem : EntitySystem
         if (TryComp<LightweightDrunkComponent>(uid, out var trait))
             boozePower *= trait.BoozeStrengthMultiplier;
 
+        if (TryComp<HardweightDrunkComponent>(uid, out var traits))
+            boozePower *= traits.BoozeHardStrengthMultiplier;
+
+
         if (applySlur)
         {
             _slurredSystem.DoSlur(uid, TimeSpan.FromSeconds(boozePower), status);

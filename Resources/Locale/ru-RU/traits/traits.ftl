@@ -8,6 +8,10 @@ trait-colorblindness-desc = Вы не видите определённых цв
 permanent-blindness-trait-examined = [color=lightblue]{ CAPITALIZE(POSS-PRONOUN($target)) } глаза остекленелые и расфокусированные. Не похоже, что { SUBJECT($target) } может Вас видеть.[/color]
 trait-lightweight-name = Легкомысленный пьяница
 trait-lightweight-desc = Алкоголь оказывает на Вас более сильное воздействие
+trait-hardweight-name = Алкогольный тяжеловес
+trait-hardweight-desc = Алкоголь оказывает на вас меньшее влияние (Не отменяет действие этанола на организм)
+trait-nya-accent-name = Кошачий акцент
+trait-nya-accent-desc = Вы не можеет перестать мяукать!
 trait-muted-name = Молчун
 trait-muted-desc = Вы не можете говорить
 trait-uncloneable-name = Неклонируемый

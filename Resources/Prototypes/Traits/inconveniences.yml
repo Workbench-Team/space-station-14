@@ -5,3 +5,11 @@
   components:
     - type: LightweightDrunk
       boozeStrengthMultiplier: 2
+
+- type: trait
+  id: HardweightDrunk
+  name: trait-hardweight-name
+  description: trait-hardweight-desc
+  components:
+    - type: HardweightDrunk
+      boozeHardStrengthMultiplier: 0.2
