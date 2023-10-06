@@ -22,16 +22,16 @@ internal sealed partial class ChainsawComponent : Component
 
 
     [DataField("activateSound")]
-    public SoundSpecifier ActivateSound { get; set; } = new SoundPathSpecifier("/Audio/Weapons/ebladeon.ogg");
+    public SoundSpecifier ActivateSound { get; set; } = new SoundPathSpecifier("/Audio/Weapons/chainsaw_start.ogg");
 
     [DataField("deActivateSound")]
-    public SoundSpecifier DeActivateSound { get; set; } = new SoundPathSpecifier("/Audio/Weapons/ebladeoff.ogg");
+    public SoundSpecifier DeActivateSound { get; set; } = new SoundPathSpecifier("/Audio/Weapons/chainsaw_stop.ogg");
 
     [DataField("onHitOn")]
-    public SoundSpecifier OnHitOn { get; set; } = new SoundPathSpecifier("/Audio/Weapons/eblade1.ogg");
+    public SoundSpecifier OnHitOn { get; set; } = new SoundPathSpecifier("/Audio/Weapons/chainsawhit.ogg");
 
     [DataField("onHitOff")]
-    public SoundSpecifier OnHitOff { get; set; } = new SoundPathSpecifier("/Audio/Weapons/genhit1.ogg");
+    public SoundSpecifier OnHitOff { get; set; } = new SoundPathSpecifier("/Audio/Weapons/chainsawhit.ogg");
 
 
     [DataField("litDamageBonus")]
