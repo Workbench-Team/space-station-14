@@ -106,3 +106,147 @@
   - type: Construction
     graph: ImprovisedArrow
     node: ImprovisedArrow
+
+
+- type: entity
+  parent: BaseItem
+  id: BaseArrowCompound
+  abstract: true
+  components:
+  - type: Item
+    size: 5
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/arrowscomp.rsi
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeCircle
+          radius: 0.2
+        density: 5
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.1,0.1,0.1"
+        hard: false
+        mask:
+        - Impassable
+        - BulletImpassable
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+    embedOnThrow: false
+  - type: ThrowingAngle
+    angle: 0
+  - type: Ammo
+    muzzleFlash: null
+  - type: Tag
+    tags:
+    - ArrowBaseCompound
+  - type: Projectile
+    deleteOnCollide: false
+    onlyCollideWhenShot: true
+    damage:
+      types:
+        Piercing: 25
+  - type: Appearance
+
+- type: entity
+  parent: BaseArrowCompound
+  id: ArrowCompound
+  name: arrow
+  description: You can feel the power of the steppe within you.
+  components:
+  - type: Tag
+    tags:
+    - ArrowBaseCompound
+    - ArrowCompound
+  - type: Sprite
+    layers:
+    - state: arrowcompound
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+    ignoreResistances: true
+
+- type: entity
+  parent: BaseArrowCompound
+  id: ArrowCompoundExplosive
+  name: arrow
+  description: You can feel the power of the steppe within you.
+  components:
+  - type: Tag
+    tags:
+    - ArrowBaseCompound
+    - ArrowCompoundExplosive
+  - type: Sprite
+    layers:
+    - state: arrowcompound-explosion
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 5
+  - type: OnUseTimerTrigger
+    delay: 5
+    delayOptions: [5, 10, 15, 20, 25]
+    initialBeepDelay: 0
+    beepSound: /Audio/Machines/Nuke/general_beep.ogg
+    startOnStick: true
+    canToggleStartOnStick: true
+  - type: TriggerOnSignal
+  - type: DeviceLinkSink
+    ports:
+      - Trigger
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 25 # about a ~4 tile radius
+    intensitySlope: 1.5
+    maxIntensity: 6
+    canCreateVacuum: false
+  - type: Construction
+    graph: ArrowExplosive
+    node: arrowexplosive
+
+
+- type: entity
+  parent: BaseArrowCompound
+  id: ArrowCompoundC4
+  name: arrow
+  description: You can feel the power of the steppe within you.
+  components:
+  - type: Tag
+    tags:
+    - ArrowCompoundC4
+    - ArrowBaseCompound
+  - type: Sprite
+    layers:
+    - state: arrowcompound-c4
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+  - type: OnUseTimerTrigger
+    delay: 5
+    delayOptions: [5, 10, 15, 20, 25]
+    initialBeepDelay: 0
+    beepSound: /Audio/Machines/Nuke/general_beep.ogg
+    startOnStick: true
+    canToggleStartOnStick: true
+  - type: TriggerOnSignal
+  - type: DeviceLinkSink
+    ports:
+      - Trigger
+  - type: Explosive # Powerful explosion in a very small radius. Doesn't break underplating.
+    explosionType: DemolitionCharge
+    totalIntensity: 60
+    intensitySlope: 5
+    maxIntensity: 30
+    canCreateVacuum: false
+  - type: ExplodeOnTrigger
+  - type: Construction
+    graph: ArrowExplosiveC4
+    node: arrowexplosivec4

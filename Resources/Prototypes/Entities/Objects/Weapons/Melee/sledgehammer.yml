@@ -35,16 +35,42 @@
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Effects/metal-pipe-falling.ogg
-      params:
-        volume: 10
   - type: Sprite
     sprite: Objects/Weapons/Melee/metalpipe.rsi
     state: icon
-  - type: MeleeWeapon
-    attackRate: 1
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30 #excess damage avoids cost of spawning entities.
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound: /Audio/Effects/metalbreak.ogg
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          PartRodMetal1:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: DamageOnLand
     damage:
       types:
-        Blunt: 10
+        Blunt: 5
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/bat_hit.ogg
+    damage:
+      types:
+        Blunt: 5
         Structural: 1
   - type: StaminaDamageOnHit
     damage: 5

@@ -48,6 +48,29 @@
     onlyMobs: false
 
 - type: entity
+  name: borghypo
+  parent: BaseItem
+  description: A sterile injector for rapid administration of drugs to patients. A cheaper and more specialised version for medical borgs.
+  id: BorgHypo
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/hypospray.rsi
+    state: borghypo
+  - type: Item
+    sprite: Objects/Specific/Medical/hypospray.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 10
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+  - type: UseDelay
+    delay: 0.5
+
+- type: entity
   name: experimental hypospray
   suffix: Admeme
   parent: SyndiHypo
@@ -128,7 +151,6 @@
           Quantity: 12
         - ReagentId: TranexamicAcid
           Quantity: 3
-
 
 - type: entity
   name: poison auto-injector
