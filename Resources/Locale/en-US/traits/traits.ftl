@@ -23,9 +23,6 @@ trait-hardweight-desc = Alcohol has a weakes effect on you
 trait-muted-name = Muted
 trait-muted-desc = You can't speak
 
-trait-nya-accent-name = Nya!
-trait-nya-accent-desc = Nya! Nya?
-
 trait-paracusia-name = Paracusia
 trait-paracusia-desc = You hear sounds that aren't really there
 
