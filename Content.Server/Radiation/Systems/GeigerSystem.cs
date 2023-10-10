@@ -5,6 +5,8 @@ using Content.Shared.Interaction;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Radiation.Components;
 using Content.Shared.Radiation.Systems;
+using Robust.Shared.GameStates;
+using Robust.Shared.Player;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
 
@@ -30,6 +32,7 @@ public sealed class GeigerSystem : SharedGeigerSystem
         SubscribeLocalEvent<GeigerComponent, GotUnequippedHandEvent>(OnUnequippedHand);
 
         SubscribeLocalEvent<RadiationSystemUpdatedEvent>(OnUpdate);
+        SubscribeLocalEvent<GeigerComponent, ComponentGetState>(OnGetState);
     }
 
     private void OnActivate(EntityUid uid, GeigerComponent component, ActivateInWorldEvent args)
@@ -81,6 +84,17 @@ public sealed class GeigerSystem : SharedGeigerSystem
             var rads = receiver.CurrentRadiation;
             SetCurrentRadiation(geiger.Owner, geiger, rads);
         }
+    }
+
+    private void OnGetState(EntityUid uid, GeigerComponent component, ref ComponentGetState args)
+    {
+        args.State = new GeigerComponentState
+        {
+            CurrentRadiation = component.CurrentRadiation,
+            DangerLevel = component.DangerLevel,
+            IsEnabled = component.IsEnabled,
+            User = GetNetEntity(component.User)
+        };
     }
 
     private void SetCurrentRadiation(EntityUid uid, GeigerComponent component, float rads)

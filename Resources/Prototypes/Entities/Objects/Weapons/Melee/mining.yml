@@ -61,7 +61,6 @@
   - type: Tool
     qualities:
       - Prying
-  - type: Prying
 
 - type: entity
   name: crusher dagger
@@ -79,9 +78,6 @@
         Slash: 6.5
   - type: Item
     size: 10
-  - type: Tag
-    tags:
-    - Knife
 
 # Like a crusher... but better
 - type: entity

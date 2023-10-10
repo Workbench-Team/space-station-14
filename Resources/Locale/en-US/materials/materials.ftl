@@ -22,7 +22,6 @@ materials-uranium = uranium
 materials-bananium = bananium
 materials-meat = meat
 materials-web = silk
-materials-bones = bone
 
 # Material Reclaimer
 material-reclaimer-upgrade-process-rate = process rate

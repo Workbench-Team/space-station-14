@@ -19,7 +19,7 @@
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice
-    price: 1
+    price: 10
 
 - type: entity
   id: CartridgeCaselessRifle
@@ -53,7 +53,6 @@
     - state: rubber
       map: ["enum.AmmoVisualLayers.Base"]
 
-# Blueshield ammo 12.7
 - type: entity
   id: BaseCartridgeUniversal
   name: cartridge (12.7 rifle)
@@ -75,7 +74,7 @@
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice
-    price: 1
+    price: 10
 
 - type: entity
   id: CartridgeCaselessUniversalPT1
@@ -84,6 +83,10 @@
   components:
   - type: CartridgeAmmo
     proto: BulletUniversalPT1
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
 
 - type: entity
   id: CartridgeCaselessUniversalVPS

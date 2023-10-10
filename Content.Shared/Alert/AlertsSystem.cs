@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Alert;
@@ -169,6 +170,7 @@ public abstract class AlertsSystem : EntitySystem
         SubscribeLocalEvent<AlertsComponent, ComponentStartup>(HandleComponentStartup);
         SubscribeLocalEvent<AlertsComponent, ComponentShutdown>(HandleComponentShutdown);
 
+        SubscribeLocalEvent<AlertsComponent, ComponentGetState>(ClientAlertsGetState);
         SubscribeNetworkEvent<ClickAlertEvent>(HandleClickAlert);
 
         LoadPrototypes();
@@ -240,5 +242,10 @@ public abstract class AlertsSystem : EntitySystem
         }
 
         alert.OnClick?.AlertClicked(player.Value);
+    }
+
+    private static void ClientAlertsGetState(EntityUid uid, AlertsComponent component, ref ComponentGetState args)
+    {
+        args.State = new AlertsComponentState(component.Alerts);
     }
 }

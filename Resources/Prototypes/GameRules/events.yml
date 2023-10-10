@@ -70,14 +70,13 @@
 
 - type: entity
   parent: BaseGameRule
-  id: DragonSpawn
+  id: Dragon
   noSpawn: true
   components:
   - type: StationEvent
     weight: 5
     duration: 1
     earliestStart: 45
-    reoccurrenceDelay: 60
     minimumPlayers: 20
   - type: RandomSpawnRule
     prototype: SpawnPointGhostDragon

@@ -1,7 +1,7 @@
 # Base
 
 - type: entity
-  parent: [FoodInjectableBase, ItemHeftyBase]
+  parent: FoodInjectableBase
   id: FoodEggBase
   description: An egg!
   abstract: true
@@ -28,7 +28,15 @@
     ignoreEmpty: true
     popup: spike-solution-egg
   - type: DeleteOnTrigger
-  # egg fragile
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 1
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 1
+       #Dignity: 25
   - type: DamageOnHighSpeedImpact
     minimumSpeed: 0.1
     damage:

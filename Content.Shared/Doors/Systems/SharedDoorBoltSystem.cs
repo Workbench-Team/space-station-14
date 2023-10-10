@@ -1,6 +1,5 @@
 using Content.Shared.Doors.Components;
 using Content.Shared.Popups;
-using Content.Shared.Prying.Components;
 
 namespace Content.Shared.Doors.Systems;
 
@@ -17,16 +16,16 @@ public abstract class SharedDoorBoltSystem : EntitySystem
         SubscribeLocalEvent<DoorBoltComponent, BeforeDoorOpenedEvent>(OnBeforeDoorOpened);
         SubscribeLocalEvent<DoorBoltComponent, BeforeDoorClosedEvent>(OnBeforeDoorClosed);
         SubscribeLocalEvent<DoorBoltComponent, BeforeDoorDeniedEvent>(OnBeforeDoorDenied);
-        SubscribeLocalEvent<DoorBoltComponent, BeforePryEvent>(OnDoorPry);
+        SubscribeLocalEvent<DoorBoltComponent, BeforeDoorPryEvent>(OnDoorPry);
 
     }
 
-    private void OnDoorPry(EntityUid uid, DoorBoltComponent component, ref BeforePryEvent args)
+    private void OnDoorPry(EntityUid uid, DoorBoltComponent component, BeforeDoorPryEvent args)
     {
-        if (component.BoltsDown && !args.Force)
+        if (component.BoltsDown)
         {
             Popup.PopupEntity(Loc.GetString("airlock-component-cannot-pry-is-bolted-message"), uid, args.User);
-            args.Cancelled = true;
+            args.Cancel();
         }
     }
 

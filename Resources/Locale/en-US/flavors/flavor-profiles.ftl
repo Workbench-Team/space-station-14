@@ -148,7 +148,6 @@ flavor-complex-parents = like someone's parents
 flavor-complex-plastic = like plastic
 flavor-complex-glue = like glue
 flavor-complex-spaceshroom-cooked = like space umami
-flavor-complex-lost-friendship = like lost friendship
 
 # Drink-specific flavors.
 

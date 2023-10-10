@@ -113,7 +113,7 @@ public sealed partial class NPCSteeringSystem
                         // TODO: Use the verb.
 
                         if (door.State != DoorState.Opening)
-                            _pryingSystem.TryPry(ent, uid, out id, uid);
+                            _doors.TryPryDoor(ent, uid, uid, door, out id, force: true);
 
                         component.DoAfterId = id;
                         return SteeringObstacleStatus.Continuing;

@@ -1,7 +1,6 @@
 using System.Numerics;
 using Content.Shared.Damage;
 using Content.Shared.DoAfter;
-using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Interaction;
 using Content.Shared.Projectiles;
 using Content.Shared.Sound.Components;
@@ -25,7 +24,6 @@ public abstract partial class SharedProjectileSystem : EntitySystem
     [Dependency] private readonly INetManager _netManager = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
-    [Dependency] private readonly SharedHandsSystem _hands = default!;
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
 
@@ -87,9 +85,6 @@ public abstract partial class SharedProjectileSystem : EntitySystem
         var landEv = new LandEvent(args.User, true);
         RaiseLocalEvent(uid, ref landEv);
         _physics.WakeBody(uid, body: physics);
-
-        // try place it in the user's hand
-        _hands.TryPickupAnyHand(args.User, uid);
     }
 
     private void OnEmbedThrowDoHit(EntityUid uid, EmbeddableProjectileComponent component, ThrowDoHitEvent args)

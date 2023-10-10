@@ -2,7 +2,6 @@ using System.Linq;
 using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
 using Content.Server.Chemistry.EntitySystems;
-using Content.Server.Inventory;
 using Content.Server.Nutrition.Components;
 using Content.Server.Popups;
 using Content.Server.Stack;
@@ -62,7 +61,7 @@ public sealed class FoodSystem : EntitySystem
 
         // TODO add InteractNoHandEvent for entities like mice.
         // run after openable for wrapped/peelable foods
-        SubscribeLocalEvent<FoodComponent, UseInHandEvent>(OnUseFoodInHand, after: new[] { typeof(OpenableSystem), typeof(ServerInventorySystem) });
+        SubscribeLocalEvent<FoodComponent, UseInHandEvent>(OnUseFoodInHand, after: new[] { typeof(OpenableSystem) });
         SubscribeLocalEvent<FoodComponent, AfterInteractEvent>(OnFeedFood);
         SubscribeLocalEvent<FoodComponent, GetVerbsEvent<AlternativeVerb>>(AddEatVerb);
         SubscribeLocalEvent<FoodComponent, ConsumeDoAfterEvent>(OnDoAfter);

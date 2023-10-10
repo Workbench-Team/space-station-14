@@ -440,14 +440,6 @@ public sealed class AdminAHelpUIHandler : IAHelpUIHandler
         }
     }
 
-    public void HideAllPanels()
-    {
-        foreach (var panel in _activePanelMap.Values)
-        {
-            panel.Visible = false;
-        }
-    }
-
     public BwoinkPanel EnsurePanel(NetUserId channelId)
     {
         EnsureControl();

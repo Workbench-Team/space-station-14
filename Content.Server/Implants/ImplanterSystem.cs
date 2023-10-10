@@ -8,6 +8,7 @@ using Content.Shared.Interaction;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Popups;
 using Robust.Shared.Containers;
+using Robust.Shared.GameStates;
 
 namespace Content.Server.Implants;
 
@@ -23,6 +24,7 @@ public sealed partial class ImplanterSystem : SharedImplanterSystem
         InitializeImplanted();
 
         SubscribeLocalEvent<ImplanterComponent, AfterInteractEvent>(OnImplanterAfterInteract);
+        SubscribeLocalEvent<ImplanterComponent, ComponentGetState>(OnImplanterGetState);
 
         SubscribeLocalEvent<ImplanterComponent, ImplantEvent>(OnImplant);
         SubscribeLocalEvent<ImplanterComponent, DrawEvent>(OnDraw);
@@ -105,6 +107,11 @@ public sealed partial class ImplanterSystem : SharedImplanterSystem
         if (_doAfter.TryStartDoAfter(args))
             _popup.PopupEntity(Loc.GetString("injector-component-injecting-user"), target, user);
 
+    }
+
+    private void OnImplanterGetState(EntityUid uid, ImplanterComponent component, ref ComponentGetState args)
+    {
+        args.State = new ImplanterComponentState(component.CurrentMode, component.ImplantOnly);
     }
 
     private void OnImplant(EntityUid uid, ImplanterComponent component, ImplantEvent args)

@@ -1,8 +1,6 @@
 using Content.Server.Ninja.Systems;
 using Content.Shared.Communications;
-using Content.Shared.Random;
 using Robust.Shared.Audio;
-using Robust.Shared.Prototypes;
 
 namespace Content.Server.GameTicking.Rules.Components;
 
@@ -17,7 +15,7 @@ public sealed partial class NinjaRuleComponent : Component
     /// List of threats that can be called in. Copied onto <see cref="CommsHackerComponent"/> when gloves are enabled.
     /// </summary>
     [DataField(required: true)]
-    public ProtoId<WeightedRandomPrototype> Threats = string.Empty;
+    public List<Threat> Threats = new();
 
     /// <summary>
     /// Sound played when making the player a ninja via antag control or ghost role

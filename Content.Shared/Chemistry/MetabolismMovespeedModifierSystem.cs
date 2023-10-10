@@ -1,6 +1,9 @@
 using Content.Shared.Chemistry.Components;
-using Content.Shared.Movement.Systems;
+using Robust.Shared.GameStates;
 using Robust.Shared.Timing;
+using Content.Shared.Movement.Components;
+using Content.Shared.Movement.Systems;
+using static Content.Shared.Chemistry.Components.MovespeedModifierMetabolismComponent;
 
 namespace Content.Shared.Chemistry
 {
@@ -18,8 +21,28 @@ namespace Content.Shared.Chemistry
 
             UpdatesOutsidePrediction = true;
 
+            SubscribeLocalEvent<MovespeedModifierMetabolismComponent, ComponentHandleState>(OnMovespeedHandleState);
+            SubscribeLocalEvent<MovespeedModifierMetabolismComponent, ComponentGetState>(OnGetState);
             SubscribeLocalEvent<MovespeedModifierMetabolismComponent, ComponentStartup>(AddComponent);
             SubscribeLocalEvent<MovespeedModifierMetabolismComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovespeed);
+        }
+
+        private void OnGetState(EntityUid uid, MovespeedModifierMetabolismComponent component, ref ComponentGetState args)
+        {
+            args.State = new MovespeedModifierMetabolismComponentState(
+                component.WalkSpeedModifier,
+                component.SprintSpeedModifier,
+                component.ModifierTimer);
+        }
+
+        private void OnMovespeedHandleState(EntityUid uid, MovespeedModifierMetabolismComponent component, ref ComponentHandleState args)
+        {
+            if (args.Current is not MovespeedModifierMetabolismComponentState cast)
+                return;
+
+            component.WalkSpeedModifier = cast.WalkSpeedModifier;
+            component.SprintSpeedModifier = cast.SprintSpeedModifier;
+            component.ModifierTimer = cast.ModifierTimer;
         }
 
         private void OnRefreshMovespeed(EntityUid uid, MovespeedModifierMetabolismComponent component, RefreshMovementSpeedModifiersEvent args)

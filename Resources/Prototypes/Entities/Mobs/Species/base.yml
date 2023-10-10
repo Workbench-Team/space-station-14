@@ -202,7 +202,6 @@
   - type: Puller
   - type: Speech
     speechSounds: Alto
-  - type: DamageForceSay
   - type: Vocal
     sounds:
       Male: MaleHuman
@@ -248,8 +247,6 @@
     - Stutter
     - SeeingRainbows
     - Electrocution
-    - ForcedSleep
-    - TemporaryBlindness
     - Drunk
     - SlurredSpeech
     - RatvarianLanguage
@@ -278,6 +275,7 @@
     shiveringHeatRegulation: 2000
     normalBodyTemperature: 310.15
     thermalRegulationTemperatureThreshold: 25
+  - type: Perishable
   - type: Butcherable
     butcheringType: Spike # TODO human.
     spawned:
