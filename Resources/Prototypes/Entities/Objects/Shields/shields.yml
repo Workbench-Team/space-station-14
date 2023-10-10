@@ -388,50 +388,6 @@
       price: 350
 
 - type: entity
-  name: energy blueshield
-  parent: EnergyShield
-  id: EnergyBlueshield
-  description: Exotic energy blueshield, when folded, can even fit in your pocket, spacial for blueshield officer.
-  components:
-   - type: Blocking
-      passiveBlockModifier:
-        coefficients:
-          Blunt: 0.9
-          Slash: 0.8
-          Piercing: 0.80
-          Heat: 0.6
-      activeBlockModifier:
-        coefficients:
-          Blunt: 1.0
-          Slash: 0.85
-          Piercing: 0.5
-          Heat: 0.4
-        flatReductions:
-          Heat: 0.9
-          Piercing: 0.8
-  - type: Destructible
-      thresholds:
-        - trigger:
-            !type:DamageTrigger
-            damage: 160
-          behaviors:
-            - !type:DoActsBehavior
-              acts: [ "Destruction" ]
-        - trigger:
-            !type:DamageTrigger
-            damage: 140
-          behaviors:
-            - !type:DoActsBehavior
-              acts: [ "Destruction" ]
-            - !type:PlaySoundBehavior
-              sound: /Audio/Effects/metalbreak.ogg
-            - !type:SpawnEntitiesBehavior
-              spawn:
-                BrokenEnergyBlueshield:
-                  min: 1
-                  max: 1
-
-- type: entity
   name: broken energy shield
   parent: BaseItem
   id: BrokenEnergyShield
@@ -444,20 +400,6 @@
       sprite: Objects/Weapons/Melee/e_shield.rsi
       size: 5
       heldPrefix: eshield
-
-- type: entity
-  name: broken energy blueshield
-  parent: BaseItem
-  id: BrokenEnergyBlueshield
-  description: Something inside is burned out, it is no longer functional.
-  components:
-    - type: Sprite
-      sprite: Objects/Weapons/Melee/e_blueshield.rsi
-      state: eshield-icon
-    - type: Item
-      sprite: Objects/Weapons/Melee/e_blueshield.rsi
-      size: 5
-      heldPrefix: eblueshield
 
 - type: entity
   name: telescopic shield

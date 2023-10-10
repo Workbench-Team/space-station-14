@@ -36,7 +36,6 @@
 - type: startingGear
   id: BlueShieldGear
   equipment:
-    socks: ClothingUnderSocksBlueshieldKneeSocks
     jumpsuit: ClothingUniformJumpsuitBlueShield
     back: ClothingBackpackBlueShieldFilled
     shoes: ClothingShoesBootsCombatFilled
@@ -46,8 +45,6 @@
     id: BlueShieldPDA
     ears: ClothingHeadsetAltBlueShield
     pocket1: HandheldCrewMonitor
-    pocket2: EnergyBlueshield
   innerclothingskirt: ClothingUniformJumpskirtBlueshield
-  femaleSocks: ClothingUnderSocksBlueshieldStockings
   satchel: ClothingBackpackSatchelBlueShieldFilled
   duffelbag: ClothingBackpackDuffelBlueShieldFilled
