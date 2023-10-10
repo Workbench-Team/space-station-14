@@ -75,7 +75,7 @@
   - type: Clothing
     sprite: Clothing/Neck/mantles/qmmantle.rsi  
 
-  - type: entity
+- type: entity
     parent: ClothingNeckBase
     id: ClothingNeckMantleBS
     name: blueshield officer's mantle
