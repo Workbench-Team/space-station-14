@@ -194,7 +194,10 @@
     sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
   - type: BallisticAmmoProvider
     proto: ShellShotgunBeanbag
-  
+  - type: Tag
+    tags:
+    - HeavyWeapon
+
 - type: entity
   name: Kammerer
   parent: BaseWeaponShotgun
