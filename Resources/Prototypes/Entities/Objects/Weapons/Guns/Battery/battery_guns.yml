@@ -113,6 +113,9 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
+  - type: Tag
+    tags:
+    - HeavyWeapon
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
     fireCost: 62.5
@@ -141,6 +144,10 @@
     - state: mag-unshaded-4
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
+  - type: Tag
+    tags:
+    - Sidearm
+    - LightWeapon
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/pulse_pistol.rsi
   - type: Gun
@@ -180,6 +187,9 @@
       - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: Tag
+    tags:
+    - HeavyWeapon
   - type: HitscanBatteryAmmoProvider
     proto: Pulse
     fireCost: 200
@@ -210,6 +220,9 @@
   - type: HitscanBatteryAmmoProvider
     proto: Pulse
     fireCost: 100
+  - type: Tag
+    tags:
+    - HeavyWeapon
   - type: Battery
     maxCharge: 40000
     startingCharge: 40000
@@ -234,6 +247,9 @@
     fireRate: 1.5
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: Tag
+    tags:
+    - HeavyWeapon
   - type: HitscanBatteryAmmoProvider
     proto: RedHeavyLaser
     fireCost: 100
@@ -276,6 +292,7 @@
       tags:
         - Taser
         - Sidearm
+        - LightWeapon
     - type: Sprite
       sprite: Objects/Weapons/Guns/Battery/disabler.rsi
       layers:
@@ -398,6 +415,7 @@
     tags:
     - HighRiskItem
     - Sidearm
+    - HeavyWeapon
   - type: StaticPrice
     price: 750
 
@@ -428,6 +446,10 @@
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 30
+  - type: Tag
+    tags:
+    - Sidearm
+    - MediumWeapon
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -533,6 +555,7 @@
   - type: Appearance
   - type: Tag
     tags:
+    - HeavyWeapon
     - HighRiskItem
   - type: StaticPrice
     price: 750

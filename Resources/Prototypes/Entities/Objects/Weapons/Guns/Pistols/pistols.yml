@@ -16,6 +16,7 @@
   - type: Tag
     tags:
     - Sidearm
+    - LightWeapon
   - type: Clothing
     sprite: Objects/Weapons/Guns/Pistols/viper.rsi
     quickEquip: false

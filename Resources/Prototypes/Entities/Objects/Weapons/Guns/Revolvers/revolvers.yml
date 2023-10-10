@@ -12,6 +12,7 @@
   - type: Tag
     tags:
     - Sidearm
+    - LightWeapon
   - type: Clothing
     sprite: Objects/Weapons/Guns/Revolvers/deckard.rsi
     quickEquip: false

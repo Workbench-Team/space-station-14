@@ -15,6 +15,9 @@
     - Back
     - suitStorage
   - type: AmmoCounter
+  - type: Tag
+    tags:
+    - HeavyWeapon
   - type: Gun
     fireRate: 5
     selectedMode: FullAuto

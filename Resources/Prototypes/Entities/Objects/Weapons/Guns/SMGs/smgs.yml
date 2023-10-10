@@ -93,6 +93,9 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: Objects/Weapons/Guns/SMGs/c20r.rsi
+  - type: Tag
+    tags:
+    - HeavyWeapon
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
@@ -119,6 +122,9 @@
           map: ["enum.GunVisualLayers.Mag"]
     - type: Clothing
       sprite: Objects/Weapons/Guns/SMGs/drozd.rsi
+    - type: Tag
+      tags:
+      - HeavyWeapon
     - type: Gun
       fireRate: 6
       selectedMode: FullAuto
@@ -173,6 +179,9 @@
       path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
     availableModes:
     - FullAuto
+  - type: Tag
+    tags:
+    - MediumWeapon
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -218,6 +227,9 @@
         shader: unshaded
   - type: Clothing
     sprite: Objects/Weapons/Guns/SMGs/wt550.rsi
+  - type: Tag
+    tags:
+    - MediumWeapon
   - type: ChamberMagazineAmmoProvider
     boltClosed: null
   - type: Gun

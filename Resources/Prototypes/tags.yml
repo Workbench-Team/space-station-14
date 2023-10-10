@@ -41,6 +41,15 @@
   id: C4
 
 - type: Tag
+  id: LightWeapon
+
+- type: Tag
+  id: MediumWeapon
+
+- type: Tag
+  id: HeavyWeapon
+
+- type: Tag
   id: ATVKeys
 
 - type: Tag
