@@ -6,5 +6,5 @@ ent-PinpointerUniversal = универсиальный поисковый нав
     .desc = Портативное устройство слежения, которое фиксирует любой физический объект когда выключен.
 ent-PinpointerStation = { ent-PinpointerBase }
     .desc = { ent-PinpointerBase.desc }
-ent-PinpointerRD = аномальный поисковой навигатор 
+ent-PinpointerAnomaly = поисковый навигатор аномалий
     .desc = Портативное устройство слежения, которое фиксирует любую аномальную активность когда включено.

@@ -75,7 +75,7 @@
 
 - type: entity
   name: pinpointer
-  id: PinpointerRD
+  id: PinpointerAnomaly
   parent: PinpointerBase
   components:
   - type: Item
@@ -84,7 +84,7 @@
     noRot: True
     sprite: Objects/Devices/pinpointer.rsi
     layers:
-    - state: pinpointer_RD
+    - state: pinpointer_anomaly
       map: ["enum.PinpointerLayers.Base"]
     - state: pinonnull
       map: ["enum.PinpointerLayers.Screen"]

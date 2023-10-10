@@ -106,7 +106,8 @@
   - type: StorageFill
     contents:
       - id: WeaponPistolCHIMP
-#     - id: PinpointerRD
+      - id: AnomalyLocator
+#     - id: PinpointerAnomaly
       - id: AnomalyScannerRD
       - id: HandTeleporter
 
