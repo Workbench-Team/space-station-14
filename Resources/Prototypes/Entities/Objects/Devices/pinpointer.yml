@@ -58,7 +58,42 @@
 - type: entity
   parent: PinpointerBase
   id: PinpointerStation
+  suffix: Station
   components:
+  - type: Sprite
+    noRot: True
+    sprite: Objects/Devices/pinpointer.rsi
+    layers:
+    - state: pinpointer_way
+      map: ["enum.PinpointerLayers.Base"]
+    - state: pinonnull
+      map: ["enum.PinpointerLayers.Screen"]
+      shader: unshaded
+      visible: false
   - type: Pinpointer
     component: BecomesStation
     targetName: the station
+
+- type: entity
+  name: pinpointer
+  id: PinpointerAnomaly
+  parent: PinpointerBase
+  components:
+  - type: Item
+    size: 10
+  - type: Sprite
+    noRot: True
+    sprite: Objects/Devices/pinpointer.rsi
+    layers:
+    - state: pinpointer_anomaly
+      map: ["enum.PinpointerLayers.Base"]
+    - state: pinonnull
+      map: ["enum.PinpointerLayers.Screen"]
+      shader: unshaded
+      visible: false
+  - type: Pinpointer
+    component: Anomaly
+    targetName: Аномальную активность
+    mediumDistance: 35
+    closeDistance: 20
+    reachedDistance: 5

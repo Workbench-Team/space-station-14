@@ -21,6 +21,16 @@
   - type: Sprite
     sprite: Structures/Holo/wetfloor.rsi
     state: icon
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 30
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
 
 - type: entity
   id: HoloFan

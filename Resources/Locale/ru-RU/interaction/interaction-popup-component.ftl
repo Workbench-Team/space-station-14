@@ -5,6 +5,7 @@
 
 petting-success-generic = Вы гладите { $target } по голове.
 petting-success-soft-floofy = Вы гладите { $target } по мягкой пушистой голове.
+petting-success-bingus = Вы гладите { $target } по { POSS-ADJ($target) } маленькой морщинистой голове.
 petting-success-bird = Вы гладите { $target } по её милой пернатой голове.
 petting-success-cat = Вы гладите { $target } по её маленькой пушистой голове.
 petting-success-corrupted-corgi = В порыве самонадеянности, Вы гладите { $target } по его маленькой проклятой голове.

@@ -300,6 +300,7 @@
     mode: SensorCords
   - type: Tag
     tags:
+    - ClothMade
     - WhitelistChameleon
     - PrisonUniform
 

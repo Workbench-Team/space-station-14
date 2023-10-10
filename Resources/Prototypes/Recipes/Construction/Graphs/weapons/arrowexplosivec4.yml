@@ -1,0 +1,27 @@
+- type: constructionGraph
+  id: ArrowExplosiveC4
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: arrowexplosivec4
+      steps:
+      - tag: ArrowCompound
+        name: охотничью стрелу
+        icon:
+          sprite: Objects/Weapons/Guns/Bow/compoundbow.rsi
+          state: wielded-arrowcompound
+        amount: 1
+        doAfter: 0.5
+      - material: Cable
+        amount: 3
+      - tag: C4
+        name: взрывной заряд
+        icon:
+          sprite: Objects/Weapons/Bombs/c4.rsi
+          state: icon
+        amount: 1
+        doAfter: 0.5
+
+  - node: arrowexplosivec4
+    entity: ArrowCompoundC4

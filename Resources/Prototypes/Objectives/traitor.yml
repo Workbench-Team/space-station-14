@@ -183,6 +183,15 @@
     prototype: BookSecretDocuments
     owner: job-name-hos
 
+- type: entity
+  noSpawn: true
+  parent: BaseTraitorStealObjective
+  id: HosGunStealObjective
+  components:
+  - type: StealCondition
+    prototype: WeaponLaserHos
+    owner: job-name-hos
+
 ## ce
 
 - type: entity

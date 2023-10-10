@@ -1,9 +1,9 @@
 ent-BriefcaseBrownFilled = { ent-BriefcaseBrown }
-    .suffix = Заполненный
+    .suffix = Заполненный, Бумага
     .desc = { ent-BriefcaseBrown.desc }
 ent-BriefcaseSyndieSniperBundleFilled = { ent-BriefcaseBrown }
     .suffix = Набор снайпера
     .desc = { ent-BriefcaseSyndie.desc }
 ent-BriefcaseSyndieLobbyingBundleFilled = { ent-BriefcaseBrown }
-    .suffix = Заполненный, Космобаксы
+    .suffix = Синдикат, Космобаксы
     .desc = { ent-BriefcaseSyndie.desc }

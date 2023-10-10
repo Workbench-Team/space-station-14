@@ -1,0 +1,17 @@
+- type: constructionGraph
+  id: ChainsawGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: chainsaw
+      steps:
+      - material: Plasteel
+        amount: 10
+      - tag: SawElectric
+        name: add Electric saw
+      - tag: Welder
+        name: add Welder
+        doAfter: 3
+  - node: chainsaw
+    entity: Chainsaw

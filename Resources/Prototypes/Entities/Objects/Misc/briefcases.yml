@@ -28,6 +28,7 @@
   parent: BaseStorageItem
   abstract: true
   id: BriefcaseSyndieBase
+  suffix: Syndicate, Empty
   description: Useful for carrying items in your hands.
   components:
   - type: Item
@@ -49,6 +50,21 @@
     state: icon
   - type: Item
     sprite: Objects/Storage/Briefcases/briefcase_brown.rsi
+
+- type: entity
+  name: brown briefcase
+  parent: BriefcaseSyndieBase
+  id: BriefcaseRD
+  description: A handy briefcase.
+  components:
+  - type: Sprite
+    sprite: Objects/Storage/Briefcases/rd_case.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Storage/Briefcases/rd_case.rsi
+  - type: Storage
+    storageOpenSound:
+      collection: WeaponCaseOpen
 
 - type: entity
   name: brown briefcase

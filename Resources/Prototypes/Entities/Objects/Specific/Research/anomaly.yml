@@ -21,6 +21,20 @@
     - ScannersAndVessels
 
 - type: entity
+  parent: AnomalyScanner
+  id: AnomalyScannerRD
+  name: anomaly scanner
+  description: A hand-held scanner built to collect information on various anomalous objects.
+  components:
+  - type: Item
+    size: 10
+  - type: AnomalyScanner
+    scanDoAfterDuration: 2
+  - type: Sprite
+    sprite: Objects/Specific/Research/anomalyscanner.rsi
+    state: rd
+
+- type: entity
   id: AnomalyLocatorUnpowered
   parent: BaseItem
   name: anomaly locator
@@ -65,6 +79,39 @@
 - type: entity
   id: AnomalyLocatorEmpty
   parent: AnomalyLocator
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+
+- type: entity
+  id: AnomalyLocatorWideUnpowered
+  parent: AnomalyLocatorUnpowered
+  name: wide-spectrum anomaly locator
+  description: A device that looks for anomalies from an extended distance, but has no way to determine the distance to them.
+  suffix: Unpowered
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Research/anomalylocatorwide.rsi
+  - type: ProximityBeeper
+    maximumDistance: 40
+    minBeepInterval: 0.5
+    maxBeepInterval: 0.5
+
+- type: entity
+  id: AnomalyLocatorWide
+  parent: [ AnomalyLocatorWideUnpowered, PowerCellSlotSmallItem ]
+  suffix: Powered
+  components:
+  - type: PowerCellDraw
+    drawRate: 1
+    useRate: 0
+
+- type: entity
+  id: AnomalyLocatorWideEmpty
+  parent: AnomalyLocatorWide
   suffix: Empty
   components:
   - type: ItemSlots
