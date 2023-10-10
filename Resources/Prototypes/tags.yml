@@ -3,6 +3,9 @@
 
 - type: Tag
   id: AirAlarmElectronics
+  
+- type: Tag
+  id: Airlock
 
 - type: Tag
   id: AirSensor
@@ -18,6 +21,24 @@
 
 - type: Tag
   id: Arrow
+
+- type: Tag
+  id: ArrowBaseCompound
+
+- type: Tag
+  id: ArrowCompound
+
+- type: Tag
+  id: ArrowCompoundExplosive
+
+- type: Tag
+  id: ArrowCompoundC4
+
+- type: Tag
+  id: PayloadExplosion
+
+- type: Tag
+  id: C4
 
 - type: Tag
   id: ATVKeys
@@ -496,6 +517,9 @@
 
 - type: Tag
   id: GeigerCounter
+  
+- type: Tag
+  id: GlassAirlock
 
 - type: Tag
   id: GlassBeaker
@@ -511,7 +535,6 @@
 
 - type: Tag
   id: GuideEmbeded
-
 
 - type: Tag
   id: Hamster
@@ -563,6 +586,9 @@
 
 - type: Tag
   id: HighRiskItem
+  
+- type: Tag
+  id: HighSecDoor
 
 - type: Tag
   id: Hoe
@@ -830,6 +856,9 @@
   id: PetWearable
 
 - type: Tag
+  id: MonkeyWearable
+
+- type: Tag
   id: Pickaxe
 
 - type: Tag
@@ -955,6 +984,9 @@
 
 - type: Tag
   id: Shovel
+
+- type: Tag
+  id: Sidearm
 
 - type: Tag
   id: SkeletonMotorcycleKeys
@@ -1143,6 +1175,9 @@
   id: ModularReceiver
 
 - type: Tag
+  id: MindShield
+
+- type: Tag
   id: EmitterCircuitBoard
 
 - type: Tag
@@ -1198,3 +1233,9 @@
 
 - type: Tag
   id: GygaxArmor
+
+- type: Tag
+  id: SawElectric
+
+- type: Tag
+  id: Welder

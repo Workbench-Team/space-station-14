@@ -28,6 +28,12 @@
   - External
   - Command
   - Miner
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
 
 - type: startingGear
   id: QuartermasterGear
@@ -39,6 +45,7 @@
     shoes: ClothingShoesColorBrown
     id: QuartermasterPDA
     ears: ClothingHeadsetQM
+    belt: BoxFolderClipboard
     pocket1: AppraisalTool
   innerclothingskirt: ClothingUniformJumpskirtQM
   femaleSocks: ClothingUnderSocksWhiteStockings

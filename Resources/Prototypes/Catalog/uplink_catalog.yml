@@ -86,6 +86,16 @@
   - UplinkWeapons
 
 - type: listing
+  id: UplinkBowCompoundRed
+  name: uplink-bow-compound-red-name
+  description: uplink-bow-compound-red-desc
+  productEntity: BowCompoundRed
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkWeapons
+
+- type: listing
   id: UplinkEswordDouble
   name: uplink-esword-double-name
   description: uplink-esword-double-desc
@@ -95,6 +105,11 @@
     Telecrystal: 16
   categories:
   - UplinkWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
 
 - type: listing
   id: UplinkDisposableTurret
@@ -274,6 +289,17 @@
   productEntity: MagazinePistolHighCapacity
   cost:
     Telecrystal: 2
+  categories:
+  - UplinkAmmo
+
+- type: listing
+  id: UplinkQuiverCompositFilled
+  name: uplink-quiver-composit-filled-name
+  description: uplink-quiver-composit-filled-desc
+  icon: { sprite: Clothing/Belt/quiver.rsi, state: icon }
+  productEntity: ClothingBeltQuiverCompositFilled
+  cost:
+    Telecrystal: 10
   categories:
   - UplinkAmmo
 
@@ -828,6 +854,17 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledRifle
   cost:
     Telecrystal: 17
+  categories:
+  - UplinkBundles
+
+- type: listing
+  id: UplinkBowBundle
+  name: uplink-bow-bundle-name
+  description: uplink-bow-bundle-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Bow/compoundbow.rsi, state: unwieldedred }
+  productEntity: ClothingBackpackDuffelSyndicateFilledBow
+  cost:
+    Telecrystal: 16
   categories:
   - UplinkBundles
 
@@ -1565,34 +1602,34 @@
   categories:
   - UplinkWeapons
 
-- type: listing
-  id: UplinkSyndicateMauler
-  name: uplink-mauler-name
-  description: uplink-mauler-desc 
-  icon: { sprite: /Textures/Objects/Specific/Mech/mecha.rsi, state: mauler }
-  productEntity: MechMaulerReal
-  cost:
-    Telecrystal: 120
-  categories:
-  - UplinkWeapons
-  conditions:
-  - !type:BuyerWhitelistCondition
-    blacklist:
-      components:
-      - SurplusBundle
+#- type: listing
+#  id: UplinkSyndicateMauler
+#  name: uplink-mauler-name
+#  description: uplink-mauler-desc 
+#  icon: { sprite: /Textures/Objects/Specific/Mech/mecha.rsi, state: mauler }
+#  productEntity: MechMaulerReal
+#  cost:
+#    Telecrystal: 120
+#  categories:
+#  - UplinkWeapons
+#  conditions:
+#  - !type:BuyerWhitelistCondition
+#    blacklist:
+#      components:
+#      - SurplusBundle
 
-- type: listing
-  id: UplinkSyndicateGygax
-  name: uplink-gygax-syndie-name
-  description: uplink-gygax-desc
-  icon: { sprite: /Textures/Objects/Specific/Mech/mecha.rsi, state: darkgygax }
-  productEntity: MechDarkGygax
-  cost:
-    Telecrystal: 70
-  categories:
-  - UplinkWeapons
-  conditions:
-  - !type:BuyerWhitelistCondition
-    blacklist:
-      components:
-      - SurplusBundle
+#- type: listing
+#  id: UplinkSyndicateGygax
+#  name: uplink-gygax-syndie-name
+#  description: uplink-gygax-desc
+#  icon: { sprite: /Textures/Objects/Specific/Mech/mecha.rsi, state: darkgygax }
+#  productEntity: MechDarkGygax
+#  cost:
+#    Telecrystal: 70
+#  categories:
+#  - UplinkWeapons
+#  conditions:
+#  - !type:BuyerWhitelistCondition
+#    blacklist:
+#      components:
+#      - SurplusBundle

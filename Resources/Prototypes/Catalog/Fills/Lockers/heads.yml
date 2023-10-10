@@ -274,6 +274,7 @@
       - id: WeaponTechFabCircuitboard
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: WeaponLaserHos
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -297,4 +298,5 @@
       - id: WeaponTechFabCircuitboard
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: WeaponLaserHos
 

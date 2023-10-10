@@ -550,7 +550,7 @@
 
 - type: entity
   name: tomato
-  parent: FoodProduceBase
+  parent: [FoodProduceBase, ItemHeftyBase]
   id: FoodTomato
   description: I say to-mah-to, you say tom-mae-to.
   components:
@@ -578,15 +578,6 @@
       reagents:
       - ReagentId: JuiceTomato
         Quantity: 10
-  - type: DamageOnLand
-    damage:
-      types:
-        Blunt: 1
-  - type: DamageOtherOnHit
-    damage:
-      types:
-        Blunt: 1
-       #Dignity: 25
   - type: Damageable
     damageContainer: Biological
   - type: DamageOnHighSpeedImpact
@@ -1331,7 +1322,7 @@
 
 - type: entity
   name: watermelon
-  parent: FoodProduceBase
+  parent: [FoodProduceBase, ItemHeftyBase]
   id: FoodWatermelon
   description: Round green object that you can slice and eat.
   components:
@@ -1360,14 +1351,6 @@
       reagents:
       - ReagentId: JuiceWatermelon
         Quantity: 20
-  - type: DamageOnLand
-    damage:
-      types:
-        Blunt: 1
-  - type: DamageOtherOnHit
-    damage:
-      types:
-        Blunt: 1
   - type: Damageable
     damageContainer: Biological
   - type: DamageOnHighSpeedImpact
