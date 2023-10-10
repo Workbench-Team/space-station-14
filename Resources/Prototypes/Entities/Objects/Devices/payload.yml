@@ -24,6 +24,10 @@
   parent: BasePayload
   id: ExplosivePayload
   components:
+  - type: Tag
+    tags:
+    - Payload
+    - PayloadExplosion
   - type: Sprite
     sprite: Objects/Devices/payload.rsi
     state: payload-explosive-armed

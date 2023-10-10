@@ -66,6 +66,10 @@
   <Box>
     <GuideEntityEmbed Entity="HandTeleporter" Caption="Ручной Телепортер"/>
   </Box>
+  - Украдите [color=#a4885c]Антикварный Лазерный Пистолет[/color] Главы службы безопасности.
+  <Box>
+    <GuideEntityEmbed Entity="WeaponLaserHos" Caption="Мульфиазовый лазер Х-01"/>
+  </Box>
   - Украдите [color=#a4885c]Секретные Документы[/color] Главы Службы Безопасности.
   <Box>
     <GuideEntityEmbed Entity="BookSecretDocuments" Caption="Секретные Документы"/>

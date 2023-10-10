@@ -7,5 +7,5 @@ ui-rules-wait = Кнопка принятия будет разблокиров�
 ui-rules-header-links = Ссылки
 ui-rules-roles = Вики ролей
 ui-rules-discord = Discord
-ui-rules-laws = Космический Закон
+ui-rules-laws = Корпоративный Закон
 ui-rules-wikirules = Открыть правила

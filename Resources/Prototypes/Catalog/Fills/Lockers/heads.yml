@@ -224,7 +224,7 @@
       - id: CircuitImprinterMachineCircuitboard
       - id: ClothingHeadsetMedicalScience
       - id: ClothingOuterHardsuitRd
-      - id: HandTeleporter
+      - id: BriefcaseRDFilled
       - id: DoorRemoteResearch
       - id: ClothingBeltUtilityFilled
       - id: RubberStampRd
@@ -243,7 +243,7 @@
       - id: ProtolatheMachineCircuitboard
       - id: CircuitImprinterMachineCircuitboard
       - id: ClothingHeadsetMedicalScience
-      - id: HandTeleporter
+      - id: BriefcaseRDFilled
       - id: DoorRemoteResearch
       - id: HandheldRndMonitor
       - id: ClothingBeltUtilityFilled
@@ -276,6 +276,7 @@
       - id: WeaponTechFabCircuitboard
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: WeaponLaserHos
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -299,4 +300,5 @@
       - id: WeaponTechFabCircuitboard
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: WeaponLaserHos
 

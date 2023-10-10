@@ -4,7 +4,7 @@ gun-selector-verb = Изменить на { $mode }
 gun-selected-mode = Выбран { $mode }
 gun-disabled = Вы не можете использовать оружие!
 gun-clumsy = Оружие взрывается Вам в лицо!
-gun-set-fire-mode = Set to { $mode }
+gun-set-fire-mode = Установлено на { $mode }
 # SelectiveFire
 gun-SemiAuto = полуавто
 gun-Burst = очередь

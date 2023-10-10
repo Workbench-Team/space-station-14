@@ -17,6 +17,7 @@
   - ChemicalPayload
   - ClothingEyesGlassesChemical
   - ClothingEyesHudMedical
+  - Jug
 
 - type: technology
   id: SurgicalTools
@@ -101,6 +102,7 @@
   recipeUnlocks:
   - ChemMasterMachineCircuitboard
   - ChemDispenserMachineCircuitboard
+  - BorgModuleAdvancedTreatment
   technologyPrerequisites:
   - Chemistry
 
