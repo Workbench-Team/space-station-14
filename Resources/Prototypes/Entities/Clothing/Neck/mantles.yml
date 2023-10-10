@@ -11,6 +11,17 @@
 
 - type: entity
   parent: ClothingNeckBase
+  id: ClothingNeckMantleBS
+  name: blueshield officer's mantle
+  description: A nice mantle to protect your back, with a bright and completely inconspicuous, white shield emblem.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/mantles/bsmantle.rsi
+  - type: Clothing
+    sprite: Clothing/Neck/mantles/bsmantle.rsi
+
+- type: entity
+  parent: ClothingNeckBase
   id: ClothingNeckMantleCE
   name: chief engineer's mantle
   description: High visibility, check. RIG system, check. High capacity cell, check. Everything a chief engineer could need in a stylish mantle.
@@ -73,15 +84,4 @@
   - type: Sprite
     sprite: Clothing/Neck/mantles/qmmantle.rsi
   - type: Clothing
-    sprite: Clothing/Neck/mantles/qmmantle.rsi  
-
-- type: entity
-    parent: ClothingNeckBase
-    id: ClothingNeckMantleBS
-    name: blueshield officer's mantle
-    description: A nice mantle to protect your back, with a bright and completely inconspicuous, white shield emblem.
-    components:
-      - type: Sprite
-        sprite: Clothing/Neck/mantles/bsmantle.rsi
-      - type: Clothing
-        sprite: Clothing/Neck/mantles/bsmantle.rsi
+    sprite: Clothing/Neck/mantles/qmmantle.rsi
