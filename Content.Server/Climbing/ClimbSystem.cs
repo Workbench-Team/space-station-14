@@ -21,6 +21,7 @@ using Content.Shared.Popups;
 using Content.Shared.Verbs;
 using JetBrains.Annotations;
 using Robust.Server.GameObjects;
+using Robust.Shared.GameStates;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Collision.Shapes;
 using Robust.Shared.Physics.Components;
@@ -61,6 +62,7 @@ public sealed class ClimbSystem : SharedClimbSystem
         SubscribeLocalEvent<ClimbingComponent, ClimbDoAfterEvent>(OnDoAfter);
         SubscribeLocalEvent<ClimbingComponent, EndCollideEvent>(OnClimbEndCollide);
         SubscribeLocalEvent<ClimbingComponent, BuckleChangeEvent>(OnBuckleChange);
+        SubscribeLocalEvent<ClimbingComponent, ComponentGetState>(OnClimbingGetState);
 
         SubscribeLocalEvent<GlassTableComponent, ClimbedOnEvent>(OnGlassClimbed);
     }
@@ -369,6 +371,11 @@ public sealed class ClimbSystem : SharedClimbSystem
         if (!args.Buckling)
             return;
         StopClimb(uid, component);
+    }
+
+    private static void OnClimbingGetState(EntityUid uid, ClimbingComponent component, ref ComponentGetState args)
+    {
+        args.State = new ClimbingComponent.ClimbModeComponentState(component.IsClimbing, component.OwnerIsTransitioning);
     }
 
     private void OnGlassClimbed(EntityUid uid, GlassTableComponent component, ClimbedOnEvent args)

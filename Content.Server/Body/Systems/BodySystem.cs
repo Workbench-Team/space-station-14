@@ -1,8 +1,12 @@
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 using Content.Server.Body.Components;
 using Content.Server.GameTicking;
 using Content.Server.Humanoid;
 using Content.Server.Kitchen.Components;
+using Content.Server.Mind;
 using Content.Shared.Body.Components;
+using Content.Shared.Body.Organ;
 using Content.Shared.Body.Part;
 using Content.Shared.Body.Systems;
 using Content.Shared.Humanoid;
@@ -10,11 +14,13 @@ using Content.Shared.Kitchen.Components;
 using Content.Shared.Mind;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Movement.Events;
+using Content.Shared.Random.Helpers;
 using Robust.Shared.Audio;
+using Robust.Shared.Containers;
+using Robust.Shared.Map;
 using Robust.Shared.Player;
-using Robust.Shared.Random;
 using Robust.Shared.Timing;
-using System.Numerics;
+using Robust.Shared.Utility;
 
 namespace Content.Server.Body.Systems;
 
@@ -27,7 +33,6 @@ public sealed class BodySystem : SharedBodySystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly SharedMindSystem _mindSystem = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
 
     public override void Initialize()
     {
@@ -131,15 +136,22 @@ public sealed class BodySystem : SharedBodySystem
 
         _audio.Play(body.GibSound, filter, coordinates, true, audio);
 
-        foreach (var entity in gibs)
+        var containers = GetBodyContainers(bodyId, body: body).ToList();
+
+        foreach (var container in containers)
         {
-            if (deleteItems)
+            foreach (var entity in container.ContainedEntities)
             {
-                QueueDel(entity);
-            }
-            else
-            {
-                SharedTransform.SetCoordinates(entity, coordinates.Offset(_random.NextVector2(.3f)));
+                if (deleteItems)
+                {
+                    QueueDel(entity);
+                }
+                else
+                {
+                    container.Remove(entity, EntityManager, force: true);
+                    SharedTransform.SetCoordinates(entity,coordinates);
+                    entity.RandomOffset(0.25f);
+                }
             }
         }
         RaiseLocalEvent(bodyId, new BeingGibbedEvent(gibs));

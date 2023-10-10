@@ -17,7 +17,7 @@ public sealed partial class FoodComponent : Component
     [DataField]
     public SoundSpecifier UseSound = new SoundPathSpecifier("/Audio/Items/eatfood.ogg");
 
-    [DataField("trash")]
+    [DataField]
     public EntProtoId? TrashPrototype;
 
     [DataField]

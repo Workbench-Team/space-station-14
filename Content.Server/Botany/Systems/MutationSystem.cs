@@ -3,7 +3,6 @@ using Robust.Shared.Random;
 using Content.Shared.Chemistry.Reagent;
 using System.Linq;
 using Content.Shared.Atmos;
-using FastAccessors;
 
 namespace Content.Server.Botany;
 
@@ -270,7 +269,6 @@ public sealed class MutationSystem : EntitySystem
             {
                 seedChemQuantity.Min = 1;
                 seedChemQuantity.Max = 1 + amount;
-                seedChemQuantity.Inherent = false;
             }
             int potencyDivisor = (int) Math.Ceiling(100.0f / seedChemQuantity.Max);
             seedChemQuantity.PotencyDivisor = potencyDivisor;
@@ -297,7 +295,10 @@ public sealed class MutationSystem : EntitySystem
             return;
         }
 
-        seed = seed.SpeciesChange(protoSeed);
+        var oldSeed = seed.Clone();
+        seed = protoSeed.Clone();
+        seed.Potency = oldSeed.Potency;
+        seed.Yield = oldSeed.Yield;
     }
 
     private Color RandomColor(Color color, int bits, int totalbits, float mult)
@@ -329,14 +330,12 @@ public sealed class MutationSystem : EntitySystem
             {
                 val[otherChem.Key] = Random(0.5f) ? otherChem.Value : val[otherChem.Key];
             }
-            // if target plant doesn't have this chemical, has 50% chance to add it.
+            // if target plant doesn't have this chemical, has 50% chance to add it. 
             else
             {
                 if (Random(0.5f))
                 {
-                    var fixedChem = otherChem.Value;
-                    fixedChem.Inherent = false;
-                    val.Add(otherChem.Key, fixedChem);
+                    val.Add(otherChem.Key, otherChem.Value);
                 }
             }
         }

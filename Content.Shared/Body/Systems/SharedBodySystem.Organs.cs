@@ -12,7 +12,7 @@ public partial class SharedBodySystem
     private void AddOrgan(EntityUid uid, EntityUid bodyUid, EntityUid parentPartUid, OrganComponent component)
     {
         component.Body = bodyUid;
-        RaiseLocalEvent(uid, new AddedToPartEvent(parentPartUid));
+        RaiseLocalEvent(uid, new AddedToPartEvent(bodyUid));
 
         if (component.Body != null)
             RaiseLocalEvent(uid, new AddedToPartInBodyEvent(component.Body.Value, parentPartUid));
@@ -20,14 +20,12 @@ public partial class SharedBodySystem
         Dirty(uid, component);
     }
 
-    private void RemoveOrgan(EntityUid uid, EntityUid parentPartUid, OrganComponent component)
+    private void RemoveOrgan(EntityUid uid, EntityUid bodyUid, EntityUid parentPartUid, OrganComponent component)
     {
-        RaiseLocalEvent(uid, new RemovedFromPartEvent(parentPartUid));
+        RaiseLocalEvent(uid, new RemovedFromPartEvent(bodyUid));
 
         if (component.Body != null)
-        {
             RaiseLocalEvent(uid, new RemovedFromPartInBodyEvent(component.Body.Value, parentPartUid));
-        }
 
         component.Body = null;
         Dirty(uid, component);

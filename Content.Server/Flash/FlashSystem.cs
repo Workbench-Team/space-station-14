@@ -5,6 +5,7 @@ using Content.Server.Popups;
 using Content.Server.Stunnable;
 using Content.Shared.Charges.Components;
 using Content.Shared.Charges.Systems;
+using Content.Shared.Damage;
 using Content.Shared.Eye.Blinding.Components;
 using Content.Shared.Flash;
 using Content.Shared.IdentityManagement;
@@ -12,6 +13,7 @@ using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Inventory;
 using Content.Shared.Physics;
+using Content.Shared.Popups;
 using Content.Shared.Tag;
 using Content.Shared.Traits.Assorted;
 using Content.Shared.Weapons.Melee.Events;
@@ -39,11 +41,11 @@ namespace Content.Server.Flash
         public override void Initialize()
         {
             base.Initialize();
-
             SubscribeLocalEvent<FlashComponent, MeleeHitEvent>(OnFlashMeleeHit);
             // ran before toggling light for extra-bright lantern
             SubscribeLocalEvent<FlashComponent, UseInHandEvent>(OnFlashUseInHand, before: new []{ typeof(HandheldLightSystem) });
             SubscribeLocalEvent<InventoryComponent, FlashAttemptEvent>(OnInventoryFlashAttempt);
+
             SubscribeLocalEvent<FlashImmunityComponent, FlashAttemptEvent>(OnFlashImmunityFlashAttempt);
             SubscribeLocalEvent<PermanentBlindnessComponent, FlashAttemptEvent>(OnPermanentBlindnessFlashAttempt);
             SubscribeLocalEvent<TemporaryBlindnessComponent, FlashAttemptEvent>(OnTemporaryBlindnessFlashAttempt);
@@ -61,7 +63,7 @@ namespace Content.Server.Flash
             args.Handled = true;
             foreach (var e in args.HitEntities)
             {
-                Flash(e, args.User, uid, comp.FlashDuration, comp.SlowTo, melee: true);
+                Flash(e, args.User, uid, comp.FlashDuration, comp.SlowTo, bang: comp.Bang);
             }
         }
 
@@ -71,7 +73,7 @@ namespace Content.Server.Flash
                 return;
 
             args.Handled = true;
-            FlashArea(uid, args.User, comp.Range, comp.AoeFlashDuration, comp.SlowTo, true);
+            FlashArea(uid, args.User, comp.Range, comp.AoeFlashDuration, comp.SlowTo, true, bang: comp.Bang);
         }
 
         private bool UseFlash(EntityUid uid, FlashComponent comp, EntityUid user)
@@ -104,49 +106,44 @@ namespace Content.Server.Flash
             return true;
         }
 
-        public void Flash(EntityUid target,
-            EntityUid? user,
-            EntityUid? used,
-            float flashDuration,
-            float slowTo,
-            bool displayPopup = true,
-            FlashableComponent? flashable = null,
-            bool melee = false)
+        public void Flash(EntityUid target, EntityUid? user, EntityUid? used, float flashDuration, float slowTo, bool displayPopup = true, FlashableComponent? flashable = null, bool bang = false)
         {
-            if (!Resolve(target, ref flashable, false))
-                return;
+            if (!Resolve(target, ref flashable, false)) return;
 
-            var attempt = new FlashAttemptEvent(target, user, used);
-            RaiseLocalEvent(target, attempt, true);
+            var ev = new FlashAttemptEvent(target, user, used);
+            RaiseLocalEvent(target, ev, true);
 
-            if (attempt.Cancelled)
-                return;
-
-            if (melee)
-            {
-                var ev = new AfterFlashedEvent(target, user, used);
-                if (user != null)
-                    RaiseLocalEvent(user.Value, ref ev);
-                if (used != null)
-                    RaiseLocalEvent(used.Value, ref ev);
-            }
-
+            // flash system must be refactored. This looks very bad.
             flashable.LastFlash = _timing.CurTime;
-            flashable.Duration = flashDuration / 1000f; // TODO: Make this sane...
-            Dirty(target, flashable);
 
-            _stun.TrySlowdown(target, TimeSpan.FromSeconds(flashDuration/1000f), true,
-                slowTo, slowTo);
+            float flashdur = ev.AddBaseFlash ? flashDuration * flashable.DurationMultiplier : 0f;
+            float slowdur = flashdur;
 
-            if (displayPopup && user != null && target != user && Exists(user.Value))
+            if (bang && ev.AddBangFlash)
             {
-                _popup.PopupEntity(Loc.GetString("flash-component-user-blinds-you",
-                    ("user", Identity.Entity(user.Value, EntityManager))), target, target);
+                var debuffDur = flashDuration * flashable.BangAddMultiplier;
+                slowdur += debuffDur;
+                if (ev.AddBaseFlash || flashable.BangFlash) flashdur += debuffDur;
             }
 
+            if (flashdur > 0f)
+            {
+                flashable.Duration = flashdur / 1000f; // TODO: Make this sane...
+                Dirty(flashable);
+            }
+
+            if (slowdur > 0f)
+                _stun.TrySlowdown(target, TimeSpan.FromSeconds(slowdur/1000f), true,
+                    slowTo, slowTo);
+
+            if (displayPopup && user != null && target != user && EntityManager.EntityExists(user.Value))
+            {
+                user.Value.PopupMessage(target, Loc.GetString("flash-component-user-blinds-you",
+                    ("user", Identity.Entity(user.Value, EntityManager))));
+            }
         }
 
-        public void FlashArea(EntityUid source, EntityUid? user, float range, float duration, float slowTo = 0.8f, bool displayPopup = false, SoundSpecifier? sound = null)
+        public void FlashArea(EntityUid source, EntityUid? user, float range, float duration, float slowTo = 0.8f, bool displayPopup = false, SoundSpecifier? sound = null, bool bang = false)
         {
             var transform = EntityManager.GetComponent<TransformComponent>(source);
             var mapPosition = transform.MapPosition;
@@ -168,7 +165,7 @@ namespace Content.Server.Flash
                     continue;
 
                 // They shouldn't have flash removed in between right?
-                Flash(entity, user, source, duration, slowTo, displayPopup, flashableQuery.GetComponent(entity));
+                Flash(entity, user, source, duration, slowTo, displayPopup, flashableQuery.GetComponent(entity), bang: bang);
             }
             if (sound != null)
             {
@@ -180,7 +177,7 @@ namespace Content.Server.Flash
         {
             foreach (var slot in new[] { "head", "eyes", "mask" })
             {
-                if (args.Cancelled)
+                if (!args.AddBaseFlash)
                     break;
                 if (_inventory.TryGetSlotEntity(uid, slot, out var item, component))
                     RaiseLocalEvent(item.Value, args, true);
@@ -189,8 +186,11 @@ namespace Content.Server.Flash
 
         private void OnFlashImmunityFlashAttempt(EntityUid uid, FlashImmunityComponent component, FlashAttemptEvent args)
         {
-            if(component.Enabled)
-                args.Cancel();
+            if(component.Enabled) {
+                args.AddBaseFlash = false;
+                if (component.ProtectFromBangs) args.AddBangFlash = false;
+            }
+
         }
 
         private void OnPermanentBlindnessFlashAttempt(EntityUid uid, PermanentBlindnessComponent component, FlashAttemptEvent args)
@@ -209,6 +209,8 @@ namespace Content.Server.Flash
         public readonly EntityUid Target;
         public readonly EntityUid? User;
         public readonly EntityUid? Used;
+        public bool AddBangFlash = true;
+        public bool AddBaseFlash = true;
 
         public FlashAttemptEvent(EntityUid target, EntityUid? user, EntityUid? used)
         {
@@ -217,24 +219,4 @@ namespace Content.Server.Flash
             Used = used;
         }
     }
-    /// <summary>
-    /// Called after a flash is used via melee on another person to check for rev conversion.
-    /// Raised on the user of the flash, the target hit by the flash, and the flash used.
-    /// </summary>
-    [ByRefEvent]
-    public readonly struct AfterFlashedEvent
-    {
-        public readonly EntityUid Target;
-        public readonly EntityUid? User;
-        public readonly EntityUid? Used;
-
-        public AfterFlashedEvent(EntityUid target, EntityUid? user, EntityUid? used)
-        {
-            Target = target;
-            User = user;
-            Used = used;
-        }
-    }
-
-
 }

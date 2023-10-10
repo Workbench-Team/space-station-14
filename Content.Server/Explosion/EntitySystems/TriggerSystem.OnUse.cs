@@ -48,32 +48,6 @@ public sealed partial class TriggerSystem
         if (!args.CanInteract || !args.CanAccess)
             return;
 
-        if (component.UseVerbInstead)
-        {
-            args.Verbs.Add(new AlternativeVerb()
-            {
-                Text = Loc.GetString("verb-start-detonation"),
-                Act = () => HandleTimerTrigger(
-                    uid,
-                    args.User,
-                    component.Delay,
-                    component.BeepInterval,
-                    component.InitialBeepDelay,
-                    component.BeepSound
-                ),
-                Priority = 2
-            });
-        }
-
-        if (component.AllowToggleStartOnStick)
-        {
-            args.Verbs.Add(new AlternativeVerb()
-            {
-                Text = Loc.GetString("verb-toggle-start-on-stick"),
-                Act = () => ToggleStartOnStick(uid, args.User, component)
-            });
-        }
-
         if (component.DelayOptions == null || component.DelayOptions.Count == 1)
             return;
 
@@ -110,6 +84,15 @@ public sealed partial class TriggerSystem
                     component.Delay = option;
                     _popupSystem.PopupEntity(Loc.GetString("popup-trigger-timer-set", ("time", option)), args.User, args.User);
                 },
+            });
+        }
+
+        if (component.AllowToggleStartOnStick)
+        {
+            args.Verbs.Add(new AlternativeVerb()
+            {
+                Text = Loc.GetString("verb-toggle-start-on-stick"),
+                Act = () => ToggleStartOnStick(uid, args.User, component)
             });
         }
     }
@@ -157,7 +140,7 @@ public sealed partial class TriggerSystem
 
     private void OnTimerUse(EntityUid uid, OnUseTimerTriggerComponent component, UseInHandEvent args)
     {
-        if (args.Handled || HasComp<AutomatedTimerComponent>(uid) || component.UseVerbInstead)
+        if (args.Handled || HasComp<AutomatedTimerComponent>(uid))
             return;
 
         HandleTimerTrigger(

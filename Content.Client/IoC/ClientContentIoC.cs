@@ -11,7 +11,6 @@ using Content.Client.Parallax.Managers;
 using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Preferences;
 using Content.Client.Screenshot;
-using Content.Client.Fullscreen;
 using Content.Client.Stylesheets;
 using Content.Client.Viewport;
 using Content.Client.Voting;
@@ -21,7 +20,6 @@ using Content.Shared.Module;
 using Content.Client.Guidebook;
 using Content.Client.Replay;
 using Content.Shared.Administration.Managers;
-
 
 namespace Content.Client.IoC
 {
@@ -34,7 +32,6 @@ namespace Content.Client.IoC
             IoCManager.Register<IClientPreferencesManager, ClientPreferencesManager>();
             IoCManager.Register<IStylesheetManager, StylesheetManager>();
             IoCManager.Register<IScreenshotHook, ScreenshotHook>();
-            IoCManager.Register<FullscreenHook, FullscreenHook>();
             IoCManager.Register<IClickMapManager, ClickMapManager>();
             IoCManager.Register<IClientAdminManager, ClientAdminManager>();
             IoCManager.Register<ISharedAdminManager, ClientAdminManager>();

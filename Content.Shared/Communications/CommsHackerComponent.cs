@@ -1,6 +1,7 @@
-using Content.Shared.Random;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared.Communications;
 
@@ -14,14 +15,14 @@ public sealed partial class CommsHackerComponent : Component
     /// <summary>
     /// Time taken to hack the console
     /// </summary>
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    [DataField("delay")]
     public TimeSpan Delay = TimeSpan.FromSeconds(20);
 
     /// <summary>
-    /// Weighted random for the possible threats to choose from.
+    /// Possible threats to choose from.
     /// </summary>
-    [DataField(required: true)]
-    public ProtoId<WeightedRandomPrototype> Threats = string.Empty;
+    [DataField("threats", required: true)]
+    public List<Threat> Threats = new();
 }
 
 /// <summary>
@@ -29,21 +30,18 @@ public sealed partial class CommsHackerComponent : Component
 /// Generally some kind of mid-round minor antag, though you could make it call in scrubber backflow if you wanted to.
 /// You wouldn't do that, right?
 /// </summary>
-[Prototype("ninjaHackingThreat")]
-public sealed class NinjaHackingThreatPrototype : IPrototype
+[DataDefinition]
+public sealed partial class Threat
 {
-    [IdDataField]
-    public string ID { get; private set; } = default!;
-
     /// <summary>
     /// Locale id for the announcement to be made from CentCom.
     /// </summary>
-    [DataField(required: true)]
-    public LocId Announcement;
+    [DataField("announcement")]
+    public string Announcement = default!;
 
     /// <summary>
     /// The game rule for the threat to be added, it should be able to work when added mid-round otherwise this will do nothing.
     /// </summary>
-    [DataField(required: true)]
-    public EntProtoId Rule;
+    [DataField("rule", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    public string Rule = default!;
 }

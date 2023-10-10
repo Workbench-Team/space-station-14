@@ -21,9 +21,6 @@
     startOnStick: true
     canToggleStartOnStick: true
   - type: TriggerOnSignal
-  - type: Tag
-    tags:
-    - C4
   - type: DeviceLinkSink
     ports:
       - Trigger

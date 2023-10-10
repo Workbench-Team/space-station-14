@@ -27,7 +27,6 @@
   - type: ItemCooldown
   - type: Spray
     transferAmount: 10
-    pushbackAmount: 60
     spraySound:
       path: /Audio/Effects/extinguish.ogg
     sprayedPrototype: ExtinguisherSpray
@@ -42,10 +41,6 @@
         Blunt: 10
     soundHit:
       path: /Audio/Weapons/smash.ogg
-  - type: Tool
-    qualities:
-    - Rolling
-    speed: 0.5 # its very big, akward to use
   - type: Appearance
   - type: GenericVisualizer
     visuals:

@@ -204,7 +204,6 @@
       - MiningDrill
       - AnomalyScanner
       - AnomalyLocator
-      - AnomalyLocatorWide
       - RCD
       - RCDAmmo
       - HandheldCrewMonitor
@@ -330,7 +329,6 @@
       - ReagentGrinderMachineCircuitboard
       - HotplateMachineCircuitboard
       - MicrowaveMachineCircuitboard
-      - ElectricGrillMachineCircuitboard
       - FatExtractorMachineCircuitboard
       - SheetifierMachineCircuitboard
       - UniformPrinterMachineCircuitboard
@@ -468,7 +466,6 @@
     - BorgModuleDiagnosis
     - BorgModuleTreatment
     - BorgModuleDefibrillator
-    - BorgModuleAdvancedTreatment
     - ModsuitHelmet
     - ModsuitGauntlets
     - ModsuitChestplate
@@ -580,7 +577,6 @@
       - MagazineLightRifle
       - MagazineBoxPistol
       - MagazineBoxPistolUranium
-      - MagazineShotgunSaiga
       - MagazineUniversalShortHv
       - MagazineUniversal
       - SpeedLoaderUniversal
@@ -607,47 +603,25 @@
       - CartridgePistolIncendiary
       - CartridgeMagnumIncendiary
       - CartridgeLightRifleIncendiary
-      - CartridgeMagnumIncendiary
-      - CartridgePistolIncendiary
       - CartridgeRifleIncendiary
-      - CartridgeLightRifleRubber
-      - CartridgeMagnumRubber
-      - CartridgePistolRubber
-      - CartridgeRifleRubber
-      - ExplosivePayload
-      - FlashPayload
-      - HoloprojectorSecurity
-      - MagazineBoxLightRifleIncendiary
-      - MagazineBoxMagnumIncendiary
       - MagazineBoxPistolIncendiary
+      - MagazineBoxMagnumIncendiary
+      - MagazineBoxLightRifleIncendiary
       - MagazineBoxRifleIncendiary
-      - MagazineBoxLightRiflePractice
-      - MagazineBoxMagnumPractice
-      - MagazineBoxPistolPractice
-      - MagazineBoxRiflePractice
-      - MagazineBoxLightRifleRubber
-      - MagazineBoxMagnumRubber
-      - MagazineBoxPistolRubber
-      - MagazineBoxRifleRubber
-      - ShellShotgunBeanbag
-      - ShellShotgunIncendiary
-      - ShellShotgunPractice
       - Signaller
       - SignalTrigger
-      - TelescopicShield
+      - VoiceTrigger
       - TimerTrigger
       - Truncheon
-      - VoiceTrigger
-      - WeaponAdvancedLaser
-      - WeaponDisablerPractice
-      - WeaponLaserCannon
+      - TelescopicShield
+      - HoloprojectorSecurity
+      - FlashPayload
+      - ExplosivePayload
       - WeaponLaserCarbine
-      - WeaponLaserCarbinePractice
-      - WeaponTaser
+      - WeaponAdvancedLaser
+      - WeaponLaserCannon
       - WeaponXrayCannon
-      - BowCompound
-      - ArrowCompound
-      - ClothingBeltQuiverComposit
+      - WeaponTaser
   - type: MaterialStorage
     whitelist:
       tags:
@@ -828,7 +802,6 @@
       - Hemostat
       - BluespaceBeaker
       - SyringeBluespace
-      - Jug
   - type: Machine
     board: MedicalTechFabCircuitboard
 
@@ -929,7 +902,6 @@
       - ClothingNeckMantleHOP
       - ClothingNeckMantleHOS
       - ClothingNeckMantleRD
-      - ClothingNeckMantleQM
       - ClothingOuterWinterMusician
       - ClothingOuterWinterClown
       - ClothingOuterWinterMime

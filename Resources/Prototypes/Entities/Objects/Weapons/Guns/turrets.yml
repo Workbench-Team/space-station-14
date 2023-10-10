@@ -66,7 +66,6 @@
       interactSuccessSound:
         path: /Audio/Effects/double_beep.ogg
     - type: CombatMode
-      toggleMouseRotator: false
     - type: Damageable
       damageContainer: Inorganic
     - type: Destructible
@@ -111,9 +110,7 @@
         SoundTargetInLOS: !type:SoundPathSpecifier
           path: /Audio/Effects/double_beep.ogg
     - type: MouseRotator
-      angleTolerance: 5
       rotationSpeed: 180
-      simple4DirMode: false
     - type: NoRotateOnInteract
     - type: NoRotateOnMove
     - type: Input

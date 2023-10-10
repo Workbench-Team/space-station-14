@@ -12,7 +12,6 @@ using Content.Shared.Damage;
 using Content.Shared.Damage.Prototypes;
 using Content.Shared.Database;
 using Content.Shared.Electrocution;
-using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
 using Content.Shared.Inventory;
 using Content.Shared.Jittering;
@@ -215,7 +214,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
             return;
 
         var siemens = TryComp<InsulatedComponent>(args.Used, out var insulation)
-            ? insulation.Coefficient
+            ? insulation.SiemensCoefficient
             : 1;
 
         TryDoElectrifiedAct(uid, args.User, siemens, electrified);
@@ -437,18 +436,17 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
 
         var filter = Filter.PvsExcept(uid, entityManager: EntityManager);
 
-        var identifiedUid = Identity.Entity(uid, ent: EntityManager);
         // TODO: Allow being able to pass EntityUid to Loc...
         if (sourceUid != null)
         {
             _popup.PopupEntity(Loc.GetString("electrocuted-component-mob-shocked-by-source-popup-others",
-                ("mob", identifiedUid), ("source", (sourceUid.Value))), uid, filter, true);
+                ("mob", uid), ("source", (sourceUid.Value))), uid, filter, true);
             PlayElectrocutionSound(uid, sourceUid.Value);
         }
         else
         {
             _popup.PopupEntity(Loc.GetString("electrocuted-component-mob-shocked-popup-others",
-                ("mob", identifiedUid)), uid, filter, true);
+                ("mob", uid)), uid, filter, true);
         }
 
         return true;

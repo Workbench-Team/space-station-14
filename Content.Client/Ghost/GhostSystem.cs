@@ -15,6 +15,7 @@ namespace Content.Client.Ghost
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly SharedActionsSystem _actions = default!;
         [Dependency] private readonly ILightManager _lightManager = default!;
+        [Dependency] private readonly SharedPopupSystem _popup = default!;
         [Dependency] private readonly ContentEyeSystem _contentEye = default!;
 
         public int AvailableGhostRoleCount { get; private set; }
@@ -82,7 +83,7 @@ namespace Content.Client.Ghost
             if (args.Handled)
                 return;
 
-            Popup.PopupEntity(Loc.GetString("ghost-gui-toggle-lighting-manager-popup"), args.Performer);
+            _popup.PopupEntity(Loc.GetString("ghost-gui-toggle-lighting-manager-popup"), args.Performer);
             _lightManager.Enabled = !_lightManager.Enabled;
             args.Handled = true;
         }
@@ -92,7 +93,7 @@ namespace Content.Client.Ghost
             if (args.Handled)
                 return;
 
-            Popup.PopupEntity(Loc.GetString("ghost-gui-toggle-fov-popup"), args.Performer);
+            _popup.PopupEntity(Loc.GetString("ghost-gui-toggle-fov-popup"), args.Performer);
             _contentEye.RequestToggleFov(uid);
             args.Handled = true;
         }
@@ -102,7 +103,7 @@ namespace Content.Client.Ghost
             if (args.Handled)
                 return;
 
-            Popup.PopupEntity(Loc.GetString("ghost-gui-toggle-ghost-visibility-popup"), args.Performer);
+            _popup.PopupEntity(Loc.GetString("ghost-gui-toggle-ghost-visibility-popup"), args.Performer);
             ToggleGhostVisibility();
             args.Handled = true;
         }
@@ -112,7 +113,6 @@ namespace Content.Client.Ghost
             _actions.RemoveAction(uid, component.ToggleLightingActionEntity);
             _actions.RemoveAction(uid, component.ToggleFoVActionEntity);
             _actions.RemoveAction(uid, component.ToggleGhostsActionEntity);
-            _actions.RemoveAction(uid, component.ToggleGhostHearingActionEntity);
 
             if (uid != _playerManager.LocalPlayer?.ControlledEntity)
                 return;

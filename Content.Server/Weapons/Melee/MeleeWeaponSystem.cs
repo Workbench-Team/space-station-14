@@ -8,13 +8,11 @@ using Content.Server.Chemistry.EntitySystems;
 using Content.Server.CombatMode.Disarm;
 using Content.Server.Contests;
 using Content.Server.Movement.Systems;
-using Content.Shared.Actions.Events;
 using Content.Shared.Administration.Components;
+using Content.Shared.Actions.Events;
 using Content.Shared.CombatMode;
 using Content.Shared.Damage.Events;
-using Content.Shared.Damage.Systems;
 using Content.Shared.Database;
-using Content.Shared.Effects;
 using Content.Shared.FixedPoint;
 using Content.Shared.Hands.Components;
 using Content.Shared.IdentityManagement;
@@ -31,6 +29,8 @@ using Robust.Shared.Map;
 using Robust.Shared.Player;
 using Robust.Shared.Players;
 using Robust.Shared.Random;
+using Content.Shared.Effects;
+using Content.Shared.Damage.Systems;
 
 namespace Content.Server.Weapons.Melee;
 
@@ -57,7 +57,7 @@ public sealed class MeleeWeaponSystem : SharedMeleeWeaponSystem
 
     private void OnMeleeExamineDamage(EntityUid uid, MeleeWeaponComponent component, ref DamageExamineEvent args)
     {
-        if (component.Hidden)
+        if (component.HideFromExamine)
             return;
 
         var damageSpec = GetDamage(uid, args.User, component);

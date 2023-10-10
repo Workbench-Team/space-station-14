@@ -5,6 +5,7 @@ using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
 using Content.Shared.Mobs.Components;
 using Robust.Shared.GameStates;
+using Robust.Shared.Utility;
 
 namespace Content.Shared.Mobs.Systems;
 
@@ -50,38 +51,6 @@ public sealed class MobThresholdSystem : EntitySystem
     }
 
     #region Public API
-
-    /// <summary>
-    /// Gets the next available state for a mob.
-    /// </summary>
-    /// <param name="target">Target entity</param>
-    /// <param name="mobState">Supplied MobState</param>
-    /// <param name="nextState">The following MobState. Can be null if there isn't one.</param>
-    /// <param name="thresholdsComponent">Threshold Component Owned by the target</param>
-    /// <returns>True if the next mob state exists</returns>
-    public bool TryGetNextState(
-        EntityUid target,
-        MobState mobState,
-        [NotNullWhen(true)] out MobState? nextState,
-        MobThresholdsComponent? thresholdsComponent = null)
-    {
-        nextState = null;
-        if (!Resolve(target, ref thresholdsComponent))
-            return false;
-
-        MobState? min = null;
-        foreach (var state in thresholdsComponent.Thresholds.Values)
-        {
-            if (state <= mobState)
-                continue;
-
-            if (min == null || state < min)
-                min = state;
-        }
-
-        nextState = min;
-        return nextState != null;
-    }
 
     /// <summary>
     /// Get the Damage Threshold for the appropriate state if it exists
@@ -292,7 +261,7 @@ public sealed class MobThresholdSystem : EntitySystem
             threshold.Thresholds.Remove(damageThreshold);
         }
         threshold.Thresholds[damage] = mobState;
-        Dirty(target, threshold);
+        Dirty(threshold);
         VerifyThresholds(target, threshold);
     }
 
@@ -322,7 +291,7 @@ public sealed class MobThresholdSystem : EntitySystem
         if (!Resolve(uid, ref component, false))
             return;
         component.AllowRevives = val;
-        Dirty(uid, component);
+        Dirty(component);
         VerifyThresholds(uid, component);
     }
 
@@ -375,37 +344,42 @@ public sealed class MobThresholdSystem : EntitySystem
         if (!threshold.TriggersAlerts)
             return;
 
-        if (!threshold.StateAlertDict.TryGetValue(currentMobState, out var currentAlert))
-        {
-            Log.Error($"No alert alert for mob state {currentMobState} for entity {ToPrettyString(target)}");
-            return;
-        }
+        var dict = threshold.StateAlertDict;
+        var healthAlert = AlertType.HumanHealth;
+        var critAlert = AlertType.HumanCrit;
+        var deadAlert = AlertType.HumanDead;
 
-        if (!_alerts.TryGet(currentAlert, out var alertPrototype))
-        {
-            Log.Error($"Invalid alert type {currentAlert}");
-            return;
-        }
+        dict.TryGetValue(MobState.Alive, out healthAlert);
+        dict.TryGetValue(MobState.Critical, out critAlert);
+        dict.TryGetValue(MobState.Dead, out deadAlert);
 
-        if (alertPrototype.SupportsSeverity)
+        switch (currentMobState)
         {
-            var severity = _alerts.GetMinSeverity(currentAlert);
-            if (TryGetNextState(target, currentMobState, out var nextState, threshold) &&
-                TryGetPercentageForState(target, nextState.Value, damageable.TotalDamage, out var percentage))
+            case MobState.Alive:
             {
-                percentage = FixedPoint2.Clamp(percentage.Value, 0, 1);
-
-                severity = (short) MathF.Round(
-                    MathHelper.Lerp(
-                        _alerts.GetMinSeverity(currentAlert),
-                        _alerts.GetMaxSeverity(currentAlert),
-                        percentage.Value.Float()));
+                var severity = _alerts.GetMinSeverity(healthAlert);
+                if (TryGetIncapPercentage(target, damageable.TotalDamage, out var percentage))
+                {
+                    severity = (short) MathF.Floor(percentage.Value.Float() *
+                                                   _alerts.GetSeverityRange(healthAlert));
+                    severity += _alerts.GetMinSeverity(healthAlert);
+                }
+                _alerts.ShowAlert(target, healthAlert, severity);
+                break;
             }
-            _alerts.ShowAlert(target, currentAlert, severity);
-        }
-        else
-        {
-            _alerts.ShowAlert(target, currentAlert);
+            case MobState.Critical:
+            {
+                _alerts.ShowAlert(target, critAlert);
+                break;
+            }
+            case MobState.Dead:
+            {
+                _alerts.ShowAlert(target, deadAlert);
+                break;
+            }
+            case MobState.Invalid:
+            default:
+                throw new ArgumentOutOfRangeException(nameof(currentMobState), currentMobState, null);
         }
     }
 

@@ -94,9 +94,6 @@
         type: Local
         messages: [ "slime-hurt-by-water-popup" ]
         probability: 0.25
-  - type: Body
-    prototype: Slimes
-    requiredLegs: 1
   - type: CombatMode
   - type: MeleeWeapon
     hidden: true

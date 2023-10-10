@@ -152,10 +152,6 @@ public sealed partial class MeleeWeaponSystem : SharedMeleeWeaponSystem
                 target = screen.GetClickedEntity(mousePos);
             }
 
-            // Don't light-attack if interaction will be handling this instead
-            if (Interaction.CombatModeCanHandInteract(entity, target))
-                return;
-
             RaisePredictiveEvent(new LightAttackEvent(GetNetEntity(target), GetNetEntity(weaponUid), GetNetCoordinates(coordinates)));
         }
     }

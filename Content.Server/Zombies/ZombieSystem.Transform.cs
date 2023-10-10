@@ -12,6 +12,7 @@ using Content.Server.NPC;
 using Content.Server.NPC.Components;
 using Content.Server.NPC.HTN;
 using Content.Server.NPC.Systems;
+using Content.Server.Nutrition.Components;
 using Content.Server.Roles;
 using Content.Server.Speech.Components;
 using Content.Server.Temperature.Components;
@@ -31,7 +32,6 @@ using Content.Shared.Tools.Components;
 using Content.Shared.Weapons.Melee;
 using Content.Shared.Zombies;
 using Robust.Shared.Audio;
-using Content.Shared.Prying.Components;
 
 namespace Content.Server.Zombies
 {
@@ -112,7 +112,7 @@ namespace Content.Server.Zombies
             //This is the actual damage of the zombie. We assign the visual appearance
             //and range here because of stuff we'll find out later
             var melee = EnsureComp<MeleeWeaponComponent>(target);
-            melee.Animation = zombiecomp.AttackAnimation;
+            melee.ClickAnimation = zombiecomp.AttackAnimation;
             melee.WideAnimation = zombiecomp.AttackAnimation;
             melee.Range = 1.2f;
 
@@ -162,12 +162,11 @@ namespace Content.Server.Zombies
                 melee.Damage = dspec;
 
                 // humanoid zombies get to pry open doors and shit
-                var pryComp = EnsureComp<PryingComponent>(target);
-                pryComp.SpeedModifier = 0.75f;
-                pryComp.PryPowered = true;
-                pryComp.Force = true;
-
-                Dirty(target, pryComp);
+                var tool = EnsureComp<ToolComponent>(target);
+                tool.SpeedModifier = 0.75f;
+                tool.Qualities = new ("Prying");
+                tool.UseSound = new SoundPathSpecifier("/Audio/Items/crowbar.ogg");
+                Dirty(tool);
             }
 
             Dirty(melee);
@@ -233,7 +232,7 @@ namespace Content.Server.Zombies
             else
             {
                 var htn = EnsureComp<HTNComponent>(target);
-                htn.RootTask = new HTNCompoundTask() { Task = "SimpleHostileCompound" };
+                htn.RootTask = new HTNCompoundTask() {Task = "SimpleHostileCompound"};
                 htn.Blackboard.SetValue(NPCBlackboard.Owner, target);
                 _npc.WakeNPC(target, htn);
             }

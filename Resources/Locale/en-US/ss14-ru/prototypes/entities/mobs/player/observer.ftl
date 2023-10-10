@@ -8,5 +8,3 @@ ent-ActionToggleFov = Toggle FoV
     .desc = Toggles field-of-view in order to see what players see.
 ent-ActionToggleGhosts = Toggle Ghosts
     .desc = Toggle the visibility of other ghosts.
-ent-ActionToggleGhostHearing = Toggle Ghost Hearing
-    .desc = Toggle between hearing all messages and hearing only radio & nearby messages.

@@ -12,7 +12,6 @@
     tags:
     - HamsterWearable
     - WhitelistChameleon
-    - ClothMade
 
 - type: entity
   parent: ClothingNeckBase
@@ -37,6 +36,5 @@
     sprite: Clothing/Neck/Ties/scitie.rsi
   - type: Tag
     tags:
-    - ClothMade
     - HamsterWearable
     - WhitelistChameleon
