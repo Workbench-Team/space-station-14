@@ -155,14 +155,14 @@ def copy_dir_into_zip(directory, basepath, zipf):
             zippath = p(basepath, relpath, filename)
             filepath = p(root, filename)
 
-            message = "{dim}{diskroot}{sep}{zipfile}{dim} -> {ziproot}{sep}{zipfile}".format(
-                sep=os.sep + Style.NORMAL,
-                dim=Style.DIM,
-                diskroot=directory,
-                ziproot=zipf.filename,
-                zipfile=os.path.normpath(zippath))
+#            message = "{dim}{diskroot}{sep}{zipfile}{dim} -> {ziproot}{sep}{zipfile}".format(
+#                sep=os.sep + Style.NORMAL,
+#                dim=Style.DIM,
+#                diskroot=directory,
+#                ziproot=zipf.filename,
+#                zipfile=os.path.normpath(zippath))
 
-            print(Fore.CYAN + message + Style.RESET_ALL)
+#            print(Fore.CYAN + message + Style.RESET_ALL)
             zipf.write(filepath, zippath)
 
 

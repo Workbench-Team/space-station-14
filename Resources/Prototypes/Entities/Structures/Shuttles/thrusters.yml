@@ -65,6 +65,16 @@
       offset: 0, 1
 
 - type: entity
+  id: ThrusterUnanchored
+  parent: Thruster
+  suffix: Unanchored
+  components:
+    - type: Transform
+      anchored: false
+    - type: Physics
+      bodyType: Dynamic
+
+- type: entity
   id: DebugThruster
   parent: BaseThruster
   suffix: DEBUG
@@ -132,6 +142,16 @@
     scaling: Exponential
   - type: StaticPrice
     price: 2000
+
+- type: entity
+  id: GyroscopeUnanchored
+  parent: Gyroscope
+  suffix: Unanchored
+  components:
+    - type: Transform
+      anchored: false
+    - type: Physics
+      bodyType: Dynamic
 
 - type: entity
   id: DebugGyroscope

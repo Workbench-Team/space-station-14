@@ -18,6 +18,9 @@ ent-WaterCooler = { ent-WaterTankFull }
 ent-WaterTankHighCapacity = { ent-StorageTank }
     .suffix = Full
     .desc = { ent-StorageTank.desc }
+ent-GenericTank = { ent-StorageTank }
+    .suffix = Empty
+    .desc = { ent-StorageTank.desc }
 ent-KvassTank = { ent-StorageTank }
     .suffix = Empty
     .desc = { ent-StorageTank.desc }
@@ -30,4 +33,3 @@ ent-BeerKeg = { ent-StorageTank }
 ent-BeerKegFull = { ent-BeerKeg }
     .suffix = Full
     .desc = { ent-BeerKeg.desc }
-

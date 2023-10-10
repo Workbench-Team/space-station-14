@@ -48,6 +48,7 @@ namespace Content.IntegrationTests.Tests
             "TestTeg",
             "Fland",
             "MetaStation",
+            "Driller",
             "Packed",
             "Aspid",
             "Cluster",

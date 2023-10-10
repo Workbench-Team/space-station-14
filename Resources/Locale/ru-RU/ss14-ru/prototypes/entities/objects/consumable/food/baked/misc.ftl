@@ -55,3 +55,5 @@ ent-FoodBakedCannabisBrownieBatch = особые брауни
     .desc = Несколько "особых" брауни.
 ent-FoodBakedCannabisBrownie = особый брауни
     .desc = "Особый" брауни.
+ent-FoodOnionRings = луковые кольца
+    .desc = Вы можете съесть их или сделать предложение своим близким.

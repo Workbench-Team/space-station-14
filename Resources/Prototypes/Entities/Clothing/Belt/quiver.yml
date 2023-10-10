@@ -20,3 +20,26 @@
   - type: StorageContainerVisuals
     maxFillLevels: 3
     fillBaseName: fill-
+
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltQuiverComposit
+  name: quiver
+  description: Can hold up to 40 arrows, and fits snug around your waist.
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/quiver.rsi
+    layers:
+    - state: icon
+    - map: [ "enum.StorageContainerVisualLayers.Fill" ]
+      visible: false
+  - type: Clothing
+  - type: Storage
+    capacity: 200
+    whitelist:
+      tags:
+      - ArrowBaseCompound
+  - type: Appearance
+  - type: StorageContainerVisuals
+    maxFillLevels: 3
+    fillBaseName: fill-

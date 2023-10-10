@@ -77,10 +77,8 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/command.rsi
-  - type: WiresPanel
-    securityLevel: Level2
-  - type: Construction
-    node: airlockMedSecurity
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
 
 - type: entity
   parent: Airlock
@@ -105,10 +103,8 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/syndicate.rsi
-  - type: WiresPanel
-    securityLevel: Level2
-  - type: Construction
-    node: airlockMedSecurity
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
 
 - type: entity
   parent: Airlock
@@ -117,10 +113,8 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/syndicatecommand.rsi
-  - type: WiresPanel
-    securityLevel: Level5
-  - type: Construction
-    node: airlockMaxSecurity
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
 
 # Glass
 
@@ -163,7 +157,10 @@
   - type: RadiationBlocker
     resistance: 2
   - type: AccessReaderBoard
-
+  - type: Tag
+    tags:
+      - GlassAirlock
+      # This tag is used to nagivate the Airlock construction graph. It's needed because the construction graph is shared between Airlock, AirlockGlass, and HighSecDoor
 - type: entity
   parent: AirlockGlass
   id: AirlockEngineeringGlass
@@ -253,10 +250,8 @@
     sprite: Structures/Doors/Airlocks/Glass/command.rsi
   - type: PaintableAirlock
     group: Glass
-  - type: WiresPanel
-    securityLevel: Level2
-  - type: Construction
-    node: glassAirlockMedSecurity
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
 
 - type: entity
   parent: AirlockGlass
@@ -277,10 +272,6 @@
     sprite: Structures/Doors/Airlocks/Glass/syndicate.rsi
   - type: PaintableAirlock
     group: Glass
-  - type: WiresPanel
-    securityLevel: Level2
-  - type: Construction
-    node: glassAirlockMedSecurity
 
 - type: entity
   parent: Airlock
@@ -290,8 +281,5 @@
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Glass/syndicatecommand.rsi
   - type: PaintableAirlock
-  - type: WiresPanel
-    securityLevel: Level5
-    group: Glass
-  - type: Construction
-    node: glassAirlockMaxSecurity
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity

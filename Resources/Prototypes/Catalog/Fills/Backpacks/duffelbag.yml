@@ -84,6 +84,32 @@
         amount: 2
 
 - type: entity
+  parent: WeaponcaseSyndie
+  id: ClothingBackpackDuffelSyndicateFilledBow
+  name: Bow Bundle
+  description: "Hidden threat: The classic KR51 automatic rifle, bundled with three magazines."
+  components:
+  - type: Item
+    size: 210
+  - type: Storage
+    capacity: 210
+  - type: StorageFill
+    contents:
+      - id: BowCompoundRed
+      - id: ClothingBeltQuiverCompositFilled
+
+- type: entity
+  parent: ClothingBeltQuiverComposit
+  id: ClothingBeltQuiverCompositFilled
+  name: Quiver Composit
+  description: "Hidden threat: The classic KR51 automatic rifle, bundled with three magazines."
+  components:
+  - type: StorageFill
+    contents:
+      - id: ArrowCompound
+        amount: 40
+
+- type: entity
   parent: WeaponcaseBlueShield
   id: WeaponCaseAsh9
   name: case with Ash9

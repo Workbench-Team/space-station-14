@@ -4,6 +4,7 @@ ent-BriefcaseBrown = коричневый чемодан
     .desc = Удобный чемоданчик.
 ent-BriefcaseSyndieBase = { ent-BaseStorageItem }
     .desc = { ent-BriefcaseBase.desc }
+    .suffix = Синдикат, Пустой
 ent-BriefcaseRD = научный кейс
     .desc = Удобен для научного оборудывания
 ent-WeaponcaseBlueShield = оружейный кейс
