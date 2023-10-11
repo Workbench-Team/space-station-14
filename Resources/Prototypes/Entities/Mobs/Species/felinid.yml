@@ -15,7 +15,7 @@
   - type: Thirst
   - type: Perishable
   - type: Climbing
-    tableClimbMultiplier: 0.9
+    tableClimbMultiplier: 0.7
   - type: Flashable   # Felinids get longer flashes from flashbangs because of their sensetive ears
     durationMultiplier: 1
     bangAddMultiplier: 0.65

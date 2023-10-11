@@ -14,8 +14,12 @@
     litDisarmMalus: 0.6
     activateSound: !type:SoundPathSpecifier
       path: /Audio/Weapons/chainsaw_start.ogg
+      params:
+        volume: +4
     deActivateSound: !type:SoundPathSpecifier
       path: /Audio/Weapons/chainsaw_stop.ogg
+      params:
+        volume: +4
   - type: Sprite
     sprite:  Objects/Weapons/Melee/chainsaw.rsi
     layers:

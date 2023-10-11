@@ -21,3 +21,6 @@ ent-AnomalyIce = { ent-BaseAnomaly }
 ent-AnomalyRock = { ent-BaseAnomaly }
     .suffix = Rock
     .desc = { ent-BaseAnomaly.desc }
+ent-AnomalyLiquid = { ent-BaseAnomaly }
+    .suffix = Liquid
+    .desc = { ent-BaseAnomaly.desc }

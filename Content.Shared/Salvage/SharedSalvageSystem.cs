@@ -95,7 +95,8 @@ public abstract class SharedSalvageSystem : EntitySystem
         // easy to be a 1 for difficulty.
         rating -= 1f;
         var rand = new System.Random(seed);
-        var faction = GetMod<SalvageFactionPrototype>(rand, ref rating);
+        var factionProtos = _proto.EnumeratePrototypes<SalvageFactionPrototype>().ToList();
+        var faction = factionProtos[rand.Next(factionProtos.Count)];
         var biome = GetMod<SalvageBiomeMod>(rand, ref rating);
         var dungeon = GetBiomeMod<SalvageDungeonMod>(biome.ID, rand, ref rating);
         var mods = new List<string>();

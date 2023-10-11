@@ -33,7 +33,7 @@ Space Station 14 это ремейк SS13, который работает на 
 3. Запустите скрипт `RUN_THIS.py` для инициализации субмодулей и скачивания движка.
 4. Соберите решение через Visual Studio или dotnet в терминале.
 
-[Более детальная инструкция для сборки.](https://docs.spacestation14.io/getting-started/dev-setup)
+[Более детальная инструкция для сборки.](https://docs.spacestation14.com/en/general-development/setup.html)
 
 ## Лицензия
 

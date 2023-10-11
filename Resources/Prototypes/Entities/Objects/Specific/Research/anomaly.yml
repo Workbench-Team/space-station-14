@@ -21,6 +21,20 @@
     - ScannersAndVessels
 
 - type: entity
+  parent: AnomalyScanner
+  id: AnomalyScannerRD
+  name: anomaly scanner
+  description: A hand-held scanner built to collect information on various anomalous objects.
+  components:
+  - type: Item
+    size: 10
+  - type: AnomalyScanner
+    scanDoAfterDuration: 2
+  - type: Sprite
+    sprite: Objects/Specific/Research/anomalyscanner.rsi
+    state: rd
+
+- type: entity
   id: AnomalyLocatorUnpowered
   parent: BaseItem
   name: anomaly locator

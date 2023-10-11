@@ -296,7 +296,7 @@
     containers:
       board: [ DoorElectronicsCommand ]
   - type: Wires
-    LayoutId: AirlockCommand
+    layoutId: AirlockCommand
 
 - type: entity
   parent: AirlockCommand
@@ -386,7 +386,7 @@
     containers:
       board: [ DoorElectronicsSecurity ]
   - type: Wires
-    LayoutId: AirlockSecurity
+    layoutId: AirlockSecurity
 
 - type: entity
   parent: AirlockSecurity
@@ -399,7 +399,7 @@
     containers:
       board: [ DoorElectronicsDetective ]
   - type: Wires
-    LayoutId: AirlockSecurity
+    layoutId: AirlockSecurity
 
 - type: entity
   parent: AirlockSecurity
@@ -412,7 +412,7 @@
     containers:
       board: [ DoorElectronicsBrig ]
   - type: Wires
-    LayoutId: AirlockSecurity
+    layoutId: AirlockSecurity
 
 - type: entity
   parent: AirlockSecurity
@@ -425,7 +425,7 @@
     containers:
       board: [ DoorElectronicsArmory ]
   - type: Wires
-    LayoutId: AirlockArmory
+    layoutId: AirlockArmory
 
 - type: entity
   parent: AirlockSecurity

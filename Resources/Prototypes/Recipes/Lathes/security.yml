@@ -523,6 +523,13 @@
     Steel: 3200
 
 - type: latheRecipe
+  id: MagazineShotgunSaiga
+  result: MagazineShotgunSaiga
+  completetime: 5
+  materials:
+    Steel: 200
+
+- type: latheRecipe
   id: MagazineUniversalShortHv
   result: MagazineUniversalShortHv
   completetime: 5

@@ -181,7 +181,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
         //Dont shock if the attacker used a toy
         if (EntityManager.TryGetComponent<MeleeWeaponComponent>(args.Used, out var meleeWeaponComponent))
         {
-            if (_meleeWeapon.GetDamage(args.Used, args.User).Total == 0)
+            if (!_meleeWeapon.GetDamage(args.Used, args.User).Any())
                 return;
         }
         TryDoElectrifiedAct(uid, args.User, 1, electrified);
@@ -196,7 +196,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
     private void OnLightAttacked(EntityUid uid, PoweredLightComponent component, AttackedEvent args)
     {
 
-        if (_meleeWeapon.GetDamage(args.Used, args.User).Total == 0)
+        if (!_meleeWeapon.GetDamage(args.Used, args.User).Any())
             return;
 
         if (args.Used != args.User)

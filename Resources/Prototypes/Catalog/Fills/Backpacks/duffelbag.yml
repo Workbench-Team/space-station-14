@@ -124,6 +124,20 @@
       - id: WeaponRevolverRsh18
 
 - type: entity
+  parent: BriefcaseRD
+  id: BriefcaseRDFilled
+  name: case with rd tools
+  description: Full of useful tools
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponPistolCHIMP
+      - id: AnomalyLocator
+#     - id: PinpointerAnomaly
+      - id: AnomalyScannerRD
+      - id: HandTeleporter
+
+- type: entity
   parent: WeaponcaseBlueShield
   id: WeaponCaseSaiga
   name: KR51 bundle
