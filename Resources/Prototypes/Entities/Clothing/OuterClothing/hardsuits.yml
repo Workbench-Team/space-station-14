@@ -218,6 +218,10 @@
     sprintModifier: 0.75
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSecurity
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
   - type: ItemSlots
     slots:
       weapon_slot:
@@ -254,6 +258,10 @@
     sprintModifier: 0.65
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitBrigmedic
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
   - type: ItemSlots
     slots:
       weapon_slot:
@@ -293,6 +301,10 @@
     sprintModifier: 0.7
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitWarden
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
   - type: ItemSlots
     slots:
       weapon_slot:
@@ -334,6 +346,10 @@
     sprintModifier: 0.8
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCap
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
   - type: ItemSlots
     slots:
       weapon_slot:
@@ -541,6 +557,10 @@
     sprintModifier: 1.0
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndie
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
   - type: ItemSlots
     slots:
       weapon_slot:
@@ -598,6 +618,10 @@
     sprintModifier: 1.0
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieElite
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
   - type: ItemSlots
     slots:
       weapon_slot:
@@ -639,6 +663,10 @@
     sprintModifier: 1.0
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieCommander
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
   - type: ItemSlots
     slots:
       weapon_slot:
@@ -680,6 +708,10 @@
     sprintModifier: 0.65
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCybersun
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
   - type: ItemSlots
     slots:
       weapon_slot:
@@ -923,6 +955,10 @@
     sprintModifier: 1.0
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitDeathsquad
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
   - type: ItemSlots
     slots:
       weapon_slot:
@@ -968,6 +1004,10 @@
     sprintModifier: 1.0
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetCBURN
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
   - type: ItemSlots
     slots:
       weapon_slot:

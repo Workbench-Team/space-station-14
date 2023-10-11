@@ -384,6 +384,11 @@
           - Stunbaton
     sprite: Clothing/Belt/belt_overlay.rsi
   - type: Appearance
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      storagebase: !type:Container
+        ents: []
   - type: ItemSlots
     slots:
       weapon_slot:
@@ -497,6 +502,11 @@
     sprite: Clothing/Belt/securitywebbing.rsi
   - type: Clothing
     sprite: Clothing/Belt/securitywebbing.rsi
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      storagebase: !type:Container
+        ents: []
   - type: ItemSlots
     slots:
       weapon_slot:
@@ -552,6 +562,11 @@
     sprite: Clothing/Belt/militarywebbing.rsi
   - type: Clothing
     sprite: Clothing/Belt/militarywebbing.rsi
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      storagebase: !type:Container
+        ents: []
   - type: ItemSlots
     slots:
       weapon_slot:
@@ -578,6 +593,11 @@
     size: 70
   - type: Storage
     capacity: 70
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      storagebase: !type:Container
+        ents: []
   - type: ItemSlots
     slots:
       weapon_slot:
