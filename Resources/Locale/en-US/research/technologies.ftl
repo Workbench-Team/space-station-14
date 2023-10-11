@@ -13,6 +13,7 @@ research-technology-industrial-engineering = Industrial Engineering
 research-technology-power-generation = Power Generation
 research-technology-atmospheric-tech = Atmospherics
 research-technology-rapid-construction = Rapid Construction
+research-technology-modsuitscraft = MOD-Exosuits
 research-technology-shuttlecraft = Shuttlecraft
 research-technology-ripley-aplu = Ripley APLU
 research-technology-advanced-atmospherics = Advanced Atmospherics
@@ -32,17 +33,11 @@ research-technology-bluespace-chemistry = Bluespace Chemistry
 research-technology-cloning = Cloning
 
 research-technology-salvage-weapons = Salvage Weapons
-research-technology-salvage-cutters = Ion weapons
-research-technology-draconic-munitions = Draconic Munitions
 research-technology-explosive-technology = Explosive Technology
-research-technology-weaponized-laser-manipulation = Weaponized Laser Manipulation
 research-technology-nonlethal-ammunition = Nonlethal Ammunition
-research-technology-practice-ammunition = Practice Ammunition
-research-technology-concentrated-laser-weaponry = Concentrated Laser Weaponry
-research-technology-wave-particle-harnessing = Wave Particle Harnessing
 research-technology-advanced-riot-control = Advanced Riot Control
-research-technology-handheld-electrical-propulsion = Handheld Electrical Propulsion
 research-technology-portable-microfusion-weaponry = Portable Microfusion Weaponry
+research-technology-comp-bows = Composit bows
 
 research-technology-basic-robotics = Basic Robotics
 research-technology-basic-anomalous-research = Basic Anomalous Research
