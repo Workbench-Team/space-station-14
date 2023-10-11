@@ -192,7 +192,7 @@
   name: mk 68
   parent: BaseWeaponPistol
   id: WeaponPistolMk68
-  description: A cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses .35 auto ammo.
+  description: Advanced version of MK58. Thanks to the reinforced receiver, it has an automatic firing mode and a high rate of fire. Uses .35 auto ammo.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/mk68.rsi
