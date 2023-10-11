@@ -160,8 +160,7 @@
   name: Vector
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunVector
-  suffix: Deprecated use Drozd
-  description: An excellent fully automatic Heavy SMG. Uses .45 magnum ammo.
+  description: A non-standard submachine gun capable of firing two calibers. Uses .35 and .20 caliber cartridges.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/vector.rsi
