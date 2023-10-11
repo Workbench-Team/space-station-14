@@ -8,32 +8,37 @@
     state: icon
   discipline: Arsenal
   tier: 1
-  cost: 5000
+  cost: 7500
   recipeUnlocks:
   - WeaponProtoKineticAccelerator
   # These are roundstart but not replenishable for salvage
   - WeaponCrusher
   - WeaponCrusherDagger
+  - WeaponCutter
 
 - type: technology
-  id: DraconicMunitions
-  name: research-technology-draconic-munitions
+  id: StandardAmmunition
+  name: research-technology-standard-ammunition
   icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi
-    state: incendiarydisplay
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
+    state: red-icon
   discipline: Arsenal
   tier: 1
-  cost: 10000
+  cost: 7500
   recipeUnlocks:
-  - ShellShotgunIncendiary
-  - CartridgePistolIncendiary
-  - CartridgeMagnumIncendiary
-  - CartridgeLightRifleIncendiary
-  - CartridgeRifleIncendiary
-  - MagazineBoxPistolIncendiary
-  - MagazineBoxMagnumIncendiary
-  - MagazineBoxLightRifleIncendiary
-  - MagazineBoxRifleIncendiary
+  - MagazinePistol
+  - MagazinePistolSubMachineGunTopMounted
+  - ShellShotgun
+  - MagazineVectorPistolSmall # Маленький
+  - MagazinePistolSubMachineGun
+  - MagazineRifle
+  - MagazineUniversalShort
+  - SpeedLoaderUniversal
+  - SpeedLoaderMagnum
+  - CartridgePistol
+  - CartridgeRifle
+  - CartridgeMagnum
+  - CartridgeCaselessUniversalPT1
 
 - type: technology
   id: CompBows
@@ -67,16 +72,33 @@
   - ExplosivePayload
 
 - type: technology
-  id: WeaponizedLaserManipulation
-  name: research-technology-weaponized-laser-manipulation
+  id: Firearms
+  name: research-technology-firearms
+  icon:
+    sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 1
+  cost: 10000
+  recipeUnlocks:
+  - WeaponSubMachineGunVector
+  - WeaponSubMachineGunWt550
+  - WeaponShotgunKammerer
+  - WeaponPistolMk58
+  - WeaponRevolverInspector
+
+- type: technology
+  id: LaserWeapons
+  name: research-technology-laser-weapons
   icon:
     sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi
     state: icon
   discipline: Arsenal
   tier: 1
-  cost: 7500
+  cost: 10000
   recipeUnlocks:
   - WeaponLaserCarbine
+  - WeaponLaserGun
 
 - type: technology
   id: NonlethalAmmunition
@@ -91,68 +113,121 @@
   - ShellShotgunBeanbag
   - CartridgePistolRubber
   - CartridgeMagnumRubber
-  - CartridgeLightRifleRubber
   - CartridgeRifleRubber
-  - MagazineBoxPistolRubber
-  - MagazineBoxMagnumRubber
-  - MagazineBoxLightRifleRubber
-  - MagazineBoxRifleRubber
+  - MagazineVectorPistolSmallRubber
+  - MagazineRifleRubber
+  - MagazinePistolRubber
+  - MagazinePistolSubMachineGunRubber
 
 - type: technology
-  id: PracticeAmmunition
-  name: research-technology-practice-ammunition
+  id: ArmorProduce
+  name: research-technology-armor-produce
   icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
-    state: practice
+    sprite: Clothing/OuterClothing/Armor/bulletproof.rsi
+    state: icon
   discipline: Arsenal
   tier: 1
-  cost: 2000
+  cost: 6000
   recipeUnlocks:
-  - ShellShotgunPractice
-  - MagazineBoxPistolPractice
-  - MagazineBoxMagnumPractice
-  - MagazineBoxLightRiflePractice
-  - MagazineBoxRiflePractice
-  - WeaponLaserCarbinePractice
-  - WeaponDisablerPractice
+  - ClothingHeadHelmetRiot
+  - ClothingHeadHelmetBasic
+  - ClothingHeadHelmetSwat
+  - ClothingOuterArmorRiot
+  - ClothingOuterArmorBasicSlim
+  - ClothingOuterArmorBasic
+  - ClothingOuterArmorBulletproof
+  - ClothingBeltSecurityWebbing
+  - ClothingBeltSecurity
 
 # Tier 2
 
 - type: technology
-  id: SalvageCutters
-  name: research-technology-salvage-cutters
-  icon:
-    sprite: Objects/Weapons/Guns/Battery/cutter.rsi
-    state: icon
-  discipline: Arsenal
-  tier: 2
-  cost: 8500
-  recipeUnlocks:
-  - WeaponCutter
-
-- type: technology
-  id: ConcentratedLaserWeaponry
-  name: research-technology-concentrated-laser-weaponry
+  id: AdvancedLaserWeapons
+  name: research-technology-advanced-laser-weapons
   icon:
     sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
     state: icon
   discipline: Arsenal
   tier: 2
-  cost: 10000
+  cost: 12500
   recipeUnlocks:
   - WeaponLaserCannon
+  - WeaponXrayCannon
+  - WeaponAdvancedLaser
 
 - type: technology
-  id: WaveParticleHarnessing
-  name: research-technology-wave-particle-harnessing
+  id: AdvancedFirearms
+  name: research-technology-advanced-firearms
   icon:
-    sprite: Objects/Weapons/Guns/Battery/xray.rsi
+    sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
     state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 12500
+  recipeUnlocks:
+  - WeaponPistolMk68 # Автоматический
+  - WeaponShotgunEnforcer
+  - WeaponRifleLecter
+  - WeaponSubMachineGunDrozd
+
+- type: technology
+  id: AdvancedAmmunition
+  name: research-technology-advanced-ammunition
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Boxes/caseless_rifle.rsi
+    state: base-b
   discipline: Arsenal
   tier: 2
   cost: 10000
   recipeUnlocks:
-  - WeaponXrayCannon
+  - MagazineBoxPistol
+  - MagazineBoxRifle
+  - MagazineBoxRifleBig
+  - BoxLethalshot
+  - MagazineBoxMagnum
+  - MagazineBoxUniversalPT1
+
+- type: technology
+  id: AdvancedMagazines
+  name: research-technology-advanced-magazines
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Magnum/magnum_smg_mag.rsi
+    state: red
+  discipline: Arsenal
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - MagazineVectorPistol
+  - MagazineVectorRifle # 24 пт .20
+  - MagazineRifleExt # 45 пт
+  - MagazineUniversal
+  - MagazineShotgunSaiga
+  - MagazinePistolHighCapacity
+
+- type: technology
+  id: SpecAmmunition
+  name: research-technology-spec-ammunition
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Boxes/light_rifle.rsi
+    state: base-b
+  discipline: Arsenal
+  tier: 2
+  cost: 12500
+  recipeUnlocks:
+  - MagazineRifleRubber
+  - MagazineRifleExtRubber
+  - MagazineVectorPistolRubber
+  - MagazineVectorRifleRubber
+  - MagazineBoxPistolIncendiary
+  - MagazineBoxPistolRubber
+  - MagazineBoxRifleIncendiary
+  - MagazineBoxRifleRubber
+  - MagazinePistolHighCapacityRubber
+  - BoxShotgunIncendiary
+  - BoxShotgunSlug
+  - BoxBeanbag
+  - BoxShellTranquilizer
+  - MagazineBoxUniversalVPS
 
 - type: technology
   id: AdvancedRiotControl
@@ -203,27 +278,3 @@
     - GygaxRLeg
     - GygaxRArm
     - GygaxArmor
-
-- type: technology
-  id: HandheldElectricalPropulsion
-  name: research-technology-handheld-electrical-propulsion
-  icon:
-    sprite: Objects/Weapons/Guns/Battery/taser.rsi
-    state: icon
-  discipline: Arsenal
-  tier: 3
-  cost: 15000
-  recipeUnlocks:
-  - WeaponTaser
-
-- type: technology
-  id: PortableMicrofusionWeaponry
-  name: research-technology-portable-microfusion-weaponry
-  icon:
-    sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
-    state: icon
-  discipline: Arsenal
-  tier: 3
-  cost: 15000
-  recipeUnlocks:
-  - WeaponAdvancedLaser
