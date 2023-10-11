@@ -272,6 +272,7 @@
       - id: JetpackSecurityFilled
       - id: BoxEncryptionKeySecurity
       - id: WeaponTechFabCircuitboard
+      - id: AmmoTechFabCircuitboard
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
       - id: WeaponLaserHos
@@ -296,6 +297,7 @@
       - id: SecurityTechFabCircuitboard
       - id: BoxEncryptionKeySecurity
       - id: WeaponTechFabCircuitboard
+      - id: AmmoTechFabCircuitboard
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
       - id: WeaponLaserHos
