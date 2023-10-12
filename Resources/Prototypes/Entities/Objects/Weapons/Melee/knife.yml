@@ -97,6 +97,10 @@
     damage:
       types:
         Slash: 10
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 10
   - type: Item
     size: 10
     sprite: Objects/Weapons/Melee/cleaver.rsi
@@ -165,7 +169,7 @@
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 15
+        Slash: 15
   - type: Item
     size: 10
     sprite: Objects/Weapons/Melee/kukri_knife.rsi
