@@ -26,42 +26,8 @@
       path: /Audio/Items/Culinary/chop.ogg
 
 - type: entity
-  parent: BaseKnife
-  id: BaseKnifeThrowable
-  abstract: true
-  components:
-  - type: DamageOtherOnHit
-    damage:
-      types:
-        Piercing: 10
-
-- type: entity
-  parent: BaseKnifeThrowable
-  id: BaseKnifeThrowablePluggable
-  abstract: true
-  components:
-  - type: EmbeddableProjectile
-    offset: 0.15,0.15
-  - type: ThrowingAngle
-    angle: 225
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape: !type:PolygonShape
-          vertices:
-            - -0.40,-0.30
-            - -0.30,-0.40
-            - 0.40,0.30
-            - 0.30,0.40
-        density: 20
-        mask:
-        - ItemMask
-        restitution: 0.3
-        friction: 0.2
-
-- type: entity
   name: kitchen knife
-  parent: BaseKnifeThrowablePluggable
+  parent: BaseKnife
   id: KitchenKnife
   description: A general purpose Chef's Knife made by Asters Merchant Guild. Guaranteed to stay sharp for years to come..
   components:
@@ -81,7 +47,7 @@
 
 - type: entity
   name: butcher's cleaver
-  parent: BaseKnifeThrowable
+  parent: BaseKnife
   id: ButchCleaver
   description: A huge blade used for chopping and chopping up meat. This includes clowns and clown-by-products.
   components:
@@ -106,7 +72,7 @@
 
 - type: entity
   name: combat knife
-  parent: BaseKnifeThrowablePluggable
+  parent: BaseKnife
   id: CombatKnife
   description: A deadly knife intended for melee confrontations.
   components:
@@ -145,14 +111,10 @@
 
 - type: entity
   name: kukri knife
-  parent: BaseKnifeThrowable
+  parent: CombatKnife
   id: KukriKnife
   description: Professionals have standards. Be polite. Be efficient. Have a plan to kill everyone you meet.
   components:
-  - type: Tag
-    tags:
-    - CombatKnife
-    - Knife
   - type: Sprite
     sprite: Objects/Weapons/Melee/kukri_knife.rsi
     size: 2
@@ -162,15 +124,9 @@
     damage:
       types:
         Slash: 15
-  - type: DamageOtherOnHit
-    damage:
-      types:
-        Piercing: 15
   - type: Item
     size: 10
     sprite: Objects/Weapons/Melee/kukri_knife.rsi
-  - type: DisarmMalus
-    malus: 0.225
 
 - type: entity
   name: shiv
