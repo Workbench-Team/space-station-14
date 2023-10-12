@@ -37,7 +37,16 @@ research-technology-explosive-technology = Explosive Technology
 research-technology-nonlethal-ammunition = Nonlethal Ammunition
 research-technology-advanced-riot-control = Advanced Riot Control
 research-technology-portable-microfusion-weaponry = Portable Microfusion Weaponry
-research-technology-comp-bows = Composit bows
+research-technology-comp-bows = Composit Bows
+research-technology-standard-ammunition = Standard Ammunition
+research-technology-firearms = Firearms
+research-technology-laser-weapons = Laser Weapon
+research-technology-armor-produce = Armor Prototypes
+research-technology-advanced-laser-weapons = Advanced Laser Weapon
+research-technology-advanced-firearms = Advanced Firearms
+research-technology-advanced-ammunition = Advanced Ammunition
+research-technology-advanced-magazines = Advanced Gun Magazines
+research-technology-spec-ammunition = Specialized Ammunition
 
 research-technology-basic-robotics = Basic Robotics
 research-technology-basic-anomalous-research = Basic Anomalous Research
@@ -65,3 +74,8 @@ research-technology-meat-manipulation = Meat Manipulation
 research-technology-honk-mech = H.O.N.K. Mech
 research-technology-advanced-spray = Advanced Spray
 research-technology-bluespace-cargo-transport = Bluespace Cargo Transport
+
+research-technology-clarke-aplu = Clarke
+research-technology-Odyssey = Odysseus
+research-technology-gygax = Gygax
+research-technology-durand = Durand
