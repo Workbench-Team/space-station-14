@@ -9,44 +9,50 @@
         types:
             Slash: 18.75
             Piercing: 6.25
-            Blunt: -4.5
             Structural: 20
     litDisarmMalus: 0.6
     activateSound: !type:SoundPathSpecifier
       path: /Audio/Weapons/chainsaw_start.ogg
       params:
-        volume: +4
+        volume: 4
     deActivateSound: !type:SoundPathSpecifier
       path: /Audio/Weapons/chainsaw_stop.ogg
       params:
-        volume: +4
+        volume: 4
+  - type: StaticPrice
+    price: 100
+  - type: AmbientSound
+    range: 6
+    volume: -3
+    sound:
+      path: /Audio/Weapons/chainsaw_loop.ogg
+    enabled: false
   - type: Sprite
-    sprite:  Objects/Weapons/Melee/chainsaw.rsi
+    sprite: Objects/Weapons/Melee/chainsaw.rsi
     layers:
       - state: icon
-      - state: icon_on
+      - state: icon_wielded
         visible: false
-        map: [ "on" ]
+        map: [ "wielded" ]
   - type: MeleeWeapon
     attackRate: 1
     soundHit:
-      path: /Audio/Weapons/chainsawhit.ogg
+      path: /Audio/Weapons/chainsaw_hit.ogg
     damage:
       types:
-        Blunt: 4.5
+        Blunt: 5.5
   - type: Item
     size: 30
-    sprite:  Objects/Weapons/Melee/chainsaw.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Melee/chainsaw.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
   - type: UseDelay
     delay: 1.0
   - type: Appearance
   - type: ToggleableLightVisuals
     spriteLayer: wielded
-    inhandVisuals:
-      left:
-      - state: inhand-left
-      right:
-      - state: inhand-right
   - type: Wieldable
     wieldTime: 1
   - type: Construction

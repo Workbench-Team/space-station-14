@@ -1,3 +1,4 @@
+using Content.Server.Audio;
 using Content.Server.CombatMode.Disarm;
 using Content.Server.Kitchen.Components;
 using Content.Shared.Interaction;
@@ -18,6 +19,7 @@ public sealed class ChainsawSystem : EntitySystem
     [Dependency] private readonly SharedItemSystem _item = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
+    [Dependency] private readonly AmbientSoundSystem _ambientSound = default!;
 
     public override void Initialize()
     {
@@ -26,18 +28,19 @@ public sealed class ChainsawSystem : EntitySystem
         SubscribeLocalEvent<ChainsawComponent, GetMeleeDamageEvent>(OnGetMeleeDamage);
         SubscribeLocalEvent<ChainsawComponent, UseInHandEvent>(OnUseInHand);
         SubscribeLocalEvent<ChainsawComponent, IsHotEvent>(OnIsHotEvent);
-        SubscribeLocalEvent<ChainsawComponent, ChainsawDeactivatedEvent>(TurnOff);
-        SubscribeLocalEvent<ChainsawComponent, ChainsawActivatedEvent>(TurnOn);
+        SubscribeLocalEvent<ChainsawComponent, ChainsawOffEvent>(TurnOff);
+        SubscribeLocalEvent<ChainsawComponent, ChainsawOnEvent>(TurnOn);
 
         SubscribeLocalEvent<ChainsawComponent, ItemUnwieldedEvent>(TurnOffonUnwielded);
         SubscribeLocalEvent<ChainsawComponent, ItemWieldedEvent>(TurnOnonWielded);
+
     }
     private void OnGetMeleeDamage(EntityUid uid, ChainsawComponent comp, ref GetMeleeDamageEvent args)
     {
-        if (!comp.Activated)
+        if (!comp.On)
             return;
 
-        args.Damage += comp.LitDamageBonus;
+        args.Damage = comp.LitDamageBonus;
     }
 
     private void OnUseInHand(EntityUid uid, ChainsawComponent comp, UseInHandEvent args)
@@ -50,35 +53,35 @@ public sealed class ChainsawSystem : EntitySystem
         if (TryComp<WieldableComponent>(uid, out var wieldableComp))
             return;
 
-        if (comp.Activated)
+        if (comp.On)
         {
-            var ev = new ChainsawDeactivatedEvent();
+            var ev = new ChainsawOffEvent();
             RaiseLocalEvent(uid, ref ev);
         }
         else
         {
-            var ev = new ChainsawActivatedEvent();
+            var ev = new ChainsawOnEvent();
             RaiseLocalEvent(uid, ref ev);
         }
 
-        UpdateAppearance(uid, comp);
+        UpdateState(uid, comp);
     }
 
     private void TurnOffonUnwielded(EntityUid uid, ChainsawComponent comp, ItemUnwieldedEvent args)
     {
-        var ev = new ChainsawDeactivatedEvent();
+        var ev = new ChainsawOffEvent();
         RaiseLocalEvent(uid, ref ev);
-        UpdateAppearance(uid, comp);
+        UpdateState(uid, comp);
     }
 
     private void TurnOnonWielded(EntityUid uid, ChainsawComponent comp, ref ItemWieldedEvent args)
     {
-        var ev = new ChainsawActivatedEvent();
+        var ev = new ChainsawOnEvent();
         RaiseLocalEvent(uid, ref ev);
-        UpdateAppearance(uid, comp);
+        UpdateState(uid, comp);
     }
 
-    private void TurnOff(EntityUid uid, ChainsawComponent comp, ref ChainsawDeactivatedEvent args)
+    private void TurnOff(EntityUid uid, ChainsawComponent comp, ref ChainsawOffEvent args)
     {
         if (TryComp(uid, out ItemComponent? item))
         {
@@ -102,10 +105,10 @@ public sealed class ChainsawSystem : EntitySystem
 
         _audio.Play(comp.DeActivateSound, Filter.Pvs(uid, entityManager: EntityManager), uid, true, comp.DeActivateSound.Params);
 
-        comp.Activated = false;
+        comp.On = false;
     }
 
-    private void TurnOn(EntityUid uid, ChainsawComponent comp, ref ChainsawActivatedEvent args)
+    private void TurnOn(EntityUid uid, ChainsawComponent comp, ref ChainsawOnEvent args)
     {
         if (TryComp(uid, out ItemComponent? item))
         {
@@ -129,18 +132,20 @@ public sealed class ChainsawSystem : EntitySystem
 
         _audio.Play(comp.ActivateSound, Filter.Pvs(uid, entityManager: EntityManager), uid, true, comp.ActivateSound.Params);
 
-        comp.Activated = true;
+        comp.On = true;
     }
 
-    private void UpdateAppearance(EntityUid uid, ChainsawComponent component)
+    private void UpdateState(EntityUid uid, ChainsawComponent component)
     {
         if (!TryComp(uid, out AppearanceComponent? appearanceComponent))
             return;
 
+        _appearance.SetData(uid, ToggleableLightVisuals.Enabled, component.On, appearanceComponent);
+        _ambientSound.SetAmbience(uid, component.On);
     }
 
-    private void OnIsHotEvent(EntityUid uid, ChainsawComponent Chainsaw, IsHotEvent args)
+    private void OnIsHotEvent(EntityUid uid, ChainsawComponent chainsaw, IsHotEvent args)
     {
-        args.IsHot = Chainsaw.Activated;
+        args.IsHot = chainsaw.On;
     }
 }
