@@ -384,6 +384,21 @@
           - Stunbaton
     sprite: Clothing/Belt/belt_overlay.rsi
   - type: Appearance
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      storagebase: !type:Container
+        ents: []
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - LightWeapon
 
 - type: entity
   parent: ClothingBeltStorageBase
@@ -487,6 +502,22 @@
     sprite: Clothing/Belt/securitywebbing.rsi
   - type: Clothing
     sprite: Clothing/Belt/securitywebbing.rsi
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      storagebase: !type:Container
+        ents: []
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - LightWeapon
+            - MediumWeapon
 
 - type: entity
   parent: ClothingBeltStorageBase
@@ -531,6 +562,22 @@
     sprite: Clothing/Belt/militarywebbing.rsi
   - type: Clothing
     sprite: Clothing/Belt/militarywebbing.rsi
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      storagebase: !type:Container
+        ents: []
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - LightWeapon
+            - MediumWeapon
 
 - type: entity
   parent: ClothingBeltStorageBase
@@ -546,6 +593,22 @@
     size: 70
   - type: Storage
     capacity: 70
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      storagebase: !type:Container
+        ents: []
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - LightWeapon
+            - MediumWeapon
 
 - type: entity
   parent: ClothingBeltBase

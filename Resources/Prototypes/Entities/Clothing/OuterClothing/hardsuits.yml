@@ -218,6 +218,20 @@
     sprintModifier: 0.75
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSecurity
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - HeavyWeapon
 
 #Brigmedic Hardsuit
 - type: entity
@@ -244,6 +258,20 @@
     sprintModifier: 0.65
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitBrigmedic
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - HeavyWeapon
 
 #Warden's Hardsuit
 - type: entity
@@ -273,6 +301,20 @@
     sprintModifier: 0.7
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitWarden
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - HeavyWeapon
 
 #Captain's Hardsuit
 - type: entity
@@ -304,6 +346,20 @@
     sprintModifier: 0.8
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCap
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - HeavyWeapon
 
 #Chief Engineer's Hardsuit
 - type: entity
@@ -429,6 +485,16 @@
     sprintModifier: 0.8
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSecurityRed
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - HeavyWeapon
 
 #Luxury Mining Hardsuit
 - type: entity
@@ -491,6 +557,20 @@
     sprintModifier: 1.0
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndie
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - HeavyWeapon
 
 # Syndicate Medic Hardsuit
 - type: entity
@@ -538,6 +618,20 @@
     sprintModifier: 1.0
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieElite
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - HeavyWeapon
 
 #Syndicate Commander Hardsuit
 - type: entity
@@ -569,6 +663,20 @@
     sprintModifier: 1.0
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieCommander
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - HeavyWeapon
 
 #Cybersun Juggernaut Hardsuit
 - type: entity
@@ -600,6 +708,20 @@
     sprintModifier: 0.65
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCybersun
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - HeavyWeapon
 
 #Wizard Hardsuit
 - type: entity
@@ -833,6 +955,20 @@
     sprintModifier: 1.0
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitDeathsquad
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - HeavyWeapon
 
 #CBURN Hardsuit
 - type: entity
@@ -868,6 +1004,20 @@
     sprintModifier: 1.0
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetCBURN
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - HeavyWeapon
 
 #MISC. HARDSUITS
 #Clown Hardsuit

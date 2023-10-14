@@ -1,15 +1,20 @@
+using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Damage;
+using Content.Shared.FixedPoint;
 using Robust.Shared.Audio;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Server.Weapons.Melee.Chainsaw;
 
 [RegisterComponent]
 internal sealed partial class ChainsawComponent : Component
 {
-
     public bool Hacked = false;
 
-    public bool Activated = false;
+    /// <summary>
+    /// Is the chainsaw currently running?
+    /// </summary>
+    public bool On = false;
 
     [DataField("isSharp")]
     public bool IsSharp = true;
@@ -20,7 +25,6 @@ internal sealed partial class ChainsawComponent : Component
     [DataField("secret")]
     public bool Secret { get; set; } = false;
 
-
     [DataField("activateSound")]
     public SoundSpecifier ActivateSound { get; set; } = new SoundPathSpecifier("/Audio/Weapons/chainsaw_start.ogg");
 
@@ -28,10 +32,10 @@ internal sealed partial class ChainsawComponent : Component
     public SoundSpecifier DeActivateSound { get; set; } = new SoundPathSpecifier("/Audio/Weapons/chainsaw_stop.ogg");
 
     [DataField("onHitOn")]
-    public SoundSpecifier OnHitOn { get; set; } = new SoundPathSpecifier("/Audio/Weapons/chainsawhit.ogg");
+    public SoundSpecifier OnHitOn { get; set; } = new SoundPathSpecifier("/Audio/Weapons/chainsaw_hit.ogg");
 
     [DataField("onHitOff")]
-    public SoundSpecifier OnHitOff { get; set; } = new SoundPathSpecifier("/Audio/Weapons/chainsawhit.ogg");
+    public SoundSpecifier OnHitOff { get; set; } = new SoundPathSpecifier("/Audio/Weapons/smash.ogg");
 
 
     [DataField("litDamageBonus")]
@@ -42,7 +46,7 @@ internal sealed partial class ChainsawComponent : Component
 }
 
 [ByRefEvent]
-public readonly record struct ChainsawActivatedEvent();
+public readonly record struct ChainsawOnEvent();
 
 [ByRefEvent]
-public readonly record struct ChainsawDeactivatedEvent();
+public readonly record struct ChainsawOffEvent();

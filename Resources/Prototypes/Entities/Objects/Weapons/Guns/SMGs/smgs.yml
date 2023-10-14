@@ -93,6 +93,9 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: Objects/Weapons/Guns/SMGs/c20r.rsi
+  - type: Tag
+    tags:
+    - HeavyWeapon
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
@@ -119,6 +122,9 @@
           map: ["enum.GunVisualLayers.Mag"]
     - type: Clothing
       sprite: Objects/Weapons/Guns/SMGs/drozd.rsi
+    - type: Tag
+      tags:
+      - HeavyWeapon
     - type: Gun
       fireRate: 6
       selectedMode: FullAuto
@@ -154,8 +160,7 @@
   name: Vector
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunVector
-  suffix: Deprecated use Drozd
-  description: An excellent fully automatic Heavy SMG. Uses .45 magnum ammo.
+  description: A non-standard submachine gun capable of firing two calibers. Uses .35 and .20 caliber cartridges.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/vector.rsi
@@ -167,30 +172,34 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/SMGs/vector.rsi
   - type: Gun
-    fireRate: 6
+    fireRate: 7
     selectedMode: FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
     availableModes:
     - FullAuto
+  - type: Tag
+    tags:
+    - MediumWeapon
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineMagnumSubMachineGun
+        startingItem: MagazineVectorPistolSmall
         insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineMagnumSubMachineGun
+            - MagazineVectorSubMachineGun
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeMagnum
+        startingItem: CartridgePistol
         priority: 1
         whitelist:
           tags:
-            - CartridgeMagnum
+            - CartridgeRifle
+            - CartridgePistol
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -218,6 +227,9 @@
         shader: unshaded
   - type: Clothing
     sprite: Objects/Weapons/Guns/SMGs/wt550.rsi
+  - type: Tag
+    tags:
+    - MediumWeapon
   - type: ChamberMagazineAmmoProvider
     boltClosed: null
   - type: Gun

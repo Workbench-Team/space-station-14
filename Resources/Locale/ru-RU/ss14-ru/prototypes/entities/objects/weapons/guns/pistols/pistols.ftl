@@ -12,3 +12,6 @@ ent-WeaponPistolMk58 = МК 58
 ent-WeaponPistolMk58Nonlethal = { ent-WeaponPistolMk58 }
     .suffix = Травматический
     .desc = { ent-WeaponPistolMk58.desc }
+ent-WeaponPistolMk68 = МК 68
+    .desc = Продвинутая версия МК58. Благодаря усиленной ствольной коробке, имеет автоматический режим стрельбы и большую скорострельность. Использует патроны калибра .35 авто.
+    .suffix = Пистолет

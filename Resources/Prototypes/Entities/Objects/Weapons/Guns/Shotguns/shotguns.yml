@@ -59,6 +59,9 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     size: 30
+  - type: Tag
+    tags:
+    - HeavyWeapon
   - type: Clothing
     sprite: Objects/Weapons/Guns/Shotguns/bulldog.rsi
     quickEquip: false
@@ -174,6 +177,9 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
   - type: BallisticAmmoProvider
+  - type: Tag
+    tags:
+    - HeavyWeapon
   
 - type: entity
   name: Enforcer
@@ -188,7 +194,10 @@
     sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
   - type: BallisticAmmoProvider
     proto: ShellShotgunBeanbag
-  
+  - type: Tag
+    tags:
+    - HeavyWeapon
+
 - type: entity
   name: Kammerer
   parent: BaseWeaponShotgun
@@ -201,6 +210,9 @@
     sprite: Objects/Weapons/Guns/Shotguns/pump.rsi
   - type: BallisticAmmoProvider
     capacity: 4
+  - type: Tag
+    tags:
+    - HeavyWeapon
 
 - type: entity
   name: sawn-off shotgun
