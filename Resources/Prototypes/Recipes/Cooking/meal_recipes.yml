@@ -1335,7 +1335,7 @@
   time: 5
   solids:
     FoodDoughPastryBaseRaw: 1
-    FoodGrape: 1
+    FoodBerries: 1
     
 - type: microwaveMealRecipe
   id: RecipeDankpocket
