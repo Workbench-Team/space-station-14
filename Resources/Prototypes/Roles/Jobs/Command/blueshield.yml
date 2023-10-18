@@ -51,6 +51,6 @@
     id: BlueShieldPDA
     ears: ClothingHeadsetAltBlueShield
     pocket1: HandheldCrewMonitor
-  innerclothingskirt: ClothingUniformJumpskirtBlueshield
+  innerClothingSkirt: ClothingUniformJumpskirtBlueshield
   satchel: ClothingBackpackSatchelBlueShieldFilled
   duffelbag: ClothingBackpackDuffelBlueShieldFilled
