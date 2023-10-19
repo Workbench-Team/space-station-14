@@ -202,6 +202,5 @@ namespace Content.Server.Felinid
                     performer, otherFilter, true);
             }
         }
-        public sealed partial class WoundLickingActionEvent : EntityTargetActionEvent { }
     }
 }
