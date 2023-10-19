@@ -100,3 +100,5 @@ ent-RubberStampDenied = печать ОТКАЗАНО
     .desc = { ent-RubberStampBase.desc }
 ent-RubberStampApproved = печать ОДОБРЕНО
     .desc = { ent-RubberStampBase.desc }
+ent-StationGoalPaper = сообщение ЦК о текущей цели станции
+    .desc = Похоже вам предстоит хорошо потрудиться.

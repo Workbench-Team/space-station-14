@@ -100,3 +100,5 @@ ent-RubberStampApproved = APPROVED rubber stamp
     .desc = { ent-RubberStampBaseAlt.desc }
 ent-RubberStampDenied = DENIED rubber stamp
     .desc = { ent-RubberStampBaseAlt.desc }
+ent-StationGoalPaper = centcom station goal message
+    .desc = It looks like you have a lot of work to do.
