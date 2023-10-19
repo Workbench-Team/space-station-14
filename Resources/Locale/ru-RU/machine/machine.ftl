@@ -9,9 +9,11 @@ machine-upgrade-not-upgraded = [color=yellow]{ CAPITALIZE($upgraded) }[/color] �
 machine-part-name-capacitor = Конденсатор
 machine-part-name-manipulator = Манипулятор
 machine-part-name-matter-bin = Ёмкость материи
+machine-part-name-power-cell = Батарея
 upgrade-power-draw = потребляемая мощность
 upgrade-max-charge = максимальный заряд
 upgrade-power-supply = блок питания
+upgrade-power-supply-ramping = темп роста мощности
 two-way-lever-left = Вы сдвигаете рычаг влево
 two-way-lever-right = Вы сдвигаете рычаг вправо
 two-way-lever-cant = Рычаг не может быть сдвинут в эту сторону!

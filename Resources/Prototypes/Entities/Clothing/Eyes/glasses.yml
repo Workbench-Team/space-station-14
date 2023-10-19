@@ -139,6 +139,7 @@
     sprite: Clothing/Eyes/Glasses/blueshieldglasses.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/blueshieldglasses.rsi
+  - type: ShowSecurityIcons
 
 - type: entity
   parent: ClothingEyesBase

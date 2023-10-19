@@ -34,12 +34,15 @@
     contents:
       - id: ClothingShoesBootsCombatFilled
       - id: ClothingUniformJumpsuitBlueShield
-      - id: ClothingUnderSocksCapStockings
-      - id: ClothingUnderSocksCapKneeSocks
-      - id: ClothingUnderSocksCapSocks
+      - id: ClothingUniformJumpsuitBlueShieldTurtleneck
+      - id: ClothingUniformJumpskirtBlueshield
+      - id: ClothingUniformJumpskirtBlueshieldTurtleneck
+      - id: ClothingUnderSocksBlueshieldStockings
+      - id: ClothingUnderSocksBlueshieldKneeSocks
       - id: ClothingEyesGlassesSunglassesBlueShield
       - id: ClothingOuterWinterBS
-      - id: ClothingNeckMantleCap
+      - id: ClothingNeckMantleBS
+      - id: ClothingNeckCloakBlueshield
 
 - type: entity
   name: captain's garment bag

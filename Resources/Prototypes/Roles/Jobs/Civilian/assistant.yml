@@ -18,7 +18,7 @@
     shoes: ClothingShoesColorBlack
     id: PassengerPDA
     ears: ClothingHeadsetGrey
-  innerclothingskirt: ClothingUniformJumpskirtColorGrey
+  innerClothingSkirt: ClothingUniformJumpskirtColorGrey
   femaleSocks: ClothingUnderSocksGreyKneeSocks
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

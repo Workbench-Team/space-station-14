@@ -39,3 +39,5 @@ ent-CrateFunParty = ящик с вечеринкой
     .desc = Целая вечеринка ждёт пока ты откроешь её.
 ent-CrateFunSyndicateSegway = ящик с сегвеем синдиката
     .desc = { ent-CrateLivestock.desc }
+ent-CrateFunDartsSet = ящик-набор для игры в дартс
+    .desc = Ящик-набор со всем необходимым для увлекательной игры в дартс.

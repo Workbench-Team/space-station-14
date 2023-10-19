@@ -35,6 +35,7 @@
         visible: false
         map: [ "wielded" ]
   - type: MeleeWeapon
+    wideAnimationRotation: -135
     attackRate: 1
     soundHit:
       path: /Audio/Weapons/chainsaw_hit.ogg

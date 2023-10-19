@@ -40,5 +40,3 @@ ent-ActionWake = Wake up
     .desc = Stop sleeping.
 ent-ActionActivateHonkImplant = Honk
     .desc = Activates your honking implant, which will produce the signature sound of the clown.
-ent-ActionMoveModeToggle = Toggle sprint
-    .desc = Settings walk/sprint move mode by default.

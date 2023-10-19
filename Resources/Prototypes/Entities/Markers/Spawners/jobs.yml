@@ -333,7 +333,7 @@
   - type: Sprite
     layers:
       - state: green
-      - state: captain
+      - state: blueshield
 
 - type: entity
   id: SpawnPointHeadOfPersonnel

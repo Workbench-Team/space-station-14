@@ -67,7 +67,7 @@
     id: HoPPDA
     ears: ClothingHeadsetAltCommand
     belt: BoxFolderClipboard
-  innerclothingskirt: ClothingUniformJumpskirtHoP
+  innerClothingSkirt: ClothingUniformJumpskirtHoP
   femaleSocks: ClothingUnderSocksHOPStockings
   satchel: ClothingBackpackSatchelHOPFilled
   duffelbag: ClothingBackpackDuffelHOPFilled

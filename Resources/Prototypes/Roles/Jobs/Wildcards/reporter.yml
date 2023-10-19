@@ -20,7 +20,7 @@
     id: ReporterPDA
     ears: ClothingHeadsetService
     pocket1: HandheldMMMonitor
-  innerclothingskirt: ClothingUniformJumpsuitJournalist
+  innerClothingSkirt: ClothingUniformJumpsuitJournalist
   femaleSocks: ClothingUnderSocksBlackKneeSocks
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

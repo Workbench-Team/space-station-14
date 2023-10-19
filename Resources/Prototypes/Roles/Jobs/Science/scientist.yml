@@ -24,7 +24,7 @@
     outerClothing: ClothingOuterCoatRnd
     id: SciencePDA
     ears: ClothingHeadsetScience
-  innerclothingskirt: ClothingUniformJumpskirtScientist
+  innerClothingSkirt: ClothingUniformJumpskirtScientist
   femaleSocks: ClothingUnderSocksPurpleKneeSocks
   satchel: ClothingBackpackSatchelScienceFilled
   duffelbag: ClothingBackpackDuffelScienceFilled

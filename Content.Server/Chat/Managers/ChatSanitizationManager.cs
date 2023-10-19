@@ -76,7 +76,8 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
         { "o7", "chatsan-salutes" },
         { "о7", "chatsan-salutes" }, // cyrillic о
         { ";_;7", "chatsan-tearfully-salutes"},
-        { "idk", "chatsan-shrugs" }
+        { "idk", "chatsan-shrugs" },
+        { "idk.", "chatsan-shrugs" }
     };
 
     private bool _doSanitize;

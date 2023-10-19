@@ -7,5 +7,10 @@ admin-verbs-teleport-to = Телепортироваться к
 admin-verbs-teleport-here = Телепортировать сюда
 admin-verbs-freeze = Заморозить
 admin-verbs-unfreeze = Разморозить
+admin-verbs-erase = Стереть
+admin-verbs-erase-description =
+    Удаляет игрока из раунда и манифеста экипажа, а также удаляет его сообщения в чате.
+    Их предметы падают на землю.
+    Игрокам показывается всплывающее окно, предлагающее им играть так, как будто их никогда не существовало.
 toolshed-verb-mark = Отметить
 toolshed-verb-mark-description = Помещает данную сущность в переменную $marked, список сущностей, заменяя её предыдущее значение.

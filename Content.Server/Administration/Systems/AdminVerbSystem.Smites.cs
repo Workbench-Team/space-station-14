@@ -662,6 +662,34 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(reptilian);
 
+        Verb felinid = new()
+        {
+            Text = "Felinid Species Swap",
+            Category = VerbCategory.Smite,
+            Icon = new SpriteSpecifier.Rsi(new ("/Textures/Objects/Fun/toys.rsi"), "toyShlepa"),
+            Act = () =>
+            {
+                _polymorphSystem.PolymorphEntity(args.Target, "AdminFelinidSmite");
+            },
+            Impact = LogImpact.Extreme,
+            Message = Loc.GetString("admin-smite-felinid-species-swap-description"),
+        };
+        args.Verbs.Add(felinid);
+
+        Verb moth = new()
+        {
+            Text = "Moth Species Swap",
+            Category = VerbCategory.Smite,
+            Icon = new SpriteSpecifier.Rsi(new ("/Textures/Objects/Fun/toys.rsi"), "plushie_moth"),
+            Act = () =>
+            {
+                _polymorphSystem.PolymorphEntity(args.Target, "AdminMothSmite");
+            },
+            Impact = LogImpact.Extreme,
+            Message = Loc.GetString("admin-smite-moth-species-swap-description"),
+        };
+        args.Verbs.Add(moth);
+
         Verb locker = new()
         {
             Text = "Locker stuff",

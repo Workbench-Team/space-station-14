@@ -258,16 +258,3 @@
     icon: { sprite: Objects/Fun/bikehorn.rsi, state: icon }
     event: !type:ActivateImplantEvent
     useDelay: 1
-
-- type: entity
-  id: ActionMoveModeToggle
-  name: "Toggle sprint"
-  description: Sets walk/sprint move mode by default
-  noSpawn: true
-  components:
-  - type: InstantAction
-    checkCanInteract: false
-    icon: Interface/Actions/running.png
-    iconOn: Interface/Actions/walking.png
-    event: !type:ToggleMoveModeActionEvent
-    priority: -20

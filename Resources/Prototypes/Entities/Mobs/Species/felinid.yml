@@ -7,6 +7,7 @@
   components:
   - type: HumanoidAppearance
     species: Felinid
+  - type: WoundLicking
   - type: Hunger
     starvationDamage:
       types:

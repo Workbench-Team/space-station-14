@@ -32,7 +32,7 @@
     id: SeniorPhysicianPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
-  innerclothingskirt: ClothingUniformJumpskirtSeniorPhysician
+  innerClothingSkirt: ClothingUniformJumpskirtSeniorPhysician
   femaleSocks: ClothingUnderSocksWhiteStockings
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled

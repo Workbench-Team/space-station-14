@@ -29,7 +29,7 @@
     pocket1: HandLabeler
     # the purple glasses?
     eyes: ClothingEyesGlassesChemical
-  innerclothingskirt: ClothingUniformJumpskirtChemistry
+  innerClothingSkirt: ClothingUniformJumpskirtChemistry
   femaleSocks: ClothingUnderSocksOrangeStockings
   satchel: ClothingBackpackSatchelChemistryFilled
   duffelbag: ClothingBackpackDuffelChemistryFilled

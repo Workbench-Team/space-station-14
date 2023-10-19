@@ -23,7 +23,7 @@
     shoes: ClothingShoesColorBlack
     id: ChaplainPDA
     ears: ClothingHeadsetService
-  innerclothingskirt: ClothingUniformJumpskirtChaplain
+  innerClothingSkirt: ClothingUniformJumpskirtChaplain
   femaleSocks: ClothingUnderSocksWhiteStockings
   satchel: ClothingBackpackSatchelChaplainFilled
   duffelbag: ClothingBackpackDuffelChaplainFilled

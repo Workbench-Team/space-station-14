@@ -1,0 +1,23 @@
+<Document>
+# Технологии
+
+Все технологии имеют определенную стоимость и требования к уровню для изучения. При их открытии добавляются различные рецепты, которые можно печатать на различных производственных установках.
+
+Ниже перечислены различные технологии и соответствующие им дисциплины.
+
+## Промышленные
+<GuideTechDisciplineEmbed Discipline="Industrial"/>
+
+## Биохимические
+<GuideTechDisciplineEmbed Discipline="Biochemical"/>
+
+## Оружейные
+<GuideTechDisciplineEmbed Discipline="Arsenal"/>
+
+## Экспериментальные
+<GuideTechDisciplineEmbed Discipline="Experimental"/>
+
+## Сервисные
+<GuideTechDisciplineEmbed Discipline="CivilianServices"/>
+
+</Document>

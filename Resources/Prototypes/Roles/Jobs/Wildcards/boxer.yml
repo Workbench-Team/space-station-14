@@ -21,7 +21,7 @@
     gloves: ClothingHandsGlovesBoxingRed
     shoes: ClothingShoesColorRed
     belt: ClothingBeltChampion
-  innerclothingskirt: UniformShortsRedWithTop
+  innerClothingSkirt: UniformShortsRedWithTop
   femaleSocks: ClothingUnderSocksWhiteKneeSocks
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

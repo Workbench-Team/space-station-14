@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Content.Shared.Administration;
 
 namespace Content.Client.Administration.Managers
@@ -12,6 +12,15 @@ namespace Content.Client.Administration.Managers
         ///     Fired when the admin status of the local player changes, such as losing admin privileges.
         /// </summary>
         event Action AdminStatusUpdated;
+
+        /// <summary>
+        ///     Gets the admin data for the client, if they are an admin.
+        /// </summary>
+        /// <param name="includeDeAdmin">
+        ///     Whether to return admin data for admins that are current de-adminned.
+        /// </param>
+        /// <returns><see langword="null" /> if the player is not an admin.</returns>
+        AdminData? GetAdminData(bool includeDeAdmin = false);
 
         /// <summary>
         ///     Checks whether the local player is an admin.
@@ -52,6 +61,18 @@ namespace Content.Client.Administration.Managers
         bool CanAdminMenu();
 
         void Initialize();
+
+        /// <summary>
+        ///     Checks if the client is an admin.
+        /// </summary>
+        /// <param name="includeDeAdmin">
+        ///     Whether to return admin data for admins that are current de-adminned.
+        /// </param>
+        /// <returns>true if the player is an admin, false otherwise.</returns>
+        bool IsAdmin(bool includeDeAdmin = false)
+        {
+            return GetAdminData(includeDeAdmin) != null;
+        }
 
         /// <summary>
         /// Set ahelp sound flag

@@ -33,7 +33,7 @@
     id: AtmosPDA
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
-  innerclothingskirt: ClothingUniformJumpskirtAtmos
+  innerClothingSkirt: ClothingUniformJumpskirtAtmos
   femaleSocks: ClothingUnderSocksCyanKneeSocks
   satchel: ClothingBackpackSatchelAtmosphericsFilled
   duffelbag: ClothingBackpackDuffelAtmosphericsFilled

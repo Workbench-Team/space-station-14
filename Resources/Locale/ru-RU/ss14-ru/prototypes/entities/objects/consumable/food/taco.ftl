@@ -1,0 +1,16 @@
+ent-FoodTacoShell = кармашек для тако
+    .desc = Кармашек для тако, что удобно держать, но он падает на бок, когда его кладут.
+ent-FoodTacoBase = { ent-FoodInjectableBase }
+    .desc = { ent-FoodInjectableBase.desc }
+ent-FoodTacoBeef = говяжий тако
+    .desc = Очень простой и привычный тако из говядины, теперь с сыром!
+ent-FoodTacoChicken = куриный тако
+    .desc = Очень простой и привычный тако с курицей, теперь с сыром!
+ent-FoodTacoFish = рыбный тако
+    .desc = Звучит довольно мерзко, но на самом деле всё не так уж плохо.
+ent-FoodTacoRat = крысиный тако
+    .desc = Да, это выглядит вполне себе...
+ent-FoodTacoBeefSupreme = совершенный говяжий тако
+    .desc = Это как обычное тако с говядиной, только совершеннее!
+ent-FoodTacoChickenSupreme = совершенный куриный тако
+    .desc = Это как обычное тако с курицей, только совершеннее!

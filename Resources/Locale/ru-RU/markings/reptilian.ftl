@@ -58,3 +58,5 @@ marking-LizardHornsBighorn-horns_bighorn = Рога Унатха (Большер
 marking-LizardHornsBighorn = Рога Унатха (Большерогие)
 marking-LizardHornsKoboldEars-horns_kobold_ears = Уши Унатха (Кобольд)
 marking-LizardHornsKoboldEars = Уши Унатха (Кобольд)
+marking-LizardHornsFloppyKoboldEars-horns_floppy_kobold_ears = Уши Унатха (Вислоухий кобольд)
+marking-LizardHornsFloppyKoboldEars = Уши Унатха (Вислоухий кобольд)

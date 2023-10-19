@@ -3,8 +3,6 @@ using Content.Shared.Movement.Systems;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 using Robust.Shared.Timing;
-using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared.Movement.Components
 {
@@ -77,14 +75,5 @@ namespace Content.Shared.Movement.Components
 
         [ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
         public bool CanMove { get; set; } = true;
-
-        [DataField("moveModeToggleAction", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
-        public string MoveModeToggleAction = "ActionMoveModeToggle";
-
-        [DataField("moveModeToggleActionEntity")]
-        public EntityUid? MoveModeToggleActionEntity;
-
-        [ViewVariables(VVAccess.ReadWrite)]
-        public bool SprintMove { get; set; } = true;
     }
 }

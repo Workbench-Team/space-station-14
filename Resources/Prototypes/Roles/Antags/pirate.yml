@@ -9,7 +9,7 @@
     id: PassengerPDA
     belt: ClothingBeltUtility
     pocket1: AppraisalTool
-  innerclothingskirt: ClothingUniformJumpsuitPirate
+  innerClothingSkirt: ClothingUniformJumpsuitPirate
   femaleSocks: ClothingUnderSocksBlackKneeSocks
   satchel: ClothingBackpackPirateFilled
   duffelbag: ClothingBackpackPirateFilled
@@ -27,7 +27,7 @@
     pocket1: AppraisalTool
     pocket2: EnergyCutlass
     outerClothing: ClothingOuterCoatPirate
-  innerclothingskirt: ClothingUniformJumpskirtColorLightBrown
+  innerClothingSkirt: ClothingUniformJumpskirtColorLightBrown
   femaleSocks: ClothingUnderSocksBlackStockings
   satchel: ClothingBackpackPirateFilled
   duffelbag: ClothingBackpackPirateFilled
@@ -44,7 +44,7 @@
     belt: ClothingBeltUtility
     pocket1: AppraisalTool
     outerClothing: ClothingOuterCoatGentle
-  innerclothingskirt: ClothingUniformJumpsuitPirate
+  innerClothingSkirt: ClothingUniformJumpsuitPirate
   femaleSocks: ClothingUnderSocksWhiteKneeSocks
   satchel: ClothingBackpackPirateFilled
   duffelbag: ClothingBackpackPirateFilled

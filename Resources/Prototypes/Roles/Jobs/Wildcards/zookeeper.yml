@@ -20,7 +20,7 @@
     shoes: ClothingShoesColorWhite
     id: ZookeeperPDA
     ears: ClothingHeadsetService
-  innerclothingskirt: ClothingUniformJumpsuitSafari
+  innerClothingSkirt: ClothingUniformJumpsuitSafari
   femaleSocks: ClothingUnderSocksWhiteStockings
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

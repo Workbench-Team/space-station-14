@@ -29,7 +29,7 @@
     id: ParamedicPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltParamedicFilled
-  innerclothingskirt: ClothingUniformJumpskirtParamedic
+  innerClothingSkirt: ClothingUniformJumpskirtParamedic
   femaleSocks: ClothingUnderSocksAzureStockings
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled

@@ -1,0 +1,17 @@
+admin-ui-panic-bunker-window-title = Бункер "Паники"
+admin-ui-panic-bunker-enabled = Бункер "Паники" Включен
+admin-ui-panic-bunker-disabled = Бункер "Паники" Отключен
+admin-ui-panic-bunker-tooltip = Бункер "паники" ограничивает подключение игроков, если их учетная запись является новой или они не имеют достаточного общего игрового времени на этом сервере.
+admin-ui-panic-bunker-disable-automatically = Автоматическое Отключение
+admin-ui-panic-bunker-disable-automatically-tooltip = Автоматически отключает бункер "паники" при подключении администратора.
+admin-ui-panic-bunker-enable-automatically = Автоматически Включение
+admin-ui-panic-bunker-enable-automatically-tooltip = Автоматическое включение бункера "паники" при отсутствии администраторов в сети.
+admin-ui-panic-bunker-count-deadminned-admins = Посчитать Дедминов
+admin-ui-panic-bunker-count-deadminned-admins-tooltip = Подсчитывает администраторов, что в дедмине при автоматическом включении и выключении бункера "паники".
+admin-ui-panic-bunker-show-reason = Показать причину
+admin-ui-panic-bunker-show-reason-tooltip = Показывает пользователю, почему подключение к серверу было заблокировано бункером "паники".
+admin-ui-panic-bunker-min-account-age = Мин. Возраст аккаунта
+admin-ui-panic-bunker-min-overall-hours = Мин. Время игры
+admin-ui-panic-bunker-is-enabled = В настоящее время бункер "паники" включен.
+admin-ui-panic-bunker-enabled-admin-alert = Бункер "Паники" был включен.
+admin-ui-panic-bunker-disabled-admin-alert = Бункер "Паники" был отключен.

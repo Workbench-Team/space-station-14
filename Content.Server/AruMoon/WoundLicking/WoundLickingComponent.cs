@@ -33,7 +33,7 @@ namespace Content.Server.Felinid
         /// </summary>
         [DataField("delay")]
         [ViewVariables(VVAccess.ReadWrite)]
-        public float Delay { get; set; } = 5f;
+        public float Delay { get; set; } = 3f;
 
         /// <summary>
         /// If true, then wound-licking can be applied only on yourself
