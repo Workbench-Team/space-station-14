@@ -62,8 +62,7 @@ namespace Content.IntegrationTests.Tests
             "Core",
             "Marathon",
             "Kettle",
-            "MeteorArena",
-            "KiloStation"
+            "MeteorArena"
         };
 
         /// <summary>
