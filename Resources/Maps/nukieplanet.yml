@@ -16876,7 +16876,7 @@ entities:
       type: Transform
     - enabled: False
       type: AccessReader
-- proto: VendingMachineChemicals
+- proto: ChemDispenser
   entities:
   - uid: 689
     components:
