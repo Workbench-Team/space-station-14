@@ -1,14 +1,14 @@
+using System.Linq;
+using System.Threading;
 using Content.Server.Cargo.Components;
 using Content.Server.Salvage.Expeditions;
 using Content.Server.Salvage.Expeditions.Structure;
 using Content.Shared.CCVar;
 using Content.Shared.Examine;
 using Content.Shared.Salvage;
+using Content.Shared.Salvage.Expeditions;
 using Robust.Shared.CPUJob.JobQueues;
 using Robust.Shared.CPUJob.JobQueues.Queues;
-using System.Linq;
-using System.Threading;
-using Content.Shared.Salvage.Expeditions;
 using Robust.Shared.GameStates;
 
 namespace Content.Server.Salvage;
@@ -110,7 +110,7 @@ public sealed partial class SalvageSystem
         // Finish mission
         if (TryComp<SalvageExpeditionDataComponent>(component.Station, out var data))
         {
-            FinishExpedition(data, uid, component, null);
+            FinishExpedition((component.Station, data), uid, component, null);
         }
     }
 
@@ -139,7 +139,8 @@ public sealed partial class SalvageSystem
             }
         }
 
-        foreach (var comp in EntityQuery<SalvageExpeditionDataComponent>())
+        var query = EntityQueryEnumerator<SalvageExpeditionDataComponent>();
+        while (query.MoveNext(out var uid, out var comp))
         {
             // Update offers
             if (comp.NextOffer > currentTime || comp.Claimed)
@@ -148,12 +149,13 @@ public sealed partial class SalvageSystem
             comp.Cooldown = false;
             comp.NextOffer += TimeSpan.FromSeconds(_cooldown);
             GenerateMissions(comp);
-            UpdateConsoles(comp);
+            UpdateConsoles((uid, comp));
         }
     }
 
-    private void FinishExpedition(SalvageExpeditionDataComponent component, EntityUid uid, SalvageExpeditionComponent expedition, EntityUid? shuttle)
+    private void FinishExpedition(Entity<SalvageExpeditionDataComponent> exp, EntityUid uid, SalvageExpeditionComponent expedition, EntityUid? shuttle)
     {
+        var component = exp.Comp;
         // Finish mission cleanup.
         switch (expedition.MissionParams.MissionType)
         {
@@ -197,7 +199,7 @@ public sealed partial class SalvageSystem
 
         component.ActiveMission = 0;
         component.Cooldown = true;
-        UpdateConsoles(component);
+        UpdateConsoles(exp);
     }
 
     /// <summary>

@@ -6,10 +6,10 @@
   - type: StorageFill
     contents:
       - id: GarmentBagQM
+      - id: BoxFolderQmClipboard
       - id: ClothingHeadsetCargo
       - id: CargoRequestComputerCircuitboard
       - id: CargoShuttleComputerCircuitboard
-      - id: HandheldCargoMonitor
       - id: CargoShuttleConsoleCircuitboard
       - id: SalvageShuttleConsoleCircuitboard
       - id: CargoBountyComputerCircuitboard

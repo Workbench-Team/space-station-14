@@ -37,3 +37,6 @@ trait-accentless-desc = You don't have the accent that your species would usuall
 
 trait-wheelchair-bound-name = Wheelchair Bound
 trait-wheelchair-bound-desc = You cannot move without your wheelchair. Wheelchair included.
+
+trait-socialanxiety-name = Social Anxiety
+trait-socialanxiety-desc = You are anxious when you speak and stutter.

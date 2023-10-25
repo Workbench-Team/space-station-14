@@ -51,6 +51,15 @@ public sealed partial class FaxMachineComponent : Component
     [DataField("receiveNukeCodes")]
     public bool ReceiveNukeCodes { get; set; } = false;
 
+    // Starshine-StationGoal-Start
+    /// <summary>
+    /// Should that fax receive station goal info
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite)]
+    [DataField("receiveStationGoal")]
+    public bool ReceiveStationGoal { get; set; } = false;
+    // Starshine-StationGoal-End
+
     /// <summary>
     /// Sound to play when fax has been emagged
     /// </summary>
