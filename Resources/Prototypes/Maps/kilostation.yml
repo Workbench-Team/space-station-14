@@ -2,6 +2,7 @@
   id: KiloStation
   mapName: 'KiloStation'
   mapPath: /Maps/kilostation.yml
+  minPlayers: 5
   maxPlayers: 50
   stations:
     KiloStation:
