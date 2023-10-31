@@ -31,18 +31,6 @@
 
 - type: entity
   noSpawn: true
-  parent: ClothingBackpackBrigmedic
-  id: ClothingBackpackBrigmedicFilled
-  components:
-  - type: StorageFill
-    contents:
-      - id: BoxSurvivalBrigmedic
-      - id: Flash
-      - id: MagazinePistolRubber
-      - id: Cautery
-
-- type: entity
-  noSpawn: true
   parent: ClothingBackpackSecurity
   id: ClothingBackpackSecurityFilledDetective
   components:
@@ -413,3 +401,16 @@
         - id: MedkitDeathsquadFilled
         - id: BoxAMRE
         - id: MicroBombImplanter
+
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackBrigmedic
+  id: ClothingBackpackBrigmedicFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalBrigmedic
+      - id: Flash
+      - id: MagazinePistolRubber
+      - id: Cautery
