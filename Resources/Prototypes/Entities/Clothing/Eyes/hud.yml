@@ -122,6 +122,10 @@
   - type: Clothing
     sprite: Clothing/Eyes/Hud/medsec.rsi
   - type: ShowSecurityIcons
+  - type: ClothingGrantComponent
+    component:
+    - type: ShowHealthBars
+      damageContainer: Biological
 
 - type: entity
   parent: ClothingEyesBase

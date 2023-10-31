@@ -37,6 +37,7 @@
            SecurityOfficer: [ 6, 6 ]
            SecurityCadet: [ 4, 4 ]
            Lawyer: [ 2, 2 ]
+           Brigmedic: [ 1, 1 ]
         #Engineering
            AtmosphericTechnician: [ 3, 3 ]
            StationEngineer: [ 4, 4 ]

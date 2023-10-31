@@ -5706,7 +5706,8 @@ entities:
           -13,12:
             0: 65535
           -13,13:
-            0: 65535
+            0: 65471
+            2: 64
           -13,14:
             0: 65535
           -13,15:
@@ -6250,15 +6251,15 @@ entities:
             0: 65535
           6,-8:
             0: 7967
-            2: 224
+            4: 224
             3: 57344
           6,-7:
             0: 7967
             3: 224
-            4: 57344
+            5: 57344
           6,-6:
             0: 65311
-            5: 224
+            6: 224
           6,-5:
             0: 65535
           7,-8:
@@ -6908,7 +6909,7 @@ entities:
             0: 65280
           -16,14:
             0: 52862
-            2: 128
+            4: 128
           -16,15:
             0: 3976
           -16,13:
@@ -7659,12 +7660,12 @@ entities:
           - 0
           - 0
         - volume: 2500
-          temperature: 293.15
+          temperature: 293.14996
           moles:
+          - 20.078888
+          - 75.53487
           - 0
           - 0
-          - 0
-          - 6666.982
           - 0
           - 0
           - 0
@@ -7688,6 +7689,29 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 0
+          - 0
+          - 0
+          - 6666.982
           - 0
           - 0
           - 0
@@ -13662,16 +13686,19 @@ entities:
     - pos: -27.5,-46.5
       parent: 30
       type: Transform
-  - uid: 21654
-    components:
-    - pos: -50.5,50.5
-      parent: 30
-      type: Transform
 - proto: BedsheetBlue
   entities:
   - uid: 1768
     components:
     - pos: -48.5,39.5
+      parent: 30
+      type: Transform
+- proto: BedsheetBrigmedic
+  entities:
+  - uid: 10150
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: -50.5,50.5
       parent: 30
       type: Transform
 - proto: BedsheetCaptain
@@ -13767,11 +13794,6 @@ entities:
   - uid: 8279
     components:
     - pos: -34.5,-22.5
-      parent: 30
-      type: Transform
-  - uid: 21653
-    components:
-    - pos: -50.5,50.5
       parent: 30
       type: Transform
 - proto: BedsheetOrange
@@ -14469,11 +14491,6 @@ entities:
       type: BallisticAmmoProvider
 - proto: BoxBodyBag
   entities:
-  - uid: 2245
-    components:
-    - pos: -52.567253,52.64174
-      parent: 30
-      type: Transform
   - uid: 21251
     components:
     - pos: -25.5,-0.5
@@ -48778,12 +48795,6 @@ entities:
       pos: -28.5,59.5
       parent: 30
       type: Transform
-  - uid: 2247
-    components:
-    - rot: -1.5707963267948966 rad
-      pos: -50.5,52.5
-      parent: 30
-      type: Transform
   - uid: 6694
     components:
     - rot: 3.141592653589793 rad
@@ -48881,6 +48892,11 @@ entities:
     components:
     - rot: 3.141592653589793 rad
       pos: 18.5,23.5
+      parent: 30
+      type: Transform
+  - uid: 20542
+    components:
+    - pos: -51.5,52.5
       parent: 30
       type: Transform
 - proto: ChairWood
@@ -53176,6 +53192,12 @@ entities:
     - canCollide: False
       type: Physics
     - type: InsideEntityStorage
+  - uid: 20543
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: -50.383163,50.312656
+      parent: 30
+      type: Transform
 - proto: ClothingOuterSuitChicken
   entities:
   - uid: 16151
@@ -54094,6 +54116,12 @@ entities:
   - uid: 6826
     components:
     - pos: -14.5,-12.5
+      parent: 30
+      type: Transform
+  - uid: 20541
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: -52.5,52.5
       parent: 30
       type: Transform
   - uid: 22804
@@ -55665,9 +55693,10 @@ entities:
     - pos: -23.5,-6.5
       parent: 30
       type: Transform
-  - uid: 10150
+  - uid: 20538
     components:
-    - pos: -50.5,54.5
+    - rot: 3.141592653589793 rad
+      pos: -51.5,49.5
       parent: 30
       type: Transform
 - proto: DeployableBarrier
@@ -99672,6 +99701,50 @@ entities:
         - 0
         - 0
       type: EntityStorage
+- proto: LockerBrigmedicFilledHardsuit
+  entities:
+  - uid: 2246
+    components:
+    - pos: -49.5,53.5
+      parent: 30
+      type: Transform
+    - air:
+        volume: 200
+        immutable: False
+        temperature: 293.1496
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+      type: EntityStorage
+    - containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2247
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+      type: ContainerContainer
 - proto: LockerCaptainFilledHardsuit
   entities:
   - uid: 1440
@@ -100538,37 +100611,6 @@ entities:
       type: EntityStorage
 - proto: LockerMedicalFilled
   entities:
-  - uid: 2246
-    components:
-    - pos: -49.5,53.5
-      parent: 30
-      type: Transform
-    - air:
-        volume: 200
-        immutable: False
-        temperature: 293.1496
-        moles:
-        - 3.4430928
-        - 12.952587
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-      type: EntityStorage
   - uid: 6976
     components:
     - pos: -24.5,-19.5
@@ -101704,6 +101746,11 @@ entities:
     - pos: -7.5,-16.5
       parent: 30
       type: Transform
+  - uid: 20540
+    components:
+    - pos: -50.5,50.5
+      parent: 30
+      type: Transform
 - proto: MedicalTechFab
   entities:
   - uid: 6956
@@ -101727,6 +101774,11 @@ entities:
       type: Transform
 - proto: MedkitBruteFilled
   entities:
+  - uid: 2235
+    components:
+    - pos: -51.85869,53.6244
+      parent: 30
+      type: Transform
   - uid: 6732
     components:
     - pos: -23.809431,-16.312307
@@ -101756,7 +101808,7 @@ entities:
   entities:
   - uid: 2239
     components:
-    - pos: -51.477226,53.661713
+    - pos: -51.380287,53.64812
       parent: 30
       type: Transform
   - uid: 6989
@@ -101812,7 +101864,7 @@ entities:
   entities:
   - uid: 2241
     components:
-    - pos: -51.008476,53.677338
+    - pos: -50.935173,53.62251
       parent: 30
       type: Transform
 - proto: MedkitRadiationFilled
@@ -114128,6 +114180,17 @@ entities:
     - pos: 39.487907,-67.53489
       parent: 30
       type: Transform
+- proto: RollerBedSpawnFolded
+  entities:
+  - uid: 2247
+    components:
+    - flags: InContainer
+      type: MetaData
+    - parent: 2246
+      type: Transform
+    - canCollide: False
+      type: Physics
+    - type: InsideEntityStorage
 - proto: RubberStampApproved
   entities:
   - uid: 379
@@ -118709,6 +118772,13 @@ entities:
     - pos: -24.5,16.5
       parent: 30
       type: Transform
+- proto: SpawnPointBrigmedic
+  entities:
+  - uid: 20539
+    components:
+    - pos: -50.5,52.5
+      parent: 30
+      type: Transform
 - proto: SpawnPointCaptain
   entities:
   - uid: 5001
@@ -119207,7 +119277,7 @@ entities:
       type: Transform
   - uid: 2244
     components:
-    - pos: -52.02038,53.73549
+    - pos: -52.550385,53.71854
       parent: 30
       type: Transform
   - uid: 7024
@@ -122278,11 +122348,6 @@ entities:
     - pos: 6.5,21.5
       parent: 30
       type: Transform
-  - uid: 22549
-    components:
-    - pos: -49.5,50.5
-      parent: 30
-      type: Transform
   - uid: 22835
     components:
     - rot: -1.5707963267948966 rad
@@ -122396,11 +122461,6 @@ entities:
   - uid: 416
     components:
     - pos: -25.5,11.5
-      parent: 30
-      type: Transform
-  - uid: 2235
-    components:
-    - pos: -52.5,52.5
       parent: 30
       type: Transform
   - uid: 2236
@@ -125134,6 +125194,11 @@ entities:
       type: Transform
 - proto: VendingMachineMedical
   entities:
+  - uid: 2245
+    components:
+    - pos: -49.5,50.5
+      parent: 30
+      type: Transform
   - uid: 2410
     components:
     - flags: SessionSpecific

@@ -914,7 +914,7 @@ entities:
             color: '#D381C996'
             id: BrickTileWhiteInnerNe
           decals:
-            1131: 33,-12
+            1130: 33,-12
         - node:
             color: '#DE3A3A96'
             id: BrickTileWhiteInnerNe
@@ -1779,14 +1779,14 @@ entities:
             397: 16,-41
             398: -5,-37
             399: -13,-40
-            1132: 22,35
-            1133: 23,36
-            1134: 22,37
-            1135: 24,35
-            1137: 25,36
-            1139: 24,37
-            1140: 25,35
-            1141: 24,36
+            1131: 22,35
+            1132: 23,36
+            1133: 22,37
+            1134: 24,35
+            1135: 25,36
+            1136: 24,37
+            1137: 25,35
+            1138: 24,36
         - node:
             color: '#FFFFFFFF'
             id: DirtHeavy
@@ -1798,16 +1798,16 @@ entities:
             404: -9,-26
             622: 27,30
             623: 27,29
-            1154: -17,21
-            1155: -17,21
-            1156: -15,21
-            1157: -25,2
-            1158: -25,-2
-            1159: -25,-5
-            1160: -22,-10
-            1161: -23,-9
-            1162: -29,-9
-            1163: -31,-10
+            1151: -17,21
+            1152: -17,21
+            1153: -15,21
+            1154: -25,2
+            1155: -25,-2
+            1156: -25,-5
+            1157: -22,-10
+            1158: -23,-9
+            1159: -29,-9
+            1160: -31,-10
         - node:
             color: '#FFFFFFFF'
             id: DirtHeavyMonotile
@@ -1844,10 +1844,10 @@ entities:
             636: 30,30
             637: 27,36
             638: 27,36
-            1164: -34,-11
-            1165: -34,-11
-            1166: -31,-7
-            1167: -29,-6
+            1161: -34,-11
+            1162: -34,-11
+            1163: -31,-7
+            1164: -29,-6
         - node:
             color: '#FFFFFFFF'
             id: DirtLight
@@ -1888,18 +1888,18 @@ entities:
             420: 5,-34
             633: 30,31
             634: 30,31
-            1142: -25,-12
-            1143: -25,-12
-            1144: -25,-12
-            1145: -22,-2
-            1146: -22,-2
-            1147: -21,-3
-            1148: -21,-3
-            1149: -25,-2
+            1139: -25,-12
+            1140: -25,-12
+            1141: -25,-12
+            1142: -22,-2
+            1143: -22,-2
+            1144: -21,-3
+            1145: -21,-3
+            1146: -25,-2
+            1147: -21,20
+            1148: -21,20
+            1149: -21,20
             1150: -21,20
-            1151: -21,20
-            1152: -21,20
-            1153: -21,20
         - node:
             angle: -1.5707963267948966 rad
             color: '#FFFFFFFF'
@@ -2570,8 +2570,8 @@ entities:
             0: 65531
             3: 4
           -6,1:
-            0: 65531
-            4: 4
+            0: 65523
+            4: 12
           -6,2:
             0: 65535
           -6,3:
@@ -36657,6 +36657,12 @@ entities:
       type: Transform
 - proto: ComputerCrewMonitoring
   entities:
+  - uid: 1963
+    components:
+    - rot: 3.141592653589793 rad
+      pos: -21.5,4.5
+      parent: 2
+      type: Transform
   - uid: 5843
     components:
     - pos: -5.5,46.5
@@ -37822,6 +37828,11 @@ entities:
   - uid: 8270
     components:
     - pos: -8.5,35.5
+      parent: 2
+      type: Transform
+  - uid: 11721
+    components:
+    - pos: -21.5,6.5
       parent: 2
       type: Transform
 - proto: DehydratedSpaceCarp
@@ -64925,6 +64936,50 @@ entities:
     - pos: 11.5,-23.5
       parent: 2
       type: Transform
+- proto: LockerBrigmedicFilledHardsuit
+  entities:
+  - uid: 1986
+    components:
+    - pos: -20.5,4.5
+      parent: 2
+      type: Transform
+    - air:
+        volume: 200
+        immutable: False
+        temperature: 293.1496
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+      type: EntityStorage
+    - containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 11719
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+      type: ContainerContainer
 - proto: LockerCaptainFilled
   entities:
   - uid: 6069
@@ -65431,11 +65486,6 @@ entities:
       type: Transform
 - proto: LockerMedicineFilled
   entities:
-  - uid: 1986
-    components:
-    - pos: -21.5,4.5
-      parent: 2
-      type: Transform
   - uid: 8293
     components:
     - pos: -32.5,-28.5
@@ -74180,6 +74230,17 @@ entities:
     - pos: 49.470314,-14.544012
       parent: 2
       type: Transform
+- proto: RollerBedSpawnFolded
+  entities:
+  - uid: 11719
+    components:
+    - flags: InContainer
+      type: MetaData
+    - parent: 1986
+      type: Transform
+    - canCollide: False
+      type: Physics
+    - type: InsideEntityStorage
 - proto: RubberStampApproved
   entities:
   - uid: 5885
@@ -76654,6 +76715,13 @@ entities:
   - uid: 14668
     components:
     - pos: 14.5,-12.5
+      parent: 2
+      type: Transform
+- proto: SpawnPointBrigmedic
+  entities:
+  - uid: 11720
+    components:
+    - pos: -21.5,5.5
       parent: 2
       type: Transform
 - proto: SpawnPointCaptain
@@ -81166,11 +81234,6 @@ entities:
       type: Transform
 - proto: VendingMachineMedical
   entities:
-  - uid: 1963
-    components:
-    - pos: -20.5,4.5
-      parent: 2
-      type: Transform
   - uid: 6777
     components:
     - flags: SessionSpecific
@@ -81380,6 +81443,11 @@ entities:
     - flags: SessionSpecific
       type: MetaData
     - pos: -30.5,-23.5
+      parent: 2
+      type: Transform
+  - uid: 11886
+    components:
+    - pos: -22.5,6.5
       parent: 2
       type: Transform
 - proto: VendingMachineYouTool

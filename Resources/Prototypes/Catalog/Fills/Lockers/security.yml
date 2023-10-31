@@ -75,39 +75,57 @@
       - id: ClothingEyesHudSecurity
 
 - type: entity
-  id: LockerBrigmedicFilled
-  suffix: Brigmedic, Filled
+  id: LockerBrigmedicFilledHardsuit
+  suffix: Filled, Hardsuit
   parent: LockerBrigmedic
   components:
   - type: StorageFill
     contents:
-      - id: ClothingEyesHudSecurity
-      - id: WeaponDisabler
+      - id: ClothingEyesHudMedSec
       - id: TrackingImplanter
-        amount: 2
+        amount: 4
       - id: ClothingOuterHardsuitBrigmedic
-      - id: BoxSterileMask
       - id: ClothingHeadHatBeretBrigmedic
+      - id: ClothingHandsGlovesNitrile
       - id: ClothingOuterCoatAMG
       - id: ClothingUniformJumpsuitBrigmedic
       - id: ClothingUniformJumpskirtBrigmedic
-      - id: ClothingUniformJumpskirtOfLife
-        prob: 0.1
-      - id: MedkitFilled
+      - id: ClothingUniformJumpsuitBrigmedicTurtle
+      - id: ClothingUniformJumpskirtBrigmedicTurtle
+      - id: ClothingOuterCoatBrigmedicWB
       - id: MedkitCombatFilled
-        prob: 0.6
       - id: MedkitAdvancedFilled
-        prob: 0.4
-      - id: MedkitOxygenFilled
-        prob: 0.3
-      - id: MedkitBruteFilled
-        prob: 0.3
-      - id: MedkitToxinFilled
-        prob: 0.3
-      - id: MedkitBurnFilled
-        prob: 0.7
-      - id: ClothingNeckCloakMoth #bzzz Moth-pocalypse
-        prob: 0.15
+      - id: BoxSyringe
+      - id: BoxPillCanister
+      - id: BoxBodyBag
+      - id: EpinephrineChemistryBottle
+        amount: 1
+
+- type: entity
+  id: LockerBrigmedicFilled
+  suffix: Filled
+  parent: LockerBrigmedic
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingEyesHudMedSec
+      - id: TrackingImplanter
+        amount: 4
+      - id: ClothingHeadHatBeretBrigmedic
+      - id: ClothingHandsGlovesNitrile
+      - id: ClothingOuterCoatAMG
+      - id: ClothingUniformJumpsuitBrigmedic
+      - id: ClothingUniformJumpskirtBrigmedic
+      - id: ClothingUniformJumpsuitBrigmedicTurtle
+      - id: ClothingUniformJumpskirtBrigmedicTurtle
+      - id: ClothingOuterCoatBrigmedicWB
+      - id: MedkitCombatFilled
+      - id: MedkitAdvancedFilled
+      - id: BoxSyringe
+      - id: BoxPillCanister
+      - id: BoxBodyBag
+      - id: EpinephrineChemistryBottle
+        amount: 1
 
 - type: entity
   id: LockerDetectiveFilled
