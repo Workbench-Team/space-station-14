@@ -2,7 +2,7 @@
   id: KiloStation
   mapName: 'KiloStation'
   mapPath: /Maps/kilostation.yml
-  minPlayers: 15
+  minPlayers: 5
   maxPlayers: 50
   stations:
     KiloStation:
@@ -14,7 +14,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_courser.yml
+          emergencyShuttlePath: /Maps/Shuttles/emergency_box.yml
         - type: StationJobs
           overflowJobs:
             - Passenger

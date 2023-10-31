@@ -1395,3 +1395,15 @@ Entries:
     type: Add
   id: 116
   time: '2023-10-22T08:49:22.0000000+00:00'
+- author: RevengenRat
+  changes:
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u043C\u043D\
+      \u043E\u0436\u0435\u0441\u0442\u0432\u043E \u043D\u0435\u0434\u043E\u0447\u0451\
+      \u0442\u043E\u0432 \u043D\u0430 kilostation!"
+    type: Fix
+  - message: "\u0422\u0435\u043F\u0435\u0440\u044C \u043D\u0435\u043B\u044C\u0437\u044F\
+      \ \u0443\u043C\u0435\u0440\u0435\u0442\u044C \u043E\u0442 \u0433\u0440\u0438\
+      \u043B\u0435\u0439, \u0433\u0443\u043B\u044F\u044F \u043F\u043E kilostation!"
+    type: Tweak
+  id: 117
+  time: '2023-10-25T23:11:36.0000000+00:00'
