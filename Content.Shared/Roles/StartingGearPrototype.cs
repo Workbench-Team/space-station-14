@@ -15,8 +15,8 @@ namespace Content.Shared.Roles
         [DataField]
         public EntProtoId? InnerClothingSkirt;
 
-        [DataField("satchel", customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
-        private string? _satchel;
+        [DataField]
+        public EntProtoId? Satchel;
 
         [DataField]
         public EntProtoId? Duffelbag;
