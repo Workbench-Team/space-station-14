@@ -38,7 +38,6 @@
 - type: startingGear
   id: QuartermasterGear
   equipment:
-    socks: ClothingUnderSocksWhiteKneeSocks
     head: ClothingHeadHatQMsoft
     jumpsuit: ClothingUniformJumpsuitQM
     back: ClothingBackpackQuartermasterFilled
@@ -48,6 +47,5 @@
     belt: BoxFolderClipboard
     pocket1: AppraisalTool
   innerClothingSkirt: ClothingUniformJumpskirtQM
-  femaleSocks: ClothingUnderSocksWhiteStockings
   satchel: ClothingBackpackSatchelQuartermasterFilled
   duffelbag: ClothingBackpackDuffelQuartermasterFilled

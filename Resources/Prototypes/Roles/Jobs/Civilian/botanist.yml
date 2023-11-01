@@ -17,7 +17,6 @@
 - type: startingGear
   id: BotanistGear
   equipment:
-    socks: ClothingUnderSocksGreenKneeSocks
     jumpsuit: ClothingUniformJumpsuitHydroponics
     back: ClothingBackpackHydroponicsFilled
     shoes: ClothingShoesColorBrown
@@ -26,6 +25,5 @@
     outerClothing: ClothingOuterApronBotanist
     belt: ClothingBeltPlantFilled
   innerClothingSkirt: ClothingUniformJumpskirtHydroponics
-  femaleSocks: ClothingUnderSocksGreenStockings
   satchel: ClothingBackpackSatchelHydroponicsFilled
   duffelbag: ClothingBackpackDuffelHydroponicsFilled

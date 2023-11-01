@@ -21,7 +21,6 @@
 - type: startingGear
   id: BartenderGear
   equipment:
-    socks: ClothingUnderSocksBlackSocks
     head: ClothingHeadHatTophat
     jumpsuit: ClothingUniformJumpsuitBartender
     outerClothing: ClothingOuterVest
@@ -30,6 +29,5 @@
     id: BartenderPDA
     ears: ClothingHeadsetService
   innerClothingSkirt: ClothingUniformJumpskirtBartender
-  femaleSocks: ClothingUnderSocksBlackKneeSocks
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

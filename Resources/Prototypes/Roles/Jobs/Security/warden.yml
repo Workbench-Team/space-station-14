@@ -26,7 +26,6 @@
 - type: startingGear
   id: WardenGear
   equipment:
-    socks: ClothingUnderSocksBlackKneeSocks
     head: ClothingHeadHatWarden
     jumpsuit: ClothingUniformJumpsuitWarden
     back: ClothingBackpackSecurityFilled
@@ -38,6 +37,5 @@
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponPistolMk58Nonlethal
   innerClothingSkirt: ClothingUniformJumpskirtWarden
-  femaleSocks: ClothingUnderSocksBlackStockings
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled

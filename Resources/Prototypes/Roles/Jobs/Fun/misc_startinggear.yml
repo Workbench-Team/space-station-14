@@ -4,7 +4,6 @@
 - type: startingGear
   id: SkeletonBiker
   equipment:
-    socks: ClothingUnderSocksBlackKneeSocks
     jumpsuit: ClothingUniformJumpsuitColorBlack
     back: ClothingBackpackFilled
     head: ClothingHeadBandSkull
@@ -17,7 +16,6 @@
     pocket1: VehicleSkeletonMotorcycle
     pocket2: VehicleKeySkeletonMotorcycle
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  femaleSocks: ClothingUnderSocksBlackStockings
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
 
@@ -25,7 +23,6 @@
 - type: startingGear
   id: SpaceNinjaGear
   equipment:
-    socks: ClothingUnderSocksBlackKneeSocks
     jumpsuit: ClothingUniformJumpsuitNinja
     # belt holds katana so satchel has the tools for sabotaging things
     back: ClothingBackpackSatchelTools
@@ -41,7 +38,6 @@
     pocket2: PinpointerStation
     belt: EnergyKatana
     suitstorage: YellowOxygenTankFilled
-  femaleSocks: ClothingUnderSocksBlackStockings
   inhand:
     - JetpackBlackFilled
 
@@ -74,22 +70,19 @@
 - type: startingGear
   id: DeathSquadGear
   equipment:
-    socks: ClothingUnderSocksBlackKneeSocks
     jumpsuit: ClothingUniformJumpsuitDeathSquad
-    back: ClothingBackpackDeathSquadFilled
+    back: ClothingBackpackDeathsquad
     mask: ClothingMaskGasDeathSquad
     eyes: ClothingEyesGlassesSecurity
     ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitDeathsquad
-    suitstorage: AirTankFilled
+    suitstorage: JetpackVoidFilled
     shoes: ClothingShoesBootsMagAdv
     id: DeathsquadPDA
     pocket1: EnergySword
-    pocket2: EnergyShield
-    belt: ClothingBeltMilitaryWebbingMedFilled
+    belt: ClothingBeltChiefEngineerFilled
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  femaleSocks: ClothingUnderSocksBlackStockings
   satchel: ClothingBackpackDuffelSyndicateAmmo
   duffelbag: ClothingBackpackDuffelSyndicateAmmo
 
@@ -106,13 +99,11 @@
 - type: startingGear
   id: SyndicateOperativeGearExtremelyBasic
   equipment:
-    socks: ClothingUnderSocksRedSyndieKneeSocks
     jumpsuit: ClothingUniformJumpsuitOperative
     back: ClothingBackpackDuffelSyndicateOperative
     shoes: ClothingShoesBootsCombatFilled
     gloves: ClothingHandsGlovesColorBlack
   innerClothingSkirt: ClothingUniformJumpsuitOperative
-  femaleSocks: ClothingUnderSocksRedSyndieStockings
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
 
@@ -120,7 +111,6 @@
 - type: startingGear
   id: SyndicateOperativeGearBasic
   equipment:
-    socks: ClothingUnderSocksRedSyndieKneeSocks
     jumpsuit: ClothingUniformJumpsuitOperative
     back: ClothingBackpackDuffelSyndicateOperative
     ears: ClothingHeadsetAltSyndicate
@@ -129,7 +119,6 @@
     pocket1: BaseUplinkRadio40TC
     id: AgentIDCard
   innerClothingSkirt: ClothingUniformJumpsuitOperative
-  femaleSocks: ClothingUnderSocksRedSyndieStockings
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
 
@@ -137,11 +126,10 @@
 - type: startingGear
   id: SyndicateOperativeGearFull
   equipment:
-    socks: ClothingUnderSocksRedSyndieKneeSocks
     jumpsuit: ClothingUniformJumpsuitOperative
     back: ClothingBackpackDuffelSyndicateOperative
     mask: ClothingMaskGasSyndicate
-    # eyes: Night Vision Goggles whenever they're made
+  # eyes: Night Vision Goggles whenever they're made
     eyes: ClothingEyesGlassesMeson
     ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsGlovesCombat
@@ -152,7 +140,6 @@
     pocket2: BaseUplinkRadio40TC
     belt: ClothingBeltMilitaryWebbing
   innerClothingSkirt: ClothingUniformJumpskirtOperative
-  femaleSocks: ClothingUnderSocksRedSyndieStockings
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
 
@@ -160,11 +147,10 @@
 - type: startingGear
   id: SyndicateCommanderGearFull
   equipment:
-    socks: ClothingUnderSocksRedSyndieKneeSocks
     jumpsuit: ClothingUniformJumpsuitOperative
     back: ClothingBackpackDuffelSyndicateOperative
     mask: ClothingMaskGasSyndicate
-    # eyes: Night Vision Goggles whenever they're made
+  # eyes: Night Vision Goggles whenever they're made
     eyes: ClothingEyesGlassesMeson
     ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsGlovesCombat
@@ -177,7 +163,6 @@
   inhand:
     - NukeOpsDeclarationOfWar
   innerClothingSkirt: ClothingUniformJumpskirtOperative
-  femaleSocks: ClothingUnderSocksRedSyndieStockings
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
 
@@ -185,7 +170,6 @@
 - type: startingGear
   id: SyndicateOperativeMedicFull
   equipment:
-    socks: ClothingUnderSocksRedSyndieKneeSocks
     jumpsuit: ClothingUniformJumpsuitOperative
     back: ClothingBackpackDuffelSyndicateOperativeMedic
     mask: ClothingMaskGasSyndicate
@@ -199,7 +183,6 @@
     pocket2: BaseUplinkRadio40TC
     belt: ClothingBeltMilitaryWebbingMedFilled
   innerClothingSkirt: ClothingUniformJumpskirtOperative
-  femaleSocks: ClothingUnderSocksRedSyndieStockings
   satchel: ClothingBackpackDuffelSyndicateOperativeMedic
   duffelbag: ClothingBackpackDuffelSyndicateOperativeMedic
 
@@ -207,7 +190,6 @@
 - type: startingGear
   id: SyndicateFootsoldierGear
   equipment:
-    socks: ClothingUnderSocksRedSyndieKneeSocks
     jumpsuit: ClothingUniformJumpsuitOperative
     head: ClothingHeadHelmetSwatSyndicate
     mask: ClothingMaskGas
@@ -218,7 +200,6 @@
     shoes: ClothingShoesBootsCombat
     id: SyndiPDA #a subtype of this for footsoldiers would probably be good to have
   innerClothingSkirt: ClothingUniformJumpsuitOperative
-  femaleSocks: ClothingUnderSocksRedSyndieStockings
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
 
@@ -226,7 +207,6 @@
 - type: startingGear
   id: SyndicateFootsoldierGearKnife
   equipment:
-    socks: ClothingUnderSocksRedSyndieKneeSocks
     jumpsuit: ClothingUniformJumpsuitOperative
     head: ClothingHeadHelmetSwatSyndicate
     mask: ClothingMaskGas
@@ -238,7 +218,6 @@
     pocket1: CombatKnife
     id: SyndiPDA
   innerClothingSkirt: ClothingUniformJumpsuitOperative
-  femaleSocks: ClothingUnderSocksRedSyndieStockings
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
 
@@ -246,7 +225,6 @@
 - type: startingGear
   id: SyndicateFootsoldierGearESword
   equipment:
-    socks: ClothingUnderSocksRedSyndieKneeSocks
     jumpsuit: ClothingUniformJumpsuitOperative
     head: ClothingHeadHelmetSwatSyndicate
     mask: ClothingMaskGas
@@ -259,7 +237,6 @@
     pocket2: EnergyShield
     id: SyndiPDA
   innerClothingSkirt: ClothingUniformJumpsuitOperative
-  femaleSocks: ClothingUnderSocksRedSyndieStockings
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
 
@@ -267,7 +244,6 @@
 - type: startingGear
   id: SyndicateFootsoldierGearPistol
   equipment:
-    socks: ClothingUnderSocksRedSyndieKneeSocks
     jumpsuit: ClothingUniformJumpsuitOperative
     head: ClothingHeadHelmetSwatSyndicate
     mask: ClothingMaskGas
@@ -279,7 +255,6 @@
     pocket1: WeaponPistolViper
     id: SyndiPDA
   innerClothingSkirt: ClothingUniformJumpsuitOperative
-  femaleSocks: ClothingUnderSocksRedSyndieStockings
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
 
@@ -287,7 +262,6 @@
 - type: startingGear
   id: NanotrasenParamilitaryGear
   equipment:
-    socks: ClothingUnderSocksAzureKneeSocks
     jumpsuit: ClothingUniformJumpsuitSec
     back: ClothingBackpackSecurityFilled
     shoes: ClothingShoesBootsCombatFilled
@@ -298,7 +272,6 @@
     ears: ClothingHeadsetSecurity
     gloves: ClothingHandsGlovesCombat
   innerClothingSkirt: ClothingUniformJumpskirtSec
-  femaleSocks: ClothingUnderSocksAzureStockings
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled
 
@@ -306,9 +279,8 @@
 - type: startingGear
   id: CBURNGear
   equipment:
-    socks: ClothingUnderSocksBlackKneeSocks
     jumpsuit: ClothingUniformJumpsuitColorBrown
-    back: ClothingBackpackDuffelCBURNFilled
+    back: ClothingBackpackDuffelCBURN
     mask: ClothingMaskGasExplorer
     eyes: ClothingEyesHudMedical
     ears: ClothingHeadsetAltCentCom
@@ -321,9 +293,8 @@
     suitstorage: YellowOxygenTankFilled
     belt: ClothingBeltBandolier
   innerClothingSkirt: ClothingUniformJumpsuitColorBrown
-  femaleSocks: ClothingUnderSocksBlackStockings
-  satchel: ClothingBackpackDuffelCBURNFilled
-  duffelbag: ClothingBackpackDuffelCBURNFilled
+  satchel: ClothingBackpackDuffelCBURN
+  duffelbag: ClothingBackpackDuffelCBURN
 
 - type: startingGear
   id: BoxingKangarooGear
@@ -365,7 +336,6 @@
 - type: startingGear
   id: BrigmedicGear
   equipment:
-    socks: ClothingUnderSocksBlackKneeSocks
     jumpsuit: ClothingUniformJumpsuitBrigmedic
     outerClothing: ClothingOuterCoatAMG
     back: ClothingBackpackBrigmedic
@@ -378,7 +348,6 @@
     mask: ClothingMaskBreathMedicalSecurity
     belt: ClothingBeltMedicalFilled
   innerClothingSkirt: ClothingUniformJumpskirtBrigmedic
-  femaleSocks: ClothingUnderSocksBlackStockings
   satchel: ClothingBackpackSatchelBrigmedicFilled
   duffelbag: ClothingBackpackDuffelBrigmedicFilled
 

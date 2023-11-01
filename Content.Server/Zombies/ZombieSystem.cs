@@ -171,7 +171,6 @@ namespace Content.Server.Zombies
             var enumerator =
                 new InventorySystem.ContainerSlotEnumerator(uid, inventoryComponent.TemplateId, _protoManager, _inv,
                     SlotFlags.FEET |
-                    SlotFlags.SOCKS |
                     SlotFlags.HEAD |
                     SlotFlags.EYES |
                     SlotFlags.GLOVES |

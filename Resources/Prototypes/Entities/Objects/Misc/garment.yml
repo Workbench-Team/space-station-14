@@ -7,7 +7,7 @@
   - type: Item
     size: 105
   - type: Storage
-    capacity: 120
+    capacity: 105
     whitelist:
       tags:
         - Clothing
@@ -34,15 +34,9 @@
     contents:
       - id: ClothingShoesBootsCombatFilled
       - id: ClothingUniformJumpsuitBlueShield
-      - id: ClothingUniformJumpsuitBlueShieldTurtleneck
-      - id: ClothingUniformJumpskirtBlueshield
-      - id: ClothingUniformJumpskirtBlueshieldTurtleneck
-      - id: ClothingUnderSocksBlueshieldStockings
-      - id: ClothingUnderSocksBlueshieldKneeSocks
       - id: ClothingEyesGlassesSunglassesBlueShield
       - id: ClothingOuterWinterBS
-      - id: ClothingNeckMantleBS
-      - id: ClothingNeckCloakBlueshield
+      - id: ClothingNeckMantleCap
 
 - type: entity
   name: captain's garment bag
@@ -63,9 +57,6 @@
       - id: ClothingUniformJumpsuitCapFormal
       - id: ClothingUniformJumpskirtCapFormalDress
       - id: ClothingShoesBootsLaceup
-      - id: ClothingUnderSocksCapStockings
-      - id: ClothingUnderSocksCapKneeSocks
-      - id: ClothingUnderSocksCapSocks
 
 - type: entity
   name:  head of personnel's garment
@@ -82,9 +73,6 @@
       - id: ClothingUniformJumpsuitHoP
       - id: ClothingUniformJumpskirtHoP
       - id: ClothingShoesBootsLaceup
-      - id: ClothingUnderSocksHOPStockings
-      - id: ClothingUnderSocksHOPKneeSocks
-      - id: ClothingUnderSocksHOPSocks
 
 - type: entity
   name: head of security's garment bag
@@ -110,9 +98,6 @@
       - id: ClothingUniformJumpsuitHoSBlue
       - id: ClothingUniformJumpsuitHoSGrey
       - id: ClothingShoesBootsJack
-      - id: ClothingUnderSocksHOSStockings
-      - id: ClothingUnderSocksHOSKneeSocks
-      - id: ClothingUnderSocksHOSSocks
 
 - type: entity
   name: chief engineer's garment bag
@@ -133,9 +118,6 @@
       - id: ClothingUniformJumpsuitChiefEngineerTurtle
       - id: ClothingUniformJumpskirtChiefEngineerTurtle
       - id: ClothingShoesColorBrown
-      - id: ClothingUnderSocksOrangeStockings
-      - id: ClothingUnderSocksOrangeKneeSocks
-      - id: ClothingUnderSocksOrangeSocks
 
 - type: entity
   name: research director's garment bag
@@ -152,9 +134,6 @@
       - id: ClothingUniformJumpsuitResearchDirector
       - id: ClothingUniformJumpskirtResearchDirector
       - id: ClothingShoesBootsJack
-      - id: ClothingUnderSocksPurpleStockings
-      - id: ClothingUnderSocksPurpleKneeSocks
-      - id: ClothingUnderSocksPurpleSocks
 
 - type: entity
   name: quartermasters's garment bag
@@ -176,9 +155,6 @@
       - id: ClothingUniformJumpsuitQMTurtleneck
       - id: ClothingUniformJumpskirtQMTurtleneck
       - id: ClothingShoesColorBrown
-      - id: ClothingUnderSocksWhiteStockings
-      - id: ClothingUnderSocksWhiteKneeSocks
-      - id: ClothingUnderSocksWhiteSocks
 
 - type: entity
   name: chief medical officer's garment bag
@@ -197,6 +173,3 @@
       - id: ClothingUniformJumpsuitCMO
       - id: ClothingUniformJumpskirtCMO
       - id: ClothingShoesColorBlue
-      - id: ClothingUnderSocksCyanStockings
-      - id: ClothingUnderSocksCyanKneeSocks
-      - id: ClothingUnderSocksCyanSocks

@@ -13,7 +13,6 @@
 - type: startingGear
   id: ZookeeperGear
   equipment:
-    socks: ClothingUnderSocksWhiteKneeSocks
     jumpsuit: ClothingUniformJumpsuitSafari
     back: ClothingBackpackFilled
     head: ClothingHeadSafari
@@ -21,6 +20,5 @@
     id: ZookeeperPDA
     ears: ClothingHeadsetService
   innerClothingSkirt: ClothingUniformJumpsuitSafari
-  femaleSocks: ClothingUnderSocksWhiteStockings
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

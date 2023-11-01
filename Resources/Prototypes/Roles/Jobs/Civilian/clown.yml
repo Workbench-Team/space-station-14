@@ -29,7 +29,6 @@
 - type: startingGear
   id: ClownGear
   equipment:
-    socks: ClothingUnderSocksRedKneeSocks
     jumpsuit: ClothingUniformJumpsuitClown
     back: ClothingBackpackClownFilled
     shoes: ClothingShoesClown
@@ -38,6 +37,5 @@
     pocket2: ClownRecorder
     id: ClownPDA
     ears: ClothingHeadsetService
-  femaleSocks: ClothingUnderSocksRedStockings
   satchel: ClothingBackpackSatchelClownFilled
   duffelbag: ClothingBackpackDuffelClownFilled

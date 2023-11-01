@@ -19,7 +19,6 @@
 - type: startingGear
   id: DoctorGear
   equipment:
-    socks: ClothingUnderSocksCyanKneeSocks
     jumpsuit: ClothingUniformJumpsuitMedicalDoctor
     back: ClothingBackpackMedicalFilled
     shoes: ClothingShoesColorWhite
@@ -28,6 +27,5 @@
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
   innerClothingSkirt: ClothingUniformJumpskirtMedicalDoctor
-  femaleSocks: ClothingUnderSocksCyanStockings
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled

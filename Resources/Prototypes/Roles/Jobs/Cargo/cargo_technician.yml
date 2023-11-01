@@ -16,7 +16,6 @@
 - type: startingGear
   id: CargoTechGear
   equipment:
-    socks: ClothingUnderSocksWhiteKneeSocks
     head: ClothingHeadHatCargosoft
     jumpsuit: ClothingUniformJumpsuitCargo
     back: ClothingBackpackCargoFilled
@@ -25,6 +24,5 @@
     ears: ClothingHeadsetCargo
     pocket1: AppraisalTool
   innerClothingSkirt: ClothingUniformJumpskirtCargo
-  femaleSocks: ClothingUnderSocksWhiteStockings
   satchel: ClothingBackpackSatchelCargoFilled
   duffelbag: ClothingBackpackDuffelCargoFilled

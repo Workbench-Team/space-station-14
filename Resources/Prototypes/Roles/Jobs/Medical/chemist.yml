@@ -18,7 +18,6 @@
 - type: startingGear
   id: ChemistGear
   equipment:
-    socks: ClothingUnderSocksOrangeKneeSocks
     jumpsuit: ClothingUniformJumpsuitChemistry
     back: ClothingBackpackChemistryFilled
     shoes: ClothingShoesColorWhite
@@ -30,6 +29,5 @@
     # the purple glasses?
     eyes: ClothingEyesGlassesChemical
   innerClothingSkirt: ClothingUniformJumpskirtChemistry
-  femaleSocks: ClothingUnderSocksOrangeStockings
   satchel: ClothingBackpackSatchelChemistryFilled
   duffelbag: ClothingBackpackDuffelChemistryFilled
