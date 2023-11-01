@@ -50,11 +50,12 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTLeader
     back: ClothingBackpackERTLeaderFilled
+    shoes: ClothingShoesBootsMagAdv
+    mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesSecurity
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTLeader
     suitstorage: WeaponRifleLecter
-    suitstorage: OxygenTankFilled
     id: ERTLeaderPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltSecurityFilled
@@ -62,7 +63,6 @@
     pocket2: MagazineRifle
   inhand:
     - AirTankFilled
-    pocket1: Flare
 
 # Engineer
 - type: job
