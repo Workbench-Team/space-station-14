@@ -32,12 +32,12 @@ namespace Content.Shared.Roles
         {
             if (profile != null)
             {
-                if (slot == "jumpsuit" && profile.Clothing == ClothingPreference.Jumpskirt && !string.IsNullOrEmpty(_innerClothingSkirt))
-                    return _innerClothingSkirt;
-                if (slot == "back" && profile.Backpack == BackpackPreference.Satchel && !string.IsNullOrEmpty(_satchel))
-                    return _satchel;
-                if (slot == "back" && profile.Backpack == BackpackPreference.Duffelbag && !string.IsNullOrEmpty(_duffelbag))
-                    return _duffelbag;
+                if (slot == "jumpsuit" && profile.Clothing == ClothingPreference.Jumpskirt && !string.IsNullOrEmpty(InnerClothingSkirt))
+                    return InnerClothingSkirt;
+                if (slot == "back" && profile.Backpack == BackpackPreference.Satchel && !string.IsNullOrEmpty(Satchel))
+                    return Satchel;
+                if (slot == "back" && profile.Backpack == BackpackPreference.Duffelbag && !string.IsNullOrEmpty(Duffelbag))
+                    return Duffelbag;
             }
 
             return Equipment.TryGetValue(slot, out var equipment) ? equipment : string.Empty;
