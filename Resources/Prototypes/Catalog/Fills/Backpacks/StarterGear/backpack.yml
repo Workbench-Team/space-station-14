@@ -255,7 +255,6 @@
         - id: RegenerativeMesh
         - id: BoxZiptie
         - id: CrowbarRed
-        - id: MagazinePistol
 
 - type: entity
   noSpawn: true
@@ -281,7 +280,6 @@
       contents:
         - id: BoxSurvivalMedical
         - id: TelescopicBaton
-        - id: WeaponPulseCarbine
         - id: Hypospray
         - id: MedkitAdvancedFilled
         - id: CrowbarRed
@@ -300,8 +298,7 @@
         - id: trayScanner
         - id: RCD
         - id: RCDAmmo
-        - id: RCDAmmo
-        - id: RCDAmmo
+          amount: 2
         - id: CableMVStack
         - id: CableHVStack
         - id: CableApcStack
@@ -318,7 +315,6 @@
       contents:
         - id: BoxSurvivalEngineering
         - id: TelescopicBaton
-        - id: WeaponPulsePistol
         - id: MedkitFilled
         - id: LightReplacer
         - id: BoxLightMixed
@@ -336,6 +332,8 @@
   name: death squad backpack
   description: Holds the kit of CentComm's most feared agents.
   components:
+    - type: Storage
+      maxTotalWeight: 56
     - type: StorageFill
       contents:
         - id: BoxSurvivalEngineering
@@ -384,23 +382,6 @@
         - id: Cutlass
         - id: WeaponRevolverPirate
         - id: ClothingEyesEyepatch
-
-- type: entity
-  parent: ClothingBackpackERTSecurity
-  id: ClothingBackpackDeathSquadFilled
-  components:
-    - type: StorageFill
-      contents:
-        - id: BoxSurvival
-        - id: WeaponRevolverMateba
-        - id: WeaponPulseRifle
-        - id: SpeedLoaderMagnumAP
-        - id: MagazineBoxMagnum
-        - id: C4
-        - id: C4
-        - id: MedkitDeathsquadFilled
-        - id: BoxAMRE
-        - id: MicroBombImplanter
 
 - type: entity
   noSpawn: true
