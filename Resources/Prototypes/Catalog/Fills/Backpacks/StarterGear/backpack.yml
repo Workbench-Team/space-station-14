@@ -387,7 +387,7 @@
 
 - type: entity
   parent: ClothingBackpackERTSecurity
-  id: ClothingBackpackDeathsquad
+  id: ClothingBackpackDeathSquadFilled
   components:
     - type: StorageFill
       contents:
@@ -401,7 +401,6 @@
         - id: MedkitDeathsquadFilled
         - id: BoxAMRE
         - id: MicroBombImplanter
-
 
 - type: entity
   noSpawn: true
