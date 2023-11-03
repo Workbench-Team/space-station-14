@@ -383,6 +383,8 @@
         - id: WeaponRevolverPirate
         - id: ClothingEyesEyepatch
 
+#Brigmedic
+
 - type: entity
   noSpawn: true
   parent: ClothingBackpackBrigmedic
