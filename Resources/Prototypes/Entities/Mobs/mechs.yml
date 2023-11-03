@@ -512,10 +512,8 @@
   parent: BoxHandcuff
   id: BoxHandcuffDurand
   components:
-  - type: Item
-    size: 40
   - type: Storage
-    capacity: 60
+    maxTotalWeight: 30
     whitelist:
       tags:
         - Handcuffs

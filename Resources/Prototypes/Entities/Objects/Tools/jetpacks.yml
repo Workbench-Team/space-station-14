@@ -37,7 +37,7 @@
       state: icon
     - type: Item
       sprite: Objects/Tanks/Jetpacks/blue.rsi
-      size: 100
+      size: Huge
     - type: UserInterface
       interfaces:
         - key: enum.SharedGasTankUiKey.Key
@@ -154,7 +154,7 @@
       - suitStorage
   - type: Item
     sprite: Objects/Tanks/Jetpacks/captain.rsi
-    size: 50
+    size: Normal
   - type: Tag
     tags:
     - HighRiskItem

@@ -40,8 +40,6 @@
   name: atmospheric MOD control unit
   description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. An atmospheric-resistant suit by Nakamura Engineering, offering extreme heat resistance compared to the engineer suit.
   components:
-  - type: Storage
-    capacity: 120
   - type: Sprite
     sprite: Clothing/Back/Modsuit/atmospheric.rsi
   - type: ToggleableClothing
@@ -56,8 +54,6 @@
   name: engineering MOD control unit
   description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. An engineer-fit suit with heat and shock resistance. Nakamura Engineering's classic.
   components:
-  - type: Storage
-    capacity: 120
   - type: Sprite
     sprite: Clothing/Back/Modsuit/engineering.rsi
   - type: ToggleableClothing
@@ -84,8 +80,6 @@
   name: medical MOD control unit
   description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. A lightweight suit by DeForest Medical Corporation, allows for easier movement.
   components:
-  - type: Storage
-    capacity: 110
   - type: Sprite
     sprite: Clothing/Back/Modsuit/medical.rsi
   - type: ToggleableClothing
@@ -101,8 +95,6 @@
   name: mining MOD control unit
   description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. A Nanotrasen mining suit for on-site operations, fit with accreting ash armor and a sphere form.
   components:
-  - type: Storage
-    capacity: 110
   - type: Sprite
     sprite: Clothing/Back/Modsuit/mining.rsi
   - type: ToggleableClothing
@@ -118,8 +110,6 @@
   name: standard MOD control unit
   description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. A civilian class suit by Nakamura Engineering, doesn't offer much other than slightly quicker movement.
   components:
-  - type: Storage
-    capacity: 85
   - type: Sprite
     sprite: Clothing/Back/Modsuit/standard.rsi
   - type: ToggleableClothing
@@ -151,7 +141,8 @@
   suffix: Admeme
   components:
   - type: Storage
-    capacity: 9999
+    maxItemSize: Huge
+    maxTotalWeight: 56 #14 normal-sized items.
   - type: Sprite
     sprite: Clothing/Back/Modsuit/admin.rsi
   - type: ToggleableClothing
@@ -165,7 +156,8 @@
   suffix: Admeme
   components:
   - type: Storage
-    capacity: 250
+    maxItemSize: Huge
+    maxTotalWeight: 32 #14 normal-sized items.
   - type: Sprite
     sprite: Clothing/Back/Modsuit/chrono.rsi
   - type: ToggleableClothing
@@ -178,7 +170,7 @@
   description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. A fancy, high-tech suit for Nanotrasen's high ranking officers.
   components:
   - type: Storage
-    capacity: 150
+    maxTotalWeight: 21 #14 normal-sized items.
   - type: Sprite
     sprite: Clothing/Back/Modsuit/corp.rsi
   - type: ToggleableClothing

@@ -20,16 +20,14 @@ portable-generator-ui-clogged = В топливном баке обнаруже�
 portable-generator-ui-eject = Извлечь
 portable-generator-ui-eta = (~{ $minutes } мин)
 portable-generator-ui-unanchored = Не закреплён
-power-switchable-generator-examine =
-    Электроэнергия выходит в { $output ->
+portable-generator-ui-current-output = Текущий выход: { $voltage }
+power-switchable-generator-examine = The power output is set to { $voltage }.
+power-switchable-generator-switched = Выход переключён на { $voltage }!
+power-switchable-voltage =
+    { $voltage ->
         [HV] [color=orange]ВВ[/color]
-       *[MV] [color=yellow]СВ[/color]
-    }.
-portable-generator-ui-switch-hv = Текущий выход: ВВ
-portable-generator-ui-switch-mv = Текущий выход: СВ
-portable-generator-ui-switch-to-hv = Переключить на ВВ
-portable-generator-ui-switch-to-mv = Переключить на СВ
-power-switchable-generator-verb-hv = Переключить выход на ВВ
-power-switchable-generator-verb-mv = Переключить выход на СВ
-power-switchable-generator-verb-disable-on = Сначала выключите генератор!
-power-switchable-generator-switched-output = Выход переключён!
+        [MV] [color=yellow]СВ[/color]
+       *[LV] [color=green]НВ[/color]
+    }
+power-switchable-switch-voltage = Переключить на { $voltage }
+fuel-generator-verb-disable-on = Сначала выключите генератор!

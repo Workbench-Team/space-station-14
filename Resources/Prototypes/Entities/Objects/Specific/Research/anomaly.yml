@@ -27,7 +27,7 @@
   description: A hand-held scanner built to collect information on various anomalous objects.
   components:
   - type: Item
-    size: 10
+    size: Small
   - type: AnomalyScanner
     scanDoAfterDuration: 2
   - type: Sprite

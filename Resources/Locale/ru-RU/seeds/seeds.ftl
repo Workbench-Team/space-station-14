@@ -96,3 +96,7 @@ seeds-berries-name = ягод
 seeds-berries-display-name = ягодного куста
 seeds-bungo-name = бунго
 seeds-bungo-display-name = растения бунго
+seeds-pea-name = гороха
+seeds-pea-display-name = гороховых лоз
+seeds-pumpkin-name = тыквы
+seeds-pumpkin-display-name = тыквы

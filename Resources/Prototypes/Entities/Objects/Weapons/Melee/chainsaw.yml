@@ -35,7 +35,6 @@
         visible: false
         map: [ "wielded" ]
   - type: MeleeWeapon
-    wideAnimationRotation: -135
     attackRate: 1
     soundHit:
       path: /Audio/Weapons/chainsaw_hit.ogg
@@ -43,19 +42,27 @@
       types:
         Blunt: 5.5
   - type: Item
-    size: 30
+    size: Normal
   - type: Clothing
     sprite: Objects/Weapons/Melee/chainsaw.rsi
     quickEquip: false
     slots:
     - suitStorage
-  - type: UseDelay
-    delay: 1.0
   - type: Appearance
   - type: ToggleableLightVisuals
     spriteLayer: wielded
   - type: Wieldable
-    wieldTime: 1
   - type: Construction
     graph: ChainsawGraph
     node: chainsaw
+  - type: RefillableSolution
+    solution: Welder
+  - type: SolutionContainerManager
+    solutions:
+      Welder:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 300
+        maxVol: 300
+  - type: UseDelay
+    delay: 1

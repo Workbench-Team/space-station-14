@@ -21,7 +21,6 @@
 - type: startingGear
   id: ChefGear
   equipment:
-    socks: ClothingUnderSocksWhiteSocks
     jumpsuit: ClothingUniformJumpsuitChef
     head: ClothingHeadHatChef
     back: ClothingBackpackFilled
@@ -31,6 +30,5 @@
     ears: ClothingHeadsetService
     outerClothing: ClothingOuterApronChef
   innerClothingSkirt: ClothingUniformJumpskirtChef
-  femaleSocks: ClothingUnderSocksWhiteKneeSocks
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

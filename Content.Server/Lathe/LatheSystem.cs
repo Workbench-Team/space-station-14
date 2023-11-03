@@ -18,7 +18,7 @@ using Content.Shared.Research.Components;
 using Content.Shared.Research.Prototypes;
 using JetBrains.Annotations;
 using Robust.Server.GameObjects;
-using Robust.Shared.Players;
+using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Player;

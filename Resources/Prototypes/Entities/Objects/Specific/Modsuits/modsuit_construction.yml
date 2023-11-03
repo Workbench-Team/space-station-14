@@ -14,7 +14,7 @@
   abstract: true
   components:
   - type: Item
-    size: 15
+    size: Normal
 
 - type: entity
   parent: BaseModsuitCorePartItem
@@ -170,7 +170,7 @@
     containers:
       battery-container: !type:Container
   - type: Item
-    size: 55
+    size: Ginormous
   - type: Appearance
   - type: MechAssemblyVisuals
     statePrefix: modcore

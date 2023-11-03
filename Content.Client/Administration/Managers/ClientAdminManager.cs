@@ -5,7 +5,7 @@ using Robust.Client.Player;
 using Robust.Client.State;
 using Robust.Shared.ContentPack;
 using Robust.Shared.Network;
-using Robust.Shared.Players;
+using Robust.Shared.Player;
 using Robust.Shared.Utility;
 
 namespace Content.Client.Administration.Managers

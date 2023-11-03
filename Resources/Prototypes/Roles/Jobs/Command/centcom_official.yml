@@ -15,7 +15,6 @@
 - type: startingGear
   id: CentcomGear
   equipment:
-    socks: ClothingUnderSocksCentCommKneeSocks
     jumpsuit: ClothingUniformJumpsuitCentcomOfficial
     back: ClothingBackpackSatchelCentcomFilled
     mask: ClothingMaskGasCentcom

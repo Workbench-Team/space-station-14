@@ -16,9 +16,6 @@ namespace Content.Shared.Roles
         public EntProtoId? InnerClothingSkirt;
 
         [DataField]
-        public EntProtoId? FemaleSocks;
-
-        [DataField]
         public EntProtoId? Satchel;
 
         [DataField]
@@ -37,8 +34,6 @@ namespace Content.Shared.Roles
             {
                 if (slot == "jumpsuit" && profile.Clothing == ClothingPreference.Jumpskirt && !string.IsNullOrEmpty(InnerClothingSkirt))
                     return InnerClothingSkirt;
-                if (slot == "socks" && profile.Clothing == ClothingPreference.Jumpskirt && !string.IsNullOrEmpty(FemaleSocks))
-                    return FemaleSocks;
                 if (slot == "back" && profile.Backpack == BackpackPreference.Satchel && !string.IsNullOrEmpty(Satchel))
                     return Satchel;
                 if (slot == "back" && profile.Backpack == BackpackPreference.Duffelbag && !string.IsNullOrEmpty(Duffelbag))

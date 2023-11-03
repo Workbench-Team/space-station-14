@@ -4,3 +4,5 @@ ent-XenoAITimedSpawner = периодический спавнер ксено И
     .desc = { ent-MarkerBase.desc }
 ent-MouseTimedSpawner = периодический спавнер мыши
     .desc = { ent-MarkerBase.desc }
+ent-CockroachTimedSpawner = периодический спавнер таракана
+    .desc = { ent-MouseTimedSpawner.desc }

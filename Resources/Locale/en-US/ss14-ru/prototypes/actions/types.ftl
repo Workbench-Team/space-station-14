@@ -40,3 +40,5 @@ ent-ActionWake = Wake up
     .desc = Stop sleeping.
 ent-ActionActivateHonkImplant = Honk
     .desc = Activates your honking implant, which will produce the signature sound of the clown.
+ent-ActionWoundLicking = Lick Wound
+    .desc = Stop bleeding by licking your wounds.

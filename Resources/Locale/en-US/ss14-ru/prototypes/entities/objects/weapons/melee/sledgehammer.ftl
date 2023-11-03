@@ -1,3 +1,2 @@
-ent-SledgeHammer = Sledgehammer
-    .desc = he best tool for demolishing walls, kneecaps, and skulls of your foes! Just be careful with it, eh?
-    .suffix = { "" }
+ent-Sledgehammer = sledgehammer
+    .desc = The perfect tool for wanton carnage.

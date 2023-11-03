@@ -1,30 +1,25 @@
 - type: entity
-  name: Sledgehammer
+  name: sledgehammer
   parent: BaseItem
-  id: SledgeHammer
-  description: he best tool for demolishing walls, kneecaps, and skulls of your foes! Just be careful with it, eh?
+  id: Sledgehammer
+  description: The perfect tool for wanton carnage.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/sledgehammer.rsi
     state: icon
   - type: MeleeWeapon
-    attackRate: 0.65
     damage:
       types:
-        Blunt: 15
+        Blunt: 14
         Structural: 15
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 20
+        Blunt: 10
         Structural: 60
-  - type: StaminaDamageOnHit
-    damage: 25
   - type: Item
-    size: 150
-    sprite: Objects/Weapons/Melee/sledgehammer.rsi
-    quickEquip: false
+    size: 80
 
 - type: entity
   name: metal pipe
@@ -75,7 +70,7 @@
   - type: StaminaDamageOnHit
     damage: 5
   - type: Item
-    size: 25
+    size: Large
     sprite: Objects/Weapons/Melee/metalpipe.rsi
     quickEquip: false
   - type: Construction

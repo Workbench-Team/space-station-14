@@ -1,7 +1,8 @@
-ent-SpawnMobMothroach = спавнер таракана
-    .desc = { ent-MarkerBase.desc }
-    .suffix = { "" }
 ent-SpawnMobMouse = спавнер мыши
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobCockroach = спавнер таракана
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobMothroach = спавнер тараканомоли
     .desc = { ent-MarkerBase.desc }
 ent-SpawnMobCat = спавнер кота
     .desc = { ent-MarkerBase.desc }

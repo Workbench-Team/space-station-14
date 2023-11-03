@@ -3,15 +3,16 @@ using Content.Server.EUI;
 using Content.Shared.Afk;
 using Content.Shared.Eui;
 using Robust.Server.Player;
+using Robust.Shared.Player;
 
 namespace Content.Server.Afk
 {
     public sealed class AfkCheckEui : BaseEui
     {
         private readonly IAfkManager _afkManager;
-        private readonly IPlayerSession _player;
+        private readonly ICommonSession _player;
 
-        public AfkCheckEui(IPlayerSession player, IAfkManager afkmanager)
+        public AfkCheckEui(ICommonSession player, IAfkManager afkmanager)
         {
             _player = player;
             _afkManager = afkmanager;

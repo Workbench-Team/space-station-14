@@ -20,8 +20,8 @@ namespace Content.Client.EntityHealthBar
 
             SubscribeLocalEvent<ShowHealthBarsComponent, ComponentInit>(OnInit);
             SubscribeLocalEvent<ShowHealthBarsComponent, ComponentRemove>(OnRemove);
-            SubscribeLocalEvent<ShowHealthBarsComponent, PlayerAttachedEvent>(OnPlayerAttached);
-            SubscribeLocalEvent<ShowHealthBarsComponent, PlayerDetachedEvent>(OnPlayerDetached);
+            SubscribeLocalEvent<ShowHealthBarsComponent, LocalPlayerAttachedEvent>(OnPlayerAttached);
+            SubscribeLocalEvent<ShowHealthBarsComponent, LocalPlayerDetachedEvent>(OnPlayerDetached);
             SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestart);
 
             _overlay = new(EntityManager, _protoMan);
@@ -45,13 +45,13 @@ namespace Content.Client.EntityHealthBar
             }
         }
 
-        private void OnPlayerAttached(EntityUid uid, ShowHealthBarsComponent component, PlayerAttachedEvent args)
+        private void OnPlayerAttached(EntityUid uid, ShowHealthBarsComponent component, LocalPlayerAttachedEvent args)
         {
             _overlayMan.AddOverlay(_overlay);
             _overlay.DamageContainer = component.DamageContainer;
         }
 
-        private void OnPlayerDetached(EntityUid uid, ShowHealthBarsComponent component, PlayerDetachedEvent args)
+        private void OnPlayerDetached(EntityUid uid, ShowHealthBarsComponent component, LocalPlayerDetachedEvent args)
         {
             _overlayMan.RemoveOverlay(_overlay);
         }
