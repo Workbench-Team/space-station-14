@@ -55,6 +55,9 @@
     HeadSide:
       points: 1
       required: false
+    Underwear:
+      points: 4
+      required: false
 
 - type: humanoidBaseSprite
   id: MobReptilianHead

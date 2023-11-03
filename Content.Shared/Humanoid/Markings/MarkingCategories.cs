@@ -15,7 +15,8 @@ namespace Content.Shared.Humanoid.Markings
         Arms,
         Legs,
         Tail,
-        Overlay
+        Overlay,
+        Underwear
     }
 
     public static class MarkingCategoriesConversion

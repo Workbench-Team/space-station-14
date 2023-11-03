@@ -74,6 +74,9 @@
     Arms:
       points: 2
       required: false
+    Underwear:
+      points: 4
+      required: false
 
 - type: humanoidBaseSprite
   id: MobMothHead
