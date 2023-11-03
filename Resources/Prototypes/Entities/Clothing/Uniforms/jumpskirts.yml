@@ -288,7 +288,7 @@
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtBrigmedicTurtle
   name: brigmedic turtleneck
-  description: This uniform is issued to qualified personnel who have been trained. No one cares that the training took half a day.
+  description: Comfortable and warm turtleneck. Especially for the guardian angel.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/brigmedic_turtleneck.rsi

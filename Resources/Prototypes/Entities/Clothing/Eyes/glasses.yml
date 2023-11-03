@@ -168,7 +168,7 @@
   parent: ClothingEyesBase
   id: ClothingEyesGlassesMed
   name: medical sunglasses
-  description: Strangely ancient technology used to help provide rudimentary eye cover. Enhanced shielding blocks many flashes.
+  description: They perfectly protect the eyes from flashes, showing all the information about the health of others. A field medic's best friend.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/medglasses.rsi
