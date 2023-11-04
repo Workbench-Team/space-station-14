@@ -7,6 +7,8 @@
     state: icon
   - type: Clothing
     slots: [eyes]
+  - type: Item
+    size: Small
   - type: Tag
     tags:
     - Clothing

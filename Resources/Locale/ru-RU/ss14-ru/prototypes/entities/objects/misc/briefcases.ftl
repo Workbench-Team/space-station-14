@@ -1,8 +1,8 @@
 ent-BriefcaseBase = { ent-BaseItem }
     .desc = Пригодится для переноски предметов в руках.
-ent-BriefcaseBrown = коричневый чемодан
-    .desc = Удобный чемоданчик.
-ent-BriefcaseSyndieBase = { ent-BaseStorageItem }
+ent-BriefcaseBrown = коричневый дипломат
+    .desc = Удобный дипломат.
+ent-BriefcaseSyndieBase = { ent-BriefcaseBase }
     .desc = { ent-BriefcaseBase.desc }
     .suffix = Синдикат, Пустой
 ent-BriefcaseRD = научный кейс
@@ -16,3 +16,4 @@ ent-MysteryWeaponBox = заблокированный ящик с оружием
     .suffix = ОСЩ, Случайный
 ent-BriefcaseSyndie = { ent-BriefcaseBrown }
     .desc = { ent-BriefcaseBrown.desc }
+    .suffix = Синдикат, Пустой

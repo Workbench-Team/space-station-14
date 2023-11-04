@@ -2,7 +2,6 @@
 - type: startingGear
   id: WizardBlueGear
   equipment:
-    socks: ClothingUnderSocksBlueKneeSocks
     jumpsuit: ClothingUniformJumpsuitColorDarkBlue
     back: ClothingBackpackFilled
     head: ClothingHeadHatWizard
@@ -11,14 +10,12 @@
     id: PassengerPDA
     ears: ClothingHeadsetService
   innerClothingSkirt: ClothingUniformJumpskirtColorDarkBlue
-  femaleSocks: ClothingUnderSocksBlueStockings
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
 
 - type: startingGear
   id: WizardRedGear
   equipment:
-    socks: ClothingUnderSocksRedKneeSocks
     jumpsuit: ClothingUniformJumpsuitColorRed
     back: ClothingBackpackFilled
     head: ClothingHeadHatRedwizard
@@ -27,14 +24,12 @@
     id: PassengerPDA
     ears: ClothingHeadsetService
   innerClothingSkirt: ClothingUniformJumpskirtColorRed
-  femaleSocks: ClothingUnderSocksRedStockings
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
 
 - type: startingGear
   id: WizardVioletGear
   equipment:
-    socks: ClothingUnderSocksPurpleKneeSocks
     jumpsuit: ClothingUniformJumpsuitColorPurple
     back: ClothingBackpackFilled
     head: ClothingHeadHatVioletwizard
@@ -43,14 +38,12 @@
     id: PassengerPDA
     ears: ClothingHeadsetService
   innerClothingSkirt: ClothingUniformJumpskirtColorPurple
-  femaleSocks: ClothingUnderSocksPurpleStockings
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
 
 - type: startingGear
   id: WizardHardsuitGear
   equipment:
-    socks: ClothingUnderSocksPurpleKneeSocks
     jumpsuit: ClothingUniformJumpsuitColorPurple
     back: ClothingBackpackFilled
     outerClothing: ClothingOuterHardsuitWizard
@@ -58,6 +51,5 @@
     id: PassengerPDA
     ears: ClothingHeadsetService
   innerClothingSkirt: ClothingUniformJumpskirtColorPurple
-  femaleSocks: ClothingUnderSocksPurpleStockings
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

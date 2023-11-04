@@ -79,8 +79,6 @@
   id: PinpointerAnomaly
   parent: PinpointerBase
   components:
-  - type: Item
-    size: 10
   - type: Sprite
     noRot: True
     sprite: Objects/Devices/pinpointer.rsi

@@ -1,6 +1,6 @@
 ﻿using Content.Server.Administration;
 using Content.Server.Database;
-using Content.Server.Players;
+using Content.Shared.Players;
 using Content.Server.Players.PlayTimeTracking;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;

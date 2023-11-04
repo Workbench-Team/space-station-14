@@ -87,8 +87,6 @@
     sprite: Clothing/OuterClothing/Armor/miner.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/miner.rsi
-  - type: Item
-    size: 35
   - type: Armor
     modifiers:
       coefficients:
@@ -117,8 +115,6 @@
     sprite: Clothing/OuterClothing/Armor/miner_red.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/miner_red.rsi
-  - type: Item
-    size: 35
   - type: Armor
     modifiers:
       coefficients:

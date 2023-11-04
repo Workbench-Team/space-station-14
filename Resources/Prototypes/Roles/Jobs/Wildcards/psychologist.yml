@@ -15,13 +15,11 @@
 - type: startingGear
   id: PsychologistGear
   equipment:
-    socks: ClothingUnderSocksBlackSocks
     jumpsuit: ClothingUniformJumpsuitPsychologist
     back: ClothingBackpackMedicalFilled
     shoes: ClothingShoesLeather
     id: PsychologistPDA
     ears: ClothingHeadsetMedical
   innerClothingSkirt: ClothingUniformJumpsuitPsychologist
-  femaleSocks: ClothingUnderSocksThinStockings
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled

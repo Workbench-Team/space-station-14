@@ -9,7 +9,7 @@
     tags:
       - MagazineRifle
   - type: Item
-    size: 5
+    size: Small
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
@@ -160,7 +160,7 @@
         - CartridgeRifle
     capacity: 32
   - type: Item
-    size: 10
+    size: Small
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container

@@ -24,7 +24,6 @@
 - type: startingGear
   id: SeniorPhysicianGear
   equipment:
-    socks: ClothingUnderSocksWhiteKneeSocks
     jumpsuit: ClothingUniformJumpsuitSeniorPhysician
     back: ClothingBackpackMedicalFilled
     shoes: ClothingShoesColorBlack
@@ -33,6 +32,5 @@
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
   innerClothingSkirt: ClothingUniformJumpskirtSeniorPhysician
-  femaleSocks: ClothingUnderSocksWhiteStockings
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled

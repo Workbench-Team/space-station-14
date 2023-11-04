@@ -24,7 +24,6 @@
 - type: startingGear
   id: DetectiveGear
   equipment:
-    socks: ClothingUnderSocksBlackSocks
     jumpsuit: ClothingUniformJumpsuitDetective
     back: ClothingBackpackSecurityFilledDetective
     shoes: ClothingShoesBootsCombatFilled
@@ -35,6 +34,5 @@
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltHolsterFilled
   innerClothingSkirt: ClothingUniformJumpskirtDetective
-  femaleSocks: ClothingUnderSocksBlackKneeSocks
   satchel: ClothingBackpackSatchelSecurityFilledDetective
   duffelbag: ClothingBackpackDuffelSecurityFilledDetective

@@ -66,18 +66,6 @@
     ClothingHeadRastaHat: 2
     ClothingBeltStorageWaistbag: 3
     ClothingUniformJumpsuitCitizen: 3
-    ClothingUnderSocksWhiteStockings: 2
-    ClothingUnderSocksWhiteKneeSocks: 2
-    ClothingUnderSocksWhiteSocks: 2
-    ClothingUnderSocksBlackStockings: 2
-    ClothingUnderSocksBlackKneeSocks: 2
-    ClothingUnderSocksBlackSocks: 2
-    ClothingUnderSocksPantyhose: 1
-    ClothingUnderSocksThinStockings: 2
-    ClothingUnderSocksThinKneeSocks: 2
-    ClothingUnderSocksFishnetPantyhose: 1
-    ClothingUnderSocksFishnetStockings: 2
-    ClothingUnderSocksFishnetKneeSocks: 2
     ClothingEyesGlasses: 6
   contrabandInventory:
     ClothingUniformJumpsuitTacticool: 1

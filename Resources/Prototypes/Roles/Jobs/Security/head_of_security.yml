@@ -42,7 +42,6 @@
 - type: startingGear
   id: HoSGear
   equipment:
-    socks: ClothingUnderSocksHOSKneeSocks
     jumpsuit: ClothingUniformJumpsuitHoS
     back: ClothingBackpackHOSFilled
     shoes: ClothingShoesBootsCombatFilled
@@ -55,6 +54,5 @@
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponPistolMk58Nonlethal
   innerClothingSkirt: ClothingUniformJumpskirtHoS
-  femaleSocks: ClothingUnderSocksHOSStockings
   satchel: ClothingBackpackSatchelHOSFilled
   duffelbag: ClothingBackpackDuffelHOSFilled

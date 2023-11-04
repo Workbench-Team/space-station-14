@@ -110,3 +110,4 @@ tiles-wood3 = разбитый деревянный пол
 tiles-hull = наружная обшивка корпуса
 tiles-web = паутинный пол
 tiles-hull-reinforced = укреплённая наружная обшивка корпуса
+tiles-chromite = хромит

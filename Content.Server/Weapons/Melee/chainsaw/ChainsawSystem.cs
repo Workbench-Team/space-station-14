@@ -85,7 +85,7 @@ public sealed class ChainsawSystem : EntitySystem
     {
         if (TryComp(uid, out ItemComponent? item))
         {
-            _item.SetSize(uid, 30, item);
+            _item.SetSize(uid, ItemSize.Normal, item);
         }
 
         if (TryComp<DisarmMalusComponent>(uid, out var malus))
@@ -112,7 +112,7 @@ public sealed class ChainsawSystem : EntitySystem
     {
         if (TryComp(uid, out ItemComponent? item))
         {
-            _item.SetSize(uid, 9999, item);
+            _item.SetSize(uid, ItemSize.Ginormous, item);
         }
 
         if (comp.IsSharp)

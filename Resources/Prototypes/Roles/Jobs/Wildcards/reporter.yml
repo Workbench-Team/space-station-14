@@ -13,7 +13,6 @@
 - type: startingGear
   id: ReporterGear
   equipment:
-    socks: ClothingUnderSocksBlackSocks
     jumpsuit: ClothingUniformJumpsuitReporter
     back: ClothingBackpackFilled
     shoes: ClothingShoesColorWhite
@@ -21,6 +20,5 @@
     ears: ClothingHeadsetService
     pocket1: HandheldMMMonitor
   innerClothingSkirt: ClothingUniformJumpsuitJournalist
-  femaleSocks: ClothingUnderSocksBlackKneeSocks
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

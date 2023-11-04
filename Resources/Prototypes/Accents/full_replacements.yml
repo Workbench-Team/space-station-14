@@ -21,14 +21,6 @@
   - accent-words-dog-5
 
 - type: accent
-  id: mothroach
-  fullReplacements:
-  - accent-words-mothroach-1
-  - accent-words-mothroach-2
-  - accent-words-mothroach-3
-  - accent-words-mothroach-4
-  
-- type: accent
   id: mouse
   fullReplacements:
   - accent-words-mouse-1
@@ -38,6 +30,14 @@
   - accent-words-mouse-5 
   - accent-words-mouse-6 
   - accent-words-mouse-7
+
+- type: accent
+  id: mothroach
+  fullReplacements:
+  - accent-words-mothroach-1
+  - accent-words-mothroach-2
+  - accent-words-mothroach-3
+  - accent-words-mothroach-4
 
 - type: accent
   id: mumble

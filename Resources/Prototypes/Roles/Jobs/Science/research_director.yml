@@ -30,7 +30,6 @@
 - type: startingGear
   id: ResearchDirectorGear
   equipment:
-    socks: ClothingUnderSocksPurpleKneeSocks
     jumpsuit: ClothingUniformJumpsuitResearchDirector
     back: ClothingBackpackResearchDirectorFilled
     shoes: ClothingShoesColorBrown
@@ -38,6 +37,5 @@
     id: RnDPDA
     ears: ClothingHeadsetRD
   innerClothingSkirt: ClothingUniformJumpskirtResearchDirector
-  femaleSocks: ClothingUnderSocksPurpleStockings
   satchel: ClothingBackpackSatchelResearchDirectorFilled
   duffelbag: ClothingBackpackDuffelResearchDirectorFilled

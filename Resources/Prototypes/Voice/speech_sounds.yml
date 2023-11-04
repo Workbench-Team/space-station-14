@@ -35,15 +35,6 @@
     path: /Audio/Voice/Talk/speak_2_exclaim.ogg
 
 - type: speechSounds
-  id: Mothroach_scream
-  saySound:
-    path: /Audio/Voice/Moth/moth_scream.ogg
-  askSound:
-    path: /Audio/Voice/Moth/moth_scream.ogg
-  exclaimSound:
-    path: /Audio/Voice/Moth/moth_scream.ogg
-        
-- type: speechSounds
   id: Squeak
   saySound:
     path: /Audio/Animals/mouse_squeak.ogg
@@ -51,6 +42,15 @@
     path: /Audio/Animals/mouse_squeak.ogg
   exclaimSound:
     path: /Audio/Animals/mouse_squeak.ogg
+
+- type: speechSounds
+  id: Mothroach
+  saySound:
+    path: /Audio/Voice/Moth/moth_scream.ogg
+  askSound:
+    path: /Audio/Voice/Moth/moth_scream.ogg
+  exclaimSound:
+    path: /Audio/Voice/Moth/moth_scream.ogg
 
 - type: speechSounds
   id: Vending

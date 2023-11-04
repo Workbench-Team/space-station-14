@@ -9,7 +9,7 @@
     state: mecha_pulse
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
   - type: Item
-    size: 80
+    size: Ginormous
   - type: AmmoCounter
   - type: Gun
     maxAngle: 60
@@ -47,7 +47,7 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_missilerack
   - type: Item
-    size: 80
+    size: Ginormous
   - type: Gun
     fireRate: 2
     selectedMode: FullAuto
@@ -157,7 +157,7 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_carbine
   - type: Item
-    size: 80
+    size: Ginormous
   - type: Gun
     angleIncrease: 4
     angleDecay: 16
@@ -183,7 +183,7 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_wholegen
   - type: Item
-    size: 80
+    size: Ginormous
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/plasma_cutter.ogg
@@ -213,7 +213,7 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_ion
   - type: Item
-    size: 80
+    size: Ginormous
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -294,7 +294,7 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_exting
   - type: Item
-    size: 80
+    size: Ginormous
   - type: SolutionContainerManager
     solutions:
       spray:
@@ -359,7 +359,7 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_uac2
   - type: Item
-    size: 80
+    size: Ginormous
   - type: Gun
     angleIncrease: 4
     angleDecay: 16
@@ -457,7 +457,7 @@
       types:
         Blunt: 0
   - type: Item
-    size: 80
+    size: Ginormous
   - type: Appearance
   - type: MechEquipment
   - type: UIFragment
@@ -498,7 +498,7 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_clamp
   - type: Item
-    size: 80
+    size: Ginormous
   - type: TilePrying
   - type: Tool
     qualities:
@@ -617,7 +617,7 @@
   description: A self-defense weapon that exhausts organic targets, weakening them until they collapse.
   components:
   - type: Item
-    size: 80
+    size: Ginormous
   - type: ProjectileBatteryAmmoProvider
     fireCost: 600
   - type: BatterySelfRecharger

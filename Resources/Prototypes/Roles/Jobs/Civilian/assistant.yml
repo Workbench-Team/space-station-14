@@ -12,13 +12,11 @@
 - type: startingGear
   id: PassengerGear
   equipment:
-    socks: ClothingUnderSocksGreySocks
     jumpsuit: ClothingUniformJumpsuitColorGrey
     back: ClothingBackpackFilled
     shoes: ClothingShoesColorBlack
     id: PassengerPDA
     ears: ClothingHeadsetGrey
   innerClothingSkirt: ClothingUniformJumpskirtColorGrey
-  femaleSocks: ClothingUnderSocksGreyKneeSocks
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
