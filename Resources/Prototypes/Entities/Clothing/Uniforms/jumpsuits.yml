@@ -498,6 +498,17 @@
 
 - type: entity
   parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBrigmedicTurtle
+  name: brigmedic turtleneck
+  description: Comfortable and warm turtleneck. Especially for the guardian angel.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/brigmedic_turtleneck.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/brigmedic_turtleneck.rsi
+
+- type: entity
+  parent: ClothingUniformBase
   id: ClothingUniformJumpsuitPrisoner
   name: prisoner jumpsuit
   description: Busted.

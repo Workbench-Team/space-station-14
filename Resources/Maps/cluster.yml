@@ -6625,11 +6625,6 @@ entities:
       type: Transform
 - proto: AirlockMedicalLocked
   entities:
-  - uid: 734
-    components:
-    - pos: 22.5,4.5
-      parent: 1
-      type: Transform
   - uid: 3393
     components:
     - rot: 3.141592653589793 rad
@@ -6820,6 +6815,11 @@ entities:
   - uid: 2351
     components:
     - pos: 18.5,21.5
+      parent: 1
+      type: Transform
+  - uid: 12648
+    components:
+    - pos: 22.5,4.5
       parent: 1
       type: Transform
 - proto: AirlockServiceGlassLocked
@@ -7746,6 +7746,13 @@ entities:
     - pos: -13.5,-30.5
       parent: 1
       type: Transform
+- proto: BedsheetBrigmedic
+  entities:
+  - uid: 734
+    components:
+    - pos: 23.5,6.5
+      parent: 1
+      type: Transform
 - proto: BedsheetCaptain
   entities:
   - uid: 4099
@@ -8230,11 +8237,6 @@ entities:
       type: Transform
 - proto: BoxBodyBag
   entities:
-  - uid: 5351
-    components:
-    - pos: 23.488127,5.639096
-      parent: 1
-      type: Transform
   - uid: 5699
     components:
     - pos: -22.480776,15.689974
@@ -28220,6 +28222,11 @@ entities:
   - uid: 4074
     components:
     - pos: -4.5,31.5
+      parent: 1
+      type: Transform
+  - uid: 12608
+    components:
+    - pos: 20.5,7.5
       parent: 1
       type: Transform
 - proto: ComputerCriminalRecords
@@ -55649,6 +55656,13 @@ entities:
     - pos: -0.5,-1.5
       parent: 1
       type: Transform
+- proto: LockerBrigmedicFilledHardsuit
+  entities:
+  - uid: 5344
+    components:
+    - pos: 21.5,5.5
+      parent: 1
+      type: Transform
 - proto: LockerCaptainFilled
   entities:
   - uid: 4090
@@ -56054,11 +56068,6 @@ entities:
   - uid: 5917
     components:
     - pos: -23.5,9.5
-      parent: 1
-      type: Transform
-  - uid: 12608
-    components:
-    - pos: 21.5,5.5
       parent: 1
       type: Transform
 - proto: LockerMedicineFilled
@@ -56928,6 +56937,11 @@ entities:
       type: Transform
 - proto: MedkitBurnFilled
   entities:
+  - uid: 5347
+    components:
+    - pos: 23.538721,7.496727
+      parent: 1
+      type: Transform
   - uid: 5891
     components:
     - pos: -25.409866,11.671727
@@ -56955,11 +56969,6 @@ entities:
   - uid: 5059
     components:
     - pos: 5.540815,19.460373
-      parent: 1
-      type: Transform
-  - uid: 5347
-    components:
-    - pos: 23.535002,7.498471
       parent: 1
       type: Transform
   - uid: 5895
@@ -60618,11 +60627,6 @@ entities:
   - uid: 5333
     components:
     - pos: 28.5,8.5
-      parent: 1
-      type: Transform
-  - uid: 5342
-    components:
-    - pos: 23.5,7.5
       parent: 1
       type: Transform
   - uid: 5555
@@ -64576,6 +64580,13 @@ entities:
     - pos: -5.1487813,-15.441898
       parent: 1
       type: Transform
+- proto: RollerBed
+  entities:
+  - uid: 12651
+    components:
+    - pos: 23.517445,8.518003
+      parent: 1
+      type: Transform
 - proto: RubberStampApproved
   entities:
   - uid: 4013
@@ -66167,6 +66178,11 @@ entities:
       pos: -7.5,4.5
       parent: 1
       type: Transform
+  - uid: 12649
+    components:
+    - pos: 23.5,4.5
+      parent: 1
+      type: Transform
 - proto: SignMorgue
   entities:
   - uid: 1923
@@ -67078,6 +67094,13 @@ entities:
   - uid: 6039
     components:
     - pos: 3.5,-3.5
+      parent: 1
+      type: Transform
+- proto: SpawnPointBrigmedic
+  entities:
+  - uid: 12650
+    components:
+    - pos: 20.5,6.5
       parent: 1
       type: Transform
 - proto: SpawnPointCaptain
@@ -68806,6 +68829,11 @@ entities:
   - uid: 5340
     components:
     - pos: 23.5,5.5
+      parent: 1
+      type: Transform
+  - uid: 5351
+    components:
+    - pos: 23.5,7.5
       parent: 1
       type: Transform
   - uid: 5404
@@ -70946,13 +70974,6 @@ entities:
     - pos: -20.5,11.5
       parent: 1
       type: Transform
-  - uid: 5344
-    components:
-    - flags: SessionSpecific
-      type: MetaData
-    - pos: 20.5,7.5
-      parent: 1
-      type: Transform
 - proto: VendingMachineMediDrobe
   entities:
   - uid: 1891
@@ -71126,6 +71147,12 @@ entities:
       type: MetaData
     - rot: 1.5707963267948966 rad
       pos: -21.5,15.5
+      parent: 1
+      type: Transform
+  - uid: 5342
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: 19.5,6.5
       parent: 1
       type: Transform
 - proto: VendingMachineYouTool

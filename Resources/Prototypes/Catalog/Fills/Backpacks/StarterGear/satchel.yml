@@ -62,6 +62,8 @@
   - type: StorageFill
     contents:
       - id: Flash
+      - id: MagazinePistolRubber
+      - id: Cautery
 
 - type: entity
   noSpawn: true

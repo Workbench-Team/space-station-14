@@ -72,6 +72,14 @@
   - type: Sprite
     state: holoclown
 
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineBrigmedic
+  name: brigmedic figure
+  description: MEDIC!
+  components:
+  - type: Sprite
+    state: brigmedic
 
 - type: entity
   parent: BaseFigurine
