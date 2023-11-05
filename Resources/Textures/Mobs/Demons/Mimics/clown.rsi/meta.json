@@ -8,11 +8,7 @@
   },
   "states": [
     {
-      "name": "greytide",
-      "directions": 4
-    },
-    {
-      "name": "clown",
+      "name": "running",
       "directions": 4
     },
     {

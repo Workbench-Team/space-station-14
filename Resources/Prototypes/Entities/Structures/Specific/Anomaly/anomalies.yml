@@ -406,13 +406,16 @@
       map: ["enum.AnomalyVisualLayers.Animated"]
       visible: false
   - type: PointLight
-    color: "#000000"
+    color: "#333333"
     castShadows: false
   - type: AmbientSound
     range: 5
     volume: -5
     sound:
       path: /Audio/Misc/radio_static.ogg
+  - type: Anomaly
+    minPointsPerSecond: 30
+    maxPointsPerSecond: 180
   - type: EntitySpawnAnomaly
     superCriticalSpawns:
     - MobStrider
@@ -421,6 +424,6 @@
     - SlimeFloor
     spawns:
     - MobMimicTider
+    - MobMimicTiderAngry
     - MobMimicClown
     - SlimeFloor
-    - MobMimicTiderAngry

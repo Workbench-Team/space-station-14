@@ -229,7 +229,7 @@
         Base: black_adult_slime_dead
   - type: NpcFactionMember
     factions:
-        - SimpleHostile
+        - Xeno
   - type: GhostRole
     description: ghost-role-information-angry-slimes-description
   - type: Bloodstream
@@ -241,3 +241,7 @@
     layers:
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: black_adult_slime
+  - type: Tag
+    tags:
+    - FootstepSound
+    - Slime
