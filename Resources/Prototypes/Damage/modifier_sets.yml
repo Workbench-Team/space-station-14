@@ -238,3 +238,14 @@
     Heat: 0
     Poison: 0.0
     Radiation: 0.0
+
+- type: damageModifierSet
+  id: SlimeMimic
+  coefficients:
+    Blunt: 0.5
+    Slash: 0.5
+    Piercing: 0.3
+    Heat: 1.5
+    Poison: 0.0
+    Radiation: 0.0
+    Caustic: 0.0

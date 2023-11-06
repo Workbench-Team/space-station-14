@@ -314,7 +314,7 @@
       types:
         Slash: 1
   - type: EntitySpawnAnomaly
-    superCriticalSpawns: 
+    superCriticalSpawns:
     - ReagentSlimeSpawner
     spawns:
       - PuddleSparkle
@@ -392,3 +392,38 @@
     solution: anomaly
   - type: InjectableSolution
     solution: beaker
+
+- type: entity
+  id: AnomalyMimicria
+  parent: BaseAnomaly
+  suffix: Mimicria
+  components:
+  - type: Sprite
+    layers:
+    - state: anom7
+      map: ["enum.AnomalyVisualLayers.Base"]
+    - state: anom7-pulse
+      map: ["enum.AnomalyVisualLayers.Animated"]
+      visible: false
+  - type: PointLight
+    color: "#333333"
+    castShadows: false
+  - type: AmbientSound
+    range: 5
+    volume: -5
+    sound:
+      path: /Audio/Misc/radio_static.ogg
+  - type: Anomaly
+    minPointsPerSecond: 30
+    maxPointsPerSecond: 180
+  - type: EntitySpawnAnomaly
+    superCriticalSpawns:
+    - MobStrider
+    - SlimeFloor
+    - SlimeFloor
+    - SlimeFloor
+    spawns:
+    - MobMimicTider
+    - MobMimicTiderAngry
+    - MobMimicClown
+    - SlimeFloor

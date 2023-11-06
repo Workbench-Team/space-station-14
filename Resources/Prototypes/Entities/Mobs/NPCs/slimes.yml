@@ -214,3 +214,34 @@
         - SimpleHostile
     - type: GhostRole
       description: ghost-role-information-angry-slimes-description
+
+- type: entity
+  name: black slime
+  description: A terrifying slime with pulsating sacs on its back containing an unknown black liquid.
+  id: MobAdultSlimesBlack
+  parent: MobAdultSlimes
+  components:
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: black_adult_slime
+      Dead:
+        Base: black_adult_slime_dead
+  - type: NpcFactionMember
+    factions:
+        - Xeno
+  - type: GhostRole
+    description: ghost-role-information-angry-slimes-description
+  - type: Bloodstream
+    bloodMaxVolume: 30
+    bloodReagent: liveSlime
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/slimes.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: black_adult_slime
+  - type: Tag
+    tags:
+    - FootstepSound
+    - Slime

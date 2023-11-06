@@ -386,3 +386,13 @@
       amount: 1
   products:
     SodiumCarbonate: 4
+
+- type: reaction
+  id: Omnizine
+  impact: Medium
+  minTemp: 370
+  reactants:
+    liveSlime:
+      amount: 4
+  products:
+    Omnizine: 1
