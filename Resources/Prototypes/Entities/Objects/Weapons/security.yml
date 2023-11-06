@@ -20,10 +20,7 @@
     angle: 60
     animation: WeaponArcSlash
   - type: StaminaDamageOnHit
-    damage: 35
-    sound: /Audio/Weapons/egloves.ogg
-  - type: StaminaDamageOnCollide
-    damage: 35
+    damage: 60
     sound: /Audio/Weapons/egloves.ogg
   - type: Battery
     maxCharge: 1000
