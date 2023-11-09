@@ -62,10 +62,10 @@
       - id: Handcuffs
       - id: Flash
       - id: BoxCardboardTrackImp
-      - id: ClothingBeltSecurityWebbing
       - id: GarmentBagBlueShield
       - id: ClothingHeadsetAltBlueShield
       - id: ClothingHeadsetBlueShield
+      - id: WoodenMedalCase
 
 - type: entity
   id: LockerCaptainFilled

@@ -297,3 +297,13 @@
   - type: StealCondition
     prototype: NukeDisk
     owner: objective-condition-steal-station
+
+##BS
+- type: entity
+  noSpawn: true
+  parent: BaseTraitorStealObjective
+  id: BlueshieldMedalObjective
+  components:
+  - type: StealCondition
+    prototype: ClothingNeckBlueshieldMedal
+    owner: job-name-blueshield

@@ -39,8 +39,8 @@
       - id: ClothingUniformJumpskirtBlueshieldTurtleneck
       - id: ClothingEyesGlassesSunglassesBlueShield
       - id: ClothingOuterWinterBS
+      - id: ClothingHeadHatBeretBS
       - id: ClothingNeckMantleBS
-      - id: ClothingNeckCloakBlueshield
 
 - type: entity
   name: captain's garment bag

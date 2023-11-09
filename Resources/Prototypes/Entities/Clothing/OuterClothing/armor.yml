@@ -36,6 +36,26 @@
     sprite: Clothing/OuterClothing/Armor/security_slim.rsi
 
 - type: entity
+  parent: ClothingOuterArmorBasic
+  id: ClothingOuterArmorBlueshield
+  name: blueshield officer's armor vest
+  description: Type I reinforced body armor, with a bright BlueShield Officer's badge
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Armor/blueshield_slim.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Armor/blueshield_slim.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+       Blunt: 0.70
+       Slash: 0.70
+       Piercing: 0.60
+       Heat: 0.80
+  - type: ExplosionResistance
+    damageCoefficient: 0.80
+
+- type: entity
   parent: ClothingOuterBaseLarge
   id: ClothingOuterArmorRiot
   name: riot suit

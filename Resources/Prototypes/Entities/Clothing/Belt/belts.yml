@@ -231,6 +231,94 @@
 
 - type: entity
   parent: ClothingBeltStorageBase
+  id: ClothingBeltMedSec
+  name: medical-security belt
+  description: A belt with a fastener for medical and security equipment.
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/universalslim.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/universalslim.rsi
+  - type: Storage
+    whitelist:
+      tags:
+        - Wrench
+        - CigPack
+        - Radio
+        - HolofanProjector
+        - HolosignProjector
+        - Bottle
+        - Spray
+        - Brutepack
+        - Bloodpack
+        - Gauze
+        - Ointment
+        - PillCanister
+        - DiscreteHealthAnalyzer
+        - Taser
+        - SecBeltEquip
+      components:
+        - Stunbaton
+        - FlashOnTrigger
+        - Flash
+        - Handcuff
+        - Hypospray
+        - Injector
+        - Pill
+        - BallisticAmmoProvider
+        - CartridgeAmmo
+  - type: ItemMapper
+    mapLayers:
+      wrench:
+        whitelist:
+          tags:
+          - Wrench
+      bottle:
+        whitelist:
+          tags:
+          - Bottle
+      hypo:
+        whitelist:
+          components:
+          - Hypospray
+      pill:
+        whitelist:
+          components:
+          - Pill
+          tags:
+          - PillCanister
+      bottle_spray:
+        whitelist:
+          tags:
+          - Spray
+      flashbang:
+        whitelist:
+          components:
+          - FlashOnTrigger
+      stunbaton:
+        whitelist:
+          components:
+          - Stunbaton
+    sprite: Clothing/Belt/belt_overlay.rsi
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      storagebase: !type:Container
+        ents: []
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - LightWeapon
+
+- type: entity
+  parent: ClothingBeltStorageBase
   id: ClothingBeltMedical
   name: medical belt
   description: Can hold various medical equipment.

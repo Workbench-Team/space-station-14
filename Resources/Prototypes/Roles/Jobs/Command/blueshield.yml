@@ -46,8 +46,10 @@
     back: ClothingBackpackBlueShieldFilled
     shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSunglassesBlueShield
+    head: ClothingHeadHatBeretBS
+    belt: ClothingBeltMedSec
     gloves: ClothingHandsTacticalBlueShield
-    outerClothing: ClothingOuterArmorBasicSlim
+    outerClothing: ClothingOuterArmorBlueshield
     id: BlueShieldPDA
     ears: ClothingHeadsetAltBlueShield
     pocket1: HandheldCrewMonitor
