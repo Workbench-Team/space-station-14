@@ -18,7 +18,7 @@
   icon: "JobIconBlueShield"
   requireAdminNotify: true
   joinNotifyCrew: true
-  supervisors: job-supervisors-centcom
+  supervisors: job-supervisors-centcom-consultant
   canBeAntag: false
   whitelistRequired: true
   access:
@@ -32,6 +32,7 @@
   - Maintenance
   - Cargo
   - Research
+  - Centcom
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

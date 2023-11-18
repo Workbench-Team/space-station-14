@@ -60,19 +60,34 @@
   - type: AccessReader
     access: [["Miner"]]
 
-# Command
+#CentCom
 - type: entity
-  id: LockerCaptain
-  parent: LockerBaseSecure
-  name: captain's locker
+  id: LockerCentcom
+  parent: LockerBase
+  name: CentCom locker
+  description: An expensive version of the regular Nanotrasen storage locker.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
-    stateBaseClosed: cap
-    stateDoorOpen: cap_open
-    stateDoorClosed: cap_door
+    stateBaseClosed: cc
+    stateDoorOpen: cc_open
+    stateDoorClosed: cc_door
   - type: AccessReader
-    access: [["Captain"]]
+    access: [["Centcom"]]
+
+- type: entity
+  id: LockerCentcomConsultant
+  parent: LockerBase
+  name: CentCom consultant's locker
+  description: An expensive version of the regular Nanotrasen storage locker.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: ccc
+    stateDoorOpen: ccc_open
+    stateDoorClosed: ccc_door
+  - type: AccessReader
+    access: [["Centcom"]]
 
 - type: entity
   id: LockerBlueShield
@@ -85,6 +100,20 @@
     stateBaseClosed: blueshield
     stateDoorOpen: blueshield_open
     stateDoorClosed: blueshield_door
+  - type: AccessReader
+    access: [["Centcom"]]
+
+# Command
+- type: entity
+  id: LockerCaptain
+  parent: LockerBaseSecure
+  name: captain's locker
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: cap
+    stateDoorOpen: cap_open
+    stateDoorClosed: cap_door
   - type: AccessReader
     access: [["Captain"]]
 

@@ -481,7 +481,19 @@
     jobIcon: JobIconNanotrasen
   - type: Access
     groups:
-    - AllAccess
+    - AllAccessCentCom
+
+- type: entity
+  parent: IDCardStandard
+  id: CentcomConsultantIDCard
+  name: CentCom consultant ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: centcom
+    - state: idcentcom
+  - type: PresetIdCard
+    job: CentComConsultant
 
 - type: entity
   parent: CentcomIDCard
@@ -511,7 +523,7 @@
     jobTitle: Central Commander
   - type: Access
     groups:
-    - AllAccess
+    - AllAccessCentCom
 
 - type: entity
   parent: IDCardStandard
@@ -528,7 +540,7 @@
     jobTitle: Centcom Intern
   - type: Access
     groups:
-    - AllAccess
+    - AllAccessCentCom
 
 - type: entity
   parent: IDCardStandard

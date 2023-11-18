@@ -42,6 +42,15 @@
 
 - type: entity
   parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelCentcom
+  name: central command duffel bag
+  description: A duffel bag for storing expensive items of Central Command representatives.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Duffels/centcom.rsi
+
+- type: entity
+  parent: ClothingBackpackDuffel
   id: ClothingBackpackDuffelCaptain
   name: captain's duffel bag
   description: A large duffel bag for holding extra captainly goods.

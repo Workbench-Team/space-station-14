@@ -323,6 +323,46 @@
           tags:
             - HeavyWeapon
 
+#CentCom's Hardsuit
+- type: entity
+  parent: ClothingOuterHardsuitSyndie
+  id: ClothingOuterHardsuitCentcom
+  name: CentCom hardsuit
+  description: "An expensive and durable, comfortable spacesuit for maneuvering in space, especially for green bureaucrats."
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Hardsuits/centcom.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Hardsuits/centcom.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitCentcom
+
+- type: entity
+  parent: ClothingOuterHardsuitCentcom
+  id: ClothingOuterHardsuitCentcomConsultant
+  suffix: Consultant
+  name: CentCom hardsuit
+  components:
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.7
+        Heat: 0.8
+        Radiation: 0.5
+        Caustic: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitCentcomConsultant
+
 #Captain's Hardsuit
 - type: entity
   parent: ClothingOuterHardsuitBase

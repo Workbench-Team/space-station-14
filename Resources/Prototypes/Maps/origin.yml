@@ -50,7 +50,6 @@
             ResearchAssistant: [ 4, 4 ]
             Borg: [ 2, 2 ]
             #security
-            BlueShield: [1, 1]
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ]
@@ -70,4 +69,6 @@
             Musician: [ 2, 2 ]
             Boxer: [ 1, 1 ]
             Reporter: [ 1, 1 ]
-            
+            #centcom      
+            BlueShield: [ 1, 1 ]
+            CentComConsultant: [ 1, 1 ]            

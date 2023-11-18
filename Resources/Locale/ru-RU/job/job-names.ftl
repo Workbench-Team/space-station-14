@@ -20,6 +20,7 @@ job-name-atmostech = Атмосферный техник
 job-name-hop = Глава персонала
 job-name-captain = Капитан
 job-name-blueshield = Офицер синего щита
+job-name-consultant = Консультант Центком
 job-name-serviceworker = Сервисный работник
 job-name-centcomoff = Представитель Центком
 job-name-reporter = Репортёр

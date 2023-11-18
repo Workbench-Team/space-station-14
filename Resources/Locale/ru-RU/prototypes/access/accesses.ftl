@@ -1,3 +1,4 @@
+id-card-access-level-centcom = ЦентКом
 id-card-access-level-command = Командование
 id-card-access-level-captain = Капитан
 id-card-access-level-head-of-personnel = Глава персонала

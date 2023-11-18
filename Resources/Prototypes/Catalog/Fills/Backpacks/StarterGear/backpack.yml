@@ -52,6 +52,17 @@
 
 - type: entity
   noSpawn: true
+  parent: ClothingBackpackCentcom
+  id: ClothingBackpackCentcomFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: Flash
+      - id: TelescopicBaton
+
+- type: entity
+  noSpawn: true
   parent: ClothingBackpackCaptain
   id: ClothingBackpackCaptainFilled
   components:

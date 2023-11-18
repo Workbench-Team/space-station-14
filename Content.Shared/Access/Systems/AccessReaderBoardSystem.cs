@@ -387,7 +387,8 @@ namespace Content.Shared.Access.Systems
                     "ChiefEngineer",
                     "ChiefMedicalOfficer",
                     "Command",
-                    "Armory"
+                    "Armory",
+                    "Centcom"
                 };
             return accessLists.Count > 0 && !accessLists[0].Any(a => exceptions.Contains(a));
         }

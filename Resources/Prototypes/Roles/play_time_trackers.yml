@@ -17,6 +17,9 @@
   id: JobBotanist
 
 - type: playTimeTracker
+  id: JobCentComConsultant
+  
+- type: playTimeTracker
   id: JobCaptain
 
 - type: playTimeTracker

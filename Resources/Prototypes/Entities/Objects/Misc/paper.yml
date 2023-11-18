@@ -642,6 +642,20 @@
     state: stamp-centcom
 
 - type: entity
+  name: CentCom consultant rubber stamp
+  parent: RubberStampBase
+  id: RubberStampCentcomConsultant
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-consultant
+    stampedColor: "#0b2915"
+    stampState: "paper_stamp-consultant"
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    state: stamp-consultant
+
+- type: entity
   name: chaplain's rubber stamp
   parent: RubberStampBase
   id: RubberStampChaplain

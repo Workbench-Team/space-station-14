@@ -25,6 +25,25 @@
     sprite: Objects/Storage/Briefcases/garment_bag.rsi
 
 - type: entity
+  name: CentCom consultant's garment bag
+  parent: GarmentBag
+  id: GarmentBagCentcomConsultant
+  description: A handy bag.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingUniformJumpsuitCentcomConsultant
+      - id: ClothingUniformJumpskirtCentcomConsultant
+      - id: ClothingUniformJumpsuitCentcomConsultantFormal
+      - id: ClothingUniformJumpskirtCentcomConsultantFormal
+      - id: ClothingHeadHatCentcomConsultantCap
+      - id: ClothingOuterCoatCentcomConsultant
+      - id: ClothingNeckScarfStripedCentcom
+      - id: ClothingHandsGlovesCombat
+      - id: ClothingShoesBootsJack
+      - id: ClothingEyesGlassesSunglasses
+
+- type: entity
   name: blueshield's garment bag
   parent: GarmentBag
   id: GarmentBagBlueShield

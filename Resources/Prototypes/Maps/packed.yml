@@ -46,7 +46,6 @@
             Scientist: [ 3, 3 ]
             ResearchAssistant: [ 2, 2 ] 
             #security
-            BlueShield: [1, 1]
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ]
@@ -54,6 +53,7 @@
             Detective: [ 1, 1 ]
             SecurityCadet: [ 2, 2 ]
             Lawyer: [ 1, 1 ]
+            Brigmedic: [ 1, 1 ]
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 2, 2 ]
@@ -65,3 +65,6 @@
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
             Borg: [ 1 , 1 ]
+            #centcom      
+            BlueShield: [ 1, 1 ]
+            CentComConsultant: [ 1, 1 ]

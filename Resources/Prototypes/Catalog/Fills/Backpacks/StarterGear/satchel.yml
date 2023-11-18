@@ -104,8 +104,8 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
-      - id: Paper
-        amount: 4
+      - id: Flash
+      - id: TelescopicBaton
 
 - type: entity
   noSpawn: true

@@ -324,6 +324,18 @@
       - state: captain
 
 - type: entity
+  id: SpawnPointCentcomConsultant
+  parent: SpawnPointJobBase
+  name: Central Command Consultant
+  components:
+  - type: SpawnPoint
+    job_id: CentComConsultant
+  - type: Sprite
+    layers:
+      - state: green
+      - state: consultant
+
+- type: entity
   id: SpawnPointBlueShield
   parent: SpawnPointJobBase
   name: blueshield officer
