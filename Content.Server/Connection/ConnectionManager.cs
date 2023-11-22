@@ -2,12 +2,14 @@
 using System.Threading.Tasks;
 using Content.Server.Database;
 using Content.Server.GameTicking;
+using Content.Server.IP;
 using Content.Server.Preferences.Managers;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Players.PlayTimeTracking;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
+using Robust.Shared.ContentPack;
 using Robust.Shared.Network;
 
 
@@ -29,9 +31,14 @@ namespace Content.Server.Connection
         [Dependency] private readonly IServerDbManager _db = default!;
         [Dependency] private readonly IConfigurationManager _cfg = default!;
         [Dependency] private readonly ILocalizationManager _loc = default!;
+        [Dependency] private readonly IResourceManager _resourceManager = default!;
+
+        private string ipv4_blacklist = default!;
 
         public void Initialize()
         {
+            if (_resourceManager.ContentFileExists($"/Blacklist/ipv4.txt") && _cfg.GetCVar(CCVars.BanBlacklistIPs))
+                ipv4_blacklist = _resourceManager.ContentFileReadAllText($"/Blacklist/ipv4.txt");
             _netMgr.Connecting += NetMgrOnConnecting;
             _netMgr.AssignUserIdCallback = AssignUserIdCallback;
             // Approval-based IP bans disabled because they don't play well with Happy Eyeballs.
@@ -100,6 +107,15 @@ namespace Content.Server.Connection
                 // Or hardware ID checks disabled.
                 hwId = null;
             }
+
+            if (!String.IsNullOrEmpty(ipv4_blacklist))
+                foreach ( var ip in ipv4_blacklist.Split( Environment.NewLine ) )
+                {
+                    if (String.IsNullOrEmpty(ip))
+                        continue;
+                    if (addr.IsInSubnet(ip))
+                        return (ConnectionDenyReason.Ban, Loc.GetString("ip-blacklist"), null);
+                }
 
             var adminData = await _dbManager.GetAdminDataForAsync(e.UserId);
 

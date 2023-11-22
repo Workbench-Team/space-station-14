@@ -17,8 +17,7 @@ public sealed class ServerInfoManager
         (CCVars.InfoLinksForum,   "forum",   "info-link-forum"),
         (CCVars.InfoLinksGitLab,  "gitlab",  "info-link-gitlab"),
         (CCVars.InfoLinksWebsite, "web",     "info-link-website"),
-        (CCVars.InfoLinksWiki,    "wiki",    "info-link-wiki"),
-        (CCVars.InfoLinksBoosty,  "boosty",  "info-link-boosty")
+        (CCVars.InfoLinksWiki,    "wiki",    "info-link-wiki")
         // @formatter:on
     };
 

@@ -1,4 +1,4 @@
-image: registry.git.arumoon.ru/workbench-team/space-station-14/build-image:latest
+image: registry.git.arumoon.ru/workbench-team/space-station-14:build-image
 
 stages:
   - test
