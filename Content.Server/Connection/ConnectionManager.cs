@@ -37,8 +37,8 @@ namespace Content.Server.Connection
 
         public void Initialize()
         {
-            if (_resourceManager.ContentFileExists($"/Blacklist/ipv4.txt") && _cfg.GetCVar(CCVars.BanBlacklistIPs))
-                ipv4_blacklist = _resourceManager.ContentFileReadAllText($"/Blacklist/ipv4.txt");
+            if (_resourceManager.UserData.Exists(new ($"/Blacklist/ipv4.txt")) && _resourceManager.UserData.TryReadAllText(new ($"/Blacklist/ipv4.txt"), out var text))
+                ipv4_blacklist = text;
             _netMgr.Connecting += NetMgrOnConnecting;
             _netMgr.AssignUserIdCallback = AssignUserIdCallback;
             // Approval-based IP bans disabled because they don't play well with Happy Eyeballs.
@@ -108,15 +108,6 @@ namespace Content.Server.Connection
                 hwId = null;
             }
 
-            if (!String.IsNullOrEmpty(ipv4_blacklist))
-                foreach ( var ip in ipv4_blacklist.Split( Environment.NewLine ) )
-                {
-                    if (String.IsNullOrEmpty(ip))
-                        continue;
-                    if (addr.IsInSubnet(ip))
-                        return (ConnectionDenyReason.Ban, Loc.GetString("ip-blacklist"), null);
-                }
-
             var adminData = await _dbManager.GetAdminDataForAsync(e.UserId);
 
             if (_cfg.GetCVar(CCVars.PanicBunkerEnabled))
@@ -184,6 +175,16 @@ namespace Content.Server.Connection
                     return (ConnectionDenyReason.Whitelist, msg, null);
                 }
             }
+
+            // Check if IP subnet is in the blacklist.
+            if (!String.IsNullOrEmpty(ipv4_blacklist) && _cfg.GetCVar(CCVars.BanBlacklistIPs))
+                foreach ( var ip in ipv4_blacklist.Split( Environment.NewLine ) )
+                {
+                    if (String.IsNullOrEmpty(ip))
+                        continue;
+                    if (addr.IsInSubnet(ip))
+                        return (ConnectionDenyReason.Ban, Loc.GetString("ip-blacklist"), null);
+                }
 
             return null;
         }
