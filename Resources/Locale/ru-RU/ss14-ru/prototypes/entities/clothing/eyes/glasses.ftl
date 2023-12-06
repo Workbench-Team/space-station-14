@@ -1,5 +1,11 @@
 ent-ClothingEyesGlassesGar = мужицкие очки
     .desc = Совершать невозможное и раздавать пинки здравому смыслу!
+ent-ClothingEyesGlassesGarBlack = Солнцезащитные мужицкие очки
+    .desc = Если тебя это успокоит, я буду тем, кто будет дёргать за нити.
+ent-ClothingEyesGlassesGarSec = Охранные мужицкие очки
+    .desc = ВСЕ мои махинации были разработаны в лучших твоих интересах. 
+ent-ClothingEyesGlassesGarMed = Медицинские мужицкие очки
+    .desc = Стильно и полезно. Но ты никогда не должен был знать об этом.
 ent-ClothingEyesGlassesGarOrange = оранжевые мужицкие очки
     .desc = Ты за кого меня держишь?!
 ent-ClothingEyesGlassesGarGiga = гигамужицкие очки
