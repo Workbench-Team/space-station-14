@@ -55,7 +55,6 @@
            CargoTechnician: [ 3, 3 ]
            Miner: [ 3,3 ]
         #Service
-           BlueShield: [1, 1]
            Passenger: [ -1, -1 ]
            Bartender: [ 2, 2 ]
            Botanist: [ 3, 3 ]
@@ -69,3 +68,6 @@
            Janitor: [ 3, 3 ]
         #Silicon
            Borg: [ 1, 2 ]
+        #Centcom      
+           BlueShield: [ 1, 1 ]
+           CentComConsultant: [ 1, 1 ]

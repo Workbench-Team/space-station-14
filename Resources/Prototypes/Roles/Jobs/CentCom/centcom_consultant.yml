@@ -5,7 +5,7 @@
   playTimeTracker: JobCentComConsultant
   requirements:
     - !type:RoleTimeRequirement
-      role: BlueShield
+      role: JobBlueShield
       time: 54000 #15 hrs
     - !type:RoleTimeRequirement
       role: JobCaptain
@@ -17,16 +17,16 @@
       role: JobChiefMedicalOfficer
       time: 54000 #15 hrs
     - !type:RoleTimeRequirement
-      role: HeadOfPersonnel
+      role: JobHeadOfPersonnel
       time: 54000 #15 hrs
     - !type:RoleTimeRequirement
-      role: ResearchDirector
+      role: JobResearchDirector
       time: 54000 #15 hrs
     - !type:RoleTimeRequirement
-      role: ChiefEngineer
+      role: JobChiefEngineer
       time: 54000 #15 hrs
     - !type:RoleTimeRequirement
-      role: Quartermaster
+      role: JobQuartermaster
       time: 36000 #10 hrs
     - !type:DepartmentTimeRequirement
       department: Command
