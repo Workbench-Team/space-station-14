@@ -2257,8 +2257,8 @@ entities:
             color: '#FFFFFFFF'
             id: WarnBox
           decals:
-            1288: -24,22
-            1289: -28,22
+            1286: -24,22
+            1287: -28,22
         - node:
             color: '#FFFFFFFF'
             id: WarnCornerNE
@@ -2309,9 +2309,9 @@ entities:
             id: WarnFull
           decals:
             1282: -26,20
-            1284: -25,22
-            1285: -26,22
-            1286: -27,22
+            1283: -25,22
+            1284: -26,22
+            1285: -27,22
         - node:
             color: '#FFFFFFFF'
             id: WarnLineE
@@ -3033,6 +3033,7 @@ entities:
             0: 65395
           -5,12:
             0: 60074
+            5: 4
           -5,13:
             0: 8
           -7,8:
@@ -3045,6 +3046,7 @@ entities:
             0: 65535
           -5,11:
             0: 49151
+            5: 16384
           -5,9:
             0: 65535
           8,-5:
@@ -5171,18 +5173,16 @@ entities:
     - pos: 54.5,-15.5
       parent: 2
       type: Transform
-- proto: AirlockCentcomCommandLocked
-  entities:
-  - uid: 10632
-    components:
-    - pos: -13.5,45.5
-      parent: 2
-      type: Transform
 - proto: AirlockCentcomHatchLocked
   entities:
   - uid: 3468
     components:
     - pos: -15.5,46.5
+      parent: 2
+      type: Transform
+  - uid: 10632
+    components:
+    - pos: -13.5,45.5
       parent: 2
       type: Transform
 - proto: AirlockChapelLocked
@@ -59404,6 +59404,8 @@ entities:
       pos: -25.5,15.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 12198
