@@ -46,7 +46,6 @@
             ResearchAssistant: [ 3, 3 ] 
             Borg: [ 1, 1 ]
             #security
-            BlueShield: [1, 1]
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
             SecurityOfficer: [ 4, 4 ]
@@ -64,4 +63,8 @@
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
+            #Centcom      
+            BlueShield: [ 1, 1 ]
+            CentComConsultant: [ 1, 1 ]
+
             
