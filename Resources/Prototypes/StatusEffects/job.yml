@@ -48,6 +48,13 @@
 
 - type: statusIcon
   parent: JobIcon
+  id: JobIconConsultant
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Consultant
+
+- type: statusIcon
+  parent: JobIcon
   id: JobIconNanotrasen
   icon:
     sprite: Interface/Misc/job_icons.rsi

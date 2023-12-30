@@ -36,5 +36,5 @@ ent-ClothingBackpackSatchelSalvage = сумка утилизатора
     .desc = Прочная сумка для хранения добычи.
 ent-ClothingBackpackSatchelHolding = сумка хранения
     .desc = Сумка, открывающаяся в локальный карман блюспейса.
-ent-ClothingBackpackSatchelCentcom = центкоммовская сумка
-    .desc = Это особая сумка, изготовленная исключительно для офицеров Центкома.
+ent-ClothingBackpackSatchelCentcom = сумка Центкома
+    .desc = Это особая сумка, изготовленная исключительно для представителей Центкома.

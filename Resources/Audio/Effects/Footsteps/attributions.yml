@@ -34,9 +34,29 @@
   source: "https://github.com/tgstation/tgstation/tree/f8ee37afc00bce1ad421615eaa0e4cbddd5eea90/sound/effects"
 
 - files:
+  - snake1.ogg
+  - snake2.ogg
+  - snake3.ogg
+  license: "Custom"
+  copyright: "Taken from https://zvukipro.com/"
+  source: "https://zvukipro.com/jivotnie/21-zvuki-zmej.html"
+
+- files:
+  - bells1.ogg
+  - bells2.ogg
+  - bells3.ogg
+  - bells4.ogg
+  - bells5.ogg
+  license: "CC-BY-SA-4.0"
+  copyright: "Taken and modified from el1n freesound.org"
+  source: "https://freesound.org/people/el1n/sounds/442746/"
+
+## Starshine
+
+- files:
   - borgwalk1.ogg
   - borgwalk2.ogg
   - borgwalk3.ogg
   license: "CC-BY-SA-4.0"
   copyright: "Recorded and modified by https://github.com/MilenVolf"
-  source: "https://git.arumoon.ru/Workbench-Team/space-station-14/-/merge_requests/123"
+  source: "https://gitlab.workbench.network/Workbench-Team/space-station-14/-/merge_requests/123"

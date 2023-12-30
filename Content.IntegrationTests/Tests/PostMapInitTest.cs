@@ -46,7 +46,7 @@ namespace Content.IntegrationTests.Tests
             "Dev",
             "TestTeg",
             "Fland",
-            "MetaStation",
+            "MetaStation", //Starshine
             "Driller",
             "Packed",
             "Aspid",
@@ -60,9 +60,11 @@ namespace Content.IntegrationTests.Tests
             "Saltern",
             "Core",
             "Marathon",
-            "Kettle",
+            "Gemini",
             "MeteorArena",
-            "KiloStation"
+            "KiloStation", //Starshine
+            "Atlas",
+            "Reach"
         };
 
         /// <summary>

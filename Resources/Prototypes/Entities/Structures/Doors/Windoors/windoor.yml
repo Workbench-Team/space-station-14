@@ -182,6 +182,17 @@
 
 - type: entity
   parent: WindoorSecure
+  id: WindoorSecureCentcomLocked
+  suffix: Centcom, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Centcom"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentcom ]
+
+- type: entity
+  parent: WindoorSecure
   id: WindoorSecureCommandLocked
   suffix: Command, Locked
   components:
@@ -245,6 +256,17 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsKitchen ]
+
+- type: entity
+  parent: WindoorSecureSecurityLocked
+  id: WindoorSecureSecurityLawyerLocked
+  suffix: Security/Lawyer, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Security"], ["Lawyer"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsLawyer ]
 
 - type: entity
   parent: WindoorSecure
@@ -322,14 +344,3 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsAtmospherics ]
-
-- type: entity
-  parent: WindoorSecure
-  id: WindoorSecureParamedicLocked
-  suffix: Paramedic, Locked
-  components:
-  - type: AccessReaderBoard
-#    access: [["Paramedic"]]
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsParamedic ]

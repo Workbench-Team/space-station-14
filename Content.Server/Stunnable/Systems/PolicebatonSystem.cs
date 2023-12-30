@@ -10,6 +10,7 @@ using Content.Shared.Popups;
 using Content.Shared.Stunnable;
 using Content.Shared.Toggleable;
 using Content.Shared.Weapons.Melee.Events;
+using Robust.Shared.Audio.Systems;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Player;
@@ -20,6 +21,7 @@ namespace Content.Server.Stunnable.Systems
     {
         [Dependency] private readonly SharedItemSystem _item = default!;
         [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
+        [Dependency] private readonly SharedAudioSystem _audio = default!;
 
         public override void Initialize()
         {
@@ -73,18 +75,17 @@ namespace Content.Server.Stunnable.Systems
             if (!comp.Activated || !comp.Telescopic)
                 return;
 
-            if (TryComp<AppearanceComponent>(comp.Owner, out var appearance) &&
-                TryComp<ItemComponent>(comp.Owner, out var item))
+            if (TryComp<AppearanceComponent>(uid, out var appearance) &&
+                TryComp<ItemComponent>(uid, out var item))
             {
-                _item.SetHeldPrefix(comp.Owner, "off", item);
+                _item.SetHeldPrefix(uid, "off", item);
                 _appearance.SetData(uid, ToggleVisuals.Toggled, false, appearance);
             }
 
-            var playerFilter = Filter.Pvs(comp.Owner, entityManager: EntityManager);
-            SoundSystem.Play(comp.ToggleSound.GetSound(), Filter.Pvs(comp.Owner), comp.Owner, AudioHelpers.WithVariation(0.25f));
+            _audio.PlayPvs(comp.ToggleSound, uid, AudioHelpers.WithVariation(0.25f));
 
             comp.Activated = false;
-            Dirty(comp);
+            Dirty(uid, comp);
         }
 
         private void TurnOn(EntityUid uid, PolicebatonComponent comp, EntityUid user)
@@ -92,17 +93,16 @@ namespace Content.Server.Stunnable.Systems
             if (comp.Activated || !comp.Telescopic)
                 return;
 
-            if (EntityManager.TryGetComponent<AppearanceComponent>(comp.Owner, out var appearance) &&
-                EntityManager.TryGetComponent<ItemComponent>(comp.Owner, out var item))
+            if (EntityManager.TryGetComponent<AppearanceComponent>(uid, out var appearance) &&
+                EntityManager.TryGetComponent<ItemComponent>(uid, out var item))
             {
-                _item.SetHeldPrefix(comp.Owner, "on", item);
+                _item.SetHeldPrefix(uid, "on", item);
                 _appearance.SetData(uid, ToggleVisuals.Toggled, true, appearance);
             }
 
-            var playerFilter = Filter.Pvs(comp.Owner, entityManager: EntityManager);
-            SoundSystem.Play(comp.ToggleSound.GetSound(), playerFilter, comp.Owner, AudioHelpers.WithVariation(0.25f));
+            _audio.PlayPvs(comp.ToggleSound, uid, AudioHelpers.WithVariation(0.25f));
             comp.Activated = true;
-            Dirty(comp);
+            Dirty(uid, comp);
         }
     }
 }

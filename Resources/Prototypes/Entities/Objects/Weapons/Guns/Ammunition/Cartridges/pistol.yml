@@ -29,18 +29,6 @@
     proto: BulletPistol
 
 - type: entity
-  id: CartridgePistolUranium
-  name: cartridge (.35 auto uranium)
-  parent: BaseCartridgePistol
-  components:
-  - type: CartridgeAmmo
-    proto: BulletPistolUranium
-  - type: Sprite
-    layers:
-    - state: uranium
-      map: ["enum.AmmoVisualLayers.Base"]
-
-- type: entity
   id: CartridgePistolPractice
   name: cartridge (.35 auto practice)
   parent: BaseCartridgePistol
@@ -71,3 +59,11 @@
   components:
   - type: CartridgeAmmo
     proto: BulletPistolIncendiary
+
+- type: entity
+  id: CartridgePistolUranium
+  name: cartridge (.35 auto uranium)
+  parent: BaseCartridgePistol
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolUranium

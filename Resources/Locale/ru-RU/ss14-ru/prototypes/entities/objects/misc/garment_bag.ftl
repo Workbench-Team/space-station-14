@@ -28,3 +28,6 @@ ent-GarmentBagCMO = Сумка для одежды главного врача
 ent-GarmentBagQM = Сумка для одежды квартирмейстра
     .desc = Удобная сумка для одежды.
     .suffix = { "" }
+ent-GarmentBagCentcomConsultant = Сумка для одежды консультанта ЦентКома
+    .desc = Удобная сумка для одежды.
+    .suffix = { "" }

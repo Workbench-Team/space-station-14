@@ -247,6 +247,35 @@
   - type: AccessReader
     access: [["Armory"]]
 
+#Centcom hardsuit
+- type: entity
+  id: SuitStorageCentcom
+  parent: SuitStorageBase
+  suffix: Centcom
+  components:
+  - type: StorageFill
+    contents:
+        - id: NitrogenTankFilled
+        - id: OxygenTankFilled
+        - id: ClothingOuterHardsuitCentcom
+        - id: ClothingMaskGasCentcom
+  - type: AccessReader
+    access: [["Centcom"]]
+
+- type: entity
+  id: SuitStorageCentcomConsultant
+  parent: SuitStorageBase
+  suffix: Consultant
+  components:
+  - type: StorageFill
+    contents:
+        - id: NitrogenTankFilled
+        - id: OxygenTankFilled
+        - id: ClothingOuterHardsuitCentcomConsultant
+        - id: ClothingMaskGasCentcom
+  - type: AccessReader
+    access: [["Centcom"]]
+
 #Captain's hardsuit
 - type: entity
   id: SuitStorageCaptain

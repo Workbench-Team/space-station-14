@@ -8,14 +8,14 @@ namespace Content.Server.Atmos.Reactions
     [DataDefinition]
     public sealed partial class HydrogenFireReaction : IGasReactionEffect
     {
-        public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem)
+        public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem, float heatScale)
         {
             var initialHyperNoblium = mixture.GetMoles(Gas.HyperNoblium);
             if (initialHyperNoblium >= 5.0f && mixture.Temperature > 20f)
                 return ReactionResult.NoReaction;
 
             var energyReleased = 0f;
-            var oldHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture);
+            var oldHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture, true);
             var temperature = mixture.Temperature;
             var location = holder as TileAtmosphere;
             mixture.ReactionResults[GasReaction.Fire] = 0;
@@ -38,7 +38,7 @@ namespace Content.Server.Atmos.Reactions
 
             if (energyReleased > 0)
             {
-                var newHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture);
+                var newHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture, true);
                 if (newHeatCapacity > Atmospherics.MinimumHeatCapacity)
                     mixture.Temperature = (temperature * oldHeatCapacity + energyReleased) / newHeatCapacity;
             }

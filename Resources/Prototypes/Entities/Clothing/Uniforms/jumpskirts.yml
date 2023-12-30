@@ -11,6 +11,28 @@
 
 - type: entity
   parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtCentcomConsultant
+  name: CentCom consultant jumpskirt
+  description: "A green jumpskirt with gold accents, and wide shoulder pads, for those who like to show off their real power."
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/centcom_consultant.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpskirt/centcom_consultant.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtCentcomConsultantFormal
+  name: CentCom consultant's formal jumpskirt
+  description: "The formal jumpskirt of the most important representative on the station. It clearly suits you, sir."
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/centcom_consultant_formal.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpskirt/centcom_consultant_formal.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtCaptain
   name: captain's jumpskirt
   description: It's a blue jumpskirt with some gold markings denoting the rank of "Captain".
@@ -71,9 +93,9 @@
   description: A yellow turtleneck designed specifically for work in conditions of the engineering department.
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpskirt/ceturtleskirt.rsi
+    sprite: Clothing/Uniforms/Jumpskirt/ce_turtle.rsi
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpskirt/ceturtleskirt.rsi
+    sprite: Clothing/Uniforms/Jumpskirt/ce_turtle.rsi
 
 - type: entity
   parent: ClothingUniformSkirtBase

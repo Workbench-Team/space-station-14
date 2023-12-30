@@ -32,13 +32,20 @@
   - ServiceWorker
 
 - type: department
+  id: CentcomSpecialists
+  description: department-Centcom-description
+  color: "#35a41e"
+  roles:
+  - CentComConsultant
+  - BlueShield
+  - CentralCommandOfficial
+
+- type: department
   id: Command
   description: department-Command-description
   color: "#334E6D"
   roles:
   - Captain
-  - BlueShield
-  - CentralCommandOfficial
   - ChiefEngineer
   - ChiefMedicalOfficer
   - HeadOfPersonnel
@@ -53,7 +60,6 @@
   roles:
   - AtmosphericTechnician
   - ChiefEngineer
-  - SeniorEngineer
   - StationEngineer
   - TechnicalAssistant
 
@@ -68,7 +74,6 @@
   - MedicalIntern
   - Psychologist
   - Paramedic
-  - SeniorPhysician
 
 - type: department
   id: Security
@@ -78,7 +83,6 @@
   - HeadOfSecurity
   - SecurityCadet
   - SecurityOfficer
-  - SeniorOfficer
   - Detective
   - Brigmedic
   - Warden
@@ -89,7 +93,6 @@
   color: "#D381C9"
   roles:
   - ResearchDirector
-  - SeniorResearcher
   - Scientist
   - ResearchAssistant
 

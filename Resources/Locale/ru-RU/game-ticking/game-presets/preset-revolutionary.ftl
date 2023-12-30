@@ -11,13 +11,6 @@ head-rev-role-greeting =
 head-rev-briefing =
     Используйте вспышки для переманивания людей на свою сторону.
     Убейте всех глав, чтобы захватить станцию.
-head-rev-initial-name = [color=#5e9cff]{ $name }[/color] был(а) одним из Главных Революционеров.
-head-rev-initial-name-user = [color=#5e9cff]{ $name }[/color] ([color=gray]{ $username }[/color]) был(а) одним из Главных Революционеров.
-head-rev-initial-count =
-    { $initialCount ->
-        [one] Был один Главный Революционер:
-       *[other] Было { $initialCount } Главных Революционеров:
-    }
 head-rev-break-mindshield = Имплант защиты разума был уничтожен!
 
 ## Rev
@@ -41,6 +34,16 @@ rev-no-one-ready = Нет готовых игроков! Невозможно н
 rev-no-heads = Не удалось выбрать Главного Революционера. Невозможно начать Революция.
 rev-all-heads-dead = Все главы мертвы, теперь добейте остальных членов экипажа!
 rev-won = Главные Революционеры выжили и убили всё Командование.
+rev-headrev-count =
+    { $initialCount ->
+        [one] Был один Главный Революционер:
+       *[other] Было { $initialCount } Главных Революционеров:
+    }
+rev-headrev-player =
+    { $title } завербовал { $count } { $count ->
+        [one] человека
+       *[other] людей
+    }.
 rev-lost = Командование выжило и убило всех Главных Революционеров.
 rev-stalemate = Все Главные Революционеры и члены Командования погибли. Это ничья.
 rev-reverse-stalemate = Выжили как Командование, так и Главные Революционеры.

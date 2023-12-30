@@ -19,6 +19,7 @@ artifact-effect-hint-communication = Коммуникации на дальни�
 artifact-effect-hint-phasing = Структурная поэтапность
 artifact-effect-hint-sentience = Неврологическая активность
 artifact-effect-hint-polymorph = Трансмогрификационная активность
+artifact-effect-hint-magnet = Магнитные волны
 
 # the triggers should be more obvious than the effects
 # gives people an idea of what to do: don't be too specific (i.e. no "welders")

@@ -6,3 +6,7 @@ reagent-name-sodium-carbonate = карбонат натрия
 reagent-desc-sodium-carbonate = Белая водорастворимая соль без запаха, дающая щелочной раствор в воде. Также известна как кальцинированная сода.
 reagent-name-artifexium = артифексиум
 reagent-desc-artifexium = Лиловая смесь микроскопических фрагментов артефактов и сильной кислоты. Обладает способностью активировать артефакты.
+reagent-name-sodium-polyacrylate = полиакрилат натрия
+reagent-desc-sodium-polyacrylate = Супервпитывающий полимер, имеющий разнообразное промышленное применение.
+reagent-name-cellulose = целлюлозные волокна
+reagent-desc-cellulose = Кристаллический полимер полидекстрозы, растения дорожат этим веществом.

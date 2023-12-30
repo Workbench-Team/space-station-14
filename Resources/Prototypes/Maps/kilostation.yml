@@ -34,19 +34,16 @@
             StationEngineer: [ 3, 4 ]
             AtmosphericTechnician: [ 2, 2 ]
             TechnicalAssistant: [ 2, 3 ]
-            SeniorEngineer: [ 1, 1 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             MedicalDoctor: [ 3, 4 ]
             Chemist: [ 2, 2 ]
             MedicalIntern: [ 2, 3 ]
             Paramedic: [ 1, 2 ]
-            SeniorPhysician: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 2, 3 ]
             ResearchAssistant: [ 2, 2 ]
-            SeniorResearcher: [ 1, 1 ] 
             #security
             BlueShield: [1, 1]
             HeadOfSecurity: [ 1, 1 ]
@@ -55,7 +52,6 @@
             Lawyer: [ 2, 2 ]
             SecurityCadet: [ 2, 2 ]
             Detective: [ 1, 1 ]
-            SeniorOfficer: [ 1, 1 ]
             Brigmedic: [ 1, 1 ]
             #supply
             CargoTechnician: [ 2, 3 ]

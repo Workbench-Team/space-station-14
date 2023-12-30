@@ -1,4 +1,5 @@
 job-supervisors-centcom = представителю Центкома
+job-supervisors-consultant = Консультанту Центкома и Центральному Командованию
 job-supervisors-captain = капитану
 job-supervisors-hop = главе персонала
 job-supervisors-hos = главе службы безопасности

@@ -10,6 +10,7 @@ using Content.Shared.Weapons.Melee;
 using Content.Shared.Weapons.Melee.Events;
 using Content.Shared.Wieldable;
 using Content.Shared.Wieldable.Components;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
 
 namespace Content.Server.Weapons.Melee.Chainsaw;
@@ -85,7 +86,7 @@ public sealed class ChainsawSystem : EntitySystem
     {
         if (TryComp(uid, out ItemComponent? item))
         {
-            _item.SetSize(uid, ItemSize.Normal, item);
+            _item.SetSize(uid, "Normal", item);
         }
 
         if (TryComp<DisarmMalusComponent>(uid, out var malus))
@@ -103,7 +104,7 @@ public sealed class ChainsawSystem : EntitySystem
         if (comp.IsSharp)
             RemComp<SharpComponent>(uid);
 
-        _audio.Play(comp.DeActivateSound, Filter.Pvs(uid, entityManager: EntityManager), uid, true, comp.DeActivateSound.Params);
+        _audio.PlayEntity(comp.DeActivateSound, Filter.Pvs(uid, entityManager: EntityManager), uid, true, comp.DeActivateSound.Params);
 
         comp.On = false;
     }
@@ -112,7 +113,7 @@ public sealed class ChainsawSystem : EntitySystem
     {
         if (TryComp(uid, out ItemComponent? item))
         {
-            _item.SetSize(uid, ItemSize.Ginormous, item);
+            _item.SetSize(uid, "Ginormous", item);
         }
 
         if (comp.IsSharp)
@@ -130,7 +131,7 @@ public sealed class ChainsawSystem : EntitySystem
             malus.Malus += comp.LitDisarmMalus;
         }
 
-        _audio.Play(comp.ActivateSound, Filter.Pvs(uid, entityManager: EntityManager), uid, true, comp.ActivateSound.Params);
+        _audio.PlayEntity(comp.ActivateSound, Filter.Pvs(uid, entityManager: EntityManager), uid, true, comp.ActivateSound.Params);
 
         comp.On = true;
     }

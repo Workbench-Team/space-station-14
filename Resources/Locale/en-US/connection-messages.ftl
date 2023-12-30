@@ -48,4 +48,9 @@ panic-bunker-account-denied-reason = This server is in panic bunker mode and you
 panic-bunker-account-reason-account = The account's age must be older than {$minutes} minutes
 panic-bunker-account-reason-overall = The account's overall playtime must be greater than {$hours} hours
 
+panic-bunker-account-denied = This server is in panic bunker mode, often enabled as a precaution against raids. New connections by accounts not meeting certain requirements are temporarily not accepted. Try again later
+panic-bunker-account-denied-reason = This server is in panic bunker mode, often enabled as a precaution against raids. New connections by accounts not meeting certain requirements are temporarily not accepted. Try again later. Reason: "{$reason}"
+panic-bunker-account-reason-account = Your Space Station 14 account is too new. It must be older than {$minutes} minutes
+panic-bunker-account-reason-overall = Your overall playtime on the server must be greater than {$hours} hours
+
 ip-blacklist = Your IP address is blocked to connect to this server. Most likely you are using a VPN or proxy. Please turn them off.

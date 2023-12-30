@@ -106,6 +106,8 @@
       - Beaker
       - Syringe
       - LightTube
+      - SodiumLightTube
+      - ExteriorLightTube
       - LightBulb
       - Bucket
       - FoodPlate
@@ -139,7 +141,6 @@
   - type: EmagLatheRecipes
     emagStaticRecipes:
        - CartridgePistol
-       - CartridgePistolUranium
        - CartridgeMagnum
        - ShellShotgun
        - ShellShotgunFlare
@@ -169,6 +170,15 @@
       - MagazineBoxMagnumIncendiary
       - MagazineBoxLightRifleIncendiary
       - MagazineBoxRifleIncendiary
+      - ShellShotgunUranium
+      - CartridgePistolUranium
+      - CartridgeMagnumUranium
+      - CartridgeLightRifleUranium
+      - CartridgeRifleUranium
+      - MagazineBoxPistolUranium
+      - MagazineBoxMagnumUranium
+      - MagazineBoxLightRifleUranium
+      - MagazineBoxRifleUranium
 
 - type: entity
   id: Protolathe
@@ -209,8 +219,6 @@
       - AnomalyScanner
       - AnomalyLocator
       - AnomalyLocatorWide
-      - RCD
-      - RCDAmmo
       - HandheldCrewMonitor
       - Scalpel
       - Retractor
@@ -223,6 +231,7 @@
       - LargeBottle
       - SmallBottle
       - CryostasisBeaker
+      - SyringeCryostasis
       - Dropper
       - Syringe
       - MiningDrill
@@ -253,18 +262,22 @@
       - VoiceTrigger
       - Igniter
       - PowerCellMedium
+      - PowerCellMicroreactor
       - PowerCellHigh
       - WeaponPistolCHIMP
       - SynthesizerInstrument
       - RPED
       - ClothingShoesBootsMag
+      - ClothingShoesBootsSpeed
       - NodeScanner
       - HolofanProjector
       - BluespaceBeaker
       - SyringeBluespace
       - WeaponCrusher
       - WeaponCrusherDagger
+      - WeaponCrusherGlaive
       - WeaponForceGun
+      - WeaponLaserSvalinn
       - WeaponProtoKineticAccelerator
       - WeaponCutter
       - WeaponTetherGun
@@ -275,6 +288,9 @@
       - WelderExperimental
       - JawsOfLife
       - ClothingEyesGlassesChemical
+      - FauxTileAstroGrass
+      - FauxTileAstroIce
+      - OreBagOfHolding
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload
@@ -282,7 +298,6 @@
       - WeaponAdvancedLaser
       - WeaponLaserCannon
       - WeaponXrayCannon
-      - WeaponTaser
 
 - type: entity
   id: CircuitImprinter
@@ -308,6 +323,10 @@
     errorSound: /Audio/Machines/custom_deny.ogg
     idleState: icon
     runningState: building
+    staticRecipes:
+    - ElectrolysisUnitMachineCircuitboard
+    - CentrifugeMachineCircuitboard
+    - CondenserMachineCircuitBoard
     dynamicRecipes:
       - ThermomachineFreezerMachineCircuitBoard
       - PortableScrubberMachineCircuitBoard
@@ -371,11 +390,14 @@
       - AnalysisComputerCircuitboard
       - ExosuitFabricatorMachineCircuitboard
       - AnomalyVesselCircuitboard
+      - AnomalyVesselExperimentalCircuitboard
+      - AnomalySynchronizerCircuitboard
       - APECircuitboard
       - ArtifactAnalyzerMachineCircuitboard
       - TraversalDistorterMachineCircuitboard
       - SecurityTechFabCircuitboard
       - WeaponTechFabCircuitboard
+      - ArtifactCrusherMachineCircuitboard
       - BoozeDispenserMachineCircuitboard
       - SodaDispenserMachineCircuitboard
       - TelecomServerCircuitboard
@@ -418,6 +440,9 @@
     - BorgModuleTool
     - BorgModuleAppraisal
     - BorgModuleConstruction
+    - BorgModuleService
+    - BorgModuleTreatment
+    - BorgModuleCleaning
     - CyborgEndoskeleton
     - LeftArmBorg
     - RightArmBorg
@@ -456,8 +481,7 @@
     dynamicRecipes:
     - ProximitySensor
     - BorgModuleLightReplacer
-    - BorgModuleCleaning
-    - BorgModuleTrashCollection
+    - BorgModuleAdvancedCleaning
     - BorgModuleMining
     - BorgModuleGrapplingGun
     - BorgModuleGasAnalyzer
@@ -468,10 +492,8 @@
     - BorgModuleGardening
     - BorgModuleHarvesting
     - BorgModuleMusique
-    - BorgModuleLiteracy
     - BorgModuleClowning
     - BorgModuleDiagnosis
-    - BorgModuleTreatment
     - BorgModuleDefibrillator
     - BorgModuleAdvancedTreatment
     - ModsuitHelmet
@@ -574,32 +596,65 @@
       - Zipties
       - Stunbaton
       - ForensicPad
-      - ClothingEyesGlassesSecurity
       - RiotShield
       - TargetHuman
       - TargetSyndicate
       - TargetClown
-      - MagazinePistolPractice  
+      - MagazinePistolPractice
       - MagazinePistolSubMachineGunPractice
       - MagazineVectorPistolSmallPractice
       - MagazineRiflePractice
       - MagazineVectorRifleSmallPractice
       - SpeedLoaderMagnumPractice
+      - MagazineBoxLightRiflePractice
+      - MagazineBoxMagnumPractice
       - MagazineBoxPistolPractice
       - MagazineBoxRiflePractice
-      - MagazineBoxMagnumPractice
-      - BoxShotgunPractice
       - ShellShotgunPractice
+      - WeaponLaserCarbinePractice
+      - WeaponDisablerPractice
     dynamicRecipes:
+      - CartridgeLightRifleIncendiary
+      - CartridgeMagnumIncendiary
+      - CartridgePistolIncendiary
+      - CartridgeRifleIncendiary
+      - CartridgeLightRifleUranium
+      - CartridgeMagnumUranium
+      - CartridgePistolUranium
+      - CartridgeRifleUranium
+      - CartridgeLightRifleRubber
+      - CartridgeMagnumRubber
+      - CartridgePistolRubber
+      - CartridgeRifleRubber
+      - ClothingEyesGlassesSecurity
       - ExplosivePayload
       - FlashPayload
       - HoloprojectorSecurity
+      - MagazineBoxLightRifleIncendiary
+      - MagazineBoxMagnumIncendiary
+      - MagazineBoxPistolIncendiary
+      - MagazineBoxRifleIncendiary
+      - MagazineBoxLightRifleUranium
+      - MagazineBoxMagnumUranium
+      - MagazineBoxPistolUranium
+      - MagazineBoxRifleUranium
+      - MagazineBoxLightRifleRubber
+      - MagazineBoxMagnumRubber
+      - MagazineBoxPistolRubber
+      - MagazineBoxRifleRubber
+      - ShellShotgunBeanbag
+      - ShellShotgunIncendiary
+      - ShellShotgunUranium
       - Signaller
       - SignalTrigger
       - TelescopicShield
       - TimerTrigger
       - Truncheon
       - VoiceTrigger
+      - WeaponAdvancedLaser
+      - WeaponLaserCannon
+      - WeaponLaserCarbine
+      - WeaponXrayCannon
       - BowCompound
       - ArrowCompound
       - ClothingBeltQuiverComposit
@@ -715,8 +770,8 @@
         - MagazinePistolSubMachineGun
         - MagazinePistolSubMachineGunRubber
         - MagazinePistolSubMachineGunTopMounted
-        - MagazineVectorRifle    
-        - MagazineVectorRifleRubber            
+        - MagazineVectorRifle
+        - MagazineVectorRifleRubber
         - MagazineRifle
         - MagazineRifleRubber
         - MagazineRifleExt
@@ -738,11 +793,11 @@
         - MagazineBoxMagnum
         - BoxLethalshot
         - BoxShotgunIncendiary
-        - BoxBeanbag        
+        - BoxBeanbag
         - BoxShotgunSlug
         - BoxShellTranquilizer
         - CartridgePistol
-        - CartridgePistolRubber        
+        - CartridgePistolRubber
         - CartridgeRifle
         - CartridgeRifleRubber
         - CartridgeCaselessUniversalPT1
@@ -826,6 +881,7 @@
       - BluespaceBeaker
       - SyringeBluespace
       - Jug
+      - SyringeCryostasis
   - type: Machine
     board: MedicalTechFabCircuitboard
 
@@ -857,6 +913,8 @@
       - ClothingUniformJumpsuitCaptain
       - ClothingUniformJumpsuitBlueShield
       - ClothingUniformJumpskirtCaptain
+      - ClothingUniformJumpsuitCapFormal
+      - ClothingUniformJumpskirtCapFormalDress
       - ClothingUniformJumpsuitCargo
       - ClothingUniformJumpskirtCargo
       - ClothingUniformJumpsuitSalvageSpecialist
@@ -881,8 +939,14 @@
       - ClothingUniformJumpskirtHoP
       - ClothingUniformJumpsuitHoS
       - ClothingUniformJumpskirtHoS
+      - ClothingUniformJumpsuitHosFormal
+      - ClothingUniformJumpskirtHosFormal
       - ClothingUniformJumpsuitHoSAlt
       - ClothingUniformJumpskirtHoSAlt
+      - ClothingUniformJumpsuitHoSBlue
+      - ClothingUniformJumpsuitHoSGrey
+      - ClothingUniformJumpsuitHoSParadeMale
+      - ClothingUniformJumpskirtHoSParadeMale
       - ClothingUniformJumpsuitHydroponics
       - ClothingUniformJumpskirtHydroponics
       - ClothingUniformJumpsuitJanitor
@@ -947,6 +1011,23 @@
       - ClothingOuterWinterSci
       - ClothingOuterWinterRobo
       - ClothingOuterWinterSec
+  - type: EmagLatheRecipes
+    emagStaticRecipes:
+      - ClothingUniformJumpsuitCentcomAgent
+      - ClothingUniformJumpsuitCentcomFormal
+      - ClothingUniformJumpskirtCentcomFormalDress
+      - ClothingUniformJumpsuitCentcomOfficer
+      - ClothingUniformJumpsuitCentcomOfficial
+      - ClothingUniformJumpsuitOperative
+      - ClothingUniformJumpskirtOperative
+      - ClothingUniformJumpsuitSyndieFormal
+      - ClothingUniformJumpskirtSyndieFormalDress
+      - ClothingUniformJumpsuitPyjamaSyndicateBlack
+      - ClothingUniformJumpsuitPyjamaSyndicatePink
+      - ClothingUniformJumpsuitPyjamaSyndicateRed
+      - ClothingOuterWinterCentcom
+      - ClothingOuterWinterSyndie
+      - ClothingOuterWinterSyndieCap
   - type: MaterialStorage
     whitelist:
       tags:
@@ -1018,9 +1099,11 @@
     whitelist:
       tags:
       - Raw
+      - Wooden
   - type: Lathe
     idleState: base_machine
     runningState: base_machine_processing
     canEjectStoredMaterials: false
     staticRecipes:
     - MaterialSheetMeat
+    - SheetPaper

@@ -32,13 +32,10 @@ namespace Content.Server.Connection
         [Dependency] private readonly IConfigurationManager _cfg = default!;
         [Dependency] private readonly ILocalizationManager _loc = default!;
         [Dependency] private readonly IResourceManager _resourceManager = default!;
-
-        private string ipv4_blacklist = default!;
+        [Dependency] private readonly ServerDbEntryManager _serverDbEntry = default!;
 
         public void Initialize()
         {
-            if (_resourceManager.UserData.Exists(new ($"/Blacklist/ipv4.txt")) && _resourceManager.UserData.TryReadAllText(new ($"/Blacklist/ipv4.txt"), out var text))
-                ipv4_blacklist = text;
             _netMgr.Connecting += NetMgrOnConnecting;
             _netMgr.AssignUserIdCallback = AssignUserIdCallback;
             // Approval-based IP bans disabled because they don't play well with Happy Eyeballs.
@@ -73,11 +70,13 @@ namespace Content.Server.Connection
             var addr = e.IP.Address;
             var userId = e.UserId;
 
+            var serverId = (await _serverDbEntry.ServerEntity).Id;
+
             if (deny != null)
             {
                 var (reason, msg, banHits) = deny.Value;
 
-                var id = await _db.AddConnectionLogAsync(userId, e.UserName, addr, e.UserData.HWId, reason);
+                var id = await _db.AddConnectionLogAsync(userId, e.UserName, addr, e.UserData.HWId, reason, serverId);
                 if (banHits is { Count: > 0 })
                     await _db.AddServerBanHitsAsync(id, banHits);
 
@@ -85,7 +84,7 @@ namespace Content.Server.Connection
             }
             else
             {
-                await _db.AddConnectionLogAsync(userId, e.UserName, addr, e.UserData.HWId, null);
+                await _db.AddConnectionLogAsync(userId, e.UserName, addr, e.UserData.HWId, null, serverId);
 
                 if (!ServerPreferencesManager.ShouldStorePrefs(e.AuthType))
                     return;
@@ -177,6 +176,9 @@ namespace Content.Server.Connection
             }
 
             // Check if IP subnet is in the blacklist.
+            var ipv4_blacklist = "";
+            if (_resourceManager.UserData.Exists(new ($"/Blacklist/ipv4.txt")) && _resourceManager.UserData.TryReadAllText(new ($"/Blacklist/ipv4.txt"), out var text))
+                ipv4_blacklist = text;
             if (!String.IsNullOrEmpty(ipv4_blacklist) && _cfg.GetCVar(CCVars.BanBlacklistIPs))
                 foreach ( var ip in ipv4_blacklist.Split( Environment.NewLine ) )
                 {

@@ -32,6 +32,39 @@
   objectType: Item
 
 - type: construction
+  name: banana clown mask
+  id: BananaClownMask
+  graph: BananaClownMask
+  startNode: start
+  targetNode: mask
+  category: construction-category-clothing
+  description: A clown mask upgraded with banana peels.
+  icon: { sprite: Clothing/Mask/clown_banana.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  name: banana clown suit
+  id: BananaClownJumpsuit
+  graph: BananaClownJumpsuit
+  startNode: start
+  targetNode: jumpsuit
+  category: construction-category-clothing
+  description: A clown suit upgraded with banana peels.
+  icon: { sprite: Clothing/Uniforms/Jumpsuit/clown_banana.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  name: banana clown shoes
+  id: BananaClownShoes
+  graph: BananaClownShoes
+  startNode: start
+  targetNode: shoes
+  category: construction-category-clothing
+  description: A pair of clown shoes upgraded with banana peels.
+  icon: { sprite: Clothing/Shoes/Specific/clown_banana.rsi, state: icon }
+  objectType: Item
+
+- type: construction
   name: miner light armor
   id: ArmorMinerLight
   graph: ArmorMinerLight

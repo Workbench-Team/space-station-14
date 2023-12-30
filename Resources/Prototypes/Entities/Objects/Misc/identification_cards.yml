@@ -3,7 +3,7 @@
   id: IDCardStandard
   name: identification card
   description: A card necessary to access various areas aboard the station.
-  noSpawn: true
+  abstract: true
   components:
   - type: Sprite
     sprite: Objects/Misc/id_cards.rsi
@@ -14,12 +14,14 @@
   - type: Item
     size: Small
     heldPrefix: default
+    storedRotation: -90
   - type: Access
   - type: IdCard
   - type: StationRecordKeyStorage
   - type: Tag
     tags:
     - DoorBumpOpener
+    - WhitelistChameleon
 
 #IDs with layers
 
@@ -481,19 +483,95 @@
     jobIcon: JobIconNanotrasen
   - type: Access
     groups:
-    - AllAccess
+    - AllAccessCentCom
+
+- type: entity
+  parent: IDCardStandard
+  id: CentcomConsultantIDCard
+  name: CentCom consultant ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: centcom
+    - state: idcentcom
+  - type: PresetIdCard
+    job: CentComConsultant
 
 - type: entity
   parent: CentcomIDCard
   id: ERTLeaderIDCard
-  name: ERT ID card
+  name: ERT leader ID card
   components:
   - type: Sprite
     layers:
     - state: gold
-    - state: ert_commander # we have the sprites but don't need individual ID entities for now.
+    - state: ert_commander
+  - type: IdCard
+    jobTitle: ERT Company Commander
   - type: Item
     heldPrefix: gold
+
+- type: entity
+  parent: ERTLeaderIDCard
+  id: ERTChaplainIDCard
+  name: ERT Chaplain ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: gold
+    - state: ert_chaplain # we have the sprite for the id but dont have chaplain ERT equipment for now.
+  - type: IdCard
+    jobTitle: ERT Soul Officer
+  - type: Item
+    heldPrefix: blue
+
+- type: entity
+  parent: ERTChaplainIDCard
+  id: ERTEngineerIDCard
+  name: ERT Engineer ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: gold
+    - state: ert_engineer
+  - type: IdCard
+    jobTitle: ERT Field Engineer
+
+- type: entity
+  parent: ERTChaplainIDCard
+  id: ERTJanitorIDCard
+  name: ERT Janitor ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: gold
+    - state: ert_janitor
+  - type: IdCard
+    jobTitle: ERT Custodian
+
+- type: entity
+  parent: ERTChaplainIDCard
+  id: ERTMedicIDCard
+  name: ERT Medic ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: gold
+    - state: ert_medic
+  - type: IdCard
+    jobTitle: ERT Medical Doctor
+
+- type: entity
+  parent: ERTChaplainIDCard
+  id: ERTSecurityIDCard
+  name: ERT Security ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: gold
+    - state: ert_security
+  - type: IdCard
+    jobTitle: ERT Field Officer
 
 - type: entity
   parent: IDCardStandard
@@ -511,7 +589,7 @@
     jobTitle: Central Commander
   - type: Access
     groups:
-    - AllAccess
+    - AllAccessCentCom
 
 - type: entity
   parent: IDCardStandard
@@ -528,7 +606,7 @@
     jobTitle: Centcom Intern
   - type: Access
     groups:
-    - AllAccess
+    - AllAccessCentCom
 
 - type: entity
   parent: IDCardStandard
@@ -606,7 +684,6 @@
     - JobIconChiefEngineer
     - JobIconBartender
     - JobIconHeadOfSecurity
-    - JobIconBrigmedic
     - JobIconMedicalDoctor
     - JobIconParamedic
     - JobIconChef
@@ -621,17 +698,21 @@
     - JobIconServiceWorker
     - JobIconSecurityCadet
     - JobIconZookeeper
-    - JobIconSeniorPhysician
-    - JobIconSeniorOfficer
-    - JobIconSeniorEngineer
-    - JobIconSeniorResearcher
   - type: ActivatableUI
     key: enum.AgentIDCardUiKey.Key
     inHandsOnly: true
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+  - type: ChameleonClothing
+    slot: [idcard]
+    default: PassengerIDCard
   - type: UserInterface
     interfaces:
       - key: enum.AgentIDCardUiKey.Key
         type: AgentIDCardBoundUserInterface
+      - key: enum.ChameleonUiKey.Key
+        type: ChameleonBoundUserInterface
 
 - type: entity
   name: passenger ID card
@@ -665,6 +746,19 @@
   - type: Sprite
     layers:
     - state: syndie
+  - type: Access
+    tags:
+    - NuclearOperative
+    - SyndicateAgent
+
+- type: entity
+  parent: IDCardStandard
+  id: PirateIDCard
+  name: pirate ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: pirate
   - type: Access
     tags:
     - NuclearOperative
@@ -734,13 +828,15 @@
   parent: CentcomIDCard
   id: CBURNIDcard
   name: CBURN ID card
+  suffix: CBURN
   components:
   - type: Sprite
     layers:
-    - state: gold
-    - state: idcentcom
+    - state: centcom
   - type: Item
-    heldPrefix: gold
+    heldPrefix: blue
+  - type: IdCard
+    jobTitle: Centcom Quarantine Officer
 
 - type: entity
   parent: IDCardStandard
@@ -765,8 +861,6 @@
     layers:
     - state: default
     - state: idseniorengineer
-  - type: PresetIdCard
-    job: SeniorEngineer
 
 - type: entity
   parent: IDCardStandard
@@ -777,8 +871,6 @@
     layers:
     - state: default
     - state: idseniorresearcher
-  - type: PresetIdCard
-    job: SeniorResearcher
 
 - type: entity
   parent: IDCardStandard
@@ -789,8 +881,6 @@
     layers:
     - state: default
     - state: idseniorphysician
-  - type: PresetIdCard
-    job: SeniorPhysician
 
 - type: entity
   parent: IDCardStandard
@@ -801,5 +891,3 @@
     layers:
     - state: default
     - state: idseniorofficer
-  - type: PresetIdCard
-    job: SeniorOfficer

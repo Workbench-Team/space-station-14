@@ -64,6 +64,7 @@ public sealed partial class AccessStorageComponent : Component
         "Security",
         "Service",
         "Theatre",
+        "Centcom",
     };
 }
 

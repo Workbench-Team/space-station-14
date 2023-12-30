@@ -7,7 +7,7 @@ namespace Content.Server.Atmos.Reactions;
 [UsedImplicitly]
 public sealed partial class BZProductionReaction : IGasReactionEffect
 {
-    public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem)
+    public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem, float heatScale)
     {
         var initialHyperNoblium = mixture.GetMoles(Gas.HyperNoblium);
         if (initialHyperNoblium >= 5.0f && mixture.Temperature > 20f)
@@ -24,7 +24,7 @@ public sealed partial class BZProductionReaction : IGasReactionEffect
         if (initialNitrousOxide - BZFormed * 0.4f < 0 || initialPlasma - (0.8f - BZFormed) < 0 || BZFormed <= 0)
             return ReactionResult.NoReaction;
 
-        var oldHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture);
+        var oldHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture, true);
 
         var amountDecomposed = 0.0f;
         var nitrousOxideDecomposedFactor = Math.Max(4.0f * (initialPlasma / (initialNitrousOxide + initialPlasma) - 0.75f), 0);
@@ -41,7 +41,7 @@ public sealed partial class BZProductionReaction : IGasReactionEffect
 
         var energyReleased = BZFormed * (Atmospherics.BZFormationEnergy + nitrousOxideDecomposedFactor * (Atmospherics.NitrousOxideDecompositionEnergy - Atmospherics.BZFormationEnergy));
 
-        var newHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture);
+        var newHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture, true);
         if (newHeatCapacity > Atmospherics.MinimumHeatCapacity)
             mixture.Temperature = Math.Max((mixture.Temperature * oldHeatCapacity + energyReleased) / newHeatCapacity, Atmospherics.TCMB);
 

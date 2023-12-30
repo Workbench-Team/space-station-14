@@ -72,6 +72,22 @@
 
 - type: entity
   parent: ClothingHeadBase
+  id: ClothingHeadHatBeretBS
+  name: blueshield officer's beret
+  description: A very important beret.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret_blueshield.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/beret_blueshield.rsi
+  - type: Tag
+    tags:
+    - Clothing
+    - ClothMade
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
   id: ClothingHeadHatBeretEngineering
   name: engineering beret
   description: A beret with the engineering insignia emblazoned on it. For engineers that are more inclined towards style than safety.
@@ -114,6 +130,17 @@
     sprite: Clothing/Head/Hats/beret_warden.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beret_warden.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretSeniorPhysician
+  name: physician beret
+  description: Donning the colours of medical and chemistry, physicians are the pride of this department!
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret_physician.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/beret_physician.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -182,6 +209,17 @@
 
 - type: entity
   parent: ClothingHeadBase
+  id: ClothingHeadHatCentcomConsultantCap
+  name: Centcom сonsultant сap
+  description: "An expensive cap, with a bright gold emblem on your forehead, saying that you are the inspector of order at this station."
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/centcom_consultant.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/centcom_consultant.rsi
+
+- type: entity
+  parent: ClothingHeadBase
   id: ClothingHeadHatCentcom
   name: CentCom brand hat
   description: "It's good to be the emperor."
@@ -190,17 +228,6 @@
     sprite: Clothing/Head/Hats/centcom.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/centcom.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatCentcomcap
-  name: CentCom brand hat
-  description: "Good centcom cap"
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Hats/centcomcap.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hats/centcomcap.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -224,7 +251,8 @@
   - type: Clothing
     sprite: Clothing/Head/Hats/chefhat.rsi
   - type: Storage
-    maxSlots: 1
+    grid:
+    - 0,0,0,0
   - type: UserInterface
     interfaces:
       - key: enum.StorageUiKey.Key
@@ -791,7 +819,8 @@
     size: Small
     sprite: Clothing/Head/Hats/magician.rsi
   - type: Storage
-    maxSlots: 1
+    grid:
+    - 0,0,0,0
   - type: UserInterface
     interfaces:
       - key: enum.StorageUiKey.Key
@@ -820,6 +849,22 @@
 
 - type: entity
   parent: ClothingHeadBase
+  id: ClothingHeadHatCentcomcap
+  name: CentCom cap
+  description: An extravagant, fancy Central Commander cap.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/comcap.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/comcap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - WhitelistChameleon
+    - HamsterWearable
+
+- type: entity
+  parent: ClothingHeadBase
   id: ClothingHeadHatGladiator
   name: Gladiator helmet
   description: Protects the head from harsh ash winds and toy spears.
@@ -828,3 +873,49 @@
     sprite: Clothing/Head/Hats/gladiator.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/gladiator.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatPartyRed
+  name: red party hat
+  description: Spread a joy!
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/party_red.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/party_red.rsi
+  - type: Tag
+    tags:
+      - DroneUsable
+      - WhitelistChameleon
+      - HamsterWearable
+
+- type: entity
+  parent: ClothingHeadHatPartyRed
+  id: ClothingHeadHatPartyYellow
+  name: yellow party hat
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/party_yellow.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/party_yellow.rsi
+
+- type: entity
+  parent: ClothingHeadHatPartyRed
+  id: ClothingHeadHatPartyGreen
+  name: green party hat
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/party_green.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/party_green.rsi
+
+- type: entity
+  parent: ClothingHeadHatPartyRed
+  id: ClothingHeadHatPartyBlue
+  name: blue party hat
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/party_blue.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/party_blue.rsi

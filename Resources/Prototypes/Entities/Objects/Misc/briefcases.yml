@@ -7,7 +7,9 @@
   - type: Item
     size: Ginormous
   - type: Storage
-    maxTotalWeight: 24
+    maxItemSize: Huge
+    grid:
+    - 0,0,7,4
   - type: Tag
     tags:
     - Briefcase
@@ -33,12 +35,6 @@
   components:
   - type: Item
     size: Huge
-  - type: Storage
-    maxItemSize: Huge
-    maxTotalWeight: 40
-  - type: Tag
-    tags:
-    - Briefcase
 
 - type: entity
   name: brown briefcase

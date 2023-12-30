@@ -2,17 +2,19 @@
   id: DefaultMapPool
   maps:
   - Aspid
+  - Atlas
   - Bagel
   - Box
   - Cluster
-  #- Core
+  - Core
   - Fland
-  - Kettle
+  - Gemini
   - Marathon
   - MetaStation
   - Omega
   - Origin
   - Saltern
   - Packed
+  - Reach
   - Driller
   - KiloStation

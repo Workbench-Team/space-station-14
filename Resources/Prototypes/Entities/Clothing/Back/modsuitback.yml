@@ -142,7 +142,8 @@
   components:
   - type: Storage
     maxItemSize: Huge
-    maxTotalWeight: 56 #14 normal-sized items.
+    grid:
+    - 0,0,19,9
   - type: Sprite
     sprite: Clothing/Back/Modsuit/admin.rsi
   - type: ToggleableClothing
@@ -157,7 +158,8 @@
   components:
   - type: Storage
     maxItemSize: Huge
-    maxTotalWeight: 32 #14 normal-sized items.
+    grid:
+    - 0,0,15,5
   - type: Sprite
     sprite: Clothing/Back/Modsuit/chrono.rsi
   - type: ToggleableClothing
@@ -170,7 +172,8 @@
   description: The control unit of a Modular Outerwear Device, a powered suit that protects against various environments. A fancy, high-tech suit for Nanotrasen's high ranking officers.
   components:
   - type: Storage
-    maxTotalWeight: 21 #14 normal-sized items.
+    grid:
+    - 0,0,10,3
   - type: Sprite
     sprite: Clothing/Back/Modsuit/corp.rsi
   - type: ToggleableClothing

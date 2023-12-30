@@ -77,6 +77,16 @@
 
 - type: entity
   noSpawn: true
+  parent: ClothingBackpackSatchelMedical
+  id: ClothingBackpackSatchelParamedicFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalMedical
+      - id: EmergencyRollerBedSpawnFolded
+
+- type: entity
+  noSpawn: true
   parent: ClothingBackpackSatchelCaptain
   id: ClothingBackpackSatchelCaptainFilled
   components:
@@ -104,8 +114,8 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
-      - id: Paper
-        amount: 4
+      - id: Flash
+      - id: TelescopicBaton
 
 - type: entity
   noSpawn: true
@@ -115,9 +125,6 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
-      - id: WeaponSniperMosin
-      - id: SpeedLoaderLightRifle
-      - id: MagazineBoxLightRifle
 
 - type: entity
   noSpawn: true
@@ -270,9 +277,9 @@
     - type: StorageFill
       contents:
       - id: BoxSurvival
+      - id: BoxForensicPad
       - id: Lighter
       - id: CigPackBlack
-      - id: BoxForensicPad
       - id: HandLabeler
 
 - type: entity

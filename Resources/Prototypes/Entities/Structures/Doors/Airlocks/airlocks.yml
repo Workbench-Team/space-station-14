@@ -32,6 +32,42 @@
 
 - type: entity
   parent: Airlock
+  id: AirlockCentcomV2
+  suffix: Centcom
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/centcom_green.rsi
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
+
+- type: entity
+  parent: Airlock
+  id: AirlockCentcom
+  suffix: Centcom
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/centcom.rsi
+  - type: WiresPanelSecurity
+    securityLevel: maxSecurity
+  - type: Wires
+    boardName: wires-board-name-highsec
+    layoutId: HighSec
+
+- type: entity
+  parent: Airlock
+  id: AirlockCentcomHatch
+  suffix: Centcom, Hatch
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/centcom_hatch.rsi
+  - type: WiresPanelSecurity
+    securityLevel: maxSecurity
+  - type: Wires
+    boardName: wires-board-name-highsec
+    layoutId: HighSec
+
+- type: entity
+  parent: Airlock
   id: AirlockMiner
   suffix: Miner
   components:
@@ -116,6 +152,14 @@
   - type: WiresPanelSecurity
     securityLevel: medSecurity
 
+- type: entity
+  parent: Airlock
+  id: AirlockMining
+  suffix: Mining(Salvage)
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/mining.rsi
+
 # Glass
 
 - type: entity
@@ -183,6 +227,18 @@
 
 - type: entity
   parent: AirlockGlass
+  id: AirlockCentcomGlass
+  suffix: Centcom
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/centcom_green.rsi
+  - type: PaintableAirlock
+    group: Glass
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
+
+- type: entity
+  parent: AirlockGlass
   id: AirlockAtmosphericsGlass
   suffix: Atmospherics
   components:
@@ -208,6 +264,16 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Glass/miner.rsi
+  - type: PaintableAirlock
+    group: Glass
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockChemistryGlass
+  suffix: Chemistry
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/medical.rsi
   - type: PaintableAirlock
     group: Glass
 
@@ -283,3 +349,11 @@
   - type: PaintableAirlock
   - type: WiresPanelSecurity
     securityLevel: medSecurity
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockMiningGlass
+  suffix: Mining(Salvage)
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/mining.rsi

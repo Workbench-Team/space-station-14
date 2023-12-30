@@ -13,9 +13,9 @@
     <GuideEntityEmbed Entity="ClothingOuterHardsuitSyndieCommander" Caption="Скафандр Командира"/>
   </Box>
 
-  - Агент [color=#a4885c] Ядерных Оперативников[/color] одет в чёрный элитный скафандр и может выступать в роли боевого медика во время выполнения задания.
+  - Агент [color=#a4885c] Ядерных Оперативников[/color] одет в кроваво-красный скафандр медика и может выступать в роли боевого медика во время выполнения задания.
   <Box>
-    <GuideEntityEmbed Entity="ClothingOuterHardsuitSyndieElite" Caption="Скафандр Агента"/>
+    <GuideEntityEmbed Entity="ClothingOuterHardsuitSyndieMedic" Caption="Кроваво-Красный Скафандр Медика"/>
   </Box>
 
   - Обычные [color=#a4885c]Ядерные Оперативники[/color], у которых обычный кроваво-красный скафандр.

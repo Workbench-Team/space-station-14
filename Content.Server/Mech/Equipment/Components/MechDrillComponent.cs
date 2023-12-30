@@ -1,5 +1,6 @@
 using System.Threading;
 using Robust.Shared.Audio;
+using Robust.Shared.Audio.Components;
 using Robust.Shared.Containers;
 
 namespace Content.Server.Mech.Equipment.Components;
@@ -29,7 +30,7 @@ public sealed partial class MechDrillComponent : Component
     [DataField("drillSound")]
     public SoundSpecifier DrillSound = new SoundPathSpecifier("/Audio/Mecha/sound_mecha_hydraulic.ogg");
 
-    public IPlayingAudioStream? AudioStream;
+    public AudioComponent? AudioStream;
 
     public CancellationTokenSource? Token;
 }

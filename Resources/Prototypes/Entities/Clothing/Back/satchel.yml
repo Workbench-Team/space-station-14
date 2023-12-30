@@ -139,7 +139,7 @@
 - type: entity
   parent: ClothingBackpackSatchel
   id: ClothingBackpackSatchelCentcom
-  name: centcom satchel
+  name: central command satchel
   description: An exclusive satchel for CentCom officers.
   components:
   - type: Sprite
@@ -189,4 +189,5 @@
     size: Ginormous
   - type: Storage
     maxItemSize: Huge
-    maxTotalWeight: 56 #14 normal-sized items.
+    grid:
+    - 0,0,19,9

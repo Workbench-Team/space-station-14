@@ -51,6 +51,44 @@
       - id: ClothingHeadHatCapcap
 
 - type: entity
+  id: LockerCentcomConsultantFilled
+  suffix: Filled
+  parent: LockerCentcomConsultant
+  components:
+  - type: StorageFill
+    contents:
+      - id: GarmentBagCentcomConsultant
+      - id: ClothingHeadsetAltCentCom
+      - id: HandheldIntercomMonitor
+      - id: RubberStampCentcomConsultant
+      - id: Handcuffs
+      - id: WeaponRevolverMateba
+      - id: SpeedLoaderMagnum
+      - id: SpeedLoaderMagnumRubber
+      - id: CigarGoldCase
+        prob: 0.25
+
+- type: entity
+  id: LockerCentcomConsultantFilledHardsuit
+  suffix: Filled, Hardsuit
+  parent: LockerCentcomConsultant
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitCentcomConsultant
+      - id: ClothingMaskGasCentcom
+      - id: GarmentBagCentcomConsultant
+      - id: ClothingHeadsetAltCentCom
+      - id: HandheldIntercomMonitor
+      - id: RubberStampCentcomConsultant
+      - id: Handcuffs
+      - id: WeaponRevolverMateba
+      - id: SpeedLoaderMagnum
+      - id: SpeedLoaderMagnumRubber
+      - id: CigarGoldCase
+        prob: 0.25
+
+- type: entity
   id: LockerBlueShieldFilled
   suffix: Filled
   parent: LockerBlueShield
@@ -62,10 +100,10 @@
       - id: Handcuffs
       - id: Flash
       - id: BoxCardboardTrackImp
-      - id: ClothingBeltSecurityWebbing
       - id: GarmentBagBlueShield
       - id: ClothingHeadsetAltBlueShield
       - id: ClothingHeadsetBlueShield
+      - id: WoodenMedalCase
 
 - type: entity
   id: LockerCaptainFilled
@@ -149,6 +187,8 @@
       - id: HolofanProjector
       - id: HoloprojectorEngineering
       - id: AccessConfigurator
+      - id: RCD
+      - id: RCDAmmo
 
 - type: entity
   id: LockerChiefEngineerFilled
@@ -169,6 +209,8 @@
       - id: HolofanProjector
       - id: HoloprojectorEngineering
       - id: AccessConfigurator
+      - id: RCD
+      - id: RCDAmmo
 
 - type: entity
   id: LockerChiefMedicalOfficerFilledHardsuit
@@ -304,3 +346,18 @@
       - id: BookSecretDocuments
       - id: WeaponLaserHos
 
+- type: entity
+  id: LockerFreezerVaultFilled
+  suffix: Vault, Locked
+  parent: LockerFreezerBase
+  components:
+  - type: AccessReader
+    access: [ [ "Command" ] ]
+  - type: StorageFill
+    contents:
+    - id: WeaponRevolverDeckard
+    - id: ClothingOuterHardsuitBasic
+    - id: JetpackBlue
+    - id: SpaceCash1000
+    - id: BeachBall
+    - id: BikeHorn

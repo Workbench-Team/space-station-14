@@ -160,9 +160,11 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckCloakBlueshield
-  name: blueshield officer's cloak
-  description: Why does the defender of the heads of the station need it? In order to look more stylish, of course.
+  id: ClothingNeckCloakVoid
+  name: void cloak
+  description: A cloak of darkness. For those who have gone to the dark side of the force.
   components:
   - type: Sprite
-    sprite: Clothing/Neck/Cloaks/blueshield.rsi
+    sprite: Clothing/Neck/Cloaks/void.rsi
+  - type: TypingIndicatorClothing
+    proto: alien

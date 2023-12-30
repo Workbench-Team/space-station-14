@@ -86,3 +86,50 @@
     sprite: Clothing/Neck/Medals/clownmedal.rsi
   - type: Clothing
     sprite: Clothing/Neck/Medals/clownmedal.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckGoldShieldMedal
+  name: gold shield medal
+  description: A brilliant medal made of pure gold, cast in the shape of a shield, awarded by representatives of the NanoTrasen company for responsibility and courage.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Medals/shieldgold.rsi
+  - type: Clothing
+    sprite: Clothing/Neck/Medals/shieldgold.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckSilverShieldMedal
+  name: silver shield medal
+  description: A brilliant medal made of pure silver, cast in the shape of a shield, awarded by representatives of the NanoTrasen company for responsibility and courage.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Medals/shieldsilver.rsi
+  - type: Clothing
+    sprite: Clothing/Neck/Medals/shieldsilver.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckBronzeShieldMedal
+  name: bronze shield medal
+  description: A brilliant medal made of pure bronze, cast in the shape of a shield, awarded by representatives of the NanoTrasen company for responsibility and courage.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Medals/shieldbronze.rsi
+  - type: Clothing
+    sprite: Clothing/Neck/Medals/shieldbronze.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckBlueshieldMedal
+  name: blueshield medal
+  description: A precious medal made of pure platinum, cast in the shape of a shield, awarded by representatives of Nanotrasen to those who have earned the full trust of the Corporation.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Medals/shieldblue.rsi
+  - type: Clothing
+    sprite: Clothing/Neck/Medals/shieldblue.rsi
+  - type: Tag
+    tags:
+    - HighRiskItem

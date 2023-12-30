@@ -4,7 +4,7 @@
     "x": 32,
     "y": 32
   },
-  "copyright": "Taken from tgstation, brigmedic locker is a resprited CMO locker by PuroSlavKing (Github)",
+  "copyright": "Taken from tgstation, brigmedic locker is a resprited CMO locker by PuroSlavKing (Github), CCC, CC and Blueshield made by Tamioki",
   "license": "CC-BY-SA-3.0",
   "states": [
     {
@@ -15,6 +15,24 @@
     },
     {
       "name": "abductor_open"
+    },
+    {
+      "name": "ccc"
+    },
+    {
+      "name": "ccc_door"
+    },
+    {
+      "name": "ccc_open"
+    },
+    {
+      "name": "cc"
+    },
+    {
+      "name": "cc_door"
+    },
+    {
+      "name": "cc_open"
     },
     {
       "name": "agentbox"
@@ -114,6 +132,15 @@
     },
     {
       "name": "bomb_open"
+    },
+    {
+      "name": "janitor_bomb"
+    },
+    {
+      "name": "janitor_bomb_door"
+    },
+    {
+      "name": "janitor_bomb_open"
     },
     {
       "name": "cabinet"
@@ -324,6 +351,9 @@
       "name": "generic_open"
     },
     {
+      "name": "generic_icon"
+    },
+    {
       "name": "green_door"
     },
     {
@@ -531,6 +561,27 @@
     },
     {
       "name": "yellow_door"
+    },
+    {
+      "name": "clown"
+    },
+    {
+      "name": "clown_door"
+    },
+    {
+      "name": "clown_open"
+    },
+    {
+      "name": "mime"
+    },
+    {
+      "name": "mime_door"
+    },
+    {
+      "name": "mime_open"
+    },
+    {
+      "name": "representative_door"
     }
   ]
 }

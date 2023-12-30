@@ -38,6 +38,33 @@
     
 - type: entity
   parent: BaseFigurine
+  id: ToyFigurineCentcomConsultant
+  name: CentCom consultant figure
+  description: A figurine depicting a Central Command Consultant is expensively dressed and content with his status, perhaps trying to keep order.
+  components:
+  - type: Sprite
+    state: consultant
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineCentcomIntern
+  name: CentCom intern figure
+  description: A figurine depicting another CentCom intern being trained by Central Command, clumsily pressing all the buttons on consoles, and randomly sending you stupid alerts.
+  components:
+  - type: Sprite
+    state: intern_cc
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineCentcomOfficial
+  name: CentCom official figure
+  description: A figurine depicting a formidable representative of the Central Command, very angry with you.
+  components:
+  - type: Sprite
+    state: centcom_official
+
+- type: entity
+  parent: BaseFigurine
   id: ToyFigurinePassenger
   name: passenger figure
   description: A figurine depicting an every day, run-of-the-mill passenger. No funny business here.
@@ -472,3 +499,12 @@
   components:
   - type: Sprite
     state: skeletonprize
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineThief
+  name: thief character figure
+  description: Hiding in the shadows...
+  components:
+  - type: Sprite
+    state: thiefcharacter

@@ -64,3 +64,5 @@ ent-FoodBreadButterDog = баттер-дог
     .desc = Очень странный хот... баттер-дог?!
 ent-FoodBreadTwoSlice = два ломтика
     .desc = Первоклассно.
+ent-MobBreadDog = хлебопёс
+    .desc = Это хлеб. Это пёс. Это... хлебопёс?

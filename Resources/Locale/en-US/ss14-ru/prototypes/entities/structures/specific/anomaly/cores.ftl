@@ -1,5 +1,5 @@
 ent-BaseAnomalyCore = anomaly core
-    .desc = The core of a detroyed incomprehensible object.
+    .desc = The core of a destroyed incomprehensible object.
 ent-AnomalyCorePyroclastic = { ent-BaseAnomalyCore }
     .suffix = Pyroclastic
     .desc = { ent-BaseAnomalyCore.desc }

@@ -12,6 +12,14 @@
 
 - type: entity
   parent: Airlock
+  id: AirlockLawyerLocked
+  suffix: Lawyer, Locked
+  components:
+  - type: AccessReader
+    access: [["Lawyer"]]
+
+- type: entity
+  parent: Airlock
   id: AirlockTheatreLocked
   suffix: Theatre, Locked
   components:
@@ -133,6 +141,17 @@
 
 - type: entity
   parent: AirlockExternal
+  id: AirlockExternalCentcomLocked
+  suffix: External, Centcom, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Centcom"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentcom ]
+
+- type: entity
+  parent: AirlockExternal
   id: AirlockExternalSyndicateLocked
   suffix: External, Syndicate, Locked
   components:
@@ -174,6 +193,14 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsKitchenHydroponics ]
+
+- type: entity
+  parent: AirlockFreezer
+  id: AirlockFreezerHydroponicsLocked
+  suffix: Hydroponics, Locked
+  components:
+  - type: AccessReader
+    access: [["Hydroponics"]]
 
 - type: entity
   parent: AirlockEngineering
@@ -229,6 +256,14 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsMiner ]
+
+- type: entity
+  parent: AirlockMining
+  id: AirlockMiningLocked
+  suffix: Mining(Salvage), Locked
+  components:
+  - type: AccessReader
+    access: [["Salvage"]]
 
 - type: entity
   parent: AirlockMedical
@@ -415,6 +450,94 @@
     layoutId: AirlockSecurity
 
 - type: entity
+  parent: AirlockCentcomV2
+  id: AirlockCentcomV2Locked
+  suffix: Centcom, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Centcom"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentcom ]
+  - type: Wires
+    layoutId: AirlockCommand
+
+- type: entity
+  parent: AirlockCentcomGlass
+  id: AirlockCentcomGlassLocked
+  suffix: Centcom, Glass, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Centcom"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentcom ]
+  - type: Wires
+    layoutId: AirlockCommand
+
+- type: entity
+  parent: AirlockCentcom
+  id: AirlockCentcomLocked
+  suffix: Centcom, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Centcom"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentcom ]
+  - type: Wires
+    layoutId: AirlockCommand
+
+- type: entity
+  parent: AirlockCentcom
+  id: AirlockCentcomCommandLocked
+  suffix: Command, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Command"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCommand ]
+  - type: Wires
+    layoutId: AirlockCommand
+
+- type: entity
+  parent: AirlockCentcomHatch
+  id: AirlockCentcomHatchLocked
+  suffix: Centcom, Hatch, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Centcom"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentcom ]
+  - type: Wires
+    layoutId: AirlockCommand
+
+- type: entity
+  parent: AirlockCentcomHatch
+  id: AirlockCentcomHatchCommandLocked
+  suffix: Command, Hatch, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Command"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCommand ]
+  - type: Wires
+    layoutId: AirlockCommand
+
+- type: entity
+  parent: AirlockSecurity
+  id: AirlockSecurityLawyerLocked
+  suffix: Security/Lawyer, Locked
+  components:
+  - type: AccessReader
+    access: [["Security"], ["Lawyer"]]
+  - type: Wires
+    layoutId: AirlockSecurity
+
+- type: entity
   parent: AirlockSecurity
   id: AirlockArmoryLocked
   suffix: Armory, Locked
@@ -460,6 +583,14 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsService ]
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockLawyerGlassLocked
+  suffix: Lawyer, Locked
+  components:
+  - type: AccessReader
+    access: [["Lawyer"]]
 
 - type: entity
   parent: AirlockGlass
@@ -537,6 +668,17 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsAtmospherics ]
+
+- type: entity
+  parent: AirlockExternalGlass
+  id: AirlockExternalGlassCentcomLocked
+  suffix: External, Glass, Centcom, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Centcom"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentcom ]
 
 - type: entity
   parent: AirlockGlass
@@ -627,6 +769,22 @@
       board: [ DoorElectronicsMiner ]
 
 - type: entity
+  parent: AirlockMiningGlass
+  id: AirlockMiningGlassLocked
+  suffix: Mining(Salvage), Locked
+  components:
+  - type: AccessReader
+    access: [["Salvage"]]
+    
+- type: entity
+  parent: AirlockChemistryGlass
+  id: AirlockChemistryGlassLocked
+  suffix: Chemistry, Locked
+  components:
+  - type: AccessReader
+    access: [["Chemistry"]]
+
+- type: entity
   parent: AirlockMedicalGlass
   id: AirlockMedicalGlassLocked
   suffix: Medical, Locked
@@ -669,6 +827,28 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsMedicalScience ]
+
+- type: entity
+  parent: AirlockCommandGlass
+  id: AirlockCommandCentcomGlassLocked
+  suffix: Centcom, Glass, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Centcom"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentcom ]
+
+- type: entity
+  parent: AirlockCommand
+  id: AirlockCommandCentcomLocked
+  suffix: Centcom, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Centcom"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentcom ]
 
 - type: entity
   parent: AirlockCommandGlass
@@ -793,6 +973,14 @@
 
 - type: entity
   parent: AirlockSecurityGlass
+  id: AirlockSecurityLawyerGlassLocked
+  suffix: Security/Lawyer, Locked
+  components:
+  - type: AccessReader
+    access: [["Security"], ["Lawyer"]]
+
+- type: entity
+  parent: AirlockSecurityGlass
   id: AirlockArmoryGlassLocked
   suffix: Armory, Locked
   components:
@@ -904,6 +1092,17 @@
 
 - type: entity
   parent: AirlockMaint
+  id: AirlockMaintCentcomLocked
+  suffix: Centcom, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Centcom"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentcom ]
+
+- type: entity
+  parent: AirlockMaint
   id: AirlockMaintCommandLocked
   suffix: Command, Locked
   components:
@@ -989,6 +1188,22 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsJanitor ]
+
+- type: entity
+  parent: AirlockMaint
+  id: AirlockMaintLawyerLocked
+  suffix: Lawyer, Locked
+  components:
+  - type: AccessReader
+    access: [["Lawyer"]]
+
+- type: entity
+  parent: AirlockMaint
+  id: AirlockMaintServiceLocked
+  suffix: Service, Locked
+  components:
+  - type: AccessReader
+    access: [["Service"]]
 
 - type: entity
   parent: AirlockMaint
@@ -1112,6 +1327,46 @@
       board: [ DoorElectronicsCaptain ]
 
 - type: entity
+  parent: AirlockMaint
+  id: AirlockMaintChiefEngineerLocked
+  suffix: ChiefEngineer, Locked
+  components:
+  - type: AccessReader
+    access: [["ChiefEngineer"]]
+
+- type: entity
+  parent: AirlockMaint
+  id: AirlockMaintChiefMedicalOfficerLocked
+  suffix: ChiefMedicalOfficer, Locked
+  components:
+  - type: AccessReader
+    access: [["ChiefMedicalOfficer"]]
+
+- type: entity
+  parent: AirlockMaint
+  id: AirlockMaintHeadOfSecurityLocked
+  suffix: HeadOfSecurity, Locked
+  components:
+  - type: AccessReader
+    access: [["HeadOfSecurity"]]
+
+- type: entity
+  parent: AirlockMaint
+  id: AirlockMaintResearchDirectorLocked
+  suffix: ResearchDirector, Locked
+  components:
+  - type: AccessReader
+    access: [["ResearchDirector"]]
+
+- type: entity
+  parent: AirlockMaint
+  id: AirlockMaintArmoryLocked
+  suffix: Armory, Locked
+  components:
+  - type: AccessReader
+    access: [["Armory"]]
+
+- type: entity
   parent: AirlockSyndicate
   id: AirlockSyndicateLocked
   suffix: Syndicate, Locked
@@ -1157,7 +1412,7 @@
       board: [ DoorElectronicsExternal ]
 
 - type: entity
-  parent: AirlockShuttle
+  parent: AirlockShuttleSyndicate
   id: AirlockExternalShuttleSyndicateLocked
   suffix: External, Docking, Syndicate, Locked
   components:
@@ -1168,7 +1423,7 @@
       board: [ DoorElectronicsSyndicate ]
 
 - type: entity
-  parent: AirlockShuttle
+  parent: AirlockShuttleSyndicate
   id: AirlockExternalShuttleNukeopLocked
   suffix: External, Docking, Nukeop, Locked
   components:
@@ -1188,6 +1443,33 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsExternal ]
+
+- type: entity
+  parent: AirlockGlassShuttleSyndicate
+  id: AirlockExternalGlassShuttleSyndicateLocked
+  suffix: Syndicate, Locked, Glass
+  components:
+  - type: AccessReader
+    access: [["SyndicateAgent"]]
+
+- type: entity
+  parent: AirlockGlassShuttleSyndicate
+  id: AirlockExternalGlassShuttleNukeopLocked
+  suffix: Nukeop, Locked, Glass
+  components:
+  - type: AccessReader
+    access: [["NuclearOperative"]]
+
+- type: entity
+  parent: AirlockGlassShuttle
+  id: AirlockExternalGlassShuttleCentcomLocked
+  suffix: External, Centcom, Glass, Docking, Locked
+  components:
+  - type: AccessReaderBoard
+#    access: [["Centcom"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentcom ]
 
 - type: entity
   parent: AirlockGlassShuttle

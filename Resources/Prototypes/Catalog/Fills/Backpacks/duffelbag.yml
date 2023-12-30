@@ -43,6 +43,8 @@
       - id: Cautery
       - id: Retractor
       - id: ScalpelAdvanced
+      - id: ClothingHandsGlovesNitrile
+      - id: EmergencyRollerBedSpawnFolded
 
 - type: entity
   parent: WeaponcaseSyndie
@@ -103,7 +105,7 @@
   - type: StorageFill
     contents:
       - id: ArrowCompound
-        amount: 40
+        amount: 24
 
 - type: entity
   parent: WeaponcaseBlueShield
@@ -265,7 +267,7 @@
         amount: 4
 
 - type: entity
-  parent: ClothingBackpackDuffel
+  parent: ClothingBackpackDuffelCentcom
   id: ClothingBackpackDuffelSyndicateCostumeCentcom
   name: CentCom official costume duffel bag
   description: "Contains a full CentCom Official uniform set, headset and clipboard included. Encryption keys and ID access are not included."
@@ -275,13 +277,13 @@
     tags: [] # ignore "WhitelistChameleon" tag
   - type: StorageFill
     contents:
+      - id: ClothingOuterArmorBasic
       - id: ClothingHeadHatCentcom
       - id: ClothingEyesGlassesSunglasses
       - id: ClothingUniformJumpsuitCentcomOfficial
       - id: ClothingShoesBootsJack
       - id: ClothingHandsGlovesColorBlack
       - id: ClothingHeadsetAltCentComFake
-      - id: ClothingOuterArmorBasic
       - id: Paper
       - id: Pen
       - id: CentcomPDAFake
@@ -321,7 +323,8 @@
   description: Contains 3 pairs of syndicate pyjamas and 3 plushies for the ultimate sleepover.
   components:
   - type: Storage
-    maxTotalWeight: 44
+    grid:
+    - 0,0,8,4
   - type: StorageFill
     contents:
       - id: ClothingUniformJumpsuitPyjamaSyndicateRed
@@ -379,6 +382,7 @@
       - id: ClothingOuterHardsuitSyndicate
       - id: ClothingMaskGasSyndicate
       - id: DoubleEmergencyOxygenTankFilled
+      - id: DoubleEmergencyNitrogenTankFilled
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -415,8 +419,8 @@
     contents:
       - id: BoxSurvivalSyndicate
       - id: WeaponPistolViper
-      - id: PinpointerNuclear
-      - id: MicroBombImplanter
+      - id: PinpointerSyndicateNuclear
+      - id: DeathAcidifierImplanter
 
 
 - type: entity
@@ -427,15 +431,16 @@
   components:
   - type: StorageFill
     contents:
+      - id: SyndiHypo
       - id: BoxSurvivalSyndicate
       - id: SawAdvanced
       - id: Cautery
       - id: CombatKnife
       - id: WeaponPistolViper
-      - id: PinpointerNuclear
+      - id: PinpointerSyndicateNuclear
       - id: HandheldHealthAnalyzer
       - id: CombatMedipen
-      - id: MicroBombImplanter
+      - id: DeathAcidifierImplanter
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateMedicalBundle
@@ -449,6 +454,6 @@
       - id: Defibrillator
       - id: CombatMedipen
         amount: 3
-      - id: ClothingHandsGlovesLatex
+      - id: ClothingHandsGlovesNitrile
       - id: SyringeTranexamicAcid
       - id: SyringeHyronalin

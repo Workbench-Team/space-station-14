@@ -513,7 +513,8 @@
   id: BoxHandcuffDurand
   components:
   - type: Storage
-    maxTotalWeight: 30
+    grid:
+    - 0,0,4,2
     whitelist:
       tags:
         - Handcuffs

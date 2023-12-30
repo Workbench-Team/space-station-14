@@ -7,7 +7,8 @@
   - type: Item
     size: Ginormous
   - type: Storage
-    maxTotalWeight: 80
+    grid:
+    - 0,0,9,5
     whitelist:
       tags:
         - Clothing
@@ -25,6 +26,25 @@
     sprite: Objects/Storage/Briefcases/garment_bag.rsi
 
 - type: entity
+  name: CentCom consultant's garment bag
+  parent: GarmentBag
+  id: GarmentBagCentcomConsultant
+  description: A handy bag.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingUniformJumpsuitCentcomConsultant
+      - id: ClothingUniformJumpskirtCentcomConsultant
+      - id: ClothingUniformJumpsuitCentcomConsultantFormal
+      - id: ClothingUniformJumpskirtCentcomConsultantFormal
+      - id: ClothingHeadHatCentcomConsultantCap
+      - id: ClothingOuterCoatCentcomConsultant
+      - id: ClothingNeckScarfStripedCentcom
+      - id: ClothingHandsGlovesCombat
+      - id: ClothingShoesBootsJack
+      - id: ClothingEyesGlassesSunglasses
+
+- type: entity
   name: blueshield's garment bag
   parent: GarmentBag
   id: GarmentBagBlueShield
@@ -39,8 +59,8 @@
       - id: ClothingUniformJumpskirtBlueshieldTurtleneck
       - id: ClothingEyesGlassesSunglassesBlueShield
       - id: ClothingOuterWinterBS
+      - id: ClothingHeadHatBeretBS
       - id: ClothingNeckMantleBS
-      - id: ClothingNeckCloakBlueshield
 
 - type: entity
   name: captain's garment bag

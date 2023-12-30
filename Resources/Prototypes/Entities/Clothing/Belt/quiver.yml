@@ -11,8 +11,13 @@
     - map: [ "enum.StorageContainerVisualLayers.Fill" ]
       visible: false
   - type: Clothing
+  - type: Item
+    size: Huge
+    shape:
+    - 0,0,3,4
   - type: Storage
-    maxSlots: 15
+    grid:
+    - 0,0,7,3
     maxItemSize: Small
     whitelist:
       tags:
@@ -26,12 +31,11 @@
   parent: ClothingBeltQuiver
   id: ClothingBeltQuiverComposit
   name: quiver
-  description: Can hold up to 40 arrows, and fits snug around your waist.
+  description: Can hold up to 24 arrows, and fits snug around your waist.
   components:
-  - type: Item
-    size: Huge
   - type: Storage
-    maxSlots: 40
+    grid:
+    - 0,0,11,3
     whitelist:
       tags:
       - ArrowBaseCompound

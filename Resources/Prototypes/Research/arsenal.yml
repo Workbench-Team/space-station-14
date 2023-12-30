@@ -15,6 +15,8 @@
   - WeaponCrusher
   - WeaponCrusherDagger
   - WeaponCutter
+  # This is not roundstart since its a direct upgrade
+  - WeaponCrusherGlaive
 
 - type: technology
   id: StandardAmmunition
@@ -119,6 +121,26 @@
   - MagazineRifleRubber
   - MagazinePistolRubber
   - MagazinePistolSubMachineGunRubber
+
+- type: technology
+  id: UraniumMunitions
+  name: research-technology-uranium-munitions
+  icon:
+    sprite: Objects/Materials/Sheets/other.rsi
+    state: uranium
+  discipline: Arsenal
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+  - ShellShotgunUranium
+  - CartridgePistolUranium
+  - CartridgeMagnumUranium
+  - CartridgeLightRifleUranium
+  - CartridgeRifleUranium
+  - MagazineBoxPistolUranium
+  - MagazineBoxMagnumUranium
+  - MagazineBoxLightRifleUranium
+  - MagazineBoxRifleUranium
 
 - type: technology
   id: ArmorProduce
@@ -240,6 +262,7 @@
   tier: 2
   cost: 8000
   recipeUnlocks:
+  - ClothingEyesGlassesSecurity
   - Truncheon
   - TelescopicShield
   - HoloprojectorSecurity
@@ -262,6 +285,30 @@
     - DurandHarness
 
 # Tier 3
+
+- type: technology
+  id: PortableMicrofusionWeaponry
+  name: research-technology-portable-microfusion-weaponry
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 3
+  cost: 15000
+  recipeUnlocks:
+  - WeaponAdvancedLaser
+
+- type: technology
+  id: ExperimentalBatteryAmmo
+  name: research-technology-experimental-battery-ammo
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/svalinn.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 3
+  cost: 15000
+  recipeUnlocks:
+  - WeaponLaserSvalinn
 
 - type: technology
   id: gygaxabnt

@@ -11,7 +11,7 @@
   - type: TemperatureProtection
     coefficient: 0.1
   - type: Item
-    size: Small
+    size: Normal
   - type: Armor
     modifiers:
       coefficients:
@@ -92,8 +92,6 @@
     sprite: Clothing/OuterClothing/WinterCoats/coatbs.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/WinterCoats/coatbs.rsi
-  - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHatHoodWinterBlueShield
 
 - type: entity
   parent: ClothingOuterWinterCoatToggleable

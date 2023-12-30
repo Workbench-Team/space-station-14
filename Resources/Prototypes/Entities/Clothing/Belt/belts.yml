@@ -29,6 +29,7 @@
         - HolofanProjector
         - Multitool
         - AppraisalTool
+        - JawsOfLife
         - HolosignProjector
       components:
         - SprayPainter
@@ -58,6 +59,10 @@
         whitelist:
           tags:
           - CrowbarRed
+      jaws:
+        whitelist:
+          tags:
+          - JawsOfLife
       screwdriver_nuke:
         whitelist:
           tags:
@@ -84,6 +89,8 @@
   - type: Clothing
     sprite: Clothing/Belt/ce.rsi
   - type: Storage
+    grid:
+    - 0,0,9,1
     # TODO: Fill this out more.
     whitelist:
       tags:
@@ -171,6 +178,7 @@
       components:
         - Stunbaton
         - FlashOnTrigger
+        - SmokeOnTrigger
         - Flash
         - Handcuff
         - RangedMagazine
@@ -185,6 +193,10 @@
         whitelist:
           components:
           - Stunbaton
+      tear_gas_grenade:
+        whitelist:
+          components:
+          - SmokeOnTrigger
     sprite: Clothing/Belt/belt_overlay.rsi
   - type: Appearance
 
@@ -228,6 +240,94 @@
           - Wrench
     sprite: Clothing/Belt/belt_overlay.rsi
   - type: Appearance
+
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltMedSec
+  name: medical-security belt
+  description: A belt with a fastener for medical and security equipment.
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/universalslim.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/universalslim.rsi
+  - type: Storage
+    whitelist:
+      tags:
+        - Wrench
+        - CigPack
+        - Radio
+        - HolofanProjector
+        - HolosignProjector
+        - Bottle
+        - Spray
+        - Brutepack
+        - Bloodpack
+        - Gauze
+        - Ointment
+        - PillCanister
+        - DiscreteHealthAnalyzer
+        - Taser
+        - SecBeltEquip
+      components:
+        - Stunbaton
+        - FlashOnTrigger
+        - Flash
+        - Handcuff
+        - Hypospray
+        - Injector
+        - Pill
+        - BallisticAmmoProvider
+        - CartridgeAmmo
+  - type: ItemMapper
+    mapLayers:
+      wrench:
+        whitelist:
+          tags:
+          - Wrench
+      bottle:
+        whitelist:
+          tags:
+          - Bottle
+      hypo:
+        whitelist:
+          components:
+          - Hypospray
+      pill:
+        whitelist:
+          components:
+          - Pill
+          tags:
+          - PillCanister
+      bottle_spray:
+        whitelist:
+          tags:
+          - Spray
+      flashbang:
+        whitelist:
+          components:
+          - FlashOnTrigger
+      stunbaton:
+        whitelist:
+          components:
+          - Stunbaton
+    sprite: Clothing/Belt/belt_overlay.rsi
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      storagebase: !type:Container
+        ents: []
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - LightWeapon
 
 - type: entity
   parent: ClothingBeltStorageBase
@@ -364,10 +464,13 @@
         - Taser
         - SecBeltEquip
         - Radio
+        - Sidearm
+        - MagazinePistol
         - HolosignProjector
       components:
         - Stunbaton
         - FlashOnTrigger
+        - SmokeOnTrigger
         - Flash
         - Handcuff
   - type: ItemMapper
@@ -380,6 +483,10 @@
         whitelist:
           components:
           - Stunbaton
+      tear_gas_grenade:
+        whitelist:
+          components:
+          - SmokeOnTrigger
     sprite: Clothing/Belt/belt_overlay.rsi
   - type: Appearance
   - type: ContainerContainer
@@ -399,7 +506,7 @@
             - LightWeapon
 
 - type: entity
-  parent: ClothingBeltStorageBase
+  parent: [ClothingBeltBase, ClothingSlotBase]
   id: ClothingBeltSheath
   name: sabre sheath
   description: An ornate sheath designed to hold an officer's blade.
@@ -409,11 +516,17 @@
     state: sheath
   - type: Clothing
     sprite: Clothing/Belt/sheath.rsi
-  - type: Storage
-    maxSlots: 1
-    whitelist:
-      tags:
-        - CaptainSabre
+  - type: Item
+    size: Ginormous
+  - type: ItemSlots
+    slots:
+      item:
+        name: Sabre
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        whitelist:
+          tags:
+          - CaptainSabre
   - type: ItemMapper
     mapLayers:
       sheath-sabre:
@@ -421,11 +534,11 @@
           tags:
           - CaptainSabre
   - type: Appearance
-
+ 
 # Belts without visualizers
 
 - type: entity
-  parent: ClothingBeltStorageBase
+  parent: ClothingBeltAmmoProviderBase
   id: ClothingBeltBandolier
   name: bandolier
   description: A bandolier for holding shotgun ammunition.
@@ -436,11 +549,11 @@
     sprite: Clothing/Belt/bandolier.rsi
   - type: Item
     size: Huge
-  - type: Storage
-    maxSlots: 36
+  - type: BallisticAmmoProvider
     whitelist:
       tags:
         - ShellShotgun
+    capacity: 14
 
 - type: entity
   parent: ClothingBeltBase
@@ -468,7 +581,8 @@
   - type: Clothing
     sprite: Clothing/Belt/holster.rsi
   - type: Storage
-    maxSlots: 3
+    grid:
+    - 0,0,3,1
 
 - type: entity
   parent: ClothingBeltStorageBase
@@ -481,8 +595,11 @@
   - type: Clothing
     sprite: Clothing/Belt/syndieholster.rsi
   - type: Item
-    size: Huge
+    size: Ginormous
   - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,3,3
     whitelist:
       components:
         - Gun
@@ -550,7 +667,7 @@
     sprite: Clothing/Belt/miningwebbing.rsi
 
 - type: entity
-  parent: ClothingBeltStorageBase
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltMilitaryWebbing
   name: chest rig
   description: A set of tactical webbing worn by Syndicate boarding parties.
@@ -559,6 +676,8 @@
     sprite: Clothing/Belt/militarywebbing.rsi
   - type: Clothing
     sprite: Clothing/Belt/militarywebbing.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
   - type: ContainerContainer
     containers:
       weapon_slot: !type:ContainerSlot
@@ -577,7 +696,7 @@
             - MediumWeapon
 
 - type: entity
-  parent: ClothingBeltStorageBase
+  parent: ClothingBeltMilitaryWebbing
   id: ClothingBeltMilitaryWebbingMed
   name: medical chest rig
   description: A set of tactical webbing worn by Gorlex Marauder medic operatives.
@@ -632,7 +751,8 @@
   - type: Clothing
     sprite: Clothing/Belt/wand.rsi
   - type: Storage
-    maxSlots: 8
+    grid:
+    - 0,0,15,1
     whitelist:
       tags:
       - WizardWand

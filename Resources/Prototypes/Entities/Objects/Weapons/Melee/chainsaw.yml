@@ -9,7 +9,7 @@
         types:
             Slash: 18.75
             Piercing: 6.25
-            Structural: 20
+            Structural: 10
     litDisarmMalus: 0.6
     activateSound: !type:SoundPathSpecifier
       path: /Audio/Weapons/chainsaw_start.ogg

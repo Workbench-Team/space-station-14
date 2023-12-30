@@ -275,7 +275,8 @@
   abstract: true
   components:
   - type: Storage
-    maxTotalWeight: 12
+    grid:
+    - 0,0,3,2
     quickInsert: true
     areaInsert: true
     whitelist:
@@ -284,6 +285,8 @@
   - type: Dumpable
   - type: Item
     size: Normal
+    shape:
+    - 0,0,1,1
   - type: Sprite
     sprite: Objects/Storage/boxes.rsi
 
@@ -441,7 +444,8 @@
   description: A box full of syringe cartridges.
   components:
   - type: Storage
-    maxTotalWeight: 10
+    grid:
+    - 0,0,3,2
   - type: StorageFill
     contents:
       - id: Syringecartridge

@@ -18,7 +18,8 @@ using Content.Shared.Research.Components;
 using Content.Shared.Research.Prototypes;
 using JetBrains.Annotations;
 using Robust.Server.GameObjects;
-using Robust.Shared.Player;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Player;
@@ -375,7 +376,7 @@ namespace Content.Server.Lathe
         {
             if (component.ErrorSound != null)
             {
-                _audio.Play(_audio.GetSound(component.ErrorSound), Filter.Pvs(uid, entityManager: EntityManager), uid, false);
+                _audio.PlayEntity(_audio.GetSound(component.ErrorSound), Filter.Pvs(uid, entityManager: EntityManager), uid, false);
             }
         }
 
