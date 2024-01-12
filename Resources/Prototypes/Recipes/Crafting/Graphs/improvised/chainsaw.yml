@@ -2,16 +2,18 @@
   id: ChainsawGraph
   start: start
   graph:
-  - node: start
-    edges:
-    - to: chainsaw
-      steps:
-      - material: Plasteel
-        amount: 10
-      - tag: SawElectric
-        name: add Electric saw
-      - tag: Welder
-        name: add Welder
-        doAfter: 3
-  - node: chainsaw
-    entity: Chainsaw
+    - node: start
+      edges:
+        - to: chainsaw
+          steps:
+            - material: Plasteel
+              amount: 5
+            - material: Cable
+              amount: 5
+            - tag: SawElectric
+              name: Circular Saw
+            - tag: Welder
+              name: Welder
+              doAfter: 10
+    - node: chainsaw
+      entity: Chainsaw
