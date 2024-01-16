@@ -17,3 +17,131 @@
 - type: lobbyBackground
   id: SSXIV
   background: /Textures/LobbyScreens/ssxiv.png
+
+- type: lobbyBackground
+  id: DeadInSpace
+  background: /Textures/LobbyScreens/dead-in-space.png
+
+- type: lobbyBackground
+  id: Detective
+  background: /Textures/LobbyScreens/detective.png
+
+- type: lobbyBackground
+  id: EngineersChill
+  background: /Textures/LobbyScreens/engineers-chill.png
+
+- type: lobbyBackground
+  id: Greytide
+  background: /Textures/LobbyScreens/greytide.png
+
+- type: lobbyBackground
+  id: IntoSpace
+  background: /Textures/LobbyScreens/into-space.png
+
+- type: lobbyBackground
+  id: LizardBar
+  background: /Textures/LobbyScreens/lizard-bar.png
+
+- type: lobbyBackground
+  id: Lofi
+  background: /Textures/LobbyScreens/lofi.png
+
+- type: lobbyBackground
+  id: MaintenanceClown
+  background: /Textures/LobbyScreens/maintenance-clown.png
+
+- type: lobbyBackground
+  id: NukiesHere
+  background: /Textures/LobbyScreens/nukies-here.png
+
+- type: lobbyBackground
+  id: RegularShift
+  background: /Textures/LobbyScreens/regular-shift.png
+
+- type: lobbyBackground
+  id: Russellmart
+  background: /Textures/LobbyScreens/russellmart.png
+
+- type: lobbyBackground
+  id: Singulord
+  background: /Textures/LobbyScreens/singulord.png
+
+- type: lobbyBackground
+  id: SpaceMudaki
+  background: /Textures/LobbyScreens/space-mudaki.png
+
+- type: lobbyBackground
+  id: Traitor
+  background: /Textures/LobbyScreens/traitor.png
+
+- type: lobbyBackground
+  id: NukieDudes
+  background: /Textures/LobbyScreens/nukie-dudes.png
+
+- type: lobbyBackground
+  id: LostAndPowerless
+  background: /Textures/LobbyScreens/lost-and-powerless.png
+
+- type: lobbyBackground
+  id: MenAtWork
+  background: /Textures/LobbyScreens/men-at-work.png
+
+- type: lobbyBackground
+  id: FleshAnom
+  background: /Textures/LobbyScreens/fleshanom.png
+
+- type: lobbyBackground
+  id: Revenant
+  background: /Textures/LobbyScreens/revenant.png
+
+- type: lobbyBackground
+  id: DeathNettle
+  background: /Textures/LobbyScreens/deathnettle.png
+
+- type: lobbyBackground
+  id: ClownSpider
+  background: /Textures/LobbyScreens/clownspider.png
+
+- type: lobbyBackground
+  id: XenoAttack
+  background: /Textures/LobbyScreens/xenosattack.png
+
+- type: lobbyBackground
+  id: SingulordCage
+  background: /Textures/LobbyScreens/singulord-cage.png
+
+- type: lobbyBackground
+  id: YouLookLonely
+  background: /Textures/LobbyScreens/you-look-lonely.png
+
+- type: lobbyBackground
+  id: NewYearBar
+  background: /Textures/LobbyScreens/new-year-bar.png
+
+- type: lobbyBackground
+  id: NewYearSave
+  background: /Textures/LobbyScreens/new-year-save.png
+
+- type: lobbyBackground
+  id: NewYearComfort
+  background: /Textures/LobbyScreens/new-year-comfort.png
+
+- type: lobbyBackground
+  id: NewYearPine
+  background: /Textures/LobbyScreens/new-year-pine.png
+
+- type: lobbyBackground
+  id: NewYearExplosion
+  background: /Textures/LobbyScreens/new-year-explosion.png
+
+- type: lobbyBackground
+  id: NewYearPenguins
+  background: /Textures/LobbyScreens/new-year-penguins.png
+
+- type: lobbyBackground
+  id: NewYearNuke
+  background: /Textures/LobbyScreens/new-year-nuke.png
+
+- type: lobbyBackground
+  id: ArnoldIntelligence
+  background: /Textures/LobbyScreens/arnold-intelligence.png
