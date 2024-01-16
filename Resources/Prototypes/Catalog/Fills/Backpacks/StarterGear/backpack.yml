@@ -268,12 +268,12 @@
     - type: StorageFill
       contents:
         - id: BoxSurvivalEngineering
-        - id: WeaponPulseCarbine
         - id: WeaponDisabler
         - id: MedicatedSuture
         - id: RegenerativeMesh
         - id: BoxZiptie
         - id: CrowbarRed
+        - id: MagazineMagnum
 
 - type: entity
   noSpawn: true

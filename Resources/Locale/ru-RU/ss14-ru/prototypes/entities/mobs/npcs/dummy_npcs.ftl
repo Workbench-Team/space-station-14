@@ -1,3 +1,3 @@
-ent-MobHumanPathDummy = Pathfinding Dummy
+ent-MobHumanPathDummy = ищущая путь болванка
     .desc = Жалкая кучка тайн.
     .suffix = ИИ

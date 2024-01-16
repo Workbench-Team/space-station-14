@@ -178,6 +178,8 @@
 - type: soundCollection
   id: AmbienceSpace
   files:
+    - /Audio/Ambience/spookyspace1.ogg
+    - /Audio/Ambience/spookyspace2.ogg
     - /Audio/Ambience/ambispace.ogg
     - /Audio/Ambience/ambispace2.ogg
     - /Audio/Ambience/ambispace3.ogg

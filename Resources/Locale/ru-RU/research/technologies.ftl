@@ -52,6 +52,7 @@ research-technology-advanced-parts = Продвинутые детали
 research-technology-grappling = Цепляющие приспособления
 research-technology-abnormal-artifact-manipulation = Иное управление артефактами
 research-technology-gravity-manipulation = Управление гравитацией
+research-technology-quantum-leaping = Квантовое перемещение
 research-technology-advanced-anomaly-research = Продвинутое исследование аномалий
 research-technology-rped = Быстрая замена деталей
 research-technology-super-parts = Супер детали

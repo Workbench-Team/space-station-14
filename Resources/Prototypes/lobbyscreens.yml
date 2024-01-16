@@ -145,3 +145,8 @@
 - type: lobbyBackground
   id: ArnoldIntelligence
   background: /Textures/LobbyScreens/arnold-intelligence.png
+ 
+- type: lobbyBackground
+  id: Susstation
+  background: /Textures/LobbyScreens/susstation.png
+

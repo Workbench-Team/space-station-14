@@ -1,4 +1,4 @@
-ent-PresentBase = Present
+ent-PresentBase = present
     .desc = A little box with incredible surprises inside.
 ent-Present = { ent-PresentBase }
     .suffix = Empty

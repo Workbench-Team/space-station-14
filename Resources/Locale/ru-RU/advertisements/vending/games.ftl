@@ -6,3 +6,6 @@ advertisement-goodcleanfun-5 = Эльфы и гномы!
 advertisement-goodcleanfun-6 = Параноидальные компьютеры!
 advertisement-goodcleanfun-7 = Совершенно не дьявольское!
 advertisement-goodcleanfun-8 = Веселые времена навсегда!
+thankyou-goodcleanfun-1 = Повеселитесь!
+thankyou-goodcleanfun-2 = Теперь вы играете с силой!
+thankyou-goodcleanfun-3 = Приступайте к игре!

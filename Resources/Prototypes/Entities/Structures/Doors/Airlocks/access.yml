@@ -817,17 +817,6 @@
       board: [ DoorElectronicsMedicalScience ]
 
 - type: entity
-  parent: AirlockCommandGlass
-  id: AirlockCommandCentralCommandGlassLocked
-  suffix: CentralCommand, Glass, Locked
-  components:
-  - type: AccessReaderBoard
-#    access: [["CentralCommand"]]
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsCentralCommand ]
-
-- type: entity
   parent: AirlockCommand
   id: AirlockCommandCentralCommandLocked
   suffix: CentralCommand, Locked
@@ -843,8 +832,11 @@
   id: AirlockCentralCommandGlassLocked
   suffix: Central Command, Locked
   components:
-  - type: AccessReader
-    access: [["CentralCommand"]]
+  - type: AccessReaderBoard
+#    access: [["CentralCommand"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentralCommand ]
   - type: Wires
     layoutId: AirlockCommand
 
@@ -858,6 +850,8 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCommand ]
+  - type: Wires
+    layoutId: AirlockCommand
 
 - type: entity
   parent: AirlockCommandGlass

@@ -1,5 +1,7 @@
 reagent-name-blood = кровь
 reagent-desc-blood = Я надеюсь, что это кетчуп.
+reagent-name-insect-blood = кровь насекомого
+reagent-desc-insect-blood = Ладно, это действительно отвратительно. Это выглядит почти как... живое?
 reagent-name-slime = слизь
 reagent-desc-slime = Сначала Вам показалось, что это градиент крови, но Вы ошиблись.
 reagent-name-hemocyanin-blood = синяя кровь

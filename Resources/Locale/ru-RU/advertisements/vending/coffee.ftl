@@ -11,3 +11,6 @@ advertisement-coffee-10 = Кофе помогает работать!
 advertisement-coffee-11 = Попробуйте чайку.
 advertisement-coffee-12 = Надеемся, Вы предпочитаете лучшее!
 advertisement-coffee-13 = Отведайте наш новый шоколад!
+thankyou-coffee-1 = Наслаждайтесь своим напитком!
+thankyou-coffee-2 = Берите, пока горячие!
+thankyou-coffee-3 = Напиток готов.

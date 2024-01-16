@@ -30,6 +30,7 @@
         - Multitool
         - AppraisalTool
         - JawsOfLife
+        - GPS
         - HolosignProjector
       components:
         - SprayPainter
@@ -545,6 +546,7 @@
         - Radio
         - Sidearm
         - MagazinePistol
+        - MagazineMagnum
         - HolosignProjector
       components:
         - Policebaton

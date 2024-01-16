@@ -589,9 +589,18 @@
 
 - type: Tag
   id: Goat
-
+  
+- type: Tag
+  id: GPS
+  
 - type: Tag
   id: Grenade
+
+- type: Tag
+  id: HudMedical
+
+- type: Tag
+  id: HudSecurity
 
 - type: Tag
   id: GuideEmbeded
@@ -1021,6 +1030,9 @@
 
 - type: Tag
   id: ProximitySensor
+
+- type: Tag
+  id: QuantumSpinInverter
 
 - type: Tag
   id: Radio

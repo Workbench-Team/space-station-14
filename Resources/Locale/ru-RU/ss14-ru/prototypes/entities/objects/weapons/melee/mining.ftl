@@ -3,6 +3,6 @@ ent-BaseWeaponCrusher = дробитель
 ent-WeaponCrusher = { ent-BaseWeaponCrusher }
     .desc = { ent-BaseWeaponCrusher.desc }
 ent-WeaponCrusherDagger = кинжал-дробитель
-    .desc = Уменьшенная версия протокинетического дробителя, обычно используется в крайнем случае.
+    .desc = Уменьшенная версия протокинетического дробителя. Использует кинетическую энергию для вибрации лезвия на высоких скоростях.
 ent-WeaponCrusherGlaive = глефа-дробитель
     .desc = Ранний дизайн протокинетического ускорителя, в форме глефы.

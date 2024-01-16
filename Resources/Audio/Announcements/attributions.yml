@@ -11,7 +11,7 @@
 - files: ["aliens.ogg", "attention.ogg", "meteors.ogg", "outbreak7.ogg", "power_off.ogg", "power_on.ogg", "radiation.ogg", "shuttle_dock.ogg", "shuttlecalled.ogg", "shuttlerecalled.ogg", "ventclog.ogg", "war.ogg", "welcome.ogg", "ert_no.ogg", "ert_yes.ogg"]
   license: "CC-BY-SA-3.0"
   copyright: "By discord:Basia#3911"
-  source: ""
+  source: "https://github.com/TauCetiStation/TauCetiClassic/commit/92d2767dbb39f28540f78d5055e7be1eb7acee98"
 
 - files: ["notice.ogg"]
   license: "CC-BY-SA-3.0"

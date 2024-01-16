@@ -7,3 +7,6 @@ advertisement-happyhonk-6 = Сколько охранников нужно, чт
 advertisement-happyhonk-7 = Счастливый Хонк не несет ответственности за качество еды, помещенной в наши коробки для еды Счастливый Хонк.
 advertisement-happyhonk-8 = Почему бы не попросить нашу ограниченную серию Мим Счастливый Хонк?
 advertisement-happyhonk-9 = Счастливый Хонк является торговой маркой компании Honk! co. и во многом превосходит Robust Nukie Food corp.
+thankyou-happyhonk-1 = Хонк!
+thankyou-happyhonk-2 = Хонк хонк!
+thankyou-happyhonk-3 = Разделите веселье! Хонк!

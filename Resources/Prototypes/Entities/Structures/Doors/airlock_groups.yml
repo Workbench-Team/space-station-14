@@ -35,12 +35,6 @@
     basic:       Structures/Doors/Airlocks/Glass/glass.rsi
 
 - type: AirlockGroup
-  id: Hatch
-  iconPriority: 80
-  stylePaths:
-    basic:       Structures/Doors/Airlocks/Standard/centcom_hatch.rsi
-
-- type: AirlockGroup
   id: External
   iconPriority: 70
   stylePaths:

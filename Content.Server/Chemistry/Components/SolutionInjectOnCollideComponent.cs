@@ -1,5 +1,6 @@
 ﻿using Content.Shared.FixedPoint;
 using Content.Shared.Inventory;
+using Content.Shared.Projectiles;
 
 namespace Content.Server.Chemistry.Components;
 
@@ -24,9 +25,7 @@ public sealed partial class SolutionInjectOnCollideComponent : Component
     /// </summary>
     [DataField("blockSlots"), ViewVariables(VVAccess.ReadWrite)]
     public SlotFlags BlockSlots = SlotFlags.MASK;
-    /// <summary>
-    /// Fixture we track for the collision.
-    /// </summary>
-    [DataField("fixture")]
-    public string FixtureId = "projectile";
+
+    [DataField]
+    public string FixtureId = SharedProjectileSystem.ProjectileFixture;
 }

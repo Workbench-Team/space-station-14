@@ -8,7 +8,7 @@
   },
   "states": [
     {
-      "name": "wielded-inhand-left",
+      "name": "inhand-left-on",
       "directions": 4,
       "delays": [
         [
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "name": "wielded-inhand-right",
+      "name": "inhand-right-on",
       "directions": 4,
       "delays": [
         [
@@ -55,7 +55,7 @@
       "name": "icon"
     },
     {
-      "name": "icon_wielded",
+      "name": "chainsaw_on",
       "delays": [
         [
           0.04,
@@ -72,11 +72,11 @@
       "directions": 4
     },
     {
-      "name": "inhand-right-wielded",
+      "name": "wielded-inhand-right",
       "directions": 4
     },
     {
-      "name": "inhand-left-wielded",
+      "name": "wielded-inhand-left",
       "directions": 4
     }
   ]

@@ -10,18 +10,7 @@
 <GuideEntityEmbed Entity="MatterBinStockPart"/>
 <GuideEntityEmbed Entity="MicroManipulatorStockPart"/>
 </Box>
-Вы можете осмотреть часть, чтобы узнать как тип, так и уровень, которые варьируются от 1 до 4.
-
-Части более высокого уровня могут быть изучены и созданы, получены с помощью артефактов, либо найдены на обломках.
-<Box>
-<GuideEntityEmbed Entity="AdvancedMatterBinStockPart"/>
-</Box>
-<Box>
-<GuideEntityEmbed Entity="SuperMatterBinStockPart"/>
-</Box>
-<Box>
-<GuideEntityEmbed Entity="BluespaceMatterBinStockPart"/>
-</Box>
+Детали машин можно использовать для создания множества машин.
 
 ## Улучшение
 
@@ -34,10 +23,7 @@
 <GuideEntityEmbed Entity="TraversalDistorterMachineCircuitboard"/>
 <GuideEntityEmbed Entity="ThermomachineFreezerMachineCircuitBoard"/>
 </Box>
-Вы можете использовать детали любого уровня при постройке, детали более высокого уровня просто улучшат эффективность машины.
 
-Если Вы хотите улучшить уже построенную машину, просто разберите её отверткой и ломом, а затем замените детали на улучшенные. Ресурсы при разборке машины выпадают.
-
-Вы так же можете быстро улучшать машины с помощью УБЗД. Просто загрузите детали в УБЗД, откройте техническую панель машины и используйте УБЗД. Требуемые детали автоматически заменятся.
+Вы так же можете быстро строить машины с помощью УБЗД. Просто загрузите детали в УБЗД, откройте техническую панель машины и используйте УБЗД. Требуемые детали автоматически заменятся.
 <GuideEntityEmbed Entity="RPED"/>
 </Document>
