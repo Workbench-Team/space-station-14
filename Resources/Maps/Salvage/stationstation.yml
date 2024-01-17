@@ -2029,7 +2029,7 @@ entities:
     - type: Transform
       pos: 13.460129,17.611423
       parent: 179
-- proto: SalvageLootSpawner
+- proto: ShardGlass
   entities:
   - uid: 185
     components:

@@ -1956,7 +1956,7 @@ entities:
     - type: Transform
       pos: 4.5,28.5
       parent: 1
-- proto: SalvageLootSpawner
+- proto: ShardGlass
   entities:
   - uid: 516
     components:
