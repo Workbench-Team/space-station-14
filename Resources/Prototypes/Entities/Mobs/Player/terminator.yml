@@ -47,7 +47,7 @@
   - type: Flammable
     damage:
       types:
-        Heat: 6.0
+        Heat: 2.0
   # slightly wider thresholds
   - type: Temperature
     heatDamageThreshold: 390
