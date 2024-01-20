@@ -902,8 +902,6 @@
           - Sheet
           - RawMaterial
           - Ingot
-    - type: StealTarget
-      stealGroup: AmmoTechFabCircuitboard
 
 - type: entity
   id: MedicalTechFab

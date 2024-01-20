@@ -52,12 +52,12 @@ research-technology-advanced-parts = Продвинутые детали
 research-technology-grappling = Цепляющие приспособления
 research-technology-abnormal-artifact-manipulation = Иное управление артефактами
 research-technology-gravity-manipulation = Управление гравитацией
-research-technology-quantum-leaping = Квантовое перемещение
+research-technology-quantum-leaping = Квантовые скачки
 research-technology-advanced-anomaly-research = Продвинутое исследование аномалий
 research-technology-rped = Быстрая замена деталей
 research-technology-super-parts = Супер детали
-research-technology-deterrence = Технологии сдерживания
 
+research-technology-deterrence = Технология сдерживания
 research-technology-janitorial-equipment = Уборочное снаряжение
 research-technology-laundry-tech = Технология прачечной
 research-technology-basic-hydroponics = Базовая гидропоника

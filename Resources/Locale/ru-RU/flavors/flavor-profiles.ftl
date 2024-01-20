@@ -48,7 +48,7 @@ flavor-base-alkaline = щёлочно
 flavor-base-holy = свято
 flavor-base-horrible = ужасно
 # lmao
-flavor-base-terrible = ужасно
+flavor-base-terrible = ужасающе
 
 # Complex flavors. Put a flavor here when you want something that's more
 # specific.
@@ -162,6 +162,7 @@ flavor-complex-plastic = как пластик
 flavor-complex-glue = как клей
 flavor-complex-spaceshroom-cooked = как космическое умами
 flavor-complex-lost-friendship = как потерянная дружба
+flavor-complex-light = как погасший свет
 
 ## Generic alcohol/soda taste. This should be replaced with an actual flavor profile.
 

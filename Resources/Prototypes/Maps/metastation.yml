@@ -2,7 +2,7 @@
   id: MetaStation
   mapName: 'TG Meta Station'
   mapPath: /Maps/metastation.yml
-  minPlayers: 25
+  minPlayers: 0
   stations:
     Meta:
       stationProto: StandardNanotrasenStation
@@ -46,9 +46,8 @@
            Scientist: [ 6, 6 ]
            ResearchAssistant: [ 4, 4 ]
         #Cargo
-           SalvageSpecialist: [ 3, 3 ]
+           SalvageSpecialist: [ 3, 4 ]
            CargoTechnician: [ 3, 3 ]
-           Miner: [ 3,3 ]
         #Service
            Passenger: [ -1, -1 ]
            Bartender: [ 2, 2 ]
@@ -65,4 +64,4 @@
            Borg: [ 1, 2 ]
         #Centcom      
            BlueShield: [ 1, 1 ]
-           #CentComConsultant: [ 1, 1 ]
+           CentComConsultant: [ 1, 1 ]

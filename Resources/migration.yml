@@ -129,6 +129,7 @@ DrinkGoldschlagerBottleFull: DrinkGildlagerBottleFull
 DrinkGoldschlagerGlass: DrinkGildlagerGlass
 
 # 2024-01-07
+ClosetBase: ClosetSteelBase
 MonkeyCubeBox: VariantCubeBox
 
 # 2024-01-08
@@ -156,6 +157,12 @@ TransmitterSubspaceStockPart: null
 # 2024-01-10
 ClothingHeadHatHoodRad: null
 
+# 2024-01-12
+SpaceMedipen: null
+
+# 2024-01-18
+ClothingHeadHelmetVoidParamed: null
+
 # 07-09-2023 Starshine
 PlushieMoff: PlushieMoth
 
@@ -181,3 +188,13 @@ AirlockMaintCentcomLocked: AirlockMaintCentralCommandLocked
 AirlockCentcomCommandLocked: AirlockCentralCommandCommandLocked
 WindoorSecureCentcomLocked: WindoorSecureCentralCommandLocked
 AirlockCommandCentralCommandGlassLocked: AirlockCentralCommandGlassLocked
+
+# 19-01-2024 Starshine
+DresserCaptainFilled: Dresser
+DresserChiefEngineerFilled: Dresser
+DresserChiefMedicalOfficerFilled: Dresser
+DresserHeadOfPersonnelFilled: Dresser
+DresserHeadOfSecurityFilled: Dresser
+DresserQuarterMasterFilled: Dresser
+DresserResearchDirectorFilled: Dresser
+DresserWardenFilled: Dresser
