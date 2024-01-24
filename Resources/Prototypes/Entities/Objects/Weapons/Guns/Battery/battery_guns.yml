@@ -825,7 +825,7 @@
       multiplier: 1.25
     - type: ProjectileBatteryAmmoProvider
       proto: BulletCutter
-      fireCost: 200
+      fireCost: 100
     - type: Battery
       maxCharge: 5000
       startingCharge: 5000
@@ -846,7 +846,7 @@
         path: /Audio/Weapons/Guns/Gunshots/plasma_cutter.ogg
     - type: ProjectileBatteryAmmoProvider
       proto: BulletCutterAdv
-      fireCost: 100
+      fireCost: 75
     - type: Appearance
 
 - type: entity

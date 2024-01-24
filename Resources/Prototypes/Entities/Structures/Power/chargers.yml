@@ -127,6 +127,9 @@
           - HitscanBatteryAmmoProvider
           - ProjectileBatteryAmmoProvider
           - Stunbaton
+        blacklist:
+          components:
+          - BatteryRecharge
 
 - type: entity
   parent: BaseItemRecharger
@@ -153,6 +156,8 @@
         blacklist:
           tags:
           - PotatoBattery
+          components:
+          - BatteryRecharge
 
 - type: entity
   parent: BaseItemRecharger
