@@ -722,6 +722,7 @@
   - type: ProjectileBatteryAmmoProvider
     proto: X01Attack
     fireCost: 100 
+    fireCost: 100
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: X01Attack
@@ -815,6 +816,13 @@
         path: /Audio/Weapons/Guns/Gunshots/plasma_cutter.ogg
     - type: Item
       size: Normal
+    - type: MaterialStorage
+      storageLimit: 7500
+      materialWhiteList: [RawPlasma, Plasma]
+      canEjectStoredMaterial: false
+    - type: BatteryRecharge
+      materialType: [Plasma, RawPlasma]
+      multiplier: 1.25
     - type: ProjectileBatteryAmmoProvider
       proto: BulletCutter
       fireCost: 200
