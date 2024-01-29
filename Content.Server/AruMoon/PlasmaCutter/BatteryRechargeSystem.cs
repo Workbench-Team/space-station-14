@@ -25,6 +25,7 @@ namespace Content.Server.AruMoon.Plasmacutter
             base.Initialize();
 
             SubscribeLocalEvent<BatteryRechargeComponent, MaterialEntityInsertedEvent>(OnMaterialAmountChanged);
+            SubscribeLocalEvent<BatteryRechargeComponent, ChargeChangedEvent>(OnChargeChanged);
         }
 
         private void OnMaterialAmountChanged(EntityUid uid, BatteryRechargeComponent component, ref MaterialEntityInsertedEvent args)
@@ -35,7 +36,25 @@ namespace Content.Server.AruMoon.Plasmacutter
             foreach (var fuelType in component.MaterialType)
             {
                 FuelAddCharge(uid, fuelType);
+                ChangeStorageLimit(uid, component.StorageMaxCapacity);
             }
+        }
+
+        private void OnChargeChanged(EntityUid uid, BatteryRechargeComponent component, ChargeChangedEvent args)
+        {
+            ChangeStorageLimit(uid, component.StorageMaxCapacity);
+        }
+
+        public void ChangeStorageLimit(
+            EntityUid uid,
+            int value,
+            BatteryComponent? battery = null)
+        {
+            if (!Resolve(uid, ref battery))
+                return;
+            if (battery.CurrentCharge == battery._maxCharge)
+                value = 0;
+            _materialStorage.TryChangeStorageLimit(uid, value);
         }
 
         private void FuelAddCharge(

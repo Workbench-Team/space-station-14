@@ -816,7 +816,7 @@
     - type: Item
       size: Normal
     - type: MaterialStorage
-      storageLimit: 7500
+      storageLimit: 0
       materialWhiteList: [RawPlasma, Plasma]
       canEjectStoredMaterial: false
     - type: BatteryRecharge
