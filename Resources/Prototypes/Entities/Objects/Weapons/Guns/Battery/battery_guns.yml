@@ -721,7 +721,6 @@
     size: Normal
   - type: ProjectileBatteryAmmoProvider
     proto: X01Attack
-    fireCost: 100 
     fireCost: 100
   - type: BatteryWeaponFireModes
     fireModes:
