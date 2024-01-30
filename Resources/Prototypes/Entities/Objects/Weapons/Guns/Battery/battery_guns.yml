@@ -815,6 +815,10 @@
         path: /Audio/Weapons/Guns/Gunshots/plasma_cutter.ogg
     - type: Item
       size: Normal
+      shape:
+      - 0,1,0,2
+      - 1,1,1,1
+      - 2,0,2,2
     - type: MaterialStorage
       storageLimit: 0
       materialWhiteList: [RawPlasma, Plasma]
