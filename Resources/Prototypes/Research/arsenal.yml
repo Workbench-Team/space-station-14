@@ -285,6 +285,18 @@
     - DurandArmor
     - DurandHarness
 
+- type: technology
+  id: AdvSalvageWeapons
+  name: research-technology-salvage-weapons-adv
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/cutteradv.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+    - WeaponCutterAdv
+
 # Tier 3
 
 - type: technology
