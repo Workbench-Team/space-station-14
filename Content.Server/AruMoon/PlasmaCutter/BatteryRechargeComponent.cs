@@ -5,14 +5,6 @@ public sealed partial class BatteryRechargeComponent : Component
 {
 
     /// <summary>
-    /// Type of material to be converted into energy
-    /// </summary>
-    ///
-    [DataField("materialType"), ViewVariables(VVAccess.ReadWrite)]
-    public List<string>? MaterialType = null;
-
-
-    /// <summary>
     /// NOT (material.Amount * Multiplier)
     /// This is (material.materialComposition * Multiplier)
     /// 1 plasma sheet = 100 material units

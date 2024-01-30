@@ -824,7 +824,6 @@
       materialWhiteList: [RawPlasma, Plasma]
       canEjectStoredMaterial: false
     - type: BatteryRecharge
-      materialType: [Plasma, RawPlasma]
       multiplier: 1.25
     - type: ProjectileBatteryAmmoProvider
       proto: BulletCutter
