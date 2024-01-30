@@ -87,7 +87,7 @@ research-technology-advanced-firearms = Advanced Firearms
 research-technology-advanced-ammunition = Advanced Ammunition
 research-technology-advanced-magazines = Advanced Gun Magazines
 research-technology-spec-ammunition = Specialized Ammunition
-research-technology-salvage-weapons-adv = Advanced Salvage Equipment
+research-technology-salvage-weapons-adv = Advanced Salvage Weapon
 
 research-technology-clarke-aplu = Clarke
 research-technology-Odyssey = Odysseus
