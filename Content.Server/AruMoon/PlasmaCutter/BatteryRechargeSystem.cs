@@ -1,9 +1,7 @@
-using Content.Server.Popups;
 using Content.Server.Materials;
 using Content.Shared.Materials;
 using Content.Server.Power.EntitySystems;
 using Content.Server.Power.Components;
-using Content.Server.Power.Generator;
 
 namespace Content.Server.AruMoon.Plasmacutter
 {
@@ -14,7 +12,6 @@ namespace Content.Server.AruMoon.Plasmacutter
     /// </summary>
     public sealed class BatteryRechargeSystem : EntitySystem
     {
-        [Dependency] private readonly PopupSystem _popup = default!;
         [Dependency] private readonly MaterialStorageSystem _materialStorage = default!;
         [Dependency] private readonly BatterySystem _batterySystem = default!;
 
