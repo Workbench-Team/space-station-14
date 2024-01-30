@@ -48,7 +48,8 @@
         damage: 20
       behaviors:
       - !type:PlaySoundBehavior
-        sound: /Audio/Effects/metalbreak.ogg
+          sound:
+            collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           PartRodMetal1:

@@ -1,5 +1,7 @@
 alerts-low-oxygen-name = [color=red]Низкий уровень кислорода[/color]
 alerts-low-oxygen-desc = В воздухе, которым Вы дышите, [color=red]недостаточно кислорода[/color]. Наденьте [color=green]баллон для дыхания[/color].
+alerts-low-nitrogen-name = [color=red]Низкий уровень азота[/color]
+alerts-low-nitrogen-desc = В воздухе, которым Вы дышите, [color=red]недостаточно азота[/color]. Наденьте [color=green]баллон для дыхания[/color].
 alerts-high-toxin-name = [color=red]Высокий уровень токсинов[/color]
 alerts-high-toxin-desc = В воздухе, которым Вы дышите, [color=red]слишком много токсинов[/color]. Наденьте [color=green]баллон для дыхания[/color] или уходите.
 alerts-low-pressure-name = [color=red]Низкое давление[/color]

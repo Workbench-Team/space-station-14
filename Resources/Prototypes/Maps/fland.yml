@@ -56,7 +56,6 @@
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
             CargoTechnician: [ 4, 4 ]
-            Miner: [ 3,3 ]
             #civilian
             Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]
@@ -64,4 +63,4 @@
             Musician: [ 1, 1 ]
             #centcom      
             BlueShield: [ 1, 1 ]
-            #CentComConsultant: [ 1, 1 ]
+            CentComConsultant: [ 1, 1 ]

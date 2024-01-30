@@ -2,7 +2,6 @@ anomaly-component-contact-damage = Аномалия сдирает с Вас к�
 anomaly-vessel-component-anomaly-assigned = Аномалия привязана к сосуду.
 anomaly-vessel-component-not-assigned = Этот сосуд не привязан ни к одной аномалии. Попробуйте использовать сканер на нём.
 anomaly-vessel-component-assigned = Этот сосуд уже привязан к аномалии.
-anomaly-vessel-component-upgrade-output = Генерация очков
 anomaly-particles-delta = Дельта частицы
 anomaly-particles-epsilon = Эпсилон частицы
 anomaly-particles-zeta = Зетта частицы

@@ -1,1 +1,1 @@
-smoking-pipe-slot-component-slot-name-bowl = Миска
+smoking-pipe-slot-component-slot-name-bowl = Чаша

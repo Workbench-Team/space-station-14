@@ -7,7 +7,7 @@ salvage-magnet-window-title = Магнит обломков
 salvage-expedition-window-progression = Прогресс
 salvage-magnet-resources =
     { $resource ->
-        [OreIron] Сталь
+        [OreIron] Железо
         [OreCoal] Уголь
         [OreQuartz] Кварц
         [OreGold] Золото
@@ -38,13 +38,20 @@ salvage-map-proto-Small3 = Прачечная
 salvage-map-proto-Small4 = Осколок бара
 salvage-map-proto-SmallShip1 = Пилюля
 salvage-map-proto-SmallAISurveyDrone = Исследовательский ИИ-дрон
+salvage-map-proto-SmallCargo = Капсула шахтёров
+salvage-map-proto-SmallChapel = Церковь
+salvage-map-proto-SmallChef = Ресторан
+salvage-map-proto-SmallParty = Вечеринка дня рождения
+salvage-map-proto-SmallSyndicate = Разрушенный корабль синдиката
+salvage-map-proto-SmallTesla = Камера содержания Теслы
 salvage-map-proto-SmallA1 = Плазменный пожар на астероиде
-salvage-map-proto-Medium1 = Тайник с плазменной ловушкой
+salvage-map-proto-Medium1 = Тайник с плазма-ловушкой
 salvage-map-proto-MediumVault1 = Хранилище
 salvage-map-proto-MediumOrchestra = Безмолвный оркестр
 salvage-map-proto-MediumLibraryWreck = Покинутая библиотека
 salvage-map-proto-MediumCargoWreck = Крушение отдела снабжения
 salvage-map-proto-MediumPirateWreck = Обломок пиратской баржи
+salvage-map-proto-MediumHaulingShuttleWreck = Разрушенный грузовой корабль
 salvage-map-proto-TickColony = Колония космических клещей
 salvage-map-proto-CargoDock = Грузовой док на астероиде
 salvage-map-proto-SpaceWaffleHome = Вафельный домик
