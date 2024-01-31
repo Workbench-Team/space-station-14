@@ -297,6 +297,7 @@
   technologyPrerequisites:
     - SalvageWeapons
 
+- type: technology
   id: BasicShuttleArmament
   name: research-technology-basic-shuttle-armament
   icon: 
