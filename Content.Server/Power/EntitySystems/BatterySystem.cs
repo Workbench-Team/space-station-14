@@ -119,16 +119,12 @@ namespace Content.Server.Power.EntitySystems
         {
             if (value <= 0 || !Resolve(uid, ref battery))
                 return 0;
-            var delta = battery.Charge + value;
-            if (delta >= battery.MaxCharge)
-            {
-                battery.Charge = battery.MaxCharge;
-                return delta;
-            }
-            battery.Charge = delta;
+
+            var newValue = Math.Clamp(battery.CurrentCharge + value, 0, battery._maxCharge);
+            battery.Charge = newValue;
             var ev = new ChargeChangedEvent(battery.CurrentCharge, battery._maxCharge);
             RaiseLocalEvent(uid, ref ev);
-            return delta;
+            return newValue;
         }
 
         public void SetMaxCharge(EntityUid uid, float value, BatteryComponent? battery = null)

@@ -65,7 +65,6 @@ namespace Content.Server.AruMoon.Plasmacutter
             if (_materialStorage.TryChangeMaterialAmount(uid, fuelType, -availableMaterial))
             {
                 _batterySystem.TryAddCharge(uid, chargePerMaterial);
-                ChangeStorageLimit(uid, recharge.StorageMaxCapacity);
             }
         }
     }
