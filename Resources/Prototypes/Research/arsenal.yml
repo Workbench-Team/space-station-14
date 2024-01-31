@@ -294,6 +294,8 @@
   cost: 10000
   recipeUnlocks:
     - WeaponCutterAdv
+  technologyPrerequisites:
+    - SalvageWeapons
 
   id: BasicShuttleArmament
   name: research-technology-basic-shuttle-armament
