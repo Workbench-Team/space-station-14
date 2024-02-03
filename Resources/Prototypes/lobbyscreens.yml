@@ -39,10 +39,6 @@
   background: /Textures/LobbyScreens/into-space.png
 
 - type: lobbyBackground
-  id: LizardBar
-  background: /Textures/LobbyScreens/lizard-bar.png
-
-- type: lobbyBackground
   id: Lofi
   background: /Textures/LobbyScreens/lofi.png
 
@@ -91,10 +87,6 @@
   background: /Textures/LobbyScreens/fleshanom.png
 
 - type: lobbyBackground
-  id: Revenant
-  background: /Textures/LobbyScreens/revenant.png
-
-- type: lobbyBackground
   id: DeathNettle
   background: /Textures/LobbyScreens/deathnettle.png
 
@@ -111,40 +103,8 @@
   background: /Textures/LobbyScreens/singulord-cage.png
 
 - type: lobbyBackground
-  id: YouLookLonely
-  background: /Textures/LobbyScreens/you-look-lonely.png
-
-- type: lobbyBackground
-  id: NewYearBar
-  background: /Textures/LobbyScreens/new-year-bar.png
-
-- type: lobbyBackground
-  id: NewYearSave
-  background: /Textures/LobbyScreens/new-year-save.png
-
-- type: lobbyBackground
-  id: NewYearComfort
-  background: /Textures/LobbyScreens/new-year-comfort.png
-
-- type: lobbyBackground
-  id: NewYearPine
-  background: /Textures/LobbyScreens/new-year-pine.png
-
-- type: lobbyBackground
-  id: NewYearExplosion
-  background: /Textures/LobbyScreens/new-year-explosion.png
-
-- type: lobbyBackground
-  id: NewYearPenguins
-  background: /Textures/LobbyScreens/new-year-penguins.png
-
-- type: lobbyBackground
   id: NewYearNuke
   background: /Textures/LobbyScreens/new-year-nuke.png
-
-- type: lobbyBackground
-  id: ArnoldIntelligence
-  background: /Textures/LobbyScreens/arnold-intelligence.png
  
 - type: lobbyBackground
   id: Susstation
