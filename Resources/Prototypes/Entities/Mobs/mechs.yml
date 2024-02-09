@@ -737,7 +737,6 @@
     tools:
       - id: HyposprayPromisliniy9000
       - id: JawsOfLifeHarm9000
-      - id: HandheldCrewMonitor
       - id: ClothingBackpackSatchelMedical
       - id: HandheldHealthAnalyzer
       - id: DefibrillatorOneHandedUnpowered

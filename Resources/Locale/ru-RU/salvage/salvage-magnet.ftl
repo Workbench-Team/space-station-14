@@ -64,3 +64,4 @@ salvage-map-proto-AsteroidBase = База на астероиде
 salvage-map-proto-RuinCargoBase = Разрушенный склад снабжения
 salvage-map-proto-SecurityChunk = Кусок отдела охраны
 salvage-map-proto-EngineeringChunk = Кусок инженерного отсека
+salvage-map-proto-OutpostArm = Захваченный Аванпост Арм

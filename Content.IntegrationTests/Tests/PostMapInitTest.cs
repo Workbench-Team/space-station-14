@@ -49,7 +49,6 @@ namespace Content.IntegrationTests.Tests
             "MetaStation", //Starshine
             "Driller",
             "Packed",
-            "Aspid",
             "Cluster",
             "Omega",
             "Bagel",
@@ -60,7 +59,6 @@ namespace Content.IntegrationTests.Tests
             "Saltern",
             "Core",
             "Marathon",
-            "Gemini",
             "MeteorArena",
             "KiloStation", //Starshine
             "Atlas",
