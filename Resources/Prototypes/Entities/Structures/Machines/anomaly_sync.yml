@@ -52,7 +52,10 @@
     noRot: false
   - type: ApcPowerReceiver
     powerLoad: 15000
-    needsPower: true
+    needsPower: true 
+  - type: UpgradePowerDraw
+    powerDrawMultiplier: 0.80
+    scaling: Exponential
   - type: ItemPlacer
     whitelist:
       components:
