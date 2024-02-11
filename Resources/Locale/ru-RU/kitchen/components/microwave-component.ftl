@@ -24,3 +24,4 @@ microwave-menu-start-button = Старт
 microwave-menu-eject-all-text = Извлечь всё
 microwave-menu-eject-all-tooltip = Это испарит все жидкости, но вернёт всё твёрдое.
 microwave-menu-instant-button = МГНОВЕННО
+microwave-component-upgrade-cook-time = Время готовки

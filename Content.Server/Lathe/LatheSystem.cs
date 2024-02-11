@@ -20,6 +20,28 @@ using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using Content.Server.Administration.Logs;
+using Content.Server.Atmos;
+using Content.Server.Atmos.EntitySystems;
+using Content.Server.Lathe.Components;
+using Content.Server.Materials;
+using Content.Server.Power.Components;
+using Content.Server.Power.EntitySystems;
+using Content.Server.Stack;
+using Content.Shared.UserInterface;
+using Content.Shared.Database;
+using Content.Shared.Emag.Components;
+using Content.Shared.Lathe;
+using Content.Shared.Materials;
+using Content.Shared.Research.Components;
+using Content.Shared.Research.Prototypes;
+using JetBrains.Annotations;
+using Robust.Server.GameObjects;
+using Robust.Shared.Audio.Systems;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Timing;
 
 namespace Content.Server.Lathe
 {
@@ -54,43 +76,8 @@ namespace Content.Server.Lathe
             SubscribeLocalEvent<LatheComponent, MaterialAmountChangedEvent>(OnMaterialAmountChanged);
             SubscribeLocalEvent<TechnologyDatabaseComponent, LatheGetRecipesEvent>(OnGetRecipes);
             SubscribeLocalEvent<EmagLatheRecipesComponent, LatheGetRecipesEvent>(GetEmagLatheRecipes);
-
-            SubscribeLocalEvent<LatheComponent, LatheEjectMaterialMessage>(OnLatheEjectMessage);
         }
 
-        private void OnLatheEjectMessage(EntityUid uid, LatheComponent lathe, LatheEjectMaterialMessage message)
-        {
-            if (!lathe.CanEjectStoredMaterials)
-                return;
-
-            if (!_prototypeManager.TryIndex<MaterialPrototype>(message.Material, out var material))
-                return;
-
-            var volume = 0;
-
-            if (material.StackEntity != null)
-            {
-                var entProto = _prototypeManager.Index<EntityPrototype>(material.StackEntity);
-                if (!entProto.TryGetComponent<PhysicalCompositionComponent>(out var composition))
-                    return;
-
-                var volumePerSheet = composition.MaterialComposition.FirstOrDefault(kvp => kvp.Key == message.Material).Value;
-                var sheetsToExtract = Math.Min(message.SheetsToExtract, _stack.GetMaxCount(material.StackEntity));
-
-                volume = sheetsToExtract * volumePerSheet;
-            }
-
-            if (volume > 0 && _materialStorage.TryChangeMaterialAmount(uid, message.Material, -volume))
-            {
-                var mats = _materialStorage.SpawnMultipleFromMaterial(volume, material, Transform(uid).Coordinates, out _);
-                foreach (var mat in mats)
-                {
-                    if (TerminatingOrDeleted(mat))
-                        continue;
-                    _stack.TryMergeToContacts(mat);
-                }
-            }
-        }
 
         public override void Update(float frameTime)
         {
@@ -138,9 +125,9 @@ namespace Content.Server.Lathe
             return true;
         }
 
-        public List<ProtoId<LatheRecipePrototype>> GetAvailableRecipes(EntityUid uid, LatheComponent component)
+        public List<ProtoId<LatheRecipePrototype>> GetAvailableRecipes(EntityUid uid, LatheComponent component, bool getUnavailable = false)
         {
-            var ev = new LatheGetRecipesEvent(uid)
+            var ev = new LatheGetRecipesEvent(uid, getUnavailable)
             {
                 Recipes = new List<ProtoId<LatheRecipePrototype>>(component.StaticRecipes)
             };

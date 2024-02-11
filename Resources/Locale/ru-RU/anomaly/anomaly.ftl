@@ -63,3 +63,4 @@ anomaly-command-supercritical = Делает целевую аномалию с�
 # Flavor text on the footer
 anomaly-generator-flavor-left = Аномалия может возникнуть внутри оператора.
 anomaly-generator-flavor-right = v1.1
+anomaly-vessel-component-upgrade-output = Генерация очков

@@ -1262,7 +1262,7 @@ entities:
     - type: Transform
       pos: 6.5,10.5
       parent: 1
-- proto: SalvageLootSpawner
+- proto: SalvagePartsT2Spawner
   entities:
   - uid: 193
     components:

@@ -125249,7 +125249,7 @@ entities:
     - type: Transform
       pos: 43.534462,13.459317
       parent: 60
-- proto: SalvageLootSpawner
+- proto: SalvagePartsT2Spawner
   entities:
   - uid: 5030
     components:

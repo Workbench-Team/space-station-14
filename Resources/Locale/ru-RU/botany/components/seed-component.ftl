@@ -8,3 +8,4 @@ botany-seed-packet-name = пакет { $seedNoun } { $seedName }
 botany-harvest-fail-message = Вам не удаётся собрать ничего полезного.
 botany-harvest-success-message = Вы собираете урожай с { $name }
 botany-mysterious-description-addon = Однако, что-то в нём кажется странным.
+seed-extractor-component-upgrade-seed-yield = Урожайность семян

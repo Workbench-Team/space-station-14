@@ -34,3 +34,4 @@ materials-raw-bananium = бананиум
 
 # Material Reclaimer
 
+material-reclaimer-upgrade-process-rate = Скорость процесса

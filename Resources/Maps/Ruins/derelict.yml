@@ -4810,7 +4810,7 @@ entities:
     - type: Transform
       pos: 32.5,13.5
       parent: 2
-- proto: SalvageLootSpawner
+- proto: SalvagePartsT2Spawner
   entities:
   - uid: 2007
     components:

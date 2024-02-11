@@ -10,3 +10,4 @@ comp-emitter-not-anchored = { $target } не закреплён!
 # Upgrades
 emitter-component-current-type = Текущий выбранный тип: { $type }.
 emitter-component-type-set = Тип установлен: { $type }
+emitter-component-upgrade-fire-rate = Частота выстрелов

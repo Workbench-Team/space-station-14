@@ -15,3 +15,7 @@ two-way-lever-right = Вы сдвигаете рычаг вправо
 two-way-lever-cant = Рычаг не может быть сдвинут в эту сторону!
 recycler-count-items = Переработано { $items } объектов.
 machine-already-in-use = { CAPITALIZE($machine) } уже используется.
+upgrade-power-draw = потребляемая мощность
+upgrade-max-charge = максимальный заряд
+upgrade-power-supply = блок питания
+upgrade-power-supply-ramping = темп роста мощности

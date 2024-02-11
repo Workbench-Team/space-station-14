@@ -11,3 +11,5 @@ grinder-menu-chamber-content-box-button = Извлечь содержимое
 grinder-menu-beaker-content-box-label = Стакан
 grinder-menu-beaker-content-box-button = Извлечь стакан
 grinder-menu-beaker-content-box-is-empty = Пусто
+reagent-grinder-component-upgrade-storage = Вместимость
+reagent-grinder-component-upgrade-work-time = Время работы

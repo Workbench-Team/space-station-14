@@ -3,6 +3,8 @@ using Content.Shared.Research.Prototypes;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
+using Content.Shared.Construction.Prototypes;
 
 namespace Content.Shared.Lathe
 {
@@ -92,6 +94,9 @@ namespace Content.Shared.Lathe
 
         public const float DefaultPartRatingMaterialUseMultiplier = 0.85f;
         #endregion
+
+        [DataField("machinePartMinTemp", customTypeSerializer: typeof(PrototypeIdSerializer<MachinePartPrototype>))]
+        public string MachinePartMinTemp = "Capacitor";
     }
 
     public sealed class LatheGetRecipesEvent : EntityEventArgs

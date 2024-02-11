@@ -133,10 +133,6 @@ ClosetBase: ClosetSteelBase
 MonkeyCubeBox: VariantCubeBox
 
 # 2024-01-08
-SalvagePartsT4Spawner: SalvageLootSpawner
-SalvagePartsT3Spawner: SalvageLootSpawner
-SalvagePartsT3T4Spawner: SalvageLootSpawner
-SalvagePartsT2Spawner: SalvageLootSpawner
 AdvancedCapacitorStockPart: CapacitorStockPart
 SuperCapacitorStockPart: CapacitorStockPart
 QuadraticCapacitorStockPart: CapacitorStockPart
