@@ -26,7 +26,6 @@
   cost: 7500
   recipeUnlocks:
   - PowerCellHigh
-  - TurboItemRechargerCircuitboard
 
 - type: technology
   id: MechanicalCompression

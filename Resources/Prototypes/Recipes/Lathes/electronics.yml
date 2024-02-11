@@ -44,16 +44,6 @@
     Plastic: 50
 
 - type: latheRecipe
-  id: TurboItemRechargerCircuitboard
-  result: TurboItemRechargerCircuitboard
-  category: Circuitry
-  completetime: 2
-  materials:
-    Steel: 500
-    Plastic: 500
-    Gold: 100
-
-- type: latheRecipe
   id: DoorElectronics
   result: DoorElectronics
   category: Circuitry
@@ -930,7 +920,7 @@
   materials:
      Steel: 100
      Glass: 900
-     
+
 - type: latheRecipe
   id: ShuttleGunPerforatorCircuitboard
   result: ShuttleGunPerforatorCircuitboard
@@ -939,7 +929,7 @@
      Steel: 100
      Glass: 900
      Gold: 100
-     
+
 - type: latheRecipe
   id: ShuttleGunKineticCircuitboard
   result: ShuttleGunKineticCircuitboard
@@ -947,7 +937,7 @@
   materials:
      Steel: 100
      Glass: 900
-     
+
 - type: latheRecipe
   id: ShuttleGunFriendshipCircuitboard
   result: ShuttleGunFriendshipCircuitboard
@@ -956,7 +946,7 @@
      Steel: 100
      Glass: 900
      Gold: 50
-     
+
 - type: latheRecipe
   id: ShuttleGunDusterCircuitboard
   result: ShuttleGunDusterCircuitboard
