@@ -94,9 +94,6 @@ namespace Content.Shared.Lathe
 
         public const float DefaultPartRatingMaterialUseMultiplier = 0.85f;
         #endregion
-
-        [DataField("machinePartMinTemp", customTypeSerializer: typeof(PrototypeIdSerializer<MachinePartPrototype>))]
-        public string MachinePartMinTemp = "Capacitor";
     }
 
     public sealed class LatheGetRecipesEvent : EntityEventArgs

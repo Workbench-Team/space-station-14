@@ -55,6 +55,8 @@
   - CircuitImprinterMachineCircuitboard
   - MaterialReclaimerMachineCircuitboard
   - SheetifierMachineCircuitboard
+  - AutolatheHyperConvectionMachineCircuitboard
+  - ProtolatheHyperConvectionMachineCircuitboard
 
 - type: technology
   id: PowerGeneration

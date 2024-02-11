@@ -341,6 +341,10 @@
     idleState: icon
     runningState: building
     staticRecipes:
+    - ProtolatheMachineCircuitboard
+    - AutolatheMachineCircuitboard
+    - CircuitImprinterMachineCircuitboard
+    - MaterialReclaimerMachineCircuitboard
     - ElectrolysisUnitMachineCircuitboard
     - CentrifugeMachineCircuitboard
     - ChemDispenserMachineCircuitboard
@@ -374,6 +378,9 @@
       - TurboItemRechargerCircuitboard
       - PowerComputerCircuitboard
       - AutolatheMachineCircuitboard
+      - AutolatheHyperConvectionMachineCircuitboard
+      - ProtolatheMachineCircuitboard
+      - ProtolatheHyperConvectionMachineCircuitboard
       - ProtolatheMachineCircuitboard
       - ReagentGrinderMachineCircuitboard
       - MicrowaveMachineCircuitboard
@@ -753,6 +760,36 @@
         - Sheet
         - RawMaterial
         - Ingot
+
+- type: entity
+  id: ProtolatheHyperConvection
+  parent: Protolathe
+  name: hyper convection protolathe
+  description: A highly-experimental protolathe that harnesses the power of extreme heat to slowly create objects more cost-effectively.
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/protolathe_hypercon.rsi
+  - type: Lathe
+    materialUseMultiplier: 0.70
+    timeMultiplier: 1.5
+  - type: LatheHeatProducing
+  - type: Machine
+    board: ProtolatheHyperConvectionMachineCircuitboard
+
+- type: entity
+  id: AutolatheHyperConvection
+  parent: Autolathe
+  name: hyper convection autolathe
+  description: A highly-experimental autolathe that harnesses the power of extreme heat to slowly create objects more cost-effectively.
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/autolathe_hypercon.rsi
+  - type: Lathe
+    materialUseMultiplier: 0.70
+    timeMultiplier: 1.5
+  - type: LatheHeatProducing
+  - type: Machine
+    board: AutolatheHyperConvectionMachineCircuitboard
 
 # Machine which makes weapons and ammunition
 - type: entity

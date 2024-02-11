@@ -1257,4 +1257,22 @@
     materialRequirements:
       Steel: 5
       CableHV: 2
-      
+
+- type: entity
+  parent: BaseMachineCircuitboard
+  id: AutolatheHyperConvectionMachineCircuitboard
+  name: hyper convection autolathe machine board
+  description: A machine printed circuit board for a hyper convection autolathe
+  components:
+  - type: MachineBoard
+    prototype: AutolatheHyperConvection
+    requirements:
+      MatterBin: 3
+    materialRequirements:
+      Glass: 1
+    tagRequirements:
+      Igniter:
+        Amount: 1
+        DefaultPrototype: Igniter
+        ExamineName: Igniter
+

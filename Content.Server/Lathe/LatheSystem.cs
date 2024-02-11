@@ -42,6 +42,28 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using Content.Server.Administration.Logs;
+using Content.Server.Atmos;
+using Content.Server.Atmos.EntitySystems;
+using Content.Server.Lathe.Components;
+using Content.Server.Materials;
+using Content.Server.Power.Components;
+using Content.Server.Power.EntitySystems;
+using Content.Server.Stack;
+using Content.Server.UserInterface;
+using Content.Shared.Database;
+using Content.Shared.Emag.Components;
+using Content.Shared.Lathe;
+using Content.Shared.Materials;
+using Content.Shared.Research.Components;
+using Content.Shared.Research.Prototypes;
+using JetBrains.Annotations;
+using Robust.Server.GameObjects;
+using Robust.Shared.Audio.Systems;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Timing;
 
 namespace Content.Server.Lathe
 {
@@ -57,7 +79,12 @@ namespace Content.Server.Lathe
         [Dependency] private readonly MaterialStorageSystem _materialStorage = default!;
         [Dependency] private readonly StackSystem _stack = default!;
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-
+        [Dependency] private readonly TransformSystem _transform = default!;
+        [Dependency] private readonly AtmosphereSystem _atmosphere = default!;
+        /// <summary>
+        /// Per-tick cache
+        /// </summary>
+        private readonly List<GasMixture> _environments = new();
         public override void Initialize()
         {
             base.Initialize();
@@ -89,6 +116,33 @@ namespace Content.Server.Lathe
 
                 if (_timing.CurTime - comp.StartTime >= comp.ProductionLength)
                     FinishProducing(uid, lathe);
+            }
+            var heatQuery = EntityQueryEnumerator<LatheHeatProducingComponent, LatheProducingComponent, TransformComponent>();
+            while (heatQuery.MoveNext(out var uid, out var heatComp, out _, out var xform))
+            {
+                if (_timing.CurTime < heatComp.NextSecond)
+                    continue;
+                heatComp.NextSecond += TimeSpan.FromSeconds(1);
+
+                var position = _transform.GetGridTilePositionOrDefault((uid, xform));
+                _environments.Clear();
+
+                if (_atmosphere.GetTileMixture(xform.GridUid, xform.MapUid, position, true) is { } tileMix)
+                    _environments.Add(tileMix);
+
+                if (xform.GridUid != null)
+                {
+                    _environments.AddRange(_atmosphere.GetAdjacentTileMixtures(xform.GridUid.Value, position, false, true));
+                }
+
+                if (_environments.Count > 0)
+                {
+                    var heatPerTile = heatComp.EnergyPerSecond / _environments.Count;
+                    foreach (var env in _environments)
+                    {
+                        _atmosphere.AddHeat(env, heatPerTile);
+                    }
+                }
             }
         }
 
