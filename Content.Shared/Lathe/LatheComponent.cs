@@ -59,14 +59,38 @@ namespace Content.Shared.Lathe
         /// <summary>
         /// A modifier that changes how long it takes to print a recipe
         /// </summary>
-        [DataField, ViewVariables(VVAccess.ReadWrite)]
+        [ViewVariables(VVAccess.ReadWrite)]
         public float TimeMultiplier = 1;
+
+        /// <summary>
+        /// The machine part that reduces how long it takes to print a recipe.
+        /// </summary>
+        [DataField]
+        public ProtoId<MachinePartPrototype> MachinePartPrintSpeed = "Manipulator";
+
+        /// <summary>
+        /// The value that is used to calculate the modified <see cref="TimeMultiplier"/>
+        /// </summary>
+        [DataField]
+        public float PartRatingPrintTimeMultiplier = 0.5f;
 
         /// <summary>
         /// A modifier that changes how much of a material is needed to print a recipe
         /// </summary>
-        [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
+        [ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
         public float MaterialUseMultiplier = 1;
+
+        /// <summary>
+        /// The machine part that reduces how much material it takes to print a recipe.
+        /// </summary>
+        [DataField]
+        public ProtoId<MachinePartPrototype> MachinePartMaterialUse = "MatterBin";
+
+        /// <summary>
+        /// The value that is used to calculate the modifier <see cref="MaterialUseMultiplier"/>
+        /// </summary>
+        [DataField]
+        public float PartRatingMaterialUseMultiplier = DefaultPartRatingMaterialUseMultiplier;
 
         public const float DefaultPartRatingMaterialUseMultiplier = 0.85f;
         #endregion
@@ -89,10 +113,4 @@ namespace Content.Shared.Lathe
             getUnavailable = forced;
         }
     }
-
-    /// <summary>
-    /// Event raised on a lathe when it starts producing a recipe.
-    /// </summary>
-    [ByRefEvent]
-    public readonly record struct LatheStartPrintingEvent(LatheRecipePrototype Recipe);
 }
