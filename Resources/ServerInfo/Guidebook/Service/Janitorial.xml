@@ -24,7 +24,6 @@
 
 ## Дополнительное оборудование
 <Box>
-<GuideEntityEmbed Entity="VehicleJanicart"/>
 <GuideEntityEmbed Entity="WetFloorSign"/>
 </Box>
 <Box>

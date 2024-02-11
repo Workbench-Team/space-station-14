@@ -51,5 +51,5 @@ ent-ClothingOuterFlannelBlue = синяя фланелевая куртка
     .desc = Старомодная синяя фланелевая куртка для космической осени.
 ent-ClothingOuterFlannelGreen = зелёная фланелевая куртка
     .desc = Старомодная зелёная фланелевая куртка для космической осени.
-ent-ClothingOuterRedRacoon = костюм красного енота
-    .desc = Пушистый костюм красного енота!
+ent-ClothingOuterRedRacoon = костюм рыжего енота
+    .desc = Пушистый костюм рыжего енота!

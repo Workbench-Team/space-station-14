@@ -20,7 +20,7 @@
     Tail:
       points: 1
       required: true
-      defaultMarkings: [ FelinidTailResprite ]
+      defaultMarkings: [ FelinidTailDefault ]
     HeadTop:
       points: 1
       required: true

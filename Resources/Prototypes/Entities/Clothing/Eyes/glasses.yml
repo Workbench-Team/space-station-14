@@ -216,6 +216,8 @@
     - Clothing
     - HamsterWearable
     - WhitelistChameleon
+  - type: IdentityBlocker
+    coverage: EYES
 
 - type: entity
   parent: ClothingEyesGlassesSunglasses
@@ -244,7 +246,6 @@
     sprite: Clothing/Eyes/Glasses/secglasses.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/secglasses.rsi
-  - type: ShowSecurityIcons
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
@@ -256,6 +257,9 @@
   - type: GuideHelp
     guides:
     - Security
+  - type: ShowSecurityIcons
+  - type: IdentityBlocker
+    coverage: EYES
 
 - type: entity
   parent: ClothingEyesBase

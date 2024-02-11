@@ -54,3 +54,9 @@ rev-headrev-name = [color=#5e9cff]{ $name }[/color] завербовал { $coun
        *[other] членов
     } экипажа
 rev-reverse-stalemate = Главы революции и командный состав станции выжили.
+rev-deconverted-title = Развербовка!
+rev-deconverted-text =
+    Поскольку последняя глава революции умерла, революция закончилась.
+    
+    Вы больше не революционер, так что ведите себя подобающе.
+rev-deconverted-confirm = Подтвердить

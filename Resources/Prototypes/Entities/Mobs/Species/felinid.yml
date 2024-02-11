@@ -1,5 +1,5 @@
-# Anything human specific (e.g. UI, input) goes under MobHuman
 - type: entity
+  save: false
   name: Urist McCat
   parent: BaseMobSpeciesOrganic
   id: BaseMobFelinid
@@ -9,30 +9,25 @@
     species: Felinid
   - type: WoundLicking
   - type: Hunger
-    starvationDamage:
-      types:
-        Cold: 0.5
-        Bloodloss: 0.5
   - type: Thirst
   - type: Perishable
   - type: Climbing
-    tableClimbMultiplier: 0.7
+    tableClimbMultiplier: 0.5
   - type: Flashable   # Felinids get longer flashes from flashbangs because of their sensetive ears
     durationMultiplier: 1
     bangAddMultiplier: 0.65
     bangFlash: false
   - type: Speech
     speechVerb: Felinid
-  - type: Reactive
-    groups:
-      Flammable: [ Touch ]
-      Extinguish: [ Touch ]
-    reactions:
-    - reagents: [ Water, SpaceCleaner ]
-      methods: [ Touch ]
-      effects:
-      - !type:WashCreamPieReaction
-      - !type:CancelDoAfters
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 30
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 5
+  - type: Wagging
 
 - type: entity
   name: Urist McHands

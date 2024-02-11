@@ -646,6 +646,23 @@
     },
     {
       "name": "spider2"
+    },
+    {
+      "name": "lizard0",
+      "delays": [
+        [
+             0.3,
+             0.3,
+             0.3,
+             0.4
+        ]
+      ]
+    },
+    {
+      "name": "lizard1"
+    },
+    {
+      "name": "lizard2"
     }
   ]
 }

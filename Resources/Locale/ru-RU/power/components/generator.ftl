@@ -21,7 +21,10 @@ portable-generator-ui-eject = Извлечь
 portable-generator-ui-eta = (~{ $minutes } мин)
 portable-generator-ui-unanchored = Не закреплён
 portable-generator-ui-current-output = Текущий выход: { $voltage }
-power-switchable-generator-examine = The power output is set to { $voltage }.
+portable-generator-ui-network-stats = Сеть:
+portable-generator-ui-network-stats-value = { POWERWATTS($supply) } / { POWERWATTS($load) }
+portable-generator-ui-network-stats-not-connected = Не подключено
+power-switchable-generator-examine = Выходная мощность установлена на { $voltage }.
 power-switchable-generator-switched = Выход переключён на { $voltage }!
 power-switchable-voltage =
     { $voltage ->

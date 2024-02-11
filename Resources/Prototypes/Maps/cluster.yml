@@ -54,7 +54,6 @@
             Brigmedic: [ 1, 1 ]
             #supply
             Quartermaster: [ 1, 1 ]
-            Miner: [ 2,2 ]
             SalvageSpecialist: [ 2, 2 ]
             CargoTechnician: [ 1, 1 ]
             #civillian
@@ -64,4 +63,4 @@
             Musician: [ 1, 1 ]
             #centcom      
             BlueShield: [ 1, 1 ]
-            #CentComConsultant: [ 1, 1 ]            
+            CentComConsultant: [ 1, 1 ]            

@@ -74,4 +74,13 @@
 <GuideEntityEmbed Entity="DiseaseSwab"/>
 </Box>
 
+## Химикаты
+Некоторые химические вещества оказывают особое воздействие на растения.
+
+<GuideReagentEmbed Reagent="Dylovene"/>
+<GuideReagentEmbed Reagent="Cryoxadone"/>
+<GuideReagentEmbed Reagent="Necrosol"/>
+<GuideReagentEmbed Reagent="Phalanximine"/>
+<GuideReagentGroupEmbed Group="Botanical"/>
+
 </Document>

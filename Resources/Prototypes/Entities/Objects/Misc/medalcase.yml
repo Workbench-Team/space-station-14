@@ -2,11 +2,15 @@
   id: MedalCase
   name: medal case
   description: Case with medals.
-  parent: BaseStorageItem
+  parent: [ BaseStorageItem, BaseBagOpenClose ]
   components:
   - type: Sprite
     sprite: Objects/Storage/medalcase.rsi
-    state: icon
+    layers:
+    - state: closed
+    - state: open
+      map: ["openLayer"]
+  - type: Appearance
   - type: Item
     sprite: Objects/Storage/medalcase.rsi
     size: Normal
@@ -28,19 +32,8 @@
   id: WoodenMedalCase
   name: wooden medal case
   description: An antique wooden case for storing things that are dear to you.
-  parent: [ BaseStorageItem, BaseBagOpenClose ]
+  parent: MedalCase
   components:
-  - type: Sprite
-    sprite: Objects/Storage/medalcase.rsi
-    state: icon_wooden
-    layers:
-    - state: icon_wooden
-    - state: icon_woodenOpen
-      map: ["openLayer"]
-      visible: false
-  - type: Item
-    sprite: Objects/Storage/medalcase.rsi
-    size: Normal
   - type: Storage
     grid:
     - 0,0,3,1

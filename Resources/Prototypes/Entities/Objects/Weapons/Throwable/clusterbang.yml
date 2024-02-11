@@ -130,6 +130,7 @@
     maxGrenadesCount: 30
     grenadeType: enum.GrenadeType.Shoot
   - type: FlashOnTrigger
+    bang: true
     range: 7
   - type: EmitSoundOnTrigger
     sound:

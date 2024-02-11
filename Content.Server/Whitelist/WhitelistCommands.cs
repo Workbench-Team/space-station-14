@@ -1,4 +1,4 @@
-﻿using Content.Server.Administration;
+using Content.Server.Administration;
 using Content.Server.Database;
 using Content.Shared.Players;
 using Content.Server.Players.PlayTimeTracking;
@@ -157,7 +157,7 @@ public sealed class KickNonWhitelistedCommand : LocalizedCommands
 
             if (!await db.GetWhitelistStatusAsync(session.UserId))
             {
-                net.DisconnectChannel(session.ConnectedClient, Loc.GetString("whitelist-not-whitelisted"));
+                net.DisconnectChannel(session.Channel, Loc.GetString("whitelist-not-whitelisted"));
             }
         }
     }
