@@ -198,9 +198,9 @@
   source: https://taira-komori.jpn.org/freesounden.html
 
 - files: [adminhelp.ogg]
-  copyright: '"jumps from reason.3.Rev.wav" by martian of Freesound.org. Modified by reversing and altering volume.'
+  copyright: '"Taken from cmss13.'
   license: CC0-1.0
-  source: https://freesound.org/people/martian/sounds/19261/
+  source: https://github.com/cmss13-devs/cmss13/blob/41109aa6eebf87892e41b61418b7b06b279d04b6/sound/effects/adminhelp_new.ogg
 
 - files: ["explosion_small1.ogg", "explosion_small2.ogg", "explosion_small3.ogg", "explosion1.ogg", "explosion2.ogg", "explosion3.ogg", "explosion4.ogg", "explosion5.ogg", "explosion6.ogg", "explosionfar.ogg", "explosionsmallfar.ogg"]
   copyright: "vgstation at c5edbfd7179288080f081e2b8ac2496b7e4455db"
