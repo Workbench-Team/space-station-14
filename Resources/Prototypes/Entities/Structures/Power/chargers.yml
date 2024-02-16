@@ -109,7 +109,7 @@
     color: "#03fc4e"
     energy: 0.7
   - type: Charger
-    chargeRate: 50
+    BaseChargeRate: 50
   - type: Sprite
     sprite: Structures/Power/cage_recharger.rsi
   - type: PowerCellSlot
@@ -162,7 +162,7 @@
       shader: "unshaded"
   - type: WallMount
   - type: Charger
-    chargeRate: 25
+    BaseChargeRate: 25
   - type: ItemSlots
     slots:
       charger_slot:
@@ -195,7 +195,7 @@
         map: ["enum.WiresVisualLayers.MaintenancePanel"]
         visible: false
   - type: Charger
-    chargeRate: 30
+    BaseChargeRate: 30
     slotId: entity_storage
     whitelist:
       components:
@@ -250,3 +250,29 @@
       entity_storage: !type:Container
       machine_board: !type:Container
       machine_parts: !type:Container
+
+- type: entity
+  parent: BaseItemRecharger
+  id: TurboItemRecharger
+  name: turbo recharger
+  description: An overclocked recharger that's been adapted with a global port.
+  components:
+  - type: Sprite
+    sprite: Structures/Power/turbo_recharger.rsi
+  - type: Machine
+    board: TurboItemRechargerCircuitboard
+  - type: Charger
+    BaseChargeRate: 100
+  - type: ItemSlots
+    slots:
+      charger_slot:
+        ejectOnInteract: true
+        whitelist:
+          components:
+          - HitscanBatteryAmmoProvider
+          - ProjectileBatteryAmmoProvider
+          - Stunbaton
+          - PowerCell
+        blacklist:
+          tags:
+          - PotatoBattery
