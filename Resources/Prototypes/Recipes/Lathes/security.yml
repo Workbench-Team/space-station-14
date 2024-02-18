@@ -54,9 +54,19 @@
   result: WeaponCutter
   completetime: 10
   materials:
-    Steel: 1100
+    Steel: 1000
     Glass: 200
-    Gold: 300
+    Silver: 100
+    Plasma: 400
+
+- type: latheRecipe
+  id: WeaponCutterAdv
+  result: WeaponCutterAdv
+  completetime: 15
+  materials:
+    Steel: 1200
+    Glass: 300
+    Gold: 100
     Plasma: 800
   
 - type: latheRecipe

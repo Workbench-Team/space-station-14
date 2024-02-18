@@ -45,7 +45,6 @@
             Scientist: [ 2, 3 ]
             ResearchAssistant: [ 2, 2 ]
             #security
-            BlueShield: [1, 1]
             HeadOfSecurity: [ 1, 1 ]
             SecurityOfficer: [ 4, 4 ]
             Warden: [ 1, 1 ]
@@ -64,3 +63,6 @@
             Musician: [ 1, 1 ]
             Boxer: [ 2, 2 ]
             Reporter: [ 1, 2 ]
+            #Centcom      
+            BlueShield: [ 1, 1 ]
+            CentComConsultant: [ 1, 1 ]
