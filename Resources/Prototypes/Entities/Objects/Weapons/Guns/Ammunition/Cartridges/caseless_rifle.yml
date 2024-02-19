@@ -38,8 +38,11 @@
     proto: BulletCaselessRiflePractice
   - type: Sprite
     layers:
-    - state: practice
-      map: ["enum.AmmoVisualLayers.Base"]
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"
 
 - type: entity
   id: CartridgeCaselessRifleRubber
@@ -50,8 +53,13 @@
     proto: BulletCaselessRifleRubber
   - type: Sprite
     layers:
-    - state: rubber
-      map: ["enum.AmmoVisualLayers.Base"]
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#43c4f7"
+
+## Starshine
 
 # Blueshield ammo 12.7
 - type: entity
@@ -94,5 +102,8 @@
     proto: BulletUniversalVPS
   - type: Sprite
     layers:
-    - state: hv
-      map: ["enum.AmmoVisualLayers.Base"]
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#338f12"

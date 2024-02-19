@@ -38,9 +38,9 @@ public sealed class AFKSystem : EntitySystem
     {
         base.Initialize();
         _playerManager.PlayerStatusChanged += OnPlayerChange;
-        _configManager.OnValueChanged(CCVars.AfkTime, SetAfkDelay, true);
-        _configManager.OnValueChanged(CCVars.AfkKickTime, SetAfkKickDelay, true);
-        _configManager.OnValueChanged(CCVars.AfkAdminKickTime, SetAfkAdminKickDelay, true);
+        Subs.CVar(_configManager, CCVars.AfkTime, SetAfkDelay, true);
+        Subs.CVar(_configManager, CCVars.AfkTime, SetAfkKickDelay, true);
+        Subs.CVar(_configManager, CCVars.AfkTime, SetAfkAdminKickDelay, true);
 
         SubscribeNetworkEvent<FullInputCmdMessage>(HandleInputCmd);
     }
@@ -86,9 +86,6 @@ public sealed class AFKSystem : EntitySystem
         base.Shutdown();
         _afkPlayers.Clear();
         _playerManager.PlayerStatusChanged -= OnPlayerChange;
-        _configManager.UnsubValueChanged(CCVars.AfkTime, SetAfkDelay);
-        _configManager.UnsubValueChanged(CCVars.AfkKickTime, SetAfkKickDelay);
-        _configManager.UnsubValueChanged(CCVars.AfkAdminKickTime, SetAfkAdminKickDelay);
     }
 
     public override void Update(float frameTime)

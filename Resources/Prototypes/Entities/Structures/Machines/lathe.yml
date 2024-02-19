@@ -98,6 +98,7 @@
       - CableHVStack
       - HandheldGPSBasic
       - TRayScanner
+      - AirTank
       - GasAnalyzer
       - UtilityBelt
       - Fulton
@@ -278,6 +279,7 @@
       - ChemicalPayload
       - FlashPayload
       - Signaller
+      - SignallerAdvanced
       - SignalTrigger
       - VoiceTrigger
       - Igniter
@@ -297,6 +299,7 @@
       - WeaponLaserSvalinn
       - WeaponProtoKineticAccelerator
       - WeaponCutter
+      - WeaponCutterAdv
       - WeaponTetherGun
       - WeaponGrapplingGun
       - ClothingBackpackHolding
@@ -354,6 +357,11 @@
     - UniformPrinterMachineCircuitboard
     - FloorGreenCircuit
     - FloorBlueCircuit
+    - MicrowaveMachineCircuitboard
+    - ReagentGrinderMachineCircuitboard
+    - ElectricGrillMachineCircuitboard
+    - BoozeDispenserMachineCircuitboard
+    - SodaDispenserMachineCircuitboard
     dynamicRecipes:
       - ThermomachineFreezerMachineCircuitBoard
       - HellfireFreezerMachineCircuitBoard
@@ -381,10 +389,6 @@
       - AutolatheHyperConvectionMachineCircuitboard
       - ProtolatheMachineCircuitboard
       - ProtolatheHyperConvectionMachineCircuitboard
-      - ProtolatheMachineCircuitboard
-      - ReagentGrinderMachineCircuitboard
-      - MicrowaveMachineCircuitboard
-      - ElectricGrillMachineCircuitboard
       - FatExtractorMachineCircuitboard
       - FlatpackerMachineCircuitboard
       - SheetifierMachineCircuitboard
@@ -430,8 +434,6 @@
       - SecurityTechFabCircuitboard
       - WeaponTechFabCircuitboard
       - ArtifactCrusherMachineCircuitboard
-      - BoozeDispenserMachineCircuitboard
-      - SodaDispenserMachineCircuitboard
       - TelecomServerCircuitboard
       - MassMediaCircuitboard
   - type: MaterialStorage

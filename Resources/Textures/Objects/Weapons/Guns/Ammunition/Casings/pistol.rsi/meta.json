@@ -11,19 +11,10 @@
             "name": "base"
         },
         {
-            "name": "rubber"
-        },
-        {
-            "name": "hv"
-        },
-        {
-            "name": "practice"
-        },
-        {
-            "name": "uranium"
-        },
-        {
             "name": "base-spent"
+        },
+        {
+            "name": "tip"
         }
     ]
 }

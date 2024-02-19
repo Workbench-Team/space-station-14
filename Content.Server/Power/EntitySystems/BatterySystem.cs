@@ -115,6 +115,17 @@ namespace Content.Server.Power.EntitySystems
             RaiseLocalEvent(uid, ref ev);
             return delta;
         }
+        public float AddCharge(EntityUid uid, float value, BatteryComponent? battery = null)
+        {
+            if (value <= 0 || !Resolve(uid, ref battery))
+                return 0;
+
+            var newValue = Math.Clamp(battery.CurrentCharge + value, 0, battery._maxCharge);
+            battery.Charge = newValue;
+            var ev = new ChargeChangedEvent(battery.CurrentCharge, battery._maxCharge);
+            RaiseLocalEvent(uid, ref ev);
+            return newValue;
+        }
 
         public void SetMaxCharge(EntityUid uid, float value, BatteryComponent? battery = null)
         {
@@ -154,6 +165,14 @@ namespace Content.Server.Power.EntitySystems
                 return false;
 
             UseCharge(uid, value, battery);
+            return true;
+        }
+        public bool TryAddCharge(EntityUid uid, float value, BatteryComponent? battery = null)
+        {
+            if (!Resolve(uid, ref battery, false))
+                return false;
+
+            AddCharge(uid, value, battery);
             return true;
         }
 

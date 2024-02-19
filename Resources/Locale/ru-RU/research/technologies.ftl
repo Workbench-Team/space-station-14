@@ -78,6 +78,7 @@ research-technology-advanced-firearms = Продвинутое огнестре�
 research-technology-advanced-ammunition = Продвинутая аммуниция
 research-technology-advanced-magazines = Продвинутые магазины
 research-technology-spec-ammunition = Специализированные боеприпасы
+research-technology-salvage-weapons-adv = Продвинутое оружие утилизаторов
 
 research-technology-clarke-aplu = КШГ Кларк
 research-technology-Odyssey = ГМС Одиссей

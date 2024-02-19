@@ -9,3 +9,4 @@ species-name-arachnid = Арахнид
 species-name-felinid = Фелинид
 species-name-moth = Моль
 species-name-skeleton = Скелет
+species-name-vox = Вокс
