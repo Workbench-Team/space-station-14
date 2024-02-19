@@ -262,7 +262,7 @@
   - type: Machine
     board: TurboItemRechargerCircuitboard
   - type: Charger
-    BaseChargeRate: 100
+    BaseChargeRate: 70
   - type: ItemSlots
     slots:
       charger_slot:
