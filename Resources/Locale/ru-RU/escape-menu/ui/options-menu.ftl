@@ -42,6 +42,7 @@ ui-options-opaque-storage-window = Включить непрозрачное о�
 ui-options-vsync = Вертикальная синхронизация
 ui-options-fancy-speech = Показывать имена в текстовых облаках
 ui-options-fancy-name-background = Добавить фон текстовому облаку с именами
+ui-options-enable-color-name = Добавлять цвета к именам персонажей
 ui-options-reduced-motion = Снижение интенсивности визуальных эффектов
 ui-options-screen-shake-intensity = Интенсивность тряски экрана
 ui-options-screen-shake-percent = { TOSTRING($intensity, "P0") }

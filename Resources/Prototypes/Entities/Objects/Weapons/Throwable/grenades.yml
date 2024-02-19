@@ -68,7 +68,7 @@
   - type: FlashOnTrigger
     range: 7
     bang: true
-  - type: EmitSoundOnTrigger
+  - type: SoundOnTrigger
     sound:
       path: "/Audio/Effects/flash_bang.ogg"
   - type: DeleteOnTrigger
