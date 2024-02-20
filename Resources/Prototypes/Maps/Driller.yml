@@ -55,13 +55,14 @@
             Brigmedic: [ 1, 1 ]
             #supply
             Quartermaster: [ 1, 1 ]
-            SalvageSpecialist: [ 3, 3 ]
+            SalvageSpecialist: [ 4, 4 ]
             CargoTechnician: [ 2, 3 ]
             #civilian
             Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
+            Reporter: [ 1, 2 ]
             #Centcom      
             BlueShield: [ 1, 1 ]
             CentComConsultant: [ 1, 1 ]
