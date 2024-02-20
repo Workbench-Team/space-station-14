@@ -18,9 +18,9 @@ chat-manager-no-such-channel = Нет канала с префиксом '{ $key
 chat-manager-whisper-headset-on-message = Вы не можете шептать в радио!
 chat-manager-server-wrap-message = СЕРВЕР: [bold]{ $message }[/bold]
 chat-manager-sender-announcement-wrap-message = [font size=14][bold]Объявление { $sender }:[/font][font size=12]{ "\u000A" }{ $message }[/bold][/font]
-chat-manager-entity-say-wrap-message = [BubbleHeader][bold]{ $entityName }[/bold][/BubbleHeader] { $verb }, [font={ $fontType } size={ $fontSize }]"[BubbleContent]{ $message }[/BubbleContent]"[/font]
-chat-manager-entity-say-bold-wrap-message = [BubbleHeader][bold]{ $entityName }[/bold][/BubbleHeader] { $verb }, [font={ $fontType } size={ $fontSize }]"[BubbleContent][bold]{ $message }[/bold][/BubbleContent]"[/font]
-chat-manager-entity-whisper-wrap-message = [font size=11][italic][BubbleHeader]{ $entityName }[/BubbleHeader] шепчет: "[BubbleContent]{ $message }[/BubbleContent]"[/italic][/font]
+chat-manager-entity-say-wrap-message = [BubbleHeader][bold][Name]{ $entityName }[/Name][/bold][/BubbleHeader] { $verb }, [font={ $fontType } size={ $fontSize }]"[BubbleContent]{ $message }[/BubbleContent]"[/font]
+chat-manager-entity-say-bold-wrap-message = [BubbleHeader][bold][Name]{ $entityName }[/Name][/bold][/BubbleHeader] { $verb }, [font={ $fontType } size={ $fontSize }]"[BubbleContent][bold]{ $message }[/bold][/BubbleContent]"[/font]
+chat-manager-entity-whisper-wrap-message = [font size=11][italic][BubbleHeader][Name]{ $entityName }[/Name][/BubbleHeader] шепчет: "[BubbleContent]{ $message }[/BubbleContent]"[/italic][/font]
 chat-manager-entity-whisper-unknown-wrap-message = [font size=11][italic][BubbleHeader]Кто-то[/BubbleHeader] шепчет: "[BubbleContent]{ $message }[/BubbleContent]"[/italic][/font]
 chat-manager-entity-me-wrap-message = [italic]{ $entityName } { $message }[/italic]
 chat-manager-entity-looc-wrap-message = LOOC: [bold]{ $entityName }:[/bold] { $message }
@@ -70,6 +70,9 @@ chat-speech-verb-skeleton-1 = гремит
 chat-speech-verb-skeleton-2 = клацает
 chat-speech-verb-skeleton-3 = скрежещет
 chat-speech-verb-canine-1 = лает
+chat-speech-verb-vox-1 = скрипит
+chat-speech-verb-vox-2 = визжит
+chat-speech-verb-vox-3 = квакает
 chat-speech-verb-canine-2 = гавкает
 chat-speech-verb-canine-3 = воет
 chat-speech-verb-small-mob-1 = пищит

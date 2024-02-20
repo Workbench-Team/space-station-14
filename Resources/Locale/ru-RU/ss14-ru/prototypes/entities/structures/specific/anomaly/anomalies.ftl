@@ -42,3 +42,6 @@ ent-AnomalyFloraBulb = странная светящаяся ягода
 ent-AnomalyLiquid = { ent-BaseAnomaly }
     .suffix = Жидкая
     .desc = { ent-BaseAnomaly.desc }
+ent-AnomalyShadow = { ent-BaseAnomaly }
+    .suffix = Теневая
+    .desc = { ent-BaseAnomaly.desc }

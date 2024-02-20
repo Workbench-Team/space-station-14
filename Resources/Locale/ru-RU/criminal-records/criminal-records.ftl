@@ -29,6 +29,7 @@ criminal-records-console-wanted = { $name } разыскивается офиц�
 criminal-records-console-detained = { $name } взят под арест офицером { $officer }.
 criminal-records-console-released = { $name } был выпущен офицером { $officer }.
 criminal-records-console-not-wanted = { $name } больше не в розыске.
+criminal-records-console-unknown-officer = <неизвестный офицер>
 
 ## Filters
 

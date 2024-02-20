@@ -169,7 +169,7 @@ public sealed class AlertLevelSystem : EntitySystem
             if (detail.Sound != null)
             {
                 var filter = _stationSystem.GetInOwningStation(station);
-                _audio.PlayGlobal(detail.Sound.GetSound(), filter, true, detail.Sound.Params);
+                _audio.PlayGlobal(detail.Sound, filter, true, detail.Sound.Params);
             }
             else
             {
