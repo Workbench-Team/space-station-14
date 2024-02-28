@@ -38,6 +38,7 @@ public sealed class FatExtractorSystem : EntitySystem
         SubscribeLocalEvent<FatExtractorComponent, PowerChangedEvent>(OnPowerChanged);
     }
 
+
     private void OnRefreshParts(EntityUid uid, FatExtractorComponent component, RefreshPartsEvent args)
     {
         var rating = args.PartRatings[component.MachinePartNutritionRate] - 1;

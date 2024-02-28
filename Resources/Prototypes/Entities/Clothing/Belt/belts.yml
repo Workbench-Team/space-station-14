@@ -226,6 +226,7 @@
         - Plunger
       components:
         - LightReplacer
+    maxItemSize: Large
   - type: ItemMapper
     mapLayers:
       bottle:

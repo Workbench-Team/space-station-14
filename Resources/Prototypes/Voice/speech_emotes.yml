@@ -323,7 +323,7 @@
 - type: emote
   id: Buzz
   category: Vocal
-  chatMessages: [buzz!]
+  chatMessages: [жужжит!]
   chatTriggers:
     - buzzing
     - buzzing!
@@ -343,3 +343,32 @@
     - жужжит
     - жужжит.
     - жужжит!
+
+- type: emote
+  id: Weh
+  category: Vocal
+  chatMessages: [Wehs!]
+
+- type: emote
+  id: Chirp
+  category: Vocal
+  chatMessages: [щебечет!]
+  chatTriggers:
+    - chirp
+    - chirp!
+    - chirp.
+    - chirps
+    - churps.
+    - chirps!
+    - chirped
+    - chirped.
+    - chirped!
+    - chirping
+    - chirping.
+    - chirping!
+    - щебет
+    - щебет.
+    - щебет!
+    - щебечет
+    - щебечет.
+    - щебечет!

@@ -19,12 +19,15 @@ research-technology-advanced-tools = Advanced Tools
 research-technology-super-powercells = Super Powercells
 research-technology-bluespace-storage = Bluespace Storage
 research-technology-portable-fission = Portable Fission
+research-technology-space-scanning = Space Scanning
 
 research-technology-salvage-weapons = Salvage Weapons
 research-technology-draconic-munitions = Draconic Munitions
 research-technology-uranium-munitions = Uranium Munitions
 research-technology-explosive-technology = Explosive Technology
+research-technology-weaponized-laser-manipulation = Weaponized Laser Manipulation
 research-technology-nonlethal-ammunition = Nonlethal Ammunition
+research-technology-concentrated-laser-weaponry = Concentrated Laser Weaponry
 research-technology-advanced-riot-control = Advanced Riot Control
 research-technology-portable-microfusion-weaponry = Portable Microfusion Weaponry
 research-technology-experimental-battery-ammo = Experimental Battery Ammo

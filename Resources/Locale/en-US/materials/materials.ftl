@@ -37,3 +37,4 @@ materials-raw-bananium = raw bananium
 
 # Material Reclaimer
 material-reclaimer-upgrade-process-rate = process rate
+materials-raw-salt = raw salt

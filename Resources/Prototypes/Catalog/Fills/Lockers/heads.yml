@@ -250,6 +250,7 @@
       - id: ClothingMaskSterile
       - id: ClothingOuterHardsuitMedical
       - id: Hypospray
+      - id: HandheldCrewMonitor
       - id: DoorRemoteMedical
       - id: RubberStampCMO
       - id: MedicalTechFabCircuitboard
@@ -269,6 +270,7 @@
       - id: ClothingBackpackDuffelSurgeryFilled
       - id: ClothingMaskSterile
       - id: Hypospray
+      - id: HandheldCrewMonitor
       - id: DoorRemoteMedical
       - id: RubberStampCMO
       - id: MedicalTechFabCircuitboard
@@ -285,12 +287,12 @@
       - id: ResearchComputerCircuitboard
       - id: ProtolatheMachineCircuitboard
       - id: CircuitImprinterMachineCircuitboard
-      - id: ClothingHeadsetMedicalScience
       - id: ClothingOuterHardsuitRd
       - id: DoorRemoteResearch
       - id: ClothingBeltUtilityFilled
       - id: RubberStampRd
       - id: BoxEncryptionKeyScience
+      - id: ClothingHeadsetAltScience
       - id: EncryptionKeyBinary
       - id: HandheldRndMonitor
       - id: BriefcaseRDFilled
@@ -306,11 +308,11 @@
       - id: ResearchComputerCircuitboard
       - id: ProtolatheMachineCircuitboard
       - id: CircuitImprinterMachineCircuitboard
-      - id: ClothingHeadsetMedicalScience
       - id: DoorRemoteResearch
       - id: ClothingBeltUtilityFilled
       - id: RubberStampRd
       - id: BoxEncryptionKeyScience
+      - id: ClothingHeadsetAltScience
       - id: EncryptionKeyBinary
       - id: HandheldRndMonitor
       - id: BriefcaseRDFilled

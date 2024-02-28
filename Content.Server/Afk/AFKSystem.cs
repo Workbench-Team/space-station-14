@@ -39,8 +39,8 @@ public sealed class AFKSystem : EntitySystem
         base.Initialize();
         _playerManager.PlayerStatusChanged += OnPlayerChange;
         Subs.CVar(_configManager, CCVars.AfkTime, SetAfkDelay, true);
-        Subs.CVar(_configManager, CCVars.AfkTime, SetAfkKickDelay, true);
-        Subs.CVar(_configManager, CCVars.AfkTime, SetAfkAdminKickDelay, true);
+        Subs.CVar(_configManager, CCVars.AfkKickTime, SetAfkKickDelay, true);
+        Subs.CVar(_configManager, CCVars.AfkAdminKickTime, SetAfkAdminKickDelay, true);
 
         SubscribeNetworkEvent<FullInputCmdMessage>(HandleInputCmd);
     }

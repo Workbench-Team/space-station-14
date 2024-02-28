@@ -5,6 +5,7 @@
   components:
   - type: StorageFill
     contents:
+      - id: GarmentBagWarden
       - id: FlashlightSeclite
       - id: WeaponDisabler
         prob: 0.3
@@ -12,10 +13,6 @@
       - id: Flash
       - id: ClothingEyesGlassesSunglasses
       - id: ClothingHeadsetAltSecurity
-      - id: ClothingHandsGlovesCombat
-      - id: ClothingShoesBootsJack
-      - id: ClothingOuterCoatWarden
-      - id: ClothingOuterWinterWarden
       - id: RubberStampWarden
       - id: DoorRemoteArmory
       - id: ClothingOuterHardsuitWarden

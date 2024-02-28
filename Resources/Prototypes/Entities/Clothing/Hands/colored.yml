@@ -209,6 +209,16 @@
 
 - type: entity
   parent: ClothingHandsGlovesColorYellow
+  id: ClothingHandsGlovesConducting
+  suffix: Conducting
+  components:
+  - type: Insulated
+    coefficient: 5 # zap em good
+
+## Starshine
+
+- type: entity
+  parent: ClothingHandsGlovesColorYellow
   id: ClothingHandsGlovesAtmos
   name: atmospheric extrication gloves
   description: Heavy duty gloves for firefighters. These are thick, non-flammable and let you carry people faster.

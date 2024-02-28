@@ -69,16 +69,16 @@
     duration: 1
   - type: ClericalErrorRule
 
-- type: entity
-  parent: BaseGameRule
-  id: ClosetSkeleton
-  noSpawn: true
-  components:
-  - type: StationEvent
-    weight: 10
-    duration: 1
-  - type: RandomEntityStorageSpawnRule
-    prototype: MobSkeletonCloset
+# - type: entity
+  # parent: BaseGameRule
+  # id: ClosetSkeleton
+  # noSpawn: true
+  # components:
+  # - type: StationEvent
+    # weight: 10
+    # duration: 1
+  # - type: RandomEntityStorageSpawnRule
+    # prototype: MobSkeletonCloset
 
 - type: entity
   parent: BaseGameRule
@@ -488,23 +488,23 @@
     minimumPlayers: 20
   - type: ImmovableRodRule
 
-- type: entity
-  parent: BaseGameRule
-  id: AnomalyMimicriaSpawn
-  noSpawn: true
-  components:
-  - type: StationEvent
-    startAnnouncement: station-event-mimic-anomaly-announcement
-    startAudio:
-      path: /Audio/Announcements/anomalyattention.ogg
-      params:
-        volume: 2
-    weight: 4
-    duration: 1
-    earliestStart: 30
-    minimumPlayers: 20
-  - type: RandomSpawnRule
-    prototype: AnomalyMimicria
+# - type: entity
+  # parent: BaseGameRule
+  # id: AnomalyMimicriaSpawn
+  # noSpawn: true
+  # components:
+  # - type: StationEvent
+    # startAnnouncement: station-event-mimic-anomaly-announcement
+    # startAudio:
+      # path: /Audio/Announcements/anomalyattention.ogg
+      # params:
+        # volume: 2
+    # weight: 4
+    # duration: 1
+    # earliestStart: 30
+    # minimumPlayers: 20
+  # - type: RandomSpawnRule
+    # prototype: AnomalyMimicria
 
 - type: entity
   noSpawn: true

@@ -799,7 +799,7 @@ namespace Content.Shared.CCVar
         /// Default severity for server bans
         /// </summary>
         public static readonly CVarDef<string> ServerBanDefaultSeverity =
-            CVarDef.Create("admin.server_ban_default_severity", "high", CVar.ARCHIVE | CVar.SERVER);
+            CVarDef.Create("admin.server_ban_default_severity", "High", CVar.ARCHIVE | CVar.SERVER);
 
         /// <summary>
         ///     Minimum explosion intensity to create an admin alert message. -1 to disable the alert.
@@ -1335,6 +1335,13 @@ namespace Content.Shared.CCVar
             VoteTimerAlone = CVarDef.Create("vote.timeralone", 10, CVar.SERVERONLY);
 
 
+        /// <summary>
+        ///     Server will automatically start preset and map votes on restart.
+        /// </summary>
+        public static readonly CVarDef<bool> OnLobbyCreateVotesEnabled =
+            CVarDef.Create("vote.on_lobby_create_votes", false, CVar.SERVERONLY);
+
+
         /*
          * BAN
          */
@@ -1486,15 +1493,6 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<bool> CrewManifestUnsecure =
             CVarDef.Create("crewmanifest.unsecure", true, CVar.REPLICATED);
-
-        /// <summary>
-        ///     Dictates the order the crew manifest will appear in, in terms of its sections.
-        ///     Sections not in this list will appear at the end of the list, in no
-        ///     specific order.
-        /// </summary>
-        public static readonly CVarDef<string> CrewManifestOrdering =
-            CVarDef.Create("crewmanifest.ordering", "Command,Security,Science,Medical,Engineering,Cargo,Civilian,Unknown",
-                CVar.REPLICATED);
 
         /*
          * Biomass

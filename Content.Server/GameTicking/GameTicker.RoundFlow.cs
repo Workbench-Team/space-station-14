@@ -475,6 +475,7 @@ namespace Content.Server.GameTicking
                 UpdateInfoText();
 
                 ReqWindowAttentionAll();
+                CreateStandardVotes();
             }
         }
 
