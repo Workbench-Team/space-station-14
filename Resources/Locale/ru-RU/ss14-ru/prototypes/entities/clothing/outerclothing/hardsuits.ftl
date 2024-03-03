@@ -79,3 +79,5 @@ ent-ClothingOuterHardsuitCentcom = скафандр Корпорат
 ent-ClothingOuterHardsuitCentcomConsultant = скафандр Корпорат
     .desc = Дорогой и прочный, комфортный скафандр для маневрирования в космосе, специально для зелёных бюрократов.
     .suffix = Консультант Центкома
+ent-ClothingOuterHardsuitShuttlePilot = скафандр пилота шаттла
+    .desc = Специальный скафандр пилота, созданный на основе инженерного скафандра, но более лёгкий.

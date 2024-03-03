@@ -36,3 +36,6 @@ ent-GunSafeSubMachineGunWt550 = сейф WT550
     .suffix = Wt550
 ent-GunSafeLaserCarbine = сейф лазерного карабина
     .desc = { ent-GunSafe.desc }
+ent-LockerShuttlePilotFilled = { ent-LockerShuttlePilot }
+    .suffix = Заполненный
+    .desc = { ent-LockerShuttlePilot.desc }

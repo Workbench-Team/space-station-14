@@ -91,6 +91,7 @@
   - SecurityOfficer
   - Brigmedic
   - Warden
+  - ShuttlePilot
 
 - type: department
   id: Science

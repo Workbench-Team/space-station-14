@@ -918,3 +918,28 @@
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
     energy: 2
+
+#Shuttle Pilot Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitShuttlePilot
+  name: shuttle pilot hardsuit helmet
+  description: Armored hardsuit helmet for security needs.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: Clothing/Head/Hardsuits/pilot.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hardsuits/pilot.rsi
+  - type: PointLight
+    color: "#6088FF"
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9

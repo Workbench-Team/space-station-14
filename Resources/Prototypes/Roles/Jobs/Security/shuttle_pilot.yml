@@ -1,0 +1,44 @@
+- type: job
+  id: ShuttlePilot
+  name: job-name-shuttle-pilot
+  description: job-description-shuttle-pilot
+  playTimeTracker: JobShuttlePilot
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 10800 #5 hrs
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 36000 #10 hrs
+  startingGear: ShuttlePilotGear
+  icon: "JobIconShuttlePilot"
+  supervisors: job-supervisors-hos
+  canBeAntag: false
+  access:
+  - Security
+  - Brig
+  - Maintenance
+  - Service
+  - External
+  - Engineering
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: startingGear
+  id: ShuttlePilotGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSec
+    back: ClothingBackpackSecurityFilled
+    shoes: ClothingShoesBootsCombatFilled
+    gloves: ClothingHandsGlovesCombat
+    eyes: ClothingEyesGlassesSunglasses
+    head: ClothingHeadHatBeretSecurity
+    outerClothing: ClothingOuterCoatBomber
+    id: ShuttlePilotPDA
+    ears: ClothingHeadsetSecurity
+    belt: ClothingBeltSecurityFilled
+    pocket1: WeaponPistolMk58Nonlethal
+  innerClothingSkirt: ClothingUniformJumpskirtSec
+  satchel: ClothingBackpackSatchelSecurityFilled
+  duffelbag: ClothingBackpackDuffelSecurityFilled

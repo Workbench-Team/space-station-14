@@ -79,3 +79,5 @@ ent-ClothingHeadHelmetHardsuitSanta = шлем скафандра Санты
     .desc = Празднично выглядящий шлем скафандра обеспечивает весёлому дарителю подарков защиту в среде с низким давлением.
 ent-ClothingHeadHelmetHardsuitERTBlueShield = шлем скафандра офицера синего щита
     .desc = Специальный защитный шлем, который носят члены отрядов синего щита.
+ent-ClothingHeadHelmetHardsuitShuttlePilot = шлем пилота шаттла
+    .desc = Шлем от скафандра пилота шаттла.

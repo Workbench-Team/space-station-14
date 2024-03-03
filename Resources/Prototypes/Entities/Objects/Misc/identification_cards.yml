@@ -709,6 +709,7 @@
     - JobIconSecurityCadet
     - JobIconZookeeper
     - JobIconVisitor
+    - JobIconShuttlePilot
   - type: ActivatableUI
     key: enum.AgentIDCardUiKey.Key
     inHandsOnly: true
@@ -902,3 +903,16 @@
     layers:
     - state: default
     - state: idseniorofficer
+
+- type: entity
+  parent: IDCardStandard
+  id: ShuttlePilotIDCard
+  name: shuttle pilot ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idpilot
+  - type: PresetIdCard
+    job: ShuttlePilot
+  - type: IdCard

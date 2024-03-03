@@ -73,3 +73,5 @@ ent-LockerMime = шкаф мима
     .desc = { ent-LockerBaseSecure.desc }
 ent-LockerRepresentative = представительский шкаф
     .desc = { ent-LockerBaseSecure.desc }
+ent-LockerShuttlePilot = шкаф пилота шаттла
+    .desc = { ent-LockerBaseSecure.desc }

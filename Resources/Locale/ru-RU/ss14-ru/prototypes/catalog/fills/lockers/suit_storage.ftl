@@ -70,3 +70,6 @@ ent-SuitStoragePirateCap = { ent-SuitStorageBase }
 ent-SuitStorageWizard = { ent-SuitStorageBase }
     .suffix = Волшебник
     .desc = { ent-SuitStorageBase.desc }
+ent-SuitStoragePilot = { ent-SuitStorageBase }
+    .suffix = Пилот шаттла
+    .desc = { ent-SuitStorageBase.desc }

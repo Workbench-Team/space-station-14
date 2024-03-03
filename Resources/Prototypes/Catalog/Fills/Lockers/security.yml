@@ -258,3 +258,21 @@
     contents:
     - id: WeaponLaserCarbine
       amount: 3
+
+- type: entity
+  id: LockerShuttlePilotFilled
+  suffix: Filled
+  parent: LockerShuttlePilot
+  components:
+  - type: StorageFill
+    contents:
+      - id: FlashlightSeclite
+      - id: ClothingUniformJumpsuitSecGrey
+      - id: ClothingBeltSecurityFilled
+      - id: Flash
+      - id: ClothingEyesGlassesSunglasses
+      - id: ClothingHeadsetSecurity
+      - id: ClothingShoesBootsJack
+      - id: HoloprojectorSecurity
+      - id: ClothingEyesHudSecurity
+      - id: WeaponLaserSvalinn

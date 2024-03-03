@@ -33,3 +33,6 @@ ent-GunSafeSubMachineGunWt550 = wt550 safe
     .desc = { ent-GunSafe.desc }
 ent-GunSafeLaserCarbine = laser safe
     .desc = { ent-GunSafe.desc }
+ent-LockerShuttlePilotFilled = { ent-LockerShuttlePilot }
+    .suffix = Filled
+    .desc = { ent-LockerShuttlePilot.desc }

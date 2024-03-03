@@ -395,3 +395,10 @@
   icon:
     sprite: Interface/Misc/job_icons.rsi
     state: Visitor
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconShuttlePilot
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: ShuttlePilot

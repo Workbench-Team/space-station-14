@@ -1254,3 +1254,49 @@
     sprintModifier: 1
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitChronoLegionnaire
+
+#Shuttle Pilot Hardsuit
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitShuttlePilot
+  name: shuttle pilot hardsuit
+  description: A special pilot's hardsuit, based on an engineering spacesuit, but lighter.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Hardsuits/pilot.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Hardsuits/pilot.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.75
+        Piercing: 0.75
+        Heat: 0.50
+        Radiation: 0.25
+        Caustic: 0.50
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitShuttlePilot
+  - type: ContainerContainer
+    containers:
+      weapon_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: ItemSlots
+    slots:
+      weapon_slot:
+        name: Оружейная кобура
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - HeavyWeapon

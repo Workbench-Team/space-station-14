@@ -634,3 +634,15 @@
     layers:
       - state: green
       - state: zookeeper
+
+- type: entity
+  id: SpawnPointShuttlePilot
+  parent: SpawnPointJobBase
+  name: shuttlepilot
+  components:
+  - type: SpawnPoint
+    job_id: ShuttlePilot
+  - type: Sprite
+    layers:
+      - state: green
+      - state: shuttle_pilot

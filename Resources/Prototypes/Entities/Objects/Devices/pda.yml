@@ -1132,3 +1132,17 @@
       whitelist:
         components:
           - Cartridge
+
+- type: entity
+  parent: BasePDA
+  id: ShuttlePilotPDA
+  name: Pilot PDA
+  description: Red to hide the stains of assistant blood.
+  components:
+  - type: Pda
+    id: ShuttlePilotIDCard
+    state: pda-security
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+  - type: Icon
+    state: pda-security

@@ -378,7 +378,7 @@
     stateDoorOpen: armory_open
     stateDoorClosed: brigmedic_door
   - type: AccessReader
-    access: [["Medical"]]
+    access: [["Security"]]
 
 # Security Officer
 - type: entity
@@ -506,3 +506,17 @@
     stateBaseClosed: hop
     stateDoorOpen: hop_open
     stateDoorClosed: representative_door
+
+# Shuttle Oficer
+- type: entity
+  id: LockerShuttlePilot
+  parent: LockerBase
+  name: shuttle pilots's locker
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: sec
+    stateDoorOpen: sec_open
+    stateDoorClosed: sec_door
+  - type: AccessReader
+    access: [["Security"]]
