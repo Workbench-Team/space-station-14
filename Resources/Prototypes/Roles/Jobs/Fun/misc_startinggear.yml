@@ -150,6 +150,7 @@
     mask: ClothingMaskGasSyndicate
     eyes: ClothingEyesHudSyndicate
     ears: ClothingHeadsetAltSyndicate
+    neck: SyndicateWhistle
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitSyndieCommander
     shoes: ClothingShoesBootsCombatFilled
@@ -333,6 +334,7 @@
   id: MobAghostGear
   equipment:
     back: ClothingBackpackSatchelHoldingAdmin
+    id: AdminPDA
 
 #Head Rev Gear
 - type: startingGear

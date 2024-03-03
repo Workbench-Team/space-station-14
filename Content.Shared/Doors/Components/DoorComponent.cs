@@ -98,12 +98,6 @@ public sealed partial class DoorComponent : Component
     public SoundSpecifier? DenySound;
 
     /// <summary>
-    /// Sound to play when a disarmed (hands comp with 0 hands) entity opens the door. What?
-    /// </summary>
-    [DataField("tryOpenDoorSound")]
-    public SoundSpecifier TryOpenDoorSound = new SoundCollectionSpecifier("MetalSlam");
-
-    /// <summary>
     /// Sound to play when door has been emagged or possibly electrically tampered
     /// </summary>
     [DataField("sparkSound")]
@@ -125,14 +119,14 @@ public sealed partial class DoorComponent : Component
     /// If false, this door is incapable of crushing entities. This just determines whether it will apply damage and
     /// stun, not whether it can close despite entities being in the way.
     /// </summary>
-    [DataField]
+    [DataField, AutoNetworkedField]
     public bool CanCrush = true;
 
     /// <summary>
     /// Whether to check for colliding entities before closing. This may be overridden by other system by subscribing to
     /// <see cref="BeforeDoorClosedEvent"/>. For example, hacked airlocks will set this to false.
     /// </summary>
-    [DataField]
+    [DataField, AutoNetworkedField]
     public bool PerformCollisionCheck = true;
 
     /// <summary>
@@ -191,7 +185,7 @@ public sealed partial class DoorComponent : Component
     /// The sprite state used for the door when it's being emagged.
     /// </summary>
     [DataField]
-    public string EmaggingSpriteState = "emagging";
+    public string EmaggingSpriteState = "sparks";
 
     /// <summary>
     /// The sprite state used for the door when it's open.

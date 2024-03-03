@@ -51,26 +51,6 @@
   - ClothingBeltQuiverComposit
 
 - type: technology
-  id: ExplosiveTechnology
-  name: research-technology-explosive-technology
-  icon:
-    sprite: Objects/Devices/payload.rsi
-    state: payload-explosive-armed
-  discipline: Arsenal
-  tier: 1
-  cost: 7500
-  recipeUnlocks:
-  - Signaller  
-  - SignallerAdvanced
-  - SignalTrigger
-  - VoiceTrigger
-  - TimerTrigger
-  - FlashPayload
-  - ExplosivePayload
-  - ChemicalPayload
-  - Igniter
-
-- type: technology
   id: Firearms
   name: research-technology-firearms
   icon:
@@ -87,8 +67,8 @@
   - WeaponRevolverInspector
 
 - type: technology
-  id: LaserWeapons
-  name: research-technology-laser-weapons
+  id: WeaponizedLaserManipulation
+  name: research-technology-weaponized-laser-manipulation
   icon:
     sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi
     state: icon
@@ -139,6 +119,22 @@
   - MagazineBoxRifleUranium
 
 - type: technology
+  id: AdvancedRiotControl
+  name: research-technology-advanced-riot-control
+  icon:
+    sprite: Objects/Weapons/Melee/truncheon.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 1
+  cost: 8000
+  recipeUnlocks:
+  - ClothingEyesGlassesSecurity
+  - Truncheon
+  - TelescopicShield
+  - HoloprojectorSecurity
+  - WeaponDisablerSMG
+
+- type: technology
   id: ArmorProduce
   name: research-technology-armor-produce
   icon:
@@ -161,8 +157,26 @@
 # Tier 2
 
 - type: technology
-  id: AdvancedLaserWeapons
-  name: research-technology-advanced-laser-weapons
+  id: ExplosiveTechnology
+  name: research-technology-explosive-technology
+  icon:
+    sprite: Objects/Devices/payload.rsi
+    state: payload-explosive-armed
+  discipline: Arsenal
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - SignallerAdvanced
+  - SignalTrigger
+  - VoiceTrigger
+  - TimerTrigger
+  - FlashPayload
+  - ExplosivePayload
+  - ChemicalPayload
+
+- type: technology
+  id: ConcentratedLaserWeaponry
+  name: research-technology-concentrated-laser-weaponry
   icon:
     sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
     state: icon
@@ -247,22 +261,6 @@
   - BoxBeanbag
   - BoxShellTranquilizer
   - MagazineBoxUniversalVPS
-
-- type: technology
-  id: AdvancedRiotControl
-  name: research-technology-advanced-riot-control
-  icon:
-    sprite: Objects/Weapons/Melee/truncheon.rsi
-    state: icon
-  discipline: Arsenal
-  tier: 2
-  cost: 8000
-  recipeUnlocks:
-  - ClothingEyesGlassesSecurity
-  - Truncheon
-  - TelescopicShield
-  - HoloprojectorSecurity
-  - WeaponDisablerSMG
 
 - type: technology
   id: durandbmp

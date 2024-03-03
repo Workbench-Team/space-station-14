@@ -582,6 +582,14 @@
 
 - type: entity
   parent: AirlockGlass
+  id: AirlockTheatreGlassLocked
+  suffix: Theatre, Locked
+  components:
+  - type: AccessReader
+    access: [["Theatre"]]
+
+- type: entity
+  parent: AirlockGlass
   id: AirlockBarGlassLocked
   suffix: Bar, Locked
   components:
@@ -681,6 +689,14 @@
 
 - type: entity
   parent: AirlockGlass
+  id: AirlockJanitorGlassLocked
+  suffix: Janitor, Locked
+  components:
+  - type: AccessReader
+    access: [["Janitor"]]
+
+- type: entity
+  parent: AirlockGlass
   id: AirlockHydroGlassLocked
   suffix: Hydroponics, Locked
   components:
@@ -761,16 +777,22 @@
   id: AirlockMiningGlassLocked
   suffix: Mining(Salvage), Locked
   components:
-  - type: AccessReader
-    access: [["Salvage"]]
-    
+  - type: AccessReaderBoard
+#    access: [["Salvage"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSalvage ]
+
 - type: entity
   parent: AirlockChemistryGlass
   id: AirlockChemistryGlassLocked
   suffix: Chemistry, Locked
   components:
-  - type: AccessReader
-    access: [["Chemistry"]]
+  - type: AccessReaderBoard
+#    access: [["Chemistry"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChemistry ]
 
 - type: entity
   parent: AirlockMedicalGlass
@@ -1532,3 +1554,13 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsArmory ]
+
+#Airtight hatch
+
+- type: entity
+  parent: AirlockHatch
+  id: AirlockHatchSyndicate
+  suffix: Syndicate, Locked
+  components:
+  - type: AccessReader
+    access: [["SyndicateAgent"]]
