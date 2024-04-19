@@ -24,6 +24,7 @@ hud-chatbox-channel-OOC = OOC
 hud-chatbox-channel-Radio = Рация
 hud-chatbox-channel-Server = Сервер
 hud-chatbox-channel-Visual = Визуальный
+hud-chatbox-channel-Notifications = Уведомления
 hud-chatbox-channel-Unspecified = Неопределенный
 hud-chatbox-select-channel-Damage = Повреждения
 hud-chatbox-select-channel-Visual = Действия

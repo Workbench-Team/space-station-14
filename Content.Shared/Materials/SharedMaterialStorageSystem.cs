@@ -30,7 +30,6 @@ public abstract class SharedMaterialStorageSystem : EntitySystem
 
         SubscribeLocalEvent<MaterialStorageComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<MaterialStorageComponent, InteractUsingEvent>(OnInteractUsing);
-        SubscribeLocalEvent<InsertingMaterialStorageComponent, EntityUnpausedEvent>(OnUnpaused);
     }
 
     public override void Update(float frameTime)
@@ -50,11 +49,6 @@ public abstract class SharedMaterialStorageSystem : EntitySystem
     private void OnMapInit(EntityUid uid, MaterialStorageComponent component, MapInitEvent args)
     {
         _appearance.SetData(uid, MaterialStorageVisuals.Inserting, false);
-    }
-
-    private void OnUnpaused(EntityUid uid, InsertingMaterialStorageComponent component, ref EntityUnpausedEvent args)
-    {
-        component.EndTime += args.PausedTime;
     }
 
     /// <summary>
@@ -319,5 +313,17 @@ public abstract class SharedMaterialStorageSystem : EntitySystem
             return DefaultSheetVolume;
 
         return composition.MaterialComposition.FirstOrDefault(kvp => kvp.Key == material.ID).Value;
+    }
+
+    public bool TryChangeStorageLimit(
+        EntityUid uid,
+        int value,
+        MaterialStorageComponent? storage = null)
+    {
+        if (!Resolve(uid, ref storage) || value < 0)
+            return false;
+
+        storage.StorageLimit = value;
+        return true;
     }
 }

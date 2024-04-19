@@ -158,6 +158,11 @@
     solution: beaker
   - type: StaticPrice
     price: 10
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: beaker
+    inHandsMaxFillLevels: 3
+    inHandsFillBaseName: -fill-
 
 - type: entity
   name: cryoxadone beaker
@@ -200,6 +205,8 @@
   - type: SolutionContainerVisuals
     maxFillLevels: 6
     fillBaseName: beakerlarge
+    inHandsMaxFillLevels: 4
+    inHandsFillBaseName: -fill-
   - type: StaticPrice
     price: 20
   
@@ -359,6 +366,8 @@
   - type: SolutionContainerVisuals
     maxFillLevels: 1
     fillBaseName: dropper
+    inHandsMaxFillLevels: 1
+    inHandsFillBaseName: -fill-
   - type: StaticPrice
     price: 40
 
@@ -403,7 +412,6 @@
   - type: Item
     size: Tiny
     sprite: Objects/Specific/Chemistry/syringe.rsi
-    heldPrefix: 0
   - type: SolutionContainerManager
     solutions:
       injector:
@@ -420,6 +428,8 @@
   - type: SolutionContainerVisuals
     maxFillLevels: 2
     fillBaseName: syringe
+    inHandsMaxFillLevels: 3
+    inHandsFillBaseName: -fill-
   - type: Tag
     tags:
     - Syringe
@@ -435,6 +445,13 @@
     tags:
     - Syringe
     - Trash
+
+- type: entity
+  parent: BaseSyringe
+  id: PrefilledSyringe
+  components:
+  - type: Injector
+    toggleState: Inject
 
 - type: entity
   id: SyringeBluespace
@@ -526,7 +543,6 @@
         maxVol: 50
   - type: SolutionSpiker
     sourceSolution: food
-  - type: DeleteOnTrigger
   - type: Extractable
     grindableSolutionName: food
   - type: StaticPrice
@@ -541,7 +557,6 @@
       behaviors:
       - !type:SpillBehavior
         solution: food
-        transferForensics: true
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Tag

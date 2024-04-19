@@ -1,4 +1,3 @@
-using Content.Shared.Interaction.Events;
 using Content.Shared.Examine;
 using Content.Server.DoAfter;
 using Content.Server.Popups;
@@ -6,8 +5,9 @@ using Content.Shared.Destructible;
 using Content.Shared.Coordinates.Helpers;
 using Content.Server.Power.Components;
 using Content.Server.PowerCell;
-using Content.Shared.PowerCell.Components;
 using Content.Shared.Interaction;
+using Content.Shared.Storage;
+using Content.Shared.PowerCell.Components;
 using Content.Shared.Interaction.Events;
 using Robust.Shared.Timing;
 using Content.Shared.Verbs;
@@ -23,11 +23,14 @@ namespace Content.Server.Holosign
         [Dependency] private readonly DoAfterSystem _doAfterSystem = default!;
         [Dependency] private readonly PopupSystem _popupSystem = default!;
         [Dependency] private readonly IEntityManager _entManager = default!;
+        [Dependency] private readonly PowerCellSystem _powerCell = default!;
+        [Dependency] private readonly SharedTransformSystem _transform = default!;
 
         public override void Initialize()
         {
             base.Initialize();
             SubscribeLocalEvent<HolosignProjectorComponent, AfterInteractEvent>(OnAfterInteract);
+            SubscribeLocalEvent<HolosignProjectorComponent, BeforeRangedInteractEvent>(OnBeforeInteract);
             SubscribeLocalEvent<HolosignProjectorComponent, UseInHandEvent>(OnUse);
             SubscribeLocalEvent<HolosignProjectorComponent, ExaminedEvent>(OnExamine);
             SubscribeLocalEvent<HolosignProjectorComponent, ComponentRemove>(OnRemove);
@@ -68,17 +71,7 @@ namespace Content.Server.Holosign
             if (args.Handled)
                 return;
 
-            if(component.Childs.Count >= component.MaxSigns)
-            {
-                _popupSystem.PopupEntity(Loc.GetString("holoprojector-component-holosigns-limit"), args.User, args.User);
-            }
-            else
-            {
-                var holo = EntityManager.SpawnEntity(component.SignProto, Transform(args.User).Coordinates.SnapToGrid(EntityManager));
-                var holosigncomp = _entManager.AddComponent<HolosignBarrierComponent>(holo);
-                holosigncomp.Holoprojector = uid;
-                component.Childs.Add(holo);
-            }
+            ClearHolosignsVerb(uid, component, args.User);
 
             args.Handled = true;
         }
@@ -155,6 +148,39 @@ namespace Content.Server.Holosign
             if(EntityManager.TryGetComponent(component.Holoprojector, out HolosignProjectorComponent? holoprojector))
             {
                 holoprojector.Childs.Remove(uid);
+            }
+        }
+        private void OnBeforeInteract(EntityUid uid, HolosignProjectorComponent component, BeforeRangedInteractEvent args)
+        {
+
+            if (args.Handled
+                || !args.CanReach // prevent placing out of range
+                || HasComp<StorageComponent>(args.Target) // if it's a storage component like a bag, we ignore usage so it can be stored
+                || HasComp<HolosignBarrierComponent>(args.Target)
+               )
+                return;
+
+            if(component.Childs.Count >= component.MaxSigns)
+            {
+                _popupSystem.PopupEntity(Loc.GetString("holoprojector-component-holosigns-limit"), args.User, args.User);
+            }
+            else
+            {
+                // places the holographic sign at the click location, snapped to grid.
+                // overlapping of the same holo on one tile remains allowed to allow holofan refreshes
+                var holoUid =
+                    EntityManager.SpawnEntity(component.SignProto, args.ClickLocation.SnapToGrid(EntityManager));
+                var xform = Transform(holoUid);
+                if (!xform.Anchored)
+                {
+                    _transform.AnchorEntity(holoUid, xform); // anchor to prevent any tempering with (don't know what could even interact with it)
+                }
+
+                var holoComp = _entManager.AddComponent<HolosignBarrierComponent>(holoUid);
+                holoComp.Holoprojector = uid;
+                component.Childs.Add(holoUid);
+
+                args.Handled = true;
             }
         }
     }

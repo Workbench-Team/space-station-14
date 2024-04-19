@@ -98,7 +98,7 @@
           layer:
             - MidImpassable
     - type: AtmosExposed
-    - type: SlowContacts
+    - type: SpeedModifierContacts
       walkSpeedModifier: 1
       sprintSpeedModifier: 0.0
     - type: Clickable

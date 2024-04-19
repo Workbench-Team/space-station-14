@@ -106,7 +106,7 @@
 
 - type: entity
   id: LockerCaptainFilled
-  suffix: Filled
+  suffix: Filled, AntiqueLaser
   parent: LockerCaptain
   components:
   - type: StorageFill
@@ -131,6 +131,31 @@
       - id: JetpackCaptainFilled
       - id: MedalCase
       - id: HandheldIntercomMonitor
+
+- type: entity
+  id: LockerCaptainFilledNoLaser
+  suffix: Filled
+  parent: LockerCaptain
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterArmorCaptainCarapace
+      - id: NukeDisk
+      - id: PinpointerNuclear
+      - id: CaptainIDCard
+      - id: WeaponDisabler
+      - id: CommsComputerCircuitboard
+      - id: ClothingHeadsetAltCommand
+      - id: SpaceCash1000
+      - id: PlushieNuke
+        prob: 0.1
+      - id: CigarGoldCase
+        prob: 0.25
+      - id: ClothingBeltSheathFilled
+      - id: DoorRemoteCommand
+      - id: RubberStampCaptain
+      - id: JetpackCaptainFilled
+      - id: MedalCase
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -170,8 +195,6 @@
       - id: GarmentBagCE
       - id: ClothingOuterHardsuitEngineeringWhite
       - id: ClothingMaskBreath
-      - id: OxygenTankFilled
-      - id: NitrogenTankFilled
       - id: ClothingBeltChiefEngineerFilled
       - id: ClothingShoesBootsMagAdv
       - id: CigarCase
@@ -262,12 +285,13 @@
       - id: ResearchComputerCircuitboard
       - id: ProtolatheMachineCircuitboard
       - id: CircuitImprinterMachineCircuitboard
-      - id: ClothingHeadsetMedicalScience
       - id: ClothingOuterHardsuitRd
       - id: DoorRemoteResearch
       - id: ClothingBeltUtilityFilled
       - id: RubberStampRd
       - id: BoxEncryptionKeyScience
+      - id: ClothingHeadsetAltScience
+      - id: EncryptionKeyBinary
       - id: HandheldRndMonitor
       - id: BriefcaseRDFilled
 
@@ -282,11 +306,12 @@
       - id: ResearchComputerCircuitboard
       - id: ProtolatheMachineCircuitboard
       - id: CircuitImprinterMachineCircuitboard
-      - id: ClothingHeadsetMedicalScience
       - id: DoorRemoteResearch
       - id: ClothingBeltUtilityFilled
       - id: RubberStampRd
       - id: BoxEncryptionKeyScience
+      - id: ClothingHeadsetAltScience
+      - id: EncryptionKeyBinary
       - id: HandheldRndMonitor
       - id: BriefcaseRDFilled
 
@@ -298,13 +323,13 @@
   - type: StorageFill
     contents:
       - id: GarmentBagHoS
-      - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
       - id: ClothingOuterHardsuitSecurityRed
       - id: ClothingMaskGasSwat
       - id: ClothingBeltSecurityFilled
       - id: ClothingHeadsetAltSecurity
       - id: ClothingEyesGlassesSecurity
+      - id: ClothingShoesBootsJack
       - id: CigarGoldCase
         prob: 0.50
       - id: DoorRemoteSecurity
@@ -326,11 +351,11 @@
   - type: StorageFill
     contents:
       - id: GarmentBagHoS
-      - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
       - id: ClothingBeltSecurityFilled
       - id: ClothingHeadsetAltSecurity
       - id: ClothingEyesGlassesSecurity
+      - id: ClothingShoesBootsJack
       - id: CigarGoldCase
         prob: 0.50
       - id: DoorRemoteSecurity

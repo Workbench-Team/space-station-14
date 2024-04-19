@@ -135,8 +135,7 @@ namespace Content.Server.Felinid
             // DoAfter
             _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, performer, woundLicking.Delay, new WoundLickingDoAfterEvent(), performer, target: target)
             {
-                BreakOnTargetMove = true,
-                BreakOnUserMove = true,
+                BreakOnMove = true,
                 BreakOnDamage = true
             });
         }

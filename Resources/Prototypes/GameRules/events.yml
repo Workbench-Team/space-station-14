@@ -69,16 +69,17 @@
     duration: 1
   - type: ClericalErrorRule
 
-- type: entity
-  parent: BaseGameRule
-  id: ClosetSkeleton
-  noSpawn: true
-  components:
-  - type: StationEvent
-    weight: 10
-    duration: 1
-  - type: RandomEntityStorageSpawnRule
-    prototype: MobSkeletonCloset
+# - type: entity
+  # parent: BaseGameRule
+  # id: ClosetSkeleton
+  # noSpawn: true
+  # components:
+  # - type: StationEvent
+    # weight: 10
+    # duration: 1
+    # minimumPlayers: 10
+  # - type: RandomEntityStorageSpawnRule
+    # prototype: MobSkeletonCloset
 
 - type: entity
   parent: BaseGameRule
@@ -216,7 +217,10 @@
   noSpawn: true
   components:
   - type: StationEvent
-    startAnnouncement: station-event-mouse-migration-announcement
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 30
     minimumPlayers: 35
     weight: 5
@@ -239,6 +243,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     weight: 5
     duration: 50
   - type: VentCrittersRule
@@ -342,7 +350,10 @@
   noSpawn: true
   components:
   - type: StationEvent
-    id: VentCritters
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 15
     minimumPlayers: 15
     weight: 5
@@ -362,6 +373,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -381,6 +396,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -396,6 +415,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
     weight: 1
@@ -412,7 +435,8 @@
   components:
   - type: StationEvent
     earliestStart: 50
-    weight: 5
+    minimumPlayers: 15
+    weight: 3
     duration: 1
   - type: ZombieRule
     minStartDelay: 0 #let them know immediately
@@ -429,7 +453,7 @@
   - type: StationEvent
     earliestStart: 45
     weight: 5
-    minimumPlayers: 10
+    minimumPlayers: 20
     reoccurrenceDelay: 30
     duration: 1
   - type: LoneOpsSpawnRule
@@ -464,24 +488,49 @@
     earliestStart: 45
     minimumPlayers: 20
   - type: ImmovableRodRule
+    rodPrototypes:
+    - id: ImmovableRodKeepTilesStill
+      prob: 0.95
+      orGroup: rodProto
+    - id: ImmovableRodMop
+      prob: 0.0072
+      orGroup: rodProto
+    - id: ImmovableRodShark
+      prob: 0.0072
+      orGroup: rodProto
+    - id: ImmovableRodClown
+      prob: 0.0072
+      orGroup: rodProto
+    - id: ImmovableRodBanana
+      prob: 0.0072
+      orGroup: rodProto
+    - id: ImmovableRodHammer
+      prob: 0.0072
+      orGroup: rodProto
+    - id: ImmovableRodThrongler
+      prob: 0.0072
+      orGroup: rodProto
+    - id: ImmovableRodGibstick
+      prob: 0.0072
+      orGroup: rodProto
 
-- type: entity
-  parent: BaseGameRule
-  id: AnomalyMimicriaSpawn
-  noSpawn: true
-  components:
-  - type: StationEvent
-    startAnnouncement: station-event-mimic-anomaly-announcement
-    startAudio:
-      path: /Audio/Announcements/anomalyattention.ogg
-      params:
-        volume: 2
-    weight: 4
-    duration: 1
-    earliestStart: 20
-    minimumPlayers: 5
-  - type: RandomSpawnRule
-    prototype: AnomalyMimicria
+# - type: entity
+  # parent: BaseGameRule
+  # id: AnomalyMimicriaSpawn
+  # noSpawn: true
+  # components:
+  # - type: StationEvent
+    # startAnnouncement: station-event-mimic-anomaly-announcement
+    # startAudio:
+      # path: /Audio/Announcements/anomalyattention.ogg
+      # params:
+        # volume: 2
+    # weight: 4
+    # duration: 1
+    # earliestStart: 30
+    # minimumPlayers: 20
+  # - type: RandomSpawnRule
+    # prototype: AnomalyMimicria
 
 - type: entity
   noSpawn: true
@@ -489,9 +538,8 @@
   id: IonStorm
   components:
   - type: StationEvent
-    weight: 5
-    earliestStart: 20
-    reoccurrenceDelay: 60
+    weight: 10
+    reoccurrenceDelay: 20
     duration: 1
   - type: IonStormRule
 

@@ -1,12 +1,12 @@
 - type: entity
   parent: BaseCartridge
-  id: Syringecartridge
+  id: SyringeCartridge
   name: Syringe cartridge
   components:
   - type: Tag
     tags:
     - Cartridge
-    - Syringecartridge
+    - SyringeCartridge
   - type: CartridgeAmmo
     proto: SyringeGunProject
     deleteOnSpawn: true
@@ -19,7 +19,7 @@
   - type: SolutionContainerManager
     solutions:
       ammo:
-        maxVol: 15
+        maxVol: 7.5
   - type: FitsInDispenser
     solution: ammo
   - type: RefillableSolution

@@ -1,2 +1,11 @@
-shuttle-timer-eta = РВП
-shuttle-timer-etd = РВО
+shuttle-timer-eta = ПРИБ
+shuttle-timer-etd = ОТБ
+shuttle-timer-shuttle-time = ВремяШаттла
+shuttle-timer-source-time = ВремяИсточника
+shuttle-timer-dest-time = ВремяПрибытия
+shuttle-timer-shuttle-map = КартаШаттла
+shuttle-timer-source-map = КартаИсточника
+shuttle-timer-dest-map = КартаПрибытия
+shuttle-timer-docked = Пристыкован
+shuttle-timer-bye = ПОКА!
+shuttle-timer-kill = УБИТЬ

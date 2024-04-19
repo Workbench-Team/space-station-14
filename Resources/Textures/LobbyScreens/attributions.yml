@@ -1,114 +1,135 @@
-- files: ["supermatter.png", "robotics.png"]
+- files: ["supermatter.webp", "robotics.webp"]
   license: "CC-BY-NC-SA-3.0"
   copyright: "Veritius#2351 (257233913951289344) on discord / @Veritius on GitHub"
   source: "https://github.com/Veritius"
 
-- files: ["warden.png", "pharmacy.png"]
+- files: ["warden.webp", "pharmacy.webp"]
   license: "CC-BY-NC-SA-3.0"
   copyright: "Solbusaur#4343 (220208697429852160) on discord"
   source: "https://github.com/space-wizards/space-station-14"
 
-- files: ["ssxiv.png"]
+- files: ["ssxiv.webp"]
   license: "CC-BY-NC-SA-3.0"
   copyright: "Abyssal#4842 on discord / @aby_doodles on Twitter"
   source: "https://twitter.com/aby_doodles"
 
-- files: ["into-space.png"]
-  license: "CC-BY-SA-3.0"
-  copyright: "Мефедрон#1144 (184388744558673920) on discord"
-  source: "https://github.com/space-syndicate/space-station-14"
-
-- files: ["space-mudaki.png"]
-  license: "CC-BY-SA-3.0"
-  copyright: "Ivan_Gochin#2016 (865932328793800724) on discord"
-  source: "https://github.com/space-syndicate/space-station-14"
-
-- files: ["singulord.png"]
-  license: "CC-BY-SA-3.0"
-  copyright: "Ast#5705 (580467222795780152) on discord"
-  source: "https://github.com/space-syndicate/space-station-14"
-
-- files: ["lofi.png"]
-  license: "CC-BY-SA-3.0"
-  copyright: "Buryatus#8143 (353797088007684097) on discord"
-  source: "https://github.com/space-syndicate/space-station-14"
-
-- files: ["russellmart.png"]
-  license: "CC-BY-SA-3.0"
-  copyright: "Russell#3212 (269179522744713220) on discord"
-  source: "https://github.com/space-syndicate/space-station-14"
-
-- files: ["nukies-here.png"]
-  license: "CC-BY-SA-3.0"
-  copyright: "bib#5784 (807870054598967296) on discord"
-  source: "https://github.com/space-syndicate/space-station-14"
-
-- files: ["detective.png"]
-  license: "CC-BY-SA-3.0"
-  copyright: "Kukurudznik#0103 (513319174794248192) on discord"
-  source: "https://github.com/space-syndicate/space-station-14"
-
-- files: ["maintenance-clown.png"]
-  license: "CC-BY-SA-3.0"
-  copyright: "Nijn#5581 (436971507923681290) on discord"
-  source: "https://github.com/space-syndicate/space-station-14"
-
-- files: ["greytide.png"]
-  license: "CC-BY-SA-3.0"
-  copyright: "Giliof#5213 (412634509901824005) on discord"
-  source: "https://github.com/space-syndicate/space-station-14"
-
-- files: ["dead-in-space.png"]
-  license: "CC-BY-SA-3.0"
-  copyright: "coffee with milk#3144 (416225940172046347) on discord"
-  source: "https://github.com/space-syndicate/space-station-14"
-
-- files: ["traitor.png"]
-  license: "CC-BY-SA-3.0"
-  copyright: "НезьныйКусь#2300 (346899091328073728) on discord"
-  source: "https://github.com/space-syndicate/space-station-14"
-
-- files: ["nukie-dudes.png"]
-  license: "CC-BY-SA-3.0"
-  copyright: "ROBUSTyanka#3178 (1012354394181861406) on discord"
-  source: "https://github.com/space-syndicate/space-station-14"
-
-- files: ["lost-and-powerless.png"]
-  license: "CC-BY-NC-SA-3.0"
-  copyright: "~DreamlyJack~#2438 on discord"
-  source: "https://discord.gg/vtRtT4PD"
-
-- files: ["men-at-work.png"]
-  license: "CC-BY-NC-SA-3.0"
-  copyright: "~DreamlyJack~#2438 on discord"
-  source: "https://discord.gg/vtRtT4PD"
-
-- files: ["deathnettle.png"]
-  license: "CC-BY-NC-SA-3.0"
-  copyright: "werkas(684260199015514125) on discord"
-  source: "https://discord.com/channels/919301044784226385/993679919550844938/1166054283981111296"
-
-- files: ["fleshanom.png"]
-  license: "CC-BY-NC-SA-3.0"
-  copyright: "alisw_a(827540795249655808) on discord"
-  source: "https://discord.com/channels/919301044784226385/993679919550844938/1163583606095093802"
-
-- files: ["clownspider.png"]
-  license: "CC-BY-NC-SA-3.0"
-  copyright: "ko4erga(266899933632659456) on discord"
-  source: "https://github.com/space-syndicate/space-station-14"
-
-- files: ["new-year-nuke.png"]
-  license: "CC-BY-NC-SA-3.0"
-  copyright: "vladimir.s(602202476598394891) on discord"
-  source: "https://github.com/space-syndicate/space-station-14"
-
-- files: ["susstation.png"]
+- files: ["susstation.webp"]
   license: "CC-BY-NC-SA-3.0"
   copyright: "Alekshhh github"
   source: "https://github.com/space-wizards/space-station-14"
 
-- files: ["skellyvstherev.png"]
+- files: ["skellyvstherev.webp"]
   license: "CC-BY-SA-4.0"
   copyright: "Hannah 'FairlySadPanda' Dawson 2024"
   source: "https://github.com/FairlySadPanda"
+
+- files: ["doomed.webp"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "brainfood1183 github"
+  source: "https://github.com/space-wizards/space-station-14"
+
+- files: ["blueprint.webp"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "data_redacted on discord"
+  source: "https://github.com/space-wizards/space-station-14"
+
+- files: ["behonker.webp"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "InCrah on twitter / @in_crah"
+  source: "https://twitter.com/in_crah"
+
+- files: ["terminalstation.webp"]
+  license: "CC-BY-SA-3.0"
+  copyright: "aserovich on discord"
+  source: "https://github.com/space-wizards/space-station-14"
+
+## Starshinne
+- files: ["into-space.webp"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Мефедрон#1144 (184388744558673920) on discord"
+  source: "https://github.com/space-syndicate/space-station-14"
+
+- files: ["space-mudaki.webp"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Ivan_Gochin#2016 (865932328793800724) on discord"
+  source: "https://github.com/space-syndicate/space-station-14"
+
+- files: ["singulord.webp"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Ast#5705 (580467222795780152) on discord"
+  source: "https://github.com/space-syndicate/space-station-14"
+
+- files: ["lofi.webp"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Buryatus#8143 (353797088007684097) on discord"
+  source: "https://github.com/space-syndicate/space-station-14"
+
+- files: ["russellmart.webp"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Russell#3212 (269179522744713220) on discord"
+  source: "https://github.com/space-syndicate/space-station-14"
+
+- files: ["nukies-here.webp"]
+  license: "CC-BY-SA-3.0"
+  copyright: "bib#5784 (807870054598967296) on discord"
+  source: "https://github.com/space-syndicate/space-station-14"
+
+- files: ["detective.webp"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Kukurudznik#0103 (513319174794248192) on discord"
+  source: "https://github.com/space-syndicate/space-station-14"
+
+- files: ["maintenance-clown.webp"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Nijn#5581 (436971507923681290) on discord"
+  source: "https://github.com/space-syndicate/space-station-14"
+
+- files: ["greytide.webp"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Giliof#5213 (412634509901824005) on discord"
+  source: "https://github.com/space-syndicate/space-station-14"
+
+- files: ["dead-in-space.webp"]
+  license: "CC-BY-SA-3.0"
+  copyright: "coffee with milk#3144 (416225940172046347) on discord"
+  source: "https://github.com/space-syndicate/space-station-14"
+
+- files: ["traitor.webp"]
+  license: "CC-BY-SA-3.0"
+  copyright: "НезьныйКусь#2300 (346899091328073728) on discord"
+  source: "https://github.com/space-syndicate/space-station-14"
+
+- files: ["nukie-dudes.webp"]
+  license: "CC-BY-SA-3.0"
+  copyright: "ROBUSTyanka#3178 (1012354394181861406) on discord"
+  source: "https://github.com/space-syndicate/space-station-14"
+
+- files: ["lost-and-powerless.webp"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "~DreamlyJack~#2438 on discord"
+  source: "https://discord.gg/vtRtT4PD"
+
+- files: ["men-at-work.webp"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "~DreamlyJack~#2438 on discord"
+  source: "https://discord.gg/vtRtT4PD"
+
+- files: ["deathnettle.webp"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "werkas(684260199015514125) on discord"
+  source: "https://discord.com/channels/919301044784226385/993679919550844938/1166054283981111296"
+
+- files: ["fleshanom.webp"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "alisw_a(827540795249655808) on discord"
+  source: "https://discord.com/channels/919301044784226385/993679919550844938/1163583606095093802"
+
+- files: ["clownspider.webp"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "ko4erga(266899933632659456) on discord"
+  source: "https://github.com/space-syndicate/space-station-14"
+
+- files: ["new-year-nuke.webp"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "vladimir.s(602202476598394891) on discord"
+  source: "https://github.com/space-syndicate/space-station-14"

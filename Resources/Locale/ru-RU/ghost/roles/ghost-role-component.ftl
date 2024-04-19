@@ -1,6 +1,7 @@
 # also used in MakeGhostRuleWindow and MakeGhostRoleCommand
 ghost-role-component-default-rules =
-    Вы не помните ничего из своей предыдущей жизни, если администратор не сказал Вам обратное.
+    Применяются все обычные правила, если только администратор не скажет вам об обратном.
+    Вы не помните ничего из своей прошлой жизни и не помните ничего из того, чему научились, будучи призраком.
     Вам разрешается помнить знания об игре в целом, например, как готовить, как использовать предметы и т.д.
     Вам [color=red]НЕ[/color] разрешается помнить, имя, внешность и т.д. вашего предыдущего персонажа.
 ghost-role-information-mouse-name = Мышь
@@ -8,15 +9,16 @@ ghost-role-information-mouse-description = Голодная и озорная м
 ghost-role-information-mothroach-name = Таракамоль
 ghost-role-information-mothroach-description = Милая, но озорная таракамоль.
 ghost-role-information-giant-spider-name = Гигантский паук
-ghost-role-information-giant-spider-description = Устройте хаос обитателям станции!
+ghost-role-information-giant-spider-description = Обитатели этой станции выглядят очень аппетитно, а ваша липкая паутина идеально подходит для их поимки!
 ghost-role-information-cognizine-description = Приобрело сознание с помощью магии когнизина.
 ghost-role-information-hamster-name = Хомяк
 ghost-role-information-hamster-description = Сварливый маленький комочек шерсти.
 ghost-role-information-hamlet-name = Хомяк Гамлет
 ghost-role-information-hamlet-description = Живёт на мостике станции, немного вспыльчив и всегда голодный.
 ghost-role-information-slimes-name = Слайм
-ghost-role-information-slimes-description = Обычный слайм без особых потребностей и интересов. Он просто живет.
-ghost-role-information-angry-slimes-description = Все вокруг раздражает Ваши инстинкты, уничтожьте их!
+ghost-role-information-slimes-description = Обычный слайм без особых потребностей и интересов. Вы дружелюбны к окружающим.
+ghost-role-information-angry-slimes-name = Слайм
+ghost-role-information-angry-slimes-description = Все вокруг раздражают ваши инстинкты, уничтожьте их!
 ghost-role-information-smile-name = Слайм Смайл
 ghost-role-information-smile-description = Самое милое существо на свете. Слайм Смайл!
 ghost-role-information-punpun-name = Пан Пан
@@ -58,13 +60,13 @@ ghost-role-information-jonkbot-description = Искусственное суще
 ghost-role-information-mimebot-name = Мимбот
 ghost-role-information-mimebot-description = Мимбот, действуйте как мим, но не как грейтайдер.
 ghost-role-information-space-bear-name = Космический медведь
-ghost-role-information-space-bear-description = Вы - медведь! Делайте медвежьи дела.
+ghost-role-information-space-bear-description = У вас заурчало в животе, а эти люди выглядят очень аппетитно... Вот это пир!
 ghost-role-information-supplybot-name = СнабжеБот
 ghost-role-information-supplybot-description = Доставляйте грузы по всей станции.
 ghost-role-information-salvage-bear-name = Космический медведь на обломке
 ghost-role-information-salvage-bear-description = Защитите добычу на обломке!
 ghost-role-information-space-kangaroo-name = Космический кенгуру
-ghost-role-information-space-kangaroo-description = Вы - кенгуру! Делайте кенгурячьи дела.
+ghost-role-information-space-kangaroo-description = Дайте экипажу попробовать свои острые когти на вкус!
 ghost-role-information-salvage-kangaroo-name = Космический кенгуру на обломке
 ghost-role-information-salvage-kangaroo-description = Защитите добычу на обломке!
 ghost-role-information-space-spider-name = Космический паук

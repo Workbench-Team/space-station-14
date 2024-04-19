@@ -111,6 +111,8 @@
     activatedDamage:
       types:
         Blunt: 7
+  - type: ItemToggleSize
+    activatedSize: Normal
   - type: MeleeWeapon
     wideAnimationRotation: -135
     damage:
@@ -130,6 +132,8 @@
   - type: Item
     heldPrefix: off
     size: Small
+    sprite: Objects/Weapons/Melee/telescopic.rsi
+    storedRotation: -45
   - type: Clothing
     sprite: Objects/Weapons/Melee/telescopic.rsi
     quickEquip: false
@@ -161,11 +165,13 @@
     damage:
       types:
         Blunt: 20
+    soundHit:
+      collection: MetalThud
     bluntStaminaDamageFactor: 1.5
   - type: Item
     size: Normal
   - type: Clothing
-    sprite: Objects\Weapons\Melee\truncheon.rsi
+    sprite: Objects/Weapons/Melee/truncheon.rsi
     quickEquip: false
     slots:
     - Belt
@@ -272,7 +278,6 @@
       sound:
         path: /Audio/Weapons/flash.ogg
     - type: FlashOnTrigger
-      repeating: true
       range: 3
     - type: TriggerOnProximity
       enabled: true
@@ -280,6 +285,7 @@
       shape:
         !type:PhysShapeCircle
           radius: 2
+      repeating: true
     - type: Anchorable
     - type: Sprite
       sprite: Objects/Weapons/pflash.rsi

@@ -1,0 +1,94 @@
+# Jumpsuit
+- type: loadout
+  id: ConsultantJumpsuit
+  equipment: ConsultantJumpsuit
+
+- type: startingGear
+  id: ConsultantJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomConsultant
+
+- type: loadout
+  id: ConsultantJumpskirt
+  equipment: ConsultantJumpskirt
+
+- type: startingGear
+  id: ConsultantJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomConsultant
+
+- type: loadout
+  id: ConsultantFormalSuit
+  equipment: ConsultantFormalSuit
+
+- type: startingGear
+  id: ConsultantFormalSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomConsultantFormal
+
+- type: loadout
+  id: ConsultantFormalSkirt
+  equipment: ConsultantFormalSkirt
+
+- type: startingGear
+  id: ConsultantFormalSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomConsultantFormal
+
+# Head
+- type: loadout
+  id: ConsultantHead
+  equipment: ConsultantHead
+
+- type: startingGear
+  id: ConsultantHead
+  equipment:
+    head: ClothingHeadHatCentcomConsultantCap
+
+# Neck
+- type: loadout
+  id: ConsultantNeck
+  equipment: ConsultantNeck
+
+- type: startingGear
+  id: ConsultantNeck
+  equipment:
+    neck: ClothingNeckScarfStripedCentcom
+
+# Back
+- type: loadout
+  id: ConsultantBackpack
+  equipment: ConsultantBackpack
+
+- type: startingGear
+  id: ConsultantBackpack
+  equipment:
+    back: ClothingBackpackCentcomFilled
+
+- type: loadout
+  id: ConsultantSatchel
+  equipment: ConsultantSatchel
+
+- type: startingGear
+  id: ConsultantSatchel
+  equipment:
+    back: ClothingBackpackSatchelCentcomFilled
+
+- type: loadout
+  id: ConsultantDuffel
+  equipment: ConsultantDuffel
+
+- type: startingGear
+  id: ConsultantDuffel
+  equipment:
+    back: ClothingBackpackDuffelCentcomFilled
+
+# Outer clothing
+- type: loadout
+  id: ConsultantOuterClothing
+  equipment: ConsultantOuterClothing
+
+- type: startingGear
+  id: ConsultantOuterClothing
+  equipment:
+    outerClothing: ClothingOuterCoatCentcomConsultant

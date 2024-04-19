@@ -1,0 +1,103 @@
+# Jumpsuit
+- type: loadout
+  id: BlueShieldJumpsuit
+  equipment: BlueShieldJumpsuit
+
+- type: startingGear
+  id: BlueShieldJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBlueShield
+
+- type: loadout
+  id: BlueShieldJumpskirt
+  equipment: BlueShieldJumpskirt
+
+- type: startingGear
+  id: BlueShieldJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtBlueShield
+
+- type: loadout
+  id: BlueShieldTurtleneck
+  equipment: BlueShieldTurtleneck
+
+- type: startingGear
+  id: BlueShieldTurtleneck
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBlueShieldTurtleneck
+
+- type: loadout
+  id: BlueShieldTurtleneckSkirt
+  equipment: BlueShieldTurtleneckSkirt
+
+- type: startingGear
+  id: BlueShieldTurtleneckSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtBlueShieldTurtleneck
+
+# Head
+- type: loadout
+  id: BlueShieldHead
+  equipment: BlueShieldHead
+
+- type: startingGear
+  id: BlueShieldHead
+  equipment:
+    head: ClothingHeadHatBeretBS
+
+# Neck
+- type: loadout
+  id: BlueShieldMantle
+  equipment: BlueShieldMantle
+
+- type: startingGear
+  id: BlueShieldMantle
+  equipment:
+    neck: ClothingNeckMantleBS
+
+# Back
+- type: loadout
+  id: BlueShieldBackpack
+  equipment: BlueShieldBackpack
+
+- type: startingGear
+  id: BlueShieldBackpack
+  equipment:
+    back: ClothingBackpackBlueShieldFilled
+
+- type: loadout
+  id: BlueShieldSatchel
+  equipment: BlueShieldSatchel
+
+- type: startingGear
+  id: BlueShieldSatchel
+  equipment:
+    back: ClothingBackpackSatchelBlueShieldFilled
+
+- type: loadout
+  id: BlueShieldDuffel
+  equipment: BlueShieldDuffel
+
+- type: startingGear
+  id: BlueShieldDuffel
+  equipment:
+    back: ClothingBackpackDuffelBlueShieldFilled
+
+# Outer clothing
+- type: loadout
+  id: BlueShieldOuterClothing
+  equipment: BlueShieldOuterClothing
+
+- type: startingGear
+  id: BlueShieldOuterClothing
+  equipment:
+    outerClothing: ClothingOuterArmorBlueShield
+
+- type: loadout
+  id: BlueShieldWintercoat
+  equipment: BlueShieldWintercoat
+
+- type: startingGear
+  id: BlueShieldWintercoat
+  equipment:
+    outerClothing: ClothingOuterWinterBS

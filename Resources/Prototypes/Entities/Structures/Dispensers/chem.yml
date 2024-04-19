@@ -22,18 +22,15 @@
         !type:DamageTrigger
         damage: 100
       behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
       - !type:ChangeConstructionNodeBehavior
         node: machineFrame
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: Machine
     board: ChemDispenserMachineCircuitboard
-  - type: Wires
-    boardName: wires-board-name-chemdispenser
-    layoutId: ChemDispenser
-  - type: UpgradePowerDraw
-    powerDrawMultiplier: 0.75
-    scaling: Exponential
   - type: GuideHelp
     guides:
     - Chemicals

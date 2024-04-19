@@ -1,4 +1,3 @@
-
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckBronzeheart
@@ -91,6 +90,8 @@
   - type: StealTarget
     stealGroup: ClothingNeckClownmedal
 
+## Starshine
+
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckGoldShieldMedal
@@ -126,7 +127,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckBlueshieldMedal
+  id: ClothingNeckBlueShieldMedal
   name: blueshield medal
   description: A precious medal made of pure platinum, cast in the shape of a shield, awarded by representatives of Nanotrasen to those who have earned the full trust of the Corporation.
   components:
@@ -138,4 +139,4 @@
     tags:
     - HighRiskItem
   - type: StealTarget
-    stealGroup: ClothingNeckBlueshieldMedal
+    stealGroup: ClothingNeckBlueShieldMedal

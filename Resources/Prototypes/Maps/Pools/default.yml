@@ -1,14 +1,11 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - Aspid
-  - Atlas
   - Bagel
   - Box
   - Cluster
   - Core
   - Fland
-  - Gemini
   - Marathon
   - MetaStation
   - Omega
@@ -16,5 +13,6 @@
   - Saltern
   - Packed
   - Reach
+  #- Train <- return after station anchoring PR is finished and merged
   - Driller
   - KiloStation

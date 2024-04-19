@@ -313,7 +313,7 @@
     - 0,0,3,2
   - type: StorageFill
     contents:
-      - id: Syringecartridge
+      - id: SyringeCartridge
         amount: 6
       - id: SyringeGunMagazine
         amount: 2

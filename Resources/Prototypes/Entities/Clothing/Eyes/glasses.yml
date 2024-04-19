@@ -38,7 +38,7 @@
         Blunt: 7
 
 - type: entity
-  parent: ClothingEyesBase
+  parent: [ClothingEyesBase, ShowSecurityIcons]
   id: ClothingEyesGlassesGarSec
   name: security gar glasses
   description: All of my machinations have been devised with your interests in mind.
@@ -47,7 +47,6 @@
     sprite: Clothing/Eyes/Glasses/garsec.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/garsec.rsi
-  - type: ShowSecurityIcons
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
@@ -200,25 +199,40 @@
 
 - type: entity
   parent: ClothingEyesBase
-  id: ClothingEyesGlassesSunglasses
-  name: sun glasses
-  description: A pair of black sunglasses.
+  id: ClothingEyesGlassesCheapSunglasses
+  name: cheap sunglasses
+  description: A pair of black sunglasses. Doesn't block light well, more of an accessory than something useful.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/sunglasses.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/sunglasses.rsi
+  - type: Tag
+    tags:
+    - Clothing
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: IdentityBlocker
+    coverage: EYES
+
+- type: entity
+  parent: ClothingEyesGlassesCheapSunglasses
+  id: ClothingEyesGlassesSunglasses
+  name: sun glasses
+  description: A pair of black sunglasses.
+  components:
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
   - type: Tag
     tags:
     - Clothing
+    - Sunglasses
     - HamsterWearable
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingEyesGlassesSunglasses
+  parent: [ClothingEyesGlassesSunglasses, ShowSecurityIcons]
   id: ClothingEyesGlassesSunglassesBlueShield
   name: sun glasses
   description: Useful both for security and cargonia.
@@ -232,10 +246,9 @@
     - Clothing
     - HamsterWearable
     - WhitelistChameleon
-  - type: ShowSecurityIcons
 
 - type: entity
-  parent: ClothingEyesBase
+  parent: [ClothingEyesBase, ShowSecurityIcons]
   id: ClothingEyesGlassesSecurity
   name: security glasses
   description: Upgraded sunglasses that provide flash immunity and a security HUD.
@@ -244,10 +257,12 @@
     sprite: Clothing/Eyes/Glasses/secglasses.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/secglasses.rsi
-  - type: ShowSecurityIcons
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
+  - type: Construction
+    graph: GlassesSecHUD
+    node: glassesSec
   - type: Tag
     tags:
     - Clothing
@@ -256,6 +271,8 @@
   - type: GuideHelp
     guides:
     - Security
+  - type: IdentityBlocker
+    coverage: EYES
 
 - type: entity
   parent: ClothingEyesBase

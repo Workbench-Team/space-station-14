@@ -93,6 +93,7 @@
   - type: Tag
     tags:
       - DogWearable
+      - WhitelistChameleon
 
 - type: entity
   parent: ClothingOuterBaseToggleable

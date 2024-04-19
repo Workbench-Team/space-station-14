@@ -28,18 +28,11 @@
 - type: startingGear
   id: BrigmedicGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitBrigmedicTurtle
-    outerClothing: ClothingOuterCoatBrigmedicWB
-    back: ClothingBackpackBrigmedicFilled
     shoes: ClothingShoesBootsJack
     gloves: ClothingHandsGlovesLatex
     eyes: ClothingEyesGlassesMed
-    head: ClothingHeadHatBeretBrigmedic
     id: BrigmedicPDA
     ears: ClothingHeadsetBrigmedic
     belt: ClothingBeltMedicalFilled
     pocket1: WeaponPistolMk58Nonlethal
     pocket2: TelescopicBaton
-  innerClothingSkirt: ClothingUniformJumpskirtBrigmedicTurtle
-  satchel: ClothingBackpackSatchelBrigmedicFilled
-  duffelbag: ClothingBackpackDuffelBrigmedicFilled

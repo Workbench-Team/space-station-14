@@ -1,9 +1,3 @@
-ent-PlayerSiliconBase = { "" }
-    .desc = { "" }
-ent-Drone = дрон
-    .desc = { ent-PlayerSiliconBase.desc }
-ent-Onestar = ванстар меха
-    .desc = Вы - экспериментальный меха, созданный неизвестно кем, все, что Вы знаете, это то, что у Вас есть оружие и вы обнаруживаете поблизости движущиеся плотские цели...
 ent-PlayerBorgGeneric = { ent-BorgChassisGeneric }
     .desc = { ent-BorgChassisGeneric.desc }
     .suffix = Батарея, Инструменты

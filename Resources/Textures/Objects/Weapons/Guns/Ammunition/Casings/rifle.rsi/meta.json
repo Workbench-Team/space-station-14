@@ -11,16 +11,10 @@
             "name": "base"
         },
         {
-            "name": "rubber"
-        },
-        {
-            "name": "hv"
-        },
-        {
-            "name": "practice"
-        },
-        {
             "name": "base-spent"
+        },
+        {
+            "name": "tip"
         }
     ]
 }

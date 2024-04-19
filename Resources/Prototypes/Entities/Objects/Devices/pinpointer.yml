@@ -99,8 +99,11 @@
   id: PinpointerAnomaly
   parent: PinpointerBase
   components:
+  - type: Sprite
+    layers:
+    - state: pinpointer-anomaly
   - type: Icon
-    state: pinpointer_anomaly
+    state: pinpointer-anomaly
   - type: Pinpointer
     component: Anomaly
     targetName: Аномальную активность

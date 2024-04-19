@@ -1,13 +1,14 @@
-﻿- type: entity
-  parent: ClothingMaskPullableBase
+- type: entity
+  parent: ClothingMaskBase
   id: ClothingMaskGasChameleon
   name: gas mask
   description: A face-covering mask that can be connected to an air supply.
   suffix: Chameleon
   components:
     - type: Tag
-      tags:
-        - Clothing # ignore "WhitelistChameleon" tag
+      tags: # ignore "WhitelistChameleon" tag
+        - HidesNose
+        - Clothing
     - type: Sprite
       sprite: Clothing/Mask/gas.rsi
     - type: Clothing
@@ -28,4 +29,3 @@
   suffix: Voice Mask, Chameleon
   components:
     - type: VoiceMasker
-      default: ClothingMaskGas

@@ -75,6 +75,8 @@
   - type: Clothing
     sprite: Clothing/Neck/mantles/qmmantle.rsi  
 
+## Starshine
+
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckMantleBS
