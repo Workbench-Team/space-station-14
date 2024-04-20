@@ -43529,13 +43529,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 14.5,-9.5
       parent: 2
-    - type: DeviceList
-      configurators:
-      - invalid
-      devices:
-      - 229
-      - 228
-      - 227
     - type: AtmosDevice
       joinedGrid: 2
   - uid: 17056
@@ -45712,7 +45705,6 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 17053
-      - 17054
       - 17055
       - 17056
   - uid: 228
@@ -45723,7 +45715,6 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 17053
-      - 17054
       - 17055
       - 17056
   - uid: 229
@@ -45734,7 +45725,6 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 17053
-      - 17054
       - 17055
       - 17056
   - uid: 230
