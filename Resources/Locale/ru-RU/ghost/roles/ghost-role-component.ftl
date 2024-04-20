@@ -113,6 +113,8 @@ ghost-role-information-ert-leader-name = ОБР Лидер
 ghost-role-information-ert-leader-description = Возглавьте команду специалистов для решения проблем станции.
 ghost-role-information-ert-janitor-name = ОБР Уборщик
 ghost-role-information-ert-janitor-description = Помогите в решении грязных проблем станции обеспечением её чистоты.
+ghost-role-information-ert-chaplain-name = ОБР Священник
+ghost-role-information-ert-chaplain-description = Окажите содействие в решении моральных и духовных проблем экипажа станции.
 ghost-role-information-ert-engineer-name = ОБР Инженер
 ghost-role-information-ert-engineer-description = Помогите в решении инженерных проблем станции.
 ghost-role-information-ert-security-name = ОБР Офицер Безопасности
@@ -156,3 +158,7 @@ ghost-role-information-syndicate-reinforcement-rules = Действуют обы
 ghost-role-information-syndicate-monkey-reinforcement-name = Агент-обезьяна Синдиката
 ghost-role-information-syndicate-monkey-reinforcement-description = Кому-то нужно подкрепление. Вы, специально обученная обезьяна, поможете им.
 ghost-role-information-syndicate-monkey-reinforcement-rules = Действуют обычные правила антагонистов Синдиката. Работайте с тем, кто вас вызвал, и не причиняйте ему вреда.
+ghost-role-information-artifact-name = Разумный артефакт
+ghost-role-information-artifact-description =
+    Исполняйте свои капризы древних.
+    Насильно активируйте свои ноды во благо или во зло.

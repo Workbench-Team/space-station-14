@@ -49,6 +49,7 @@ flavor-base-holy = свято
 flavor-base-horrible = ужасно
 # lmao
 flavor-base-terrible = ужасающе
+flavor-base-mindful = разумное
 
 # Complex flavors. Put a flavor here when you want something that's more
 # specific.
@@ -191,6 +192,7 @@ flavor-complex-tonic-water = как сердитая вода
 flavor-complex-tequila = как забродившая смерть
 flavor-complex-energy-drink = как аккумуляторная кислота
 flavor-complex-dr-gibb = как халатность
+flavor-complex-ginger-soda = как имбирь
 flavor-complex-grape-soda = как виноградная газировка
 flavor-complex-lemon-lime-soda = как лимонно-лаймовая газировка
 flavor-complex-pwr-game-soda = как игра
@@ -203,6 +205,7 @@ flavor-complex-sake = как сладкий, алкогольный рис
 flavor-complex-rum = как забродивший сахар
 flavor-complex-coffee-liquor = как крепкий, горький кофе
 flavor-complex-whiskey = как патока
+flavor-complex-coconut-rum = как ореховый перебродивший сахар
 flavor-complex-shitty-wine = как виноградная кожура
 flavor-complex-iced-tea = как холодный чай
 flavor-complex-champagne = как свежеиспечённый хлеб
@@ -216,6 +219,11 @@ flavor-complex-ice = как лёд
 flavor-complex-mopwata = как застоявшаяся грязная вода
 flavor-complex-long-island = подозрительно похож на холодный чай
 flavor-complex-three-mile-island = как чай, заваренный в ядерных отходах
+flavor-complex-arnold-palmer = как победа в гольф с первого удара
+flavor-complex-blue-hawaiian = как тропики
+flavor-complex-cosmopolitan = сладко и терпко
+flavor-complex-painkiller = как ананасовый сок с шипучкой
+flavor-complex-pina-colada = как тропическое солнце
 flavor-complex-whiskey-cola = как газированная патока
 flavor-complex-singulo = как бездонная дыра
 flavor-complex-syndie-bomb = как горький виски

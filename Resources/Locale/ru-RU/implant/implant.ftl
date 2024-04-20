@@ -4,6 +4,7 @@ implanter-component-implanting-target = { $user } пытается Вам что
 implanter-component-implant-failed = { $implant } не может быть поставлен { $target }!
 implanter-draw-failed-permanent = { $implant } вросся в { $target } и не может быть удален!
 implanter-draw-failed = Вы попытались удалить имплант, но ничего не нашли.
+implanter-component-implant-already = { $target } уже имеет { $implant }!
 
 ## UI
 
@@ -11,7 +12,7 @@ implanter-draw-text = Извлечь
 implanter-inject-text = Ввести
 implanter-empty-text = Отсутствует
 implanter-contained-implant-text = [color=green]{ $desc }[/color]
-implanter-label = [color=white]Имплант: { $currentEntities }{ $lineBreak }Режим: { $modeString }[/color]
+implanter-label = [color=white]Имплант: { $implantName }{ $lineBreak }Режим: { $modeString }[/color]
 
 ## Implanter Actions
 

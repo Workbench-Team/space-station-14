@@ -9,10 +9,13 @@ lathe-menu-amount = Кол-во:
 lathe-menu-material-display = { $material } ({ $amount })
 lathe-menu-tooltip-display = { $amount } { $material }
 lathe-menu-description-display = [italic]{ $description }[/italic]
-lathe-menu-material-amount =
-    { $amount ->
-        [1] { NATURALFIXED($amount, 2) } { $unit }
-       *[other] { NATURALFIXED($amount, 2) } { $unit }
+lathe-menu-material-amount = { $amount ->
+    [1] { NATURALFIXED($amount, 2) } { $unit }
+    *[other] { NATURALFIXED($amount, 2) } { $unit }
+    }
+lathe-menu-material-amount-missing = { $amount ->
+    [1] { NATURALFIXED($amount, 2) } { $unit } { $material } ([color=red]требуется { NATURALFIXED($missingAmount, 2) } { $unit }[/color])
+    *[other] { NATURALFIXED($amount, 2) } { $unit }  { $material } ([color=red]требуется { NATURALFIXED($missingAmount, 2) } { $unit }[/color])
     }
 lathe-menu-no-materials-message = Материалы не загружены
 lathe-menu-fabricating-message = Печатает...

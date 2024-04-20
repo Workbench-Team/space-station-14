@@ -17,12 +17,14 @@ head-rev-break-mindshield = Щит разума был уничтожен!
 
 roles-antag-rev-name = Революционер
 roles-antag-rev-objective = Ваша задача - защищать и выполнять приказы глав революции, а также уничтожить весь командный состав станции.
+
 rev-break-control = { $name } { $gender ->
         [male] вспомнил, кому он верен
         [female] вспомнила, кому она верна
         [epicene] вспомнили, кому они верны
-       *[neuter] вспомнило, кому оно верно
+        *[neuter] вспомнило, кому оно верно
     } на самом деле!
+
 rev-role-greeting =
     Вы - Революционер.
     Вам поручено захватить станцию и защищать глав революции.
@@ -41,17 +43,17 @@ rev-all-heads-dead = Все главы мертвы, теперь разбери
 rev-won = Главы революции выжили и уничтожили весь командный состав станции.
 rev-headrev-count = { $initialCount ->
         [one] Глава революции был один:
-       *[other] Глав революции было { $initialCount }:
+        *[other] Глав революции было { $initialCount }:
     }
 rev-lost = Члены командного состава станции выжили и уничтожили всех глав революции.
 rev-stalemate = Главы революции и командный состав станции погибли. Это ничья.
 rev-headrev-name-user = [color=#5e9cff]{ $name }[/color] ([color=gray]{ $username }[/color]) завербовал { $count } { $count ->
         [one] члена
-       *[other] членов
+        *[other] членов
     } экипажа
 rev-headrev-name = [color=#5e9cff]{ $name }[/color] завербовал { $count } { $count ->
         [one] члена
-       *[other] членов
+        *[other] членов
     } экипажа
 rev-reverse-stalemate = Главы революции и командный состав станции выжили.
 rev-deconverted-title = Развербовка!
