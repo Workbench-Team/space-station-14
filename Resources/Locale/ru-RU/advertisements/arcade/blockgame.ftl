@@ -1,4 +1,4 @@
-advertisement-block-game-1 = Все права защищены!    
+advertisement-block-game-1 = Все права защищены!
 advertisement-block-game-2 = Что ещё за "Т-поза"?
 advertisement-block-game-3 = Эти блоки сами себя не разнесут!
 advertisement-block-game-4 = Бип-буп! Бууууп!
