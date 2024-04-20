@@ -1,0 +1,70 @@
+- type: gameMap
+  id: Lighthouse
+  mapName: 'Lighthouse'
+  mapPath: /Maps/lighthouse.yml
+  minPlayers: 5
+  stations:
+    LighthouseStation:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Lighthouse Station {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'TG'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency_lox.yml
+        - type: StationJobs
+          overflowJobs:
+            - Passenger
+          availableJobs:
+            #service
+            Captain: [ 1, 1 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            Bartender: [ 1, 1 ]
+            Botanist: [ 2, 2 ]
+            Chef: [ 2, 2 ]
+            Janitor: [ 1, 1 ]
+            Chaplain: [ 1, 1 ]
+            Librarian: [ 1, 1 ]
+            ServiceWorker: [ 2, 2 ]
+            #engineering
+            ChiefEngineer: [ 1, 1 ]
+            AtmosphericTechnician: [ 2, 3 ]
+            StationEngineer: [ 3, 4 ]
+            TechnicalAssistant: [ 3, 3 ]
+            #medical
+            ChiefMedicalOfficer: [ 1, 1 ]
+            Chemist: [ 2, 2 ]
+            MedicalDoctor: [ 3, 4 ]
+            Paramedic: [ 1, 1 ]
+            MedicalIntern: [ 3, 3 ]
+            Psychologist: [ 0, 0 ]
+            #science
+            ResearchDirector: [ 1, 1 ]     
+            Scientist: [ 3, 4 ]
+            ResearchAssistant: [ 3, 3 ] 
+            Borg: [ 1, 1 ]
+            #security
+            HeadOfSecurity: [ 1, 1 ]
+            Warden: [ 1, 1 ]
+            SecurityOfficer: [ 4, 5 ]
+            Detective: [ 1, 1 ]
+            SecurityCadet: [ 4, 5 ]
+            Lawyer: [ 1, 1 ]
+            Brigmedic: [ 1, 1 ]
+            #supply
+            Quartermaster: [ 1, 1 ]
+            SalvageSpecialist: [ 3, 4 ]
+            CargoTechnician: [ 3, 4 ]
+            #civilian
+            Passenger: [ -1, -1 ]
+            Clown: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 1, 1 ]
+            Reporter: [ 1, 2 ]
+            #Centcom      
+            BlueShield: [ 1, 1 ]
+            CentComConsultant: [ 1, 1 ]
+
+            
