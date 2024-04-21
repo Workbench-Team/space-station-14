@@ -376,6 +376,15 @@
     accent-southern-words-4: accent-southern-words-replace-4
     accent-southern-words-5: accent-southern-words-replace-5
     accent-southern-words-6: accent-southern-words-replace-6
+    accent-southern-words-7: accent-southern-words-replace-7
+    accent-southern-words-8: accent-southern-words-replace-8
+    accent-southern-words-9: accent-southern-words-replace-9
+    accent-southern-words-10: accent-southern-words-replace-10
+    accent-southern-words-11: accent-southern-words-replace-11
+    accent-southern-words-12: accent-southern-words-replace-12
+    accent-southern-words-13: accent-southern-words-replace-13
+    accent-southern-words-14: accent-southern-words-replace-14
+    accent-southern-words-15: accent-southern-words-replace-15
 
 # For the chat sanitization system
 - type: accent
