@@ -1,8 +1,8 @@
 ent-FireBomb = fire bomb
     .desc = A weak, improvised incendiary device.
-ent-FireBombEmpty = fire bomb
-    .desc = A weak, improvised incendiary device. This one has no fuel.
+ent-FireBombEmpty = { ent-FireBomb }
+    .desc = { ent-FireBomb.desc }
     .suffix = empty
-ent-FireBombFuel = { ent-FireBombEmpty }
-    .desc = A weak, improvised incendiary device. This one is missing wires.
+ent-FireBombFuel = { ent-FireBomb }
+    .desc = { ent-FireBomb.desc }
     .suffix = fuel
