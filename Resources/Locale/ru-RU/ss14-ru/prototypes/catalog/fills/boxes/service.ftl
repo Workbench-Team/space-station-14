@@ -1,2 +1,2 @@
-ent-BoxCleanerGrenades = коробка стерильнат
-    .desc = Коробка, полная стерильнат.
+ent-BoxCleanerGrenades = коробка чистонат
+    .desc = Коробка, полная чистонат.
