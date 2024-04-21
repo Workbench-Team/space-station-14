@@ -1,5 +1,7 @@
 ent-ClothingShoesChef = поварские ботинки
     .desc = Прочная обувь, которая минимизирует травмы от падающих предметов или ножей.
+ent-ClothingShoesClownBase = { ent-ClothingShoesBaseButcherable }
+    .desc = { ent-ClothingShoesBaseButcherable.desc }
 ent-ClothingShoesClown = клоунские туфли
     .desc = Стандартные клоунские туфли. Чертовски огромные!
 ent-ClothingShoesClownBanana = банановые клоунские туфли
