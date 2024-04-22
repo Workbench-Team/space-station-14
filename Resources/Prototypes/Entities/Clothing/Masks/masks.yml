@@ -14,7 +14,6 @@
   - type: Tag
     tags:
     - Clothing
-    - MonkeyWearable
     - HamsterWearable
     - WhitelistChameleon
     - HidesNose
@@ -180,6 +179,8 @@
     materialComposition:
       Steel: 50
       Plastic: 100
+  - type: StaticPrice
+    price: 12.5 # increases in price after decomposed into raw materials
 
 - type: entity
   parent: ClothingMaskBase
@@ -523,6 +524,16 @@
     tags:
     - Clothing
     - WhitelistChameleon
+
+- type: entity
+  parent: ClothingMaskNeckGaiter
+  id: ClothingMaskNeckGaiterRed
+  name: red neck gaiter
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/neckgaiterred.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/neckgaiterred.rsi
 
 - type: entity
   parent: ClothingMaskClownBase

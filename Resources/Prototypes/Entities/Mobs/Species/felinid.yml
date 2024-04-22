@@ -21,7 +21,7 @@
     speechVerb: Felinid
   - type: MeleeWeapon
     soundHit:
-      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+      collection: AlienClaw
     angle: 30
     animation: WeaponArcClaw
     damage:

@@ -7,7 +7,6 @@
   markingLimits: MobFelinidMarkingLimits
   dollPrototype: MobFelinidDummy
   skinColoration: HumanToned
-
 - type: markingPoints
   id: MobFelinidMarkingLimits
   points:

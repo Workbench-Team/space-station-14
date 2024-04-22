@@ -38,7 +38,7 @@ public abstract partial class SharedDoorSystem : EntitySystem
     [Dependency] private readonly EntityLookupSystem _entityLookup = default!;
     [Dependency] protected readonly SharedAppearanceSystem AppearanceSystem = default!;
     [Dependency] private readonly OccluderSystem _occluder = default!;
-    [Dependency] private readonly AccessReaderBoardSystem _accessReaderBoardSystem = default!;
+    [Dependency] private readonly AccessReaderSystem _accessReaderSystem = default!;
     [Dependency] private readonly PryingSystem _pryingSystem = default!;
     [Dependency] protected readonly SharedPopupSystem Popup = default!;
 
@@ -81,6 +81,7 @@ public abstract partial class SharedDoorSystem : EntitySystem
         SubscribeLocalEvent<DoorComponent, WeldableChangedEvent>(OnWeldChanged);
         SubscribeLocalEvent<DoorComponent, GetPryTimeModifierEvent>(OnPryTimeModifier);
 
+        SubscribeLocalEvent<DoorComponent, OnAttemptEmagEvent>(OnAttemptEmag);
         SubscribeLocalEvent<DoorComponent, GotEmaggedEvent>(OnEmagged);
     }
 
@@ -120,21 +121,32 @@ public abstract partial class SharedDoorSystem : EntitySystem
         _activeDoors.Remove(door);
     }
 
-    private void OnEmagged(EntityUid uid, DoorComponent door, ref GotEmaggedEvent args)
+    private void OnAttemptEmag(EntityUid uid, DoorComponent door, ref OnAttemptEmagEvent args)
     {
         if (!TryComp<AirlockComponent>(uid, out var airlock))
+        {
+            args.Handled = true;
             return;
+        }
 
         if (IsBolted(uid) || !airlock.Powered)
-            return;
-
-        if (door.State == DoorState.Closed)
         {
-            if (!SetState(uid, DoorState.Emagging, door))
-                return;
-            Audio.PlayPredicted(door.SparkSound, uid, args.UserUid, AudioParams.Default.WithVolume(8));
+            args.Handled = true;
+            return;
+        }
+
+        if (door.State != DoorState.Closed)
+        {
             args.Handled = true;
         }
+    }
+
+    private void OnEmagged(EntityUid uid, DoorComponent door, ref GotEmaggedEvent args)
+    {
+        if (!SetState(uid, DoorState.Emagging, door))
+            return;
+        Audio.PlayPredicted(door.SparkSound, uid, args.UserUid, AudioParams.Default.WithVolume(8));
+        args.Handled = true;
     }
 
     #region StateManagement
@@ -595,10 +607,11 @@ public abstract partial class SharedDoorSystem : EntitySystem
     #endregion
 
     #region Access
+
     /// <summary>
     ///     Does the user have the permissions required to open this door?
     /// </summary>
-    public bool HasAccess(EntityUid uid, EntityUid? user = null, DoorComponent? door = null, AccessReaderBoardComponent? access = null, AccessStorageComponent? storage = null)
+    public bool HasAccess(EntityUid uid, EntityUid? user = null, DoorComponent? door = null, AccessReaderComponent? access = null)
     {
         // TODO network AccessComponent for predicting doors
 
@@ -618,17 +631,14 @@ public abstract partial class SharedDoorSystem : EntitySystem
         if (!Resolve(uid, ref access, false))
             return true;
 
-        if (!Resolve(access.BoardContainer.ContainedEntities[0], ref storage, false))
-            return true;
-
-        var isExternal = storage.AccessLists.Any(list => list.Contains("External"));
+        var isExternal = access.AccessLists.Any(list => list.Contains("External"));
 
         return AccessType switch
         {
             // Some game modes modify access rules.
-            AccessTypes.AllowAllIdExternal => !isExternal || _accessReaderBoardSystem.IsAllowed(user.Value, access, storage),
+            AccessTypes.AllowAllIdExternal => !isExternal || _accessReaderSystem.IsAllowed(user.Value, uid, access),
             AccessTypes.AllowAllNoExternal => !isExternal,
-            _ => _accessReaderBoardSystem.IsAllowed(user.Value, access, storage)
+            _ => _accessReaderSystem.IsAllowed(user.Value, uid, access)
         };
     }
 

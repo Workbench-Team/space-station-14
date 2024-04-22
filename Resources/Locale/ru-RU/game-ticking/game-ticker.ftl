@@ -43,3 +43,5 @@ latejoin-arrival-announcement =
 latejoin-arrival-sender = Станции
 latejoin-arrivals-direction = Шаттл, который доставит вас на станцию скоро прибудет.
 latejoin-arrivals-direction-time = Шаттл, который доставит вас на станцию прибудет через { $time }.
+preset-not-enough-ready-players = Не удалось запустить пресет { $presetName }. Требуется { $minimumPlayers } игроков, но готовы только { $readyPlayersCount }.
+preset-no-one-ready = Не удалось запустить режим { $presetName }. Нет готовых игроков.

@@ -18,7 +18,9 @@
   - type: ExaminableSolution
     solution: hypospray
   - type: Hypospray
-    onlyMobs: false
+    onlyAffectsMobs: false
+  - type: UseDelay
+    delay: 0.5
   - type: StaticPrice
     price: 750
   - type: Tag
@@ -47,7 +49,9 @@
   - type: ExaminableSolution
     solution: hypospray
   - type: Hypospray
-    onlyMobs: false
+    onlyAffectsMobs: false
+  - type: UseDelay
+    delay: 0.25
 
 - type: entity
   name: borghypo
@@ -69,6 +73,7 @@
   - type: ExaminableSolution
     solution: hypospray
   - type: Hypospray
+    onlyAffectsMobs: false
   - type: UseDelay
     delay: 0.5
 
@@ -110,6 +115,8 @@
   - type: Hypospray
     solutionName: pen
     transferAmount: 15
+    onlyAffectsMobs: false
+    injectOnly: true
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 1
@@ -201,6 +208,8 @@
   - type: Hypospray
     solutionName: pen
     transferAmount: 20
+    onlyAffectsMobs: false
+    injectOnly: true
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -224,13 +233,15 @@
     layers:
     - state: dermpen
       map: ["enum.SolutionContainerLayers.Fill"]
-  - type: Hypospray
-    solutionName: pen
-    transferAmount: 20
   - type: SolutionContainerVisuals
     maxFillLevels: 1
     changeColor: false
     emptySpriteName: dermpen_empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 20
+    onlyAffectsMobs: false
+    injectOnly: true
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -259,6 +270,9 @@
   - type: Hypospray
     solutionName: pen
     transferAmount: 20
+    onlyAffectsMobs: false
+    injectOnly: true
+
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -292,6 +306,8 @@
   - type: Hypospray
     solutionName: pen
     transferAmount: 30
+    onlyAffectsMobs: false
+    injectOnly: true
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -329,6 +345,8 @@
   - type: Hypospray
     solutionName: pen
     transferAmount: 30
+    onlyAffectsMobs: false
+    injectOnly: true
   - type: StaticPrice
     price: 500
 
@@ -388,6 +406,8 @@
   - type: Hypospray
     solutionName: pen
     transferAmount: 30
+    onlyAffectsMobs: false
+    injectOnly: true
   - type: StaticPrice
     price: 500
 
@@ -472,8 +492,11 @@
     solution: hypospray
   - type: ExaminableSolution
     solution: hypospray
+    heldOnly: true # Allow examination only when held in hand.
   - type: Hypospray
-    onlyMobs: false
+    onlyAffectsMobs: false
+  - type: UseDelay
+    delay: 0.5
   - type: StaticPrice # A new shitcurity meta
     price: 75
 

@@ -90,7 +90,6 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
         { "rofl", "chatsan-laughs" },
         { "хд", "chatsan-laughs" },
         { "o7", "chatsan-salutes" },
-        { "07", "chatsan-salutes" },
         { "о7", "chatsan-salutes" }, // cyrillic о
         { ";_;7", "chatsan-tearfully-salutes"},
         { "idk", "chatsan-shrugs" },

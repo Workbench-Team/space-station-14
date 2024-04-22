@@ -54,6 +54,13 @@
   components:
     - type: Muted
 
+- type: trait
+  id: Snoring
+  name: trait-snoring-name
+  description: trait-snoring-desc
+  components:
+    - type: Snoring
+
 ## Starshine
 
 - type: trait

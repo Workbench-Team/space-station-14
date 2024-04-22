@@ -53,8 +53,8 @@
       - id: ClothingShoesBootsCombatFilled
       - id: ClothingUniformJumpsuitBlueShield
       - id: ClothingUniformJumpsuitBlueShieldTurtleneck
-      - id: ClothingUniformJumpskirtBlueshield
-      - id: ClothingUniformJumpskirtBlueshieldTurtleneck
+      - id: ClothingUniformJumpskirtBlueShield
+      - id: ClothingUniformJumpskirtBlueShieldTurtleneck
       - id: ClothingEyesGlassesSunglassesBlueShield
       - id: ClothingOuterWinterBS
       - id: ClothingHeadHatBeretBS

@@ -20,8 +20,8 @@
     Plastic: 200
 
 - type: latheRecipe
-  id: Syringecartridge
-  result: Syringecartridge
+  id: SyringeCartridge
+  result: SyringeCartridge
   completetime: 1
   materials:
     Plastic: 67
@@ -104,7 +104,7 @@
 - type: latheRecipe
   id: Vape
   icon:
-    sprite: Objects/Consumable/Smokeables/Vapes/vape-standart.rsi
+    sprite: Objects/Consumable/Smokeables/Vapes/vape-standard.rsi
     state: icon
   result: Vape
   completetime: 2

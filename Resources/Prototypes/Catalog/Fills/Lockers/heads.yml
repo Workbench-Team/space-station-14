@@ -323,13 +323,13 @@
   - type: StorageFill
     contents:
       - id: GarmentBagHoS
-      - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
       - id: ClothingOuterHardsuitSecurityRed
       - id: ClothingMaskGasSwat
       - id: ClothingBeltSecurityFilled
       - id: ClothingHeadsetAltSecurity
       - id: ClothingEyesGlassesSecurity
+      - id: ClothingShoesBootsJack
       - id: CigarGoldCase
         prob: 0.50
       - id: DoorRemoteSecurity
@@ -351,11 +351,11 @@
   - type: StorageFill
     contents:
       - id: GarmentBagHoS
-      - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
       - id: ClothingBeltSecurityFilled
       - id: ClothingHeadsetAltSecurity
       - id: ClothingEyesGlassesSecurity
+      - id: ClothingShoesBootsJack
       - id: CigarGoldCase
         prob: 0.50
       - id: DoorRemoteSecurity

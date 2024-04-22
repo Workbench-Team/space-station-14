@@ -61,7 +61,7 @@
 
 ## Starshine
 
-# Blueshield ammo 12.7
+# BlueShield ammo 12.7
 - type: entity
   id: BaseCartridgeUniversal
   name: cartridge (12.7 rifle)

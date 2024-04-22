@@ -80,6 +80,31 @@
   id: Honk
   category: Vocal
   chatMessages: [хонкает]
+  chatTriggers:
+    - honk
+    - honk.
+    - honk!
+    - honks
+    - honks.
+    - honks!
+    - honked
+    - honked.
+    - honked!
+    - honking
+    - honking.
+    - honking!
+    - хонк
+    - хонк.
+    - хонк!
+    - хонкает
+    - хонкает.
+    - хонкает!
+    - хонкнул
+    - хонкнул.
+    - хонкнул!
+    - хонкнула
+    - хонкнула.
+    - хонкнула!
 
 - type: emote
   id: Sigh
@@ -221,7 +246,7 @@
 - type: emote
   id: Click
   category: Vocal
-  chatMessages: [click.]
+  chatMessages: [клацает.]
   chatTriggers:
    - click
    - click.
@@ -229,6 +254,12 @@
    - clicks
    - clicks.
    - clicks!
+   - клац
+   - клац.
+   - клац!
+   - клацает
+   - клацает.
+   - клацает!
 
 # hand emotes
 - type: emote
@@ -343,11 +374,17 @@
     - жужжит
     - жужжит.
     - жужжит!
+    - зажужжал
+    - зажужжал.
+    - зажужжал!
+    - зажужжала
+    - зажужжала.
+    - зажужжала!
 
 - type: emote
   id: Weh
   category: Vocal
-  chatMessages: [Wehs!]
+  chatMessages: [издаёт вех!]
 
 - type: emote
   id: Chirp
@@ -372,3 +409,121 @@
     - щебечет
     - щебечет.
     - щебечет!
+
+# Machine Emotes
+- type: emote
+  id: Beep
+  category: Vocal
+  chatMessages: [делает бип.]
+  chatTriggers:
+    - beep
+    - beep!
+    - beep.
+    - beeps
+    - beeps.
+    - beeps!
+    - beeped
+    - beeped.
+    - beeped!
+    - beeping
+    - beeping.
+    - beeping!
+    - бип
+    - бип.
+    - бип!
+
+- type: emote
+  id: Chime
+  category: Vocal
+  chatMessages: [издаёт трель.]
+  chatTriggers:
+    - chime
+    - chime.
+    - chime!
+    - chimes
+    - chimes.
+    - chimes!
+    - chimed
+    - chimed.
+    - chimed!
+    - chiming
+    - chiming,
+    - chiming!
+    - дзынь
+    - дзынь.
+    - дзынь!
+
+- type: emote
+  id: Buzz-Two
+  category: Vocal
+  chatMessages: [издаёт бип-буп.]
+  chatTriggers:
+    - buzztwice
+    - buzztwice.
+    - buzztwice!
+    - buzzstwice
+    - buzzstwice.
+    - buzzstwice!
+    - buzzestwice
+    - buzzestwice.
+    - buzzestwice!
+    - buzzingtwice
+    - buzzingtwice.
+    - buzzingtwice!
+    - buzzedtwice
+    - buzzedtwice.
+    - buzzedtwice!
+    - buzz twice
+    - buzz twice.
+    - buzz twice!
+    - buzzs twice
+    - buzzs twice.
+    - buzzs twice!
+    - buzzes twice
+    - buzzes twice.
+    - buzzes twice!
+    - buzzing twice
+    - buzzing twice.
+    - buzzing twice!
+    - buzzed twice
+    - buzzed twice.
+    - buzzed twice!
+    - бипбуп
+    - бипбуп.
+    - бипбуп!
+    - бип буп
+    - бип буп.
+    - бип буп!
+    - бип-буп
+    - бип-буп.
+    - бип-буп!
+    - бипбип
+    - бипбип.
+    - бипбип!
+    - бип бип
+    - бип бип.
+    - бип бип!
+    - бип-бип
+    - бип-бип.
+    - бип-бип!
+
+- type: emote
+  id: Ping
+  category: Vocal
+  chatMessages: [издаёт пинг.]
+  chatTriggers:
+    - ping
+    - ping.
+    - ping!
+    - pings
+    - pings.
+    - pings!
+    - pinged
+    - pinged.
+    - pinged!
+    - pinging
+    - pinging.
+    - pinging!
+    - пинг
+    - пинг.
+    - пинг!

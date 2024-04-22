@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   name: green glowstick
   parent: BaseItem
   id: GlowstickBase
@@ -70,6 +70,9 @@
             Quantity: 10
     - type: Extractable
       grindableSolutionName: glowstick
+    - type: Tag
+      tags:
+      - Trash
 
 - type: entity
   name: red glowstick

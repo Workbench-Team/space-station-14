@@ -18,6 +18,7 @@ research-technology-advanced-atmospherics = Продвинутая атмосф�
 research-technology-advanced-tools = Продвинутые инструменты
 research-technology-super-powercells = Супер батареи
 research-technology-portable-fission = Портативное расщепление
+research-technology-space-scanning = Сканирование космоса
 research-technology-bluespace-storage = Блюспейс хранилище
 
 research-technology-salvage-weapons = Оружия утилизаторов

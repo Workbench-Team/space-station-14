@@ -228,7 +228,8 @@
     - AllAccess
   - type: StaticPrice
     price: 10000
-  - type: ShowSecurityIcons
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
 
 - type: entity
   id: MechMaulerDestroyed

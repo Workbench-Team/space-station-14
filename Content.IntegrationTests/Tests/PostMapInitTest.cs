@@ -65,7 +65,8 @@ namespace Content.IntegrationTests.Tests
             "KiloStation", //Starshine
             "Atlas",
             "Reach",
-            "Train"
+            "Train",
+            "Lighthouse"
         };
 
         /// <summary>

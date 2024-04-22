@@ -328,10 +328,10 @@
 - type: entity
   noSpawn: true
   parent: BaseTraitorStealObjective
-  id: BlueshieldMedalObjective
+  id: BlueShieldMedalObjective
   components:
   - type: Objective
     difficulty: 3.5
   - type: StealCondition
-    stealGroup: ClothingNeckBlueshieldMedal
+    stealGroup: ClothingNeckBlueShieldMedal
     owner: job-name-blueshield

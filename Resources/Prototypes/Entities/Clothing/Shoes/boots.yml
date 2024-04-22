@@ -230,7 +230,7 @@
     sprite: Clothing/Shoes/Boots/cowboybootsblack.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/cowboybootsblack.rsi
-    
+
 - type: entity
   parent: ClothingShoesBootsCowboyBrown
   id: ClothingShoesBootsCowboyWhite
@@ -240,7 +240,7 @@
     sprite: Clothing/Shoes/Boots/cowboybootswhite.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/cowboybootswhite.rsi
-    
+
 - type: entity
   parent: ClothingShoesBootsCowboyBrown
   id: ClothingShoesBootsCowboyFancy

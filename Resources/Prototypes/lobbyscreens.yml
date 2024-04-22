@@ -19,6 +19,94 @@
   background: /Textures/LobbyScreens/ssxiv.webp
 
 - type: lobbyBackground
+  id: DeadInSpace
+  background: /Textures/LobbyScreens/dead-in-space.webp
+
+- type: lobbyBackground
+  id: Detective
+  background: /Textures/LobbyScreens/detective.webp
+
+- type: lobbyBackground
+  id: EngineersChill
+  background: /Textures/LobbyScreens/engineers-chill.webp
+
+- type: lobbyBackground
+  id: Greytide
+  background: /Textures/LobbyScreens/greytide.webp
+
+- type: lobbyBackground
+  id: IntoSpace
+  background: /Textures/LobbyScreens/into-space.webp
+
+- type: lobbyBackground
+  id: Lofi
+  background: /Textures/LobbyScreens/lofi.webp
+
+- type: lobbyBackground
+  id: MaintenanceClown
+  background: /Textures/LobbyScreens/maintenance-clown.webp
+
+- type: lobbyBackground
+  id: NukiesHere
+  background: /Textures/LobbyScreens/nukies-here.webp
+
+- type: lobbyBackground
+  id: RegularShift
+  background: /Textures/LobbyScreens/regular-shift.webp
+
+- type: lobbyBackground
+  id: Russellmart
+  background: /Textures/LobbyScreens/russellmart.webp
+
+- type: lobbyBackground
+  id: Singulord
+  background: /Textures/LobbyScreens/singulord.webp
+
+- type: lobbyBackground
+  id: SpaceMudaki
+  background: /Textures/LobbyScreens/space-mudaki.webp
+
+- type: lobbyBackground
+  id: Traitor
+  background: /Textures/LobbyScreens/traitor.webp
+
+- type: lobbyBackground
+  id: NukieDudes
+  background: /Textures/LobbyScreens/nukie-dudes.webp
+
+- type: lobbyBackground
+  id: LostAndPowerless
+  background: /Textures/LobbyScreens/lost-and-powerless.webp
+
+- type: lobbyBackground
+  id: MenAtWork
+  background: /Textures/LobbyScreens/men-at-work.webp
+
+- type: lobbyBackground
+  id: FleshAnom
+  background: /Textures/LobbyScreens/fleshanom.webp
+
+- type: lobbyBackground
+  id: DeathNettle
+  background: /Textures/LobbyScreens/deathnettle.webp
+
+- type: lobbyBackground
+  id: ClownSpider
+  background: /Textures/LobbyScreens/clownspider.webp
+
+- type: lobbyBackground
+  id: XenoAttack
+  background: /Textures/LobbyScreens/xenosattack.webp
+
+- type: lobbyBackground
+  id: SingulordCage
+  background: /Textures/LobbyScreens/singulord-cage.webp
+
+- type: lobbyBackground
+  id: NewYearNuke
+  background: /Textures/LobbyScreens/new-year-nuke.webp
+ 
+- type: lobbyBackground
   id: Susstation
   background: /Textures/LobbyScreens/susstation.webp
 
@@ -37,3 +125,7 @@
 - type: lobbyBackground
   id: Behonker
   background: /Textures/LobbyScreens/behonker.webp
+
+- type: lobbyBackground
+  id: TerminalStation
+  background: /Textures/LobbyScreens/terminalstation.webp

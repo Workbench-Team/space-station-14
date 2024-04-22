@@ -46,7 +46,7 @@ namespace Content.Server.AruMoon.Plasmacutter
         {
             if (!Resolve(uid, ref battery))
                 return;
-            if (battery.CurrentCharge == battery._maxCharge)
+            if (battery.CurrentCharge == battery.MaxCharge)
                 value = 0;
             _materialStorage.TryChangeStorageLimit(uid, value);
         }

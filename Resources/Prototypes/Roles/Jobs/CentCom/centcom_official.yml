@@ -17,14 +17,10 @@
 - type: startingGear
   id: CentcomGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitCentcomOfficial
-    back: ClothingBackpackSatchelCentcomFilled
     mask: ClothingMaskGasCentcom
     shoes: ClothingShoesBootsCombatFilled
-    head: ClothingHeadHatCentcom
     eyes: ClothingEyesGlassesSunglasses
     gloves: ClothingHandsGlovesColorBlack
-    outerClothing: ClothingOuterArmorBasic
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
     belt: WeaponPistolN1984

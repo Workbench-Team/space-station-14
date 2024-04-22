@@ -171,7 +171,6 @@ namespace Content.Server.Communications
 
             _uiSystem.SetUiState(ui, new CommunicationsConsoleInterfaceState(
                 CanAnnounce(comp),
-                CanBroadcast(comp),
                 CanCallOrRecall(comp),
                 levels,
                 currentLevel,
@@ -181,11 +180,6 @@ namespace Content.Server.Communications
         }
 
         private static bool CanAnnounce(CommunicationsConsoleComponent comp)
-        {
-            return comp.AnnouncementCooldownRemaining <= 0f;
-        }
-
-        private static bool CanBroadcast(CommunicationsConsoleComponent comp)
         {
             return comp.AnnouncementCooldownRemaining <= 0f;
         }
@@ -304,6 +298,9 @@ namespace Content.Server.Communications
             };
 
             _deviceNetworkSystem.QueuePacket(uid, null, payload, net.TransmitFrequency);
+
+            if (message.Session.AttachedEntity != null)
+                _adminLogger.Add(LogType.DeviceNetwork, LogImpact.Low, $"{ToPrettyString(message.Session.AttachedEntity.Value):player} has sent the following broadcast: {message.Message:msg}");
         }
 
         private void OnCallShuttleMessage(EntityUid uid, CommunicationsConsoleComponent comp, CommunicationsConsoleCallEmergencyShuttleMessage message)
