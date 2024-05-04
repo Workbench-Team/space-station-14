@@ -66,7 +66,8 @@ namespace Content.IntegrationTests.Tests
             "Atlas",
             "Reach",
             "Train",
-            "Lighthouse"
+            "Lighthouse",
+            "Tehtra"
         };
 
         /// <summary>
