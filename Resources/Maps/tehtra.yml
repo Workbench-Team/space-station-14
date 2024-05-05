@@ -17293,8 +17293,6 @@ entities:
       pos: -31.5,20.5
       parent: 2
     - type: DeviceList
-      configurators:
-      - invalid
       devices:
       - 2680
       - 2679
