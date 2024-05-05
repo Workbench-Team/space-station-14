@@ -1,7 +1,7 @@
 - type: gameMap
   id: Tehtra
   mapName: 'Tehtra Station'
-  mapPath: /Maps/Tehtra.yml
+  mapPath: /Maps/tehtra.yml
   minPlayers: 0
   stations:
     Tehtra:
