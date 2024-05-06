@@ -3,6 +3,7 @@
   mapName: 'Tehtra Station'
   mapPath: /Maps/tehtra.yml
   minPlayers: 0
+  maxPlayers: 10
   stations:
     Tehtra:
       stationProto: StandardNanotrasenStation
