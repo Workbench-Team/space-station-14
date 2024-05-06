@@ -1,4 +1,4 @@
-meta:
+﻿meta:
   format: 6
   postmapinit: false
 tilemap:
@@ -17425,8 +17425,6 @@ entities:
       pos: -31.5,20.5
       parent: 2
     - type: DeviceList
-      configurators:
-      - invalid
       devices:
       - 2806
       - 2805
