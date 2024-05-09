@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   parent: DrinkBase
   id: DrinkCartonBaseFull
   abstract: true
@@ -193,3 +193,78 @@
           Quantity: 100
   - type: Sprite
     sprite: Objects/Consumable/Drinks/oatmilk.rsi
+
+- type: entity
+  parent: [DrinkCartonVisualsOpenable, DrinkCartonBaseFull]
+  id: DrinkJuiceAppleCarton
+  name: orange juice
+  description: Full of vitamins and deliciousness!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: JuiceApple
+          Quantity: 50
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/applejuice.rsi
+
+- type: entity
+  parent: [DrinkCartonVisualsOpenable, DrinkCartonBaseFull]
+  id: DrinkJuiceCarrotCarton
+  name: carrot juice
+  description: Full of vitamins and deliciousness!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: JuiceCarrot
+          Quantity: 50
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/carrotjuicecarton.rsi
+
+- type: entity
+  parent: [DrinkCartonVisualsOpenable, DrinkCartonBaseFull]
+  id: DrinkJuiceBerryCarton
+  name: berry juice
+  description: Full of vitamins and deliciousness!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: JuiceBerry
+          Quantity: 50
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/berryjuicecarton.rsi
+
+- type: entity
+  parent: [DrinkCartonVisualsOpenable, DrinkCartonBaseFull]
+  id: DrinkJuiceBananaCarton
+  name: banana juice
+  description: Full of vitamins and deliciousness!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: JuiceBanana
+          Quantity: 50
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/bananajuice.rsi
+
+- type: entity
+  parent: [DrinkCartonVisualsOpenable, DrinkCartonBaseFull]
+  id: DrinkJuicePineappleCarton
+  name: Pineapple juice
+  description: Full of vitamins and deliciousness!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: JuicePineapple
+          Quantity: 50
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/ananasjuice.rsi
