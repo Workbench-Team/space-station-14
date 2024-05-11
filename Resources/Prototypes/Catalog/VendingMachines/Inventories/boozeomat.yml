@@ -46,5 +46,8 @@
     DrinkJuiceBerryCarton: 3
     DrinkJuiceBananaCarton: 3
     DrinkJuicePineappleCarton: 3
+    DrinkJuiceUnatieCarton: 1
   emaggedInventory:
     DrinkPoisonWinebottleFull: 2
+    DrinkJuiceSyndicateCarton: 1
+    
