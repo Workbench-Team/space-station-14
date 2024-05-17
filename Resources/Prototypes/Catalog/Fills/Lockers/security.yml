@@ -8,6 +8,7 @@
       - id: GarmentBagWarden
       - id: FlashlightSeclite
       - id: WeaponDisabler
+        prob: 0.3
       - id: ClothingBeltSecurityFilled
       - id: Flash
       - id: ClothingEyesGlassesSecurity
@@ -26,6 +27,7 @@
     contents:
       - id: FlashlightSeclite
       - id: WeaponDisabler
+        prob: 0.3
       - id: ClothingBeltSecurityFilled
       - id: Flash
       - id: ClothingEyesGlassesSecurity
@@ -47,7 +49,6 @@
     contents:
       - id: FlashlightSeclite
         prob: 0.8
-      - id: WeaponDisabler
       - id: ClothingUniformJumpsuitSecGrey
         prob: 0.3
       - id: ClothingHeadHelmetBasic

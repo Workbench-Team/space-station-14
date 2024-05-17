@@ -15,14 +15,11 @@
   setPreference: true
   objective: roles-antag-nuclear-operative-agent-objective
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobChemist
-      time: 18000 #5 hrs
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 36000 #10 hrs
-    - !type:OverallPlaytimeRequirement
-      time: 162000 #45 hrs
+  - !type:OverallPlaytimeRequirement
+    time: 18000 # 5h
+  - !type:RoleTimeRequirement
+    role: JobChemist 
+    time: 10800 # 3h
 
 - type: antag
   id: NukeopsCommander

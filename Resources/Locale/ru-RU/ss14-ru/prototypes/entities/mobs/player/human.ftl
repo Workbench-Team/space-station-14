@@ -1,5 +1,8 @@
 ent-MobHuman = Урист МакХэндс
     .desc = { ent-BaseMobHuman.desc }
+ent-MobHumanSyndicateAgentBase = агент синдиката
+    .suffix = Человк, Базовый
+    .desc = { ent-MobHuman.desc }
 ent-MobHumanSyndicateAgent = агент синдиката
     .desc = { ent-MobHuman.desc }
     .suffix = Человек

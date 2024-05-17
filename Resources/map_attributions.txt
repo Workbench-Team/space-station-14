@@ -49,5 +49,16 @@
 - files: ["core.yml"]
   authors: Ubaser
 
+- files: ["oasis.yml"]
+  authors: CptJeanLuc
+
+## Starshine
+
+- files: ["metastation.yml"]
+  authors: MilenVolf
+
+- files: ["driller.yml", "lighthouse.yml"]
+  authors: Tenteratus
+
 - files: ["Kilostation.yml"]
   authors: RevengenRat, Tamioki

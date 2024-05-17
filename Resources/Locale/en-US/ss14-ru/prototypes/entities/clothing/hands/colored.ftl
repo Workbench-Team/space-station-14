@@ -1,11 +1,7 @@
-ent-ClothingHandsGlovesSyntheticBase = { ent-ClothingHandsButcherable }
-    .desc = { ent-ClothingHandsButcherable.desc }
 ent-ClothingHandsGlovesColorPurple = purple gloves
     .desc = Regular purple gloves that do not keep you from frying.
 ent-ClothingHandsGlovesColorRed = red gloves
     .desc = Regular red gloves that do not keep you from frying.
-ent-ClothingHandsGlovesColorBlack = black gloves
-    .desc = Regular black gloves that do not keep you from frying.
 ent-ClothingHandsGlovesColorBlue = blue gloves
     .desc = Regular blue gloves that do not keep you from frying.
 ent-ClothingHandsGlovesColorBrown = brown gloves
@@ -19,9 +15,9 @@ ent-ClothingHandsGlovesColorLightBrown = light brown gloves
 ent-ClothingHandsGlovesColorOrange = orange gloves
     .desc = Regular orange gloves that do not keep you from frying.
 ent-ClothingHandsGlovesColorWhite = white gloves
-    .desc = Those gloves look fancy.
-ent-ClothingHandsGlovesColorRainbow = rainbow gloves
-    .desc = Those gloves look very fancy.
+    .desc = Regular white gloves that do not keep you from frying.
+ent-ClothingHandsGlovesColorBlack = black gloves
+    .desc = Regular black gloves that do not keep you from frying.
 ent-ClothingHandsGlovesColorYellow = insulated gloves
     .desc = These gloves will protect the wearer from electric shocks.
 ent-ClothingHandsGlovesColorYellowBudget = budget insulated gloves
@@ -33,3 +29,7 @@ ent-ClothingHandsGlovesAtmos = atmospheric extrication gloves
     .desc = Heavy duty gloves for firefighters. These are thick, non-flammable and let you carry people faster.
 ent-ClothingHandsGlovesCE = advanced insulated gloves
     .desc = These gloves provide excellent heat and electric insulation. They are so thin you can barely feel them.
+
+## Starshine
+ent-ClothingHandsGlovesColorRainbow = rainbow gloves
+    .desc = Those gloves look very fancy.

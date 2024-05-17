@@ -132,6 +132,7 @@
     zeroVisible: false
   - type: Appearance
 
+# Starshine-start
 - type: entity
   id: MagazinePistolCaselessRifleRubber
   name: "pistol magazine (.25 caseless rubber)"
@@ -151,6 +152,7 @@
     steps: 6
     zeroVisible: false
   - type: Appearance
+# Starshine-end
 
 - type: entity
   id: MagazineCaselessRifle
@@ -180,6 +182,7 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
+# Starshine-start
 - type: entity
   id: MagazineCaselessRifleRubber
   name: "magazine (.25 caseless rubber)"
@@ -193,6 +196,7 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+# Starshine-end
 
 - type: entity
   id: MagazineCaselessRifleShort
@@ -224,6 +228,8 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
+## Starshine
+
 - type: entity
   id: MagazineCaselessRifleShortRubber
   name: "short magazine (.25 caseless rubber)"
@@ -231,7 +237,7 @@
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeCaselessRifleRubber
-    capacity: 25
+    capacity: 20
   - type: Sprite
     layers:
     - state: rubber

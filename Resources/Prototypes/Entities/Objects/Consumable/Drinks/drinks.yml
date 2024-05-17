@@ -10,6 +10,8 @@
     solutions:
       drink:
         maxVol: 30
+  - type: MixableSolution
+    solution: drink
   - type: SolutionTransfer
     canChangeTransferAmount: true
   - type: Drink
@@ -34,8 +36,8 @@
     solution: drink
   - type: UserInterface
     interfaces:
-    - key: enum.TransferAmountUiKey.Key
-      type: TransferAmountBoundUserInterface
+      enum.TransferAmountUiKey.Key:
+        type: TransferAmountBoundUserInterface
 
 - type: entity
   parent: DrinkBase
@@ -506,6 +508,22 @@
 
 - type: entity
   parent: DrinkGlass
+  id: BudgetInsulsDrinkGlass
+  suffix: budget insuls
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: BudgetInsulsDrink
+          Quantity: 30
+  - type: Icon
+    sprite: Objects/Consumable/Drinks/budgetinsulsdrink.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
   id: DrinkCarrotJuice
   suffix: carrot juice
   components:
@@ -534,6 +552,22 @@
           Quantity: 30
   - type: Icon
     sprite: Objects/Consumable/Drinks/chocolateglass.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: RubberneckGlass
+  suffix: rubberneck
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Rubberneck
+          Quantity: 30
+  - type: Icon
+    sprite: Objects/Consumable/Drinks/rubberneck.rsi
     state: icon
 
 - type: entity
@@ -1060,6 +1094,22 @@
           Quantity: 30
   - type: Icon
     sprite: Objects/Consumable/Drinks/icecreamglass.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: IrishBoolGlass
+  suffix: irish bool
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: IrishBool
+          Quantity: 30
+  - type: Icon
+    sprite: Objects/Consumable/Drinks/beerglass.rsi
     state: icon
 
 - type: entity
@@ -2057,6 +2107,22 @@
 
 - type: entity
   parent: DrinkGlass
+  id: DrinkVodkaRedBool
+  suffix: vodka red bool
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: VodkaRedBool
+          Quantity: 30
+  - type: Icon
+    sprite: Objects/Consumable/Drinks/ginvodkaglass.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
   id: DrinkVodkaTonicGlass
   suffix: vodka tonic
   components:
@@ -2100,6 +2166,22 @@
         reagents:
         - ReagentId: JuiceWatermelon
           Quantity: 30
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkWatermelonWakeup
+  suffix: watermelon wakeup
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: WatermelonWakeup
+          Quantity: 30
+  - type: Icon
+    sprite: Objects/Consumable/Drinks/champagneglass.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlass
@@ -2179,6 +2261,22 @@
           Quantity: 30
   - type: Icon
     sprite: Objects/Consumable/Drinks/wineglass.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: XenoBasherGlass
+  suffix: xeno basher
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: XenoBasher
+          Quantity: 30
+  - type: Icon
+    sprite: Objects/Consumable/Drinks/xenobasher.rsi
     state: icon
 
 # TODO: MOVE

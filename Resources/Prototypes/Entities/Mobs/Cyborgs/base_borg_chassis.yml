@@ -63,12 +63,12 @@
     locPrefix: silicon
   - type: UserInterface
     interfaces:
-    - key: enum.SiliconLawsUiKey.Key
-      type: SiliconLawBoundUserInterface
-    - key: enum.BorgUiKey.Key
-      type: BorgBoundUserInterface
-    - key: enum.StrippingUiKey.Key
-      type: StrippableBoundUserInterface
+      enum.SiliconLawsUiKey.Key:
+        type: SiliconLawBoundUserInterface
+      enum.BorgUiKey.Key:
+        type: BorgBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
   - type: ActivatableUI
     key: enum.BorgUiKey.Key
   - type: SiliconLawBound
@@ -136,10 +136,7 @@
   - type: UnblockableSpeech
   - type: FootstepModifier
     footstepSoundCollection:
-      collection: LimbstepBorg
-      params:
-        variation: 0.07
-        volume: -5
+      collection: FootstepBorg
   - type: Construction
     graph: Cyborg
     containers:
@@ -211,18 +208,36 @@
   - type: StandingState
   - type: Tag
     tags:
-    - ShoesRequiredStepTriggerImmune
     - DoorBumpOpener
+    - FootstepSound
     - CanPilot
     - FootstepSound
   - type: Emoting
   - type: GuideHelp
     guides:
       - Cyborgs
+  - type: StepTriggerImmune
+
+- type: entity
+  abstract: true
+  id: BaseBorgTransponder
+  components:
+  - type: BorgTransponder
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: CyborgControl
+    transmitFrequencyId: RoboticsConsole
+  # explosion does most of its damage in the center and less at the edges
+  - type: Explosive
+    explosionType: Minibomb
+    totalIntensity: 30
+    intensitySlope: 20
+    maxIntensity: 20
+    canCreateVacuum: false # its for killing the borg not the station
 
 - type: entity
   id: BaseBorgChassisNT
-  parent: BaseBorgChassis
+  parent: [BaseBorgChassis, BaseBorgTransponder]
   abstract: true
   components:
   - type: NpcFactionMember
@@ -242,28 +257,28 @@
   parent: BaseBorgChassis
   abstract: true
   components:
-    - type: NpcFactionMember
-      factions:
-        - Syndicate
-    - type: Access
-      tags:
-       - NuclearOperative
-       - SyndicateAgent
-    - type: AccessReader
-      access: [["SyndicateAgent"], ["NuclearOperative"]]
-    - type: SiliconLawProvider
-      laws: SyndicateStatic
-    - type: IntrinsicRadioTransmitter
-      channels:
-        - Binary
-        - Syndicate
-    - type: ActiveRadio
-      channels:
-        - Syndicate
-    - type: ShowSyndicateIcons
-    - type: MovementAlwaysTouching
-    - type: Vocal
-      sounds:
-        Male: SyndieBorgEmotes
-        Female: SyndieBorgEmotes
-        Unsexed: SyndieBorgEmotes
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: Access
+    tags:
+    - NuclearOperative
+    - SyndicateAgent
+  - type: AccessReader
+    access: [["SyndicateAgent"], ["NuclearOperative"]]
+  - type: SiliconLawProvider
+    laws: SyndicateStatic
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Binary
+    - Syndicate
+  - type: ActiveRadio
+    channels:
+    - Syndicate
+  - type: ShowSyndicateIcons
+  - type: MovementAlwaysTouching
+  - type: Speech
+    speechSounds: SyndieBorg
+  - type: Vocal
+    sounds:
+      Unsexed: UnisexSiliconSyndicate

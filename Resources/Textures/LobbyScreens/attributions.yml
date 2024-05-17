@@ -43,6 +43,11 @@
   copyright: "aserovich on discord"
   source: "https://github.com/space-wizards/space-station-14"
 
+- files: ["justaweekaway.webp"]
+  license: "CC-BY-SA-3.0"
+  copyright: "plantyfern on discord"
+  source: "https://github.com/space-wizards/space-station-14"
+
 ## Starshinne
 - files: ["into-space.webp"]
   license: "CC-BY-SA-3.0"

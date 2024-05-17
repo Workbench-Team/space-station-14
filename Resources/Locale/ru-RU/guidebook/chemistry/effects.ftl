@@ -36,6 +36,11 @@ reagent-effect-guidebook-foam-area-reaction-effect =
         [1] Создаёт
        *[other] создать
     } большое количество пены
+reagent-effect-guidebook-smoke-area-reaction-effect =
+    { $chance ->
+        [1] Создаёт
+       *[other] создают
+    } большое количество дыма
 reagent-effect-guidebook-foam-area-reaction-effect =
     { $chance ->
         [1] Создаёт
@@ -302,7 +307,12 @@ reagent-effect-guidebook-reset-narcolepsy =
     { $chance ->
         [1] Временно избавляет
        *[other] временно избавить
-    } от нарколепсии
+    } от приступов нарколепсии
+reagent-effect-guidebook-reduce-rotting =
+    { $chance ->
+        [1] Регенерирует
+       *[other] регенерируют
+    } { NATURALFIXED($time, 3) } { MANY("second", $time) } гниения
 reagent-effect-guidebook-wash-cream-pie-reaction =
     { $chance ->
         [1] Смывает

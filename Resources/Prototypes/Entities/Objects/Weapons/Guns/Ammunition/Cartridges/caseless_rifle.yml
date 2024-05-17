@@ -44,6 +44,8 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#dbdbdb"
 
+## Starshine
+
 - type: entity
   id: CartridgeCaselessRifleRubber
   name: cartridge (.25 caseless rubber)
@@ -58,8 +60,6 @@
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#43c4f7"
-
-## Starshine
 
 # BlueShield ammo 12.7
 - type: entity

@@ -1,12 +1,12 @@
-nuke-component-cant-anchor-floor = Не удаётся закрутить крепёжные болты к полу!
+nuke-component-cant-anchor-floor = Крепёжным болтам не удаётся закрепиться в полу!
 nuke-component-announcement-sender = Ядерная боеголовка
-nuke-component-announcement-armed = Внимание! Механизм самоуничтожения станции был активирован по координатам { $position }. До детонации { $time } секунд.
+nuke-component-announcement-armed = Внимание! Механизм самоуничтожения станции был активирован { $location }. До детонации { $time } секунд.
 nuke-component-announcement-unarmed = Механизм самоуничтожение станции деактивирован! Хорошего дня!
-nuke-component-announcement-send-codes = Внимание! Коды самоуничтожения были отправлены по факсу.
+nuke-component-announcement-send-codes = Внимание! Запрошенные коды самоуничтожения были отправлены на факс капитана.
 nuke-component-doafter-warning = Вы начинаете перебирать провода и кнопки, в попытке обезвредить ядерную бомбу. Это может занять некоторое время.
-nuke-user-interface-title = Ядерная Боеголовка
-nuke-user-interface-disarm-button = ОБЕЗВРЕД.
+nuke-user-interface-title = Ядерная боеголовка
 nuke-user-interface-arm-button = ВЗВЕСТИ
+nuke-user-interface-disarm-button = ОБЕЗВРЕДИТЬ
 nuke-user-interface-anchor-button = ЗАКРЕПИТЬ
 nuke-user-interface-eject-button = ИЗВЛЕЧЬ
 
@@ -34,9 +34,9 @@ nuke-label-syndicate = SYN-{ $serial }
 # Codes
 
 nuke-codes-message = [color=red]СОВЕРШЕННО СЕКРЕТНО![/color]
-nuke-codes-list = { $name } код: { $code }
+nuke-codes-list = Код { $name }: { $code }
 nuke-codes-fax-paper-name = коды ядерной аутентификации
 # Nuke disk slot
 nuke-slot-component-slot-name-disk = Диск
-nuke-examine-armed = Хей э, а почему эта [color=red]красная лампа[/color] мигает?
-nuke-examine-exploding = Ага... думаю, уже слишком поздно, приятель.
+nuke-examine-armed = Эй, а почему эта [color=red]красная лампочка[/color] мигает?
+nuke-examine-exploding = Ага... Похоже, уже слишком поздно, приятель.

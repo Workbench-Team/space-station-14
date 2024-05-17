@@ -9,7 +9,7 @@
       tags:
         - CartridgeMagnum
     proto: CartridgeMagnum
-    capacity: 60
+    capacity: 12
   - type: Item
     size: Small
   - type: ContainerContainer
@@ -53,6 +53,7 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: practice
 
+# Starshine-start
 - type: entity
   parent: BaseMagazineBoxMagnum
   id: MagazineBoxMagnumRubber
@@ -67,6 +68,7 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: rubber
+# Starshine-end
 
 - type: entity
   id: MagazineBoxMagnumIncendiary

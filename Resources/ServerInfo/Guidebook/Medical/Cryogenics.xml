@@ -43,8 +43,12 @@
 
 Стандартное давление для газового насоса составляет 101.325 кПа. Криоксадон работает при температуре менее 170 К, но стандартной практикой является установка морозильной камеры на 100 К для более быстрого охлаждения.
 
+<GuideReagentEmbed Reagent="Aloxadone"/>
 <GuideReagentEmbed Reagent="Cryoxadone"/>
 <GuideReagentEmbed Reagent="Doxarubixadone"/>
 <GuideReagentEmbed Reagent="Dexalin"/>
+<GuideReagentEmbed Reagent="Leporazine"/>
+<GuideReagentEmbed Reagent="Necrosol"/>
+<GuideReagentEmbed Reagent="Opporozidone"/>
 
 </Document>

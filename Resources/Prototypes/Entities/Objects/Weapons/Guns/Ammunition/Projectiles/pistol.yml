@@ -20,6 +20,7 @@
       types:
         Blunt: 2
 
+# Starshine-start
 - type: entity
   id: BulletPistolRubber
   name: bullet (.35 auto rubber)
@@ -30,6 +31,7 @@
     damage:
       types:
         Blunt: 3
+# Starshine-end
 
 - type: entity
   id: BulletPistolIncendiary
