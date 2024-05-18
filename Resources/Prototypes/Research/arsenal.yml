@@ -34,7 +34,6 @@
   - MagazineUniversalShort
   - SpeedLoaderUniversal
   - SpeedLoaderMagnum
-  - CartridgeCaselessUniversalPT1
 
 - type: technology
   id: CompBows
@@ -114,30 +113,12 @@
   tier: 1
   cost: 5000
   recipeUnlocks:
-  - MagazineShotgunBeanbag
-  - ShellTranquilizer 
-  - BoxBeanbag 
-  - WeaponDisabler
-
-- type: technology
-  id: NonlethalAmmunition
-  name: research-technology-nonlethal-ammunition
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
-    state: beanbag
-  discipline: Arsenal
-  tier: 1
-  cost: 5000
-  recipeUnlocks:
-  - ShellShotgunBeanbag
-  - CartridgePistolRubber
-  - CartridgeMagnumRubber
-  - CartridgeLightRifleRubber
-  - CartridgeRifleRubber
   - MagazineBoxPistolRubber
   - MagazineBoxMagnumRubber
   - MagazineBoxLightRifleRubber
   - MagazineBoxRifleRubber
+  - BoxBeanbag 
+  - WeaponDisabler
 
 - type: technology
   id: UraniumMunitions

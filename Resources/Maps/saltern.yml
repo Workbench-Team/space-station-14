@@ -1322,6 +1322,14 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 235
           moles:
@@ -1337,9 +1345,25 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.15
           moles:
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -1367,6 +1391,14 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.15
           moles:
@@ -1382,6 +1414,14 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.15
           moles:
@@ -1389,6 +1429,14 @@ entities:
           - 0
           - 0
           - 6666.982
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -26130,18 +26178,6 @@ entities:
     - type: Transform
       pos: -48.183727,-9.500211
       parent: 31
-- proto: chem_master
-  entities:
-  - uid: 606
-    components:
-    - type: Transform
-      pos: 19.5,-0.5
-      parent: 31
-  - uid: 5075
-    components:
-    - type: Transform
-      pos: 15.5,1.5
-      parent: 31
 - proto: ChemDispenser
   entities:
   - uid: 5076
@@ -26160,6 +26196,18 @@ entities:
     components:
     - type: Transform
       pos: 18.5,1.5
+      parent: 31
+- proto: ChemMaster
+  entities:
+  - uid: 606
+    components:
+    - type: Transform
+      pos: 19.5,-0.5
+      parent: 31
+  - uid: 5075
+    components:
+    - type: Transform
+      pos: 15.5,1.5
       parent: 31
 - proto: ChessBoard
   entities:
@@ -26227,10 +26275,10 @@ entities:
       parent: 31
 - proto: ClosetBombFilled
   entities:
-  - uid: 5116
+  - uid: 11455
     components:
     - type: Transform
-      pos: -14.5,13.5
+      pos: -5.5,16.5
       parent: 31
 - proto: ClosetChefFilled
   entities:
@@ -26459,6 +26507,14 @@ entities:
         - 0
         - 0
         - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
   - uid: 7058
     components:
     - type: Transform
@@ -26612,6 +26668,14 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0
@@ -28235,6 +28299,14 @@ entities:
         - 0
         - 0
         - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
 - proto: CrateEmptySpawner
   entities:
   - uid: 3135
@@ -28291,6 +28363,14 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0
@@ -28431,6 +28511,14 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0
@@ -31572,10 +31660,10 @@ entities:
     - type: Transform
       pos: 28.5,8.5
       parent: 31
-  - uid: 8419
+  - uid: 11456
     components:
     - type: Transform
-      pos: 8.5,26.5
+      pos: 8.5,23.5
       parent: 31
 - proto: DonkpocketBoxSpawner
   entities:
@@ -31598,59 +31686,45 @@ entities:
       parent: 31
 - proto: Dresser
   entities:
-  - uid: 9049
-    components:
-    - type: Transform
-      pos: 7.5,16.5
-      parent: 31
-- proto: DresserCaptainFilled
-  entities:
-  - uid: 11383
-    components:
-    - type: Transform
-      pos: 11.5,23.5
-      parent: 31
-- proto: DresserChiefEngineerFilled
-  entities:
-  - uid: 6968
-    components:
-    - type: Transform
-      pos: 41.5,-0.5
-      parent: 31
-- proto: DresserChiefMedicalOfficerFilled
-  entities:
-  - uid: 11386
-    components:
-    - type: Transform
-      pos: 24.5,-11.5
-      parent: 31
-- proto: DresserHeadOfPersonnelFilled
-  entities:
-  - uid: 11384
-    components:
-    - type: Transform
-      pos: 9.5,16.5
-      parent: 31
-- proto: DresserHeadOfSecurityFilled
-  entities:
-  - uid: 11382
-    components:
-    - type: Transform
-      pos: -8.5,22.5
-      parent: 31
-- proto: DresserQuarterMasterFilled
-  entities:
   - uid: 4909
     components:
     - type: Transform
       pos: 26.5,10.5
       parent: 31
-- proto: DresserResearchDirectorFilled
-  entities:
   - uid: 5153
     components:
     - type: Transform
       pos: -5.5,-19.5
+      parent: 31
+  - uid: 6968
+    components:
+    - type: Transform
+      pos: 41.5,-0.5
+      parent: 31
+  - uid: 9049
+    components:
+    - type: Transform
+      pos: 7.5,16.5
+      parent: 31
+  - uid: 11382
+    components:
+    - type: Transform
+      pos: -8.5,22.5
+      parent: 31
+  - uid: 11383
+    components:
+    - type: Transform
+      pos: 11.5,23.5
+      parent: 31
+  - uid: 11384
+    components:
+    - type: Transform
+      pos: 9.5,16.5
+      parent: 31
+  - uid: 11386
+    components:
+    - type: Transform
+      pos: 24.5,-11.5
       parent: 31
 - proto: DrinkBottleRum
   entities:
@@ -32384,8 +32458,8 @@ entities:
       pos: 14.5,-4.5
       parent: 31
     - type: FaxMachine
-      destinationAddress: Medical
       name: Medical
+      destinationAddress: Medical
   - uid: 1264
     components:
     - type: Transform
@@ -32399,8 +32473,8 @@ entities:
       pos: -17.5,-25.5
       parent: 31
     - type: FaxMachine
-      destinationAddress: Science
       name: Science
+      destinationAddress: Science
   - uid: 8323
     components:
     - type: Transform
@@ -32414,8 +32488,8 @@ entities:
       pos: 13.5,12.5
       parent: 31
     - type: FaxMachine
-      destinationAddress: Cargo
       name: Cargo
+      destinationAddress: Cargo
   - uid: 9687
     components:
     - type: Transform
@@ -32429,8 +32503,8 @@ entities:
       pos: 1.5,32.5
       parent: 31
     - type: FaxMachine
-      destinationAddress: bridge
       name: bridge
+      destinationAddress: bridge
 - proto: FaxMachineCaptain
   entities:
   - uid: 9686
@@ -48865,6 +48939,13 @@ entities:
     - type: Transform
       pos: 53.5,16.5
       parent: 31
+- proto: LockerBlueShieldFilled
+  entities:
+  - uid: 5116
+    components:
+    - type: Transform
+      pos: 8.5,26.5
+      parent: 31
 - proto: LockerBoozeFilled
   entities:
   - uid: 584
@@ -48878,6 +48959,13 @@ entities:
     components:
     - type: Transform
       pos: -17.5,1.5
+      parent: 31
+- proto: LockerBrigmedicFilledHardsuit
+  entities:
+  - uid: 4294
+    components:
+    - type: Transform
+      pos: -14.5,13.5
       parent: 31
 - proto: LockerCaptainFilledHardsuit
   entities:
@@ -57149,7 +57237,7 @@ entities:
     - type: Transform
       pos: -6.517076,-41.294003
       parent: 31
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 1418
     components:
@@ -57759,10 +57847,10 @@ entities:
       parent: 31
 - proto: SpawnMobFoxRenault
   entities:
-  - uid: 4294
+  - uid: 11457
     components:
     - type: Transform
-      pos: 8.5,26.5
+      pos: 8.5,23.5
       parent: 31
 - proto: SpawnMobMcGriff
   entities:
@@ -57866,6 +57954,13 @@ entities:
     - type: Transform
       pos: -11.5,-7.5
       parent: 31
+- proto: SpawnPointBlueShield
+  entities:
+  - uid: 8419
+    components:
+    - type: Transform
+      pos: 7.5,25.5
+      parent: 31
 - proto: SpawnPointBorg
   entities:
   - uid: 11258
@@ -57889,6 +57984,13 @@ entities:
     components:
     - type: Transform
       pos: -20.5,-0.5
+      parent: 31
+- proto: SpawnPointBrigmedic
+  entities:
+  - uid: 11454
+    components:
+    - type: Transform
+      pos: -14.5,14.5
       parent: 31
 - proto: SpawnPointCaptain
   entities:
@@ -69450,6 +69552,14 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0

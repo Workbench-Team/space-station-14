@@ -463,16 +463,6 @@
     Plastic: 120
 
 - type: latheRecipe
-  id: SpeedLoaderMagnumPractice
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
-    state: icon
-  result: SpeedLoaderMagnumPractice
-  completetime: 5
-  materials:
-    Plastic: 80
-
-- type: latheRecipe
   id: MagazinePistolSubMachineGunPractice
   icon:
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi
@@ -481,16 +471,6 @@
   completetime: 5
   materials:
     Plastic: 110
-
-- type: latheRecipe
-  id: MagazinePistolPractice
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
-    state: practice
-  result: MagazinePistolPractice
-  completetime: 5
-  materials:
-    Plastic: 80
 
 - type: latheRecipe
   id: MagazineMagnumSubMachineGunRubber
@@ -625,48 +605,6 @@
     Steel: 1200
 
 - type: latheRecipe
-  id: BoxLethalshot
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi
-    state: shelllethal
-  result: BoxLethalshot
-  completetime: 10
-  materials:
-    Steel: 250
-
-- type: latheRecipe
-  id: BoxShotgunIncendiary
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi
-    state: shellincendiary
-  result: BoxShotgunIncendiary
-  completetime: 10
-  materials:
-    Steel: 350
-    Plastic: 150
-
-- type: latheRecipe
-  id: BoxShotgunSlug
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi
-    state: shellslug
-  result: BoxShotgunSlug
-  completetime: 10
-  materials:
-    Steel: 200
-
-- type: latheRecipe
-  id: BoxBeanbag
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi
-    state: shellbeanbag
-  result: BoxBeanbag
-  completetime: 10
-  materials:
-    Plastic: 250
-    Steel: 150
-
-- type: latheRecipe
   id: BoxShellTranquilizer
   icon:
     sprite: Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi
@@ -679,16 +617,6 @@
     Glass: 90
 
 # Weapons energy
-- type: latheRecipe
-  id: WeaponDisabler
-  icon:
-    sprite: Objects/Weapons/Guns/Battery/disabler.rsi
-    state: base
-  result: WeaponDisabler
-  completetime: 15
-  materials:
-    Glass: 350
-    Steel: 350
 
 - type: latheRecipe
   id: MagazinePistolEmpty
@@ -756,6 +684,14 @@
   completetime: 5
   materials:
     Steel: 30
+
+- type: latheRecipe
+  id: MagazinePistolSubMachineGunRubber
+  result: MagazinePistolSubMachineGunRubber
+  completetime: 5
+  materials:
+    Steel: 250
+    Plastic: 100
 
 - type: latheRecipe
   id: MagazinePistolSubMachineGunTopMounted
@@ -1002,6 +938,7 @@
   materials:
     Steel: 200
 
+- type: latheRecipe
   id: MagazineBoxLightRifleRubber
   result: MagazineBoxLightRifleRubber
   category: Ammo
@@ -1121,13 +1058,13 @@
     Steel: 150
     Plastic: 50
 
-# - type: latheRecipe
-  # id: ClothingBeltQuiverComposit
-  # result: ClothingBeltQuiverComposit
-  # completetime: 5
-  # materials:
-    # Steel: 350
-    # Plastic: 350
+- type: latheRecipe
+  id: ClothingBeltQuiverComposit
+  result: ClothingBeltQuiverComposit
+  completetime: 5
+  materials:
+    Steel: 350
+    Plastic: 350
 
 - type: latheRecipe
   id: MagazineBoxLightRifleIncendiary
@@ -1164,16 +1101,6 @@
     Plastic: 320
 
 - type: latheRecipe
-  id: BoxShotgunPractice
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi
-    state: shellpractice
-  result: BoxShotgunPractice
-  completetime: 2
-  materials:
-    Plastic: 240
-
-- type: latheRecipe
   id: MagazineBoxPistolPractice
   result: MagazineBoxPistolPractice
   category: Ammo
@@ -1196,13 +1123,6 @@
   completetime: 5
   materials:
     Steel: 300
-
-- type: latheRecipe
-  id: MagazineRiflePractice
-  result: MagazineRiflePractice
-  completetime: 5
-  materials:
-    Plastic: 1000
 
 - type: latheRecipe
   id: MagazineBoxRiflePractice

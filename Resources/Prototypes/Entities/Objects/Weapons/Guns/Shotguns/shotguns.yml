@@ -134,11 +134,6 @@
           - MagazineShotgunSaiga
         insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
-  - type: Gun
-    fireRate: 3
-    selectedMode: FullAuto
-    availableModes:
-    - FullAuto
 
 - type: entity
   name: double-barreled shotgun

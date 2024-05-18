@@ -64349,13 +64349,6 @@ entities:
     - type: Transform
       pos: 36.477844,-0.5104959
       parent: 2
-- proto: HeadTerminator
-  entities:
-  - uid: 10281
-    components:
-    - type: Transform
-      pos: -6.4968266,-35.50717
-      parent: 2
 - proto: HighSecArmoryLocked
   entities:
   - uid: 3191

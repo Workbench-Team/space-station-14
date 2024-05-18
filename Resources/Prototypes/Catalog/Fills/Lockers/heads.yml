@@ -49,7 +49,6 @@
       - id: WeaponAntiqueLaser
       - id: JetpackCaptainFilled
       - id: MedalCase
-      - id: HandheldIntercomMonitor
 
 - type: entity
   id: LockerCentcomConsultantFilled
@@ -60,7 +59,6 @@
     contents:
       - id: GarmentBagCentcomConsultant
       - id: ClothingHeadsetAltCentCom
-      - id: HandheldIntercomMonitor
       - id: RubberStampCentcomConsultant
       - id: Handcuffs
       - id: WeaponRevolverMateba
@@ -80,7 +78,6 @@
       - id: ClothingMaskGasCentcom
       - id: GarmentBagCentcomConsultant
       - id: ClothingHeadsetAltCentCom
-      - id: HandheldIntercomMonitor
       - id: RubberStampCentcomConsultant
       - id: Handcuffs
       - id: WeaponRevolverMateba
@@ -132,7 +129,6 @@
       - id: WeaponAntiqueLaser
       - id: JetpackCaptainFilled
       - id: MedalCase
-      - id: HandheldIntercomMonitor
 
 - type: entity
   id: LockerCaptainFilledNoLaser
@@ -213,7 +209,6 @@
       - id: AccessConfigurator
       - id: RCD
       - id: RCDAmmo
-      - id: HandheldSolarMonitor
 
 - type: entity
   id: LockerChiefEngineerFilled
@@ -235,7 +230,6 @@
       - id: AccessConfigurator
       - id: RCD
       - id: RCDAmmo
-      - id: HandheldSolarMonitor
 
 - type: entity
   id: LockerChiefMedicalOfficerFilledHardsuit
@@ -296,7 +290,6 @@
       - id: BoxEncryptionKeyScience
       - id: ClothingHeadsetAltScience
       - id: EncryptionKeyBinary
-      - id: HandheldRndMonitor
       - id: BriefcaseRDFilled
 
 - type: entity
@@ -316,7 +309,6 @@
       - id: BoxEncryptionKeyScience
       - id: ClothingHeadsetAltScience
       - id: EncryptionKeyBinary
-      - id: HandheldRndMonitor
       - id: BriefcaseRDFilled
 
 - type: entity

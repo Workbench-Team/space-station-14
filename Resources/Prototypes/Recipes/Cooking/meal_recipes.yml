@@ -1491,7 +1491,7 @@
   solids:
     FoodDoughPastryBaseRaw: 1
     FoodMeatMeatball: 1
-    FoodChili: 1
+    FoodChiliPepper: 1
  
 - type: microwaveMealRecipe
   id: RecipeDonkpocketTeriyaki

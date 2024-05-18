@@ -405,16 +405,16 @@
   categories:
   - UplinkAmmo
 
-# - type: listing
-  # id: UplinkQuiverCompositFilled
-  # name: uplink-quiver-composit-filled-name
-  # description: uplink-quiver-composit-filled-desc
-  # icon: { sprite: Clothing/Belt/quiver.rsi, state: icon }
-  # productEntity: ClothingBeltQuiverCompositFilled
-  # cost:
-    # Telecrystal: 10
-  # categories:
-  # - UplinkAmmo
+- type: listing
+  id: UplinkQuiverCompositFilled
+  name: uplink-quiver-composit-filled-name
+  description: uplink-quiver-composit-filled-desc
+  icon: { sprite: Clothing/Belt/quiver.rsi, state: icon }
+  productEntity: ClothingBeltQuiverCompositFilled
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkAmmo
 
 - type: listing
   id: UplinkPistol9mmMagazineBundle
@@ -515,22 +515,6 @@
   productEntity: ClothingBackpackDuffelSyndicateAmmoShotGunBundle
   cost:
     Telecrystal: 12
-  categories:
-    - UplinkAmmo
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
-
-- type: listing
-  id: UplinkMagazineCaselessRifle
-  name: uplink-magazine-caseless-rifle-name
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag.rsi, state: red }
-  description: uplink-magazine-caseless-rifle-desc
-  productEntity: MagazineCaselessRifle
-  cost:
-    Telecrystal: 3
   categories:
     - UplinkAmmo
   conditions:

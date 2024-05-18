@@ -89,6 +89,15 @@
     path: /Audio/Animals/monkey_scream.ogg
 
 - type: speechSounds
+  id: Mothroach
+  saySound:
+    path: /Audio/Voice/Moth/moth_scream.ogg
+  askSound:
+    path: /Audio/Voice/Moth/moth_scream.ogg
+  exclaimSound:
+    path: /Audio/Voice/Moth/moth_scream.ogg
+
+- type: speechSounds
   id: Parrot
   saySound:
     path: /Audio/Animals/parrot_raught.ogg

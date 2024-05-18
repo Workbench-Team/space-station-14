@@ -265,7 +265,9 @@
     runningState: building
     staticRecipes:
     - LargeBeaker
+# Starshine-start
     - LargeBottle
+# Starshine-end
     - Dropper
     - ClothingEyesGlassesChemical
     dynamicRecipes:
@@ -285,7 +287,6 @@
       - CryostasisBeaker
       - SyringeCryostasis
       - Syringe
-      - MiningDrill
       - Implanter
       - PillCanister
       - ChemistryEmptyBottle01
@@ -318,8 +319,10 @@
       - WeaponLaserSvalinn
       - WeaponProtoKineticAccelerator
       - WeaponCutter
+# Starshine-start
       - WeaponCutterAdv
       - WeaponTetherGun
+# Starshine-end
       - WeaponGrapplingGun
       - ClothingBackpackHolding
       - ClothingBackpackSatchelHolding
@@ -611,6 +614,7 @@
     - BorgModuleDiagnosis
     - BorgModuleDefibrillator
     - BorgModuleAdvancedTreatment
+# Starshine-start
     - ModsuitHelmet
     - ModsuitGauntlets
     - ModsuitChestplate
@@ -623,13 +627,13 @@
     - ModsuitPlateStandard
     - ModsuitPlateMining
     - ModsuitAssembly
+# Starshine-end
     - RipleyHarness
     - RipleyLArm
     - RipleyRArm
     - RipleyLLeg
     - RipleyRLeg
     - MechEquipmentGrabber
-    - MechEquipmentDrill
     - HonkerHarness
     - HonkerLArm
     - HonkerRArm
@@ -643,6 +647,7 @@
     - HamtrLLeg
     - HamtrRLeg
     - VimHarness
+# Starshine-start
     - ClarkHarness
     - ClarkLArm
     - ClarkLLeg
@@ -665,6 +670,7 @@
     - GygaxRLeg
     - GygaxRArm
     - GygaxArmor
+# Starshine-end
   - type: MaterialStorage
     whitelist:
       tags:
@@ -787,6 +793,14 @@
       - WeaponDisablerPractice
       - WeaponLaserCarbinePractice
       - Zipties
+# Starshine-start
+      - MagazinePistolPractice
+      - MagazinePistolSubMachineGunPractice
+      - MagazineVectorPistolSmallPractice
+      - MagazineRiflePractice
+      - MagazineVectorRifleSmallPractice
+      - SpeedLoaderMagnumPractice
+# Starshine-end
     dynamicRecipes:
       - BoxBeanbag
       - BoxShotgunIncendiary
@@ -843,6 +857,20 @@
       - WeaponLaserCannon
       - WeaponLaserCarbine
       - WeaponXrayCannon
+# Starshine-start
+      - BowCompound
+      - ArrowCompound
+      - ClothingBeltQuiverComposit
+      - ClothingHeadHelmetRiot
+      - ClothingHeadHelmetBasic
+      - ClothingHeadHelmetSwat
+      - ClothingOuterArmorRiot
+      - ClothingOuterArmorBasicSlim
+      - ClothingOuterArmorBasic
+      - ClothingOuterArmorBulletproof
+      - ClothingBeltSecurityWebbing
+      - ClothingBeltSecurity
+# Starshine-end
   - type: MaterialStorage
     whitelist:
       tags:
@@ -850,6 +878,7 @@
         - RawMaterial
         - Ingot
 
+## Starshine-start
 # Machine which makes weapons and ammunition
 - type: entity
   parent: Protolathe
@@ -906,6 +935,7 @@
         - Ingot
         - Wood
         - Uranium
+## Starshine-end
 
 - type: entity
   id: AmmoTechFab
@@ -934,25 +964,58 @@
       idleState: icon
       runningState: icon
       staticRecipes:
-        - BoxLethalshot
         - BoxShotgunFlare
-        - BoxShotgunSlug
-        - MagazineBoxLightRifle
-        - MagazineBoxMagnum
-        - MagazineBoxPistol
-        - MagazineBoxRifle
-        - MagazineLightRifle
-        - MagazineLightRifleEmpty
-        - MagazinePistol 
+      dynamicRecipes:
+        # Weapons kinetic
+        - MagazinePistol
         - MagazinePistolEmpty 
+        - MagazinePistolRubber
+        - MagazinePistolHighCapacity
+        - MagazinePistolHighCapacityRubber
+        - ShellTranquilizer
+        - MagazineVectorPistolSmall
+        - MagazineVectorPistolSmallRubber
+        - MagazineVectorPistol
+        - MagazineVectorPistolRubber
+        - MagazinePistolSubMachineGun
+        - MagazinePistolSubMachineGunRubber
+        - MagazinePistolSubMachineGunTopMounted
+        - MagazineVectorRifle    
+        - MagazineVectorRifleRubber            
         - MagazineRifle
+        - MagazineRifleRubber
         - MagazineRifleEmpty
+        - MagazineRifleExt
+        - MagazineRifleExtRubber
+        - MagazineLightRifle
+        - MagazineLightRifleRubber
+        - MagazineLightRifleEmpty
         - MagazineShotgun
         - MagazineShotgunEmpty
         - MagazineShotgunSlug
-        - ShellTranquilizer
+        - MagazineUniversalShort
+        - MagazineUniversal
         - SpeedLoaderMagnum
         - SpeedLoaderMagnumEmpty
+        - SpeedLoaderUniversal
+        - MagazineShotgunSaiga
+        - MagazineBoxPistol
+        - MagazineBoxMagnum
+        - MagazineBoxPistolIncendiary
+        - MagazineBoxPistolRubber
+        - MagazineBoxRifle
+        - MagazineBoxLightRifle
+        - MagazineBoxRifleBig
+        - MagazineBoxUniversalVPS
+        - MagazineBoxRifleIncendiary
+        - MagazineBoxRifleRubber
+        - MagazineBoxUniversalPT1
+        - MagazineBoxUniversalVPS
+        - BoxLethalshot
+        - BoxShotgunIncendiary
+        - BoxBeanbag        
+        - BoxShotgunSlug
+        - BoxShellTranquilizer
     - type: MaterialStorage
       whitelist:
         tags:
@@ -995,7 +1058,10 @@
       - DiseaseSwab
       - Beaker
       - LargeBeaker
+# Starshine-start
       - LargeBottle
+      - InjectorCase
+# Starshine-end
       - Dropper
       - Jug
       - Syringe
@@ -1014,7 +1080,6 @@
       - MedkitAdvanced
       - MedkitRadiation
       - MedkitCombat
-      - InjectorCase
       - Scalpel
       - Retractor
       - Cautery

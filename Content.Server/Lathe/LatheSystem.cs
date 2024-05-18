@@ -335,11 +335,11 @@ namespace Content.Server.Lathe
 
         private void OnLatheQueueRecipeMessage(EntityUid uid, LatheComponent component, LatheQueueRecipeMessage args)
         {
-            if (args.Session.AttachedEntity is not {Valid: true} player)
+            if (args.Actor is not {Valid: true} player)
                 return;
             if (!_accessReaderSystem.IsAllowed(player, uid))
             {
-                ConsolePopup(args.Session, uid, Loc.GetString("lathe-production-not-allowed"));
+                ConsolePopup(args.Actor, uid, Loc.GetString("lathe-production-not-allowed"));
                 PlayDenySound(uid, component);
                 return;
             }
@@ -364,9 +364,9 @@ namespace Content.Server.Lathe
             UpdateUserInterfaceState(uid, component);
         }
 
-        private void ConsolePopup(ICommonSession session, EntityUid uid, string text)
+        private void ConsolePopup(EntityUid actor, EntityUid uid, string text)
         {
-            _popup.PopupEntity(text, uid, session);
+            _popup.PopupEntity(text, uid, actor);
         }
 
         private void PlayDenySound(EntityUid uid, LatheComponent component)

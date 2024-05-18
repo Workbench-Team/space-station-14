@@ -132,7 +132,7 @@
     soundHit:
       path: /Audio/Weapons/Guns/Hits/snap.ogg
   - type: StaminaDamageOnCollide
-    damage: 17 # 6 hits to stun sounds reasonable
+    damage: 16 # 7 hits to stun sounds reasonable
 # Starshine-end
 
 - type: entity

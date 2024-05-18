@@ -54,6 +54,7 @@
       - id: Handcuffs
       - id: Handcuffs
 
+# Starshine-start
 - type: entity
   id: ClothingBeltERTSecurityFilled
   parent: ClothingBeltSecurity
@@ -61,11 +62,12 @@
   components:
   - type: StorageFill
     contents:
-    - id: GrenadeFlashBang
-    - id: TearGasGrenade
-    - id: TelescopicBaton
-    - id: Handcuffs
-    - id: Handcuffs
+      - id: GrenadeFlashBang
+      - id: TearGasGrenade
+      - id: TelescopicBaton
+      - id: Handcuffs
+      - id: Handcuffs
+# Starshine-end
 
 - type: entity
   id: ClothingBeltSecurityWebbingFilled

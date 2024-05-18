@@ -765,7 +765,7 @@
       path: /Audio/Voice/Moth/moth_scream.ogg
   - type: EmitSoundOnTrigger
     sound:
-      path: /Audio/Voice/Moth/moth_chitter.ogg
+      path: /Audio/Voice/Moth/moth_scream.ogg
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Voice/Moth/moth_scream.ogg
