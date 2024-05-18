@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   parent: DrinkBase
   id: DrinkCartonBaseFull
   abstract: true
@@ -193,3 +193,153 @@
           Quantity: 100
   - type: Sprite
     sprite: Objects/Consumable/Drinks/oatmilk.rsi
+
+- type: entity
+  parent: [DrinkCartonVisualsOpenable, DrinkCartonBaseFull]
+  id: DrinkJuiceAppleCarton
+  name: orange juice
+  description: Full of vitamins and deliciousness!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: JuiceApple
+          Quantity: 50
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/applejuice.rsi
+  - type: Label
+    originalName: яблочный сок
+    currentLabel: Яблочный сок полон сахара и вкуса! Сделан из спелых и сочных яблок!
+
+- type: entity
+  parent: [DrinkCartonVisualsOpenable, DrinkCartonBaseFull]
+  id: DrinkJuiceCarrotCarton
+  name: carrot juice
+  description: Full of vitamins and deliciousness!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: JuiceCarrot
+          Quantity: 50
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/carrotjuicecarton.rsi
+  - type: Label
+    originalName: морковный сок
+    currentLabel: здесь могла бы быть ваша реклама
+
+- type: entity
+  parent: [DrinkCartonVisualsOpenable, DrinkCartonBaseFull]
+  id: DrinkJuiceBerryCarton
+  name: berry juice
+  description: Full of vitamins and deliciousness!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: JuiceBerry
+          Quantity: 50
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/berryjuicecarton.rsi
+  - type: Label
+    originalName: ягодный сок
+    currentLabel: Освежающий аромат и вкус, с нотками дикой природы
+
+- type: entity
+  parent: [DrinkCartonVisualsOpenable, DrinkCartonBaseFull]
+  id: DrinkJuiceBananaCarton
+  name: banana juice
+  description: Full of vitamins and deliciousness!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: JuiceBanana
+          Quantity: 50
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/bananajuice.rsi
+  - type: Label
+    originalName: банановый сок
+    currentLabel: Состоит из 75% бананов, 24% робуста, 1% бананиума
+
+- type: entity
+  parent: [DrinkCartonVisualsOpenable, DrinkCartonBaseFull]
+  id: DrinkJuicePineappleCarton
+  name: pineapple juice
+  description: Full of vitamins and deliciousness!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: JuicePineapple
+          Quantity: 50
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/ananasjuice.rsi
+  - type: Label
+    originalName: ананасовый сок
+    currentLabel: Освежающий и бодрящий продукт! В составе более 90% спелых и вкуснейших ананасов! Без добавления консервантов
+
+- type: entity
+  parent: [DrinkCartonVisualsOpenable, DrinkCartonBaseFull]
+  id: DrinkJuiceSyndicateCarton
+  name: syndicate juice
+  description: Full of vitamins and deliciousness!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Stimulants
+          Quantity: 5
+        - ReagentId: DoctorsDelight
+          Quantity: 25
+        - ReagentId: Tricordrazine
+          Quantity: 20
+
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/syndicatejuice.rsi
+  - type: Label
+    originalName: cинди сок
+    currentLabel: зделано на заказ компанией "Еnergy DOOM™"
+
+- type: entity
+  parent: [DrinkCartonVisualsOpenable, DrinkCartonBaseFull]
+  id: DrinkJuiceUnatieCarton
+  name: Unatie juice
+  description: Full of vitamins and deliciousness!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: JuiceThatMakesYouWeh
+          Quantity: 50
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/unatijuice.rsi
+  - type: Label
+    originalName: унати сcок
+    currentLabel: Сссделан на 99% исс вех! (не сспрашшивайте как)
+
+- type: entity
+  parent: [DrinkCartonVisualsOpenable, DrinkCartonBaseFull]
+  id: DrinkJuiceCatDespairCarton
+  name: cat despair juice
+  description: Full of vitamins and deliciousness!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: MuteToxin
+          Quantity: 50
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/catdespairjuice.rsi
+  - type: Label
+    originalName: cat despair juice
+    currentLabel: Зделано из 50% кота и 50% тёмной глубокой бездны
+
