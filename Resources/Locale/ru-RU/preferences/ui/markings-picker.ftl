@@ -24,4 +24,3 @@ markings-category-Arms = Руки
 markings-category-Legs = Ноги
 markings-category-Tail = Хвост
 markings-category-Overlay = Наложение
-markings-category-Underwear = Нижнее бельё
