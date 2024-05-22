@@ -4,17 +4,52 @@
   name: holographic sign projector
   description: A handy-dandy holographic projector that displays a janitorial sign.
   components:
+  - type: Item
+    storedRotation: -90
   - type: HolosignProjector
     maxSigns: 12
-  - type: ItemCooldown
   - type: UseDelay
-    delay: 1.0
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot {}
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
   - type: Sprite
     sprite: Objects/Devices/Holoprojectors/custodial.rsi
     state: icon
   - type: Tag
     tags:
       - HolosignProjector
+
+- type: entity
+  parent: Holoprojector
+  id: HoloprojectorEmpty
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+
+- type: entity
+  parent: Holoprojector
+  id: HoloprojectorBorg
+  suffix: borg
+  components:
+  - type: HolosignProjector
+    chargeUse: 240
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMicroreactor
+        disableEject: true
+        swap: false
 
 - type: entity
   parent: Holoprojector
@@ -35,6 +70,44 @@
     price: 80
 
 - type: entity
+  parent: HolofanProjector
+  id: HolofanProjectorEmpty
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+
+- type: entity
+  parent: Holoprojector
+  id: HoloprojectorField
+  name: force field projector
+  description: Creates an impassable forcefield that won't let anything through. Close proximity may or may not cause cancer.
+  components:
+    - type: HolosignProjector
+      signProto: HolosignForcefield
+      maxSigns: 6
+    - type: Sprite
+      sprite: Objects/Devices/Holoprojectors/field.rsi
+      state: icon
+    - type: Tag
+      tags:
+        - HolofanProjector
+    - type: StaticPrice
+      price: 130
+
+- type: entity
+  parent: HoloprojectorField
+  id: HoloprojectorFieldEmpty
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+
+- type: entity
   parent: Holoprojector
   id: HoloprojectorEngineering
   name: engineering holobarrier projector
@@ -51,7 +124,7 @@
     tags:
       - HolosignProjector
   - type: StaticPrice
-    price: 80
+    price: 50
 
 - type: entity
   parent: Holoprojector
@@ -69,7 +142,7 @@
     tags:
       - HolosignProjector
   - type: StaticPrice
-    price: 80
+    price: 50
 
 #- type: entity
 #  parent: Holoprojector

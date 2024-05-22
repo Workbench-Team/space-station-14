@@ -8,18 +8,21 @@
     sprite: Objects/Weapons/Melee/sledgehammer.rsi
     state: icon
   - type: MeleeWeapon
+    wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 14
-        Structural: 15
+        Blunt: 10
+        Structural: 10
+    soundHit:
+      collection: MetalThud
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
         Blunt: 10
-        Structural: 60
+        Structural: 10
   - type: Item
-    size: 80
+    size: Large
 
 - type: entity
   name: metal pipe
@@ -48,7 +51,8 @@
         damage: 20
       behaviors:
       - !type:PlaySoundBehavior
-        sound: /Audio/Effects/metalbreak.ogg
+          sound:
+            collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           PartRodMetal1:

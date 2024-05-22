@@ -7,3 +7,7 @@ admin-manager-admin-permissions-updated-message = Ваши права админ
 admin-manager-admin-logout-message = Админ вышел: { $name }
 admin-manager-admin-login-message = Админ зашел: { $name }
 admin-manager-admin-data-host-title = Хост
+admin-manager-stealthed-message = Вы теперь скрытый админ.
+admin-manager-unstealthed-message = Вы больше не скрыты.
+admin-manager-self-enable-stealth = { $stealthAdminName } теперь скрыт.
+admin-manager-self-disable-stealth = { $exStealthAdminName } больше не скрыт.

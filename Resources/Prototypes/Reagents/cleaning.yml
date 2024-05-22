@@ -52,35 +52,17 @@
     Food:
       effects:
       - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 6
+        probability: 0.20
     Drink:
       effects:
       - !type:ChemVomit
-
-- type: reagent
-  id: SoapyWater
-  parent: Water
-  name: reagent-name-soapy-water
-  desc: reagent-desc-soapy-water
-  physicalDesc: reagent-physical-desc-soapy
-  flavor: clean
-  color: "#9ec8dc"
-  recognizable: true
-  metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateThirst
-        factor: 3
-      - !type:ChemVomit
-        thirstAmount: -10.0
-        hungerAmount: -10.0
-  plantMetabolism:
-  - !type:PlantAdjustWater
-    amount: .8
-  tileReactions:
-    - !type:CleanDecalsReaction
-      cleanCost: 5
-    - !type:ExtinguishTileReaction { }
-    - !type:SpillIfPuddlePresentTileReaction { }
+        conditions:
+        - !type:ReagentThreshold
+          min: 6
+        probability: 0.20
 
 - type: reagent
   id: SpaceLube
@@ -98,6 +80,7 @@
       paralyzeTime: 3
       launchForwardsMultiplier: 2
       requiredSlipSpeed: 1
+      superSlippery: true
 
 - type: reagent
   id: SpaceGlue
@@ -135,3 +118,7 @@
         type: Add
         time: 5
         refresh: false
+  footstepSound:
+    collection: FootstepSticky
+    params:
+      volume: 6

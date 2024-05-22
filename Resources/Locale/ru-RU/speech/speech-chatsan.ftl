@@ -77,3 +77,7 @@ chatsan-word-41 = чвд
 chatsan-replacement-41 = что вы делаете
 chatsan-word-42 = офк
 chatsan-replacement-42 = конечно
+chatsan-word-43 = плгю
+chatsan-replacement-43 = полагаю
+chatsan-word-44 = пчснк
+chatsan-replacement-44 = по чесноку

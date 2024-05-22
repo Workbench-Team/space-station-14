@@ -18,7 +18,6 @@
   - type: EmitSoundOnActivate
     sound:
       path: /Audio/Items/Toys/pelmeni.ogg
-  - type: ItemCooldown
   - type: UseDelay
     delay: 2.0
   - type: MeleeWeapon

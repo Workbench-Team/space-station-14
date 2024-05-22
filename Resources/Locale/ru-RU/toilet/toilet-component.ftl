@@ -7,3 +7,4 @@ toilet-component-suicide-message-others = { $victim } бьётся об { $owner
 toilet-component-suicide-message = Вы бьётесь об { $owner }!
 toilet-seat-close = Опустить Стульчак
 toilet-seat-open = Поднять Стульчак
+plunger-unblock = Вы устраняете засор в { $target }!

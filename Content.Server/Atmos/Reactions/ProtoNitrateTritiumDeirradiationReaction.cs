@@ -1,5 +1,6 @@
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
+using Content.Shared.Atmos.Reactions;
 using JetBrains.Annotations;
 
 namespace Content.Server.Atmos.Reactions;
@@ -7,7 +8,7 @@ namespace Content.Server.Atmos.Reactions;
 [UsedImplicitly]
 public sealed partial class ProtoNitrateTritiumConversionReaction : IGasReactionEffect
 {
-    public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem)
+    public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem, float heatScale)
     {
         var initialHyperNoblium = mixture.GetMoles(Gas.HyperNoblium);
         if (initialHyperNoblium >= 5.0f && mixture.Temperature > 20f)
@@ -22,7 +23,7 @@ public sealed partial class ProtoNitrateTritiumConversionReaction : IGasReaction
         if (initialTritium - producedAmount < 0 || initialProtoNitrate - producedAmount * 0.01f < 0)
             return ReactionResult.NoReaction;
 
-        var oldHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture);
+        var oldHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture, true);
 
         mixture.AdjustMoles(Gas.ProtoNitrate, -producedAmount * 0.01f);
         mixture.AdjustMoles(Gas.Tritium, -producedAmount);
@@ -30,7 +31,7 @@ public sealed partial class ProtoNitrateTritiumConversionReaction : IGasReaction
 
         var energyReleased = producedAmount * Atmospherics.ProtoNitrateTritiumConversionEnergy;
 
-        var newHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture);
+        var newHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture, true);
         if (newHeatCapacity > Atmospherics.MinimumHeatCapacity)
             mixture.Temperature = Math.Max((mixture.Temperature * oldHeatCapacity + energyReleased) / newHeatCapacity, Atmospherics.TCMB);
 

@@ -19,6 +19,8 @@ artifact-effect-hint-communication = Коммуникации на дальни�
 artifact-effect-hint-phasing = Структурная поэтапность
 artifact-effect-hint-sentience = Неврологическая активность
 artifact-effect-hint-polymorph = Трансмогрификационная активность
+artifact-effect-hint-magnet = Магнитные волны
+artifact-effect-hint-visual = Визуальные искажения
 
 # the triggers should be more obvious than the effects
 # gives people an idea of what to do: don't be too specific (i.e. no "welders")
@@ -29,6 +31,7 @@ artifact-trigger-hint-physical = Физические повреждения
 artifact-trigger-hint-tool = Использование инструментов
 artifact-trigger-hint-music = Звуковые вибрации
 artifact-trigger-hint-water = Водочувствительность
+artifact-trigger-hint-blood = Реакция с гематологической жидкостью
 artifact-trigger-hint-magnet = Магнитные волны
 artifact-trigger-hint-death = Эссенция жизни
 artifact-trigger-hint-radiation = Радиация

@@ -13,6 +13,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Robust.Server.Audio;
 
 namespace Content.Server.PDA.Ringer
 {
@@ -24,6 +25,7 @@ namespace Content.Server.PDA.Ringer
         [Dependency] private readonly UserInterfaceSystem _ui = default!;
         [Dependency] private readonly AudioSystem _audio = default!;
         [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
+        [Dependency] private readonly TransformSystem _transform = default!;
 
         private readonly Dictionary<NetUserId, TimeSpan> _lastSetRingtoneAt = new();
 
@@ -61,13 +63,16 @@ namespace Content.Server.PDA.Ringer
             UpdateRingerUserInterface(uid, ringer, true);
         }
 
-        public void RingerPlayRingtone(EntityUid uid, RingerComponent ringer)
+        public void RingerPlayRingtone(Entity<RingerComponent?> ent)
         {
-            EnsureComp<ActiveRingerComponent>(uid);
+            if (!Resolve(ent, ref ent.Comp))
+                return;
 
-            _popupSystem.PopupEntity(Loc.GetString("comp-ringer-vibration-popup"), uid, Filter.Pvs(uid, 0.05f), false, PopupType.Small);
+            EnsureComp<ActiveRingerComponent>(ent);
 
-            UpdateRingerUserInterface(uid, ringer, true);
+            _popupSystem.PopupEntity(Loc.GetString("comp-ringer-vibration-popup"), ent, Filter.Pvs(ent, 0.05f), false, PopupType.Medium);
+
+            UpdateRingerUserInterface(ent, ent.Comp, true);
         }
 
         private void UpdateRingerUserInterfaceDriver(EntityUid uid, RingerComponent ringer, RingerRequestUpdateInterfaceMessage args)
@@ -77,7 +82,10 @@ namespace Content.Server.PDA.Ringer
 
         private void OnSetRingtone(EntityUid uid, RingerComponent ringer, RingerSetRingtoneMessage args)
         {
-            ref var lastSetAt = ref CollectionsMarshal.GetValueRefOrAddDefault(_lastSetRingtoneAt, args.Session.UserId, out var exists);
+            if (!TryComp(args.Actor, out ActorComponent? actorComp))
+                return;
+
+            ref var lastSetAt = ref CollectionsMarshal.GetValueRefOrAddDefault(_lastSetRingtoneAt, actorComp.PlayerSession.UserId, out var exists);
 
             // Delay on the client is 0.333, 0.25 is still enough and gives some leeway in case of small time differences
             if (exists && lastSetAt > _gameTiming.CurTime - TimeSpan.FromMilliseconds(250))
@@ -107,7 +115,7 @@ namespace Content.Server.PDA.Ringer
 
                 // can't keep store open after locking it
                 if (!uplink.Unlocked)
-                    _ui.TryCloseAll(uid, StoreUiKey.Key);
+                    _ui.CloseUi(uid, StoreUiKey.Key);
 
                 // no saving the code to prevent meta click set on sus guys pda -> wewlad
                 args.Handled = true;
@@ -126,7 +134,7 @@ namespace Content.Server.PDA.Ringer
                 return;
 
             uplink.Unlocked = false;
-            _ui.TryCloseAll(uid, StoreUiKey.Key);
+            _ui.CloseUi(uid, StoreUiKey.Key);
         }
 
         public void RandomizeRingtone(EntityUid uid, RingerComponent ringer, MapInitEvent args)
@@ -177,14 +185,12 @@ namespace Content.Server.PDA.Ringer
 
         private void UpdateRingerUserInterface(EntityUid uid, RingerComponent ringer, bool isPlaying)
         {
-            if (_ui.TryGetUi(uid, RingerUiKey.Key, out var bui))
-                _ui.SetUiState(bui, new RingerUpdateState(isPlaying, ringer.Ringtone));
+            _ui.SetUiState(uid, RingerUiKey.Key, new RingerUpdateState(isPlaying, ringer.Ringtone));
         }
 
-        public bool ToggleRingerUI(EntityUid uid, ICommonSession session)
+        public bool ToggleRingerUI(EntityUid uid, EntityUid actor)
         {
-            if (_ui.TryGetUi(uid, RingerUiKey.Key, out var bui))
-                _ui.ToggleUi(bui, session);
+            _ui.TryToggleUi(uid, RingerUiKey.Key, actor);
             return true;
         }
 
@@ -203,9 +209,9 @@ namespace Content.Server.PDA.Ringer
                 ringer.TimeElapsed -= NoteDelay;
                 var ringerXform = Transform(uid);
 
-                _audio.Play(
+                _audio.PlayEntity(
                     GetSound(ringer.Ringtone[ringer.NoteCount]),
-                    Filter.Empty().AddInRange(ringerXform.MapPosition, ringer.Range),
+                    Filter.Empty().AddInRange(_transform.GetMapCoordinates(uid, ringerXform), ringer.Range),
                     uid,
                     true,
                     AudioParams.Default.WithMaxDistance(ringer.Range).WithVolume(ringer.Volume)

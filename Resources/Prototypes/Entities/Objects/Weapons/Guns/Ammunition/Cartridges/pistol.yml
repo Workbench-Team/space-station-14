@@ -13,12 +13,10 @@
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
     layers:
-    - state: base
-      map: ["enum.AmmoVisualLayers.Base"]
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
   - type: Appearance
   - type: SpentAmmoVisuals
-  - type: StaticPrice
-    price: 1
 
 - type: entity
   id: CartridgePistol
@@ -29,18 +27,6 @@
     proto: BulletPistol
 
 - type: entity
-  id: CartridgePistolUranium
-  name: cartridge (.35 auto uranium)
-  parent: BaseCartridgePistol
-  components:
-  - type: CartridgeAmmo
-    proto: BulletPistolUranium
-  - type: Sprite
-    layers:
-    - state: uranium
-      map: ["enum.AmmoVisualLayers.Base"]
-
-- type: entity
   id: CartridgePistolPractice
   name: cartridge (.35 auto practice)
   parent: BaseCartridgePistol
@@ -49,9 +35,13 @@
     proto: BulletPistolPractice
   - type: Sprite
     layers:
-    - state: practice
-      map: ["enum.AmmoVisualLayers.Base"]
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"
 
+# Starshine-start
 - type: entity
   id: CartridgePistolRubber
   name: cartridge (.35 auto rubber)
@@ -61,8 +51,12 @@
     proto: BulletPistolRubber
   - type: Sprite
     layers:
-    - state: rubber
-      map: ["enum.AmmoVisualLayers.Base"]
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#43c4f7"
+# Starshine-end
 
 - type: entity
   id: CartridgePistolIncendiary
@@ -71,3 +65,25 @@
   components:
   - type: CartridgeAmmo
     proto: BulletPistolIncendiary
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#ff6e52"
+
+- type: entity
+  id: CartridgePistolUranium
+  name: cartridge (.35 auto uranium)
+  parent: BaseCartridgePistol
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolUranium
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#65fe08"

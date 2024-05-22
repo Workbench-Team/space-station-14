@@ -37,7 +37,6 @@
   - type: MechDrill
   - type: Sprite
     state: mecha_drill
-  - type: ItemCooldown
 
 - type: entity
   id: MechEquipmentGrabberSmall

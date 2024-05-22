@@ -1,16 +1,73 @@
+using Content.Shared.DoAfter;
+using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
+using Content.Shared.Interaction;
+using Content.Shared.UserInterface;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.MagicMirror;
 
+public abstract class SharedMagicMirrorSystem : EntitySystem
+{
+    [Dependency] private readonly SharedInteractionSystem _interaction = default!;
+    [Dependency] protected readonly SharedUserInterfaceSystem _uiSystem = default!;
+
+    public override void Initialize()
+    {
+        base.Initialize();
+        SubscribeLocalEvent<MagicMirrorComponent, BeforeActivatableUIOpenEvent>(OnBeforeUIOpen);
+        SubscribeLocalEvent<MagicMirrorComponent, BoundUserInterfaceCheckRangeEvent>(OnMirrorRangeCheck);
+    }
+
+    private void OnMirrorRangeCheck(EntityUid uid, MagicMirrorComponent component, ref BoundUserInterfaceCheckRangeEvent args)
+    {
+        if (!Exists(component.Target) || !_interaction.InRangeUnobstructed(uid, component.Target.Value))
+        {
+            args.Result = BoundUserInterfaceRangeResult.Fail;
+        }
+    }
+
+    private void OnBeforeUIOpen(Entity<MagicMirrorComponent> ent, ref BeforeActivatableUIOpenEvent args)
+    {
+        ent.Comp.Target ??= args.User;
+        UpdateInterface(ent, args.User, ent);
+    }
+
+    protected void UpdateInterface(EntityUid mirrorUid, EntityUid targetUid, MagicMirrorComponent component)
+    {
+        if (!TryComp<HumanoidAppearanceComponent>(targetUid, out var humanoid))
+            return;
+
+        var hair = humanoid.MarkingSet.TryGetCategory(MarkingCategories.Hair, out var hairMarkings)
+            ? new List<Marking>(hairMarkings)
+            : new();
+
+        var facialHair = humanoid.MarkingSet.TryGetCategory(MarkingCategories.FacialHair, out var facialHairMarkings)
+            ? new List<Marking>(facialHairMarkings)
+            : new();
+
+        var state = new MagicMirrorUiState(
+            humanoid.Species,
+            hair,
+            humanoid.MarkingSet.PointsLeft(MarkingCategories.Hair) + hair.Count,
+            facialHair,
+            humanoid.MarkingSet.PointsLeft(MarkingCategories.FacialHair) + facialHair.Count);
+
+        // TODO: Component states
+        component.Target = targetUid;
+        _uiSystem.SetUiState(mirrorUid, MagicMirrorUiKey.Key, state);
+        Dirty(mirrorUid, component);
+    }
+}
+
 [Serializable, NetSerializable]
-public enum MagicMirrorUiKey
+public enum MagicMirrorUiKey : byte
 {
     Key
 }
 
 [Serializable, NetSerializable]
-public enum MagicMirrorCategory
+public enum MagicMirrorCategory : byte
 {
     Hair,
     FacialHair
@@ -84,9 +141,9 @@ public sealed class MagicMirrorAddSlotMessage : BoundUserInterfaceMessage
 }
 
 [Serializable, NetSerializable]
-public sealed class MagicMirrorUiData : BoundUserInterfaceMessage
+public sealed class MagicMirrorUiState : BoundUserInterfaceState
 {
-    public MagicMirrorUiData(string species, List<Marking> hair, int hairSlotTotal, List<Marking> facialHair, int facialHairSlotTotal)
+    public MagicMirrorUiState(string species, List<Marking> hair, int hairSlotTotal, List<Marking> facialHair, int facialHairSlotTotal)
     {
         Species = species;
         Hair = hair;
@@ -95,12 +152,47 @@ public sealed class MagicMirrorUiData : BoundUserInterfaceMessage
         FacialHairSlotTotal = facialHairSlotTotal;
     }
 
-    public string Species { get; }
+    public NetEntity Target;
 
-    public List<Marking> Hair { get; }
-    public int HairSlotTotal { get; }
+    public string Species;
 
-    public List<Marking> FacialHair { get; }
-    public int FacialHairSlotTotal { get; }
+    public List<Marking> Hair;
+    public int HairSlotTotal;
 
+    public List<Marking> FacialHair;
+    public int FacialHairSlotTotal;
+}
+
+[Serializable, NetSerializable]
+public sealed partial class MagicMirrorRemoveSlotDoAfterEvent : DoAfterEvent
+{
+    public override DoAfterEvent Clone() => this;
+    public MagicMirrorCategory Category;
+    public int Slot;
+}
+
+[Serializable, NetSerializable]
+public sealed partial class MagicMirrorAddSlotDoAfterEvent : DoAfterEvent
+{
+    public override DoAfterEvent Clone() => this;
+    public MagicMirrorCategory Category;
+}
+
+[Serializable, NetSerializable]
+public sealed partial class MagicMirrorSelectDoAfterEvent : DoAfterEvent
+{
+    public MagicMirrorCategory Category;
+    public int Slot;
+    public string Marking = string.Empty;
+
+    public override DoAfterEvent Clone() => this;
+}
+
+[Serializable, NetSerializable]
+public sealed partial class MagicMirrorChangeColorDoAfterEvent : DoAfterEvent
+{
+    public override DoAfterEvent Clone() => this;
+    public MagicMirrorCategory Category;
+    public int Slot;
+    public List<Color> Colors = new List<Color>();
 }

@@ -16,43 +16,13 @@
   - type: Item
     size: Ginormous
   - type: Storage
-    maxSlots: 10
     maxItemSize: Normal
+    grid:
+    - 0,0,9,3
     quickInsert: true
     areaInsert: true
     whitelist:
       tags:
         - ArtifactFragment
-        - Ore
-  - type: Dumpable
-
-- type: entity
-  name: ore bag bluespace
-  id: OreBagBluespace
-  parent: BaseStorageItem
-  description: A robust bag for salvage specialists and miners alike to carry large amounts of ore.
-  components:
-  - type: MagnetPickup
-  - type: Sprite
-    sprite: Objects/Specific/Mining/ore_bag_bluespace.rsi
-    state: icon
-    layers:
-    - state: icon
-    - state: icon-unlit
-      shader: unshaded
-  - type: Clothing
-    sprite: Objects/Specific/Mining/ore_bag_bluespace.rsi
-    quickEquip: false
-    slots:
-    - belt
-  - type: Item
-    size: Ginormous
-  - type: Storage
-    maxTotalWeight: 56
-    quickInsert: true
-    areaInsert: true
-    areaInsertRadius: 14
-    whitelist:
-      tags:
         - Ore
   - type: Dumpable

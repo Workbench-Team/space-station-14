@@ -7,7 +7,6 @@
     contents:
       - id: GarmentBagQM
       - id: BoxFolderQmClipboard
-      - id: ClothingHeadsetCargo
       - id: CargoRequestComputerCircuitboard
       - id: CargoShuttleComputerCircuitboard
       - id: CargoShuttleConsoleCircuitboard
@@ -17,6 +16,8 @@
         prob: 0.50
       - id: DoorRemoteCargo
       - id: RubberStampQm
+      - id: RubberStampDenied
+      - id: RubberStampApproved
       - id: ClothingHeadsetAltCargo
       - id: BoxEncryptionKeyCargo
 
@@ -48,7 +49,42 @@
       - id: WeaponAntiqueLaser
       - id: JetpackCaptainFilled
       - id: MedalCase
-      - id: ClothingHeadHatCapcap
+
+- type: entity
+  id: LockerCentcomConsultantFilled
+  suffix: Filled
+  parent: LockerCentcomConsultant
+  components:
+  - type: StorageFill
+    contents:
+      - id: GarmentBagCentcomConsultant
+      - id: ClothingHeadsetAltCentCom
+      - id: RubberStampCentcomConsultant
+      - id: Handcuffs
+      - id: WeaponRevolverMateba
+      - id: SpeedLoaderMagnum
+      - id: SpeedLoaderMagnumRubber
+      - id: CigarGoldCase
+        prob: 0.25
+
+- type: entity
+  id: LockerCentcomConsultantFilledHardsuit
+  suffix: Filled, Hardsuit
+  parent: LockerCentcomConsultant
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitCentcomConsultant
+      - id: ClothingMaskGasCentcom
+      - id: GarmentBagCentcomConsultant
+      - id: ClothingHeadsetAltCentCom
+      - id: RubberStampCentcomConsultant
+      - id: Handcuffs
+      - id: WeaponRevolverMateba
+      - id: SpeedLoaderMagnum
+      - id: SpeedLoaderMagnumRubber
+      - id: CigarGoldCase
+        prob: 0.25
 
 - type: entity
   id: LockerBlueShieldFilled
@@ -62,14 +98,14 @@
       - id: Handcuffs
       - id: Flash
       - id: BoxCardboardTrackImp
-      - id: ClothingBeltSecurityWebbing
       - id: GarmentBagBlueShield
       - id: ClothingHeadsetAltBlueShield
       - id: ClothingHeadsetBlueShield
+      - id: WoodenMedalCase
 
 - type: entity
   id: LockerCaptainFilled
-  suffix: Filled
+  suffix: Filled, AntiqueLaser
   parent: LockerCaptain
   components:
   - type: StorageFill
@@ -81,7 +117,6 @@
       - id: CaptainIDCard
       - id: WeaponDisabler
       - id: CommsComputerCircuitboard
-      - id: HandheldIntercomMonitor
       - id: ClothingHeadsetAltCommand
       - id: SpaceCash1000
       - id: PlushieNuke
@@ -92,6 +127,31 @@
       - id: DoorRemoteCommand
       - id: RubberStampCaptain
       - id: WeaponAntiqueLaser
+      - id: JetpackCaptainFilled
+      - id: MedalCase
+
+- type: entity
+  id: LockerCaptainFilledNoLaser
+  suffix: Filled
+  parent: LockerCaptain
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterArmorCaptainCarapace
+      - id: NukeDisk
+      - id: PinpointerNuclear
+      - id: CaptainIDCard
+      - id: WeaponDisabler
+      - id: CommsComputerCircuitboard
+      - id: ClothingHeadsetAltCommand
+      - id: SpaceCash1000
+      - id: PlushieNuke
+        prob: 0.1
+      - id: CigarGoldCase
+        prob: 0.25
+      - id: ClothingBeltSheathFilled
+      - id: DoorRemoteCommand
+      - id: RubberStampCaptain
       - id: JetpackCaptainFilled
       - id: MedalCase
 
@@ -117,6 +177,8 @@
       - id: DoorRemoteService
       - id: ClothingNeckGoldmedal
       - id: RubberStampHop
+      - id: RubberStampDenied
+      - id: RubberStampApproved
       - id: BoxEncryptionKeyPassenger
       - id: BoxEncryptionKeyService
       - id: ClothingBackpackIan
@@ -133,10 +195,6 @@
       - id: GarmentBagCE
       - id: ClothingOuterHardsuitEngineeringWhite
       - id: ClothingMaskBreath
-      - id: ClothingUniformJumpsuitChiefEngineerTurtle
-      - id: ClothingUniformJumpskirtChiefEngineerTurtle
-      - id: OxygenTankFilled
-      - id: NitrogenTankFilled
       - id: ClothingBeltChiefEngineerFilled
       - id: ClothingShoesBootsMagAdv
       - id: CigarCase
@@ -149,6 +207,8 @@
       - id: HolofanProjector
       - id: HoloprojectorEngineering
       - id: AccessConfigurator
+      - id: RCD
+      - id: RCDAmmo
 
 - type: entity
   id: LockerChiefEngineerFilled
@@ -159,7 +219,6 @@
     contents:
       - id: GarmentBagCE
       - id: ClothingBeltChiefEngineerFilled
-      - id: HandheldSolarMonitor
       - id: CigarCase
         prob: 0.15
       - id: DoorRemoteEngineering
@@ -169,6 +228,8 @@
       - id: HolofanProjector
       - id: HoloprojectorEngineering
       - id: AccessConfigurator
+      - id: RCD
+      - id: RCDAmmo
 
 - type: entity
   id: LockerChiefMedicalOfficerFilledHardsuit
@@ -222,14 +283,14 @@
       - id: ResearchComputerCircuitboard
       - id: ProtolatheMachineCircuitboard
       - id: CircuitImprinterMachineCircuitboard
-      - id: ClothingHeadsetMedicalScience
       - id: ClothingOuterHardsuitRd
-      - id: BriefcaseRDFilled
       - id: DoorRemoteResearch
       - id: ClothingBeltUtilityFilled
       - id: RubberStampRd
-      - id: ClothingHeadsetAltScience
       - id: BoxEncryptionKeyScience
+      - id: ClothingHeadsetAltScience
+      - id: EncryptionKeyBinary
+      - id: BriefcaseRDFilled
 
 - type: entity
   id: LockerResearchDirectorFilled
@@ -242,14 +303,13 @@
       - id: ResearchComputerCircuitboard
       - id: ProtolatheMachineCircuitboard
       - id: CircuitImprinterMachineCircuitboard
-      - id: ClothingHeadsetMedicalScience
-      - id: BriefcaseRDFilled
       - id: DoorRemoteResearch
-      - id: HandheldRndMonitor
       - id: ClothingBeltUtilityFilled
       - id: RubberStampRd
-      - id: ClothingHeadsetAltScience
       - id: BoxEncryptionKeyScience
+      - id: ClothingHeadsetAltScience
+      - id: EncryptionKeyBinary
+      - id: BriefcaseRDFilled
 
 - type: entity
   id: LockerHeadOfSecurityFilledHardsuit
@@ -259,13 +319,13 @@
   - type: StorageFill
     contents:
       - id: GarmentBagHoS
-      - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
       - id: ClothingOuterHardsuitSecurityRed
       - id: ClothingMaskGasSwat
       - id: ClothingBeltSecurityFilled
       - id: ClothingHeadsetAltSecurity
       - id: ClothingEyesGlassesSecurity
+      - id: ClothingShoesBootsJack
       - id: CigarGoldCase
         prob: 0.50
       - id: DoorRemoteSecurity
@@ -287,11 +347,11 @@
   - type: StorageFill
     contents:
       - id: GarmentBagHoS
-      - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
       - id: ClothingBeltSecurityFilled
       - id: ClothingHeadsetAltSecurity
       - id: ClothingEyesGlassesSecurity
+      - id: ClothingShoesBootsJack
       - id: CigarGoldCase
         prob: 0.50
       - id: DoorRemoteSecurity
@@ -304,3 +364,18 @@
       - id: BookSecretDocuments
       - id: WeaponLaserHos
 
+- type: entity
+  id: LockerFreezerVaultFilled
+  suffix: Vault, Locked
+  parent: LockerFreezerBase
+  components:
+  - type: AccessReader
+    access: [ [ "Command" ] ]
+  - type: StorageFill
+    contents:
+    - id: WeaponRevolverDeckard
+    - id: ClothingOuterHardsuitBasic
+    - id: JetpackBlue
+    - id: SpaceCash1000
+    - id: BeachBall
+    - id: BikeHorn

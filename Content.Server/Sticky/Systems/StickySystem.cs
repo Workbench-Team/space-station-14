@@ -93,8 +93,7 @@ public sealed class StickySystem : EntitySystem
             // start sticking object to target
             _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, user, delay, new StickyDoAfterEvent(), uid, target: target, used: uid)
             {
-                BreakOnTargetMove = true,
-                BreakOnUserMove = true,
+                BreakOnMove = true,
                 NeedHand = true
             });
         }
@@ -148,8 +147,7 @@ public sealed class StickySystem : EntitySystem
             // start unsticking object
             _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, user, delay, new StickyDoAfterEvent(), uid, target: uid)
             {
-                BreakOnTargetMove = true,
-                BreakOnUserMove = true,
+                BreakOnMove = true,
                 NeedHand = true
             });
         }
@@ -173,7 +171,7 @@ public sealed class StickySystem : EntitySystem
         // add container to entity and insert sticker into it
         var container = _containerSystem.EnsureContainer<Container>(target, StickerSlotId);
         container.ShowContents = true;
-        if (!container.Insert(uid))
+        if (!_containerSystem.Insert(uid, container))
             return;
 
         // show message to user
@@ -207,11 +205,11 @@ public sealed class StickySystem : EntitySystem
             return;
 
         // try to remove sticky item from target container
-        if (!_containerSystem.TryGetContainer(stuckTo, StickerSlotId, out var container) || !container.Remove(uid))
+        if (!_containerSystem.TryGetContainer(stuckTo, StickerSlotId, out var container) || !_containerSystem.Remove(uid, container))
             return;
         // delete container if it's now empty
         if (container.ContainedEntities.Count == 0)
-            container.Shutdown();
+            _containerSystem.ShutdownContainer(container);
 
         // try place dropped entity into user hands
         _handsSystem.PickupOrDrop(user, uid);

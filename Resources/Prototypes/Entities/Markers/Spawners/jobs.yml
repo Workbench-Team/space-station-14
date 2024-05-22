@@ -91,7 +91,7 @@
 # Civilian
 
 - type: entity
-  id: SpawnPointAssistant # TODO rename, but requires map changes.
+  id: SpawnPointPassenger
   parent: SpawnPointJobBase
   name: assistant
   components:
@@ -104,7 +104,7 @@
 
 - type: entity
   id: SpawnPointTechnicalAssistant
-  parent: SpawnPointAssistant
+  parent: SpawnPointJobBase
   name: technical assistant
   components:
   - type: SpawnPoint
@@ -116,7 +116,7 @@
 
 - type: entity
   id: SpawnPointMedicalIntern
-  parent: SpawnPointAssistant
+  parent: SpawnPointJobBase
   name: medical intern
   components:
   - type: SpawnPoint
@@ -128,7 +128,7 @@
 
 - type: entity
   id: SpawnPointSecurityCadet
-  parent: SpawnPointAssistant
+  parent: SpawnPointJobBase
   name: security cadet
   components:
   - type: SpawnPoint
@@ -140,7 +140,7 @@
 
 - type: entity
   id: SpawnPointResearchAssistant
-  parent: SpawnPointAssistant
+  parent: SpawnPointJobBase
   name: research assistant
   components:
   - type: SpawnPoint
@@ -152,7 +152,7 @@
 
 - type: entity
   id: SpawnPointServiceWorker
-  parent: SpawnPointAssistant
+  parent: SpawnPointJobBase
   name: service worker
   components:
   - type: SpawnPoint
@@ -324,6 +324,18 @@
       - state: captain
 
 - type: entity
+  id: SpawnPointCentcomConsultant
+  parent: SpawnPointJobBase
+  name: Central Command Consultant
+  components:
+  - type: SpawnPoint
+    job_id: CentComConsultant
+  - type: Sprite
+    layers:
+      - state: green
+      - state: consultant
+
+- type: entity
   id: SpawnPointBlueShield
   parent: SpawnPointJobBase
   name: blueshield officer
@@ -362,18 +374,6 @@
       - state: ce
 
 - type: entity
-  id: SpawnPointSeniorEngineer
-  parent: SpawnPointJobBase
-  name: seniorengineer
-  components:
-  - type: SpawnPoint
-    job_id: SeniorEngineer
-  - type: Sprite
-    layers:
-      - state: green
-      - state: seniorengineer
-
-- type: entity
   id: SpawnPointStationEngineer
   parent: SpawnPointJobBase
   name: stationengineer
@@ -410,18 +410,6 @@
     layers:
       - state: green
       - state: cmo
-
-- type: entity
-  id: SpawnPointSeniorPhysician
-  parent: SpawnPointJobBase
-  name: seniorphysician
-  components:
-  - type: SpawnPoint
-    job_id: SeniorPhysician
-  - type: Sprite
-    layers:
-      - state: green
-      - state: seniorphysician
 
 - type: entity
   id: SpawnPointMedicalDoctor
@@ -474,18 +462,6 @@
       - state: rd
 
 - type: entity
-  id: SpawnPointSeniorResearcher
-  parent: SpawnPointJobBase
-  name: seniorresearcher
-  components:
-  - type: SpawnPoint
-    job_id: SeniorResearcher
-  - type: Sprite
-    layers:
-      - state: green
-      - state: seniorresearcher
-
-- type: entity
   id: SpawnPointScientist
   parent: SpawnPointJobBase
   name: scientist
@@ -524,18 +500,6 @@
       - state: warden
 
 - type: entity
-  id: SpawnPointSeniorOfficer
-  parent: SpawnPointJobBase
-  name: seniorofficer
-  components:
-  - type: SpawnPoint
-    job_id: SeniorOfficer
-  - type: Sprite
-    layers:
-      - state: green
-      - state: seniorofficer
-
-- type: entity
   id: SpawnPointSecurityOfficer
   parent: SpawnPointJobBase
   name: securityofficer
@@ -564,6 +528,8 @@
   parent: SpawnPointJobBase
   name: brigmedic
   components:
+  - type: SpawnPoint
+    job_id: Brigmedic
   - type: Sprite
     layers:
       - state: green
@@ -582,6 +548,18 @@
     layers:
       - state: green
       - state: ertleader
+
+- type: entity
+  id: SpawnPointERTChaplain
+  parent: SpawnPointJobBase
+  name: ERTchaplain
+  components:
+  - type: SpawnPoint
+    job_id: ERTChaplain
+  - type: Sprite
+    layers:
+      - state: green
+      - state: chaplain
 
 - type: entity
   id: SpawnPointERTEngineer

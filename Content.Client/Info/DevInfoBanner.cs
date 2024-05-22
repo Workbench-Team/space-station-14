@@ -34,14 +34,6 @@ namespace Content.Client.Info
             creditsButton.OnPressed += args => new CreditsWindow().Open();
             buttons.AddChild(creditsButton);
 
-            var Boosty = cfg.GetCVar(CCVars.InfoLinksBoosty);
-            if (Boosty != "")
-            {
-                var BoostyButton = new Button {Text = Loc.GetString("server-info-boosty-button")};
-                BoostyButton.OnPressed += args => uriOpener.OpenUri(Boosty);
-                buttons.AddChild(BoostyButton);
-            }
-
             var GitLab = cfg.GetCVar(CCVars.InfoLinksGitLab);
             if (GitLab != "")
             {

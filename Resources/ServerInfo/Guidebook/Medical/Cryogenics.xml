@@ -12,7 +12,7 @@
 <GuideEntityEmbed Entity="GasPipeStraight" Rotation="90"/>
 <GuideEntityEmbed Entity="GasPipeStraight" Rotation="90"/>
 <GuideEntityEmbed Entity="GasPipeBend" Rotation="0"/>
-<GuideEntityEmbed Entity="CloningPod" Caption="капсула" Rotation="0"/>
+<GuideEntityEmbed Entity="CryoPod" Caption="криокапсула" Rotation="0"/>
 <GuideEntityEmbed Entity="GasThermoMachineFreezerEnabled" Rotation="0"/>
 </Box>
 <Box>
@@ -41,10 +41,14 @@
 
 ## Дополнительная информация:
 
-Стандартное давление для газового насоса составляет 101,325 кПа. Криоксадон работает при температуре менее 170 К, но стандартной практикой является установка морозильной камеры на 100 К для более быстрого охлаждения.
+Стандартное давление для газового насоса составляет 101.325 кПа. Криоксадон работает при температуре менее 170 К, но стандартной практикой является установка морозильной камеры на 100 К для более быстрого охлаждения.
 
+<GuideReagentEmbed Reagent="Aloxadone"/>
 <GuideReagentEmbed Reagent="Cryoxadone"/>
 <GuideReagentEmbed Reagent="Doxarubixadone"/>
 <GuideReagentEmbed Reagent="Dexalin"/>
+<GuideReagentEmbed Reagent="Leporazine"/>
+<GuideReagentEmbed Reagent="Necrosol"/>
+<GuideReagentEmbed Reagent="Opporozidone"/>
 
 </Document>

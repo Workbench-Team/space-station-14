@@ -2,6 +2,8 @@
   abstract: true
   parent: BaseStructureDynamic
   id: GasCanister
+  name: gas canister
+  description: A canister that can contain any type of gas. It can be attached to connector ports using a wrench.
   components:
     - type: InteractionOutline
     - type: Transform
@@ -22,10 +24,10 @@
           tankInserted:
             False: { state: can-open, visible: false }
             True: { state: can-open, visible: true }
-        enum.GasCanisterVisuals.Locked:
+        enum.LockVisuals.Locked:
           locked:
-            False: { state: can-unlocked, shader: "unshaded" }
-            True: { state: can-locked, shader: "unshaded" }
+            False: { state: unlocked, shader: "unshaded" }
+            True: { state: locked, shader: "unshaded" }
         enum.GasCanisterVisuals.PressureState:
           pressureLight:
             0: { state: can-o0, shader: "unshaded" }
@@ -34,7 +36,7 @@
             3: { state: can-o3, shader: "unshaded" }
     - type: UserInterface
       interfaces:
-        - key: enum.GasCanisterUiKey.Key
+        enum.GasCanisterUiKey.Key:
           type: GasCanisterBoundUserInterface
     - type: Destructible
       thresholds:
@@ -50,7 +52,7 @@
           behaviors:
             - !type:PlaySoundBehavior
               sound:
-                path: /Audio/Effects/metalbreak.ogg
+                collection: MetalBreak
             - !type:SpawnEntitiesBehavior
               spawn:
                 GasCanisterBrokenBase:
@@ -72,7 +74,7 @@
             bounds: "-0.25,-0.25,0.25,0.25"
           density: 190
           mask:
-          - MachineMask
+          - SmallMobMask
           layer:
           - MachineLayer
     - type: AtmosDevice
@@ -80,7 +82,7 @@
       joinSystem: true
     - type: ContainerContainer
       containers:
-        GasCanisterTankHolder: !type:ContainerSlot {}
+        tank_slot: !type:ContainerSlot {}
     - type: NodeContainer
       nodes:
         port:
@@ -88,18 +90,25 @@
           nodeGroupID: Pipe
           rotationsEnabled: false
           volume: 1
+    - type: ItemSlots
     - type: GasPortable
     - type: GasCanister
+      gasTankSlot:
+        name: comp-gas-canister-slot-name-gas-tank
+        whitelist:
+          components:
+            - GasTank
     - type: StaticPrice
       price: 1000
     - type: AccessReader
-      access: [["Atmospherics"], ["ResearchDirector"]]
+      access: [["Atmospherics"], ["Engineering"], ["Research"]]
     - type: Lock
       locked: false
 
 - type: entity
   parent: GasCanister
   id: StorageCanister
+  name: storage canister
   components:
     - type: Sprite
       layers:
@@ -114,7 +123,7 @@
           - 0 # Plasma
           - 0 # Tritium
           - 0 # Water vapor
-          - 0 # Miasma
+          - 0 # Ammonia
           - 0 # N2O
           - 0 # Frezon
           - 0 # BZ
@@ -133,7 +142,7 @@
         behaviors:
         - !type:PlaySoundBehavior
           sound:
-            path: /Audio/Effects/metalbreak.ogg
+            collection: MetalBreak
         - !type:SpawnEntitiesBehavior
           spawn:
             StorageCanisterBroken:
@@ -148,6 +157,8 @@
 - type: entity
   parent: GasCanister
   id: AirCanister
+  name: air canister
+  description: A canister that can contain any type of gas. This one is supposed to contain air mixture. It can be attached to connector ports using a wrench.
   components:
   - type: Sprite
     layers:
@@ -173,7 +184,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           AirCanisterBroken:
@@ -186,6 +197,8 @@
 - type: entity
   parent: GasCanister
   id: OxygenCanister
+  name: oxygen canister
+  description: A canister that can contain any type of gas. This one is supposed to contain oxygen. It can be attached to connector ports using a wrench.
   components:
   - type: Sprite
     layers:
@@ -210,7 +223,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           OxygenCanisterBroken:
@@ -223,6 +236,8 @@
 - type: entity
   id: LiquidOxygenCanister
   parent: OxygenCanister
+  name: liquid oxygen canister
+  description: A canister that can contain any type of gas. This one is supposed to contain liquid oxygen. It can be attached to connector ports using a wrench.
   components:
   - type: GasCanister
     gasMixture:
@@ -236,6 +251,8 @@
 - type: entity
   parent: GasCanister
   id: NitrogenCanister
+  name: nitrogen canister
+  description: A canister that can contain any type of gas. This one is supposed to contain nitrogen. It can be attached to connector ports using a wrench.
   components:
     - type: Sprite
       layers:
@@ -261,7 +278,7 @@
         behaviors:
         - !type:PlaySoundBehavior
           sound:
-            path: /Audio/Effects/metalbreak.ogg
+            collection: MetalBreak
         - !type:SpawnEntitiesBehavior
           spawn:
             NitrogenCanisterBroken:
@@ -274,6 +291,8 @@
 - type: entity
   id: LiquidNitrogenCanister
   parent: NitrogenCanister
+  name: liquid nitrogen canister
+  description: A canister that can contain any type of gas. This one is supposed to contain liquid nitrogen. It can be attached to connector ports using a wrench.
   components:
   - type: GasCanister
     gasMixture:
@@ -288,6 +307,8 @@
 - type: entity
   parent: GasCanister
   id: CarbonDioxideCanister
+  name: carbon dioxide canister
+  description: A canister that can contain any type of gas. This one is supposed to contain carbon dioxide. It can be attached to connector ports using a wrench.
   components:
     - type: Sprite
       layers:
@@ -314,7 +335,7 @@
         behaviors:
         - !type:PlaySoundBehavior
           sound:
-            path: /Audio/Effects/metalbreak.ogg
+            collection: MetalBreak
         - !type:SpawnEntitiesBehavior
           spawn:
             CarbonDioxideCanisterBroken:
@@ -329,6 +350,8 @@
 - type: entity
   id: LiquidCarbonDioxideCanister
   parent: CarbonDioxideCanister
+  name: liquid carbon dioxide canister
+  description: A canister that can contain any type of gas. This one is supposed to contain liquid carbon dioxide. It can be attached to connector ports using a wrench.
   components:
   - type: GasCanister
     gasMixture:
@@ -344,6 +367,8 @@
 - type: entity
   parent: GasCanister
   id: PlasmaCanister
+  name: plasma canister
+  description: A canister that can contain any type of gas. This one is supposed to contain plasma. It can be attached to connector ports using a wrench.
   components:
     - type: Sprite
       layers:
@@ -371,7 +396,7 @@
         behaviors:
         - !type:PlaySoundBehavior
           sound:
-            path: /Audio/Effects/metalbreak.ogg
+            collection: MetalBreak
         - !type:SpawnEntitiesBehavior
           spawn:
             PlasmaCanisterBroken:
@@ -386,6 +411,8 @@
 - type: entity
   parent: GasCanister
   id: TritiumCanister
+  name: tritium canister
+  description: A canister that can contain any type of gas. This one is supposed to contain tritium. It can be attached to connector ports using a wrench.
   components:
     - type: Sprite
       layers:
@@ -414,7 +441,7 @@
         behaviors:
         - !type:PlaySoundBehavior
           sound:
-            path: /Audio/Effects/metalbreak.ogg
+            collection: MetalBreak
         - !type:SpawnEntitiesBehavior
           spawn:
             TritiumCanisterBroken:
@@ -429,6 +456,8 @@
 - type: entity
   parent: GasCanister
   id: WaterVaporCanister
+  name: water vapor canister
+  description: A canister that can contain any type of gas. This one is supposed to contain water vapor. It can be attached to connector ports using a wrench.
   components:
     - type: Sprite
       layers:
@@ -458,7 +487,7 @@
         behaviors:
         - !type:PlaySoundBehavior
           sound:
-            path: /Audio/Effects/metalbreak.ogg
+            collection: MetalBreak
         - !type:SpawnEntitiesBehavior
           spawn:
             WaterVaporCanisterBroken:
@@ -470,7 +499,9 @@
 
 - type: entity
   parent: GasCanister
-  id: MiasmaCanister
+  id: AmmoniaCanister
+  name: ammonia canister
+  description: A canister that can contain any type of gas. This one is supposed to contain ammonia. It can be attached to connector ports using a wrench.
   components:
     - type: Sprite
       layers:
@@ -485,7 +516,7 @@
           - 0 # Plasma
           - 0 # Tritium
           - 0 #  Water vapor
-          - 1871.71051 # Miasma
+          - 1871.71051 # Ammonia
         temperature: 293.15
     - type: Destructible
       thresholds:
@@ -501,10 +532,10 @@
         behaviors:
         - !type:PlaySoundBehavior
           sound:
-            path: /Audio/Effects/metalbreak.ogg
+            collection: MetalBreak
         - !type:SpawnEntitiesBehavior
           spawn:
-            MiasmaCanisterBroken:
+            AmmoniaCanisterBroken:
               min: 1
               max: 1
         - !type:DoActsBehavior
@@ -516,6 +547,8 @@
 - type: entity
   parent: GasCanister
   id: NitrousOxideCanister
+  name: nitrous oxide canister
+  description: A canister that can contain any type of gas. This one is supposed to contain nitrous oxide. It can be attached to connector ports using a wrench.
   components:
     - type: Sprite
       layers:
@@ -530,7 +563,7 @@
           - 0 # Plasma
           - 0 # Tritium
           - 0 #  Water vapor
-          - 0 # Miasma
+          - 0 # Ammonia
           - 1871.71051 # N2O
         temperature: 293.15
     - type: Destructible
@@ -547,7 +580,7 @@
         behaviors:
         - !type:PlaySoundBehavior
           sound:
-            path: /Audio/Effects/metalbreak.ogg
+            collection: MetalBreak
         - !type:SpawnEntitiesBehavior
           spawn:
             NitrousOxideCanisterBroken:
@@ -560,6 +593,8 @@
 - type: entity
   parent: GasCanister
   id: FrezonCanister
+  name: frezon canister
+  description: A canister that can contain any type of gas. This one is supposed to contain frezon. It can be attached to connector ports using a wrench.
   components:
   - type: Sprite
     layers:
@@ -573,8 +608,8 @@
       - 0 # CO2
       - 0 # Plasma
       - 0 # Tritium
-      - 0 #  Water vapor
-      - 0 # Miasma
+      - 0 # Water vapor
+      - 0 # Ammonia
       - 0 # N2O
       - 1871.71051 # Frezon
       temperature: 293.15
@@ -592,7 +627,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           FrezonCanisterBroken:
@@ -640,7 +675,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           BZCanisterBroken:
@@ -689,7 +724,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           PluoxiumCanisterBroken:
@@ -739,7 +774,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           HydrogenCanisterBroken:
@@ -790,7 +825,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           NitriumCanisterBroken:
@@ -848,7 +883,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           HealiumCanisterBroken:
@@ -906,7 +941,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           HyperNobliumCanisterBroken:
@@ -964,7 +999,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           ProtoNitrateCanisterBroken:
@@ -1022,7 +1057,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           ZaukerCanisterBroken:
@@ -1080,7 +1115,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           HalonCanisterBroken:
@@ -1138,7 +1173,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           HeliumCanisterBroken:
@@ -1196,7 +1231,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           AntiNobliumCanisterBroken:
@@ -1213,6 +1248,8 @@
 - type: entity
   parent: BaseStructureDynamic
   id: GasCanisterBrokenBase
+  name: broken gas canister
+  description: A broken gas canister. Not useless yet, as it can be salvaged for high quality materials.
   components:
     - type: Destructible
       thresholds:
@@ -1228,7 +1265,7 @@
         behaviors:
         - !type:PlaySoundBehavior
           sound:
-            path: /Audio/Effects/metalbreak.ogg
+            collection: MetalBreak
         - !type:SpawnEntitiesBehavior
           spawn:
             SheetPlasteel1:
@@ -1329,7 +1366,7 @@
 
 - type: entity
   parent: GasCanisterBrokenBase
-  id: MiasmaCanisterBroken
+  id: AmmoniaCanisterBroken
   noSpawn: true
   components:
     - type: Sprite

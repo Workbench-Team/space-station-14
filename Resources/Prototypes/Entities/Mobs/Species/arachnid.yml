@@ -11,36 +11,48 @@
   - type: HumanoidAppearance
     species: Arachnid
   - type: Hunger
-    baseDecayRate: 0.0125 # Spiders have slow metabolisms all things considered, so I decided to just make their hunger drain slower.
-    starvationDamage:
-      types:
-        Cold: 0.5
-        Bloodloss: 0.5
   - type: Thirst
-    baseDecayRate: 0.0125 # Read comment in hunger
-  # Damage (Self)
-  - type: Bloodstream
-    bloodReagent: CopperBlood
-  # Damage (Others)
-  - type: MeleeWeapon
-    animation: WeaponArcClaw
-    soundHit:
-      collection: AlienClaw
-    damage:
-      types: # Realisically this is more like 5 slash
-        Slash: 4
-  # Fun
   - type: Sericulture
     action: ActionSericulture
-    productionLength: 3
+    productionLength: 2
     entityProduced: MaterialWebSilk1
-    hungerCost: 9 # Should total to 12 total silk on full hunger
-  - type: Perishable
+    hungerCost: 4 # Should total to 25 total silk on full hunger
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+    - SpiderCraft
   - type: Butcherable
     butcheringType: Spike
     spawned:
       - id: FoodMeatSpider
         amount: 5
+  - type: Inventory
+    templateId: arachnid
+  - type: Reactive
+    reactions:
+    - reagents: [Water]
+      methods: [Touch]
+      effects:
+      - !type:WearableReaction
+        slot: head
+        prototypeID: WaterDropletHat
+    - reagents: [Water, SpaceCleaner]
+      methods: [Touch]
+      effects:
+      - !type:WashCreamPieReaction
+  # Damage (Self)
+  - type: Bloodstream
+    bloodReagent: CopperBlood
+  # Damage (Others)
+  - type: MeleeWeapon
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Piercing: 5
   # Visual & Audio
   - type: DamageVisuals
     damageOverlayGroups:
@@ -50,13 +62,14 @@
   - type: Speech
     speechVerb: Arachnid
     speechSounds: Arachnid
+    allowedEmotes: ['Click', 'Chitter']
   - type: Vocal
     sounds:
       Male: UnisexArachnid
       Female: UnisexArachnid
       Unsexed: UnisexArachnid
   - type: TypingIndicator
-    proto: default # TODO: change to 'spider' when sprite and proto fixed
+    proto: spider
   - type: Sprite # I'd prefer if these maps were better. Insert map pun here.
     layers:
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
@@ -82,18 +95,18 @@
       - map: ["jumpsuit"]
       - map: ["enum.HumanoidVisualLayers.LHand"]
       - map: ["enum.HumanoidVisualLayers.RHand"]
-      - map: [ "id" ]
       - map: [ "gloves" ]
       - map: [ "shoes" ]
       - map: [ "ears" ]
       - map: [ "outerClothing" ]
       - map: [ "eyes" ]
       - map: [ "belt" ]
+      - map: [ "id" ]
       - map: [ "enum.HumanoidVisualLayers.Tail" ] # Mentioned in moth code: This needs renaming lol.
       - map: [ "neck" ]
       - map: [ "back" ]
       - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
-      - map: [ "enum.HumanoidVisualLayers.Hair" ]
+      - map: [ "enum.HumanoidVisualLayers.Hair" ] # Do these need to be here? (arachnid hair arachnid hair)
       - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
       - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
       - map: [ "mask" ]
@@ -109,11 +122,6 @@
         sprite: "Effects/creampie.rsi"
         state: "creampie_arachnid"
         visible: false
-  - type: Tag
-    tags:
-    - CanPilot
-    - FootstepSound
-    - DoorBumpOpener
 
 - type: entity
   parent: BaseSpeciesDummy

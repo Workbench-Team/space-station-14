@@ -51,8 +51,8 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
         EscapeButton.OnPressed += EscapeButtonOnOnPressed;
     }
 
-    private void ActivateButton() => EscapeButton!.Pressed = true;
-    private void DeactivateButton() => EscapeButton!.Pressed = false;
+    private void ActivateButton() => EscapeButton!.SetClickPressed(true);
+    private void DeactivateButton() => EscapeButton!.SetClickPressed(false);
 
     public void OnStateEntered(GameplayState state)
     {
@@ -98,16 +98,6 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
             _uri.OpenUri(_cfg.GetCVar(CCVars.InfoLinksDiscord));
         };
 
-        _escapeWindow.BoostyButton.OnPressed += _ =>
-        {
-            _uri.OpenUri(_cfg.GetCVar(CCVars.InfoLinksBoosty));
-        };
-
-        _escapeWindow.ShopButton.OnPressed += _ =>
-        {
-            _uri.OpenUri(_cfg.GetCVar(CCVars.InfoLinksShop));
-        };
-
         _escapeWindow.WikiButton.OnPressed += _ =>
         {
             _uri.OpenUri(_cfg.GetCVar(CCVars.InfoLinksWiki));
@@ -120,8 +110,6 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
 
         // Hide wiki button if we don't have a link for it.
         _escapeWindow.WikiButton.Visible = _cfg.GetCVar(CCVars.InfoLinksWiki) != "";
-        // Hide Boosty button if we don't have a link for it.
-        _escapeWindow.BoostyButton.Visible = _cfg.GetCVar(CCVars.InfoLinksBoosty) != "";
 
         CommandBinds.Builder
             .Bind(EngineKeyFunctions.EscapeMenu,

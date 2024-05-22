@@ -7,6 +7,7 @@ using Content.Shared.Afk;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
+using Robust.Shared.Input;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 
@@ -37,9 +38,16 @@ public sealed class AFKSystem : EntitySystem
     {
         base.Initialize();
         _playerManager.PlayerStatusChanged += OnPlayerChange;
-        _configManager.OnValueChanged(CCVars.AfkTime, SetAfkDelay, true);
-        _configManager.OnValueChanged(CCVars.AfkKickTime, SetAfkKickDelay, true);
-        _configManager.OnValueChanged(CCVars.AfkAdminKickTime, SetAfkAdminKickDelay, true);
+        Subs.CVar(_configManager, CCVars.AfkTime, SetAfkDelay, true);
+        Subs.CVar(_configManager, CCVars.AfkKickTime, SetAfkKickDelay, true);
+        Subs.CVar(_configManager, CCVars.AfkAdminKickTime, SetAfkAdminKickDelay, true);
+
+        SubscribeNetworkEvent<FullInputCmdMessage>(HandleInputCmd);
+    }
+
+    private void HandleInputCmd(FullInputCmdMessage msg, EntitySessionEventArgs args)
+    {
+        _afkManager.PlayerDidAction(args.SenderSession);
     }
 
     private void SetAfkDelay(float obj)
@@ -78,9 +86,6 @@ public sealed class AFKSystem : EntitySystem
         base.Shutdown();
         _afkPlayers.Clear();
         _playerManager.PlayerStatusChanged -= OnPlayerChange;
-        _configManager.UnsubValueChanged(CCVars.AfkTime, SetAfkDelay);
-        _configManager.UnsubValueChanged(CCVars.AfkKickTime, SetAfkKickDelay);
-        _configManager.UnsubValueChanged(CCVars.AfkAdminKickTime, SetAfkAdminKickDelay);
     }
 
     public override void Update(float frameTime)

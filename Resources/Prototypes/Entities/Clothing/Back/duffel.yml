@@ -8,10 +8,12 @@
     sprite: Clothing/Back/Duffels/duffel.rsi
   - type: Storage
     maxItemSize: Huge
-    maxTotalWeight: 40
+    grid:
+    - 0,0,7,4
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 0.9
+  - type: HeldSpeedModifier
 
 - type: entity
   parent: ClothingBackpackDuffel
@@ -39,6 +41,15 @@
   components:
   - type: Sprite
     sprite: Clothing/Back/Duffels/medical.rsi
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelCentcom
+  name: central command duffel bag
+  description: A duffel bag for storing expensive items of Central Command representatives.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Duffels/centcom.rsi
 
 - type: entity
   parent: ClothingBackpackDuffel
@@ -172,6 +183,11 @@
   components:
   - type: Sprite
     sprite: Clothing/Back/Duffels/syndicate.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+  - type: Storage
+    grid:
+    - 0,0,8,4
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicate
@@ -240,9 +256,11 @@
     size: Ginormous
   - type: Storage
     maxItemSize: Huge
-    maxTotalWeight: 56 #14 normal-sized items.
+    grid:
+    - 0,0,19,9
   - type: ClothingSpeedModifier
     sprintModifier: 1 # makes its stats identical to other variants of bag of holding
+  - type: HeldSpeedModifier
 
 - type: entity
   parent: ClothingBackpackDuffel
@@ -252,7 +270,7 @@
   components:
   - type: Storage
     maxItemSize: Huge
-    maxTotalWeight: 40
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1
+  - type: HeldSpeedModifier

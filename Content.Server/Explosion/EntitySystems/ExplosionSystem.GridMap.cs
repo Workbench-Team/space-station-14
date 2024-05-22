@@ -1,5 +1,7 @@
 using System.Numerics;
 using Content.Shared.Atmos;
+using Content.Shared.Explosion;
+using Content.Shared.Explosion.Components;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 
@@ -21,7 +23,7 @@ public sealed partial class ExplosionSystem : EntitySystem
     /// </summary>
     private void OnGridStartup(GridStartupEvent ev)
     {
-        var grid = _mapManager.GetGrid(ev.EntityUid);
+        var grid = Comp<MapGridComponent>(ev.EntityUid);
 
         Dictionary<Vector2i, NeighborFlag> edges = new();
         _gridEdges[ev.EntityUid] = edges;
@@ -37,6 +39,13 @@ public sealed partial class ExplosionSystem : EntitySystem
     {
         _airtightMap.Remove(ev.EntityUid);
         _gridEdges.Remove(ev.EntityUid);
+
+        // this should be a small enough set that iterating all of them is fine
+        var query = EntityQueryEnumerator<ExplosionVisualsComponent>();
+        while (query.MoveNext(out var visuals))
+        {
+            visuals.Tiles.Remove(ev.EntityUid);
+        }
     }
 
     /// <summary>

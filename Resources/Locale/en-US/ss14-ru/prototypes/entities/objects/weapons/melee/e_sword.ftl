@@ -8,5 +8,5 @@ ent-EnergyDaggerBox = e-dagger box
     .suffix = E-Dagger
 ent-EnergyCutlass = energy cutlass
     .desc = An exotic energy weapon.
-ent-EnergySwordDouble = Double Bladed Energy Sword
-    .desc = Syndicate Command Interns thought that having one blade on the energy sword was not enough. This can be stored in pockets.
+ent-EnergySwordDouble = double-bladed energy sword
+    .desc = Syndicate Command's intern thought that having only one blade on energy swords was not cool enough. This can be stored in pockets.

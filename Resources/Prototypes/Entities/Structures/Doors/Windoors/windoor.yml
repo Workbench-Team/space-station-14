@@ -1,14 +1,44 @@
-﻿- type: entity
+- type: entity
   id: Windoor
   parent: BaseWindoor
-  name: windoor
+  name: Windoor
   description: It's a window and a sliding door. Wow!
 
 - type: entity
   id: WindoorSecure
   parent: BaseSecureWindoor
-  name: secure windoor
+  name: Secure Windoor
   description: It's a sturdy window and a sliding door. Wow!
+
+- type: entity
+  id: WindoorClockwork
+  parent: BaseClockworkWindoor
+  name: clockwork windoor
+  description: It's a sturdy window and a sliding door. Wow!
+
+- type: entity
+  id: WindoorPlasma
+  parent: BasePlasmaWindoor
+  name: Plasma Windoor
+  description: It's a pink window *and* a sliding door. Amazing!
+
+- type: entity
+  id: WindoorSecurePlasma
+  parent: BaseSecurePlasmaWindoor
+  name: Secure Plasma Windoor
+  description: It's a sturdy purple window *and* a sliding door. Spectacular!
+
+- type: entity
+  id: WindoorUranium
+  parent: BaseUraniumWindoor
+  name: Uranium Windoor
+  description: It's a window and a sliding door. Huh? Oh, and it's green!
+
+- type: entity
+  id: WindoorSecureUranium
+  parent: BaseSecureUraniumWindoor
+  name: Secure Uranium Windoor
+  description: It's a sturdy window and a sliding door. It's so neon green, it might even taste like limes!
 
 # TODO remove these with parameterized prototypes/whatever we end up doing
 # Windoors (alphabetical)
@@ -18,8 +48,6 @@
   id: WindoorBarLocked
   suffix: Bar, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Bar"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsBar ]
@@ -29,8 +57,6 @@
   id: WindoorBarKitchenLocked
   suffix: Bar&Kitchen, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Bar"], ["Kitchen"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsBarKitchen ]
@@ -40,8 +66,6 @@
   id: WindoorCargoLocked
   suffix: Cargo, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Cargo"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCargo ]
@@ -51,8 +75,6 @@
   id: WindoorChapelLocked
   suffix: Chapel, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Chapel"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsChapel ]
@@ -62,8 +84,6 @@
   id: WindoorHydroponicsLocked
   suffix: Hydroponics, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Hydroponics"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsHydroponics ]
@@ -73,8 +93,15 @@
   id: WindoorJanitorLocked
   suffix: Janitor, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Janitor"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsJanitor ]
+
+- type: entity
+  parent: WindoorPlasma
+  id: PlasmaWindoorJanitorLocked
+  suffix: Janitor, Locked, Plasma
+  components:
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsJanitor ]
@@ -84,8 +111,6 @@
   id: WindoorKitchenLocked
   suffix: Kitchen, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Kitchen"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsKitchen ]
@@ -95,8 +120,6 @@
   id: WindoorKitchenHydroponicsLocked
   suffix: Kitchen&Hydroponics, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Kitchen"], ["Hydroponics"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsKitchenHydroponics ]
@@ -106,8 +129,6 @@
   id: WindoorServiceLocked
   suffix: Service, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Service"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsService ]
@@ -117,8 +138,6 @@
   id: WindoorTheatreLocked
   suffix: Theatre, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Theatre"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsTheatre ]
@@ -130,19 +149,51 @@
   id: WindoorSecureArmoryLocked
   suffix: Armory, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Armory"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsArmory ]
+
+- type: entity
+  parent: WindoorSecurePlasma
+  id: PlasmaWindoorSecureArmoryLocked
+  suffix: Armory, Locked, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsArmory ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureAtmosphericsLocked
+  suffix: Atmospherics, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsAtmospherics ]
+
+- type: entity
+  parent: WindoorSecurePlasma
+  id: PlasmaWindoorSecureAtmosphericsLocked
+  suffix: Atmospherics, Locked, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsAtmospherics ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureBarLocked
+  suffix: Bar, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsBar ]
 
 - type: entity
   parent: WindoorSecureSecurityLocked
   id: WindoorSecureBrigLocked
   suffix: Brig, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Brig"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsBrig ]
@@ -152,8 +203,6 @@
   id: WindoorSecureCargoLocked
   suffix: Cargo, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Cargo"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCargo ]
@@ -163,8 +212,6 @@
   id: WindoorSecureChapelLocked
   suffix: Chapel, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Chapel"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsChapel ]
@@ -174,19 +221,51 @@
   id: WindoorSecureChemistryLocked
   suffix: Chemistry, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Chemistry"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChemistry ]
+
+- type: entity
+  parent: WindoorSecurePlasma
+  id: PlasmaWindoorSecureChemistryLocked
+  suffix: Chemistry, Locked, Plasma
+  components:
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsChemistry ]
 
 - type: entity
   parent: WindoorSecure
+  id: WindoorSecureCentralCommandLocked
+  suffix: Central Command, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentralCommand ]
+
+- type: entity
+  parent: WindoorSecurePlasma
+  id: PlasmaWindoorSecureCentralCommandLocked
+  suffix: Central Command, Locked, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentralCommand ]
+
+- type: entity
+  parent: WindoorSecureUranium
+  id: UraniumWindoorSecureCentralCommandLocked
+  suffix: Central Command, Locked, Uranium
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentralCommand ]
+
+- type: entity
+  parent: WindoorSecure
   id: WindoorSecureCommandLocked
   suffix: Command, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Command"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCommand ]
@@ -196,19 +275,51 @@
   id: WindoorCaptainLocked
   suffix: Captain, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Captain"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCaptain ]
+
+- type: entity
+  parent: WindoorSecurePlasma
+  id: PlasmaWindoorSecureCommandLocked
+  suffix: Command, Locked, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCommand ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureDetectiveLocked
+  suffix: Detective, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDetective ]
 
 - type: entity
   parent: WindoorSecure
   id: WindoorSecureEngineeringLocked
   suffix: Engineering, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Engineering"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsEngineering ]
+
+- type: entity
+  parent: WindoorSecurePlasma
+  id: PlasmaWindoorSecureEngineeringLocked
+  suffix: Engineering, Locked, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsEngineering ]
+
+- type: entity
+  parent: WindoorSecureUranium
+  id: UraniumWindoorSecureEngineeringLocked
+  suffix: Engineering, Locked, Uranium
+  components:
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsEngineering ]
@@ -218,8 +329,6 @@
   id: WindoorSecureExternalLocked
   suffix: External, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["External"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsExternal ]
@@ -229,8 +338,15 @@
   id: WindoorSecureJanitorLocked
   suffix: Janitor, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Janitor"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsJanitor ]
+
+- type: entity
+  parent: WindoorSecurePlasma
+  id: PlasmaWindoorSecureJanitorLocked
+  suffix: Janitor, Locked, Plasma
+  components:
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsJanitor ]
@@ -240,19 +356,24 @@
   id: WindoorSecureKitchenLocked
   suffix: Kitchen, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Kitchen"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsKitchen ]
+
+- type: entity
+  parent: WindoorSecureSecurityLocked
+  id: WindoorSecureSecurityLawyerLocked
+  suffix: Security/Lawyer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSecurityLawyer ]
 
 - type: entity
   parent: WindoorSecure
   id: WindoorSecureMedicalLocked
   suffix: Medical, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Medical"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsMedical ]
@@ -262,30 +383,24 @@
   id: WindoorSecureSalvageLocked
   suffix: Salvage, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Salvage"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSalvage ]
 
 - type: entity
   parent: WindoorSecure
-  id: WindoorSecureMinerLocked
-  suffix: Miner, Locked
-  components:
-  - type: AccessReaderBoard
-#    access: [["Salvage"]]
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsMiner ]
-
-- type: entity
-  parent: WindoorSecure
   id: WindoorSecureSecurityLocked
   suffix: Security, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Security"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSecurity ]
+
+- type: entity
+  parent: WindoorSecurePlasma
+  id: PlasmaWindoorSecureSecurityLocked
+  suffix: Security, Locked, Plasma
+  components:
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSecurity ]
@@ -295,41 +410,33 @@
   id: WindoorSecureScienceLocked
   suffix: Science, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["Research"]]
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsScience ]
+      board: [ DoorElectronicsResearch ]
+
+- type: entity
+  parent: WindoorSecurePlasma
+  id: PlasmaWindoorSecureScienceLocked
+  suffix: Science, Locked, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsResearch ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureServiceLocked
+  suffix: Service, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsService ]
 
 - type: entity
   parent: WindoorSecure
   id: WindoorSecureHeadOfPersonnelLocked
   suffix: HeadOfPersonnel, Locked
   components:
-  - type: AccessReaderBoard
-#    access: [["HeadOfPersonnel"]]
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsHeadOfPersonnel ]
-
-- type: entity
-  parent: WindoorSecure
-  id: WindoorSecureAtmosphericsLocked
-  suffix: Atmospherics, Locked
-  components:
-  - type: AccessReaderBoard
-#    access: [["Atmospherics"]]
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsAtmospherics ]
-
-- type: entity
-  parent: WindoorSecure
-  id: WindoorSecureParamedicLocked
-  suffix: Paramedic, Locked
-  components:
-  - type: AccessReaderBoard
-#    access: [["Paramedic"]]
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsParamedic ]

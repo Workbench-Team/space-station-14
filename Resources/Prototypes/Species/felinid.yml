@@ -7,7 +7,6 @@
   markingLimits: MobFelinidMarkingLimits
   dollPrototype: MobFelinidDummy
   skinColoration: HumanToned
-
 - type: markingPoints
   id: MobFelinidMarkingLimits
   points:
@@ -20,7 +19,7 @@
     Tail:
       points: 1
       required: true
-      defaultMarkings: [ FelinidTailResprite ]
+      defaultMarkings: [ FelinidTailDefault ]
     HeadTop:
       points: 1
       required: true

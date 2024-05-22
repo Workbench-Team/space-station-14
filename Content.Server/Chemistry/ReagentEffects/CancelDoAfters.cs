@@ -60,7 +60,7 @@ namespace Content.Server.Chemistry.ReagentEffects
             {
                 if (
                     (DamageLike && doAfter.Args.BreakOnDamage && Damage > doAfter.Args.DamageThreshold) ||
-                    (MovementLike && doAfter.Args.BreakOnUserMove && Movement > doAfter.Args.MovementThreshold))
+                    (MovementLike && doAfter.Args.BreakOnMove && Movement > doAfter.Args.MovementThreshold))
                 {
                     doAfterSystem.Cancel(doAfter.Id, doAfterComp);
                 }

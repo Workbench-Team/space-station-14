@@ -1,0 +1,91 @@
+- type: job
+  id: CentComConsultant
+  name: job-name-consultant
+  description: job-description-consultant
+  playTimeTracker: JobCentComConsultant
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobBlueShield
+      time: 54000 #15 hrs
+    - !type:RoleTimeRequirement
+      role: JobCaptain
+      time: 72000 #20 hrs
+    - !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 54000 #15 hrs
+    - !type:RoleTimeRequirement
+      role: JobChiefMedicalOfficer
+      time: 54000 #15 hrs
+    - !type:RoleTimeRequirement
+      role: JobHeadOfPersonnel
+      time: 54000 #15 hrs
+    - !type:RoleTimeRequirement
+      role: JobResearchDirector
+      time: 54000 #15 hrs
+    - !type:RoleTimeRequirement
+      role: JobChiefEngineer
+      time: 54000 #15 hrs
+    - !type:RoleTimeRequirement
+      role: JobQuartermaster
+      time: 36000 #10 hrs
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 468000  # 130 hours
+  startingGear: ConsultantGear
+  icon: "JobIconConsultant"
+  requireAdminNotify: true
+  joinNotifyCrew: true
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  whitelistRequired: true
+  access:
+  - EmergencyShuttleRepealAll
+  - Captain
+  - HeadOfPersonnel
+  - ChiefEngineer
+  - ChiefMedicalOfficer
+  - HeadOfSecurity
+  - ResearchDirector
+  - Command
+  - Security
+  - Detective
+  - Armory
+  - Brig
+  - Lawyer
+  - Engineering
+  - Medical
+  - Quartermaster
+  - Miner
+  - Salvage
+  - Cargo
+  - Research
+  - Service
+  - Maintenance
+  - External
+  - Janitor
+  - Theatre
+  - Bar
+  - Chemistry
+  - Kitchen
+  - Chapel
+  - Hydroponics
+  - Atmospherics
+  - CentralCommand
+  - Cryogenics
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: ConsultantGear
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesLatex
+    id: CentcomConsultantPDA
+    ears: ClothingHeadsetCentCom
+    belt: BoxFolderClipboard
+    pocket1: WeaponDisabler

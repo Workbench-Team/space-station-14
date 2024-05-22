@@ -45,6 +45,13 @@ accent-words-zombie-7 = Мазгии... Ммааазгиии..
 accent-words-zombie-8 = Брээээ...
 accent-words-zombie-9 = Бруээээ...
 accent-words-zombie-10 = Граааааа...
+# Moth Zombie
+accent-words-zombie-moth-1 = Одееежжждааа...
+accent-words-zombie-moth-2 = Ботиииинкиии...
+accent-words-zombie-moth-3 = Свееееет...
+accent-words-zombie-moth-4 = Лааампы...
+accent-words-zombie-moth-5 = Шаааапкиии... Шапппкииии...
+accent-words-zombie-moth-6 = Шарффыыы...
 # Generic Aggressive
 accent-words-generic-aggressive-1 = Грр!
 accent-words-generic-aggressive-2 = Рррр!
@@ -81,3 +88,25 @@ accent-words-mothroach-1 = Бззз!
 accent-words-mothroach-2 = Жжж!
 accent-words-mothroach-3 = Бзззт!
 accent-words-mothroach-4 = Бзз.
+# Crab
+accent-words-crab-1 = Чик.
+accent-words-crab-2 = Чик-клац!
+accent-words-crab-3 = Клац?
+accent-words-crab-4 = Типи-тап!
+accent-words-crab-5 = Чик-тап.
+accent-words-crab-6 = Чикичик.
+# Kobold
+accent-words-kobold-1 = Йип!
+accent-words-kobold-2 = Гррар.
+accent-words-kobold-3 = Йап!
+accent-words-kobold-4 = Бип.
+accent-words-kobold-5 = Скрит?
+accent-words-kobold-6 = Гронк!
+accent-words-kobold-7 = Хисс!
+accent-words-kobold-8 = Йии!
+accent-words-kobold-9 = Йип.
+# Nymph
+accent-words-nymph-1 = Чирик!
+accent-words-nymph-2 = Чурр...
+accent-words-nymph-3 = Чипи?
+accent-words-nymph-4 = Шрруп!

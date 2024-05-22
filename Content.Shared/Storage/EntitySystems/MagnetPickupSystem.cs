@@ -26,12 +26,6 @@ public sealed class MagnetPickupSystem : EntitySystem
         base.Initialize();
         _physicsQuery = GetEntityQuery<PhysicsComponent>();
         SubscribeLocalEvent<MagnetPickupComponent, MapInitEvent>(OnMagnetMapInit);
-        SubscribeLocalEvent<MagnetPickupComponent, EntityUnpausedEvent>(OnMagnetUnpaused);
-    }
-
-    private void OnMagnetUnpaused(EntityUid uid, MagnetPickupComponent component, ref EntityUnpausedEvent args)
-    {
-        component.NextScan += args.PausedTime;
     }
 
     private void OnMagnetMapInit(EntityUid uid, MagnetPickupComponent component, MapInitEvent args)
@@ -42,24 +36,24 @@ public sealed class MagnetPickupSystem : EntitySystem
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
-        var query = EntityQueryEnumerator<MagnetPickupComponent, StorageComponent, TransformComponent>();
+        var query = EntityQueryEnumerator<MagnetPickupComponent, StorageComponent, TransformComponent, MetaDataComponent>();
         var currentTime = _timing.CurTime;
 
-        while (query.MoveNext(out var uid, out var comp, out var storage, out var xform))
+        while (query.MoveNext(out var uid, out var comp, out var storage, out var xform, out var meta))
         {
             if (comp.NextScan > currentTime)
                 continue;
 
             comp.NextScan += ScanDelay;
 
-            // No space
-            if (!_storage.HasSpace((uid, storage)))
-                continue;
-
-            if (!_inventory.TryGetContainingSlot(uid, out var slotDef))
+            if (!_inventory.TryGetContainingSlot((uid, xform, meta), out var slotDef))
                 continue;
 
             if ((slotDef.SlotFlags & comp.SlotFlags) == 0x0)
+                continue;
+
+            // No space
+            if (!_storage.HasSpace((uid, storage)))
                 continue;
 
             var parentUid = xform.ParentUid;
@@ -83,7 +77,7 @@ public sealed class MagnetPickupSystem : EntitySystem
                 // the problem is that stack pickups delete the original entity, which is fine, but due to
                 // game state handling we can't show a lerp animation for it.
                 var nearXform = Transform(near);
-                var nearMap = nearXform.MapPosition;
+                var nearMap = _transform.GetMapCoordinates(near, xform: nearXform);
                 var nearCoords = EntityCoordinates.FromMap(moverCoords.EntityId, nearMap, _transform, EntityManager);
 
                 if (!_storage.Insert(uid, near, out var stacked, storageComp: storage, playSound: !playedSound))

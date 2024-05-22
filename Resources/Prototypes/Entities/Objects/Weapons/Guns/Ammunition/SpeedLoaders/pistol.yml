@@ -58,6 +58,7 @@
     zeroVisible: false
   - type: Appearance
 
+# Starshine-start
 - type: entity
   id: SpeedLoaderPistolRubber
   name: "speed loader (.35 auto rubber)"
@@ -76,3 +77,4 @@
     steps: 7
     zeroVisible: false
   - type: Appearance
+# Starshine-end

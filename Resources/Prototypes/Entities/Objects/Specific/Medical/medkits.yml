@@ -8,12 +8,16 @@
     sprite: Objects/Specific/Medical/firstaidkits.rsi
     state: firstaid
   - type: Storage
-    maxTotalWeight: 8
     maxItemSize: Small
+    grid:
+    - 0,0,4,1
   - type: Item
     size: Large
     sprite: Objects/Specific/Medical/firstaidkits.rsi
     heldPrefix: firstaid
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 150
   - type: Tag
     tags:
     - Medkit

@@ -1,30 +1,28 @@
-using Content.Server.Administration.Commands;
 using Content.Server.Communications;
 using Content.Server.Chat.Managers;
-using Content.Server.GameTicking;
+using Content.Server.CriminalRecords.Systems;
 using Content.Server.GameTicking.Rules.Components;
+using Content.Server.GenericAntag;
+using Content.Server.Objectives.Components;
+using Content.Server.Objectives.Systems;
 using Content.Server.Power.Components;
 using Content.Server.Power.EntitySystems;
 using Content.Server.PowerCell;
 using Content.Server.Research.Systems;
 using Content.Server.Roles;
-using Content.Server.GenericAntag;
-using Content.Server.Warps;
 using Content.Shared.Alert;
 using Content.Shared.Clothing.EntitySystems;
 using Content.Shared.Doors.Components;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Mind;
-using Content.Shared.Mind.Components;
 using Content.Shared.Ninja.Components;
 using Content.Shared.Ninja.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Rounding;
 using Robust.Shared.Audio;
 using Robust.Shared.Player;
-using Robust.Shared.Random;
 using System.Diagnostics.CodeAnalysis;
-using Content.Server.Objectives.Components;
+using Robust.Shared.Audio.Systems;
 
 namespace Content.Server.Ninja.Systems;
 
@@ -32,7 +30,6 @@ namespace Content.Server.Ninja.Systems;
 // engi -> saboteur
 // medi -> idk reskin it
 // other -> assault
-// TODO: when criminal records is merged, hack it to set everyone to arrest
 
 /// <summary>
 /// Main ninja system that handles ninja setup, provides helper methods for the rest of the code to use.
@@ -41,10 +38,8 @@ public sealed class SpaceNinjaSystem : SharedSpaceNinjaSystem
 {
     [Dependency] private readonly AlertsSystem _alerts = default!;
     [Dependency] private readonly BatterySystem _battery = default!;
-    [Dependency] private readonly GameTicker _gameTicker = default!;
-    [Dependency] private readonly GenericAntagSystem _genericAntag = default!;
+    [Dependency] private readonly CodeConditionSystem _codeCondition = default!;
     [Dependency] private readonly IChatManager _chatMan = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly PowerCellSystem _powerCell = default!;
     [Dependency] private readonly RoleSystem _role = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
@@ -59,6 +54,7 @@ public sealed class SpaceNinjaSystem : SharedSpaceNinjaSystem
         SubscribeLocalEvent<SpaceNinjaComponent, EmaggedSomethingEvent>(OnDoorjack);
         SubscribeLocalEvent<SpaceNinjaComponent, ResearchStolenEvent>(OnResearchStolen);
         SubscribeLocalEvent<SpaceNinjaComponent, ThreatCalledInEvent>(OnThreatCalledIn);
+        SubscribeLocalEvent<SpaceNinjaComponent, CriminalRecordsHackedEvent>(OnCriminalRecordsHacked);
     }
 
     public override void Update(float frameTime)
@@ -167,17 +163,7 @@ public sealed class SpaceNinjaSystem : SharedSpaceNinjaSystem
             PrototypeId = "SpaceNinja"
         };
         _role.MindAddRole(mindId, role, mind);
-
-        // choose spider charge detonation point
-        var warps = new List<EntityUid>();
-        var query = EntityQueryEnumerator<BombingTargetComponent, WarpPointComponent>();
-        while (query.MoveNext(out var warpUid, out _, out var warp))
-        {
-            warps.Add(warpUid);
-        }
-
-        if (warps.Count > 0)
-            role.SpiderChargeTarget = _random.Pick(warps);
+        _role.MindPlaySound(mindId, config.GreetingSound, mind);
 
         var session = mind.Session;
         _audio.PlayGlobal(config.GreetingSound, Filter.Empty().AddPlayer(session), false, AudioParams.Default);
@@ -233,11 +219,21 @@ public sealed class SpaceNinjaSystem : SharedSpaceNinjaSystem
         Popup.PopupEntity(str, uid, uid, PopupType.Medium);
     }
 
-    private void OnThreatCalledIn(EntityUid uid, SpaceNinjaComponent comp, ref ThreatCalledInEvent args)
+    private void OnThreatCalledIn(Entity<SpaceNinjaComponent> ent, ref ThreatCalledInEvent args)
     {
-        if (_mind.TryGetObjectiveComp<TerrorConditionComponent>(uid, out var obj))
-        {
-            obj.CalledInThreat = true;
-        }
+        _codeCondition.SetCompleted(ent.Owner, ent.Comp.TerrorObjective);
+    }
+
+    private void OnCriminalRecordsHacked(Entity<SpaceNinjaComponent> ent, ref CriminalRecordsHackedEvent args)
+    {
+        _codeCondition.SetCompleted(ent.Owner, ent.Comp.MassArrestObjective);
+    }
+
+    /// <summary>
+    /// Called by <see cref="SpiderChargeSystem"/> when it detonates.
+    /// </summary>
+    public void DetonatedSpiderCharge(Entity<SpaceNinjaComponent> ent)
+    {
+        _codeCondition.SetCompleted(ent.Owner, ent.Comp.SpiderChargeObjective);
     }
 }

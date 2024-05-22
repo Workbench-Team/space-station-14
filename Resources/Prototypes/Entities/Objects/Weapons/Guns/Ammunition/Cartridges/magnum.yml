@@ -17,8 +17,6 @@
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
-  - type: StaticPrice
-    price: 1
 
 - type: entity
   id: CartridgeMagnum
@@ -37,9 +35,13 @@
     proto: BulletMagnumPractice
   - type: Sprite
     layers:
-    - state: practice
-      map: ["enum.AmmoVisualLayers.Base"]
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"
 
+# Starshine-start
 - type: entity
   id: CartridgeMagnumRubber
   name: cartridge (.45 magnum rubber)
@@ -49,8 +51,12 @@
     proto: BulletMagnumRubber
   - type: Sprite
     layers:
-    - state: rubber
-      map: ["enum.AmmoVisualLayers.Base"]
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#43c4f7"
+# Starshine-end
 
 - type: entity
   id: CartridgeMagnumIncendiary
@@ -59,6 +65,13 @@
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumIncendiary
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#ff6e52"
 
 - type: entity
   id: CartridgeMagnumAP
@@ -67,3 +80,26 @@
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumAP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#0a0a0a"
+
+- type: entity
+  id: CartridgeMagnumUranium
+  name: cartridge (.45 magnum uranium)
+  parent: BaseCartridgeMagnum
+  components:
+  - type: CartridgeAmmo
+    proto: BulletMagnumUranium
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#65fe08"
+

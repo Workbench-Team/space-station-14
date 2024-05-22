@@ -17,8 +17,6 @@
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
-  - type: StaticPrice
-    price: 1
 
 - type: entity
   id: CartridgeLightRifle
@@ -37,9 +35,13 @@
     proto: BulletLightRiflePractice
   - type: Sprite
     layers:
-    - state: practice
-      map: ["enum.AmmoVisualLayers.Base"]
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"
 
+# Starshine-start
 - type: entity
   id: CartridgeLightRifleRubber
   name: cartridge (.30 rifle rubber)
@@ -49,8 +51,12 @@
     proto: BulletLightRifleRubber
   - type: Sprite
     layers:
-    - state: rubber
-      map: ["enum.AmmoVisualLayers.Base"]
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#43c4f7"
+# Starshine-end
 
 - type: entity
   id: CartridgeLightRifleIncendiary
@@ -59,3 +65,25 @@
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleIncendiary
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#ff6e52"
+
+- type: entity
+  id: CartridgeLightRifleUranium
+  name: cartridge (.30 rifle uranium)
+  parent: BaseCartridgeLightRifle
+  components:
+  - type: CartridgeAmmo
+    proto: BulletLightRifleUranium
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#65fe08"

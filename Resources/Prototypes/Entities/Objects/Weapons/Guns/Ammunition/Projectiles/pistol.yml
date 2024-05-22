@@ -10,18 +10,6 @@
         Piercing: 16
 
 - type: entity
-  id: BulletPistolUranium
-  name: bullet (.35 auto uranium)
-  parent: BaseBullet
-  noSpawn: true
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 4
-        Radiation: 12
-
-- type: entity
   id: BulletPistolPractice
   name: bullet (.35 auto practice)
   parent: BaseBulletPractice
@@ -32,6 +20,7 @@
       types:
         Blunt: 2
 
+# Starshine-start
 - type: entity
   id: BulletPistolRubber
   name: bullet (.35 auto rubber)
@@ -42,6 +31,7 @@
     damage:
       types:
         Blunt: 3
+# Starshine-end
 
 - type: entity
   id: BulletPistolIncendiary
@@ -54,3 +44,15 @@
       types:
         Blunt: 2
         Heat: 14
+
+- type: entity
+  id: BulletPistolUranium
+  parent: BaseBulletUranium
+  name: bullet (.35 auto uranium)
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Radiation: 6
+        Piercing: 10

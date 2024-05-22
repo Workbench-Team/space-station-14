@@ -1,6 +1,7 @@
 id-card-access-level-command = Командование
 id-card-access-level-captain = Капитан
 id-card-access-level-head-of-personnel = Глава персонала
+id-card-access-level-cryogenics = Криогеника
 id-card-access-level-head-of-security = Глава службы безопасности
 id-card-access-level-security = Служба безопасности
 id-card-access-level-armory = Оружейная
@@ -26,7 +27,9 @@ id-card-access-level-service = Сервис
 id-card-access-level-janitor = Уборщик
 id-card-access-level-theatre = Театр
 id-card-access-level-chapel = Церковь
+id-card-access-level-lawyer = Адвокат
 id-card-access-level-maintenance = Технический
 id-card-access-level-external = Внешний
 id-card-access-level-nuclear-operative = Ядерные оперативники
 id-card-access-level-syndicate-agent = Агент Синдиката
+id-card-access-level-central-command = Центральное командование

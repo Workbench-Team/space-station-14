@@ -7,7 +7,7 @@
   components:
   - type: Sprite
   - type: Item
-    size: Huge
+    size: Large
   - type: Clothing
     sprite: Objects/Weapons/Guns/SMGs/atreides.rsi
     quickEquip: false
@@ -93,10 +93,21 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: Objects/Weapons/Guns/SMGs/c20r.rsi
+  - type: Wieldable
+  - type: GunWieldBonus
+    minAngle: -19
+    maxAngle: -16
   - type: Tag
     tags:
     - HeavyWeapon
   - type: Gun
+    minAngle: 21
+    maxAngle: 32 
+    shotsPerBurst: 5
+    availableModes:
+    - SemiAuto
+    - Burst
+    - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
   - type: ChamberMagazineAmmoProvider
@@ -122,10 +133,16 @@
           map: ["enum.GunVisualLayers.Mag"]
     - type: Clothing
       sprite: Objects/Weapons/Guns/SMGs/drozd.rsi
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -19
+      maxAngle: -16
     - type: Tag
       tags:
       - HeavyWeapon
     - type: Gun
+      minAngle: 21
+      maxAngle: 32
       fireRate: 6
       selectedMode: FullAuto
       soundGunshot:
@@ -233,9 +250,16 @@
   - type: ChamberMagazineAmmoProvider
     boltClosed: null
   - type: Gun
-    fireRate: 5
+    fireRate: 5.5
+    minAngle: 1
+    maxAngle: 6
+    angleIncrease: 1.5
+    angleDecay: 6
     selectedMode: FullAuto
+    shotsPerBurst: 5
     availableModes:
+    - SemiAuto
+    - Burst
     - FullAuto
   - type: ItemSlots
     slots:
@@ -261,6 +285,7 @@
     zeroVisible: true
   - type: Appearance
 
+## Starshine
 # Rubber
 - type: entity
   name: Drozd
@@ -348,11 +373,11 @@
             - SyringeGunMagazine
       gun_chamber:
         name: Chamber
-        startingItem: Syringecartridge
+        startingItem: SyringeCartridge
         priority: 1
         whitelist:
           tags:
-            - Syringecartridge
+            - SyringeCartridge
   - type: ChamberMagazineAmmoProvider
     boltClosed: null
   - type: MagazineVisuals
@@ -389,11 +414,11 @@
     slots:
       gun_chamber:
         name: Chamber
-        startingItem: Syringecartridge
+        startingItem: SyringeCartridge
         priority: 1
         whitelist:
           tags:
-            - Syringecartridge
+            - SyringeCartridge
   - type: MagazineVisuals
     magState: mag
     steps: 1

@@ -3,9 +3,11 @@ wires-board-name-default = Провода
 wires-board-name-booze = АлкоМат
 wires-board-name-soda = РаздатчикБезалкаголя
 wires-board-name-thermomachine = Термомашина
+wires-board-name-condenser = Конденсатор газа
 wires-board-name-pa = Mk2 Ускоритель Частиц
 wires-board-name-highsec = Контроль БронеДверью
 wires-board-name-vessel = Сосуд
+wires-board-name-crusher = Дробитель
 wires-board-name-smes = СМЭС
 wires-board-name-substation = Подстанция
 wires-board-name-apc = ЛКП
@@ -27,6 +29,7 @@ wires-board-name-hydroponicstray = ГидропонныйЛоток
 wires-board-name-telecomserver = ТелекомСервер
 wires-board-name-medicalscanner = МедицинскийСканер
 wires-board-name-reclaimer = Переработчик
+wires-board-name-recharger = Зарядник
 wires-board-name-minigravitygenerator = МиниГенераторГравитации
 wires-board-name-dawinstrument = ЦзрИнструмент
 wires-board-name-airlock = Контроль Шлюзом
@@ -34,6 +37,8 @@ wires-board-name-firelock = Контроль ПожарШлюзом
 wires-board-name-windoor = Контроль РаздвОкном
 wires-board-name-mech = Меха
 wires-board-name-fatextractor = ЛипидныйЭкстрактор
+wires-board-name-flatpacker = Плоскоупаковщик
+wires-board-name-spaceheater = Космический Обогреватель
 
 # names that get displayed in the wire hacking hud & admin logs.
 
@@ -59,3 +64,5 @@ wire-name-bomb-delay = ЗДРК
 wire-name-bomb-proceed = ТЧНЕ
 wire-name-bomb-boom = БУМ
 wire-name-bomb-bolt = БОЛТ
+wire-name-speech = ДНМК
+wire-name-listen = МИКР

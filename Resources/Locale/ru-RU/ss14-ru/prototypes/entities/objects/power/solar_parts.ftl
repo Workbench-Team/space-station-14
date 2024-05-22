@@ -1,2 +1,2 @@
-ent-SolarAssemblyPart = деталь солнечной батареи
+ent-SolarAssemblyPart = плоскоблок солнечной батареи
     .desc = { ent-BaseItem.desc }

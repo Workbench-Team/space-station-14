@@ -2,12 +2,13 @@ using System.Linq;
 using System.Text;
 using Content.Server.Paper;
 using Content.Server.Popups;
-using Content.Server.UserInterface;
+using Content.Shared.UserInterface;
 using Content.Shared.DoAfter;
 using Content.Shared.Forensics;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Interaction;
 using Content.Shared.Verbs;
+using Robust.Shared.Audio.Systems;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Player;
@@ -27,13 +28,9 @@ namespace Content.Server.Forensics
         [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
         [Dependency] private readonly MetaDataSystem _metaData = default!;
 
-        private ISawmill _sawmill = default!;
-
         public override void Initialize()
         {
             base.Initialize();
-
-            _sawmill = Logger.GetSawmill("forensics.scanner");
 
             SubscribeLocalEvent<ForensicScannerComponent, AfterInteractEvent>(OnAfterInteract);
             SubscribeLocalEvent<ForensicScannerComponent, AfterInteractUsingEvent>(OnAfterInteractUsing);
@@ -50,12 +47,12 @@ namespace Content.Server.Forensics
                 component.Fingerprints,
                 component.Fibers,
                 component.DNAs,
+                component.Residues,
                 component.LastScannedName,
                 component.PrintCooldown,
                 component.PrintReadyAt);
 
-            if (!_uiSystem.TrySetUiState(uid, ForensicScannerUiKey.Key, state))
-                _sawmill.Warning($"{ToPrettyString(uid)} was unable to set UI state.");
+            _uiSystem.SetUiState(uid, ForensicScannerUiKey.Key, state);
         }
 
         private void OnDoAfter(EntityUid uid, ForensicScannerComponent component, DoAfterEvent args)
@@ -73,6 +70,7 @@ namespace Content.Server.Forensics
                     scanner.Fingerprints = new();
                     scanner.Fibers = new();
                     scanner.DNAs = new();
+                    scanner.Residues = new();
                 }
 
                 else
@@ -80,6 +78,7 @@ namespace Content.Server.Forensics
                     scanner.Fingerprints = forensics.Fingerprints.ToList();
                     scanner.Fibers = forensics.Fibers.ToList();
                     scanner.DNAs = forensics.DNAs.ToList();
+                    scanner.Residues = forensics.Residues.ToList();
                 }
 
                 scanner.LastScannedName = MetaData(args.Args.Target.Value).EntityName;
@@ -95,8 +94,7 @@ namespace Content.Server.Forensics
         {
             _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, user, component.ScanDelay, new ForensicScannerDoAfterEvent(), uid, target: target, used: uid)
             {
-                BreakOnTargetMove = true,
-                BreakOnUserMove = true,
+                BreakOnMove = true,
                 NeedHand = true
             });
         }
@@ -164,23 +162,14 @@ namespace Content.Server.Forensics
 
         private void OpenUserInterface(EntityUid user, Entity<ForensicScannerComponent> scanner)
         {
-            if (!TryComp<ActorComponent>(user, out var actor))
-                return;
-
             UpdateUserInterface(scanner, scanner.Comp);
 
-            _uiSystem.TryOpen(scanner, ForensicScannerUiKey.Key, actor.PlayerSession);
+            _uiSystem.OpenUi(scanner.Owner, ForensicScannerUiKey.Key, user);
         }
 
         private void OnPrint(EntityUid uid, ForensicScannerComponent component, ForensicScannerPrintMessage args)
         {
-            if (!args.Session.AttachedEntity.HasValue)
-            {
-                _sawmill.Warning($"{ToPrettyString(uid)} got OnPrint without Session.AttachedEntity");
-                return;
-            }
-
-            var user = args.Session.AttachedEntity.Value;
+            var user = args.Actor;
 
             if (_gameTiming.CurTime < component.PrintReadyAt)
             {
@@ -192,11 +181,11 @@ namespace Content.Server.Forensics
 
             // Spawn a piece of paper.
             var printed = EntityManager.SpawnEntity(component.MachineOutput, Transform(uid).Coordinates);
-            _handsSystem.PickupOrDrop(args.Session.AttachedEntity, printed, checkActionBlocker: false);
+            _handsSystem.PickupOrDrop(args.Actor, printed, checkActionBlocker: false);
 
             if (!HasComp<PaperComponent>(printed))
             {
-                _sawmill.Error("Printed paper did not have PaperComponent.");
+                Log.Error("Printed paper did not have PaperComponent.");
                 return;
             }
 
@@ -221,6 +210,12 @@ namespace Content.Server.Forensics
             {
                 text.AppendLine(dna);
             }
+            text.AppendLine();
+            text.AppendLine(Loc.GetString("forensic-scanner-interface-residues"));
+            foreach (var residue in component.Residues)
+            {
+                text.AppendLine(residue);
+            }
 
             _paperSystem.SetContent(printed, text.ToString());
             _audioSystem.PlayPvs(component.SoundPrint, uid,
@@ -235,9 +230,6 @@ namespace Content.Server.Forensics
 
         private void OnClear(EntityUid uid, ForensicScannerComponent component, ForensicScannerClearMessage args)
         {
-            if (!args.Session.AttachedEntity.HasValue)
-                return;
-
             component.Fingerprints = new();
             component.Fibers = new();
             component.DNAs = new();

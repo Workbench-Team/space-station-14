@@ -12,6 +12,7 @@
   id: Civilian
   description: department-Civilian-description
   color: "#9FED58"
+  weight: -10
   roles:
   - Bartender
   - Borg
@@ -28,8 +29,18 @@
   - Musician
   - Passenger
   - Reporter
+  - Visitor
   - Zookeeper
   - ServiceWorker
+
+- type: department
+  id: CentcomSpecialists
+  description: department-Centcom-description
+  color: "#35a41e"
+  roles:
+  - CentComConsultant
+  - BlueShield
+  - CentralCommandOfficial
 
 - type: department
   id: Command
@@ -37,14 +48,14 @@
   color: "#334E6D"
   roles:
   - Captain
-  - BlueShield
-  - CentralCommandOfficial
   - ChiefEngineer
   - ChiefMedicalOfficer
   - HeadOfPersonnel
   - HeadOfSecurity
   - ResearchDirector
   - Quartermaster
+  primary: false
+  weight: 100
 
 - type: department
   id: Engineering
@@ -53,7 +64,6 @@
   roles:
   - AtmosphericTechnician
   - ChiefEngineer
-  - SeniorEngineer
   - StationEngineer
   - TechnicalAssistant
 
@@ -68,18 +78,18 @@
   - MedicalIntern
   - Psychologist
   - Paramedic
-  - SeniorPhysician
 
 - type: department
   id: Security
   description: department-Security-description
   color: "#DE3A3A"
+  weight: 20
   roles:
   - HeadOfSecurity
   - SecurityCadet
   - SecurityOfficer
-  - SeniorOfficer
   - Detective
+  - Brigmedic
   - Warden
 
 - type: department
@@ -88,7 +98,6 @@
   color: "#D381C9"
   roles:
   - ResearchDirector
-  - SeniorResearcher
   - Scientist
   - ResearchAssistant
 
@@ -96,8 +105,10 @@
   id: Specific
   description: department-Specific-description
   color: "#9FED58"
+  weight: 10
   roles:
   - Boxer
   - Reporter
   - Zookeeper
   - Psychologist
+  primary: false

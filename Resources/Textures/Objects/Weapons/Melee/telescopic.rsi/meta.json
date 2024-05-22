@@ -8,6 +8,10 @@
   },
   "states": [
     {
+      "name": "equipped-BELT",
+      "directions": 4
+    },
+    {
       "name": "on-inhand-right",
       "directions": 4
     },

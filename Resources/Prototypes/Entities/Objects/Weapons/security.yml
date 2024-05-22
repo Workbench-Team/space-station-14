@@ -11,6 +11,24 @@
       map: [ "enum.ToggleVisuals.Layer" ]
   - type: Stunbaton
     energyPerUse: 50
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      collection: sparks
+      params:
+        variation: 0.250
+    soundDeactivate:
+      collection: sparks
+      params:
+        variation: 0.250
+    soundFailToActivate:
+      path: /Audio/Machines/button.ogg
+      params:
+        variation: 0.250
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Blunt: 0
   - type: MeleeWeapon
     wideAnimationRotation: -135
     damage:
@@ -28,7 +46,7 @@
   - type: Battery
     maxCharge: 1000
     startingCharge: 1000
-  - type: ItemCooldown
+  - type: UseDelay
   - type: Item
     heldPrefix: off
     size: Normal
@@ -47,7 +65,7 @@
           True: {state: stunbaton_on}
           False: {state: stunbaton_off}
   - type: StaticPrice
-    price: 100
+    price: 80
   - type: Riggable
   - type: SolutionContainerManager
     solutions:
@@ -61,6 +79,10 @@
     explosionType: Default
     intensitySlope: 1.5
     maxIntensity: 200
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 100
+      Plastic: 100
   - type: GuideHelp
     guides:
     - Security
@@ -79,32 +101,54 @@
       map: [ "enum.ToggleVisuals.Layer" ]
   - type: Policebaton
     telescopic: true
-  - type: UseDelay
-    delay: 0.75
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      path: /Audio/Weapons/batonextend.ogg
+      params:
+        variation: 0.250
+    soundDeactivate:
+      path: /Audio/Weapons/batonextend.ogg
+      params:
+        variation: 0.250
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Blunt: 7
+  - type: ItemToggleSize
+    activatedSize: Normal
   - type: MeleeWeapon
+    wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 5
+        Blunt: 2
     bluntStaminaDamageFactor: 2.0
     angle: 60
     animation: WeaponArcSlash
   - type: StaminaDamageOnHit
     damage: 35
-  - type: ItemCooldown
+    sound: /Audio/Weapons/egloves.ogg
+  - type: StaminaDamageOnCollide
+    damage: 35
+    sound: /Audio/Weapons/egloves.ogg
+  - type: UseDelay
+    delay: 0.75
   - type: Item
     heldPrefix: off
     size: Small
+    sprite: Objects/Weapons/Melee/telescopic.rsi
+    storedRotation: -45
   - type: Clothing
     sprite: Objects/Weapons/Melee/telescopic.rsi
     quickEquip: false
     slots:
-      - Belt
+    - Belt
   - type: DisarmMalus
     malus: 0.225
   - type: Appearance
   - type: GenericVisualizer
     visuals:
-      enum.ToggleVisuals.Toggled:
+     enum.ToggleVisuals.Toggled:
         enum.ToggleVisuals.Layer:
           True: {state: telescopic_on}
           False: {state: telescopic_off}
@@ -125,11 +169,16 @@
     damage:
       types:
         Blunt: 20
+    soundHit:
+      collection: MetalThud
     bluntStaminaDamageFactor: 1.5
   - type: Item
     size: Normal
+  - type: Tag
+    tags: 
+    - Truncheon
   - type: Clothing
-    sprite: Objects\Weapons\Melee\truncheon.rsi
+    sprite: Objects/Weapons/Melee/truncheon.rsi
     quickEquip: false
     slots:
     - Belt
@@ -137,7 +186,7 @@
     malus: 0.225
   - type: Appearance
   - type: StaticPrice
-    price: 100
+    price: 80
   - type: GuideHelp
     guides:
     - Security
@@ -199,7 +248,7 @@
     - type: Item
       size: Small
       sprite: Objects/Weapons/Melee/flash.rsi
-    - type: ItemCooldown
+    - type: UseDelay
     - type: StaticPrice
       price: 40
     - type: Appearance
@@ -236,7 +285,6 @@
       sound:
         path: /Audio/Weapons/flash.ogg
     - type: FlashOnTrigger
-      repeating: true
       range: 3
     - type: TriggerOnProximity
       enabled: true
@@ -244,6 +292,7 @@
       shape:
         !type:PhysShapeCircle
           radius: 2
+      repeating: true
     - type: Anchorable
     - type: Sprite
       sprite: Objects/Weapons/pflash.rsi

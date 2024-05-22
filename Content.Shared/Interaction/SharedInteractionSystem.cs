@@ -6,7 +6,6 @@ using Content.Shared.Administration.Logs;
 using Content.Shared.Administration.Managers;
 using Content.Shared.CombatMode;
 using Content.Shared.Database;
-using Content.Shared.DragDrop;
 using Content.Shared.Hands;
 using Content.Shared.Hands.Components;
 using Content.Shared.Input;
@@ -16,12 +15,11 @@ using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Item;
 using Content.Shared.Movement.Components;
+using Content.Shared.Movement.Pulling.Components;
+using Content.Shared.Movement.Pulling.Systems;
 using Content.Shared.Physics;
 using Content.Shared.Popups;
-using Content.Shared.Pulling;
-using Content.Shared.Pulling.Components;
 using Content.Shared.Tag;
-using Content.Shared.Throwing;
 using Content.Shared.Timing;
 using Content.Shared.Verbs;
 using Content.Shared.Wall;
@@ -62,13 +60,12 @@ namespace Content.Shared.Interaction
         [Dependency] private readonly SharedVerbSystem _verbSystem = default!;
         [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
         [Dependency] private readonly UseDelaySystem _useDelay = default!;
-        [Dependency] private readonly SharedPullingSystem _pullSystem = default!;
+        [Dependency] private readonly PullingSystem _pullSystem = default!;
         [Dependency] private readonly InventorySystem _inventory = default!;
         [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly TagSystem _tagSystem = default!;
 
-        private const CollisionGroup InRangeUnobstructedMask
-            = CollisionGroup.Impassable | CollisionGroup.InteractImpassable;
+        private const CollisionGroup InRangeUnobstructedMask = CollisionGroup.Impassable | CollisionGroup.InteractImpassable;
 
         public const float InteractionRange = 1.5f;
         public const float InteractionRangeSquared = InteractionRange * InteractionRange;
@@ -79,8 +76,11 @@ namespace Content.Shared.Interaction
 
         public override void Initialize()
         {
+            SubscribeLocalEvent<BoundUserInterfaceCheckRangeEvent>(HandleUserInterfaceRangeCheck);
             SubscribeLocalEvent<BoundUserInterfaceMessageAttempt>(OnBoundInterfaceInteractAttempt);
+
             SubscribeAllEvent<InteractInventorySlotEvent>(HandleInteractInventorySlotEvent);
+
             SubscribeLocalEvent<UnremoveableComponent, ContainerGettingRemovedAttemptEvent>(OnRemoveAttempt);
             SubscribeLocalEvent<UnremoveableComponent, GotUnequippedEvent>(OnUnequip);
             SubscribeLocalEvent<UnremoveableComponent, GotUnequippedHandEvent>(OnUnequipHand);
@@ -111,7 +111,9 @@ namespace Content.Shared.Interaction
         /// </summary>
         private void OnBoundInterfaceInteractAttempt(BoundUserInterfaceMessageAttempt ev)
         {
-            if (ev.Sender.AttachedEntity is not { } user || !_actionBlockerSystem.CanInteract(user, ev.Target))
+            var user = ev.Actor;
+
+            if (!_actionBlockerSystem.CanInteract(user, ev.Target))
             {
                 ev.Cancel();
                 return;
@@ -170,12 +172,11 @@ namespace Content.Shared.Interaction
                 QueueDel(uid);
         }
 
-
         private bool HandleTryPullObject(ICommonSession? session, EntityCoordinates coords, EntityUid uid)
         {
             if (!ValidateClientInput(session, coords, uid, out var userEntity))
             {
-                Logger.InfoS("system.interaction", $"TryPullObject input validation failed");
+                Log.Info($"TryPullObject input validation failed");
                 return true;
             }
 
@@ -189,10 +190,10 @@ namespace Content.Shared.Interaction
             if (!InRangeUnobstructed(userEntity.Value, uid, popup: true))
                 return false;
 
-            if (!TryComp(uid, out SharedPullableComponent? pull))
+            if (!TryComp(uid, out PullableComponent? pull))
                 return false;
 
-            _pullSystem.TogglePull(userEntity.Value, pull);
+            _pullSystem.TogglePull(uid, userEntity.Value, pull);
             return false;
         }
 
@@ -207,7 +208,7 @@ namespace Content.Shared.Interaction
             // client sanitization
             if (!TryComp(item, out TransformComponent? itemXform) || !ValidateClientInput(args.SenderSession, itemXform.Coordinates, item, out var user))
             {
-                Logger.InfoS("system.interaction", $"Inventory interaction validation failed.  Session={args.SenderSession}");
+                Log.Info($"Inventory interaction validation failed.  Session={args.SenderSession}");
                 return;
             }
 
@@ -229,7 +230,7 @@ namespace Content.Shared.Interaction
             // client sanitization
             if (!ValidateClientInput(session, coords, uid, out var user))
             {
-                Logger.InfoS("system.interaction", $"Alt-use input validation failed");
+                Log.Info($"Alt-use input validation failed");
                 return true;
             }
 
@@ -243,7 +244,7 @@ namespace Content.Shared.Interaction
             // client sanitization
             if (!ValidateClientInput(session, coords, uid, out var userEntity))
             {
-                Logger.InfoS("system.interaction", $"Use input validation failed");
+                Log.Info($"Use input validation failed");
                 return true;
             }
 
@@ -463,7 +464,7 @@ namespace Content.Shared.Interaction
                 return false;
 
             if (!HasComp<NoRotateOnInteractComponent>(user))
-                _rotateToFaceSystem.TryFaceCoordinates(user, coordinates.ToMapPos(EntityManager));
+                _rotateToFaceSystem.TryFaceCoordinates(user, coordinates.ToMapPos(EntityManager, _transform));
 
             return true;
         }
@@ -551,7 +552,7 @@ namespace Content.Shared.Interaction
 
             if (length > MaxRaycastRange)
             {
-                Logger.Warning("InRangeUnobstructed check performed over extreme range. Limiting CollisionRay size.");
+                Log.Warning("InRangeUnobstructed check performed over extreme range. Limiting CollisionRay size.");
                 length = MaxRaycastRange;
             }
 
@@ -616,7 +617,7 @@ namespace Content.Shared.Interaction
             Ignored combinedPredicate = e => e == origin || (predicate?.Invoke(e) ?? false);
             var inRange = true;
             MapCoordinates originPos = default;
-            var targetPos = otherCoordinates.ToMap(EntityManager);
+            var targetPos = otherCoordinates.ToMap(EntityManager, _transform);
             Angle targetRot = default;
 
             // So essentially:
@@ -664,14 +665,14 @@ namespace Content.Shared.Interaction
                 else
                 {
                     // We'll still do the raycast from the centres but we'll bump the range as we know they're in range.
-                    originPos = xformA.MapPosition;
+                    originPos = _transform.GetMapCoordinates(origin, xform: xformA);
                     range = (originPos.Position - targetPos.Position).Length();
                 }
             }
             // No fixtures, e.g. wallmounts.
             else
             {
-                originPos = Transform(origin).MapPosition;
+                originPos = _transform.GetMapCoordinates(origin);
                 var otherParent = Transform(other).ParentUid;
                 targetRot = otherParent.IsValid() ? Transform(otherParent).LocalRotation + otherAngle : otherAngle;
             }
@@ -686,7 +687,7 @@ namespace Content.Shared.Interaction
             if (!inRange && popup && _gameTiming.IsFirstTimePredicted)
             {
                 var message = Loc.GetString("interaction-system-user-interaction-cannot-reach");
-                _popupSystem.PopupEntity(message, origin, origin);
+                _popupSystem.PopupClient(message, origin, origin);
             }
 
             return inRange;
@@ -789,7 +790,7 @@ namespace Content.Shared.Interaction
             Ignored? predicate = null,
             bool popup = false)
         {
-            return InRangeUnobstructed(origin, other.ToMap(EntityManager), range, collisionMask, predicate, popup);
+            return InRangeUnobstructed(origin, other.ToMap(EntityManager, _transform), range, collisionMask, predicate, popup);
         }
 
         /// <summary>
@@ -825,7 +826,7 @@ namespace Content.Shared.Interaction
             bool popup = false)
         {
             Ignored combinedPredicate = e => e == origin || (predicate?.Invoke(e) ?? false);
-            var originPosition = Transform(origin).MapPosition;
+            var originPosition = _transform.GetMapCoordinates(origin);
             var inRange = InRangeUnobstructed(originPosition, other, range, collisionMask, combinedPredicate, ShouldCheckAccess(origin));
 
             if (!inRange && popup && _gameTiming.IsFirstTimePredicted)
@@ -925,7 +926,7 @@ namespace Content.Shared.Interaction
         {
             if (!ValidateClientInput(session, coords, uid, out var user))
             {
-                Logger.InfoS("system.interaction", $"ActivateItemInWorld input validation failed");
+                Log.Info($"ActivateItemInWorld input validation failed");
                 return false;
             }
 
@@ -953,7 +954,7 @@ namespace Content.Shared.Interaction
             UseDelayComponent? delayComponent = null;
             if (checkUseDelay
                 && TryComp(used, out delayComponent)
-                && delayComponent.ActiveDelay)
+                && _useDelay.IsDelayed((used, delayComponent)))
                 return false;
 
             if (checkCanInteract && !_actionBlockerSystem.CanInteract(user, used))
@@ -977,7 +978,8 @@ namespace Content.Shared.Interaction
                 return false;
 
             DoContactInteraction(user, used, activateMsg);
-            _useDelay.BeginDelay(used, delayComponent);
+            // Still need to call this even without checkUseDelay in case this gets relayed from Activate.
+            _useDelay.TryResetDelay(used, component: delayComponent);
             if (!activateMsg.WasLogged)
                 _adminLogger.Add(LogType.InteractActivate, LogImpact.Low, $"{ToPrettyString(user):user} activated {ToPrettyString(used):used}");
             return true;
@@ -1002,7 +1004,7 @@ namespace Content.Shared.Interaction
 
             if (checkUseDelay
                 && TryComp(used, out delayComponent)
-                && delayComponent.ActiveDelay)
+                && _useDelay.IsDelayed((used, delayComponent)))
                 return true; // if the item is on cooldown, we consider this handled.
 
             if (checkCanInteract && !_actionBlockerSystem.CanInteract(user, used))
@@ -1016,7 +1018,8 @@ namespace Content.Shared.Interaction
             if (useMsg.Handled)
             {
                 DoContactInteraction(user, used, useMsg);
-                _useDelay.BeginDelay(used, delayComponent);
+                if (delayComponent != null && useMsg.ApplyDelay)
+                    _useDelay.TryResetDelay((used, delayComponent));
                 return true;
             }
 
@@ -1041,25 +1044,6 @@ namespace Content.Shared.Interaction
 
             _verbSystem.ExecuteVerb(verbs.First(), user, target);
             return true;
-        }
-        #endregion
-
-        #region Throw
-        /// <summary>
-        ///     Calls Thrown on all components that implement the IThrown interface
-        ///     on an entity that has been thrown.
-        /// </summary>
-        public void ThrownInteraction(EntityUid user, EntityUid thrown)
-        {
-            var throwMsg = new ThrownEvent(user, thrown);
-            RaiseLocalEvent(thrown, throwMsg, true);
-            if (throwMsg.Handled)
-            {
-                _adminLogger.Add(LogType.Throw, LogImpact.Low,$"{ToPrettyString(user):user} threw {ToPrettyString(thrown):entity}");
-                return;
-            }
-
-            _adminLogger.Add(LogType.Throw, LogImpact.Low,$"{ToPrettyString(user):user} threw {ToPrettyString(thrown):entity}");
         }
         #endregion
 
@@ -1121,14 +1105,13 @@ namespace Content.Shared.Interaction
 
             if (!coords.IsValid(EntityManager))
             {
-                Logger.InfoS("system.interaction", $"Invalid Coordinates: client={session}, coords={coords}");
+                Log.Info($"Invalid Coordinates: client={session}, coords={coords}");
                 return false;
             }
 
             if (IsClientSide(uid))
             {
-                Logger.WarningS("system.interaction",
-                    $"Client sent interaction with client-side entity. Session={session}, Uid={uid}");
+                Log.Warning($"Client sent interaction with client-side entity. Session={session}, Uid={uid}");
                 return false;
             }
 
@@ -1136,15 +1119,13 @@ namespace Content.Shared.Interaction
 
             if (userEntity == null || !userEntity.Value.Valid)
             {
-                Logger.WarningS("system.interaction",
-                    $"Client sent interaction with no attached entity. Session={session}");
+                Log.Warning($"Client sent interaction with no attached entity. Session={session}");
                 return false;
             }
 
             if (!Exists(userEntity))
             {
-                Logger.WarningS("system.interaction",
-                    $"Client attempted interaction with a non-existent attached entity. Session={session},  entity={userEntity}");
+                Log.Warning($"Client attempted interaction with a non-existent attached entity. Session={session},  entity={userEntity}");
                 return false;
             }
 
@@ -1168,6 +1149,21 @@ namespace Content.Shared.Interaction
 
             RaiseLocalEvent(uidA, new ContactInteractionEvent(uidB.Value));
             RaiseLocalEvent(uidB.Value, new ContactInteractionEvent(uidA));
+        }
+
+        private void HandleUserInterfaceRangeCheck(ref BoundUserInterfaceCheckRangeEvent ev)
+        {
+            if (ev.Result == BoundUserInterfaceRangeResult.Fail)
+                return;
+
+            if (InRangeUnobstructed(ev.Actor, ev.Target, ev.Data.InteractionRange))
+            {
+                ev.Result = BoundUserInterfaceRangeResult.Pass;
+            }
+            else
+            {
+                ev.Result = BoundUserInterfaceRangeResult.Fail;
+            }
         }
     }
 

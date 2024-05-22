@@ -18,10 +18,22 @@
     openSound:
       path: /Audio/Effects/woodenclosetopen.ogg
 
+# Basic
+- type: entity
+  id: LockerSteel
+  parent: LockerBaseSecure
+  name: secure closet
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: secure
+    stateDoorOpen: secure_open
+    stateDoorClosed: secure_door
+
 # Cargo
 - type: entity
   id: LockerQuarterMaster
-  parent: LockerBase
+  parent: LockerBaseSecure
   name: quartermaster's locker
   components:
   - type: Appearance
@@ -58,21 +70,36 @@
     stateDoorOpen: shaftminer_open
     stateDoorClosed: shaftminer_door
   - type: AccessReader
-    access: [["Miner"]]
+    access: [["Salvage"]]
 
-# Command
+#CentCom
 - type: entity
-  id: LockerCaptain
-  parent: LockerBaseSecure
-  name: captain's locker
+  id: LockerCentcom
+  parent: LockerBase
+  name: CentCom locker
+  description: An expensive version of the regular Nanotrasen storage locker.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
-    stateBaseClosed: cap
-    stateDoorOpen: cap_open
-    stateDoorClosed: cap_door
+    stateBaseClosed: cc
+    stateDoorOpen: cc_open
+    stateDoorClosed: cc_door
   - type: AccessReader
-    access: [["Captain"]]
+    access: [["CentralCommand"]]
+
+- type: entity
+  id: LockerCentcomConsultant
+  parent: LockerBase
+  name: CentCom consultant's locker
+  description: An expensive version of the regular Nanotrasen storage locker.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: ccc
+    stateDoorOpen: ccc_open
+    stateDoorClosed: ccc_door
+  - type: AccessReader
+    access: [["CentralCommand"]]
 
 - type: entity
   id: LockerBlueShield
@@ -85,6 +112,20 @@
     stateBaseClosed: blueshield
     stateDoorOpen: blueshield_open
     stateDoorClosed: blueshield_door
+  - type: AccessReader
+    access: [["CentralCommand"]]
+
+# Command
+- type: entity
+  id: LockerCaptain
+  parent: LockerBaseSecure
+  name: captain's locker
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: cap
+    stateDoorOpen: cap_open
+    stateDoorClosed: cap_door
   - type: AccessReader
     access: [["Captain"]]
 
@@ -184,7 +225,7 @@
     stateDoorOpen: freezer_open
     stateDoorClosed: freezer_door
   - type: ExplosionResistance
-    resistance: 0.90
+    damageCoefficient: 0.50
   - type: AntiRottingContainer
 
 - type: entity
@@ -349,7 +390,7 @@
     stateDoorOpen: armory_open
     stateDoorClosed: brigmedic_door
   - type: AccessReader
-    access: [["Medical"]]
+    access: [["Medical", "Security"], ["HeadOfSecurity"]]
 
 # Security Officer
 - type: entity
@@ -435,3 +476,45 @@
         actOnClose: false
         destroyAfterUses: 2
         destroyType: DeleteComponent
+
+# Clown
+- type: entity
+  id: LockerClown
+  name: clown locker
+  parent: LockerBaseSecure
+  components:
+  - type: Appearance
+  - type: AccessReader
+    access: [["Theatre"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: clown
+    stateDoorOpen: clown_open
+    stateDoorClosed: clown_door
+
+# Mime
+- type: entity
+  id: LockerMime
+  name: mime locker
+  parent: LockerBaseSecure
+  components:
+  - type: Appearance
+  - type: AccessReader
+    access: [["Theatre"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: mime
+    stateDoorOpen: mime_open
+    stateDoorClosed: mime_door
+
+# Representative
+- type: entity
+  id: LockerRepresentative
+  name: representative locker
+  parent: LockerBaseSecure
+  components:
+  - type: Appearance
+  - type: AccessReader
+    access: [["Command"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: hop
+    stateDoorOpen: hop_open
+    stateDoorClosed: representative_door

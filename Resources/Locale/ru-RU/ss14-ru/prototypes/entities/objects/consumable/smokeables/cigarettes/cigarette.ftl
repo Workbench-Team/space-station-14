@@ -2,6 +2,7 @@ ent-Cigarette = сигарета
     .desc = Скрутка с табаком и никотином.
 ent-SoakedCigarette = сигарета
     .desc = Скрутка с табаком и никотином, пропитанная каким-то химикатом.
+    .suffix = Пропитанные
 ent-CigaretteSyndicate = сигарета
     .suffix = синдикат
     .desc = { ent-Cigarette.desc }

@@ -1,4 +1,4 @@
-﻿using Content.Server.Body.Components;
+using Content.Server.Body.Components;
 using Content.Shared.Body.Prototypes;
 using Content.Shared.Chemistry.Reagent;
 using Robust.Shared.Prototypes;
@@ -11,13 +11,13 @@ namespace Content.Server.Chemistry.ReagentEffectConditions
     /// </summary>
     public sealed partial class OrganType : ReagentEffectCondition
     {
-        [DataField("type", required: true, customTypeSerializer: typeof(PrototypeIdSerializer<MetabolizerTypePrototype>))]
+        [DataField(required: true, customTypeSerializer: typeof(PrototypeIdSerializer<MetabolizerTypePrototype>))]
         public string Type = default!;
 
         /// <summary>
         ///     Does this condition pass when the organ has the type, or when it doesn't have the type?
         /// </summary>
-        [DataField("shouldHave")]
+        [DataField]
         public bool ShouldHave = true;
 
         public override bool Condition(ReagentEffectArgs args)
@@ -35,7 +35,7 @@ namespace Content.Server.Chemistry.ReagentEffectConditions
         public override string GuidebookExplanation(IPrototypeManager prototype)
         {
             return Loc.GetString("reagent-effect-condition-guidebook-organ-type",
-                ("name", prototype.Index<MetabolizerTypePrototype>(Type).Name),
+                ("name", prototype.Index<MetabolizerTypePrototype>(Type).LocalizedName),
                 ("shouldhave", ShouldHave));
         }
     }

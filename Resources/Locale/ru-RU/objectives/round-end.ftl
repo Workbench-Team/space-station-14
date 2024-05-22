@@ -3,10 +3,12 @@ objectives-round-end-result =
         [one] Был один { $agent }.
        *[other] Было { $count } { $agent }.
     }
+objectives-round-end-result-in-custody = { $custody } из { $count } { $agent } были арестованы.
 objectives-player-user-named = [color=White]{ $name }[/color] ([color=gray]{ $user }[/color])
 objectives-player-user = [color=gray]{ $user }[/color]
 objectives-player-named = [color=White]{ $name }[/color]
-objectives-no-objectives = { $title } был(а) { $agent }.
-objectives-with-objectives = { $title } был(а) { $agent }, у которого(-ой) были следующие цели:
+objectives-no-objectives = { $custody }{ $title } – { $agent }.
+objectives-with-objectives = { $custody }{ $title } – { $agent } со следующими целями:
 objectives-objective-success = { $objective } | [color={ $markupColor }]Успех![/color]
 objectives-objective-fail = { $objective } | [color={ $markupColor }]Провал![/color] ({ $progress }%)
+objectives-in-custody = [bold][color=red]| ПОД АРЕСТОМ | [/color][/bold]

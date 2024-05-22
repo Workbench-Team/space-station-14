@@ -9,6 +9,7 @@ replay-loading-starting = Запуск энтити
 replay-loading-failed =
     Не удалось загрузить повтор:
     { $reason }
+replay-loading-retry = Попытка загрузить с большей допустимостью исключений МОЖЕТ ВЫЗВАТЬ БАГИ!
 # Main Menu
 replay-menu-subtext = Клиент повтора
 replay-menu-load = Загрузить выбранный повтор

@@ -34,33 +34,28 @@
             StationEngineer: [ 3, 4 ]
             AtmosphericTechnician: [ 2, 2 ]
             TechnicalAssistant: [ 2, 3 ]
-            SeniorEngineer: [ 1, 1 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             MedicalDoctor: [ 3, 4 ]
             Chemist: [ 2, 2 ]
             MedicalIntern: [ 2, 3 ]
             Paramedic: [ 1, 2 ]
-            SeniorPhysician: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 2, 3 ]
             ResearchAssistant: [ 2, 2 ]
-            SeniorResearcher: [ 1, 1 ] 
             #security
-            BlueShield: [1, 1]
             HeadOfSecurity: [ 1, 1 ]
             SecurityOfficer: [ 4, 4 ]
             Warden: [ 1, 1 ]
             Lawyer: [ 2, 2 ]
             SecurityCadet: [ 2, 2 ]
             Detective: [ 1, 1 ]
-            SeniorOfficer: [ 1, 1 ]
+            Brigmedic: [ 1, 1 ]
             #supply
             CargoTechnician: [ 2, 3 ]
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
-            Miner: [ 2,3 ]
             #civilian
             Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]
@@ -68,3 +63,6 @@
             Musician: [ 1, 1 ]
             Boxer: [ 2, 2 ]
             Reporter: [ 1, 2 ]
+            #Centcom      
+            BlueShield: [ 1, 1 ]
+            CentComConsultant: [ 1, 1 ]

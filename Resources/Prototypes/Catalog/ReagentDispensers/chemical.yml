@@ -1,55 +1,26 @@
 - type: reagentDispenserInventory
   id: ChemDispenserStandardInventory
   inventory:
-  - Aluminium
-  - Carbon
-  - Chlorine
-  - Copper
-  - Ethanol
-  - Fluorine
-  - Sugar
-  - Hydrogen
-  - Iodine
-  - Iron
-  - Lithium
-  - Mercury
-  - Nitrogen
-  - Oxygen
-  - Phosphorus
-  - Potassium
-  - Radium
-  - Silicon
-  - Sodium
-  - Sulfur
+  - JugAluminium
+  - JugCarbon
+  - JugChlorine
+  - JugCopper
+  - JugEthanol
+  - JugFluorine
+  - JugSugar
+  - JugHydrogen
+  - JugIodine
+  - JugIron
+  - JugLithium
+  - JugMercury
+  - JugNitrogen
+  - JugOxygen
+  - JugPhosphorus
+  - JugPotassium
+  - JugRadium
+  - JugSilicon
+  - JugSodium
+  - JugSulfur
 
 - type: reagentDispenserInventory
-  id: ChemDispenserEmaggedInventory
-  inventory: ##Feel free to change this to something more interesting when more chems are added
-  - Napalm
-  - Toxin
-  - Epinephrine
-  - Uranium
-  
-- type: reagentDispenserInventoryTiered
-  id: ChemDispenserTier2Inventory
-  tier: 2
-  inventory:
-  - Ammonia
-  - Oil
-  - SulfuricAcid
-  
-- type: reagentDispenserInventoryTiered
-  id: ChemDispenserTier3Inventory
-  tier: 3
-  inventory:
-  - Acetone
-  - Phenol
-  - SodiumCarbonate
-  - Water
-  
-- type: reagentDispenserInventoryTiered
-  id: ChemDispenserTier4Inventory
-  tier: 4
-  inventory:
-  - Plasma
-  
+  id: EmptyInventory

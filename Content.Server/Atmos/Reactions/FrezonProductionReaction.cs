@@ -1,5 +1,6 @@
 ﻿using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
+using Content.Shared.Atmos.Reactions;
 using JetBrains.Annotations;
 
 namespace Content.Server.Atmos.Reactions;
@@ -11,7 +12,7 @@ namespace Content.Server.Atmos.Reactions;
 [UsedImplicitly]
 public sealed partial class FrezonProductionReaction : IGasReactionEffect
 {
-    public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem)
+    public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem, float heatScale)
     {
         var initialHyperNoblium = mixture.GetMoles(Gas.HyperNoblium);
         if (initialHyperNoblium >= 5.0f && mixture.Temperature > 20f)
@@ -32,7 +33,6 @@ public sealed partial class FrezonProductionReaction : IGasReactionEffect
         // Amount of tritium & oxygen that are reacting
         var tritBurned = Math.Min(oxyLimit, initialTrit);
         var oxyBurned = tritBurned * Atmospherics.FrezonProductionTritRatio;
-        var burnRatio = tritBurned / initialTrit;
 
         var oxyConversion = oxyBurned / Atmospherics.FrezonProductionConversionRate;
         var tritConversion = tritBurned / Atmospherics.FrezonProductionConversionRate;

@@ -306,7 +306,6 @@
     solution: spray
   - type: DrainableSolution
     solution: spray
-  - type: ItemCooldown
   - type: Spray
     spraySound:
       path: /Audio/Effects/extinguish.ogg
@@ -426,7 +425,6 @@
   - type: Sprite
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_honker
-  - type: ItemCooldown
   - type: UseDelay
     delay: 0.1
   - type: EmitSoundOnUse
@@ -481,6 +479,7 @@
   - type: ExaminableSolution
     solution: hypospray
   - type: Hypospray
+    onlyAffectsMobs: false
   - type: UseDelay
     delay: 1.0
 
@@ -490,7 +489,6 @@
   parent: BaseItem
   id: JawsOfLife9000
   components:
-  - type: ItemCooldown
   - type: Tag
     tags:
     - JawsOfLife
@@ -499,13 +497,35 @@
     state: mecha_clamp
   - type: Item
     size: Ginormous
-  - type: TilePrying
+  - type: ToolTileCompatible
   - type: Tool
     qualities:
       - Prying
     speed: 1.5
     useSound: /Audio/Items/jaws_pry.ogg
+  - type: Prying
+    pryPowered: true
+    useSound: /Audio/Items/jaws_pry.ogg
   - type: ToolForcePowered
+  - type: MultipleTool
+    statusShowBehavior: true
+    entries:
+      - behavior: Prying
+        sprite:
+          sprite: Objects/Tools/jaws_of_life.rsi
+          state: jaws_pry
+        useSound: /Audio/Items/jaws_pry.ogg
+        changeSound: /Audio/Items/change_jaws.ogg
+      - behavior: Cutting
+        sprite:
+          sprite: Objects/Tools/jaws_of_life.rsi
+          state: jaws_cutter
+        useSound: /Audio/Items/jaws_cut.ogg
+        changeSound: /Audio/Items/change_jaws.ogg
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 10
 
 - type: entity
   parent: JawsOfLife9000
@@ -582,7 +602,6 @@
     sound: /Audio/Effects/saw.ogg
     gatheringTime: 0.50
     MaxGatheringEntities: 2
-  - type: ItemCooldown
   - type: MeleeWeapon
     damage:
       types:
@@ -607,7 +626,7 @@
     key: enum.RadarConsoleUiKey.Key
   - type: UserInterface
     interfaces:
-      - key: enum.RadarConsoleUiKey.Key
+      enum.RadarConsoleUiKey.Key:
         type: RadarConsoleBoundUserInterface
 
 - type: entity

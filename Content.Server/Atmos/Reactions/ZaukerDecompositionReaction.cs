@@ -1,5 +1,6 @@
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
+using Content.Shared.Atmos.Reactions;
 using JetBrains.Annotations;
 
 namespace Content.Server.Atmos.Reactions;
@@ -7,7 +8,7 @@ namespace Content.Server.Atmos.Reactions;
 [UsedImplicitly]
 public sealed partial class ZaukerDecompositionReaction : IGasReactionEffect
 {
-    public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem)
+    public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem, float heatScale)
     {
         var initialHyperNoblium = mixture.GetMoles(Gas.HyperNoblium);
         if (initialHyperNoblium >= 5.0f && mixture.Temperature > 20f)
@@ -21,7 +22,7 @@ public sealed partial class ZaukerDecompositionReaction : IGasReactionEffect
         if (burnedFuel <= 0 || initialZauker - burnedFuel < 0)
             return ReactionResult.NoReaction;
 
-        var oldHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture);
+        var oldHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture, true);
 
         mixture.AdjustMoles(Gas.Zauker, -burnedFuel);
         mixture.AdjustMoles(Gas.Oxygen, burnedFuel*0.3f);
@@ -29,7 +30,7 @@ public sealed partial class ZaukerDecompositionReaction : IGasReactionEffect
 
         var energyReleased = burnedFuel * Atmospherics.ZaukerDecompositionEnergy;
 
-        var newHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture);
+        var newHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture, true);
         if (newHeatCapacity > Atmospherics.MinimumHeatCapacity)
             mixture.Temperature = Math.Max((mixture.Temperature * oldHeatCapacity + energyReleased) / newHeatCapacity, Atmospherics.TCMB);
 

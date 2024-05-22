@@ -47,7 +47,10 @@
   components:
   - type: StorageFill
     contents:
+      - id: BoxSurvivalBrigmedic
       - id: Flash
+      - id: MagazinePistolRubber
+      - id: Cautery
 
 - type: entity
   noSpawn: true
@@ -57,6 +60,27 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalMedical
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDuffelMedical
+  id: ClothingBackpackDuffelParamedicFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalMedical
+      - id: EmergencyRollerBedSpawnFolded
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDuffelCentcom
+  id: ClothingBackpackDuffelCentcomFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: Flash
+      - id: TelescopicBaton
 
 - type: entity
   noSpawn: true
@@ -211,6 +235,16 @@
       - id: BoxSurvival
       - id: Bible
       - id: RubberStampChaplain
+  
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelLawyerFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: RubberStampLawyer
 
 - type: entity
   noSpawn: true

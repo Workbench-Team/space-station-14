@@ -21,6 +21,7 @@ namespace Content.Shared.Mind;
 public abstract class SharedMindSystem : EntitySystem
 {
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
+    [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly SharedObjectivesSystem _objectives = default!;
     [Dependency] private readonly SharedPlayerSystem _player = default!;
@@ -106,6 +107,7 @@ public abstract class SharedMindSystem : EntitySystem
             TryComp(mindIdValue, out mind))
         {
             DebugTools.Assert(mind.UserId == user);
+
             mindId = mindIdValue;
             return true;
         }
@@ -144,6 +146,10 @@ public abstract class SharedMindSystem : EntitySystem
     private void OnExamined(EntityUid uid, MindContainerComponent mindContainer, ExaminedEvent args)
     {
         if (!mindContainer.ShowExamineInfo || !args.IsInDetailsRange)
+            return;
+
+        // TODO predict we can't right now because session stuff isnt networked
+        if (_net.IsClient)
             return;
 
         var dead = _mobState.IsDead(uid);
@@ -376,6 +382,30 @@ public abstract class SharedMindSystem : EntitySystem
         return false;
     }
 
+    /// <summary>
+    /// Tries to find an objective that has the same prototype as the argument.
+    /// </summary>
+    /// <remarks>
+    /// Will not work for objectives that have no prototype, or duplicate objectives with the same prototype.
+    /// <//remarks>
+    public bool TryFindObjective(Entity<MindComponent?> mind, string prototype, [NotNullWhen(true)] out EntityUid? objective)
+    {
+        objective = null;
+        if (!Resolve(mind, ref mind.Comp))
+            return false;
+
+        foreach (var uid in mind.Comp.Objectives)
+        {
+            if (MetaData(uid).EntityPrototype?.ID == prototype)
+            {
+                objective = uid;
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public bool TryGetSession(EntityUid? mindId, [NotNullWhen(true)] out ICommonSession? session)
     {
         session = null;
@@ -394,7 +424,8 @@ public abstract class SharedMindSystem : EntitySystem
         EntityUid uid,
         out EntityUid mindId,
         [NotNullWhen(true)] out MindComponent? mind,
-        MindContainerComponent? container = null)
+        MindContainerComponent? container = null,
+        VisitingMindComponent? visitingmind = null)
     {
         mindId = default;
         mind = null;
@@ -403,35 +434,39 @@ public abstract class SharedMindSystem : EntitySystem
             return false;
 
         if (!container.HasMind)
-            return false;
+        {
+            // The container has no mind. Check for a visiting mind...
+            if (!Resolve(uid, ref visitingmind, false))
+                return false;
+
+            mindId = visitingmind.MindId ?? default;
+            return TryComp(mindId, out mind);
+        }
 
         mindId = container.Mind ?? default;
         return TryComp(mindId, out mind);
     }
 
-    public bool TryGetMind(
-        ContentPlayerData contentPlayer,
-        out EntityUid mindId,
-        [NotNullWhen(true)] out MindComponent? mind)
-    {
-        mindId = contentPlayer.Mind ?? default;
-        return TryComp(mindId, out mind);
-    }
-
+    // TODO MIND make this return a nullable EntityUid or Entity<MindComponent>
     public bool TryGetMind(
         ICommonSession? player,
         out EntityUid mindId,
         [NotNullWhen(true)] out MindComponent? mind)
     {
-        mindId = default;
-        mind = null;
-        if (_player.ContentData(player) is not { } data)
+        if (player == null)
+        {
+            mindId = default;
+            mind = null;
             return false;
+        }
 
-        if (TryGetMind(data, out mindId, out mind))
+        if (TryGetMind(player.UserId, out var mindUid, out mind))
+        {
+            mindId = mindUid.Value;
             return true;
+        }
 
-        DebugTools.AssertNull(data.Mind);
+        mindId = default;
         return false;
     }
 

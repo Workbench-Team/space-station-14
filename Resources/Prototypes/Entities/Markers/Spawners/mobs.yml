@@ -61,6 +61,7 @@
       - MobCorgiIan
       - MobCorgiIanOld
       - MobCorgiLisa
+      - MobCorgiIanPup
 
 - type: entity
   name: Possum Morty Spawner
@@ -73,7 +74,7 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MobPossumMorty
+      - MobPossumMortyOld
 
 - type: entity
   name: Raccoon Morticia Spawner
@@ -87,20 +88,6 @@
   - type: ConditionalSpawner
     prototypes:
       - MobRaccoonMorticia
-
-- type: entity
-  name: Drone Spawner
-  id: SpawnMobDrone
-  parent: MarkerBase
-  components:
-  - type: Sprite
-    layers:
-      - state: green
-      - sprite: Mobs/Silicon/drone.rsi
-        state: shell
-  - type: ConditionalSpawner
-    prototypes:
-      - Drone
 
 - type: entity
   name: Fox Renault Spawner
@@ -142,6 +129,19 @@
       - MobCatException
 
 - type: entity
+  name: Tropico Spawner
+  id: SpawnMobCrabAtmos
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MobCrabAtmos
+
+- type: entity
   name: Floppa Spawner
   id: SpawnMobCatFloppa
   parent: MarkerBase
@@ -153,7 +153,7 @@
   - type: ConditionalSpawner
     prototypes:
       - MobCatFloppa
-      
+
 - type: entity
   name: Bingus Spawner
   id: SpawnMobCatBingus
@@ -179,6 +179,19 @@
   - type: ConditionalSpawner
     prototypes:
       - MobCatSpace
+
+- type: entity
+  name: Kitten Spawner
+  id: SpawnMobCatKitten
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MobCatKitten
 
 - type: entity
   name: Cat Spawner
@@ -210,6 +223,7 @@
       - MobCat
       - MobCatCalico
       - MobCatCaracal
+      - MobCatKitten
     rarePrototypes:
       - MobCatSpace
     rareChance: 0.05
@@ -323,6 +337,20 @@
     - MobCarpHolo
 
 - type: entity
+  name: Space Sharkminnow Spawner
+  id: SpawnMobShark
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: icon
+      sprite: Mobs/Aliens/Carps/sharkminnow.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobShark
+
+- type: entity
   name: Hamster Hamlet Spawner
   id: SpawnMobHamsterHamlet
   parent: MarkerBase
@@ -358,7 +386,8 @@
   - type: Sprite
     layers:
       - state: green
-      - state: ai
+      - state: shiva
+        sprite: Mobs/Pets/shiva.rsi
   - type: ConditionalSpawner
     prototypes:
       - MobSpiderShiva
@@ -413,10 +442,25 @@
   - type: Sprite
     layers:
     - state: green
-    - state: ai
+    - state: spacespider
+      sprite: Mobs/Animals/spacespider.rsi
   - type: ConditionalSpawner
     prototypes:
     - MobSpiderSpace
+
+- type: entity
+  name: Space Cobra Spawner
+  id: SpawnMobSpaceCobra
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: spacecobra
+      sprite: Mobs/Animals/spacecobra.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobCobraSpace
 
 - type: entity
   name: Slimes Spawner Blue
@@ -736,6 +780,21 @@
     prototypes:
     - MobPenguin
 
+
+- type: entity
+  name: Hellspawn Spawner
+  id: SpawnMobHellspawn
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: hellspawn
+      sprite: Markers/mobs.rsi
+  - type: ConditionalSpawner
+    prototypes:
+      - MobHellspawn
+
 - type: entity
   name: ore crab spawner
   id: SpawnMobOreCrab
@@ -744,10 +803,67 @@
   - type: Sprite
     layers:
     - state: green
-    - state: quartzcrab
+    - state: quartz_crab
       sprite: Mobs/Elemental/orecrab.rsi
   - type: RandomSpawner
     prototypes:
-      - MobUraniumCrab
-      - MobIronCrab
-      - MobQuartzCrab
+      - MobSpawnCrabUranium
+      - MobSpawnCrabIron
+      - MobSpawnCrabQuartz
+      - MobSpawnCrabSilver
+
+- type: entity
+  name: luminous person spawner
+  id: SpawnMobLuminousPerson
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: luminous_person
+      sprite: Mobs/Elemental/living_light/luminous_person.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobLuminousPerson
+
+- type: entity
+  name: luminous object spawner
+  id: SpawnMobLuminousObject
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: luminous_object
+      sprite: Mobs/Elemental/living_light/luminous_object.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobLuminousObject
+
+- type: entity
+  name: luminous entity spawner
+  id: SpawnMobLuminousEntity
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: luminous_entity
+      sprite: Mobs/Elemental/living_light/luminous_entity.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobLuminousEntity
+
+- type: entity
+  name: clown spider spawner
+  id: SpawnClownSpider
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: clown
+      sprite: Mobs/Animals/clownspider.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobClownSpider

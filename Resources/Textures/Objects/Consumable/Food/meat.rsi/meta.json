@@ -148,9 +148,6 @@
       ]
     },
     {
-      "name": "salami"
-    },
-    {
       "name": "salami-slice"
     },
     {
@@ -158,6 +155,9 @@
     },
     {
       "name": "slime"
+    },
+    {
+      "name": "snake"
     },
     {
       "name": "spider"

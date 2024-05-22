@@ -1,0 +1,14 @@
+cmd-atvrange-desc = Задает диапазон отладки атмоса (в виде двух плавающих значений float, начало [красный] и конец [синий])
+cmd-atvrange-help = Использование: { $command } <start> <end>
+cmd-atvrange-error-start = Плохой float НАЧАЛО
+cmd-atvrange-error-end = Плохой float КОНЕЦ
+cmd-atvrange-error-zero = Масштаб не может быть нулевым, так как это приведет к делению на ноль в AtmosDebugOverlay.
+cmd-atvmode-desc = Устанавливает режим отладки атмоса. При этом автоматически сбрасывается шкала.
+cmd-atvmode-help = Использование: { $command } <ВсегоМолей/МолейГаза/Температура> [<ID газа (для МолейГаза)>]
+cmd-atvmode-error-invalid = Недопустимый режим
+cmd-atvmode-error-target-gas = Для этого режима необходимо указать целевой газ.
+cmd-atvmode-error-out-of-range = ID газа не поддается анализу или находится вне диапазона.
+cmd-atvmode-error-info = Для этого режима не требуется никакой дополнительной информации.
+cmd-atvcbm-desc = Переход от красного/зеленого/синего к оттенкам серого
+cmd-atvcbm-help = Использование: { $command } <true/false>
+cmd-atvcbm-error = Недопустимый флаг

@@ -9,6 +9,7 @@
     slots: [eyes]
   - type: Item
     size: Small
+    storedRotation: -90
   - type: Tag
     tags:
     - Clothing

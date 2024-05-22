@@ -14,9 +14,12 @@
   - type: Tag
     tags:
     - Clothing
-    - MonkeyWearable
     - HamsterWearable
     - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    hideOnToggle: true
 
 - type: entity
   parent: ClothingMaskGas
@@ -24,6 +27,8 @@
   name: security gas mask
   description: A standard issue Security gas mask.
   components:
+  - type: Item
+    size: Tiny
   - type: Sprite
     sprite: Clothing/Mask/gassecurity.rsi
   - type: Clothing
@@ -121,6 +126,8 @@
   name: medical mask
   description: A close-fitting sterile mask that can be connected to an air supply.
   components:
+  - type: Item
+    size: Tiny
   - type: Sprite
     sprite: Clothing/Mask/medical.rsi
   - type: Clothing
@@ -139,6 +146,8 @@
   name: military-style medical mask
   description: A medical mask with a small layer of protection against damage and viruses, similar to the one used in the medical units of the first corporate war.
   components:
+  - type: Item
+    size: Tiny
   - type: Sprite
     sprite: Clothing/Mask/medicalsecurity.rsi
   - type: Clothing
@@ -157,6 +166,8 @@
   name: breath mask
   description: Might as well keep this on 24/7.
   components:
+  - type: Item
+    size: Tiny
   - type: Sprite
     sprite: Clothing/Mask/breath.rsi
   - type: Clothing
@@ -171,6 +182,8 @@
     materialComposition:
       Steel: 50
       Plastic: 100
+  - type: StaticPrice
+    price: 12.5 # increases in price after decomposed into raw materials
 
 - type: entity
   parent: ClothingMaskBase
@@ -192,6 +205,9 @@
   # for H.O.N.K. construction
     - ClownMask
     - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Snout
 
 - type: entity
   parent: ClothingMaskClownBase
@@ -203,6 +219,22 @@
     - ClownMask
     - HamsterWearable
     - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Snout
+
+- type: entity
+  parent: ClothingMaskClown
+  id: ClothingMaskClownBanana
+  name: banana clown wig and mask
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/clown_banana.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/clown_banana.rsi
+  - type: Construction
+    graph: BananaClownMask
+    node: mask
 
 - type: entity
   parent: ClothingMaskBase
@@ -216,6 +248,9 @@
     sprite: Clothing/Mask/joy.rsi
   - type: BreathMask
   - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Snout
 
 - type: entity
   parent: ClothingMaskBase
@@ -234,6 +269,9 @@
     - Clothing
     - HamsterWearable
     - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Snout
 
 - type: entity
   parent: ClothingMaskPullableBase
@@ -246,6 +284,13 @@
   - type: Clothing
     sprite: Clothing/Mask/sterile.rsi
   - type: IngestionBlocker
+  - type: Item
+    size: Tiny
+  - type: IdentityBlocker
+    coverage: MOUTH
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 25
 
 - type: entity
   parent: ClothingMaskBase
@@ -253,6 +298,8 @@
   name: muzzle
   description: To stop that awful noise.
   components:
+  - type: Item
+    size: Tiny
   - type: Sprite
     sprite: Clothing/Mask/muzzle.rsi
   - type: Clothing
@@ -278,6 +325,10 @@
   - type: BreathMask
   - type: IngestionBlocker
   - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    hideOnToggle: true
 
 - type: entity
   parent: ClothingMaskClownBase
@@ -304,6 +355,14 @@
     sprite: Clothing/Mask/swat.rsi
   - type: Clothing
     sprite: Clothing/Mask/swat.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    hideOnToggle: true
 
 - type: entity
   parent: ClothingMaskGasExplorer
@@ -326,6 +385,14 @@
     sprite: Clothing/Mask/ert.rsi
   - type: Clothing
     sprite: Clothing/Mask/ert.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    hideOnToggle: true
 
 - type: entity
   parent: ClothingMaskGasERT
@@ -361,6 +428,9 @@
     - Clothing
     - HamsterWearable
     - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Snout
   - type: IdentityBlocker
 
 - type: entity
@@ -375,6 +445,9 @@
     sprite: Clothing/Mask/fox.rsi
   - type: BreathMask
   - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Snout
 
 - type: entity
   parent: ClothingMaskBase
@@ -388,6 +461,9 @@
     sprite: Clothing/Mask/bee.rsi
   - type: BreathMask
   - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Snout
 
 - type: entity
   parent: ClothingMaskBase
@@ -401,6 +477,9 @@
     sprite: Clothing/Mask/bear.rsi
   - type: BreathMask
   - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Snout
 
 - type: entity
   parent: ClothingMaskBase
@@ -414,6 +493,9 @@
     sprite: Clothing/Mask/raven.rsi
   - type: BreathMask
   - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Snout
 
 - type: entity
   parent: ClothingMaskBase
@@ -427,6 +509,9 @@
     sprite: Clothing/Mask/jackal.rsi
   - type: BreathMask
   - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Snout
 
 - type: entity
   parent: ClothingMaskBase
@@ -440,6 +525,9 @@
     sprite: Clothing/Mask/bat.rsi
   - type: BreathMask
   - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Snout
 
 - type: entity
   parent: ClothingMaskBase
@@ -452,10 +540,21 @@
   - type: Clothing
     sprite: Clothing/Mask/neckgaiter.rsi
   - type: IdentityBlocker
+    coverage: MOUTH
   - type: Tag
     tags:
     - Clothing
     - WhitelistChameleon
+
+- type: entity
+  parent: ClothingMaskNeckGaiter
+  id: ClothingMaskNeckGaiterRed
+  name: red neck gaiter
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/neckgaiterred.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/neckgaiterred.rsi
 
 - type: entity
   parent: ClothingMaskClownBase
@@ -511,6 +610,8 @@
     sprite: Clothing/Mask/italian_moustache.rsi
   - type: Clothing
     sprite: Clothing/Mask/italian_moustache.rsi
+  - type: Item
+    storedRotation: -90
   - type: AddAccentClothing
     accent: ReplacementAccent
     replacement: italian
@@ -525,6 +626,30 @@
     sprite: Clothing/Mask/ninja.rsi
   - type: Clothing
     sprite: Clothing/Mask/ninja.rsi
+  - type: Item
+    storedRotation: -90
   - type: EyeProtection
   - type: BreathMask
   - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskStrider
+  name: strider mask
+  description: Mask of a truly scary creature.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/strider.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/strider.rsi
+  - type: Tag
+    tags:
+    - Clothing
+    - WhitelistChameleon
+  - type: IdentityBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9

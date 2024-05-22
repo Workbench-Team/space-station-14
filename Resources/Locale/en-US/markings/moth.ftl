@@ -21,6 +21,9 @@ marking-MothAntennasWhite = Antennas (White)
 marking-MothAntennasWhitefly = Antennas (Whitefly)
 marking-MothAntennasWitchwing = Antennas (Witch Wing)
 
+marking-MothAntennasUnderwing-underwing_primary = Primary
+marking-MothAntennasUnderwing-underwing_secondary = Secondary
+marking-MothAntennasUnderwing = Antennae (Underwing)
 
 marking-MothWingsDefault = Wings (Default)
 marking-MothWingsBrown = Wings (Brown)
@@ -47,6 +50,9 @@ marking-MothWingsSwirly = Wings (Swirly)
 marking-MothWingsWhitefly = Wings (Whitefly)
 marking-MothWingsWitchwing = Wings (Witch Wing)
 
+marking-MothWingsUnderwing-underwing_primary = Primary
+marking-MothWingsUnderwing-underwing_secondary = Secondary
+marking-MothWingsUnderwing = Wings (Underwing)
 
 marking-MothChestCharred = Moth Chest (Charred)
 marking-MothHeadCharred = Moth Head (Charred)

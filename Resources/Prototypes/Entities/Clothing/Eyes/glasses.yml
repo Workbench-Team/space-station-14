@@ -16,6 +16,79 @@
 
 - type: entity
   parent: ClothingEyesBase
+  id: ClothingEyesGlassesGarBlack
+  name: black gar glasses
+  description: If it puts your mind at ease, I'll be the one pulling the strings here.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/garblack.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/garblack.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: Tag
+    tags:
+    - Clothing
+    - WhitelistChameleon
+  - type: MeleeWeapon
+    attackRate: 1.5
+    damage:
+      types:
+        Blunt: 7
+
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons]
+  id: ClothingEyesGlassesGarSec
+  name: security gar glasses
+  description: All of my machinations have been devised with your interests in mind.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/garsec.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/garsec.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: Tag
+    tags:
+    - Clothing
+    - WhitelistChameleon
+  - type: GuideHelp
+    guides:
+    - Security
+  - type: MeleeWeapon
+    attackRate: 1.5
+    damage:
+      types:
+        Blunt: 7
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesGarMed
+  name: medical gar glasses
+  description: Cool and useful. But you never should have known that.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/garmed.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/garmed.rsi
+  - type: ShowHealthBars
+    damageContainers: 
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers: 
+    - Biological
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: Tag
+    tags:
+    - Clothing
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingEyesBase
   id: ClothingEyesGlassesGarOrange
   name: orange gar glasses
   description: Just who the hell do you think I am?!
@@ -83,6 +156,20 @@
 
 - type: entity
   parent: ClothingEyesBase
+  id: ClothingEyesGlassesJensen
+  name: jensen glasses
+  description: A pair of yellow tinted folding glasses. You never asked for these.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/jensen.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/jensen.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingEyesBase
   id: ClothingEyesGlassesJamjar
   name: jamjar glasses
   description: Also known as Virginity Protectors.
@@ -112,25 +199,40 @@
 
 - type: entity
   parent: ClothingEyesBase
-  id: ClothingEyesGlassesSunglasses
-  name: sun glasses
-  description: Useful both for security and cargonia.
+  id: ClothingEyesGlassesCheapSunglasses
+  name: cheap sunglasses
+  description: A pair of black sunglasses. Doesn't block light well, more of an accessory than something useful.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/sunglasses.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/sunglasses.rsi
+  - type: Tag
+    tags:
+    - Clothing
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: IdentityBlocker
+    coverage: EYES
+
+- type: entity
+  parent: ClothingEyesGlassesCheapSunglasses
+  id: ClothingEyesGlassesSunglasses
+  name: sun glasses
+  description: A pair of black sunglasses.
+  components:
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
   - type: Tag
     tags:
     - Clothing
+    - Sunglasses
     - HamsterWearable
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingEyesGlassesSunglasses
+  parent: [ClothingEyesGlassesSunglasses, ShowSecurityIcons]
   id: ClothingEyesGlassesSunglassesBlueShield
   name: sun glasses
   description: Useful both for security and cargonia.
@@ -139,22 +241,28 @@
     sprite: Clothing/Eyes/Glasses/blueshieldglasses.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/blueshieldglasses.rsi
-  - type: ShowSecurityIcons
+  - type: Tag
+    tags:
+    - Clothing
+    - HamsterWearable
+    - WhitelistChameleon
 
 - type: entity
-  parent: ClothingEyesBase
+  parent: [ClothingEyesBase, ShowSecurityIcons]
   id: ClothingEyesGlassesSecurity
-  name: security sunglasses
-  description: Strangely ancient technology used to help provide rudimentary eye cover. Enhanced shielding blocks many flashes. Often worn by budget security officers.
+  name: security glasses
+  description: Upgraded sunglasses that provide flash immunity and a security HUD.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/secglasses.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/secglasses.rsi
-  - type: ShowSecurityIcons
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
+  - type: Construction
+    graph: GlassesSecHUD
+    node: glassesSec
   - type: Tag
     tags:
     - Clothing
@@ -163,6 +271,32 @@
   - type: GuideHelp
     guides:
     - Security
+  - type: IdentityBlocker
+    coverage: EYES
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesMed
+  name: medical sunglasses
+  description: They perfectly protect the eyes from flashes, showing all the information about the health of others. A field medic's best friend.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/medglasses.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/medglasses.rsi
+  - type: ShowHealthBars
+    damageContainers: 
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers: 
+    - Biological
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: Tag
+    tags:
+    - Clothing
+    - WhitelistChameleon
 
 - type: entity
   parent: ClothingEyesBase

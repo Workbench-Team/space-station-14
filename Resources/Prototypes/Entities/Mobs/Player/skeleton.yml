@@ -10,13 +10,15 @@
     messagePerceivedByOthers: hugging-success-generic-others
 
 - type: entity
-  name: Skeleton Pirate
+  name: skeleton pirate
   parent: MobSkeletonPerson
   id: MobSkeletonPirate
   components:
   - type: GhostRole
     name: ghost-role-information-skeleton-pirate-name
     description: ghost-role-information-skeleton-pirate-description
+    raffle:
+      settings: default
   - type: GhostTakeoverAvailable
   - type: Loadout
     prototypes: [PirateGear]
@@ -24,13 +26,15 @@
 
 
 - type: entity
-  name: Skeleton Biker
+  name: skeleton biker
   parent: MobSkeletonPerson
   id: MobSkeletonBiker
   components:
   - type: GhostRole
     name: ghost-role-information-skeleton-biker-name
     description: ghost-role-information-skeleton-biker-description
+    raffle:
+      settings: default
   - type: GhostTakeoverAvailable
   - type: Loadout
     prototypes: [SkeletonBiker]
@@ -39,11 +43,13 @@
 - type: entity
   parent: MobSkeletonPerson
   id: MobSkeletonCloset
-  name: Closet Skeleton
+  name: closet skeleton
   components:
   - type: GhostRole
     name: ghost-role-information-closet-skeleton-name
     description: ghost-role-information-closet-skeleton-description
+    raffle:
+      settings: default
   - type: GhostTakeoverAvailable
   - type: Loadout
     prototypes: [LimitedPassengerGear]

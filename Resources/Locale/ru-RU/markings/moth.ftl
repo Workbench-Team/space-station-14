@@ -20,8 +20,9 @@ marking-MothAntennasRoyal = Антенны (Королевские)
 marking-MothAntennasWhite = Антенны (Белые)
 marking-MothAntennasWhitefly = Антенны (Белокрылка)
 marking-MothAntennasWitchwing = Антенны (Ведьмокрыл)
-
-
+marking-MothAntennasUnderwing-underwing_primary = Первичные
+marking-MothAntennasUnderwing-underwing_secondary = Вторичные
+marking-MothAntennasUnderwing = Антенны (Подкрыльник)
 marking-MothWingsDefault = Крылья (По умолчанию)
 marking-MothWingsBrown = Крылья (Бурые)
 marking-MothWingsCharred = Крылья (Обгоревшие)
@@ -46,8 +47,9 @@ marking-MothWingsStellar = Крылья (Звёздные)
 marking-MothWingsSwirly = Крылья (Вихревые)
 marking-MothWingsWhitefly = Крылья (Белокрылка)
 marking-MothWingsWitchwing = Крылья (Ведьмокрыл)
-
-
+marking-MothWingsUnderwing-underwing_primary = Первичные
+marking-MothWingsUnderwing-underwing_secondary = Вторичные
+marking-MothWingsUnderwing = Крыло (Подкрыльник)
 marking-MothChestCharred = Моль, Грудь (Обгоревшая)
 marking-MothHeadCharred = Моль, Голова (Обгоревшая)
 marking-MothLLegCharred = Моль, Левая Нога (Обгоревшая)

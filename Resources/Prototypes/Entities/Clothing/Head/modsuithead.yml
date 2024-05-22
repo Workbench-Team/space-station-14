@@ -145,10 +145,12 @@
     sprite: Clothing/Head/Modsuit/medical.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHandsModsuitMedical
-  - type: ClothingGrantComponent
-    component:
-    - type: ShowHealthBars
-      damageContainer: Biological
+  - type: ShowHealthBars
+    damageContainers: 
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers: 
+    - Biological
 
 - type: entity
   parent: ClothingHeadHelmetModsuitBase
@@ -183,7 +185,7 @@
     clothingPrototype: ClothingHandsModsuitRescue
 
 - type: entity
-  parent: ClothingHeadHelmetModsuitBase
+  parent: [ClothingHeadHelmetModsuitBase, ShowSecurityIcons]
   id: ClothingHeadHelmetModsuitSecurity
   noSpawn: true
   name: security MOD helmet
@@ -195,7 +197,6 @@
     sprite: Clothing/Head/Modsuit/security.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHandsModsuitSecurity
-  - type: ShowSecurityIcons
   - type: FlashImmunity
   - type: PointLight
     color: "#ffeead"

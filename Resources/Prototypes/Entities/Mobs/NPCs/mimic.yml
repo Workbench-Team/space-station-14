@@ -41,3 +41,276 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 1
     baseSprintSpeed : 1
+
+- type: entity
+  id: MobMimicBase
+  parent: SimpleMobBase
+  abstract: true
+  components:
+  - type: Insulated
+  - type: CombatMode
+  - type: InputMover
+  - type: MobMover
+  - type: Tag
+    tags:
+    - CannotSuicide
+    - FootstepSound
+    - DoorBumpOpener
+    - Slime
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    soundHit:
+     collection: Punch
+    animation: WeaponArcFist
+    damage:
+      types:
+        Brute: 15
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: false
+    makeSentient: true
+  - type: GhostTakeoverAvailable
+  - type: HTN
+    rootTask:
+      task: XenoCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4
+    baseSprintSpeed : 4
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: Damageable
+    damageModifierSet: SlimeMimic
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: running
+      Dead:
+        Base: dead
+  - type: Bloodstream
+    bloodMaxVolume: 60
+    bloodReagent: liveSlime
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatMimic
+  - type: Tool
+    speedModifier: 1.5
+    qualities:
+      - Prying
+  - type: Prying
+    pryPowered: !type:Bool
+        true
+    force: !type:Bool
+      true
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: Hands
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        reagents:
+        - ReagentId: MuteToxin
+          Quantity: 100
+  - type: MeleeChemicalInjector
+    solution: melee
+    transferAmount: 3
+    maxTransferAmount: 5
+  - type: Flashable
+  - type: StaticPrice
+    price: 5000
+  - type: NpcFactionMember
+    factions:
+    - Xeno
+
+- type: entity
+  name: strider
+  id: MobStrider
+  parent: MobMimicBase
+  description: A terrible creature... The more you look at his skinny and mutilated body, the more you want to close this examine window. Wait, examine window? What are you talking about, you didn't say that?
+  components:
+  - type: FootstepModifier
+    footstepSoundCollection:
+      path: /Audio/Misc/pirce1.ogg
+      params:
+        volume: 5
+  - type: Reactive
+    groups:
+      Flammable: [Touch]
+      Extinguish: [Touch]
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: running
+        BaseUnshaded: strider_eyes
+      Dead:
+        Base: dead
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Demons/strider.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+    - map: ["enum.DamageStateVisualLayers.BaseUnshaded"]
+      state: strider_eyes
+      shader: unshaded
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 60
+        Structural: 70
+    soundHit:
+      path: /Audio/Weapons/pierce.ogg
+      volume: 3
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 3
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      600: Dead
+  - type: Stamina
+    critThreshold: 1500
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      450: 0.8
+  - type: AmbientSound
+    enabled: true
+    volume: 16
+    range: 10
+    sound:
+      path: /Audio/Misc/radio_static.ogg
+  - type: Damageable
+    damageModifierSet: SlimeMimic
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/Misc/farscream.ogg
+      params:
+        volume: 50
+        maxDistance: 100
+        pitchscale: 0.5
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatMimic
+    - id: ClothingMaskStrider
+  - type: GhostRole
+    name: ghost-role-information-strider-name
+    description: ghost-role-information-strider-description
+    rules: ghost-role-information-strider-rules
+  - type: Bloodstream
+    bloodMaxVolume: 500
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 1000
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: StaticPrice
+    price: 10000
+
+- type: entity
+  name: clown
+  id: MobMimicClown
+  parent: MobMimicBase
+  description: A very strange clown.
+  components:
+  - type: Sprite
+    sprite: Mobs/Demons/Mimics/clown.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepClown
+      params:
+        volume: 5
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 5
+        Caustic: 5
+        Structural: 30
+  - type: GhostRole
+    name: ghost-role-information-mimic-clown-name
+    description: ghost-role-information-mimic-clown-description
+    rules: ghost-role-information-mimic-clown-rules
+  - type: HTN
+    rootTask:
+      task: XenoCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+
+- type: entity
+  name: assistant
+  id: MobMimicTider
+  parent: MobMimicBase
+  description: A very average assistant.
+  components:
+  - type: Sprite
+    sprite: Mobs/Demons/Mimics/greytide.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+  - type: GhostRole
+    name: ghost-role-information-mimic-greytide-name
+    description: ghost-role-information-mimic-greytide-description
+  - type: HTN
+    rootTask:
+      task: IdleCompound
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MobAdultSlimesBlack:
+            min: 1
+            max: 2
+
+- type: entity
+  id: MobMimicTiderAngry
+  parent: MobMimicTider
+  components:
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 10
+        Caustic: 10
+  - type: GhostRole
+    name: ghost-role-information-mimic-greytide-name
+    description: ghost-role-information-mimic-greytide-description
+    rules: ghost-role-information-mimic-greytide-rules
+  - type: HTN
+    rootTask:
+      task: XenoCompound

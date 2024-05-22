@@ -25,20 +25,26 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Storage
-    maxSlots: 6
+    grid:
+    - 0,0,6,3
     maxItemSize: Normal
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
   - type: UserInterface
     interfaces:
-    - key: enum.StorageUiKey.Key
-      type: StorageBoundUserInterface
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
   - type: InteractionOutline
   - type: Clickable
   - type: Tag
     tags:
     - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Construction
+    graph: Dresser
+    node: dresser
 
 - type: entity
   id: DresserFilled

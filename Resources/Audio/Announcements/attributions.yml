@@ -1,4 +1,29 @@
 - files: ["ion_storm.ogg"]
   license: "CC-BY-SA-3.0"
-  copyright: "tgstation"
+  copyright: "Taken from tgstation"
   source: "https://github.com/tgstation/tgstation/blob/b77fa8c2a2490b43bf9174271ebfad72c4782d98/sound/ai/default/ionstorm.ogg"
+
+- files: ["announce.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from tgstation, cut from the beginning"
+  source: "https://github.com/tgstation/tgstation/blob/40d89d11ea4a5cb81d61dc1018b46f4e7d32c62a/sound/ai/default/shuttlerecalled.ogg"
+
+- files: ["aliens.ogg", "attention.ogg", "meteors.ogg", "outbreak7.ogg", "power_off.ogg", "power_on.ogg", "radiation.ogg", "shuttle_dock.ogg", "shuttlecalled.ogg", "shuttlerecalled.ogg", "ventclog.ogg", "war.ogg", "welcome.ogg", "ert_no.ogg", "ert_yes.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "By discord:Basia#3911"
+  source: "https://github.com/TauCetiStation/TauCetiClassic/commit/92d2767dbb39f28540f78d5055e7be1eb7acee98"
+
+- files: ["notice.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from tgstation cut from the beginning of shuttlerecalled.ogg"
+  source: "https://github.com/tgstation/tgstation/commit/40d89d11ea4a5cb81d61dc1018b46f4e7d32c62a"
+
+- files: ["anomalyattention.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from tgstation"
+  source: "https://github.com/tgstation/tgstation/blob/master/sound/ai/default/spanomalies.ogg"
+
+- files: ["intercept.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from tgstation"
+  source: "https://github.com/tgstation/tgstation/blob/95731342b97167d7883ff091d389f79c36442ee6/sound/ai/default/intercept.ogg"

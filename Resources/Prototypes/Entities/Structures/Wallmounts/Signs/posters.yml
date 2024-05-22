@@ -590,6 +590,15 @@
   components:
     - type: Sprite
       state: poster62_contraband
+      
+- type: entity
+  parent: PosterBase
+  id: PosterContrabandMissingSpacepen
+  name: "Missing Spacepen"
+  description: "This poster depicts something you will never find."
+  components:
+    - type: Sprite
+      state: poster63_contraband
 
 - type: entity
   parent: PosterBase
@@ -597,8 +606,8 @@
   name: "SOP is shit"
   description: "A poster encouraging people crew to stop using 'standard operating procedures' because they are inefficient and boring."
   components:
-  - type: Sprite
-    state: poster63_contraband
+    - type: Sprite
+      state: poster64_contraband
 
 # Legit
 - type: entity
@@ -874,7 +883,7 @@
 - type: entity
   parent: PosterBase
   id: PosterLegit12Gauge
-  name: "12 Gauge"
+  name: "12 gauge"
   description: "A poster boasting about the superiority of 12 gauge shotgun shells."
   components:
   - type: Sprite

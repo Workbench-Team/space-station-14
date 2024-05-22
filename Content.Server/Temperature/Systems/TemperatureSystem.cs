@@ -11,7 +11,6 @@ using Content.Shared.Database;
 using Content.Shared.Inventory;
 using Content.Shared.Rejuvenate;
 using Content.Shared.Temperature;
-using Robust.Server.GameObjects;
 using Robust.Shared.Physics.Components;
 
 namespace Content.Server.Temperature.Systems;
@@ -22,7 +21,6 @@ public sealed class TemperatureSystem : EntitySystem
     [Dependency] private readonly AtmosphereSystem _atmosphere = default!;
     [Dependency] private readonly DamageableSystem _damageable = default!;
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
-    [Dependency] private readonly TransformSystem _transform = default!;
 
     /// <summary>
     ///     All the components that will have their damage updated at the end of the tick.
@@ -149,14 +147,11 @@ public sealed class TemperatureSystem : EntitySystem
         if (transform.MapUid == null)
             return;
 
-        var position = _transform.GetGridOrMapTilePosition(uid, transform);
-
         var temperatureDelta = args.GasMixture.Temperature - temperature.CurrentTemperature;
-        var tileHeatCapacity =
-            _atmosphere.GetTileHeatCapacity(transform.GridUid, transform.MapUid.Value, position);
+        var airHeatCapacity = _atmosphere.GetHeatCapacity(args.GasMixture, false);
         var heatCapacity = GetHeatCapacity(uid, temperature);
-        var heat = temperatureDelta * (tileHeatCapacity * heatCapacity /
-                                       (tileHeatCapacity + heatCapacity));
+        var heat = temperatureDelta * (airHeatCapacity * heatCapacity /
+                                       (airHeatCapacity + heatCapacity));
         ChangeHeat(uid, heat * temperature.AtmosTemperatureTransferEfficiency, temperature: temperature);
     }
 
@@ -296,7 +291,10 @@ public sealed class TemperatureSystem : EntitySystem
     private void OnTemperatureChangeAttempt(EntityUid uid, TemperatureProtectionComponent component,
         InventoryRelayedEvent<ModifyChangedTemperatureEvent> args)
     {
-        args.Args.TemperatureDelta *= component.Coefficient;
+        var ev = new GetTemperatureProtectionEvent(component.Coefficient);
+        RaiseLocalEvent(uid, ref ev);
+
+        args.Args.TemperatureDelta *= ev.Coefficient;
     }
 
     private void OnParentChange(EntityUid uid, TemperatureComponent component,
@@ -344,7 +342,8 @@ public sealed class TemperatureSystem : EntitySystem
     {
         RecalculateAndApplyParentThresholds(root, temperatureQuery, transformQuery, tempThresholdsQuery);
 
-        foreach (var child in Transform(root).ChildEntities)
+        var enumerator = Transform(root).ChildEnumerator;
+        while (enumerator.MoveNext(out var child))
         {
             RecursiveThresholdUpdate(child, temperatureQuery, transformQuery, tempThresholdsQuery);
         }

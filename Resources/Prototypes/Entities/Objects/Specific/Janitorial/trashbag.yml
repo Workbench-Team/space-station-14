@@ -9,8 +9,9 @@
       - state: icon-0
         map: ["enum.StorageFillLayers.Fill"]
   - type: Storage
-    maxTotalWeight: 48
-    maxItemSize: Small
+    maxItemSize: Normal
+    grid:
+    - 0,0,7,5
     quickInsert: true
     areaInsert: true
     storageOpenSound:
@@ -21,10 +22,11 @@
       tags:
         - Cartridge
         - Trash
+  - type: UseDelay
+    delay: 0.5
   - type: Tag
     tags:
     - TrashBag
-    - DroneUsable
   - type: Appearance
   - type: StorageFillVisualizer
     maxFillLevels: 4
@@ -56,9 +58,9 @@
   parent: TrashBagBlue
   components:
   - type: Storage
-    maxSlots: 100
     maxItemSize: Huge
-    maxTotalWeight: 200
+    grid:
+    - 0,0,19,9
     quickInsert: true
     areaInsert: true
-    areaInsertRadius: 1000
+    areaInsertRadius: 5

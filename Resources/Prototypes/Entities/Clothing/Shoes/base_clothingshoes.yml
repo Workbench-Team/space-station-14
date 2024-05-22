@@ -24,6 +24,7 @@
     - Clothing
     - ClothMade
     - WhitelistChameleon
+  - type: ClothingRequiredStepTriggerImmune
 
 - type: entity
   abstract: true
@@ -36,19 +37,27 @@
     - id: MaterialCloth1
       amount: 1
 
+# stuff common to all military boots
 - type: entity
   abstract: true
-  parent: ClothingShoesBase
-  id: ClothingShoesStorageBase
+  parent: [ClothingShoesBase, ClothingSlotBase]
+  id: ClothingShoesMilitaryBase
   components:
-  - type: Storage
-    maxSlots: 1
-    maxItemSize: Normal
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
-        ents: []
-  - type: UserInterface
-    interfaces:
-    - key: enum.StorageUiKey.Key
-      type: StorageBoundUserInterface
+  - type: Matchbox
+  - type: ItemSlots
+    slots:
+      item:
+        name: clothing-boots-sidearm
+        whitelist:
+          tags:
+          - Knife
+          - Sidearm
+
+- type: entity
+  abstract: true
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBaseWinterBoots
+  description: Fluffy boots to help survive even the coldest of winters.
+  components:
+  - type: TemperatureProtection
+    coefficient: 0.2

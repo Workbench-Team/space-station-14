@@ -8,3 +8,5 @@ ent-HolosignEngineering = holobarrier
     .desc = A short holographic barrier which can only be passed by walking.
 ent-HolosignSecurity = holographic barrier
     .desc = A barrier of hard light that blocks movement, but pretty weak.
+ent-HolosignForcefield = holographic force field
+    .desc = A powerful temporal containment field that doesn't let anything through, not even a tesla or singularity.

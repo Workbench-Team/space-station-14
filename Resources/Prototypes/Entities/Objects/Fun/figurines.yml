@@ -17,6 +17,8 @@
   - type: Tag
     tags:
     - Figurine
+  - type: StealTarget
+    stealGroup: Figurines
 
 - type: entity
   parent: BaseFigurine
@@ -29,7 +31,7 @@
 
 - type: entity
   parent: BaseFigurine
-  id: ToyFigurineBlueshieldOfficer
+  id: ToyFigurineBlueShieldOfficer
   name: blueshield officer figure
   description: A figurine depicting the blueshield officer, austere and blue, stands guard over the station government. I guess.
   components:
@@ -38,13 +40,40 @@
     
 - type: entity
   parent: BaseFigurine
+  id: ToyFigurineCentcomConsultant
+  name: CentCom consultant figure
+  description: A figurine depicting a Central Command Consultant is expensively dressed and content with his status, perhaps trying to keep order.
+  components:
+  - type: Sprite
+    state: consultant
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineCentcomIntern
+  name: CentCom intern figure
+  description: A figurine depicting another CentCom intern being trained by Central Command, clumsily pressing all the buttons on consoles, and randomly sending you stupid alerts.
+  components:
+  - type: Sprite
+    state: intern_cc
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineCentcomOfficial
+  name: CentCom official figure
+  description: A figurine depicting a formidable representative of the Central Command, very angry with you.
+  components:
+  - type: Sprite
+    state: centcom_official
+
+- type: entity
+  parent: BaseFigurine
   id: ToyFigurinePassenger
   name: passenger figure
   description: A figurine depicting an every day, run-of-the-mill passenger. No funny business here.
   components:
   - type: Sprite
     state: passenger
-    
+
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineGreytider
@@ -72,6 +101,14 @@
   - type: Sprite
     state: holoclown
 
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineBrigmedic
+  name: brigmedic figure
+  description: MEDIC!
+  components:
+  - type: Sprite
+    state: brigmedic
 
 - type: entity
   parent: BaseFigurine
@@ -166,8 +203,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineSalvage
-  name: salvage technican figure
-  description: A figurine depicting a Salvage Technician holding a survival knife.
+  name: salvage specialist figure
+  description: A figurine depicting a Salvage Specialist holding a survival knife.
   components:
   - type: Sprite
     state: salvage
@@ -324,12 +361,12 @@
   components:
   - type: Sprite
     state: nukie
- 
+
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineNukieElite
   name: elite syndicate operative figure
-  description: A figurine depicting someone in an elite blood-red hardsuit, similar to what the medic of a nuclear operative team might wear.
+  description: A figurine depicting someone in an elite blood-red hardsuit, similar to what someone on a nuclear operative team might wear.
   components:
   - type: Sprite
     state: nukie_elite
@@ -342,7 +379,7 @@
   components:
   - type: Sprite
     state: nukie_commander
- 
+
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineFootsoldier
@@ -351,7 +388,7 @@
   components:
   - type: Sprite
     state: footsoldier
- 
+
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineWizard
@@ -360,7 +397,7 @@
   components:
   - type: Sprite
     state: wizard
- 
+
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineWizardFake
@@ -380,7 +417,7 @@
   components:
   - type: Sprite
     state: spacedragon
- 
+
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineQueen
@@ -416,7 +453,7 @@
   components:
   - type: Sprite
     state: mouse
-    
+
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineSlime
@@ -434,7 +471,7 @@
   components:
   - type: Sprite
     state: hamlet
- 
+
 #TODO: Convert these to the new figurine sprite template and rename their sprite name.
 #Yes, these are humanoids, but they need to be updated first.
 
@@ -464,3 +501,12 @@
   components:
   - type: Sprite
     state: skeletonprize
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineThief
+  name: thief character figure
+  description: Hiding in the shadows...
+  components:
+  - type: Sprite
+    state: thiefcharacter

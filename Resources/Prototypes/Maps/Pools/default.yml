@@ -1,18 +1,20 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - Aspid
   - Bagel
   - Box
   - Cluster
-  #- Core
+  - Core
   - Fland
-  - Kettle
   - Marathon
   - MetaStation
+  - Oasis
   - Omega
   - Origin
   - Saltern
   - Packed
+  - Reach
+  - Train
   - Driller
   - KiloStation
+  - Lighthouse

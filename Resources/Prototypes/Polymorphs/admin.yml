@@ -1,61 +1,69 @@
 ﻿- type: polymorph
   id: AdminLizardSmite
-  entity: MobReptilian
-  forced: true
-  transferName: true
-  transferHumanoidAppearance: true
-  inventory: Transfer
-  allowRepeatedMorphs: true
+  configuration:
+    entity: MobReptilian
+    forced: true
+    transferName: true
+    transferHumanoidAppearance: true
+    inventory: Transfer
+    allowRepeatedMorphs: true
 
 - type: polymorph
   id: AdminFelinidSmite
-  entity: MobFelinid
-  forced: true
-  transferName: true
-  transferHumanoidAppearance: true
-  inventory: Transfer
-  allowRepeatedMorphs: true
+  configuration:
+    entity: MobFelinid
+    forced: true
+    transferName: true
+    transferHumanoidAppearance: true
+    inventory: Transfer
+    allowRepeatedMorphs: true
 
 - type: polymorph
   id: AdminMothSmite
-  entity: MobMoth
-  forced: true
-  transferName: true
-  transferHumanoidAppearance: true
-  inventory: Transfer
-  allowRepeatedMorphs: true
+  configuration:
+    entity: MobMoth
+    forced: true
+    transferName: true
+    transferHumanoidAppearance: true
+    inventory: Transfer
+    allowRepeatedMorphs: true
 
 - type: polymorph
   id: AdminMonkeySmite
-  entity: MobMonkey
-  forced: true
-  inventory: Drop
-  allowRepeatedMorphs: true
+  configuration:
+    entity: MobMonkey
+    forced: true
+    inventory: Drop
+    allowRepeatedMorphs: true
 
 - type: polymorph
   id: AdminBreadSmite
-  entity: FoodBreadPlain
-  forced: true
-  inventory: Drop
-  allowRepeatedMorphs: true
+  configuration:
+    entity: FoodBreadPlain
+    forced: true
+    inventory: Drop
+    allowRepeatedMorphs: true
 
 - type: polymorph
   id: AdminInstrumentSmite
-  entity: SuperSynthesizerInstrument
-  forced: true
-  inventory: Drop
-  allowRepeatedMorphs: true
+  configuration:
+    entity: SuperSynthesizerInstrument
+    forced: true
+    inventory: Drop
+    allowRepeatedMorphs: true
 
 - type: polymorph
   id: AdminMouseSmite
-  entity: MobMouse
-  forced: true
-  inventory: Drop
-  allowRepeatedMorphs: true
+  configuration:
+    entity: MobMouse
+    forced: true
+    inventory: Drop
+    allowRepeatedMorphs: true
 
 - type: polymorph
   id: AdminDisposalsSmite
-  entity: DisposalUnit
-  forced: true
-  inventory: Drop
-  allowRepeatedMorphs: true
+  configuration:
+    entity: DisposalUnit
+    forced: true
+    inventory: Drop
+    allowRepeatedMorphs: true

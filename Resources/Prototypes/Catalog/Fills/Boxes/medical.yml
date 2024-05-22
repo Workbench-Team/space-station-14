@@ -22,7 +22,7 @@
   - type: StorageFill
     contents:
       - id: PillCanister
-        amount: 4
+        amount: 9
   - type: Sprite
     layers:
       - state: box
@@ -89,26 +89,6 @@
       - state: nitrile
 
 - type: entity
-  name: sterile swab box
-  parent: BoxCardboard
-  id: BoxMouthSwab
-  components:
-  - type: Storage
-    maxTotalWeight: 20
-  - type: StorageFill
-    contents:
-      - id: DiseaseSwab
-        amount: 10
-  - type: Sprite
-    layers:
-      - state: box
-      - state: swab
-  - type: GuideHelp
-    guides:
-  # - Virology (when it's back)
-    - Botany
-
-- type: entity
   name: body bag box
   parent: BoxCardboard
   id: BoxBodyBag
@@ -116,7 +96,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: BodyBag_Folded
+      - id: BodyBagFolded
         amount: 4
   - type: Sprite
     layers:
@@ -125,6 +105,24 @@
     whitelist:
       tags:
         - BodyBag
+
+- type: entity
+  name: vial box
+  parent: BoxCardboard
+  id: BoxVial
+  description: A box full of vials.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,2,1
+  - type: StorageFill
+    contents:
+      - id: BaseChemistryEmptyVial
+        amount: 6
+  - type: Sprite
+    layers:
+      - state: box
+      - state: vials
 
 - type: entity
   name: body bag box
@@ -143,8 +141,11 @@
     heldPrefix: injectorscase
     sprite: Objects/Specific/Medical/firstaidkits.rsi
     size: Small
+    shape:
+    - 0,0,1,1
   - type: Storage
-    maxTotalWeight: 6
+    grid:
+    - 0,0,2,1
     maxItemSize: Tiny
     whitelist:
       tags:
@@ -220,7 +221,8 @@
   description: A box full of medpens.
   components:
   - type: Storage
-    maxTotalWeight: 12
+    grid:
+    - 0,0,5,1
   - type: StorageFill
     contents:
       - id: TrackingImplanter

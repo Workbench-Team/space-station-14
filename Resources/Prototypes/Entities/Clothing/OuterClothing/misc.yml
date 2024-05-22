@@ -93,6 +93,7 @@
   - type: Tag
     tags:
       - DogWearable
+      - WhitelistChameleon
 
 - type: entity
   parent: ClothingOuterBaseToggleable
@@ -166,9 +167,16 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/santa.rsi
 
+- type: entity
+  abstract: true
+  parent: ClothingOuterBase
+  id: ClothingOuterWizardBase
+  components:
+  - type: WizardClothes
+
 # Is this wizard wearing a fanny pack???
 - type: entity
-  parent: ClothingOuterBase
+  parent: ClothingOuterWizardBase
   id: ClothingOuterWizardViolet
   name: violet wizard robes
   description: A bizarre gem-encrusted violet robe that radiates magical energies.
@@ -179,7 +187,7 @@
     sprite: Clothing/OuterClothing/Misc/violetwizard.rsi
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: ClothingOuterWizardBase
   id: ClothingOuterWizard
   name: wizard robes
   description: A bizarre gem-encrusted blue robe that radiates magical energies.
@@ -190,7 +198,7 @@
     sprite: Clothing/OuterClothing/Misc/wizard.rsi
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: ClothingOuterWizardBase
   id: ClothingOuterWizardRed
   name: red wizard robes
   description: Strange-looking, red, hat-wear that most certainly belongs to a real magic user.
@@ -251,7 +259,7 @@
 - type: entity
   parent: ClothingOuterBase
   id: ClothingOuterHospitalGown
-  name: Hospital Gown
+  name: hospital gown
   description: Made from the wool of slaughtered baby lambs.  The cruelty makes it softer.
   components:
   - type: Sprite
@@ -366,3 +374,14 @@
         color: "#000000"
   - type: TemperatureProtection
     coefficient: 0.3
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterRedRacoon
+  name: red racoon suit
+  description: Fluffy suit of red racoon!
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/red_racoon.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Misc/red_racoon.rsi

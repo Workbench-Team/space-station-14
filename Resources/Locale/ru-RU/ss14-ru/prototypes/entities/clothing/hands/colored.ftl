@@ -1,5 +1,3 @@
-ent-ClothingHandsGlovesSyntheticBase = { ent-ClothingHandsBase }
-    .desc = { ent-ClothingHandsBase.desc }
 ent-ClothingHandsGlovesColorPurple = фиолетовые перчатки
     .desc = Обычные фиолетовые перчатки, которые не спасут Вас от поджаривания.
 ent-ClothingHandsGlovesColorRed = красные перчатки
@@ -26,6 +24,9 @@ ent-ClothingHandsGlovesColorYellow = изолированные перчатки
     .desc = Эти перчатки защищают пользователя от поражения электрическим током.
 ent-ClothingHandsGlovesColorYellowBudget = дешевые изолированные перчатки
     .desc = Всего лишь дешевая подделка заветных перчаток - не может быть, чтобы это плохо кончилось.
+ent-ClothingHandsGlovesConducting = { ent-ClothingHandsGlovesColorYellow }
+    .suffix = Проводящие
+    .desc = { ent-ClothingHandsGlovesColorYellow.desc }
 ent-ClothingHandsGlovesAtmos = атмосферные спасательные перчатки
     .desc = Прочные перчатки для пожарных. Они толстые, негорючие и позволяют тащить людей быстрее.
 ent-ClothingHandsGlovesCE = продвинутые изолированные перчатки

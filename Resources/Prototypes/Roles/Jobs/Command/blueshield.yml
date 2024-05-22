@@ -18,7 +18,7 @@
   icon: "JobIconBlueShield"
   requireAdminNotify: true
   joinNotifyCrew: true
-  supervisors: job-supervisors-centcom
+  supervisors: job-supervisors-centcom-consultant
   canBeAntag: false
   whitelistRequired: true
   access:
@@ -32,6 +32,8 @@
   - Maintenance
   - Cargo
   - Research
+  - CentralCommand
+  - Cryogenics
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -42,15 +44,9 @@
 - type: startingGear
   id: BlueShieldGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitBlueShield
-    back: ClothingBackpackBlueShieldFilled
     shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSunglassesBlueShield
+    belt: ClothingBeltMedSec
     gloves: ClothingHandsTacticalBlueShield
-    outerClothing: ClothingOuterArmorBasicSlim
     id: BlueShieldPDA
     ears: ClothingHeadsetAltBlueShield
-    pocket1: HandheldCrewMonitor
-  innerClothingSkirt: ClothingUniformJumpskirtBlueshield
-  satchel: ClothingBackpackSatchelBlueShieldFilled
-  duffelbag: ClothingBackpackDuffelBlueShieldFilled
