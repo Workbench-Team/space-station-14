@@ -3,7 +3,7 @@
   id: StockingLeftLeg
   bodyPart: LFoot
   markingCategory: Underwear
-  speciesRestriction: [Human, Felinid, Moth, Arachnid, Reptilian, SlimePerson, Vox]
+  speciesRestriction: [Human, Felinid, Arachnid, Reptilian, SlimePerson]
   coloring:
     default:
       type:
@@ -19,7 +19,7 @@
   id: StockingRightLeg
   bodyPart: RFoot
   markingCategory: Underwear
-  speciesRestriction: [Human, Felinid, Moth, Arachnid, Reptilian, SlimePerson, Vox]
+  speciesRestriction: [Human, Felinid, Arachnid, Reptilian, SlimePerson]
   coloring:
     default:
       type:
@@ -35,7 +35,7 @@
   id: StockingsBee
   bodyPart: RLeg, LLeg
   markingCategory: Underwear
-  speciesRestriction: [Human, Felinid, Moth, Arachnid, Reptilian, SlimePerson, Vox]
+  speciesRestriction: [Human, Felinid, Arachnid, Reptilian, SlimePerson]
   sprites:
   - sprite: Mobs/Customization/socks.rsi
     state: bee_thigh
@@ -44,7 +44,7 @@
   id: StockingsFishnet
   bodyPart: RLeg, LLeg
   markingCategory: Underwear
-  speciesRestriction: [Human, Felinid, Moth, Arachnid, Reptilian, SlimePerson, Vox]
+  speciesRestriction: [Human, Felinid, Arachnid, Reptilian, SlimePerson]
   coloring:
     default:
       type:
@@ -58,7 +58,7 @@
   id: StockingsFurr
   bodyPart: RLeg, LLeg
   markingCategory: Underwear
-  speciesRestriction: [Human, Felinid, Moth, Arachnid, Reptilian, SlimePerson, Vox]
+  speciesRestriction: [Human, Felinid, Arachnid, Reptilian, SlimePerson]
   coloring:
     default:
       type:
@@ -74,7 +74,7 @@
   id: StockingsHalloween
   bodyPart: RLeg, LLeg
   markingCategory: Underwear
-  speciesRestriction: [Human, Felinid, Moth, Arachnid, Reptilian, SlimePerson, Vox]
+  speciesRestriction: [Human, Felinid, Arachnid, Reptilian, SlimePerson]
   sprites:
   - sprite: Mobs/Customization/socks.rsi
     state: halloween
@@ -83,7 +83,7 @@
   id: StockingsRainbow
   bodyPart: RLeg, LLeg
   markingCategory: Underwear
-  speciesRestriction: [Human, Felinid, Moth, Arachnid, Reptilian, SlimePerson, Vox]
+  speciesRestriction: [Human, Felinid, Arachnid, Reptilian, SlimePerson]
   coloring:
     default:
       type:
@@ -97,7 +97,7 @@
   id: StockingsThin
   bodyPart: RLeg, LLeg
   markingCategory: Underwear
-  speciesRestriction: [Human, Felinid, Moth, Arachnid, Reptilian, SlimePerson, Vox]
+  speciesRestriction: [Human, Felinid, Arachnid, Reptilian, SlimePerson]
   coloring:
     default:
       type:
@@ -112,7 +112,7 @@
   id: KneeSocksLeftLeg
   bodyPart: LFoot
   markingCategory: Underwear
-  speciesRestriction: [Human, Felinid, Moth, Arachnid, Reptilian, SlimePerson, Vox]
+  speciesRestriction: [Human, Felinid, Arachnid, Reptilian, SlimePerson]
   coloring:
     default:
       type:
@@ -128,7 +128,7 @@
   id: KneeSocksRightLeg
   bodyPart: RFoot
   markingCategory: Underwear
-  speciesRestriction: [Human, Felinid, Moth, Arachnid, Reptilian, SlimePerson, Vox]
+  speciesRestriction: [Human, Felinid, Arachnid, Reptilian, SlimePerson]
   coloring:
     default:
       type:
@@ -144,7 +144,7 @@
   id: KneeSocksBee
   bodyPart: RLeg, LLeg
   markingCategory: Underwear
-  speciesRestriction: [Human, Felinid, Moth, Arachnid, Reptilian, SlimePerson, Vox]
+  speciesRestriction: [Human, Felinid, Arachnid, Reptilian, SlimePerson]
   sprites:
   - sprite: Mobs/Customization/socks.rsi
     state: bee_knee
@@ -153,7 +153,7 @@
   id: KneeSocksRainbow
   bodyPart: RLeg, LLeg
   markingCategory: Underwear
-  speciesRestriction: [Human, Felinid, Moth, Arachnid, Reptilian, SlimePerson, Vox]
+  speciesRestriction: [Human, Felinid, Arachnid, Reptilian, SlimePerson]
   coloring:
     default:
       type:
@@ -168,7 +168,7 @@
   id: SocksLeftLeg
   bodyPart: LFoot
   markingCategory: Underwear
-  speciesRestriction: [Human, Felinid, Moth, Arachnid, Reptilian, SlimePerson, Vox]
+  speciesRestriction: [Human, Felinid, Arachnid, Reptilian, SlimePerson]
   coloring:
     default:
       type:
@@ -184,7 +184,7 @@
   id: SocksRightLeg
   bodyPart: RFoot
   markingCategory: Underwear
-  speciesRestriction: [Human, Felinid, Moth, Arachnid, Reptilian, SlimePerson, Vox]
+  speciesRestriction: [Human, Felinid, Arachnid, Reptilian, SlimePerson]
   coloring:
     default:
       type:
@@ -201,7 +201,7 @@
   id: PantyhoseFishnet
   bodyPart: RLeg, LLeg
   markingCategory: Underwear
-  speciesRestriction: [Human, Felinid, Moth, Arachnid, Reptilian, SlimePerson, Vox]
+  speciesRestriction: [Human, Felinid, Arachnid, Reptilian, SlimePerson]
   coloring:
     default:
       type:
@@ -215,7 +215,7 @@
   id: Pantyhose
   bodyPart: RLeg, LLeg
   markingCategory: Underwear
-  speciesRestriction: [Human, Felinid, Moth, Arachnid, Reptilian, SlimePerson, Vox]
+  speciesRestriction: [Human, Felinid, Arachnid, Reptilian, SlimePerson]
   coloring:
     default:
       type:

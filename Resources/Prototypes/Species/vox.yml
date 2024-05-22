@@ -65,9 +65,6 @@
       points: 1
       required: true
       defaultMarkings: [ VoxTail ]
-    Underwear:
-      points: 4
-      required: false
 
 - type: humanoidBaseSprite
   id: MobVoxEyes
