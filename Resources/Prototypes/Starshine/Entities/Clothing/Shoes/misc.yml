@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoeSlippersMeown
+  name: meown slippers
+  # description: You wish these made quacking sounds as you walked.
+  description: The adorable sound they make when you walk will mean making friends is more likely.
+  components:
+  - type: Sprite
+    sprite: Starshine/Clothing/Shoes/Misc/meown-slippers.rsi
+  - type: Clothing
+    sprite: Starshine/Clothing/Shoes/Misc/meown-slippers.rsi
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepMeow
+      params:
+        variation: 0.07
+  - type: WaddleWhenWorn
+    tumbleIntensity: 10 # smaller than clown shoes
+  - type: Construction
+    graph: ClothingShoeSlippersDuck
+    node: shoes

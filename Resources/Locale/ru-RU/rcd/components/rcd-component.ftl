@@ -2,8 +2,6 @@
 
 rcd-component-examine-mode-details = Установлен режим '{ $mode }'.
 rcd-component-examine-build-details = РСУ настроен на сборку { MAKEPLURAL($name) }.
-# Shown when an RCD is examined in details range
-rcd-component-examine-detail = Находится в режиме { $mode }.
 
 ### Interaction Messages
 
@@ -29,9 +27,6 @@ rcd-component-windows-and-grilles = Окна и решётки
 rcd-component-airlocks = Шлюзы
 rcd-component-electrical = Электрика
 rcd-component-lighting = Светильники
-rcd-component-cannot-build-floor-tile-not-empty-message = Пол можно построить только в космосе!
 rcd-component-deconstruct = деконструкция
 rcd-component-floor-steel = стальной пол
 rcd-component-plating = покрытие
-rcd-component-cannot-build-wall-tile-not-empty-message = Вы не можете построить стену в космосе!
-rcd-component-cannot-build-airlock-tile-not-empty-message = Вы не можете построить шлюз в космосе!

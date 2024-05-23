@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Content.Server.GameTicking;
@@ -48,7 +48,7 @@ namespace Content.IntegrationTests.Tests
             "TestTeg",
             "Fland",
             "MetaStation", //Starshine
-            "Driller",
+            "Driller", //Starshine
             "Packed",
             "Cluster",
             "Omega",
@@ -67,6 +67,7 @@ namespace Content.IntegrationTests.Tests
             "Reach",
             "Train",
             "Lighthouse", //Starshine
+            "Tehtra", //Starshine
             "Oasis"
         };
 

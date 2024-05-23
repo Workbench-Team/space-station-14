@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by Tamioki",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "thigh_color_l",
+      "directions": 4
+    },
+    {
+      "name": "thigh_color_r",
+      "directions": 4
+    },
+    {
+      "name": "thigh_white_l",
+      "directions": 4
+    },
+    {
+      "name": "thigh_white_r",
+      "directions": 4
+    },
+    {
+      "name": "knee_color_l",
+      "directions": 4
+    },
+    {
+      "name": "knee_color_r",
+      "directions": 4
+    },
+    {
+      "name": "knee_white_l",
+      "directions": 4
+    },
+    {
+      "name": "knee_white_r",
+      "directions": 4
+    },
+    {
+      "name": "norm_color_l",
+      "directions": 4
+    },
+    {
+      "name": "norm_color_r",
+      "directions": 4
+    },
+    {
+      "name": "norm_white_l",
+      "directions": 4
+    },
+    {
+      "name": "norm_white_r",
+      "directions": 4
+    },
+    {
+      "name": "bee_knee",
+      "directions": 4
+    },
+    {
+      "name": "bee_thigh",
+      "directions": 4
+    },
+    {
+      "name": "fishnet_pantyhose",
+      "directions": 4
+    },
+    {
+      "name": "fishnet_thigh",
+      "directions": 4
+    },  
+    {
+      "name": "furr1",
+      "directions": 4
+    },
+    {
+      "name": "furr2",
+      "directions": 4
+    },
+    {
+      "name": "halloween",
+      "directions": 4
+    },
+    {
+      "name": "pantyhose",
+      "directions": 4
+    },
+    {
+      "name": "rainbow_knee",
+      "directions": 4
+    },
+    {
+      "name": "rainbow_thigh",
+      "directions": 4
+    },
+    {
+      "name": "thin_thigh",
+      "directions": 4
+    }
+  ]
+}

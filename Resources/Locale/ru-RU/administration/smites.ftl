@@ -99,6 +99,7 @@ admin-smite-disarm-prone-description = Шанс обезоружить цель 
 admin-smite-garbage-can-description = Превратите цель в мусорку, чтобы подчеркнуть, о чём она вам напоминает.
 admin-smite-super-bonk-description = Заставляет цель удариться о каждый стол на станции и за её пределами.
 admin-smite-super-bonk-lite-description = Заставляет цель удариться о каждый стол на станции и за её пределами. Прекращает действовать после смерти цели.
+admin-smite-terminate-description = Creates a Terminator ghost role with the sole objective of killing them.
 admin-smite-super-slip-description = Поскользнуть очень, очень сильно.
 
 ## Tricks descriptions

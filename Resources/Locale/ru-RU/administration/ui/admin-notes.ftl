@@ -28,7 +28,6 @@ admin-notes-message-desc =
         [1] новое сообщение от администрации
        *[other] новых сообщений от администрации
     } с момента последней игры на сервере.[/color]
-admin-notes-message-window-title = Внимание!
 admin-notes-message-admin = Новое сообщение от { $admin }, полученное { $date }
 admin-notes-message-wait = Кнопка "Принять" будет включена через { $time } секунд.
 admin-notes-message-accept = Отклонить навсегда

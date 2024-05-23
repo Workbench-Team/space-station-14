@@ -62,3 +62,6 @@
 
 - files: ["Kilostation.yml"]
   authors: RevengenRat, Tamioki
+
+- files: ["tehtra.yml"]
+  authors: Astr0naut

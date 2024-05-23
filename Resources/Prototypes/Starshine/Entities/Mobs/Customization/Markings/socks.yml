@@ -1,0 +1,226 @@
+#stockings
+- type: marking
+  id: StockingLeftLeg
+  bodyPart: LFoot
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: thigh_white_l
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: thigh_color_l
+
+- type: marking
+  id: StockingRightLeg
+  bodyPart: RFoot
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: thigh_white_r
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: thigh_color_r
+
+- type: marking
+  id: StockingsBee
+  bodyPart: RLeg, LLeg
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  sprites:
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: bee_thigh
+
+- type: marking
+  id: StockingsFishnet
+  bodyPart: RLeg, LLeg
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: fishnet_thigh
+
+- type: marking
+  id: StockingsFurr
+  bodyPart: RLeg, LLeg
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: furr1
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: furr2
+
+- type: marking
+  id: StockingsHalloween
+  bodyPart: RLeg, LLeg
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  sprites:
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: halloween
+
+- type: marking
+  id: StockingsRainbow
+  bodyPart: RLeg, LLeg
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: rainbow_thigh
+
+- type: marking
+  id: StockingsThin
+  bodyPart: RLeg, LLeg
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: thin_thigh
+
+#kneeSocks
+- type: marking
+  id: KneeSocksLeftLeg
+  bodyPart: LFoot
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: knee_white_l
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: knee_color_l
+
+- type: marking
+  id: KneeSocksRightLeg
+  bodyPart: RFoot
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: knee_white_r
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: knee_color_r
+
+- type: marking
+  id: KneeSocksBee
+  bodyPart: RLeg, LLeg
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  sprites:
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: bee_knee
+
+- type: marking
+  id: KneeSocksRainbow
+  bodyPart: RLeg, LLeg
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: rainbow_knee
+
+#Socks
+- type: marking
+  id: SocksLeftLeg
+  bodyPart: LFoot
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: norm_white_l
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: norm_color_l
+
+- type: marking
+  id: SocksRightLeg
+  bodyPart: RFoot
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: norm_white_r
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: norm_color_r
+
+#pantyhose
+- type: marking
+  id: PantyhoseFishnet
+  bodyPart: RLeg, LLeg
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: fishnet_pantyhose
+
+- type: marking
+  id: Pantyhose
+  bodyPart: RLeg, LLeg
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/socks.rsi
+    state: pantyhose

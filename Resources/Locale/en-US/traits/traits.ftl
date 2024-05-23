@@ -30,6 +30,9 @@ trait-pirate-accent-desc = You can't stop speaking like a pirate!
 trait-accentless-name = Accentless
 trait-accentless-desc = You don't have the accent that your species would usually have
 
+trait-frontal-lisp-name = Frontal Lisp
+trait-frontal-lisp-desc = You thpeak with a lithp
+
 trait-socialanxiety-name = Social Anxiety
 trait-socialanxiety-desc = You are anxious when you speak and stutter.
 

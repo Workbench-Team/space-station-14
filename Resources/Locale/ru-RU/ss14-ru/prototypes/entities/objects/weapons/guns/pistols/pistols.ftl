@@ -20,3 +20,6 @@ ent-WeaponPistolN1984Nonlethal = N1984
 ent-WeaponPistolMk68 = МК 68
     .desc = Продвинутая версия МК58. Благодаря усиленной ствольной коробке, имеет автоматический режим стрельбы и большую скорострельность. Использует патроны калибра .35 авто.
     .suffix = Пистолет
+ent-WeaponPistolMk68Nonlethal = { ent-WeaponPistolMk68 }
+    .suffix = Травматический
+    .desc = { ent-WeaponPistolMk68.desc }

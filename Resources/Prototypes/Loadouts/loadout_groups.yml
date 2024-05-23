@@ -860,6 +860,9 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
+# Starshine-start
+  - HeadofSecurityHonoraryTrench
+# Starshine-end
 
 - type: loadoutGroup
   id: WardenHead

@@ -1,0 +1,670 @@
+#UnderFemale
+- type: marking
+  id: UnderNekoWhite
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: female_neko_white
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: bell
+
+- type: marking
+  id: UnderFemaleBralette
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: female_bralette
+
+- type: marking
+  id: UnderFemaleSport
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: female_sport
+
+- type: marking
+  id: UnderFemaleStrapless
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: female_strapless
+
+- type: marking
+  id: UnderFemaleThong
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: female_thong
+
+- type: marking
+  id: UnderFemaleSwimHalter
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: swim_halter
+
+- type: marking
+  id: UnderFemaleSwimOnepiece
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: swim_onepiece
+
+- type: marking
+  id: UnderFemaleSwimStralpessTwopiece
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: swim_strapless_twopiece
+
+- type: marking
+  id: UnderFemaleSwimTwopiece
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: swim_twopiece
+
+- type: marking
+  id: UnderFemaleTankMidriff
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: tank_midriff
+
+- type: marking
+  id: UnderFemaleWhitetop
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: whitetop
+
+- type: marking
+  id: UnderFemaleBikiniPatriot
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: female_patriot_bikini
+
+- type: marking
+  id: UnderFemaleBikini
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: female_bikini
+
+- type: marking
+  id: UnderFemaleBikiniBra
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: female_bikini_onlybra
+
+- type: marking
+  id: UnderFemaleBikiniPanty
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: female_bikini_onlypanty
+
+- type: marking
+  id: UnderFemaleThongBra
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: female_thong_onlybra
+
+- type: marking
+  id: UnderFemaleThongPanty
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: female_thong_onlypanty
+
+- type: marking
+  id: UnderFemaleBikiniStripe
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: female_bikini_stripe_color
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: female_bikini_stripe_white
+
+- type: marking
+  id: UnderFemaleSwimStripe
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: swim_stripe_color
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: swim_stripe_white
+
+#UnderMale
+- type: marking
+  id: UnderMaleBoxers
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: male_boxers
+
+- type: marking
+  id: UnderMaleBriefs
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: male_briefs
+
+- type: marking
+  id: UnderMaleKinky
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: male_kinky
+
+- type: marking
+  id: UnderMaleLongjohns
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: male_longjohns
+
+- type: marking
+  id: UnderMaleMankini
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: male_mankini
+
+- type: marking
+  id: UnderMaleMidway
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: male_midway
+
+- type: marking
+  id: UnderMaleHearts
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: male_hearts_color
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: male_hearts_white
+
+- type: marking
+  id: UnderMaleStripe
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: male_stripe_color
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: male_stripe_white
+
+#Shirts
+- type: marking
+  id: UnderShirtWhite
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: shirt_white
+
+- type: marking
+  id: UnderShirtBand
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: band
+
+- type: marking
+  id: UnderShirtIan
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: ian
+
+- type: marking
+  id: UnderShirtILoveNT
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: ilovent
+
+- type: marking
+  id: UnderShirtPogoman
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: pogoman
+
+- type: marking
+  id: UnderShirtPatriot
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: shirt_patriot
+
+- type: marking
+  id: UnderShirtClown
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: shirt_clown
+
+- type: marking
+  id: UnderShirtCommie
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: shirt_commie
+
+- type: marking
+  id: UnderShirtSkull
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: shirt_skull
+
+- type: marking
+  id: UnderShirtTiedye
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: shirt_tiedye
+
+- type: marking
+  id: UnderShirtUK
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: uk
+
+- type: marking
+  id: UnderShirtLover
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: lover_white
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: lover_color
+
+- type: marking
+  id: UnderShirtPeace
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: peace_white
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: peace_color
+
+- type: marking
+  id: UnderShirtNT
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: shirt_nt
+
+- type: marking
+  id: UnderShirtPatern
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: shirt_patern_white
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: shirt_patern_color
+
+- type: marking
+  id: UnderShirtQuestion
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: shirt_question_white
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: shirt_question_color
+
+- type: marking
+  id: UnderShirtStriped
+  bodyPart: Chest, LHand, RHand
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: shirt_striped_white
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: shirt_striped_color
+
+#Tanks
+
+- type: marking
+  id: UnderTankWhite
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: tank_white
+
+- type: marking
+  id: UnderTankStripes
+  bodyPart: Chest
+  markingCategory: Underwear
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, SlimePerson]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: tank_stripes_white
+  - sprite: Starshine/Mobs/Customization/underwear.rsi
+    state: tank_stripes_color
