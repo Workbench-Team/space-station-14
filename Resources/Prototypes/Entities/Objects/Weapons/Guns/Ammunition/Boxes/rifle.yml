@@ -9,7 +9,7 @@
       tags:
         - CartridgeRifle
     proto: CartridgeRifle
-    capacity: 60
+    capacity: 50
   - type: Item
     size: Small
   - type: ContainerContainer
@@ -44,6 +44,7 @@
     zeroVisible: false
   - type: Appearance
 
+# Starshine-start
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifleBigRubber
@@ -64,6 +65,7 @@
     steps: 2
     zeroVisible: false
   - type: Appearance
+# Starshine-end
 
 - type: entity
   parent: BaseMagazineBoxRifle
@@ -94,6 +96,7 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: practice
 
+# Starshine-start
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifleRubber
@@ -108,6 +111,7 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: rubber
+# Starshine-end
 
 - type: entity
   id: MagazineBoxRifleIncendiary

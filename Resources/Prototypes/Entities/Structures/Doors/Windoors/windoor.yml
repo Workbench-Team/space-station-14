@@ -122,7 +122,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsFreezer ]
+      board: [ DoorElectronicsKitchenHydroponics ]
 
 - type: entity
   parent: Windoor
@@ -158,8 +158,9 @@
   id: PlasmaWindoorSecureArmoryLocked
   suffix: Armory, Locked, Plasma
   components:
-  - type: AccessReader
-    access: [["Armory"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsArmory ]
 
 - type: entity
   parent: WindoorSecure
@@ -175,8 +176,9 @@
   id: PlasmaWindoorSecureAtmosphericsLocked
   suffix: Atmospherics, Locked, Plasma
   components:
-  - type: AccessReader
-    access: [["Atmospherics"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsAtmospherics ]
 
 - type: entity
   parent: WindoorSecure
@@ -282,8 +284,9 @@
   id: PlasmaWindoorSecureCommandLocked
   suffix: Command, Locked, Plasma
   components:
-  - type: AccessReader
-    access: [["Command"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCommand ]
 
 - type: entity
   parent: WindoorSecure
@@ -364,7 +367,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsLawyer ]
+      board: [ DoorElectronicsSecurityLawyer ]
 
 - type: entity
   parent: WindoorSecure
@@ -398,8 +401,9 @@
   id: PlasmaWindoorSecureSecurityLocked
   suffix: Security, Locked, Plasma
   components:
-  - type: AccessReader
-    access: [["Security"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSecurity ]
 
 - type: entity
   parent: WindoorSecure

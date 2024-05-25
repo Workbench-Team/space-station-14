@@ -5,6 +5,9 @@ namespace Content.Server.Speech.EntitySystems;
 
 public sealed class MothAccentSystem : EntitySystem
 {
+    private static readonly Regex RegexLowerBuzz = new Regex("з{1,3}");
+    private static readonly Regex RegexUpperBuzz = new Regex("З{1,3}");
+
     public override void Initialize()
     {
         base.Initialize();
@@ -16,9 +19,9 @@ public sealed class MothAccentSystem : EntitySystem
         var message = args.Message;
 
         // buzzz
-        message = Regex.Replace(message, "з{1,3}", "ззз");
+        message = RegexLowerBuzz.Replace(message, "ззз");
         // buZZZ
-        message = Regex.Replace(message, "З{1,3}", "ЗЗЗ");
+        message = RegexUpperBuzz.Replace(message, "ЗЗЗ");
 
         args.Message = message;
     }

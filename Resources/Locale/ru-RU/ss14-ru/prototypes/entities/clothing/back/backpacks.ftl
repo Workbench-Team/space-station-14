@@ -52,8 +52,10 @@ ent-ClothingBackpackERTJanitor = рюкзак уборщика ОБР
     .desc = Вместительный рюкзак с множеством карманов, который носят уборщики отряда быстрого реагирования.
 ent-ClothingBackpackERTClown = рюкзак клоуна ОБР
     .desc = Вместительный рюкзак с множеством карманов, который носят клоуны отряда быстрого реагирования.
-ent-ClothingBackpackDeathsquad = рюкзак эскадрона смерти
-    .desc = Вместительный рюкзак с множеством карманов, который носят члены эскадрона смерти.
+ent-ClothingBackpackERTChaplain = рюкзак священника ОБР
+    .desc = Вместительный рюкзак с множеством карманов, который носят священники группы быстрого реагирования.
+ent-ClothingBackpackSyndicate = рюкзак синдиката
+    .desc = { ent-ClothingBackpack.desc }
 ent-ClothingBackpackHolding = блюспейс рюкзак
     .desc = Рюкзак, открывающийся в локальный карман блюспейса.
 ent-ClothingBackpackCluwne = проклятое хихиканье фон хонкертона
@@ -71,3 +73,7 @@ ent-ClothingBackpackDebug3 = gay психзак
 ent-ClothingBackpackDebug4 = отклонённый психзак
     .desc = Что это за хрень?
     .suffix = Debug
+
+## Starshine
+ent-ClothingBackpackDeathsquad = рюкзак эскадрона смерти
+    .desc = Вместительный рюкзак с множеством карманов, который носят члены эскадрона смерти.

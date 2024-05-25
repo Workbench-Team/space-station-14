@@ -114,6 +114,7 @@
       types:
         Blunt: 1
 
+# Starshine-start
 - type: entity
   id: BaseBulletRubber
   name: base bullet rubber
@@ -131,7 +132,8 @@
     soundHit:
       path: /Audio/Weapons/Guns/Hits/snap.ogg
   - type: StaminaDamageOnCollide
-    damage: 22 # 5 hits to stun sounds reasonable
+    damage: 16 # 7 hits to stun sounds reasonable
+# Starshine-end
 
 - type: entity
   id: BaseBulletIncendiary

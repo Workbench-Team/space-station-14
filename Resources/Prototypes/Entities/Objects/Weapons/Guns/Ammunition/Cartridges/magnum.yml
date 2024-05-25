@@ -41,6 +41,7 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#dbdbdb"
 
+# Starshine-start
 - type: entity
   id: CartridgeMagnumRubber
   name: cartridge (.45 magnum rubber)
@@ -55,6 +56,7 @@
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#43c4f7"
+# Starshine-end
 
 - type: entity
   id: CartridgeMagnumIncendiary

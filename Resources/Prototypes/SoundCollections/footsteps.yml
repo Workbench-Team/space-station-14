@@ -202,11 +202,12 @@
   - /Audio/Effects/Footsteps/spurs2.ogg
   - /Audio/Effects/Footsteps/spurs3.ogg
 
-## Starshine
-
 - type: soundCollection
-  id: LimbstepBorg
+  id: FootstepBorg
   files:
   - /Audio/Effects/Footsteps/borgwalk1.ogg
+
+- type: soundCollection
+  id: FootstepHoverBorg
+  files:
   - /Audio/Effects/Footsteps/borgwalk2.ogg
-  - /Audio/Effects/Footsteps/borgwalk3.ogg

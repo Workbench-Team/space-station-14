@@ -1,0 +1,15 @@
+ent-ClothingUniformRandom = { ent-ClothingUniformBase }
+    .desc = Генерируется нейронными сетями на основе последних модных тенденций.
+    .suffix = Случайный
+ent-ClothingRandomSpawner = случайный красочный костюм
+    .desc = { ent-ClothingUniformRandom.desc }
+ent-ClothingUniformRandomArmless = красочный костюм без руквавов
+    .desc = { ent-ClothingUniformRandom.desc }
+ent-ClothingUniformRandomStandard = красочный костюм
+    .desc = { ent-ClothingUniformRandom.desc }
+ent-ClothingUniformRandomBra = красочный топ
+    .desc = { ent-ClothingUniformRandom.desc }
+ent-ClothingUniformRandomShorts = красочные брюки
+    .desc = { ent-ClothingUniformRandom.desc }
+ent-ClothingUniformRandomShirt = красочный костюм
+    .desc = { ent-ClothingUniformRandom.desc }

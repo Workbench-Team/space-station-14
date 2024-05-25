@@ -1,36 +1,4 @@
 - type: entity
-  name: handheld cargo monitor
-  parent:
-  - BaseItem
-  id: HandheldCargoMonitor
-  description: A hand-held crew monitor displaying the status of suit sensors.
-  components:
-  - type: Sprite
-    sprite: Objects/Specific/Tablets/cargo.rsi
-    state: icon
-  - type: CargoOrderConsole
-  - type: ActivatableUI
-    key: enum.CargoConsoleUiKey.Orders
-    closeOnHandDeselect: true
-  - type: UserInterface
-    interfaces:
-      - key: enum.CargoConsoleUiKey.Orders
-        type: CargoOrderConsoleBoundUserInterface
-  - type: AccessReader
-    access: [["Cargo"]]
-  - type: DeviceNetwork
-    deviceNetId: Wireless
-    receiveFrequencyId: BasicDevice
-  - type: WirelessNetworkConnection
-    range: 200
-  - type: DeviceLinkSource
-    range: 200
-    ports:
-      - OrderSender
-  - type: StaticPrice
-    price: 500
-
-- type: entity
   name: handheld intercom monitor
   parent:
   - BaseItem
@@ -48,8 +16,8 @@
     key: enum.CommunicationsConsoleUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.CommunicationsConsoleUiKey.Key
-      type: CommunicationsConsoleBoundUserInterface
+      enum.CommunicationsConsoleUiKey.Key:
+        type: CommunicationsConsoleBoundUserInterface
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: BasicDevice
@@ -79,10 +47,10 @@
     key: enum.ResearchConsoleUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.ResearchConsoleUiKey.Key
-      type: ResearchConsoleBoundUserInterface
-    - key: enum.ResearchClientUiKey.Key
-      type: ResearchClientBoundUserInterface
+      enum.ResearchConsoleUiKey.Key:
+        type: ResearchConsoleBoundUserInterface
+      enum.ResearchClientUiKey.Key:
+        type: ResearchClientBoundUserInterface
   - type: AccessReader
     access: [["Research"]]
   - type: DeviceNetwork
@@ -112,8 +80,8 @@
     key: enum.SolarControlConsoleUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.SolarControlConsoleUiKey.Key
-      type: SolarControlConsoleBoundUserInterface
+      enum.SolarControlConsoleUiKey.Key:
+        type: SolarControlConsoleBoundUserInterface
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: BasicDevice
@@ -140,7 +108,7 @@
     key: enum.NewsWriterUiKey.Key
   - type: UserInterface
     interfaces:
-      - key: enum.NewsWriterUiKey.Key
+      enum.NewsWriterUiKey.Key:
         type: NewsWriterBoundUserInterface
   - type: NewsWriter
   - type: StaticPrice

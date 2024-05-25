@@ -36,6 +36,11 @@ reagent-effect-guidebook-foam-area-reaction-effect =
         [1] Создаёт
        *[other] создать
     } большое количество пены
+reagent-effect-guidebook-smoke-area-reaction-effect =
+    { $chance ->
+        [1] Создаёт
+       *[other] создают
+    } большое количество дыма
 reagent-effect-guidebook-foam-area-reaction-effect =
     { $chance ->
         [1] Создаёт
@@ -302,12 +307,42 @@ reagent-effect-guidebook-reset-narcolepsy =
     { $chance ->
         [1] Временно избавляет
        *[other] временно избавить
-    } от нарколепсии
+    } от приступов нарколепсии
+reagent-effect-guidebook-reduce-rotting =
+    { $chance ->
+        [1] Регенерирует
+       *[other] регенерируют
+    } { NATURALFIXED($time, 3) } { MANY("second", $time) } гниения
 reagent-effect-guidebook-wash-cream-pie-reaction =
     { $chance ->
         [1] Смывает
        *[other] смыть
     } кремовый пирог с лица
+reagent-effect-guidebook-plant-attribute =
+    { $chance ->
+        [1] Изменяет
+       *[other] изменить
+    } { $attribute } на [color={ $colorName }]{ $amount }[/color]
+reagent-effect-guidebook-plant-cryoxadone =
+    { $chance ->
+        [1] Омолаживает
+       *[other] омолодить
+    } растение, в зависимости от его возраста и времени для роста
+reagent-effect-guidebook-plant-phalanximine =
+    { $chance ->
+        [1] Делает
+       *[other] сделать
+    } растение, нежизнеспособное из-за мутации, снова жизнеспособным
+reagent-effect-guidebook-plant-diethylamine =
+    { $chance ->
+        [1] Увеличивает
+       *[other] увеличить
+    } продолжительность жизни растения и/или его базовое здоровье с шансом 10% для каждого (оба показателя имеют свой независимый шанс в 10%)
+reagent-effect-guidebook-plant-robust-harvest =
+    { $chance ->
+        [1] Увеличивает
+       *[other] увеличить
+    } потенцию растения на { $increase } до максимума { $limit }. Приводит к тому, что растение теряет свои семена, когда потенция достигает { $seedlesstreshold }. Попытка добавить потенцию свыше { $limit } может привести к снижению урожая с вероятностью 10%
 reagent-effect-guidebook-missing =
     { $chance ->
         [1] Вызывает

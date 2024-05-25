@@ -20,6 +20,7 @@
       types:
         Blunt: 2
 
+# Starshine-start
 - type: entity
   id: BulletLightRifleRubber
   name: bullet (.20 rifle rubber)
@@ -30,6 +31,7 @@
     damage:
       types:
         Blunt: 3
+# Starshine-end
 
 - type: entity
   id: BulletLightRifleIncendiary

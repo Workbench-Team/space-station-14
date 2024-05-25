@@ -1,5 +1,5 @@
-job-supervisors-centcom = представителю Центкома
-job-supervisors-consultant = Консультанту Центкома и Центральному Командованию
+job-supervisors-centcom = Центральному командованию
+job-supervisors-consultant = Консультанту Центкома и Центральному командованию
 job-supervisors-captain = капитану
 job-supervisors-hop = главе персонала
 job-supervisors-hos = главе службы безопасности
@@ -11,6 +11,6 @@ job-supervisors-service = поварам, ботаникам, барменам, 
 job-supervisors-engineering = инженерам, атмосферным техникам, и старшему инженеру
 job-supervisors-medicine = врачам, химикам, и главному врачу
 job-supervisors-security = офицерам, смотрителю, и главе службы безопасности
-job-supervisors-science = учёным, учёному-инструктору и научному руководителю
+job-supervisors-science = учёным, научному руководителю
 job-supervisors-hire = своим нанимателям
 job-supervisors-everyone = вообще всем

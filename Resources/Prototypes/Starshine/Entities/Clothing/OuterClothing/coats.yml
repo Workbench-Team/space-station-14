@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingOuterCoatHoSTrench
+  id: ClothingOuterCoatHoSHonoraryTrench
+  name: head of security's armored honorary trenchcoat
+  description: It is given to outstanding heads of security who give themselves 250% and put safety and order at the station above all else, even if sometimes they have to put them above humanity.
+  components:
+  - type: Sprite
+    sprite: Starshine/Clothing/OuterClothing/Coats/hos_honorary_trenchcoat.rsi
+  - type: Clothing
+    sprite: Starshine/Clothing/OuterClothing/Coats/hos_honorary_trenchcoat.rsi

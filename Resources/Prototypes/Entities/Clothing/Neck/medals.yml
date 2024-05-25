@@ -8,6 +8,9 @@
     sprite: Clothing/Neck/Medals/bronzeheart.rsi
   - type: Clothing
     sprite: Clothing/Neck/Medals/bronzeheart.rsi
+  - type: Tag
+    tags:
+      - Medal
 
 - type: entity
   parent: ClothingNeckBase
@@ -21,6 +24,9 @@
     sprite: Clothing/Neck/Medals/gold.rsi
   - type: StealTarget
     stealGroup: ClothingNeckGoldmedal
+  - type: Tag
+    tags:
+      - Medal
 
 - type: entity
   parent: ClothingNeckBase
@@ -32,6 +38,9 @@
     sprite: Clothing/Neck/Medals/cargomedal.rsi
   - type: Clothing
     sprite: Clothing/Neck/Medals/cargomedal.rsi
+  - type: Tag
+    tags:
+      - Medal
 
 - type: entity
   parent: ClothingNeckBase
@@ -43,6 +52,9 @@
     sprite: Clothing/Neck/Medals/engineermedal.rsi
   - type: Clothing
     sprite: Clothing/Neck/Medals/engineermedal.rsi
+  - type: Tag
+    tags:
+      - Medal
 
 - type: entity
   parent: ClothingNeckBase
@@ -54,6 +66,9 @@
     sprite: Clothing/Neck/Medals/medicalmedal.rsi
   - type: Clothing
     sprite: Clothing/Neck/Medals/medicalmedal.rsi
+  - type: Tag
+    tags:
+      - Medal
 
 - type: entity
   parent: ClothingNeckBase
@@ -65,6 +80,9 @@
     sprite: Clothing/Neck/Medals/sciencemedal.rsi
   - type: Clothing
     sprite: Clothing/Neck/Medals/sciencemedal.rsi
+  - type: Tag
+    tags:
+      - Medal
 
 - type: entity
   parent: ClothingNeckBase
@@ -76,6 +94,9 @@
     sprite: Clothing/Neck/Medals/securitymedal.rsi
   - type: Clothing
     sprite: Clothing/Neck/Medals/securitymedal.rsi
+  - type: Tag
+    tags:
+      - Medal
 
 - type: entity
   parent: ClothingNeckBase
@@ -89,6 +110,9 @@
     sprite: Clothing/Neck/Medals/clownmedal.rsi
   - type: StealTarget
     stealGroup: ClothingNeckClownmedal
+  - type: Tag
+    tags:
+      - Medal
 
 ## Starshine
 
@@ -102,9 +126,12 @@
     sprite: Clothing/Neck/Medals/shieldgold.rsi
   - type: Clothing
     sprite: Clothing/Neck/Medals/shieldgold.rsi
+  - type: Tag
+    tags:
+      - Medal
 
 - type: entity
-  parent: ClothingNeckBase
+  parent: ClothingNeckGoldShieldMedal
   id: ClothingNeckSilverShieldMedal
   name: silver shield medal
   description: A brilliant medal made of pure silver, cast in the shape of a shield, awarded by representatives of the NanoTrasen company for responsibility and courage.
@@ -115,7 +142,7 @@
     sprite: Clothing/Neck/Medals/shieldsilver.rsi
 
 - type: entity
-  parent: ClothingNeckBase
+  parent: ClothingNeckGoldShieldMedal
   id: ClothingNeckBronzeShieldMedal
   name: bronze shield medal
   description: A brilliant medal made of pure bronze, cast in the shape of a shield, awarded by representatives of the NanoTrasen company for responsibility and courage.
@@ -126,7 +153,7 @@
     sprite: Clothing/Neck/Medals/shieldbronze.rsi
 
 - type: entity
-  parent: ClothingNeckBase
+  parent: ClothingNeckGoldShieldMedal
   id: ClothingNeckBlueShieldMedal
   name: blueshield medal
   description: A precious medal made of pure platinum, cast in the shape of a shield, awarded by representatives of Nanotrasen to those who have earned the full trust of the Corporation.
@@ -137,6 +164,7 @@
     sprite: Clothing/Neck/Medals/shieldblue.rsi
   - type: Tag
     tags:
-    - HighRiskItem
+      - Medal
+      - HighRiskItem
   - type: StealTarget
     stealGroup: ClothingNeckBlueShieldMedal

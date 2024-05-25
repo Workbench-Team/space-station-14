@@ -1,4 +1,3 @@
-reagent-physical-desc-skunky = вонючее
 reagent-physical-desc-soapy = мыльное
 reagent-physical-desc-ferrous = чёрнометаллическое
 reagent-physical-desc-nothing = никакое
@@ -95,3 +94,4 @@ reagent-physical-desc-funny = смешное
 reagent-physical-desc-alkaline = щелочное
 reagent-physical-desc-holy = святое
 reagent-physical-desc-slimy = склизкое
+reagent-physical-desc-neural = нейронное

@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Server.Chat.Systems;
 using Content.Server.Fax;
+using Content.Shared.Fax.Components;
 using Content.Shared.GameTicking;
 using Content.Shared.Paper;
 using Robust.Shared.Prototypes;
@@ -52,6 +53,7 @@ namespace Content.Server.AruMoon.StationGoal
                 var printout = new FaxPrintout(
                     Loc.GetString(goal.Text),
                     Loc.GetString("station-goal-fax-paper-name"),
+                    null,
                     null,
                     "paper_stamp-centcom",
                     new List<StampDisplayInfo>

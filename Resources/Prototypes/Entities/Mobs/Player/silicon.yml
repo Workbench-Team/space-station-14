@@ -66,9 +66,7 @@
   - type: Puller
   - type: StandingState
   - type: Alerts
-  - type: Tag
-    tags:
-      - ShoesRequiredStepTriggerImmune
+  - type: StepTriggerImmune
 
 - type: entity
   id: PlayerBorgGeneric

@@ -72,6 +72,7 @@ ent-CentcomPDA = CentCom PDA
     .desc = Light green sign of walking bureaucracy.
 ent-AdminPDA = Admin PDA
     .desc = If you are not an admin please return this PDA to the nearest admin.
+    .suffix = Admin
 ent-CentcomPDAFake = { ent-CentcomPDA }
     .suffix = Fake
     .desc = { ent-CentcomPDA.desc }

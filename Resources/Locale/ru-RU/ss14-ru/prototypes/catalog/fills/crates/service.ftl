@@ -29,5 +29,3 @@ ent-CrateJanitorBiosuit = ящик биокостюмов уборщиков
 ent-CrateTrashCartFilled = { ent-CrateTrashCart }
     .suffix = Заполненный
     .desc = { ent-CrateTrashCart.desc }
-ent-CrateJanitorExplosive = ящик с сапёрно-уборочным костюмом
-    .desc = Содержит костюм для уборки любых взрывчатых веществ, купите один сегодня!

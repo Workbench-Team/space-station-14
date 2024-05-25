@@ -1,0 +1,22 @@
+# HoS Timers
+- type: loadoutEffectGroup
+  id: HoSHonoraryTrenchTimer
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 360000 #100 hours
+
+# Coats
+- type: loadout
+  id: HeadofSecurityHonoraryTrench
+  equipment: HeadofSecurityHonoraryTrench
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: HoSHonoraryTrenchTimer
+
+- type: startingGear
+  id: HeadofSecurityHonoraryTrench
+  equipment:
+    outerClothing: ClothingOuterCoatHoSHonoraryTrench

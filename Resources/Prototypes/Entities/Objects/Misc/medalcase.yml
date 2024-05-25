@@ -17,6 +17,9 @@
   - type: Storage
     grid:
     - 0,0,7,1
+    whitelist:
+      tags:
+        - Medal
   - type: StorageFill
     contents:
     - id: ClothingNeckGoldmedal
@@ -37,6 +40,9 @@
   - type: Storage
     grid:
     - 0,0,3,1
+    whitelist:
+      tags:
+        - Medal
   - type: StorageFill
     contents:
     - id: ClothingNeckBlueShieldMedal

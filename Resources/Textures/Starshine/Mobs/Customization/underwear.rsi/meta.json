@@ -1,0 +1,239 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by Tamioki",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "female_neko_white",
+      "directions": 4
+    },
+    {
+      "name": "bell",
+      "directions": 4
+    },
+    {
+      "name": "female_patriot_bikini",
+      "directions": 4
+    },
+    {
+      "name": "female_bikini",
+      "directions": 4
+    },
+    {
+      "name": "female_bralette",
+      "directions": 4
+    },
+    {
+      "name": "female_sport",
+      "directions": 4
+    },
+    {
+      "name": "female_strapless",
+      "directions": 4
+    },
+    {
+      "name": "female_thong",
+      "directions": 4
+    },
+    {
+      "name": "male_boxers",
+      "directions": 4
+    },
+    {
+      "name": "male_briefs",
+      "directions": 4
+    },
+    {
+      "name": "male_kinky",
+      "directions": 4
+    },
+    {
+      "name": "male_longjohns",
+      "directions": 4
+    },
+    {
+      "name": "male_mankini",
+      "directions": 4
+    },
+    {
+      "name": "male_midway",
+      "directions": 4
+    },
+    {
+      "name": "shirt_white",
+      "directions": 4
+    },
+    {
+      "name": "swim_halter",
+      "directions": 4
+    },
+    {
+      "name": "swim_onepiece",
+      "directions": 4
+    },
+    {
+      "name": "swim_strapless_twopiece",
+      "directions": 4
+    },
+    {
+      "name": "swim_twopiece",
+      "directions": 4
+    },
+    {
+      "name": "tank_midriff",
+      "directions": 4
+    },
+    {
+      "name": "tank_white",
+      "directions": 4
+    },
+    {
+      "name": "whitetop",
+      "directions": 4
+    },
+    {
+      "name": "female_bikini_stripe_color",
+      "directions": 4
+    },
+    {
+      "name": "female_bikini_stripe_white",
+      "directions": 4
+    },
+    {
+      "name": "male_hearts_color",
+      "directions": 4
+    },
+    {
+      "name": "male_hearts_white",
+      "directions": 4
+    },
+    {
+      "name": "male_stripe_color",
+      "directions": 4
+    },
+    {
+      "name": "male_stripe_white",
+      "directions": 4
+    },
+    {
+      "name": "swim_stripe_color",
+      "directions": 4
+    },
+    {
+      "name": "swim_stripe_white",
+      "directions": 4
+    },
+    {
+      "name": "female_bikini_onlybra",
+      "directions": 4
+    },
+    {
+      "name": "female_bikini_onlypanty",
+      "directions": 4
+    },
+    {
+      "name": "female_thong_onlybra",
+      "directions": 4
+    },
+    {
+      "name": "female_thong_onlypanty",
+      "directions": 4
+    },
+    {
+      "name": "band",
+      "directions": 4
+    },
+    {
+      "name": "ian",
+      "directions": 4
+    },
+    {
+      "name": "ilovent",
+      "directions": 4
+    },
+    {
+      "name": "pogoman",
+      "directions": 4
+    },
+    {
+      "name": "shirt_patriot",
+      "directions": 4
+    },
+    {
+      "name": "shirt_clown",
+      "directions": 4
+    },
+    {
+      "name": "shirt_commie",
+      "directions": 4
+    },
+    {
+      "name": "shirt_skull",
+      "directions": 4
+    },
+    {
+      "name": "shirt_tiedye",
+      "directions": 4
+    },
+    {
+      "name": "uk",
+      "directions": 4
+    },
+    {
+      "name": "lover_white",
+      "directions": 4
+    },
+    {
+      "name": "lover_color",
+      "directions": 4
+    },
+    {
+      "name": "peace_white",
+      "directions": 4
+    },
+    {
+      "name": "peace_color",
+      "directions": 4
+    },
+    {
+      "name": "shirt_nt",
+      "directions": 4
+    },
+    {
+      "name": "shirt_patern_white",
+      "directions": 4
+    },
+    {
+      "name": "shirt_patern_color",
+      "directions": 4
+    },
+    {
+      "name": "shirt_question_white",
+      "directions": 4
+    },
+    {
+      "name": "shirt_question_color",
+      "directions": 4
+    },
+    {
+      "name": "shirt_striped_white",
+      "directions": 4
+    },
+    {
+      "name": "shirt_striped_color",
+      "directions": 4
+    },
+    {
+      "name": "tank_stripes_white",
+      "directions": 4
+    },
+    {
+      "name": "tank_stripes_color",
+      "directions": 4
+    }
+  ]
+}

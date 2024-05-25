@@ -129,6 +129,12 @@ ent-SeniorPhysicianIDCard = ID карта врача-инструктора
     .desc = { ent-IDCardStandard.desc }
 ent-SeniorOfficerIDCard = ID карта офицера-инструктора
     .desc = { ent-IDCardStandard.desc }
+ent-UniversalIDCard = универсальная ID карта
+    .desc = ID карта, которая открывает доступ к самым смелым мечтам.
+    .suffix = Админ
+
+## Starshine
+
 ent-CentcomConsultantIDCard = ID карта консультанта ЦентКома
     .desc = { ent-IDCardStandard.desc }
 ent-ShuttlePilotIDCard = карта пилота шаттла ID card

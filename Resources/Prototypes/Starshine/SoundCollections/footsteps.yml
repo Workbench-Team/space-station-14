@@ -1,0 +1,4 @@
+- type: soundCollection
+  id: FootstepMeow
+  files:
+  - /Audio/Starshine/Effects/Footsteps/meowstep1.ogg

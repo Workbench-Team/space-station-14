@@ -1,5 +1,4 @@
-- files:
-    - syndieborg_laugh.ogg
-  license: "CC-BY-SA-3.0"
-  copyright: "Made by https://github.com/MilenVolf"
-  source: "https://github.com/Workbench-Team/space-station-14/commit/ad9550c10ef359795dab077c44bbfc3d72431293"
+- files: ["syndieborg_laugh.ogg"]
+  license: "CC0-1.0"
+  copyright: "Taken from vultraz168 freesound.org and modified by https://github.com/MilenVolf"
+  source: "https://freesound.org/people/vultraz168/sounds/334665/"

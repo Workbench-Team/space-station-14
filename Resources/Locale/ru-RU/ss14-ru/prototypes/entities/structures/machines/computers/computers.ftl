@@ -64,3 +64,5 @@ ent-ComputerMassMedia = консоль менеджера новостей
 ent-ComputerSensorMonitoring = консоль мониторинга датчиков
     .desc = Гибкая консоль для мониторинга всех видов датчиков.
     .suffix = TESTING, DO NOT MAP
+ent-ComputerRoboticsControl = консоль управления робототехникой
+    .desc = Используется для дистанционного контроля, отключения и уничтожения киборгов станции.

@@ -1,20 +1,23 @@
 ## Implanter Attempt Messages
 
-implanter-component-implanting-target = { $user } пытается Вам что-то имплантировать!
-implanter-component-implant-failed = { $implant } не может быть поставлен { $target }!
-implanter-draw-failed-permanent = { $implant } вросся в { $target } и не может быть удален!
-implanter-draw-failed = Вы попытались удалить имплант, но ничего не нашли.
+implanter-component-implanting-target = { $user } пытается что-то в вас имплантировать!
+implanter-component-implant-failed = { $implant } нельзя имплантировать в { $target }!
+implanter-draw-failed-permanent = { $implant } вросся в { $target } и не может быть удалён!
+implanter-draw-failed = Вы пытаетесь удалить имплант, но ничего не находите.
+implanter-component-implant-already = { $target } уже имеет { $implant }!
 
 ## UI
 
-implanter-draw-text = Извлечь
-implanter-inject-text = Ввести
-implanter-empty-text = Отсутствует
+implanter-draw-text = Извлечение
+implanter-inject-text = Установка
+implanter-empty-text = Пусто
+implanter-label =
+    { "[" }color=green]{ $implantName }[/color]
+    Режим: [color=white]{ $modeString }[/color]
 implanter-contained-implant-text = [color=green]{ $desc }[/color]
-implanter-label = [color=white]Имплант: { $currentEntities }{ $lineBreak }Режим: { $modeString }[/color]
 
 ## Implanter Actions
 
-deathrattle-implant-dead-message = { $user } умер по координатам: { $position }.
-scramble-implant-activated-popup = Вы трансформировались в { $identity }
-deathrattle-implant-critical-message = Жизненные показатели { $user } критические, требуется неотложная помощь по координатам: { $position }.
+scramble-implant-activated-popup = Вы превратились в { $identity }
+deathrattle-implant-dead-message = Зафиксирована смерть { $user } { $position }.
+deathrattle-implant-critical-message = Жизненные показатели { $user } критические, требуется немедленная помощь { $position }.

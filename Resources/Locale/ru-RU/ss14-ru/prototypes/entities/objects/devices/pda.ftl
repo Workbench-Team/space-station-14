@@ -76,6 +76,7 @@ ent-CentcomInternPDA = КПК интерна ЦентКома
     .desc = Очень вкусного цвета.
 ent-AdminPDA = КПК админа
     .desc = Если вы не являетесь администратором, верните этот КПК ближайшему администратору.
+    .suffix = Админ
 ent-CentcomPDAFake = { ent-CentcomPDA }
     .suffix = Фальшивый
     .desc = { ent-CentcomPDA.desc }

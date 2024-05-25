@@ -33,5 +33,5 @@
     id: SecurityCadetPDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled
-    pocket1: WeaponPistolMk58
+    pocket1: WeaponPistolMk58Nonlethal
     pocket2: BookSecurity

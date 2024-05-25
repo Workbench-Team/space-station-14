@@ -9,18 +9,14 @@
 <GuideEntityEmbed Entity="Brutepack"/>
 <GuideEntityEmbed Entity="Bloodpack"/>
 <GuideEntityEmbed Entity="Ointment"/>
-</Box>
-<Box>
 <GuideEntityEmbed Entity="Gauze"/>
 <GuideEntityEmbed Entity="HandheldHealthAnalyzer"/>
 </Box>
 ## Химическое производство
 <Box>
 <GuideEntityEmbed Entity="ChemDispenser"/>
-<GuideEntityEmbed Entity="chem_master"/>
-</Box>
-<Box>
 <GuideEntityEmbed Entity="LargeBeaker"/>
 <GuideEntityEmbed Entity="PillCanister"/>
+<GuideEntityEmbed Entity="ChemMaster"/>
 </Box>
 </Document>

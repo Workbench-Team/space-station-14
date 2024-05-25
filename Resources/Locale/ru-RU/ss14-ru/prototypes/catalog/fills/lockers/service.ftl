@@ -17,5 +17,5 @@ ent-LockerBotanistLoot = { ent-LockerBotanist }
     .suffix = Лут
     .desc = { ent-LockerBotanist.desc }
 ent-ClosetJanitorBombFilled = { ent-ClosetJanitorBomb }
-    .suffix = Заполненный
+    .suffix = НЕ МАППИТЬ, Заполненный
     .desc = { ent-ClosetJanitorBomb.desc }

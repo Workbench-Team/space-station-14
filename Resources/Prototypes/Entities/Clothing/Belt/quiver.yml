@@ -1,6 +1,7 @@
 ﻿- type: entity
+  abstract: true
   parent: ClothingBeltStorageBase
-  id: ClothingBeltQuiver
+  id: ClothingBeltQuiverBase
   name: quiver
   description: Can hold up to 15 arrows, and fits snug around your waist.
   components:
@@ -22,15 +23,24 @@
     whitelist:
       tags:
       - Arrow
+      - Plunger
   - type: Appearance
   - type: StorageContainerVisuals
     maxFillLevels: 3
     fillBaseName: fill-
 
 - type: entity
-  parent: ClothingBeltQuiver
+  parent: ClothingBeltQuiverBase
+  id: ClothingBeltQuiver
+  components:
+  - type: Construction
+    graph: Quiver
+    node: Quiver
+
+- type: entity
+  parent: ClothingBeltQuiverBase
   id: ClothingBeltQuiverComposit
-  name: quiver
+  name: composit quiver
   description: Can hold up to 24 arrows, and fits snug around your waist.
   components:
   - type: Storage

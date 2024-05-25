@@ -18,3 +18,7 @@ ent-ClothingNeckPansexualPin = { ent-ClothingNeckPinBase }
     .desc = { ent-ClothingNeckPinBase.desc }
 ent-ClothingNeckTransPin = { ent-ClothingNeckPinBase }
     .desc = { ent-ClothingNeckPinBase.desc }
+ent-ClothingNeckAutismPin = значок аутизма
+    .desc = Будь аутистом, совершай преступления.
+ent-ClothingNeckGoldAutismPin = golden autism pin
+    .desc = Будь аутистом, совершай военные преступления.

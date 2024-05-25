@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Content.Server.GameTicking;
@@ -48,7 +48,7 @@ namespace Content.IntegrationTests.Tests
             "TestTeg",
             "Fland",
             "MetaStation", //Starshine
-            "Driller",
+            "Driller", //Starshine
             "Packed",
             "Cluster",
             "Omega",
@@ -66,7 +66,9 @@ namespace Content.IntegrationTests.Tests
             "Atlas",
             "Reach",
             "Train",
-            "Lighthouse"
+            "Lighthouse", //Starshine
+            "Tehtra", //Starshine
+            "Oasis"
         };
 
         /// <summary>
@@ -158,7 +160,10 @@ namespace Content.IntegrationTests.Tests
         [Test, TestCaseSource(nameof(GameMaps))]
         public async Task GameMapsLoadableTest(string mapProto)
         {
-            await using var pair = await PoolManager.GetServerClient();
+            await using var pair = await PoolManager.GetServerClient(new PoolSettings
+            {
+                Dirty = true // Stations spawn a bunch of nullspace entities and maps like centcomm.
+            });
             var server = pair.Server;
 
             var mapManager = server.ResolveDependency<IMapManager>();
