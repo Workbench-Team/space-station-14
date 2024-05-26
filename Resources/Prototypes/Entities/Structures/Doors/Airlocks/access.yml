@@ -1325,3 +1325,11 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSyndicateAgent ]
+
+- type: entity
+  parent: AirlockGlassShuttle
+  id: AirlockExternalGlassShuttlePilot
+  suffix: External, Shuttle Pilot, Glass, Docking
+  components:
+  - type: GridFill
+    path: /Maps/Shuttles/ferryman.yml

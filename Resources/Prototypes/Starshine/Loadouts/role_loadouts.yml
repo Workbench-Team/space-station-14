@@ -1,0 +1,11 @@
+#Pilot
+- type: roleLoadout
+  id: JobShuttlePilot
+  groups:
+  - PilotHead
+  - PilotJumpsuit
+  - SecurityBackpack
+  - SecurityBelt
+  - PilotOuterClothing
+  - SecurityShoes
+  - Trinkets

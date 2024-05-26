@@ -51,6 +51,7 @@
             SecurityOfficer: [ 4, 4 ]
             SecurityCadet: [ 4, 4 ]
             Brigmedic: [ 1, 1 ]
+            ShuttlePilot: [1, 1]
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 1, 3 ]

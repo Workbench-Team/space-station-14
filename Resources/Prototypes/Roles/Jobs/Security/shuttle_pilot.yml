@@ -28,17 +28,9 @@
 - type: startingGear
   id: ShuttlePilotGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSec
-    back: ClothingBackpackSecurityFilled
-    shoes: ClothingShoesBootsCombatFilled
     gloves: ClothingHandsGlovesCombat
     eyes: ClothingEyesGlassesSunglasses
-    head: ClothingHeadHatBeretSecurity
-    outerClothing: ClothingOuterCoatBomber
     id: ShuttlePilotPDA
     ears: ClothingHeadsetSecurity
-    belt: ClothingBeltSecurityFilled
     pocket1: WeaponPistolMk58Nonlethal
   innerClothingSkirt: ClothingUniformJumpskirtSec
-  satchel: ClothingBackpackSatchelSecurityFilled
-  duffelbag: ClothingBackpackDuffelSecurityFilled

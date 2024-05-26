@@ -1,0 +1,25 @@
+#ShuttlePilot
+- type: loadoutGroup
+  id: PilotHead
+  name: loadout-group-pilot-head
+  minLimit: 0
+  loadouts:
+  - PilotHead
+  - SecurityBeret
+  - SecurityHelmet
+
+- type: loadoutGroup
+  id: PilotJumpsuit
+  name: loadout-group-pilot-jumpsuit
+  loadouts:
+  - SecurityJumpsuit
+  - SecurityJumpskirt
+  - SecurityJumpsuitGrey
+  - SecurityJumpskirtGrey
+
+- type: loadoutGroup
+  id: PilotOuterClothing
+  name: loadout-group-pilot-outerclothing
+  loadouts:
+  - ArmorVest
+  - CoatBomber
