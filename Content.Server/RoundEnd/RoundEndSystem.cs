@@ -16,6 +16,7 @@ using Content.Server.Station.Systems;
 using Content.Shared.Database;
 using Content.Shared.DeviceNetwork;
 using Content.Shared.GameTicking;
+using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
 using Robust.Shared.Player;
@@ -188,7 +189,9 @@ namespace Content.Server.RoundEnd
                 null,
                 Color.Gold);
 
-            _audio.PlayGlobal("/Audio/Announcements/shuttlecalled.ogg", Filter.Broadcast(), true);
+            // Custom sound for auto-called
+            if (!_autoCalledBefore) _audio.PlayGlobal("/Audio/Announcements/shuttlecalled.ogg", Filter.Broadcast(), true, AudioParams.Default.AddVolume(-4)); // Starshine-Announcements
+            else _audio.PlayGlobal("/Audio/Starshine/Announcements/crew_s_called.ogg", Filter.Broadcast(), true, AudioParams.Default.AddVolume(-4)); // Starshine-Announcements
 
             LastCountdownStart = _gameTiming.CurTime;
             ExpectedCountdownEnd = _gameTiming.CurTime + countdownTime;
