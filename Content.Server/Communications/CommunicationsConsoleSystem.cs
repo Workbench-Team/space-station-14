@@ -1,4 +1,5 @@
 using System.Globalization;
+using System.Linq;
 using Content.Server.Access.Systems;
 using Content.Server.Administration.Logs;
 using Content.Server.AlertLevel;
@@ -23,7 +24,9 @@ using Content.Shared.Database;
 using Content.Shared.DeviceNetwork;
 using Content.Shared.Emag.Components;
 using Content.Shared.Popups;
+using FastAccessors;
 using Robust.Server.GameObjects;
+using Robust.Shared.Audio;
 using Robust.Shared.Configuration;
 
 namespace Content.Server.Communications
@@ -43,6 +46,7 @@ namespace Content.Server.Communications
         [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
         [Dependency] private readonly IConfigurationManager _cfg = default!;
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
+        [Dependency] private readonly SharedIdCardConsoleSystem _idCardConsoleSystem = default!;
 
         private const float UIUpdateInterval = 5.0f;
 
@@ -239,6 +243,7 @@ namespace Content.Server.Communications
             var maxLength = _cfg.GetCVar(CCVars.ChatMaxAnnouncementLength);
             var msg = SharedChatSystem.SanitizeAnnouncement(message.Message, maxLength);
             var author = Loc.GetString("comms-console-announcement-unknown-sender");
+            SoundSpecifier specificAnnouncement = new SoundPathSpecifier("/Audio/Announcements/announce.ogg");
             if (message.Actor is { Valid: true } mob)
             {
                 if (!CanAnnounce(comp))
@@ -255,6 +260,19 @@ namespace Content.Server.Communications
                 if (_idCardSystem.TryFindIdCard(mob, out var id))
                 {
                     author = $"{id.Comp.FullName} ({CultureInfo.CurrentCulture.TextInfo.ToTitleCase(id.Comp.JobTitle ?? string.Empty)})".Trim();
+                    var jobName = id.Comp.JobTitle;
+                    if (jobName != null)
+                    {
+                        comp.JobSpecialAnnounceDictionary.TryGetValue(jobName, out var value);
+                        if (TryComp<AccessComponent>(id, out var accessComponent) && value != null &&
+                            accessComponent.Tags.Contains(value))
+                        {
+                            comp.JobSpecialAnnounceDictionary.TryGetValue(jobName, out var jobIdName);
+                            specificAnnouncement =
+                                new SoundPathSpecifier(
+                                    $"/Audio/Starshine/Announcements/Console/{jobIdName?.ToLower()}.ogg");
+                        }
+                    }
                 }
             }
 
@@ -277,7 +295,7 @@ namespace Content.Server.Communications
                 return;
             }
 
-            _chatSystem.DispatchStationAnnouncement(uid, msg, title, colorOverride: comp.Color);
+            _chatSystem.DispatchStationAnnouncement(uid, msg, title, announcementSound: specificAnnouncement, colorOverride: comp.Color);
 
             _adminLogger.Add(LogType.Chat, LogImpact.Low, $"{ToPrettyString(message.Actor):player} has sent the following station announcement: {msg}");
 

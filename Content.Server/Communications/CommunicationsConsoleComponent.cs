@@ -67,5 +67,16 @@ namespace Content.Server.Communications
         /// </summary>
         [DataField]
         public SoundSpecifier Sound = new SoundPathSpecifier("/Audio/Announcements/announce.ogg");
+
+        public Dictionary<string, string> JobSpecialAnnounceDictionary = new()
+        {
+            {"Капитан","Captain"},
+            {"Старший инженер","ChiefEngineer"},
+            {"Главный врач","ChiefMedicalOfficer"},
+            {"Глава персонала","HeadOfPersonnel"},
+            {"Глава службы безопасности","HeadOfSecurity"},
+            {"Квартирмейстер","Quartermaster"},
+            {"Научный руководитель","ResearchDirector"}
+        };
     }
 }

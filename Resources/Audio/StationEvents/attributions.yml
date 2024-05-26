@@ -7,3 +7,8 @@
   license: "CC-BY-3.0"
   copyright: "Created by mryikes"
   source: "https://www.youtube.com/watch?v=chix8uz-oUQ"
+
+- files: ["countdown.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Created by qwertyquerty"
+  source: "https://github.com/BeeStation/BeeStation-Hornet at commit 79b8cc23cfb347cf23ea70fc5f6f39afedf9cde7"

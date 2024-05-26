@@ -4,6 +4,8 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAudio:
+      path: /Starshine/Audio/Announcements/blusp_anomalies.ogg
     weight: 8
     startDelay: 30
     duration: 35
@@ -218,7 +220,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/Starshine/Announcements/lifesigns.ogg
     startDelay: 10
     earliestStart: 15
     weight: 6
@@ -245,7 +247,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/Starshine/Announcements/lifesigns.ogg
     startDelay: 10
     weight: 6
     duration: 50
@@ -296,8 +298,10 @@
     weight: 8
     startAnnouncement: station-event-solar-flare-start-announcement
     endAnnouncement: station-event-solar-flare-end-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
+    startAudio: # Starshine
+      path: /Audio/Starshine/Announcements/comms_blackout.ogg
+      params:
+        volume: -4
     duration: 120
     maxDuration: 240
   - type: SolarFlareRule
@@ -340,7 +344,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/Starshine/Announcements/lifesigns.ogg
     startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
@@ -363,7 +367,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/Starshine/Announcements/lifesigns.ogg
     startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
@@ -382,7 +386,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/Starshine/Announcements/lifesigns.ogg
     startDelay: 10
     earliestStart: 20
     minimumPlayers: 20
