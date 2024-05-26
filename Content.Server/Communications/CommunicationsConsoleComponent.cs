@@ -68,6 +68,9 @@ namespace Content.Server.Communications
         [DataField]
         public SoundSpecifier Sound = new SoundPathSpecifier("/Audio/Announcements/announce.ogg");
 
+        /// <summary>
+        /// Starshine Announce dictionary
+        /// </summary>
         public Dictionary<string, string> JobSpecialAnnounceDictionary = new()
         {
             {"Капитан","Captain"},
@@ -75,7 +78,6 @@ namespace Content.Server.Communications
             {"Главный врач","ChiefMedicalOfficer"},
             {"Глава персонала","HeadOfPersonnel"},
             {"Глава службы безопасности","HeadOfSecurity"},
-            {"Квартирмейстер","Quartermaster"},
             {"Научный руководитель","ResearchDirector"}
         };
     }

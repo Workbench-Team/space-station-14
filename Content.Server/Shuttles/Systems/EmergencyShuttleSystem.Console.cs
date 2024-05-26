@@ -12,6 +12,7 @@ using Content.Shared.Shuttles.BUIStates;
 using Content.Shared.Shuttles.Events;
 using Content.Shared.Shuttles.Systems;
 using Content.Shared.UserInterface;
+using Robust.Shared.Audio;
 using Robust.Shared.Map;
 using Robust.Shared.Player;
 using Timer = Robust.Shared.Timing.Timer;
@@ -217,9 +218,12 @@ public sealed partial class EmergencyShuttleSystem
         // Departed
         if (!ShuttlesLeft && _consoleAccumulator <= 0f)
         {
+            SoundSpecifier shuttleLeftAnnouncement =
+                new SoundPathSpecifier("/Audio/Starshine/Announcements/shuttle_left.ogg"); // Starshine-Announcements
             ShuttlesLeft = true;
-            _chatSystem.DispatchGlobalAnnouncement(Loc.GetString("emergency-shuttle-left", ("transitTime", $"{TransitTime:0}")));
-            _audio.PlayGlobal("/Audio/Starshine/Announcements/shuttle_left.ogg", Filter.Broadcast(), recordReplay: true);
+            _chatSystem.DispatchGlobalAnnouncement(
+                Loc.GetString("emergency-shuttle-left", ("transitTime", $"{TransitTime:0}")),
+                announcementSound: shuttleLeftAnnouncement);
 
             Timer.Spawn((int) (TransitTime * 1000) + _bufferTime.Milliseconds, () => _roundEnd.EndRound(), _roundEndCancelToken?.Token ?? default);
         }

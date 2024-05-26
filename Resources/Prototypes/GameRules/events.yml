@@ -4,8 +4,10 @@
   noSpawn: true
   components:
   - type: StationEvent
-    startAudio:
-      path: /Starshine/Audio/Announcements/blusp_anomalies.ogg
+    startAudio: # Starshine
+      path: /Audio/Starshine/Announcements/blusp_anomalies.ogg
+      params:
+        volume: -4
     weight: 8
     startDelay: 30
     duration: 35
@@ -20,6 +22,10 @@
     weight: 8
     startDelay: 30
     duration: 35
+    startAudio: # Starshine
+      path: /Audio/Starshine/Announcements/flux.ogg
+      params:
+        volume: -4
   - type: BluespaceArtifactRule
 
 - type: entity
@@ -142,10 +148,14 @@
   - type: StationEvent
     startAnnouncement: station-event-gas-leak-start-announcement
     startAudio:
-      path: /Audio/Announcements/gasleak_start.ogg
+      path: /Audio/Announcements/gasleak_start.ogg # Starshine
+      params:
+        volume: -4
     endAnnouncement: station-event-gas-leak-end-announcement
     endAudio:
-      path: /Audio/Announcements/gasleak_end.ogg
+      path: /Audio/Announcements/gasleak_end.ogg # Starshine
+      params:
+        volume: -4
     weight: 8
     startDelay: 20
   - type: GasLeakRule
@@ -178,11 +188,11 @@
     startAnnouncement: station-event-meteor-swarm-start-announcement
     endAnnouncement: station-event-meteor-swarm-end-announcement
     startAudio:
-      path: /Audio/Announcements/meteors_start.ogg
+      path: /Audio/Announcements/meteors_start.ogg # Starshine
       params:
         volume: -4
     endAudio:
-      path: /Audio/Announcements/meteors_end.ogg
+      path: /Audio/Announcements/meteors_end.ogg # Starshine
       params:
         volume: -4
     duration: null #ending is handled by MeteorSwarmRule
@@ -221,6 +231,8 @@
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/Starshine/Announcements/lifesigns.ogg
+      params:
+        volume: -4
     startDelay: 10
     earliestStart: 15
     weight: 6
@@ -248,6 +260,8 @@
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/Starshine/Announcements/lifesigns.ogg
+      params:
+        volume: -4
     startDelay: 10
     weight: 6
     duration: 50
@@ -287,6 +301,8 @@
     maxOccurrences: 1 # this event has diminishing returns on interesting-ness, so we cap it
     startAudio:
       path: /Audio/Announcements/sentience.ogg
+      params:
+        volume: -4
   - type: RandomSentienceRule
 
 - type: entity
@@ -329,6 +345,8 @@
     startAnnouncement: station-event-vent-clog-start-announcement
     startAudio:
       path: /Audio/Announcements/ventclog.ogg
+      params:
+        volume: -4
     earliestStart: 15
     minimumPlayers: 15
     weight: 5
@@ -345,6 +363,8 @@
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/Starshine/Announcements/lifesigns.ogg
+      params:
+        volume: -4
     startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
@@ -368,6 +388,8 @@
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/Starshine/Announcements/lifesigns.ogg
+      params:
+        volume: -4
     startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
@@ -387,6 +409,8 @@
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/Starshine/Announcements/lifesigns.ogg
+      params:
+        volume: -4
     startDelay: 10
     earliestStart: 20
     minimumPlayers: 20
