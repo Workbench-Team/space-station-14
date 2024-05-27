@@ -4,7 +4,6 @@
   name: loadout-group-pilot-head
   minLimit: 0
   loadouts:
-  - PilotHead
   - SecurityBeret
   - SecurityHelmet
 
