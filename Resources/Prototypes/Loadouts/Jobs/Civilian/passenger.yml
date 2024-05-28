@@ -41,6 +41,15 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtColorGrey
 
+- type: loadout
+  id: CitizenJumpsuit
+  equipment: CitizenJumpsuit
+
+- type: startingGear
+  id: CitizenJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCitizen
+
 # Rainbow
 - type: loadout
   id: RainbowJumpsuit

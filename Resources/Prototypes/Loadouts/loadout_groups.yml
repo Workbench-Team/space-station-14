@@ -43,6 +43,7 @@
   loadouts:
   - CaptainHead
   - CaptainCap
+  - CaptainCrown
 
 - type: loadoutGroup
   id: CaptainJumpsuit
@@ -124,6 +125,7 @@
   - GreyJumpskirt
   - RainbowJumpsuit
   - AncientJumpsuit
+  - CitizenJumpsuit
 
 - type: loadoutGroup
   id: PassengerFace
@@ -600,6 +602,7 @@
   minLimit: 0
   loadouts:
   - ChiefEngineerCloak
+  - ChiefEngineerCloakAlt
   - ChiefEngineerMantle
 
 - type: loadoutGroup
@@ -717,6 +720,7 @@
   loadouts:
   - ResearchDirectorMantle
   - ResearchDirectorCloak
+  - ResearchDirectorCloakAlt
 
 - type: loadoutGroup
   id: ResearchDirectorJumpsuit
@@ -903,6 +907,7 @@
   - SecurityJumpskirt
   - SecurityJumpsuitGrey
   - SecurityJumpskirtGrey
+  - HECUUniform
   - SeniorOfficerJumpsuit
   - SeniorOfficerJumpskirt
 

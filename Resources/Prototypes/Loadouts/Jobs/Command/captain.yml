@@ -54,6 +54,15 @@
   equipment:
     head: ClothingHeadHatCapcap
 
+- type: loadout
+  id: CaptainCrown
+  equipment: CaptainCrown
+
+- type: startingGear
+  id: CaptainCrown
+  equipment:
+    head: ClothingHeadCapCrown
+
 # Neck
 - type: loadout
   id: CaptainCloak
