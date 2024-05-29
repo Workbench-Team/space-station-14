@@ -1912,3 +1912,10 @@
   id: 146
   time: '2024-05-27T07:59:13.0000000+00:00'
   url: null
+- author: MilenVolf
+  changes:
+  - message: "Станция KiloStation удалена в связи с отсутствием её поддержания авторами"
+    type: Add
+  id: 146
+  time: '2024-05-29T05:33:13.0000000+00:00'
+  url: null

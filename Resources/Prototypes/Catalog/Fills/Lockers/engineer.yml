@@ -95,7 +95,6 @@
       - id: MedkitOxygenFilled
       - id: HolofanProjector
       - id: ClothingHandsGlovesAtmos
-      - id: DoorRemoteFirefight
       - id: RCD
       - id: RCDAmmo
 
@@ -113,7 +112,6 @@
       - id: MedkitOxygenFilled
       - id: HolofanProjector
       - id: ClothingHandsGlovesAtmos
-      - id: DoorRemoteFirefight
       - id: RCD
       - id: RCDAmmo
 

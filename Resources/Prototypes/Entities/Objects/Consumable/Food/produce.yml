@@ -1067,6 +1067,9 @@
     state: slice
   - type: Extractable
     grindableSolutionName: food
+  - type: Tag
+    tags:
+    - Slice
 
 - type: entity
   name: pineapple slice
@@ -1087,6 +1090,7 @@
   - type: Tag
     tags:
     - Fruit
+    - Slice
 
 - type: entity
   name: onion slice
@@ -1110,6 +1114,10 @@
           Quantity: 1
         - ReagentId: Vitamin
           Quantity: 1
+  - type: Tag
+    tags:
+    - Vegetable
+    - Slice
 
 - type: entity
   name: red onion slice
@@ -1133,6 +1141,10 @@
           Quantity: 1
         - ReagentId: Vitamin
           Quantity: 1
+  - type: Tag
+    tags:
+    - Vegetable
+    - Slice
 
 - type: entity
   name: chili pepper
@@ -1652,6 +1664,7 @@
   - type: Tag
     tags:
     - Fruit
+    - Slice
 
 - type: entity
   name: grapes

@@ -330,9 +330,9 @@ reagent-effect-guidebook-plant-cryoxadone =
     } растение, в зависимости от его возраста и времени для роста
 reagent-effect-guidebook-plant-phalanximine =
     { $chance ->
-        [1] Делает
-       *[other] сделать
-    } растение, нежизнеспособное из-за мутации, снова жизнеспособным
+        [1] Восстанавливает
+       *[other] восстановить
+    } жизнеспособность растения, ставшего нежизнеспособным в результате мутации
 reagent-effect-guidebook-plant-diethylamine =
     { $chance ->
         [1] Увеличивает

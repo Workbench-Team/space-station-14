@@ -62,7 +62,6 @@ namespace Content.IntegrationTests.Tests
             "Core",
             "Marathon",
             "MeteorArena",
-            "KiloStation", //Starshine
             "Atlas",
             "Reach",
             "Train",

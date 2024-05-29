@@ -9,6 +9,7 @@ strippable-component-cannot-drop-message = { $owner } не может отпус
 strippable-component-alert-owner = { $user } снимает с Вас { $item }!
 strippable-component-alert-owner-hidden = Вы чувствуете, как кто-то копается в Вашем { $slot }!
 strippable-component-alert-owner-insert = { $user } надевает на Вас { $item }!
+strippable-component-alert-owner-insert-hand = { $user } кладёт { $item } в вашу руку!
 # generic warning for when a user interacts with your equipped items.
 strippable-component-alert-owner-interact = { $user } возится с Вашим { $item }!
 # StripVerb

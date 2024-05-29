@@ -37,5 +37,5 @@ ent-DeathRattleImplanter = имплантёр предсмертнохрип
     .desc = { ent-BaseImplantOnlyImplanterSyndi.desc }
 ent-DeathAcidifierImplanter = шприц импланта посмертного растворителя
     .desc = { ent-BaseImplantOnlyImplanterSyndi.desc }
-ent-MindShieldImplanter = шприц импланта защиты разума
+ent-MindShieldImplanter = имплантёр защиты разума
     .desc = { ent-BaseImplantOnlyImplanter.desc }

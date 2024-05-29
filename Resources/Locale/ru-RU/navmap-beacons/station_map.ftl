@@ -12,6 +12,6 @@ nav-beacon-examine-text =
        *[false] crimson]выключен
     }[/color] и на дисплее отображается [color={ $color }]"{ $label }"[/color]
 nav-beacon-pos-no-beacons = неизвестно где
-nav-beacon-pos-format = [color={ $color }]около { $marker }[/color]
+nav-beacon-pos-format = [color={ $color }]рядом с { $marker }[/color]
 nav-beacon-pos-format-direction = [color={ $color }]{ $modifier } к { $direction }у от { $marker }[/color]
 nav-beacon-pos-format-direction-mod-far = далеко{ "" }

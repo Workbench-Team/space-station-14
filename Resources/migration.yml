@@ -299,6 +299,9 @@ chem_master: ChemMaster
 # 2024-05-21
 CrateJanitorExplosive: ClosetJanitorBombFilled
 
+# 2024-05-27
+DoorRemoteFirefight: null
+
 ## Starshine
 
 # 07-09-2023 Starshine

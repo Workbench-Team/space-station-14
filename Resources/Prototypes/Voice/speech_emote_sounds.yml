@@ -34,6 +34,10 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
     Buzzing:
       path: /Audio/Voice/Moth/moth_scream.ogg
 
@@ -72,6 +76,10 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
     Buzzing:
       path: /Audio/Voice/Moth/moth_scream.ogg
 
@@ -92,6 +100,10 @@
       collection: MaleCry
     Weh:
       collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: DeathGasp
     Buzzing:
       path: /Audio/Voice/Moth/moth_scream.ogg
 
@@ -150,6 +162,10 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
     Buzzing:
       path: /Audio/Voice/Moth/moth_scream.ogg
   params:
@@ -190,6 +206,10 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
     Buzzing:
       path: /Audio/Voice/Moth/moth_scream.ogg
   params:
@@ -217,6 +237,10 @@
       collection: BikeHorn
     Weh:
       collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: DeathGasp
     Buzzing:
       path: /Audio/Voice/Moth/moth_scream.ogg
   params:
@@ -237,6 +261,10 @@
       path: /Audio/Voice/Arachnid/arachnid_click.ogg
     Weh:
       collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: DeathGasp
     Buzzing:
       path: /Audio/Voice/Moth/moth_scream.ogg
 
@@ -273,6 +301,10 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
     Buzzing:
       path: /Audio/Voice/Moth/moth_scream.ogg
   params:
@@ -312,6 +344,10 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
     Buzzing:
       path: /Audio/Voice/Moth/moth_scream.ogg
   params:
@@ -335,6 +371,10 @@
       path: /Audio/Voice/Moth/moth_squeak.ogg
     Weh:
       collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: DeathGasp
     Buzzing:
       path: /Audio/Voice/Moth/moth_scream.ogg
 

@@ -60,8 +60,5 @@
 - files: ["driller.yml", "lighthouse.yml"]
   authors: Tenteratus
 
-- files: ["Kilostation.yml"]
-  authors: RevengenRat, Tamioki
-
 - files: ["tehtra.yml"]
   authors: Astr0naut
