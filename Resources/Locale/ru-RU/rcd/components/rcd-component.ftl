@@ -1,15 +1,15 @@
 ### UI
 
 rcd-component-examine-mode-details = Установлен режим '{ $mode }'.
-rcd-component-examine-build-details = РСУ настроен на сборку { $name }.
+rcd-component-examine-build-details = СВО настроен на сборку { $name }.
 
 ### Interaction Messages
 
-rcd-component-change-build-mode = Теперь РСУ настроен на сборку { $name }.
+rcd-component-change-build-mode = Теперь СВО настроен на сборку { $name }.
 # Shown when changing RCD Mode
-rcd-component-change-mode = РСУ переключён в режим { $mode }.
-rcd-component-insufficient-ammo-message = В РСУ недостаточно зарядов!
-rcd-component-no-ammo-message = В РСУ закончились заряды!
+rcd-component-change-mode = СВО переключён в режим { $mode }.
+rcd-component-insufficient-ammo-message = В СВО недостаточно зарядов!
+rcd-component-no-ammo-message = В СВО закончились заряды!
 rcd-component-tile-obstructed-message = Эта клетка пола заблокирована!
 rcd-component-nothing-to-deconstruct-message = Здесь нечего деконструировать!
 rcd-component-tile-indestructible-message = Эта клетка пола не может быть разрушена!
