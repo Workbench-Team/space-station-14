@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakRdAlt
+  name: research director's cloak
+  description: A purple cape with white stripes, demonstrating your status as an arbiter of advanced technology, and perhaps style.
+  components:
+  - type: Sprite
+    sprite: Starshine/Clothing/Neck/Cloaks/rdalt.rsi
+  - type: StealTarget
+    stealGroup: HeadCloak
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakCeAlt
+  name: chief engineer's cloak
+  description: A white cloak with orange elements, it shows your intelligence, or your craving for the color white.
+  components:
+  - type: Sprite
+    sprite: Starshine/Clothing/Neck/Cloaks/cealt.rsi
+  - type: StealTarget
+    stealGroup: HeadCloak

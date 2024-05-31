@@ -79,15 +79,6 @@
     jumpsuit: ClothingUniformJumpskirtSecGrey
 
 - type: loadout
-  id: HECUUniform
-  equipment: HECUUniform
-
-- type: startingGear
-  id: HECUUniform
-  equipment:
-    jumpsuit: ClothingUniformHECU
-
-- type: loadout
   id: SeniorOfficerJumpsuit
   equipment: SeniorOfficerJumpsuit
   effects:

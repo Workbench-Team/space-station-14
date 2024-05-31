@@ -1,0 +1,8 @@
+- type: loadout
+  id: HECUUniform
+  equipment: HECUUniform
+
+- type: startingGear
+  id: HECUUniform
+  equipment:
+    jumpsuit: ClothingUniformHECU

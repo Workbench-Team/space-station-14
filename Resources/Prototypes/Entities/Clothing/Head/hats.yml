@@ -228,22 +228,6 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadCapCrown
-  name: captain's crown
-  description: Feel like the main corporate rat at the station!
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Misc/fancycrown.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Misc/fancycrown.rsi
-  - type: Tag
-    tags:
-    - Clothing
-    - ClothMade
-    - WhitelistChameleon
-
-- type: entity
-  parent: ClothingHeadBase
   id: ClothingHeadHatCardborg
   name: cardborg helmet
   description: A hat made out of a box.
