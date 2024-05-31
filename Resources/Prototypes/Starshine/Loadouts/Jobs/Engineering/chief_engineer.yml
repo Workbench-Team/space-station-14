@@ -1,0 +1,8 @@
+- type: loadout
+  id: ChiefEngineerCloakAlt
+  equipment: ChiefEngineerCloakAlt
+
+- type: startingGear
+  id: ChiefEngineerCloakAlt
+  equipment:
+    neck: ClothingNeckCloakCeAlt

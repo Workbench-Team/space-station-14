@@ -1,0 +1,8 @@
+- type: loadout
+  id: ResearchDirectorCloakAlt
+  equipment: ResearchDirectorCloakAlt
+
+- type: startingGear
+  id: ResearchDirectorCloakAlt
+  equipment:
+    neck: ClothingNeckCloakRdAlt

@@ -68,15 +68,6 @@
   equipment:
     neck: ClothingNeckMantleCE
 
-- type: loadout
-  id: ChiefEngineerCloakAlt
-  equipment: ChiefEngineerCloakAlt
-
-- type: startingGear
-  id: ChiefEngineerCloakAlt
-  equipment:
-    neck: ClothingNeckCloakCeAlt
-
 # Back
 - type: loadout
   id: ChiefEngineerBackpack
