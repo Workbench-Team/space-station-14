@@ -24,15 +24,6 @@
   equipment:
     neck: ClothingNeckCloakRd
 
-- type: loadout
-  id: ResearchDirectorCloakAlt
-  equipment: ResearchDirectorCloakAlt
-
-- type: startingGear
-  id: ResearchDirectorCloakAlt
-  equipment:
-    neck: ClothingNeckCloakRdAlt
-
 # Jumpsuit
 - type: loadout
   id: ResearchDirectorJumpsuit
