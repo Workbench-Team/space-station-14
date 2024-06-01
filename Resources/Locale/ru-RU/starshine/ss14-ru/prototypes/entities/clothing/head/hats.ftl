@@ -1,2 +1,2 @@
-ent-ClothingHeadCapCrown = капитанская корона
+ent-ClothingHeadHatCapCrown = капитанская корона
     .desc = Почувствуйте себя главной корпоративной крысой на станции!
