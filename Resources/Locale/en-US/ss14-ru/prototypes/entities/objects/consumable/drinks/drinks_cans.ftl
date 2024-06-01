@@ -43,5 +43,7 @@ ent-DrinkPwrGameCan = pwr game can
     .desc = The only drink with the PWR that true gamers crave. When a gamer talks about gamerfuel, this is what they're literally referring to.
 ent-DrinkBeerCan = beer can
     .desc = Small joy, big taste, no worries!
+ent-DrinkTimefalllPorterBeerCan = timefall porter can
+    .desc = A true taste of natural gardens, with the addition of timefall precipitation and the blood of MULEs.
 ent-DrinkWineCan = wine can
     .desc = Your way to forgetting all worries and having fun!

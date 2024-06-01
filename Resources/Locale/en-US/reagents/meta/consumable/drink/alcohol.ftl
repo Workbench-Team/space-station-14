@@ -7,6 +7,9 @@ reagent-desc-ale = A dark alchoholic beverage made by malted barley and yeast.
 reagent-name-beer = beer
 reagent-desc-beer = An alcoholic beverage made from malted grains, hops, yeast, and water.
 
+reagent-name-timefallPorter = timefall porter can
+reagent-desc-timefallPorter = A true taste of natural gardens, with the addition of timefall precipitation and the blood of MULEs.
+
 reagent-name-blue-curacao = blue curacao
 reagent-desc-blue-curacao = Exotically blue, fruity drink, distilled from oranges.
 

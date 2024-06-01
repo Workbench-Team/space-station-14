@@ -44,6 +44,7 @@
     DrinkChampagneBottleFull: 2 #because the premium drink
     DrinkSakeBottleFull: 3
     DrinkBeerCan: 5
+    DrinkTimefalllPorterBeerCan: 4
     DrinkWineCan: 5
   emaggedInventory:
     DrinkPoisonWinebottleFull: 2
