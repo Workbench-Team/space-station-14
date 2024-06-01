@@ -5,4 +5,4 @@
 - type: startingGear
   id: CaptainCrown
   equipment:
-    head: ClothingHeadCapCrown
+    head: ClothingHeadHatCapCrown

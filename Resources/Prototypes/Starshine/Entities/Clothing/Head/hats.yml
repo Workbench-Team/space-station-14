@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadCapCrown
+  id: ClothingHeadHatCapCrown
   name: captain's crown
   description: Feel like the main corporate rat at the station!
   components:
