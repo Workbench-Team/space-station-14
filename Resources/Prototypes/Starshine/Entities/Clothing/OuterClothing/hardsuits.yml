@@ -63,7 +63,7 @@
 
 # BlueShield Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitSyndie
+  parent: ClothingOuterHardsuitSecurity
   id: ClothingOuterHardsuitERTBlueShield
   name: ERT security's hardsuit
   components:
@@ -73,6 +73,9 @@
     sprite: Starshine/Clothing/OuterClothing/Hardsuits/blueshield.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTBlueShield
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
 
 #Chrono Legionnaire Hardsuit
 - type: entity

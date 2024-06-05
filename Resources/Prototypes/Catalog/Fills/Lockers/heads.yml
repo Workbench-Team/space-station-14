@@ -94,7 +94,11 @@
   components:
   - type: StorageFill
     contents:
-      - id: MysteryWeaponBox
+      - id: MagazinePistolSubMachineGun
+      - id: MagazinePistolSubMachineGun
+      - id: MagazineMagnum
+      - id: WeaponPistolN1984
+      - id: WeaponSubMachineGunAtreides
       - id: MedkitCombatFilled
       - id: Handcuffs
       - id: Flash
@@ -103,6 +107,7 @@
       - id: ClothingHeadsetAltBlueShield
       - id: ClothingHeadsetBlueShield
       - id: WoodenMedalCase
+      - id: ClothingOuterHardsuitERTBlueShield
 
 - type: entity
   id: LockerCaptainFilled
