@@ -570,11 +570,6 @@
   description: flavor-complex-beer
 
 - type: flavor
-  id: timefallPorter
-  flavorType: Complex
-  description: flavor-complex-timefallPorter
-
-- type: flavor
   id: cognac
   flavorType: Complex
   description: flavor-complex-cognac

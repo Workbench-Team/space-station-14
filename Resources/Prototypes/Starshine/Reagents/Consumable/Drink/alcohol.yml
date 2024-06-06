@@ -1,0 +1,16 @@
+- type: reagent
+  id: TimefallBeer
+  name: reagent-name-timefallPorter
+  parent: BaseAlcohol
+  desc: reagent-desc-timefallPorter
+  physicalDesc: reagent-physical-desc-bubbly
+  flavor: timefallPorter
+  color: "#c8cc61"
+  recognizable: true
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/beerglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  fizziness: 0.6
