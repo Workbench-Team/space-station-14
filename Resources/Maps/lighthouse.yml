@@ -9397,7 +9397,7 @@ entities:
   - uid: 7053
     components:
     - type: Transform
-      pos: -47.62772,27.671413
+      pos: -47.585217,27.593063
       parent: 2
 - proto: BoxLighttube
   entities:
@@ -38954,11 +38954,6 @@ entities:
       parent: 2
 - proto: CrateEmergencyInternals
   entities:
-  - uid: 7056
-    components:
-    - type: Transform
-      pos: -51.5,28.5
-      parent: 2
   - uid: 16050
     components:
     - type: Transform
@@ -77051,6 +77046,13 @@ entities:
     - type: Transform
       pos: -19.358662,112.56182
       parent: 2
+- proto: MechEquipmentGrabber
+  entities:
+  - uid: 17719
+    components:
+    - type: Transform
+      pos: -51.44512,28.677149
+      parent: 2
 - proto: MedicalBed
   entities:
   - uid: 2694
@@ -85433,6 +85435,27 @@ entities:
     - type: Transform
       pos: -0.25983453,84.42764
       parent: 2
+- proto: RipleyCentralElectronics
+  entities:
+  - uid: 17721
+    components:
+    - type: Transform
+      pos: -47.39004,26.854374
+      parent: 2
+- proto: RipleyChassis
+  entities:
+  - uid: 7056
+    components:
+    - type: Transform
+      pos: -53.49981,28.499943
+      parent: 2
+- proto: RipleyPeripheralsElectronics
+  entities:
+  - uid: 17720
+    components:
+    - type: Transform
+      pos: -47.494205,27.021156
+      parent: 2
 - proto: RitualDagger
   entities:
   - uid: 5988
@@ -87699,13 +87722,6 @@ entities:
       parent: 2
     - type: SpamEmitSound
       enabled: False
-- proto: SpawnMechRipley
-  entities:
-  - uid: 7030
-    components:
-    - type: Transform
-      pos: -53.5,28.5
-      parent: 2
 - proto: SpawnMobButterfly
   entities:
   - uid: 4290
@@ -90011,6 +90027,11 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -47.5,26.5
+      parent: 2
+  - uid: 7030
+    components:
+    - type: Transform
+      pos: -51.5,28.5
       parent: 2
   - uid: 7031
     components:
