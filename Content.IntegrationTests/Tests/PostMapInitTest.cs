@@ -67,7 +67,8 @@ namespace Content.IntegrationTests.Tests
             "Train",
             "Lighthouse", //Starshine
             "Tehtra", //Starshine
-            "Oasis"
+            "Oasis",
+            "Elstation" //Strshine
         };
 
         /// <summary>

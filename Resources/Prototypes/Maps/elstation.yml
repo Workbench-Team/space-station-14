@@ -11,7 +11,7 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_el.yml
         - type: StationNameSetup
-          mapNameTemplate: '{0} EL Station {1}'
+          mapNameTemplate: '{0} ELstation {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

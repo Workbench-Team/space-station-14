@@ -62,3 +62,6 @@
 
 - files: ["tehtra.yml"]
   authors: Astr0naut
+
+- files: ["elstation.yml"]
+  authors: Elst28
