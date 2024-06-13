@@ -37,7 +37,6 @@
   joinNotifyCrew: true
   supervisors: job-supervisors-centcom
   canBeAntag: false
-  whitelistRequired: true
   access:
   - EmergencyShuttleRepealAll
   - Captain
@@ -89,3 +88,8 @@
     ears: ClothingHeadsetCentCom
     belt: BoxFolderClipboard
     pocket1: WeaponDisabler
+  storage:
+    back:
+    - BoxSurvival
+    - Flash
+    - TelescopicBaton

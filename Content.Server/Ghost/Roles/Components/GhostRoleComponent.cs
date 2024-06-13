@@ -14,9 +14,10 @@ namespace Content.Server.Ghost.Roles.Components
 
         [DataField("rules")] private string _roleRules = "ghost-role-component-default-rules";
 
-        [DataField("whitelistRequired")]
-        public bool WhitelistRequired = false;
-
+        // TODO ROLE TIMERS
+        // Actually make use of / enforce this requirement?
+        // Why is this even here.
+        // Move to ghost role prototype & respect CCvars.GameRoleTimerOverride
         [DataField("requirements")]
         public HashSet<JobRequirement>? Requirements;
 

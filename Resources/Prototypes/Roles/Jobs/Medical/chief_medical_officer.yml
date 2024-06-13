@@ -22,7 +22,6 @@
   icon: "JobIconChiefMedicalOfficer"
   requireAdminNotify: true
   supervisors: job-supervisors-captain
-  whitelistRequired: true
   access:
   - Medical
   - Command
@@ -44,3 +43,8 @@
     id: CMOPDA
     ears: ClothingHeadsetCMO
     belt: ClothingBeltMedicalFilled
+  storage:
+    back:
+    - BoxSurvivalMedical
+    - Flash
+    - TelescopicBaton

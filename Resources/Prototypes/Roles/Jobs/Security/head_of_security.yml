@@ -21,7 +21,6 @@
   requireAdminNotify: true
   supervisors: job-supervisors-captain
   canBeAntag: false
-  whitelistRequired: true
   access:
   - HeadOfSecurity
   - Command
@@ -47,4 +46,9 @@
     id: HoSPDA
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetAltSecurity
-    pocket1: WeaponPistolMk68Nonlethal
+    pocket1: WeaponPistolMk68Nonlethal # Starshine
+  storage:
+    back:
+    - BoxSurvivalSecurity
+    - Flash
+    - MagazinePistol

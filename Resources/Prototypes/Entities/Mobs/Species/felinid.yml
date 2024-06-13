@@ -13,10 +13,6 @@
   - type: Perishable
   - type: Climbing
     tableClimbMultiplier: 0.5
-  - type: Flashable   # Felinids get longer flashes from flashbangs because of their sensetive ears
-    durationMultiplier: 1
-    bangAddMultiplier: 0.65
-    bangFlash: false
   - type: Speech
     speechVerb: Felinid
   - type: MeleeWeapon

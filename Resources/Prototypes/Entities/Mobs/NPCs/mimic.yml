@@ -130,7 +130,6 @@
     solution: melee
     transferAmount: 3
     maxTransferAmount: 5
-  - type: Flashable
   - type: StaticPrice
     price: 5000
   - type: NpcFactionMember

@@ -23,7 +23,6 @@
   joinNotifyCrew: true
   supervisors: job-supervisors-centcom
   canBeAntag: false
-  whitelistRequired: true
   accessGroups:
   - AllAccess
   special:
@@ -41,3 +40,9 @@
     gloves: ClothingHandsGlovesCaptain
     id: CaptainPDA
     ears: ClothingHeadsetAltCommand
+  storage:
+    back:
+    - BoxSurvival
+    - Flash
+    # - StationCharter
+    - TelescopicBaton

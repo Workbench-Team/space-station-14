@@ -4,7 +4,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Database;
 using Content.Shared.CCVar;
-using Content.Shared.Players;
 using Content.Shared.Players.PlayTimeTracking;
 using Robust.Shared.Asynchronous;
 using Robust.Shared.Collections;
@@ -55,7 +54,7 @@ public delegate void CalcPlayTimeTrackersCallback(ICommonSession player, HashSet
 /// Operations like refreshing and sending play time info to clients are deferred until the next frame (note: not tick).
 /// </para>
 /// </remarks>
-public sealed class PlayTimeTrackingManager : ISharedPlaytimeManager
+public sealed class PlayTimeTrackingManager : ISharedPlaytimeManager, IPostInjectInit
 {
     [Dependency] private readonly IServerDbManager _db = default!;
     [Dependency] private readonly IServerNetManager _net = default!;
@@ -63,6 +62,7 @@ public sealed class PlayTimeTrackingManager : ISharedPlaytimeManager
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly ITaskManager _task = default!;
     [Dependency] private readonly IRuntimeLog _runtimeLog = default!;
+    [Dependency] private readonly UserDbDataManager _userDb = default!;
 
     private ISawmill _sawmill = default!;
 
@@ -86,7 +86,6 @@ public sealed class PlayTimeTrackingManager : ISharedPlaytimeManager
         _sawmill = Logger.GetSawmill("play_time");
 
         _net.RegisterNetMessage<MsgPlayTime>();
-        _net.RegisterNetMessage<MsgWhitelist>();
 
         _cfg.OnValueChanged(CCVars.PlayTimeSaveInterval, f => _saveInterval = TimeSpan.FromSeconds(f), true);
     }
@@ -132,10 +131,6 @@ public sealed class PlayTimeTrackingManager : ISharedPlaytimeManager
             if (data.NeedSendTimers)
             {
                 SendPlayTimes(player);
-
-                if (_cfg.GetCVar(CCVars.WhitelistEnabled))
-                    SendWhitelist(player);
-
                 data.NeedSendTimers = false;
             }
 
@@ -222,31 +217,6 @@ public sealed class PlayTimeTrackingManager : ISharedPlaytimeManager
         };
 
         _net.ServerSendMessage(msg, pSession.Channel);
-    }
-
-    // needs to be async because this can get called before we cache whitelist I think...
-    public async void SendWhitelist(ICommonSession playerSession)
-    {
-        var whitelist = await _db.GetWhitelistStatusAsync(playerSession.UserId);
-
-        var msg = new MsgWhitelist
-        {
-            Whitelisted = whitelist
-        };
-
-        _net.ServerSendMessage(msg, playerSession.ConnectedClient);
-    }
-
-    public void SendWhitelistCached(ICommonSession playerSession)
-    {
-        var whitelist = playerSession.ContentData()?.Whitelisted ?? false;
-
-        var msg = new MsgWhitelist
-        {
-            Whitelisted = whitelist
-        };
-
-        _net.ServerSendMessage(msg, playerSession.ConnectedClient);
     }
 
     /// <summary>
@@ -475,5 +445,11 @@ public sealed class PlayTimeTrackingManager : ISharedPlaytimeManager
         /// Set of trackers which are different from their DB values and need to be saved to DB.
         /// </summary>
         public readonly HashSet<string> DbTrackersDirty = new();
+    }
+
+    void IPostInjectInit.PostInject()
+    {
+        _userDb.AddOnLoadPlayer(LoadData);
+        _userDb.AddOnPlayerDisconnect(ClientDisconnected);
     }
 }

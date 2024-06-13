@@ -3,8 +3,6 @@ using Content.Client.Eui;
 using Content.Client.Players.PlayTimeTracking;
 using Content.Shared.Eui;
 using Content.Shared.Ghost.Roles;
-using Content.Shared.CCVar;
-using Robust.Shared.Configuration;
 using JetBrains.Annotations;
 using Robust.Client.GameObjects;
 using Robust.Shared.Utility;
@@ -81,39 +79,27 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls.Roles
                 return;
             _window.ClearEntries();
 
-            var cfg = IoCManager.Resolve<IConfigurationManager>();
             var entityManager = IoCManager.Resolve<IEntityManager>();
             var sysManager = entityManager.EntitySysManager;
             var spriteSystem = sysManager.GetEntitySystem<SpriteSystem>();
             var requirementsManager = IoCManager.Resolve<JobRequirementsManager>();
 
             var groupedRoles = ghostState.GhostRoles.GroupBy(
-                role => (role.Name, role.Description, role.Requirements, role.WhitelistRequired));
-
-            int denied = 0;
-
+                role => (role.Name, role.Description, role.Requirements));
             foreach (var group in groupedRoles)
             {
-                if (group.Key.WhitelistRequired && cfg.GetCVar(CCVars.WhitelistEnabled) && !requirementsManager.IsWhitelisted())
-                {
-                    denied = denied + 1;
-                    continue;
-                }
-
                 var name = group.Key.Name;
                 var description = group.Key.Description;
                 bool hasAccess = true;
                 FormattedMessage? reason;
 
-                if (!requirementsManager.CheckRoleTime(group.Key.Requirements, group.Key.WhitelistRequired, out reason))
+                if (!requirementsManager.CheckRoleTime(group.Key.Requirements, out reason))
                 {
                     hasAccess = false;
                 }
 
                 _window.AddEntry(name, description, hasAccess, reason, group, spriteSystem);
             }
-
-            _window.AddDenied(denied);
 
             var closeRulesWindow = ghostState.GhostRoles.All(role => role.Identifier != _windowRulesId);
             if (closeRulesWindow)

@@ -16,8 +16,6 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_lox.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             #service
             Captain: [ 1, 1 ]
@@ -65,4 +63,3 @@
             Reporter: [ 2, 2 ]
             #centcom      
             BlueShield: [ 1, 1 ]
-            CentComConsultant: [ 0, 1 ]

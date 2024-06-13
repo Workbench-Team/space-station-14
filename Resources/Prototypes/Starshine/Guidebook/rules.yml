@@ -1,0 +1,125 @@
+﻿- type: guideEntry
+  id: StarshineRuleset
+  name: guide-entry-rules-starshine
+  ruleEntry: true
+  priority: 0
+  text: "/ServerInfo/Starshine/Guidebook/ServerRules/StarshineRules.xml"
+  children:
+  - StarshineRule0
+  - StarshineRule1
+  - StarshineRule2
+  - StarshineRule3
+  - StarshineRule4
+  - StarshineRule5
+  - StarshineRule6
+  - StarshineRule7
+  - StarshineRule8
+  - StarshineRule9
+  - StarshineRule10
+  - StarshineRule11
+  - StarshineRule12
+
+- type: guideEntry
+  id: StarshineRule0
+  name: guide-entry-rules-starshine-0
+  ruleEntry: true
+  priority: 1
+  text: "/ServerInfo/Starshine/Guidebook/ServerRules/CoreRules/StarshineRule0Admins.xml"
+
+- type: guideEntry
+  id: StarshineRule1
+  name: guide-entry-rules-starshine-1
+  ruleEntry: true
+  priority: 2
+  text: "/ServerInfo/Starshine/Guidebook/ServerRules/CoreRules/StarshineRule1DBAD.xml"
+
+- type: guideEntry
+  id: StarshineRule2
+  name: guide-entry-rules-starshine-2
+  ruleEntry: true
+  priority: 3
+  text: "/ServerInfo/Starshine/Guidebook/ServerRules/CoreRules/StarshineRule2NoGrief.xml"
+
+- type: guideEntry
+  id: StarshineRule3
+  name: guide-entry-rules-starshine-3
+  ruleEntry: true
+  priority: 4
+  text: "/ServerInfo/Starshine/Guidebook/ServerRules/CoreRules/StarshineRule3Ahelp.xml"
+
+- type: guideEntry
+  id: StarshineRule4
+  name: guide-entry-rules-starshine-4
+  ruleEntry: true
+  priority: 5
+  text: "/ServerInfo/Starshine/Guidebook/ServerRules/CoreRules/StarshineRule4NoERP.xml"
+
+- type: guideEntry
+  id: StarshineRule5
+  name: guide-entry-rules-starshine-5
+  ruleEntry: true
+  priority: 6
+  text: "/ServerInfo/Starshine/Guidebook/ServerRules/CoreRules/StarshineRule5RP.xml"
+
+- type: guideEntry
+  id: StarshineRule6
+  name: guide-entry-rules-starshine-6
+  ruleEntry: true
+  priority: 7
+  text: "/ServerInfo/Starshine/Guidebook/ServerRules/CoreRules/StarshineRule6Metacomms.xml"
+
+- type: guideEntry
+  id: StarshineRule7
+  name: guide-entry-rules-starshine-7
+  ruleEntry: true
+  priority: 8
+  text: "/ServerInfo/Starshine/Guidebook/ServerRules/CoreRules/StarshineRule7RoleReq.xml"
+
+- type: guideEntry
+  id: StarshineRule8
+  name: guide-entry-rules-starshine-8
+  ruleEntry: true
+  priority: 9
+  text: "/ServerInfo/Starshine/Guidebook/ServerRules/CoreRules/StarshineRule8ICSituations.xml"
+
+- type: guideEntry
+  id: StarshineRule9
+  name: guide-entry-rules-starshine-9
+  ruleEntry: true
+  priority: 10
+  text: "/ServerInfo/Starshine/Guidebook/ServerRules/CoreRules/StarshineRule9Behaviour.xml"
+
+- type: guideEntry
+  id: StarshineRule10
+  ruleEntry: true
+  name: guide-entry-rules-starshine-10
+  priority: 11
+  text: "/ServerInfo/Starshine/Guidebook/ServerRules/CoreRules/StarshineRule10Antagonists.xml"
+
+- type: guideEntry
+  id: StarshineRule11
+  ruleEntry: true
+  name: guide-entry-rules-starshine-11
+  priority: 12
+  text: "/ServerInfo/Starshine/Guidebook/ServerRules/CoreRules/StarshineRule11Escalation.xml"
+
+- type: guideEntry
+  id: StarshineRule12
+  name: guide-entry-rules-starshine-12
+  ruleEntry: true
+  priority: 13
+  text: "/ServerInfo/Starshine/Guidebook/ServerRules/CoreRules/StarshineRule12ArrestResist.xml"
+
+- type: guideEntry
+  id: CorporateLaw
+  name: guide-entry-rules-corporate-law
+  priority: 1
+  text: "/ServerInfo/Starshine/Guidebook/ServerRules/CorporateLaw/CorporateLaw.xml"
+  children:
+  - CorporateLawCrimeList
+
+- type: guideEntry
+  id: CorporateLawCrimeList
+  name: guide-entry-rules-cl-crime-list
+  priority: 5
+  text: "/ServerInfo/Starshine/Guidebook/ServerRules/CorporateLaw/CLCrimeList.xml"
