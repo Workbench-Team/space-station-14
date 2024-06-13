@@ -1,6 +1,17 @@
 # Miscellaneous
 loadout-group-trinkets = Безделушки
 loadout-group-glasses = Очки
+# CentCom
+loadout-group-consultant-head = Голова консультанта
+loadout-group-consultant-jumpsuit = Комбинезон консультанта
+loadout-group-consultant-neck = Шея консультанта
+loadout-group-consultant-backpack = Рюкзак консультанта
+loadout-group-consultant-outerclothing = Верхняя одежда консультанта
+loadout-group-blueshield-head = Голова ОСЩ
+loadout-group-blueshield-jumpsuit = Комбинезон ОСЩ
+loadout-group-blueshield-neck = Шея ОСЩ
+loadout-group-blueshield-backpack = Рюкзак ОСЩ
+loadout-group-blueshield-outerclothing = Верхняя одежда ОСЩ
 # Command
 loadout-group-captain-head = Голова капитана
 loadout-group-captain-jumpsuit = Комбинезон капитана
