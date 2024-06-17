@@ -1,4 +1,3 @@
-using System.Numerics;
 using Robust.Shared.GameStates;
 using Robust.Shared.Map;
 using Robust.Shared.Serialization;
@@ -16,7 +15,7 @@ public sealed partial class ExplosionVisualsComponent : Component
     public Dictionary<EntityUid, Dictionary<int, List<Vector2i>>> Tiles = new();
     public List<float> Intensity = new();
     public string ExplosionType = string.Empty;
-    public Matrix3x2 SpaceMatrix;
+    public Matrix3 SpaceMatrix;
     public ushort SpaceTileSize;
 }
 
@@ -28,7 +27,7 @@ public sealed class ExplosionVisualsState : ComponentState
     public Dictionary<NetEntity, Dictionary<int, List<Vector2i>>> Tiles;
     public List<float> Intensity;
     public string ExplosionType = string.Empty;
-    public Matrix3x2 SpaceMatrix;
+    public Matrix3 SpaceMatrix;
     public ushort SpaceTileSize;
 
     public ExplosionVisualsState(
@@ -37,7 +36,7 @@ public sealed class ExplosionVisualsState : ComponentState
         List<float> intensity,
         Dictionary<int, List<Vector2i>>? spaceTiles,
         Dictionary<NetEntity, Dictionary<int, List<Vector2i>>> tiles,
-        Matrix3x2 spaceMatrix,
+        Matrix3 spaceMatrix,
         ushort spaceTileSize)
     {
         Epicenter = epicenter;

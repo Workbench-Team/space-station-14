@@ -36,7 +36,7 @@ public sealed partial class PathfindingSystem
                 return Vector2.Zero;
             }
 
-            endPos = Vector2.Transform(Vector2.Transform(endPos, endXform.WorldMatrix), startXform.InvWorldMatrix);
+            endPos = startXform.InvWorldMatrix.Transform(endXform.WorldMatrix.Transform(endPos));
         }
 
         // TODO: Numerics when we changeover.

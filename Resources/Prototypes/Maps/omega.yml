@@ -16,6 +16,8 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_omega.yml
         - type: StationJobs
+          overflowJobs:
+            - Passenger
           availableJobs:
             #service
             Captain: [ 1, 1 ]
@@ -62,3 +64,4 @@
             Borg: [ 2, 2 ]
             #centcom      
             BlueShield: [ 1, 1 ]
+            CentComConsultant: [ 0, 1 ]

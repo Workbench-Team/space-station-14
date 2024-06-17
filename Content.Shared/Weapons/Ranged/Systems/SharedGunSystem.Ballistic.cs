@@ -15,7 +15,6 @@ public abstract partial class SharedGunSystem
 {
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
 
-
     protected virtual void InitializeBallistic()
     {
         SubscribeLocalEvent<BallisticAmmoProviderComponent, ComponentInit>(OnBallisticInit);
@@ -42,10 +41,7 @@ public abstract partial class SharedGunSystem
 
     private void OnBallisticInteractUsing(EntityUid uid, BallisticAmmoProviderComponent component, InteractUsingEvent args)
     {
-        if (args.Handled)
-            return;
-
-        if (_whitelistSystem.IsWhitelistFailOrNull(component.Whitelist, args.Used))
+        if (args.Handled || component.Whitelist?.IsValid(args.Used, EntityManager) != true)
             return;
 
         if (GetBallisticShots(component) >= component.Capacity)
@@ -126,7 +122,7 @@ public abstract partial class SharedGunSystem
             if (ent == null)
                 continue;
 
-            if (_whitelistSystem.IsWhitelistFail(target.Whitelist, ent.Value))
+            if (!target.Whitelist.IsValid(ent.Value))
             {
                 Popup(
                     Loc.GetString("gun-ballistic-transfer-invalid",

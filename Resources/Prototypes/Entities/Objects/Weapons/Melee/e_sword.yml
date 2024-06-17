@@ -128,7 +128,7 @@
         shader: unshaded
         map: [ "blade" ]
   - type: MeleeWeapon
-    wideAnimationRotation: 145
+    wideAnimationRotation: -135
     attackRate: 1
     hidden: true
     damage:

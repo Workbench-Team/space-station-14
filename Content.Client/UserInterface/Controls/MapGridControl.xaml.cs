@@ -169,7 +169,7 @@ public partial class MapGridControl : LayoutContainer
         var inversePos = (value - MidPointVector) / MinimapScale;
 
         inversePos = inversePos with { Y = -inversePos.Y };
-        inversePos = Vector2.Transform(inversePos, Matrix3Helpers.CreateTransform(Offset, Angle.Zero));
+        inversePos = Matrix3.CreateTransform(Offset, Angle.Zero).Transform(inversePos);
         return inversePos;
     }
 

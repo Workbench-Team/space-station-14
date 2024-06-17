@@ -3,7 +3,6 @@ using Content.Server.Xenoarchaeology.Equipment.Components;
 using Content.Server.Xenoarchaeology.XenoArtifacts;
 using Content.Shared.Interaction;
 using Content.Shared.Timing;
-using Content.Shared.Verbs;
 
 namespace Content.Server.Xenoarchaeology.Equipment.Systems;
 
@@ -15,44 +14,23 @@ public sealed class NodeScannerSystem : EntitySystem
     /// <inheritdoc/>
     public override void Initialize()
     {
-        SubscribeLocalEvent<NodeScannerComponent, BeforeRangedInteractEvent>(OnBeforeRangedInteract);
-        SubscribeLocalEvent<NodeScannerComponent, GetVerbsEvent<UtilityVerb>>(AddScanVerb);
+        SubscribeLocalEvent<NodeScannerComponent, AfterInteractEvent>(OnAfterInteract);
     }
 
-    private void OnBeforeRangedInteract(EntityUid uid, NodeScannerComponent component, BeforeRangedInteractEvent args)
+    private void OnAfterInteract(EntityUid uid, NodeScannerComponent component, AfterInteractEvent args)
     {
-        if (args.Handled || !args.CanReach || args.Target is not {} target)
-            return;
-
-        if (!TryComp<ArtifactComponent>(target, out var artifact) || artifact.CurrentNodeId == null)
-            return;
-
-        CreatePopup(uid, target, artifact);
-        args.Handled = true;
-    }
-
-    private void AddScanVerb(EntityUid uid, NodeScannerComponent component, GetVerbsEvent<UtilityVerb> args)
-    {
-        if (!args.CanAccess)
+        if (!args.CanReach || args.Target == null)
             return;
 
         if (!TryComp<ArtifactComponent>(args.Target, out var artifact) || artifact.CurrentNodeId == null)
             return;
 
-        var verb = new UtilityVerb()
-        {
-            Act = () =>
-            {
-                CreatePopup(uid, args.Target, artifact);
-            },
-            Text = Loc.GetString("node-scan-tooltip")
-        };
+        if (args.Handled)
+            return;
+        args.Handled = true;
 
-        args.Verbs.Add(verb);
-    }
+        var target = args.Target.Value;
 
-    private void CreatePopup(EntityUid uid, EntityUid target, ArtifactComponent artifact)
-    {
         if (TryComp(uid, out UseDelayComponent? useDelay)
             && !_useDelay.TryResetDelay((uid, useDelay), true))
             return;

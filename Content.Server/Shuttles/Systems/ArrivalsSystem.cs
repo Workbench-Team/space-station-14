@@ -1,5 +1,4 @@
 using System.Linq;
-using System.Numerics;
 using Content.Server.Administration;
 using Content.Server.DeviceNetwork.Components;
 using Content.Server.DeviceNetwork.Systems;
@@ -15,7 +14,6 @@ using Content.Server.Station.Events;
 using Content.Server.Station.Systems;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
-using Content.Shared.Damage.Components;
 using Content.Shared.DeviceNetwork;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Movement.Components;
@@ -65,16 +63,6 @@ public sealed class ArrivalsSystem : EntitySystem
     public bool Enabled { get; private set; }
 
     /// <summary>
-    /// Flags if all players must arrive via the Arrivals system, or if they can spawn in other ways.
-    /// </summary>
-    public bool Forced { get; private set; }
-
-    /// <summary>
-    /// Flags if all players spawning at the departure terminal have godmode until they leave the terminal.
-    /// </summary>
-    public bool ArrivalsGodmode { get; private set; }
-
-    /// <summary>
     ///     The first arrival is a little early, to save everyone 10s
     /// </summary>
     private const float RoundStartFTLDuration = 10f;
@@ -105,12 +93,7 @@ public sealed class ArrivalsSystem : EntitySystem
 
         // Don't invoke immediately as it will get set in the natural course of things.
         Enabled = _cfgManager.GetCVar(CCVars.ArrivalsShuttles);
-        Forced = _cfgManager.GetCVar(CCVars.ForceArrivals);
-        ArrivalsGodmode = _cfgManager.GetCVar(CCVars.GodmodeArrivals);
-
-        _cfgManager.OnValueChanged(CCVars.ArrivalsShuttles, SetArrivals);
-        _cfgManager.OnValueChanged(CCVars.ForceArrivals, b => Forced = b);
-        _cfgManager.OnValueChanged(CCVars.GodmodeArrivals, b => ArrivalsGodmode = b);
+        Subs.CVar(_cfgManager, CCVars.ArrivalsShuttles, SetArrivals);
 
         // Command so admins can set these for funsies
         _console.RegisterCommand("arrivals", ArrivalsCommand, ArrivalsCompletion);
@@ -266,9 +249,6 @@ public sealed class ArrivalsSystem : EntitySystem
             // The player has successfully left arrivals and is also not on the shuttle. Remove their warp coupon.
             RemCompDeferred<PendingClockInComponent>(pUid);
             RemCompDeferred<AutoOrientComponent>(pUid);
-
-            if (ArrivalsGodmode)
-                RemCompDeferred<GodmodeComponent>(pUid);
         }
     }
 
@@ -297,7 +277,7 @@ public sealed class ArrivalsSystem : EntitySystem
         foreach (var (ent, xform) in toDump)
         {
             var rotation = xform.LocalRotation;
-            _transform.SetCoordinates(ent, new EntityCoordinates(args.FromMapUid!.Value, Vector2.Transform(xform.LocalPosition, args.FTLFrom)));
+            _transform.SetCoordinates(ent, new EntityCoordinates(args.FromMapUid!.Value, args.FTLFrom.Transform(xform.LocalPosition)));
             _transform.SetWorldRotation(ent, args.FromRotation + rotation);
         }
     }
@@ -328,7 +308,7 @@ public sealed class ArrivalsSystem : EntitySystem
             return;
 
         // Only works on latejoin even if enabled.
-        if (!Enabled || !Forced && _ticker.RunLevel != GameRunLevel.InRound)
+        if (!Enabled || _ticker.RunLevel != GameRunLevel.InRound)
             return;
 
         if (!HasComp<StationArrivalsComponent>(ev.Station))
@@ -336,37 +316,33 @@ public sealed class ArrivalsSystem : EntitySystem
 
         TryGetArrivals(out var arrivals);
 
-        if (!TryComp(arrivals, out TransformComponent? arrivalsXform))
-            return;
-
-        var mapId = arrivalsXform.MapID;
-
-        var points = EntityQueryEnumerator<SpawnPointComponent, TransformComponent>();
-        var possiblePositions = new List<EntityCoordinates>();
-        while (points.MoveNext(out var uid, out var spawnPoint, out var xform))
+        if (TryComp(arrivals, out TransformComponent? arrivalsXform))
         {
-            if (spawnPoint.SpawnType != SpawnPointType.LateJoin || xform.MapID != mapId)
-                continue;
+            var mapId = arrivalsXform.MapID;
 
-            possiblePositions.Add(xform.Coordinates);
+            var points = EntityQueryEnumerator<SpawnPointComponent, TransformComponent>();
+            var possiblePositions = new List<EntityCoordinates>();
+            while (points.MoveNext(out var uid, out var spawnPoint, out var xform))
+            {
+                if (spawnPoint.SpawnType != SpawnPointType.LateJoin || xform.MapID != mapId)
+                    continue;
+
+                possiblePositions.Add(xform.Coordinates);
+            }
+
+            if (possiblePositions.Count > 0)
+            {
+                var spawnLoc = _random.Pick(possiblePositions);
+                ev.SpawnResult = _stationSpawning.SpawnPlayerMob(
+                    spawnLoc,
+                    ev.Job,
+                    ev.HumanoidCharacterProfile,
+                    ev.Station);
+
+                EnsureComp<PendingClockInComponent>(ev.SpawnResult.Value);
+                EnsureComp<AutoOrientComponent>(ev.SpawnResult.Value);
+            }
         }
-
-        if (possiblePositions.Count <= 0)
-            return;
-
-        var spawnLoc = _random.Pick(possiblePositions);
-        ev.SpawnResult = _stationSpawning.SpawnPlayerMob(
-            spawnLoc,
-            ev.Job,
-            ev.HumanoidCharacterProfile,
-            ev.Station);
-
-        EnsureComp<PendingClockInComponent>(ev.SpawnResult.Value);
-        EnsureComp<AutoOrientComponent>(ev.SpawnResult.Value);
-
-        // If you're forced to spawn, you're invincible until you leave wherever you were forced to spawn.
-        if (ArrivalsGodmode)
-            EnsureComp<GodmodeComponent>(ev.SpawnResult.Value);
     }
 
     private bool TryTeleportToMapSpawn(EntityUid player, EntityUid stationId, TransformComponent? transform = null)

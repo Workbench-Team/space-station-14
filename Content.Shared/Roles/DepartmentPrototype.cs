@@ -1,27 +1,28 @@
 using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.List;
 
 namespace Content.Shared.Roles;
 
 [Prototype("department")]
 public sealed partial class DepartmentPrototype : IPrototype
 {
-    [IdDataField]
-    public string ID { get; } = string.Empty;
+    [IdDataField] public string ID { get; } = default!;
 
     /// <summary>
-    /// A description string to display in the character menu as an explanation of the department's function.
+    ///     A description string to display in the character menu as an explanation of the department's function.
     /// </summary>
-    [DataField(required: true)]
-    public string Description = string.Empty;
+    [DataField("description", required: true)]
+    public string Description = default!;
 
     /// <summary>
-    /// A color representing this department to use for text.
+    ///     A color representing this department to use for text.
     /// </summary>
-    [DataField(required: true)]
-    public Color Color;
+    [DataField("color", required: true)]
+    public Color Color = default!;
 
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public List<ProtoId<JobPrototype>> Roles = new();
+    [ViewVariables(VVAccess.ReadWrite),
+     DataField("roles", customTypeSerializer: typeof(PrototypeIdListSerializer<JobPrototype>))]
+    public List<string> Roles = new();
 
     /// <summary>
     /// Whether this is a primary department or not.
@@ -33,14 +34,8 @@ public sealed partial class DepartmentPrototype : IPrototype
     /// <summary>
     /// Departments with a higher weight sorted before other departments in UI.
     /// </summary>
-    [DataField]
-    public int Weight { get; private set; }
-
-    /// <summary>
-    /// Toggles the display of the department in the priority setting menu in the character editor.
-    /// </summary>
-    [DataField]
-    public bool EditorHidden;
+    [DataField("weight")]
+    public int Weight { get; private set; } = 0;
 }
 
 /// <summary>
@@ -55,14 +50,14 @@ public sealed class DepartmentUIComparer : IComparer<DepartmentPrototype>
     {
         if (ReferenceEquals(x, y))
             return 0;
-
         if (ReferenceEquals(null, y))
             return 1;
-
         if (ReferenceEquals(null, x))
             return -1;
 
         var cmp = -x.Weight.CompareTo(y.Weight);
-        return cmp != 0 ? cmp : string.Compare(x.ID, y.ID, StringComparison.Ordinal);
+        if (cmp != 0)
+            return cmp;
+        return string.Compare(x.ID, y.ID, StringComparison.Ordinal);
     }
 }

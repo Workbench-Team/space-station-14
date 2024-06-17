@@ -2,7 +2,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server.Spawners.Components
 {
-    [RegisterComponent, EntityCategory("Spawner")]
+    [RegisterComponent]
     [Virtual]
     public partial class ConditionalSpawnerComponent : Component
     {

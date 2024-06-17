@@ -484,7 +484,7 @@ namespace Content.Shared.Cuffs
                 BreakOnWeightlessMove = false,
                 BreakOnDamage = true,
                 NeedHand = true,
-                DistanceThreshold = 1f // shorter than default but still feels good
+                DistanceThreshold = 0.3f
             };
 
             if (!_doAfter.TryStartDoAfter(doAfterEventArgs))
@@ -561,10 +561,7 @@ namespace Content.Shared.Cuffs
                 return;
             }
 
-
-            var ev = new ModifyUncuffDurationEvent(user, target, isOwner ? cuff.BreakoutTime : cuff.UncuffTime);
-            RaiseLocalEvent(user, ref ev);
-            var uncuffTime = ev.Duration;
+            var uncuffTime = isOwner ? cuff.BreakoutTime : cuff.UncuffTime;
 
             if (isOwner)
             {
@@ -584,7 +581,7 @@ namespace Content.Shared.Cuffs
                 BreakOnDamage = true,
                 NeedHand = true,
                 RequireCanInteract = false, // Trust in UncuffAttemptEvent
-                DistanceThreshold = 1f // shorter than default but still feels good
+                DistanceThreshold = 0.3f
             };
 
             if (!_doAfter.TryStartDoAfter(doAfterEventArgs))

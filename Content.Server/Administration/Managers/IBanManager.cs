@@ -2,10 +2,8 @@ using System.Collections.Immutable;
 using System.Net;
 using System.Threading.Tasks;
 using Content.Shared.Database;
-using Content.Shared.Roles;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
-using Robust.Shared.Prototypes;
 
 namespace Content.Server.Administration.Managers;
 
@@ -26,7 +24,7 @@ public interface IBanManager
     /// <param name="reason">Reason for the ban</param>
     public void CreateServerBan(NetUserId? target, string? targetUsername, NetUserId? banningAdmin, (IPAddress, int)? addressRange, ImmutableArray<byte>? hwid, uint? minutes, NoteSeverity severity, string reason);
     public HashSet<string>? GetRoleBans(NetUserId playerUserId);
-    public HashSet<ProtoId<JobPrototype>>? GetJobBans(NetUserId playerUserId);
+    public HashSet<string>? GetJobBans(NetUserId playerUserId);
 
     /// <summary>
     /// Creates a job ban for the specified target, username or GUID

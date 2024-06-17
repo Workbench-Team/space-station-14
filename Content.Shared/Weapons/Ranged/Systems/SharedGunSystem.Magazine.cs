@@ -146,14 +146,13 @@ public abstract partial class SharedGunSystem
     private void FinaliseMagazineTakeAmmo(EntityUid uid, MagazineAmmoProviderComponent component, int count, int capacity, EntityUid? user, AppearanceComponent? appearance)
     {
         // If no ammo then check for autoeject
-        var ejectMag = component.AutoEject && count == 0;
-        if (ejectMag)
+        if (component.AutoEject && count == 0)
         {
             EjectMagazine(uid, component);
             Audio.PlayPredicted(component.SoundAutoEject, uid, user);
         }
 
-        UpdateMagazineAppearance(uid, appearance, !ejectMag, count, capacity);
+        UpdateMagazineAppearance(uid, appearance, true, count, capacity);
     }
 
     private void UpdateMagazineAppearance(EntityUid uid, MagazineAmmoProviderComponent component, EntityUid magEnt)

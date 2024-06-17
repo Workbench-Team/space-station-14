@@ -1,8 +1,10 @@
 using System.Numerics;
 using Content.Client.UserInterface.Systems.EscapeMenu;
+using Robust.Client.ResourceManagement;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.CustomControls;
+using Robust.Shared.Configuration;
 using Robust.Shared.ContentPack;
 
 namespace Content.Client.Info
@@ -10,6 +12,7 @@ namespace Content.Client.Info
     public sealed class RulesAndInfoWindow : DefaultWindow
     {
         [Dependency] private readonly IResourceManager _resourceManager = default!;
+        [Dependency] private readonly RulesManager _rules = default!;
 
         public RulesAndInfoWindow()
         {
@@ -19,24 +22,19 @@ namespace Content.Client.Info
 
             var rootContainer = new TabContainer();
 
-            var rulesList = new RulesControl
-            {
-                Margin = new Thickness(10)
-            };
-            var tutorialList = new Info
-            {
-                Margin = new Thickness(10)
-            };
+            var rulesList = new Info();
+            var tutorialList = new Info();
 
             rootContainer.AddChild(rulesList);
             var rulesLinksSection = new RulesLinksSection();
-            rulesList.LinksContainer.AddChild(rulesLinksSection);
+            rulesList.InfoContainer.AddChild(rulesLinksSection);
 
             rootContainer.AddChild(tutorialList);
 
             TabContainer.SetTabTitle(rulesList, Loc.GetString("ui-info-tab-rules"));
             TabContainer.SetTabTitle(tutorialList, Loc.GetString("ui-info-tab-tutorial"));
 
+            AddSection(rulesList, _rules.RulesSection());
             PopulateTutorial(tutorialList);
 
             Contents.AddChild(rootContainer);

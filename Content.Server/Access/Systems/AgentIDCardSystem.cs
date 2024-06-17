@@ -90,10 +90,14 @@ namespace Content.Server.Access.Systems
         private void OnJobIconChanged(EntityUid uid, AgentIDCardComponent comp, AgentIDCardJobIconChangedMessage args)
         {
             if (!TryComp<IdCardComponent>(uid, out var idCard))
+            {
                 return;
+            }
 
-            if (!_prototypeManager.TryIndex(args.JobIconId, out var jobIcon))
+            if (!_prototypeManager.TryIndex<StatusIconPrototype>(args.JobIconId, out var jobIcon))
+            {
                 return;
+            }
 
             _cardSystem.TryChangeJobIcon(uid, jobIcon, idCard);
 
@@ -105,7 +109,7 @@ namespace Content.Server.Access.Systems
         {
             foreach (var jobPrototype in _prototypeManager.EnumeratePrototypes<JobPrototype>())
             {
-                if (jobPrototype.Icon == jobIcon.ID)
+                if(jobPrototype.Icon == jobIcon.ID)
                 {
                     job = jobPrototype;
                     return true;

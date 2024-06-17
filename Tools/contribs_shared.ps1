@@ -12,5 +12,3 @@ $ignore = @{
     "ZDDM" = $true
     "TYoung86" = $true
 }
-
-$add = @("RamZ")

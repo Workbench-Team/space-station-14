@@ -178,7 +178,7 @@
 - type: startingGear
   id: MedicalDoctorBackpack
   equipment:
-    back: ClothingBackpackMedical
+    back: ClothingBackpackMedicalFilled
 
 - type: loadout
   id: MedicalDoctorSatchel
@@ -187,7 +187,7 @@
 - type: startingGear
   id: MedicalDoctorSatchel
   equipment:
-    back: ClothingBackpackSatchelMedical
+    back: ClothingBackpackSatchelMedicalFilled
 
 - type: loadout
   id: MedicalDoctorDuffel
@@ -196,7 +196,7 @@
 - type: startingGear
   id: MedicalDoctorDuffel
   equipment:
-    back: ClothingBackpackDuffelMedical
+    back: ClothingBackpackDuffelMedicalFilled
 
 # OuterClothing
 - type: loadout

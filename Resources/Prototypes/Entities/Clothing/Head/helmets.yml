@@ -309,7 +309,6 @@
     slots:
     - Hair
     - Snout
-  - type: BreathMask
 
 #Chitinous Helmet
 - type: entity

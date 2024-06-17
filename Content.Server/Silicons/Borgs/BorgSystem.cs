@@ -22,7 +22,6 @@ using Content.Shared.Roles;
 using Content.Shared.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
 using Content.Shared.Throwing;
-using Content.Shared.Whitelist;
 using Content.Shared.Wires;
 using Robust.Server.GameObjects;
 using Robust.Shared.Containers;
@@ -54,8 +53,6 @@ public sealed partial class BorgSystem : SharedBorgSystem
     [Dependency] private readonly ThrowingSystem _throwing = default!;
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
-    [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
-
 
     [ValidatePrototypeId<JobPrototype>]
     public const string BorgJobId = "Borg";
@@ -107,8 +104,9 @@ public sealed partial class BorgSystem : SharedBorgSystem
             return;
         }
 
-        if (component.BrainEntity == null && brain != null &&
-            _whitelistSystem.IsWhitelistPassOrNull(component.BrainWhitelist, used))
+        if (component.BrainEntity == null &&
+            brain != null &&
+            component.BrainWhitelist?.IsValid(used) != false)
         {
             if (_mind.TryGetMind(used, out _, out var mind) && mind.Session != null)
             {

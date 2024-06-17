@@ -6,7 +6,7 @@
 - type: startingGear
   id: SalvageSpecialistBackpack
   equipment:
-    back: ClothingBackpackSalvage
+    back: ClothingBackpackSalvageFilled
 
 - type: loadout
   id: SalvageSpecialistSatchel
@@ -15,7 +15,7 @@
 - type: startingGear
   id: SalvageSpecialistSatchel
   equipment:
-    back: ClothingBackpackSatchelSalvage
+    back: ClothingBackpackSatchelSalvageFilled
 
 - type: loadout
   id: SalvageSpecialistDuffel
@@ -24,7 +24,7 @@
 - type: startingGear
   id: SalvageSpecialistDuffel
   equipment:
-    back: ClothingBackpackDuffelSalvage
+    back: ClothingBackpackDuffelSalvageFilled
 
 # OuterClothing
 - type: loadout

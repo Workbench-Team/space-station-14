@@ -1,16 +1,15 @@
 using System.Linq;
 using Content.Server.Xenoarchaeology.XenoArtifacts.Events;
-using Content.Shared.Whitelist;
 using Content.Shared.Xenoarchaeology.XenoArtifacts;
 using JetBrains.Annotations;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Robust.Shared.Serialization.Manager;
 
 namespace Content.Server.Xenoarchaeology.XenoArtifacts;
 
 public sealed partial class ArtifactSystem
 {
-    [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
-
     private const int MaxEdgesPerNode = 4;
 
     private readonly HashSet<int> _usedNodeIds = new();
@@ -82,8 +81,7 @@ public sealed partial class ArtifactSystem
     private string GetRandomTrigger(EntityUid artifact, ref ArtifactNode node)
     {
         var allTriggers = _prototype.EnumeratePrototypes<ArtifactTriggerPrototype>()
-            .Where(x => _whitelistSystem.IsWhitelistPassOrNull(x.Whitelist, artifact) &&
-            _whitelistSystem.IsBlacklistFailOrNull(x.Blacklist, artifact)).ToList();
+            .Where(x => (x.Whitelist?.IsValid(artifact, EntityManager) ?? true) && (!x.Blacklist?.IsValid(artifact, EntityManager) ?? true)).ToList();
         var validDepth = allTriggers.Select(x => x.TargetDepth).Distinct().ToList();
 
         var weights = GetDepthWeights(validDepth, node.Depth);
@@ -97,8 +95,7 @@ public sealed partial class ArtifactSystem
     private string GetRandomEffect(EntityUid artifact, ref ArtifactNode node)
     {
         var allEffects = _prototype.EnumeratePrototypes<ArtifactEffectPrototype>()
-            .Where(x => _whitelistSystem.IsWhitelistPassOrNull(x.Whitelist, artifact) &&
-            _whitelistSystem.IsBlacklistFailOrNull(x.Blacklist, artifact)).ToList();
+            .Where(x => (x.Whitelist?.IsValid(artifact, EntityManager) ?? true) && (!x.Blacklist?.IsValid(artifact, EntityManager) ?? true)).ToList();
         var validDepth = allEffects.Select(x => x.TargetDepth).Distinct().ToList();
 
         var weights = GetDepthWeights(validDepth, node.Depth);

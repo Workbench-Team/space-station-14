@@ -75,7 +75,7 @@
 - type: startingGear
   id: CommonBackpack
   equipment:
-    back: ClothingBackpack
+    back: ClothingBackpackFilled
 
 - type: loadout
   id: CommonSatchel
@@ -84,7 +84,7 @@
 - type: startingGear
   id: CommonSatchel
   equipment:
-    back: ClothingBackpackSatchel
+    back: ClothingBackpackSatchelFilled
 
 - type: loadout
   id: CommonDuffel
@@ -93,7 +93,7 @@
 - type: startingGear
   id: CommonDuffel
   equipment:
-    back: ClothingBackpackDuffel
+    back: ClothingBackpackDuffelFilled
 
 # Gloves
 - type: loadout

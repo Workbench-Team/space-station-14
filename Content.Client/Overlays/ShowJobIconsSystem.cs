@@ -25,7 +25,7 @@ public sealed class ShowJobIconsSystem : EquipmentHudSystem<ShowJobIconsComponen
 
     private void OnGetStatusIconsEvent(EntityUid uid, StatusIconComponent _, ref GetStatusIconsEvent ev)
     {
-        if (!IsActive)
+        if (!IsActive || ev.InContainer)
             return;
 
         var iconId = JobIconForNoId;

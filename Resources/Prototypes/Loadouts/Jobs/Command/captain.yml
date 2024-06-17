@@ -90,7 +90,7 @@
 - type: startingGear
   id: CaptainBackpack
   equipment:
-    back: ClothingBackpackCaptain
+    back: ClothingBackpackCaptainFilled
 
 - type: loadout
   id: CaptainSatchel
@@ -99,7 +99,7 @@
 - type: startingGear
   id: CaptainSatchel
   equipment:
-    back: ClothingBackpackSatchelCaptain
+    back: ClothingBackpackSatchelCaptainFilled
 
 - type: loadout
   id: CaptainDuffel
@@ -108,7 +108,7 @@
 - type: startingGear
   id: CaptainDuffel
   equipment:
-    back: ClothingBackpackDuffelCaptain
+    back: ClothingBackpackDuffelCaptainFilled
 
 # Outer clothing
 - type: loadout

@@ -24,19 +24,12 @@ public sealed class GridPreloaderSystem : SharedGridPreloaderSystem
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
 
-    /// <summary>
-    /// Whether the preloading CVar is set or not.
-    /// </summary>
-    public bool PreloadingEnabled;
-
     public override void Initialize()
     {
         base.Initialize();
 
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestart);
         SubscribeLocalEvent<PostGameMapLoad>(OnPostGameMapLoad);
-
-        Subs.CVar(_cfg, CCVars.PreloadGrids, value => PreloadingEnabled = value, true);
     }
 
     private void OnRoundRestart(RoundRestartCleanupEvent ev)
@@ -59,7 +52,7 @@ public sealed class GridPreloaderSystem : SharedGridPreloaderSystem
         if (GetPreloaderEntity() != null)
             return;
 
-        if (!PreloadingEnabled)
+        if (!_cfg.GetCVar(CCVars.PreloadGrids))
             return;
 
         var mapUid = _map.CreateMap(out var mapId, false);

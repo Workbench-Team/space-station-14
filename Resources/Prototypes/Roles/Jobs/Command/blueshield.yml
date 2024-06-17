@@ -20,6 +20,7 @@
   joinNotifyCrew: true
   supervisors: job-supervisors-centcom-consultant
   canBeAntag: false
+  whitelistRequired: true
   access:
   - Captain
   - Command
@@ -49,6 +50,3 @@
     gloves: ClothingHandsTacticalBlueShield
     id: BlueShieldPDA
     ears: ClothingHeadsetAltBlueShield
-  storage:
-    back:
-    - BoxSurvivalBlueShield

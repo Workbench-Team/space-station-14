@@ -8,7 +8,6 @@ using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
-using Content.Shared.Whitelist;
 using Robust.Shared.Utility;
 
 namespace Content.Shared.UserInterface;
@@ -20,7 +19,6 @@ public sealed partial class ActivatableUISystem : EntitySystem
     [Dependency] private readonly SharedUserInterfaceSystem _uiSystem = default!;
     [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
-    [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
 
     public override void Initialize()
     {
@@ -98,7 +96,7 @@ public sealed partial class ActivatableUISystem : EntitySystem
         if (!args.CanAccess)
             return false;
 
-        if (_whitelistSystem.IsWhitelistFail(component.RequiredItems, args.Using ?? default))
+        if (!component.RequiredItems?.IsValid(args.Using ?? default, EntityManager) ?? false)
             return false;
 
         if (component.RequireHands)
@@ -158,7 +156,7 @@ public sealed partial class ActivatableUISystem : EntitySystem
         if (component.RequiredItems == null)
             return;
 
-        if (_whitelistSystem.IsWhitelistFail(component.RequiredItems, args.Used))
+        if (!component.RequiredItems.IsValid(args.Used, EntityManager))
             return;
 
         args.Handled = InteractUI(args.User, uid, component);

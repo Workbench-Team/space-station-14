@@ -11,11 +11,7 @@ namespace Content.Shared.Ghost.Roles
         public string Name { get; set; }
         public string Description { get; set; }
         public string Rules { get; set; }
-
-        // TODO ROLE TIMERS
-        // Actually make use of / enforce this requirement?
-        // Why is this even here.
-        // Move to ghost role prototype & respect CCvars.GameRoleTimerOverride
+        public bool WhitelistRequired { get; set; }
         public HashSet<JobRequirement>? Requirements { get; set; }
 
         /// <inheritdoc cref="GhostRoleKind"/>

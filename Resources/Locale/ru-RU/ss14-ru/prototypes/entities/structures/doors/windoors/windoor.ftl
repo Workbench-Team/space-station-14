@@ -144,3 +144,6 @@ ent-WindoorJanitorLocked = { ent-Windoor }
 ent-WindoorCaptainLocked = { ent-WindoorSecure }
     .suffix = Капитан, Закрыто
     .desc = { ent-WindoorSecure.desc }
+ent-WindoorSecureCentralCommandLocked = { ent-WindoorSecure }
+    .suffix = ЦентральноеКомандование, Закрыто
+    .desc = { ent-WindoorSecure.desc }

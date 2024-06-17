@@ -2,7 +2,6 @@ using System.Linq;
 using Content.Client.Guidebook.Components;
 using Content.Client.Light;
 using Content.Client.Verbs;
-using Content.Shared.Guidebook;
 using Content.Shared.Interaction;
 using Content.Shared.Light.Components;
 using Content.Shared.Speech;
@@ -14,7 +13,6 @@ using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Map;
 using Robust.Shared.Player;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
@@ -33,12 +31,7 @@ public sealed class GuidebookSystem : EntitySystem
     [Dependency] private readonly SharedPointLightSystem _pointLightSystem = default!;
     [Dependency] private readonly TagSystem _tags = default!;
 
-    public event Action<List<ProtoId<GuideEntryPrototype>>,
-        List<ProtoId<GuideEntryPrototype>>?,
-        ProtoId<GuideEntryPrototype>?,
-        bool,
-        ProtoId<GuideEntryPrototype>?>? OnGuidebookOpen;
-
+    public event Action<List<string>, List<string>?, string?, bool, string?>? OnGuidebookOpen;
     public const string GuideEmbedTag = "GuideEmbeded";
 
     private EntityUid _defaultUser;
@@ -87,7 +80,7 @@ public sealed class GuidebookSystem : EntitySystem
         });
     }
 
-    public void OpenHelp(List<ProtoId<GuideEntryPrototype>> guides)
+    public void OpenHelp(List<string> guides)
     {
         OnGuidebookOpen?.Invoke(guides, null, null, true, guides[0]);
     }

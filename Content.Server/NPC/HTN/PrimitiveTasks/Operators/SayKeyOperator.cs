@@ -20,8 +20,7 @@ public sealed partial class SayKeyOperator : HTNOperator
     public override void Initialize(IEntitySystemManager sysManager)
     {
         base.Initialize(sysManager);
-
-        _chat = sysManager.GetEntitySystem<ChatSystem>();
+        _chat = IoCManager.Resolve<IEntitySystemManager>().GetEntitySystem<ChatSystem>();
     }
 
     public override HTNOperatorStatus Update(NPCBlackboard blackboard, float frameTime)
@@ -29,12 +28,8 @@ public sealed partial class SayKeyOperator : HTNOperator
         if (!blackboard.TryGetValue<object>(Key, out var value, _entManager))
             return HTNOperatorStatus.Failed;
 
-        var @string = value.ToString();
-        if (@string is not { })
-            return HTNOperatorStatus.Failed;
-
         var speaker = blackboard.GetValue<EntityUid>(NPCBlackboard.Owner);
-        _chat.TrySendInGameICMessage(speaker, @string, InGameICChatType.Speak, hideChat: Hidden, hideLog: Hidden);
+        _chat.TrySendInGameICMessage(speaker, value.ToString() ?? "Oh no...", InGameICChatType.Speak, hideChat: Hidden, hideLog: Hidden);
 
         return base.Update(blackboard, frameTime);
     }

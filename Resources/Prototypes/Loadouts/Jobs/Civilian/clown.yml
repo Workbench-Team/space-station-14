@@ -35,7 +35,7 @@
 - type: startingGear
   id: ClownBackpack
   equipment:
-    back: ClothingBackpackClown
+    back: ClothingBackpackClownFilled
 
 - type: loadout
   id: ClownSatchel
@@ -44,7 +44,7 @@
 - type: startingGear
   id: ClownSatchel
   equipment:
-    back: ClothingBackpackSatchelClown
+    back: ClothingBackpackSatchelClownFilled
 
 - type: loadout
   id: ClownDuffel
@@ -53,7 +53,7 @@
 - type: startingGear
   id: ClownDuffel
   equipment:
-    back: ClothingBackpackDuffelClown
+    back: ClothingBackpackDuffelClownFilled
 
 # Shoes
 - type: loadout

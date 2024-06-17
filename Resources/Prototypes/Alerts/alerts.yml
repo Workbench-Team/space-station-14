@@ -28,7 +28,7 @@
 
 - type: entity
   id: AlertSpriteView
-  categories: [ HideSpawnMenu  ]
+  categories: [ hideSpawnMenu ]
   components:
   - type: Sprite
     layers:

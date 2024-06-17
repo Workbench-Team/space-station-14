@@ -18,6 +18,3 @@
     id: CargoPDA
     ears: ClothingHeadsetCargo
     pocket1: AppraisalTool
-  storage:
-    back:
-    - BoxSurvival

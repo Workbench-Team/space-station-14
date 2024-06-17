@@ -31,6 +31,11 @@ reagent-effect-guidebook-explosion-reaction-effect =
         [1] Вызывает
        *[other] вызвать
     } взрыв
+reagent-effect-guidebook-foam-area-reaction-effect =
+    { $chance ->
+        [1] Создаёт
+       *[other] создать
+    } большое количество пены
 reagent-effect-guidebook-smoke-area-reaction-effect =
     { $chance ->
         [1] Создаёт
@@ -40,7 +45,7 @@ reagent-effect-guidebook-foam-area-reaction-effect =
     { $chance ->
         [1] Создаёт
        *[other] создать
-    } большое количество пены
+    } большое количество дыма
 reagent-effect-guidebook-satiate-thirst =
     { $chance ->
         [1] Утоляет
@@ -307,22 +312,12 @@ reagent-effect-guidebook-reduce-rotting =
     { $chance ->
         [1] Регенерирует
        *[other] регенерируют
-    } { NATURALFIXED($time, 3) } { MANY("секунд", $time) } гниения
+    } { NATURALFIXED($time, 3) } { MANY("second", $time) } гниения
 reagent-effect-guidebook-wash-cream-pie-reaction =
     { $chance ->
         [1] Смывает
        *[other] смыть
     } кремовый пирог с лица
-reagent-effect-guidebook-area-reaction =
-    { $chance ->
-        [1] Вызывает
-       *[other] вызвать
-    } реакцию дыма или пены в течение { NATURALFIXED($duration, 3) } { MANY("секунд", $duration) }
-reagent-effect-guidebook-add-to-solution-reaction =
-    { $chance ->
-        [1] Приводит
-       *[other] привести
-    } к тому, что химикаты, нанесенные на объект, добавляются в его внутренний контейнер для растворов.
 reagent-effect-guidebook-plant-attribute =
     { $chance ->
         [1] Изменяет
@@ -348,3 +343,8 @@ reagent-effect-guidebook-plant-robust-harvest =
         [1] Увеличивает
        *[other] увеличить
     } потенцию растения на { $increase } до максимума { $limit }. Приводит к тому, что растение теряет свои семена, когда потенция достигает { $seedlesstreshold }. Попытка добавить потенцию свыше { $limit } может привести к снижению урожая с вероятностью 10%
+reagent-effect-guidebook-missing =
+    { $chance ->
+        [1] Вызывает
+       *[other] вызвать
+    } неизвестный эффект, так как никто еще не описал этот эффект

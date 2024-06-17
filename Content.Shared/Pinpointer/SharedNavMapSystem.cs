@@ -3,7 +3,6 @@ using System.Numerics;
 using System.Runtime.CompilerServices;
 using Content.Shared.Tag;
 using Robust.Shared.GameStates;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
@@ -25,7 +24,7 @@ public abstract class SharedNavMapSystem : EntitySystem
 
     [Robust.Shared.IoC.Dependency] private readonly TagSystem _tagSystem = default!;
 
-    private static readonly ProtoId<TagPrototype>[] WallTags = {"Wall", "Window"};
+    private readonly string[] _wallTags = ["Wall", "Window"];
     private EntityQuery<NavMapDoorComponent> _doorQuery;
 
     public override void Initialize()
@@ -59,7 +58,7 @@ public abstract class SharedNavMapSystem : EntitySystem
         if (_doorQuery.HasComp(uid))
             return  NavMapChunkType.Airlock;
 
-        if (_tagSystem.HasAnyTag(uid, WallTags))
+        if (_tagSystem.HasAnyTag(uid, _wallTags))
             return NavMapChunkType.Wall;
 
         return NavMapChunkType.Invalid;

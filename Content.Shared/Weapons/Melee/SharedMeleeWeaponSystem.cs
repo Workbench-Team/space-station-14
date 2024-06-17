@@ -751,7 +751,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
             return;
 
         var invMatrix = TransformSystem.GetInvWorldMatrix(userXform);
-        var localPos = Vector2.Transform(coordinates.Position, invMatrix);
+        var localPos = invMatrix.Transform(coordinates.Position);
 
         if (localPos.LengthSquared() <= 0f)
             return;

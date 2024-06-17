@@ -3,6 +3,7 @@
 - type: entity
   id: Ninja
   parent: BaseGameRule
+  noSpawn: true
   components:
   - type: GenericAntagRule
     agentName: ninja-round-end-agent-name
@@ -17,6 +18,7 @@
     threats: NinjaThreats
 
 - type: entity
+  noSpawn: true
   parent: BaseGameRule
   id: Thief
   components:

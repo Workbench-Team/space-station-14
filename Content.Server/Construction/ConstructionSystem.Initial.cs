@@ -14,7 +14,6 @@ using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Interaction;
 using Content.Shared.Inventory;
 using Content.Shared.Storage;
-using Content.Shared.Whitelist;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Player;
@@ -31,7 +30,6 @@ namespace Content.Server.Construction
         [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
         [Dependency] private readonly EntityLookupSystem _lookupSystem = default!;
         [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
-        [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
 
         // --- WARNING! LEGACY CODE AHEAD! ---
         // This entire file contains the legacy code for initial construction.
@@ -271,7 +269,7 @@ namespace Content.Server.Construction
             }
 
             var newEntityProto = graph.Nodes[edge.Target].Entity.GetId(null, user, new(EntityManager));
-            var newEntity = EntityManager.SpawnAttachedTo(newEntityProto, coords, rotation: angle);
+            var newEntity = Spawn(newEntityProto, _transformSystem.ToMapCoordinates(coords), rotation: angle);
 
             if (!TryComp(newEntity, out ConstructionComponent? construction))
             {
@@ -325,13 +323,13 @@ namespace Content.Server.Construction
         // LEGACY CODE. See warning at the top of the file!
         public async Task<bool> TryStartItemConstruction(string prototype, EntityUid user)
         {
-            if (!PrototypeManager.TryIndex(prototype, out ConstructionPrototype? constructionPrototype))
+            if (!_prototypeManager.TryIndex(prototype, out ConstructionPrototype? constructionPrototype))
             {
                 Log.Error($"Tried to start construction of invalid recipe '{prototype}'!");
                 return false;
             }
 
-            if (!PrototypeManager.TryIndex(constructionPrototype.Graph,
+            if (!_prototypeManager.TryIndex(constructionPrototype.Graph,
                     out ConstructionGraphPrototype? constructionGraph))
             {
                 Log.Error(
@@ -339,7 +337,7 @@ namespace Content.Server.Construction
                 return false;
             }
 
-            if (_whitelistSystem.IsWhitelistFail(constructionPrototype.EntityWhitelist, user))
+            if (constructionPrototype.EntityWhitelist != null && !constructionPrototype.EntityWhitelist.IsValid(user))
             {
                 _popup.PopupEntity(Loc.GetString("construction-system-cannot-start"), user, user);
                 return false;
@@ -404,14 +402,14 @@ namespace Content.Server.Construction
         // LEGACY CODE. See warning at the top of the file!
         private async void HandleStartStructureConstruction(TryStartStructureConstructionMessage ev, EntitySessionEventArgs args)
         {
-            if (!PrototypeManager.TryIndex(ev.PrototypeName, out ConstructionPrototype? constructionPrototype))
+            if (!_prototypeManager.TryIndex(ev.PrototypeName, out ConstructionPrototype? constructionPrototype))
             {
                 Log.Error($"Tried to start construction of invalid recipe '{ev.PrototypeName}'!");
                 RaiseNetworkEvent(new AckStructureConstructionMessage(ev.Ack));
                 return;
             }
 
-            if (!PrototypeManager.TryIndex(constructionPrototype.Graph, out ConstructionGraphPrototype? constructionGraph))
+            if (!_prototypeManager.TryIndex(constructionPrototype.Graph, out ConstructionGraphPrototype? constructionGraph))
             {
                 Log.Error($"Invalid construction graph '{constructionPrototype.Graph}' in recipe '{ev.PrototypeName}'!");
                 RaiseNetworkEvent(new AckStructureConstructionMessage(ev.Ack));
@@ -424,7 +422,7 @@ namespace Content.Server.Construction
                 return;
             }
 
-            if (_whitelistSystem.IsWhitelistFail(constructionPrototype.EntityWhitelist, user))
+            if (constructionPrototype.EntityWhitelist != null && !constructionPrototype.EntityWhitelist.IsValid(user))
             {
                 _popup.PopupEntity(Loc.GetString("construction-system-cannot-start"), user, user);
                 return;

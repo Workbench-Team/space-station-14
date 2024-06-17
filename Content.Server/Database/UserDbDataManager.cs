@@ -1,6 +1,8 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
+using Content.Server.Players.PlayTimeTracking;
 using Content.Server.Preferences.Managers;
+using Robust.Server.Player;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
@@ -17,12 +19,11 @@ namespace Content.Server.Database;
 /// </remarks>
 public sealed class UserDbDataManager : IPostInjectInit
 {
+    [Dependency] private readonly IServerPreferencesManager _prefs = default!;
     [Dependency] private readonly ILogManager _logManager = default!;
+    [Dependency] private readonly PlayTimeTrackingManager _playTimeTracking = default!;
 
     private readonly Dictionary<NetUserId, UserData> _users = new();
-    private readonly List<OnLoadPlayer> _onLoadPlayer = [];
-    private readonly List<OnFinishLoad> _onFinishLoad = [];
-    private readonly List<OnPlayerDisconnect> _onPlayerDisconnect = [];
 
     private ISawmill _sawmill = default!;
 
@@ -50,10 +51,8 @@ public sealed class UserDbDataManager : IPostInjectInit
         data.Cancel.Cancel();
         data.Cancel.Dispose();
 
-        foreach (var onDisconnect in _onPlayerDisconnect)
-        {
-            onDisconnect(session);
-        }
+        _prefs.OnClientDisconnected(session);
+        _playTimeTracking.ClientDisconnected(session);
     }
 
     private async Task Load(ICommonSession session, CancellationToken cancel)
@@ -63,20 +62,12 @@ public sealed class UserDbDataManager : IPostInjectInit
         // As such, this task must NOT throw a non-cancellation error!
         try
         {
-            var tasks = new List<Task>();
-            foreach (var action in _onLoadPlayer)
-            {
-                tasks.Add(action(session, cancel));
-            }
-
-            await Task.WhenAll(tasks);
+            await Task.WhenAll(
+                _prefs.LoadData(session, cancel),
+                _playTimeTracking.LoadData(session, cancel));
 
             cancel.ThrowIfCancellationRequested();
-
-            foreach (var action in _onFinishLoad)
-            {
-                action(session);
-            }
+            _prefs.FinishLoad(session);
 
             _sawmill.Verbose($"Load complete for user {session}");
         }
@@ -127,31 +118,10 @@ public sealed class UserDbDataManager : IPostInjectInit
         return _users[session.UserId].Task;
     }
 
-    public void AddOnLoadPlayer(OnLoadPlayer action)
-    {
-        _onLoadPlayer.Add(action);
-    }
-
-    public void AddOnFinishLoad(OnFinishLoad action)
-    {
-        _onFinishLoad.Add(action);
-    }
-
-    public void AddOnPlayerDisconnect(OnPlayerDisconnect action)
-    {
-        _onPlayerDisconnect.Add(action);
-    }
-
     void IPostInjectInit.PostInject()
     {
         _sawmill = _logManager.GetSawmill("userdb");
     }
 
     private sealed record UserData(CancellationTokenSource Cancel, Task Task);
-
-    public delegate Task OnLoadPlayer(ICommonSession player, CancellationToken cancel);
-
-    public delegate void OnFinishLoad(ICommonSession player);
-
-    public delegate void OnPlayerDisconnect(ICommonSession player);
 }

@@ -35,7 +35,7 @@
 - type: startingGear
   id: CargoTechnicianBackpack
   equipment:
-    back: ClothingBackpackCargo
+    back: ClothingBackpackCargoFilled
 
 - type: loadout
   id: CargoTechnicianSatchel
@@ -44,7 +44,7 @@
 - type: startingGear
   id: CargoTechnicianSatchel
   equipment:
-    back: ClothingBackpackSatchelCargo
+    back: ClothingBackpackSatchelCargoFilled
 
 - type: loadout
   id: CargoTechnicianDuffel
@@ -53,7 +53,7 @@
 - type: startingGear
   id: CargoTechnicianDuffel
   equipment:
-    back: ClothingBackpackDuffelCargo
+    back: ClothingBackpackDuffelCargoFilled
 
 # OuterClothing
 - type: loadout

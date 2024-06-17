@@ -9,7 +9,6 @@ bounty-console-manifest-entry =
         [1] {$item}
         *[other] {$item} x{$amount}
     }
-bounty-console-manifest-reward = Reward: ${$reward}
 bounty-console-description-label = [color=gray]{$description}[/color]
 bounty-console-id-label = ID#{$id}
 

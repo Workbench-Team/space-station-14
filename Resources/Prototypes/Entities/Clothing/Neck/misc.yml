@@ -70,6 +70,7 @@
 - type: entity
   id: ActionStethoscope
   name: Listen with stethoscope
+  noSpawn: true
   components:
   - type: EntityTargetAction
     icon:

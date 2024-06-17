@@ -26,6 +26,6 @@
     materialComposition:
       Glass: 50
   - type: SpaceGarbage
-  - type: ToolRefinable
+  - type: WelderRefinable
     refineResult:
     - id: SheetGlass1

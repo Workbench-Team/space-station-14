@@ -12,6 +12,7 @@
   supervisors: job-supervisors-ce
   canBeAntag: false
   antagAdvantage: 10
+  whitelistRequired: true
   access:
   - Maintenance
   - Engineering
@@ -28,6 +29,3 @@
     id: AtmosPDA
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
-  storage:
-    back:
-    - BoxSurvivalEngineering

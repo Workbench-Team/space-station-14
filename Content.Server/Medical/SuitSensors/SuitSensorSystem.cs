@@ -1,4 +1,3 @@
-using System.Numerics;
 using Content.Server.Access.Systems;
 using Content.Server.DeviceNetwork;
 using Content.Server.DeviceNetwork.Components;
@@ -308,7 +307,7 @@ public sealed class SuitSensorSystem : EntitySystem
             return null;
 
         // check if sensor is enabled and worn by user
-        if (sensor.Mode == SuitSensorMode.SensorOff || sensor.User == null || !HasComp<MobStateComponent>(sensor.User) || transform.GridUid == null)
+        if (sensor.Mode == SuitSensorMode.SensorOff || sensor.User == null || transform.GridUid == null)
             return null;
 
         // try to get mobs id from ID slot
@@ -367,8 +366,8 @@ public sealed class SuitSensorSystem : EntitySystem
                 if (transform.GridUid != null)
                 {
                     coordinates = new EntityCoordinates(transform.GridUid.Value,
-                        Vector2.Transform(_transform.GetWorldPosition(transform, xformQuery),
-                            _transform.GetInvWorldMatrix(xformQuery.GetComponent(transform.GridUid.Value), xformQuery)));
+                        _transform.GetInvWorldMatrix(xformQuery.GetComponent(transform.GridUid.Value), xformQuery)
+                        .Transform(_transform.GetWorldPosition(transform, xformQuery)));
                 }
                 else if (transform.MapUid != null)
                 {

@@ -9,8 +9,6 @@ namespace Content.Client.Lobby.UI.Roles;
 [GenerateTypedNameReferences]
 public sealed partial class TraitPreferenceSelector : Control
 {
-    public int Cost;
-
     public bool Preference
     {
         get => Checkbox.Pressed;
@@ -22,12 +20,7 @@ public sealed partial class TraitPreferenceSelector : Control
     public TraitPreferenceSelector(TraitPrototype trait)
     {
         RobustXamlLoader.Load(this);
-
-        var text = trait.Cost != 0 ? $"[{trait.Cost}] " : "";
-        text += Loc.GetString(trait.Name);
-
-        Cost = trait.Cost;
-        Checkbox.Text = text;
+        Checkbox.Text = Loc.GetString(trait.Name);
         Checkbox.OnToggled += OnCheckBoxToggled;
 
         if (trait.Description is { } desc)

@@ -11,7 +11,6 @@ using Content.Server.Shuttles.Systems;
 using Content.Server.Station.Components;
 using Content.Server.Store.Components;
 using Content.Server.Store.Systems;
-using Content.Shared.GameTicking.Components;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.NPC.Components;
@@ -25,7 +24,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
 using System.Linq;
-using Content.Shared.Store.Components;
+using Content.Server.GameTicking.Components;
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -260,10 +259,10 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
     {
         var map = Transform(ent).MapID;
 
-        var rules = EntityQueryEnumerator<NukeopsRuleComponent, RuleGridsComponent>();
-        while (rules.MoveNext(out var uid, out _, out var grids))
+        var rules = EntityQueryEnumerator<NukeopsRuleComponent, LoadMapRuleComponent>();
+        while (rules.MoveNext(out var uid, out _, out var mapRule))
         {
-            if (map != grids.Map)
+            if (map != mapRule.Map)
                 continue;
             ent.Comp.AssociatedRule = uid;
             break;
@@ -324,7 +323,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
             if (nukeops.WarDeclaredTime != null)
                 continue;
 
-            if (TryComp<RuleGridsComponent>(uid, out var grids) && Transform(ev.DeclaratorEntity).MapID != grids.Map)
+            if (TryComp<LoadMapRuleComponent>(uid, out var mapComp) && Transform(ev.DeclaratorEntity).MapID != mapComp.Map)
                 continue;
 
             var newStatus = GetWarCondition(nukeops, ev.Status);
@@ -445,7 +444,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
 
         // Check that there are spawns available and that they can access the shuttle.
         var spawnsAvailable = EntityQuery<NukeOperativeSpawnerComponent>(true).Any();
-        if (spawnsAvailable && CompOrNull<RuleGridsComponent>(ent)?.Map == shuttleMapId)
+        if (spawnsAvailable && CompOrNull<LoadMapRuleComponent>(ent)?.Map == shuttleMapId)
             return; // Ghost spawns can still access the shuttle. Continue the round.
 
         // The shuttle is inaccessible to both living nuke operatives and yet to spawn nuke operatives,
@@ -478,7 +477,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
     /// Is this method the shitty glue holding together the last of my sanity? yes.
     /// Do i have a better solution? not presently.
     /// </remarks>
-    private EntityUid? GetOutpost(Entity<RuleGridsComponent?> ent)
+    private EntityUid? GetOutpost(Entity<LoadMapRuleComponent?> ent)
     {
         if (!Resolve(ent, ref ent.Comp, false))
             return null;

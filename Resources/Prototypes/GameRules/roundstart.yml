@@ -1,20 +1,12 @@
 - type: entity
   id: BaseGameRule
   abstract: true
+  noSpawn: true
   components:
   - type: GameRule
 
 - type: entity
-  parent: BaseGameRule
-  id: RespawnDeadRule
-  components:
-  - type: RespawnDeadRule
-    alwaysRespawnDead: true
-  - type: RespawnTracker
-    respawnDelay: 10
-    deleteBody: false
-
-- type: entity
+  noSpawn: true
   parent: BaseGameRule
   id: SubGamemodesRule
   components:
@@ -26,6 +18,7 @@
 - type: entity
   id: DeathMatch31
   parent: BaseGameRule
+  noSpawn: true
   components:
   - type: DeathMatchRule
     rewardSpawns:
@@ -55,6 +48,7 @@
 - type: entity
   id: InactivityTimeRestart
   parent: BaseGameRule
+  noSpawn: true
   components:
   - type: InactivityRule
     inactivityMaxTime: 600
@@ -63,6 +57,7 @@
 - type: entity
   id: MaxTimeRestart
   parent: BaseGameRule
+  noSpawn: true
   components:
   - type: MaxTimeRestartRule
     roundMaxTime: 300
@@ -78,11 +73,11 @@
     - operationPrefix
     - operationSuffix
   - type: NukeopsRule
-  - type: RuleGrids
   - type: AntagSelection
   - type: AntagLoadProfileRule
 
 - type: entity
+  noSpawn: true
   parent: BaseNukeopsRule
   id: Nukeops
   components:
@@ -160,6 +155,7 @@
     agentName: traitor-round-end-agent-name
 
 - type: entity
+  noSpawn: true
   parent: BaseTraitorRule
   id: Traitor
   components:
@@ -181,6 +177,7 @@
 - type: entity
   id: Revolutionary
   parent: BaseGameRule
+  noSpawn: true
   components:
   - type: GameRule
     minPlayers: 15
@@ -205,18 +202,21 @@
 - type: entity
   id: Sandbox
   parent: BaseGameRule
+  noSpawn: true
   components:
   - type: SandboxRule
 
 - type: entity
   id: Secret
   parent: BaseGameRule
+  noSpawn: true
   components:
   - type: SecretRule
 
 - type: entity
   id: Zombie
   parent: BaseGameRule
+  noSpawn: true
   components:
   - type: GameRule
     minPlayers: 20
@@ -249,12 +249,14 @@
 - type: entity
   id: BasicStationEventScheduler
   parent: BaseGameRule
+  noSpawn: true
   components:
   - type: BasicStationEventScheduler
 
 - type: entity
   id: RampingStationEventScheduler
   parent: BaseGameRule
+  noSpawn: true
   components:
   - type: RampingStationEventScheduler
 
@@ -262,6 +264,7 @@
 - type: entity
   id: BasicRoundstartVariation
   parent: BaseGameRule
+  noSpawn: true
   components:
   - type: RoundstartStationVariationRule
     rules:

@@ -1,7 +1,6 @@
 ﻿using System.Linq;
 using Content.Shared.Administration;
 using Content.Shared.Tag;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Toolshed;
 using Robust.Shared.Toolshed.Syntax;
 using Robust.Shared.Toolshed.TypeParsers;
@@ -14,14 +13,14 @@ public sealed class TagCommand : ToolshedCommand
     private TagSystem? _tag;
 
     [CommandImplementation("list")]
-    public IEnumerable<ProtoId<TagPrototype>> List([PipedArgument] IEnumerable<EntityUid> ent)
+    public IEnumerable<string> List([PipedArgument] IEnumerable<EntityUid> ent)
     {
         return ent.SelectMany(x =>
         {
             if (TryComp<TagComponent>(x, out var tags))
                 // Note: Cast is required for C# to figure out the type signature.
-                return (IEnumerable<ProtoId<TagPrototype>>)tags.Tags;
-            return Array.Empty<ProtoId<TagPrototype>>();
+                return (IEnumerable<string>)tags.Tags;
+            return Array.Empty<string>();
         });
     }
 
@@ -73,7 +72,7 @@ public sealed class TagCommand : ToolshedCommand
     )
     {
         _tag ??= GetSys<TagSystem>();
-        _tag.AddTags(input, (IEnumerable<ProtoId<TagPrototype>>)@ref.Evaluate(ctx)!);
+        _tag.AddTags(input, @ref.Evaluate(ctx)!);
         return input;
     }
 
@@ -93,7 +92,7 @@ public sealed class TagCommand : ToolshedCommand
     )
     {
         _tag ??= GetSys<TagSystem>();
-        _tag.RemoveTags(input, (IEnumerable<ProtoId<TagPrototype>>)@ref.Evaluate(ctx)!);
+        _tag.RemoveTags(input, @ref.Evaluate(ctx)!);
         return input;
     }
 

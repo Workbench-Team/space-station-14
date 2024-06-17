@@ -24,7 +24,7 @@
   id: MinerGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitMiner
-    back: ClothingBackpackSalvage
+    back: ClothingBackpackSalvageFilled
     shoes: ClothingShoesBootsSalvage
     id: MinerPDA
     ears: ClothingHeadsetMining

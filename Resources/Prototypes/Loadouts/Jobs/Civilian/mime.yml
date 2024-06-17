@@ -81,7 +81,7 @@
 - type: startingGear
   id: MimeBackpack
   equipment:
-    back: ClothingBackpackMime
+    back: ClothingBackpackMimeFilled
 
 - type: loadout
   id: MimeSatchel
@@ -90,7 +90,7 @@
 - type: startingGear
   id: MimeSatchel
   equipment:
-    back: ClothingBackpackSatchelMime
+    back: ClothingBackpackSatchelMimeFilled
 
 - type: loadout
   id: MimeDuffel
@@ -99,7 +99,7 @@
 - type: startingGear
   id: MimeDuffel
   equipment:
-    back: ClothingBackpackDuffelMime
+    back: ClothingBackpackDuffelMimeFilled
 
 # Outerclothing
 - type: loadout

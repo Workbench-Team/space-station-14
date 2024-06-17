@@ -1,11 +1,14 @@
+using System.Linq;
 using Content.Server.Administration.Logs;
 using Content.Server.Chat.Systems;
+using Content.Server.GameTicking.Components;
 using Content.Server.GameTicking.Rules;
+using Content.Server.GameTicking.Rules.Components;
 using Content.Server.Station.Systems;
 using Content.Server.StationEvents.Components;
 using Content.Shared.Database;
-using Content.Shared.GameTicking.Components;
 using Robust.Shared.Audio.Systems;
+using Robust.Shared.Map;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 
@@ -17,6 +20,7 @@ namespace Content.Server.StationEvents.Events;
 public abstract class StationEventSystem<T> : GameRuleSystem<T> where T : IComponent
 {
     [Dependency] protected readonly IAdminLogManager AdminLogManager = default!;
+    [Dependency] protected readonly IMapManager MapManager = default!;
     [Dependency] protected readonly IPrototypeManager PrototypeManager = default!;
     [Dependency] protected readonly ChatSystem ChatSystem = default!;
     [Dependency] protected readonly SharedAudioSystem Audio = default!;
@@ -39,12 +43,16 @@ public abstract class StationEventSystem<T> : GameRuleSystem<T> where T : ICompo
         if (!TryComp<StationEventComponent>(uid, out var stationEvent))
             return;
 
+
         AdminLogManager.Add(LogType.EventAnnounced, $"Event added / announced: {ToPrettyString(uid)}");
 
         if (stationEvent.StartAnnouncement != null)
-            ChatSystem.DispatchGlobalAnnouncement(Loc.GetString(stationEvent.StartAnnouncement), playSound: false, colorOverride: stationEvent.StartAnnouncementColor);
+        {
+            ChatSystem.DispatchGlobalAnnouncement(Loc.GetString(stationEvent.StartAnnouncement), playSound: false, colorOverride: Color.Gold);
+        }
 
         Audio.PlayGlobal(stationEvent.StartAudio, Filter.Broadcast(), true);
+        stationEvent.StartTime = Timing.CurTime + stationEvent.StartDelay;
     }
 
     /// <inheritdoc/>
@@ -78,7 +86,9 @@ public abstract class StationEventSystem<T> : GameRuleSystem<T> where T : ICompo
         AdminLogManager.Add(LogType.EventStopped, $"Event ended: {ToPrettyString(uid)}");
 
         if (stationEvent.EndAnnouncement != null)
-            ChatSystem.DispatchGlobalAnnouncement(Loc.GetString(stationEvent.EndAnnouncement), playSound: false, colorOverride: stationEvent.EndAnnouncementColor);
+        {
+            ChatSystem.DispatchGlobalAnnouncement(Loc.GetString(stationEvent.EndAnnouncement), playSound: false, colorOverride: Color.Gold);
+        }
 
         Audio.PlayGlobal(stationEvent.EndAudio, Filter.Broadcast(), true);
     }
@@ -98,7 +108,7 @@ public abstract class StationEventSystem<T> : GameRuleSystem<T> where T : ICompo
             if (!GameTicker.IsGameRuleAdded(uid, ruleData))
                 continue;
 
-            if (!GameTicker.IsGameRuleActive(uid, ruleData) && !HasComp<DelayedStartRuleComponent>(uid))
+            if (!GameTicker.IsGameRuleActive(uid, ruleData) && Timing.CurTime >= stationEvent.StartTime)
             {
                 GameTicker.StartGameRule(uid, ruleData);
             }
@@ -108,4 +118,13 @@ public abstract class StationEventSystem<T> : GameRuleSystem<T> where T : ICompo
             }
         }
     }
+
+    #region Helper Functions
+
+    protected void ForceEndSelf(EntityUid uid, GameRuleComponent? component = null)
+    {
+        GameTicker.EndGameRule(uid, component);
+    }
+
+    #endregion
 }

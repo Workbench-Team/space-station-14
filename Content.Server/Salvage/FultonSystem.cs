@@ -1,4 +1,3 @@
-using System.Numerics;
 using Content.Shared.Salvage.Fulton;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
@@ -62,9 +61,8 @@ public sealed class FultonSystem : SharedFultonSystem
             var metadata = MetaData(uid);
             var oldCoords = xform.Coordinates;
             var offset = _random.NextVector2(1.5f);
-            var localPos = Vector2.Transform(
-                    TransformSystem.GetWorldPosition(beaconXform),
-                    TransformSystem.GetInvWorldMatrix(beaconXform.ParentUid)) + offset;
+            var localPos = TransformSystem.GetInvWorldMatrix(beaconXform.ParentUid)
+                .Transform(TransformSystem.GetWorldPosition(beaconXform)) + offset;
 
             TransformSystem.SetCoordinates(uid, new EntityCoordinates(beaconXform.ParentUid, localPos));
 

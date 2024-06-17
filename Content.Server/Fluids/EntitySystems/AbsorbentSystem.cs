@@ -1,4 +1,3 @@
-using System.Numerics;
 using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Server.Popups;
 using Content.Shared.Chemistry.Components;
@@ -318,7 +317,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
 
         var userXform = Transform(user);
         var targetPos = _transform.GetWorldPosition(target);
-        var localPos = Vector2.Transform(targetPos, _transform.GetInvWorldMatrix(userXform));
+        var localPos = _transform.GetInvWorldMatrix(userXform).Transform(targetPos);
         localPos = userXform.LocalRotation.RotateVec(localPos);
 
         _melee.DoLunge(user, used, Angle.Zero, localPos, null, false);

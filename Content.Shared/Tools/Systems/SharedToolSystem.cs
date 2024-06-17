@@ -217,7 +217,7 @@ public abstract partial class SharedToolSystem : EntitySystem
             return false;
 
         // check if the tool allows being used
-        var beforeAttempt = new ToolUseAttemptEvent(user, fuel);
+        var beforeAttempt = new ToolUseAttemptEvent(user);
         RaiseLocalEvent(tool, beforeAttempt);
         if (beforeAttempt.Cancelled)
             return false;
@@ -296,3 +296,4 @@ public abstract partial class SharedToolSystem : EntitySystem
 public sealed partial class CableCuttingFinishedEvent : SimpleDoAfterEvent;
 
 #endregion
+

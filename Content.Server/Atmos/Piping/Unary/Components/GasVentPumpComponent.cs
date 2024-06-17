@@ -135,10 +135,6 @@ namespace Content.Server.Atmos.Piping.Unary.Components
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("depressurizePressure")]
         public float DepressurizePressure = 0;
-
-        // When true, ignore under-pressure lockout. Used to re-fill rooms in air alarm "Fill" mode.
-        [DataField]
-        public bool PressureLockoutOverride = false;
         #endregion
 
         public GasVentPumpData ToAirAlarmData()
@@ -150,8 +146,7 @@ namespace Content.Server.Atmos.Piping.Unary.Components
                 PumpDirection = PumpDirection,
                 PressureChecks = PressureChecks,
                 ExternalPressureBound = ExternalPressureBound,
-                InternalPressureBound = InternalPressureBound,
-                PressureLockoutOverride = PressureLockoutOverride
+                InternalPressureBound = InternalPressureBound
             };
         }
 
@@ -163,7 +158,6 @@ namespace Content.Server.Atmos.Piping.Unary.Components
             PressureChecks = data.PressureChecks;
             ExternalPressureBound = data.ExternalPressureBound;
             InternalPressureBound = data.InternalPressureBound;
-            PressureLockoutOverride = data.PressureLockoutOverride;
         }
     }
 }

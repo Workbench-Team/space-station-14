@@ -76,6 +76,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
       description: ghost-role-information-ert-leader-description
+      whitelistRequired: true
       raffle:
         settings: short
     - type: Loadout
@@ -105,6 +106,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
       description: ghost-role-information-ert-leader-description
+      whitelistRequired: true
       raffle:
         settings: short
     - type: Loadout
@@ -491,6 +493,7 @@
     - type: GhostRole
       name: ghost-role-information-centcom-official-name
       description: ghost-role-information-centcom-official-description
+      whitelistRequired: true
       raffle:
         settings: default
     - type: Loadout

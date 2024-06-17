@@ -18,6 +18,7 @@
   requireAdminNotify: true
   supervisors: job-supervisors-captain
   canBeAntag: false
+  whitelistRequired: true
   access:
   - Maintenance
   - Engineering
@@ -41,8 +42,3 @@
     eyes: ClothingEyesGlassesMeson
     ears: ClothingHeadsetCE
     belt: ClothingBeltUtilityEngineering
-  storage:
-    back:
-    - BoxSurvivalEngineering
-    - Flash
-    - TelescopicBaton

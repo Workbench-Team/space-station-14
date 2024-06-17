@@ -14,7 +14,7 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
     public MapGridComponent Grid;
     private bool _needToTransform = false;
 
-    private Matrix3x2 _matrix = Matrix3x2.Identity;
+    private Matrix3 _matrix = Matrix3.Identity;
     private Vector2 _offset;
 
     // Tiles which neighbor an exploding tile, but have not yet had the explosion spread to them due to an
@@ -44,7 +44,7 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
         int typeIndex,
         Dictionary<Vector2i, NeighborFlag> edgeTiles,
         EntityUid? referenceGrid,
-        Matrix3x2 spaceMatrix,
+        Matrix3 spaceMatrix,
         Angle spaceAngle)
     {
         Grid = grid;
@@ -72,10 +72,9 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
         var transform = IoCManager.Resolve<IEntityManager>().GetComponent<TransformComponent>(Grid.Owner);
         var size = (float) Grid.TileSize;
 
-        _matrix.M31 = size / 2;
-        _matrix.M32 = size / 2;
-        Matrix3x2.Invert(spaceMatrix, out var invSpace);
-        _matrix *= transform.WorldMatrix * invSpace;
+        _matrix.R0C2 = size / 2;
+        _matrix.R1C2 = size / 2;
+        _matrix *= transform.WorldMatrix * Matrix3.Invert(spaceMatrix);
         var relativeAngle = transform.WorldRotation - spaceAngle;
         _offset = relativeAngle.RotateVec(new Vector2(size / 4, size / 4));
     }
@@ -229,7 +228,7 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
             return;
         }
 
-        var center = Vector2.Transform(tile, _matrix);
+        var center = _matrix.Transform(tile);
         SpaceJump.Add(new((int) MathF.Floor(center.X + _offset.X), (int) MathF.Floor(center.Y + _offset.Y)));
         SpaceJump.Add(new((int) MathF.Floor(center.X - _offset.Y), (int) MathF.Floor(center.Y + _offset.X)));
         SpaceJump.Add(new((int) MathF.Floor(center.X - _offset.X), (int) MathF.Floor(center.Y - _offset.Y)));

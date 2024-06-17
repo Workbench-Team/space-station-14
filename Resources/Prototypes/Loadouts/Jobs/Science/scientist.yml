@@ -120,7 +120,7 @@
 - type: startingGear
   id: ScientistBackpack
   equipment:
-    back: ClothingBackpackScience
+    back: ClothingBackpackScienceFilled
 
 - type: loadout
   id: ScientistSatchel
@@ -129,7 +129,7 @@
 - type: startingGear
   id: ScientistSatchel
   equipment:
-    back: ClothingBackpackSatchelScience
+    back: ClothingBackpackSatchelScienceFilled
 
 - type: loadout
   id: ScientistDuffel
@@ -138,7 +138,7 @@
 - type: startingGear
   id: ScientistDuffel
   equipment:
-    back: ClothingBackpackDuffelScience
+    back: ClothingBackpackDuffelScienceFilled
 
 # OuterClothing
 - type: loadout

@@ -123,6 +123,7 @@ namespace Content.Client.Verbs
             if ((visibility & MenuVisibility.Invisible) == 0)
             {
                 var spriteQuery = GetEntityQuery<SpriteComponent>();
+                var tagQuery = GetEntityQuery<TagComponent>();
 
                 for (var i = entities.Count - 1; i >= 0; i--)
                 {
@@ -130,7 +131,7 @@ namespace Content.Client.Verbs
 
                     if (!spriteQuery.TryGetComponent(entity, out var spriteComponent) ||
                         !spriteComponent.Visible ||
-                        _tagSystem.HasTag(entity, "HideContextMenu"))
+                        _tagSystem.HasTag(entity, "HideContextMenu", tagQuery))
                     {
                         entities.RemoveSwap(i);
                     }

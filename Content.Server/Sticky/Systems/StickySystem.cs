@@ -7,7 +7,6 @@ using Content.Shared.Interaction;
 using Content.Shared.Sticky;
 using Content.Shared.Sticky.Components;
 using Content.Shared.Verbs;
-using Content.Shared.Whitelist;
 using Robust.Shared.Containers;
 using Robust.Shared.Utility;
 
@@ -21,7 +20,6 @@ public sealed class StickySystem : EntitySystem
     [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
     [Dependency] private readonly SharedInteractionSystem _interactionSystem = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-    [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
 
     private const string StickerSlotId = "stickers_container";
 
@@ -69,8 +67,9 @@ public sealed class StickySystem : EntitySystem
             return false;
 
         // check whitelist and blacklist
-        if (_whitelistSystem.IsWhitelistFail(component.Whitelist, target) ||
-            _whitelistSystem.IsBlacklistPass(component.Blacklist, target))
+        if (component.Whitelist != null && !component.Whitelist.IsValid(target))
+            return false;
+        if (component.Blacklist != null && component.Blacklist.IsValid(target))
             return false;
 
         var attemptEv = new AttemptEntityStickEvent(target, user);

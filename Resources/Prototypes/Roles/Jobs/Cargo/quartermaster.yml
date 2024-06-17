@@ -19,6 +19,7 @@
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
   supervisors: job-supervisors-captain
+  whitelistRequired: true
   access:
   - Cargo
   - Salvage
@@ -41,8 +42,3 @@
     ears: ClothingHeadsetQM
     belt: BoxFolderClipboard
     pocket1: AppraisalTool
-  storage:
-    back:
-    - BoxSurvival
-    - Flash
-    - TelescopicBaton

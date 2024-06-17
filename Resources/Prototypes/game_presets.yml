@@ -31,7 +31,6 @@
   description: extended-description
   rules:
   - BasicStationEventScheduler
-  - GameRuleMeteorScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -65,7 +64,6 @@
   description: secret-description
   rules:
     - BasicStationEventScheduler
-    - GameRuleMeteorScheduler
 
 - type: gamePreset
   id: SecretGreenshift #For Admin Use: Runs Greenshift but shows "Secret" in lobby.
@@ -97,7 +95,6 @@
     - Traitor
     - SubGamemodesRule
     - BasicStationEventScheduler
-    - GameRuleMeteorScheduler
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -123,7 +120,6 @@
     - Nukeops
     - SubGamemodesRule
     - BasicStationEventScheduler
-    - GameRuleMeteorScheduler
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -139,7 +135,6 @@
     - Revolutionary
     - SubGamemodesRule
     - BasicStationEventScheduler
-    - GameRuleMeteorScheduler
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -156,5 +151,4 @@
   rules:
   - Zombie
   - BasicStationEventScheduler
-  - GameRuleMeteorScheduler
   - BasicRoundstartVariation

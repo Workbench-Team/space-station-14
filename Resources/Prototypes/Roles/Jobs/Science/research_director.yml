@@ -14,6 +14,7 @@
   icon: "JobIconResearchDirector"
   requireAdminNotify: true
   supervisors: job-supervisors-captain
+  whitelistRequired: true
   access:
   - Research
   - Command
@@ -33,8 +34,3 @@
   equipment:
     id: RnDPDA
     ears: ClothingHeadsetRD
-  storage:
-    back:
-    - BoxSurvival
-    - Flash
-    - TelescopicBaton

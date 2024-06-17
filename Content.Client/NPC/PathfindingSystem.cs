@@ -223,7 +223,7 @@ namespace Content.Client.NPC
 
                         foreach (var crumb in chunk.Value)
                         {
-                            var crumbMapPos = Vector2.Transform(_system.GetCoordinate(chunk.Key, crumb.Coordinates), worldMatrix);
+                            var crumbMapPos = worldMatrix.Transform(_system.GetCoordinate(chunk.Key, crumb.Coordinates));
                             var distance = (crumbMapPos - mouseWorldPos.Position).Length();
 
                             if (distance < nearestDistance)
@@ -292,7 +292,7 @@ namespace Content.Client.NPC
 
                 foreach (var poly in tile)
                 {
-                    if (poly.Box.Contains(Vector2.Transform(mouseWorldPos.Position, invGridMatrix)))
+                    if (poly.Box.Contains(invGridMatrix.Transform(mouseWorldPos.Position)))
                     {
                         nearest = poly;
                         break;
@@ -488,7 +488,7 @@ namespace Content.Client.NPC
                                         if (neighborMap.MapId != args.MapId)
                                             continue;
 
-                                        neighborPos = Vector2.Transform(neighborMap.Position, invMatrix);
+                                        neighborPos = invMatrix.Transform(neighborMap.Position);
                                     }
                                     else
                                     {
@@ -576,7 +576,7 @@ namespace Content.Client.NPC
                 }
             }
 
-            worldHandle.SetTransform(Matrix3x2.Identity);
+            worldHandle.SetTransform(Matrix3.Identity);
         }
     }
 }

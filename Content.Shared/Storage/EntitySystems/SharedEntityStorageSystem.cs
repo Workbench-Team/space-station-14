@@ -15,7 +15,6 @@ using Content.Shared.Storage.Components;
 using Content.Shared.Tools.Systems;
 using Content.Shared.Verbs;
 using Content.Shared.Wall;
-using Content.Shared.Whitelist;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
@@ -46,7 +45,6 @@ public abstract class SharedEntityStorageSystem : EntitySystem
     [Dependency] protected readonly SharedPopupSystem Popup = default!;
     [Dependency] protected readonly SharedTransformSystem TransformSystem = default!;
     [Dependency] private   readonly WeldableSystem _weldable = default!;
-    [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
 
     public const string ContainerName = "entity_storage";
 
@@ -434,7 +432,7 @@ public abstract class SharedEntityStorageSystem : EntitySystem
 
         var targetIsMob = HasComp<BodyComponent>(toInsert);
         var storageIsItem = HasComp<ItemComponent>(container);
-        var allowedToEat = component.Whitelist == null ? HasComp<ItemComponent>(toInsert) : _whitelistSystem.IsValid(component.Whitelist, toInsert);
+        var allowedToEat = component.Whitelist?.IsValid(toInsert) ?? HasComp<ItemComponent>(toInsert);
 
         // BEFORE REPLACING THIS WITH, I.E. A PROPERTY:
         // Make absolutely 100% sure you have worked out how to stop people ending up in backpacks.

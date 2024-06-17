@@ -2,7 +2,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server.Spawners.Components
 {
-    [RegisterComponent, EntityCategory("Spawner")]
+    [RegisterComponent]
     public sealed partial class RandomSpawnerComponent : ConditionalSpawnerComponent
     {
         [ViewVariables(VVAccess.ReadWrite)]

@@ -11,6 +11,6 @@ public sealed class RoleBriefingSystem : EntitySystem
 
     private void OnGetBriefing(EntityUid uid, RoleBriefingComponent comp, ref GetBriefingEvent args)
     {
-        args.Append(Loc.GetString(comp.Briefing));
+        args.Append(comp.Briefing);
     }
 }

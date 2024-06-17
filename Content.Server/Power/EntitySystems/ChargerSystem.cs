@@ -10,7 +10,6 @@ using Robust.Shared.Containers;
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Storage.Components;
 using Robust.Server.Containers;
-using Content.Shared.Whitelist;
 
 namespace Content.Server.Power.EntitySystems;
 
@@ -21,7 +20,6 @@ internal sealed class ChargerSystem : EntitySystem
     [Dependency] private readonly PowerCellSystem _powerCell = default!;
     [Dependency] private readonly BatterySystem _battery = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-    [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
 
     public override void Initialize()
     {
@@ -210,7 +208,7 @@ internal sealed class ChargerSystem : EntitySystem
         if (!receiverComponent.Powered)
             return;
 
-        if (_whitelistSystem.IsWhitelistFail(component.Whitelist, targetEntity))
+        if (component.Whitelist?.IsValid(targetEntity, EntityManager) == false)
             return;
 
         if (!SearchForBattery(targetEntity, out var batteryUid, out var heldBattery))

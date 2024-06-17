@@ -15,6 +15,8 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_courser.yml
         - type: StationJobs
+          overflowJobs:
+            - Passenger
           availableJobs:
             #service
             Captain: [ 1, 1 ]
@@ -63,4 +65,5 @@
             Boxer: [ 1, 1 ]
             Reporter: [ 1, 1 ]
             #centcom      
-            BlueShield: [ 1, 1 ]      
+            BlueShield: [ 1, 1 ]
+            CentComConsultant: [ 1, 1 ]            

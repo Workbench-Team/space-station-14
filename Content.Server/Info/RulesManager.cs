@@ -1,4 +1,4 @@
-using System.Net;
+﻿using System.Net;
 using Content.Server.Database;
 using Content.Shared.CCVar;
 using Content.Shared.Info;
@@ -7,7 +7,7 @@ using Robust.Shared.Network;
 
 namespace Content.Server.Info;
 
-public sealed class RulesManager
+public sealed class RulesManager : SharedRulesManager
 {
     [Dependency] private readonly IServerDbManager _dbManager = default!;
     [Dependency] private readonly INetManager _netManager = default!;
@@ -17,26 +17,27 @@ public sealed class RulesManager
 
     public void Initialize()
     {
-        _netManager.Connected += OnConnected;
-        _netManager.RegisterNetMessage<SendRulesInformationMessage>();
+        _netManager.RegisterNetMessage<ShouldShowRulesPopupMessage>();
+        _netManager.RegisterNetMessage<ShowRulesPopupMessage>();
         _netManager.RegisterNetMessage<RulesAcceptedMessage>(OnRulesAccepted);
+        _netManager.Connected += OnConnected;
     }
 
     private async void OnConnected(object? sender, NetChannelArgs e)
     {
-         var isLocalhost = IPAddress.IsLoopback(e.Channel.RemoteEndPoint.Address) &&
-                               _cfg.GetCVar(CCVars.RulesExemptLocal);
+        if (IPAddress.IsLoopback(e.Channel.RemoteEndPoint.Address) && _cfg.GetCVar(CCVars.RulesExemptLocal))
+        {
+            return;
+        }
 
         var lastRead = await _dbManager.GetLastReadRules(e.Channel.UserId);
-        var hasCooldown = lastRead > LastValidReadTime;
-
-        var showRulesMessage = new SendRulesInformationMessage
+        if (lastRead > LastValidReadTime)
         {
-            PopupTime = _cfg.GetCVar(CCVars.RulesWaitTime),
-            CoreRules = _cfg.GetCVar(CCVars.RulesFile),
-            ShouldShowRules = !isLocalhost && !hasCooldown
-        };
-        _netManager.ServerSendMessage(showRulesMessage, e.Channel);
+            return;
+        }
+
+        var message = new ShouldShowRulesPopupMessage();
+        _netManager.ServerSendMessage(message, e.Channel);
     }
 
     private async void OnRulesAccepted(RulesAcceptedMessage message)

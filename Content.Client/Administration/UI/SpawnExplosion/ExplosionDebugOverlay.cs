@@ -25,7 +25,7 @@ public sealed class ExplosionDebugOverlay : Overlay
 
     public override OverlaySpace Space => OverlaySpace.WorldSpace | OverlaySpace.ScreenSpace;
 
-    public Matrix3x2 SpaceMatrix;
+    public Matrix3 SpaceMatrix;
     public MapId Map;
 
     private readonly Font _font;
@@ -78,8 +78,7 @@ public sealed class ExplosionDebugOverlay : Overlay
         if (SpaceTiles == null)
             return;
 
-        Matrix3x2.Invert(SpaceMatrix, out var invSpace);
-        gridBounds = invSpace.TransformBox(args.WorldBounds);
+        gridBounds = Matrix3.Invert(SpaceMatrix).TransformBox(args.WorldBounds);
 
         DrawText(handle, gridBounds, SpaceMatrix, SpaceTiles, SpaceTileSize);
     }
@@ -87,7 +86,7 @@ public sealed class ExplosionDebugOverlay : Overlay
     private void DrawText(
         DrawingHandleScreen handle,
         Box2 gridBounds,
-        Matrix3x2 transform,
+        Matrix3 transform,
         Dictionary<int, List<Vector2i>> tileSets,
         ushort tileSize)
     {
@@ -104,7 +103,7 @@ public sealed class ExplosionDebugOverlay : Overlay
                 if (!gridBounds.Contains(centre))
                     continue;
 
-                var worldCenter = Vector2.Transform(centre, transform);
+                var worldCenter = transform.Transform(centre);
 
                 var screenCenter = _eyeManager.WorldToScreen(worldCenter);
 
@@ -120,7 +119,7 @@ public sealed class ExplosionDebugOverlay : Overlay
         if (tileSets.TryGetValue(0, out var set))
         {
             var epicenter = set.First();
-            var worldCenter = Vector2.Transform((epicenter + Vector2Helpers.Half) * tileSize, transform);
+            var worldCenter = transform.Transform((epicenter + Vector2Helpers.Half) * tileSize);
             var screenCenter = _eyeManager.WorldToScreen(worldCenter) + new Vector2(-24, -24);
             var text = $"{Intensity[0]:F2}\nΣ={TotalIntensity:F1}\nΔ={Slope:F1}";
             handle.DrawString(_font, screenCenter, text);
@@ -149,12 +148,11 @@ public sealed class ExplosionDebugOverlay : Overlay
         if (SpaceTiles == null)
             return;
 
-        Matrix3x2.Invert(SpaceMatrix, out var invSpace);
-        gridBounds = invSpace.TransformBox(args.WorldBounds).Enlarged(2);
+        gridBounds = Matrix3.Invert(SpaceMatrix).TransformBox(args.WorldBounds).Enlarged(2);
         handle.SetTransform(SpaceMatrix);
 
         DrawTiles(handle, gridBounds, SpaceTiles, SpaceTileSize);
-        handle.SetTransform(Matrix3x2.Identity);
+        handle.SetTransform(Matrix3.Identity);
     }
 
     private void DrawTiles(

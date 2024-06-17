@@ -3,7 +3,6 @@ using Content.Shared.Chemistry;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Hands;
-using Content.Shared.Item;
 using Content.Shared.Rounding;
 using Robust.Client.GameObjects;
 using Robust.Shared.Prototypes;
@@ -151,9 +150,6 @@ public sealed class SolutionContainerVisualsSystem : VisualizerSystem<SolutionCo
         if (!TryComp(uid, out AppearanceComponent? appearance))
             return;
 
-        if (!TryComp<ItemComponent>(uid, out var item))
-            return;
-
         if (!AppearanceSystem.TryGetData<float>(uid, SolutionContainerVisuals.FillFraction, out var fraction, appearance))
             return;
 
@@ -163,8 +159,7 @@ public sealed class SolutionContainerVisualsSystem : VisualizerSystem<SolutionCo
         {
             var layer = new PrototypeLayerData();
 
-            var heldPrefix = item.HeldPrefix == null ? "inhand-" : $"{item.HeldPrefix}-inhand-";
-            var key = heldPrefix + args.Location.ToString().ToLowerInvariant() + component.InHandsFillBaseName + closestFillSprite;
+            var key = "inhand-" + args.Location.ToString().ToLowerInvariant() + component.InHandsFillBaseName + closestFillSprite;
 
             layer.State = key;
 

@@ -4,6 +4,7 @@
   id: BaseVariationPass
   parent: BaseGameRule
   abstract: true
+  noSpawn: true
   components:
   - type: StationVariationPassRule
 
@@ -12,12 +13,14 @@
 - type: entity
   id: BasicPoweredLightVariationPass
   parent: BaseVariationPass
+  noSpawn: true
   components:
   - type: PoweredLightVariationPass
 
 - type: entity
   id: SolidWallRustingVariationPass
   parent: BaseVariationPass
+  noSpawn: true
   components:
   - type: WallReplaceVariationPass
   - type: EntityReplaceVariationPass
@@ -29,6 +32,7 @@
 - type: entity
   id: ReinforcedWallRustingVariationPass
   parent: BaseVariationPass
+  noSpawn: true
   components:
   - type: ReinforcedWallReplaceVariationPass
   - type: EntityReplaceVariationPass
@@ -40,6 +44,7 @@
 - type: entity
   id: BasicTrashVariationPass
   parent: BaseVariationPass
+  noSpawn: true
   components:
   - type: EntitySpawnVariationPass
     tilesPerEntityAverage: 35
@@ -100,6 +105,7 @@
 - type: entity
   id: BasicPuddleMessVariationPass
   parent: BaseVariationPass
+  noSpawn: true
   components:
   - type: PuddleMessVariationPass
     randomPuddleSolutionFill: RandomFillTrashPuddle
@@ -107,6 +113,7 @@
 - type: entity
   id: BloodbathPuddleMessVariationPass
   parent: BaseVariationPass
+  noSpawn: true
   components:
   - type: PuddleMessVariationPass
     tilesPerSpillAverage: 150
@@ -116,6 +123,7 @@
 - type: entity
   id: CutWireVariationPass
   parent: BaseVariationPass
+  noSpawn: true
   components:
   - type: CutWireVariationPass
     wireCutChance: 0.01

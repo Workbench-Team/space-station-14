@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   id: BaseShellShotgun
   name: shell (.50)
   parent: BaseCartridge
@@ -116,7 +116,7 @@
   components:
   - type: Sprite
     layers:
-      - state: tranquilizer
+      - state: practice
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
     proto: PelletShotgunTranquilizer
@@ -131,7 +131,7 @@
   - type: SolutionTransfer
     maxTransferAmount: 7
   - type: SpentAmmoVisuals
-    state: "tranquilizer"
+    state: "practice"
     
 - type: entity
   id: ShellShotgunImprovised

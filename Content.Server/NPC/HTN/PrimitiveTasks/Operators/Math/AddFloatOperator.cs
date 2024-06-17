@@ -4,14 +4,13 @@ using System.Threading.Tasks;
 namespace Content.Server.NPC.HTN.PrimitiveTasks.Operators.Math;
 
 /// <summary>
-/// Added <see cref="AddFloatOperator.Amount"/> to float value for the
-/// specified <see cref="AddFloatOperator.TargetKey"/> in the <see cref="NPCBlackboard"/>.
+/// Gets the key, and adds the value to that float
 /// </summary>
 public sealed partial class AddFloatOperator : HTNOperator
 {
     [Dependency] private readonly IEntityManager _entManager = default!;
 
-    [DataField(required: true), ViewVariables]
+    [DataField(required: true)]
     public string TargetKey = string.Empty;
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]

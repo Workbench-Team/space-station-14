@@ -4,12 +4,11 @@ using System.Threading.Tasks;
 namespace Content.Server.NPC.HTN.PrimitiveTasks.Operators.Math;
 
 /// <summary>
-/// Set <see cref="SetFloatOperator.Amount"/> to float value for the
-/// specified <see cref="SetFloatOperator.TargetKey"/> in the <see cref="NPCBlackboard"/>.
+/// Just sets a blackboard key to a float
 /// </summary>
 public sealed partial class SetFloatOperator : HTNOperator
 {
-    [DataField(required: true), ViewVariables]
+    [DataField(required: true)]
     public string TargetKey = string.Empty;
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]

@@ -42,9 +42,6 @@
     whitelist:
       tags:
       - Bread
-    blacklist:
-      tags:
-      - Slice
 
 - type: cargoBounty
   id: BountyCarrot
@@ -536,9 +533,6 @@
     whitelist:
       tags:
       - Meat
-    blacklist:
-      components:
-      - SliceableFood
 
 - type: cargoBounty
   id: BountyFruit

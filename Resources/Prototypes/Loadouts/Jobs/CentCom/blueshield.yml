@@ -63,7 +63,7 @@
 - type: startingGear
   id: BlueShieldBackpack
   equipment:
-    back: ClothingBackpackBlueShield
+    back: ClothingBackpackBlueShieldFilled
 
 - type: loadout
   id: BlueShieldSatchel
@@ -72,7 +72,7 @@
 - type: startingGear
   id: BlueShieldSatchel
   equipment:
-    back: ClothingBackpackSatchelBlueShield
+    back: ClothingBackpackSatchelBlueShieldFilled
 
 - type: loadout
   id: BlueShieldDuffel
@@ -81,7 +81,7 @@
 - type: startingGear
   id: BlueShieldDuffel
   equipment:
-    back: ClothingBackpackDuffelBlueShield
+    back: ClothingBackpackDuffelBlueShieldFilled
 
 # Outer clothing
 - type: loadout

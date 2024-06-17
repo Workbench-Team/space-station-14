@@ -14,3 +14,5 @@ ent-WeaponcaseBlueShield = weapon briefcase
 ent-MysteryWeaponBox = { ent-BaseStorageItem }
     .desc = Contains one of two weapon packs and a guaranteed spacesuit.
     .suffix = BS, Random
+ent-BriefcaseSyndie = brown briefcase
+    .desc = A handy briefcase.
