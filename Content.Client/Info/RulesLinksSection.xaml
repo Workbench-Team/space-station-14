@@ -12,8 +12,5 @@
         <Button Name="LawsButton"
                 Text="{Loc 'ui-rules-laws'}"
                 Access="Public"/>
-        <Button Name="ToWikiSend"
-                Text ="{Loc 'ui-rules-wikirules'}"
-                Access="Public"/>
     </BoxContainer>
 </BoxContainer>

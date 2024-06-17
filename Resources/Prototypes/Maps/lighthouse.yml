@@ -39,7 +39,6 @@
             MedicalDoctor: [ 3, 4 ]
             Paramedic: [ 1, 1 ]
             MedicalIntern: [ 3, 3 ]
-            Psychologist: [ 0, 0 ]
             #science
             ResearchDirector: [ 1, 1 ]     
             Scientist: [ 3, 4 ]
@@ -66,6 +65,5 @@
             Reporter: [ 1, 2 ]
             #Centcom      
             BlueShield: [ 1, 1 ]
-            CentComConsultant: [ 1, 1 ]
 
             

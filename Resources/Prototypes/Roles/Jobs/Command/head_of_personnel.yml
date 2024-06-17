@@ -22,7 +22,6 @@
   requireAdminNotify: true
   supervisors: job-supervisors-captain
   canBeAntag: false
-  whitelistRequired: true
   access:
   - Command
   - HeadOfPersonnel
@@ -66,3 +65,8 @@
     gloves: ClothingHandsGlovesHop
     ears: ClothingHeadsetAltCommand
     belt: BoxFolderClipboard
+  storage:
+    back:
+    - BoxSurvival
+    - Flash
+    - TelescopicBaton

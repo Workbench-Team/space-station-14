@@ -1,0 +1,9 @@
+advertisement-medibot-1 = Что это за медблок? Все падают как мертвые мухи.
+advertisement-medibot-2 = Я так и знал, мне следовало стать пластическим хирургом.
+advertisement-medibot-3 = Всегда есть какой-то подвох, и я лучший из всех, кто здесь есть.
+advertisement-medibot-4 = Яблоко в день лелеет мне лень.
+advertisement-medibot-5 = Я другой!
+advertisement-medibot-6 = Пошёл ты.
+advertisement-medibot-7 = Почему мы все еще здесь? Только для того, чтобы страдать?
+advertisement-medibot-8 = Я... я никогда раньше не терял пациентов. Я имею в виду, не сегодня.
+advertisement-medibot-9 = Лексорин введён.

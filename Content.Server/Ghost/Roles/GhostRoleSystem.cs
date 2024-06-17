@@ -1,7 +1,6 @@
 using System.Linq;
 using Content.Server.Administration.Logs;
 using Content.Server.EUI;
-using Content.Server.Ghost.Components;
 using Content.Server.Ghost.Roles.Components;
 using Content.Server.Ghost.Roles.Events;
 using Content.Server.Ghost.Roles.Raffles;
@@ -11,7 +10,6 @@ using Content.Server.Mind.Commands;
 using Content.Shared.Administration;
 using Content.Shared.Database;
 using Content.Shared.Follower;
-using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Ghost;
 using Content.Shared.Ghost.Roles;
@@ -33,7 +31,6 @@ using Robust.Shared.Utility;
 using Content.Server.Popups;
 using Content.Shared.Verbs;
 using Robust.Shared.Collections;
-using Robust.Shared.Configuration;
 
 namespace Content.Server.Ghost.Roles
 {
@@ -51,7 +48,6 @@ namespace Content.Server.Ghost.Roles
         [Dependency] private readonly IGameTiming _timing = default!;
         [Dependency] private readonly PopupSystem _popupSystem = default!;
         [Dependency] private readonly IPrototypeManager _prototype = default!;
-        [Dependency] private readonly IConfigurationManager _cfg = default!;
 
         private uint _nextRoleIdentifier;
         private bool _needsUpdateGhostRoleCount = true;
@@ -474,11 +470,6 @@ namespace Content.Server.Ghost.Roles
             if (!_ghostRoles.TryGetValue(identifier, out var role))
                 return false;
 
-            var component = role.Comp;
-
-            if (component.WhitelistRequired && _cfg.GetCVar(CCVars.WhitelistEnabled) && !player.ContentData()!.Whitelisted)
-                return false;
-
             var ev = new TakeGhostRoleEvent(player);
             RaiseLocalEvent(role, ref ev);
 
@@ -575,8 +566,7 @@ namespace Content.Server.Ghost.Roles
                     Requirements = role.Requirements,
                     Kind = kind,
                     RafflePlayerCount = rafflePlayerCount,
-                    RaffleEndTime = raffleEndTime,
-                    WhitelistRequired = role.WhitelistRequired
+                    RaffleEndTime = raffleEndTime
                 });
             }
 

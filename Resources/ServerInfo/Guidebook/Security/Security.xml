@@ -1,17 +1,29 @@
-﻿<Document>
+<Document>
   # Служба безопасности
-  Обеспечение безопасности станции и экипажа является первостепенной задачей службы безопасности. Будь то Агенты Синдиката, Ядерные Оперативники, Зомби или просто буйный персонал. Служба безопасности всегда наготове, чтобы сохранить порядок и сдержать толпу.
+  Обеспечение безопасности станции и экипажа является первостепенной задачей [color=#cb0000]службы безопасности[/color]. Они готовы к любой ситуации, а [color=#cb0000]Служба безопасности[/color] следит за порядком и контролем толпы.
+
+  Они сталкиваются с [textlink="Агентами Синдиката" link="Предателями"], [textlink="Ядерными оперативниками" link="NuclearOperatives"], [textlink="Зомби" link="Zombies"] и неуправляемым персоналом.
+
+  ## Персонал
+  Сотрудники [color=#cb0000]службы безопасности[/color] состоят из кадетов, офицеров и детектива. [color=#cb0000]Служба безопасности[/color] управляется Смотрителем и Главой службы безопасности.
+
+  <Box>
+    <GuideEntityEmbed Entity="ToyFigurineSecurity" Caption="Secoff"/>
+    <GuideEntityEmbed Entity="ToyFigurineDetective" Caption="Detective"/>
+    <GuideEntityEmbed Entity="ToyFigurineWarden" Caption="Warden"/>
+    <GuideEntityEmbed Entity="ToyFigurineHeadOfSecurity" Caption="HoS"/>
+  </Box>
 
   ## Снаряжение
   Для начала у нас есть нелетальная экипировка, способная заставить любого следовать правилам. И [color=#f0a105]дубинка-шокер[/color], и [color=#00ffff]дизейблер[/color] способны ограничить движение злоумышленника, в то время как наручники могут быть применены для того, чтобы лишить преступника свободы движения и доступа к своим рукам.
   <Box>
     <GuideEntityEmbed Entity="Stunbaton"/>
     <GuideEntityEmbed Entity="Handcuffs"/>
-    <GuideEntityEmbed Entity="WeaponDisabler"/>
+   <GuideEntityEmbed Entity="WeaponDisabler"/>
   </Box>
 
   ## Вспышки
-  [color=#00fa9a]Вспышки[/color] являются эффективным средством для разгона толпы и задержания особо прытких целей. Они обладают большой площадью поражения и ослепляют всех, кто не имеет защиту глаз.
+  [color=#a4885c]Вспышки[/color] являются эффективным средством для разгона толпы и задержания особо прытких целей. Они обладают большой площадью поражения и ослепляют всех, кто не имеет защиту глаз.
   Стоит отметить, что вспышки можно использовать как по большой площади (горячая клавиша [color=yellow]Z[/color]), так и если атаковать ими кого-либо в [color=red]боевом режиме[/color]. Важно отметить, что локализованные вспышки длятся в [color=yellow]2,5[/color] раза дольше, чем вспышки по большой площади.
   Служба безопасности и [color=#a4885c]некоторые[/color] другие сотрудники имеют средства защиты глаз от [color=#f0a105]светошумовых гранат[/color] и [color=#00fa9a]вспышек[/color].
   <Box>
@@ -20,11 +32,11 @@
     <GuideEntityEmbed Entity="GrenadeFlashBang"/>
   </Box>
   ## Летальное
-  Если ситуация вынудит, служба безопасности имеет доступ к лазерным карабинам, дробовикам, пистолетам и автоматическим винтовкам, способным вести огонь на поражение против любого, кто выступит против станции.
+  Если ситуация вынудит, [color=#cb0000]служба безопасности[/color] имеет доступ к лазерным карабинам, дробовикам, пистолетам и автоматическим винтовкам, способным вести огонь на поражение против любого, кто выступит против станции.
   <Box>
-  <GuideEntityEmbed Entity="WeaponLaserCarbine"/>
-  <GuideEntityEmbed Entity="WeaponShotgunKammerer"/>
-  <GuideEntityEmbed Entity="WeaponPistolMk58"/>
-  <GuideEntityEmbed Entity="WeaponRifleLecter"/>
+    <GuideEntityEmbed Entity="WeaponLaserCarbine"/>
+    <GuideEntityEmbed Entity="WeaponShotgunKammerer"/>
+    <GuideEntityEmbed Entity="WeaponPistolMk58"/>
+    <GuideEntityEmbed Entity="WeaponRifleLecter"/>
   </Box>
 </Document>

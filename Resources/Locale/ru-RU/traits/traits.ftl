@@ -29,7 +29,7 @@ trait-snoring-name = Храп
 trait-snoring-desc = Вы храпите во время сна.
 trait-liar-name = Патологический лжец
 trait-liar-desc = Вы с трудом заставляете себя говорить правду. Иногда вы всё равно лжёте.
-
-## Starshine
-trait-colorblindness-name = Дальтоник
-trait-colorblindness-desc = Вы не видите определённых цветов
+trait-cowboy-name = Ковбойский акцент
+trait-cowboy-desc = Вы говорите с явным ковбойским акцентом!
+trait-italian-name = Итальянский акцент
+trait-italian-desc = Мамма миа! Кажется, вы жили в космической Италии!

@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Text.RegularExpressions; // Starshine-guidebook-url-start
 using JetBrains.Annotations;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
@@ -11,6 +12,8 @@ namespace Content.Client.Guidebook.RichText;
 [UsedImplicitly]
 public sealed class TextLinkTag : IMarkupTag
 {
+    [Dependency] private readonly IUriOpener _uri = default!; // Starshine-guidebook-url
+
     public string Name => "textlink";
 
     public Control? Control;
@@ -58,10 +61,28 @@ public sealed class TextLinkTag : IMarkupTag
             if (current is not ILinkClickHandler handler)
                 continue;
             handler.HandleClick(link);
+            TryOpenUrl(link); // Starshine-guidebook-url
             return;
         }
         Logger.Warning($"Warning! No valid ILinkClickHandler found.");
     }
+
+    #region StarshineUrl
+    private bool IsValidUrl(string url) // Starshine-guidebook-url-start
+    {
+        const string pattern = @"^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$";
+        var rgx = new Regex(pattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        return rgx.IsMatch(url);
+    }
+
+    public bool TryOpenUrl(string url)
+    {
+        if (!IsValidUrl(url))
+            return false;
+        _uri.OpenUri(url);
+        return true;
+    } // Starshine-guidebook-url-end
+    #endregion
 }
 
 public interface ILinkClickHandler

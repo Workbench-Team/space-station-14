@@ -55,7 +55,6 @@
     name: ghost-role-information-MechMaulerReal-name
     description: ghost-role-information-MechMaulerReal-description
     rules: ghost-role-information-MechMaulerReal-rules
-    whitelistRequired: true
 
 - type: body
   id: MechaSilicon
@@ -316,7 +315,6 @@
     name: ghost-role-information-MechMarauder-name
     description: ghost-role-information-MechMarauder-description
     rules: ghost-role-information-MechMarauder-rules
-    whitelistRequired: true
   - type: ActiveRadio
     channels:
     - CentCom
@@ -372,7 +370,6 @@
     name: ghost-role-information-MechDarkGygax-name
     description: ghost-role-information-MechDarkGygax-description
     rules: ghost-role-information-MechDarkGygax-rules
-    whitelistRequired: true
   - type: InnateTool
     tools:
       - id: WeaponLightMachineGunL69000
@@ -456,7 +453,6 @@
     name: ghost-role-information-MechSeraph-name
     description: ghost-role-information-MechSeraph-description
     rules: ghost-role-information-MechSeraph-rules
-    whitelistRequired: true
   - type: MobState
     allowedStates:
     - Alive
@@ -552,7 +548,6 @@
     name: ghost-role-information-MechDurand-name
     description: ghost-role-information-MechDurand-description
     rules: ghost-role-information-MechDurand-rules
-    whitelistRequired: true
   - type: ActiveRadio
     channels:
     - Common
@@ -622,7 +617,6 @@
     name: ghost-role-information-MechGygax-name
     description: ghost-role-information-MechGygax-description
     rules: ghost-role-information-MechGygax-rules
-    whitelistRequired: true
   - type: ActiveRadio
     channels:
     - CentCom
@@ -663,7 +657,6 @@
     name: ghost-role-information-MechDarkHonker-name
     description: ghost-role-information-MechDarkHonker-description
     rules: ghost-role-information-MechDarkHonker-rules
-    whitelistRequired: true
   - type: InnateTool
     tools:
       - id: WeaponBikeHorn9000
@@ -729,7 +722,6 @@
     name: ghost-role-information-MechOdysseus-name
     description: ghost-role-information-MechOdysseus-description
     rules: ghost-role-information-MechOdysseus-rules
-    whitelistRequired: true
   - type: PointLight
     color: cyan
   - type: Body
@@ -861,7 +853,6 @@
     name: ghost-role-information-MechHauler-name
     description: ghost-role-information-MechHauler-description
     rules: ghost-role-information-MechHauler-rules
-    whitelistRequired: true
   - type: PointLight
     enabled: false
     radius: 10
@@ -947,7 +938,6 @@
     name: ghost-role-information-MechClarke-name
     description: ghost-role-information-MechClarke-description
     rules: ghost-role-information-MechClarke-rules
-    whitelistRequired: true
   - type: InnateTool
     tools:
       - id: JawsOfLifeHarm9000

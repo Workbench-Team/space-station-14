@@ -374,7 +374,7 @@
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
-      collection: DeathGasp
+      collection: MothDeathGasp
     Buzzing:
       path: /Audio/Voice/Moth/moth_scream.ogg
 

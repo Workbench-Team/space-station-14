@@ -1,3 +1,0 @@
-ent-Tippy = { "" }
-    .desc = { "" }
-    .suffix = { "" }

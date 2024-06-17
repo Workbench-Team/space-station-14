@@ -36,3 +36,9 @@
     belt: ClothingBeltMedicalFilled
     pocket1: WeaponPistolMk58Nonlethal
     pocket2: TelescopicBaton
+  storage:
+    back:
+    - BoxSurvivalBrigmedic
+    - Flash
+    - MagazinePistolRubber
+    - Cautery

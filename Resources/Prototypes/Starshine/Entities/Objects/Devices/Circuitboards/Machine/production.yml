@@ -1,0 +1,17 @@
+﻿- type: entity
+  id: WeaponTechFabCircuitboard
+  parent: BaseMachineCircuitboard
+  name: weapon techfab machine board
+  description: A machine printed circuit board for a weapon's techfab
+  components:
+    - type: Sprite
+      state: security
+    - type: MachineBoard
+      prototype: WeaponTechFab
+      stackRequirements:
+        MatterBin: 3
+        Manipulator: 3
+      tagRequirements:
+        GlassBeaker:
+          amount: 2
+          defaultPrototype: Beaker
