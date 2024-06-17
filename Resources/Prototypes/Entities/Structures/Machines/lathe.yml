@@ -201,13 +201,14 @@
       - BoxLethalshot
       - BoxShotgunFlare
       - BoxShotgunSlug
+      - CombatKnife
       - MagazineBoxLightRifle
       - MagazineBoxMagnum
       - MagazineBoxPistol
       - MagazineBoxRifle
       - MagazineLightRifle
       - MagazineLightRifleEmpty
-      - MagazinePistol 
+      - MagazinePistol
       - MagazinePistolEmpty
       - MagazinePistolSubMachineGun
       - MagazinePistolSubMachineGunEmpty
@@ -310,6 +311,7 @@
       - WeaponGauntletGorilla
       - SynthesizerInstrument
       - ClothingShoesBootsMagSci
+      - ClothingShoesBootsMoon
       - ClothingShoesBootsSpeed
       - NodeScanner
       - HolofanProjector
@@ -341,6 +343,7 @@
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium
+      - BoxShellTranquilizer
       - ExplosivePayload
       - GrenadeBlast
       - GrenadeEMP
@@ -368,7 +371,6 @@
       - PowerCageHigh
       - PowerCageMedium
       - PowerCageSmall
-      - ShellTranquilizer
       - SpeedLoaderMagnumIncendiary
       - SpeedLoaderMagnumUranium
       - TelescopicShield
@@ -516,6 +518,7 @@
         - Sheet
         - RawMaterial
         - Ingot
+  - type: RequireProjectileTarget
 
 - type: entity
   id: CircuitImprinterHyperConvection
@@ -756,9 +759,10 @@
     staticRecipes:
       - BoxLethalshot
       - BoxShotgunFlare
-      - BoxShotgunPractice 
+      - BoxShotgunPractice
       - BoxShotgunSlug
       - ClothingEyesHudSecurity
+      - CombatKnife
       - Flash
       - ForensicPad
       - Handcuffs
@@ -772,7 +776,7 @@
       - MagazineBoxRiflePractice
       - MagazineLightRifle
       - MagazineLightRifleEmpty
-      - MagazinePistol 
+      - MagazinePistol
       - MagazinePistolEmpty
       - MagazinePistolSubMachineGun
       - MagazinePistolSubMachineGunEmpty
@@ -805,6 +809,7 @@
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium
+      - BoxShellTranquilizer
       - ExplosivePayload
       - FlashPayload
       - GrenadeBlast
@@ -838,7 +843,6 @@
       - PowerCageHigh
       - PowerCageMedium
       - PowerCageSmall
-      - ShellTranquilizer
       - ShuttleGunDusterCircuitboard
       - ShuttleGunFriendshipCircuitboard
       - ShuttleGunPerforatorCircuitboard
@@ -966,13 +970,20 @@
       staticRecipes:
         - BoxShotgunFlare
       dynamicRecipes:
+        - BoxShotgunSlug
+        - BoxShellTranquilizer
+        - MagazineBoxLightRifle
+        - MagazineBoxPistol
+        - MagazineBoxRifle
+        - MagazineLightRifle
+        - MagazineLightRifleEmpty
+        - MagazinePistolEmpty
         # Weapons kinetic
+## Starshine
         - MagazinePistol
-        - MagazinePistolEmpty 
         - MagazinePistolRubber
         - MagazinePistolHighCapacity
         - MagazinePistolHighCapacityRubber
-        - ShellTranquilizer
         - MagazineVectorPistolSmall
         - MagazineVectorPistolSmallRubber
         - MagazineVectorPistol
@@ -980,42 +991,29 @@
         - MagazinePistolSubMachineGun
         - MagazinePistolSubMachineGunRubber
         - MagazinePistolSubMachineGunTopMounted
-        - MagazineVectorRifle    
-        - MagazineVectorRifleRubber            
+        - MagazineVectorRifle
+        - MagazineVectorRifleRubber
         - MagazineRifle
         - MagazineRifleRubber
         - MagazineRifleEmpty
         - MagazineRifleExt
         - MagazineRifleExtRubber
-        - MagazineLightRifle
         - MagazineLightRifleRubber
-        - MagazineLightRifleEmpty
         - MagazineShotgun
         - MagazineShotgunEmpty
         - MagazineShotgunSlug
-        - MagazineUniversalShort
-        - MagazineUniversal
         - SpeedLoaderMagnum
         - SpeedLoaderMagnumEmpty
-        - SpeedLoaderUniversal
         - MagazineShotgunSaiga
-        - MagazineBoxPistol
         - MagazineBoxMagnum
         - MagazineBoxPistolIncendiary
         - MagazineBoxPistolRubber
-        - MagazineBoxRifle
-        - MagazineBoxLightRifle
         - MagazineBoxRifleBig
-        - MagazineBoxUniversalVPS
         - MagazineBoxRifleIncendiary
         - MagazineBoxRifleRubber
-        - MagazineBoxUniversalPT1
-        - MagazineBoxUniversalVPS
         - BoxLethalshot
         - BoxShotgunIncendiary
         - BoxBeanbag        
-        - BoxShotgunSlug
-        - BoxShellTranquilizer
     - type: MaterialStorage
       whitelist:
         tags:

@@ -1,0 +1,380 @@
+﻿<Document>
+  # Корпоративный Закон: Справочник статей
+  Коды преступлений организованы по коду категории (_XX), который представляет собой набор не складываемых вместе
+  преступлений в строке с префиксом тяжести (X__). 
+
+  ## Таблица преступлений
+  <Table Columns="6">
+    <ColorBox>
+      <Box>
+        Код
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#0F4F27">
+      <Box>
+        1XX — Легкие
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#555500">
+      <Box>
+        2XX — Средние
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#881B00">
+      <Box>
+        3XX — Тяжкие
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#66000E">
+      <Box>
+        4XX — Особо тяжкие
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#330033">
+      <Box>
+        5XX — Критические
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        00
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#0F4F27">
+      <Box Margin="2">
+        Оскорбление должностного лица
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#555500">
+      <Box Margin="2">
+        Сопротивление органам власти
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#881B00">
+      <Box Margin="2">
+        Нападение на должностное лицо
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#66000E">
+      <Box Margin="2">
+        Восстание
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#330033">
+      <Box Margin="2">
+        Убийство должностного лица
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        01
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#0F4F27">
+      <Box Margin="2">
+        Харассмент
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#555500">
+      <Box Margin="2">
+        Нападение
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#881B00">
+      <Box Margin="2">
+        Нанесение увечий
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#66000E">
+      <Box Margin="2">
+        Убийство
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#330033">
+      <Box Margin="2">
+        Уничтожение тела
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        02
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#0F4F27">
+      <Box Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#555500">
+      <Box Margin="2">
+        Оборот наркотиков
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#881B00">
+      <Box Margin="2">
+        Оборот контрабанды
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#66000E">
+      <Box Margin="2">
+        Эксплуатация опасных веществ
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#330033">
+      <Box Margin="2">
+        Владение вражеским снаряжением
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        03
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#0F4F27">
+      <Box Margin="2">
+        Злоупотребление экипировкой
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#555500">
+      <Box Margin="2">
+        Владение боевым приспоспособлением
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#881B00">
+      <Box Margin="2">
+        Владение боевым оружием 	
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#66000E">
+      <Box Margin="2">
+        Распространение оружия
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#330033">
+      <Box Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        04
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#0F4F27">
+      <Box Margin="2">
+        Хулиганство
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#555500">
+      <Box Margin="2">
+        Порча имущества
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#881B00">
+      <Box Margin="2">
+        Мошенничество
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#66000E">
+      <Box Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#330033">
+      <Box Margin="2">
+        Теракт
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        05
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#0F4F27">
+      <Box Margin="2">
+        Мелкая кража
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#555500">
+      <Box Margin="2">
+        Грабеж
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#881B00">
+      <Box Margin="2">
+        Кража
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#66000E">
+      <Box Margin="2">
+        Разбой
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#330033">
+      <Box Margin="2">
+        Особо крупное хищение
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        06
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#0F4F27">
+      <Box Margin="2">
+        Проникновение
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#555500">
+      <Box Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#881B00">
+      <Box Margin="2">
+        Проникновение в стратегическую точку
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#66000E">
+      <Box Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#330033">
+      <Box Margin="2">
+        Проникновение в защищённую стратегическую точку
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        07
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#0F4F27">
+      <Box Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#555500">
+      <Box Margin="2">
+        Халатность
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#881B00">
+      <Box Margin="2">
+        Саботаж
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#66000E">
+      <Box Margin="2">
+        Грубая халатность
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#330033">
+      <Box Margin="2">
+        Особо крупный саботаж
+      </Box>
+    </ColorBox>
+  </Table>
+
+  ## Наказания
+  [bold]Степени тяжести нарушения и соответствующие наказания.[/bold]
+  <Table Columns="3">
+    <ColorBox>
+      <Box>
+        Степень тяжести нарушения 
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Правовое наказание
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Административное наказание
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        I (легкое)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        Заключение от 1 до 5 минут или предупреждение.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        —
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        II (среднее)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        Заключение от 5 до 10 минут.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        Понижение в должности.
+        На усмотрение главы отдела, к которому относится преступник. 
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        III (тяжкое)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        Заключение от 5 до 15 минут.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        Понижение в должности или увольнение.
+        На усмотрение главы отдела, к которому относится преступник.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        IV (сверхтяжкое)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        Пожизненное заключение.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        Увольнение с должности, всегда.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        V (критическое)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        Пожизненное заключение.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="2">
+        Увольнение с должности, всегда.
+      </Box>
+    </ColorBox>
+  </Table>
+  
+  ## Правила сложения статей
+  - Преступники могут совершать серьезные преступления, которые могут содержать несколько статей разных категорий. В этом случае срок заключения различных статей суммируется.
+  То есть вы можете обвинить кого-то как по статье “106 Проникновение” так и по статье “105 Мелкая кража”. Время заключения должно быть сложено вместе. При этом окончательное наказание не может превышать более чем в полтора раза максимальный срок или размер наказания, предусмотренного за наиболее тяжкое из совершенных преступлений. 
+  - Преступления одной категории (_хх) не могут быть сложены вместе (Пример: Нельзя сложить статьи “[color=#881B00]301[/color] Нанесение увечий” и “[color=#66000E]401[/color] Убийство”). Используйте только самое строгое наказание.
+  В случае нескольких преступлений одной категории в одном и том же деле, например, если человек нанес увечья и убил одну и ту же жертву, следует применять только обвинение за самое тяжкое преступление. 
+  - Преступления с заметками, которые говорят, что они не складываются с другим преступлением, очевидно, не могут быть сложены с этим преступлением.
+  
+  Более подробно о каждой статье и модификаторах можете ознакомиться на нашей [textlink="википедии" link="https://wiki.ss14.arumoon.ru/view/Корпоративный_Закон_#Справочник_статей"].
+  
+</Document>

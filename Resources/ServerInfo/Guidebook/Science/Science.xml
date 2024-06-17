@@ -1,52 +1,54 @@
 <Document>
 # Наука
+[color=#c96dbf]Science[/color], often called Research and Development, is a job made up of both generating research points to unlock new technologies as well as using said technologies to produce new items at lathes to help out the station.
 
-Научный, часто называемый РнД (Research and Development), отдел - это работа, состоящая как из добычи научных очков для изучения новых технологий, так и из создания предметов на различных станках для помощи станции.
+## Персонал
+Персонал [color=#c96dbf]Научного отдела[/color] состоит из научных ассистентов и учёных. [color=#c96dbf]Научным отделом[/color] заведует Научный руководитель.
+
+  <Box>
+   <GuideEntityEmbed Entity="ToyFigurineScientist" Caption="Учёный"/>
+   <GuideEntityEmbed Entity="ToyFigurineResearchDirector" Caption="НР"/>
+  </Box>
 
 ## Технологии
-<Box>
-<GuideEntityEmbed Entity="ComputerResearchAndDevelopment"/>
-<GuideEntityEmbed Entity="ResearchAndDevelopmentServer"/>
-</Box>
-Одна из самых важных вещей в Вашем отделе - сервер исследований РнД, который хранит изученные технологии, и компьютер РнД, который позволяет тебе исследовать технологии.
+  <Box>
+    <GuideEntityEmbed Entity="ComputerResearchAndDevelopment"/>
+    <GuideEntityEmbed Entity="ResearchAndDevelopmentServer"/>
+  </Box>
+Одна из самых важных вещей в вашем отделе - сервер исследований РнД, который хранит изученные технологии, и компьютер РнД, который позволяет тебе исследовать [color=#a4885c]технологии[/color].
 
 Каждая технология стоит [color=#a4885c]Очки исследований[/color] и открывает новые рецепты на станках. Некоторые технологии будут иметь особенные требования, которые Вам нужно выполнить, перед тем как исследовать их.
 
-Информацию о различных технологиях можно посмотреть [textlink="на странице справочника технологий" link="Технологии"].
+[textlink="Нажмите здесь, чтобы посмотреть список технологий." link="Technologies"].
 
 ## Дисциплины
 Технологии распределены по 5 различным дисциплинам:
-<Box>
-<GuideEntityEmbed Entity="Wrench" Caption="Промышленная"/>
-<GuideEntityEmbed Entity="Syringe" Caption="Биохимическая"/>
-</Box>
-<Box>
-<GuideEntityEmbed Entity="WeaponTetherGun" Caption="Экспериментальная"/>
-<GuideEntityEmbed Entity="ComputerTelevision" Caption="Сервисная"/>
-<GuideEntityEmbed Entity="WeaponXrayCannon" Caption="Оружейная"/>
-</Box>
+  <Box>
+    <GuideEntityEmbed Entity="Wrench" Caption="Industrial"/>
+    <GuideEntityEmbed Entity="WeaponTetherGun" Caption="Experimental"/>
+    <GuideEntityEmbed Entity="ComputerTelevision" Caption="Civil Services"/>
+    <GuideEntityEmbed Entity="WeaponXrayCannon" Caption="Arsenal"/>
+  </Box>
 
 <GuideEntityEmbed Entity="ComputerResearchAndDevelopment"/> Воспользуйтесь ближайшей исследовательской консолью, чтобы узнать, какой вид исследований закреплён за каждым древом Дисциплин.
 
 ## Уровни
-Каждое древо Дисциплин имеет до 3 уровней технологий. На начальном этапе Вам доступен только уровень 1.
+Каждое древо Дисциплин имеет до 3 уровней технологий. На начальном этапе вам доступен только уровень 1.
 
-Чтобы продвинуться дальше, Вы должны исследовать до [color=brown]75%[/color] текущего уровня, чтобы перейти на следующий. Таким образом, чтобы разблокировать исследования T2, Вам нужно исследовать 75% T1.
+Чтобы продвинуться дальше, вы должны исследовать до [color=brown]75%[/color] текущего уровня, чтобы перейти на следующий. Таким образом, чтобы разблокировать исследования T2, вам нужно исследовать 75% T1.
 
-[color=green]Уровень 3[/color] - вот где становится интересно. Если Вы исследуете технологию Т3, Вы [color=brown]блокируете[/color] технологии Т3 из других древ Дисциплин. Конечно, если только... Вы не найдете какой-нибудь другой способ обойти это, возможно, Вам стоит спросить вашего [color=purple]научного руководителя[/color].
+[color=green]Уровень 3[/color] - вот где становится интересно. Если вы исследуете технологию Т3, вы [color=brown]блокируете[/color] технологии Т3 из других древ Дисциплин. Конечно, если только... вы не найдете какой-нибудь другой способ обойти это, возможно, вам стоит спросить вашего [color=purple]научного руководителя[/color].
 
 ## Станки
-<Box>
-<GuideEntityEmbed Entity="Protolathe"/>
-<GuideEntityEmbed Entity="CircuitImprinter"/>
-</Box>
-<Box>
-<GuideEntityEmbed Entity="ExosuitFabricator"/>
-</Box>
-<Box>
-<GuideEntityEmbed Entity="MedicalTechFab"/>
-<GuideEntityEmbed Entity="SecurityTechFab"/>
-</Box>
-На станках Вы можете выбрать сервер, чтобы печатать по разблокированным рецептам. Рецепты требуют различные материалы (сталь, стекло, пластик, золото, плазма) которые можно заказать через консоль карго или попросить у утилизаторов.
+  <Box>
+    <GuideEntityEmbed Entity="Protolathe"/>
+    <GuideEntityEmbed Entity="CircuitImprinter"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ExosuitFabricator"/>
+    <GuideEntityEmbed Entity="MedicalTechFab"/>
+    <GuideEntityEmbed Entity="SecurityTechFab"/>
+  </Box>
+На станках вы можете выбрать сервер, чтобы печатать по разблокированным рецептам. Рецепты требуют различные материалы (сталь, стекло, пластик, золото, плазма) которые можно заказать через консоль карго или попросить у утилизаторов.
 
 </Document>

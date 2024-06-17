@@ -25,15 +25,14 @@
   - type: ReagentTank
     tankType: Fuel
   - type: DamageOnToolInteract
-    tools:
-    - Welding
+    tools: Welding
     weldingDamage:
       types:
         Heat: 10
   - type: PacifismDangerousAttack
   - type: Explosive
     explosionType: Default
-    totalIntensity: 120 # ~ 5 tile radius
+    totalIntensity: 60 # Mediocre explosion. Not enough to do any meaningful structural damage to anything other then windows, provided you're only using one tank.
 
 - type: entity
   id: WeldingFuelTankFull
@@ -75,7 +74,7 @@
         maxVol: 5000
   - type: Explosive
     explosionType: Default
-    totalIntensity: 140
+    totalIntensity: 120
 
 # Water
 
@@ -217,29 +216,3 @@
       fillBaseName: watertank-2-
     - type: ExaminableSolution
       solution: tank
-
-# Kvass
-- type: entity
-  id: KvassTank
-  parent: StorageTank
-  suffix: Empty
-  components:
-    - type: Sprite
-      sprite: Structures/Storage/kvass.rsi
-      state: kvass
-
-- type: entity
-  parent: KvassTank
-  id: KvassTankFull
-  suffix: Full
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        reagents:
-        - ReagentId: Kvass
-          Quantity: 1500
-  - type: ExaminableSolution
-    solution: tank
-  - type: ReagentTank
-    transferAmount: 100

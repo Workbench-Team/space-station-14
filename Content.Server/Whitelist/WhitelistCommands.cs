@@ -1,7 +1,5 @@
 using Content.Server.Administration;
 using Content.Server.Database;
-using Content.Shared.Players;
-using Content.Server.Players.PlayTimeTracking;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
 using Robust.Server.Player;
@@ -27,8 +25,6 @@ public sealed class AddWhitelistCommand : LocalizedCommands
 
         var db = IoCManager.Resolve<IServerDbManager>();
         var loc = IoCManager.Resolve<IPlayerLocator>();
-        var player = IoCManager.Resolve<IPlayerManager>();
-        var playtime = IoCManager.Resolve<PlayTimeTrackingManager>();
 
         var name = string.Join(' ', args).Trim();
         var data = await loc.LookupIdByNameAsync(name);
@@ -44,13 +40,6 @@ public sealed class AddWhitelistCommand : LocalizedCommands
             }
 
             await db.AddToWhitelistAsync(guid);
-
-            if (player.TryGetSessionByUsername(name, out var session))
-            {
-                session.ContentData()!.Whitelisted = false;
-                playtime.SendWhitelistCached(session);
-            }
-
             shell.WriteLine(Loc.GetString("cmd-whitelistadd-added", ("username", data.Username)));
             return;
         }
@@ -85,8 +74,6 @@ public sealed class RemoveWhitelistCommand : LocalizedCommands
 
         var db = IoCManager.Resolve<IServerDbManager>();
         var loc = IoCManager.Resolve<IPlayerLocator>();
-        var player = IoCManager.Resolve<IPlayerManager>();
-        var playtime = IoCManager.Resolve<PlayTimeTrackingManager>();
 
         var name = string.Join(' ', args).Trim();
         var data = await loc.LookupIdByNameAsync(name);
@@ -102,13 +89,6 @@ public sealed class RemoveWhitelistCommand : LocalizedCommands
             }
 
             await db.RemoveFromWhitelistAsync(guid);
-
-            if (player.TryGetSessionByUsername(name, out var session))
-            {
-                session.ContentData()!.Whitelisted = false;
-                playtime.SendWhitelistCached(session);
-            }
-
             shell.WriteLine(Loc.GetString("cmd-whitelistremove-removed", ("username", data.Username)));
             return;
         }

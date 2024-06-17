@@ -25,7 +25,5 @@ public sealed partial class RulesLinksSection : BoxContainer
         RolesButton.Visible = cfg.GetCVar(CCVars.InfoLinksRoles) != "";
         LawsButton.OnPressed += args => uriOpener.OpenUri(cfg.GetCVar(CCVars.InfoLinksLaws));
         LawsButton.Visible = cfg.GetCVar(CCVars.InfoLinksLaws) != "";
-        ToWikiSend.OnPressed += args => uriOpener.OpenUri(cfg.GetCVar(CCVars.InfoLinksWikiRules));
-        ToWikiSend.Visible = cfg.GetCVar(CCVars.InfoLinksWikiRules) != "";
     }
 }
