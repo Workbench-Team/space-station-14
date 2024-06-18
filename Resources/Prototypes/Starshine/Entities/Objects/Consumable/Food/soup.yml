@@ -1,0 +1,14 @@
+- type: entity
+  name: plov
+  parent: FoodBowlBase
+  id: FoodPlov
+  description: Flavorful rice cooked with meat, carrots and spices.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - rice
+      - meaty
+      - vegetables
+  - type: Sprite
+    sprite: Starshine/Objects/Consumable/Food/plov.rsi
+    state: plov
