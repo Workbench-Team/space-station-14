@@ -1,0 +1,119 @@
+#injectors and med-pens
+
+- type: microwaveMealRecipe
+  id: RecipeSelfMadeMedipen
+  name: Self made medipen recipe
+  result: SelfMadeMedipen
+  time: 5
+  solids:
+    Syringe: 1
+  reagents:
+    Desoxyephedrine: 10
+    SpaceGlue: 5
+
+- type: microwaveMealRecipe
+  id: RecipeAmbuzolMedipen
+  name: Ambuzol medipen recipe
+  result: AmbuzolMedipen
+  time: 5
+  solids:
+    Syringe: 1
+  reagents:
+    Ambuzol: 15
+
+- type: microwaveMealRecipe
+  id: RecipeSalineMedipen
+  name: Saline medipen recipe
+  result: SalineMedipen
+  time: 5
+  solids:
+    Syringe: 2
+  reagents:
+    Saline: 30
+
+- type: microwaveMealRecipe
+  id: RecipeNutrimentMedipen
+  name: Nutriment medipen recipe
+  result: NutrimentMedipen
+  time: 5
+  solids:
+    Syringe: 2
+  reagents:
+    Nutriment: 30
+
+- type: microwaveMealRecipe
+  id: RecipeCombatMedipen
+  name: Combat medipen recipe
+  result: CombatMedipen
+  time: 5
+  solids:
+    Syringe: 2
+  reagents:
+    Omnizine: 25
+    TranexamicAcid: 5
+
+- type: microwaveMealRecipe
+  id: RecipeBurnAutoInjector
+  name: Burn auto injector recipe
+  result: BurnAutoInjector
+  time: 5
+  solids:
+    Syringe: 1
+  reagents:
+    Dermaline: 10
+    Leporazine: 5
+
+- type: microwaveMealRecipe
+  id: RecipeRadAutoInjector
+  name: Brute auto injector recipe
+  result: RadAutoInjector
+  time: 5
+  solids:
+    Syringe: 1
+  reagents:
+    Bicaridine: 5
+    Arithrazine: 10
+
+- type: microwaveMealRecipe
+  id: RecipeBruteAutoInjector
+  name: Brute auto injector recipe
+  result: BruteAutoInjector
+  time: 5
+  solids:
+    Syringe: 1
+  reagents:
+    Bicaridine: 10
+    TranexamicAcid: 5
+
+- type: microwaveMealRecipe
+  id: RecipeAntiPoisonMedipen
+  name: Anti poison medipen recipe
+  result: AntiPoisonMedipen
+  time: 5
+  solids:
+    Syringe: 1
+  reagents:
+    Dylovene: 10
+    Epinephrine: 5
+
+- type: microwaveMealRecipe
+  id: RecipeEmergencyMedipen
+  name: Emergency medipen recipe
+  result: EmergencyMedipen
+  time: 5
+  solids:
+    Syringe: 1
+  reagents:
+    Epinephrine: 12
+    TranexamicAcid: 3
+
+- type: microwaveMealRecipe
+  id: RecipeSpaceMedipen
+  name: Space medipen recipe
+  result: SpaceMedipen
+  time: 5
+  solids:
+    Syringe: 1
+    FoodAmbrosiaVulgaris: 1
+  reagents:
+    Leporazine: 15

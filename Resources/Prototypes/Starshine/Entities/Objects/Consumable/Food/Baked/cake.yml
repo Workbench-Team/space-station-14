@@ -8,7 +8,7 @@
     sprite: Starshine/Objects/Consumable/Food/Baked/honeypie.rsi
     state: honeypie
   - type: SliceableFood
-    slice: FoodCakeBlueberrySlice
+    slice: FoodCakeHoneyPieSlice
   - type: Tag
     tags:
     - Cake

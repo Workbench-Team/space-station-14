@@ -1,0 +1,21 @@
+- type: microwaveMealRecipe
+  id: RecipeShaurma
+  name: shaurma recipe
+  result: FoodMeatShaurma
+  time: 5
+  solids:
+    FoodMeat: 1
+    FoodBreadPlainSlice: 1 # TODO: Add pita bread (лаваш) instead of classic bread
+    FoodTomato: 1
+    FoodOnionSlice: 1
+
+- type: microwaveMealRecipe
+  id: RecipeHoneyPie
+  name: honey pie recipe
+  result: FoodCakeHoneyPie
+  time: 5
+  solids:
+    FoodCakeBase: 1
+  reagents:
+    Water: 20
+    Shugar: 40
