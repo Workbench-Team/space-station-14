@@ -44,3 +44,13 @@
   reagents:
     Sugar: 10
     Milk: 10
+
+- type: microwaveMealRecipe
+  id: RecipeTofuPie
+  name: tofu pie recipe
+  result: FoodPieTofu
+  time: 15
+  solids:
+    FoodDoughPie: 1
+    FoodTofu: 1
+    FoodPlateTin: 1
