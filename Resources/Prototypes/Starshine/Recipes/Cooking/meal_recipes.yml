@@ -18,7 +18,7 @@
     FoodCakeBase: 1
   reagents:
     Water: 20
-    Shugar: 40
+    Sugar: 40
 
 - type: microwaveMealRecipe
   id: RecipePlov
@@ -31,3 +31,16 @@
     FoodCarrot: 1
     FoodOnionSlice: 1
     FoodGarlic: 1
+
+- type: microwaveMealRecipe
+  id: RecipePumpkinPie
+  name: pumpkin pie recipe
+  result: FoodPiePumpkin
+  time: 15
+  solids:
+    FoodDoughPie: 1
+    FoodPumpkin: 3
+    FoodPlateTin: 1
+  reagents:
+    Sugar: 10
+    Milk: 10

@@ -1,0 +1,35 @@
+- type: entity
+  name: pumpkin pie
+  parent: FoodPieBase
+  id: FoodPiePumpkin
+  description: Tender dough filled with a flavorful pumpkin filling.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - pumpkin
+  - type: Sprite
+    sprite: Starshine/Objects/Consumable/Food/Baked/pumpkinpie.rsi
+    state: pumpkinpie
+  - type: SliceableFood
+    slice: FoodPieAppleSlice
+  - type: Tag
+    tags:
+    - Pie
+
+- type: entity
+  name: slice of pumpkin pie
+  parent: FoodPieSliceBase
+  id: FoodPiePumpkinSlice
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - apple
+  - type: Sprite
+    sprite: Starshine/Objects/Consumable/Food/Baked/pumpkinpie.rsi
+    state: pumpkinpie-slice
+  - type: Tag
+    tags:
+    - Pie
+    - Slice
