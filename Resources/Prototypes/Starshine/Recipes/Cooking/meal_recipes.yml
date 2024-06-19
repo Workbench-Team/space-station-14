@@ -15,7 +15,7 @@
   result: FoodCakeHoneyPie
   time: 5
   solids:
-    FoodCakeBase: 1
+    FoodCakePlain: 1
   reagents:
     Water: 20
     Sugar: 40
@@ -27,7 +27,7 @@
   time: 20
   solids:
     FoodRiceBoiled: 1
-    FoodMeatBacon: 1
+    FoodMeat: 1
     FoodCarrot: 1
     FoodOnionSlice: 1
     FoodGarlic: 1
@@ -73,3 +73,14 @@
   solids:
     FoodBreadPlainSlice: 2
     FoodCheeseSlice: 2
+
+- type: microwaveMealRecipe
+  id: RecipeMoathroachRoast
+  name: mothroach roast recipe
+  result: FoodMothroachRoast
+  time: 30
+  solids:
+    MobMothroach: 1
+    FoodPlate: 1
+  reagents:
+    TableSalt: 5

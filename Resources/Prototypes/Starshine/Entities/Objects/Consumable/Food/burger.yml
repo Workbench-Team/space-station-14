@@ -28,7 +28,7 @@
   name: cheese sandwich
   parent: FoodBurgerBase
   id: FoodBurgerSandwichCheese
-  description: Tender cheese and flavorful bread create a tasty and light snack
+  description: Tender cheese and flavorful bread create a tasty and light snack.
   components:
   - type: FlavorProfile
     flavors:
