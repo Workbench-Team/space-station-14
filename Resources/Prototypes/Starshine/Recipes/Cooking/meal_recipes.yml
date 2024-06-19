@@ -84,3 +84,15 @@
     FoodPlate: 1
   reagents:
     TableSalt: 5
+
+- type: microwaveMealRecipe
+  id: RecipeMashedPotatoes
+  name: mashed potatoes recipe
+  result: FoodMashedPotatoes
+  time: 15
+  solids:
+    FoodPotato: 3
+    FoodButter: 1
+    FoodBowlBig: 1
+  reagents:
+    Milk: 10

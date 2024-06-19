@@ -1,3 +1,4 @@
+#plov
 - type: entity
   name: plov
   parent: FoodBowlBase
@@ -12,3 +13,18 @@
   - type: Sprite
     sprite: Starshine/Objects/Consumable/Food/plov.rsi
     state: plov
+
+#mashed potatoes
+- type: entity
+  name: mashed potatoes
+  parent: FoodBowlBase
+  id: FoodMashedPotatoes
+  description: A tender dish made with potatoes, milk and butter.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - potatoes
+      - milk
+  - type: Sprite
+    sprite: Starshine/Objects/Consumable/Food/mashedpotatoes.rsi
+    state: mashedpotatoes
