@@ -12,7 +12,7 @@
   - type: Hands
   - type: ComplexInteraction
   - type: Sprite
-    sprite: Starshine/Mobs/Aliens/Xenomorphs/hunter.rsi
+    sprite: Starshine/Mobs/Aliens/Xeno/hunter.rsi
   - type: Fixtures
     fixtures:
       fix1:
