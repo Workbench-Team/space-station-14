@@ -27,7 +27,7 @@
   - type: FlavorProfile
     flavors:
       - sweet
-      - apple
+      - pumpkin
   - type: Sprite
     sprite: Starshine/Objects/Consumable/Food/Baked/pumpkinpie.rsi
     state: pumpkinpie-slice
@@ -65,8 +65,8 @@
     flavors:
       - tofu
   - type: Sprite
-    sprite: Starshine/Objects/Consumable/Food/Baked/tofu.rsi
-    state: pumpkinpie-slice
+    sprite: Starshine/Objects/Consumable/Food/Baked/tofupie.rsi
+    state: tofupie-slice
   - type: Tag
     tags:
     - Pie

@@ -54,3 +54,22 @@
     FoodDoughPie: 1
     FoodTofu: 1
     FoodPlateTin: 1
+
+- type: microwaveMealRecipe
+  id: RecipeSandwich
+  name: sandwich recipe
+  result: FoodBurgerSandwich
+  time: 15
+  solids:
+    FoodBreadPlainSlice: 2
+    FoodMeat: 1
+    FoodCheeseSlice: 1
+
+- type: microwaveMealRecipe
+  id: RecipeCheeseSandwich
+  name: cheese sandwich recipe
+  result: FoodBurgerSandwichCheese
+  time: 15
+  solids:
+    FoodBreadPlainSlice: 2
+    FoodCheeseSlice: 2
