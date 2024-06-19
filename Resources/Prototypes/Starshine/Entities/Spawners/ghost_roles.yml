@@ -16,5 +16,5 @@
     sprite: Markers/jobs.rsi
     layers:
     - state: green
-    - sprite: Starshine/Mobs/Aliens/Xenomorphs/hunter.rsi
+    - sprite: Starshine/Mobs/Aliens/Xeno/hunter.rsi
       state: running
