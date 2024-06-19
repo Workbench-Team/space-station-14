@@ -1,6 +1,6 @@
 - type: entity
   name: mothroach roast
-  parent: FoodBakedBase
+  parent: FoodMealBase
   id: FoodMothroachRoast
   description: A mothroach roast. You're proud of yourself now, aren't you?
   components:
