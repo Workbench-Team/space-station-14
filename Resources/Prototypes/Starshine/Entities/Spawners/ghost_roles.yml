@@ -1,0 +1,20 @@
+- type: entity
+  id: SpawnPointGhostXenoHunter
+  name: ghost role spawn point
+  suffix: xenomorph hunter
+  parent: MarkerBase
+  components:
+  - type: GhostRole
+    name: ghost-role-information-xenomorph-hunter-name
+    description: ghost-role-information-xenomorph-hunter-description
+    rules: ghost-role-information-xenomorph-hunter-rules
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: MobXenoHunter
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+    - sprite: Starshine/Mobs/Aliens/Xeno/hunter.rsi
+      state: running

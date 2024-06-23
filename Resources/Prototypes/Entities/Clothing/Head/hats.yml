@@ -294,6 +294,10 @@
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
+  - type: PilotedClothing
+    pilotWhitelist:
+      tags:
+        - ChefPilot
   - type: Tag
     tags:
     - Clothing
@@ -539,6 +543,8 @@
   - type: Appearance
   - type: AddAccentClothing
     accent: RussianAccent
+  - type: RussianAccent
+  - type: AccentWearerNameClothing
   - type: Foldable
     canFoldInsideContainer: true
   - type: FoldableClothing

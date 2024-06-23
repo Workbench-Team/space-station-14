@@ -13,7 +13,7 @@
       - !type:HealthChange
         damage:
           types:
-            Poison: 0.25
+            Poison: 0.10
       - !type:Emote
         emote: Buzzing
         showInChat: true

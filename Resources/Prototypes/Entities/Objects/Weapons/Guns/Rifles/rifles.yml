@@ -190,171 +190,32 @@
     zeroVisible: true
   - type: Appearance
 
-## Starshine
-
 - type: entity
-  name: Lecter
-  parent: WeaponRifleLecter
-  id: WeaponRifleLecterRubber
-  suffix: Non-lethal
-  components:
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineRifleRubber
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazineRifle
-      gun_chamber:
-        name: Chamber
-        startingItem: CartridgeRifleRubber
-        priority: 1
-        whitelist:
-          tags:
-            - CartridgeRifle
-
-- type: entity
-  name: KR51
-  parent: BaseWeaponRifle
-  id: WeaponRifleKR51
-  description: Silent automatic rifle. Uses .25 caseless ammo
+  name: Foam Force Astro Ace
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
+  id: WeaponRifleFoam
+  description: A premium foam rifle of the highest quality. Its plastic feels rugged, and its mechanisms sturdy.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Rifles/kr51.rsi
-    layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
-  - type: Gun
-    fireRate: 5
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/heavy_shot_suppressed.ogg
-      params:
-        volume: -2
-  - type: ChamberMagazineAmmoProvider
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineCaselessRifleShort
-        insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazineCaselessRifle
-      gun_chamber:
-        name: Chamber
-        startingItem: CartridgeCaselessRifle
-        priority: 1
-        whitelist:
-          tags:
-            - CartridgeCaselessRifle
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
-
-- type: entity
-  name: ASH9
-  parent: BaseWeaponRifle
-  id: WeaponRifleAsh9
-  description: Silent automatic rifle. Uses .25 caseless ammo
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Rifles/ash9.rsi
-    layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
-  - type: Gun
-    fireRate: 5
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/ash9.ogg
-  - type: ChamberMagazineAmmoProvider
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineUniversal
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazineUniversal
-      gun_chamber:
-        name: Chamber
-        startingItem: CartridgeCaselessUniversalPT1
-        priority: 1
-        whitelist:
-          tags:
-            - CartridgeUniversal
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
-
-- type: entity
-  name: VSSK14
-  parent: BaseWeaponRifle
-  id: WeaponSniperVssk14
-  description: A portable anti-materiel rifle. Fires armor piercing 14.5mm shells. Uses .60 anti-materiel ammo.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Snipers/vssk.rsi
-    layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
+    sprite: Objects/Weapons/Guns/Rifles/foam_rifle.rsi
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Snipers/vssk.rsi
+    sprite: Objects/Weapons/Guns/Rifles/foam_rifle.rsi
+  - type: Item
+    sprite: Objects/Weapons/Guns/Rifles/foam_rifle_inhand_64x.rsi
+  - type: BallisticAmmoProvider    
+    whitelist:
+      tags:
+      - BulletFoam
+    capacity: 10
+    proto: BulletFoam
+  - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: Gun
-    fireRate: 1
+    fireRate: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/vssk14.ogg
-  - type: ChamberMagazineAmmoProvider
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineUniversal
-        insertSound: /Audio/Weapons/Guns/MagIn/vssk_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/vssk_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazineUniversal
-      gun_chamber:
-        name: Chamber
-        startingItem: CartridgeCaselessUniversalPT1
-        priority: 1
-        whitelist:
-          tags:
-            - CartridgeUniversal
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
+      path: /Audio/Effects/thunk.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+    clumsyProof: true

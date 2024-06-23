@@ -1,0 +1,82 @@
+# Hacky for the stress test so don't even consider adding to this
+- type: entity
+  name: Hunter
+  id: MobXenoHunter
+  parent: MobXeno
+  components:
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3.5
+    baseSprintSpeed : 6.5
+  - type: Tool
+    speed: 1.5
+  - type: Hands
+  - type: ComplexInteraction
+  - type: Sprite
+    sprite: Starshine/Mobs/Aliens/Xeno/hunter.rsi
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 1000
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      150: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      120: 0.7
+  - type: Damageable
+    damageModifierSet: Xenomorhp
+  - type: Stamina
+    critThreshold: 400
+  - type: MeleeWeapon
+    altDisarm: false
+    damage:
+      types:
+        Slash: 20
+        Structural: 20
+  - type: StaminaDamageOnHit
+    damage: 40
+  - type: Puller
+    needsHands: false
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: ghost-role-information-xenomorph-hunter-name
+    description: ghost-role-information-xenomorph-hunter-description
+    rules: ghost-role-information-xenomorph-hunter-rules
+    raffle:
+      settings: default
+  - type: GhostTakeoverAvailable
+  - type: TypingIndicator
+    proto: alien
+  - type: Temperature
+    heatDamageThreshold: 360
+    coldDamageThreshold: -150
+    currentTemperature: 310.15
+  - type: NoSlip
+  - type: Perishable #Ummmm the acid kills a lot of the bacteria or something
+    molsPerSecondPerUnitMass: 0.0005
+  - type: Speech
+    speechVerb: LargeMob
+  - type: PassiveDamage # Around 15 damage a minute healed
+    allowedStates:
+    - Alive
+    damageCap: 150
+    damage:
+      types:
+        Heat: -0.25
+        Bloodloss: -0.1
+      groups:
+        Brute: -0.25
+  - type: NightVision
+    isToggle: true
+    color: "#808080"
+    playSoundOn: false

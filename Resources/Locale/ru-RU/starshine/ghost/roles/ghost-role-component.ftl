@@ -55,3 +55,7 @@ ghost-role-information-mimic-clown-rules = Вы - антагонист, убив
 ghost-role-information-mimic-greytide-name = ассистент-мимик
 ghost-role-information-mimic-greytide-description = Вы - одна из самых страшных и загадочных вещей из тех. тоннелей.
 ghost-role-information-mimic-greytide-rules = Вы - антагонист, убивайте и охотьтесь на экипаж.
+
+ghost-role-information-xenomorph-hunter-name = Ксеноморф охотник
+ghost-role-information-xenomorph-hunter-description = Вы - ксеноморф охотник. Вы - идеальный организм, созданный лишь для одной цели - убивать!
+ghost-role-information-xenomorph-hunter-rules = Вы - антагонист, убивайте и охотьтесь на экипаж, старайтесь устравивать засады и не лезть в открытый бой.

@@ -14,4 +14,4 @@ robotics-console-brain =
 robotics-console-locked-message = Управление заблокировано, проведите ID-картой.
 robotics-console-disable = Отключить
 robotics-console-destroy = Уничтожить
-robotics-console-cyborg-destroyed = Киборг { $name } был дистанционно уничтожен.
+robotics-console-cyborg-destroying = Киборг { $name } был дистанционно сдетонирован!

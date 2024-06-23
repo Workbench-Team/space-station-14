@@ -2,6 +2,7 @@
 loadout-group-trinkets = Безделушки
 loadout-group-glasses = Очки
 loadout-group-backpack = Рюкзак
+loadout-group-instruments = Инструменты
 # Command
 loadout-group-captain-head = Голова капитана
 loadout-group-captain-jumpsuit = Комбинезон капитана

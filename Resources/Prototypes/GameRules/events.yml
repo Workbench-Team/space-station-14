@@ -301,20 +301,6 @@
   - type: PowerGridCheckRule
 
 - type: entity
-  id: RandomSentience
-  parent: BaseGameRule
-  components:
-  - type: StationEvent
-    weight: 6
-    duration: 1
-    maxOccurrences: 1 # this event has diminishing returns on interesting-ness, so we cap it
-    startAudio:
-      path: /Audio/Announcements/sentience.ogg
-      params:
-        volume: -4
-  - type: RandomSentienceRule
-
-- type: entity
   parent: BaseGameRule
   id: SolarFlare
   components:
@@ -604,3 +590,22 @@
       maxOccurrences: 1 # this event has diminishing returns on interesting-ness, so we cap it
       weight: 5
     - type: MobReplacementRule
+
+- type: entity
+  id: XenomorphMigration
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    earliestStart: 30
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio: # Starshine
+      path: /Audio/Starshine/Announcements/lifesigns.ogg
+      params:
+        volume: -4
+    weight: 6
+    minimumPlayers: 15
+    duration: 60
+  - type: VentCrittersRule
+    specialEntries:
+    - id: SpawnPointGhostXenoHunter
+      prob: 0.00001
