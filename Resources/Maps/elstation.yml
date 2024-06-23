@@ -5597,17 +5597,6 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 9145
-  - uid: 11158
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -4.5,34.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 11157
   - uid: 11281
     components:
     - type: Transform
@@ -32596,17 +32585,6 @@ entities:
       deviceLists:
       - 4267
       - 9237
-  - uid: 3883
-    components:
-    - type: Transform
-      pos: -5.5,31.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 8381
-      - 11157
   - uid: 3990
     components:
     - type: Transform
@@ -33026,28 +33004,6 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 8321
-  - uid: 8377
-    components:
-    - type: Transform
-      pos: -3.5,31.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 8381
-      - 11157
-  - uid: 8398
-    components:
-    - type: Transform
-      pos: -4.5,31.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 8381
-      - 11157
   - uid: 9735
     components:
     - type: Transform
@@ -33236,17 +33192,6 @@ entities:
       deviceLists:
       - 9828
       - 9829
-  - uid: 11156
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -7.5,33.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 11157
   - uid: 11274
     components:
     - type: Transform
