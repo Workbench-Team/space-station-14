@@ -218,6 +218,7 @@
         Piercing: 0.6
         Heat: 0.75
         Caustic: 0.7
+        Stun: 0.8
   - type: ClothingSpeedModifier
     walkModifier: 0.75
     sprintModifier: 0.75
@@ -307,6 +308,7 @@
         Piercing: 0.6
         Heat: 0.7
         Caustic: 0.7
+        Stun: 0.8
   - type: ClothingSpeedModifier
     walkModifier: 0.7
     sprintModifier: 0.7
@@ -520,6 +522,7 @@
         Heat: 0.6
         Radiation: 0.5
         Caustic: 0.6
+        Stun: 0.7
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8

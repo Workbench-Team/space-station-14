@@ -217,15 +217,17 @@
   - type: StaticPrice
     price: 420
   - type: Gun
+    fireRate: 2.5
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
+    - FullAuto
   - type: Tag
     tags:
     - HeavyWeapon
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
-    fireCost: 62.5
+    fireCost: 50
 
 - type: entity
   name: practice laser rifle

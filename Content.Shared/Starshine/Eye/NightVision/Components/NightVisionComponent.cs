@@ -29,7 +29,7 @@ public sealed partial class NightVisionComponent : Component
 
     [DataField("playSoundOn")]
     public bool PlaySoundOn = true;
-    public SoundSpecifier OnOffSound = new SoundPathSpecifier("/Audio/Backmen/Misc/night-vision-sound-effect_E_minor.ogg");
+    public SoundSpecifier OnOffSound = new SoundPathSpecifier("/Audio/Starshine/Misc/night_vision.ogg");
 }
 
 public sealed partial class NVInstantActionEvent : InstantActionEvent { }

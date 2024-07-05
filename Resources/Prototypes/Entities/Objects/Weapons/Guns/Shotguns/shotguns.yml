@@ -75,6 +75,7 @@
     selectedMode: FullAuto
     availableModes:
     - FullAuto
+    - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
     soundEmpty:
@@ -102,38 +103,6 @@
   - type: Appearance
   - type: StaticPrice
     price: 500
-
-- type: entity
-  name: saiga
-  parent: WeaponShotgunBulldog
-  id: WeaponShotgunSaiga
-  description: It's a magazine-fed shotgun designed for close quarters combat. Uses .50 shotgun shells.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Shotguns/saiga.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-0
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: Clothing
-    sprite: Objects/Weapons/Guns/Shotguns/saiga.rsi
-    quickEquip: false
-    slots:
-    - Back
-    - suitStorage
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineShotgunSaiga
-        priority: 2
-        whitelist:
-          tags:
-          - MagazineShotgun
-          - MagazineShotgunSaiga
-        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
 
 - type: entity
   name: double-barreled shotgun
@@ -320,7 +289,7 @@
   - type: Gun
     fireRate: 4 #No reason to stifle the firerate since you have to manually reload every time anyways.
   - type: BallisticAmmoProvider
-    capacity: 1
+    capacity: 2
     proto: null
   - type: Construction
     graph: ImprovisedShotgunGraph

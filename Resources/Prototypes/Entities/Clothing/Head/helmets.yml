@@ -59,6 +59,7 @@
         Heat: 0.80
         Radiation: 0.80
         Caustic: 0.95
+        Stun: 0.95
   - type: ExplosionResistance
     damageCoefficient: 0.75
 
@@ -93,6 +94,7 @@
         Blunt: 0.8
         Slash: 0.8
         Piercing: 0.95
+        Stun: 0.95
 
 #Bombsuit Helmet
 - type: entity

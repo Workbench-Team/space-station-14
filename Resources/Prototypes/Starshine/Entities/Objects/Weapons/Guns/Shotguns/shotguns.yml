@@ -1,0 +1,31 @@
+- type: entity
+  name: saiga
+  parent: WeaponShotgunBulldog
+  id: WeaponShotgunSaiga
+  description: It's a magazine-fed shotgun designed for close quarters combat. Uses .50 shotgun shells.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shotguns/saiga.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Shotguns/saiga.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineShotgunSaiga
+        priority: 2
+        whitelist:
+          tags:
+          - MagazineShotgun
+          - MagazineShotgunSaiga
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg

@@ -82,8 +82,11 @@ research-technology-advanced-magazines = Продвинутые магазины
 research-technology-incendiary-ammunition = Зажигательные боеприпасы
 research-technology-spec-ammunition = Специализированные боеприпасы
 research-technology-salvage-weapons-adv = Продвинутое оружие утилизаторов
+research-technology-large-caliber = Большой калибр
 
 research-technology-clarke-aplu = КШГ Кларк
 research-technology-Odyssey = ГМС Одиссей
 research-technology-gygax = АБНТ Гайгэкс
 research-technology-durand = БМП Дюранд
+
+research-technology-nvd = Прибор ночного виденья

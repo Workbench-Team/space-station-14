@@ -326,6 +326,7 @@
 # Starshine-start
       - WeaponCutterAdv
       - WeaponTetherGun
+      - ClothingEyesVision
 # Starshine-end
       - WeaponGrapplingGun
       - ClothingBackpackHolding
@@ -857,12 +858,6 @@
       - TimerTrigger
       - Truncheon
       - VoiceTrigger
-      - WeaponAdvancedLaser
-      - WeaponDisabler
-      - WeaponDisablerSMG
-      - WeaponLaserCannon
-      - WeaponLaserCarbine
-      - WeaponXrayCannon
 # Starshine-start
       - BowCompound
       - ArrowCompound
@@ -876,6 +871,9 @@
       - ClothingOuterArmorBulletproof
       - ClothingBeltSecurityWebbing
       - ClothingBeltSecurity
+# Starshine-end
+# Starshine-start
+      - SpeedLoaderAntiMaterial
 # Starshine-end
   - type: MaterialStorage
     whitelist:
@@ -933,6 +931,7 @@
       - WeaponXrayCannon
       - WeaponShotgunKammerer
       - WeaponShotgunEnforcer
+      - WeaponRevolverSuppressor
   - type: MaterialStorage
     whitelist:
       tags:
@@ -1015,7 +1014,9 @@
         - MagazineBoxRifleRubber
         - BoxLethalshot
         - BoxShotgunIncendiary
-        - BoxBeanbag        
+        - BoxBeanbag
+        - SpeedLoaderAntiMaterial
+        - MagazineBoxAntiMaterielBig
     - type: MaterialStorage
       whitelist:
         tags:

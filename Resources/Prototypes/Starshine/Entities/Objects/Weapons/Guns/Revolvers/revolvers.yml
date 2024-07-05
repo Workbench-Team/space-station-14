@@ -1,0 +1,46 @@
+- type: entity
+  name: Suppressor
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverSuppressor
+  description: A super-heavy revolver for the most well-fed purposes.
+  components:
+  - type: Sprite
+    sprite: Starshine/Objects/Weapons/Guns/Revolvers/suppressor.rsi
+  - type: Clothing
+    sprite: Starshine/Objects/Weapons/Guns/Revolvers/suppressor.rsi
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+      - CartridgeAntiMateriel
+      - SpeedLoaderAntiMaterial
+    capacity: 3
+    proto: CartridgeAntiMateriel
+    chambers: [ True, True, True ]
+    ammoSlots: [ null, null, null ]
+  - type: Gun
+    fireRate: 1
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+  - type: StaticPrice
+    price: 1000
+
+- type: entity
+  name: RSH18
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverRsh18
+  description: The iconic sidearm of the dreaded death squads. Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: Starshine/Objects/Weapons/Guns/Revolvers/rsh18.rsi
+  - type: Clothing
+    sprite: Starshine/Objects/Weapons/Guns/Revolvers/rsh18.rsi
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeUniversal
+        - SpeedLoaderUniversal
+    proto: CartridgeCaselessUniversalPT1
+  - type: Gun
+    fireRate: 3
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rsh18.ogg

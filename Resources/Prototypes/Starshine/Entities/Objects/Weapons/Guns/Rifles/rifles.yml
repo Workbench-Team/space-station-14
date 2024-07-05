@@ -37,6 +37,10 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+      - SemiAuto
     fireRate: 5
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/heavy_shot_suppressed.ogg

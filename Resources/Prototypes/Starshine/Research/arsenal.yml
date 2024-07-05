@@ -180,3 +180,17 @@
     - GygaxRLeg
     - GygaxRArm
     - GygaxArmor
+
+- type: technology
+  id: LargeCaliber
+  name: research-technology-large-caliber
+  icon:
+    sprite: Starshine/Objects/Weapons/Guns/Revolvers/suppressor.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 3
+  cost: 20000
+  recipeUnlocks:
+    - WeaponRevolverSuppressor
+    - SpeedLoaderAntiMaterial
+    - MagazineBoxAntiMaterielBig
