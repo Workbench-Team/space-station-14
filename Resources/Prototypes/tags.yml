@@ -1534,3 +1534,6 @@
 
 - type: Tag
   id: Slime
+
+- type: Tag
+  id: SpeedLoaderAntiMaterial
