@@ -810,6 +810,7 @@
 # Starshine-end
     dynamicRecipes:
       - WeaponDisablerSMG
+      - WeaponDisabler
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium
