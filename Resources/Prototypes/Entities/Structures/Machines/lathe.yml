@@ -809,6 +809,7 @@
       - SpeedLoaderMagnumPractice
 # Starshine-end
     dynamicRecipes:
+      - WeaponDisablerSMG
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium
