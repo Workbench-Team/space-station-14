@@ -1,0 +1,9 @@
+- type: latheRecipe
+  id: ClothingEyesVision
+  result: ClothingEyesVision
+  completetime: 2
+  materials:
+    Steel: 100
+    Glass: 100
+    Plastic: 100
+    Gold: 50

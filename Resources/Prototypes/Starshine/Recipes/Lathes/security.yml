@@ -1,0 +1,23 @@
+- type: latheRecipe
+  id: WeaponRevolverSuppressor
+  result: WeaponRevolverSuppressor
+  completetime: 15
+  materials:
+     Steel: 1500
+     Silver: 300
+
+- type: latheRecipe
+  id: MagazineBoxAntiMaterielBig
+  result: MagazineBoxAntiMaterielBig
+  category: Ammo
+  completetime: 10
+  materials:
+    Steel: 1500
+
+- type: latheRecipe
+  id: SpeedLoaderAntiMaterial
+  result: SpeedLoaderAntiMaterial
+  category: Ammo
+  completetime: 10
+  materials:
+    Steel: 300
