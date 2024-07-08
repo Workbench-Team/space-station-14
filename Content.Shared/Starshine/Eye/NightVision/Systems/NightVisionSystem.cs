@@ -30,6 +30,7 @@ public sealed class NightVisionSystem : EntitySystem
     {
         if (component.IsToggle)
             _actionsSystem.AddAction(uid, ref component.ActionContainer, SwitchNightVisionAction);
+        _actionsSystem.SetCooldown(component.ActionContainer, TimeSpan.FromSeconds(1)); // GCD?
     }
 
     private void OnActionToggle(EntityUid uid, NightVisionComponent component, NvInstantActionEvent args)

@@ -41,6 +41,7 @@ public sealed class PNVSystem : EntitySystem
         _nightvisionableSystem.UpdateIsNightVision(args.Equipee, nvComp);
         if(component.ActionContainer == null)
             _actionsSystem.AddAction(args.Equipee, ref component.ActionContainer, component.ActionProto);
+        _actionsSystem.SetCooldown(component.ActionContainer, TimeSpan.FromSeconds(1)); // GCD?
 
         if (!nvComp.PlaySoundOn)
             return;
