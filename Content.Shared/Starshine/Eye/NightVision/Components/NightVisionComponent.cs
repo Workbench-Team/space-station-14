@@ -7,17 +7,17 @@ namespace Content.Shared.Starshine.Eye.NightVision.Components;
 
 [RegisterComponent]
 [NetworkedComponent, AutoGenerateComponentState]
-[Access(typeof(NightVisionSystem))]
+[Access(typeof(NightVisionSystem), typeof(PNVSystem))]
 public sealed partial class NightVisionComponent : Component
 {
-    [ViewVariables(VVAccess.ReadWrite), DataField("isOn"), AutoNetworkedField]
-    public bool IsNightVision;
+    [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
+    public bool IsOn;
 
-    [DataField("color")]
-    public Color NightVisionColor = Color.Green;
+    [ViewVariables(VVAccess.ReadWrite), DataField]
+    public Color Color = Color.FromHex("#5cd65c");
 
     [DataField]
-    public bool IsToggle = false;
+    public bool IsToggle;
 
     [DataField] public EntityUid? ActionContainer;
 
@@ -27,9 +27,13 @@ public sealed partial class NightVisionComponent : Component
     [Access(Other = AccessPermissions.ReadWriteExecute)]
     public bool GraceFrame = false;
 
-    [DataField("playSoundOn")]
+    [DataField]
     public bool PlaySoundOn = true;
-    public SoundSpecifier OnOffSound = new SoundPathSpecifier("/Audio/Starshine/Misc/night_vision.ogg");
+
+    [DataField]
+    public SoundSpecifier OffSound = new SoundPathSpecifier("/Audio/Starshine/Misc/night_vision.ogg");
 }
 
-public sealed partial class NVInstantActionEvent : InstantActionEvent { }
+public sealed partial class NvInstantActionEvent : InstantActionEvent
+{
+}

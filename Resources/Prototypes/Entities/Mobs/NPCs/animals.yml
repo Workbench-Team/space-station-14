@@ -2281,7 +2281,7 @@
         Burn: -0.07
   - type: NightVision
     isToggle: true
-    color: "#991111"
+    color: "#ff6161"
     playSoundOn: false
 
 - type: entity
@@ -2354,7 +2354,7 @@
       bloodReagent: Laughter
     - type: NightVision
       isToggle: true
-      color: "#000099"
+      color: "#6666ff"
       playSoundOn: false
 
 - type: entity

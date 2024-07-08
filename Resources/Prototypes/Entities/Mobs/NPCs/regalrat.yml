@@ -122,7 +122,7 @@
       gender: male
   - type: NightVision
     isToggle: true
-    color: "#990000"
+    color: "#ff6161"
     playSoundOn: false
 
 - type: entity

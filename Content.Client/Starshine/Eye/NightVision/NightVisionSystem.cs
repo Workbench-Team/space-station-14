@@ -1,12 +1,9 @@
 using Content.Client.Overlays;
-using Content.Shared.GameTicking;
 using Content.Shared.Starshine.Eye.NightVision.Components;
 using Content.Shared.Inventory.Events;
 using Robust.Client.Graphics;
-using Robust.Client.Player;
-using Robust.Shared.Player;
 
-namespace Content.Client.GG.Eye.NightVision;
+namespace Content.Client.Starshine.Eye.NightVision;
 
 public sealed class NightVisionSystem : EquipmentHudSystem<NightVisionComponent>
 {
@@ -20,7 +17,7 @@ public sealed class NightVisionSystem : EquipmentHudSystem<NightVisionComponent>
     {
         base.Initialize();
 
-        _overlay = new(Color.Green);
+        _overlay = new NightVisionOverlay(Color.Green);
     }
 
     protected override void UpdateInternal(RefreshEquipmentHudEvent<NightVisionComponent> component)
@@ -29,7 +26,7 @@ public sealed class NightVisionSystem : EquipmentHudSystem<NightVisionComponent>
 
         foreach (var comp in component.Components)
         {
-            _overlay.NightvisionColor = comp.NightVisionColor;
+            _overlay.Color = comp.Color;
         }
         if (!_overlayMan.HasOverlay<NightVisionOverlay>())
         {

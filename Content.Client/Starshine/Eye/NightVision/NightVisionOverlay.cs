@@ -4,7 +4,7 @@ using Robust.Client.Player;
 using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 
-namespace Content.Client.GG.Eye.NightVision
+namespace Content.Client.Starshine.Eye.NightVision
 {
     public sealed class NightVisionOverlay : Overlay
     {
@@ -17,16 +17,16 @@ namespace Content.Client.GG.Eye.NightVision
         public override bool RequestScreenTexture => true;
         public override OverlaySpace Space => OverlaySpace.WorldSpace;
         private readonly ShaderInstance _greyscaleShader;
-	    public Color NightvisionColor = Color.Green;
+	    public Color Color;
 
-        private NightVisionComponent _nightvisionComponent = default!;
+        private NightVisionComponent _nightVisionComponent = default!;
 
 	    public NightVisionOverlay(Color color)
         {
             IoCManager.InjectDependencies(this);
             _greyscaleShader = _prototypeManager.Index<ShaderPrototype>("GreyscaleFullscreen").InstanceUnique();
 
-            NightvisionColor = color;
+            Color = color;
         }
         protected override bool BeforeDraw(in OverlayDrawArgs args)
         {
@@ -41,22 +41,20 @@ namespace Content.Client.GG.Eye.NightVision
             if (playerEntity == null)
                 return false;
 
-            if (!_entityManager.TryGetComponent<NightVisionComponent>(playerEntity, out var nightvisionComp))
+            if (!_entityManager.TryGetComponent<NightVisionComponent>(playerEntity, out var nightVisionComponent))
                 return false;
 
-            _nightvisionComponent = nightvisionComp;
+            _nightVisionComponent = nightVisionComponent;
 
-            var nightvision = _nightvisionComponent.IsNightVision;
+            var nightVision = _nightVisionComponent.IsOn;
 
-            if (!nightvision && _nightvisionComponent.DrawShadows) // Disable our Night Vision
-            {
-                _lightManager.DrawLighting = true;
-                _nightvisionComponent.DrawShadows = false;
-                _nightvisionComponent.GraceFrame = true;
-                return true;
-            }
+            if (nightVision || !_nightVisionComponent.DrawShadows) // Disable our Night Vision
+                return nightVision;
+            _lightManager.DrawLighting = true;
+            _nightVisionComponent.DrawShadows = false;
+            _nightVisionComponent.GraceFrame = true;
+            return true;
 
-            return nightvision;
         }
 
         protected override void Draw(in OverlayDrawArgs args)
@@ -64,22 +62,22 @@ namespace Content.Client.GG.Eye.NightVision
             if (ScreenTexture == null)
                 return;
 
-            if (!_nightvisionComponent.GraceFrame)
+            if (!_nightVisionComponent.GraceFrame)
             {
-                _nightvisionComponent.DrawShadows = true; // Enable our Night Vision
+                _nightVisionComponent.DrawShadows = true; // Enable our Night Vision
                 _lightManager.DrawLighting = false;
             }
             else
             {
-                _nightvisionComponent.GraceFrame = false;
+                _nightVisionComponent.GraceFrame = false;
             }
 
-            _greyscaleShader?.SetParameter("SCREEN_TEXTURE", ScreenTexture);
+            _greyscaleShader.SetParameter("SCREEN_TEXTURE", ScreenTexture);
 
             var worldHandle = args.WorldHandle;
             var viewport = args.WorldBounds;
             worldHandle.UseShader(_greyscaleShader);
-            worldHandle.DrawRect(viewport, NightvisionColor);
+            worldHandle.DrawRect(viewport, Color);
             worldHandle.UseShader(null);
         }
     }
