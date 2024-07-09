@@ -1,0 +1,18 @@
+- type: entity
+  parent: DrinkCanBaseFull
+  id: DrinkTimefalllPorterBeerCan
+  name: timefall porter can
+  description: A true taste of natural gardens, with the addition of timefall precipitation and the blood of MULEs.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: TimefallBeer
+          Quantity: 30
+  - type: Drink
+  - type: Sprite
+    sprite: Starshine/Objects/Consumable/Drinks/timefallporter_can.rsi
+  - type: Item
+    sprite: Starshine/Objects/Consumable/Drinks/timefallporter_can.rsi
