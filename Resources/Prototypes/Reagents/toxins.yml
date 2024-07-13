@@ -663,25 +663,45 @@
       - !type:SatiateHunger
         factor: -6
 
-## Starshine
-
+# inspired by the spider neurotoxin GsMtx-4
+# poisons non-spiders and slows you down at high doses
 - type: reagent
-  id: liveSlime
-  name: reagent-name-live-slime
+  id: Mechanotoxin
+  name: reagent-name-mechanotoxin
   group: Toxins
-  desc: reagent-desc-live-slime
-  flavor: slimy
-  color: "#000000"
-  physicalDesc: reagent-physical-desc-gloopy
-  plantMetabolism:
-  - !type:PlantAdjustToxins
-    amount: 10
-  - !type:PlantAdjustHealth
-    amount: -5
+  desc: reagent-desc-mechanotoxin
+  flavor: sweet
+  color: "#00b408"
+  physicalDesc: reagent-physical-desc-nondescript
   metabolisms:
     Poison:
+      metabolismRate: 0.2 # Slower metabolism so it can build up over time for slowdown
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Arachnid
+          shouldHave: false
         damage:
           types:
-            Poison: 9
+            Poison: 1.6
+      - !type:MovespeedModifier
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Mechanotoxin
+          min: 2
+        - !type:OrganType
+          type: Arachnid
+          shouldHave: false
+        walkSpeedModifier: 0.8
+        sprintSpeedModifier: 0.8
+      - !type:MovespeedModifier
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Mechanotoxin
+          min: 4
+        - !type:OrganType
+          type: Arachnid
+          shouldHave: false
+        walkSpeedModifier: 0.4
+        sprintSpeedModifier: 0.4

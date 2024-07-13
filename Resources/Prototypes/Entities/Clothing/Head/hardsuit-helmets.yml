@@ -18,7 +18,10 @@
     sprite: Clothing/Head/Hardsuits/basic.rsi
   - type: HideLayerClothing
     slots:
+    - Hair
     - Snout
+    - HeadTop
+    - HeadSide
 
 #Atmospherics Hardsuit
 - type: entity
@@ -58,6 +61,8 @@
     lowPressureMultiplier: 1000
   - type: TemperatureProtection
     coefficient: 0.005
+  - type: FireProtection
+    reduction: 0.2
   - type: EyeProtection
 
 #Engineering Hardsuit
@@ -214,6 +219,7 @@
         Heat: 0.9
         Radiation: 0.85
         Caustic: 0.85
+        Stun: 0.9
   - type: PressureProtection
     highPressureMultiplier: 0.6
     lowPressureMultiplier: 1000
@@ -317,6 +323,8 @@
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
+  - type: FireProtection
+    reduction: 0.2
   - type: EyeProtection
 
 #Chief Medical Officer's Hardsuit
@@ -783,6 +791,8 @@
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
+  - type: FireProtection
+    reduction: 0.2
   - type: Armor
     modifiers:
       coefficients:

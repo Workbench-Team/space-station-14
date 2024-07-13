@@ -1,0 +1,167 @@
+## Starshine
+
+- type: listing
+  id: UplinkMiniatureEnergyCrossbow
+  name: uplink-miniature-energy-crossbow-syndie-green-name
+  description: uplink-miniature-energy-crossbow-syndie-green-desc
+  icon: { sprite: Objects/Weapons/Guns/Battery/miniature_ebow.rsi, state: icon }
+  productEntity: MiniatureEnergyCrossbow
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkWeaponry
+
+- type: listing
+  id: UplinkBowCompoundRed
+  name: uplink-bow-compound-red-name
+  description: uplink-bow-compound-red-desc
+  productEntity: BowCompoundRed
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkWeaponry
+
+- type: listing
+  id: UplinkKR51Bundle
+  name: uplink-kr51-bundle-name
+  description: uplink-kr51-bundle-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Rifles/kr51.rsi, state: icon }
+  productEntity: ClothingBackpackDuffelSyndicateFilledRifle
+  cost:
+    Telecrystal: 17
+  categories:
+  - UplinkWeaponry
+
+- type: listing
+  id: UplinkMagazineCaselessRifle
+  name: uplink-magazine-caseless-rifle-name
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag.rsi, state: red }
+  description: uplink-magazine-caseless-rifle-desc
+  productEntity: MagazineCaselessRifle
+  cost:
+    Telecrystal: 3
+  categories:
+    - UplinkAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - NukeOpsUplink
+
+- type: listing
+  id: UplinkSyringeCartridge
+  name: uplink-syringe-cartridge-name
+  description: uplink-syringe-cartridge-desc
+  productEntity: BoxSyringeCartridge
+  cost:
+    Telecrystal: 6
+  categories:
+  - UplinkAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+  - !type:BuyerWhitelistCondition
+    blacklist:
+      components:
+      - SurplusBundle
+
+- type: listing
+  id: uplinkMinerSyndie
+  name: uplink-syndie-miner-armor-name
+  description: uplink-syndie-miner-armor-desc
+  productEntity: ClothingOuterArmorMinerSyndie
+  cost:
+    Telecrystal: 3
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - SalvageSpecialist
+
+- type: listing
+  id: UplinkM90GLBundle
+  name: uplink-m90gl-bundle-name
+  description: uplink-m90gl-bundle-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Rifles/carbine.rsi, state: icon }
+  productEntity: ClothingBackpackDuffelSyndicateFilledCarbine
+  cost:
+    Telecrystal: 17
+  categories:
+  - UplinkWeaponry
+
+
+- type: listing
+  id: UplinkClothingOuterVestWeb
+  name: uplink-clothing-outer-vest-web-name
+  description: uplink-clothing-outer-vest-web-desc
+  productEntity: ClothingOuterVestWeb
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkWearables
+
+- type: listing
+  id: UplinkClothingEyesVision
+  name: uplink-clothing-pnv-name
+  description: uplink-clothing-pnv-desc
+  productEntity: ClothingEyesVision
+  cost:
+    Telecrystal: 3
+  categories:
+    - UplinkWearables
+
+
+
+#- type: listing
+#  id: UplinkSyndicateMauler
+#  name: uplink-mauler-name
+#  description: uplink-mauler-desc
+#  icon: { sprite: /Textures/Objects/Specific/Mech/mecha.rsi, state: mauler }
+#  productEntity: MechMaulerReal
+#  cost:
+#    Telecrystal: 120
+#  categories:
+#  - UplinkWeaponry
+#  conditions:
+#  - !type:BuyerWhitelistCondition
+#    blacklist:
+#      components:
+#      - SurplusBundle
+
+#- type: listing
+#  id: UplinkSyndicateGygax
+#  name: uplink-gygax-syndie-name
+#  description: uplink-gygax-desc
+#  icon: { sprite: /Textures/Objects/Specific/Mech/mecha.rsi, state: darkgygax }
+#  productEntity: MechDarkGygax
+#  cost:
+#    Telecrystal: 70
+#  categories:
+#  - UplinkWeaponry
+#  conditions:
+#  - !type:BuyerWhitelistCondition
+#    blacklist:
+#      components:
+#      - SurplusBundle
+
+#- type: listing
+#  id: UplinkSyringeCartridge
+#  name: uplink-syringe-cartridge-name
+#  description: uplink-syringe-cartridge-desc
+#  productEntity: BoxSyringeCartridge
+#  cost:
+#    Telecrystal: 6
+#  categories:
+#  - UplinkAmmo
+#  conditions:
+#  - !type:StoreWhitelistCondition
+#    whitelist:
+#      tags:
+#      - NukeOpsUplink
+#  - !type:BuyerWhitelistCondition
+#    blacklist:
+#      components:
+#      - SurplusBundle

@@ -1,3 +1,140 @@
+#Consultant
+- type: loadoutGroup
+  id: ConsultantHead
+  name: loadout-group-consultant-head
+  minLimit: 0
+  loadouts:
+  - ConsultantHead
+
+- type: loadoutGroup
+  id: ConsultantJumpsuit
+  name: loadout-group-consultant-jumpsuit
+  loadouts:
+  - ConsultantJumpsuit
+  - ConsultantJumpskirt
+  - ConsultantFormalSuit
+  - ConsultantFormalSkirt
+
+- type: loadoutGroup
+  id: ConsultantNeck
+  name: loadout-group-consultant-neck
+  minLimit: 0
+  loadouts:
+  - ConsultantNeck
+
+- type: loadoutGroup
+  id: ConsultantBackpack
+  name: loadout-group-consultant-backpack
+  loadouts:
+  - ConsultantBackpack
+  - ConsultantSatchel
+  - ConsultantDuffel
+
+- type: loadoutGroup
+  id: ConsultantOuterClothing
+  name: loadout-group-consultant-outerclothing
+  loadouts:
+  - ConsultantOuterClothing
+
+# BlueShield
+- type: loadoutGroup
+  id: BlueShieldHead
+  name: loadout-group-blueshield-head
+  minLimit: 0
+  loadouts:
+  - BlueShieldHead
+
+- type: loadoutGroup
+  id: BlueShieldJumpsuit
+  name: loadout-group-blueshield-jumpsuit
+  loadouts:
+  - BlueShieldJumpsuit
+  - BlueShieldJumpskirt
+  - BlueShieldTurtleneck
+  - BlueShieldTurtleneckSkirt
+
+- type: loadoutGroup
+  id: BlueShieldNeck
+  name: loadout-group-blueshield-neck
+  minLimit: 0
+  loadouts:
+  - BlueShieldMantle
+
+- type: loadoutGroup
+  id: BlueShieldBackpack
+  name: loadout-group-blueshield-backpack
+  loadouts:
+  - BlueShieldBackpack
+  - BlueShieldSatchel
+  - BlueShieldDuffel
+
+- type: loadoutGroup
+  id: BlueShieldOuterClothing
+  name: loadout-group-blueshield-outerclothing
+  loadouts:
+  - BlueShieldOuterClothing
+  - BlueShieldWintercoat
+
+- type: loadoutGroup
+  id: SurvivalBlueShield
+  name: loadout-group-survival-blueshield
+  minLimit: 2
+  maxLimit: 2
+  hidden: true
+  loadouts:
+  - EmergencyNitrogenExtended
+  - EmergencyOxygenExtended
+
+# Brigmedic
+- type: loadoutGroup
+  id: BrigmedicHead
+  name: loadout-group-brigmedic-head
+  minLimit: 0
+  loadouts:
+  - BrigmedicHead
+
+- type: loadoutGroup
+  id: BrigmedicNeck
+  name: loadout-group-brigmedic-neck
+  minLimit: 0
+  loadouts:
+  - BrigmedicBedsheet
+
+- type: loadoutGroup
+  id: BrigmedicJumpsuit
+  name: loadout-group-brigmedic-jumpsuit
+  loadouts:
+  - BrigmedicJumpsuit
+  - BrigmedicJumpskirt
+  - BrigmedicTurtleneck
+  - BrigmedicTurtleneckSkirt
+
+- type: loadoutGroup
+  id: BrigmedicBackpack
+  name: loadout-group-brigmedic-backpack
+  loadouts:
+  - BrigmedicBackpack
+  - BrigmedicSatchel
+  - BrigmedicDuffel
+
+- type: loadoutGroup
+  id: BrigmedicOuterClothing
+  name: loadout-group-brigmedic-outerclothing
+  minLimit: 0
+  loadouts:
+  - BrigmedicOuterClothing
+  - BrigmedicWindbreaker
+
+- type: loadoutGroup
+  id: SurvivalBrigmedic
+  name: loadout-group-survival-brigmedic
+  minLimit: 2
+  maxLimit: 2
+  hidden: true
+  loadouts:
+  - EmergencyNitrogenExtended
+  - EmergencyOxygenExtended
+
 #ShuttlePilot
 - type: loadoutGroup
   id: PilotHead

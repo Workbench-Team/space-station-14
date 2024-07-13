@@ -1,0 +1,13 @@
+# Tier 2
+
+- type: technology
+  id: PNV
+  name: research-technology-nvd
+  icon:
+    sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
+    state: icon
+  discipline: Experimental
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - ClothingEyesVision

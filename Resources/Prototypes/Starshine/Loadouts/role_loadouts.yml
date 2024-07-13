@@ -1,4 +1,38 @@
-#Pilot
+# CentCom
+- type: roleLoadout
+  id: JobCentComConsultant
+  groups:
+  - ConsultantHead
+  - ConsultantNeck
+  - ConsultantJumpsuit
+  - ConsultantBackpack
+  - ConsultantOuterClothing
+  - Survival
+  - Trinkets
+
+- type: roleLoadout
+  id: JobBlueShield
+  groups:
+  - BlueShieldHead
+  - BlueShieldNeck
+  - BlueShieldJumpsuit
+  - BlueShieldBackpack
+  - BlueShieldOuterClothing
+  - SurvivalBlueShield
+  - Trinkets
+
+# Security
+- type: roleLoadout
+  id: JobBrigmedic
+  groups:
+  - BrigmedicHead
+  - BrigmedicNeck
+  - BrigmedicJumpsuit
+  - BrigmedicBackpack
+  - BrigmedicOuterClothing
+  - SurvivalBrigmedic
+  - Trinkets
+
 - type: roleLoadout
   id: JobShuttlePilot
   groups:
@@ -8,4 +42,5 @@
   - SecurityBelt
   - PilotOuterClothing
   - SecurityShoes
+  - SurvivalSecurity
   - Trinkets

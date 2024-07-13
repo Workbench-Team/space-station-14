@@ -307,12 +307,22 @@ reagent-effect-guidebook-reduce-rotting =
     { $chance ->
         [1] Регенерирует
        *[other] регенерируют
-    } { NATURALFIXED($time, 3) } { MANY("second", $time) } гниения
+    } { NATURALFIXED($time, 3) } { MANY("секунд", $time) } гниения
 reagent-effect-guidebook-wash-cream-pie-reaction =
     { $chance ->
         [1] Смывает
        *[other] смыть
     } кремовый пирог с лица
+reagent-effect-guidebook-area-reaction =
+    { $chance ->
+        [1] Вызывает
+       *[other] вызвать
+    } реакцию дыма или пены в течение { NATURALFIXED($duration, 3) } { MANY("секунд", $duration) }
+reagent-effect-guidebook-add-to-solution-reaction =
+    { $chance ->
+        [1] Приводит
+       *[other] привести
+    } к тому, что химикаты, нанесенные на объект, добавляются в его внутренний контейнер для растворов.
 reagent-effect-guidebook-plant-attribute =
     { $chance ->
         [1] Изменяет
@@ -338,8 +348,3 @@ reagent-effect-guidebook-plant-robust-harvest =
         [1] Увеличивает
        *[other] увеличить
     } потенцию растения на { $increase } до максимума { $limit }. Приводит к тому, что растение теряет свои семена, когда потенция достигает { $seedlesstreshold }. Попытка добавить потенцию свыше { $limit } может привести к снижению урожая с вероятностью 10%
-reagent-effect-guidebook-missing =
-    { $chance ->
-        [1] Вызывает
-       *[other] вызвать
-    } неизвестный эффект, так как никто еще не описал этот эффект

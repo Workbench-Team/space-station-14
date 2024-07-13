@@ -25,6 +25,7 @@
     DrinkGildlagerBottleFull: 2 #if champagne gets less because its premium, then gildlager should match this and have two
     DrinkGrenadineBottleFull: 2
     DrinkJuiceLimeCarton: 3
+    DrinkJuiceLemonCarton: 3
     DrinkJuiceOrangeCarton: 3
     DrinkJuiceTomatoCarton: 3
     DrinkCoffeeLiqueurBottleFull: 3
@@ -51,10 +52,10 @@
     DrinkJuiceBerryCarton: 3
     DrinkJuiceBananaCarton: 3
     DrinkJuicePineappleCarton: 3
-    DrinkJuiceLemonCarton: 3
     DrinkJuiceWatermelonCarton: 3
     DrinkJuiceWehCarton: 1
     DrinkJuiceMoffCarton: 1
+    DrinkTimefalllPorterBeerCan: 4
 # Starshine-end
   emaggedInventory:
     DrinkPoisonWinebottleFull: 2

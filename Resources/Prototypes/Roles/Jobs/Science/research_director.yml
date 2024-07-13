@@ -35,6 +35,5 @@
     ears: ClothingHeadsetRD
   storage:
     back:
-    - BoxSurvival
     - Flash
     - TelescopicBaton

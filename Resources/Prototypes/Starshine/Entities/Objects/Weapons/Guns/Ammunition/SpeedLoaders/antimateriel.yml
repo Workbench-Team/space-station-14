@@ -1,0 +1,27 @@
+- type: entity
+  id: SpeedLoaderAntiMaterial
+  name: "speed loader (.60 antimaterial)"
+  parent: BaseSpeedLoaderMagnum
+  components:
+  - type: Tag
+    tags:
+      - SpeedLoaderAntiMaterial
+  - type: BallisticAmmoProvider
+    proto: CartridgeAntiMateriel
+    whitelist:
+      tags:
+        - CartridgeAntiMateriel
+    capacity: 3
+  - type: Sprite
+    sprite: Starshine/Objects/Weapons/Guns/Ammunition/SpeedLoaders/AntiMaterial/antimaterial_speed_loader.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: base-3
+        map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: base
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+

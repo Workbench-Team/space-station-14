@@ -1,0 +1,29 @@
+- type: entity
+  name: honey pie
+  parent: FoodCakeBase
+  id: FoodCakeHoneyPie
+  description: A sweet gourmet dessert with a rich flavor.
+  components:
+  - type: Sprite
+    sprite: Starshine/Objects/Consumable/Food/Baked/honeypie.rsi
+    state: honeypie
+  - type: SliceableFood
+    slice: FoodCakeHoneyPieSlice
+  - type: Tag
+    tags:
+    - Cake
+    - Fruit
+
+- type: entity
+  name: honey pie slice
+  parent: FoodCakeSliceBase
+  id: FoodCakeHoneyPieSlice
+  description: A sweet gourmet dessert with a rich flavor.
+  components:
+  - type: Sprite
+    sprite: Starshine/Objects/Consumable/Food/Baked/honeypie.rsi
+    state: honeypie-slice
+  - type: Tag
+    tags:
+    - Cake
+    - Slice

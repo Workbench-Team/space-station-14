@@ -38,4 +38,7 @@
     id: ShuttlePilotPDA
     ears: ClothingHeadsetSecurity
     pocket1: WeaponPistolMk58Nonlethal
-  innerClothingSkirt: ClothingUniformJumpskirtSec
+  storage:
+    back:
+    - Flash
+    - MagazinePistol

@@ -1,0 +1,53 @@
+# BlueShield
+- type: loadout
+  id: EmergencyOxygenBlueShield
+  equipment: EmergencyOxygenBlueShield
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: OxygenBreather
+
+- type: startingGear
+  id: EmergencyOxygenBlueShield
+  storage:
+    back:
+    - BoxSurvivalBlueShield
+
+- type: loadout
+  id: EmergencyNitrogenBlueShield
+  equipment: EmergencyNitrogenBlueShield
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: NitrogenBreather
+
+- type: startingGear
+  id: EmergencyNitrogenBlueShield
+  storage:
+    back:
+    - BoxSurvivalBlueShieldNitrogen
+
+# Brigmedic
+- type: loadout
+  id: EmergencyOxygenBrigmedic
+  equipment: EmergencyOxygenBrigmedic
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: OxygenBreather
+
+- type: startingGear
+  id: EmergencyOxygenBrigmedic
+  storage:
+    back:
+    - BoxSurvivalBrigmedic
+
+- type: loadout
+  id: EmergencyNitrogenBrigmedic
+  equipment: EmergencyNitrogenBrigmedic
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: NitrogenBreather
+
+- type: startingGear
+  id: EmergencyNitrogenBrigmedic
+  storage:
+    back:
+    - BoxSurvivalBrigmedicNitrogen

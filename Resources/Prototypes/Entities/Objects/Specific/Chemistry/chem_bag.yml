@@ -30,6 +30,7 @@
         - PillCanister
         - BottleChem
         - Syringe
+        - Dropper
         - GlassBeaker
         - AutoInjector
   - type: Dumpable

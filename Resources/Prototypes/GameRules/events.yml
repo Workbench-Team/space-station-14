@@ -212,49 +212,6 @@
   - type: KudzuGrowthRule
 
 - type: entity
-  id: MeteorSwarm
-  parent: BaseStationEventLongDelay
-  components:
-  - type: StationEvent
-    earliestStart: 30
-    weight: 7.5
-    minimumPlayers: 10 #Enough to hopefully have at least one engineering guy
-    startAnnouncement: station-event-meteor-swarm-start-announcement
-    endAnnouncement: station-event-meteor-swarm-end-announcement
-    startAudio:
-      path: /Audio/Announcements/meteors_start.ogg # Starshine
-      params:
-        volume: -4
-    endAudio:
-      path: /Audio/Announcements/meteors_end.ogg # Starshine
-      params:
-        volume: -4
-    duration: null #ending is handled by MeteorSwarmRule
-  - type: MeteorSwarmRule
-
-- type: entity
-  id: MeteorSwarmSmall
-  parent: BaseStationEventLongDelay
-  noSpawn: true
-  components:
-  - type: StationEvent
-    earliestStart: 30
-    weight: 5
-    minimumPlayers: 20
-    startAnnouncement: station-event-meteor-swarm-start-announcement
-    endAnnouncement: station-event-meteor-swarm-end-announcement
-    startAudio:
-      path: /Audio/Announcements/meteors_start.ogg
-      params:
-        volume: -4
-    endAudio:
-      path: /Audio/Announcements/meteors_end.ogg
-      params:
-        volume: -4
-    duration: null #ending is handled by MeteorSwarmSmallRule
-  - type: MeteorSwarmSmallRule
-
-- type: entity
   id: MouseMigration
   parent: BaseStationEventShortDelay
   components:
@@ -278,17 +235,32 @@
     - id: MobMouseCancer
       prob: 0.001
 
+# Events always spawn a critter regardless of Probability https://github.com/space-wizards/space-station-14/issues/28480 I added the Rat King to their own event with a player cap.
+
 - type: entity
-  id: RatMigration
-  parent: MouseMigration
-  noSpawn: true
+  id: KingRatMigration
+  parent: BaseStationEventShortDelay
   components:
   - type: StationEvent
-    earliestStart: 20
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio: # Starshine
+      path: /Audio/Starshine/Announcements/lifesigns.ogg
+      params:
+        volume: -4
+    earliestStart: 15
     weight: 6
-    minimumPlayers: 15
     duration: 50
+    minimumPlayers: 15 # Hopefully this is enough for the Rat King's potential Army
   - type: VentCrittersRule
+    entries:
+    - id: MobMouse
+      prob: 0.02
+    - id: MobMouse1
+      prob: 0.02
+    - id: MobMouse2
+      prob: 0.02
+    - id: MobMouseCancer
+      prob: 0.001
     specialEntries:
     - id: SpawnPointGhostRatKing
       prob: 0.001
@@ -327,20 +299,6 @@
     duration: 60
     maxDuration: 120
   - type: PowerGridCheckRule
-
-- type: entity
-  id: RandomSentience
-  parent: BaseGameRule
-  components:
-  - type: StationEvent
-    weight: 6
-    duration: 1
-    maxOccurrences: 1 # this event has diminishing returns on interesting-ness, so we cap it
-    startAudio:
-      path: /Audio/Announcements/sentience.ogg
-      params:
-        volume: -4
-  - type: RandomSentienceRule
 
 - type: entity
   parent: BaseGameRule
@@ -467,7 +425,7 @@
       blacklist:
         components:
         - ZombieImmune
-        - InitialInfectedExempt
+        - AntagImmune
       briefing:
         text: zombie-patientzero-role-greeting
         color: Plum
@@ -478,6 +436,7 @@
         maxInitialInfectedGrace: 450
       - type: ZombifyOnDeath
       - type: IncurableZombie
+      - type: InitialInfected
       mindComponents:
       - type: InitialInfectedRole
         prototype: InitialInfected
@@ -518,7 +477,7 @@
 
 - type: entity
   parent: BaseTraitorRule
-  id: SleeperAgentsRule
+  id: SleeperAgents
   components:
   - type: StationEvent
     earliestStart: 30
@@ -528,16 +487,21 @@
     startAnnouncement: station-event-communication-interception
     startAudio:
       path: /Audio/Announcements/intercept.ogg
+    duration: null # the rule has to last the whole round not 1 second
   - type: AlertLevelInterceptionRule
   - type: AntagSelection
     definitions:
-    - prefRoles: [ Traitor ]
+    - prefRoles: [ TraitorSleeper ]
+      fallbackRoles: [ Traitor ]
       min: 1
       max: 2
       playerRatio: 10
+      blacklist:
+        components:
+        - AntagImmune
       mindComponents:
       - type: TraitorRole
-        prototype: Traitor
+        prototype: TraitorSleeper
 
 - type: entity
   id: MassHallucinations
@@ -632,3 +596,22 @@
       maxOccurrences: 1 # this event has diminishing returns on interesting-ness, so we cap it
       weight: 5
     - type: MobReplacementRule
+
+- type: entity
+  id: XenomorphMigration
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    earliestStart: 30
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio: # Starshine
+      path: /Audio/Starshine/Announcements/lifesigns.ogg
+      params:
+        volume: -4
+    weight: 6
+    minimumPlayers: 15
+    duration: 60
+  - type: VentCrittersRule
+    specialEntries:
+    - id: SpawnPointGhostXenoHunter
+      prob: 0.00001

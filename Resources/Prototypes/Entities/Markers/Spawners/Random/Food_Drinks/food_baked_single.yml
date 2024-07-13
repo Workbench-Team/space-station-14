@@ -74,6 +74,8 @@
       - FoodBakedBrownie
       - FoodPieBananaCreamSlice
       - FoodTartMimeSlice
+      # Starshine
+      - FoodCakeHoneyPieSlice
     chance: 0.8
     offset: 0.0
     #rare

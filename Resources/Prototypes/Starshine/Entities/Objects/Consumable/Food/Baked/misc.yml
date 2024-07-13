@@ -1,0 +1,24 @@
+- type: entity
+  name: mothroach roast
+  parent: FoodMealBase
+  id: FoodMothroachRoast
+  description: A mothroach roast. You're proud of yourself now, aren't you?
+  components:
+  - type: Food
+    trash: FoodPlate
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - salty
+  - type: Sprite
+    sprite: Starshine/Objects/Consumable/Food/Baked/mothroachroast.rsi
+    state: mothroachroast
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Protein
+          Quantity: 12

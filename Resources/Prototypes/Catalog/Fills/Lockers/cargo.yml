@@ -11,7 +11,10 @@
       - id: ClothingBeltUtilityFilled
       - id: SurvivalKnife
       - id: HandheldGPSBasic
+      - id: ClothingBeltMinerWebbing
+      - id: ClothingBeltSalvageWebbing
       - id: RadioHandheld
+      - id: ClothingOuterArmorMiner
       - id: SeismicCharge
         amount: 2
       - id: OreBag
@@ -35,7 +38,10 @@
       - id: ClothingBeltUtilityFilled
       - id: SurvivalKnife
       - id: HandheldGPSBasic
+      - id: ClothingBeltMinerWebbing
+      - id: ClothingBeltSalvageWebbing
       - id: RadioHandheld
+      - id: ClothingOuterArmorMiner
       - id: SeismicCharge
         amount: 2
       - id: OreBag

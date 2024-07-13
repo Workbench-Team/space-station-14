@@ -67,6 +67,5 @@
     belt: BoxFolderClipboard
   storage:
     back:
-    - BoxSurvival
     - Flash
     - TelescopicBaton

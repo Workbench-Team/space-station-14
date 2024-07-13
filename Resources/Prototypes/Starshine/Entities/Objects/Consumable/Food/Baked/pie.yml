@@ -1,0 +1,73 @@
+#pumpkin pie
+- type: entity
+  name: pumpkin pie
+  parent: FoodPieBase
+  id: FoodPiePumpkin
+  description: Tender dough filled with a flavorful pumpkin filling.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - pumpkin
+  - type: Sprite
+    sprite: Starshine/Objects/Consumable/Food/Baked/pumpkinpie.rsi
+    state: pumpkinpie
+  - type: SliceableFood
+    slice: FoodPiePumpkinSlice
+  - type: Tag
+    tags:
+    - Pie
+
+- type: entity
+  name: slice of pumpkin pie
+  parent: FoodPieSliceBase
+  id: FoodPiePumpkinSlice
+  description: Tender dough filled with a flavorful pumpkin filling.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - pumpkin
+  - type: Sprite
+    sprite: Starshine/Objects/Consumable/Food/Baked/pumpkinpie.rsi
+    state: pumpkinpie-slice
+  - type: Tag
+    tags:
+    - Pie
+    - Slice
+
+#tofu pie
+- type: entity
+  name: tofu pie
+  parent: FoodPieBase
+  id: FoodPieTofu
+  description: Meatless, but still delicious!
+  components:
+  - type: FlavorProfile
+    flavors:
+      - tofu
+  - type: Sprite
+    sprite: Starshine/Objects/Consumable/Food/Baked/tofupie.rsi
+    state: tofupie
+  - type: SliceableFood
+    slice: FoodPieTofuSlice
+  - type: Tag
+    tags:
+    - Pie
+
+- type: entity
+  name: slice of tofu pie
+  parent: FoodPieSliceBase
+  id: FoodPieTofuSlice
+  description: Meatless, but still delicious!
+  components:
+  - type: FlavorProfile
+    flavors:
+      - tofu
+  - type: Sprite
+    sprite: Starshine/Objects/Consumable/Food/Baked/tofupie.rsi
+    state: tofupie-slice
+  - type: Tag
+    tags:
+    - Pie
+    - Slice

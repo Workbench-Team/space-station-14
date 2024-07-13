@@ -1,0 +1,25 @@
+## Starshine
+uplink-bow-bundle-name = Набор композитного лука
+uplink-bow-bundle-desc = Скрытая угроза: Композитный лук, созданный компанией Cybersun. Имеет с собой колчан стрел.
+uplink-bow-compound-red-name = Кровавый композитный лук
+uplink-bow-compound-red-desc  = Залит кровью грейтайдов. Отличный легкий лук, в паре с пробивными стрелами. Можно модернизировать при помощи С4.
+uplink-syndie-miner-armor-name = Кроваво-красная шахтерская броня
+uplink-syndie-miner-armor-desc = Кроваво-красный вариант шахтерской брони. Мы надеемся, вы купили её, зная что делаете.
+uplink-kr51-bundle-name = Набор КР51
+uplink-kr51-bundle-desc = Скрытая угроза: Классическая автоматическая винтовка КР51, в наборе с 3 магазинами.
+uplink-magazine-caseless-rifle-name = Магазин винтовки (.25 безгильзовые)
+uplink-magazine-caseless-rifle-desc = Магазин для винтовки с 30 безгильзовыми патронами. Совместим с КР51.
+uplink-magazine-caseless-rifle-bundle-name = Набор с магазинами винтовки (.25)
+uplink-magazine-caseless-rifle-bundle-desc = Набор, содержащий 4 расширенных магазина для дробовика. Совместим с КР51.
+uplink-miniature-energy-crossbow-syndie-green-name = Энергетический мини арбалет
+uplink-miniature-energy-crossbow-syndie-green-desc = Энергетический арбалет синдиката, маленький, бесшумный и смертоносный.
+uplink-syringe-cartridge-name = Коробка шприцевых картриджей
+uplink-syringe-cartridge-desc = Коробка шприцевых картриджей для шприцевого пистолета
+uplink-gygax-syndie-name = АБМС «Гайгэкс»
+uplink-gygax-desc = Перекрашенный синдикатом АБМНТ «Гайгэкс», потрёпан и сильно изношен, но все еще функционирует в штатном режиме. Прямо как с последней корпоротивной войны. 
+uplink-mauler-name = АБМС «Маулер» 
+uplink-mauler-desc = Перекрашенный синдикатом мародёр, был изрядно изменен, но все тот же старый добрый мародёр. 
+uplink-clothing-pnv-name = ПНВ
+uplink-clothing-pnv-desc = Прибор ночного видения.
+uplink-m90gl-bundle-name = Набор m90-gl
+uplink-m90gl-bundle-desc = Старая винтовка типа булпап. И нет, подствольник не настоящий.

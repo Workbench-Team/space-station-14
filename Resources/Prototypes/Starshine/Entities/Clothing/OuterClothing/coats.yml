@@ -1,4 +1,36 @@
 - type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatCentcomConsultant
+  name: CentCom consultant coat
+  description: "A warm and long coat with gold accents, showing who is really in charge."
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/centcom_consultant.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Coats/centcom_consultant.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.7
+        Caustic: 0.75 
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+- type: entity
+  parent: ClothingOuterCoatCentcomConsultant
+  id: ClothingOuterCoatCentcom
+  name: CentCom's coat
+  description: "A warm and long coat with gold accents, showing who is really in charge."
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/centcom.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Coats/centcom.rsi
+
+- type: entity
   parent: ClothingOuterCoatHoSTrench
   id: ClothingOuterCoatHoSHonoraryTrench
   name: head of security's armored honorary trenchcoat

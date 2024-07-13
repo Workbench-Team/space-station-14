@@ -84,6 +84,7 @@ anomaly-behavior-rapid = Частота импульсов гораздо выш
 anomaly-behavior-reflect = Обнаружено защитное поле.
 anomaly-behavior-nonsensivity = Была обнаружена низкая чувствительность к частицам.
 anomaly-behavior-sensivity = Была обнаружена высокая чувствительность к частицам.
+anomaly-behavior-invisibility = Обнаружено искажение световой волны.
 anomaly-behavior-secret = Обнаружены помехи. Некоторые данные не могут быть прочитаны.
 anomaly-behavior-inconstancy = [color=crimson]Обнаружена неустойчивость. Типы частиц могут меняться с течением времени.[/color]
 anomaly-behavior-fast = [color=crimson]Частота импульсов сильно увеличивается.[/color]

@@ -179,24 +179,6 @@
 
 - type: entity
   parent: DrinkJuiceCartonBase
-  id: DrinkJuiceLemonCarton
-  name: lemon juice
-  description: This is a drink that not only refreshes you, but also transports you to the amazing reaches of space. Its bright yellow colour reminds you of sunlight, while the freshness of lemon adds notes of acidity and energy.
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        reagents:
-        - ReagentId: JuiceLemon
-          Quantity: 50
-  - type: Sprite
-    layers:
-      - state: icon
-        map: ["enum.OpenableVisuals.Layer"]
-      - state: label-lemon
-
-- type: entity
-  parent: DrinkJuiceCartonBase
   id: DrinkJuiceWatermelonCarton
   name: watermelon juice
   description: This is an amazing drink that combines the sweetness of ripe watermelon and the mysterious energy of the cosmos. Its bright red colour reminds of the beauty of the red planets, and the sweet taste of watermelon gives a feeling of summer sunshine and freshness.

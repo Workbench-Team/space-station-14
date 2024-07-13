@@ -104,6 +104,7 @@
         Heat: 0.1
         Radiation: 0
         Caustic: 0.2
+        Stun: 0.9
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1
@@ -135,6 +136,7 @@
         Heat: 0.50
         Radiation: 0.25
         Caustic: 0.50
+        Stun: 0.8
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85

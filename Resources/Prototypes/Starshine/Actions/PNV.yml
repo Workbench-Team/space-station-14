@@ -1,0 +1,24 @@
+- type: entity
+  id: SwitchNightVision
+  name: switch night vision
+  description: Switches night vision
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 2.5
+    icon:
+      sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
+      state: icon
+    event: !type:NvInstantActionEvent
+
+- type: entity
+  id: NVToggleAction
+  name: toggle nvd
+  description: Toggles your NVD
+  components:
+  - type: InstantAction
+    useDelay: 2.5
+    icon:
+      sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
+      state: icon
+    event: !type:NvInstantActionEvent

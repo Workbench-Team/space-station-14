@@ -1,18 +1,18 @@
+# Errors
+loadout-group-species-restriction = Этот предмет недоступен для вашего текущей расы.
 # Miscellaneous
 loadout-group-trinkets = Безделушки
 loadout-group-glasses = Очки
 loadout-group-backpack = Рюкзак
-# CentCom
-loadout-group-consultant-head = Голова консультанта
-loadout-group-consultant-jumpsuit = Комбинезон консультанта
-loadout-group-consultant-neck = Шея консультанта
-loadout-group-consultant-backpack = Рюкзак консультанта
-loadout-group-consultant-outerclothing = Верхняя одежда консультанта
-loadout-group-blueshield-head = Голова ОСЩ
-loadout-group-blueshield-jumpsuit = Комбинезон ОСЩ
-loadout-group-blueshield-neck = Шея ОСЩ
-loadout-group-blueshield-backpack = Рюкзак ОСЩ
-loadout-group-blueshield-outerclothing = Верхняя одежда ОСЩ
+loadout-group-instruments = Инструменты
+loadout-group-survival-basic = Аварийный запас
+loadout-group-survival-extended = Расширенный аварийный запас
+loadout-group-survival-clown = Клоунский аварийный запас
+loadout-group-survival-medical = Медицинский аварийный запас
+loadout-group-survival-security = Аварийный запас СБ
+loadout-group-survival-syndicate = Github заставляет меня писать текст, который буквально дважды невозможно увидеть игроку, отправьте помощь
+loadout-group-breath-tool = Расозависимые дыхательные инструменты
+loadout-group-tank-harness = Расоспецифичное снаряжение для выживания
 # Command
 loadout-group-captain-head = Голова капитана
 loadout-group-captain-jumpsuit = Комбинезон капитана
@@ -49,6 +49,7 @@ loadout-group-janitor-head = Голова уборщика
 loadout-group-janitor-jumpsuit = Комбинезон уборщика
 loadout-group-janitor-gloves = Перчатки уборщика
 loadout-group-janitor-outerclothing = Верхняя одежда уборщика
+loadout-group-janitor-plunger = Вантуз уборщика
 loadout-group-botanist-head = Голова ботаника
 loadout-group-botanist-jumpsuit = Комбинезон ботаника
 loadout-group-botanist-backpack = Рюкзак ботаника
@@ -63,6 +64,7 @@ loadout-group-mime-mask = Маска мима
 loadout-group-mime-jumpsuit = Комбинезон мима
 loadout-group-mime-backpack = Рюкзак мима
 loadout-group-mime-outerclothing = Верхняя одежда мима
+loadout-group-musician-jumpsuit = Комбинезон музыканта
 loadout-group-musician-outerclothing = Верхняя одежда музыканта
 # Cargo
 loadout-group-quartermaster-head = Голова квартирмейстера

@@ -343,6 +343,7 @@
       - id: AmmoTechFabCircuitboard
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: BookSpaceLaw
       - id: WeaponLaserHos
 
 - type: entity
@@ -368,6 +369,7 @@
       - id: AmmoTechFabCircuitboard
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: BookSpaceLaw
       - id: WeaponLaserHos
 
 - type: entity

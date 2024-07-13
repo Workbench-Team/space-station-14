@@ -8,72 +8,22 @@
     state: icon
   discipline: Arsenal
   tier: 1
-  cost: 7500
+  cost: 5000
   recipeUnlocks:
   - WeaponProtoKineticAccelerator
   - ShuttleGunKineticCircuitboard
   # These are roundstart but not replenishable for salvage
+## Starshine-start
   - WeaponCutter
   # This is not roundstart since its a direct upgrade
+## Starshine-end
 
 - type: technology
-  id: StandardAmmunition
-  name: research-technology-standard-ammunition
+  id: DraconicMunitions
+  name: research-technology-draconic-munitions
   icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
-    state: red-icon
-  discipline: Arsenal
-  tier: 1
-  cost: 7500
-  recipeUnlocks:
-  - MagazinePistol
-  - MagazinePistolSubMachineGunTopMounted
-  - MagazineVectorPistolSmall # Маленький
-  - MagazinePistolSubMachineGun
-  - MagazineRifle
-  - MagazineUniversalShort
-  - SpeedLoaderUniversal
-  - SpeedLoaderMagnum
-
-- type: technology
-  id: CompBows
-  name: research-technology-comp-bows
-  icon:
-    sprite: Objects/Weapons/Guns/Bow/compoundbow.rsi
-    state: unwielded
-  discipline: Arsenal
-  tier: 1
-  cost: 7500
-  recipeUnlocks:
-  - BowCompound
-  - ArrowCompound
-  - ClothingBeltQuiverComposit
-
-- type: technology
-  id: Firearms
-  name: research-technology-firearms
-  icon:
-    sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
-    state: icon
-  discipline: Arsenal
-  tier: 1
-  cost: 10000
-  recipeUnlocks:
-# Starshine-start
-  - WeaponSubMachineGunVector
-  - WeaponSubMachineGunWt550
-  - WeaponShotgunKammerer
-  - WeaponPistolMk58
-  - WeaponRevolverInspector
-# Starshine-end
-
-# Starshine-start
-- type: technology
-  id: IncendiaryAmmunition
-  name: research-technology-incendiary-ammunition
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
-    state: incendiary
+    sprite: Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi
+    state: incendiarydisplay
   discipline: Arsenal
   tier: 1
   cost: 10000
@@ -88,7 +38,6 @@
   - MagazineBoxMagnumIncendiary
   - MagazineBoxLightRifleIncendiary
   - MagazineBoxRifleIncendiary
-# Starshine-end
 
 - type: technology
   id: WeaponizedLaserManipulation
@@ -98,10 +47,9 @@
     state: icon
   discipline: Arsenal
   tier: 1
-  cost: 10000
+  cost: 7500
   recipeUnlocks:
   - WeaponLaserCarbine
-  - WeaponLaserGun
 
 - type: technology
   id: NonlethalAmmunition
@@ -113,10 +61,14 @@
   tier: 1
   cost: 5000
   recipeUnlocks:
+## Starshine-start
   - MagazineBoxPistolRubber
   - MagazineBoxMagnumRubber
   - MagazineBoxLightRifleRubber
   - MagazineBoxRifleRubber
+## Starshine-end
+  - MagazineShotgunBeanbag
+  - BoxShellTranquilizer 
   - BoxBeanbag 
   - WeaponDisabler
 
@@ -156,35 +108,13 @@
   - WeaponDisablerSMG
 
 - type: technology
-  id: ArmorProduce
-  name: research-technology-armor-produce
-  icon:
-    sprite: Clothing/OuterClothing/Armor/bulletproof.rsi
-    state: icon
-  discipline: Arsenal
-  tier: 1
-  cost: 6000
-  recipeUnlocks:
-  - ClothingHeadHelmetRiot
-  - ClothingHeadHelmetBasic
-  - ClothingHeadHelmetSwat
-  - ClothingOuterArmorRiot
-  - ClothingOuterArmorBasicSlim
-  - ClothingOuterArmorBasic
-  - ClothingOuterArmorBulletproof
-  - ClothingBeltSecurityWebbing
-  - ClothingBeltSecurity
-
-# Tier 2
-
-- type: technology
   id: ExplosiveTechnology
   name: research-technology-explosive-technology
   icon:
     sprite: Objects/Devices/payload.rsi
     state: payload-explosive-armed
   discipline: Arsenal
-  tier: 2
+  tier: 1
   cost: 10000
   recipeUnlocks:
   - SignallerAdvanced
@@ -195,6 +125,8 @@
   - ExplosivePayload
   - ChemicalPayload
 
+# Tier 2
+
 - type: technology
   id: ConcentratedLaserWeaponry
   name: research-technology-concentrated-laser-weaponry
@@ -203,108 +135,21 @@
     state: icon
   discipline: Arsenal
   tier: 2
-  cost: 12500
+  cost: 10000
   recipeUnlocks:
   - WeaponLaserCannon
+
+- type: technology
+  id: WaveParticleHarnessing
+  name: research-technology-wave-particle-harnessing
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/xray.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
   - WeaponXrayCannon
-  - WeaponAdvancedLaser
-
-- type: technology
-  id: AdvancedFirearms
-  name: research-technology-advanced-firearms
-  icon:
-    sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
-    state: icon
-  discipline: Arsenal
-  tier: 2
-  cost: 12500
-  recipeUnlocks:
-  - WeaponPistolMk68 # Автоматический
-  - WeaponShotgunEnforcer
-  - WeaponRifleLecter
-  - WeaponSubMachineGunDrozd
-
-- type: technology
-  id: AdvancedAmmunition
-  name: research-technology-advanced-ammunition
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/caseless_rifle.rsi
-    state: base-b
-  discipline: Arsenal
-  tier: 2
-  cost: 10000
-  recipeUnlocks:
-  - MagazineBoxPistol
-  - MagazineBoxRifle
-  - MagazineBoxRifleBig
-  - BoxLethalshot
-  - MagazineBoxMagnum
-  - MagazineBoxUniversalPT1
-
-- type: technology
-  id: AdvancedMagazines
-  name: research-technology-advanced-magazines
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Magnum/magnum_smg_mag.rsi
-    state: red
-  discipline: Arsenal
-  tier: 2
-  cost: 10000
-  recipeUnlocks:
-  - MagazineVectorPistol
-  - MagazineVectorRifle # 24 пт .20
-  - MagazineRifleExt # 45 пт
-  - MagazineUniversal
-  - MagazineShotgunSaiga
-  - MagazinePistolHighCapacity
-
-- type: technology
-  id: SpecAmmunition
-  name: research-technology-spec-ammunition
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/light_rifle.rsi
-    state: base-b
-  discipline: Arsenal
-  tier: 2
-  cost: 10000
-  recipeUnlocks:
-  - MagazineBoxPistolIncendiary
-  - MagazineBoxRifleIncendiary
-  - BoxShotgunIncendiary
-  - BoxShotgunSlug
-  - BoxShellTranquilizer
-  - MagazineBoxUniversalVPS
-
-- type: technology
-  id: durandbmp
-  name: research-technology-durand
-  icon:
-    sprite: Objects/Specific/Mech/mecha.rsi
-    state: durand
-  discipline: Arsenal
-  tier: 2
-  cost: 15000
-  recipeUnlocks:
-    - DurandLArm
-    - DurandLLeg
-    - DurandRLeg
-    - DurandRArm
-    - DurandArmor
-    - DurandHarness
-
-- type: technology
-  id: AdvSalvageWeapons
-  name: research-technology-salvage-weapons-adv
-  icon:
-    sprite: Objects/Weapons/Guns/Battery/cutteradv.rsi
-    state: icon
-  discipline: Arsenal
-  tier: 2
-  cost: 10000
-  recipeUnlocks:
-    - WeaponCutterAdv
-  technologyPrerequisites:
-    - SalvageWeapons
 
 - type: technology
   id: BasicShuttleArmament
@@ -370,20 +215,3 @@
   - ShuttleGunDusterCircuitboard
   technologyPrerequisites:
   - BasicShuttleArmament
-
-- type: technology
-  id: gygaxabnt
-  name: research-technology-gygax
-  icon:
-    sprite: Objects/Specific/Mech/mecha.rsi
-    state: gygax
-  discipline: Arsenal
-  tier: 3
-  cost: 20000
-  recipeUnlocks:
-    - GygaxHarness
-    - GygaxLArm
-    - GygaxLLeg
-    - GygaxRLeg
-    - GygaxRArm
-    - GygaxArmor

@@ -26,6 +26,7 @@ research-technology-uranium-munitions = Урановые боеприпасы
 research-technology-draconic-munitions = Драконовые боеприпасы
 research-technology-explosive-technology = Технология взрывчаток
 research-technology-nonlethal-ammunition = Нелетальная аммуниция
+research-technology-wave-particle-harnessing = Использование рентген-частиц
 research-technology-advanced-riot-control = Боевой контроль беспорядков
 research-technology-portable-microfusion-weaponry = Ручное микроинфузионное оружие
 research-technology-experimental-battery-ammo = Экспериментальные батарейные боеприпасы
@@ -65,24 +66,3 @@ research-technology-advanced-spray = Продвинутый спрей
 research-technology-bluespace-cargo-transport = Блюспейс грузовой транспорт
 research-technology-bluespace-chemistry = Блюспейс Химия
 research-technology-quantum-fiber-weaving = Плетение квантовых волокон
-
-## Starshine
-
-research-technology-modsuitscraft = МОД-Костюмы
-research-technology-comp-bows = Композитные луки
-research-technology-standard-ammunition = Стандартные боеприпасы
-research-technology-firearms = Огнестрельное оружие
-research-technology-laser-weapons = Лазерное оружие
-research-technology-armor-produce = Производство брони
-research-technology-advanced-laser-weapons = Продвинутое лазерное оружие
-research-technology-advanced-firearms = Продвинутое огнестрельное оружие
-research-technology-advanced-ammunition = Продвинутые боеприпасы
-research-technology-advanced-magazines = Продвинутые магазины
-research-technology-incendiary-ammunition = Зажигательные боеприпасы
-research-technology-spec-ammunition = Специализированные боеприпасы
-research-technology-salvage-weapons-adv = Продвинутое оружие утилизаторов
-
-research-technology-clarke-aplu = КШГ Кларк
-research-technology-Odyssey = ГМС Одиссей
-research-technology-gygax = АБНТ Гайгэкс
-research-technology-durand = БМП Дюранд

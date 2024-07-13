@@ -26,6 +26,7 @@ reagent-effect-condition-guidebook-reagent-threshold =
             }
     }
 reagent-effect-condition-guidebook-mob-state-condition = состояние существа { $state }
+reagent-effect-condition-guidebook-job-condition = работа цели { $job }
 reagent-effect-condition-guidebook-solution-temperature =
     температура раствора { $max ->
         [2147483648] не менее { NATURALFIXED($min, 2) }К

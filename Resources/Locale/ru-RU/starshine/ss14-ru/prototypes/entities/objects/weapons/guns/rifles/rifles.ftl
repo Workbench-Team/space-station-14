@@ -1,0 +1,12 @@
+ent-WeaponRifleLecterRubber = Лектер
+    .suffix = Травматический
+    .desc = { ent-WeaponRifleLecter.desc }
+ent-WeaponRifleKR51 = КР51
+    .desc = Тихая автоматическая винтовка. Использует .25 безгильзовые патроны.
+    .suffix = Автомат
+ent-WeaponRifleAsh9 = АШ9
+    .desc = Громкий и грубый безгильзовый автомат. Использует 12.7 безгильзовые.
+    .suffix = Автомат
+ent-WeaponSniperVssk14 = ВССК
+    .desc = Медленная, но чертовски меткая винтовка. Использует 12.7 безгильзовые.
+    .suffix = Винтовка

@@ -1,0 +1,50 @@
+- type: entity
+  name: sandwich
+  parent: FoodBurgerBase
+  id: FoodBurgerSandwich
+  description: Fresh cheese, meat and flavorful bread create a delicious and nutritious sandwich.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - bun
+      - cheesy
+      - meaty
+  - type: Sprite
+    sprite: Starshine/Objects/Consumable/Food/sandwich.rsi
+    state: sandwich
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Vitamin
+          Quantity: 6
+
+- type: entity
+  name: cheese sandwich
+  parent: FoodBurgerBase
+  id: FoodBurgerSandwichCheese
+  description: Tender cheese and flavorful bread create a tasty and light snack.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - bun
+      - cheesy
+  - type: Sprite
+    sprite: Starshine/Objects/Consumable/Food/sandwich.rsi
+    state: cheesesandwich
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Protein
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 6

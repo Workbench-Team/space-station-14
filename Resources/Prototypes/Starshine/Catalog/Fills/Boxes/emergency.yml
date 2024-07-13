@@ -1,0 +1,69 @@
+- type: entity
+  name: survival box
+  parent: BoxCardboard
+  id: BoxSurvivalBlueShield
+  description: It's a box with basic internals inside.
+  suffix: BlueShield
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingMaskGasSwat
+    - id: EmergencyOxygenTankFilled
+    - id: SpaceMedipen
+    - id: EmergencyMedipen
+    - id: Flare
+    - id: FoodTinMRE
+  - type: Sprite
+    layers:
+    - state: internals
+    - state: emergencytank
+
+- type: entity
+  parent: BoxSurvivalBlueShield
+  id: BoxSurvivalBlueShieldNitrogen
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingMaskGasSwat
+    - id: EmergencyNitrogenTankFilled
+    - id: SpaceMedipen
+    - id: EmergencyMedipen
+    - id: Flare
+    - id: FoodTinMRE
+  - type: Label
+    currentLabel: reagent-name-nitrogen
+
+- type: entity
+  name: survival box
+  parent: BoxCardboard
+  id: BoxSurvivalBrigmedic
+  description: It's a box with basic internals inside.
+  suffix: MedSec
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingMaskBreathMedicalSecurity
+    - id: EmergencyOxygenTankFilled
+    - id: SpaceMedipen
+    - id: EmergencyMedipen
+    - id: EmergencyMedipen
+    - id: FoodTinMRE
+  - type: Sprite
+    layers:
+    - state: internals
+    - state: emergencytank
+
+- type: entity
+  parent: BoxSurvivalBrigmedic
+  id: BoxSurvivalBrigmedicNitrogen
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingMaskBreathMedicalSecurity
+    - id: EmergencyNitrogenTankFilled
+    - id: SpaceMedipen
+    - id: EmergencyMedipen
+    - id: EmergencyMedipen
+    - id: FoodTinMRE
+  - type: Label
+    currentLabel: reagent-name-nitrogen

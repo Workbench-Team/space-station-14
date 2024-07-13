@@ -1041,9 +1041,9 @@
   name: uplink-reinforcement-radio-name
   description: uplink-reinforcement-radio-desc
   productEntity: ReinforcementRadioSyndicate
-  icon: { sprite: Objects/Devices/communication.rsi, state: old-radio }
+  icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-urist }
   cost:
-    Telecrystal: 16
+    Telecrystal: 14
   categories:
   - UplinkAllies
   conditions:
@@ -1057,9 +1057,9 @@
   name: uplink-reinforcement-radio-name
   description: uplink-reinforcement-radio-desc
   productEntity: ReinforcementRadioSyndicateNukeops
-  icon: { sprite: Objects/Devices/communication.rsi, state: old-radio }
+  icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-urist }
   cost:
-    Telecrystal: 16
+    Telecrystal: 35
   categories:
   - UplinkAllies
   conditions:
@@ -1073,7 +1073,7 @@
   name:  uplink-reinforcement-radio-cyborg-assault-name
   description: uplink-reinforcement-radio-cyborg-assault-desc
   productEntity: ReinforcementRadioSyndicateCyborgAssault
-  icon: { sprite: Mobs/Silicon/chassis.rsi, state: synd_sec }
+  icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-borg-assault }
   cost:
     Telecrystal: 65
   categories:
@@ -1089,7 +1089,7 @@
   name: uplink-reinforcement-radio-ancestor-name
   description: uplink-reinforcement-radio-ancestor-desc
   productEntity: ReinforcementRadioSyndicateAncestor
-  icon: { sprite: Objects/Devices/communication.rsi, state: old-radio }
+  icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-ancestor }
   cost:
     Telecrystal: 6
   categories:
@@ -1105,7 +1105,7 @@
   name: uplink-reinforcement-radio-ancestor-name
   description: uplink-reinforcement-radio-ancestor-desc
   productEntity: ReinforcementRadioSyndicateAncestorNukeops
-  icon: { sprite: Objects/Devices/communication.rsi, state: old-radio }
+  icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-ancestor }
   cost:
     Telecrystal: 6
   categories:
@@ -1135,7 +1135,7 @@
   id: UplinkMobCatMicrobomb
   name: uplink-mobcat-microbomb-name
   description: uplink-mobcat-microbomb-desc
-  icon: { sprite: /Textures/Mobs/Pets/cat.rsi, state: syndicat }
+  icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-syndicat }
   productEntity: ReinforcementRadioSyndicateSyndiCat
   cost:
     Telecrystal: 6
@@ -1383,16 +1383,6 @@
   - UplinkWearables
 
 - type: listing
-  id: UplinkClothingOuterVestWeb
-  name: uplink-clothing-outer-vest-web-name
-  description: uplink-clothing-outer-vest-web-desc
-  productEntity: ClothingOuterVestWeb
-  cost:
-    Telecrystal: 3
-  categories:
-  - UplinkWearables
-
-- type: listing
   id: UplinkClothingShoesBootsMagSyndie
   name: uplink-clothing-shoes-boots-mag-syndie-name
   description: uplink-clothing-shoes-boots-mag-syndie-desc
@@ -1414,6 +1404,17 @@
   - UplinkWearables
 
 - type: listing
+  id: UplinkHardsuitCarp
+  name: uplink-hardsuit-carp-name
+  description: uplink-hardsuit-carp-desc
+  icon: { sprite: /Textures/Clothing/OuterClothing/Suits/carpsuit.rsi, state: icon }
+  productEntity: ClothingOuterHardsuitCarp
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkWearables
+
+- type: listing
   id: UplinkHardsuitSyndie
   name: uplink-hardsuit-syndie-name
   description: uplink-hardsuit-syndie-desc
@@ -1431,7 +1432,7 @@
   icon: { sprite: /Textures/Clothing/OuterClothing/Hardsuits/syndieelite.rsi, state: icon }
   productEntity: ClothingBackpackDuffelSyndicateEliteHardsuitBundle
   cost:
-    Telecrystal: 10
+    Telecrystal: 12
   categories:
   - UplinkWearables
 
@@ -1853,137 +1854,3 @@
     blacklist:
       components:
       - SurplusBundle
-
-## Starshine
-
-- type: listing
-  id: UplinkMiniatureEnergyCrossbow
-  name: uplink-miniature-energy-crossbow-syndie-green-name
-  description: uplink-miniature-energy-crossbow-syndie-green-desc
-  icon: { sprite: Objects/Weapons/Guns/Battery/miniature_ebow.rsi, state: icon }
-  productEntity: MiniatureEnergyCrossbow
-  cost:
-    Telecrystal: 10
-  categories:
-  - UplinkWeaponry
-
-- type: listing
-  id: UplinkBowCompoundRed
-  name: uplink-bow-compound-red-name
-  description: uplink-bow-compound-red-desc
-  productEntity: BowCompoundRed
-  cost:
-    Telecrystal: 8
-  categories:
-  - UplinkWeaponry
-
-- type: listing
-  id: UplinkKR51Bundle
-  name: uplink-kr51-bundle-name
-  description: uplink-kr51-bundle-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Rifles/kr51.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledRifle
-  cost:
-    Telecrystal: 25
-  categories:
-  - UplinkWeaponry
-
-- type: listing
-  id: UplinkMagazineCaselessRifle
-  name: uplink-magazine-caseless-rifle-name
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag.rsi, state: red }
-  description: uplink-magazine-caseless-rifle-desc
-  productEntity: MagazineCaselessRifle
-  cost:
-    Telecrystal: 3
-  categories:
-    - UplinkAmmo
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
-
-- type: listing
-  id: UplinkSyringeCartridge
-  name: uplink-syringe-cartridge-name
-  description: uplink-syringe-cartridge-desc
-  productEntity: BoxSyringeCartridge
-  cost:
-    Telecrystal: 6
-  categories:
-  - UplinkAmmo
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
-  - !type:BuyerWhitelistCondition
-    blacklist:
-      components:
-      - SurplusBundle
-
-- type: listing
-  id: uplinkMinerSyndie
-  name: uplink-syndie-miner-armor-name
-  description: uplink-syndie-miner-armor-desc
-  productEntity: ClothingOuterArmorMinerSyndie
-  cost:
-    Telecrystal: 6
-  categories:
-  - UplinkJob
-  conditions:
-  - !type:BuyerJobCondition
-    whitelist:
-    - Miner
-
-#- type: listing
-#  id: UplinkSyndicateMauler
-#  name: uplink-mauler-name
-#  description: uplink-mauler-desc
-#  icon: { sprite: /Textures/Objects/Specific/Mech/mecha.rsi, state: mauler }
-#  productEntity: MechMaulerReal
-#  cost:
-#    Telecrystal: 120
-#  categories:
-#  - UplinkWeaponry
-#  conditions:
-#  - !type:BuyerWhitelistCondition
-#    blacklist:
-#      components:
-#      - SurplusBundle
-
-#- type: listing
-#  id: UplinkSyndicateGygax
-#  name: uplink-gygax-syndie-name
-#  description: uplink-gygax-desc
-#  icon: { sprite: /Textures/Objects/Specific/Mech/mecha.rsi, state: darkgygax }
-#  productEntity: MechDarkGygax
-#  cost:
-#    Telecrystal: 70
-#  categories:
-#  - UplinkWeaponry
-#  conditions:
-#  - !type:BuyerWhitelistCondition
-#    blacklist:
-#      components:
-#      - SurplusBundle
-
-#- type: listing
-#  id: UplinkSyringeCartridge
-#  name: uplink-syringe-cartridge-name
-#  description: uplink-syringe-cartridge-desc
-#  productEntity: BoxSyringeCartridge
-#  cost:
-#    Telecrystal: 6
-#  categories:
-#  - UplinkAmmo
-#  conditions:
-#  - !type:StoreWhitelistCondition
-#    whitelist:
-#      tags:
-#      - NukeOpsUplink
-#  - !type:BuyerWhitelistCondition
-#    blacklist:
-#      components:
-#      - SurplusBundle

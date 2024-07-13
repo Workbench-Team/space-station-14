@@ -33,6 +33,5 @@
     pocket1: WeaponPistolMk68Nonlethal # Starshine
   storage:
     back:
-    - BoxSurvivalSecurity
     - Flash
     - MagazinePistol

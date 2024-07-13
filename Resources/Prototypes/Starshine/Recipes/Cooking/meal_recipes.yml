@@ -1,0 +1,98 @@
+- type: microwaveMealRecipe
+  id: RecipeShaurma
+  name: shaurma recipe
+  result: FoodMeatShaurma
+  time: 5
+  solids:
+    FoodMeat: 1
+    FoodBreadPlainSlice: 1 # TODO: Add pita bread (лаваш) instead of classic bread
+    FoodTomato: 1
+    FoodOnionSlice: 1
+
+- type: microwaveMealRecipe
+  id: RecipeHoneyPie
+  name: honey pie recipe
+  result: FoodCakeHoneyPie
+  time: 5
+  solids:
+    FoodCakePlain: 1
+  reagents:
+    Water: 20
+    Sugar: 40
+
+- type: microwaveMealRecipe
+  id: RecipePlov
+  name: plov recipe
+  result: FoodPlov
+  time: 20
+  solids:
+    FoodRiceBoiled: 1
+    FoodMeat: 1
+    FoodCarrot: 1
+    FoodOnionSlice: 1
+    FoodGarlic: 1
+
+- type: microwaveMealRecipe
+  id: RecipePumpkinPie
+  name: pumpkin pie recipe
+  result: FoodPiePumpkin
+  time: 15
+  solids:
+    FoodDoughPie: 1
+    FoodPumpkin: 3
+    FoodPlateTin: 1
+  reagents:
+    Sugar: 10
+    Milk: 10
+
+- type: microwaveMealRecipe
+  id: RecipeTofuPie
+  name: tofu pie recipe
+  result: FoodPieTofu
+  time: 15
+  solids:
+    FoodDoughPie: 1
+    FoodTofu: 1
+    FoodPlateTin: 1
+
+- type: microwaveMealRecipe
+  id: RecipeSandwich
+  name: sandwich recipe
+  result: FoodBurgerSandwich
+  time: 15
+  solids:
+    FoodBreadPlainSlice: 2
+    FoodMeat: 1
+    FoodCheeseSlice: 1
+
+- type: microwaveMealRecipe
+  id: RecipeCheeseSandwich
+  name: cheese sandwich recipe
+  result: FoodBurgerSandwichCheese
+  time: 15
+  solids:
+    FoodBreadPlainSlice: 2
+    FoodCheeseSlice: 2
+
+- type: microwaveMealRecipe
+  id: RecipeMoathroachRoast
+  name: mothroach roast recipe
+  result: FoodMothroachRoast
+  time: 30
+  solids:
+    MobMothroach: 1
+    FoodPlate: 1
+  reagents:
+    TableSalt: 5
+
+- type: microwaveMealRecipe
+  id: RecipeMashedPotatoes
+  name: mashed potatoes recipe
+  result: FoodMashedPotatoes
+  time: 15
+  solids:
+    FoodPotato: 3
+    FoodButter: 1
+    FoodBowlBig: 1
+  reagents:
+    Milk: 10

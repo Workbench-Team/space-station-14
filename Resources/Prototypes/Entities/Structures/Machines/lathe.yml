@@ -196,18 +196,21 @@
       - WeaponCapacitorRechargerCircuitboard
       - HandheldStationMap
       - ClothingHeadHatWelding
+      - WetFloorSign
+      - ClothingHeadHatCone
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - BoxLethalshot
       - BoxShotgunFlare
       - BoxShotgunSlug
+      - CombatKnife
       - MagazineBoxLightRifle
       - MagazineBoxMagnum
       - MagazineBoxPistol
       - MagazineBoxRifle
       - MagazineLightRifle
       - MagazineLightRifleEmpty
-      - MagazinePistol 
+      - MagazinePistol
       - MagazinePistolEmpty
       - MagazinePistolSubMachineGun
       - MagazinePistolSubMachineGunEmpty
@@ -310,6 +313,7 @@
       - WeaponGauntletGorilla
       - SynthesizerInstrument
       - ClothingShoesBootsMagSci
+      - ClothingShoesBootsMoon
       - ClothingShoesBootsSpeed
       - NodeScanner
       - HolofanProjector
@@ -322,6 +326,7 @@
 # Starshine-start
       - WeaponCutterAdv
       - WeaponTetherGun
+      - ClothingEyesVision
 # Starshine-end
       - WeaponGrapplingGun
       - ClothingBackpackHolding
@@ -341,6 +346,7 @@
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium
+      - BoxShellTranquilizer
       - ExplosivePayload
       - GrenadeBlast
       - GrenadeEMP
@@ -368,7 +374,6 @@
       - PowerCageHigh
       - PowerCageMedium
       - PowerCageSmall
-      - ShellTranquilizer
       - SpeedLoaderMagnumIncendiary
       - SpeedLoaderMagnumUranium
       - TelescopicShield
@@ -757,9 +762,10 @@
     staticRecipes:
       - BoxLethalshot
       - BoxShotgunFlare
-      - BoxShotgunPractice 
+      - BoxShotgunPractice
       - BoxShotgunSlug
       - ClothingEyesHudSecurity
+      - CombatKnife
       - Flash
       - ForensicPad
       - Handcuffs
@@ -773,7 +779,7 @@
       - MagazineBoxRiflePractice
       - MagazineLightRifle
       - MagazineLightRifleEmpty
-      - MagazinePistol 
+      - MagazinePistol
       - MagazinePistolEmpty
       - MagazinePistolSubMachineGun
       - MagazinePistolSubMachineGunEmpty
@@ -803,9 +809,12 @@
       - SpeedLoaderMagnumPractice
 # Starshine-end
     dynamicRecipes:
+      - WeaponDisablerSMG
+      - WeaponDisabler
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium
+      - BoxShellTranquilizer
       - ExplosivePayload
       - FlashPayload
       - GrenadeBlast
@@ -839,7 +848,6 @@
       - PowerCageHigh
       - PowerCageMedium
       - PowerCageSmall
-      - ShellTranquilizer
       - ShuttleGunDusterCircuitboard
       - ShuttleGunFriendshipCircuitboard
       - ShuttleGunPerforatorCircuitboard
@@ -852,12 +860,6 @@
       - TimerTrigger
       - Truncheon
       - VoiceTrigger
-      - WeaponAdvancedLaser
-      - WeaponDisabler
-      - WeaponDisablerSMG
-      - WeaponLaserCannon
-      - WeaponLaserCarbine
-      - WeaponXrayCannon
 # Starshine-start
       - BowCompound
       - ArrowCompound
@@ -871,6 +873,9 @@
       - ClothingOuterArmorBulletproof
       - ClothingBeltSecurityWebbing
       - ClothingBeltSecurity
+# Starshine-end
+# Starshine-start
+      - SpeedLoaderAntiMaterial
 # Starshine-end
   - type: MaterialStorage
     whitelist:
@@ -928,6 +933,7 @@
       - WeaponXrayCannon
       - WeaponShotgunKammerer
       - WeaponShotgunEnforcer
+      - WeaponRevolverSuppressor
   - type: MaterialStorage
     whitelist:
       tags:
@@ -967,13 +973,20 @@
       staticRecipes:
         - BoxShotgunFlare
       dynamicRecipes:
+        - BoxShotgunSlug
+        - BoxShellTranquilizer
+        - MagazineBoxLightRifle
+        - MagazineBoxPistol
+        - MagazineBoxRifle
+        - MagazineLightRifle
+        - MagazineLightRifleEmpty
+        - MagazinePistolEmpty
         # Weapons kinetic
+## Starshine
         - MagazinePistol
-        - MagazinePistolEmpty 
         - MagazinePistolRubber
         - MagazinePistolHighCapacity
         - MagazinePistolHighCapacityRubber
-        - ShellTranquilizer
         - MagazineVectorPistolSmall
         - MagazineVectorPistolSmallRubber
         - MagazineVectorPistol
@@ -981,42 +994,31 @@
         - MagazinePistolSubMachineGun
         - MagazinePistolSubMachineGunRubber
         - MagazinePistolSubMachineGunTopMounted
-        - MagazineVectorRifle    
-        - MagazineVectorRifleRubber            
+        - MagazineVectorRifle
+        - MagazineVectorRifleRubber
         - MagazineRifle
         - MagazineRifleRubber
         - MagazineRifleEmpty
         - MagazineRifleExt
         - MagazineRifleExtRubber
-        - MagazineLightRifle
         - MagazineLightRifleRubber
-        - MagazineLightRifleEmpty
         - MagazineShotgun
         - MagazineShotgunEmpty
         - MagazineShotgunSlug
-        - MagazineUniversalShort
-        - MagazineUniversal
         - SpeedLoaderMagnum
         - SpeedLoaderMagnumEmpty
-        - SpeedLoaderUniversal
         - MagazineShotgunSaiga
-        - MagazineBoxPistol
         - MagazineBoxMagnum
         - MagazineBoxPistolIncendiary
         - MagazineBoxPistolRubber
-        - MagazineBoxRifle
-        - MagazineBoxLightRifle
         - MagazineBoxRifleBig
-        - MagazineBoxUniversalVPS
         - MagazineBoxRifleIncendiary
         - MagazineBoxRifleRubber
-        - MagazineBoxUniversalPT1
-        - MagazineBoxUniversalVPS
         - BoxLethalshot
         - BoxShotgunIncendiary
-        - BoxBeanbag        
-        - BoxShotgunSlug
-        - BoxShellTranquilizer
+        - BoxBeanbag
+        - SpeedLoaderAntiMaterial
+        - MagazineBoxAntiMaterielBig
     - type: MaterialStorage
       whitelist:
         tags:

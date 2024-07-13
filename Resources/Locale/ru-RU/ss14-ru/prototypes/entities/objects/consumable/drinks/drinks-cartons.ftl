@@ -21,3 +21,5 @@ ent-DrinkSoyMilkCarton = соевое молоко
     .desc = Белая и питательная соевая вкуснятина!
 ent-DrinkOatMilkCarton = овсяное молоко
     .desc = Это овсяное молоко. Бежевая и питательная вкуснятина!
+ent-DrinkJuiceLemonCarton = лимонный сок
+    .desc = Сначала он кислый, потом всё ещё кислый.
