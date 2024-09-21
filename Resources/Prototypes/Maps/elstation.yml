@@ -45,6 +45,7 @@
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 2, 2 ]
             ResearchAssistant: [ 1, 1 ]
+            StationAi: [ 1, 1 ]
             Borg: [ 2, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
@@ -64,6 +65,6 @@
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
             Reporter: [ 1, 1 ]
-            #centcom      
+            #centcom
             BlueShield: [ 1, 1 ]
-            CentComConsultant: [ 1, 1 ]            
+            CentComConsultant: [ 1, 1 ]
