@@ -17,6 +17,9 @@
     - id: RadioHandheld
     - id: AppraisalTool
     - id: FireExtinguisher
+    - id: ClothingBeltMinerWebbing
+    - id: ClothingBeltSalvageWebbing
+    - id: ClothingOuterArmorMiner
     - id: Flare
       prob: 0.3
       rolls: !type:ConstantNumberSelector

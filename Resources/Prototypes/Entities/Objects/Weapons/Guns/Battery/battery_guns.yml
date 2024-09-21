@@ -218,9 +218,10 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
+    - FullAuto
   - type: HitscanBatteryAmmoProvider
     proto: RedLaserPractice
-    fireCost: 62.5
+    fireCost: 50
   - type: StaticPrice
     price: 300
 
@@ -230,11 +231,17 @@
   id: WeaponLaserCarbine
   description: Favoured by Nanotrasen Security for being cheap and easy to use.
   components:
+  - type: Gun
+    fireRate: 2.5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
   - type: StaticPrice
     price: 420
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
-    fireCost: 62.5
+    fireCost: 50
 
 - type: entity
   name: pulse pistol
