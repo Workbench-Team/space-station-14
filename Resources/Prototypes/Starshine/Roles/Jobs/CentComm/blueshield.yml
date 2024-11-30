@@ -49,6 +49,3 @@
     gloves: ClothingHandsTacticalBlueShield
     id: BlueShieldPDA
     ears: ClothingHeadsetAltBlueShield
-  storage:
-    back:
-    - BoxSurvivalBlueShield

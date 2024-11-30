@@ -121,11 +121,11 @@ namespace Content.Server.Holosign
             if (entity.Comp.Childs.Count == 0)
                 return;
 
-            if (_powerCell.TryGetBatteryFromSlot(entity.Owner, out var battery))
+            if (_powerCell.TryGetBatteryFromSlot(entity.Owner, out var batteryEnt, out var battery))
             {
                 var drawComp = Comp<PowerCellDrawComponent>(entity.Owner);
                 if (!_powerCell.TryUseCharge(entity.Owner, drawComp.DrawRate))
-                    _battery.SetCharge(entity.Owner, 0, battery);
+                    _battery.SetCharge(batteryEnt.Value, 0, battery);
             }
 
             ClearHolosignsVerb(entity.Owner, entity.Comp);
@@ -198,24 +198,9 @@ namespace Content.Server.Holosign
                 || !args.CanReach // prevent placing out of range
                 || HasComp<StorageComponent>(args.Target) // if it's a storage component like a bag, we ignore usage so it can be stored
                 || HasComp<HolosignBarrierComponent>(args.Target)
+                || !_powerCell.TryUseCharge(uid, component.DrawRatePerHolo, user: args.User)
                )
                 return;
-
-            if (!_powerCell.TryGetBatteryFromSlot(uid, out _))
-            {
-                _popupSystem.PopupEntity(Loc.GetString("handheld-light-component-cell-missing-message"),
-                    args.User,
-                    args.User);
-                return;
-            }
-
-            if (!_powerCell.TryUseCharge(uid, component.DrawRatePerHolo))
-            {
-                _popupSystem.PopupEntity(Loc.GetString("handheld-light-component-cell-dead-message"),
-                    args.User,
-                    args.User);
-                return;
-            }
 
             if(component.Childs.Count >= component.MaxSigns)
             {

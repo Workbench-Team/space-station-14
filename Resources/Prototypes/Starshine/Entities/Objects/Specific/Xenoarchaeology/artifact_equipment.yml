@@ -1,0 +1,21 @@
+- type: entity
+  name: portable artifact Container
+  parent: BriefcaseBrown
+  id: PortableArtifactContainer
+  description: A handy briefcase.
+  components:
+  - type: Sprite
+    sprite: Starshine/Objects/Storage/Briefcases/portable_artifact_container.rsi
+    state: icon
+  - type: SuppressArtifactContainer
+  - type: RadiationBlockingContainer
+    resistance: 5
+  - type: Item
+    size: Huge
+    sprite: Starshine/Objects/Storage/Briefcases/portable_artifact_container.rsi
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,1,1
+    storageOpenSound:
+      collection: WeaponCaseOpen

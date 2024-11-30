@@ -38,7 +38,6 @@
     pocket2: TelescopicBaton
   storage:
     back:
-    - BoxSurvivalBrigmedic
     - Flash
     - MagazinePistolRubber
     - Cautery

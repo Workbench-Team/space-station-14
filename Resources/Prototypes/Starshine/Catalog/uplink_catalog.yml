@@ -49,25 +49,6 @@
           - NukeOpsUplink
 
 - type: listing
-  id: UplinkSyringeCartridge
-  name: uplink-syringe-cartridge-name
-  description: uplink-syringe-cartridge-desc
-  productEntity: BoxSyringeCartridge
-  cost:
-    Telecrystal: 6
-  categories:
-  - UplinkAmmo
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
-  - !type:BuyerWhitelistCondition
-    blacklist:
-      components:
-      - SurplusBundle
-
-- type: listing
   id: uplinkMinerSyndie
   name: uplink-syndie-miner-armor-name
   description: uplink-syndie-miner-armor-desc
@@ -131,25 +112,6 @@
 #  categories:
 #  - UplinkWeaponry
 #  conditions:
-#  - !type:BuyerWhitelistCondition
-#    blacklist:
-#      components:
-#      - SurplusBundle
-
-#- type: listing
-#  id: UplinkSyringeCartridge
-#  name: uplink-syringe-cartridge-name
-#  description: uplink-syringe-cartridge-desc
-#  productEntity: BoxSyringeCartridge
-#  cost:
-#    Telecrystal: 6
-#  categories:
-#  - UplinkAmmo
-#  conditions:
-#  - !type:StoreWhitelistCondition
-#    whitelist:
-#      tags:
-#      - NukeOpsUplink
 #  - !type:BuyerWhitelistCondition
 #    blacklist:
 #      components:

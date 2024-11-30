@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-4.0",
+  "copyright": "Made by Zewoka11",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "blade"
+    },
+    {
+      "name": "chain"
+    },
+    {
+      "name": "engine"
+    },
+    {
+      "name": "handle"
+    }
+  ]
+}

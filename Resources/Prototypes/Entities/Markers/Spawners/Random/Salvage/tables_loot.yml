@@ -246,6 +246,13 @@
     - id: WeaponCrusherGlaive
     - id: ClothingOuterHardsuitSalvage
     - id: OmnizineChemistryBottle
+    # Starshine-start
+    - id: BoxCursedKatana
+    - id: ChainSwordBlade
+    - id: ChainSwordChain
+    - id: ChainSwordEngine
+    - id: ChainSwordHandle
+    # Starshine-end
     - !type:GroupSelector
       children:
       - id: JetpackBlueFilled

@@ -67,16 +67,6 @@
     lifetime: 10
 
 - type: entity
-  id: SyringeProjctile
-  parent: BaseBullet
-  noSpawn: true
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    layers:
-    - state: syringeproj
-
-- type: entity
   id: BaseBulletTrigger # Trigger-on-collide bullets
   parent: BaseBullet
   categories: [ HideSpawnMenu ]

@@ -32,5 +32,5 @@
   targetNode: chainsaw
   category: construction-category-weapons
   description: "chainsaw"
-  icon: { sprite: Objects/Weapons/Melee/chainsaw.rsi, state: icon }
+  icon: { sprite: Starshine/Objects/Weapons/Melee/chainsaw.rsi, state: icon }
   objectType: Item

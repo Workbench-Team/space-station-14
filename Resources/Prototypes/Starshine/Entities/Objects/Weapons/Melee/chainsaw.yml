@@ -1,0 +1,202 @@
+- type: entity
+  name: chainsaw
+  parent: BaseItem
+  id: Chainsaw
+  description: A very large chainsaw. Usually you use this for cutting down trees... usually.
+  suffix: Empty
+  components:
+  - type: ItemToggleSize
+    activatedSize: Ginormous
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      path: /Audio/Starshine/Weapons/chainsaw_start.ogg
+      params:
+        variation: 0.1
+    soundDeactivate:
+      path: /Audio/Starshine/Weapons/chainsaw_stop.ogg
+      params:
+        variation: 0.1
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/Starshine/Weapons/chainsaw_loop.ogg
+      params:
+        range: 6
+        volume: 4
+  - type: StaticPrice
+    price: 100
+  - type: AmbientSound
+    range: 6
+    volume: 4
+    sound:
+      path: /Audio/Starshine/Weapons/chainsaw_loop.ogg
+    enabled: false
+  - type: Sprite
+    sprite: Starshine/Objects/Weapons/Melee/chainsaw.rsi
+    layers:
+    - state: icon
+      map: [ "enum.ToggleVisuals.Layer" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: { state: chainsaw_on }
+          False: { state: icon }
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Slash: 4
+        Piercing: 4
+        Structural: 8
+    activatedSoundOnHit:
+      path: /Audio/Starshine/Weapons/chainsaw_hit.ogg
+  - type: MeleeWeapon
+    autoAttack: true
+    angle: 0
+    wideAnimationRotation: 90
+    attackRate: 3
+    damage:
+      types:
+        Slash: 2
+        Blunt: 2
+        Structural: 4
+    soundHit:
+      path: /Audio/Starshine/Weapons/chainsaw_hit.ogg
+  - type: Item
+    size: Large
+    sprite: Starshine/Objects/Weapons/Melee/chainsaw.rsi
+  - type: Clothing
+    sprite: Starshine/Objects/Weapons/Melee/chainsaw.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Appearance
+  - type: ToggleableLightVisuals
+    spriteLayer: enum.ToggleVisuals.Layer
+    inhandVisuals:
+      left:
+      - state: inhand-left-on
+      right:
+      - state: inhand-right-on
+  - type: Wieldable
+  - type: Construction
+    graph: ChainsawGraph
+    node: chainsaw
+  - type: RefillableSolution
+    solution: Welder
+  - type: SolutionContainerManager
+    solutions:
+      Welder:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 2
+        maxVol: 150
+  - type: Welder
+    fuelConsumption: 3
+    fuelLitCost: 2
+    tankSafe: true
+  - type: UseDelay
+    delay: 0.75
+
+- type: entity
+  parent: Chainsaw
+  id: ChainsawFilled
+  suffix: Filled
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      Welder:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 150
+
+- type: entity
+  name: chainsword
+  parent: BaseItem
+  id: ChainSword
+  description: A legendary sword that can cut through the skin of any creature. Can be refueled with liquid plasma.
+  components:
+  - type: Sprite
+    sprite: Starshine/Objects/Weapons/Melee/chainsword.rsi
+    layers:
+    - state: icon
+      map: [ "enum.ToggleVisuals.Layer" ]
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      path: /Audio/Starshine/Weapons/chainsaw_start.ogg
+      params:
+        variation: 0.1
+        pitch: 1.2
+    soundDeactivate:
+      path: /Audio/Starshine/Weapons/chainsaw_stop.ogg
+      params:
+        variation: 0.1
+        pitch: 1.2
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/Starshine/Weapons/chainsaw_loop.ogg
+      params:
+        range: 6
+        volume: 4
+        pitch: 1.2
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Slash: 6
+        Piercing: 6
+        Structural: 12
+    activatedSoundOnHit:
+      path: /Audio/Starshine/Weapons/chainsaw_hit.ogg
+  - type: MeleeWeapon
+    autoAttack: true
+    wideAnimationRotation: -135
+    attackRate: 3
+    damage:
+      types:
+        Slash: 2
+        Blunt: 2
+        Structural: 4
+    soundHit:
+      collection: MetalThud
+  - type: Item
+    size: Ginormous
+  - type: Clothing
+    sprite: Starshine/Objects/Weapons/Melee/chainsword.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: RefillableSolution
+    solution: Welder
+  - type: DrawableSolution
+    solution: Welder
+  - type: SolutionContainerManager
+    solutions:
+      Welder:
+        maxVol: 50
+  - type: Welder
+    fuelReagent: Plasma
+    fuelConsumption: 1
+    fuelLitCost: 0.5
+    tankSafe: true
+  - type: UseDelay
+    delay: 0.75
+  - type: Construction
+    graph: ChainSwordGraph
+    node: start
+  - type: Appearance
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  parent: ChainSword
+  id: ChainSwordFilled
+  suffix: Filled
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      Welder:
+        reagents:
+        - ReagentId: Plasma
+          Quantity: 50

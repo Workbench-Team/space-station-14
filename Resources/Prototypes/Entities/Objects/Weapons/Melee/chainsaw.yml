@@ -1,81 +1,41 @@
 - type: entity
   name: chainsaw
   parent: BaseItem
-  id: Chainsaw
+  id: BaseChainsaw
   description: A very large chainsaw. Usually you use this for cutting down trees... usually.
-  suffix: Empty
   components:
-  - type: ItemToggleSize
-    activatedSize: Ginormous
-  - type: ItemToggle
-    predictable: false
-    soundActivate:
-      path: /Audio/Weapons/chainsaw_start.ogg
+  - type: Wieldable
+    wieldSound: !type:SoundPathSpecifier
+      path: /Audio/Weapons/chainsawwield.ogg
       params:
-        variation: 0.1
-    soundDeactivate:
-      path: /Audio/Weapons/chainsaw_stop.ogg
-      params:
-        variation: 0.1
-  - type: StaticPrice
-    price: 100
-  - type: AmbientSound
-    range: 6
-    volume: 4
-    sound:
-      path: /Audio/Weapons/chainsaw_loop.ogg
-    enabled: false
+        volume: -3
+  - type: Sharp
   - type: Sprite
     sprite: Objects/Weapons/Melee/chainsaw.rsi
-    layers:
-    - state: icon
-      map: [ "enum.ToggleVisuals.Layer" ]
-  - type: GenericVisualizer
-    visuals:
-      enum.ToggleVisuals.Toggled:
-        enum.ToggleVisuals.Layer:
-          True: { state: chainsaw_on }
-          False: { state: icon }
-  - type: ItemToggleMeleeWeapon
-    activatedDamage:
-      types:
-        Slash: 4
-        Piercing: 4
-        Structural: 8
-    activatedSoundOnHit:
-      path: /Audio/Weapons/chainsaw_hit.ogg
+    state: icon
   - type: MeleeWeapon
     autoAttack: true
     angle: 0
-    wideAnimationRotation: 90
-    attackRate: 3
+    wideAnimationRotation: -135
+    attackRate: 4
     damage:
       types:
         Slash: 2
         Blunt: 2
         Structural: 4
     soundHit:
-      path: /Audio/Weapons/chainsaw_hit.ogg
+      path: /Audio/Weapons/chainsaw.ogg
+      params:
+        volume: -3
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 4
+        Structural: 4
   - type: Item
-    size: Large
-  - type: Clothing
+    size: Normal
     sprite: Objects/Weapons/Melee/chainsaw.rsi
-    quickEquip: false
-    slots:
-    - Back
-    - suitStorage
-  - type: Appearance
-  - type: ToggleableLightVisuals
-    spriteLayer: on
-    inhandVisuals:
-      left:
-      - state: inhand-left-on
-      right:
-      - state: inhand-right-on
-  - type: Wieldable
-  - type: Construction
-    graph: ChainsawGraph
-    node: chainsaw
+  - type: DisarmMalus
   - type: RefillableSolution
     solution: Welder
   - type: SolutionContainerManager
@@ -83,24 +43,7 @@
       Welder:
         reagents:
         - ReagentId: WeldingFuel
-          Quantity: 2
-        maxVol: 150
-  - type: Welder
-    fuelConsumption: 3
-    fuelLitCost: 2
-    tankSafe: true
+          Quantity: 300
+        maxVol: 300
   - type: UseDelay
-    delay: 0.75
-
-- type: entity
-  parent: Chainsaw
-  id: ChainsawFilled
-  description: A very large chainsaw. Usually you use this for cutting down trees... usually.
-  suffix: Filled
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      Welder:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 150
+    delay: 1

@@ -1,0 +1,74 @@
+- type: entity
+  parent: [BaseBeaker, DrinkBottleVisualsOpenable]
+  id: ChemistryBottleBase
+  abstract: true
+  components:
+  - type: Sprite
+    layers:
+      - state: icon
+        map: ["enum.OpenableVisuals.Layer"]
+      - state: fill-1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Item
+    size: Small
+  - type: Openable
+    sound:
+      collection: bottleOpenSounds
+    closeable: true
+    closeSound:
+      collection: bottleCloseSounds
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 50
+  - type: Appearance
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Inflatable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:SpillBehavior { }
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Spillable
+    solution: beaker
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: fill-
+
+- type: entity
+  name: small bottle
+  parent: ChemistryBottleBase
+  description: Used to contain a moderate amount of chemicals or solutions.
+  id: SmallBottle
+  components:
+  - type: Sprite
+    sprite: Starshine/Objects/Specific/Chemistry/bottle_small.rsi
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 50
+  - type: StaticPrice
+    price: 10
+  
+- type: entity
+  name: large bottle
+  parent: ChemistryBottleBase
+  description: Used to contain a large amount of chemicals or solutions.
+  id: LargeBottle
+  components:
+  - type: Sprite
+    sprite: Starshine/Objects/Specific/Chemistry/bottle_large.rsi
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 100
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 100
+  - type: StaticPrice
+    price: 20

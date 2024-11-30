@@ -1,0 +1,31 @@
+- type: constructionGraph
+  id: ChainSwordGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: chainsword
+      steps:
+      - tag: ChainSwordBlade
+        name: Chainsaw Sword Blade
+        icon:
+          sprite: Starshine/Objects/Materials/Parts/chainsword.rsi
+          state: blade
+      - tag: ChainSwordChain
+        name: Chainsaw Sword Chain
+        icon:
+          sprite: Starshine/Objects/Materials/Parts/chainsword.rsi
+          state: chain
+      - tag: ChainSwordEngine
+        name: Chainsaw Sword Engine
+        icon:
+          sprite: Starshine/Objects/Materials/Parts/chainsword.rsi
+          state: engine
+      - tag: ChainSwordHandle
+        name: Chainsaw Sword Handle
+        icon:
+          sprite: Starshine/Objects/Materials/Parts/chainsword.rsi
+          state: handle
+        doAfter: 4
+  - node: chainsword
+    entity: ChainSword

@@ -267,6 +267,7 @@
   table: !type:AllSelector
     children:
     - id: GarmentBagRD
+    - id: Intellicard
     - id: BoxEncryptionKeyScience
     - id: CircuitImprinterMachineCircuitboard
     - id: ClothingBeltUtilityFilled

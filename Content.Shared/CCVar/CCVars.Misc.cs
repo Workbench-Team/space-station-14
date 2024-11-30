@@ -33,6 +33,23 @@ public sealed partial class CCVars
     public static readonly CVarDef<float> AfkTime =
         CVarDef.Create("afk.time", 60f, CVar.SERVERONLY);
 
+    #region Starshine
+
+    /// <summary>
+    /// How long seconds a client can go after being detected as AFK before being kicked.
+    /// </summary>
+    public static readonly CVarDef<float> AfkKickTime =
+        CVarDef.Create("afk.kick_time", 600f, CVar.SERVERONLY);
+
+    /// <summary>
+    /// How long seconds a client with admin rights can go after being detected as AFK before being kicked.
+    /// </summary>
+    public static readonly CVarDef<float> AfkAdminKickTime =
+        CVarDef.Create("afk.admin_kick_time", 1800f, CVar.SERVERONLY);
+
+
+    #endregion
+
     /// <summary>
     ///     Flavor limit. This is to ensure that having a large mass of flavors in
     ///     some food object won't spam a user with flavors.

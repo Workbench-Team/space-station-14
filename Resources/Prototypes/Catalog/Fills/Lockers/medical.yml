@@ -69,7 +69,7 @@
         prob: 0.05
         orGroup: Surgshrubs
       - id: ClothingMaskSterile
-      - id: DnaSyringeGun
+      - id: SyringeGun
 
 - type: entity
   parent: LockerWallMedical
@@ -103,7 +103,7 @@
         prob: 0.05
         orGroup: Surgshrubs
       - id: ClothingMaskSterile
-      - id: DnaSyringeGun
+      - id: SyringeGun
 
 - type: entity
   id: LockerChemistryFilled

@@ -223,88 +223,6 @@
       Glass: 100
   - type: StaticPrice
     price: 20
-  
-- type: entity
-  name: small bottle
-  parent: BaseBeaker
-  description: Used to contain a moderate amount of chemicals or solutions.
-  id: SmallBottle
-  components:
-  - type: Sprite
-    sprite: Objects/Specific/Chemistry/bottle_small.rsi
-    layers:
-      - state: bottlesmall
-      - state: bottlesmall1
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: false
-  - type: Item
-    size: Small
-    sprite: Objects/Specific/Chemistry/bottle_small.rsi
-  - type: SolutionContainerManager
-    solutions:
-      beaker:
-        maxVol: 50
-        canMix: true
-  - type: Appearance
-  - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Inflatable
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 30
-      behaviors:
-      - !type:SpillBehavior
-        solution: beaker
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: SolutionContainerVisuals
-    maxFillLevels: 6
-    fillBaseName: bottlesmall
-  - type: StaticPrice
-    price: 10
-  
-- type: entity
-  name: large bottle
-  parent: BaseBeaker
-  description: Used to contain a large amount of chemicals or solutions.
-  id: LargeBottle
-  components:
-  - type: Sprite
-    sprite: Objects/Specific/Chemistry/bottle_large.rsi
-    layers:
-      - state: bottlelarge
-      - state: bottlelarge1
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: false
-  - type: Item
-    size: Normal
-    sprite: Objects/Specific/Chemistry/bottle_large.rsi
-  - type: SolutionContainerManager
-    solutions:
-      beaker:
-        maxVol: 100
-        canMix: true
-  - type: Appearance
-  - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Inflatable
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 20
-      behaviors:
-      - !type:SpillBehavior
-        solution: beaker
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: SolutionContainerVisuals
-    maxFillLevels: 6
-    fillBaseName: bottlelarge
-  - type: StaticPrice
-    price: 20
 
 - type: entity
   name: cryostasis beaker
@@ -365,6 +283,7 @@
   - type: Injector
     injectOnly: false
     ignoreMobs: true
+    ignoreClosed: false
     minTransferAmount: 1
     maxTransferAmount: 5
     transferAmount: 1
@@ -463,10 +382,107 @@
   - type: Injector
     transferAmount: 15
     toggleState: Draw
+  - type: EmbeddableProjectile
+    minimumSpeed: 3
+    removalTime: 0.25
+    embedOnThrow: false
+  - type: SolutionInjectWhileEmbedded
+    transferAmount: 1
+    solution: injector
+    updateInterval: 0.75
+  - type: SolutionInjectOnEmbed
+    transferAmount: 2
+    solution: injector
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeCircle
+          radius: 0.2
+        density: 5
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.3,0.1,0.3"
+        hard: false
+        mask:
+        - Impassable
+        - BulletImpassable
+  - type: Projectile
+    angle: 45
+    deleteOnCollide: false
+    onlyCollideWhenShot: true
+    damage:
+      types:
+        Piercing: 5
   - type: Tag
     tags:
     - Syringe
     - Trash
+    - SyringeGunAmmo
+
+- type: entity
+  name: mini syringe
+  parent: Syringe
+  description: A regular syringe, reshaped to fit inside of a gun.
+  id: MiniSyringe
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/syringe.rsi
+    layers:
+      - state: minisyringe1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+      - state: syringeproj
+  - type: SolutionContainerVisuals
+    maxFillLevels: 3
+    fillBaseName: minisyringe
+    inHandsMaxFillLevels: 3
+    inHandsFillBaseName: -fill-
+  - type: EmbeddableProjectile
+    minimumSpeed: 3
+    removalTime: 0.25
+    embedOnThrow: false
+  - type: SolutionInjectWhileEmbedded
+    transferAmount: 1
+    solution: injector
+    updateInterval: 0.5
+  - type: SolutionInjectOnEmbed
+    transferAmount: 2
+    solution: injector
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeCircle
+          radius: 0.2
+        density: 5
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.3,0.1,0.3"
+        hard: false
+        mask:
+        - Impassable
+        - BulletImpassable
+  - type: Projectile
+    angle: 180
+    deleteOnCollide: false
+    onlyCollideWhenShot: true
+    damage:
+      types:
+        Piercing: 5
+  - type: Tag
+    tags:
+    - Syringe
+    - Trash
+    - SyringeGunAmmo
 
 - type: entity
   parent: BaseSyringe
@@ -562,13 +578,9 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 50
-  - type: SolutionSpiker
-    sourceSolution: food
-  - type: Extractable
-    grindableSolutionName: food
-  - type: StaticPrice
-    price: 0
+        maxVol: 20
+  - type: ExplosionResistance
+    damageCoefficient: 0.025 # survives conventional explosives but not minibombs and nukes
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -581,6 +593,12 @@
         solution: food
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: SolutionSpiker
+    sourceSolution: food
+  - type: Extractable
+    grindableSolutionName: food
+  - type: StaticPrice
+    price: 0
   - type: Tag
     tags:
     - Pill
@@ -608,4 +626,7 @@
     areaInsertRadius: 1
     storageInsertSound: /Audio/Effects/pill_insert.ogg
     storageRemoveSound: /Audio/Effects/pill_remove.ogg
+    whitelist: 
+      tags:
+      - Pill
   - type: Dumpable

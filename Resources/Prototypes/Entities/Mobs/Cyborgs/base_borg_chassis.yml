@@ -287,6 +287,8 @@
     enabled: false
     groups:
     - AllAccess
+    tags:
+    - CentralCommand # Starshine | TODO: Remove it after doors replacement on TG Meta
   - type: AccessReader
     access: [["Command"], ["Research"]]
   - type: ShowJobIcons

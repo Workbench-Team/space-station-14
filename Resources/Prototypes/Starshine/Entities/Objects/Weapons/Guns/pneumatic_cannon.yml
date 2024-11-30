@@ -1,0 +1,43 @@
+- type: entity
+  name: syringe gun
+  parent: BaseStorageItem
+  id: SyringeGun
+  description: Syringe gun provided by NT specifically for medics. Uses mini-syringes.
+  components:
+  - type: Sprite
+    sprite: Starshine/Objects/Weapons/Guns/Cannons/syringe_gun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,2,0
+    whitelist:
+      tags:
+      - SyringeGunAmmo
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/syringe_gun.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+    clumsyProof: true
+  - type: ContainerAmmoProvider
+    container: storagebase
+  - type: Item
+    size: Normal
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true

@@ -211,6 +211,10 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
+## Starshine-start
+  - type: CanEscapeInventory
+  - type: Carriable
+## Starshine-end
 
 - type: entity
   save: false

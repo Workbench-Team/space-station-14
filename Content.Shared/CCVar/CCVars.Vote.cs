@@ -82,6 +82,16 @@ public sealed partial class CCVars
     public static readonly CVarDef<int>
         VoteTimerAlone = CVarDef.Create("vote.timeralone", 10, CVar.SERVERONLY);
 
+    #region Starshine
+
+    /// <summary>
+    ///     Server will automatically start preset and map votes on restart.
+    /// </summary>
+    public static readonly CVarDef<bool> OnLobbyCreateVotesEnabled =
+        CVarDef.Create("vote.on_lobby_create_votes", false, CVar.SERVERONLY);
+
+    #endregion
+
     /// <summary>
     ///     Allows enabling/disabling player-started votekick for ultimate authority
     /// </summary>

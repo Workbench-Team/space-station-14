@@ -63,8 +63,5 @@
 - files: ["driller.yml", "lighthouse.yml"]
   authors: Tenteratus
 
-- files: ["tehtra.yml"]
-  authors: Astr0naut
-
 - files: ["elstation.yml"]
   authors: Elst28

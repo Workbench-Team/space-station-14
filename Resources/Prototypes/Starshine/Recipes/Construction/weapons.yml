@@ -19,3 +19,14 @@
   description: Стрела, скрепленная с зарядом С4.
   icon: { sprite: Objects/Weapons/Guns/Bow/compoundbow.rsi, state: wielded-arrowc4 }
   objectType: Item
+
+- type: construction
+  name: цепной меч
+  id: ChainSwordConstruction
+  graph: ChainSwordGraph
+  startNode: start
+  targetNode: chainsword
+  category: construction-category-weapons
+  description: Легендарный цепной меч, способный прорезать шкуру любой твари за считанные секунды.
+  icon: { sprite: Starshine/Objects/Weapons/Melee/chainsword.rsi, state: icon }
+  objectType: Item

@@ -82,8 +82,8 @@
   maxLimit: 2
   hidden: true
   loadouts:
-  - EmergencyNitrogenExtended
-  - EmergencyOxygenExtended
+  - EmergencyNitrogenBlueShield
+  - EmergencyOxygenBlueShield
 
 # Brigmedic
 - type: loadoutGroup
@@ -132,8 +132,8 @@
   maxLimit: 2
   hidden: true
   loadouts:
-  - EmergencyNitrogenExtended
-  - EmergencyOxygenExtended
+  - EmergencyNitrogenBrigmedic
+  - EmergencyOxygenBrigmedic
 
 #ShuttlePilot
 - type: loadoutGroup

@@ -13,28 +13,6 @@
     Glass: 200
 
 - type: latheRecipe
-  id: LargeBottle
-  result: LargeBottle
-  completetime: 2
-  materials:
-    Plastic: 200
-
-- type: latheRecipe
-  id: SyringeCartridge
-  result: SyringeCartridge
-  completetime: 1
-  materials:
-    Plastic: 67
-    Glass: 67
-
-- type: latheRecipe
-  id: SmallBottle
-  result: SmallBottle
-  completetime: 2
-  materials:
-    Plastic: 100
-
-- type: latheRecipe
   id: CryostasisBeaker
   result: CryostasisBeaker
   completetime: 2

@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: PortableArtifactContainerCargo
+  icon:
+    sprite: Starshine/Objects/Storage/Briefcases/portable_artifact_container.rsi
+    state: icon
+  product: PortableArtifactContainer
+  cost: 500
+  category: cargoproduct-category-name-science
+  group: market

@@ -160,4 +160,11 @@ public sealed partial class CCVars
 
     public static readonly CVarDef<bool> BanHardwareIds =
         CVarDef.Create("ban.hardware_ids", true, CVar.SERVERONLY);
+
+    #region Starshine
+
+    public static readonly CVarDef<bool> BanBlacklistIPs =
+        CVarDef.Create("ban.blacklist_ips", false, CVar.SERVERONLY);
+
+    #endregion
 }

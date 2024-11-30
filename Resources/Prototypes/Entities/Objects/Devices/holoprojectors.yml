@@ -124,6 +124,7 @@
   - type: Tag
     tags:
       - HolosignProjector
+      - SecBeltEquip
   - type: StaticPrice
     price: 50
 

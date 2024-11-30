@@ -1,0 +1,15 @@
+ent-BaseChainSwordPart = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
+    .suffix = Часть
+ent-ChainSwordBlade = кроваво-красный тупой клинок
+    .desc = Этот клинок явно не предназначался для резки.
+    .suffix = { ent-BaseChainSwordPart.suffix }
+ent-ChainSwordChain = изношенная цепь с шипами
+    .desc = Старая цепь с невероятно острыми шипами. На ней повсюду засохшие пятна крови.
+    .suffix = { ent-BaseChainSwordPart.suffix }
+ent-ChainSwordEngine = малый изношенный двигатель
+    .desc = Этот маленький двигатель явно знавал лучшие времена.
+    .suffix = { ent-BaseChainSwordPart.suffix }
+ent-ChainSwordHandle = потёртая рукоять
+    .desc = Старая потёртая рукоять с засохшими пятнами крови. Можно только догадываться, где её использовали.
+    .suffix = { ent-BaseChainSwordPart.suffix }

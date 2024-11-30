@@ -1,0 +1,99 @@
+- type: entity
+  parent: BaseItem
+  id: BaseChainSwordPart
+  abstract: true
+  suffix: Part
+  components:
+  - type: Sprite
+    sprite: Starshine/Objects/Materials/Parts/chainsword.rsi
+  - type: Item
+    sprite: Starshine/Objects/Materials/Parts/chainsword.rsi
+    size: Small
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: StrongMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseChainSwordPart
+  id: ChainSwordBlade
+  name: blood-red blunt blade
+  description: This blade was clearly not intended for cutting.
+  components:
+  - type: Sprite
+    layers:
+    - state: blade
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 1000 # 10 sheets
+      Plasma: 200 # 2 sheets
+  - type: StaticPrice
+    price: 500
+  - type: Tag
+    tags:
+    - Recyclable
+    - ChainSwordBlade
+
+- type: entity
+  parent: BaseChainSwordPart
+  id: ChainSwordChain
+  name: worn spiked chain
+  description: An old chain with incredibly sharp spikes. Has dried bloodstains all over it.
+  components:
+  - type: Sprite
+    layers:
+    - state: chain
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 500 # 5 sheets
+  - type: StaticPrice
+    price: 250
+  - type: Tag
+    tags:
+    - Recyclable
+    - ChainSwordChain
+
+- type: entity
+  parent: BaseChainSwordPart
+  id: ChainSwordEngine
+  name: small worn engine
+  description: This small engine has clearly seen better days.
+  components:
+  - type: Sprite
+    layers:
+    - state: engine
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 400 # 4 sheets
+  - type: StaticPrice
+    price: 200
+  - type: Tag
+    tags:
+    - Recyclable
+    - ChainSwordEngine
+
+- type: entity
+  parent: BaseChainSwordPart
+  id: ChainSwordHandle
+  name: worn handle
+  description: An old worn handle with dried bloodstains. You can only guess where it was used.
+  components:
+  - type: Sprite
+    layers:
+    - state: handle
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 300 # 3 sheets
+  - type: StaticPrice
+    price: 150
+  - type: Tag
+    tags:
+    - Recyclable
+    - ChainSwordHandle

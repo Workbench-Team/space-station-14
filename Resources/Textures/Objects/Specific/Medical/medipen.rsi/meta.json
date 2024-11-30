@@ -95,6 +95,24 @@
       "name": "ambuzol"
     },
     {
+      "name": "punctpen"
+    },
+    {
+      "name": "punctpen_empty"
+    },
+    {
+      "name": "pyrapen"
+    },
+    {
+      "name": "pyrapen_empty"
+    },
+    {
+      "name": "dexpen"
+    },
+    {
+      "name": "dexpen_empty"
+    },
+    {
       "name": "ambuzol_empty"
     },
     {
@@ -103,7 +121,7 @@
     {
       "name": "ambuzolplus"
     },
-	  {
+	{
       "name": "medipen-inhand-left",
       "directions": 4
     },

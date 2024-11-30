@@ -62,7 +62,6 @@ namespace Content.IntegrationTests.Tests
             "Reach",
             "Train",
             "Lighthouse", //Starshine
-            "Tehtra", //Starshine
             "Elstation", //Strshine
             "Oasis",
             "Cog"
