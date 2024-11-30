@@ -5,3 +5,4 @@ info-link-forum = Форум
 info-link-gitlab = GitLab
 info-link-website = Сайт
 info-link-wiki = Вики
+info-link-telegram = Телеграм

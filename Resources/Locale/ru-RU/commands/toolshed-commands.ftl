@@ -28,6 +28,7 @@ command-description-admins-all = Возвращает список ВСЕХ ад
 command-description-marked = Возвращает значение $marked в виде Списка<EntityUid>.
 command-description-rejuvenate = Реанимирует заданные сущности, восстанавливая их здоровье, снимая статус-эффекты и т.д.
 command-description-tag-list = Списки тегов по заданным сущностям.
+command-description-tag-with = Возвращает только сущности с заданным тегом из переданного списка сущностей.
 command-description-tag-add = Добавляет тэг к заданным сущностям.
 command-description-tag-rm = Удаляет тэг с заданных сущностей.
 command-description-tag-addmany = Добавляет список тегов к заданным сущностям.

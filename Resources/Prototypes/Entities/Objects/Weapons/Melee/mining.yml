@@ -155,6 +155,7 @@
   - type: GunRequiresWield
   - type: Item
     size: Ginormous
+    sprite: Objects/Weapons/Melee/crusher-inhands.rsi
   - type: DisarmMalus
   - type: Prying
 
@@ -220,3 +221,6 @@
   - type: Tag
     tags:
       - Pickaxe
+  - type: Item
+    size: Ginormous
+    sprite: Objects/Weapons/Melee/crusher_glaive-inhands.rsi

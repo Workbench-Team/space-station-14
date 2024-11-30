@@ -1,2 +1,3 @@
-bonkable-success-message-others = { CAPITALIZE($user) } ударяет { $user } головой об { $bonkable }
+forced-bonkable-success-message = { CAPITALIZE($bonker) } ударяет голову { $victim } об { $bonkable }!
+bonkable-success-message-others = { $victim } ударяет свою голову об { $bonkable }
 bonkable-success-message-user = Вы ударяете свою голову об { $bonkable }

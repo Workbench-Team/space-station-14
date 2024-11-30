@@ -4,6 +4,7 @@ server-info-discord-button = Discord
 server-info-website-button = Сайт
 server-info-wiki-button = Wiki
 server-info-forum-button = Форум
+server-info-telegram-button = Телеграм
 server-info-report-button = Сообщить об ошибке
 server-info-credits-button = Авторы
 server-info-donate-button = Донат

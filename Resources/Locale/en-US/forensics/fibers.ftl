@@ -26,3 +26,7 @@ fibers-yellow = yellow
 fibers-regal-blue = regal blue
 fibers-rainbow = rainbow
 fibers-olive = olive
+fibers-silver = silver
+fibers-gold = gold
+fibers-maroon = maroon
+fibers-pink = pink

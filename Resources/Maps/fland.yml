@@ -50444,12 +50444,12 @@ entities:
   - uid: 30017
     components:
     - type: Transform
-      pos: 97.5,49.5
+      pos: 101.5,44.5
       parent: 13329
   - uid: 30018
     components:
     - type: Transform
-      pos: 98.5,49.5
+      pos: 101.5,45.5
       parent: 13329
   - uid: 30019
     components:
@@ -78863,6 +78863,13 @@ entities:
     components:
     - type: Transform
       pos: 62.3291,-2.5415568
+      parent: 13329
+- proto: CaptainIDCard
+  entities:
+  - uid: 35821
+    components:
+    - type: Transform
+      pos: 81.9281,44.575443
       parent: 13329
 - proto: CarbonDioxideCanister
   entities:

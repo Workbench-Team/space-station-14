@@ -62,9 +62,17 @@ admin-note-editor-expiry-checkbox-tooltip = Если установить это
 admin-note-editor-expiry-label = Истекает:
 admin-note-editor-expiry-label-params = Истекает: { $date } (через { $expiresIn })
 admin-note-editor-expiry-label-expired = Истёк
-admin-note-editor-expiry-placeholder = Введите срок действия (дд-мм-гггг ЧЧ:мм:сс)
+admin-note-editor-expiry-placeholder = Введите срок действия (целое число)
 admin-note-editor-submit = Отправить
 admin-note-editor-submit-confirm = Вы уверены?
+# Time
+admin-note-button-minutes = Минут
+admin-note-button-hours = Часов
+admin-note-button-days = Дней
+admin-note-button-weeks = Недель
+admin-note-button-months = Месяцев
+admin-note-button-years = Лет
+admin-note-button-centuries = Столетий
 # Watchlist and message login
 admin-notes-watchlist = Наблюдение за { $player }: { $message }
 admin-notes-fallback-admin-name = [System]
