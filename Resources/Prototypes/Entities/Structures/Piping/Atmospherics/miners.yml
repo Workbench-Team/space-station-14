@@ -130,6 +130,14 @@
       spawnGas: WaterVapor
 
 - type: entity
+  name: water gas miner
+  parent: GasMinerBase
+  id: GasMinerWater
+  components:
+    - type: GasMiner
+      spawnGas: Water
+
+- type: entity
   name: ammonia gas miner
   parent: GasMinerBase
   id: GasMinerAmmonia
