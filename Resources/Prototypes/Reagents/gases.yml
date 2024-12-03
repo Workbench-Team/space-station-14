@@ -653,19 +653,27 @@
 
 - type: reagent
   id: SeaWater
-  name: reagent-name-carbon-seawater
-  desc: reagent-desc-carbon-seawater
+  name: reagent-name-seawater
+  desc: reagent-desc-seawater
   physicalDesc: reagent-physical-desc-odorless
   flavor: water and salt
   color: "#135c4f"
+  recognizable: true
+  boilingPoint: 100.0
+  meltingPoint: 0.0
   metabolisms:
     Gas:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 0.5
+        scaleByQuantity: false
         ignoreResistances: true
         damage:
           types:
-            Cold: 2 # water, very temperature!!
+            Cold:
+              30
       - !type:PopupMessage
         type: Local
         messages: [ "water-in-lungs" ]
@@ -674,11 +682,11 @@
         - !type:ReagentThreshold
           reagent: SeaWater
           min: 0.5
-      - !type:Emote
-         conditions:
+      - !type:AdjustAlert
+        alertType: Drowning
+        conditions:
         - !type:ReagentThreshold
-           reagent: SeaWater
-           min: 0.5
-         emote: Cough #TODO: add gurgle sound effect while processing seawater through breathing
-         showInChat: true
-         probability: 0.4
+          reagent: SeaWater
+          min: 0.5
+        clear: True
+        time: 5
