@@ -392,6 +392,7 @@ namespace Content.Shared.Atmos
         Zauker = 16,
         Halon = 17,
         Helium = 18,
-        AntiNoblium = 19
+        AntiNoblium = 19,
+        Water = 20
     }
 }

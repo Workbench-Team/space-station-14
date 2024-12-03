@@ -40,6 +40,7 @@ namespace Content.Server.Atmos.Portable
             Gas.Halon,
             Gas.Helium,
             Gas.AntiNoblium
+            Gas.Water
         };
 
         [ViewVariables(VVAccess.ReadWrite)]
