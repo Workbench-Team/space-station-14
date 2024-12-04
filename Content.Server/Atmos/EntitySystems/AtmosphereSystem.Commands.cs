@@ -68,8 +68,9 @@ public sealed partial class AtmosphereSystem
        // 7: Nitrogen (101kpa) for vox rooms
        mixtures[7].AdjustMoles(Gas.Nitrogen, Atmospherics.MolesCellStandard);
 
-       // 20: Water
-       mixtures[20].AdjustMoles(Gas.Water, Atmospherics.MolesCellGasMiner);
+       // 8: Water
+       mixtures[8].AdjustMoles(Gas.Water, Atmospherics.WaterMolesStandard);
+       mixtures[8].Temperature = 40f; // god help us all
 
        foreach (var arg in args)
        {
