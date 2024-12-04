@@ -39,25 +39,16 @@
   category: Breathing
   icons:
   - sprite: /Textures/Interface/Alerts/breathing.rsi
-    state: drowning
+    state: too_much_water
   name: alerts-drowning-name
   description: alerts-drowning-desc
-
-- type: alert
-  id: Lysis
-  category: Breathing
-  icons:
-  - sprite: /Textures/Interface/Alerts/breathing.rsi
-    state: drowning
-  name: alerts-lysis-name
-  description: alerts-lysis-desc
 
 - type: alert
   id: ShortCircuit
   category: Breathing
   icons:
   - sprite: /Textures/Interface/Alerts/breathing.rsi
-    state: drowning
+    state: too_much_water
   name: alerts-short-circuit-name
   description: alerts-short-circuit-desc
 
