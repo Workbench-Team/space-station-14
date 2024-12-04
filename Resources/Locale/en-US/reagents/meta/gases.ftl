@@ -52,5 +52,5 @@ reagent-desc-helium = A very inert gas produced by the fusion of hydrogen and it
 reagent-name-anti-nob = anti-noblium
 reagent-desc-anti-nob = We still don't know what it does, but it sells for a lot.
 
-reagent-name-carbon-seawater = sea water
-reagent-desc-carbon-seawater = Cold and salty.
+reagent-name-seawater = sea water
+reagent-desc-seawater = Cold and salty.
