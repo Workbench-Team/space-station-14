@@ -2,6 +2,7 @@
 using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Prototypes;
+using Content.Shared.Interaction;
 
 namespace Content.Server.Atmos.Components;
 
@@ -17,7 +18,7 @@ public sealed partial class InGasComponent : Component
     ///     ID of gas to check for as an int. Defaults to water.
     /// </summary>
     [DataField("gasID"), ViewVariables(VVAccess.ReadWrite)]
-    public int GasId = 9;
+    public int GasId = 21;
 
     ///  <summary>
     ///     amount of gas needed to trigger effect in mols.
@@ -48,6 +49,13 @@ public sealed partial class InGasComponent : Component
     /// </summary>
     [DataField]
     public bool TakingDamage = false;
+
+
+     /// <summary>
+    /// Tracks whether something is underwater specifically.
+    /// </summary>
+    [DataField]
+    public bool InWater = false;
 
     /// <summary>
     /// The alert to send when the entity is damaged by gas.

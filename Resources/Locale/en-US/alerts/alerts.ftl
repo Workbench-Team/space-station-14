@@ -10,9 +10,6 @@ alerts-high-toxin-desc = There are [color=red]too many toxins[/color] in the air
 alerts-drowning-name = [color=red]Drowning[/color]
 alerts-drowning-desc = You are[color=red]drowning[/color]! Turn on [color=green]internals[/color] or get away!
 
-alerts-short-circuit-name = [color=red]Short Circuit[/color]
-alerts-short-circuit-desc = You're [color=yellow]short-circuiting[/color]! Get out of the [color=blue]water[/color] immediately!.
-
 alerts-low-pressure-name = [color=red]Low Pressure[/color]
 alerts-low-pressure-desc = The air around you is [color=red]hazardously thin[/color]. A [color=green]space suit[/color] would protect you.
 
