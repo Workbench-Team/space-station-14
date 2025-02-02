@@ -22,6 +22,7 @@
   - type: Spillable
     solution: spray
     spillWhenThrown: False
+    maxMeleeSpillAmount: 0
   - type: RefillableSolution
     solution: spray
   - type: DrainableSolution
