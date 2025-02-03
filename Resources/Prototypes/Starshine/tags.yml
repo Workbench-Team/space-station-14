@@ -49,6 +49,9 @@
   id: EmitterCircuitBoard
 
 - type: Tag
+  id: EncryptionKey
+
+- type: Tag
   id: TreasureCoin
 
 - type: Tag
@@ -146,4 +149,6 @@
   
 - type: Tag
   id: ThrusterLargeElectronics
-  
+
+- type: Tag
+  id: TelecomServerCircuitboard

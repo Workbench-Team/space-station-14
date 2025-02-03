@@ -13,6 +13,9 @@
   - type: Item
   - type: Transform
   - type: Jukebox
+  - type: Construction
+    graph: OldRadio
+    node: OldRadioDone
 #  - type: ActivatableUIRequiresPowerCell #не нашол компонента который позволял бы выключать музыку когда батарейка разряжена
 #  - type: ItemToggle
 #    onUse: false
