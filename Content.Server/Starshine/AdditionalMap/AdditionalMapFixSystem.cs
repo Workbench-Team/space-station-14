@@ -1,3 +1,11 @@
+/*
+ * All right reserved to CrystallEdge.
+ *
+ * BUT this file is sublicensed under MIT License
+ *
+ * BY Ed, discord: eshhhed, github: TheShuEd.
+ */
+
 using System.Threading;
 using Content.Server.Atmos.Components;
 using Content.Server.GameTicking;
