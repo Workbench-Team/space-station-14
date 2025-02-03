@@ -6,7 +6,7 @@
   maxPlayers: 15
   stations:
     Tehtra:
-      stationProto: StandardNanotrasenStation
+      stationProto: StandardNanotrasenStationNoGateway
       components:
         - type: StationNameSetup
           mapNameTemplate: '{0} Tehtra Station {1}'

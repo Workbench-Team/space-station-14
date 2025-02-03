@@ -1,0 +1,22 @@
+- type: entity
+  id: StandardNanotrasenStationNoGateway
+  parent:
+    - BaseStation
+    - BaseStationGoal # Corvax
+    - BaseStationNews
+    - BaseStationCargo
+    - BaseStationJobsSpawning
+    - BaseStationRecords
+    - BaseStationArrivals
+    - BaseStationShuttles
+    - BaseStationCentcomm
+    - BaseStationEvacuation
+    - BaseStationAlertLevels
+    - BaseStationMagnet
+    - BaseStationExpeditions
+    - BaseStationSiliconLawCrewsimov
+    - BaseStationAllEventsEligible
+    - BaseStationNanotrasen
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Transform
