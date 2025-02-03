@@ -42471,8 +42471,6 @@ entities:
         entities:
         - SalvageSpawnerMobMagnet75
       seed: 1644227399
-    - type: MapLight
-      ambientLightColor: '#D8B059FF'
     - type: MapAtmosphere
       space: False
       mixture:
@@ -42481,9 +42479,9 @@ entities:
         temperature: 293.15
         moles:
         - 21.82478
-        - 82.10312
         - 0
         - 0
+        - 119.10312
         - 0
         - 0
         - 0
@@ -247776,7 +247774,7 @@ entities:
     - type: Transform
       pos: 17.5,-19.5
       parent: 2
-- proto: SMESBasic
+- proto: SMESAdvanced
   entities:
   - uid: 17525
     components:
