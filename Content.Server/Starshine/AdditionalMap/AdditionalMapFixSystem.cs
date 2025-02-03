@@ -6,7 +6,7 @@ using Content.Server.Station.Events;
 using Robust.Server.Console;
 using Timer = Robust.Shared.Timing.Timer;
 
-namespace Content.Server._CorvaxNext.AdditionalMapFix;
+namespace Content.Server.Starshine.AdditionalMapFix;
 public sealed class AdditionalMapFix : EntitySystem
 {
     [Dependency] private readonly IServerConsoleHost _host = default!;

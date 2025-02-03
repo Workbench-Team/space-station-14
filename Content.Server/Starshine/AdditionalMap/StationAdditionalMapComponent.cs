@@ -7,7 +7,7 @@
 
 using Robust.Shared.Utility;
 
-namespace Content.Server._CorvaxNext.AdditionalMap;
+namespace Content.Server.Starshine.AdditionalMap;
 
 /// <summary>
 /// Loads additional maps from the list at the start of the round.

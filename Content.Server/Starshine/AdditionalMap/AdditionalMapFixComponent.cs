@@ -1,4 +1,4 @@
-namespace Content.Server._CorvaxNext.AdditionalMap;
+namespace Content.Server.Starshine.AdditionalMap;
 
 [RegisterComponent]
 public sealed partial class AdditionalMapFixComponent : Component;

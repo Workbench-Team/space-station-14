@@ -14,7 +14,7 @@ using Robust.Server.GameObjects;
 using Robust.Server.Maps;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server._CorvaxNext.AdditionalMap;
+namespace Content.Server.Starshine.AdditionalMap;
 
 public sealed partial class StationAdditionalMapSystem : EntitySystem
 {
