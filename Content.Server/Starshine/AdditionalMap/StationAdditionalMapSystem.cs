@@ -3,6 +3,7 @@
  *
  * BUT this file is sublicensed under MIT License
  *
+ * BY Ed, discord: eshhhed, github: TheShuEd.
  */
 
 using Content.Server.Parallax;
