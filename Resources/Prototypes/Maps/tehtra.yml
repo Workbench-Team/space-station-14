@@ -15,6 +15,35 @@
             prefixCreator: 'TG'
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_tehtra.yml
+        - type: StationCargoShuttle
+          path: /Maps/Shuttles/cargo.yml
+        - type: GridSpawn
+          groups:
+            trade: !type:GridSpawnGroup
+              addComponents:
+                - type: ProtectedGrid
+                - type: TradeStation
+              paths:
+                - /Maps/Shuttles/trading_outpost.yml
+            mining: !type:GridSpawnGroup
+              paths:
+              - /Maps/Shuttles/mining.yml
+            ruins: !type:GridSpawnGroup
+              hide: true
+              nameGrid: true
+              minCount: 5
+              maxCount: 4
+              stationGrid: false
+              paths:
+              - /Maps/Ruins/abandoned_outpost.yml
+              - /Maps/Ruins/biodome_satellite.yml
+              - /Maps/Ruins/djstation.yml
+              - /Maps/Ruins/empty_flagship.yml
+              - /Maps/Ruins/old_ai_sat.yml
+              - /Maps/Ruins/syndicate_dropship.yml
+              - /Maps/Ruins/whiteship_ancient.yml
+              - /Maps/Ruins/whiteship_bluespacejumper.yml
+              - /Maps/Ruins/wrecklaimer.yml
         - type: StationJobs
           overflowJobs:
             - Passenger
