@@ -1,5 +1,7 @@
 ent-AsteroidRock = астероидная порода
     .desc = Каменистый астероид.
+ent-AsteroidRockIndestructible = плотная астероидная порода
+    .desc = Очень плотная порода, которую можно разрушить только тяжелой техникой.
 ent-AsteroidRockCoal = { ent-AsteroidRock }
     .desc = Рудная жила, богатая углём.
     .suffix = Уголь
