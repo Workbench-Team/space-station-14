@@ -97,6 +97,9 @@
         Piercing: 0.40
         Heat: 0.40
         Caustic: 0.55
+  - type: Tag
+    tags:
+    - SyndieMinerArmorHeavy
   - type: Construction
     graph: ArmorSyndieMinerHeavy
     node: armorsyndieminerheavy
@@ -123,6 +126,9 @@
         Piercing: 0.65
         Heat: 0.55
         Caustic: 0.55
+  - type: Tag
+    tags:
+    - MinerArmorHeavy
   - type: Construction
     graph: ArmorMinerHeavy
     node: armorminerheavy
@@ -147,6 +153,9 @@
   - type: ClothingSpeedModifier
     walkModifier: 1.2
     sprintModifier: 1.2
+  - type: Tag
+    tags:
+    - SyndieMinerArmorLight
   - type: Construction
     graph: ArmorSyndieMinerLight
     node: armorsyndieminerlight
@@ -171,6 +180,9 @@
   - type: ClothingSpeedModifier
     walkModifier: 1.2
     sprintModifier: 1.2
+  - type: Tag
+    tags:
+    - MinerArmorLight
   - type: Construction
     graph: ArmorMinerLight
     node: armorminerlight

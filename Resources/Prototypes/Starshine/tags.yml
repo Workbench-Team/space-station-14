@@ -106,6 +106,18 @@
   id: GygaxArmor
 
 - type: Tag
+  id: MinerArmorLight
+
+- type: Tag
+  id: MinerArmorHeavy
+
+- type: Tag
+  id: SyndieMinerArmorLight
+
+- type: Tag
+  id: SyndieMinerArmorHeavy
+
+- type: Tag
   id: SawElectric
 
 - type: Tag
