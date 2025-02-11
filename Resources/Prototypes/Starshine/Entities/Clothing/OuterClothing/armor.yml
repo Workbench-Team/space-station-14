@@ -19,10 +19,13 @@
   - type: ExplosionResistance
     damageCoefficient: 0.80
 
+# Miner Armor
+
 - type: entity
   parent: ClothingOuterArmorBase
-  id: ClothingOuterArmorMiner
+  id: ClothingOuterArmorMinerBase
   name: bulletproof vest
+  abstract: true
   description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
   components:
   - type: Sprite
@@ -40,17 +43,15 @@
     damageCoefficient: 0.90
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetMiner
-  - type: Tag
-    tags:
-    - MinerArmor
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:ContainerSlot {}
 
 - type: entity
   parent: ClothingOuterArmorBase
-  id: ClothingOuterArmorMinerSyndie
+  id: ClothingOuterSyndieArmorMinerBase
   name: bulletproof vest
+  abstract: true
   description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
   components:
   - type: Sprite
@@ -68,15 +69,50 @@
     damageCoefficient: 0.90
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetMinerSyndie
-  - type: Tag
-    tags:
-    - SyndieMinerArmor
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:ContainerSlot {}
 
 - type: entity
-  parent: ClothingOuterArmorMinerSyndie
+  parent: ClothingOuterArmorMinerBase
+  id: ClothingOuterArmorMiner
+  name: bulletproof vest
+  description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
+  components:
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.85
+        Heat: 0.75
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
+  - type: Tag
+    tags:
+    - MinerArmor
+
+- type: entity
+  parent: ClothingOuterSyndieArmorMinerBase
+  id: ClothingOuterArmorMinerSyndie
+  name: bulletproof vest
+  description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
+  components:
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.60
+        Heat: 0.60
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
+  - type: Tag
+    tags:
+    - SyndieMinerArmor
+
+- type: entity
+  parent: ClothingOuterSyndieArmorMinerBase
   id: ClothingOuterArmorMinerSyndieHeavy
   name: bulletproof vest
   description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
@@ -102,7 +138,7 @@
     node: armorsyndieminerheavy
 
 - type: entity
-  parent: ClothingOuterArmorMiner
+  parent: ClothingOuterArmorMinerBase
   id: ClothingOuterArmorMinerHeavy
   name: bulletproof vest
   description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
@@ -128,7 +164,7 @@
     node: armorminerheavy
 
 - type: entity
-  parent: ClothingOuterArmorMinerSyndie
+  parent: ClothingOuterArmorMinerBase
   id: ClothingOuterArmorMinerSyndieLight
   name: bulletproof vest
   description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
@@ -152,7 +188,7 @@
     node: armorsyndieminerlight
 
 - type: entity
-  parent: ClothingOuterArmorMiner
+  parent: ClothingOuterSyndieArmorMinerBase
   id: ClothingOuterArmorMinerLight
   name: bulletproof vest
   description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
