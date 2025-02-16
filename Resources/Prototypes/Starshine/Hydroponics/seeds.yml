@@ -1,0 +1,26 @@
+- type: seed
+  id: strawberry
+  name: seeds-strawberry-name
+  noun: seeds-noun-seeds
+  displayName: seeds-strawberry-display-name
+  plantRsi: Starshine/Objects/Specific/Hydroponics/strawberry.rsi
+  packetPrototype: StrawberrySeeds
+  productPrototypes:
+    - FoodStrawberry
+  harvestRepeat: Repeat
+  lifespan: 50
+  growthStages: 5
+  maturation: 5
+  production: 5
+  yield: 3
+  idealLight: 7
+  nutrientConsumption: 0.6
+  chemicals:
+    Nutriment:
+      Min: 2
+      Max: 5
+      PotencyDivisor: 30
+    Vitamin:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 40

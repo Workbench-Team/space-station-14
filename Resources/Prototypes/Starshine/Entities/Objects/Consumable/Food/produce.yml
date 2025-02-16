@@ -1,0 +1,27 @@
+- type: entity
+  name: strawberry
+  parent: FoodProduceBase
+  id: FoodStrawberry
+  description: sweet and tasty strawberry!
+  components:
+  - type: FlavorProfile
+    flavors:
+      - strawberry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 7
+        - ReagentId: Vitamin
+          Quantity: 3
+  - type: Sprite
+    sprite: Starshine/Objects/Specific/Hydroponics/strawberry.rsi
+  - type: Produce
+    seedId: strawberry
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceStrawberry
+        Quantity: 4

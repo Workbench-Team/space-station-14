@@ -1,0 +1,9 @@
+- type: entity
+  parent: SeedBase
+  name: packet of strawberry seeds
+  id: StrawberrySeeds
+  components:
+    - type: Seed
+      seedId: strawberry
+    - type: Sprite
+      sprite: Starshine/Objects/Specific/Hydroponics/strawberry.rsi

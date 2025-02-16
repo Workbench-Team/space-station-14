@@ -25,8 +25,6 @@
       - state: icon
         map: ["enum.OpenableVisuals.Layer"]
       - state: label-apple
-  - type: Label
-    currentLabel: Яблочный сок полон сахара и вкуса! Сделан из спелых и сочных яблок!
 
 - type: entity
   parent: DrinkJuiceCartonBase
@@ -218,3 +216,21 @@
       - state: icon
         map: ["enum.OpenableVisuals.Layer"]
       - state: label-sec
+
+- type: entity
+  parent: DrinkJuiceCartonBase
+  id: DrinkJuiceStrawberryCarton
+  name: strawberry juice
+  description: 
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: JuiceStrawberry
+          Quantity: 50
+  - type: Sprite
+    layers:
+      - state: icon
+        map: ["enum.OpenableVisuals.Layer"]
+      - state: label-strawberry

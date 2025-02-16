@@ -1,0 +1,8 @@
+- type: reagent
+  id: JuiceStrawberry
+  name: reagent-name-juice-strawberry
+  parent: BaseJuice
+  desc: reagent-desc-juice-strawberry
+  flavor: strawberry
+  color: "#f94747"
+  physicalDesc: reagent-physical-desc-sweet
