@@ -1,0 +1,12 @@
+﻿- type: construction
+  name: old radio
+  id: OldRadio
+  graph: OldRadio
+  startNode: start
+  targetNode: OldRadioDone
+  category: construction-category-misc
+  description: Very sus radio
+  icon:
+    sprite: Objects/Devices/communication.rsi
+    state: old-radio
+  objectType: Item
