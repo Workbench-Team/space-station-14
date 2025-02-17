@@ -25,3 +25,35 @@
       reagents:
       - ReagentId: JuiceStrawberry
         Quantity: 4
+
+- type: entity
+  name: plasmerry
+  parent: FoodProduceBase
+  id: FoodPlasmerry
+  description: strange looking strawberry fruit.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - horrible
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin           
+          Quantity: 3
+        - ReagentId: Plasma
+          Quantity: 2
+  - type: Sprite
+    sprite: Starshine/Objects/Specific/Hydroponics/plasmerry.rsi
+  - type: Produce
+    seedId: plasmerry
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Plasma
+        Quantity: 4
+      - ReagentId: JuiceStrawberry
+        Quantity: 2

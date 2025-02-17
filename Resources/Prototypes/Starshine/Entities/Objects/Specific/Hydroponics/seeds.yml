@@ -7,3 +7,13 @@
       seedId: strawberry
     - type: Sprite
       sprite: Starshine/Objects/Specific/Hydroponics/strawberry.rsi
+
+- type: entity
+  parent: SeedBase
+  name: packet of plasmerry seeds
+  id: PlasmerrySeeds
+  components:
+    - type: Seed
+      seedId: plasmerry
+    - type: Sprite
+      sprite: Starshine/Objects/Specific/Hydroponics/plasmerry.rsi
