@@ -54,6 +54,7 @@
     juiceSolution:
       reagents:
       - ReagentId: Plasma
-        Quantity: 4
+        Quantity: 2
       - ReagentId: JuiceStrawberry
         Quantity: 2
+
