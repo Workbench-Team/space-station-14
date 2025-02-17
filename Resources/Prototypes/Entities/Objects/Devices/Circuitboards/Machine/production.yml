@@ -1215,6 +1215,9 @@
   name: telecommunication server machine board
   description: A machine printed circuit board for an telecommunication server.
   components:
+    - type: Tag
+      tags:
+        - TelecomServerCircuitboard # Starshine-Old radio
     - type: MachineBoard
       prototype: TelecomServer
       stackRequirements:
