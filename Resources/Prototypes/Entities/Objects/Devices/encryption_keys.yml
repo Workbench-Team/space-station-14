@@ -6,6 +6,9 @@
   description: A small cypher chip for headsets.
   components:
   - type: EncryptionKey
+  - type: Tag
+    tags:
+      - EncryptionKey # Starshine
   - type: Item
     sprite: Objects/Devices/encryption_keys.rsi
   - type: Sprite

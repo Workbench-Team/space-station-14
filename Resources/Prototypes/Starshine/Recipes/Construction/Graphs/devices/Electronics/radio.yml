@@ -1,0 +1,28 @@
+﻿- type: constructionGraph
+  id: OldRadio
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: OldRadioDone
+          steps:
+            - material: Steel
+              amount: 10
+            - material: Cable
+              amount: 5
+            - material: Glass
+              amount: 2
+            - tag: TelecomServerCircuitboard
+              name: telecommunication server machine board
+              icon:
+                sprite: Objects/Misc/module.rsi
+                state: generic
+            - tag: EncryptionKey
+              name: encryption key
+              icon:
+                sprite: Objects/Devices/encryption_keys.rsi
+                state: crypt_gray
+              doAfter: 30
+
+    - node: OldRadioDone
+      entity: OldRadio
