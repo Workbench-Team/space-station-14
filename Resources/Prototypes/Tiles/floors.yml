@@ -1545,6 +1545,33 @@
   weather: true
 
 - type: tile
+  id: FloorAsteroidSandSpace
+  name: tiles-asteroid-sand-space
+  sprite: /Textures/Tiles/Asteroid/asteroid.png
+  variants: 13
+  isSpace: true
+  placementVariants:
+  - 0.8
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0116
+  - 0.0116
+  baseTurf: Space
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
   id: FloorAsteroidSandDug
   name: tiles-asteroid-sand
   sprite: /Textures/Tiles/Asteroid/asteroid_dug.png
