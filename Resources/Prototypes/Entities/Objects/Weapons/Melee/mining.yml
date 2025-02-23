@@ -174,15 +174,6 @@
   name: crusher dagger
   description: A scaled down version of a proto-kinetic crusher. Uses kinetic energy to vibrate the blade at high speeds.
   components:
-  - type: DamageOtherOnHit
-    damage:
-      types:
-        Piercing: 5.5
-        Slash: 5.5
-  - type: EmbeddableProjectile
-    offset: 0.15,0.15
-  - type: ThrowingAngle
-    angle: 225
   - type: Fixtures
     fixtures:
       fix1:

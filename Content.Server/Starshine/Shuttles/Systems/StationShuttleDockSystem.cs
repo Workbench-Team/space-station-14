@@ -4,7 +4,7 @@ using Content.Server.Starshine.Shuttles.Components;
 using Content.Server.Station.Components;
 using Content.Server.Station.Events;
 using Content.Server.Station.Systems;
-using Robust.Server.GameObjects;
+using Robust.Shared.EntitySerialization.Systems;
 using TimedDespawnComponent = Robust.Shared.Spawners.TimedDespawnComponent;
 
 namespace Content.Server.Starshine.Shuttles.Systems;
@@ -57,9 +57,9 @@ public sealed class StationShuttleDock : EntitySystem
         var dummpMapEntity = _mapSystem.CreateMap(out var dummyMapId);
 
         if (TryGetStation(out var station) &&
-            _loader.TryLoad(dummyMapId, component.Path.ToString(), out var shuttleUids))
+            _loader.TryLoadGrid(dummyMapId, component.Path, out var shuttle))
         {
-            component.Shuttle = shuttleUids[0];
+            component.Shuttle = shuttle.Value;
             var shuttleComp = Comp<ShuttleComponent>(component.Shuttle);
             _shuttles.FTLToDock(component.Shuttle, shuttleComp, station, hyperspaceTime: RoundStartFTLDuration, priorityTag: component.TargetTag);
             _station.AddGridToStation(uid, component.Shuttle);
