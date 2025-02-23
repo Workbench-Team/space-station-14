@@ -1,0 +1,10 @@
+ent-MagazineBoxCaselessRifleBigRubber = ящик патронов (.25 безгильзовые резиновые)
+    .desc = { ent-BaseMagazineBoxCaselessRifle.desc }
+ent-MagazineBoxCaselessRifleRubber = коробка патронов (.25 безгильзовые резиновые)
+    .desc = { ent-BaseMagazineBoxCaselessRifle.desc }
+ent-BaseMagazineBoxUniversal = коробка патронов (12.7 безгильзовые)
+    .desc = { ent-BaseMagazineBoxCaselessRifle.desc }
+ent-MagazineBoxUniversalPT1 = коробка патронов (12.7 безгильзовые)
+    .desc = { ent-BaseMagazineBoxCaselessRifle.desc }
+ent-MagazineBoxUniversalVPS = коробка патронов (12.7 безгильзовые бронебойные)
+    .desc = { ent-BaseMagazineBoxCaselessRifle.desc }

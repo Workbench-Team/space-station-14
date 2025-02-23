@@ -6,7 +6,7 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 namespace Content.Server.Shuttles.Components
 {
-    [RegisterComponent, NetworkedComponent]
+    [RegisterComponent, NetworkedComponent, AutoGenerateComponentPause]
     [Access(typeof(ThrusterSystem))]
     public sealed partial class ThrusterComponent : Component
     {
@@ -54,16 +54,16 @@ namespace Content.Server.Shuttles.Components
         public bool Firing = false;
 
         /// <summary>
-        /// Next time we tick damage for anyone colliding.
-        /// </summary>
-        [ViewVariables(VVAccess.ReadWrite), DataField("nextFire", customTypeSerializer:typeof(TimeOffsetSerializer))]
-        public TimeSpan NextFire;
-
-        /// <summary>
-        /// The interval at which thruster will make damage.
+        /// How often thruster deals damage.
         /// </summary>
         [DataField]
-        public TimeSpan UpdateInterval = TimeSpan.FromSeconds(0.25);
+        public TimeSpan FireCooldown = TimeSpan.FromSeconds(0.25);
+
+        /// <summary>
+        /// Next time we tick damage for anyone colliding.
+        /// </summary>
+        [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoPausedField]
+        public TimeSpan NextFire = TimeSpan.Zero;
     }
 
     public enum ThrusterType

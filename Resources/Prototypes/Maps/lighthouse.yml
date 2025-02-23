@@ -2,7 +2,7 @@
   id: Lighthouse
   mapName: 'Lighthouse'
   mapPath: /Maps/lighthouse.yml
-  minPlayers: 5
+  minPlayers: 0 # Starshine
   stations:
     LighthouseStation:
       stationProto: StandardNanotrasenStation

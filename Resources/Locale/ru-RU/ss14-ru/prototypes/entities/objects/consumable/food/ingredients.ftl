@@ -86,5 +86,5 @@ ent-FoodCocoaBeans = какао-бобы
     .desc = Шоколада много не бывает!
 ent-FoodCroissantRaw = сырой круассан
     .desc = Маслянистая, слоистая вкуснятина, ожидающая своего часа.
-ent-FoodCroissantRawCotton = raw cotton croissant
-    .desc = Buttery, flaky, fibery goodness waiting to happen.
+ent-FoodCroissantRawCotton = сырой хлопковый круассан
+    .desc = Маслянистая, слоистая, волокнистая вкуснятина, ожидающая своего часа.

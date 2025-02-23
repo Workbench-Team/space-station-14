@@ -58,6 +58,9 @@
     DrinkJuiceMoffCarton: 1
     DrinkTimefalllPorterBeerCan: 4
 # Starshine-end
+  contrabandInventory:
+    EthanolChemistryBottle: 3
+    DrinkBottleOfNothingFull: 1
   emaggedInventory:
     DrinkPoisonWinebottleFull: 2
     DrinkJuiceSyndicateCarton: 1

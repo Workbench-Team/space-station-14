@@ -1,13 +1,26 @@
 <Document>
   # Строительство
 
-  При нажатии [color=#a4885c][keybind="OpenCraftingMenu"][/color], откроется меню строительства, что позволит Вам создать различные объекты.
+  <Box>
+    <GuideEntityEmbed Entity="Bed" Caption=""/>
+    <GuideEntityEmbed Entity="TableReinforced" Caption=""/>
+    <GuideEntityEmbed Entity="WeaponImprovisedPneumaticCannon" Caption=""/>
+    <GuideEntityEmbed Entity="Chair" Caption=""/>
+  </Box>
 
-  Нажмите на "Разместить призрак конструкции" и кликните по полу, Вы также можете удерживать [color=#a4885c]Shift[/color] дабы устанавливать целую линию, или [color=#a4885c]Ctrl[/color] чтобы разместить квадратом.
+
+  Меню строительства - это то, как вы строите и создаёте предметы в игре.
+  Доступ к нему можно получить, нажав [color=yellow][bold][keybind="OpenCraftingMenu"][/bold][/color].
+
+  Нажмите на "Разместить призрак конструкции" и кликните по полу, Вы также можете удерживать [color=yellow][bold][keybind="EditorLinePlace"][/bold][/color] дабы устанавливать целую линию, или [color=yellow][bold][keybind="EditorGridPlace"][/bold][/color] чтобы разместить квадратом.
 
   Чтобы стереть призрак конструкции, нажмите "Режим ластика" и удалите ненужное.
 
   При создании вещей с множеством ингредиентов учтите, что Вы не удержите всё сразу; Вы можете просто положить предметы на пол, в ваш рюкзак или на стол рядом с Вами, и создание будет работать.
 
-  При размещении "призрака конструкции" где-либо в мире, нажмите [color=#a4885c][keybind="EditorRotateObject"][/color], чтобы повернуть его по часовой стрелке. Если вы создаете зеркальный компонент (например, газовые смесители/фильтры), вы можете нажать [color=#a4885c][keybind="EditorFlipObject"][/color], чтобы перевернуть его.
+  При размещении "призрака конструкции" где-либо в мире, нажмите [color=yellow][bold][keybind="EditorRotateObject"][/bold][/color], чтобы повернуть его по часовой стрелке.
+  Если вы создаете зеркальный компонент (например, газовые смесители/фильтры), вы можете нажать [color=yellow][bold][keybind="EditorFlipObject"][/bold][/color], чтобы перевернуть его.
+
+  Вы также можете использовать [color=yellow][bold][keybind="RotateObjectClockwise"][/bold][/color] и [color=yellow][bold][keybind="RotateObjectCounterclockwise"][/bold][/color] чтобы повернуть объект по часовой или против часовой стрелки, если он уже построен, при условии, что он не закреплен (не закручен).
+
 </Document>

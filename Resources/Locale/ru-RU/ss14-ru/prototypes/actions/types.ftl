@@ -24,7 +24,7 @@ ent-ActionActivateDnaScramblerImplant = Исказить ДНК
     .desc = Случайно изменяет Ваше имя и внешность.
 ent-ActionToggleSuitPiece = Переключить Часть Костюма
     .desc = Не забудьте экипировать важные части костюма, прежде чем приступать к действиям.
-ent-ActionCombatModeToggle = [color=red]Боевой режим[/color]
+ent-ActionCombatModeToggle = { "[" }color=red]Боевой режим[/color]
     .desc = Войти в боевой режим
 ent-ActionCombatModeToggleOff = { ent-ActionCombatModeToggle }
     .desc = { ent-ActionCombatModeToggle.desc }
@@ -52,3 +52,7 @@ ent-ActionToggleEyes = Открыть/Закрыть глаза
     .desc = Закройте глаза, чтобы защитить своё зрение, или откройте, чтобы насладиться красивыми огоньками.
 ent-ActionToggleWagging = Вилять хвостом
     .desc = Начать или прекратить вилять хвостом.
+ent-FakeMindShieldToggleAction = { "[" }color=green]Переключить поддельный щит разума[/color]
+    .desc = Включить/выключить передачу данных импланта поддельного щита разума.
+ent-ActionToggleParamedicSiren = Переключить сирену парамедика
+    .desc = Включает или выключает сирену парамедика.

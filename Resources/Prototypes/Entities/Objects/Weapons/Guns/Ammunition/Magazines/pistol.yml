@@ -1,7 +1,7 @@
 - type: entity
   id: BaseMagazinePistol
   name: pistol magazine (.35 auto)
-  parent: [ BaseItem, BaseRestrictedContraband ]
+  parent: [ BaseItem, BaseSecurityContraband ]
   abstract: true
   components:
   - type: Tag
@@ -67,7 +67,7 @@
 - type: entity
   id: BaseMagazinePistolSubMachineGun  # Yeah it's weird but it's pistol caliber
   name: SMG magazine (.35 auto)
-  parent: [ BaseItem, BaseRestrictedContraband ]
+  parent: [ BaseItem, BaseSecurityContraband ]
   abstract: true
   components:
   - type: Tag
@@ -100,7 +100,7 @@
 - type: entity
   id: MagazinePistolSubMachineGunTopMounted
   name: WT550 magazine (.35 auto top-mounted)
-  parent: [ BaseItem, BaseRestrictedContraband ]
+  parent: [ BaseItem, BaseSecurityContraband ]
   components:
   - type: Tag
     tags:
@@ -162,6 +162,8 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
 
 
 - type: entity
@@ -200,22 +202,6 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
-# Starshine-start
-- type: entity
-  id: MagazinePistolRubber
-  name: pistol magazine (.35 auto rubber)
-  parent: BaseMagazinePistol
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgePistolRubber
-  - type: Sprite
-    layers:
-    - state: rubber
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-# Starshine-end
-
 - type: entity
   id: MagazinePistolHighCapacityEmpty
   name: machine pistol magazine (.35 auto any)
@@ -228,6 +214,8 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
   id: MagazinePistolHighCapacity
@@ -253,20 +241,6 @@
   - type: Sprite
     layers:
     - state: practice
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  id: MagazinePistolHighCapacityRubber
-  name: machine pistol magazine (.35 auto rubber)
-  parent: BaseMagazinePistolHighCapacity
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgePistol
-  - type: Sprite
-    layers:
-    - state: rubber
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
@@ -303,6 +277,8 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
   id: MagazinePistolSubMachineGunPractice
@@ -317,22 +293,6 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-
-# Starshine-start
-- type: entity
-  id: MagazinePistolSubMachineGunRubber
-  name: SMG magazine (.35 auto rubber)
-  parent: BaseMagazinePistolSubMachineGun
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgePistolRubber
-  - type: Sprite
-    layers:
-    - state: rubber
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-# Starshine-end
 
 - type: entity
   id: MagazinePistolSubMachineGunUranium
@@ -349,143 +309,9 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: BaseMagazineVectorPistol
-  name: "Vector magazine (.35 magnum)"
-  parent: BaseItem
-  abstract: true
-  components:
-  - type: Tag
-    tags:
-      - MagazineVectorSubMachineGun
-  - type: BallisticAmmoProvider
-    mayTransfer: true
-    whitelist:
-      tags:
-        - CartridgePistol
-    capacity: 32
-  - type: Item
-    size: Small
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_vector.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: mag
-    steps: 2
-    zeroVisible: false
-  - type: Appearance
-
-- type: entity
-  id: MagazineVectorPistol
-  name: "Vector magazine (.45 magnum)"
-  parent: BaseMagazineVectorPistol
+  parent: BaseMagazinePistolSubMachineGun
+  id: MagazinePistolSubMachineGunIncendiary
+  name: SMG magazine (.35 auto incendiary)
   components:
   - type: BallisticAmmoProvider
-    proto: CartridgePistol
-  - type: Sprite
-    layers:
-    - state: red
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  id: MagazineVectorPistolRubber
-  name: "Vector magazine (.45 magnum)"
-  parent: BaseMagazineVectorPistol
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgePistolRubber
-  - type: Sprite
-    layers:
-    - state: rubber
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  id: MagazineVectorPistolPractice
-  name: "Vector magazine (.45 magnum practice)"
-  parent: BaseMagazineVectorPistol
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgePistolPractice
-  - type: Sprite
-    layers:
-    - state: practice
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  id: BaseMagazineVectorPistolSmall
-  name: "Vector magazine (.35 magnum)"
-  parent: BaseMagazineVectorPistol
-  abstract: true
-  components:
-  - type: BallisticAmmoProvider
-    mayTransfer: true
-    whitelist:
-      tags:
-        - CartridgePistol
-    capacity: 16
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_vector_small.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: mag
-    steps: 2
-    zeroVisible: false
-  - type: Appearance
-
-- type: entity
-  id: MagazineVectorPistolSmall
-  name: "Vector magazine (.45 magnum)"
-  parent: BaseMagazineVectorPistolSmall
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgePistol
-  - type: Sprite
-    layers:
-    - state: red
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  id: MagazineVectorPistolSmallRubber
-  name: "Vector magazine (.45 magnum)"
-  parent: BaseMagazineVectorPistolSmall
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgePistolRubber
-  - type: Sprite
-    layers:
-    - state: rubber
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  id: MagazineVectorPistolSmallPractice
-  name: "Vector magazine (.45 magnum practice)"
-  parent: BaseMagazineVectorPistolSmall
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgePistolPractice
-  - type: Sprite
-    layers:
-    - state: practice
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
+    proto: CartridgePistolIncendiary

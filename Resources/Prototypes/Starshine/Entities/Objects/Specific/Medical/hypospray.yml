@@ -1,0 +1,203 @@
+- type: entity
+  name: nutriment medipen
+  parent: ChemicalMedipen
+  id: NutrimentMedipen
+  description: A single-use medipen containing nutriment.
+  components:
+  - type: Tag
+    tags: [AutoInjector]
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: salacid
+      map: [ "enum.SolutionContainerLayers.Fill" ]
+  - type: Item
+    sprite: Objects/Specific/Medical/medipen.rsi
+    size: Tiny
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: salacid_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 30
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 10
+  - type: StaticPrice
+    price: 250
+
+- type: entity
+  name: salin medipen
+  parent: ChemicalMedipen
+  id: SalineMedipen
+  description: A single-use medipen containing saline.
+  components:
+  - type: Tag
+    tags: [AutoInjector]
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: salpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: Item
+    sprite: Objects/Specific/Medical/medipen.rsi
+    size: Tiny
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: salpen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 30
+        reagents:
+        - ReagentId: Saline
+          Quantity: 30
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 10
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  name: Luxury Medipen
+  parent: ChemicalMedipen
+  id: Luxurymedpen
+  description: Contains enough stimulants for you to have the chemical's effect for 30 seconds. Use it when you're sure you're ready to throw down.
+  components:
+  - type: Tag
+    tags: [AutoInjector]
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: luxpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: Item
+    sprite: Objects/Specific/Medical/medipen.rsi
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 34
+        reagents:
+        - ReagentId: Epinephrine
+          Quantity: 15
+        - ReagentId: Ichor
+          Quantity: 15
+        - ReagentId: TranexamicAcid
+          Quantity: 4
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: luxpen_empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 34
+  - type: StaticPrice
+    price: 500
+
+- type: entity
+  name: ambuzol medipen
+  parent: ChemicalMedipen
+  id: AmbuzolMedipen
+  description: A single-use medipen containing ambuzol.
+  components:
+  - type: Tag
+    tags: [AutoInjector]
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: ambuzol
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: Item
+    sprite: Objects/Specific/Medical/medipen.rsi
+    size: Tiny
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: ambuzol_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Ambuzol
+          Quantity: 10
+        - ReagentId: Epinephrine
+          Quantity: 5
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 15
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  name: Ambuzol Plus medipen
+  parent: ChemicalMedipen
+  id: AmbuzolPlusMedipen
+  description: A single-use medipen containing ambuzol.
+  components:
+  - type: Tag
+    tags: [AutoInjector]
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: ambuzolplus
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: Item
+    sprite: Objects/Specific/Medical/medipen.rsi
+    size: Tiny
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: ambuzolplus_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20
+        reagents:
+        - ReagentId: AmbuzolPlus
+          Quantity: 20
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 10
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  name: self made medipen
+  parent: ChemicalMedipen
+  id: SelfMadeMedipen
+  description: A single-use medipen containing desoxyephedrine.
+  components:
+  - type: Tag
+    tags: [AutoInjector]
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: selfmade
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: Item
+    sprite: Objects/Specific/Medical/medipen.rsi
+    size: Tiny
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: selfmade_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Desoxyephedrine
+          Quantity: 15
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 15
+  - type: StaticPrice
+    price: 200

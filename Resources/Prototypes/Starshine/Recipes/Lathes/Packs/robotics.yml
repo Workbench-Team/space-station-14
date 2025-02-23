@@ -1,0 +1,43 @@
+## Dynamic
+
+- type: latheRecipePack
+  id: Modsuits
+  recipes:
+  - ModsuitHelmet
+  - ModsuitGauntlets
+  - ModsuitChestplate
+  - ModsuitBoots
+  - ModsuitPlateAtmospheric
+  - ModsuitPlateCosmohonk
+  - ModsuitPlateEngineering
+  - ModsuitPlateMedical
+  - ModsuitPlateSecurity
+  - ModsuitPlateStandard
+  - ModsuitPlateMining
+  - ModsuitAssembly
+
+- type: latheRecipePack
+  id: MechPartsAdvanced
+  recipes:
+  - ClarkHarness
+  - ClarkLArm
+  - ClarkLLeg
+  - ClarkRLeg
+  - ClarkRArm
+  - OdysseusHarness
+  - OdysseusLArm
+  - OdysseusLLeg
+  - OdysseusRLeg
+  - OdysseusRArm
+  - DurandHarness
+  - DurandLArm
+  - DurandLLeg
+  - DurandRLeg
+  - DurandRArm
+  - DurandArmor
+  - GygaxHarness
+  - GygaxLArm
+  - GygaxLLeg
+  - GygaxRLeg
+  - GygaxRArm
+  - GygaxArmor

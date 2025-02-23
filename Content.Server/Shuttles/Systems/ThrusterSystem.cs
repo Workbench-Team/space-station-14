@@ -51,6 +51,7 @@ public sealed class ThrusterSystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<ThrusterComponent, ActivateInWorldEvent>(OnActivateThruster);
         SubscribeLocalEvent<ThrusterComponent, ComponentInit>(OnThrusterInit);
+        SubscribeLocalEvent<ThrusterComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<ThrusterComponent, ComponentShutdown>(OnThrusterShutdown);
         SubscribeLocalEvent<ThrusterComponent, PowerChangedEvent>(OnPowerChange);
         SubscribeLocalEvent<ThrusterComponent, AnchorStateChangedEvent>(OnAnchorChange);
@@ -250,6 +251,11 @@ public sealed class ThrusterSystem : EntitySystem
         {
             EnableThruster(uid, component);
         }
+    }
+
+    private void OnMapInit(Entity<ThrusterComponent> ent, ref MapInitEvent args)
+    {
+        ent.Comp.NextFire = _timing.CurTime + ent.Comp.FireCooldown;
     }
 
     private void OnThrusterShutdown(EntityUid uid, ThrusterComponent component, ComponentShutdown args)
@@ -469,19 +475,16 @@ public sealed class ThrusterSystem : EntitySystem
 
         while (query.MoveNext(out var comp, out var power))
         {
-            if (!comp.Firing || comp.Damage == null)
+            if (comp.NextFire > curTime)
                 continue;
 
-            if (comp.Colliding.Count == 0)
+            comp.NextFire += comp.FireCooldown;
+
+            if (!comp.Firing || comp.Colliding.Count == 0 || comp.Damage == null)
                 continue;
 
-            if (curTime < comp.NextFire)
-                continue;
-
-            comp.NextFire += comp.UpdateInterval;
-
-            var energy = power.PowerReceived * frameTime * comp.HeatValue / ((float)comp.UpdateInterval.TotalSeconds + 0.1f);
-            var stackAmount = Math.Clamp((int)MathF.Floor(comp.Thrust / (comp.HeatValue * ((float)comp.UpdateInterval.TotalSeconds + 0.1f))), 1, 3);
+            var energy = power.PowerReceived * frameTime * comp.HeatValue / ((float)comp.FireCooldown.TotalSeconds + 0.1f);
+            var stackAmount = Math.Clamp((int)MathF.Floor(comp.Thrust / (comp.HeatValue * ((float)comp.FireCooldown.TotalSeconds + 0.1f))), 1, 3);
 
             foreach (var uid in comp.Colliding.ToArray())
             {
@@ -535,7 +538,6 @@ public sealed class ThrusterSystem : EntitySystem
                 continue;
 
             comp.Firing = true;
-            comp.NextFire = _timing.CurTime + comp.UpdateInterval;
             appearanceQuery.TryGetComponent(uid, out var appearance);
             _appearance.SetData(uid, ThrusterVisualState.Thrusting, true, appearance);
         }
