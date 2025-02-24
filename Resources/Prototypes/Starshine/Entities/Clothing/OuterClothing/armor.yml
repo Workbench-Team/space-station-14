@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseRestrictedContraband]
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseCentcommContraband]
   id: ClothingOuterArmorBlueShield
   name: blueshield officer's armor vest
   description: Type I reinforced body armor, with a bright BlueShield Officer's badge

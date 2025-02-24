@@ -7,14 +7,6 @@
      Silver: 300
 
 - type: latheRecipe
-  id: MagazineBoxAntiMaterielBig
-  result: MagazineBoxAntiMaterielBig
-  category: Ammo
-  completetime: 10
-  materials:
-    Steel: 1500
-
-- type: latheRecipe
   id: SpeedLoaderAntiMaterial
   result: SpeedLoaderAntiMaterial
   category: Ammo

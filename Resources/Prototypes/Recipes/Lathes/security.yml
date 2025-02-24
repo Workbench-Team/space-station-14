@@ -583,17 +583,6 @@
     Steel: 850
     Plastic: 400
 
-- type: latheRecipe
-  id: WeaponSubMachineGunVector
-  icon:
-    sprite: Objects/Weapons/Guns/SMGs/vector.rsi
-    state: base
-  result: WeaponSubMachineGunVector
-  completetime: 30
-  materials:
-    Plastic: 400
-    Steel: 1200
-
 # Weapons energy
 
 - type: latheRecipe

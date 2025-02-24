@@ -41695,30 +41695,6 @@ entities:
     - type: Transform
       pos: -46.5,13.5
       parent: 2
-- proto: ShuttleGunKineticCircuitboard
-  entities:
-  - uid: 4794
-    components:
-    - type: Transform
-      pos: 26.603762,3.7726417
-      parent: 2
-  - uid: 4795
-    components:
-    - type: Transform
-      pos: 26.572512,3.5695167
-      parent: 2
-- proto: ShuttleGunSvalinnMachineGunCircuitboard
-  entities:
-  - uid: 4796
-    components:
-    - type: Transform
-      pos: 26.541262,2.5226417
-      parent: 2
-  - uid: 4797
-    components:
-    - type: Transform
-      pos: 26.635012,2.7257667
-      parent: 2
 - proto: ShuttleWindow
   entities:
   - uid: 6707

@@ -34,10 +34,6 @@
   - type: BallisticAmmoProvider
     proto: CartridgeCapCaseless
     capacity: 500
-  - type: MagazineVisuals
-    magState: mag
-    steps: 4
-    zeroVisible: true
   - type: Appearance
   - type: ContainerContainer
     containers:

@@ -6,41 +6,29 @@
   id: SecurityAmmoAdvanced
   recipes:
   - MagazinePistol
-  - MagazinePistolRubber
   - MagazinePistolHighCapacity
-  - MagazinePistolHighCapacityRubber
   - MagazineVectorPistolSmall
-  - MagazineVectorPistolSmallRubber
   - MagazineVectorPistol
-  - MagazineVectorPistolRubber
   - MagazinePistolSubMachineGun
-  - MagazinePistolSubMachineGunRubber
   - MagazinePistolSubMachineGunTopMounted
   - MagazineVectorRifle
-  - MagazineVectorRifleRubber
   - MagazineRifle
-  - MagazineRifleRubber
-  - MagazineRifleEmpty
   - MagazineRifleExt
-  - MagazineRifleExtRubber
-  - MagazineLightRifleRubber
-  - MagazineShotgun
-  - MagazineShotgunEmpty
-  - MagazineShotgunSlug
   - SpeedLoaderMagnum
-  - SpeedLoaderMagnumEmpty
   - MagazineShotgunSaiga
   - MagazineBoxMagnum
+  - MagazineBoxPistol
   - MagazineBoxPistolIncendiary
   - MagazineBoxPistolRubber
+  - MagazineBoxRifle
   - MagazineBoxRifleBig
   - MagazineBoxRifleIncendiary
   - MagazineBoxRifleRubber
   - BoxLethalshot
+  - BoxShotgunSlug
   - BoxShotgunIncendiary
   - BoxBeanbag
   - SpeedLoaderAntiMaterial
-  - MagazineBoxAntiMaterielBig
 
 - type: latheRecipePack
   id: SecurityWeaponsAdvanced
@@ -48,10 +36,8 @@
   - WeaponPistolMk58
   - WeaponPistolMk68
   - WeaponRevolverInspector
-  - WeaponLaserGun
   - WeaponAdvancedLaser
   - WeaponSubMachineGunWt550
-  - WeaponSubMachineGunVector
   - WeaponSubMachineGunDrozd
   - WeaponRifleLecter
   - WeaponLaserCarbine

@@ -50,10 +50,19 @@
   - SpeedLoaderMagnum
   - SpeedLoaderMagnumEmpty
 # Starshine-start
+  - MagazinePistolRubber
+  - MagazinePistolHighCapacityRubber
   - MagazinePistolPractice
+  - MagazinePistolSubMachineGunRubber
   - MagazinePistolSubMachineGunPractice
+  - MagazineVectorPistolRubber
+  - MagazineVectorPistolSmallRubber
   - MagazineVectorPistolSmallPractice
+  - MagazineVectorRifleRubber
   - MagazineRiflePractice
+  - MagazineRifleRubber
+  - MagazineRifleExtRubber
+  - MagazineLightRifleRubber
   - MagazineVectorRifleSmallPractice
   - SpeedLoaderMagnumPractice
 # Starshine-end

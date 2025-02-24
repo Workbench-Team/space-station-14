@@ -15269,13 +15269,6 @@ entities:
     - type: Transform
       pos: 4.275897,-9.40554
       parent: 3
-- proto: RubberStampSyndicate
-  entities:
-  - uid: 3092
-    components:
-    - type: Transform
-      pos: 54.564045,-11.826799
-      parent: 3
 - proto: SalvageMaterialCrateSpawner
   entities:
   - uid: 2168
