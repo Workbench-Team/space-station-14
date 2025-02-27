@@ -1,0 +1,48 @@
+#Grenades
+- type: entity
+  name: bee grenade
+  description: Grenade full of bees... OH NO, NOT THE BEES!
+  parent: [ProjectileGrenadeBase, BaseSyndicateContraband, GrenadeBase]
+  id: BeeGrenade
+  components:
+  - type: Sprite
+    sprite: Starshine/Objects/Weapons/Grenades/beegrenade.rsi
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: /Audio/Items/Toys/bee.ogg
+      params:
+        volume: 7
+  - type: SpawnOnTrigger
+    proto: BeeGrenadeEffect
+  - type: ProjectileGrenade
+    fillPrototype: MobAngryBee
+    capacity: 10
+
+#dummy grenades
+- type: entity
+  parent: BeeGrenade
+  id: BeeGrenadeDummy 
+  suffix: Fake
+  components:
+  - type: ProjectileGrenade
+    fillPrototype: PlushieBee
+    capacity: 10
+
+#Effects
+- type: entity
+  name: beegrenadeeffect
+  id: BeeGrenadeEffect
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: PointLight
+    enabled: true
+    color: "#f9e914"
+    energy: 3
+    radius: 3
+    softness: 1
+    offset: "0, 0"
+  - type: LightFade
+    duration: 0.5
+  - type: TimedDespawn
+    lifetime: 0.5
+  
