@@ -1,0 +1,28 @@
+﻿- type: entity
+  parent: [ClothingShoesMilitaryBase, BaseSecurityContraband]
+  id: ClothingShoesChameleonStealsBootsJack
+  name: jackboots
+  description: Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time.
+  suffix: Stealh
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/jackboots.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/jackboots.rsi
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
+  - type: ChameleonClothing
+    slot: [FEET]
+    default: ClothingShoesBootsJack
+  - type: UserInterface
+    interfaces:
+      enum.ChameleonUiKey.Key:
+        type: ChameleonBoundUserInterface
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.15
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: null
+  - type: ClothingSpeedModifier #оставлено что бы менять ребалансить ботинки сделать меньше/больше скорости за ТК
+    walkModifier: 1.00
+    sprintModifier: 1.00
