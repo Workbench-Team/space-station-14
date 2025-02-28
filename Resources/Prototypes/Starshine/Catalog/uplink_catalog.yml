@@ -85,8 +85,8 @@
 
 - type: listing
   id: UplinklothingShoesChameleonStealsBootsJack
-  name: silent boots
-  description: Станте нинзей! Ботинки не издают ни какого звука при хотьбе и так же вы практически не замедляетесь когда вы при крическом состоянии
+  name: uplink-clothing-shoes-chameleon-steals-boots-jack-name
+  description: uplink-clothing-shoes-chameleon-steals-boots-jack-desc
   productEntity: ClothingShoesChameleonStealsBootsJack
   cost:
     Telecrystal: 3
