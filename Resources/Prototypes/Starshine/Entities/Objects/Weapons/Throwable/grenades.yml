@@ -3,7 +3,7 @@
   name: bee grenade
   description: Grenade full of bees... OH NO, NOT THE BEES!
   parent: [ProjectileGrenadeBase, BaseSyndicateContraband, GrenadeBase]
-  id: BeeGrenade
+  id: UplinkBeeGrenade
   components:
   - type: Sprite
     sprite: Starshine/Objects/Weapons/Grenades/beegrenade.rsi
@@ -18,10 +18,10 @@
     fillPrototype: MobAngryBee
     capacity: 10
 
-#dummy grenades
+#fake grenades
 - type: entity
-  parent: BeeGrenade
-  id: BeeGrenadeDummy 
+  parent: UplinkBeeGrenade
+  id: BeeGrenadePlushie
   suffix: Fake
   components:
   - type: ProjectileGrenade

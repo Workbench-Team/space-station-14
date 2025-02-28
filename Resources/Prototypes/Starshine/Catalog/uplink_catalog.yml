@@ -73,10 +73,10 @@
 
 #Explosives
 - type: listing
-  id: BeeGrenade
+  id: UplinkBeeGrenade
   name: uplink-bee-grenade-name
   description: uplink-bee-grenade-desc
-  productEntity: BeeGrenade
+  productEntity: UplinkBeeGrenade
   discountCategory: usualDiscounts
   discountDownTo:
     Telecrystal: 4
