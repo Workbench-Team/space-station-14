@@ -76,7 +76,7 @@
   id: UplinkBeeGrenade
   name: uplink-bee-grenade-name
   description: uplink-bee-grenade-desc
-  productEntity: UplinkBeeGrenade
+  productEntity: BeeGrenade
   discountCategory: usualDiscounts
   discountDownTo:
     Telecrystal: 4

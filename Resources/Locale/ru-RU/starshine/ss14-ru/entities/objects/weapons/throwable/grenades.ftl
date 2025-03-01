@@ -1,5 +1,5 @@
-ent-UplinkBeeGrenade = пчелиная граната
+ent-BeeGrenade = пчелиная граната
     .desc = Граната, полная пчёл... О НЕТ, ТОЛЬКО НЕ ПЧЁЛЫ!
-ent-BeeGrenadePlushie = { ent-UplinkBeeGrenade }
-    .desc = { ent-UplinkBeeGrenade.desc }
+ent-BeeGrenadePlushie = { ent-BeeGrenade }
+    .desc = { ent-BeeGrenade.desc }
 
