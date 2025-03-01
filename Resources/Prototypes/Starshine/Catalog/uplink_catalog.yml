@@ -1,5 +1,5 @@
 ## Starshine
-
+#Weaponry
 - type: listing
   id: UplinkMiniatureEnergyCrossbow
   name: uplink-miniature-energy-crossbow-syndie-green-name
@@ -33,6 +33,18 @@
   - UplinkWeaponry
 
 - type: listing
+  id: UplinkM90GLBundle
+  name: uplink-m90gl-bundle-name
+  description: uplink-m90gl-bundle-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Rifles/carbine.rsi, state: icon }
+  productEntity: ClothingBackpackDuffelSyndicateFilledCarbine
+  cost:
+    Telecrystal: 17
+  categories:
+  - UplinkWeaponry
+
+#Ammo
+- type: listing
   id: UplinkMagazineCaselessRifle
   name: uplink-magazine-caseless-rifle-name
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag.rsi, state: red }
@@ -48,6 +60,32 @@
         tags:
           - NukeOpsUplink
 
+#Wearables
+- type: listing
+  id: UplinkClothingEyesVision
+  name: uplink-clothing-pnv-name
+  description: uplink-clothing-pnv-desc
+  productEntity: ClothingEyesVision
+  cost:
+    Telecrystal: 3
+  categories:
+    - UplinkWearables
+
+#Explosives
+- type: listing
+  id: UplinkBeeGrenade
+  name: uplink-bee-grenade-name
+  description: uplink-bee-grenade-desc
+  productEntity: BeeGrenade
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 4
+  cost:
+    Telecrystal: 6
+  categories:
+  - UplinkExplosives
+
+#Job
 - type: listing
   id: uplinkMinerSyndie
   name: uplink-syndie-miner-armor-name
@@ -61,27 +99,6 @@
   - !type:BuyerJobCondition
     whitelist:
     - SalvageSpecialist
-
-- type: listing
-  id: UplinkM90GLBundle
-  name: uplink-m90gl-bundle-name
-  description: uplink-m90gl-bundle-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Rifles/carbine.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledCarbine
-  cost:
-    Telecrystal: 17
-  categories:
-  - UplinkWeaponry
-
-- type: listing
-  id: UplinkClothingEyesVision
-  name: uplink-clothing-pnv-name
-  description: uplink-clothing-pnv-desc
-  productEntity: ClothingEyesVision
-  cost:
-    Telecrystal: 3
-  categories:
-    - UplinkWearables
 
 
 
