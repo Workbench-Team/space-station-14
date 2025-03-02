@@ -1,6 +1,48 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Map
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/02/2025 15:22:28
+  entityCount: 17410
+maps:
+- 1
+grids:
+- 2
+- 17345
+- 17346
+- 17347
+- 17348
+- 17349
+- 17350
+- 17351
+- 17352
+- 17353
+- 17354
+- 17355
+- 17356
+- 17358
+- 17360
+- 17362
+- 17364
+- 17366
+- 17368
+- 17370
+- 17372
+- 17374
+- 17376
+- 17377
+- 17378
+- 17379
+- 17380
+- 17381
+- 17386
+- 17387
+- 17388
+- 17390
+orphans: []
+nullspace: []
 tilemap:
   0: Space
   12: FloorAstroGrass
@@ -78,7 +120,6 @@ entities:
     - type: OccluderTree
     - type: Parallax
       parallax: TrainStation
-    - type: LoadedMap
   - uid: 2
     components:
     - type: MetaData
@@ -36708,6 +36749,24 @@ entities:
     - type: Transform
       pos: 12.225706,-136.18898
       parent: 2
+- proto: ClothingMaskBlushingClown
+  entities:
+  - uid: 5469
+    components:
+    - type: Transform
+      parent: 5467
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: ClothingMaskBlushingMime
+  entities:
+  - uid: 5482
+    components:
+    - type: Transform
+      parent: 5479
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: ClothingMaskBreath
   entities:
   - uid: 5466
@@ -36750,24 +36809,6 @@ entities:
 - proto: ClothingMaskScaredMime
   entities:
   - uid: 5481
-    components:
-    - type: Transform
-      parent: 5479
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-- proto: ClothingMaskSexyClown
-  entities:
-  - uid: 5469
-    components:
-    - type: Transform
-      parent: 5467
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-- proto: ClothingMaskSexyMime
-  entities:
-  - uid: 5482
     components:
     - type: Transform
       parent: 5479

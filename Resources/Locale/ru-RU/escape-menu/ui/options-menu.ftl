@@ -2,6 +2,7 @@
 
 ui-options-title = Игровые настройки
 ui-options-tab-accessibility = Доступность
+ui-options-tab-admin = Админ
 ui-options-tab-graphics = Графика
 ui-options-tab-controls = Управление
 ui-options-tab-audio = Аудио
@@ -261,3 +262,7 @@ ui-options-net-pvs-leave-tooltip =
     привести к неправильным предугадываниям и другим проблемам.
 cmd-options-desc = Открывает меню опций, опционально с конкретно выбранной вкладкой.
 cmd-options-help = Использование: options [tab]
+ui-options-speech-bubble-text-opacity = Непрозрачность текста речевого пузыря
+ui-options-speech-bubble-speaker-opacity = Непрозрачность речевого пузыря имени говорящего
+ui-options-speech-bubble-background-opacity = Непрозрачность фона речевого пузыря
+ui-options-enable-classic-overlay = Вернуть оверлей антагониста в классический режим

@@ -1,6 +1,18 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Map
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/02/2025 15:22:12
+  entityCount: 30123
+maps:
+- 1
+grids:
+- 2
+- 21002
+orphans: []
+nullspace: []
 tilemap:
   14: Space
   45: FloorArcadeBlue2
@@ -71,7 +83,6 @@ entities:
     - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
-    - type: LoadedMap
   - uid: 2
     components:
     - type: MetaData
@@ -79423,15 +79434,6 @@ entities:
     - type: Transform
       pos: -46.98417,-7.2719007
       parent: 2
-- proto: ClothingNeckCloakGay
-  entities:
-  - uid: 24198
-    components:
-    - type: Transform
-      parent: 19505
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingNeckStethoscope
   entities:
   - uid: 2097
@@ -143867,7 +143869,6 @@ entities:
           ents:
           - 24200
           - 24199
-          - 24198
           - 24197
         paper_label: !type:ContainerSlot
           showEnts: False

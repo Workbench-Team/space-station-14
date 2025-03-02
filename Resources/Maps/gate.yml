@@ -1,6 +1,22 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Map
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/02/2025 15:21:54
+  entityCount: 33939
+maps:
+- 1
+grids:
+- 2
+- 13386
+- 21114
+- 30902
+- 36996
+- 37842
+orphans: []
+nullspace: []
 tilemap:
   0: Space
   4: FloorAsphalt
@@ -102,7 +118,6 @@ entities:
     - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
-    - type: LoadedMap
     - type: Parallax
       parallax: AspidParallax
   - uid: 2
@@ -77958,6 +77973,13 @@ entities:
     - type: Transform
       pos: -53.643806,71.55605
       parent: 2
+- proto: ClothingMaskBlushingMime
+  entities:
+  - uid: 27989
+    components:
+    - type: Transform
+      pos: -102.543594,145.62488
+      parent: 2
 - proto: ClothingMaskBreath
   entities:
   - uid: 938
@@ -78142,13 +78164,6 @@ entities:
     components:
     - type: Transform
       pos: -54.5514,71.48694
-      parent: 2
-- proto: ClothingMaskSexyMime
-  entities:
-  - uid: 27989
-    components:
-    - type: Transform
-      pos: -102.543594,145.62488
       parent: 2
 - proto: ClothingMaskSterile
   entities:

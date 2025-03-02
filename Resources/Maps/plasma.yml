@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Map
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/02/2025 15:22:22
+  entityCount: 26209
+maps:
+- 1
+grids:
+- 2
+orphans: []
+nullspace: []
 tilemap:
   0: Space
   28: FloorArcadeRed
@@ -62,7 +73,6 @@ entities:
     - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
-    - type: LoadedMap
     - type: Parallax
       parallax: PlasmaStation
   - uid: 2
@@ -64633,13 +64643,6 @@ entities:
     components:
     - type: Transform
       pos: -116.47996,12.489793
-      parent: 2
-- proto: ClothingNeckCloakLesbian
-  entities:
-  - uid: 22951
-    components:
-    - type: Transform
-      pos: -24.48211,-68.415665
       parent: 2
 - proto: ClothingNeckGoldAutismPin
   entities:
@@ -149597,13 +149600,6 @@ entities:
     components:
     - type: Transform
       pos: -45.5,-18.5
-      parent: 2
-- proto: VendingMachinePride
-  entities:
-  - uid: 16887
-    components:
-    - type: Transform
-      pos: -60.5,-58.5
       parent: 2
 - proto: VendingMachinePwrGame
   entities:

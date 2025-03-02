@@ -320,6 +320,9 @@
     attributes:
       proper: true
       gender: male
+  - type: Speech
+    speechVerb: Canine
+    speechSounds: Dog
   - type: DogVision
   - type: Tag
     tags:
@@ -421,6 +424,9 @@
     - VimPilot
   - type: StealTarget
     stealGroup: AnimalWalter
+  - type: Speech
+    speechVerb: Canine
+    speechSounds: Dog
 
 - type: entity
   name: Morty

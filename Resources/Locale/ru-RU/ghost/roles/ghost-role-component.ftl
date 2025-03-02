@@ -239,3 +239,5 @@ ghost-role-information-gingerbread-description =
     Распространяйте вкус патоки и поднимайте всем настроение!
 ghost-role-information-tomatokiller-name = Томат-убийца
 ghost-role-information-tomatokiller-description = Этот маленький помидор будет служить ботанику до конца своей жизни... то есть пару минут.
+ghost-role-information-wizard-name = Волшебник
+ghost-role-information-wizard-desc = ВЫ ВОЛШЕБНИК! Покажите станции, из какого теста сделана ваша магия.

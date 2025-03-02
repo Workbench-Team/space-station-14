@@ -430,8 +430,7 @@
   - type: Access
     groups:
     - AllAccess
-    tags:
-    - CentralCommand # Starshine | TODO: Remove it after doors replacement on TG Meta
+    - Silicon
   - type: Eye
     drawFov: false
   - type: Examiner
