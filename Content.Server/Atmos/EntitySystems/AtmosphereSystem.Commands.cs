@@ -70,7 +70,7 @@ public sealed partial class AtmosphereSystem
 
        // 8: Water
        mixtures[8].AdjustMoles(Gas.Water, Atmospherics.WaterMolesStandard);
-       mixtures[8].Temperature = 40f; // god help us all
+       mixtures[8].Temperature = 225f;
 
        foreach (var arg in args)
        {

@@ -124,4 +124,4 @@
           shader: unshaded # }
           state: plasma
     - type: AtmosFixMarker
-      mode: 20
+      mode: 8
