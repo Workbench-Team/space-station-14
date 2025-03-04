@@ -31,7 +31,7 @@
     - type: Thruster
       damage:
         types:
-          Heat: 40
+          Heat: 5
     - type: InteractionOutline
     - type: Sprite
     - type: Appearance
@@ -55,6 +55,9 @@
               collection: MetalBreak
     - type: StaticPrice
       price: 300
+    - type: GuideHelp
+      guides:
+      - ShuttleCraft
   placement:
     mode: SnapgridCenter
 
@@ -87,17 +90,17 @@
   - type: Sprite
     sprite: Structures/Shuttles/thruster.rsi
     layers:
+    - state: thrust_burn_unshaded
+      map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
+      shader: unshaded
+      visible: false
+      offset: 0, 0.94
     - state: base
       map: ["enum.ThrusterVisualLayers.Base"]
     - state: thrust
       map: ["enum.ThrusterVisualLayers.ThrustOn"]
       shader: unshaded
       visible: false
-    - state: thrust_burn_unshaded
-      map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
-      shader: unshaded
-      visible: false
-      offset: 0, 1
 
 - type: entity
   id: ThrusterUnanchored
@@ -132,7 +135,7 @@
       map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
       shader: unshaded
       visible: false
-      offset: 0, 1
+      offset: 0, 0.94
 
 - type: entity
   id: Gyroscope

@@ -69,24 +69,3 @@ research-technology-advanced-spray = Advanced Spray
 research-technology-bluespace-cargo-transport = Bluespace Cargo Transport
 research-technology-quantum-fiber-weaving = Quantum Fiber Weaving
 research-technology-bluespace-chemistry = Bluespace Chemistry
-
-## Starshine
-
-research-technology-modsuitscraft = MOD-Suits
-research-technology-comp-bows = Composit Bows
-research-technology-standard-ammunition = Standard Ammunition
-research-technology-firearms = Firearms
-research-technology-laser-weapons = Laser Weapon
-research-technology-armor-produce = Armor Prototypes
-research-technology-advanced-laser-weapons = Advanced Laser Weapon
-research-technology-advanced-firearms = Advanced Firearms
-research-technology-advanced-ammunition = Advanced Ammunition
-research-technology-incendiary-ammunition = Incendiary Ammunition
-research-technology-advanced-magazines = Advanced Gun Magazines
-research-technology-spec-ammunition = Specialized Ammunition
-research-technology-salvage-weapons-adv = Advanced Salvage Weapon
-
-research-technology-clarke-aplu = Clarke
-research-technology-Odyssey = Odysseus
-research-technology-gygax = Gygax
-research-technology-durand = Durand

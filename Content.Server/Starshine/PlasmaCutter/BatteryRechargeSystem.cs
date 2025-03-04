@@ -1,60 +1,64 @@
 using Content.Server.Materials;
-using Content.Shared.Materials;
-using Content.Server.Power.EntitySystems;
 using Content.Server.Power.Components;
+using Content.Server.Power.EntitySystems;
+using Content.Shared.Materials;
 
-namespace Content.Server.AruMoon.Plasmacutter
+namespace Content.Server.Starshine.PlasmaCutter
 {
-
     /// <summary>
-    /// This CODE FULL OF SHICODE!!!
-    /// <see cref="BatteryRechargeComponent"/>
+    /// Manages battery recharging with material usage and adjusts storage capacity dynamically.
     /// </summary>
     public sealed class BatteryRechargeSystem : EntitySystem
     {
         [Dependency] private readonly MaterialStorageSystem _materialStorage = default!;
         [Dependency] private readonly BatterySystem _batterySystem = default!;
 
-
-
         public override void Initialize()
         {
             base.Initialize();
 
-            SubscribeLocalEvent<MaterialStorageComponent, MaterialEntityInsertedEvent>(OnMaterialAmountChanged);
+            SubscribeLocalEvent<BatteryRechargeComponent, MaterialEntityInsertedEvent>(OnMaterialAmountChanged);
             SubscribeLocalEvent<BatteryRechargeComponent, ChargeChangedEvent>(OnChargeChanged);
         }
 
-        private void OnMaterialAmountChanged(EntityUid uid, MaterialStorageComponent component, MaterialEntityInsertedEvent args)
+        private void OnMaterialAmountChanged(
+            EntityUid uid,
+            BatteryRechargeComponent component,
+            MaterialEntityInsertedEvent args)
         {
-            if (component.MaterialWhiteList != null)
-                foreach (var fuelType in component.MaterialWhiteList)
-                {
-                    FuelAddCharge(uid, fuelType);
-                }
+            if (!TryComp<MaterialStorageComponent>(uid, out var materialStorage))
+                return;
+
+            if (materialStorage.MaterialWhiteList == null)
+                return;
+
+            foreach (var fuelType in materialStorage.MaterialWhiteList)
+            {
+                FuelAddCharge(uid, fuelType);
+            }
         }
 
         private void OnChargeChanged(EntityUid uid, BatteryRechargeComponent component, ChargeChangedEvent args)
         {
-            ChangeStorageLimit(uid, component.StorageMaxCapacity);
+            AdjustStorageCapacity(uid, component);
         }
 
-        private void ChangeStorageLimit(
-            EntityUid uid,
-            int value,
+        private void AdjustStorageCapacity(EntityUid uid,
+            BatteryRechargeComponent component,
             BatteryComponent? battery = null)
         {
             if (!Resolve(uid, ref battery))
                 return;
-            if (battery.CurrentCharge == battery.MaxCharge)
-                value = 0;
-            _materialStorage.TryChangeStorageLimit(uid, value);
+
+            // Calculate new storage limit based on current charge
+            var newCapacity = battery.CurrentCharge >= battery.MaxCharge
+                ? 0
+                : (int)(component.StorageMaxCapacity * (1 - battery.CurrentCharge / battery.MaxCharge));
+
+            _materialStorage.TryChangeStorageLimit(uid, newCapacity);
         }
 
-        private void FuelAddCharge(
-            EntityUid uid,
-            string fuelType,
-            BatteryRechargeComponent? recharge = null)
+        private void FuelAddCharge(EntityUid uid, string fuelType, BatteryRechargeComponent? recharge = null)
         {
             if (!Resolve(uid, ref recharge))
                 return;
@@ -68,5 +72,4 @@ namespace Content.Server.AruMoon.Plasmacutter
             }
         }
     }
-
 }

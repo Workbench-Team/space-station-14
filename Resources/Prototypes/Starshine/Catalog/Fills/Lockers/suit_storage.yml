@@ -1,0 +1,59 @@
+#Brigmedic hardsuit
+- type: entity
+  id: SuitStorageBrigmedic
+  parent: SuitStorageBase
+  suffix: Brigmedic
+  components:
+  - type: StorageFill
+    contents:
+        - id: NitrogenTankFilled
+        - id: OxygenTankFilled
+        - id: ClothingOuterHardsuitBrigmedic
+        - id: ClothingMaskBreath
+  - type: AccessReader
+    access: [["Security"]]
+
+#CentralCommand hardsuit
+- type: entity
+  id: SuitStorageCentcom
+  parent: SuitStorageBase
+  suffix: CentralCommand
+  components:
+  - type: StorageFill
+    contents:
+        - id: NitrogenTankFilled
+        - id: OxygenTankFilled
+        - id: ClothingOuterHardsuitCentcom
+        - id: ClothingMaskGasCentcom
+  - type: AccessReader
+    access: [["CentralCommand"]]
+
+- type: entity
+  id: SuitStorageCentcomConsultant
+  parent: SuitStorageBase
+  suffix: Consultant
+  components:
+  - type: StorageFill
+    contents:
+        - id: NitrogenTankFilled
+        - id: OxygenTankFilled
+        - id: ClothingOuterHardsuitCentcomConsultant
+        - id: ClothingMaskGasCentcom
+  - type: AccessReader
+    access: [["CentralCommand"]]
+
+#Shyttle Pilot hardsuit
+- type: entity
+  id: SuitStoragePilot
+  parent: SuitStorageBase
+  suffix: Pilot
+  components:
+  - type: StorageFill
+    contents:
+        - id: NitrogenTankFilled
+        - id: OxygenTankFilled
+        - id: ClothingShoesBootsMag
+        - id: ClothingOuterHardsuitShuttlePilot
+        - id: ClothingMaskBreath
+  - type: AccessReader
+    access: [["Security"]]

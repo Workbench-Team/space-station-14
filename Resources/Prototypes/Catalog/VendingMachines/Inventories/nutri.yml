@@ -19,6 +19,9 @@
     BoxAgrichem: 1
     #TO DO:
     #plant analyzer
+  contrabandInventory:
+    UnstableMutagenChemistryBottle: 1
+    Joint: 1
   emaggedInventory:
     Left4ZedChemistryBottle: 1
     Chainsaw: 3

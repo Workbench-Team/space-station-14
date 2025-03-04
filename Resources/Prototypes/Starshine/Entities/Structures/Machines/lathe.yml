@@ -1,0 +1,42 @@
+# Machine which makes weapons and ammunition
+- type: entity
+  parent: BaseLatheLube
+  id: WeaponTechFab
+  name: Weapon techfab
+  description: Prints weapons for use by security crew.
+  components:
+  - type: AccessReader
+    access: [["Armory"]]
+  - type: Sprite
+    netsync: false
+    sprite: Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: weapon
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: WeaponTechFabCircuitboard
+  - type: Lathe
+    producingSound: /Audio/Machines/circuitprinter.ogg
+    soundError: /Audio/Machines/custom_deny.ogg
+    idleState: icon
+    runningState: icon
+    staticPacks:
+    - SecurityPracticeStatic
+    dynamicPacks:
+    - SecurityWeaponsAdvanced
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+        - Wood
+        - Uranium

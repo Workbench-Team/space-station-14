@@ -16,3 +16,8 @@ bounty-console-flavor-left = Задания, полученные от мест�
 bounty-console-flavor-right = v1.4
 bounty-manifest-header = [font size=14][bold]Официальное задание Карго[/bold] (ID#{ $id })[/font]
 bounty-manifest-list-start = Требуемые предметы:
+bounty-console-tab-available-label = Доступно
+bounty-console-tab-history-label = История
+bounty-console-history-empty-label = История заданий не найдена
+bounty-console-history-notice-completed-label = [color=limegreen]Завершено[/color]
+bounty-console-history-notice-skipped-label = [color=red]Пропущено[/color], ответственный: { $id }

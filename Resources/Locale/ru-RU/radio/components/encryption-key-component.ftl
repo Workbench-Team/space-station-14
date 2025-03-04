@@ -5,5 +5,5 @@ encryption-keys-no-keys = Это устройство не имеет ключе
 encryption-keys-are-locked = Слоты для ключей шифрования заблокированы.
 encryption-keys-panel-locked = Сначала откройте панель техобслуживания!
 examine-encryption-channels-prefix = Доступные частоты
-examine-encryption-channel = [color={ $color }]{ $key } для { $id } ({ $freq })[/color]
+examine-encryption-channel = [color={ $color }]{ $key } для { $id } ({ NATURALFIXED($freq, 1) })[/color]
 examine-encryption-default-channel = Канал по умолчанию - [color={ $color }]{ $channel }[/color].

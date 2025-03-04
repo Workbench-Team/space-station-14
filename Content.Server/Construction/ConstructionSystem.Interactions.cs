@@ -234,7 +234,12 @@ namespace Content.Server.Construction
             if (ev is ConstructionInteractDoAfterEvent interactDoAfter)
             {
                 if (interactDoAfter.Cancelled)
+                {
+                    if (construction.StepIndex == 0)
+                        ResetEdge(uid, construction);
+
                     return HandleResult.False;
+                }
 
                 ev = new InteractUsingEvent(
                     interactDoAfter.User,

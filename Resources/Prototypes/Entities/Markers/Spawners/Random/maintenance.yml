@@ -26,6 +26,7 @@
       - id: ClothingHeadHelmetCosmonaut
       - id: ClothingHeadHelmetBasic
       - id: ClothingShoeSlippersDuck
+      - id: ClothingShoeSlippersMeown # Starshine
       - id: ClothingUnderSocksBee
       - id: ClothingUnderSocksCoder
       - id: ClothingHeadHatSquid
@@ -97,19 +98,10 @@
       # Cloaks
       - !type:GroupSelector
         children:
-        - id: ClothingNeckCloakTrans
         - id: ClothingNeckCloakAdmin
         - id: ClothingNeckCloakMoth
         - id: ClothingNeckCloakVoid
         - id: ClothingNeckCloakGoliathCloak
-        - id: ClothingNeckCloakAce
-        - id: ClothingNeckCloakAro
-        - id: ClothingNeckCloakBi
-        - id: ClothingNeckCloakIntersex
-        - id: ClothingNeckCloakLesbian
-        - id: ClothingNeckCloakGay
-        - id: ClothingNeckCloakEnby
-        - id: ClothingNeckCloakPan
       - id: ToySkeleton
       - id: Basketball
       - id: Football
@@ -140,16 +132,16 @@
       # Pins
       - !type:GroupSelector
         children:
-        - id: ClothingNeckLGBTPin
-        - id: ClothingNeckAromanticPin
-        - id: ClothingNeckAsexualPin
-        - id: ClothingNeckBisexualPin
-        - id: ClothingNeckGayPin
-        - id: ClothingNeckIntersexPin
-        - id: ClothingNeckLesbianPin
-        - id: ClothingNeckNonBinaryPin
-        - id: ClothingNeckPansexualPin
-        - id: ClothingNeckTransPin
+        - id: ClothingNeckSharkBrownPin # Starshine-start
+        - id: ClothingNeckSharkBluePin
+        - id: ClothingNeckSharkGreyPin
+        - id: ClothingNeckSharkBlackPin
+        - id: ClothingNeckSharkGreenPin
+        - id: ClothingNeckSharkPurplePin
+        - id: ClothingNeckSharkPinkPin
+        - id: ClothingNeckSharkBurnPin
+        - id: ClothingNeckSharkOrangePin
+        - id: ClothingNeckSharkGoldPin   # Starshine-end
         - id: ClothingNeckAutismPin
         - id: ClothingNeckGoldAutismPin
     # Rare Group
@@ -279,6 +271,7 @@
     - !type:GroupSelector
       weight: 2
       children:
+      - id: Binoculars
       - id: LanternFlash
       - id: PowerCellHigh
       - id: NetProbeCartridge
@@ -382,3 +375,32 @@
         - Spaceshroom
       chance: 0.6
       offset: 0.0
+
+
+- type: entityTable
+  id: InsulsTable
+  table: !type:GroupSelector
+    children:
+    - id: ClothingHandsGlovesColorYellowBudget # budget insuls
+      weight: 85
+    - id: ClothingHandsGlovesColorYellow # true insuls
+      weight: 10
+    - id: ClothingHandsGlovesFingerlessInsulated # fingerless
+      weight: 4
+    - id: ClothingHandsGlovesConducting # conducting
+      weight: 1
+
+- type: entity
+  name: Maint Loot Spawner
+  id: MaintenanceInsulsSpawner
+  suffix: Insuls, safe
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Clothing/Hands/Gloves/Color/yellow.rsi
+      state: icon
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: InsulsTable

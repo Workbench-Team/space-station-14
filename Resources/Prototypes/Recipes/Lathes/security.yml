@@ -3,7 +3,8 @@
 - type: latheRecipe
   abstract: true
   id: BaseWeaponRecipe
-  category: Weapons
+  categories:
+  - Weapons
   completetime: 2
   materials:
     Steel: 300
@@ -18,7 +19,8 @@
 - type: latheRecipe
   abstract: true
   id: BaseAmmoRecipe
-  category: Ammo
+  categories:
+  - Ammo
   completetime: 5
 
 - type: latheRecipe
@@ -583,17 +585,6 @@
     Steel: 850
     Plastic: 400
 
-- type: latheRecipe
-  id: WeaponSubMachineGunVector
-  icon:
-    sprite: Objects/Weapons/Guns/SMGs/vector.rsi
-    state: base
-  result: WeaponSubMachineGunVector
-  completetime: 30
-  materials:
-    Plastic: 400
-    Steel: 1200
-
 # Weapons energy
 
 - type: latheRecipe
@@ -647,6 +638,23 @@
   result: MagazinePistolSubMachineGun
   materials:
     Steel: 300
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: MagazinePistolSubMachineGunUranium
+  result: MagazinePistolSubMachineGunUranium
+  materials:
+    Steel: 25
+    Plastic: 250
+    Uranium: 250
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: MagazinePistolSubMachineGunIncendiary
+  result: MagazinePistolSubMachineGunIncendiary
+  materials:
+    Steel: 25
+    Plastic: 275
 
 - type: latheRecipe
   parent: BaseEmptyAmmoRecipe

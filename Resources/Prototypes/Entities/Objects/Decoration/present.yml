@@ -94,6 +94,22 @@
         orGroup: GiftPool
       - id: PlushieSharkGrey
         orGroup: GiftPool
+# Starshine-start
+      - id: PlushieSharkGreen
+        orGroup: GiftPool
+      - id: PlushieSharkGold
+        orGroup: GiftPool
+      - id: PlushieSharkPurple
+        orGroup: GiftPool
+      - id: PlushieSharkOrange
+        orGroup: GiftPool
+      - id: PlushieSharkBlack
+        orGroup: GiftPool
+      - id: PlushieSharkBrown
+        orGroup: GiftPool
+      - id: ClothingShoeSlippersMeown
+        orGroup: GiftPool
+# Starshine-end
       - id: ToyAmongPequeno
         orGroup: GiftPool
       - id: PlushieDiona
@@ -195,8 +211,6 @@
       - id: MusicBoxInstrument
         orGroup: GiftPool
       - id: ViolaInstrument
-        orGroup: GiftPool
-      - id: ClothingNeckCloakTrans
         orGroup: GiftPool
       - id: ClothingNeckCloakAdmin
         orGroup: GiftPool

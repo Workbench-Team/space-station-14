@@ -1,0 +1,1 @@
+shutter-rattle = *Шур-шур*

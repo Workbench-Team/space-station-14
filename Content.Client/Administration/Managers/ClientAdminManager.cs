@@ -26,7 +26,6 @@ namespace Content.Client.Administration.Managers
         private ISawmill _sawmill = default!;
 
         public event Action? AdminStatusUpdated;
-        public bool BwoinkSound = true;
 
         public bool IsActive()
         {
@@ -147,16 +146,6 @@ namespace Content.Client.Administration.Managers
                 return GetAdminData(session, includeDeAdmin);
 
             return null;
-        }
-
-        public bool SetBwoink(bool state)
-        {
-            BwoinkSound = state;
-            return BwoinkSound;
-        }
-        public bool GetBwoink()
-        {
-            return BwoinkSound;
         }
     }
 }

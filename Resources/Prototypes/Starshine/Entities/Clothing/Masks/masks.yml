@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskStrider
+  name: strider mask
+  description: Mask of a truly scary creature.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/strider.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/strider.rsi
+  - type: Tag
+    tags:
+    - Clothing
+    - WhitelistChameleon
+  - type: IdentityBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9

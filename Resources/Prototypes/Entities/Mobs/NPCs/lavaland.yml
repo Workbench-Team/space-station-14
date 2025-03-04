@@ -43,6 +43,10 @@
     thresholds:
       0: Alive
       50: Dead
+  - type: Butcherable
+    spawned:
+    - id: DiamondOre1
+      amount: 1
   - type: MovementSpeedModifier
     baseWalkSpeed: 5
     baseSprintSpeed: 7
@@ -125,23 +129,3 @@
   - type: ProjectileBatteryAmmoProvider
     proto: WatcherBoltMagmawing
     fireCost: 50
-
-- type: entity
-  id: MobWatcherPride
-  parent: MobWatcherBase
-  name: pride watcher
-  suffix: Admeme
-  description: This rare subspecies only appears in June.
-  components:
-  - type: Sprite
-    layers:
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-      state: base
-    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
-      state: unshaded
-      shader: unshaded
-  - type: PointLight
-    radius: 1.5
-    energy: 1
-  - type: RgbLightController
-    layers: [ 1 ]

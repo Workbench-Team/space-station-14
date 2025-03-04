@@ -1,0 +1,48 @@
+## Static recipes
+
+## Dynamic recipes
+
+- type: latheRecipePack
+  id: SecurityAmmoAdvanced
+  recipes:
+  - MagazinePistol
+  - MagazinePistolHighCapacity
+  - MagazineVectorPistolSmall
+  - MagazineVectorPistol
+  - MagazinePistolSubMachineGun
+  - MagazinePistolSubMachineGunTopMounted
+  - MagazineVectorRifle
+  - MagazineRifle
+  - MagazineRifleExt
+  - SpeedLoaderMagnum
+  - MagazineShotgunSaiga
+  - MagazineBoxMagnum
+  - MagazineBoxPistol
+  - MagazineBoxPistolIncendiary
+  - MagazineBoxPistolRubber
+  - MagazineBoxRifle
+  - MagazineBoxRifleBig
+  - MagazineBoxRifleIncendiary
+  - MagazineBoxRifleRubber
+  - BoxLethalshot
+  - BoxShotgunSlug
+  - BoxShotgunIncendiary
+  - BoxBeanbag
+  - SpeedLoaderAntiMaterial
+
+- type: latheRecipePack
+  id: SecurityWeaponsAdvanced
+  recipes:
+  - WeaponPistolMk58
+  - WeaponPistolMk68
+  - WeaponRevolverInspector
+  - WeaponAdvancedLaser
+  - WeaponSubMachineGunWt550
+  - WeaponSubMachineGunDrozd
+  - WeaponRifleLecter
+  - WeaponLaserCarbine
+  - WeaponLaserCannon
+  - WeaponXrayCannon
+  - WeaponShotgunKammerer
+  - WeaponShotgunEnforcer
+  - WeaponRevolverSuppressor

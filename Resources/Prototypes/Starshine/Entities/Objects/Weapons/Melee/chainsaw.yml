@@ -144,19 +144,19 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
-        Slash: 6
-        Piercing: 6
+        Slash: 10
+        Piercing: 10
         Structural: 12
     activatedSoundOnHit:
       path: /Audio/Starshine/Weapons/chainsaw_hit.ogg
   - type: MeleeWeapon
     autoAttack: true
     wideAnimationRotation: -135
-    attackRate: 3
+    attackRate: 4
     damage:
       types:
-        Slash: 2
-        Blunt: 2
+        Slash: 3
+        Blunt: 3
         Structural: 4
     soundHit:
       collection: MetalThud

@@ -44,7 +44,6 @@ holiday-name-friendship-day = Дня дружбы
 holiday-name-beer-day = Дня пива
 holiday-name-talk-like-a-pirate-day = Дня «Говори как пират»
 holiday-name-programmers-day = Дня программиста
-holiday-name-bisexual-pride-day = Дня празднования бисексуальности
 holiday-name-stupid-questions-day = Дня глупых вопросов
 holiday-name-animals-day = Дня защиты животных
 holiday-name-smiling-day = Дня улыбки
@@ -69,7 +68,6 @@ holiday-name-festive-season = наступающего Нового года
 holiday-name-boxing-day = Дня подарков
 holiday-name-friday-thirteenth = Дня неприятностей
 holiday-name-national-coming-out-day = Национального дня каминг-аута
-holiday-name-beat-a-furry-day = Дня избиения фурри
 
 ## Custom congrats
 

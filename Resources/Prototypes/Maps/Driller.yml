@@ -2,7 +2,7 @@
   id: Driller
   mapName: 'Driller Station'
   mapPath: /Maps/driller.yml
-  minPlayers: 10
+  minPlayers: 0 # Starshine
   stations:
     Drillerstation:
       stationProto: StandardNanotrasenStation

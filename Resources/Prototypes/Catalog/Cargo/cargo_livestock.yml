@@ -47,16 +47,6 @@
   cost: 3000
   category: cargoproduct-category-name-livestock
   group: market
-
-- type: cargoProduct
-  id: LivestockGondola
-  icon:
-    sprite: Mobs/Animals/gondola.rsi
-    state: gondola
-  product: CrateNPCGondola
-  cost: 2000
-  category: Livestock
-  group: market
   
 - type: cargoProduct
   id: LivestockDuck

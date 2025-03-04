@@ -1,5 +1,4 @@
-﻿using System;
-using Content.Shared.Administration;
+﻿using Content.Shared.Administration;
 
 namespace Content.Client.Administration.Managers
 {
@@ -73,15 +72,5 @@ namespace Content.Client.Administration.Managers
         {
             return GetAdminData(includeDeAdmin) != null;
         }
-
-        /// <summary>
-        /// Set ahelp sound flag
-        /// </summary>
-        bool SetBwoink(bool state);
-
-        /// <summary>
-        /// Get ahelp sound flag
-        /// </summary>
-        bool GetBwoink();
     }
 }

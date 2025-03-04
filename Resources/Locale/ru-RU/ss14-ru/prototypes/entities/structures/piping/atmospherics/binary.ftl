@@ -18,3 +18,6 @@ ent-GasRecycler = переработчик газа
     .desc = Перерабатывает углекислый газ и оксид азота. Нагреватель и компрессор в комплект не входят.
 ent-HeatExchanger = радиатор
     .desc = Передаёт тепло между трубой и её окружающей средой.
+ent-HeatExchangerBend = { ent-HeatExchanger }
+    .suffix = Угловой
+    .desc = { ent-HeatExchanger.desc }

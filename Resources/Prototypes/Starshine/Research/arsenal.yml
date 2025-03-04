@@ -41,7 +41,6 @@
   tier: 1
   cost: 10000
   recipeUnlocks:
-  - WeaponSubMachineGunVector
   - WeaponSubMachineGunWt550
   - WeaponShotgunKammerer
   - WeaponPistolMk58
@@ -158,7 +157,7 @@
   tier: 2
   cost: 10000
   recipeUnlocks:
-    - WeaponCutterAdv
+    - WeaponCutterAdvEmpty
   technologyPrerequisites:
     - SalvageWeapons
 
@@ -193,4 +192,3 @@
   recipeUnlocks:
     - WeaponRevolverSuppressor
     - SpeedLoaderAntiMaterial
-    - MagazineBoxAntiMaterielBig

@@ -5,11 +5,22 @@
   minLimit: 0
   maxLimit: 3
   loadouts:
+  - ClothingNeckSharkPinkPin    # Starshine-start
+  - ClothingNeckSharkBrownPin
+  - ClothingNeckSharkBlackPin
+  - ClothingNeckSharkGoldPin
+  - ClothingNeckSharkPurplePin
+  - ClothingNeckSharkOrangePin
+  - ClothingNeckSharkGreenPin
+  - ClothingNeckSharkBluePin
+  - ClothingNeckSharkGreyPin
+  - ClothingNeckSharkBurnPin    # Starshine-end
   - FlowerWreath
   - Hairflower
   - Headphones
   - PlushieLizard
   - PlushieSpaceLizard
+  - ThreeCandles
   - Lighter
   - CigPackGreen
   - CigPackRed
@@ -17,16 +28,6 @@
   - CigPackBlack
   - CigarCase
   - CigarGold
-  - ClothingNeckLGBTPin
-  - ClothingNeckAromanticPin
-  - ClothingNeckAsexualPin
-  - ClothingNeckBisexualPin
-  - ClothingNeckGayPin
-  - ClothingNeckIntersexPin
-  - ClothingNeckLesbianPin
-  - ClothingNeckNonBinaryPin
-  - ClothingNeckPansexualPin
-  - ClothingNeckTransPin
   - ClothingNeckAutismPin
   - ClothingNeckGoldAutismPin
   - TowelColorBlack
@@ -728,6 +729,7 @@
 - type: loadoutGroup
   id: StationEngineerHead
   name: loadout-group-station-engineer-head
+  minLimit: 0
   loadouts:
   - StationEngineerHardhatYellow
   - StationEngineerHardhatOrange
@@ -1078,7 +1080,6 @@
 - type: loadoutGroup
   id: DetectiveOuterClothing
   name: loadout-group-detective-outerclothing
-  minLimit: 0
   loadouts:
   - DetectiveArmorVest
   - DetectiveCoat

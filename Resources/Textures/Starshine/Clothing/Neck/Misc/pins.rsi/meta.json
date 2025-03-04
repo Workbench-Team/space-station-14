@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-4.0",
+  "copyright": "By GreedL",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+    "states": [
+        {
+            "name": "shark-brown-pin"
+        },
+        {
+            "name": "sharkbrownpin-equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "shark-black-pin"
+        },
+        {
+            "name": "sharkblackpin-equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "shark-burn-pin"
+        },
+        {
+            "name": "sharkburnpin-equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "shark-gold-pin"
+        },
+        {
+            "name": "sharkgoldpin-equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "shark-green-pin"
+        },
+        {
+            "name": "sharkgreenpin-equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "shark-purple-pin"
+        },
+        {
+            "name": "sharkpurplepin-equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "shark-orange-pin"
+        },
+        {
+            "name": "sharkorangepin-equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "shark-pink-pin"
+        },
+        {
+            "name": "sharkpinkpin-equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "shark-blue-pin"
+        },
+        {
+            "name": "sharkbluepin-equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "shark-grey-pin"
+        },
+        {
+            "name": "sharkgreypin-equipped-NECK",
+            "directions": 4
+        }
+    ]
+}
+

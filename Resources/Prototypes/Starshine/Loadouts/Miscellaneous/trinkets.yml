@@ -1,0 +1,60 @@
+# Pins
+- type: loadout
+  id: ClothingNeckSharkBrownPin
+  storage:
+    back:
+    - ClothingNeckSharkBrownPin
+
+- type: loadout
+  id: ClothingNeckSharkPinkPin
+  storage:
+    back:
+    - ClothingNeckSharkPinkPin
+
+- type: loadout
+  id: ClothingNeckSharkGoldPin
+  storage:
+    back:
+    - ClothingNeckSharkGoldPin
+
+- type: loadout
+  id: ClothingNeckSharkOrangePin
+  storage:
+    back:
+    - ClothingNeckSharkOrangePin
+
+- type: loadout
+  id: ClothingNeckSharkBurnPin
+  storage:
+    back:
+    - ClothingNeckSharkBurnPin
+
+- type: loadout
+  id: ClothingNeckSharkBluePin
+  storage:
+    back:
+    - ClothingNeckSharkBluePin
+
+- type: loadout
+  id: ClothingNeckSharkGreyPin
+  storage:
+    back:
+    - ClothingNeckSharkGreyPin
+
+- type: loadout
+  id: ClothingNeckSharkBlackPin
+  storage:
+    back:
+    - ClothingNeckSharkBlackPin
+
+- type: loadout
+  id: ClothingNeckSharkGreenPin
+  storage:
+    back:
+    - ClothingNeckSharkGreenPin
+
+- type: loadout
+  id: ClothingNeckSharkPurplePin
+  storage:
+    back:
+    - ClothingNeckSharkPurplePin

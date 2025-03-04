@@ -4,7 +4,7 @@
     "x": 32,
     "y": 32
   },
-  "copyright": "Taken from https://github.com/Baystation12/Baystation12/tree/7274e5654c3cf82d4104dbf818ef00fdc0082aa8",
+  "copyright": "Base texture taken from https://github.com/vgstation-coders/vgstation13/commit/a9978a47344ddfb95bbd2eb7998b108f46b1c22b | Thrust animations taken from https://github.com/Baystation12/Baystation12/tree/7274e5654c3cf82d4104dbf818ef00fdc0082aa8 and modified by MilenVolf",
   "license": "CC-BY-SA-3.0",
   "states": [
     {
@@ -20,11 +20,6 @@
           0.1,
           0.1,
           0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1,
           0.1,
           0.1,
           0.1
@@ -34,9 +29,22 @@
           0.1,
           0.1,
           0.1,
+          0.1,
+          0.1,
           0.1
         ],
         [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
           0.1,
           0.1,
           0.1,

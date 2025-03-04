@@ -1,0 +1,340 @@
+- type: entity
+  id: ThrusterLarge
+  parent: [ BaseThruster, ConstructibleMachine ]
+  name: large thruster
+  description: A larger and more powerful version of the regular thruster, used to propel very large ships. Better to avoid it when it is switched on.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PolygonShape
+          vertices:
+          - "-1.4,-1.4"
+          - "0.4,-1.4"
+          - "0.4,0"
+          - "-1.4,0"
+          - "-1.2,0.4"
+          - "0.2,0.4"
+          # !type:PhysShapeAabb
+          # bounds: "-1.4,-1.4,0.4,0.4"
+        density: 300
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Thruster
+    thrust: 450
+    burnShape:
+    - "-1.2,0.4"
+    - "0.2,0.4"
+    - "-0.7,1.7"
+    - "-0.3,1.7"
+    damage:
+      types:
+        Heat: 10.5
+  - type: ApcPowerReceiver
+    powerLoad: 6000
+  - type: Construction
+    graph: ThrusterLargeGraph
+    node: largeThruster
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1350
+      behaviors:
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 450
+      behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:ChangeConstructionNodeBehavior
+          node: board
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            SheetSteel1:
+              min: 2
+              max: 5
+  - type: Sprite
+    sprite: Starshine/Structures/Shuttles/large_thruster.rsi
+    layers:
+    - state: thrust_burn_unshaded
+      map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
+      shader: unshaded
+      visible: false
+      offset: -0.5, 1.4
+      #offset: 0, 1.9
+    - state: base
+      map: ["enum.ThrusterVisualLayers.Base"]
+      offset: -0.5, -0.5 # TODO: Remove after multi-tile anchoring is implemented
+    - state: thrust
+      map: ["enum.ThrusterVisualLayers.ThrustOn"]
+      shader: unshaded
+      visible: false
+      offset: -0.5, -0.5
+  - type: ContainerFill
+    containers:
+      machine_board: [ ThrusterLargeElectronics ]
+      machine_parts:
+        - CapacitorStockPart10
+        - CapacitorStockPart5
+  - type: StaticPrice
+    price: 1200
+
+- type: entity
+  id: ThrusterHuge
+  parent: ThrusterLarge
+  name: huge thruster
+  description: An extremely large bluespace engine used to propel extremely large ships. The heat from its nozzle fire is comparable to the heat of the surface of the sun.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PolygonShape
+          vertices:
+          - "-1.35,-1.45"
+          - "1.35,-1.45"
+          - "1.35,0.5"
+          - "-1.35,0.5"
+          - "-0.9,1.3"
+          - "0.9,1.3"
+        density: 1000
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Thruster
+    thrust: 1000
+    burnShape:
+    - "-0.9,1.3"
+    - "0.9,1.3"
+    - "-0.35,3.2"
+    - "0.35,3.2"
+    damage:
+      types:
+        Heat: 15
+  - type: ApcPowerReceiver
+    powerLoad: 15000
+  - type: Construction
+    graph: ThrusterHugeGraph
+    node: hugeThruster
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 3000
+      behaviors:
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:ChangeConstructionNodeBehavior
+          node: board
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            SheetSteel1:
+              min: 5
+              max: 10
+  - type: Sprite
+    sprite: Starshine/Structures/Shuttles/huge_thruster.rsi
+    layers:
+    - state: thrust_burn_unshaded
+      map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
+      shader: unshaded
+      visible: false
+      offset: 0, 2.65
+    - state: base
+      map: ["enum.ThrusterVisualLayers.Base"]
+    - state: thrust
+      map: ["enum.ThrusterVisualLayers.ThrustOn"]
+      shader: unshaded
+      visible: false
+  - type: ContainerFill
+    containers:
+      machine_board: [ ThrusterHugeElectronics ]
+      machine_parts:
+        - CapacitorStockPart10
+        - CapacitorStockPart10
+        - CapacitorStockPart10
+        - CapacitorStockPart5
+  - type: StaticPrice
+    price: 3000
+
+- type: entity
+  id: ThrusterLargeUnanchored
+  parent: ThrusterLarge
+  suffix: Unanchored
+  components:
+    - type: Transform
+      anchored: false
+    - type: Physics
+      bodyType: Dynamic
+
+- type: entity
+  id: ThrusterHugeUnanchored
+  parent: ThrusterHuge
+  suffix: Unanchored
+  components:
+    - type: Transform
+      anchored: false
+    - type: Physics
+      bodyType: Dynamic
+
+- type: entity
+  id: ThrusterLargeAssembly
+  name: large thruster assembly
+  description: A large thruster assembly. Needs more parts
+  suffix: Frame
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.4,-1.4,0.4,0.2"
+        density: 200
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Anchorable
+  - type: Rotatable
+  - type: Pullable
+  - type: Sprite
+    sprite: Starshine/Structures/Shuttles/large_thruster.rsi
+    layers:
+    - state: build
+      map: [ "enum.ConstructionVisuals.Layer" ]
+      offset: -0.5, -0.5
+  - type: Construction
+    graph: ThrusterLargeGraph
+    node: frame
+    defaultTarget: largeThruster
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:EmptyAllContainersBehaviour
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            SheetSteel1:
+              min: 5
+              max: 10
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          frame: { state: build }
+          wired: { state: wired }
+          board: { state: board }
+          screwing: { state: board }
+          plating: { state: plating }
+          welded: { state: welded }
+          nozzlePlating: { state: nozzle-plating }
+          nozzleAnchored: { state: nozzle-anchored }
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+
+- type: entity
+  id: ThrusterHugeAssembly
+  parent: ThrusterLargeAssembly
+  name: huge thruster assembly
+  description: A huge thruster assembly. Needs more parts
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PolygonShape
+          vertices:
+          - "-1.35,-1.45"
+          - "1.35,-1.45"
+          - "1.35,0.5"
+          - "-1.35,0.5"
+          - "-0.9,1.0"
+          - "0.9,1.0"
+        density: 450
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Sprite
+    sprite: Starshine/Structures/Shuttles/huge_thruster.rsi
+    layers:
+    - state: build
+      map: [ "enum.ConstructionVisuals.Layer" ]
+  - type: Construction
+    graph: ThrusterHugeGraph
+    node: frame
+    defaultTarget: hugeThruster
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 350
+      behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:EmptyAllContainersBehaviour
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            SheetSteel1:
+              min: 11
+              max: 18
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+
+- type: entity
+  id: ThrusterLargeAssemblyUnanchored
+  parent: ThrusterLargeAssembly
+  suffix: Unanchored
+  components:
+    - type: Transform
+      anchored: false
+    - type: Physics
+      bodyType: Dynamic
+
+- type: entity
+  id: ThrusterHugeAssemblyUnanchored
+  parent: ThrusterHugeAssembly
+  suffix: Unanchored
+  components:
+    - type: Transform
+      anchored: false
+    - type: Physics
+      bodyType: Dynamic

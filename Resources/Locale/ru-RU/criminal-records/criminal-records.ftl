@@ -3,6 +3,9 @@ criminal-records-console-records-list-title = Члены экипажа
 criminal-records-console-select-record-info = Выбрать запись.
 criminal-records-console-no-records = Записи не найдены!
 criminal-records-console-no-record-found = Записи о выбранном сотруднике не найдены.
+criminal-records-console-flavor-left = Сначала арестуйте! Вопросы задавайте потом.
+criminal-records-console-flavor-right = v2.1
+criminal-records-console-show-all = Все
 
 ## Status
 
@@ -29,15 +32,15 @@ criminal-records-permission-denied = Отказано в доступе
 
 ## Security channel notifications
 
-criminal-records-console-wanted = { $name } разыскивается по решению { $officer }, причина: { $reason }.
-criminal-records-console-suspected = { $name } теперь подозревается { $officer }, причина: { $reason }
-criminal-records-console-not-suspected = { $name } больше не подозревается по решению { $officer }.
-criminal-records-console-detained = { $name } арестовали, арестовал: { $officer }.
-criminal-records-console-released = { $name } отпустили, отпустил: { $officer }.
-criminal-records-console-not-wanted = { $officer } снял статус разыскиваемого с { $name }.
-criminal-records-console-paroled = { $name } освободили по УДО, освободил: { $officer }.
-criminal-records-console-not-parole = { $officer } убрал статус УДО с { $name }.
-criminal-records-console-unknown-officer = <неизвестный офицер>
+criminal-records-console-wanted = { $name } ({ $job }) теперь находится в розыске, причина: { $reason }, ответственный: { $officer }.
+criminal-records-console-not-wanted = { $name } ({ $job }) больше не находится в розыске, ответственный: { $officer }.
+criminal-records-console-suspected = { $name } ({ $job }) теперь является подозреваемым, причина: { $reason }, ответственный: { $officer }.
+criminal-records-console-not-suspected = { $name } ({ $job }) больше не является подозреваемым, ответственный: { $officer }.
+criminal-records-console-detained = { $name } ({ $job }) арестовали, ответственный: { $officer }.
+criminal-records-console-released = { $name } ({ $job }) отпустили, ответственный: { $officer }.
+criminal-records-console-paroled = { $name } ({ $job }) освободили по УДО, ответственный: { $officer }.
+criminal-records-console-not-parole = { $name } ({ $job }) лишили права на УДО, ответственный: { $officer }.
+criminal-records-console-unknown-officer = <неизвестный>
 
 ## Filters
 

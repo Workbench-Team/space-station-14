@@ -8,3 +8,4 @@ votekick-webhook-description = Инициатор: { $initiator }; Цель: { $
 votekick-webhook-cancelled-admin-online = **Голосование отменено из-за того, что админы онлайн**
 votekick-webhook-cancelled-admin-target = **Голосование отменено из-за того, что цель - администратор**
 votekick-webhook-cancelled-antag-target = **Голосование отменено из-за того, что цель - антаг**
+votekick-ban-reason = "Исключён голосованием. Причина: { $reason }"

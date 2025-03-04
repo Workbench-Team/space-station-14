@@ -24,6 +24,7 @@
     magState: mag
     steps: 2
     zeroVisible: true
+  - type: Appearance
 
 - type: entity
   name: Cutter
@@ -59,7 +60,18 @@
     - type: Appearance
 
 - type: entity
-  name: Advanced Cutter
+  suffix: Empty
+  parent: WeaponCutter
+  id: WeaponCutterEmpty
+  components:
+    - type: MaterialStorage
+      storageLimit: 7500
+    - type: Battery
+      startingCharge: 0
+
+- type: entity
+  name: advanced cutter
+  suffix: Charged
   parent: WeaponCutter
   id: WeaponCutterAdv
   description: A self-defense weapon that exhausts organic targets, weakening them until they collapse.
@@ -75,6 +87,16 @@
       proto: BulletCutterAdv
       fireCost: 75
     - type: Appearance
+
+- type: entity
+  suffix: Empty
+  parent: WeaponCutterAdv
+  id: WeaponCutterAdvEmpty
+  components:
+    - type: MaterialStorage
+      storageLimit: 7500
+    - type: Battery
+      startingCharge: 0
 
 - type: entity
   name: Emitter Cannon

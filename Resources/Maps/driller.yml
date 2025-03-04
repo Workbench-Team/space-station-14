@@ -36982,15 +36982,6 @@ entities:
     - type: Transform
       pos: -5.616526,-21.44806
       parent: 2
-- proto: ClothingOuterHardsuitLuxury
-  entities:
-  - uid: 5547
-    components:
-    - type: Transform
-      parent: 3262
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingOuterHardsuitPirateCap
   entities:
   - uid: 2275
@@ -66261,7 +66252,6 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 5547
           - 11672
           - 3771
         paper_label: !type:ContainerSlot
@@ -75501,33 +75491,12 @@ entities:
     - type: Transform
       pos: -5.541942,42.92123
       parent: 2
-- proto: RubberStampChaplain
-  entities:
-  - uid: 9620
-    components:
-    - type: Transform
-      pos: -52.82712,-40.37616
-      parent: 2
-- proto: RubberStampClown
-  entities:
-  - uid: 4066
-    components:
-    - type: Transform
-      pos: 10.2437105,-38.87741
-      parent: 2
 - proto: RubberStampDenied
   entities:
   - uid: 5886
     components:
     - type: Transform
       pos: -5.8138165,42.592926
-      parent: 2
-- proto: RubberStampMime
-  entities:
-  - uid: 10413
-    components:
-    - type: Transform
-      pos: 5.65582,-41.28873
       parent: 2
 - proto: SadTromboneImplanter
   entities:

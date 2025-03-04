@@ -36,6 +36,9 @@
   - type: Speech
     speechVerb: Robotic
     speechSounds: Vending
+  - type: SpookySpeaker
+    messageSet: SpookySpeakerMessagesGeneric
+    speakChance: 0.2
   - type: Anchorable
   - type: Pullable
   - type: StaticPrice
@@ -120,6 +123,13 @@
     - PlushieGhost
     - PlushieDiona
     - PlushieSharkBlue
+    - PlushieSharkPink  # Starshine-start
+    - PlushieSharkGrey
+    - PlushieSharkGreen
+    - PlushieSharkPurple
+    - PlushieSharkOrange
+    - PlushieSharkBlack
+    - PlushieSharkBrown  # Starshine-end
     - PlushieVox
     - PlushieXeno
     - PlasticBanana

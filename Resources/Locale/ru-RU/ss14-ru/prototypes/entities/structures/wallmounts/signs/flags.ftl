@@ -6,7 +6,5 @@ ent-NTFlag = флаг Nanotrasen
     .desc = Слава НТ! Подождите, они действительно сделали ручной флаг для корпорации?
 ent-SyndieFlag = флаг Синдиката
     .desc = Пахнет кровью. Смерть НТ!
-ent-LGBTQFlag = флаг ЛГБТК
-    .desc = Be gay do crime flag
 ent-PirateFlag = флаг Пиратов
     .desc = Поднимайте веселого роджера, прохвосты!

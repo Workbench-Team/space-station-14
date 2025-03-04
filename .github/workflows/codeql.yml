@@ -41,7 +41,7 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
-      
+
     - name: Setup Submodule
       run: |
         git submodule update --init --recursive
@@ -74,13 +74,13 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 9.0.x
 
     - name: Install dependencies
       run: dotnet restore
 
     - name: Build Project
-      run: dotnet build --configuration Debug --no-restore /p:WarningsAsErrors=nullable /m
+      run: dotnet build --configuration DebugOpt --no-restore /p:WarningsAsErrors=nullable /m
 
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun

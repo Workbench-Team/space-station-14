@@ -11,5 +11,4 @@ damage-type-radiation = Радиация
 damage-type-shock = Электрические
 damage-type-slash = Порезы
 damage-type-structural = Структурные
-## Starshine
-damage-type-stun = Оглушающие
+damage-type-holy = Святой

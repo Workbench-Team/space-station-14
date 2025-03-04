@@ -32,6 +32,12 @@ public sealed partial class FlatpackComponent : Component
     public SoundSpecifier UnpackSound = new SoundPathSpecifier("/Audio/Effects/unwrap.ogg");
 
     /// <summary>
+    /// The range required to unpack this entity.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public float UnpackRange = float.Epsilon * 10f;
+
+    /// <summary>
     /// A dictionary relating a machine board sprite state to a color used for the overlay.
     /// Kinda shitty but it gets the job done.
     /// </summary>

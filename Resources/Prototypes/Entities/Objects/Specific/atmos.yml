@@ -32,6 +32,13 @@
     materialComposition:
       Steel: 400
       Glass: 100
+  - type: GuideHelp
+    guides:
+    - AtmosTools
+    - PipeNetworks
+    - Pipes
+    - GasCanisters
+# Starshine-start
   - type: SolutionContainerManager
     solutions:
       gasanalyser:
@@ -40,3 +47,4 @@
           Quantity: 15
   - type: Extractable
     grindableSolutionName: gasanalyser
+# Starshine-end

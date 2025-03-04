@@ -14,6 +14,9 @@
             prefixCreator: 'TG'
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_meta.yml
+        - type: StationShuttleDock
+          targetTag: SalvageShuttle
+          path: /Maps/Shuttles/beetle.yml
         - type: StationJobs
           overflowJobs:
             - Passenger

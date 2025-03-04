@@ -99,7 +99,7 @@
   gasMolesVisible: 0.6
   color: 3a758c
   reagent: Frezon
-  pricePerMole: 0.3
+  pricePerMole: 1
 
 - type: gas
   id: 20

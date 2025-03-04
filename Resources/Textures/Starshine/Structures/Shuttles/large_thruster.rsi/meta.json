@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Base sprite taken from tgstation at commit https://github.com/tgstation/tgstation/commit/5c3b433489732a83bcf6911974938cde61789239 | Construction sprites made by MilenVolf | Thrust, thrust-burn animations taken from https://github.com/Baystation12/Baystation12/tree/7274e5654c3cf82d4104dbf818ef00fdc0082aa8 and modified by MilenVolf",
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "base",
+      "directions": 4
+    },
+    {
+      "name": "thrust",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "thrust_burn_unshaded",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "build",
+      "directions": 4
+    },
+    {
+      "name": "wired",
+      "directions": 4
+    },
+    {
+      "name": "board",
+      "directions": 4
+    },
+    {
+      "name": "plating",
+      "directions": 4
+    },
+    {
+      "name": "welded",
+      "directions": 4
+    },
+    {
+      "name": "nozzle-plating",
+      "directions": 4
+    },
+    {
+      "name": "nozzle-anchored",
+      "directions": 4
+    }
+  ]
+}

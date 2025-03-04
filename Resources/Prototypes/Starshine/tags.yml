@@ -13,10 +13,43 @@
   id: ChainSwordHandle
 
 - type: Tag
+  id: ClothingNeckSharkBrownPin
+
+- type: Tag
+  id: ClothingNeckSharkGoldPin
+
+- type: Tag
+  id: ClothingNeckSharkOrangePin
+
+- type: Tag
+  id: ClothingNeckSharkBurnPin
+
+- type: Tag
+  id: ClothingNeckSharkBluePin
+
+- type: Tag
+  id: ClothingNeckSharkGreyPin
+
+- type: Tag
+  id: ClothingNeckSharkBlackPin
+
+- type: Tag
+  id: ClothingNeckSharkGreenPin
+
+- type: Tag
+  id: ClothingNeckSharkPurplePin
+
+- type: Tag
+  id: ClothingNeckSharkPinkPin
+
+- type: Tag
   id: Clothing
 
 - type: Tag
   id: EmitterCircuitBoard
+
+- type: Tag
+  id: EncryptionKey
 
 - type: Tag
   id: TreasureCoin
@@ -82,8 +115,40 @@
   id: Welder
 
 - type: Tag
+  id: PlushieSharkGold
+
+- type: Tag
+  id: PlushieSharkBurn
+
+- type: Tag
+  id: PlushieSharkGreen
+
+- type: Tag
+  id: PlushieSharkPurple
+
+- type: Tag
+  id: PlushieSharkBrown
+
+- type: Tag
+  id: PlushieSharkOrange
+
+- type: Tag
+  id: PlushieSharkBlack
+
+- type: Tag
+  id: SalvageShuttle
+
+- type: Tag
   id: Slime
 
 - type: Tag
   id: SpeedLoaderAntiMaterial
   
+- type: Tag
+  id: ThrusterHugeElectronics
+  
+- type: Tag
+  id: ThrusterLargeElectronics
+
+- type: Tag
+  id: TelecomServerCircuitboard

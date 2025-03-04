@@ -6,7 +6,7 @@
   maxPlayers: 15
   stations:
     Tehtra:
-      stationProto: StandardNanotrasenStation
+      stationProto: StandardNanotrasenStationNoGateway
       components:
         - type: StationNameSetup
           mapNameTemplate: '{0} Tehtra Station {1}'
@@ -15,6 +15,27 @@
             prefixCreator: 'TG'
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_tehtra.yml
+        - type: StationAdditionalMap
+          mapPaths:
+          - /Maps/Gateway/Underground_Outpost_45.yml
+        - type: GridSpawn
+          groups:
+            ruins: !type:GridSpawnGroup
+              hide: true
+              nameGrid: true
+              minCount: 5
+              maxCount: 4
+              stationGrid: false
+              paths:
+              - /Maps/Ruins/abandoned_outpost.yml
+              - /Maps/Ruins/biodome_satellite.yml
+              - /Maps/Ruins/djstation.yml
+              - /Maps/Ruins/empty_flagship.yml
+              - /Maps/Ruins/old_ai_sat.yml
+              - /Maps/Ruins/syndicate_dropship.yml
+              - /Maps/Ruins/whiteship_ancient.yml
+              - /Maps/Ruins/whiteship_bluespacejumper.yml
+              - /Maps/Ruins/wrecklaimer.yml
         - type: StationJobs
           overflowJobs:
             - Passenger
@@ -55,5 +76,3 @@
             CargoTechnician: [ 2, 2 ]
             #civilian
             Passenger: [ -1, -1 ]
-            Clown: [ 1, 1 ]
-            Mime: [ 1, 1 ]

@@ -87,6 +87,7 @@ reagent-physical-desc-exotic-smelling = экзотически пахнущее
 reagent-physical-desc-energizing = заряжающее
 reagent-physical-desc-exhilarating = захватывающее
 reagent-physical-desc-vibrant = энергичное
+reagent-physical-desc-inversed = инверсированное
 reagent-physical-desc-fluffy = пушистое
 reagent-physical-desc-reflective = светоотражающее
 reagent-physical-desc-funny = смешное

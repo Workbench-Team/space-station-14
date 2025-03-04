@@ -1,0 +1,10 @@
+ent-MagazinePistolRubber = пистолетный магазин (.35 авто резиновые)
+    .desc = { ent-BaseMagazinePistol.desc }
+ent-MagazineVectorPistolRubber = пистолетный магазин вектор (.35 авто резиновые)
+    .desc = { ent-BaseMagazinePistol.desc }
+ent-MagazineVectorPistolSmallRubber = маленький пистолетный магазин вектор (.35 авто резиновые)
+    .desc = { ent-BaseMagazinePistol.desc }
+ent-MagazinePistolSubMachineGunRubber = магазин ПП (.35 авто резиновые)
+    .desc = { ent-BaseMagazinePistolSubMachineGun.desc }
+ent-MagazinePistolHighCapacityRubber = автопистолетный магазин (.35 авто резиновые)
+    .desc = { ent-BaseMagazinePistolHighCapacity.desc }

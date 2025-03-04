@@ -55,3 +55,24 @@
       enum.GatewayUiKey.Key:
         type: GatewayBoundUserInterface
   - type: Gateway
+
+- type: entity
+  parent: BaseGateway
+  id: GatewayRequiresPower
+  suffix: Requires power
+  components:
+  - type: ActivatableUI
+    key: enum.GatewayUiKey.Key
+  - type: ApcPowerReceiver
+    powerLoad: 2000
+  - type: ExtensionCableReceiver
+  - type: Electrified
+    enabled: false
+    usesApcPower: true
+  - type: ActivatableUIRequiresPower
+  - type: UserInterface
+    interfaces:
+      enum.GatewayUiKey.Key:
+        type: GatewayBoundUserInterface
+  - type: Gateway
+    enabled: True

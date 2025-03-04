@@ -17,5 +17,4 @@ armor-damage-type-cold = Холодный
 armor-damage-type-poison = Ядовитый
 armor-damage-type-shock = Электрический
 armor-damage-type-structural = Структурный
-## Starshine
-armor-damage-type-stun = Оглушающий
+armor-damage-type-holy = Святой

@@ -7,3 +7,9 @@
   id: timefallPorter
   flavorType: Complex
   description: flavor-complex-timefallPorter
+
+- type: flavor
+  id: strawberry
+  flavorType: Base
+  description: flavor-strawberry
+

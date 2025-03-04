@@ -29,10 +29,6 @@
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 10
-  - type: MagazineVisuals
-    magState: mag
-    steps: 5
-    zeroVisible: false
   - type: Appearance
   - type: MechEquipment
   - type: UIFragment
@@ -114,10 +110,6 @@
     - type: Battery
       maxCharge: 20000
       startingCharge: 20000
-    - type: MagazineVisuals
-      magState: mag
-      steps: 5
-      zeroVisible: true
     - type: BatterySelfRecharger
       autoRecharge: true
       autoRechargeRate: 40
@@ -214,10 +206,6 @@
     state: mecha_ion
   - type: Item
     size: Ginormous
-  - type: MagazineVisuals
-    magState: mag
-    steps: 5
-    zeroVisible: true
   - type: Appearance
   - type: Battery
     maxCharge: 1000

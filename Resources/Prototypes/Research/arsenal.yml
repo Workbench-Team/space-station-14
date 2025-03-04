@@ -14,7 +14,7 @@
   - ShuttleGunKineticCircuitboard
   # These are roundstart but not replenishable for salvage
 ## Starshine-start
-  - WeaponCutter
+  - WeaponCutterEmpty
   # This is not roundstart since its a direct upgrade
 ## Starshine-end
 
@@ -31,6 +31,7 @@
   - BoxShotgunIncendiary
   - MagazineRifleIncendiary
   - MagazinePistolIncendiary
+  - MagazinePistolSubMachineGunIncendiary
   - MagazineLightRifleIncendiary
   - SpeedLoaderMagnumIncendiary
   - MagazineShotgunIncendiary
@@ -84,6 +85,7 @@
   recipeUnlocks:
   - MagazineRifleUranium
   - MagazinePistolUranium
+  - MagazinePistolSubMachineGunUranium
   - MagazineLightRifleUranium
   - SpeedLoaderMagnumUranium
   - MagazineBoxPistolUranium

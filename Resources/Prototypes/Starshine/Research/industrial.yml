@@ -15,3 +15,20 @@
   - ClarkRLeg
   - ClarkRArm
   - ClarkHarness
+
+# Tier 3
+
+- type: technology
+  id: AdvancedThrusters
+  name: research-technology-advanced-thrusters
+  icon:
+    sprite: Starshine/Structures/Shuttles/large_thruster.rsi
+    state: base
+  discipline: Industrial
+  tier: 3
+  cost: 15000
+  recipeUnlocks:
+  - ThrusterLargeElectronics
+  - ThrusterHugeElectronics
+  - ThrusterLargeAssemblyFlatpack
+  - ThrusterHugeAssemblyFlatpack

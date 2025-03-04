@@ -1,0 +1,15 @@
+- type: latheRecipe
+  id: ThrusterLargeElectronics
+  materials:
+    Steel: 400
+    Glass: 2000
+    Gold: 400
+  result: ThrusterLargeElectronics
+
+- type: latheRecipe
+  id: ThrusterHugeElectronics
+  materials:
+    Steel: 800
+    Glass: 4000
+    Gold: 800
+  result: ThrusterHugeElectronics

@@ -36,3 +36,6 @@ uplink-magazine-caseless-rifle-bundle-desc = A bundle containing magazines for a
 
 uplink-miniature-energy-crossbow-syndie-green-name = Miniature Energy Crossbow
 uplink-miniature-energy-crossbow-syndie-green-desc = The syndicate's energy crossbow, small, silent and deadly.
+
+uplink-bee-grenade-name = Bee Grenade
+uplink-bee-grenade-desc = A grenade full of aggressive bees. Keep in mind that the bees will also be aggressive towards YOU.

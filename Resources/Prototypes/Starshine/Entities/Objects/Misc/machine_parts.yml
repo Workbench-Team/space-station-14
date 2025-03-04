@@ -1,0 +1,47 @@
+﻿- type: entity
+  parent: MicroManipulatorStockPart
+  id: MicroManipulatorStockPart5
+  suffix: 5
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: MicroManipulatorStockPart
+  id: MicroManipulatorStockPart10
+  suffix: 10
+  components:
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: CapacitorStockPart
+  id: CapacitorStockPart5
+  suffix: 5
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: CapacitorStockPart
+  id: CapacitorStockPart10
+  suffix: 10
+  components:
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: MatterBinStockPart
+  id: MatterBinStockPart5
+  suffix: 5
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: MatterBinStockPart
+  id: MatterBinStockPart10
+  suffix: 10
+  components:
+  - type: Stack
+    count: 10

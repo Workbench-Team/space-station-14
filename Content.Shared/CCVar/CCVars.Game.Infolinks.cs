@@ -20,7 +20,7 @@ public sealed partial class CCVars
     /// Link to GitLab page to show in the launcher.
     /// </summary>
     public static readonly CVarDef<string> InfoLinksGitLab =
-        CVarDef.Create("infolinks.gitlab", "https://git.arumoon.ru/Workbench-Team/space-station-14/-/tree/arumoon-server", CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("infolinks.gitlab", "https://gitlab.workbench.network/Workbench-Team/space-station-14/-/tree/arumoon-server", CVar.SERVER | CVar.REPLICATED);
     // HARDCODE: Default value specified because DevInfoBanner window uses client side config instead of server's config
 
     /// <summary>
@@ -47,7 +47,7 @@ public sealed partial class CCVars
     ///     Link to the bug report form.
     /// </summary>
     public static readonly CVarDef<string> InfoLinksBugReport =
-        CVarDef.Create("infolinks.bug_report", "https://git.arumoon.ru/Workbench-Team/space-station-14/-/issues/new", CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("infolinks.bug_report", "https://gitlab.workbench.network/Workbench-Team/space-station-14/-/issues/new", CVar.SERVER | CVar.REPLICATED);
     // HARDCODE: Default value specified because DevInfoBanner window uses client side config instead of server's config
 
     /// <summary>

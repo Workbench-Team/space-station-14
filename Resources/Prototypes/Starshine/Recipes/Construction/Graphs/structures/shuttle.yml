@@ -1,0 +1,476 @@
+﻿# Large Thruster
+- type: constructionGraph
+  id: ThrusterLargeGraph
+  start: start
+  graph:
+    - node: start
+    - node: frame
+      entity: ThrusterLargeAssembly
+      actions:
+      - !type:AppearanceChange
+      - !type:EmptyAllContainers
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 20
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 8
+        - to: wired
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - material: Cable
+              amount: 15
+              doAfter: 1
+
+    - node: wired
+      actions:
+      - !type:AppearanceChange
+      - !type:EmptyAllContainers
+      edges:
+        - to: frame
+          conditions:
+            - !type:EntityAnchored
+            - !type:ContainerEmpty
+              container: machine_board
+              examineText: construction-condition-machine-container-empty
+          completed:
+            - !type:SpawnPrototype
+              prototype: CableApcStack1
+              amount: 15
+          steps:
+            - tool: Cutting
+              doAfter: 2
+
+        - to: board
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tag: ThrusterLargeElectronics
+              store: machine_board
+              name: "large thruster electronics"
+              icon:
+                sprite: "Objects/Misc/module.rsi"
+                state: "id_mod"
+              doAfter: 1
+
+    - node: board
+      entity: ThrusterLargeAssembly
+      actions:
+      - !type:AppearanceChange
+      edges:
+        - to: wired
+          conditions:
+            - !type:EntityAnchored
+            - !type:ContainerNotEmpty
+              container: machine_board
+          steps:
+            - tool: Prying
+              doAfter: 2
+        - to: capacitors
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - material: Capacitor
+              amount: 10
+              store: machine_parts
+              doAfter: 1
+
+    - node: capacitors
+      edges:
+        - to: wired
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Prying
+              doAfter: 2
+        - to: capacitors2
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - material: Capacitor
+              amount: 5
+              store: machine_parts
+              doAfter: 0.5
+
+    - node: capacitors2
+      edges:
+        - to: wired
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Prying
+              doAfter: 2
+        - to: screwing
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+    - node: screwing
+      actions:
+      - !type:AppearanceChange
+      edges:
+        - to: capacitors2
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Screwing
+              doAfter: 2
+        - to: plating
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 2
+
+    - node: plating
+      actions:
+      - !type:AppearanceChange
+      edges:
+        - to: screwing
+          conditions:
+            - !type:EntityAnchored
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 5
+          steps:
+            - tool: Prying
+              doAfter: 2
+        - to: welded
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Welding
+              doAfter: 5
+
+    - node: welded
+      actions:
+      - !type:AppearanceChange
+      edges:
+        - to: plating
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Welding
+              doAfter: 5
+        - to: nozzlePlating
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 2
+
+    - node: nozzlePlating
+      actions:
+      - !type:AppearanceChange
+      edges:
+        - to: welded
+          conditions:
+            - !type:EntityAnchored
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 5
+          steps:
+            - tool: Prying
+              doAfter: 4
+        - to: nozzleAnchored
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Anchoring
+              doAfter: 2
+
+    - node: nozzleAnchored
+      entity: ThrusterLargeAssembly
+      actions:
+      - !type:AppearanceChange
+      edges:
+        - to: nozzlePlating
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Anchoring
+              doAfter: 2
+        - to: largeThruster
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Welding
+              doAfter: 4
+
+    - node: largeThruster
+      entity: ThrusterLarge
+      edges:
+      - to: nozzleAnchored
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - tool: Welding
+          doAfter: 4
+
+# Huge Thruster
+- type: constructionGraph
+  id: ThrusterHugeGraph
+  start: start
+  graph:
+    - node: start
+    - node: frame
+      entity: ThrusterHugeAssembly
+      actions:
+      - !type:AppearanceChange
+      - !type:EmptyAllContainers
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 30
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 10
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 15
+        - to: wired
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - material: Cable
+              amount: 30
+              doAfter: 2
+
+    - node: wired
+      actions:
+      - !type:AppearanceChange
+      - !type:EmptyAllContainers
+      edges:
+        - to: frame
+          conditions:
+            - !type:EntityAnchored
+            - !type:ContainerEmpty
+              container: machine_board
+              examineText: construction-condition-machine-container-empty
+          completed:
+            - !type:SpawnPrototype
+              prototype: CableApcStack1
+              amount: 30
+          steps:
+            - tool: Cutting
+              doAfter: 4
+
+        - to: board
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tag: ThrusterHugeElectronics
+              store: machine_board
+              name: "huge thruster electronics"
+              icon:
+                sprite: "Objects/Misc/module.rsi"
+                state: "id_mod"
+              doAfter: 2
+
+    - node: board
+      entity: ThrusterHugeAssembly
+      actions:
+      - !type:AppearanceChange
+      edges:
+        - to: wired
+          conditions:
+            - !type:EntityAnchored
+            - !type:ContainerNotEmpty
+              container: machine_board
+          steps:
+            - tool: Prying
+              doAfter: 2
+        - to: capacitors
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - material: Capacitor
+              amount: 10
+              store: machine_parts
+              doAfter: 1
+
+    - node: capacitors
+      edges:
+        - to: wired
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Prying
+              doAfter: 3
+        - to: capacitors2
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - material: Capacitor
+              amount: 10
+              store: machine_parts
+              doAfter: 1
+
+    - node: capacitors2
+      edges:
+        - to: wired
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Prying
+              doAfter: 4
+        - to: capacitors3
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - material: Capacitor
+              amount: 10
+              store: machine_parts
+              doAfter: 1
+
+    - node: capacitors3
+      edges:
+        - to: wired
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Prying
+              doAfter: 5
+        - to: capacitors4
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - material: Capacitor
+              amount: 5
+              store: machine_parts
+              doAfter: 0.5
+
+    - node: capacitors4
+      edges:
+        - to: wired
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Prying
+              doAfter: 5.5
+        - to: screwing
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Screwing
+              doAfter: 5
+
+    - node: screwing
+      actions:
+      - !type:AppearanceChange
+      edges:
+        - to: capacitors2
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Screwing
+              doAfter: 4
+        - to: plating
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - material: Steel
+              amount: 15
+              doAfter: 4
+
+    - node: plating
+      actions:
+      - !type:AppearanceChange
+      edges:
+        - to: screwing
+          conditions:
+            - !type:EntityAnchored
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 15
+          steps:
+            - tool: Prying
+              doAfter: 4
+        - to: welded
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Welding
+              doAfter: 8
+
+    - node: welded
+      actions:
+      - !type:AppearanceChange
+      edges:
+        - to: plating
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Welding
+              doAfter: 8
+        - to: nozzlePlating
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - material: Steel
+              amount: 15
+              doAfter: 4
+
+    - node: nozzlePlating
+      actions:
+      - !type:AppearanceChange
+      edges:
+        - to: welded
+          conditions:
+            - !type:EntityAnchored
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 15
+          steps:
+            - tool: Prying
+              doAfter: 8
+        - to: nozzleAnchored
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Anchoring
+              doAfter: 4
+
+    - node: nozzleAnchored
+      entity: ThrusterHugeAssembly
+      actions:
+      - !type:AppearanceChange
+      edges:
+        - to: nozzlePlating
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Anchoring
+              doAfter: 4
+        - to: hugeThruster
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Welding
+              doAfter: 10
+
+    - node: hugeThruster
+      entity: ThrusterHuge
+      edges:
+      - to: nozzleAnchored
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - tool: Welding
+          doAfter: 10

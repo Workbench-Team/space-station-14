@@ -10,3 +10,6 @@ ent-MaintenanceWeaponSpawner = спавнер добычи тех туннеле
 ent-MaintenancePlantSpawner = спавнер добычи тех туннелей
     .suffix = Растение
     .desc = { ent-MarkerBase.desc }
+ent-MaintenanceInsulsSpawner = спавнер добычи тех туннелей
+    .suffix = Изольки, Безопасный
+    .desc = { ent-MarkerBase.desc }

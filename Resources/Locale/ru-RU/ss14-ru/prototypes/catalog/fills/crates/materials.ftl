@@ -21,3 +21,5 @@ ent-CrateMaterialCardboard = ящик картона
     .desc = 60 листов картона.
 ent-CrateMaterialPaper = { ent-CrateGenericSteel }
     .desc = { ent-CrateGenericSteel.desc }
+ent-CrateMaterialRandom = излишки материалов
+    .desc = Откуда-то взятые излишки материалов.

@@ -89052,13 +89052,6 @@ entities:
     - type: Transform
       pos: -55.38388,77.607956
       parent: 2
-- proto: ShuttleGunKineticCircuitboard
-  entities:
-  - uid: 3198
-    components:
-    - type: Transform
-      pos: -2.4936879,-21.525675
-      parent: 2
 - proto: ShuttleWindow
   entities:
   - uid: 2067

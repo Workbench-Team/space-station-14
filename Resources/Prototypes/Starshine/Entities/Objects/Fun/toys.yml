@@ -1,0 +1,133 @@
+﻿- type: entity
+  abstract: true
+  parent: BasePlushie
+  id: PlushieSharkStarshineBase
+  components:
+  - type: Sprite
+    sprite: Starshine/Objects/Fun/sharkplush.rsi
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/Toys/rawr.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Items/Toys/rawr.ogg
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Items/Toys/rawr.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/rawr.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/Items/Toys/rawr.ogg
+  - type: Item
+    storedRotation: -90
+  - type: Tag
+    tags:
+      - Payload
+    
+- type: entity
+  parent: PlushieSharkStarshineBase
+  id: PlushieSharkGold
+  name: gold shark soft toy
+  description: Soft and shiny!
+  components:
+  - type: Sprite
+    state: gold
+  - type: Item
+    heldPrefix: gold
+  - type: Tag
+    tags:
+      - PlushieSharkGold
+      - Payload
+
+- type: entity
+  parent: PlushieSharkStarshineBase
+  id: PlushieSharkBurn
+  name: burn shark soft toy
+  description: Still dreams of seeing the sea, at least once again...
+  components:
+  - type: Sprite
+    state: burn
+  - type: Item
+    heldPrefix: burn
+  - type: Tag
+    tags:
+      - PlushieSharkBurn
+      - Payload
+
+- type: entity
+  parent: PlushieSharkStarshineBase
+  id: PlushieSharkGreen
+  name: green shark soft toy
+  description: A bright green shark with a friendly smile.
+  components:
+  - type: Sprite
+    state: green
+  - type: Item
+    heldPrefix: green
+  - type: Tag
+    tags:
+      - PlushieSharkGreen
+      - Payload
+
+- type: entity
+  parent: PlushieSharkStarshineBase
+  id: PlushieSharkPurple
+  name: purple shark soft toy
+  description: Comfortable to hug, like a sea fantasy.
+  components:
+  - type: Sprite
+    state: purple
+  - type: Item
+    heldPrefix: purple
+  - type: Tag
+    tags:
+      - PlushieSharkPurple
+      - Payload
+
+- type: entity
+  parent: PlushieSharkStarshineBase
+  id: PlushieSharkBrown
+  name: brown shark soft toy
+  description: Soft and cozy, perfect for play.
+  components:
+  - type: Sprite
+    state: brown
+  - type: Item
+    heldPrefix: brown
+  - type: Tag
+    tags:
+      - PlushieSharkBrown
+      - Payload
+
+- type: entity
+  parent: PlushieSharkStarshineBase
+  id: PlushieSharkBlack
+  name: black shark soft toy
+  description: Strict and stylish, like the night sea.
+  components:
+  - type: Sprite
+    state: black
+  - type: Item
+    heldPrefix: black
+  - type: Tag
+    tags:
+      - PlushieSharkBlack
+      - Payload
+
+- type: entity
+  parent: PlushieSharkStarshineBase
+  id: PlushieSharkOrange
+  name: orange shark soft toy
+  description: Bright and joyful, like a sunset on the beach.
+  components:
+  - type: Sprite
+    state: orange
+  - type: Item
+    heldPrefix: orange
+  - type: Tag
+    tags:
+      - PlushieSharkOrange
+      - Payload

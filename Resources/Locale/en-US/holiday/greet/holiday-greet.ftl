@@ -44,7 +44,6 @@ holiday-name-friendship-day = Friendship Day
 holiday-name-beer-day = Beer Day
 holiday-name-talk-like-a-pirate-day = Talk-Like-a-Pirate Day
 holiday-name-programmers-day = Programmers' Day
-holiday-name-bisexual-pride-day = Bisexual Pride Day
 holiday-name-stupid-questions-day = Stupid-Questions Day
 holiday-name-animals-day = Animal's Day
 holiday-name-smiling-day = Smiling Day
@@ -69,7 +68,6 @@ holiday-name-festive-season = Festive Season
 holiday-name-boxing-day = Boxing Day
 holiday-name-friday-thirteenth = Friday the 13th
 holiday-name-national-coming-out-day = National Coming Out Day
-holiday-name-beat-a-furry-day = Beat a furry day
 
 ## Custom congrats
 

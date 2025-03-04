@@ -1,0 +1,112 @@
+- type: entity
+  parent: ClothingNeckPinBase
+  id: ClothingNeckPinStarshineBase
+  abstract: true
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: Starshine/Clothing/Neck/Misc/pins.rsi
+  - type: Clothing
+    sprite: Starshine/Clothing/Neck/Misc/pins.rsi
+
+- type: entity
+  parent: ClothingNeckPinStarshineBase
+  id: ClothingNeckSharkBrownPin
+  name: brown shark pin.
+  description: Its shark pin.
+  components:
+  - type: Sprite
+    state: shark-brown-pin
+  - type: Clothing
+    equippedPrefix: sharkbrownpin
+
+- type: entity
+  parent: ClothingNeckSharkBrownPin
+  id: ClothingNeckSharkPinkPin
+  name: pink shark pin.
+  components:
+  - type: Sprite
+    state: shark-pink-pin
+  - type: Clothing
+    equippedPrefix: sharkpinkpin
+
+- type: entity
+  parent: ClothingNeckSharkBrownPin
+  id: ClothingNeckSharkGoldPin
+  name: gold shark pin.
+  components:
+  - type: Sprite
+    state: shark-gold-pin
+  - type: Clothing
+    equippedPrefix: sharkgoldpin
+
+- type: entity
+  parent: ClothingNeckSharkBrownPin
+  id: ClothingNeckSharkOrangePin
+  name: orange shark pin.
+  components:
+  - type: Sprite
+    state: shark-orange-pin
+  - type: Clothing
+    equippedPrefix: sharkorangepin
+
+- type: entity
+  parent: ClothingNeckSharkBrownPin
+  id: ClothingNeckSharkBurnPin
+  name: burn shark pin.
+  components:
+  - type: Sprite
+    state: shark-burn-pin
+  - type: Clothing
+    equippedPrefix: sharkburnpin
+
+- type: entity
+  parent: ClothingNeckSharkBrownPin
+  id: ClothingNeckSharkBluePin
+  name: blue shark pin.
+  components:
+  - type: Sprite
+    state: shark-blue-pin
+  - type: Clothing
+    equippedPrefix: sharkbluepin
+
+- type: entity
+  parent: ClothingNeckSharkBrownPin
+  id: ClothingNeckSharkGreyPin
+  name: grey shark pin.
+  components:
+  - type: Sprite
+    state: shark-grey-pin
+  - type: Clothing
+    equippedPrefix: sharkgreypin
+
+- type: entity
+  parent: ClothingNeckSharkBrownPin
+  id: ClothingNeckSharkBlackPin
+  name: black shark pin.
+  components:
+  - type: Sprite
+    state: shark-black-pin
+  - type: Clothing
+    equippedPrefix: sharkblackpin
+
+- type: entity
+  parent: ClothingNeckSharkBrownPin
+  id: ClothingNeckSharkGreenPin
+  name: green shark pin.
+  components:
+  - type: Sprite
+    state: shark-green-pin
+  - type: Clothing
+    equippedPrefix: sharkgreenpin
+
+- type: entity
+  parent: ClothingNeckSharkBrownPin
+  id: ClothingNeckSharkPurplePin
+  name: purple shark pin.
+  components:
+  - type: Sprite
+    state: shark-purple-pin
+  - type: Clothing
+    equippedPrefix: sharkpurplepin

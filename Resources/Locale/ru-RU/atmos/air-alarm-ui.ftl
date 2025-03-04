@@ -64,3 +64,5 @@ air-alarm-ui-thresholds-upper-bound = Опасность выше
 air-alarm-ui-thresholds-lower-bound = Опасность ниже
 air-alarm-ui-thresholds-upper-warning-bound = Предупреждение выше
 air-alarm-ui-thresholds-lower-warning-bound = Предупреждение ниже
+air-alarm-ui-thresholds-copy = Скопировать пороговые значения на все устройства
+air-alarm-ui-thresholds-copy-tooltip = Копирует пороговые значения сенсоров этого устройства на все устройства на этой вкладке воздушной сигнализации.

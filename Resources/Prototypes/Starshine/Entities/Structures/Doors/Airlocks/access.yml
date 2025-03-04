@@ -1,0 +1,18 @@
+- type: entity
+  parent: AirlockGlassShuttle
+  id: AirlockExternalGlassShuttlePilot
+  suffix: External, Shuttle Pilot, Glass, Docking
+  components:
+  - type: GridFill
+    path: /Maps/Shuttles/ferryman.yml
+
+- type: entity
+  parent: AirlockGlassShuttle
+  id: AirlockExternalGlassShuttleSalvage
+  suffix: Salvage, Glass, Docking
+  components:
+  - type: PriorityDock
+    tag: SalvageShuttle
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSalvage ]

@@ -1,0 +1,90 @@
+# Это базовый словарь, который сопоставляет старые идентификаторы прототипов сущностей с новыми идентификаторами.
+# Это работает только для прототипов сущностей, и предназначен для того, чтобы карты загружались без необходимости их
+# ручного редактирования. Пустая или "null" строка приводит к тому, что сущность удаляется.
+#
+# Например, вы можете поменять все стены на окна и удалить все столы, добавив такие строки, как:
+#
+# Window: WallSolid
+# WallSolid: Window
+# Table: null
+
+# 07-09-2023
+PlushieMoff: PlushieMoth
+
+# 16-09-2023
+AirlockSyndicateCommand: AirlockSyndicateNukeopCommand
+AirlockSyndicateCommandLocked: AirlockSyndicateNukeopCommandLocked
+AirlockSyndicateCommandGlass: AirlockSyndicateNukeopCommandGlass
+AirlockSyndicateCommandGlassLocked: AirlockSyndicateNukeopCommandGlassLocked
+
+# 02-01-2023
+AirlockCentcomV2: AirlockCentralCommandV2
+AirlockCentcomV2Locked: AirlockCentralCommandV2Locked
+AirlockCentcom: AirlockCentralCommand
+AirlockCentcomLocked: AirlockCentralCommandLocked
+AirlockCentcomHatch: AirlockHatchCentralCommand
+AirlockCentcomHatchLocked: AirlockHatchCentralCommandLocked
+AirlockCentcomGlass: AirlockCentralCommandGlass
+AirlockCentcomGlassLocked: AirlockCentralCommandGlassLocked
+AirlockExternalCentcomLocked: AirlockExternalCentralCommandLocked
+AirlockCentcomHatchCommandLocked: AirlockHatchCommandLocked
+AirlockExternalGlassCentcomLocked: AirlockExternalGlassCentralCommandLocked
+AirlockMaintCentcomLocked: AirlockMaintCentralCommandLocked
+AirlockCentcomCommandLocked: AirlockCentralCommandCommandLocked
+WindoorSecureCentcomLocked: WindoorSecureCentralCommandLocked
+AirlockCommandCentralCommandGlassLocked: AirlockCentralCommandGlassLocked
+
+# 19-01-2024
+DresserCaptainFilled: Dresser
+DresserChiefEngineerFilled: Dresser
+DresserChiefMedicalOfficerFilled: Dresser
+DresserHeadOfPersonnelFilled: Dresser
+DresserHeadOfSecurityFilled: Dresser
+DresserQuarterMasterFilled: Dresser
+DresserResearchDirectorFilled: Dresser
+DresserWardenFilled: Dresser
+
+# 09-11-2024
+BoxSyringeCartridge: null
+SyringeCartridge: MiniSyringe
+SyringeGunMagazine: null
+DnaSyringeGun: SyringeGun
+SyringeProjctile: null
+SyringeGunProject: null
+
+# 24-01-2025
+ClothingNeckLGBTPin: null
+ClothingNeckAromanticPin: null
+ClothingNeckAsexualPin: null
+ClothingNeckBisexualPin: null
+ClothingNeckGayPin: null
+ClothingNeckIntersexPin: null
+ClothingNeckLesbianPin: null
+ClothingNeckNonBinaryPin: null
+ClothingNeckPansexualPin: null
+ClothingNeckOmnisexualPin: null
+ClothingNeckTransPin: null
+ClothingNeckCloakTrans: null
+ClothingNeckCloakAce: null
+ClothingNeckCloakAro: null
+ClothingNeckCloakBi: null
+ClothingNeckCloakIntersex: null
+ClothingNeckCloakLesbian: null
+ClothingNeckCloakGay: null
+ClothingNeckCloakEnby: null
+ClothingNeckCloakPan: null
+ClothingNeckScarfStripedAce: null
+ClothingNeckScarfStripedAro: null
+ClothingNeckScarfStripedBiSexual: null
+ClothingNeckScarfStripedGay: null
+ClothingNeckScarfStripedInter: null
+ClothingNeckScarfStripedLesbian: null
+ClothingNeckScarfStripedPan: null
+ClothingNeckScarfStripedNonBinary: null
+ClothingNeckScarfStripedRainbow: null
+ClothingNeckScarfStripedTrans: null
+MobWatcherPride: null
+LGBTQHandyFlag: null
+LGBTQFlag: null
+VendingMachinePride: null
+

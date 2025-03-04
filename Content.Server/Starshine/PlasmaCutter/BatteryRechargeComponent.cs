@@ -1,4 +1,4 @@
-namespace Content.Server.AruMoon.Plasmacutter;
+namespace Content.Server.Starshine.PlasmaCutter;
 
 [RegisterComponent]
 public sealed partial class BatteryRechargeComponent : Component
@@ -11,7 +11,7 @@ public sealed partial class BatteryRechargeComponent : Component
     /// 1 plasma ore = 500 material units
     /// </summary>
     ///
-    [DataField("multiplier"), ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public float Multiplier = 1.0f;
 
 
@@ -19,7 +19,7 @@ public sealed partial class BatteryRechargeComponent : Component
     /// Max material storage limit
     /// 7500 = 15 plasma ore
     /// </summary>
-    [DataField("storageMaxCapacity"), ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public int StorageMaxCapacity = 7500;
 }
 

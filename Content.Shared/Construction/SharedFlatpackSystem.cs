@@ -82,7 +82,7 @@ public abstract class SharedFlatpackSystem : EntitySystem
         // TODO FLATPAK
         // Make this logic smarter. This should eventually allow for shit like building microwaves on tables and such.
         // Also: make it ignore ghosts
-        if (_entityLookup.AnyEntitiesIntersecting(coords, LookupFlags.Dynamic | LookupFlags.Static))
+        if (_entityLookup.AnyEntitiesInRange(coords, ent.Comp.UnpackRange, LookupFlags.Dynamic | LookupFlags.Static))
         {
             // this popup is on the server because the predicts on the intersection is crazy
             if (_net.IsServer)

@@ -7,14 +7,6 @@
      Silver: 300
 
 - type: latheRecipe
-  id: MagazineBoxAntiMaterielBig
-  result: MagazineBoxAntiMaterielBig
-  category: Ammo
-  completetime: 10
-  materials:
-    Steel: 1500
-
-- type: latheRecipe
   id: SpeedLoaderAntiMaterial
   result: SpeedLoaderAntiMaterial
   category: Ammo
@@ -32,24 +24,22 @@
     Plastic: 500
 
 - type: latheRecipe
-  id: WeaponCutter
-  result: WeaponCutter
+  id: WeaponCutterEmpty
+  result: WeaponCutterEmpty
   completetime: 10
   materials:
     Steel: 1000
     Glass: 200
     Silver: 100
-    Plasma: 400
 
 - type: latheRecipe
-  id: WeaponCutterAdv
-  result: WeaponCutterAdv
+  id: WeaponCutterAdvEmpty
+  result: WeaponCutterAdvEmpty
   completetime: 15
   materials:
     Steel: 1200
     Glass: 300
     Gold: 100
-    Plasma: 800
 
 - type: latheRecipe
   id: MagazinePistolSubMachineGunRubber

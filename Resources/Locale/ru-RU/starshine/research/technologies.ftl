@@ -1,5 +1,3 @@
-## Starshine
-
 research-technology-modsuitscraft = МОД-Костюмы
 research-technology-comp-bows = Композитные луки
 research-technology-standard-ammunition = Стандартные боеприпасы
@@ -21,3 +19,4 @@ research-technology-gygax = АБНТ Гайгэкс
 research-technology-durand = БМП Дюранд
 
 research-technology-nvd = Прибор ночного видения
+research-technology-advanced-thrusters = Продвинутые двигатели

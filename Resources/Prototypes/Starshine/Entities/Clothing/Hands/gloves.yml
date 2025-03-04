@@ -1,0 +1,26 @@
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsTacticalBlueShield
+  name: tactical maid gloves
+  description: Tactical maid gloves, every self-respecting maid should be able to discreetly eliminate her goals.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/blueshield.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/blueshield.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsChronoLegionnaire
+  name: chrono legionnaire combat gloves
+  description: High-quality combat gloves form pa... Future.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/chronogloves.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/chronogloves.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+    fiberColor: fibers-olive
+  - type: FingerprintMask

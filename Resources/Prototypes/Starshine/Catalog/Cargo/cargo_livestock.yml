@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: LivestockGondola
+  icon:
+    sprite: Starshine/Mobs/Animals/gondola.rsi
+    state: gondola
+  product: CrateNPCGondola
+  cost: 2000
+  category: Livestock
+  group: market

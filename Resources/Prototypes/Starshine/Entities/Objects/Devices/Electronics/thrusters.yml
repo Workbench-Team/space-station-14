@@ -1,0 +1,29 @@
+- type: entity
+  id: ThrusterLargeElectronics
+  parent: BaseElectronics
+  name: large thruster electronics
+  description: An electronics board used in large thrusters.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: engineering
+  - type: Tag
+    tags:
+      - ThrusterLargeElectronics
+  - type: StaticPrice
+    price: 500
+
+- type: entity
+  id: ThrusterHugeElectronics
+  parent: BaseElectronics
+  name: huge thruster electronics
+  description: An electronics board used in huge thrusters.
+  components:
+  - type: Sprite
+    sprite: Starshine/Objects/Misc/module.rsi
+    state: engineering-bluespace
+  - type: Tag
+    tags:
+      - ThrusterHugeElectronics
+  - type: StaticPrice
+    price: 1000

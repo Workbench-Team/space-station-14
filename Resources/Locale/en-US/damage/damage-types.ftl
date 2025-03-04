@@ -11,5 +11,4 @@ damage-type-radiation = Radiation
 damage-type-shock = Shock
 damage-type-slash = Slash
 damage-type-structural = Structural
-## Starshine
-damage-type-stun = Stun
+damage-type-holy = Holy

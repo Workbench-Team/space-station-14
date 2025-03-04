@@ -45,6 +45,8 @@ namespace Content.Client.Administration.UI.Bwoink
             _adminManager.AdminStatusUpdated += UpdateButtons;
             UpdateButtons();
 
+            AdminOnly.OnToggled += args => PlaySound.Disabled = args.Pressed;
+
             ChannelSelector.OnSelectionChanged += sel =>
             {
                 _currentPlayer = sel;
@@ -183,20 +185,6 @@ namespace Content.Client.Administration.UI.Bwoink
             {
                 uiController.PopOut();
             };
-
-            Sound.OnPressed += _ =>
-            {
-                if (Sound.Pressed == true)
-                {
-                    _adminManager.SetBwoink(false);
-                    Sound.Pressed = false;
-                }
-                else if (Sound.Pressed == false)
-                {
-                    _adminManager.SetBwoink(true);
-                    Sound.Pressed = true;
-                }
-            };
         }
 
         public void OnBwoink(NetUserId channel)
@@ -244,9 +232,6 @@ namespace Content.Client.Administration.UI.Bwoink
 
             Follow.Visible = _adminManager.CanCommand("follow");
             Follow.Disabled = !Follow.Visible || disabled;
-
-            Sound.Visible = true;
-            Sound.Disabled = !Sound.Visible;
         }
 
         private string FormatTabTitle(ItemList.Item li, PlayerInfo? pl = default)
