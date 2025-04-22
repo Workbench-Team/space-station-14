@@ -33,7 +33,8 @@ namespace Content.Shared.Atmos.Piping.Unary.Components
             Gas.Zauker,
             Gas.Halon,
             Gas.Helium,
-            Gas.AntiNoblium
+            Gas.AntiNoblium,
+            Gas.Water
         };
 
         // Presets for 'dumb' air alarm modes
