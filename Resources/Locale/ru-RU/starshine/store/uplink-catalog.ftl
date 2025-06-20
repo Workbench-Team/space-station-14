@@ -24,4 +24,4 @@ uplink-clothing-pnv-desc = Прибор ночного видения.
 uplink-m90gl-bundle-name = Набор m90-gl
 uplink-m90gl-bundle-desc = Старая винтовка типа булпап. И нет, подствольник не настоящий.
 uplink-clothing-shoes-chameleon-steals-boots-jack-name = Стелс ботинки
-uplink-clothing-shoes-chameleon-steals-boots-jack-desc = Станьте ниндзей! Ботинки не издают ни какого звука при ходьбе, и так же вы практически не замедляетесь когда вы почти в критическом состоянии.
+uplink-clothing-shoes-chameleon-steals-boots-jack-desc = Попробуйте себя в роли ниндзя Синдиката! Ботинки не издают звука при ходьбе, и вы не замедлите шаг, если будете тяжело ранены.

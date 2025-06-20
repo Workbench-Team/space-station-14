@@ -23,6 +23,3 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: null
-  - type: ClothingSpeedModifier #оставлено что бы менять ребалансить ботинки сделать меньше/больше скорости за ТК
-    walkModifier: 1.00
-    sprintModifier: 1.00
