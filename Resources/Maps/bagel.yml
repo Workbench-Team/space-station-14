@@ -1,6 +1,18 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Map
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/02/2025 15:21:25
+  entityCount: 25339
+maps:
+- 943
+grids:
+- 60
+- 7536
+orphans: []
+nullspace: []
 tilemap:
   0: Space
   1: FloorArcadeBlue
@@ -9282,7 +9294,6 @@ entities:
     - type: OccluderTree
     - type: Parallax
       parallax: BagelStation
-    - type: LoadedMap
   - uid: 7536
     components:
     - type: MetaData
@@ -60888,26 +60899,12 @@ entities:
     - type: Transform
       pos: -41.75516,14.452198
       parent: 60
-- proto: ClothingNeckAromanticPin
-  entities:
-  - uid: 24089
-    components:
-    - type: Transform
-      pos: 83.621025,-13.51627
-      parent: 60
 - proto: ClothingNeckBling
   entities:
   - uid: 18461
     components:
     - type: Transform
       pos: 5.9221196,-5.3832207
-      parent: 60
-- proto: ClothingNeckCloakTrans
-  entities:
-  - uid: 7082
-    components:
-    - type: Transform
-      pos: -40.498245,-36.02266
       parent: 60
 - proto: ClothingNeckHeadphones
   entities:
@@ -63540,6 +63537,11 @@ entities:
     components:
     - type: Transform
       pos: 21.5,-21.5
+      parent: 60
+  - uid: 23927
+    components:
+    - type: Transform
+      pos: -32.5,-3.5
       parent: 60
   - uid: 24816
     components:
@@ -100417,13 +100419,11 @@ entities:
       parent: 60
 - proto: GravityGenerator
   entities:
-  - uid: 11694
+  - uid: 6708
     components:
     - type: Transform
       pos: -9.5,4.5
       parent: 60
-    - type: PointLight
-      radius: 175.75
 - proto: Grille
   entities:
   - uid: 8
@@ -111038,13 +111038,6 @@ entities:
     - type: Transform
       pos: 21.334734,-11.3924055
       parent: 60
-- proto: LGBTQHandyFlag
-  entities:
-  - uid: 9548
-    components:
-    - type: Transform
-      pos: -41.49743,-36.512333
-      parent: 60
 - proto: LightBulb
   entities:
   - uid: 19737
@@ -116604,12 +116597,6 @@ entities:
     - type: Transform
       pos: 9.5,-19.5
       parent: 60
-  - uid: 6708
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -33.5,-20.5
-      parent: 60
   - uid: 6797
     components:
     - type: Transform
@@ -116669,8 +116656,8 @@ entities:
   - uid: 7906
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -18.5,-19.5
+      rot: 3.141592653589793 rad
+      pos: -31.5,-20.5
       parent: 60
   - uid: 8041
     components:
@@ -116999,6 +116986,11 @@ entities:
       parent: 60
     - type: ApcPowerReceiver
       powerLoad: 0
+  - uid: 11694
+    components:
+    - type: Transform
+      pos: -21.5,-18.5
+      parent: 60
   - uid: 11726
     components:
     - type: Transform

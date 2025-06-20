@@ -152,3 +152,5 @@ ent-SyndiAgentPDA = syndicate agent PDA
 ent-ChameleonPDA = assistant PDA
     .desc = Why isn't it gray?
     .suffix = Chameleon
+ent-WizardPDA = wizard PDA
+    .desc = You hear faint whispers coming from it.

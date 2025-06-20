@@ -53,21 +53,13 @@ public sealed class MapMigrationSystem : EntitySystem
         {
             var path = new ResPath(file);
             if (!_resMan.TryContentFileRead(path, out var stream))
-            {
-                Logger.Error($"Failed to read migration file: {file}");
                 continue;
-            }
-
-            Logger.Debug($"Loading migration file: {file}");
 
             using var reader = new StreamReader(stream, EncodingHelpers.UTF8);
             var documents = DataNodeParser.ParseYamlStream(reader).FirstOrDefault();
 
             if (documents == null)
-            {
-                Logger.Error($"Failed to parse migration file: {file}");
                 continue;
-            }
 
             mappingsList.Add((MappingDataNode) documents.Root);
         }
@@ -86,8 +78,6 @@ public sealed class MapMigrationSystem : EntitySystem
             {
                 if (key is not ValueDataNode keyNode || value is not ValueDataNode valueNode)
                     continue;
-
-                Logger.Debug($"Processing migration for {keyNode.Value} -> {valueNode.Value}");
 
                 if (string.IsNullOrWhiteSpace(valueNode.Value) || valueNode.Value == "null")
                     ev.DeletedPrototypes.Add(keyNode.Value);

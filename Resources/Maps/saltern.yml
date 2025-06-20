@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Map
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/02/2025 15:22:25
+  entityCount: 11463
+maps:
+- 658
+grids:
+- 31
+orphans: []
+nullspace: []
 tilemap:
   0: Space
   7: FloorAsteroidSand
@@ -3383,7 +3394,6 @@ entities:
     - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
-    - type: LoadedMap
 - proto: AcousticGuitarInstrument
   entities:
   - uid: 3146
@@ -27118,20 +27128,6 @@ entities:
     - type: Transform
       pos: 6.6956844,-33.563076
       parent: 31
-- proto: ClothingNeckCloakTrans
-  entities:
-  - uid: 9748
-    components:
-    - type: Transform
-      pos: -28.4315,17.631725
-      parent: 31
-- proto: ClothingNeckNonBinaryPin
-  entities:
-  - uid: 11135
-    components:
-    - type: Transform
-      pos: 43.27403,-8.317395
-      parent: 31
 - proto: ClothingNeckScarfStripedBlue
   entities:
   - uid: 7843
@@ -27177,13 +27173,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: ClothingNeckTransPin
-  entities:
-  - uid: 11137
-    components:
-    - type: Transform
-      pos: -24.17542,-23.65307
-      parent: 31
 - proto: ClothingOuterArmorBasic
   entities:
   - uid: 1206
@@ -27909,13 +27898,6 @@ entities:
     components:
     - type: Transform
       pos: 23.5,13.5
-      parent: 31
-- proto: ComputerShuttleSalvage
-  entities:
-  - uid: 3424
-    components:
-    - type: Transform
-      pos: 34.5,35.5
       parent: 31
 - proto: ComputerSolarControl
   entities:
@@ -32332,8 +32314,8 @@ entities:
       pos: 14.5,-4.5
       parent: 31
     - type: FaxMachine
-      destinationAddress: Medical
       name: Medical
+      destinationAddress: Medical
   - uid: 1264
     components:
     - type: Transform
@@ -32347,8 +32329,8 @@ entities:
       pos: -17.5,-25.5
       parent: 31
     - type: FaxMachine
-      destinationAddress: Science
       name: Science
+      destinationAddress: Science
   - uid: 8323
     components:
     - type: Transform
@@ -32362,8 +32344,8 @@ entities:
       pos: 13.5,12.5
       parent: 31
     - type: FaxMachine
-      destinationAddress: Cargo
       name: Cargo
+      destinationAddress: Cargo
   - uid: 9687
     components:
     - type: Transform
@@ -32377,8 +32359,8 @@ entities:
       pos: 1.5,32.5
       parent: 31
     - type: FaxMachine
-      destinationAddress: bridge
       name: bridge
+      destinationAddress: bridge
 - proto: FaxMachineCaptain
   entities:
   - uid: 9686
@@ -33780,21 +33762,19 @@ entities:
     - type: Transform
       pos: 27.598589,-5.5317454
       parent: 31
-- proto: FloraRockSolid01
+- proto: FloraRockSolid
   entities:
   - uid: 8569
     components:
     - type: Transform
       pos: 0.88375235,-33.48718
       parent: 31
-- proto: FloraRockSolid02
-  entities:
   - uid: 10815
     components:
     - type: Transform
       pos: 4.1304145,-33.0152
       parent: 31
-- proto: FloraTreeLarge05
+- proto: FloraTreeLarge
   entities:
   - uid: 7374
     components:
@@ -49035,7 +49015,7 @@ entities:
     - type: Transform
       pos: 54.5,-1.5
       parent: 31
-- proto: LogicGate
+- proto: LogicGateOr
   entities:
   - uid: 11306
     components:

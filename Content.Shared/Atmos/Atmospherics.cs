@@ -1,4 +1,4 @@
-using Robust.Shared.Serialization;
+﻿using Robust.Shared.Serialization;
 // ReSharper disable InconsistentNaming
 
 namespace Content.Shared.Atmos
@@ -89,9 +89,10 @@ namespace Content.Shared.Atmos
 
         public const float OxygenStandard = 0.21f;
         public const float NitrogenStandard = 0.79f;
-
+        public const float WaterStandard = 7.0f;
         public const float OxygenMolesStandard = MolesCellStandard * OxygenStandard;
         public const float NitrogenMolesStandard = MolesCellStandard * NitrogenStandard;
+        public const float WaterMolesStandard = MolesCellStandard * WaterStandard;
 
         public const float OxygenMolesFreezer = MolesCellFreezer * OxygenStandard;
         public const float NitrogenMolesFreezer = MolesCellFreezer * NitrogenStandard;
@@ -203,7 +204,7 @@ namespace Content.Shared.Atmos
         /// <summary>
         ///     Total number of gases. Increase this if you want to add more!
         /// </summary>
-        public const int TotalNumberOfGases = 20;
+        public const int TotalNumberOfGases = 21;
 
         /// <summary>
         ///     This is the actual length of the gases arrays in mixtures.
@@ -423,6 +424,7 @@ namespace Content.Shared.Atmos
         Zauker = 16,
         Halon = 17,
         Helium = 18,
-        AntiNoblium = 19
+        AntiNoblium = 19,
+        Water = 20
     }
 }

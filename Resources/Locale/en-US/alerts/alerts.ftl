@@ -7,6 +7,9 @@ alerts-low-nitrogen-desc = There is [color=red]not enough nitrogen[/color] in th
 alerts-high-toxin-name = [color=red]High Toxin Level[/color]
 alerts-high-toxin-desc = There are [color=red]too many toxins[/color] in the air you are breathing. Put on [color=green]internals[/color] or get away.
 
+alerts-drowning-name = [color=red]Drowning[/color]
+alerts-drowning-desc = You are[color=red]drowning[/color]! Turn on [color=green]internals[/color] or get away!
+
 alerts-low-pressure-name = [color=red]Low Pressure[/color]
 alerts-low-pressure-desc = The air around you is [color=red]hazardously thin[/color]. A [color=green]space suit[/color] would protect you.
 
@@ -82,10 +85,10 @@ alerts-muted-name = Muted
 alerts-muted-desc = You have lost the ability to speak.
 
 alerts-vow-silence-name = Vow of Silence
-alerts-vow-silence-desc = You have taken a vow of silence as part of initiation into the Mystiko Tagma Mimon. Click to break your vow.
+alerts-vow-silence-desc = You have taken a vow forbidding verbal or written communication as part of initiation into the Mystiko Tagma Mimon. Click to break your vow.
 
 alerts-vow-broken-name = Vow Broken
-alerts-vow-broken-desc = You've broken your vows to Mimes everywhere. You can speak, but you've lost your powers for at least 5 entire minutes!!! Click to try and retake your vow.
+alerts-vow-broken-desc = You've broken your vows to Mimes everywhere. You can speak and write, but you've lost your powers for at least 5 entire minutes!!! Click to try and retake your vow.
 
 alerts-pulled-name = Pulled
 alerts-pulled-desc = You're being pulled. Move to break free.

@@ -1,6 +1,18 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Map
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/02/2025 15:21:41
+  entityCount: 22539
+maps:
+- 17546
+grids:
+- 2
+- 21128
+orphans: []
+nullspace: []
 tilemap:
   9: Space
   84: FloorArcadeBlue2
@@ -11762,7 +11774,6 @@ entities:
     - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
-    - type: LoadedMap
     - type: Parallax
       parallax: CoreStation
   - uid: 21128
@@ -61440,6 +61451,15 @@ entities:
     - type: Transform
       pos: -35.36938,-10.505542
       parent: 2
+- proto: ClothingMaskBlushingMime
+  entities:
+  - uid: 8192
+    components:
+    - type: Transform
+      parent: 16657
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: ClothingMaskBreath
   entities:
   - uid: 3602
@@ -61504,29 +61524,6 @@ entities:
     - type: Transform
       pos: 37.5265,-16.39656
       parent: 2
-- proto: ClothingMaskSexyMime
-  entities:
-  - uid: 8192
-    components:
-    - type: Transform
-      parent: 16657
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-- proto: ClothingNeckAromanticPin
-  entities:
-  - uid: 21450
-    components:
-    - type: Transform
-      pos: -19.327265,17.651068
-      parent: 2
-- proto: ClothingNeckAsexualPin
-  entities:
-  - uid: 5233
-    components:
-    - type: Transform
-      pos: -19.65906,17.512405
-      parent: 2
 - proto: ClothingNeckBling
   entities:
   - uid: 14398
@@ -61541,33 +61538,12 @@ entities:
     - type: Transform
       pos: -31.430737,31.650105
       parent: 2
-- proto: ClothingNeckCloakTrans
-  entities:
-  - uid: 2356
-    components:
-    - type: Transform
-      pos: 28.5,-33.5
-      parent: 2
 - proto: ClothingNeckHeadphones
   entities:
   - uid: 7745
     components:
     - type: Transform
       pos: 27.4845,-46.404865
-      parent: 2
-- proto: ClothingNeckLGBTPin
-  entities:
-  - uid: 5872
-    components:
-    - type: Transform
-      pos: -53.645718,-60.37925
-      parent: 2
-- proto: ClothingNeckNonBinaryPin
-  entities:
-  - uid: 5103
-    components:
-    - type: Transform
-      pos: -53.317593,-60.37925
       parent: 2
 - proto: ClothingNeckScarfStripedSyndieRed
   entities:
@@ -104136,13 +104112,6 @@ entities:
       parent: 6997
     - type: Physics
       canCollide: False
-- proto: LGBTQHandyFlag
-  entities:
-  - uid: 17207
-    components:
-    - type: Transform
-      pos: 29.482407,-33.45202
-      parent: 2
 - proto: LiquidNitrogenCanister
   entities:
   - uid: 5722

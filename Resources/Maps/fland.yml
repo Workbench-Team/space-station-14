@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Map
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/02/2025 15:21:49
+  entityCount: 36002
+maps:
+- 1
+grids:
+- 13329
+orphans: []
+nullspace: []
 tilemap:
   0: Space
   1: FloorArcadeBlue
@@ -62,7 +73,6 @@ entities:
     - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
-    - type: LoadedMap
   - uid: 13329
     components:
     - type: MetaData
@@ -95867,13 +95877,6 @@ entities:
     components:
     - type: Transform
       pos: 12.603026,74.274254
-      parent: 13329
-- proto: ClothingNeckCloakTrans
-  entities:
-  - uid: 34255
-    components:
-    - type: Transform
-      pos: -35.53245,36.540043
       parent: 13329
 - proto: ClothingNeckHeadphones
   entities:

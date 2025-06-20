@@ -1,0 +1,11 @@
+- type: jukebox
+  id: SpaceAsshole
+  name: Chris Remo - Space Asshole
+  path:
+    path: /Audio/Lobby/space_asshole.ogg
+
+- type: jukebox
+  id: TheWizard
+  name: Chris Remo - The Wizard
+  path:
+    path: /Audio/Lobby/the_wizard.ogg

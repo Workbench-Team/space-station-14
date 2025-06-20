@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Map
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/02/2025 15:22:23
+  entityCount: 2498
+maps:
+- 1
+grids:
+- 2
+orphans: []
+nullspace: []
 tilemap:
   0: Space
   1: FloorBlueCircuit
@@ -38,7 +49,6 @@ entities:
     - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
-    - type: LoadedMap
   - uid: 2
     components:
     - type: MetaData
@@ -6223,20 +6233,6 @@ entities:
     components:
     - type: Transform
       pos: 1.5246525,11.641014
-      parent: 2
-- proto: ClothingNeckCloakTrans
-  entities:
-  - uid: 907
-    components:
-    - type: Transform
-      pos: 3.506415,3.5395489
-      parent: 2
-- proto: ClothingNeckLGBTPin
-  entities:
-  - uid: 908
-    components:
-    - type: Transform
-      pos: 6.5183535,-8.5258465
       parent: 2
 - proto: ClothingNeckStethoscope
   entities:

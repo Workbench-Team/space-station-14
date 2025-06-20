@@ -24,5 +24,7 @@ uplink-magazine-caseless-rifle-bundle-name = Bundle with rifle magazines (.25)
 uplink-magazine-caseless-rifle-bundle-desc = A bundle containing magazines for a rifle. 2 standard and 2 high-rate. Compatible with KR51.
 uplink-miniature-energy-crossbow-syndie-green-name = Miniature Energy Crossbow
 uplink-miniature-energy-crossbow-syndie-green-desc = The syndicate's energy crossbow, small, silent and deadly.
+uplink-bee-grenade-name = Bee Grenade
+uplink-bee-grenade-desc = A grenade full of aggressive bees. Keep in mind that the bees will also be aggressive towards YOU.
 uplink-clothing-shoes-chameleon-steals-boots-jack-name = Stealth boots
 uplink-clothing-shoes-chameleon-steals-boots-jack-desc = Try your hand at being a Syndicate Ninja! The boots don't make a sound when you walk, and you won't slow down much if you're badly wounded.
