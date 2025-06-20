@@ -1,4 +1,4 @@
-- type: gas
+﻿- type: gas
   id: 0
   name: gases-oxygen
   specificHeat: 20
@@ -100,15 +100,3 @@
   color: 3a758c
   reagent: Frezon
   pricePerMole: 1
-
-- type: gas
-  id: 20
-  name: gases-water
-  specificHeat: 1000 # Or change it to low values
-  heatCapacityRatio: 1.33
-  molarMass: 18
-  gasOverlaySprite: /Textures/Effects/atmospherics.rsi
-  gasOverlayState: water
-  color: 135c4f # You can change it if you want, its here for gas analyser afaik
-  reagent: SeaWater
-  pricePerMole: 0.04

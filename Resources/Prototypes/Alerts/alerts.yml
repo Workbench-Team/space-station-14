@@ -35,15 +35,6 @@
     - map: [ "enum.AlertVisualLayers.Base" ]
 
 - type: alert
-  id: Drowning
-  category: Breathing
-  icons:
-  - sprite: /Textures/Interface/Alerts/breathing.rsi
-    state: too_much_water
-  name: alerts-drowning-name
-  description: alerts-drowning-desc
-
-- type: alert
   id: LowOxygen
   category: Breathing
   icons:
