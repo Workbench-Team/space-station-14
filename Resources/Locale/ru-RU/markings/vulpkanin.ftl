@@ -1,42 +1,34 @@
 ## Ears
+
 marking-VulpEar-vulp = Уши вульпканина (Основной окрас)
 marking-VulpEar-vulp-inner = Уши вульпканина (Внутренняя часть)
 marking-VulpEar = Уши вульпканина
-
 marking-VulpEarFade-vulp = Уши вульпканина (Основной окрас)
 marking-VulpEarFade-vulp-fade = Уши вульпканина (Градиент)
 marking-VulpEarFade-vulp-inner = Уши вульпканина (Внутренняя часть)
 marking-VulpEarFade = Уши вульпканина (Градиент)
-
 marking-VulpEarSharp-vulp = Уши вульпканина (Основной окрас)
 marking-VulpEarSharp-vulp-sharp = Уши вульпканина (Резкий переход)
 marking-VulpEarSharp-vulp-inner = Уши вульпканина (Внутренняя часть)
 marking-VulpEarSharp = Уши вульпканина (Резкий переход)
-
 marking-VulpEarCoyote-coyote = Уши койота (Основной окрас)
 marking-VulpEarCoyote-coyote-inner = Уши койота (Внутренняя часть)
 marking-VulpEarCoyote = Уши вульпканина (Койот)
-
 marking-VulpEarJackal-jackal = Уши шакала (Основной окрас)
 marking-VulpEarJackal-jackal-inner = Уши шакала (Внутренняя часть)
 marking-VulpEarJackal = Уши вульпканина (Шакал)
-
 marking-VulpEarTerrier-terrier = Уши терьера (Основной окрас)
 marking-VulpEarTerrier-terrier-inner = Уши терьера (Внутренняя часть)
 marking-VulpEarTerrier = Уши вульпканина (Терьер)
-
 marking-VulpEarFennec-fennec = Уши фенека (Основной окрас)
 marking-VulpEarFennec-fennec-inner = Уши фенека (Внутренняя часть)
 marking-VulpEarFennec = Уши вульпканина (Фенек)
-
 marking-VulpEarFox-fox = Уши лисы (Основной окрас)
 marking-VulpEarFox-fox-inner = Уши лисы (Внутренняя часть)
 marking-VulpEarFox = Уши вульпканина (Лиса)
-
 marking-VulpEarOtie-otie = Уши выдры (Основной окрас)
 marking-VulpEarOtie-otie-inner = Уши выдры (Внутренняя часть)
 marking-VulpEarOtie = Уши вульпканина (Выдра)
-
 marking-VulpEarShock-shock = Электрические уши (Основной окрас)
 marking-VulpEarShock-inner = Электрические уши (Внутренняя часть)
 marking-VulpEarShock = Уши вульпканина (Электрические)
@@ -45,25 +37,18 @@ marking-VulpEarShock = Уши вульпканина (Электрические
 
 marking-VulpSnout-snout = Морда
 marking-VulpSnout = Морда вульпканина
-
 marking-VulpSnoutNose-snout-nose = Нос
 marking-VulpSnoutNose = Нос вульпканина
-
 marking-VulpSnoutVulpine-vulpine = Лисья
 marking-VulpSnoutVulpine = Морда вульпканина (Лисья)
-
 marking-VulpSnoutVulpineLines-vulpine-lines = Лисьи полосы
 marking-VulpSnoutVulpineLines = Морда вульпканина (Лисьи полосы)
-
 marking-VulpSnoutBlaze-blaze = Проседь
 marking-VulpSnoutBlaze = Морда вульпканина (Проседь)
-
 marking-VulpSnoutMask-mask = Маска
 marking-VulpSnoutMask = Морда вульпканина (Маска)
-
 marking-VulpSnoutTop-snout-top = Спинка носа
 marking-VulpSnoutTop = Морда вульпканина (Спинка носа)
-
 marking-VulpSnoutPatch-patch = Пятно
 marking-VulpSnoutPatch = Морда вульпканина (Пятно)
 
@@ -71,22 +56,16 @@ marking-VulpSnoutPatch = Морда вульпканина (Пятно)
 
 marking-VulpHeadBlaze-blaze = Проседь
 marking-VulpHeadBlaze = Голова вульпканина (Проседь)
-
 marking-VulpHeadMask-mask = Маска
 marking-VulpHeadMask = Голова вульпканина (Маска)
-
 marking-VulpPatch-patch = Пятно
 marking-VulpPatch = Голова вульпканина (Пятно)
-
 marking-VulpSlash-slash = Полоса
 marking-VulpSlash = Голова вульпканина (Полоса)
-
 marking-VulpStripes1-stripes_1 = Полосы
 marking-VulpStripes1 = Голова вульпканина (Полосы 1)
-
 marking-VulpStripes2-stripes_2 = Полосы
 marking-VulpStripes2 = Голова вульпканина (Полосы 2)
-
 marking-VulpVulpine-vulpine = Нос
 marking-VulpVulpine = Голова вульпканина (Нос)
 
@@ -95,24 +74,19 @@ marking-VulpVulpine = Голова вульпканина (Нос)
 marking-VulpTailFennec-fennec = Хвост фенека (Основной окрас)
 marking-VulpTailFennec-fennec-tip = Хвост фенека (Кончик)
 marking-VulpTailFennec = Хвост вульпканина (Фенек)
-
 marking-VulpTailFluffy-fluffy = Пушистый хвост (Основной окрас)
 marking-VulpTailFluffy-fluffy-tip = Пушистый хвост (Кончик)
 marking-VulpTailFluffy = Хвост вульпканина (Пушистый)
-
 marking-VulpTailHusky-husky = Хвост хаски (Основной окрас)
 marking-VulpTailHusky-husky-inner = Хвост хаски (Внутренняя сторона)
 marking-VulpTailHusky-husky-outer = Хвост хаски (Внешняя сторона)
 marking-VulpTailHusky = Хвост вульпканина (Хаски)
-
 marking-VulpTailLong-long = Длинный хвост (Основной окрас)
 marking-VulpTailLong-long-tip = Длинный хвост (Кончик)
 marking-VulpTailLong = Хвост вульпканина (Длинный)
-
 marking-VulpTailVulp-vulp = Хвост вульпканина (Основной окрас)
 marking-VulpTailVulp-vulp-tip = Хвост вульпканина (Кончик)
 marking-VulpTailVulp = Хвост вульпканина
-
 marking-VulpTailVulpFade-vulp = Хвост вульпканина (Основной окрас)
 marking-VulpTailVulpFade-vulp-fade = Хвост вульпканина (Градиент)
 marking-VulpTailVulpFade = Хвост вульпканина (Градиент)
@@ -121,10 +95,8 @@ marking-VulpTailVulpFade = Хвост вульпканина (Градиент)
 
 marking-VulpBellyCrest-belly_crest = Грудь
 marking-VulpBellyCrest = Вульпканин (Нагрудник)
-
 marking-VulpBellyFull-belly_full = Живот
 marking-VulpBellyFull = Вульпканин (Светлый живот)
-
 marking-VulpBellyFox-belly_fox = Живот
 marking-VulpBellyFox = Вульпканин (Лисьё брюшко)
 
@@ -135,7 +107,6 @@ marking-VulpClawsHandLeft = Когти (Левая кисть)
 marking-VulpClawsHandRight = Когти (Правая кисть)
 marking-VulpClawsHandLeft-claws_l_hand = Когти
 marking-VulpClawsHandRight-claws_r_hand = Когти
-
 # Crest
 marking-VulpPointsCrestArmLeft = Гребень (Левое предплечье)
 marking-VulpPointsCrestHandLeft = Гребень (Левая кисть)
@@ -145,7 +116,6 @@ marking-VulpPointsCrestArmLeft-crest-arm-l = Гребень
 marking-VulpPointsCrestHandLeft-crest-hand-l = Гребень
 marking-VulpPointsCrestArmRight-crest-arm-r = Гребень
 marking-VulpPointsCrestHandRight-crest-hand-r = Гребень
-
 # Fade
 marking-VulpPointsFadeArmLeft = Градиент (Левое предплечье)
 marking-VulpPointsFadeHandLeft = Градиент (Левая кисть)
@@ -155,7 +125,6 @@ marking-VulpPointsFadeArmLeft-points_fade-arm-l = Градиент
 marking-VulpPointsFadeHandLeft-points_fade-hand-l = Градиент
 marking-VulpPointsFadeArmRight-points_fade-arm-r = Градиент
 marking-VulpPointsFadeHandRight-points_fade-hand-r = Градиент
-
 # Sharp
 marking-VulpPointsSharpArmLeft = Резкий переход (Левое предплечье)
 marking-VulpPointsSharpLongArmLeft = Длинный резкий переход (Левое предплечье)

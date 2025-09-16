@@ -89,9 +89,6 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
         Entry("o7", "chatsan-salutes"),
         Entry("о7", "chatsan-salutes"), // cyrillic о | Starshine-Localization
         Entry(";_;7", "chatsan-tearfully-salutes"),
-        Entry("idk", "chatsan-shrugs"),
-        Entry("хз", "chatsan-shrugs"), // Starshine-Localization
-        Entry("яхз", "chatsan-shrugs"), // Starshine-Localization
         Entry(";)", "chatsan-winks"),
         Entry(";]", "chatsan-winks"),
         Entry("(;", "chatsan-winks"),

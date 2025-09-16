@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: [DrinkCartonVisualsOpenable, DrinkCartonBaseFull]
+  parent: [DrinkCartonBaseFull]
   id: DrinkJuiceCartonBase
   name: apple juice
   description: Juice release 3023, fresh acid-pressed, with added apple seed extract and donk flavours.

@@ -168,3 +168,5 @@ ent-CutterMachineCircuitboard = резательный станок (машин�
     .desc = { ent-BaseMachineCircuitboard.desc }
 ent-JukeboxCircuitBoard = музыкальный автомат (машинная плата)
     .desc = Печатная плата музыкального автомата
+ent-SmartFridgeCircuitboard = SmartFridge machine board
+    .desc = A machine printed circuit board for a SmartFridge.

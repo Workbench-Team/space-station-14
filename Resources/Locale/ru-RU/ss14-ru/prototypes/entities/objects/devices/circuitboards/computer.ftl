@@ -94,3 +94,5 @@ ent-ComputerXenoborgsControlCircuitboard = консоль управления �
     .desc = Консольная плата для консоли управления ксеноборгами.
 ent-StationAiUploadCircuitboard = консоль загрузки ИИ (консольная плата)
     .desc = Консольная плата для консоли загрузки ИИ.
+ent-StationAiFixerCircuitboard = AI restoration console
+    .desc = A computer printed circuit board for an AI restoration console console.

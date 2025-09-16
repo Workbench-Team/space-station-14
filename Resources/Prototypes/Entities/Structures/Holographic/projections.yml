@@ -110,7 +110,7 @@
           mask:
             - TableMask
           layer:
-            - CounterLayer
+            - TableLayer
     - type: PointLight
       enabled: true
       radius: 3

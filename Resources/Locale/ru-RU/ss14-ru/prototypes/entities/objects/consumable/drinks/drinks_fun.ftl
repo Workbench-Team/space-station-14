@@ -1,3 +1,5 @@
+ent-BaseSqueezeBottle = { ent-DrinkBaseMaterialPlastic }
+    .desc = { ent-DrinkBaseMaterialPlastic.desc }
 ent-DrinkSpaceGlue = тюбик космического клея
     .desc = Высокоэффективный клей, предназначенный для обслуживания чрезвычайно сложного механического оборудования. НЕ ПИТЬ!
 ent-DrinkSpaceLube = тюбик космической смазки
@@ -5,5 +7,7 @@ ent-DrinkSpaceLube = тюбик космической смазки
 ent-BottomlessLube = bottomless lube beaker
     .desc = This anomalous beaker infinitely produces space lube and as such is to be closely guarded such that it doesn't fall in the wrong hands.
     .suffix = DEBUG
+ent-DrinkJarWhat = jar of something
+    .desc = You can't really tell what this is.
 ent-DrinkMopwataBottleRandom = вкуснейшая швабвада
     .desc = Туманно-коричневая бутылка с выцветшей этикеткой с изображением швабры. Она наполнена мутным... винтажём.
