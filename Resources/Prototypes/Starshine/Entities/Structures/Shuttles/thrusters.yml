@@ -83,8 +83,8 @@
     containers:
       machine_board: [ ThrusterLargeElectronics ]
       machine_parts:
-        - CapacitorStockPart10
-        - CapacitorStockPart5
+        - MicroManipulatorStockPart10 # Previously: CapacitorStockPart10
+        - MicroManipulatorStockPart5 # Previously: CapacitorStockPart5
   - type: StaticPrice
     price: 1200
 
@@ -168,10 +168,10 @@
     containers:
       machine_board: [ ThrusterHugeElectronics ]
       machine_parts:
-        - CapacitorStockPart10
-        - CapacitorStockPart10
-        - CapacitorStockPart10
-        - CapacitorStockPart5
+        - MicroManipulatorStockPart10 # Previously: CapacitorStockPart10
+        - MicroManipulatorStockPart10 # Previously: CapacitorStockPart10
+        - MicroManipulatorStockPart10 # Previously: CapacitorStockPart10
+        - MicroManipulatorStockPart5 # Previously: CapacitorStockPart5
   - type: StaticPrice
     price: 3000
 

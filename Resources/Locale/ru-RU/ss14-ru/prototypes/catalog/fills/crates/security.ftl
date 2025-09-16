@@ -12,3 +12,5 @@ ent-CrateSecurityBiosuit = ящик биокостюмов для СБ
     .desc = Содержит 2 костюма биологической опасности, чтобы никакая болезнь не отвлекала Вас от выполнения своих обязанностей. Для открытия требуется уровень доступа Службы Безопасности.
 ent-CrateSecurityTrackingMindshieldImplants = ящик имплантеров
     .desc = { ent-CrateSecgear.desc }
+ent-CrateSecNonlethalThrowables = nonlethal throwables crate
+    .desc = Contains one box each of flashbangs, stingers, tear gas grenades, and four bolas. Requires Security access to open.

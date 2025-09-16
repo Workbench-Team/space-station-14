@@ -12,3 +12,5 @@ ent-CrateArmoryPistols = ящик пистолетов
     .desc = Содержит два стандартных пистолета NT с четырьмя обоймами. Для открытия требуется доступ уровня Оружейной.
 ent-CrateSecurityRiot = ящик снаряжения против беспорядков
     .desc = Содержит два комплекта тяжелой нательной брони, шлемов и щитов, а также 2 дробовика, заряженных травматическими патронами. Дополнительные патроны включены. Чтобы открыть необходим уровень доступа Оружейная.
+ent-CrateArmoryRifle = rifle crate
+    .desc = Contains two high-powered assault rifles with four mags. Requires Armory access to open.

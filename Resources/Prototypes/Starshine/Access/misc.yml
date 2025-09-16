@@ -1,0 +1,5 @@
+- type: accessGroup
+  id: AllAccessSyndicate
+  tags:
+  - SyndicateAgent
+  - NuclearOperative

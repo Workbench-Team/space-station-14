@@ -39,5 +39,25 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Glass/miner.rsi
-  - type: PaintableAirlock
-    department: Cargo
+
+- type: entity
+  parent: Airlock
+  id: AirlockSyndicateNukeopCommand
+  suffix: Nukeop, Command
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/syndicatecommand.rsi
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockSyndicateNukeopCommandGlass
+  suffix: Nukeop, Command
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/syndicatecommand.rsi
+  - type: Paintable
+    group: null
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity

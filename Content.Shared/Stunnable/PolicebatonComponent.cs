@@ -1,8 +1,7 @@
-using Content.Shared.Stunnable;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 
-namespace Content.Server.Stunnable.Components;
+namespace Content.Shared.Stunnable;
 
 [RegisterComponent, NetworkedComponent]
 [Access(typeof(SharedPolicebatonSystem))]

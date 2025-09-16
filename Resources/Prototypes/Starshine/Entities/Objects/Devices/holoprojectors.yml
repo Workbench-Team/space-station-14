@@ -1,0 +1,38 @@
+- type: entity
+  parent: Holoprojector
+  id: HoloprojectorEngineering
+  name: engineering holobarrier projector
+  description: A holographic projector that creates holographic engineering barriers.
+  components:
+  - type: HolosignProjector
+    signProto: HolosignEngineering
+    maxSigns: 6
+  - type: Sprite
+    sprite: Objects/Devices/Holoprojectors/engineer.rsi
+    state: icon
+    netsync: false
+  - type: Tag
+    tags:
+      - HolosignProjector
+      - SecBeltEquip
+  - type: StaticPrice
+    price: 50
+
+#- type: entity
+#  parent: Holoprojector
+#  id: HoloprojectorMedical
+#  name: improper PENLITE barrier projector
+#  description: A holographic projector that creates PENLITE holobarriers. Useful during quarantines since they halt those with malicious diseases.
+#  components:
+#  - type: HolosignProjector
+#    signProto: HolosignMedical
+#    maxSigns: 3
+#  - type: Sprite
+#    sprite: Objects/Devices/Holoprojectors/med.rsi
+#    state: icon
+#    netsync: false
+#  - type: Tag
+#    tags:
+#      - HolosignProjector
+#  - type: StaticPrice
+#    price: 80

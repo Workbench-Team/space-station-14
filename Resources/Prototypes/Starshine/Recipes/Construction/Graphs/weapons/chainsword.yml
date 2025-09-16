@@ -7,22 +7,22 @@
     - to: chainsword
       steps:
       - tag: ChainSwordBlade
-        name: Chainsaw Sword Blade
+        name: construction-graph-tag-chainsword-blade
         icon:
           sprite: Starshine/Objects/Materials/Parts/chainsword.rsi
           state: blade
       - tag: ChainSwordChain
-        name: Chainsaw Sword Chain
+        name: construction-graph-tag-chainsword-chain
         icon:
           sprite: Starshine/Objects/Materials/Parts/chainsword.rsi
           state: chain
       - tag: ChainSwordEngine
-        name: Chainsaw Sword Engine
+        name: construction-graph-tag-chainsword-engine
         icon:
           sprite: Starshine/Objects/Materials/Parts/chainsword.rsi
           state: engine
       - tag: ChainSwordHandle
-        name: Chainsaw Sword Handle
+        name: construction-graph-tag-chainsword-handle
         icon:
           sprite: Starshine/Objects/Materials/Parts/chainsword.rsi
           state: handle

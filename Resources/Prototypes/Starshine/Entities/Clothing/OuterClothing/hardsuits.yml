@@ -34,6 +34,20 @@
     tags:
       - DogWearable
 
+#CentCom's Hardsuit
+- type: entity
+  parent: ClothingOuterHardsuitSyndie
+  id: ClothingOuterHardsuitCentcom
+  name: CentCom hardsuit
+  description: "An expensive and durable, comfortable spacesuit for maneuvering in space, especially for green bureaucrats."
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Hardsuits/centcom.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Hardsuits/centcom.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitCentcom
+
 #Consultant's Hardsuit
 - type: entity
   parent: ClothingOuterHardsuitCentcom

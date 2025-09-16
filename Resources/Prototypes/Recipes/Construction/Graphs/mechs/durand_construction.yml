@@ -6,6 +6,9 @@
     edges:
     - to: Durand
       steps:
+      - assemblyId: Durand
+        guideString: mech-construction-guide-string
+
       - tool: Anchoring
         doAfter: 1
         completed:
@@ -41,7 +44,7 @@
           data: 5
 
       - component: PowerCell
-        name: power cell
+        name: construction-graph-component-power-cell
         store: battery-container
         doAfter: 1
         icon:
@@ -82,6 +85,7 @@
           data: 10
 
       - tag: DurandArmor
+        name: construction-graph-tag-durand-armor
         doAfter: 1
         completed:
         - !type:VisualizerDataInt

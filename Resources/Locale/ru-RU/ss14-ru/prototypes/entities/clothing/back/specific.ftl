@@ -3,3 +3,7 @@ ent-ClothingBackpackChameleon = рюкзак
     .suffix = Хамелеон
 ent-ClothingBackpackWaterTank = рюкзак-бак для воды
     .desc = Вмещает большое количество жидкостей. Для использования, распылительные форсунки должны быть в Ваших руках. Также имеет контейнер сбоку для распылительных форсунок.
+ent-ClothingBagPet = pet bag
+    .desc = A small bag designed for use by pets and small animals.
+ent-ClothingBackpackHarmpack = H.A.R.M.P.A.C.K.
+    .desc = Now you can reload, punch, and eat a snack - simultaneously.

@@ -1,0 +1,14 @@
+﻿- files: ["clown.ogg"]
+  license: "Custom"
+  copyright: "Clown taken from tgstation, that was modified specially for April Fools from title2.ogg"
+  source: "https://github.com/tgstation/tgstation/commit/5dbd2d49a6e2c38e446db5e3051df2d0addc1390"
+
+- files: ["lightness.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Lightness by Nomyn"
+  source: "https://soundcloud.com/nomyn/lightness"
+
+- files: ["родина.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Родина by Проект Лазарь"
+  source: "https://www.youtube.com/watch?v=XnY7Q-ULqpA"

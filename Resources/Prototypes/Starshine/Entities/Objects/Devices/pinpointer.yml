@@ -1,0 +1,20 @@
+- type: entity
+  name: pinpointer
+  id: PinpointerAnomaly
+  parent: PinpointerBase
+  components:
+  - type: Sprite
+    sprite: Starshine/Objects/Devices/pinpointer.rsi
+    layers:
+    - state: pinpointer-anomaly
+    - state: pinonnull
+      sprite: Objects/Devices/pinpointer.rsi
+      map: ["enum.PinpointerLayers.Screen"]
+      shader: unshaded
+      visible: false
+  - type: Pinpointer
+    component: Anomaly
+    targetName: Аномальную активность
+    mediumDistance: 35
+    closeDistance: 20
+    reachedDistance: 5

@@ -1,4 +1,12 @@
 - type: entity
+  abstract: true
+  parent: ChemicalMedipen
+  id: ChemicalMedipenStarshine
+  components:
+  - type: Sprite
+    sprite: Starshine/Objects/Specific/Medical/medipen.rsi
+
+- type: entity
   name: nutriment medipen
   parent: ChemicalMedipen
   id: NutrimentMedipen
@@ -66,14 +74,13 @@
 
 - type: entity
   name: Luxury Medipen
-  parent: ChemicalMedipen
-  id: Luxurymedpen
+  parent: ChemicalMedipenStarshine
+  id: LuxuryMedipen
   description: Contains enough stimulants for you to have the chemical's effect for 30 seconds. Use it when you're sure you're ready to throw down.
   components:
   - type: Tag
     tags: [AutoInjector]
   - type: Sprite
-    sprite: Objects/Specific/Medical/medipen.rsi
     layers:
     - state: luxpen
       map: ["enum.SolutionContainerLayers.Fill"]
@@ -103,14 +110,13 @@
 
 - type: entity
   name: ambuzol medipen
-  parent: ChemicalMedipen
+  parent: ChemicalMedipenStarshine
   id: AmbuzolMedipen
   description: A single-use medipen containing ambuzol.
   components:
   - type: Tag
     tags: [AutoInjector]
   - type: Sprite
-    sprite: Objects/Specific/Medical/medipen.rsi
     layers:
     - state: ambuzol
       map: ["enum.SolutionContainerLayers.Fill"]
@@ -138,14 +144,13 @@
 
 - type: entity
   name: Ambuzol Plus medipen
-  parent: ChemicalMedipen
+  parent: ChemicalMedipenStarshine
   id: AmbuzolPlusMedipen
   description: A single-use medipen containing ambuzol.
   components:
   - type: Tag
     tags: [AutoInjector]
   - type: Sprite
-    sprite: Objects/Specific/Medical/medipen.rsi
     layers:
     - state: ambuzolplus
       map: ["enum.SolutionContainerLayers.Fill"]
@@ -171,14 +176,13 @@
 
 - type: entity
   name: self made medipen
-  parent: ChemicalMedipen
+  parent: ChemicalMedipenStarshine
   id: SelfMadeMedipen
   description: A single-use medipen containing desoxyephedrine.
   components:
   - type: Tag
     tags: [AutoInjector]
   - type: Sprite
-    sprite: Objects/Specific/Medical/medipen.rsi
     layers:
     - state: selfmade
       map: ["enum.SolutionContainerLayers.Fill"]

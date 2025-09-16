@@ -22,6 +22,11 @@
   - MagazineBoxRiflePractice
   - WeaponDisablerPractice
   - WeaponLaserCarbinePractice
+  - MagazineLightRiflePractice
+  - MagazineRiflePractice
+  - MagazinePistolPractice
+  - SpeedLoaderMagnumPractice
+  - MagazinePistolSubMachineGunPractice
   - WeaponFlareGunSecurity
 
 # Shared between secfab and emagged autolathe
@@ -55,15 +60,10 @@
   - MagazinePistolPractice
   - MagazinePistolSubMachineGunRubber
   - MagazinePistolSubMachineGunPractice
-  - MagazineVectorPistolRubber
-  - MagazineVectorPistolSmallRubber
-  - MagazineVectorPistolSmallPractice
-  - MagazineVectorRifleRubber
   - MagazineRiflePractice
   - MagazineRifleRubber
   - MagazineRifleExtRubber
   - MagazineLightRifleRubber
-  - MagazineVectorRifleSmallPractice
   - SpeedLoaderMagnumPractice
 # Starshine-end
 
@@ -87,6 +87,7 @@
   - PowerCageMedium
   - PowerCageSmall
   - TelescopicShield
+  - ClothingBackpackHarmpack
 # Starshine-start
   - ClothingBeltQuiverComposit
   - ClothingHeadHelmetRiot
@@ -164,6 +165,7 @@
   - WeaponLaserCannon
   - WeaponLaserCarbine
   - WeaponXrayCannon
+  - WeaponTemperatureGun
 # Starshine-start
   - BowCompound
 # Starshine-end

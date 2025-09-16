@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Blueshield, Brigmedic, Centcom Consultant, Centcom Official and Centcom Intern figurines made by Tamioki",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "blueshield"
+        },
+        {
+            "name": "brigmedic"
+        },
+        {
+            "name": "centcom_official"
+        },
+        {
+            "name": "consultant"
+        },
+        {
+            "name": "intern_cc"
+        }
+    ]
+}

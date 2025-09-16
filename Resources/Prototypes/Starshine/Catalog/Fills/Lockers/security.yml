@@ -1,0 +1,44 @@
+- type: entity
+  id: LockerBrigmedicFilledHardsuit
+  suffix: Filled, Hardsuit
+  parent: LockerBrigmedic
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: FillLockerBrigmedic
+        - !type:NestedSelector
+          tableId: FillLockerBrigmedicHarduit
+
+- type: entityTable
+  id: FillLockerBrigmedicHarduit
+  table: !type:AllSelector
+    children:
+    - id: ClothingOuterHardsuitBrigmedic
+    - id: OxygenTankFilled
+    - id: ClothingMaskBreath
+
+- type: entity
+  id: LockerShuttlePilotFilled
+  suffix: Filled
+  parent: LockerShuttlePilot
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillLockerPilot
+
+- type: entityTable
+  id: FillLockerPilot
+  table: !type:AllSelector
+    children:
+    - id: ClothingBeltSecurityFilled
+    - id: ClothingHeadsetSecurity
+    - id: ClothingShoesBootsJack
+    - id: ClothingUniformJumpsuitSecGrey
+    - id: Flash
+    - id: FlashlightSeclite
+    - id: HoloprojectorSecurity
+    - id: WeaponLaserSvalinn

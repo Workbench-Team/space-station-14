@@ -1,3 +1,5 @@
+ent-BaseCritAction = { ent-BaseMentalAction }
+    .desc = { ent-BaseMentalAction.desc }
 ent-ActionCritSuccumb = Сдаться
     .desc = Принять свою судьбу.
 ent-ActionCritFakeDeath = Притвориться мёртвым

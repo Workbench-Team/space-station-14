@@ -1,6 +1,5 @@
 //using Content.Server.Disease.Components;
 //using Content.Server.Disease;
-using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
 using Content.Server.Popups;
 using Content.Shared.DoAfter;
@@ -11,6 +10,7 @@ using Content.Shared.Mobs;
 using Robust.Shared.Player;
 using Robust.Shared.Random;
 using System.Linq;
+using Content.Shared.Body.Components;
 using WoundLickingActionEvent = Content.Shared.Starshine.WoundLicking.WoundLickingActionEvent;
 using WoundLickingDoAfterEvent = Content.Shared.Starshine.WoundLicking.WoundLickingDoAfterEvent;
 
@@ -148,10 +148,10 @@ namespace Content.Server.Felinid
                 return;
             }
             if (TryComp<BloodstreamComponent>(args.Args.Target, out var bloodstream))
-                LickWound(uid, args.Args.Target.Value, bloodstream, comp);
+                LickWound(uid, (args.Args.Target.Value, bloodstream), comp);
         }
 
-        private void LickWound(EntityUid performer, EntityUid target, BloodstreamComponent bloodstream, WoundLickingComponent comp)
+        private void LickWound(EntityUid performer, Entity<BloodstreamComponent> target, WoundLickingComponent comp)
         {
             // The more you heal, the more is disease chance
             // For 15 maxHeal and 50% diseaseChance
@@ -159,6 +159,7 @@ namespace Content.Server.Felinid
             //  Heal 7.5 > chance 25%
             //  Heal 0 > chance 0%
 
+            var bloodstream = target.Comp;
             var healed = bloodstream.BleedAmount;
             if (comp.MaxHeal - bloodstream.BleedAmount < 0) healed = comp.MaxHeal;
 /*            var chance = comp.DiseaseChance * (1 / comp.MaxHeal * healed);
@@ -172,9 +173,9 @@ namespace Content.Server.Felinid
                 }
             }
 */
-            _bloodstreamSystem.TryModifyBleedAmount(target, -healed, bloodstream);
+            _bloodstreamSystem.TryModifyBleedAmount((target.Owner, bloodstream), -healed);
 
-            if (performer == target)
+            if (performer == target.Owner)
             {
                 // Applied on yourself
                 var performerIdentity = Identity.Entity(performer, EntityManager);
@@ -192,7 +193,7 @@ namespace Content.Server.Felinid
                 var targetIdentity = Identity.Entity(target, EntityManager);
                 var performerIdentity = Identity.Entity(performer, EntityManager);
                 var otherFilter = Filter.Pvs(performer, entityManager: EntityManager)
-                    .RemoveWhereAttachedEntity(e => e == performer || e == target);
+                    .RemoveWhereAttachedEntity(e => e == performer || e == target.Owner);
 
                 _popupSystem.PopupEntity(Loc.GetString("lick-wounds-performer-success", ("target", targetIdentity)),
                 performer, performer);

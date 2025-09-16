@@ -12,7 +12,7 @@
     storedRotation: -90
   - type: Tag
     tags:
-    - Clothing
+    - Clothing # Starshine-modified
     - WhitelistChameleon
 
 - type: entity

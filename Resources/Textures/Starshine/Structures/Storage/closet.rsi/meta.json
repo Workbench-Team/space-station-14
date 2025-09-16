@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "copyright": "CCC, CC and Blueshield made by Tamioki |  shaftminer made by Wizard-Grin (GitHub)",
+  "license": "CC-BY-SA-3.0",
+  "states": [
+    {
+      "name": "generic"
+    },
+    {
+      "name": "generic_door"
+    },
+    {
+      "name": "locked"
+    },
+    {
+      "name": "unlocked"
+    },
+    {
+      "name": "welded"
+    },
+    {
+      "name": "ccc"
+    },
+    {
+      "name": "ccc_door"
+    },
+    {
+      "name": "ccc_open"
+    },
+    {
+      "name": "cc"
+    },
+    {
+      "name": "cc_door"
+    },
+    {
+      "name": "cc_open"
+    },
+    {
+      "name": "blueshield_door"
+    },
+    {
+      "name": "blueshield_open"
+    },
+    {
+      "name": "blueshield"
+    },
+    {
+      "name": "shaftminer"
+    },
+    {
+      "name": "shaftminer_door"
+    },
+    {
+      "name": "shaftminer_open"
+    }
+  ]
+}

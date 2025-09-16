@@ -34,7 +34,7 @@
       - PosterContrabandFreeTonto
       - PosterContrabandAtmosiaDeclarationIndependence
       - PosterContrabandFunPolice
-      - PosterContrabandLustyExomorph
+      - PosterContrabandRealExomorph
       - PosterContrabandSyndicateRecruitment
       - PosterContrabandClown
       - PosterContrabandSmoke
@@ -65,7 +65,7 @@
       - PosterContrabandPunchShit
       - PosterContrabandTheGriffin
       - PosterContrabandFreeDrone
-      - PosterContrabandBustyBackdoorExoBabes6
+      - PosterContrabandRouny
       - PosterContrabandRobustSoftdrinks
       - PosterContrabandShamblersJuice
       - PosterContrabandPwrGame
@@ -92,7 +92,10 @@
       - PosterContrabandInterdyne
       - PosterContrabandWaffleCorp
       - PosterContrabandMissingSpacepen
-      - PosterContrabandSOPIsShit
+      - PosterContrabandExoAcid
+      - PosterContrabandExoRun
+      - PosterContrabandExoChomp
+      - PosterContrabandSOPIsShit # Starshine
     chance: 1
 
 - type: entity
@@ -148,7 +151,6 @@
       - PosterLegitJustAWeekAway
       - PosterLegitSecWatch
       - PosterLegitVacation
-      - PosterLegitPeriodicTable
       - PosterLegitRenault
       - PosterLegitNTTGC
       - PosterLegitSafetyMothDelam
@@ -158,4 +160,6 @@
       - PosterLegitSafetyMothHardhat
       - PosterLegitSafetyMothSSD
       - PosterLegitOppenhopper
+      - PosterLegitTyrone
+      - PosterLegitHelio
     chance: 1

@@ -27,10 +27,6 @@
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
-  - type: Tag
-    tags:
-    - Clothing
-    - WhitelistChameleon
   - type: MeleeWeapon
     attackRate: 1.5
     damage:
@@ -50,10 +46,6 @@
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
-  - type: Tag
-    tags:
-    - Clothing
-    - WhitelistChameleon
   - type: GuideHelp
     guides:
     - Security
@@ -82,10 +74,6 @@
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
-  - type: Tag
-    tags:
-    - Clothing
-    - WhitelistChameleon
 
 - type: entity
   parent: ClothingEyesBase
@@ -138,6 +126,11 @@
   - type: EyeProtection
   - type: IdentityBlocker
     coverage: EYES
+  - type: Tag
+    tags:
+    - Clothing # Starshine-modified
+    - PetWearable
+    - WhitelistChameleon
 
 - type: entity
   parent: ClothingEyesBase
@@ -152,7 +145,7 @@
   - type: VisionCorrection
   - type: Tag
     tags:
-    - Clothing
+    - Clothing # Starshine-modified
     - HamsterWearable
     - WhitelistChameleon
 
@@ -166,9 +159,6 @@
     sprite: Clothing/Eyes/Glasses/jensen.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/jensen.rsi
-  - type: Tag
-    tags:
-    - WhitelistChameleon
 
 - type: entity
   parent: ClothingEyesBase
@@ -183,6 +173,7 @@
   - type: VisionCorrection
   - type: Tag
     tags:
+    - Clothing # Starshine-modified
     - HamsterWearable
     - WhitelistChameleon
 
@@ -198,6 +189,8 @@
     sprite: Clothing/Eyes/Glasses/outlawglasses.rsi
   - type: VisionCorrection
   - type: IdentityBlocker
+  - type: StaticPrice
+    price: 500
 
 - type: entity
   parent: ClothingEyesBase
@@ -211,8 +204,9 @@
     sprite: Clothing/Eyes/Glasses/sunglasses.rsi
   - type: Tag
     tags:
-    - Clothing
+    - Clothing # Starshine-modified
     - HamsterWearable
+    - PetWearable
     - WhitelistChameleon
   - type: IdentityBlocker
     coverage: EYES
@@ -228,8 +222,9 @@
     protectionTime: 5
   - type: Tag
     tags:
-    - Clothing
+    - Clothing # Starshine-modified
     - Sunglasses
+    - PetWearable
     - HamsterWearable
     - WhitelistChameleon
 
@@ -251,8 +246,9 @@
     node: glassesSec
   - type: Tag
     tags:
-    - Clothing
+    - Clothing # Starshine-modified
     - HamsterWearable
+    - PetWearable
     - WhitelistChameleon
   - type: GuideHelp
     guides:
@@ -276,8 +272,9 @@
     protectionTime: 5
   - type: Tag
     tags:
-    - Clothing
+    - Clothing # Starshine-modified
     - HamsterWearable
+    - PetWearable
     - WhitelistChameleon
   - type: IdentityBlocker
     coverage: EYES
@@ -302,10 +299,6 @@
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
-  - type: Tag
-    tags:
-    - Clothing
-    - WhitelistChameleon
 
 - type: entity
   parent: ClothingEyesBase
@@ -348,13 +341,18 @@
   name: chemical analysis goggles
   description: Goggles that can scan the chemical composition of a solution.
   components:
-    - type: Sprite
-      sprite: Clothing/Eyes/Glasses/science.rsi
-    - type: Clothing
-      sprite: Clothing/Eyes/Glasses/science.rsi
-    - type: SolutionScanner
-    - type: IdentityBlocker
-      coverage: EYES
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/science.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/science.rsi
+  - type: SolutionScanner
+  - type: IdentityBlocker
+    coverage: EYES
+  - type: Tag
+    tags:
+    - Clothing # Starshine-modified
+    - PetWearable
+    - WhitelistChameleon
 
 - type: entity
   parent: [ClothingEyesBase, BaseMajorContraband]
@@ -367,3 +365,25 @@
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
   - type: FlashImmunity
+
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
+  id: ClothingEyesGlassesNoir
+  name: noir-tech glasses
+  description: A pair of glasses that simulate what the world looked like before the invention of color.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/noir.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/sunglasses.rsi
+  - type: IdentityBlocker
+    coverage: EYES
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: NoirOverlay
+  - type: Tag
+    tags:
+    - Clothing # Starshine-modified
+    - HamsterWearable
+    - WhitelistChameleon

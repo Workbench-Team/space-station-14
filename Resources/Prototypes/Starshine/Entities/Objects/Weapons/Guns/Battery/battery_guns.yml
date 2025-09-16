@@ -1,4 +1,15 @@
 - type: entity
+  id: BaseWeaponBatteryHeavy
+  parent: BaseWeaponBattery
+  abstract: true
+  components:
+  - type: Item
+    size: Large
+  - type: Tag
+    tags:
+    - HeavyWeapon
+
+- type: entity
   name: Miniature Energy Crossbow
   parent: BaseWeaponBatterySmall
   id: MiniatureEnergyCrossbow
@@ -129,7 +140,7 @@
 
 - type: entity
   name: X-01 multiphase laser gun
-  parent: BaseWeaponBatterySmall
+  parent: [BaseWeaponBatterySmall, BaseGrandTheftContraband]
   id: WeaponLaserHos
   description: Nanotrasen's first attempt to remake the Antique Laser Gun. Has more firing modes on offer but lacks the ability to self-recharge.
   components:
@@ -144,6 +155,7 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/hoslasergun.rsi
   - type: Gun
+    fireRate: 2
     projectileSpeed: 75
   - type: Item
     size: Normal
@@ -166,7 +178,14 @@
   - type: Appearance
   - type: Tag
     tags:
-    - HeavyWeapon
     - HighRiskItem
+    - Sidearm
+  - type: StealTarget
+    stealGroup: WeaponLaserHos
   - type: StaticPrice
     price: 750
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 40
+    autoRechargePause: true
+    autoRechargePauseTime: 15

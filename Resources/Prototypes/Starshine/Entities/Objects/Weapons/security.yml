@@ -1,0 +1,71 @@
+- type: entity
+  name: telescopic baton
+  parent: BaseItem
+  id: TelescopicBaton
+  description: A telescopic baton for incapacitating people with.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/telescopic.rsi
+    netsync: false
+    layers:
+    - state: telescopic_off
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: Policebaton
+    telescopic: true
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      path: /Audio/Weapons/batonextend.ogg
+      params:
+        variation: 0.250
+    soundDeactivate:
+      path: /Audio/Weapons/batonextend.ogg
+      params:
+        variation: 0.250
+  - type: ItemTogglePrefix
+    prefixOn: on
+  - type: ToggleClothingPrefix
+    prefixOn: on
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Blunt: 7
+  - type: ItemToggleSize
+    activatedSize: Normal
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 2
+    bluntStaminaDamageFactor: 2.0
+    angle: 60
+    animation: WeaponArcSlash
+  - type: StaminaDamageOnHit
+    damage: 35
+    sound: /Audio/Weapons/egloves.ogg
+  - type: StaminaDamageOnCollide
+    damage: 35
+    sound: /Audio/Weapons/egloves.ogg
+  - type: UseDelay
+    delay: 0.75
+  - type: Item
+    heldPrefix: off
+    size: Small
+    sprite: Objects/Weapons/Melee/telescopic.rsi
+    storedRotation: -45
+  - type: Clothing
+    sprite: Objects/Weapons/Melee/telescopic.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: DisarmMalus
+    malus: 0.225
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+     enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: {state: telescopic_on}
+          False: {state: telescopic_off}
+  - type: StaticPrice
+    price: 100

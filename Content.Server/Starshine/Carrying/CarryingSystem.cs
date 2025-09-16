@@ -19,6 +19,7 @@ using Content.Shared.Movement.Events;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Standing;
 using Content.Shared.ActionBlocker;
+using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Inventory.VirtualItem;
 using Content.Shared.Item;
 using Content.Shared.Throwing;
@@ -45,6 +46,7 @@ namespace Content.Server.Starshine.Carrying
         [Dependency] private readonly PopupSystem _popupSystem = default!;
         [Dependency] private readonly MovementSpeedModifierSystem _movementSpeed = default!;
         [Dependency] private readonly TransformSystem _transform = default!;
+        [Dependency] private readonly SharedHandsSystem _hands = default!;
 
         public override void Initialize()
         {
@@ -290,7 +292,7 @@ namespace Content.Server.Starshine.Carrying
                    && !HasComp<BeingCarriedComponent>(carrier)
                    && !HasComp<BeingCarriedComponent>(carried)
                    && TryComp<HandsComponent>(carrier, out var hands)
-                   && hands.CountFreeHands() >= carriedComp.FreeHandsRequired;
+                   && _hands.CountFreeHands((carrier, hands)) >= carriedComp.FreeHandsRequired;
         }
 
         public override void Update(float frameTime)

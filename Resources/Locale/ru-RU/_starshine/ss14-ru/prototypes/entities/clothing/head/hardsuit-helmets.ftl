@@ -1,0 +1,13 @@
+ent-ClothingHeadHelmetHardsuitDeathsquadDog = шлем скафандра эскадрона смерти Иана
+    .desc = Робастный шлем скафандра для специальных операций... Созданый специально для Иана?
+    .suffix = Адмемы
+ent-ClothingHeadHelmetHardsuitCentcomConsultant = шлем скафандра Корпорат
+    .desc = Он вам что-то напоминает, но вы не можете понять, что именно.
+    .suffix = Консультант Центкома
+ent-ClothingHeadHelmetHardsuitERTBlueShield = шлем скафандра офицера синего щита
+    .desc = Специальный защитный шлем, который носят члены отрядов синего щита.
+ent-ClothingHeadHelmetHardsuitShuttlePilot = шлем пилота шаттла
+    .desc = Шлем от скафандра пилота шаттла.
+ent-ClothingHeadHelmetHardsuitCentcom = шлем скафандра Корпорат
+    .desc = Он вам что-то напоминает, но вы не можете понять, что именно.
+    .suffix = Центком

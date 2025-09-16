@@ -10,6 +10,7 @@
   - type: Physics
     bodyType: Static
     canCollide: false
+# Starshine-start
   - type: MeleeSound
     soundGroups:
       Brute:
@@ -18,6 +19,7 @@
       Burn:
         path:
           "/Audio/Weapons/egloves.ogg"
+# Starshine-end
   - type: Sprite
     sprite: Structures/Holo/wetfloor.rsi
     state: icon
@@ -35,7 +37,7 @@
 - type: entity
   id: HoloFan
   parent: HolosignWetFloor
-  name: holofan atmos
+  name: holofan
   description: A barrier of hard light that blocks air, but nothing else.
   components:
   - type: Sprite
@@ -49,100 +51,72 @@
             bounds: "-0.5,-0.5,0.5,0.5"
   - type: Airtight
     noAirWhenFullyAirBlocked: false
-  - type: Clickable
-  - type: Damageable
-    damageModifierSet: HolosignAtmos
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 250
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: RadiationBlocker
-    resistance: 10
+  - type: Clickable # Starshine
 
 - type: entity
-  id: HoloFanTram
-  parent: HoloFan
-  name: tram atmos barrier
-  description: A barrier of hard light that blocks air, but nothing else.
+  id: HoloPeel
+  parent: HolosignWetFloor
+  name: holopeel
+  description: A banana peel made of slippery hard light, watch your step!
   components:
   - type: Sprite
-    sprite: Structures/Holo/atmos_tram.rsi
+    sprite: Structures/Holo/peel.rsi
     state: icon
-    netsync: false
+  - type: Physics
+    bodyType: Static
+    canCollide: true
+  - type: Slippery
+  - type: StepTrigger
+    intersectRatio: 0.2
+  - type: CollisionWake
+    enabled: false
+  - type: Fixtures
+    fixtures:
+      slips:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        layer:
+        - SlipLayer
+  - type: Clickable
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
 
 - type: entity
-  id: HolosignEngineering
+  id: HolosignSecurity
   parent: HolosignWetFloor
-  name: holobarrier
-  description: A short holographic barrier which can only be passed by walking.
+  name: holographic barrier
+  description: A barrier of hard light that blocks movement, but pretty weak.
   components:
     - type: Physics
       bodyType: Static
       canCollide: true
     - type: Sprite
-      sprite: Structures/Holo/engi.rsi
+      sprite: Structures/Holo/security.rsi
       state: icon
-      netsync: false
     - type: Fixtures
       fixtures:
         fix1:
-          hard: false
-          density: 7
           shape:
             !type:PhysShapeAabb
-            bounds: "-0.5,-0.5,0.5,0.5"
+            bounds: "-0.3,-0.3,0.3,0.3"
+          mask:
+            - TableMask
           layer:
-            - MidImpassable
-    - type: AtmosExposed
-    - type: SpeedModifierContacts
-      walkSpeedModifier: 1
-      sprintSpeedModifier: 0.0
+            - CounterLayer
+    - type: PointLight
+      enabled: true
+      radius: 3
+      color: red
+    - type: Climbable
     - type: Clickable
-    - type: Damageable
-      damageModifierSet: Holosign
-    - type: Destructible
-      thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 70
-        behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-
-- type: entity
-  id: HolosignSecurity
-  parent: HolosignWetFloor
-  name: holobarrier
-  description: A barrier of hard light that blocks movement, but pretty weak.
-  components:
-  - type: Physics
-    bodyType: Static
-    canCollide: true
-  - type: Sprite
-    sprite: Structures/Holo/security.rsi
-    state: icon
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.3,-0.3,0.3,0.3"
-        mask:
-          - TableMask
-        layer:
-          - TableLayer
-  - type: Damageable
-    damageModifierSet: Metallic
-  - type: PointLight
-    enabled: true
-    radius: 3
-    color: red
-  - type: Climbable
-  - type: Clickable
 
 - type: entity
   id: HolosignForcefield

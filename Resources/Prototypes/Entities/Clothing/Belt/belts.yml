@@ -12,7 +12,9 @@
     sprite: Clothing/Belt/utility.rsi
   - type: Storage
     maxItemSize: Normal
-    # TODO: Fill this out more.
+    # Don't add more than absolutely needed to this whitelist!
+    # Utility belts shouldn't just be free extra storage.
+    # This is only intended for basic engineering equipment.
     whitelist:
       tags:
         - Powerdrill
@@ -32,10 +34,12 @@
         - JawsOfLife
         - GPS
         - WeldingMask
-        - HolosignProjector
+        - RemoteSignaller
+        - HolosignProjector # Starshine
       components:
         - StationMap
         - SprayPainter
+        - SprayPainterAmmo
         - NetworkConfigurator
         - RCD
         - RCDAmmo
@@ -81,6 +85,10 @@
             - Multitool
     sprite: Clothing/Belt/belt_overlay.rsi
   - type: Appearance
+  - type: Tag
+    tags:
+    - UtilityBelt
+    - WhitelistChameleon
 
 - type: entity
   parent: ClothingBeltStorageBase
@@ -117,6 +125,7 @@
       components:
         - StationMap
         - SprayPainter
+        - SprayPainterAmmo
         - NetworkConfigurator
         - RCD
         - RCDAmmo
@@ -228,6 +237,8 @@
         - WetFloorSign
         - HolosignProjector
         - Plunger
+        - GoldenPlunger
+        - WireBrush
       components:
         - LightReplacer
         - SmokeOnTrigger
@@ -572,7 +583,8 @@
         - MagazineMagnum
         - CombatKnife
         - Truncheon
-        - HolosignProjector
+        - HandGrenade
+        - HolosignProjector # Starshine
       components:
         - Policebaton
         - Stunbaton
@@ -723,6 +735,8 @@
         - Gun
         - BallisticAmmoProvider
         - CartridgeAmmo
+  - type: StaticPrice
+    price: 500
 
 - type: entity
   parent: ClothingBeltSecurity
@@ -784,7 +798,10 @@
   - type: Clothing
     sprite: Clothing/Belt/militarywebbing.rsi
   - type: ExplosionResistance
-    damageCoefficient: 0.5
+    damageCoefficient: 0.1
+  - type: StaticPrice
+    price: 500
+# Starshine-start
   - type: ContainerContainer
     containers:
       weapon_slot: !type:ContainerSlot
@@ -801,6 +818,7 @@
           tags:
             - LightWeapon
             - MediumWeapon
+# Starshine-end
 
 - type: entity
   parent: ClothingBeltMilitaryWebbing

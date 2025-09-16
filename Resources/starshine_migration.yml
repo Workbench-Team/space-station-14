@@ -88,3 +88,31 @@ LGBTQHandyFlag: null
 LGBTQFlag: null
 VendingMachinePride: null
 
+# 11-09-2025
+MagazineVectorRifle: null
+MagazineVectorRifleRubber: null
+MagazineVectorRiflePractice: null
+BaseMagazineVectorRifleSmall: null
+MagazineVectorSmallRifle: null
+MagazineVectorRifleSmallRubber: null
+MagazineVectorRifleSmallPractice: null
+MagazineMagnumSubMachineGunRubber: null
+MagazineVectorPistolRubber: null
+MagazineVectorPistolSmallRubber: null
+MagazineVectorPistolSmallPractice: null
+MagazineVectorPistolPractice: null
+MagazineVectorPistolSmall: null
+MagazineVectorPistol: null
+
+# 12-09-2025
+InjectorCaseNOMedic: InjectorCaseNukeopMedic
+InjectorCaseLuxPens: InjectorCaseLuxuryMedipen
+BoxCardboardMedPens: BoxCardboardMedipen
+BoxCardboardTrackImp: BoxCardboardTrackingImplant
+Luxurymedpen: LuxuryMedipen
+
+# 14-09-2025
+ClarkChassis: null
+OdysseusChassis: null
+DurandChassis: null
+GygaxChassis: null

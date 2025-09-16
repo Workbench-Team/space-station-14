@@ -2,6 +2,7 @@ using Content.Shared.ActionBlocker;
 using Content.Shared.Clothing;
 using Content.Shared.Inventory;
 using Robust.Shared.Player;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
 namespace Content.Shared.Chat.TypingIndicator;
@@ -18,8 +19,7 @@ public abstract class SharedTypingIndicatorSystem : EntitySystem
     /// <summary>
     ///     Default ID of <see cref="TypingIndicatorPrototype"/>
     /// </summary>
-    [ValidatePrototypeId<TypingIndicatorPrototype>]
-    public const string InitialIndicatorId = "default";
+    public static readonly ProtoId<TypingIndicatorPrototype> InitialIndicatorId = "default";
 
     public override void Initialize()
     {
@@ -45,7 +45,7 @@ public abstract class SharedTypingIndicatorSystem : EntitySystem
     private void OnPlayerDetached(EntityUid uid, TypingIndicatorComponent component, PlayerDetachedEvent args)
     {
         // player left entity body - hide typing indicator
-        SetTypingIndicatorEnabled(uid, TypingIndicatorState.None);
+        SetTypingIndicatorState(uid, TypingIndicatorState.None);
     }
 
     private void OnGotEquipped(Entity<TypingIndicatorClothingComponent> entity, ref ClothingGotEquippedEvent args)
@@ -76,14 +76,14 @@ public abstract class SharedTypingIndicatorSystem : EntitySystem
         if (!_actionBlocker.CanEmote(uid.Value) && !_actionBlocker.CanSpeak(uid.Value))
         {
             // nah, make sure that typing indicator is disabled
-            SetTypingIndicatorEnabled(uid.Value, TypingIndicatorState.None);
+            SetTypingIndicatorState(uid.Value, TypingIndicatorState.None);
             return;
         }
 
-        SetTypingIndicatorEnabled(uid.Value, ev.TypingState);
+        SetTypingIndicatorState(uid.Value, ev.State);
     }
 
-    private void SetTypingIndicatorEnabled(EntityUid uid, TypingIndicatorState state, AppearanceComponent? appearance = null)
+    private void SetTypingIndicatorState(EntityUid uid, TypingIndicatorState state, AppearanceComponent? appearance = null)
     {
         if (!Resolve(uid, ref appearance, false))
             return;

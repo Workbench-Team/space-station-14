@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "idblueshield and idsalvage by Wizard-Grin (GitHub). idpilot by Tenteratus (GitHub)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "idblueshield"
+        },
+        {
+            "name": "idpilot"
+        },
+        {
+            "name": "idsalvage"
+        }
+    ]
+}

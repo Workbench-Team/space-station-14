@@ -9,3 +9,6 @@ ent-LootSpawnerRandomCrateEngineering = спавнер случайного ящ
 ent-LootSpawnerRandomCrateSecurity = спавнер случайного ящика
     .suffix = Служба Безопасности
     .desc = { ent-MarkerBase.desc }
+ent-LootSpawnerRandomLockbox = random lockbox spawner
+    .suffix = 90%
+    .desc = { ent-MarkerBase.desc }

@@ -77,6 +77,15 @@
       weight: 0.5
     - id: ScrapMopBucket
       weight: 0.5
+    - !type:GroupSelector
+      weight: 2
+      children:
+      - !type:NestedSelector
+        weight: 3
+        tableId: RandomChemicalBarrel
+      - !type:NestedSelector
+        weight: 1
+        tableId: RandomChemicalBarrelRadioactive
 
 # Treasure: High-value scatterables that don't do a ton.
 
@@ -163,6 +172,7 @@
     - id: ClothingHeadHatFancyCrown
     - id: GoldenBikeHorn
     - id: ClothingHeadHatCatEars
+    - id: GoldenPersonalAI
     - id: TreasureCoinDiamond
       amount: !type:RangeNumberSelector
         range: 2, 5
@@ -241,6 +251,11 @@
       children:
       - id: JetpackBlue
       - id: JetpackBlack
+    # Starshine-start
+    - id: ChainSwordBlade
+    - id: ChainSwordChain
+    - id: ChainSwordHandle
+    # Starshine-end
 
 - type: entityTable
   id: SalvageEquipmentLegendary
@@ -251,18 +266,21 @@
     - id: BlueprintSeismicCharge
     - id: WeaponCrusherGlaive
     - id: ClothingOuterHardsuitSalvage
-    - id: OmnizineChemistryBottle
-    # Starshine-start
-    - id: BoxCursedKatana
-    - id: ChainSwordBlade
-    - id: ChainSwordChain
-    - id: ChainSwordEngine
-    - id: ChainSwordHandle
-    # Starshine-end
+    - id: ChemistryBottleOmnizine
     - !type:GroupSelector
       children:
       - id: JetpackBlueFilled
       - id: JetpackBlackFilled
+    - !type:GroupSelector
+      children:
+      - id: PKAUpgradeDamage
+      - id: PKAUpgradeRange
+      - id: PKAUpgradeFireRate
+    # Starshine-start
+    - id: BoxCursedKatana
+    - id: ChainSwordEngine
+    # Starshine-end
+
 
 - type: entityTable
   id: RandomGeneratorTable

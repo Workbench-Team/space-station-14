@@ -1,0 +1,27 @@
+﻿- type: typingIndicator
+  id: machine
+  typingState: machine0
+  questionState: machine1
+  exclamationState: machine2
+  idleState: machine3
+
+- type: typingIndicator
+  id: syndibot
+  typingState: syndibot0
+  questionState: syndibot1
+  exclamationState: syndibot2
+  idleState: syndibot3
+
+- type: typingIndicator
+  id: alienroyal
+  typingState: alienroyal0
+  questionState: alienroyal1
+  exclamationState: alienroyal2
+  idleState: alienroyal3
+
+- type: typingIndicator
+  id: signlang
+  typingState: signlang0
+  questionState: signlang1
+  exclamationState: signlang2
+  idleState: signlang3

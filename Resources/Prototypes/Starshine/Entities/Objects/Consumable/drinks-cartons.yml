@@ -82,24 +82,6 @@
 
 - type: entity
   parent: DrinkJuiceCartonBase
-  id: DrinkJuicePineappleCarton
-  name: pineapple juice
-  description: This is a refreshing drink that has a bright and fresh flavour. Each drop of this juice is like a small star, bringing joy and pleasure after a hard day's work in outer space. Its flavour fills the station's offices with notes of tropical fruits, creating an atmosphere of coziness and comfort even in the conditions of distant space.
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        reagents:
-        - ReagentId: JuicePineapple
-          Quantity: 50
-  - type: Sprite
-    layers:
-      - state: icon
-        map: ["enum.OpenableVisuals.Layer"]
-      - state: label-pineapple
-
-- type: entity
-  parent: DrinkJuiceCartonBase
   id: DrinkJuiceSyndicateCarton
   name: syndicate juice
   description: Space Weapon Juice is a drink that will become the secret weapon of every syndicate agent. Its bright flavour combines with notes of exotic spices to create an explosive taste experience that can energise you for the most challenging missions. Every drop of this juice is a charge of adrenaline, ready to inspire feats and victories.

@@ -35,11 +35,11 @@
     sprite: Starshine/Objects/Weapons/Melee/chainsaw.rsi
     layers:
     - state: icon
-      map: [ "enum.ToggleVisuals.Layer" ]
+      map: [ "enum.ToggleableVisuals.Layer" ]
   - type: GenericVisualizer
     visuals:
-      enum.ToggleVisuals.Toggled:
-        enum.ToggleVisuals.Layer:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
           True: { state: chainsaw_on }
           False: { state: icon }
   - type: ItemToggleMeleeWeapon
@@ -72,8 +72,8 @@
     - Back
     - suitStorage
   - type: Appearance
-  - type: ToggleableLightVisuals
-    spriteLayer: enum.ToggleVisuals.Layer
+  - type: ToggleableVisuals
+    spriteLayer: enum.ToggleableVisuals.Layer
     inhandVisuals:
       left:
       - state: inhand-left-on
@@ -121,7 +121,7 @@
     sprite: Starshine/Objects/Weapons/Melee/chainsword.rsi
     layers:
     - state: icon
-      map: [ "enum.ToggleVisuals.Layer" ]
+      map: [ "enum.ToggleableVisuals.Layer" ]
   - type: ItemToggle
     predictable: false
     soundActivate:

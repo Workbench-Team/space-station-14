@@ -1,0 +1,22 @@
+{
+	"version": 1,
+	"license": "CC-BY-SA-3.0",
+    "copyright": "injectorscase, injectorscase-inhand-left and injectorscase-inhand-right created by Arsik08",
+	"size": {
+		"x": 32,
+		"y": 32
+	},
+	"states": [
+    {
+			"name": "injectorscase"
+		},
+		{
+      "name": "injectorscase-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "injectorscase-inhand-right",
+      "directions": 4
+    }
+	]
+}

@@ -8,3 +8,7 @@ ent-ArrowImprovisedPlasma = стрела с плазменным осколко�
     .desc = Любимый снаряд грейтайдов. Теперь с дополнительной смертоносностью!
 ent-ArrowImprovisedUranium = стрела с урановым осколком стекла
     .desc = Любимый снаряд грейтайдов. Теперь с дополнительной радиацией!
+ent-ArrowImprovisedCarp = carp tooth arrow
+    .desc = The salvager's preferred arrow. Kill your enemies with the teeth of their families.
+ent-ArrowCard = cardboard arrow
+    .desc = Careful, you'll poke an eye out!

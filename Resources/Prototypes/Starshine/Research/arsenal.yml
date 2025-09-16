@@ -12,7 +12,6 @@
   recipeUnlocks:
   - MagazinePistol
   - MagazinePistolSubMachineGunTopMounted
-  - MagazineVectorPistolSmall # Маленький
   - MagazinePistolSubMachineGun
   - MagazineRifle
   - SpeedLoaderMagnum
@@ -65,7 +64,6 @@
   - ClothingOuterArmorBulletproof
   - ClothingBeltSecurityWebbing
   - ClothingBeltSecurity
-
 # Tier 2
 
 - type: technology
@@ -104,13 +102,11 @@
   name: research-technology-advanced-magazines
   icon:
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/Magnum/magnum_smg_mag.rsi
-    state: red
+    state: base
   discipline: Arsenal
   tier: 2
   cost: 10000
   recipeUnlocks:
-  - MagazineVectorPistol
-  - MagazineVectorRifle # 24 пт .20
   - MagazineRifleExt # 45 пт
   - MagazineShotgunSaiga
   - MagazinePistolHighCapacity

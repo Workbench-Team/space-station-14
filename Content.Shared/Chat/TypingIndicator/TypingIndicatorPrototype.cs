@@ -7,7 +7,7 @@ namespace Content.Shared.Chat.TypingIndicator;
 /// <summary>
 ///     Prototype to store chat typing indicator visuals.
 /// </summary>
-[Prototype("typingIndicator")]
+[Prototype]
 public sealed partial class TypingIndicatorPrototype : IPrototype
 {
     [IdDataField]
@@ -19,14 +19,16 @@ public sealed partial class TypingIndicatorPrototype : IPrototype
     [DataField("typingState", required: true)]
     public string TypingState = default!;
 
-    [DataField("questionState", required: true)]
+    [DataField("idleState", required: true)]
+    public string IdleState = default!;
+
+#region Starshine-Speech-Bubble
+    [DataField(required: true)]
     public string QuestionState = default!;
 
-    [DataField("actionState", required: true)]
-    public string ActionState = default!;
-
-    [DataField("thinkState", required: true)]
-    public string ThinkState = default!;
+    [DataField(required: true)]
+    public string ExclamationState = default!;
+#endregion
 
     [DataField("offset")]
     public Vector2 Offset = new(0, 0);

@@ -1,36 +1,23 @@
 - type: construction
-  name: metal pipe craft
   id: metalpipe
   graph: MetalPipeGraph
   startNode: start
   targetNode: metalpipe
   category: construction-category-weapons
   objectType: Item
-  description: A legendary metal pipe
-  icon:
-    sprite: Objects/Weapons/Melee/metalpipe.rsi
-    state: icon
 
 - type: construction
-  name: emitter cannon
   id: emittercannon
   graph: EmitterCannonGraph
   startNode: start
   targetNode: emittercannon
   category: construction-category-weapons
   objectType: Item
-  description: An underrated handheld emitter that can be used as a tool as well as a weapon.
-  icon:
-    sprite: Objects/Weapons/Guns/Battery/emitter_cannon.rsi
-    state: icon
 
 - type: construction
-  name: Chainsaw
   id: chainsaw
   graph: ChainsawGraph
   startNode: start
   targetNode: chainsaw
   category: construction-category-weapons
-  description: "chainsaw"
-  icon: { sprite: Starshine/Objects/Weapons/Melee/chainsaw.rsi, state: icon }
   objectType: Item

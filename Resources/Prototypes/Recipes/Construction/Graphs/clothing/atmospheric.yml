@@ -7,13 +7,13 @@
         - to: modsuitatmospheric
           steps:
             - tag: ModsuitPlateAtmospheric
-              name: покрытие мода "Атмосферный"
+              name: construction-graph-tag-modsuit-plate-atmospheric
               icon:
                 sprite: Objects/Specific/Mech/modcore_construction.rsi
                 state: atmospheric
               doAfter: 2
             - tag: ModsuitAssembledPart
-              name: собранный каркас модсьюта
+              name: construction-graph-tag-modsuit-assembled-part
               icon:
                 sprite: Objects/Specific/Mech/modcore_construction.rsi
                 state: modcore8

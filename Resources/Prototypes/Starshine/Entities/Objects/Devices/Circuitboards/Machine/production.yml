@@ -9,8 +9,7 @@
     - type: MachineBoard
       prototype: WeaponTechFab
       stackRequirements:
-        MatterBin: 3
-        Manipulator: 3
+        Manipulator: 6
       tagRequirements:
         GlassBeaker:
           amount: 2

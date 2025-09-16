@@ -7,7 +7,7 @@
     - to: modsuitassembled
       steps:
       - tag: ModsuitCoreEnergy
-        name: MOD standard core
+        name: construction-graph-tag-modsuit-core-energy
         doAfter: 1
         completed:
         - !type:VisualizerDataInt
@@ -22,14 +22,14 @@
           data: 2
 
       - component: PowerCell
-        name: battery
+        name: construction-graph-component-power-cell
         store: battery-container
         icon:
           sprite: Objects/Power/power_cells.rsi
           state: small
 
       - tag: ModsuitHelmet
-        name: MODsuit helmet
+        name: construction-graph-tag-modsuit-helmet
         doAfter: 1
         completed:
         - !type:VisualizerDataInt
@@ -37,7 +37,7 @@
           data: 3
 
       - tag: ModsuitChestplate
-        name: MODsuit chestplate
+        name: construction-graph-tag-modsuit-chestplate
         doAfter: 1
         completed:
         - !type:VisualizerDataInt
@@ -45,7 +45,7 @@
           data: 4
 
       - tag: ModsuitGauntlets
-        name: MODsuit gauntlets
+        name: construction-graph-tag-modsuit-gauntlets
         doAfter: 1
         completed:
         - !type:VisualizerDataInt
@@ -53,7 +53,7 @@
           data: 5
 
       - tag: ModsuitBoots
-        name: MODsuit boots
+        name: construction-graph-tag-modsuit-boots
         doAfter: 1
         completed:
         - !type:VisualizerDataInt

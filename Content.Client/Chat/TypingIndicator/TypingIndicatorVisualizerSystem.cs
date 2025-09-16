@@ -1,6 +1,5 @@
 ﻿using Content.Shared.Chat.TypingIndicator;
 using Robust.Client.GameObjects;
-using Robust.Client.Graphics;
 using Robust.Shared.Prototypes;
 using Content.Shared.Inventory;
 
@@ -10,7 +9,6 @@ public sealed class TypingIndicatorVisualizerSystem : VisualizerSystem<TypingInd
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
-
 
     protected override void OnAppearanceChange(EntityUid uid, TypingIndicatorComponent component, ref AppearanceChangeEvent args)
     {
@@ -35,29 +33,33 @@ public sealed class TypingIndicatorVisualizerSystem : VisualizerSystem<TypingInd
             return;
         }
 
-        AppearanceSystem.TryGetData<TypingIndicatorState>(uid, TypingIndicatorVisuals.State, out var TypingState, args.Component);
-        var layerExists = args.Sprite.LayerMapTryGet(TypingIndicatorLayers.Base, out var layer);
+        var layerExists = SpriteSystem.LayerMapTryGet((uid, args.Sprite), TypingIndicatorLayers.Base, out var layer, false);
         if (!layerExists)
-            layer = args.Sprite.LayerMapReserveBlank(TypingIndicatorLayers.Base);
+            layer = SpriteSystem.LayerMapReserve((uid, args.Sprite), TypingIndicatorLayers.Base);
 
-        args.Sprite.LayerSetRSI(layer, proto.SpritePath);
-        switch (TypingState)
-        {
-            case TypingIndicatorState.Typing:
-            args.Sprite.LayerSetState(layer, proto.TypingState);
-            break;
-            case TypingIndicatorState.TypingQuestion:
-            args.Sprite.LayerSetState(layer, proto.QuestionState);
-            break;
-            case TypingIndicatorState.TypingAction:
-            args.Sprite.LayerSetState(layer, proto.ActionState);
-            break;
-            case TypingIndicatorState.Thinking:
-            args.Sprite.LayerSetState(layer, proto.ThinkState);
-            break;
-        }
+        SpriteSystem.LayerSetRsi((uid, args.Sprite), layer, proto.SpritePath);
+        SpriteSystem.LayerSetRsiState((uid, args.Sprite), layer, proto.TypingState);
         args.Sprite.LayerSetShader(layer, proto.Shader);
-        args.Sprite.LayerSetOffset(layer, proto.Offset);
-        args.Sprite.LayerSetVisible(layer, TypingState != TypingIndicatorState.None);
+        SpriteSystem.LayerSetOffset((uid, args.Sprite), layer, proto.Offset);
+
+        AppearanceSystem.TryGetData<TypingIndicatorState>(uid, TypingIndicatorVisuals.State, out var state);
+        SpriteSystem.LayerSetVisible((uid, args.Sprite), layer, state != TypingIndicatorState.None);
+        switch (state)
+        {
+            case TypingIndicatorState.Idle:
+                SpriteSystem.LayerSetRsiState((uid, args.Sprite), layer, proto.IdleState);
+                break;
+        #region Starshine-Speech-Bubble
+            case TypingIndicatorState.Question:
+                SpriteSystem.LayerSetRsiState((uid, args.Sprite), layer, proto.QuestionState);
+                break;
+            case TypingIndicatorState.Exclamation:
+                SpriteSystem.LayerSetRsiState((uid, args.Sprite), layer, proto.ExclamationState);
+                break;
+        #endregion
+            case TypingIndicatorState.Typing:
+                SpriteSystem.LayerSetRsiState((uid, args.Sprite), layer, proto.TypingState);
+                break;
+        }
     }
 }

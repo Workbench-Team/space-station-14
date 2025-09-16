@@ -10,7 +10,7 @@
               amount: 3
               doAfter: 1
             - tag: SyndieMinerArmor
-              name: An syndie Miner armor
+              name: construction-graph-tag-miner-armor-syndie
               icon:
                 sprite: Clothing/OuterClothing/Armor/miner_red.rsi
                 state: icon

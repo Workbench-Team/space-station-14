@@ -8,3 +8,5 @@ ent-SpearUranium = урановое копьё
     .desc = Копье с осколком уранового стекла в качестве наконечника.
 ent-SpearBone = костяное копье
     .desc = Копье, сделанное из костей.
+ent-SpearSharkMinnow = sharkminnow tooth spear
+    .desc = A spear with a sharkminnow tooth as a tip.

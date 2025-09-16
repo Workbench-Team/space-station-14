@@ -1,0 +1,99 @@
+- type: entity
+  name: injector case
+  parent: BoxCardboard
+  id: InjectorCase
+  description: Case for medipens.
+  components:
+  - type: Tag
+    tags:
+    - AutoInjectorCase
+  - type: Sprite
+    sprite: Starshine/Objects/Specific/Medical/firstaidkits.rsi
+    layers:
+      - state: injectorscase
+  - type: Item
+    heldPrefix: injectorscase
+    sprite: Starshine/Objects/Specific/Medical/firstaidkits.rsi
+    size: Small
+    shape:
+    - 0,0,1,1
+  - type: Storage
+    grid:
+    - 0,0,2,1
+    maxItemSize: Tiny
+    whitelist:
+      tags:
+        - AutoInjector
+
+- type: entity
+  name: CBURN injector case
+  parent: InjectorCase
+  id: InjectorCaseCBURN
+  components:
+  - type: StorageFill
+    contents:
+      - id: AmbuzolPlusMedipen
+        amount: 1
+      - id: AmbuzolMedipen
+        amount: 3
+
+- type: entity
+  name: stimpack injector case
+  parent: InjectorCase
+  id: InjectorCaseStimpack
+  components:
+  - type: StorageFill
+    contents:
+      - id: StimpackMini
+        amount: 6
+
+- type: entity
+  name: injector case of luxury medipens
+  parent: InjectorCase
+  id: InjectorCaseLuxuryMedipen
+  components:
+  - type: StorageFill
+    contents:
+      - id: LuxuryMedipen
+        amount: 6
+
+- type: entity
+  name: operative injector case
+  parent: InjectorCase
+  id: InjectorCaseNukeopMedic
+  components:
+  - type: StorageFill
+    contents:
+      - id: BurnAutoInjector
+        amount: 2
+      - id: BruteAutoInjector
+        amount: 2
+      - id: AntiPoisonMedipen
+        amount: 1
+      - id: CombatMedipen
+        amount: 1
+
+- type: entity
+  name: box of medipens
+  parent: BoxCardboardStarshine
+  id: BoxCardboardMedipen
+  description: A box full of medipens.
+  components:
+  - type: Sprite
+    layers:
+      - state: box_of_doom
+        sprite: Objects/Storage/boxes.rsi
+      - state: dna
+
+- type: entity
+  name: box of tracking implanters
+  parent: BoxCardboardMedipen
+  id: BoxCardboardTrackingImplant
+  components:
+  - type: Storage
+    grid:
+    - 0,0,5,1
+  - type: StorageFill
+    contents:
+      - id: TrackingImplanter
+        amount: 6

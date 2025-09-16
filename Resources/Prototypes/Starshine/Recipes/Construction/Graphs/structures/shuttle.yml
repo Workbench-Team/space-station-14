@@ -52,7 +52,7 @@
           steps:
             - tag: ThrusterLargeElectronics
               store: machine_board
-              name: "large thruster electronics"
+              name: construction-graph-tag-large-thruster-electronics
               icon:
                 sprite: "Objects/Misc/module.rsi"
                 state: "id_mod"
@@ -75,7 +75,7 @@
           conditions:
             - !type:EntityAnchored
           steps:
-            - material: Capacitor
+            - material: Manipulator # Previously: Capacitor
               amount: 10
               store: machine_parts
               doAfter: 1
@@ -92,7 +92,7 @@
           conditions:
             - !type:EntityAnchored
           steps:
-            - material: Capacitor
+            - material: Manipulator # Previously: Capacitor
               amount: 5
               store: machine_parts
               doAfter: 0.5
@@ -275,7 +275,7 @@
           steps:
             - tag: ThrusterHugeElectronics
               store: machine_board
-              name: "huge thruster electronics"
+              name: construction-graph-tag-huge-thruster-electronics
               icon:
                 sprite: "Objects/Misc/module.rsi"
                 state: "id_mod"
@@ -298,7 +298,7 @@
           conditions:
             - !type:EntityAnchored
           steps:
-            - material: Capacitor
+            - material: Manipulator # Previously: Capacitor
               amount: 10
               store: machine_parts
               doAfter: 1
@@ -315,7 +315,7 @@
           conditions:
             - !type:EntityAnchored
           steps:
-            - material: Capacitor
+            - material: Manipulator # Previously: Capacitor
               amount: 10
               store: machine_parts
               doAfter: 1
@@ -332,7 +332,7 @@
           conditions:
             - !type:EntityAnchored
           steps:
-            - material: Capacitor
+            - material: Manipulator # Previously: Capacitor
               amount: 10
               store: machine_parts
               doAfter: 1
@@ -349,7 +349,7 @@
           conditions:
             - !type:EntityAnchored
           steps:
-            - material: Capacitor
+            - material: Manipulator # Previously: Capacitor
               amount: 5
               store: machine_parts
               doAfter: 0.5

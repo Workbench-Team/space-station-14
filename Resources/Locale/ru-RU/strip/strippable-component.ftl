@@ -14,6 +14,7 @@ strippable-component-alert-owner-insert-hand = { $user } кладёт { $item } 
 strippable-component-alert-owner-interact = { $user } возится с Вашим { $item }!
 # StripVerb
 strip-verb-get-data-text = Обыскать
+strip-all-verb-get-data-text = Strip All
 
 ## UI
 

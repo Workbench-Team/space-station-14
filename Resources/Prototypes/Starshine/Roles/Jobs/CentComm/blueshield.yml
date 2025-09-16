@@ -49,3 +49,16 @@
     gloves: ClothingHandsTacticalBlueShield
     id: BlueShieldPDA
     ears: ClothingHeadsetAltBlueShield
+
+- type: chameleonOutfit
+  id: BlueShieldChameleonOutfit
+  job: BlueShield
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatBeretBS
+    eyes: ClothingEyesGlassesCommand
+    mask: ClothingMaskGasSwat
+    neck: ClothingNeckMantleBS
+    gloves: ClothingHandsTacticalBlueShield
+    jumpsuit: ClothingUniformJumpsuitBlueShield
+    shoes: ClothingShoesBootsCombat
