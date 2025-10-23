@@ -7,6 +7,7 @@ using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.DoAfter;
 using Content.Shared.Interaction;
+using Content.Shared.Starshine.Access.Components;
 using JetBrains.Annotations;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
@@ -188,6 +189,20 @@ public sealed class AccessOverriderSystem : SharedAccessOverriderSystem
 
             return;
         }
+
+        #region Starshine-AccessOnAlert
+        if (TryComp<AccessOnAlertComponent>(component.TargetAccessReaderId, out var alertComp))
+        {
+            var newAccessSet = new HashSet<ProtoId<AccessLevelPrototype>>(newAccessList);
+
+            if (alertComp.LockedAlertAccesses.Any(set => !set.IsSubsetOf(newAccessSet)))
+            {
+                _popupSystem.PopupEntity(Loc.GetString("access-overrider-cannot-modify-alert-access"), player, player);
+                _audioSystem.PlayPvs(component.DenialSound, uid);
+                return;
+            }
+        }
+        #endregion
 
         if (newAccessList.Count > 0 && !newAccessList.TrueForAll(x => component.AccessLevels.Contains(x)))
         {
