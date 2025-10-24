@@ -36,9 +36,6 @@ public sealed class AccessOnAlertSystem : EntitySystem
         if (!_accessReader.GetMainAccessReader(uid, out var mainAccessReader))
             return;
 
-        if (ShouldSkipAccessReader(mainAccessReader.Value.Comp, settings))
-            return;
-
         if (alertComp.AddedAlertAccesses.Count > 0)
         {
             _accessReader.TryRemoveAccesses(mainAccessReader.Value, alertComp.AddedAlertAccesses);
@@ -66,12 +63,5 @@ public sealed class AccessOnAlertSystem : EntitySystem
             _accessReader.TryAddAccess(mainAccessReader.Value, access);
             alertComp.AddedAlertAccesses.Add(access);
         }
-    }
-
-    private bool ShouldSkipAccessReader(AccessReaderComponent accessReader, AccessOnAlertSettingsPrototype settings)
-    {
-        var accessListToCheck = accessReader.AccessListsOriginal ?? accessReader.AccessLists;
-        return accessListToCheck.Count > 0 &&
-               accessListToCheck[0].Any(access => settings.IgnoredAccessLevels.Contains(access));
     }
 }

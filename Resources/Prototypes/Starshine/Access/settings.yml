@@ -5,13 +5,3 @@
     red: [["Security"]]
     gamma: [["Engineering"], ["Security"]]
     delta: [["Engineering"], ["Security"]]
-  ignoredAccessLevels:
-  - Captain
-  - HeadOfPersonnel
-  - HeadOfSecurity
-  - Quartermaster
-  - ResearchDirector
-  - ChiefEngineer
-  - ChiefMedicalOfficer
-  - Command
-  - Armory

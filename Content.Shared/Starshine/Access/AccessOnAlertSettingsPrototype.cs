@@ -4,15 +4,12 @@ using Robust.Shared.Prototypes;
 namespace Content.Shared.Starshine.Access
 {
     [Prototype]
-    public sealed partial class AccessOnAlertSettingsPrototype : IPrototype
+    public sealed class AccessOnAlertSettingsPrototype : IPrototype
     {
         [IdDataField]
         public string ID { get; private set; } = default!;
 
         [DataField]
         public Dictionary<string, List<HashSet<ProtoId<AccessLevelPrototype>>>> AlertAccessMappings = new();
-
-        [DataField]
-        public HashSet<ProtoId<AccessLevelPrototype>> IgnoredAccessLevels = [];
     }
 }

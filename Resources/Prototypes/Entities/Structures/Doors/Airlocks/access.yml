@@ -1,6 +1,6 @@
 # Airlocks
 - type: entity
-  parent: Airlock
+  parent: [Airlock, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockServiceLocked
   suffix: Service, Locked
   components:
@@ -92,7 +92,7 @@
       board: [ DoorElectronicsHydroponics ]
 
 - type: entity
-  parent: AirlockExternal
+  parent: [AirlockExternal, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockExternalLocked
   suffix: External, Locked
   components:
@@ -101,7 +101,7 @@
       board: [ DoorElectronicsExternal ]
 
 - type: entity
-  parent: AirlockExternal
+  parent: AirlockExternalLocked # Starshine modified - AccessOnAlert
   id: AirlockExternalCargoLocked
   suffix: External, Cargo, Locked
   components:
@@ -112,7 +112,7 @@
     layoutId: AirlockCargo
 
 - type: entity
-  parent: AirlockExternal
+  parent: AirlockExternalLocked # Starshine modified - AccessOnAlert
   id: AirlockExternalEngineeringLocked
   suffix: External, Engineering, Locked
   components:
@@ -145,7 +145,7 @@
     layoutId: AirlockCommand
 
 - type: entity
-  parent: AirlockExternal
+  parent: AirlockExternalLocked # Starshine modified - AccessOnAlert
   id: AirlockExternalAtmosphericsLocked
   suffix: External, Atmospherics, Locked
   components:
@@ -187,7 +187,7 @@
     layoutId: AirlockSecurity
 
 - type: entity
-  parent: AirlockFreezer
+  parent: [AirlockFreezer, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockFreezerLocked
   suffix: Kitchen, Locked
   components:
@@ -196,7 +196,7 @@
       board: [ DoorElectronicsKitchen ]
 
 - type: entity
-  parent: AirlockFreezer
+  parent: AirlockFreezerLocked # Starshine modified - AccessOnAlert
   id: AirlockFreezerKitchenHydroLocked
   suffix: Kitchen/Hydroponics, Locked
   components:
@@ -205,7 +205,7 @@
       board: [ DoorElectronicsKitchenHydroponics ]
 
 - type: entity
-  parent: AirlockFreezer
+  parent: AirlockFreezerLocked # Starshine modified - AccessOnAlert
   id: AirlockFreezerHydroponicsLocked
   suffix: Hydroponics, Locked
   components:
@@ -214,7 +214,7 @@
       board: [ DoorElectronicsHydroponics ]
 
 - type: entity
-  parent: AirlockEngineering
+  parent: [AirlockEngineering, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockEngineeringLocked
   suffix: Engineering, Locked
   components:
@@ -223,7 +223,7 @@
       board: [ DoorElectronicsEngineering ]
 
 - type: entity
-  parent: AirlockAtmospherics
+  parent: [AirlockAtmospherics, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockAtmosphericsLocked
   suffix: Atmospherics, Locked
   components:
@@ -232,7 +232,7 @@
       board: [ DoorElectronicsAtmospherics ]
 
 - type: entity
-  parent: AirlockCargo
+  parent: [AirlockCargo, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockCargoLocked
   suffix: Cargo, Locked
   components:
@@ -241,7 +241,7 @@
       board: [ DoorElectronicsCargo ]
 
 - type: entity
-  parent: AirlockSalvage
+  parent: [AirlockSalvage, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockSalvageLocked
   suffix: Salvage, Locked
   components:
@@ -250,7 +250,7 @@
       board: [ DoorElectronicsSalvage ]
 
 - type: entity
-  parent: AirlockMining
+  parent: [AirlockMining, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockMiningLocked
   suffix: Mining(Salvage), Locked
   components:
@@ -259,7 +259,7 @@
       board: [ DoorElectronicsSalvage ]
 
 - type: entity
-  parent: AirlockMedical
+  parent: [AirlockMedical, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockMedicalLocked
   suffix: Medical, Locked
   components:
@@ -268,7 +268,7 @@
       board: [ DoorElectronicsMedical ]
 
 - type: entity
-  parent: AirlockVirology
+  parent: [AirlockVirology, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockVirologyLocked
   suffix: Virology, Locked
   components:
@@ -277,7 +277,7 @@
       board: [ DoorElectronicsMedical ]
 
 - type: entity
-  parent: AirlockChemistry
+  parent: [AirlockChemistry, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockChemistryLocked
   suffix: Chemistry, Locked
   components:
@@ -286,7 +286,7 @@
       board: [ DoorElectronicsChemistry ]
 
 - type: entity
-  parent: AirlockMedical
+  parent: AirlockMedicalLocked # Starshine modified - AccessOnAlert
   id: AirlockMedicalMorgueLocked
   suffix: Morgue, Locked
   components:
@@ -295,7 +295,7 @@
       board: [ DoorElectronicsMorgue ]
 
 - type: entity
-  parent: AirlockScience
+  parent: [AirlockScience, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockScienceLocked
   suffix: Science, Locked
   components:
@@ -304,7 +304,7 @@
       board: [ DoorElectronicsResearch ]
 
 - type: entity
-  parent: AirlockScience
+  parent: AirlockScienceLocked # Starshine modified - AccessOnAlert
   id: AirlockMedicalScienceLocked
   suffix: Medical/Science, Locked
   components:
@@ -395,7 +395,7 @@
       board: [ DoorElectronicsQuartermaster ]
 
 - type: entity
-  parent: AirlockSecurity
+  parent: [AirlockSecurity, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockSecurityLocked
   suffix: Security, Locked
   components:
@@ -404,7 +404,7 @@
       board: [ DoorElectronicsSecurity ]
 
 - type: entity
-  parent: AirlockSecurity
+  parent: AirlockSecurityLocked # Starshine modified - AccessOnAlert
   id: AirlockDetectiveLocked
   suffix: Detective, Locked
   components:
@@ -413,7 +413,7 @@
       board: [ DoorElectronicsDetective ]
 
 - type: entity
-  parent: AirlockSecurity
+  parent: AirlockSecurityLocked # Starshine modified - AccessOnAlert
   id: AirlockBrigLocked
   suffix: Brig, Locked
   components:
@@ -466,7 +466,7 @@
     layoutId: AirlockCommand
 
 - type: entity
-  parent: AirlockSecurity
+  parent: AirlockSecurityLocked # Starshine modified - AccessOnAlert
   id: AirlockSecurityLawyerLocked
   suffix: Security/Lawyer, Locked
   components:
@@ -495,7 +495,7 @@
       board: [ DoorElectronicsVault ]
 
 - type: entity
-  parent: AirlockCommand
+  parent: [AirlockCommand, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockEVALocked
   suffix: EVA, Locked
   components:
@@ -505,7 +505,7 @@
 
 # Glass Airlocks
 - type: entity
-  parent: AirlockGlass
+  parent: [AirlockGlass, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockServiceGlassLocked
   suffix: Service, Locked
   components:
@@ -562,7 +562,7 @@
 
 
 - type: entity
-  parent: AirlockExternalGlass
+  parent: [AirlockExternalGlass, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockExternalGlassLocked
   suffix: External, Glass, Locked
   components:
@@ -571,7 +571,7 @@
       board: [ DoorElectronicsExternal ]
 
 - type: entity
-  parent: AirlockExternalGlass
+  parent: AirlockExternalGlassLocked # Starshine modified - AccessOnAlert
   id: AirlockExternalGlassCargoLocked
   suffix: External, Glass, Cargo, Locked
   components:
@@ -604,7 +604,7 @@
     layoutId: AirlockSecurity
 
 - type: entity
-  parent: AirlockExternalGlass
+  parent: AirlockExternalGlassLocked # Starshine modified - AccessOnAlert
   id: AirlockExternalGlassEngineeringLocked
   suffix: External, Glass, Engineering, Locked
   components:
@@ -615,7 +615,7 @@
     layoutId: AirlockEngineering
 
 - type: entity
-  parent: AirlockExternalGlass
+  parent: AirlockExternalGlassLocked # Starshine modified - AccessOnAlert
   id: AirlockExternalGlassAtmosphericsLocked
   suffix: External, Glass, Atmospherics, Locked
   components:
@@ -626,7 +626,7 @@
     layoutId: AirlockEngineering
 
 - type: entity
-  parent: AirlockExternalGlassLocked
+  parent: AirlockExternalGlass # Starshine modified
   id: AirlockExternalGlassCentralCommandLocked
   suffix: External, Glass, CentralCommand, Locked
   components:
@@ -653,7 +653,7 @@
       board: [ DoorElectronicsJanitor ]
 
 - type: entity
-  parent: AirlockHydroponicsGlass
+  parent: [AirlockHydroponicsGlass, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockHydroGlassLocked
   suffix: Hydroponics, Locked
   components:
@@ -671,7 +671,7 @@
       board: [ DoorElectronicsChapel ]
 
 - type: entity
-  parent: AirlockStandardGlass
+  parent: [AirlockStandardGlass, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockChapelStandardGlassLocked
   suffix: Chapel, Locked
   components:
@@ -682,7 +682,7 @@
     layoutId: AirlockService
 
 - type: entity
-  parent: AirlockEngineeringGlass
+  parent: [AirlockEngineeringGlass, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockEngineeringGlassLocked
   suffix: Engineering, Locked
   components:
@@ -691,7 +691,7 @@
       board: [ DoorElectronicsEngineering ]
 
 - type: entity
-  parent: AirlockAtmosphericsGlass
+  parent: [AirlockAtmosphericsGlass, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockAtmosphericsGlassLocked
   suffix: Atmospherics, Locked
   components:
@@ -700,7 +700,7 @@
       board: [ DoorElectronicsAtmospherics ]
 
 - type: entity
-  parent: AirlockCargoGlass
+  parent: [AirlockCargoGlass, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockCargoGlassLocked
   suffix: Cargo, Locked
   components:
@@ -709,7 +709,7 @@
       board: [ DoorElectronicsCargo ]
 
 - type: entity
-  parent: AirlockSalvageGlass
+  parent: [AirlockSalvageGlass, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockSalvageGlassLocked
   suffix: Salvage, Locked
   components:
@@ -718,7 +718,7 @@
       board: [ DoorElectronicsSalvage ]
 
 - type: entity
-  parent: AirlockMiningGlass
+  parent: [AirlockMiningGlass, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockMiningGlassLocked
   suffix: Mining(Salvage), Locked
   components:
@@ -727,7 +727,7 @@
       board: [ DoorElectronicsSalvage ]
 
 - type: entity
-  parent: AirlockChemistryGlass
+  parent: [AirlockChemistryGlass, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockChemistryGlassLocked
   suffix: Chemistry, Locked
   components:
@@ -736,7 +736,7 @@
       board: [ DoorElectronicsChemistry ]
 
 - type: entity
-  parent: AirlockMedicalGlass
+  parent: AirlockMedicalGlassLocked # Starshine modified - AccessOnAlert
   id: AirlockMedicalMorgueGlassLocked
   suffix: Morgue, Locked
   components:
@@ -745,7 +745,7 @@
       board: [ DoorElectronicsMorgue ]
 
 - type: entity
-  parent: AirlockMedicalGlass
+  parent: [AirlockMedicalGlass, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockMedicalGlassLocked
   suffix: Medical, Locked
   components:
@@ -754,7 +754,7 @@
       board: [ DoorElectronicsMedical ]
 
 - type: entity
-  parent: AirlockVirologyGlass
+  parent: [AirlockVirologyGlass, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockVirologyGlassLocked
   suffix: Virology, Locked
   components:
@@ -763,7 +763,7 @@
       board: [ DoorElectronicsMedical ]
 
 - type: entity
-  parent: AirlockScienceGlass
+  parent: [AirlockScienceGlass, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockScienceGlassLocked
   suffix: Science, Locked
   components:
@@ -772,7 +772,7 @@
       board: [ DoorElectronicsResearch ]
 
 - type: entity
-  parent: AirlockScienceGlass
+  parent: AirlockScienceGlassLocked # Starshine modified - AccessOnAlert
   id: AirlockMedicalScienceGlassLocked
   suffix: Medical/Science, Locked
   components:
@@ -871,7 +871,7 @@
       board: [ DoorElectronicsQuartermaster ]
 
 - type: entity
-  parent: AirlockSecurityGlass
+  parent: [AirlockSecurityGlass, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockSecurityGlassLocked
   suffix: Security, Locked
   components:
@@ -880,7 +880,7 @@
       board: [ DoorElectronicsSecurity ]
 
 - type: entity
-  parent: AirlockSecurityGlass
+  parent: AirlockSecurityGlassLocked # Starshine modified - AccessOnAlert
   id: AirlockDetectiveGlassLocked
   suffix: Detective, Locked
   components:
@@ -889,7 +889,7 @@
       board: [ DoorElectronicsDetective ]
 
 - type: entity
-  parent: AirlockSecurityGlass
+  parent: AirlockSecurityGlassLocked # Starshine modified - AccessOnAlert
   id: AirlockBrigGlassLocked
   suffix: Brig, Locked
   components:
@@ -898,7 +898,7 @@
       board: [ DoorElectronicsBrig ]
 
 - type: entity
-  parent: AirlockSecurityGlass
+  parent: AirlockSecurityGlassLocked # Starshine modified - AccessOnAlert
   id: AirlockSecurityLawyerGlassLocked
   suffix: Security/Lawyer, Locked
   components:
@@ -916,7 +916,7 @@
       board: [ DoorElectronicsArmory ]
 
 - type: entity
-  parent: AirlockCommandGlassLocked
+  parent: [AirlockCommandGlassLocked, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockEVAGlassLocked
   suffix: EVA, Locked
   components:
@@ -944,7 +944,7 @@
 
 # Maintenance Hatches
 - type: entity
-  parent: AirlockMaint
+  parent: [AirlockMaint, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockMaintLocked
   suffix: Locked
   components:
@@ -953,7 +953,7 @@
       board: [ DoorElectronicsMaintenance ]
 
 - type: entity
-  parent: AirlockXeno
+  parent: [AirlockXeno, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockXenoMaintLocked
   suffix: Maintenance, Locked
   components:
@@ -962,7 +962,7 @@
       board: [ DoorElectronicsMaintenance ]
 
 - type: entity
-  parent: AirlockMaintGlass
+  parent: [AirlockMaintGlass, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockMaintGlassLocked
   suffix: Locked
   components:
@@ -1218,7 +1218,7 @@
 
 # Shuttle airlocks
 - type: entity
-  parent: AirlockShuttle
+  parent: [AirlockShuttle, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockExternalShuttleLocked
   suffix: External, Docking, Locked
   components:
@@ -1256,7 +1256,7 @@
       board: [ DoorElectronicsXenoborg ]
 
 - type: entity
-  parent: AirlockGlassShuttle
+  parent: [AirlockGlassShuttle, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: AirlockExternalGlassShuttleLocked
   suffix: External, Glass, Docking, Locked
   components:
@@ -1292,7 +1292,7 @@
       board: [ DoorElectronicsCentralCommand ]
 
 - type: entity
-  parent: AirlockGlassShuttle
+  parent: AirlockExternalGlassShuttleLocked # Starshine modified - AccessOnAlert
   id: AirlockExternalGlassShuttleEmergencyLocked
   suffix: External, Emergency, Glass, Docking, Locked
   components:
@@ -1303,7 +1303,7 @@
       board: [ DoorElectronicsExternal ]
 
 - type: entity
-  parent: AirlockGlassShuttle
+  parent: AirlockExternalGlassShuttleLocked # Starshine modified - AccessOnAlert
   id: AirlockExternalGlassShuttleArrivals
   suffix: External, Arrivals, Glass, Docking
   components:
@@ -1314,7 +1314,7 @@
       board: [ DoorElectronicsExternal ]
 
 - type: entity
-  parent: AirlockGlassShuttle
+  parent: AirlockExternalGlassShuttleLocked # Starshine modified - AccessOnAlert
   id: AirlockExternalGlassShuttleEscape
   suffix: External, Escape 3x4, Glass, Docking
   components:
