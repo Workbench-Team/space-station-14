@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Server.Popups;
+using Content.Server.Starshine.Access.Systems; // Starshine-AccessOnAlert
 using Content.Shared.Access;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
@@ -7,6 +8,8 @@ using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.DoAfter;
 using Content.Shared.Interaction;
+using Content.Shared.Popups;
+using Content.Shared.Starshine.Access.Components;
 using JetBrains.Annotations;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
@@ -38,12 +41,14 @@ public sealed class AccessOverriderSystem : SharedAccessOverriderSystem
         SubscribeLocalEvent<AccessOverriderComponent, EntRemovedFromContainerMessage>(UpdateUserInterface);
         SubscribeLocalEvent<AccessOverriderComponent, AfterInteractEvent>(AfterInteractOn);
         SubscribeLocalEvent<AccessOverriderComponent, AccessOverriderDoAfterEvent>(OnDoAfter);
+        SubscribeLocalEvent<AlertAccessUpdatedEvent>(OnAlertAccessUpdated); // Starshine-AccessOnAlert
 
         Subs.BuiEvents<AccessOverriderComponent>(AccessOverriderUiKey.Key, subs =>
         {
             subs.Event<BoundUIOpenedEvent>(UpdateUserInterface);
             subs.Event<BoundUIClosedEvent>(OnClose);
             subs.Event<WriteToTargetAccessReaderIdMessage>(OnWriteToTargetAccessReaderIdMessage);
+            subs.Event<AlertAccessToggledMessage>(OnAlertAccessToggled); // Starshine-AccessOnAlert
         });
     }
 
@@ -104,17 +109,27 @@ public sealed class AccessOverriderSystem : SharedAccessOverriderSystem
             return;
 
         var privilegedIdName = string.Empty;
-        var targetLabel = Loc.GetString("access-overrider-window-no-target");
+        var targetLabel = string.Empty; // Starshine-modified
         var targetLabelColor = Color.Red;
+        var hasAlertAccess = false; // Starshine-AccessOnAlert
 
         ProtoId<AccessLevelPrototype>[]? possibleAccess = null;
         ProtoId<AccessLevelPrototype>[]? currentAccess = null;
         ProtoId<AccessLevelPrototype>[]? missingAccess = null;
+        ProtoId<AccessLevelPrototype>[]? addedAlertAccess = null; // Starshine-AccessOnAlert
+        ProtoId<AccessLevelPrototype>[]? lockedAlertAccess = null; // Starshine-AccessOnAlert
 
         if (component.TargetAccessReaderId is { Valid: true } accessReader)
         {
             targetLabel = Loc.GetString("access-overrider-window-target-label") + " " + Comp<MetaDataComponent>(component.TargetAccessReaderId).EntityName;
             targetLabelColor = Color.White;
+
+            if (TryComp<AccessOnAlertComponent>(accessReader, out var alertComp)) // Starshine-AccessOnAlert
+            {
+                hasAlertAccess = true;
+                addedAlertAccess = ConvertAccessHashSetsToList(alertComp.AddedAlertAccesses).ToArray();
+                lockedAlertAccess = ConvertAccessHashSetsToList(alertComp.LockedAlertAccesses).ToArray();
+            }
 
             if (!_accessReader.GetMainAccessReader(accessReader, out var accessReaderEnt))
                 return;
@@ -143,6 +158,11 @@ public sealed class AccessOverriderSystem : SharedAccessOverriderSystem
         newState = new AccessOverriderBoundUserInterfaceState(
             component.PrivilegedIdSlot.HasItem,
             PrivilegedIdIsAuthorized(uid, component),
+            hasAlertAccess, // Starshine-AccessOnAlert
+            HasRequiredAccessForAlertAccess(component, false), // Starshine-AccessOnAlert
+            component.AlertAccessRequired.ToArray(), // Starshine-AccessOnAlert
+            addedAlertAccess, // Starshine-AccessOnAlert
+            lockedAlertAccess, // Starshine-AccessOnAlert
             currentAccess,
             possibleAccess,
             missingAccess,
@@ -182,10 +202,16 @@ public sealed class AccessOverriderSystem : SharedAccessOverriderSystem
         if (!PrivilegedIdIsAuthorized(uid, component))
             return;
 
-        if (!_interactionSystem.InRangeUnobstructed(player, component.TargetAccessReaderId))
-        {
-            _popupSystem.PopupEntity(Loc.GetString("access-overrider-out-of-range"), player, player);
+        if (IsOutOfRangePopup(player, player, component.TargetAccessReaderId)) // Starshine-modified
+            return;
 
+        var validateEv = new AccessOverriderValidateModifyEvent(component.TargetAccessReaderId, newAccessList);
+        RaiseLocalEvent(component.TargetAccessReaderId, validateEv);
+
+        if (validateEv.Cancelled)
+        {
+            _popupSystem.PopupCursor(Loc.GetString("access-overrider-validation-cancelled", ("reason", validateEv.CancelReason ?? "access-overrider-validation-cancelled-reason-unknown")), player);
+            _audioSystem.PlayPvs(component.DenialSound, uid);
             return;
         }
 
@@ -252,4 +278,108 @@ public sealed class AccessOverriderSystem : SharedAccessOverriderSystem
         var privilegedId = component.PrivilegedIdSlot.Item;
         return privilegedId != null && _accessReader.IsAllowed(privilegedId.Value, uid, accessReader);
     }
+
+    #region Starshine-AccessOnAlert
+
+    private void OnAlertAccessUpdated(AlertAccessUpdatedEvent args)
+    {
+        var query = EntityQueryEnumerator<AccessOverriderComponent>();
+
+        while (query.MoveNext(out var overriderUid, out var overriderComp))
+        {
+            if (overriderComp.TargetAccessReaderId == args.AccessReaderUid)
+            {
+                UpdateUserInterface(overriderUid, overriderComp, args);
+            }
+        }
+    }
+
+    private void OnAlertAccessToggled(EntityUid uid, AccessOverriderComponent component, AlertAccessToggledMessage args)
+    {
+        if (args.Actor is not { Valid: true } player)
+            return;
+
+        TryToggleAlertAccess(uid, args.AlertAccessEnabled, player, component);
+        UpdateUserInterface(uid, component, args);
+    }
+
+    /// <summary>
+    /// Toggles AccessOnAlertComponent on the target access reader based on user privileges
+    /// </summary>
+    private void TryToggleAlertAccess(EntityUid uid,
+        bool alertAccessEnabled,
+        EntityUid player,
+        AccessOverriderComponent? component = null)
+    {
+        if (!Resolve(uid, ref component) || component.TargetAccessReaderId is not { Valid: true } targetReader)
+            return;
+
+        if (!PrivilegedIdIsAuthorized(uid, component))
+            return;
+
+        if (IsOutOfRangePopup(player, player, targetReader))
+            return;
+
+        if (!HasRequiredAccessForAlertAccess(component))
+        {
+            _sawmill.Warning($"User {ToPrettyString(player)} tried to modify Alert Access status on {ToPrettyString(targetReader):entity} when they do not have sufficient access!");
+            _popupSystem.PopupCursor(Loc.GetString("access-overrider-insufficient-access-for-alert"), player);
+            _audioSystem.PlayPvs(component.DenialSound, uid);
+            return;
+        }
+
+        if (alertAccessEnabled)
+            EnsureComp<AccessOnAlertComponent>(targetReader);
+        else
+            RemComp<AccessOnAlertComponent>(targetReader);
+
+        _adminLogger.Add(
+            LogType.Action,
+            LogImpact.Medium,
+            $"{ToPrettyString(player):player} has {(alertAccessEnabled ? "enabled" : "disabled")} Alert Access on {ToPrettyString(targetReader):entity}");
+
+        var locString = Loc.GetString("access-overrider-alert-access-modified",
+            ("user", player),
+            ("target", targetReader));
+
+        _popupSystem.PopupPredicted(locString, player, null);
+
+
+        _audioSystem.PlayPvs(new SoundPathSpecifier("/Audio/Machines/quickbeep.ogg"), uid);
+    }
+
+    /// <summary>
+    /// Checks if the user has required access for Alert Access functionality
+    /// </summary>
+    private bool HasRequiredAccessForAlertAccess(AccessOverriderComponent component, bool requirePrivileges = true)
+    {
+        var privilegedId = component.PrivilegedIdSlot.Item;
+        if (privilegedId == null)
+            return false;
+
+        if (!_accessReader.GetMainAccessReader(component.TargetAccessReaderId, out var accessReaderEnt))
+            return false;
+
+        var privilegedPerms = _accessReader.FindAccessTags(privilegedId.Value).ToHashSet();
+
+        if (!requirePrivileges)
+            return component.AlertAccessRequired.Any(requiredAccess => privilegedPerms.Contains(requiredAccess));
+        {
+            var oldTags = ConvertAccessHashSetsToList(accessReaderEnt.Value.Comp.AccessLists);
+            return oldTags.ToHashSet().IsSubsetOf(privilegedPerms) &&
+                   component.AlertAccessRequired.Any(requiredAccess => privilegedPerms.Contains(requiredAccess));
+        }
+    }
+
+    private bool IsOutOfRangePopup(EntityUid uid, EntityUid recipient, EntityUid targetReader)
+    {
+        if (_interactionSystem.InRangeUnobstructed(uid, targetReader))
+            return false;
+
+        _popupSystem.PopupEntity(Loc.GetString("access-overrider-out-of-range"), uid, recipient);
+        return true;
+    }
+
+    #endregion
+
 }

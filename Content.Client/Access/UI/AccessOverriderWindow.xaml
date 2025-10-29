@@ -7,6 +7,18 @@
                 <Button Name="PrivilegedIdButton" Access="Public"/>
                 <Label Name="PrivilegedIdLabel" />
             </GridContainer>
+            <!-- Starshine-AccessOnAlert-start -->
+            <Control MinSize="4 4"/>
+            <BoxContainer Orientation="Vertical" HorizontalAlignment="Right">
+                <GridContainer Columns="2">
+                    <Label Text="{Loc 'access-overrider-window-alert-access-toggle-text'}" />
+                    <Button Name="AlertAccessToggle" ToggleMode="True" Access="Public"/>
+                </GridContainer>
+                <Label Name="AlertAccessMissingPrivilegesLabel" HorizontalExpand="True"/>
+                <Control MinSize="0 4"/>
+                <Label Name="AlertAccessMissingPrivilegesText" HorizontalExpand="True"/>
+            </BoxContainer>
+            <!-- Starshine-AccessOnAlert-end -->
         </GridContainer>
         <Label Name="TargetNameLabel" />
         <Control MinSize="0 8"/>
@@ -15,9 +27,14 @@
             <!-- Access level buttons are added here by the C# code -->
 
         </GridContainer>
+        <!-- Starshine-AccessOnAlert-start -->
         <Control MinSize="0 8"/>
         <Label Name="MissingPrivilegesLabel" />
         <Control MinSize="0 4"/>
         <Label Name="MissingPrivilegesText" />
+        <Control MinSize="0 8"/>
+        <Label Name="AddedAccessByAlertLabel" />
+        <Label Name="LockedAccessByAlertLabel" />
+        <!-- Starshine-AccessOnAlert-end -->
     </BoxContainer>
 </DefaultWindow>
