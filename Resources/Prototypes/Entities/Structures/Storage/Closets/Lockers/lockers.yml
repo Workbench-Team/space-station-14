@@ -17,6 +17,8 @@
       path: /Audio/Effects/woodenclosetclose.ogg
     openSound:
       path: /Audio/Effects/woodenclosetopen.ogg
+  - type: Paintable
+    group: null # not shaped like other lockers
 
 # Basic
 - type: entity
@@ -57,63 +59,6 @@
     stateDoorClosed: mining_door
   - type: AccessReader
     access: [["Salvage"]]
-
-- type: entity
-  id: LockerMiner
-  parent: LockerBase
-  name: salvage specialist's equipment
-  description: Nevermind the pickaxe.
-  components:
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateBaseClosed: shaftminer
-    stateDoorOpen: shaftminer_open
-    stateDoorClosed: shaftminer_door
-  - type: AccessReader
-    access: [["Salvage"]]
-
-#CentCom
-- type: entity
-  id: LockerCentcom
-  parent: LockerBase
-  name: CentCom locker
-  description: An expensive version of the regular Nanotrasen storage locker.
-  components:
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateBaseClosed: cc
-    stateDoorOpen: cc_open
-    stateDoorClosed: cc_door
-  - type: AccessReader
-    access: [["CentralCommand"]]
-
-- type: entity
-  id: LockerCentcomConsultant
-  parent: LockerBase
-  name: CentCom consultant's locker
-  description: An expensive version of the regular Nanotrasen storage locker.
-  components:
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateBaseClosed: ccc
-    stateDoorOpen: ccc_open
-    stateDoorClosed: ccc_door
-  - type: AccessReader
-    access: [["CentralCommand"]]
-
-- type: entity
-  id: LockerBlueShield
-  parent: LockerBase
-  name: salvage specialist's equipment
-  description: Nevermind the pickaxe.
-  components:
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateBaseClosed: blueshield
-    stateDoorOpen: blueshield_open
-    stateDoorClosed: blueshield_door
-  - type: AccessReader
-    access: [["CentralCommand"]]
 
 # Command
 - type: entity
@@ -212,6 +157,21 @@
   - type: AccessReader
     access: [ [ "Engineering" ] ]
 
+# Evac Repair
+- type: entity
+  parent: LockerBase
+  id: LockerEvacRepair
+  name: emergency shuttle emergency locker
+  description: It's emergencies all the way down.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: eng
+    stateDoorOpen: eng_open
+    stateDoorClosed: eng_evac_door
+  - type: AccessReader
+    access: [ [ "Engineering" ] ]
+
 # Freezer
 - type: entity
   id: LockerFreezerBase
@@ -232,6 +192,8 @@
     node: done
     containers:
     - entity_storage
+  - type: Paintable
+    group: null
 
 - type: entity
   id: LockerFreezer
@@ -395,7 +357,7 @@
     stateDoorOpen: armory_open
     stateDoorClosed: brigmedic_door
   - type: AccessReader
-    access: [["Medical", "Security"], ["HeadOfSecurity"]]
+    access: [["Medical", "Security"], ["HeadOfSecurity"]] # Starshine-modified
 
 # Security Officer
 - type: entity
@@ -437,6 +399,117 @@
   components:
   - type: AccessReader
     access: [["Armory"]]
+
+# Genpop Storage
+- type: entity
+  id: GenpopBase
+  abstract: true
+  components:
+  - type: GenpopLocker
+  - type: EntityStorageVisuals
+    stateBaseClosed: genpop
+    stateDoorOpen: genpop_open
+    stateDoorClosed: genpop_door_1
+  - type: UserInterface
+    interfaces:
+      enum.GenpopLockerUiKey.Key:
+        type: GenpopLockerBoundUserInterface
+  - type: AccessReader # note! this access is for the UI, not the door. door access is handled on GenpopLocker
+    access: [["Security"]]
+    examinationText: access-reader-examination-functionality-restricted
+  - type: Lock
+    locked: false
+    useAccess: false
+  - type: EntityStorage
+    open: True
+    removedMasks: 20
+  - type: PlaceableSurface
+    isPlaceable: True
+
+- type: entity
+  parent: [ GenpopBase , LockerBaseSecure ]
+  id: LockerPrisoner
+  name: prisoner closet
+  description: It's a secure locker for an inmate's personal belongings during their time in prison.
+  suffix: 1
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PolygonShape
+          radius: 0.01
+          vertices:
+          - -0.25,-0.48
+          - 0.25,-0.48
+          - 0.25,0.48
+          - -0.25,0.48
+        mask:
+        - Impassable
+        - TableLayer
+        - LowImpassable
+        layer:
+        - BulletImpassable
+        - Opaque
+        density: 75
+        hard: True
+        restitution: 0
+        friction: 0.4
+
+- type: entity
+  parent: LockerPrisoner
+  id: LockerPrisoner2
+  suffix: 2
+  components:
+  - type: EntityStorageVisuals
+    stateDoorClosed: genpop_door_2
+
+- type: entity
+  parent: LockerPrisoner
+  id: LockerPrisoner3
+  suffix: 3
+  components:
+  - type: EntityStorageVisuals
+    stateDoorClosed: genpop_door_3
+
+- type: entity
+  parent: LockerPrisoner
+  id: LockerPrisoner4
+  suffix: 4
+  components:
+  - type: EntityStorageVisuals
+    stateDoorClosed: genpop_door_4
+
+- type: entity
+  parent: LockerPrisoner
+  id: LockerPrisoner5
+  suffix: 5
+  components:
+  - type: EntityStorageVisuals
+    stateDoorClosed: genpop_door_5
+
+- type: entity
+  parent: LockerPrisoner
+  id: LockerPrisoner6
+  suffix: 6
+  components:
+  - type: EntityStorageVisuals
+    stateDoorClosed: genpop_door_6
+
+- type: entity
+  parent: LockerPrisoner
+  id: LockerPrisoner7
+  suffix: 7
+  components:
+  - type: EntityStorageVisuals
+    stateDoorClosed: genpop_door_7
+
+- type: entity
+  parent: LockerPrisoner
+  id: LockerPrisoner8
+  suffix: 8
+  components:
+  - type: EntityStorageVisuals
+    stateDoorClosed: genpop_door_8
 
 # Detective
 - type: entity
@@ -538,17 +611,3 @@
     stateBaseClosed: hop
     stateDoorOpen: hop_open
     stateDoorClosed: representative_door
-
-# Shuttle Oficer
-- type: entity
-  id: LockerShuttlePilot
-  parent: LockerBase
-  name: shuttle pilots's locker
-  components:
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateBaseClosed: sec
-    stateDoorOpen: sec_open
-    stateDoorClosed: sec_door
-  - type: AccessReader
-    access: [["Security"]]

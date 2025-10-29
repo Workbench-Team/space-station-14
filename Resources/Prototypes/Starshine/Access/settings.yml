@@ -1,0 +1,7 @@
+- type: accessOnAlertSettings
+  id: StationAccessOnAlert
+  alertAccessMappings:
+    yellow: [["Engineering"]]
+    red: [["Security"]]
+    gamma: [["Engineering"], ["Security"]]
+    delta: [["Engineering"], ["Security"]]

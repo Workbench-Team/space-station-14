@@ -13,12 +13,12 @@
             - material: Glass
               amount: 2
             - tag: TelecomServerCircuitboard
-              name: telecommunication server machine board
+              name: construction-graph-tag-telecom-server-circuit-board
               icon:
                 sprite: Objects/Misc/module.rsi
                 state: generic
             - tag: EncryptionKey
-              name: encryption key
+              name: construction-graph-tag-encryption-key
               icon:
                 sprite: Objects/Devices/encryption_keys.rsi
                 state: crypt_gray

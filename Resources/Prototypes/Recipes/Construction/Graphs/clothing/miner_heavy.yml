@@ -10,7 +10,7 @@
               amount: 3
               doAfter: 1
             - tag: MinerArmor
-              name: An Miner armor
+              name: construction-graph-tag-miner-armor
               icon:
                 sprite: Clothing/OuterClothing/Armor/miner.rsi
                 state: icon

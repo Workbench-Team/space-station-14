@@ -13,13 +13,16 @@
   - AllAccess
   access:
   - CentralCommand
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
 
 - type: startingGear
   id: CentcomInternGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitCentcomIntern
     back: ClothingBackpackSatchelCentcom
-    eyes: ClothingEyesGlassesSunglasses
+    eyes: ClothingEyesGlassesCommand
     ears: ClothingHeadsetAltCentCom
     shoes: ClothingShoesColorBlack
     id: CentcomInternPDA
@@ -28,6 +31,14 @@
     back:
     - BoxSurvival
     - Handcuffs
+
+- type: chameleonOutfit
+  id: CentralCommandInternChameleonOutfit
+  job: CentralCommandIntern
+  hasMindShield: true
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomIntern
+    shoes: ClothingShoesColorBlack
 
 - type: job
   id: CentralCommandInternLeader
@@ -43,6 +54,9 @@
   - AllAccess
   access:
   - CentralCommand
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
 
 - type: startingGear
   id: CentcomInternLeaderGear
@@ -50,7 +64,7 @@
     head: ClothingHeadHatCentcomintern
     jumpsuit: ClothingUniformJumpsuitCentcomIntern
     back: ClothingBackpackSatchelCentcom
-    eyes: ClothingEyesGlassesSunglasses
+    eyes: ClothingEyesGlassesCommand
     ears: ClothingHeadsetAltCentCom
     outerClothing: ClothingOuterArmorBasicSlim
     shoes: ClothingShoesColorBlack
@@ -63,3 +77,14 @@
     - Handcuffs
     - SpeedLoaderLightRifle
     - MagazineBoxLightRifle
+
+- type: chameleonOutfit
+  id: CentralCommandInternLeaderChameleonOutfit
+  job: CentralCommandInternLeader
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatCentcomintern
+    eyes: ClothingEyesGlassesCommand
+    jumpsuit: ClothingUniformJumpsuitCentcomIntern
+    outerClothing: ClothingOuterArmorBasicSlim
+    shoes: ClothingShoesColorBlack

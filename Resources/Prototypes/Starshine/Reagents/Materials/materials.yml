@@ -1,0 +1,17 @@
+- type: material
+  id: DragonSinew
+  stackEntity: MaterialDragonSinew1
+  name: materials-dragon-sinew
+  unit: materials-unit-piece
+  icon: { sprite: Objects/Materials/materials.rsi, state: dragonsinew }
+  color: "#ef4a53"
+  price: 50
+
+- type: material
+  id: XenoScale
+  stackEntity: MaterialXenoScale1
+  name: materials-xeno-scale
+  unit: materials-unit-piece
+  icon: { sprite: Objects/Materials/materials.rsi, state: alienplate }
+  color: "#ef4a53"
+  price: 50

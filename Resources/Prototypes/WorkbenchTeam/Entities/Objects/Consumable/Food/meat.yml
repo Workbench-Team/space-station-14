@@ -5,4 +5,5 @@
   description: Fried meat wrapped in pita bread.
   components:
   - type: Sprite
+    sprite: Starshine/Objects/Consumable/Food/shaurma.rsi
     state: shaurma

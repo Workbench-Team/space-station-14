@@ -11,9 +11,9 @@
             - material: Cable
               amount: 10
             - tag: SawElectric
-              name: Circular Saw
+              name: construction-graph-tag-saw-electric
             - tag: Welder
-              name: Welder
+              name: construction-graph-tag-welder
               doAfter: 20
     - node: chainsaw
       entity: Chainsaw

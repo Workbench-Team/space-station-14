@@ -6,7 +6,11 @@
   components:
   - type: Pda
     id: MinerIDCard
-    state: pda-mining
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-mining
   - type: PdaBorderColor
     borderColor: "#af9366"
     accentVColor: "#8900c9"
@@ -21,13 +25,17 @@
   components:
   - type: Pda
     id: BlueShieldIDCard
-    state: pda-blueshield
     penSlot:
       startingItem: PenCentcom
       priority: -1
       whitelist:
         tags:
         - Write
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-blueshield
   - type: PdaBorderColor
     borderColor: "#323248"
     accentHColor: "#2851a4"
@@ -43,13 +51,17 @@
   components:
   - type: Pda
     id: CentcomConsultantIDCard
-    state: pda-centcom
     penSlot:
       startingItem: PenCentcom
       priority: -1
       whitelist:
         tags:
         - Write
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-centcom
   - type: PdaBorderColor
     borderColor: "#15b115"
     accentHColor: "#dfc910"
@@ -65,13 +77,17 @@
   components:
   - type: Pda
     id: CentcomInternIDCard
-    state: pda-centcom
     penSlot:
       startingItem: PenCentcom
       priority: -1
       whitelist:
         tags:
         - Write
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-centcom
   - type: PdaBorderColor
     borderColor: "#00b62e"
   - type: Icon
@@ -85,13 +101,17 @@
   components:
   - type: Pda
     id: CentcomInternIDCard
-    state: pda-centcom
     penSlot:
       startingItem: PenCentcom
       priority: -1
       whitelist:
         tags:
         - Write
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-centcom
   - type: PdaBorderColor
     borderColor: "#00b62e"
   - type: Icon
@@ -105,7 +125,11 @@
   components:
   - type: Pda
     id: ShuttlePilotIDCard
-    state: pda-security
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-security
   - type: PdaBorderColor
     borderColor: "#A32D26"
   - type: Icon

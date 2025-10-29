@@ -30,3 +30,5 @@ ent-CrewMonitoringServerFlatpack = плоскоблок сервера мони�
     .desc = Плоскоблок, используемый для сборки сервера мониторинга экипажа.
 ent-CrewMonitoringComputerFlatpack = плоскоблок консоли мониторинга экипажа
     .desc = Плоскоблок, используемый для сборки консоли мониторинга экипажа.
+ent-HydroponicsTrayFlatpack = hydroponics tray flatpack
+    .desc = A flatpack used for constructing a hydroponics tray.

@@ -1,17 +1,6 @@
 meta:
-  format: 7
-  category: Map
-  engineVersion: 247.2.0
-  forkId: ""
-  forkVersion: ""
-  time: 03/02/2025 15:22:25
-  entityCount: 11463
-maps:
-- 658
-grids:
-- 31
-orphans: []
-nullspace: []
+  format: 6
+  postmapinit: false
 tilemap:
   0: Space
   7: FloorAsteroidSand
@@ -3389,11 +3378,10 @@ entities:
     - type: Transform
     - type: Map
       mapPaused: True
-    - type: PhysicsMap
     - type: GridTree
-    - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
+    - type: LoadedMap
 - proto: AcousticGuitarInstrument
   entities:
   - uid: 3146
@@ -27128,6 +27116,20 @@ entities:
     - type: Transform
       pos: 6.6956844,-33.563076
       parent: 31
+- proto: ClothingNeckCloakTrans
+  entities:
+  - uid: 9748
+    components:
+    - type: Transform
+      pos: -28.4315,17.631725
+      parent: 31
+- proto: ClothingNeckNonBinaryPin
+  entities:
+  - uid: 11135
+    components:
+    - type: Transform
+      pos: 43.27403,-8.317395
+      parent: 31
 - proto: ClothingNeckScarfStripedBlue
   entities:
   - uid: 7843
@@ -27173,6 +27175,13 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+- proto: ClothingNeckTransPin
+  entities:
+  - uid: 11137
+    components:
+    - type: Transform
+      pos: -24.17542,-23.65307
+      parent: 31
 - proto: ClothingOuterArmorBasic
   entities:
   - uid: 1206
@@ -27898,6 +27907,13 @@ entities:
     components:
     - type: Transform
       pos: 23.5,13.5
+      parent: 31
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 3424
+    components:
+    - type: Transform
+      pos: 34.5,35.5
       parent: 31
 - proto: ComputerSolarControl
   entities:
@@ -32314,53 +32330,53 @@ entities:
       pos: 14.5,-4.5
       parent: 31
     - type: FaxMachine
-      name: Medical
       destinationAddress: Medical
+      name: Medical
   - uid: 1264
     components:
     - type: Transform
       pos: 40.5,4.5
       parent: 31
     - type: FaxMachine
-      name: engineering
+      name: Engineering
   - uid: 2045
     components:
     - type: Transform
       pos: -17.5,-25.5
       parent: 31
     - type: FaxMachine
-      name: Science
       destinationAddress: Science
+      name: Science
   - uid: 8323
     components:
     - type: Transform
       pos: 9.5,-28.5
       parent: 31
     - type: FaxMachine
-      name: library
+      name: Library
   - uid: 8994
     components:
     - type: Transform
       pos: 13.5,12.5
       parent: 31
     - type: FaxMachine
-      name: Cargo
       destinationAddress: Cargo
+      name: Cargo
   - uid: 9687
     components:
     - type: Transform
       pos: 8.5,18.5
       parent: 31
     - type: FaxMachine
-      name: hop's office
+      name: HoP's office
   - uid: 10825
     components:
     - type: Transform
       pos: 1.5,32.5
       parent: 31
     - type: FaxMachine
-      name: bridge
-      destinationAddress: bridge
+      destinationAddress: Bridge
+      name: Bridge
 - proto: FaxMachineCaptain
   entities:
   - uid: 9686
@@ -32369,7 +32385,7 @@ entities:
       pos: 7.5,24.5
       parent: 31
     - type: FaxMachine
-      name: captain's office
+      name: Captain's office
 - proto: filingCabinetDrawerRandom
   entities:
   - uid: 4637
@@ -33762,19 +33778,21 @@ entities:
     - type: Transform
       pos: 27.598589,-5.5317454
       parent: 31
-- proto: FloraRockSolid
+- proto: FloraRockSolid01
   entities:
   - uid: 8569
     components:
     - type: Transform
       pos: 0.88375235,-33.48718
       parent: 31
+- proto: FloraRockSolid02
+  entities:
   - uid: 10815
     components:
     - type: Transform
       pos: 4.1304145,-33.0152
       parent: 31
-- proto: FloraTreeLarge
+- proto: FloraTreeLarge05
   entities:
   - uid: 7374
     components:
@@ -49015,7 +49033,7 @@ entities:
     - type: Transform
       pos: 54.5,-1.5
       parent: 31
-- proto: LogicGateOr
+- proto: LogicGate
   entities:
   - uid: 11306
     components:

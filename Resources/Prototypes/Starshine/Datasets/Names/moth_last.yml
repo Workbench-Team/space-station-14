@@ -1,0 +1,11 @@
+- type: localizedDataset
+  id: NamesMothLastMale
+  values:
+    prefix: names-moth-last-male-dataset-
+    count: 83
+
+- type: localizedDataset
+  id: NamesMothLastFemale
+  values:
+    prefix: names-moth-last-female-dataset-
+    count: 83

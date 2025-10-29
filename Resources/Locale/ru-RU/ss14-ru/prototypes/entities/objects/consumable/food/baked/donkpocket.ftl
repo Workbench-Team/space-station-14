@@ -38,3 +38,7 @@ ent-FoodDonkpocketCarpWarm = теплый карп-покет
     .desc = { ent-FoodDonkpocketCarp.desc }
 ent-FoodDonkpocketDink = динк-покет
     .desc = Малоизвестный донк-покет для ящеров, с начинкой из маринованной моркови и обернутый морскими водорослями. Рекомендуется употреблять холодным, а еще лучше вообще не есть.
+ent-FoodDonkpocketMoth = moth-pocket
+    .desc = Buzzy edition of donk-pocket that was created during mass protests ab-... Actually who cares? Just donk-pockets for moths.
+ent-FoodDonkpocketMothWarm = warm moth-pocket
+    .desc = { ent-FoodDonkpocketMoth.desc }

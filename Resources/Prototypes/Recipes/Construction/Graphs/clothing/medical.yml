@@ -7,13 +7,13 @@
         - to: modsuitmedical
           steps:
             - tag: ModsuitPlateMedical
-              name: покрытие мода "Медик"
+              name: construction-graph-tag-modsuit-plate-medical
               icon:
                 sprite: Objects/Specific/Mech/modcore_construction.rsi
                 state: medical
               doAfter: 2
             - tag: ModsuitAssembledPart
-              name: собранный каркас модсьюта
+              name: construction-graph-tag-modsuit-assembled-part
               icon:
                 sprite: Objects/Specific/Mech/modcore_construction.rsi
                 state: modcore8

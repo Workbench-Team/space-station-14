@@ -1,5 +1,6 @@
 ent-DrinkCanBaseFull = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
+    .suffix = Full
 ent-DrinkColaCan = банка космической колы
     .desc = Сладкий газированный безалкогольный напиток.
 ent-DrinkColaCanEmpty = { ent-DrinkColaCan }
@@ -37,8 +38,6 @@ ent-DrinkNukieCan = банка кроваво-красного варева
     .desc = Напиток собственной разработки, созданный безумными умами Синдиката. Не рекомендуется врачами.
 ent-DrinkEnergyDrinkCan = банка энергетика Ред Булеан
     .desc = Банка Ред Булеан, как известно, убивает лошадь.
-ent-DrinkCanPack = 6штук
-    .desc = Служит для удобного хранения сразу нескольких банок напитков.
 ent-DrinkShamblersJuiceCan = банка сока шамблера
     .desc = ~Взболтай мне немного сока Шамблера!~
 ent-DrinkPwrGameCan = банка PWR Game

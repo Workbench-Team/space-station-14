@@ -1,0 +1,58 @@
+- type: entity
+  parent: AnomalyScanner
+  id: AnomalyScannerRD
+  name: anomaly scanner
+  description: A hand-held scanner built to collect information on various anomalous objects.
+  components:
+  - type: AnomalyScanner
+    scanDoAfterDuration: 2
+  - type: Sprite
+    sprite: Starshine/Objects/Specific/Research/anomalyscanner_rd.rsi
+    layers:
+      - state: icon
+        map: ["enum.AnomalyScannerVisualLayers.Base"]
+      - map: ["enum.AnomalyScannerVisualLayers.Screen"]
+        visible: false
+        shader: unshaded
+      - state: severity_mask
+        sprite: Objects/Specific/Research/anomalyscanner.rsi
+        map: ["enum.AnomalyScannerVisualLayers.SeverityMask"]
+        visible: false
+        shader: unshaded
+      - map: ["enum.AnomalyScannerVisualLayers.Stability"]
+        visible: false
+        shader: unshaded
+      - visible: false
+        map: ["enum.AnomalyScannerVisualLayers.Pulse"]
+        shader: unshaded
+      - state: supercritical
+        sprite: Objects/Specific/Research/anomalyscanner.rsi
+        map: ["enum.AnomalyScannerVisualLayers.Supercritical"]
+        shader: unshaded
+        visible: false
+  - type: GenericVisualizer
+    visuals:
+      enum.AnomalyScannerVisuals.HasAnomaly:
+        enum.AnomalyScannerVisualLayers.Screen:
+          True: { visible: true }
+          False: { visible: false }
+        enum.AnomalyScannerVisualLayers.SeverityMask:
+          True: { visible: true }
+          False: { visible: false }
+      enum.AnomalyScannerVisuals.AnomalyStability:
+        enum.AnomalyScannerVisualLayers.Stability:
+          Stable: { visible: false }
+          Decaying: { visible: true, sprite: Objects/Specific/Research/anomalyscanner.rsi, state: decaying }
+          Growing: { visible: true, sprite: Objects/Specific/Research/anomalyscanner.rsi, state: growing }
+      enum.AnomalyScannerVisuals.AnomalyNextPulse:
+        enum.AnomalyScannerVisualLayers.Pulse:
+          0: { visible: false }
+          1: { visible: true, sprite: Objects/Specific/Research/anomalyscanner.rsi, state: timer_1 }
+          2: { visible: true, sprite: Objects/Specific/Research/anomalyscanner.rsi, state: timer_2 }
+          3: { visible: true, sprite: Objects/Specific/Research/anomalyscanner.rsi, state: timer_3 }
+          4: { visible: true, sprite: Objects/Specific/Research/anomalyscanner.rsi, state: timer_4 }
+          5: { visible: true, sprite: Objects/Specific/Research/anomalyscanner.rsi, state: timer_5 }
+      enum.AnomalyScannerVisuals.AnomalyIsSupercritical:
+        enum.AnomalyScannerVisualLayers.Supercritical:
+          True: { visible: true }
+          False: { visible: false }

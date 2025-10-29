@@ -23,18 +23,6 @@
       - id: MagazineLightRifleRubber
         amount: 4
 
-# Magnum
-- type: entity
-  name: box of Vector (rubber) magazines
-  parent: BoxMagazine
-  id: BoxMagazineMagnumSubMachineGunRubber
-  description: A box full of Vector (rubber) magazines.
-  components:
-  - type: StorageFill
-    contents:
-      - id: MagazineMagnumSubMachineGunRubber
-        amount: 3
-
 # Pistol
 - type: entity
   name: box of pistol .35 auto (rubber) magazines

@@ -16,6 +16,8 @@
     - /Audio/Lobby/atomicamnesiammx.ogg
     - /Audio/Lobby/thunderdome.ogg
     - /Audio/Ambience/ambispace.ogg
-    - /Audio/Lobby/clown.ogg
-    - /Audio/Lobby/lightness.ogg
-    - /Audio/Lobby/родина.ogg
+# Starshine-start
+    - /Audio/Starshine/Lobby/clown.ogg
+    - /Audio/Starshine/Lobby/lightness.ogg
+    - /Audio/Starshine/Lobby/родина.ogg
+# Starshine-end

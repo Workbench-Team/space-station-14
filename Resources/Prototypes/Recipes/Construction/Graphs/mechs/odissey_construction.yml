@@ -6,6 +6,9 @@
     edges:
     - to: odysseus
       steps:
+      - assemblyId: Odysseus
+        guideString: mech-construction-guide-string
+
       - tool: Anchoring
         doAfter: 1
         completed:
@@ -41,7 +44,7 @@
           data: 5
 
       - component: PowerCell
-        name: power cell
+        name: construction-graph-component-power-cell
         store: battery-container
         doAfter: 1
         icon:

@@ -30,3 +30,13 @@
     ears: ClothingHeadsetMining
   satchel: ClothingBackpackSatchelSalvageFilled
   duffelbag: ClothingBackpackDuffelSalvageFilled
+
+- type: chameleonOutfit
+  id: MinerChameleonOutfit
+  job: Miner
+  equipment:
+    head: ClothingHeadHelmetMiner
+    mask: ClothingMaskGasExplorer
+    jumpsuit: ClothingUniformJumpsuitMiner
+    outerClothing: ClothingOuterArmorMiner
+    shoes: ClothingShoesBootsSalvage

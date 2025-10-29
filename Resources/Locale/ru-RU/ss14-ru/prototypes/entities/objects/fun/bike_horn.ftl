@@ -6,3 +6,5 @@ ent-GoldenBikeHorn = золотой гудок
     .desc = Счастливый хонк приз, молитесь богам о своей награде.
 ent-BananiumHorn = бананиумовый гудок
     .desc = Гудок, сделанный из бананиума.
+ent-PushHorn = push horn
+    .desc = This powerful bikehorn is sure to blast frowns away.

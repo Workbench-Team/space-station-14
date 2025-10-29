@@ -1,4 +1,4 @@
-﻿import typing
+import typing
 
 from fluent.syntax import ast, FluentParser, FluentSerializer
 from lokalisemodels import LokaliseKey
@@ -91,9 +91,6 @@ class FluentSerializedMessage:
 
         if not attributes:
             attributes = []
-
-        if isinstance(parent_id, list):
-            parent_id = parent_id[0]
 
         if len(list(filter(lambda attr: attr.id == 'desc', attributes))) == 0:
             if parent_id:

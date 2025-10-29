@@ -26,7 +26,7 @@
   id: Headphones
   storage:
     back:
-    - ClothingNeckHeadphones
+    - ClothingMultipleHeadphones
 
 # Toys
 - type: loadout
@@ -56,30 +56,35 @@
   storage:
     back:
     - Lighter
+  groupBy: "smokeables"
 
 - type: loadout
   id: CigPackGreen
   storage:
     back:
     - CigPackGreen
+  groupBy: "smokeables"
 
 - type: loadout
   id: CigPackRed
   storage:
     back:
     - CigPackRed
+  groupBy: "smokeables"
 
 - type: loadout
   id: CigPackBlue
   storage:
     back:
     - CigPackBlue
+  groupBy: "smokeables"
 
 - type: loadout
   id: CigPackBlack
   storage:
     back:
     - CigPackBlack
+  groupBy: "smokeables"
 
 - type: loadout
   id: CigarCase
@@ -89,6 +94,7 @@
   storage:
     back:
     - CigarCase
+  groupBy: "smokeables"
 
 - type: loadout
   id: CigarGold
@@ -98,6 +104,7 @@
   storage:
     back:
     - CigarGold
+  groupBy: "smokeables"
 
 # Pins
 - type: loadout
@@ -105,12 +112,82 @@
   storage:
     back:
     - ClothingNeckAutismPin
+  groupBy: "pin"
 
 - type: loadout
   id: ClothingNeckGoldAutismPin
   storage:
     back:
     - ClothingNeckGoldAutismPin
+  groupBy: "pin"
+
+# Canes
+# The white cane is intentionally not included here. Thats for the blind.
+- type: loadout
+  id: OffsetCane
+  storage:
+    back:
+    - OffsetCane
+  groupBy: "canes"
+
+- type: loadout
+  id: OffsetCaneWood
+  storage:
+    back:
+    - OffsetCaneWood
+  groupBy: "canes"
+
+- type: loadout
+  id: OffsetCaneClown
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobClown
+      time: 3600 # 1hr
+  storage:
+    back:
+    - OffsetCaneClown
+  groupBy: "canes"
+
+- type: loadout
+  id: OffsetCaneMime
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobMime
+      time: 3600 # 1hr
+  storage:
+    back:
+    - OffsetCaneMime
+  groupBy: "canes"
+
+- type: loadout
+  id: OffsetCaneNT
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Command
+      time: 18000 # 5hr
+  storage:
+    back:
+    - OffsetCaneNT
+  groupBy: "canes"
+
+- type: loadout
+  id: Cane
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobLibrarian
+      time: 3600 # 1hr same as Jamjar.
+  storage:
+    back:
+    - Cane
+  groupBy: "canes"
 
 # Towels
 - type: loadout
@@ -123,6 +200,7 @@
   storage:
     back:
     - TowelColorWhite
+  groupBy: "towels"
 
 - type: loadout
   id: TowelColorSilver
@@ -134,6 +212,7 @@
   storage:
     back:
     - TowelColorSilver
+  groupBy: "towels"
 
 - type: loadout
   id: TowelColorGold
@@ -145,6 +224,7 @@
   storage:
     back:
     - TowelColorGold
+  groupBy: "towels"
 
 - type: loadout
   id: TowelColorLightBrown
@@ -157,6 +237,7 @@
   storage:
     back:
     - TowelColorLightBrown
+  groupBy: "towels"
 
 - type: loadout
   id: TowelColorGreen
@@ -169,6 +250,7 @@
   storage:
     back:
     - TowelColorGreen
+  groupBy: "towels"
 
 - type: loadout
   id: TowelColorDarkBlue
@@ -181,6 +263,7 @@
   storage:
     back:
     - TowelColorDarkBlue
+  groupBy: "towels"
 
 - type: loadout
   id: TowelColorOrange
@@ -193,6 +276,7 @@
   storage:
     back:
     - TowelColorOrange
+  groupBy: "towels"
 
 - type: loadout
   id: TowelColorLightBlue
@@ -205,6 +289,7 @@
   storage:
     back:
     - TowelColorLightBlue
+  groupBy: "towels"
 
 - type: loadout
   id: TowelColorPurple
@@ -217,6 +302,7 @@
   storage:
     back:
     - TowelColorPurple
+  groupBy: "towels"
 
 - type: loadout
   id: TowelColorRed
@@ -229,6 +315,7 @@
   storage:
     back:
     - TowelColorRed
+  groupBy: "towels"
 
 - type: loadout
   id: TowelColorGray
@@ -241,6 +328,7 @@
   storage:
     back:
     - TowelColorGray
+  groupBy: "towels"
 
 - type: loadout
   id: TowelColorBlack
@@ -253,6 +341,7 @@
   storage:
     back:
     - TowelColorBlack
+  groupBy: "towels"
 
 - type: loadout
   id: TowelColorDarkGreen
@@ -265,6 +354,7 @@
   storage:
     back:
     - TowelColorDarkGreen
+  groupBy: "towels"
 
 - type: loadout
   id: TowelColorMaroon
@@ -277,6 +367,7 @@
   storage:
     back:
     - TowelColorMaroon
+  groupBy: "towels"
 
 - type: loadout
   id: TowelColorYellow
@@ -289,6 +380,7 @@
   storage:
     back:
     - TowelColorYellow
+  groupBy: "towels"
 
 - type: loadout
   id: TowelColorMime
@@ -301,3 +393,4 @@
   storage:
     back:
     - TowelColorMime
+  groupBy: "towels"

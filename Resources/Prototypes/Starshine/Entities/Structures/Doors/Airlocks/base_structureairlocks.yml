@@ -1,0 +1,5 @@
+﻿- type: entity
+  id: AccessOnAlert
+  abstract: true
+  components:
+  - type: AccessOnAlert

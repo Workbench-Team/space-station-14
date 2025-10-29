@@ -7,13 +7,13 @@
         - to: modsuitstandard
           steps:
             - tag: ModsuitPlateStandard
-              name: покрытие мода "ЕВА"
+              name: construction-graph-tag-modsuit-plate-standard
               icon:
                 sprite: Objects/Specific/Mech/modcore_construction.rsi
                 state: standard
               doAfter: 2
             - tag: ModsuitAssembledPart
-              name: собранный каркас модсьюта
+              name: construction-graph-tag-modsuit-assembled-part
               icon:
                 sprite: Objects/Specific/Mech/modcore_construction.rsi
                 state: modcore8

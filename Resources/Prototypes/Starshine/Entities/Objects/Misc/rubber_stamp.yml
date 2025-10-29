@@ -9,4 +9,5 @@
     stampedColor: "#0b2915"
     stampState: "paper_stamp-consultant"
   - type: Sprite
+    sprite: Starshine/Objects/Misc/stamps.rsi
     state: stamp-consultant

@@ -16,3 +16,30 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSalvage ]
+
+- type: entity
+  parent: AirlockMaint
+  id: AirlockMaintCentralCommandLocked
+  suffix: CentralCommand, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentralCommand ]
+
+- type: entity
+  parent: AirlockSyndicateNukeopCommand
+  id: AirlockSyndicateNukeopCommandLocked
+  suffix: Nukeop, Command, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNukeopCommand ]
+
+- type: entity
+  parent: AirlockSyndicateNukeopCommandGlass
+  id: AirlockSyndicateNukeopCommandGlassLocked
+  suffix: Nukeop, Command, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNukeopCommand ]

@@ -62,7 +62,7 @@
       board: [ DoorElectronicsBarKitchen ]
 
 - type: entity
-  parent: Windoor
+  parent: [Windoor, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: WindoorCargoLocked
   suffix: Cargo, Locked
   components:
@@ -73,7 +73,7 @@
     layoutId: AirlockCargo
 
 - type: entity
-  parent: Windoor
+  parent: [Windoor, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: WindoorChapelLocked
   suffix: Chapel, Locked
   components:
@@ -100,7 +100,7 @@
       board: [ DoorElectronicsJanitor ]
 
 - type: entity
-  parent: WindoorPlasma
+  parent: [WindoorPlasma, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: PlasmaWindoorJanitorLocked
   suffix: Janitor, Locked, Plasma
   components:
@@ -129,7 +129,7 @@
       board: [ DoorElectronicsKitchenHydroponics ]
 
 - type: entity
-  parent: Windoor
+  parent: [Windoor, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: WindoorServiceLocked
   suffix: Service, Locked
   components:
@@ -209,7 +209,7 @@
       board: [ DoorElectronicsBrig ]
 
 - type: entity
-  parent: WindoorSecure
+  parent: [WindoorSecure, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: WindoorSecureCargoLocked
   suffix: Cargo, Locked
   components:
@@ -220,7 +220,7 @@
     layoutId: AirlockCargo
 
 - type: entity
-  parent: WindoorSecure
+  parent: [WindoorSecure, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: WindoorSecureChapelLocked
   suffix: Chapel, Locked
   components:
@@ -238,7 +238,7 @@
       board: [ DoorElectronicsChemistry ]
 
 - type: entity
-  parent: WindoorSecurePlasma
+  parent: [WindoorSecurePlasma, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: PlasmaWindoorSecureChemistryLocked
   suffix: Chemistry, Locked, Plasma
   components:
@@ -324,7 +324,7 @@
       board: [ DoorElectronicsDetective ]
 
 - type: entity
-  parent: WindoorSecure
+  parent: [WindoorSecure, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: WindoorSecureEngineeringLocked
   suffix: Engineering, Locked
   components:
@@ -335,7 +335,7 @@
     layoutId: AirlockEngineering
 
 - type: entity
-  parent: WindoorSecurePlasma
+  parent: [WindoorSecurePlasma, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: PlasmaWindoorSecureEngineeringLocked
   suffix: Engineering, Locked, Plasma
   components:
@@ -346,7 +346,7 @@
     layoutId: AirlockEngineering
 
 - type: entity
-  parent: WindoorSecureUranium
+  parent: [WindoorSecureUranium, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: UraniumWindoorSecureEngineeringLocked
   suffix: Engineering, Locked, Uranium
   components:
@@ -357,7 +357,7 @@
     layoutId: AirlockEngineering
 
 - type: entity
-  parent: WindoorSecure
+  parent: [WindoorSecure, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: WindoorSecureExternalLocked
   suffix: External, Locked
   components:
@@ -377,7 +377,7 @@
       board: [ DoorElectronicsJanitor ]
 
 - type: entity
-  parent: WindoorSecurePlasma
+  parent: [WindoorSecurePlasma, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: PlasmaWindoorSecureJanitorLocked
   suffix: Janitor, Locked, Plasma
   components:
@@ -406,7 +406,7 @@
       board: [ DoorElectronicsSecurityLawyer ]
 
 - type: entity
-  parent: WindoorSecure
+  parent: [WindoorSecure, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: WindoorSecureMedicalLocked
   suffix: Medical, Locked
   components:
@@ -415,6 +415,15 @@
       board: [ DoorElectronicsMedical ]
   - type: Wires
     layoutId: AirlockMedical
+
+- type: entity
+  parent: WindoorSecureCommandLocked
+  id: WindoorSecureResearchDirectorLocked
+  suffix: ResearchDirector, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsResearchDirector ]
 
 - type: entity
   parent: WindoorSecureCargoLocked
@@ -426,7 +435,7 @@
       board: [ DoorElectronicsSalvage ]
 
 - type: entity
-  parent: WindoorSecure
+  parent: [WindoorSecure, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: WindoorSecureSecurityLocked
   suffix: Security, Locked
   components:
@@ -437,7 +446,7 @@
     layoutId: AirlockSecurity
 
 - type: entity
-  parent: WindoorSecurePlasma
+  parent: [WindoorSecurePlasma, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: PlasmaWindoorSecureSecurityLocked
   suffix: Security, Locked, Plasma
   components:
@@ -448,7 +457,7 @@
     layoutId: AirlockSecurity
 
 - type: entity
-  parent: WindoorSecure
+  parent: [WindoorSecure, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: WindoorSecureScienceLocked
   suffix: Science, Locked
   components:
@@ -459,7 +468,7 @@
     layoutId: AirlockScience
 
 - type: entity
-  parent: WindoorSecurePlasma
+  parent: [WindoorSecurePlasma, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: PlasmaWindoorSecureScienceLocked
   suffix: Science, Locked, Plasma
   components:
@@ -470,7 +479,7 @@
     layoutId: AirlockScience
 
 - type: entity
-  parent: WindoorSecure
+  parent: [WindoorSecure, AccessOnAlert] # Starshine modified - AccessOnAlert
   id: WindoorSecureServiceLocked
   suffix: Service, Locked
   components:

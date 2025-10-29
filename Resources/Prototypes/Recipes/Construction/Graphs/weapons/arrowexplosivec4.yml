@@ -7,7 +7,7 @@
     - to: arrowexplosivec4
       steps:
       - tag: ArrowCompound
-        name: охотничью стрелу
+        name: construction-graph-tag-arrow-compound
         icon:
           sprite: Objects/Weapons/Guns/Bow/compoundbow.rsi
           state: wielded-arrowcompound
@@ -16,7 +16,7 @@
       - material: Cable
         amount: 3
       - tag: C4
-        name: взрывной заряд
+        name: construction-graph-tag-c4
         icon:
           sprite: Objects/Weapons/Bombs/c4.rsi
           state: icon

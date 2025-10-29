@@ -7,13 +7,13 @@
         - to: modsuitsecurity
           steps:
             - tag: ModsuitPlateSecurity
-              name: покрытие мода "Офицерский"
+              name: construction-graph-tag-modsuit-plate-security
               icon:
                 sprite: Objects/Specific/Mech/modcore_construction.rsi
                 state: security
               doAfter: 2
             - tag: ModsuitAssembledPart
-              name: собранный каркас модсьюта
+              name: construction-graph-tag-modsuit-assembled-part
               icon:
                 sprite: Objects/Specific/Mech/modcore_construction.rsi
                 state: modcore8

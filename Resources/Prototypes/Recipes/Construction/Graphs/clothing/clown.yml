@@ -7,13 +7,13 @@
         - to: modsuitclown
           steps:
             - tag: ModsuitPlateCosmohonk
-              name: покрытие мода "Клоун"
+              name: construction-graph-tag-modsuit-plate-cosmohonk
               icon:
                 sprite: Objects/Specific/Mech/modcore_construction.rsi
                 state: cosmohonk
               doAfter: 2
             - tag: ModsuitAssembledPart
-              name: собранный каркас модсьюта
+              name: construction-graph-tag-modsuit-assembled-part
               icon:
                 sprite: Objects/Specific/Mech/modcore_construction.rsi
                 state: modcore8

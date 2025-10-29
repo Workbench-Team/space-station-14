@@ -1,26 +1,30 @@
 - type: entity
+  abstract: true
   parent: IDCardStandard
+  id: IDCardStandardStarshine
+  components:
+  - type: Sprite
+    sprite: Starshine/Objects/Misc/id_cards.rsi
+
+- type: entity
+  parent: IDCardStandardStarshine
   id: BlueShieldIDCard
   name: blueshield ID card
   components:
   - type: Sprite
-    layers:
-    - state: blue
-    - state: idblueshield
+    state: idblueshield
   - type: Item
     heldPrefix: blue
   - type: PresetIdCard
     job: BlueShield
 
 - type: entity
-  parent: IDCardStandard
+  parent: IDCardStandardStarshine
   id: MinerIDCard
   name: salvage ID card
   components:
   - type: Sprite
-    layers:
-    - state: default
-    - state: idshaftminer
+    state: idsalvage
   - type: PresetIdCard
     job: Miner
 
@@ -30,21 +34,17 @@
   name: CentCom consultant ID card
   components:
   - type: Sprite
-    layers:
-    - state: centcom
-    - state: idcentcom
+    state: idcentcom
   - type: PresetIdCard
     job: CentComConsultant
 
 - type: entity
-  parent: IDCardStandard
+  parent: IDCardStandardStarshine
   id: ShuttlePilotIDCard
   name: shuttle pilot ID card
   components:
   - type: Sprite
-    layers:
-    - state: default
-    - state: idpilot
+    state: idpilot
   - type: PresetIdCard
     job: ShuttlePilot
   - type: IdCard

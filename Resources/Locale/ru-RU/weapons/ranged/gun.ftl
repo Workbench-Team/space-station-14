@@ -3,9 +3,9 @@ gun-fire-rate-examine = Скорострельность [color={ $color }]{ $fi
 gun-selector-verb = Изменить на { $mode }
 gun-selected-mode = Выбран { $mode }
 gun-disabled = Вы не можете использовать оружие!
-gun-clumsy = Оружие взрывается Вам в лицо!
 gun-set-fire-mode = Установлено на { $mode }
 gun-magazine-whitelist-fail = Это не помещается в оружие!
+gun-magazine-fired-empty = Нет патронов!
 # SelectiveFire
 gun-SemiAuto = полуавто
 gun-Burst = очередь
@@ -40,4 +40,7 @@ gun-revolver-full = Револьвер полностью заряжен
 gun-revolver-insert = Заряжен
 gun-revolver-spin = Вращать барабан
 gun-revolver-spun = Барабан вращается
+# GunSpreadModifier
+examine-gun-spread-modifier-reduction = The spread has been reduced by [color=yellow]{ $percentage }%[/color].
+examine-gun-spread-modifier-increase = The spread has been increased by [color=yellow]{ $percentage }%[/color].
 gun-speedloader-empty = Скоростной загрузчик пуст

@@ -1,4 +1,4 @@
-namespace Content.Server.AruMoon.StationGoal
+namespace Content.Server.Starshine.StationGoal
 {
     /// <summary>
     ///     Paper with a written station goal in it.

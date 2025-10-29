@@ -29,6 +29,7 @@
 <Box>
 <GuideEntityEmbed Entity="Holoprojector" Caption="голопроектор"/>
 <GuideEntityEmbed Entity="LightReplacer"/>
+<GuideEntityEmbed Entity="WireBrush"/>
 </Box>
 <Box>
 <GuideEntityEmbed Entity="AdvMopItem" Caption="Продвинутая швабра, попросите у РНД"/>

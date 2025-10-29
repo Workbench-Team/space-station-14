@@ -12,3 +12,6 @@ changelog-button-new-entries = Обновления (!)
 changelog-tab-title-Changelog = Изменения
 changelog-tab-title-ChangelogStarshine = Обновления Starshine
 changelog-tab-title-Admin = Админ
+changelog-tab-title-Maps = Maps
+cmd-changelog-desc = Opens the changelog.
+cmd-changelog-help = Usage: changelog

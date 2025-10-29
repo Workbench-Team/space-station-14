@@ -57,7 +57,7 @@
       - id: ClothingHeadHatPaper
       - id: ClothingHeadHatPirate
       - id: ClothingMaskSterile
-      - id: ClothingNeckHeadphones
+      - id: ClothingMultipleHeadphones
       - id: ClothingNeckTieRed
       - id: ClothingOuterCoatGentle
       - !type:AllSelector
@@ -105,6 +105,7 @@
       - id: ToySkeleton
       - id: Basketball
       - id: Football
+      - id: TennisBall
       - id: BalloonNT
       - id: BalloonCorgi
       - id: MysteryFigureBox
@@ -157,6 +158,8 @@
       - id: ClothingUniformJumpsuitFamilyGuy
       - id: WristwatchGold
       - id: RubberStampGreytide
+      - id: MysteryLighterBox
+      - id: GoldenPersonalAI
 
 - type: entity
   name: Maint Loot Spawner
@@ -342,6 +345,7 @@
       - id: Shiv
       - id: SawImprov
       - id: HydroponicsToolMiniHoe
+      - id: ClothingHandsKnuckleDusters
 
 - type: entity
   name: Maint Loot Spawner

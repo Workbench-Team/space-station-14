@@ -14,13 +14,13 @@ namespace Content.Server.Holosign
         /// How much signs can be for one holoprojector.
         /// </summary>
         [DataField]
-        public int MaxSigns = 10;
+        public int MaxSigns = 12;
 
         [DataField]
         public float DrawRatePerHolo = 1f;
 
         /// <summary>
-        /// Time in seconds need to set up hoosign.
+        /// Time in seconds need to set up holosign.
         /// </summary>
         [DataField]
         public float DeployTime = 0;

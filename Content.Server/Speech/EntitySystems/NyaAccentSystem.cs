@@ -1,17 +1,18 @@
 using System.Text.RegularExpressions;
 using Content.Server.Speech.Components;
+using Content.Shared.Speech;
 using Robust.Shared.Random;
 
 namespace Content.Server.Speech.EntitySystems;
 
 public sealed class NyaAccentSystem : EntitySystem
-{   
+{
     [Dependency] private readonly IRobustRandom _random = default!;
-    
+
     private static readonly Dictionary<string, string> DirectReplacements = new() {
-        {"иди нахуй", "хиииссс" },  
+        {"иди нахуй", "хиииссс" },
         {"иди нах", "хиииссс" },
-        
+
         {"дибилы", "баки" },
         {"дибил", "бака" },
 
@@ -22,12 +23,12 @@ public sealed class NyaAccentSystem : EntitySystem
         {"хуй", "буй" }, // :skull:
         {"хуе", "буе" },
         {"хуи", "буи" },
-        
+
         {"блять", "блин" },
         {"бля", "блин" },
 
         {"сук", "фуг" },
-        
+
         {"внимател", "внямател"}, //внямательно
         {"маги", "мяуги"}, //мяугия
         {"замечател", "замурчател"}, //замурчательно
@@ -61,11 +62,11 @@ public sealed class NyaAccentSystem : EntitySystem
         // Sentence ending
         var sentences = AccentSystem.SentenceRegex.Split(message);
         foreach (var s in sentences)
-        {   
+        {
             var new_s = s;
 
             if (!string.IsNullOrWhiteSpace(new_s) && _random.Prob(0.5f))
-            {   
+            {
                 // Logger.DebugS("nya", $"SENTENCE: {new_s}");
 
                 string last_sym = new_s.Substring(new_s.Length-1);

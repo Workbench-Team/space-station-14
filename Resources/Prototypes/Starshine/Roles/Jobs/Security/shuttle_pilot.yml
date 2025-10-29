@@ -34,7 +34,7 @@
   id: ShuttlePilotGear
   equipment:
     gloves: ClothingHandsGlovesCombat
-    eyes: ClothingEyesGlassesSunglasses
+    eyes: ClothingEyesGlassesSecurity
     id: ShuttlePilotPDA
     ears: ClothingHeadsetSecurity
     pocket1: WeaponPistolMk58Nonlethal
@@ -42,3 +42,15 @@
     back:
     - Flash
     - MagazinePistol
+
+- type: chameleonOutfit
+  id: ShuttlePilotChameleonOutfit
+  job: ShuttlePilot
+  hasMindShield: true
+  equipment:
+    eyes: ClothingEyesGlassesSecurity
+    mask: ClothingMaskGasSecurity
+    gloves: ClothingHandsGlovesCombat
+    jumpsuit: ClothingUniformJumpsuitSecGrey
+    outerClothing: ClothingOuterArmorBasic
+    shoes: ClothingShoesBootsJack

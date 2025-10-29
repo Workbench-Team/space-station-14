@@ -16,23 +16,29 @@ namespace Content.Client.Access.UI
         private readonly Dictionary<string, Button> _accessButtons = new();
 
         public event Action<List<ProtoId<AccessLevelPrototype>>>? OnSubmit;
+        public event Action<bool>? OnAlertAccessToggled; // Starshine-AccessOnAlert
 
         public AccessOverriderWindow()
         {
             RobustXamlLoader.Load(this);
+            AlertAccessToggle.OnToggled += OnAlertAccessButtonToggled; // Starshine-AccessOnAlert
+        }
+
+        // Starshine-AccessOnAlert
+        private void OnAlertAccessButtonToggled(BaseButton.ButtonToggledEventArgs args)
+        {
+            OnAlertAccessToggled?.Invoke(args.Pressed);
         }
 
         public void SetAccessLevels(IPrototypeManager protoManager, List<ProtoId<AccessLevelPrototype>> accessLevels)
         {
             _accessButtons.Clear();
-            AccessLevelGrid.DisposeAllChildren();
+            AccessLevelGrid.RemoveAllChildren();
 
             foreach (var access in accessLevels)
             {
-                if (!protoManager.TryIndex(access, out var accessLevel))
-                {
+                if (!protoManager.Resolve(access, out var accessLevel))
                     continue;
-                }
 
                 var newButton = new Button
                 {
@@ -42,57 +48,168 @@ namespace Content.Client.Access.UI
 
                 AccessLevelGrid.AddChild(newButton);
                 _accessButtons.Add(accessLevel.ID, newButton);
-                newButton.OnPressed += _ =>
-                {
-                    OnSubmit?.Invoke(
-                        // Iterate over the buttons dictionary, filter by `Pressed`, only get key from the key/value pair
-                        _accessButtons.Where(x => x.Value.Pressed).Select(x => new ProtoId<AccessLevelPrototype>(x.Key)).ToList());
-                };
+
+                newButton.OnPressed += _ => SubmitSelectedAccessLevels(); // Starshine-modified
             }
         }
 
+        #region Starshine-modified
+
+        private void SubmitSelectedAccessLevels()
+        {
+            var selected = _accessButtons
+                .Where(x => x.Value.Pressed)
+                .Select(x => new ProtoId<AccessLevelPrototype>(x.Key))
+                .ToList();
+
+            OnSubmit?.Invoke(selected);
+        }
+
         public void UpdateState(IPrototypeManager protoManager, AccessOverriderBoundUserInterfaceState state)
+        {
+            UpdatePrivilegedIdText(state);
+            UpdateTargetLabel(state);
+
+            var interfaceEnabled = state is { IsPrivilegedIdPresent: true, IsPrivilegedIdAuthorized: true } && state.TargetLabel != string.Empty;
+
+            UpdateMissingPrivilegesSection(protoManager, state, interfaceEnabled, out var hasMissingPrivileges);
+
+            var alertAccessVisible = interfaceEnabled && state.HasRequiredAlertAccess && !hasMissingPrivileges;
+
+            UpdateAccessButtonsState(state, interfaceEnabled);
+            UpdateAlertAccessButton(state, alertAccessVisible);
+        }
+
+        private void UpdatePrivilegedIdText(AccessOverriderBoundUserInterfaceState state)
         {
             PrivilegedIdLabel.Text = state.PrivilegedIdName;
             PrivilegedIdButton.Text = state.IsPrivilegedIdPresent
                 ? Loc.GetString("access-overrider-window-eject-button")
                 : Loc.GetString("access-overrider-window-insert-button");
+        }
 
-            TargetNameLabel.Text = state.TargetLabel;
+        private void UpdateTargetLabel(AccessOverriderBoundUserInterfaceState state)
+        {
+            TargetNameLabel.Text = state.TargetLabel == string.Empty ? Loc.GetString("access-overrider-window-no-target") : state.TargetLabel;
             TargetNameLabel.FontColorOverride = state.TargetLabelColor;
+        }
 
-            MissingPrivilegesLabel.Text = "";
-            MissingPrivilegesLabel.FontColorOverride = Color.Yellow;
+        private void UpdateMissingPrivilegesSection(IPrototypeManager protoManager, AccessOverriderBoundUserInterfaceState state, bool interfaceEnabled, out bool hasMissingPrivileges)
+        {
+            hasMissingPrivileges = false;
 
-            MissingPrivilegesText.Text = "";
-            MissingPrivilegesText.FontColorOverride = Color.Yellow;
+            ResetTextFields();
 
-            if (state.MissingPrivilegesList != null && state.MissingPrivilegesList.Any())
+            if (!interfaceEnabled)
+                return;
+
+            if (state.MissingPrivilegesList?.Length > 0)
             {
-                var missingPrivileges = new List<string>();
-
-                foreach (string tag in state.MissingPrivilegesList)
-                {
-                    var privilege = Loc.GetString(protoManager.Index<AccessLevelPrototype>(tag)?.Name ?? "generic-unknown");
-                    missingPrivileges.Add(privilege);
-                }
-
-                MissingPrivilegesLabel.Text = Loc.GetString("access-overrider-window-missing-privileges");
-                MissingPrivilegesText.Text = string.Join(", ", missingPrivileges);
+                hasMissingPrivileges = true;
+                UpdateMissingPrivilegesText(protoManager, state.MissingPrivilegesList);
+            }
+            else if (state is { HasRequiredAlertAccess: false, AlertAccessRequired.Length: > 0 })
+            {
+                UpdateAlertAccessRequiredText(protoManager, state.AlertAccessRequired);
             }
 
-            var interfaceEnabled = state.IsPrivilegedIdPresent && state.IsPrivilegedIdAuthorized;
+            if (state.AddedAlertAccess?.Length > 0)
+                UpdateAddedAlertAccessText(protoManager, state.AddedAlertAccess);
 
+            if (state.LockedAlertAccess?.Length > 0)
+                UpdateLockedAlertAccessText(protoManager, state.LockedAlertAccess);
+        }
+
+        private void ResetTextFields()
+        {
+            var yellowColor = Color.Yellow;
+
+            MissingPrivilegesLabel.Text = "";
+            MissingPrivilegesLabel.FontColorOverride = yellowColor;
+            MissingPrivilegesText.Text = "";
+            MissingPrivilegesText.FontColorOverride = yellowColor;
+
+            AlertAccessMissingPrivilegesLabel.Text = "";
+            AlertAccessMissingPrivilegesLabel.FontColorOverride = yellowColor;
+            AlertAccessMissingPrivilegesText.Text = "";
+            AlertAccessMissingPrivilegesText.FontColorOverride = yellowColor;
+
+            AddedAccessByAlertLabel.Text = "";
+            AddedAccessByAlertLabel.FontColorOverride = Color.Orange;
+
+            LockedAccessByAlertLabel.Text = "";
+            LockedAccessByAlertLabel.FontColorOverride = Color.OrangeRed;
+        }
+
+        private void UpdateMissingPrivilegesText(IPrototypeManager protoManager, ProtoId<AccessLevelPrototype>[] missingPrivileges)
+        {
+            var localizedPrivileges = GetLocalizedPrivileges(protoManager, missingPrivileges);
+
+            MissingPrivilegesLabel.Text = Loc.GetString("access-overrider-window-missing-privileges");
+            MissingPrivilegesText.Text = string.Join(", ", localizedPrivileges);
+            AlertAccessMissingPrivilegesLabel.Text = Loc.GetString("access-overrider-window-alert-access-missing-privileges");
+        }
+
+        private void UpdateAlertAccessRequiredText(IPrototypeManager protoManager, ProtoId<AccessLevelPrototype>[] requiredPrivileges)
+        {
+            var localizedPrivileges = GetLocalizedPrivileges(protoManager, requiredPrivileges);
+
+            AlertAccessMissingPrivilegesLabel.Text = Loc.GetString("access-overrider-window-alert-access-missing-required-privileges");
+            AlertAccessMissingPrivilegesText.Text = string.Join(", ", localizedPrivileges);
+        }
+
+        private void UpdateLockedAlertAccessText(IPrototypeManager protoManager, ProtoId<AccessLevelPrototype>[] lockedPrivileges)
+        {
+            var localizedPrivileges = GetLocalizedPrivileges(protoManager, lockedPrivileges);
+
+            LockedAccessByAlertLabel.Text = Loc.GetString("access-overrider-window-alert-locked-privileges", ("lockedAccesses", string.Join(", ", localizedPrivileges)));
+        }
+
+        private void UpdateAddedAlertAccessText(IPrototypeManager protoManager, ProtoId<AccessLevelPrototype>[] addedPrivileges)
+        {
+            var localizedPrivileges = GetLocalizedPrivileges(protoManager, addedPrivileges);
+
+            AddedAccessByAlertLabel.Text = Loc.GetString("access-overrider-window-alert-added-privileges", ("alertAccesses", string.Join(", ", localizedPrivileges)));
+        }
+
+        private List<string> GetLocalizedPrivileges(IPrototypeManager protoManager, ProtoId<AccessLevelPrototype>[] privilegeTags)
+        {
+            var privileges = new List<string>(privilegeTags.Length);
+
+            foreach (var tag in privilegeTags)
+            {
+                var prototype = protoManager.Index(tag);
+                var privilegeName = Loc.GetString(prototype.Name ?? "generic-unknown");
+                privileges.Add(privilegeName);
+            }
+
+            return privileges;
+        }
+
+        private void UpdateAlertAccessButton(AccessOverriderBoundUserInterfaceState state, bool alertAccessVisible)
+        {
+            AlertAccessToggle.Text = state.HasAlertAccess
+                ? Loc.GetString("access-overrider-window-alert-access-button-on")
+                : Loc.GetString("access-overrider-window-alert-access-button-off");
+
+            AlertAccessToggle.Pressed = state.HasAlertAccess;
+            AlertAccessToggle.Disabled = !alertAccessVisible;
+        }
+
+        private void UpdateAccessButtonsState(AccessOverriderBoundUserInterfaceState state, bool interfaceEnabled)
+        {
             foreach (var (accessName, button) in _accessButtons)
             {
                 button.Disabled = !interfaceEnabled;
-                if (interfaceEnabled)
-                {
-                    // Explicit cast because Rider gives a false error otherwise.
-                    button.Pressed = state.TargetAccessReaderIdAccessList?.Contains((ProtoId<AccessLevelPrototype>) accessName) ?? false;
-                    button.Disabled = (!state.AllowedModifyAccessList?.Contains((ProtoId<AccessLevelPrototype>) accessName)) ?? true;
-                }
+
+                if (!interfaceEnabled)
+                    continue;
+
+                var accessId = (ProtoId<AccessLevelPrototype>)accessName;
+                button.Pressed = state.TargetAccessReaderIdAccessList?.Contains(accessId) ?? false;
+                button.Disabled = !(state.AllowedModifyAccessList?.Contains(accessId) ?? true);
             }
         }
+        #endregion
     }
 }

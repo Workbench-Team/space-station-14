@@ -8,4 +8,4 @@ department-Security = Служба безопасности
 department-Science = Научный отдел
 department-Silicon = Синтетики
 department-Specific = Для конкретной станции
-department-CentcomSpecialists = Специалисты ЦентКома
+department-Unknown = Unknown

@@ -1,0 +1,14 @@
+ent-MagazineCaselessRifleRubber = магазин (.25 безгильзовые резиновые)
+    .desc = { ent-BaseMagazineCaselessRifle.desc }
+ent-MagazineUniversal = магазин универсальный (12.7 безгильзовые)
+    .desc = { ent-BaseMagazineCaselessRifleShort.desc }
+ent-BaseMagazineUniversal = магазин универсальный (12.7 безгильзовые)
+    .desc = { ent-BaseMagazineCaselessRifleShort.desc }
+ent-MagazineUniversalHv = магазин универсальный (12.7 безгильзовые бронебойные)
+    .desc = { ent-BaseMagazineCaselessRifleShort.desc }
+ent-BaseMagazineUniversalShort = магазин универсальный короткий (12.7 безгильзовые)
+    .desc = { ent-BaseMagazineCaselessRifleShort.desc }
+ent-MagazineUniversalShort = магазин универсальный короткий (12.7 безгильзовые)
+    .desc = { ent-BaseMagazineCaselessRifleShort.desc }
+ent-MagazineUniversalShortHv = магазин универсальный короткий (12.7 безгильзовые бронебойные)
+    .desc = { ent-BaseMagazineCaselessRifleShort.desc }

@@ -6,7 +6,11 @@
     edges:
     - to: clark
       steps:
+      - assemblyId: Clark
+        guideString: mech-construction-guide-string
+
       - tag: ConveyorAssembly
+        name: construction-graph-tag-conveyor-belt-assembly
         doAfter: 1
         completed:
         - !type:VisualizerDataInt
@@ -50,7 +54,7 @@
           data: 6
 
       - component: PowerCell
-        name: power cell
+        name: construction-graph-component-power-cell
         store: battery-container
         doAfter: 1
         icon:

@@ -96,6 +96,9 @@ namespace Content.Shared.Atmos
         public const float OxygenMolesFreezer = MolesCellFreezer * OxygenStandard;
         public const float NitrogenMolesFreezer = MolesCellFreezer * NitrogenStandard;
 
+        public const float OxygenMolesGasMiner = MolesCellGasMiner * OxygenStandard;
+        public const float NitrogenMolesGasMiner = MolesCellGasMiner * NitrogenStandard;
+
         #endregion
 
         /// <summary>
@@ -174,6 +177,19 @@ namespace Content.Shared.Atmos
             [Gas.Plasma] = Loc.GetString("gas-plasma-abbreviation"),
             [Gas.Tritium] = Loc.GetString("gas-tritium-abbreviation"),
             [Gas.WaterVapor] = Loc.GetString("gas-water-vapor-abbreviation"),
+            #region Starshine-gases
+            [Gas.AntiNoblium] = Loc.GetString("gas-anti-noblium-abbreviation"),
+            [Gas.BZ] = Loc.GetString("gas-bz-abbreviation"),
+            [Gas.Halon] = Loc.GetString("gas-halon-abbreviation"),
+            [Gas.Healium] = Loc.GetString("gas-healium-abbreviation"),
+            [Gas.Helium] = Loc.GetString("gas-helium-abbreviation"),
+            [Gas.Hydrogen] = Loc.GetString("gas-hydrogen-abbreviation"),
+            [Gas.HyperNoblium] = Loc.GetString("gas-hyper-noblium-abbreviation"),
+            [Gas.Nitrium] = Loc.GetString("gas-nitrium-abbreviation"),
+            [Gas.Pluoxium] = Loc.GetString("gas-pluoxium-abbreviation"),
+            [Gas.ProtoNitrate] = Loc.GetString("gas-proto-nitrate-abbreviation"),
+            [Gas.Zauker] = Loc.GetString("gas-zauker-abbreviation"),
+            #endregion
         };
 
         #region Excited Groups
@@ -362,8 +378,7 @@ namespace Content.Shared.Atmos
         ///     (The pressure threshold is so low that it doesn't make sense to do any calculations,
         ///     so it just applies this flat value).
         /// </summary>
-        // Original value is 4, buff back when we have proper ways for players to deal with breaches.
-        public const int LowPressureDamage = 1;
+        public const int LowPressureDamage = 4;
 
         public const float WindowHeatTransferCoefficient = 0.1f;
 

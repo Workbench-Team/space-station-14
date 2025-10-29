@@ -7,3 +7,7 @@ ent-Matchbox = спичечный коробок
 ent-MatchstickSpent = { ent-Matchstick }
     .desc = { ent-Matchstick.desc }
     .suffix = использована
+ent-GorlexMatchbox = Gorlex match box
+    .desc = A pneumatic match box styled after the Gorlex Marauders' equipment. Contains 24 matches.
+ent-GorlexMatchstick = match stick
+    .desc = A military grade match stick, used for lighting fine smokables and noncombatants alike.

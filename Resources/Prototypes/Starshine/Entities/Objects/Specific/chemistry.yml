@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BaseBeaker, DrinkBottleVisualsOpenable]
+  parent: [BaseBeaker, DrinkVisualsOpenable]
   id: ChemistryBottleBase
   abstract: true
   components:

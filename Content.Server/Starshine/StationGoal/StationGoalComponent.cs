@@ -1,6 +1,6 @@
 using Robust.Shared.Prototypes;
 
-namespace Content.Server.AruMoon.StationGoal
+namespace Content.Server.Starshine.StationGoal
 {
     /// <summary>
     ///     if attached to a station prototype, will send the station a random goal from the list

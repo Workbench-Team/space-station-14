@@ -1,3 +1,7 @@
+ent-BaseEntitySpellAction = { ent-BaseAction }
+    .desc = { ent-BaseAction.desc }
+ent-BaseSmiteAction = { ent-BaseEntitySpellAction }
+    .desc = { ent-BaseEntitySpellAction.desc }
 ent-ActionSmite = Кара
     .desc = Мгновенно гибает цель.
 ent-ActionSmiteNoReq = { ent-ActionSmite }

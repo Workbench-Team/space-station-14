@@ -140,3 +140,5 @@ seeds-cherry-name = вишня
 seeds-cherry-display-name = вишнёвое дерево
 seeds-anomaly-berry-name = аномальная ягода
 seeds-anomaly-berry-display-name = аномальные ягоды
+seeds-bloonion-name = bloonion
+seeds-bloonion-display-name = bloonion bulbs

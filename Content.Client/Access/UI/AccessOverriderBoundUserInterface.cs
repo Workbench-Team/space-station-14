@@ -28,8 +28,15 @@ namespace Content.Client.Access.UI
             RefreshAccess();
             _window.Title = EntMan.GetComponent<MetaDataComponent>(Owner).EntityName;
             _window.OnSubmit += SubmitData;
+            _window.OnAlertAccessToggled += OnAlertAccessToggled; // Starshine-AccessOnAlert
 
             _window.PrivilegedIdButton.OnPressed += _ => SendMessage(new ItemSlotButtonPressedEvent(PrivilegedIdCardSlotId));
+        }
+
+        // Starshine-AccessOnAlert
+        private void OnAlertAccessToggled(bool alertAccessEnabled)
+        {
+            SendMessage(new AlertAccessToggledMessage(alertAccessEnabled));
         }
 
         public override void OnProtoReload(PrototypesReloadedEventArgs args)

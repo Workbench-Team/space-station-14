@@ -11,27 +11,27 @@
         icon:
           sprite: Structures/Piping/Atmospherics/pipe.rsi
           state: pipeStraight
-        name: pipe
-      - tag: CapacitorStockPart
+        name: construction-graph-tag-pipe
+      - tag: MicroManipulatorStockPart
         icon:
           sprite: Objects/Misc/stock_parts.rsi
           state: capacitor
-        name: capacitor
+        name: construction-graph-tag-manipulator
       - tag: PowerCellSmall
         icon:
           sprite: Objects/Power/power_cells.rsi
           state: small
-        name: power cell small
+        name: construction-graph-tag-power-cell-small
       - tag: PowerCellSmall
         icon:
           sprite: Objects/Power/power_cells.rsi
           state: small
-        name: power cell small
+        name: construction-graph-tag-power-cell-small
       - tag: EmitterCircuitBoard
         icon:
           sprite: Objects/Misc/module.rsi
           state: engineering
-        name: emitter circuit board
+        name: construction-graph-tag-emitter-circuit-board
       - material: Plasteel
         amount: 10
         doAfter: 10

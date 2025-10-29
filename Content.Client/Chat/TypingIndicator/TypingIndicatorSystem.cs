@@ -15,8 +15,10 @@ public sealed class TypingIndicatorSystem : SharedTypingIndicatorSystem
 
     private readonly TimeSpan _typingTimeout = TimeSpan.FromSeconds(2);
     private TimeSpan _lastTextChange;
-    private TypingIndicatorState State;
-    private bool isChatBoxActive;
+    private bool _isClientTyping;
+    private bool _isClientTypingQuestion; // Starshine-Speech-Bubble
+    private bool _isClientExclamation; // Starshine-Speech-Bubble
+    private bool _isClientChatFocused;
 
     public override void Initialize()
     {
@@ -25,56 +27,19 @@ public sealed class TypingIndicatorSystem : SharedTypingIndicatorSystem
         Subs.CVar(_cfg, CCVars.ChatShowTypingIndicator, OnShowTypingChanged);
     }
 
-    public void ClientFocusChat()
-    {
-        // don't update it if player don't want to show typing indicator
-        if (!_cfg.GetCVar(CCVars.ChatShowTypingIndicator))
-            return;
-
-        isChatBoxActive = true;
-
-        // client typed something - show typing indicator
-        ClientUpdateTyping(TypingIndicatorState.Thinking);
-        _lastTextChange = _time.CurTime;
-    }
-
-    public void ClientUnFocusChat()
-    {
-        isChatBoxActive = false;
-
-        ClientUpdateTyping(TypingIndicatorState.None);
-    }
-
-    public void ClientChangedChatText()
+    public void ClientChangedChatText(TypingIndicatorState state)
     {
         // don't update it if player don't want to show typing indicator
         if (!_cfg.GetCVar(CCVars.ChatShowTypingIndicator))
             return;
 
         // client typed something - show typing indicator
-        ClientUpdateTyping(TypingIndicatorState.Typing);
-        _lastTextChange = _time.CurTime;
-    }
-
-    public void ClientChangedChatTextQuestion()
-    {
-        // don't update it if player don't want to show typing indicator
-        if (!_cfg.GetCVar(CCVars.ChatShowTypingIndicator))
-            return;
-
-        // client typed something - show typing indicator
-        ClientUpdateTyping(TypingIndicatorState.TypingQuestion);
-        _lastTextChange = _time.CurTime;
-    }
-
-    public void ClientChangedChatTextAction()
-    {
-        // don't update it if player don't want to show typing indicator
-        if (!_cfg.GetCVar(CCVars.ChatShowTypingIndicator))
-            return;
-
-        // client typed something - show typing indicator
-        ClientUpdateTyping(TypingIndicatorState.TypingAction);
+    #region Starshine-Speech-Bubble
+        _isClientTyping = state == TypingIndicatorState.Typing;
+        _isClientTypingQuestion = state == TypingIndicatorState.Question;
+        _isClientExclamation = state == TypingIndicatorState.Exclamation;
+    #endregion
+        ClientUpdateTyping();
         _lastTextChange = _time.CurTime;
     }
 
@@ -85,39 +50,62 @@ public sealed class TypingIndicatorSystem : SharedTypingIndicatorSystem
             return;
 
         // client submitted text - hide typing indicator
-        ClientUpdateTyping(TypingIndicatorState.None);
+        _isClientTyping = false;
+        ClientUpdateTyping();
+    }
+
+    public void ClientChangedChatFocus(bool isFocused)
+    {
+        // don't update it if player don't want to show typing
+        if (!_cfg.GetCVar(CCVars.ChatShowTypingIndicator))
+            return;
+
+        // client submitted text - hide typing indicator
+        _isClientChatFocused = isFocused;
+        ClientUpdateTyping();
     }
 
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
 
-        // check if client didn't changed chat text box for a long time and still chatbox is open
-        if (State != TypingIndicatorState.None)
+        if (!_time.IsFirstTimePredicted)
+            return;
+
+        // check if client didn't changed chat text box for a long time
+        if (_isClientTyping)
         {
             var dif = _time.CurTime - _lastTextChange;
             if (dif > _typingTimeout)
             {
-                if(isChatBoxActive)
-                {
-                    // client didn't typed anything for a long time - change state to thinking
-                    ClientUpdateTyping(TypingIndicatorState.Thinking);
-                }
+                // client didn't typed anything for a long time - change indicator
+                _isClientTyping = false;
+                ClientUpdateTyping();
             }
         }
     }
 
-    private void ClientUpdateTyping(TypingIndicatorState state)
+    private void ClientUpdateTyping()
     {
-        if (State == state)
-            return;
-
-        State = state;
-
-        // check if player controls any entity.
+        // check if player controls any pawn
         if (_playerManager.LocalEntity == null)
             return;
 
+        var state = TypingIndicatorState.None;
+        if (_isClientChatFocused)
+        #region Starshine-Speech-Bubble
+        {
+            if (_isClientTypingQuestion)
+                state = TypingIndicatorState.Question;
+            else if (_isClientExclamation)
+                state = TypingIndicatorState.Exclamation;
+            else
+                state = _isClientTyping ? TypingIndicatorState.Typing : TypingIndicatorState.Idle;
+        }
+        #endregion
+
+
+        // send a networked event to server
         RaisePredictiveEvent(new TypingChangedEvent(state));
     }
 
@@ -126,7 +114,8 @@ public sealed class TypingIndicatorSystem : SharedTypingIndicatorSystem
         // hide typing indicator immediately if player don't want to show it anymore
         if (!showTyping)
         {
-            ClientUpdateTyping(TypingIndicatorState.None);
+            _isClientTyping = false;
+            ClientUpdateTyping();
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: [DrinkCartonVisualsOpenable, DrinkCartonBaseFull]
+  parent: [DrinkCartonBaseFull]
   id: DrinkJuiceCartonBase
   name: apple juice
   description: Juice release 3023, fresh acid-pressed, with added apple seed extract and donk flavours.
@@ -79,24 +79,6 @@
       - state: icon
         map: ["enum.OpenableVisuals.Layer"]
       - state: label-banana
-
-- type: entity
-  parent: DrinkJuiceCartonBase
-  id: DrinkJuicePineappleCarton
-  name: pineapple juice
-  description: This is a refreshing drink that has a bright and fresh flavour. Each drop of this juice is like a small star, bringing joy and pleasure after a hard day's work in outer space. Its flavour fills the station's offices with notes of tropical fruits, creating an atmosphere of coziness and comfort even in the conditions of distant space.
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        reagents:
-        - ReagentId: JuicePineapple
-          Quantity: 50
-  - type: Sprite
-    layers:
-      - state: icon
-        map: ["enum.OpenableVisuals.Layer"]
-      - state: label-pineapple
 
 - type: entity
   parent: DrinkJuiceCartonBase

@@ -9,7 +9,7 @@
   ## Ноды Артефактов
   <Box>
     <GuideEntityEmbed Entity="ComplexXenoArtifact" Caption=""/>
-    <GuideEntityEmbed Entity="SimpleXenoArtifactItem" Caption=""/>
+    <GuideEntityEmbed Entity="ComplexXenoArtifactItem" Caption=""/>
   </Box>
   Артефакты состоят из случайно сгенерированного древа нод (узлов). У этих нод есть "[color=#a4885c]глубина[/color]", показывающая, насколько опасна нода, и количество других нод, соединённых с ней, называемых "[color=#a4885c]гранями[/color]",
 

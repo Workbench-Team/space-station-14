@@ -82,7 +82,7 @@
   id: ConsultantGear
   equipment:
     shoes: ClothingShoesBootsLaceup
-    eyes: ClothingEyesGlassesSunglasses
+    eyes: ClothingEyesGlassesCommand
     gloves: ClothingHandsGlovesLatex
     id: CentcomConsultantPDA
     ears: ClothingHeadsetCentCom
@@ -93,3 +93,16 @@
     - BoxSurvival
     - Flash
     - TelescopicBaton
+
+- type: chameleonOutfit
+  id: ConsultantChameleonOutfit
+  job: CentComConsultant
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatCentcomConsultantCap
+    eyes: ClothingEyesGlassesCommand
+    neck: ClothingNeckScarfStripedCentcom
+    gloves: ClothingHandsGlovesLatex
+    jumpsuit: ClothingUniformJumpsuitCentcomConsultant
+    outerClothing: ClothingOuterCoatCentcomConsultant
+    shoes: ClothingShoesBootsLaceup

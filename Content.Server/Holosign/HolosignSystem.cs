@@ -1,5 +1,4 @@
 using Content.Shared.Examine;
-using Content.Server.DoAfter;
 using Content.Server.Popups;
 using Content.Server.Power.EntitySystems;
 using Content.Shared.Destructible;
@@ -20,7 +19,6 @@ namespace Content.Server.Holosign
 {
     public sealed class HolosignSystem : EntitySystem
     {
-        [Dependency] private readonly DoAfterSystem _doAfterSystem = default!;
         [Dependency] private readonly PopupSystem _popupSystem = default!;
         [Dependency] private readonly IEntityManager _entManager = default!;
         [Dependency] private readonly PowerCellSystem _powerCell = default!;
@@ -51,7 +49,7 @@ namespace Content.Server.Holosign
             }
 
             // Not a holosign or holosign what put on map by mapper.
-            if(args.Target == null || !EntityManager.TryGetComponent(args.Target.Value, out HolosignBarrierComponent? holosigncomponent))
+            if(args.Target == null || !EntityManager.HasComponent<HolosignBarrierComponent>(args.Target.Value))
             {
                 return;
             }
@@ -112,7 +110,6 @@ namespace Content.Server.Holosign
         {
             var drawComp = Comp<PowerCellDrawComponent>(uid);
             drawComp.DrawRate = component.DrawRatePerHolo * component.Childs.Count;
-            _powerCell.QueueUpdate((uid, drawComp));
             _powerCell.SetDrawEnabled((uid, drawComp), activated);
         }
 
@@ -129,7 +126,7 @@ namespace Content.Server.Holosign
             }
 
             ClearHolosignsVerb(entity.Owner, entity.Comp);
-            _audio.PlayPvs(_audio.GetSound(new SoundPathSpecifier("/Audio/Machines/buzz-two.ogg")), entity.Owner);
+            _audio.PlayPvs(_audio.ResolveSound(new SoundPathSpecifier("/Audio/Machines/buzz-two.ogg")), entity.Owner);
             _popupSystem.PopupPredicted(Loc.GetString("holoprojector-component-oop"),
                 entity.Owner,
                 null,
@@ -210,8 +207,7 @@ namespace Content.Server.Holosign
             {
                 // places the holographic sign at the click location, snapped to grid.
                 // overlapping of the same holo on one tile remains allowed to allow holofan refreshes
-                var holoUid =
-                    EntityManager.SpawnEntity(component.SignProto, args.ClickLocation.SnapToGrid(EntityManager));
+                var holoUid = Spawn(component.SignProto, args.ClickLocation.SnapToGrid(EntityManager));
                 var xform = Transform(holoUid);
                 if (!xform.Anchored)
                 {

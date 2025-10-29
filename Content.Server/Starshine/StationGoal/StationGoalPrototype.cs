@@ -1,11 +1,11 @@
 using Robust.Shared.Prototypes;
 
-namespace Content.Server.AruMoon.StationGoal
+namespace Content.Server.Starshine.StationGoal
 {
     [Serializable, Prototype("stationGoal")]
     public sealed class StationGoalPrototype : IPrototype
     {
-        [IdDataFieldAttribute]
+        [IdDataField]
         public string ID { get; } = default!;
 
         [DataField]
@@ -22,6 +22,6 @@ namespace Content.Server.AruMoon.StationGoal
         /// TODO: They should be spun up at the tradepost instead of at the fax machine, but I'm too lazy to do that right now. Maybe in the future.
         /// </summary>
         [DataField]
-        public List<EntProtoId> Spawns = new();
+        public List<EntProtoId> Spawns = [];
     }
 }

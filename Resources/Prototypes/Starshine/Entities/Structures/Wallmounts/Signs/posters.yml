@@ -1,0 +1,16 @@
+- type: entity
+  parent: PosterBase
+  id: PosterBaseStarshine
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Starshine/Structures/Wallmounts/posters.rsi
+
+- type: entity
+  parent: PosterBaseStarshine
+  id: PosterContrabandSOPIsShit
+  name: "SOP is shit"
+  description: "A poster encouraging people crew to stop using 'standard operating procedures' because they are inefficient and boring."
+  components:
+    - type: Sprite
+      state: poster84_contraband

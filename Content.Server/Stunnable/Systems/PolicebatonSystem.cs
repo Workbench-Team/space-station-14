@@ -19,7 +19,6 @@ namespace Content.Server.Stunnable.Systems
 
             SubscribeLocalEvent<PolicebatonComponent, ExaminedEvent>(OnExamined);
             SubscribeLocalEvent<PolicebatonComponent, StaminaDamageOnHitAttemptEvent>(OnStaminaHitAttempt);
-            SubscribeLocalEvent<PolicebatonComponent, ItemToggledEvent>(ToggleDone);
         }
 
         private void OnStaminaHitAttempt(Entity<PolicebatonComponent> entity, ref StaminaDamageOnHitAttemptEvent args)
@@ -35,14 +34,6 @@ namespace Content.Server.Stunnable.Systems
                 ? Loc.GetString("comp-policebaton-telescopic-examined-on")
                 : Loc.GetString("comp-policebaton-telescopic-examined-off");
             args.PushMarkup(onMsg);
-        }
-
-        private void ToggleDone(Entity<PolicebatonComponent> entity, ref ItemToggledEvent args)
-        {
-            if (!TryComp<ItemComponent>(entity, out var item))
-                return;
-
-            _item.SetHeldPrefix(entity.Owner, args.Activated ? "on" : "off", component: item);
         }
     }
 }

@@ -4,7 +4,7 @@
   id: PlushieSharkStarshineBase
   components:
   - type: Sprite
-    sprite: Starshine/Objects/Fun/sharkplush.rsi
+    sprite: Starshine/Objects/Fun/Plushies/shark.rsi
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Items/Toys/rawr.ogg

@@ -1,3 +1,5 @@
+ent-BaseMechAction = { ent-BaseAction }
+    .desc = { ent-BaseAction.desc }
 ent-ActionMechCycleEquipment = Цикл
     .desc = Циклы выбранного в данный момент оборудования
 ent-ActionMechOpenUI = Панель управления

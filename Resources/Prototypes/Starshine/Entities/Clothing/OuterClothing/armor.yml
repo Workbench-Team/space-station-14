@@ -91,6 +91,7 @@
   - type: Tag
     tags:
     - MinerArmor
+    - WhitelistChameleon
 
 - type: entity
   parent: ClothingOuterSyndieArmorMinerBase
@@ -110,6 +111,7 @@
   - type: Tag
     tags:
     - SyndieMinerArmor
+    - WhitelistChameleon
 
 - type: entity
   parent: ClothingOuterSyndieArmorMinerBase

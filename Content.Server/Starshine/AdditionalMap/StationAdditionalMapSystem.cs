@@ -6,8 +6,8 @@
  * BY Ed, discord: eshhhed, github: TheShuEd.
  */
 
-using Content.Server.Station.Components;
 using Content.Server.Station.Events;
+using Content.Shared.Station.Components;
 using Robust.Server.GameObjects;
 using Robust.Shared.EntitySerialization;
 using Robust.Shared.EntitySerialization.Systems;

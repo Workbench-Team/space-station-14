@@ -33,6 +33,24 @@ public sealed partial class AccessOverriderComponent : Component
         }
     }
 
+    #region Starshine-AccessOnAlert
+
+    [Serializable, NetSerializable]
+    public sealed class AlertAccessToggledMessage : BoundUserInterfaceMessage
+    {
+        public readonly bool AlertAccessEnabled;
+
+        public AlertAccessToggledMessage(bool alertAccessEnabled)
+        {
+            AlertAccessEnabled = alertAccessEnabled;
+        }
+    }
+
+    [DataField]
+    public List<ProtoId<AccessLevelPrototype>> AlertAccessRequired = [];
+
+    #endregion
+
     [DataField, AutoNetworkedField]
     public List<ProtoId<AccessLevelPrototype>> AccessLevels = new();
 
@@ -48,12 +66,22 @@ public sealed partial class AccessOverriderComponent : Component
         public readonly string PrivilegedIdName;
         public readonly bool IsPrivilegedIdPresent;
         public readonly bool IsPrivilegedIdAuthorized;
+        public readonly bool HasAlertAccess; // Starshine-AccessOnAlert
+        public readonly bool HasRequiredAlertAccess; // Starshine-AccessOnAlert
+        public readonly ProtoId<AccessLevelPrototype>[]? AlertAccessRequired; // Starshine-AccessOnAlert
+        public readonly ProtoId<AccessLevelPrototype>[]? AddedAlertAccess; // Starshine-AccessOnAlert
+        public readonly ProtoId<AccessLevelPrototype>[]? LockedAlertAccess; // Starshine-AccessOnAlert
         public readonly ProtoId<AccessLevelPrototype>[]? TargetAccessReaderIdAccessList;
         public readonly ProtoId<AccessLevelPrototype>[]? AllowedModifyAccessList;
         public readonly ProtoId<AccessLevelPrototype>[]? MissingPrivilegesList;
 
         public AccessOverriderBoundUserInterfaceState(bool isPrivilegedIdPresent,
             bool isPrivilegedIdAuthorized,
+            bool hasAlertAccess, // Starshine-AccessOnAlert
+            bool hasRequiredAlertAccess, // Starshine-AccessOnAlert
+            ProtoId<AccessLevelPrototype>[]? alertAccessRequired, // Starshine-AccessOnAlert
+            ProtoId<AccessLevelPrototype>[]? addedAlertAccess, // Starshine-AccessOnAlert
+            ProtoId<AccessLevelPrototype>[]? lockedAlertAccess, // Starshine-AccessOnAlert
             ProtoId<AccessLevelPrototype>[]? targetAccessReaderIdAccessList,
             ProtoId<AccessLevelPrototype>[]? allowedModifyAccessList,
             ProtoId<AccessLevelPrototype>[]? missingPrivilegesList,
@@ -63,6 +91,11 @@ public sealed partial class AccessOverriderComponent : Component
         {
             IsPrivilegedIdPresent = isPrivilegedIdPresent;
             IsPrivilegedIdAuthorized = isPrivilegedIdAuthorized;
+            HasAlertAccess = hasAlertAccess; // Starshine-AccessOnAlert
+            HasRequiredAlertAccess = hasRequiredAlertAccess; // Starshine-AccessOnAlert
+            AlertAccessRequired = alertAccessRequired; // Starshine-AccessOnAlert
+            AddedAlertAccess = addedAlertAccess; // Starshine-AccessOnAlert
+            LockedAlertAccess = lockedAlertAccess; // Starshine-AccessOnAlert
             TargetAccessReaderIdAccessList = targetAccessReaderIdAccessList;
             AllowedModifyAccessList = allowedModifyAccessList;
             MissingPrivilegesList = missingPrivilegesList;
@@ -78,3 +111,19 @@ public sealed partial class AccessOverriderComponent : Component
         Key,
     }
 }
+
+#region Starshine-AccessOnAlert
+public sealed class AccessOverriderValidateModifyEvent : CancellableEntityEventArgs
+{
+    public EntityUid TargetReader { get; }
+    public List<ProtoId<AccessLevelPrototype>> ProposedAccess { get; }
+
+    public string? CancelReason { get; set; }
+
+    public AccessOverriderValidateModifyEvent(EntityUid targetReader, List<ProtoId<AccessLevelPrototype>> proposedAccess)
+    {
+        TargetReader = targetReader;
+        ProposedAccess = proposedAccess;
+    }
+}
+#endregion

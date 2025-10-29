@@ -20,3 +20,5 @@ ent-ActionToggleSpeedBoots = Переключить ботинки скорос�
     .desc = Включает и выключает ботинки скорости.
 ent-ClothingShoesBootsMoon = лунные ботинки
     .desc = Специальные антигравитационные ботинки, разработанные с использованием специальной смеси геля лунных пород.
+ent-ClothingShoesBootsJump = jump boots
+    .desc = High-tech boots that give you the incredible ability to JUMP! With these boots you can jump over lava, chasms and weird chemicals on the floor!

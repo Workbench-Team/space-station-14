@@ -6,6 +6,9 @@
     edges:
     - to: gygax
       steps:
+      - assemblyId: Gygax
+        guideString: mech-construction-guide-string
+
       - tool: Anchoring
         doAfter: 1
         completed:
@@ -41,7 +44,7 @@
           data: 5
 
       - component: PowerCell
-        name: power cell
+        name: construction-graph-component-power-cell
         store: battery-container
         icon:
           sprite: Objects/Power/power_cells.rsi
@@ -80,6 +83,7 @@
           data: 10
 
       - tag: GygaxArmor
+        name: construction-graph-tag-gygax-armor
         doAfter: 1
         completed:
         - !type:VisualizerDataInt

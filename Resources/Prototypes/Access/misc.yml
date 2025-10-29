@@ -33,9 +33,10 @@
   - Chapel
   - Hydroponics
   - Atmospherics
+  - GenpopEnter
+  - GenpopLeave
 
 - type: accessGroup
-  id: AllAccessSyndicate
+  id: General
   tags:
-  - SyndicateAgent
-  - NuclearOperative
+  - Maintenance

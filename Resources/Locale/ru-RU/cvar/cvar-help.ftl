@@ -24,3 +24,7 @@ changecvar-simple-playtest_reagent_heal_modifier = Множитель, влия�
 changecvar-full-playtest_reagent_heal_modifier = Множитель, влияющий на все исцеления реагентами.
 changecvar-simple-playtest_explosion_damage_modifier = Множитель, влияющий на урон от взрыва.
 changecvar-full-playtest_explosion_damage_modifier = Множитель, влияющий на весь урон, наносимый взрывами.
+changecvar-simple-playtest_stamina_damage_modifier = Множитель, влияющий на урон выносливости.
+changecvar-full-playtest_stamina_damage_modifier = Множитель, влияющий на весь наносимый урон выносливости.
+changecvar-simple-playtest_mob_damage_modifier = Множитель, влияющий на весь урон, наносимый мобам.
+changecvar-full-playtest_mob_damage_modifier = Множитель, влияющий на весь урон, наносимый сущностям с компонентом MobStateComponent.
