@@ -166,7 +166,15 @@
     whitelist:
     - SalvageSpecialist
 
-
+- type: listing
+  id: UplinklothingShoesChameleonStealsBootsJack
+  name: uplink-clothing-shoes-chameleon-steals-boots-jack-name
+  description: uplink-clothing-shoes-chameleon-steals-boots-jack-desc
+  productEntity: ClothingShoesChameleonStealsBootsJack
+  cost:
+    Telecrystal: 3
+  categories:
+  - UplinkWearables
 
 #- type: listing
 #  id: UplinkSyndicateMauler

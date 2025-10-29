@@ -1,4 +1,3 @@
-## Starshine
 uplink-bow-bundle-name = Набор композитного лука
 uplink-bow-bundle-desc = Скрытая угроза: Композитный лук, созданный компанией Cybersun. Имеет с собой колчан стрел.
 
@@ -37,3 +36,6 @@ uplink-m90gl-bundle-desc = Старая винтовка типа булпап. 
 
 uplink-bee-grenade-name = Пчелиная граната
 uplink-bee-grenade-desc = Граната, полная агрессивных  пчёл. Учтите, что пчёлы будут также агрессивны и к ВАМ.
+
+uplink-clothing-shoes-chameleon-steals-boots-jack-name = Стелс ботинки
+uplink-clothing-shoes-chameleon-steals-boots-jack-desc = Попробуйте себя в роли ниндзя Синдиката! Ботинки не издают звука при ходьбе, и вы не замедлите шаг, если будете тяжело ранены.
