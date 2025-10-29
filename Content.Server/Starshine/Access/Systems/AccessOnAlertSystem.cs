@@ -75,6 +75,7 @@ public sealed class AccessOnAlertSystem : EntitySystem
             return;
 
         TryRemoveAlertAccesses(uid, alertComp, mainAccessReader.Value);
+        var ev = new AlertAccessUpdatedEvent(uid);
 
         if (settings.AlertAccessMappings.TryGetValue(alertLevel, out var lockedAccesses))
         {
@@ -83,6 +84,7 @@ public sealed class AccessOnAlertSystem : EntitySystem
         else
         {
             alertComp.LockedAlertAccesses.Clear();
+            RaiseLocalEvent(ev);
             return;
         }
 
@@ -98,7 +100,6 @@ public sealed class AccessOnAlertSystem : EntitySystem
             alertComp.AddedAlertAccesses.Add(access);
         }
 
-        var ev = new AlertAccessUpdatedEvent(uid);
         RaiseLocalEvent(ev);
     }
 
@@ -107,10 +108,8 @@ public sealed class AccessOnAlertSystem : EntitySystem
         if (alertComp.AddedAlertAccesses.Count == 0)
             return false;
 
-        if (!_accessReader.GetMainAccessReader(uid, out var mainAccessReader))
-            return false;
-
-        return TryRemoveAlertAccesses(uid, alertComp, mainAccessReader.Value);
+        return _accessReader.GetMainAccessReader(uid, out var mainAccessReader) &&
+               TryRemoveAlertAccesses(uid, alertComp, mainAccessReader.Value);
     }
 
     public bool TryRemoveAlertAccesses(EntityUid uid, AccessOnAlertComponent alertComp, Entity<AccessReaderComponent> mainAccessReader)
