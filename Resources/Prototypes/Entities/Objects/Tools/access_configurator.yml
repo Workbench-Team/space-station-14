@@ -18,6 +18,9 @@
       slots:
         - Belt
     - type: AccessOverrider
+      alertAccessRequired:
+      - Engineering
+      - Security
       accessLevels:
       - Armory
       - Atmospherics
