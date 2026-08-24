@@ -1,57 +1,51 @@
 <Document>
-  # Ксеноархеология
-  Ксеноархеология - это научный подотдел, занимающийся исследованиями и экспериментами над инопланетными артефактами.
+  # Xenoarchaeology
 
-  At the start of each shift, the Science department will usually have access to at least two artifacts to experiment on. You can buy more by talking to the Cargo department.
+  Xenoarchaeology is a branch of Science focused on researching alien [bold]artifacts[/bold].
 
-  By researching the unique things each artifact can do, you gain Research Points, increase the artifact's sale value, and potentially discover a useful ability or two that can help your department or the whole station!
+  Unlocking their secrets grants research points and reveals strange, potentially useful, or dangerous effects.
 
-  ## Ноды Артефактов
+  At round start, Science usually has one or two artifacts in the lab. More can be:
+  - Ordered from [color=orange]Cargo[/color]
+  - Found by [color=orange]Salvage[/color]
+  - Assembled from [bold]fragments[/bold]
+  - Appear during certain station events
+
+  ## Artifacts
   <Box>
     <GuideEntityEmbed Entity="ComplexXenoArtifact" Caption=""/>
     <GuideEntityEmbed Entity="ComplexXenoArtifactItem" Caption=""/>
   </Box>
-  Артефакты состоят из случайно сгенерированного древа нод (узлов). У этих нод есть "[color=#a4885c]глубина[/color]", показывающая, насколько опасна нода, и количество других нод, соединённых с ней, называемых "[color=#a4885c]гранями[/color]",
 
-  Артефакты всегда начинаются с нулевой глубины, корня древа. Путешествие по древу с целью найти как можно больше нод - главная цель учёных, работающих над ними. Из нод извлекаются знания, чтобы получить очки исследований и повысить продажную стоимость артефакта.
+  Artifacts contain [bold]nodes[/bold] arranged in [bold]layers[/bold].
+  - Unlocking a node unlocks connected nodes on upper layers.
+  - Each node has [bold]triggers[/bold], actions that must be performed near the artifact to unlock a node.
+  - When a node is unlocked, its [bold]effect[/bold] will trigger, and the node becomes [bold][color=plum]Active[/color][/bold].
+  - Each node has [bold]durability[/bold]: the number of times it can be manually activated after being unlocked.
+  - Higher nodes are harder to reach but give more [bold]research points[/bold].
+  - Unlocking all nodes provides no special bonus, but every node yields research points.
 
-  Каждая нода состоит из двух компонентов: [color=#a4885c]стимула[/color] и [color=#a4885c]реакции[/color].
-
-  Стимул - это внешнее поведение, которое вызывает реакцию. Их существует множество, и в нодах с большей глубиной есть более трудновыполнимые стимулы. Для запуска некоторых стимулов потребуется импровизация, и вам, возможно, придется обратиться в другие отделы, чтобы получить все необходимое.
-
-  Некоторые реакции вызывают мгновенные эффекты, а другие - постоянные изменения. Когда артефакт активируется, реакция вызывает случайное перемещение артефакта в другую ноду, с которой он связан.
-
-  Проведя некоторые эксперименты, вы сможете понять, как связаны различные ноды артефакта и как перемещаться между ними, многократно активируя ноды.
-
-  Все ноды с ненулевой глубиной имеют ровно одну грань, ведущую вверх к родительской ноде. Все остальные грани ноды ведут вниз, на следующую глубину.
-
-  ## Анализатор артефактов и Аналитическая консоль
+  ## Equipment
   <Box>
-    <GuideEntityEmbed Entity="MachineArtifactAnalyzer"/>
-    <GuideEntityEmbed Entity="ComputerAnalysisConsole"/>
+    <GuideEntityEmbed Entity="MachineArtifactAnalyzer" Caption="Analyzer"/>
+    <GuideEntityEmbed Entity="ComputerAnalysisConsole" Caption="Analysis Console"/>
+    <GuideEntityEmbed Entity="NodeScanner" Caption="Node Scanner"/>
   </Box>
-  Основное снаряжение, которое Вы будете использовать в Ксеноархеологии - это [color=#a4885c]анализатор артефактов[/color] и [color=#a4885c]аналитическая консоль[/color]. Вы можете использовать их для создания отчетов, содержащих ценную информацию об артефакте.
+  - [bold]Artifact Analyzer:[/bold] Stationary device that scans artifacts, sending data to the Console.
+  - [bold][textlink="Analysis Console:" link="AnalysisConsole"][/bold] Stationary device that is used to display the node tree. Must be linked to an Analyzer with a multitool.
+  - [bold]Node Scanner:[/bold] Small hand-held device that can show the ID of the node currently being activated and whether the artifact is ready to trigger, letting scientist have minimal required knowledge for operating inside chamber near artifact and far without direct access to console.
 
-  Чтобы настроить их, просто соедините их с помощью конфигуратора сети и поместите артефакт поверх анализатора. На каждой станции уже установлена как минимум одна такая машина.
-
-  Используйте кнопку [color=#a4885c]Сканировать[/color] на консоли, чтобы узнать, какой стимул нужен артефакту и какова будет его реакция. Сканирование занимает тридцать секунд.
-
-  Используйте кнопку [color=#a4885c]Печать[/color], чтобы сохранить результат сканирования и обратиться к нему позже.
-
-  Обнаружив новую ноду, вы можете извлечь очки из артефакта с помощью кнопки [color=#a4885c]Извлечь[/color].
-
-  ## Сборка артефакта
-  <GuideEntityEmbed Entity="ArtifactFragment" Caption="Фрагмент Артефакта"/>
-
-  Можно собрать несколько фрагментов артефактов и собрать их в рабочий артефакт. Их можно попросить у Утилизатора, который обычно находит их при добыче астероидов или во время экспедиций.
-
-  ## Обход смещений
   <Box>
-    <GuideEntityEmbed Entity="MachineArtifactAnalyzer"/>
+    <GuideEntityEmbed Entity="CrateArtifactContainer" Caption="Artifact Container"/>
+    <GuideEntityEmbed Entity="HandheldArtifactContainer" Caption="Handheld Container"/>
   </Box>
-  Артефакты, помещенные на анализатор артефактов с питанием, подвергаются смещению, которое влияет на то, в какой узел они переместятся после активации. Смещение можно настроить в консоли артефактов.
-
-  Существует два типа смещений:
-  - [color=#a4885c]Вверх:[/color] отдаёт предпочтение нодам, расположенным ближе к началу древа. Это приводит к уменьшению глубины.
-  - [color=#a4885c]Вниз:[/color] предпочтение отдается нодам, расположенным дальше от начала древа. Это приводит к увеличению глубины.
+  - [bold]Artifact Containers:[/bold] Safely store and transports artifacts and prevent nodes from triggering.
+  <Box>
+    <GuideEntityEmbed Entity="MachineArtifactCrusher" Caption="Crusher"/>
+  </Box>
+  - [bold]Artifact Crusher:[/bold] Crushes artifacts into fragments. Four fragments can be rebuilt into a new artifact.
+  <Box>
+    <GuideEntityEmbed Entity="ArtifactFragment" Caption="Artifact Fragment"/>
+  </Box>
+  - [bold]Artifact Fragment:[/bold] Pieces of destroyed artifacts. Four fragments can be rebuilt into a new artifact using the craft menu.
 </Document>

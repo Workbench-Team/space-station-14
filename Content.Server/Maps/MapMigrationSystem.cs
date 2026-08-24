@@ -15,13 +15,11 @@ namespace Content.Server.Maps;
 /// <summary>
 ///     Performs basic map migration operations by listening for engine <see cref="MapLoaderSystem"/> events.
 /// </summary>
-public sealed class MapMigrationSystem : EntitySystem
+public sealed partial class MapMigrationSystem : EntitySystem
 {
-#pragma warning disable CS0414
-    [Dependency] private readonly IPrototypeManager _protoMan = default!;
-#pragma warning restore CS0414
-    [Dependency] private readonly IResourceManager _resMan = default!;
+    [Dependency] private IResourceManager _resMan = default!;
 
+    // Starshine-Changes: Added multi-migration file support
     private static readonly string[] MigrationFiles = ["/migration.yml", "/starshine_migration.yml"];
 
     public override void Initialize()
@@ -40,7 +38,7 @@ public sealed class MapMigrationSystem : EntitySystem
             {
                 var newId = ((ValueDataNode) node).Value;
                 if (!string.IsNullOrEmpty(newId) && newId != "null")
-                    DebugTools.Assert(_protoMan.HasIndex<EntityPrototype>(newId), $"{newId} is not an entity prototype.");
+                    DebugTools.Assert(ProtoMan.HasIndex<EntityPrototype>(newId), $"{newId} is not an entity prototype.");
             }
         }
 #endif

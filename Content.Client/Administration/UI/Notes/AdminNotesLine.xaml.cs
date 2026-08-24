@@ -70,7 +70,7 @@ public sealed partial class AdminNotesLine : BoxContainer
 
         TimeLabel.Text = Note.CreatedAt.ToLocalTime().ToString("dd-MM-yyyy HH:mm:ss");
         ServerLabel.Text = Note.ServerName ?? "Неизвестно";
-        RoundLabel.Text = Note.Round == null ? "Неизвестный раунд" : "Раунд " + Note.Round;
+        RoundLabel.Text = Note.Rounds.Length == 0 ? "Неизвестный раунд" : "Раунд " + string.Join(',', Note.Rounds);
         AdminLabel.Text = Note.CreatedByName;
         PlaytimeLabel.Text = $"{Note.PlaytimeAtNote.TotalHours: 0.0}ч";
 
@@ -82,7 +82,11 @@ public sealed partial class AdminNotesLine : BoxContainer
 
         if (Note.UnbannedTime is not null)
         {
-            ExtraLabel.Text = Loc.GetString("admin-notes-unbanned", ("admin", Note.UnbannedByName ?? "[error]"), ("date", Note.UnbannedTime));
+            ExtraLabel.Text = Loc.GetString(
+                "admin-notes-unbanned",
+                ("admin", Note.UnbannedByName ?? "[error]"),
+                ("date", Note.UnbannedTime.Value.ToLocalTime().ToString("dd-MM-yyyy HH:mm:ss"))
+            );
             ExtraLabel.Visible = true;
         }
         else if (Note.ExpiryTime is not null)
@@ -139,7 +143,12 @@ public sealed partial class AdminNotesLine : BoxContainer
 
     private string FormatRoleBanMessage()
     {
-        var banMessage = new StringBuilder($"{Loc.GetString("admin-notes-banned-from")} {string.Join(", ", Note.BannedRoles ?? new []{"неизвестно"})} ");
+        var rolesText = string.Join(
+            ", ",
+            // Explicit cast here to avoid sandbox violation.
+            (IEnumerable<BanRoleDef>?)Note.BannedRoles ?? [new BanRoleDef("what", "Вы не должны это видеть")]);
+
+        var banMessage = new StringBuilder($"{Loc.GetString("admin-notes-banned-from")} {rolesText} ");
         return FormatBanMessageCommon(banMessage);
     }
 
