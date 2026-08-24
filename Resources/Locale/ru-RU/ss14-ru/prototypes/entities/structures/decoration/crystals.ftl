@@ -1,3 +1,5 @@
+ent-BaseCrystalStalagmite = crystal
+    .desc = An outcrop of jagged crystals.
 ent-CrystalGreen = кристалл
     .desc = Кристаллический твёрдый материал.
     .suffix = зелёный

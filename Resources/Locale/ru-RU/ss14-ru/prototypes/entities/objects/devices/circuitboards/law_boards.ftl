@@ -1,3 +1,5 @@
+ent-BaseSiliconLawboard = { ent-BaseElectronics }
+    .desc = An electronics board containing a silicon lawset.
 ent-NTDefaultCircuitBoard = плата законов (NT стандарт)
     .desc = Электронная плата, хранящая набор законов 'NT стандарт'.
 ent-AsimovCircuitBoard = плата законов (Крюзимов)
@@ -22,6 +24,8 @@ ent-ArtistCircuitBoard = плата законов (Художник)
     .desc = Электронная плата, хранящая набор законов 'Художник'.
 ent-AntimovCircuitBoard = плата законов (Антимов)
     .desc = Электронная плата, хранящая набор законов 'Антимов'.
+ent-SyndimovCircuitBoard = law board (Syndimov)
+    .desc = An electronics board containing the Syndimov lawset.
 ent-NutimovCircuitBoard = плата законов (Орехимов)
     .desc = Электронная плата, хранящая набор законов 'Орехимов'.
 ent-XenoborgCircuitBoard = плата законов (Ксеноборг)

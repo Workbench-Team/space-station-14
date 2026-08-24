@@ -1,5 +1,9 @@
 ent-BaseShield = базовый щит
     .desc = Щит!
+ent-BaseShieldDestructible = { "" }
+    .desc = { "" }
+ent-BaseRepairableShield = base repairable shield
+    .desc = A repairable shield!
 ent-RiotShield = противоударный щит
     .desc = Большой башенный щит на случай беспорядков. Хорошо подходит для контроля толпы.
 ent-RiotLaserShield = противолазерный щит

@@ -8,7 +8,11 @@ guardian-activator-empty-examine = [color=#ba1919]Инжектор израсх�
 guardian-activator-invalid-target = Только гуманоиды подходят для инъекции!
 guardian-no-soul = У Вашего стража нет души.
 guardian-available = У Вашего стража теперь есть душа.
+guardian-injector-empty-invalid-creation = The injector is spent.
+guardian-injector-empty-examine = [color=#ba1919]The injector is spent.[/color]
 guardian-inside-container = Здесь не хватает места, чтобы высвободить стража!
+guardian-deck-invalid-creation = The deck can only provide one guardian at a time!
+guardian-deck-used-examine = [color=#ba1919]The deck's magic has been used up.[/color]
 
 ## Guardian entity specific
 

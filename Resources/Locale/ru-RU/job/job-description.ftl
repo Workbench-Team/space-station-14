@@ -34,8 +34,11 @@ job-description-librarian = Управляйте библиотекой, раз�
 job-description-mime = Развлекайте экипаж, не говоря и не пиша, и вступайте в лёгкое соперничество с клоуном.
 job-description-musician = Развлеките экипаж своим уникальным музыкальным талантом и приобретите новые инструменты, чтобы поиграть на них.
 job-description-passenger = Наслаждайтесь пребыванием на борту станции без каких-либо обязательств!
+job-description-tram-driver = Drive around a tram from stop to stop.
 job-description-psychologist = Окажите эмоциональную поддержку травмированному экипажу. Доступно на данный момент на Marathon, Cog и Oasis станциях!
 job-description-qm = Управляйте снабжением станции и грузовым отделом, обеспечивайте работу утилизаторов, следите за тем, чтобы заказы выполнялись, и следите за тем, чтобы деньги текли.
+# Misc.
+job-description-centcommoff = Act as liaison to the newest state-of-the-art space station in Nanotrasen's fleet.
 job-description-rd = Управляйте научным отделом, открывайте технологии, приобретите и исследуйте артефакты и проводите эксперименты.
 job-description-research-assistant = Изучите основы исследования различных артефактов, аномалий и робототехники.
 job-description-reporter = Развлекайте и информируйте экипаж своей яркой журналистикой через беспроводные камеры, радио и новости. Доступно на данный момент только на станциях Bagel, Cog, Core, Train и Oasis!

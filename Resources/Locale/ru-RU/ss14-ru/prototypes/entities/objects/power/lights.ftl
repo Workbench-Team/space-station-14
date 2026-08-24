@@ -1,3 +1,5 @@
+ent-BaseReplacementLight = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
 ent-BaseLightbulb = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-BaseLightTube = { ent-BaseLightbulb }

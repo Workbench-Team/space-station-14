@@ -16,3 +16,5 @@ ent-MobMimeBot = мимбот
     .desc = Почему бы дружелюбно не помахать мимботу?
 ent-MobSupplyBot = грузобот
     .desc = Доставляет грузы!
+ent-MobHugBot = hugbot
+    .desc = Awww, who needs a hug?

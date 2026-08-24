@@ -10,5 +10,7 @@ reagent-name-foaming-agent = пенообразующий агент
 reagent-desc-foaming-agent = Делает пену, подобную той, что требуется для гранат с металлической пеной.
 reagent-name-welding-fuel = сварочное топливо
 reagent-desc-welding-fuel = Используется сварщиками для сварки.
+reagent-name-xenoborg-oil = xenoborg oil
+reagent-desc-xenoborg-oil = A light oil used to slip and burn organics.
 reagent-name-fluorosurfactant = фторсурфактант
 reagent-desc-fluorosurfactant = Перфторированная сульфоновая кислота, образующая пену при смешивании с водой.

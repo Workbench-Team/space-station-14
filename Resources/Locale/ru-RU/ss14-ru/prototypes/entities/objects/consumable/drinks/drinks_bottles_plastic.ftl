@@ -1,8 +1,14 @@
+ent-DrinkBottlePlasticBase = { ent-DrinkBaseMaterialPlastic }
+    .desc = { ent-DrinkBaseMaterialPlastic.desc }
 ent-DrinkBottlePlasticBaseFull = { ent-DrinkBaseMaterialPlastic }
     .suffix = Full
     .desc = { ent-DrinkBaseMaterialPlastic.desc }
+ent-CustomDrinkJugFilled = beverage jug
+    .suffix = Full
+    .desc = { ent-CustomDrinkJug.desc }
 ent-DrinkBottlePlasticSmallBaseFull = { ent-DrinkBottlePlasticBaseFull }
     .desc = { ent-DrinkBottlePlasticBaseFull.desc }
+    .suffix = Full
 ent-CustomDrinkJug = beverage jug
     .desc = A jug for storing custom made drinks.
 ent-DrinkWaterBottleFull = water bottle

@@ -12,3 +12,6 @@ store-ui-button-out-of-stock = { "" } (Нет в наличии)
 store-not-account-owner = Этот { $store } не принадлежит вам!
 store-preset-name-uplink = Аплинк
 store-preset-name-spellbook = Книга заклинаний
+store-preset-name-nukie-delivery = NukeOps Bluespace Delivery
+store-preset-name-changeling = DNA Store
+store-listing-locked = Locked

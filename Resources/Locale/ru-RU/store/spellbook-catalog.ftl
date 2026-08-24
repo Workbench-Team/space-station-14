@@ -33,6 +33,8 @@ spellbook-slip-name = Скользкая дорожка
 spellbook-slip-desc = Изучите древние приёмы уборщиков и прокляните вашу цель, чтобы та была скользкой. Необходимо иметь шляпу и робу волшебника.
 spellbook-item-recall-name = Отзыв предмета
 spellbook-item-recall-description = Пометьте удерживаемый предмет и вызовите его обратно в любой момент одним щелчком пальцев!
+spellbook-guardian-deck-name = Tarot Deck
+spellbook-guardian-deck-description = A bizarre deck of card that grants you a spectral guardian when used.
 
 # Equipment
 

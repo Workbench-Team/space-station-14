@@ -18,6 +18,7 @@ disposal-self-insert-verb-get-data-text = Залезть внутрь
 
 ## No hands
 
+disposal-unit-is-full = There's no more room inside.
 disposal-unit-no-hands = У Вас нет рук!
 # state
 disposal-unit-state-Ready = Готов

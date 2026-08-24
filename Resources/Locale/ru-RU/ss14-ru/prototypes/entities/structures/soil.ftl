@@ -1,3 +1,5 @@
+ent-BaseHydroponicsSoil = { ent-SolutionLarge }
+    .desc = { ent-SolutionLarge.desc }
 ent-hydroponicsSoil = почва
     .desc = { "" }
 ent-FungalSoil = fungal soil

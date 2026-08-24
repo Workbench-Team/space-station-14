@@ -9,6 +9,8 @@ apc-menu-charge-label = { $percent } заряжено
 
 apc-menu-power-state-good = Хорошее
 apc-menu-power-state-low = Слабое
+apc-menu-power-state-label-text = { POWERWATTS($power) } / { POWERWATTS($maxLoad) }
+apc-menu-power-state-label-tripped = OVERLOAD
 apc-menu-power-state-none = Отсутствует
 apc-menu-flavor-left = Свяжитесь с инженером для помощи.
 apc-menu-flavor-right = v1.1

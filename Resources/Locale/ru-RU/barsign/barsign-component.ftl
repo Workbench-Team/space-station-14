@@ -130,4 +130,5 @@ barsign-prototype-description-whiskeyechoes = Элитный бар для эл�
 
 ## SignOff
 
+barsign-prototype-name-empbarsign = glitchy bar sign
 barsign-prototype-description-sign-off = Этот знак, похоже, не включен.

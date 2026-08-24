@@ -1,4 +1,5 @@
 door-remote-switch-state-open-close = Вы настраиваете пульт на открытие и закрытие дверей
+door-remote-toggle-eletrify-text = Toggle overcharge
 door-remote-open-close-text = Открытие и закрытие дверей
 door-remote-toggle-bolt-text = Переключить болты
 door-remote-emergency-access-text = Переключить аварийный доступ

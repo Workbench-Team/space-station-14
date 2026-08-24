@@ -1,3 +1,5 @@
+ent-BaseUniquePet = { "" }
+    .desc = { "" }
 ent-MobCorgiIan = Иан
     .desc = Любимое домашнее животное - корги.
 ent-MobCorgiIanOld = Старый Иан

@@ -13,6 +13,7 @@ store-category-wearables = Одежда
 store-caregory-spellbook-offensive = Наступательные заклинания
 store-caregory-spellbook-defensive = Защитные заклинания
 store-caregory-spellbook-utility = Полезные заклинания
+store-category-objective = Objective
 store-discounted-items = Скидки
 store-caregory-spellbook-equipment = Снаряжение волшебника
 store-caregory-spellbook-events = Заклинания событий
@@ -21,3 +22,9 @@ store-category-job = Работа
 store-category-pointless = Безделушки
 # Revenant
 store-category-abilities = Способности
+# Nukie Delivery
+store-category-nukie-delivery = Offers
+# Changeling
+store-category-combat = Combat
+store-category-utility = Utility
+store-category-stealth = Stealth

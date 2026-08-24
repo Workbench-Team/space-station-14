@@ -1,5 +1,7 @@
 ent-BaseFenceWood = деревянный забор
     .desc = Деревянный кусок ограды. Надеюсь, за ним находится сад бабушки.
+ent-BaseFenceWoodHigh = { ent-BaseFenceWood }
+    .desc = { ent-BaseFenceWood.desc }
 ent-BaseFenceWoodSmall = небольшой деревянный забор
     .desc = Маленький забор из куска дерева. Лучшая защита для ограждения частной территории!
 ent-FenceWoodHighStraight = { ent-BaseFenceWood }

@@ -20,6 +20,7 @@ alert-level-gamma = Гамма
 alert-level-gamma-announcement = Центральное командование объявило на станции уровень угрозы "Гамма". Служба Безопасности должна постоянно иметь при себе оружие, гражданский персонал обязан немедленно обратиться к главам отделов для получения указаний к эвакуации.
 alert-level-gamma-instructions = Гражданский персонал обязан немедленно обратиться к главам отделов для получения указаний к эвакуации.
 alert-level-delta = Дельта
+alert-level-delta-nuke-announcement = The station is currently under threat of imminent destruction. Crewmembers are advised to listen to heads of staff for more information.
 alert-level-delta-announcement = Станция находится под угрозой неминуемого уничтожения. Членам экипажа рекомендуется слушать глав отделов для получения дополнительной информации.
 alert-level-delta-instructions = Членам экипажа рекомендуется слушать глав отделов для получения дополнительной информации.
 alert-level-epsilon = Эпсилон

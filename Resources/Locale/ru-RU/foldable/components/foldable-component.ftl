@@ -8,5 +8,7 @@ unfold-verb = Разложить
 fold-flip-verb = Перевернуть
 fold-zip-verb = Застегнуть
 fold-unzip-verb = Расстегнуть
+fold-lower-visor-verb = Lower visor
+fold-raise-visor-verb = Raise visor
 fold-verb-clothing-jacket = Take off jacket
 unfold-verb-clothing-jacket = Put on jacket

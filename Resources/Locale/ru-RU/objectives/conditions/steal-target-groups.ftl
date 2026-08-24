@@ -11,6 +11,7 @@ steal-target-groups-captain-id-card = ID-карта капитана
 steal-target-groups-jetpack-captain-filled = джетпак капитана
 steal-target-groups-weapon-antique-laser = антикварный лазерный пистолет
 steal-target-groups-nuke-disk = диск ядерной аутентификации
+steal-target-groups-weapon-energy-magnum = energy magnum
 steal-target-groups-weapon-energy-shot-gun = энергетический дробовик
 # Thief Collection
 steal-target-groups-figurines = фигурки
@@ -21,7 +22,9 @@ steal-target-groups-door-remotes = пульты от шлюзов
 steal-target-groups-encryption-keys = ключи шифрования
 steal-target-groups-technology-disks = технологические диски
 steal-target-groups-mail = почта
+steal-target-groups-officer-handguns = security officer's handgun
 steal-target-groups-id-cards = ID-карты
+steal-target-groups-huds = HUD
 steal-target-groups-lamps = ЛАМПЫ
 # Thief single item
 steal-target-groups-forensic-scanner = криминалистический сканер
@@ -39,6 +42,8 @@ steal-target-groups-cargo-shuttle-console-circuitboard = плата консол
 steal-target-groups-clothing-eyes-hud-beer = пивные очки
 steal-target-groups-bible = библия
 steal-target-groups-clothing-neck-goldmedal = золотая медаль мастерства экипажа
+steal-target-groups-belt-ce = chief engineer's toolbelt
+steal-target-groups-captain-sword = captain's sabre
 steal-target-groups-clothing-neck-clownmedal = медаль клоуна
 steal-target-groups-wanted-list-cartridge = картридж список разыскиваемых
 # Thief structures

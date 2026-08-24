@@ -1,0 +1,10 @@
+ent-ClothingUniformJumpsuitCargo = cargo tech jumpsuit
+    .desc = A sturdy jumpsuit, issued to members of the Cargo department.
+ent-ClothingUniformJumpsuitSalvageSpecialist = salvage specialist's jumpsuit
+    .desc = It's a snappy jumpsuit with a sturdy set of overalls. It's very dirty.
+ent-ClothingUniformJumpsuitQM = quartermaster's jumpsuit
+    .desc = What can brown do for you?
+ent-ClothingUniformJumpsuitQMTurtleneck = quartermasters's turtleneck
+    .desc = A sharp turtleneck made for the hardy work environment of supply.
+ent-ClothingUniformJumpsuitQMFormal = quartermasters's formal suit
+    .desc = Inspired by the quartermasters of military's past, the perfect outfit for supplying a formal occasion.

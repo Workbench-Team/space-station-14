@@ -27,6 +27,13 @@ ent-ComputerStationRecords = консоль станционного учёта
     .desc = По нему можно проверять станционные записи.
 ent-ComputerCrewMonitoring = консоль мониторинга экипажа
     .desc = Используется для отслеживания активных датчиков здоровья, встроенных в униформу большинства членов экипажа.
+ent-ComputerStationTeleportersControl = station teleporters control console
+    .desc = Used to monitor station teleport system operations.
+ent-ComputerStationTeleportersControlFilled = { ent-ComputerStationTeleportersControl }
+    .suffix = Autofilled, Nanotrasen Network
+    .desc = { ent-ComputerStationTeleportersControl.desc }
+ent-ComputerSyndicateTeleportersControl = syndicate teleporters control console
+    .desc = { ent-ComputerStationTeleportersControl.desc }
 ent-ComputerResearchAndDevelopment = исследовательская консоль
     .desc = Компьютер, используемый для взаимодействия с оборудованием для РнД.
 ent-ComputerAnalysisConsole = аналитическая консоль
@@ -90,3 +97,7 @@ ent-StationAiUploadComputer = консоль загрузки ИИ
     .desc = Используется для обновления законов станционного ИИ.
 ent-StationAiFixerComputer = AI restoration console
     .desc = Used to repair damaged artifical intelligences.
+ent-ComputerNukieDelivery = syndicate delivery computer
+    .desc =
+        A computer that can bluespace in certain equipment for Nuclear Operations. 
+        The circuitboard is integrated into the frame and can't be recovered if deconstructed.

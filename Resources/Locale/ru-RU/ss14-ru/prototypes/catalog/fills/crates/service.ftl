@@ -1,3 +1,11 @@
+ent-CrateServiceBarSupply = bartending supplies crate
+    .desc = Extra bar supplies, in case the clown was allowed in the bar unsupervised.
+ent-CrateServiceCooking = kitchen supplies crate
+    .desc = Extra kitchen supplies, in case the botanists are absent.
+ent-CrateServiceDinnerware = kitchen dinnerware crate
+    .desc = Extra kitchen supplies, in case the clown was allowed in the cafeteria unsupervised.
+ent-CrateServiceGetMore = Getmore Bakemore crate
+    .desc = Getmore branded snacks and baking supplies for the creative chef, all without the need of emptying your station's Getmore machines!
 ent-CrateServiceJanitorialSupplies = ящик с уборочным инвентарём
     .desc = Победите копоть и грязь с Незаменимыми Припасами для Уборки от Nanotrasen! Содержит три ведра, таблички мокрого пола, и очищающие гранаты. Также содержит одну швабру, тряпку, щётку, чистящий спрей, и мусорный пакет.
 ent-CrateServiceCleanerGrenades = bulk cleanades crate

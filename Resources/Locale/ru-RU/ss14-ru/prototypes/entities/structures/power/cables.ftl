@@ -1,3 +1,5 @@
+ent-CablePhysBase = { "" }
+    .desc = { "" }
 ent-CableBase = { "" }
     .desc = { "" }
 ent-CableHV = ВВ кабель
@@ -15,3 +17,5 @@ ent-CableApcExtension = НВ кабель
 ent-CableApcExtensionUncuttable = { ent-CableApcExtension }
     .suffix = Неразрезаемый
     .desc = { ent-CableApcExtension.desc }
+ent-CableDet = explosive cord
+    .desc = Spaghetti for people who hate walls.

@@ -53,3 +53,5 @@ ent-BarSignMaltroach = Солодомоль
     .desc = Жжжжжж!
 ent-BarSignWhiskeyEchoes = Эхо Виски
     .desc = Элитный бар для элитных операт... Погодите, это же станция Nanotrasen. Почему эта вывеска в базе данных?
+ent-BarSignEmped = glitchy bar sign
+    .desc = You imagine a good smack might fix it.

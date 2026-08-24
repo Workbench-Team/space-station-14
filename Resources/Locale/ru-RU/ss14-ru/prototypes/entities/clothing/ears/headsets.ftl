@@ -38,3 +38,5 @@ ent-ClothingHeadsetFreelance = гарнитура фрилансера
     .desc = Его использует группа блуждающих фрилансеров.
 ent-ClothingHeadsetWizard = wizard headset
     .desc = A headset used by the dreaded space wizards.
+ent-ClothingHeadsetNinja = green headset
+    .desc = Who could refuse to wear this stylish black and green headset?

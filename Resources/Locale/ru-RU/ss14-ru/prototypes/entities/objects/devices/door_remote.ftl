@@ -1,5 +1,7 @@
 ent-DoorRemoteDefault = пульт от дверей
     .desc = Гаджет, позволяющий дистанционно открывать и болтировать двери.
+ent-DoorRemoteCanEletrifyDoors = { ent-DoorRemoteDefault }
+    .desc = { ent-DoorRemoteDefault.desc }
 ent-DoorRemoteCommand = пульт от дверей командования
     .desc = { ent-DoorRemoteDefault.desc }
 ent-DoorRemoteCustom = custom door remote

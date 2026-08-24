@@ -1,3 +1,5 @@
+ent-BaseTargetIndestructible = { ent-BaseStructureDynamic }
+    .desc = { ent-BaseStructureDynamic.desc }
 ent-BaseTarget = { ent-BaseStructureDynamic }
     .desc = { ent-BaseStructureDynamic.desc }
 ent-TargetHuman = мишень-человек

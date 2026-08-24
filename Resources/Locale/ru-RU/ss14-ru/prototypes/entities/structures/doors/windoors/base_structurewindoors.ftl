@@ -1,3 +1,5 @@
+ent-BaseWindoorGeneric = { ent-BaseStructure }
+    .desc = { ent-BaseStructure.desc }
 ent-BaseWindoor = { ent-BaseStructure }
     .desc = { ent-BaseStructure.desc }
 ent-BaseSecureWindoor = { ent-BaseWindoor }

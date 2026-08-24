@@ -1,5 +1,7 @@
 ent-ClothingBeltUtility = пояс для инструментов
     .desc = Может хранить различные предметы.
+ent-ClothingBeltQuiver = quiver
+    .desc = Can hold up to 16 arrows, and fits snug around your waist.
 ent-ClothingBeltChiefEngineer = пояс старшего инженера
     .desc = Держит инструменты, выглядит стильно.
 ent-ClothingBeltAssault = штурмовой пояс
@@ -18,6 +20,8 @@ ent-ClothingBeltSecurity = пояс охраны
     .desc = Может вмещать различное снаряжение службы безопасности, такое как наручники и вспышки.
 ent-ClothingBeltSheath = сабельные ножны
     .desc = Украшенные ножны, предназначенные для хранения офицерского клинка.
+ent-ClothingBeltMilitaryWebbingERT = ERT chest rig
+    .desc = A set of tactical webbing worn by Emergency Response Team operatives.
 ent-ClothingBeltBandolier = патронташ
     .desc = Патронташ для хранения ружейных патронов.
 ent-ClothingBeltChampion = пояс чемпиона

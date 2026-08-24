@@ -48,6 +48,8 @@ comp-kitchen-spike-butcher =
         [epicene] разделали
        *[neuter] разделало
     } { $victim }!
+comp-kitchen-spike-butcher-empty = { CAPITALIZE(THE($victim)) } has no meat left to butcher!
+comp-kitchen-spike-need-tool-quality = { $quality } tool required to butcher { THE($target) }.
 comp-kitchen-spike-unhook-verb = Отцепить
 comp-kitchen-spike-hooked = [color=red]{ CAPITALIZE($victim) } на этом мясном крюке![/color]
 comp-kitchen-spike-meat-name = { $name } ({ $victim })
@@ -57,3 +59,4 @@ comp-kitchen-spike-victim-examine = [color=orange]{ CAPITALIZE(SUBJECT($target))
         [epicene] худощавыми
        *[neuter] худощавым
     }.[/color]
+comp-kitchen-spike-deconstruct-occupied = Next, [color=red]unhook the body[/color].

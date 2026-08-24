@@ -1,5 +1,7 @@
 ent-DrinkGlass = стакан-метаморф
     .desc = Стакан-метаморф, который автоматически превращается в ёмкость, соответствующую находящемуся в нём напитку. На донышке виден затёртый номер патента.
+ent-DrinkJar = jar
+    .desc = The hipster's cup.
 ent-DrinkAbsintheGlass = { ent-DrinkGlass }
     .suffix = Абсент
     .desc = { ent-DrinkGlass.desc }
@@ -221,6 +223,9 @@ ent-DrinkJungleBirdGlass = { ent-DrinkGlass }
     .desc = { ent-DrinkGlass.desc }
 ent-DrinkKalimotxoGlass = { ent-DrinkGlass }
     .suffix = kalimotxo
+    .desc = { ent-DrinkGlass.desc }
+ent-DrinkOrangeLimeSodaGlass = { ent-DrinkGlass }
+    .suffix = citrus bikeshed
     .desc = { ent-DrinkGlass.desc }
 ent-DrinkKiraSpecial = { ent-DrinkGlass }
     .suffix = Кира спешл

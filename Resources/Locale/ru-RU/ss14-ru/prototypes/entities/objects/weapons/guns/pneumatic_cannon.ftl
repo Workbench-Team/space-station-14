@@ -2,6 +2,7 @@ ent-WeaponImprovisedPneumaticCannon = импровизированная пне�
     .desc = Сделана из трубы, кабельных стяжек, и пневматической пушки. Не принимает баллоны без достаточного количества газа.
 ent-LauncherCreamPie = пирогомёт
     .desc = Для оптимального результата заряжать кремовыми пирогами.
+    .suffix = Empty
 ent-BorgLauncherCreamPie = experimental pie cannon
     .desc = Deliver a generous portion of cream directly to the crew! Automatically bakes pies over time.
 ent-LauncherSyringe = шприцемёт

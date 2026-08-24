@@ -1,5 +1,11 @@
 ent-MopItem = швабра
     .desc = Швабра, которую невозможно остановить, viscera cleanup detail ждёт вас.
+ent-SolutionMopSmall = { ent-SolutionMop }
+    .desc = { ent-SolutionMop.desc }
+ent-SolutionMopNormal = { ent-SolutionMop }
+    .desc = { ent-SolutionMop.desc }
+ent-SolutionMopLarge = { ent-SolutionMop }
+    .desc = { ent-SolutionMop.desc }
 ent-AdvMopItem = продвинутая швабра
     .desc = Моторизованная швабра с большим резервуаром и возможностью мытья нескольких луж одновременно. Автоматическое противодействие клоуну в комплект не входит.
 ent-WetFloorSign = знак "мокрый пол"
@@ -15,3 +21,5 @@ ent-RagItem = мокрая тряпка
     .desc = Для уборки грязи, Вы полагаете.
 ent-WireBrush = wire brush
     .desc = A bristly steel wire brush, perfect for scraping away even the toughest patches of rust.
+ent-WireBrushElectrical = electrical wire brush
+    .desc = A bristly steel wire brush with a moving head, allowing for a way easier time cleaning.

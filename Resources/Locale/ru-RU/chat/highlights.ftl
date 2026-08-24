@@ -1,11 +1,28 @@
 # Command
 highlights-captain = Captain, "Cap", Bridge, Command
+highlights-headofpersonnel = Head Of Personnel, "HoP", Service, "Bridge", "Command"
+highlights-chiefengineer = Chief Engineer, "CE", Engineering, Engineer, "Engi", "Bridge", "Command"
+highlights-chiefmedicalofficer = Chief Medical Officer, "CMO", Medbay, Medical, "Med", "Bridge", "Command"
+highlights-headofsecurity = Head of Security, "HoS", Armory, Security, "Sec", "Bridge", "Command"
 highlights-head-of-personnel = Head Of Personnel, "HoP", Service, Bridge, Command
+highlights-researchdirector = Research Director, "RD", Science, "Sci", "RND", "R&D", "Bridge", "Command"
 highlights-chief-engineer = Chief Engineer, "CE", Engineering, Engineer, "Engi", Bridge, Command
+highlights-securitycadet = Security Cadet, Secoff, Cadet, Armory, Security, "Sec"
+highlights-securityofficer = Security Officer, Secoff, Officer, Armory, Security, "Sec"
 highlights-chief-medical-officer = Chief Medical Officer, "CMO", MedBay, "Med", Bridge, Command
+# Cargo
+highlights-cargotechnician = Cargo Technician, Cargo Tech, "Cargo", Supply
+highlights-salvagespecialist = Salvage Specialist, Salvager, Salvage, "Salv", Miner, "Cargo", Supply
+# Engineering
+highlights-atmospherictechnician = Atmospheric Technician, Atmos Tech, Atmospheric, Engineering, "Atmos", "Engi"
+highlights-stationengineer = Station Engineer, Engineering, Engineer, "Engi"
+highlights-technicalassistant = Technical Assistant, Tech Assistant, Engineering, Engineer, "Engi"
 highlights-head-of-security = Head of Security, "HoS", Security, "Sec", Bridge, Command
+highlights-medicaldoctor = Medical Doctor, Doctor, "Doc", Medbay, Medical, "Med"
+highlights-medicalintern = Medical Intern, Intern, Medbay, Medical, "Med"
 highlights-quartermaster = Quartermaster, "QM", Cargo, Bridge, Command
 highlights-research-director = Research Director, "RD", Science, "Sci", Bridge, Command
+highlights-researchassistant = Research Assistant, Science, "Sci", "RND", "R&D"
 # Security
 highlights-detective = Detective, "Det", Security, "Sec"
 highlights-security-cadet = Security Cadet, Secoff, Cadet, Security, "Sec"
@@ -18,10 +35,15 @@ highlights-salvage-specialist = Salvage Specialist, Salvager, Salvage, "Salv", "
 highlights-atmospheric-technician = Atmospheric Technician, Atmos tech, Atmospheric, Engineering, "Atmos", "Engi"
 highlights-station-engineer = Station Engineer, Engineering, Engineer, "Engi"
 highlights-technical-assistant = Technical Assistant, Tech Assistant, Engineering, Engineer, "Engi"
+highlights-musician = Musician, "Music", Theatre, Theater, Service, "Serv"
 # Medical
 highlights-chemist = Chemist, Chemistry, "Chem", MedBay, "Med"
+highlights-serviceworker = Service Worker, Service, "Serv"
 highlights-medical-doctor = Medical Doctor, Doctor, "Doc", MedBay, "Med"
 highlights-medical-intern = Medical Intern, "Doc", Intern, MedBay, "Med"
+# Silicon
+highlights-borg = Cyborg, Silicon, Borg, Robotics, "Robot"
+highlights-stationai = Station AI, Silicon, "AI", "sAI"
 highlights-paramedic = Paramedic, "Para", MedBay, "Med"
 # Science
 highlights-scientist = Scientist, Science, "Sci"

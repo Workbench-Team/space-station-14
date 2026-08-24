@@ -1,3 +1,5 @@
+ent-BaseStructureComputerIndestructible = { ent-BaseStructure }
+    .desc = { ent-BaseStructure.desc }
 ent-BaseStructureComputer = { ent-BaseStructure }
     .desc = { ent-BaseStructure.desc }
 ent-ComputerFrame = каркас компьютера

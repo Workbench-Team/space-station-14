@@ -12,6 +12,7 @@ shell-cannot-run-command-from-server = Вы не можете выполнить
 shell-only-players-can-run-this-command = Только игроки могут выполнять эту команду.
 shell-must-be-attached-to-entity = Для выполнения этой команды Вы должны быть прикреплены к сущности.
 shell-must-have-body = You must have a body to run this command.
+shell-unknown-error = An unknown error has occured.
 
 ## Arguments
 
@@ -44,6 +45,7 @@ shell-invalid-grid-id = Недопустимый ID сетки.
 shell-invalid-map-id = Недопустимый ID карты.
 shell-invalid-entity-uid = { $uid } не является допустимым идентификатором uid.
 shell-invalid-bool = Неверный boolean.
+shell-invalid-bool-value = Invalid boolean: '{ $value }'
 shell-entity-uid-must-be-number = EntityUid должен быть числом.
 shell-could-not-find-entity = Не удалось найти сущность { $entity }.
 shell-could-not-find-entity-with-uid = Не удалось найти сущность с uid { $uid }.
@@ -58,6 +60,7 @@ shell-argument-number-must-be-between = Аргумент { $index } должен
 shell-argument-station-id-invalid = Аргумент { $index } должен быть валидным station id!
 shell-argument-map-id-invalid = Аргумент { $index } должен быть валидным map id!
 shell-argument-number-invalid = Аргумент { $index } должен быть валидным числом!
+shell-argument-chat-invalid = Argument { $index } must be a valid chat!
 # Hints
 shell-argument-username-hint = <username>
 shell-argument-username-optional-hint = [username]

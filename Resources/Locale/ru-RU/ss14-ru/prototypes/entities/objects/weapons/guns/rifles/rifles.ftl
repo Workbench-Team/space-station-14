@@ -6,6 +6,11 @@ ent-WeaponRifleAk = АКМС
 ent-WeaponRifleM90GrenadeLauncher = М-90gl
     .desc = Карабин старой модели, выполненный по схеме булл-пап, с подствольным гранатометом. Использует патроны калибра .20 винтовочный.
     .suffix = Автомат
+ent-WeaponRifleLecterXL8 = XL8
+    .desc =
+        The Experimental Lecter 8
+        An unreasonably expensive military grade assault rifle with integrated optic.
+        Uses .20 rifle ammo.
 ent-WeaponRifleLecter = Лектер
     .desc = Первоклассная армейская штурмовая винтовка. Использует патроны калибра .20 винтовочный.
     .suffix = Автомат

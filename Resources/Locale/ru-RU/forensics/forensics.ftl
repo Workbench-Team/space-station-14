@@ -23,5 +23,7 @@ forensic-scanner-verb-message = Выполняется криминалисти�
 forensics-dna-unknown = неизвестная ДНК
 forensics-verb-text = Счистить улики
 forensics-verb-message = Счистить отпечатки пальцев и остатки ДНК с объекта!
+forensics-cleaning-user = You begin cleaning the evidence off of { THE($target) }...
+forensics-cleaning-others = { CAPITALIZE($user) } begins cleaning the evidence off of { THE($target) }.
 forensics-cleaning = Вы начинаете счищать улики с { $target }...
 forensics-cleaning-cannot-clean = Ничего нельзя счистить с { $target }!

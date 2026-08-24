@@ -5,3 +5,5 @@ add-uplink-command-completion-2 = Uplink uid (по-умолчанию это К�
 add-uplink-command-completion-3 = Включена ли скидка в аплинке
 add-uplink-command-error-1 = Выбранный игрок не имеет подконтрольную сущность
 add-uplink-command-error-2 = Не удалось добавить аплинк игроку
+add-uplink-command-success-pda = Uplink added to player PDA with code { $code }
+add-uplink-command-success-implant = Uplink added to player as an implant

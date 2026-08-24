@@ -1,5 +1,12 @@
 ent-LightReplacer = лампозаменитель
     .desc = Устройство, использующее магниты для легкой замены сломанных лампочек.
+ent-LightReplacerFilled = { ent-LightReplacer }
+    .suffix = Filled
+    .desc = { ent-LightReplacer.desc }
+ent-EjectTubes = { "" }
+    .desc = { "" }
+ent-EjectBulbs = { "" }
+    .desc = { "" }
 ent-LightReplacerEmpty = { ent-LightReplacer }
     .suffix = Пустой
     .desc = { ent-LightReplacer.desc }

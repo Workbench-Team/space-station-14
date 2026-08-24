@@ -48,3 +48,5 @@ ent-CrateNPCKangaroo = ящик с кенгуру
     .desc = Ящик, содержащий кенгуру.
 ent-CrateNPCMothroach = ящик таракамолей
     .desc = Ящик, содержащий четыре таракамолей.
+ent-CrateNPCSheep = sheep crate
+    .desc = A crate containing a single sheep.

@@ -1,3 +1,8 @@
+ent-WeaponHitscanDebug = bang hitscan 1dmg
+    .desc = pew pew!
+    .suffix = DEBUG
+ent-WeaponHitscanDebugGib = bang hitscan gibber
+    .desc = { ent-WeaponHitscanDebug.desc }
 ent-WeaponPistolDebug = bang, ded
     .desc = ded
     .suffix = DEBUG
@@ -17,3 +22,6 @@ ent-MeleeDebug100 = bang stick 100dmg
     .desc = { ent-MeleeDebugGib.desc }
 ent-MeleeDebug200 = bang stick 200dmg
     .desc = { ent-MeleeDebugGib.desc }
+ent-MeleeDebugUnbang = unbang stick
+    .desc = hit soft ye
+    .suffix = DEBUG

@@ -8,3 +8,6 @@ ent-TrashBananaPeelExplosive = { ent-TrashBananaPeel }
 ent-TrashBananaPeelExplosiveUnarmed = { ent-FoodBanana }
     .desc = В этом банане есть что-то необычное.
     .suffix = Невзведённая
+ent-SnapPopExplosive = { ent-SnapPop }
+    .suffix = explosive
+    .desc = { ent-SnapPop.desc }

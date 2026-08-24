@@ -1,5 +1,7 @@
 ent-TrashBag = мешок для мусора
     .desc = { ent-BaseItem.desc }
+ent-TrashBagHolding = trash bag of holding
+    .desc = A trash bag that opens into a localized pocket of bluespace.
 ent-TrashBagBlue = мешок для мусора
     .desc = { ent-TrashBag.desc }
 ent-BagOfSummoningGarbage = заклинание всепоглощающей чистоты

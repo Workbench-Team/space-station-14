@@ -22,6 +22,7 @@ rcd-component-cannot-build-on-subfloor-message = Вы не сможете пос
 rcd-component-cannot-build-on-occupied-tile-message = Здесь нельзя строить, место уже занято!
 rcd-component-cannot-build-identical-tile = Эта плитка уже существует здесь!
 rcd-component-deconstruct-target-not-on-whitelist-message = Вы не можете это деконструировать!
+rcd-component-cannot-build-identical-entity = That already exists there!
 rcd-component-walls-and-flooring = Стены и полы
 rcd-component-windows-and-grilles = Окна и решётки
 rcd-component-airlocks = Шлюзы

@@ -137,3 +137,4 @@ tips-dataset-136 = Если вы оказались в ловушке за на�
 tips-dataset-137 = Если ИИ электризует дверь, а у вас есть изолированные перчатки, перережьте и почините провод питания, чтобы сбросить электризацию двери!
 tips-dataset-138 = Если вы хотите помешать вашему заключённому сбежать из камеры сразу после того, как снимите с него наручники, включите боевой режим во время снятия наручников - это повалит заключённого на пол.
 tips-dataset-139 = Make sure to clean your illegal implanters with a soap or a damp rag after you use them! Detectives can scan used implanters for incriminating DNA evidence, but not if they've been wiped clean.
+tips-dataset-140 = Lottery crates can very rarely contain The Throngler.

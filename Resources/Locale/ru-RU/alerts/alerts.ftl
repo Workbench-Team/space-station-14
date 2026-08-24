@@ -74,6 +74,10 @@ alerts-pacified-name = [color=green]Пацифизм[/color]
 alerts-pacified-desc = Вы чувствуете себя умиротворенно и не можете вредить живым существам.
 alerts-magboots-name = Магнитные ботинки
 alerts-magboots-desc = Вы невосприимчивы к потокам ветра, но двигаетесь немного медленнее.
+alerts-prying-name = Prying
+alerts-prying-desc = You can innately pry doors open using alternative interaction.
+alerts-changeling-chemicals-name = Chemicals
+alerts-changeling-chemicals-desc = The chemicals stored within our glands. We use them for many of our abilities to function. They regenerate over time.
 alerts-revenant-essence-name = Эссенция
 alerts-revenant-essence-desc = Сила душ. Поддерживает вас и используется при использовании способностей. Медленно восстанавливается с течением времени.
 alerts-revenant-corporeal-name = Материальность
