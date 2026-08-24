@@ -24,3 +24,5 @@ ent-TomDrumsInstrument = tom drums
     .desc = Where'd the rest of the kit go?
 ent-DawInstrument = digital audio workstation
     .desc = Cutting edge music technology, straight from the 90s.
+ent-BigDrumsInstrument = drum kit
+    .desc = Ba dum tss!

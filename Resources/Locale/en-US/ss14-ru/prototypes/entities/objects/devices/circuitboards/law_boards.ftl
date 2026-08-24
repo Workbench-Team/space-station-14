@@ -1,3 +1,5 @@
+ent-BaseSiliconLawboard = { ent-BaseElectronics }
+    .desc = An electronics board containing a silicon lawset.
 ent-NTDefaultCircuitBoard = law board (NT Default)
     .desc = An electronics board containing the NT Default lawset.
 ent-AsimovCircuitBoard = law board (Crewsimov)
@@ -22,6 +24,8 @@ ent-ArtistCircuitBoard = law board (Artist)
     .desc = An electronics board containing the Artist lawset.
 ent-AntimovCircuitBoard = law board (Antimov)
     .desc = An electronics board containing the Antimov lawset.
+ent-SyndimovCircuitBoard = law board (Syndimov)
+    .desc = An electronics board containing the Syndimov lawset.
 ent-NutimovCircuitBoard = law board (Nutimov)
     .desc = An electronics board containing the Nutimov lawset.
 ent-XenoborgCircuitBoard = law board (Xenoborg)

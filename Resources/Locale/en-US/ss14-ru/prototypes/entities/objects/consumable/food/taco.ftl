@@ -1,7 +1,7 @@
 ent-FoodTacoShell = taco shell
     .desc = A taco shell, easy to hold, but falls on its side when put down.
-ent-FoodTacoBase = { ent-FoodInjectableBase }
-    .desc = { ent-FoodInjectableBase.desc }
+ent-FoodTacoBase = { ent-SolutionSmall }
+    .desc = { ent-SolutionSmall.desc }
 ent-FoodTacoBeef = beef taco
     .desc = A very basic and run of the mill beef taco, now with cheese!
 ent-FoodTacoChicken = chicken taco

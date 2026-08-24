@@ -1,6 +1,6 @@
-ent-BaseDispenser = { ent-BaseWallmountMetallic }
-    .desc = { ent-BaseWallmountMetallic.desc }
-ent-FuelDispenser = fuel dispenser
-    .desc = { ent-BaseDispenser.desc }
+ent-BaseDispenser = { ent-SolutionTank }
+    .desc = { ent-SolutionTank.desc }
 ent-CleanerDispenser = space cleaner dispenser
-    .desc = { ent-BaseDispenser.desc }
+    .desc = Wallmount Space Cleaner dispenser.
+ent-FuelDispenser = fuel dispenser
+    .desc = Wallmount Fuel dispenser.

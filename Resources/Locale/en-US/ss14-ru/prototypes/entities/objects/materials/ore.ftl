@@ -1,4 +1,4 @@
-ent-OreBase = { ent-BaseItem }
+ent-OreBase = { ent-MaterialBase }
     .desc = A piece of unrefined ore.
 ent-GoldOre = gold ore
     .suffix = Full

@@ -1,5 +1,7 @@
 ent-ShelfBase = shelf
     .desc = A strange place to place, well, anything really. You feel like you shouldn't be seeing this.
+ent-ShelfBaseWeak = { ent-ShelfBase }
+    .desc = { ent-ShelfBase.desc }
 ent-ShelfBaseReinforced = reinforced shelf
     .desc = It looks as strong as reality itself.
 ent-ShelfWood = wooden shelf

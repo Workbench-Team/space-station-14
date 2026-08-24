@@ -1,3 +1,5 @@
+ent-BaseUniquePet = { "" }
+    .desc = { "" }
 ent-MobCorgiIan = Ian
     .desc = Favorite pet corgi.
 ent-MobCorgiIanOld = Old Ian
@@ -53,4 +55,4 @@ ent-MobMonkeyPunpun = Pun Pun
 ent-MobCrabAtmos = Tropico
     .desc = The noble and stalwart defender of Atmosia. Viva!
 ent-MobPollyParrot = Polly the parrot
-    .desc = An expert in quantum cracker theory
+    .desc = An expert in quantum cracker theory.

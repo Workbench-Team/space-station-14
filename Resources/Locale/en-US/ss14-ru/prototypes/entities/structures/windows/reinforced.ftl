@@ -1,7 +1,10 @@
 ent-ReinforcedWindow = reinforced window
     .desc = { ent-BaseDeltaPressureReinforcedGlass.desc }
 ent-WindowReinforcedDirectional = directional reinforced window
-    .desc = Don't smudge up the glass down there.
+    .desc = { ent-BaseDeltaPressureReinforcedGlassQuarter.desc }
+ent-WindowReinforcedDirectionalCorner = { ent-WindowReinforcedDirectional }
+    .suffix = Corner
+    .desc = { ent-WindowReinforcedDirectional.desc }
 ent-ReinforcedWindowDiagonal = { ent-ReinforcedWindow }
     .suffix = diagonal
     .desc = { ent-ReinforcedWindow.desc }

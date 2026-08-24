@@ -1,5 +1,7 @@
 ent-BasePowerCell = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
+ent-SolutionRiggable = { ent-Solution }
+    .desc = { ent-Solution.desc }
 ent-PowerCellPotato = potato battery
     .desc = Someone's stuck two nails and some wire in a large potato. Somehow it provides a little charge.
 ent-PowerCellSmall = small-capacity power cell
@@ -38,6 +40,8 @@ ent-PowerCellAntiqueProto = antique power cell prototype
     .desc = A small cell that self recharges. Used in old laser arms research.
 ent-BasePowerCage = { ent-BasePowerCell }
     .desc = { ent-BasePowerCell.desc }
+ent-SolutionRiggableLarge = { ent-SolutionRiggable }
+    .desc = { ent-SolutionRiggable.desc }
 ent-PowerCageSmall = small-capacity power cage
     .desc = A rechargeable power cage for big devices. This is the cheapest kind you can find.
 ent-PowerCageMedium = medium-capacity power cage

@@ -1,11 +1,11 @@
 ent-MobCivilian = civilian
     .desc = A miserable pile of secrets.
 ent-MobSalvager = salvager
-    .desc = { ent-BaseMobHuman.desc }
+    .desc = { ent-MobHuman.desc }
 ent-MobSpirate = spirate
     .desc = Yarr!
 ent-MobSyndicateFootsoldier = syndicate footsoldier
-    .desc = { ent-BaseMobHuman.desc }
+    .desc = { ent-MobHuman.desc }
 ent-MobSyndicateFootsoldierPilot = syndicate shuttle pilot
     .desc = { ent-MobSyndicateFootsoldier.desc }
 ent-SalvageHumanCorpse = unidentified corpse

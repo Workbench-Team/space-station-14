@@ -1,7 +1,7 @@
-ent-FoodPizzaBase = { ent-FoodInjectableBase }
-    .desc = { ent-FoodInjectableBase.desc }
-ent-FoodPizzaSliceBase = { ent-FoodInjectableBase }
-    .desc = { ent-FoodInjectableBase.desc }
+ent-FoodPizzaBase = { ent-SolutionNormal }
+    .desc = { ent-SolutionNormal.desc }
+ent-FoodPizzaSliceBase = { ent-SolutionVeryTiny }
+    .desc = { ent-SolutionVeryTiny.desc }
 ent-FoodPizzaMargherita = margherita pizza
     .desc = The flavor of Italy.
 ent-FoodPizzaMargheritaSlice = slice of margherita pizza

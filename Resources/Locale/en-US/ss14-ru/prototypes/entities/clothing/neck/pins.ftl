@@ -4,3 +4,5 @@ ent-ClothingNeckAutismPin = neurodivergent pin
     .desc = Be neurodivergent, do crime.
 ent-ClothingNeckGoldAutismPin = autism pin
     .desc = Be autistic, do crime.
+ent-SprayFlowerPin = flower pin
+    .desc = A cute flower pin. Something seems off with it...

@@ -1,8 +1,8 @@
-ent-DrinkBase = { ent-BaseItem }
-    .desc = { ent-BaseItem.desc }
-ent-DrinkBaseEmptyTrash = { "" }
+ent-DrinkBase = { ent-SolutionDrink }
+    .desc = { ent-SolutionDrink.desc }
+ent-DrinkBaseEmptyTrash = { ent-SolutionDrink }
     .suffix = Empty
-    .desc = { "" }
+    .desc = { ent-SolutionDrink.desc }
 ent-DrinkBaseOpenable = { "" }
     .desc = { "" }
 ent-DrinkBaseOpenableOpen = { ent-DrinkBaseOpenable }

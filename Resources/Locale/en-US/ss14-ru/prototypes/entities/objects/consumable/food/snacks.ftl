@@ -1,5 +1,5 @@
-ent-FoodSnackBase = { ent-FoodBase }
-    .desc = { ent-FoodBase.desc }
+ent-FoodSnackBase = { ent-SolutionTiny }
+    .desc = { ent-SolutionTiny.desc }
 ent-FoodSnackBoritos = boritos
     .desc = Crunchy, salty tortilla chips. You could probably make nachos with these.
 ent-FoodSnackCnDs = C&Ds
@@ -49,7 +49,7 @@ ent-FoodSnackMREBrownieOpen = brownie
     .suffix = MRE
 ent-FoodSnackSwirlLollipop = swirl lollipop
     .desc = A swirly circle of pure concentrated sugar. Who's the biggest kid on the playground now?
-ent-FoodPacketTrash = { ent-BaseItem }
+ent-FoodPacketTrash = { ent-SolutionFood }
     .desc = This is rubbish.
 ent-FoodPacketBoritosTrash = boritos bag
     .desc = { ent-FoodPacketTrash.desc }

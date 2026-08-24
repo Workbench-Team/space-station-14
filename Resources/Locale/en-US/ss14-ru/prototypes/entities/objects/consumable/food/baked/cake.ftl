@@ -1,6 +1,6 @@
-ent-FoodCakeBase = { ent-FoodInjectableBase }
-    .desc = { ent-FoodInjectableBase.desc }
-ent-FoodCakeSliceBase = { ent-FoodCakeBase }
+ent-FoodCakeBase = { ent-SolutionNormal }
+    .desc = { ent-SolutionNormal.desc }
+ent-FoodCakeSliceBase = { ent-SolutionVeryTiny }
     .desc = Just a slice of cake, it is enough for everyone.
 ent-FoodCakeBlueberry = blueberry cake
     .desc = Stains your teeth.

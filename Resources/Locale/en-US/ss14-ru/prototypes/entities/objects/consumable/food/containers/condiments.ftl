@@ -1,5 +1,5 @@
-ent-BaseFoodCondiment = { ent-BaseItem }
-    .desc = { ent-BaseItem.desc }
+ent-BaseFoodCondiment = { ent-SolutionFood }
+    .desc = { ent-SolutionFood.desc }
 ent-BaseFoodCondimentPacket = condiment packet
     .desc = A small plastic pack with condiments to put on your food.
 ent-BaseFoodCondimentPacketDrink = { ent-BaseFoodCondimentPacket }

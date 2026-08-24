@@ -1,5 +1,5 @@
-ent-WeaponWaterGunBase = { ent-BaseItem }
-    .desc = { ent-BaseItem.desc }
+ent-WeaponWaterGunBase = { ent-SolutionGun }
+    .desc = { ent-SolutionGun.desc }
 ent-WeaponWaterPistol = water pistol
     .desc = The dinkiest of water-based weaponry. You swear the trigger doesn't do anything.
 ent-WeaponWaterBlaster = water blaster

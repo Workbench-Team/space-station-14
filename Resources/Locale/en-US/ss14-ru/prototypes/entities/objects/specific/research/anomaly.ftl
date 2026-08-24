@@ -1,5 +1,8 @@
 ent-AnomalyScanner = anomaly scanner
     .desc = A hand-held scanner built to collect information on various anomalous objects.
+ent-AnomalyScannerAdmin = admin anomaly scanner
+    .desc = A hand-held scanner built to collect information on various anomalous objects. This one seems to have a few extra features.
+    .suffix = Admin
 ent-AnomalyLocatorUnpowered = anomaly locator
     .desc = A device designed to aid in the locating of anomalies. Did you check the gas miners?
     .suffix = Always Powered

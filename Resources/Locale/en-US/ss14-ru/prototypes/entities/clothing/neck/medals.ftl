@@ -1,3 +1,5 @@
+ent-ClothingNeckMedalBase = medal
+    .desc = A medal to show your mettle. May or may not be made of metal.
 ent-ClothingNeckBronzeheart = bronzeheart medal
     .desc = Given to crewmates for exemplary bravery in the face of danger.
 ent-ClothingNeckGoldmedal = gold medal of crewmanship

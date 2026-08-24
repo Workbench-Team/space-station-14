@@ -1,7 +1,10 @@
 ent-ReinforcedUraniumWindow = reinforced uranium window
     .desc = { ent-BaseDeltaPressureReinforcedPlasma.desc }
 ent-UraniumReinforcedWindowDirectional = directional reinforced uranium window
-    .desc = Don't smudge up the glass down there.
+    .desc = { ent-BaseDeltaPressureReinforcedPlasmaQuarter.desc }
+ent-UraniumReinforcedWindowDirectionalCorner = { ent-UraniumReinforcedWindowDirectional }
+    .suffix = Corner
+    .desc = { ent-UraniumReinforcedWindowDirectional.desc }
 ent-ReinforcedUraniumWindowDiagonal = { ent-ReinforcedUraniumWindow }
     .suffix = diagonal
     .desc = { ent-ReinforcedUraniumWindow.desc }

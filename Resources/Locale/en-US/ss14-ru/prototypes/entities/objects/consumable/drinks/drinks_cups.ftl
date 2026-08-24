@@ -1,5 +1,5 @@
-ent-DrinkBaseCup = { ent-DrinkBase }
-    .desc = { ent-DrinkBase.desc }
+ent-DrinkBaseCup = { ent-SolutionTiny }
+    .desc = { ent-SolutionTiny.desc }
 ent-DrinkBaseMug = mug
     .desc = A mug.
 ent-DrinkGoldenCup = golden cup

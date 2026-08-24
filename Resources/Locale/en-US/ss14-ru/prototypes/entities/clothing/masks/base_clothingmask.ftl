@@ -4,5 +4,5 @@ ent-ClothingMaskPullableBase = { ent-ClothingMaskBase }
     .desc = { ent-ClothingMaskBase.desc }
 ent-ActionToggleMask = Toggle Mask
     .desc = Handy, but prevents insertion of pie into your pie hole.
-ent-ClothingMaskBaseButcherable = { ent-ClothingMaskBase }
-    .desc = { ent-ClothingMaskBase.desc }
+ent-ClothingMaskBaseButcherable = { ent-SolutionFood }
+    .desc = { ent-SolutionFood.desc }

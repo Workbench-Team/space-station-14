@@ -1,6 +1,6 @@
 ent-CableStack = cable stack
     .suffix = Full
-    .desc = { ent-BaseItem.desc }
+    .desc = { ent-SolutionCompositeSmallStackable.desc }
 ent-CableHVStack = HV cable coil
     .desc = HV cables for connecting engines to heavy duty machinery, SMESes, and substations.
     .suffix = Full
@@ -13,6 +13,8 @@ ent-CableHVStack1 = { ent-CableHVStack }
 ent-CableMVStack = MV cable coil
     .desc = MV cables for connecting substations to APCs, and also powering a select few things like emitters.
     .suffix = Full
+ent-SolutionCompositeCable = { ent-SolutionCompositeSmallStackable }
+    .desc = { ent-SolutionCompositeSmallStackable.desc }
 ent-CableMVStack10 = { ent-CableMVStack }
     .suffix = 10
     .desc = { ent-CableMVStack.desc }

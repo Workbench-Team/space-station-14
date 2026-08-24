@@ -1,14 +1,16 @@
 ent-BaseImplanter = implanter
     .desc = { ent-BaseItem.desc }
-ent-Implanter = { ent-BaseImplanter }
-    .desc = A disposable syringe exclusively designed for the injection and extraction of subdermal implants.
+ent-Implanter = implant extractor
+    .desc =
+        A dual-purpose syringe designed for the removal of specific subdermal implants. Once an implant is extracted, it is stored within and can be re-administered.
+        WARNING: Operator error, such as selecting a non-present implant type, causes severe genetic trauma to the operator.
 ent-ImplanterAdmeme = { ent-Implanter }
     .suffix = Admeme
     .desc = { ent-Implanter.desc }
 ent-BaseImplantOnlyImplanter = { ent-Implanter }
     .desc = A disposable syringe exclusively designed for the injection of subdermal implants.
 ent-BaseImplantOnlyImplanterSyndi = syndicate implanter
-    .desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap or a rag to remove residual DNA after use!
+    .desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap to remove residual DNA after use!
 ent-SadTromboneImplanter = sad trombone implanter
     .desc = { ent-BaseImplantOnlyImplanter.desc }
 ent-LightImplanter = light implanter
@@ -32,6 +34,8 @@ ent-ScramImplanter = scram implanter
 ent-DnaScramblerImplanter = DNA scrambler implanter
     .desc = { ent-BaseImplantOnlyImplanterSyndi.desc }
 ent-ChameleonControllerImplanter = chameleon controller implanter
+    .desc = { ent-BaseImplantOnlyImplanterSyndi.desc }
+ent-VoiceMaskImplanter = identity mask implanter
     .desc = { ent-BaseImplantOnlyImplanterSyndi.desc }
 ent-MicroBombImplanter = micro-bomb implanter
     .desc = { ent-BaseImplantOnlyImplanterSyndi.desc }

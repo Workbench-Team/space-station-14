@@ -1,5 +1,11 @@
 ent-MopItem = mop
     .desc = A mop that can't be stopped, viscera cleanup detail awaits.
+ent-SolutionMopSmall = { ent-SolutionMop }
+    .desc = { ent-SolutionMop.desc }
+ent-SolutionMopNormal = { ent-SolutionMop }
+    .desc = { ent-SolutionMop.desc }
+ent-SolutionMopLarge = { ent-SolutionMop }
+    .desc = { ent-SolutionMop.desc }
 ent-AdvMopItem = advanced mop
     .desc = Motorized mop that has a bigger reservoir and quickly replaces reagents inside with water. Automatic Clown Countermeasure not included.
 ent-WetFloorSign = wet floor sign
@@ -15,3 +21,5 @@ ent-RagItem = damp rag
     .desc = For cleaning up messes, you suppose.
 ent-WireBrush = wire brush
     .desc = A bristly steel wire brush, perfect for scraping away even the toughest patches of rust.
+ent-WireBrushElectrical = electrical wire brush
+    .desc = A bristly steel wire brush with a moving head, allowing for a way easier time cleaning.

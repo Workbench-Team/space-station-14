@@ -1,5 +1,7 @@
 ent-Dart = dart
     .desc = Light throwing dart for playing darts. Don't get in the eye!
+ent-SolutionDart = { ent-Solution }
+    .desc = { ent-Solution.desc }
 ent-DartBlue = { ent-Dart }
     .desc = { ent-Dart.desc }
 ent-DartPurple = { ent-Dart }

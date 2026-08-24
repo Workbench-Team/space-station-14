@@ -1,5 +1,5 @@
-ent-FoodFrozenBase = { ent-FoodInjectableBase }
-    .desc = { ent-FoodInjectableBase.desc }
+ent-FoodFrozenBase = { ent-SolutionVeryTiny }
+    .desc = { ent-SolutionVeryTiny.desc }
 ent-FoodFrozenSandwich = ice-cream sandwich
     .desc = Portable ice-cream in its own packaging.
 ent-FoodFrozenSandwichStrawberry = strawberry ice-cream sandwich
@@ -8,7 +8,7 @@ ent-FoodFrozenFreezy = space freezy
     .desc = The best ice-cream in space.
 ent-FoodFrozenSundae = ice-cream sundae
     .desc = A classic dessert.
-ent-FoodFrozenCornuto = strawberry ice-cream sandwich
+ent-FoodFrozenCornuto = cornuto
     .desc = A Neapolitan vanilla and chocolate ice-cream cone. It menaces with a sprinkling of caramelized nuts.
 ent-FoodFrozenPopsicleOrange = orange creamsicle
     .desc = A classic orange creamsicle. A sunny frozen treat.

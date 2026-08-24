@@ -1,5 +1,5 @@
-ent-FoodBakedBase = { ent-FoodInjectableBase }
-    .desc = { ent-FoodInjectableBase.desc }
+ent-FoodBakedBase = { ent-SolutionVeryTiny }
+    .desc = { ent-SolutionVeryTiny.desc }
 ent-FoodBakedMuffin = muffin
     .desc = A delicious and spongy little cake.
 ent-FoodBakedMuffinBerry = berry muffin

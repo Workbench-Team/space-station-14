@@ -1,5 +1,5 @@
-ent-BasePaper = { ent-BaseItem }
-    .desc = { ent-BaseItem.desc }
+ent-BasePaper = { ent-SolutionFood }
+    .desc = { ent-SolutionFood.desc }
 ent-Paper = paper
     .desc = A piece of white paper.
 ent-PaperScrap = paper scrap

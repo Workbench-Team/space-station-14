@@ -1,5 +1,5 @@
-ent-DisposalPipeBase = { "" }
-    .desc = { "" }
+ent-DisposalPipeBase = { ent-StructureHealthContainerWeak }
+    .desc = { ent-StructureHealthContainerWeak.desc }
 ent-DisposalHolder = disposal holder
     .desc = { "" }
 ent-DisposalPipeBroken = broken disposal pipe

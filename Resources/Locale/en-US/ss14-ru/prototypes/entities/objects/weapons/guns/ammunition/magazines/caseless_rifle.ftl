@@ -1,12 +1,6 @@
-ent-BaseMagazineCaselessRifle = magazine (.25 caseless)
-    .desc = { ent-BaseItem.desc }
 ent-BaseMagazinePistolCaselessRifle = pistol magazine (.25 caseless)
-    .desc = { ent-BaseMagazineCaselessRifle.desc }
+    .desc = { ent-BaseItem.desc }
 ent-MagazinePistolCaselessRifle = pistol magazine (.25 caseless)
     .desc = 10-round magazine for the Cobra pistol. Intended to hold general-purpose kinetic ammunition.
 ent-MagazinePistolCaselessRiflePractice = pistol magazine (.25 caseless practice)
-    .desc = 10-round magazine for the Cobra pistol. Intended to hold non-harmful chalk ammunition.
-ent-MagazineCaselessRifle = magazine (.25 caseless)
-    .desc = { ent-BaseMagazineCaselessRifle.desc }
-ent-MagazineCaselessRiflePractice = magazine (.25 caseless practice)
-    .desc = { ent-BaseMagazineCaselessRifle.desc }
+    .desc = 10-round magazine for the Cobra pistol. Intended to hold harmless practice ammunition.
