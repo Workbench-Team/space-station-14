@@ -55,7 +55,7 @@
 Попросите ботаника о необходимых вам ингредиентах. Без ботаника вам, скорее всего, придётся выращивать необходимые растения самостоятельно.
 <Box>
 <GuideEntityEmbed Entity="SignHydro1" Caption=" "/>
-<GuideEntityEmbed Entity="hydroponicsTray"/>
+<GuideEntityEmbed Entity="HydroponicsTray"/>
 <GuideEntityEmbed Entity="WheatBushel"/>
 </Box>
 ## Сбор молока:

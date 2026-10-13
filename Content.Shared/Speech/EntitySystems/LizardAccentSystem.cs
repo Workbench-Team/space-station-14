@@ -1,4 +1,4 @@
-﻿using System.Text.RegularExpressions;
+using System.Text.RegularExpressions;
 using Content.Shared.Speech.Components;
 using Robust.Shared.Random; // Corvax-Localization
 
