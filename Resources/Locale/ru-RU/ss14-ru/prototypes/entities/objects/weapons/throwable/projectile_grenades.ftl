@@ -3,6 +3,6 @@ ent-ProjectileGrenadeBase = { ent-BaseItem }
 ent-GrenadeStinger = травматическая граната
     .desc = Здесь не на что смотреть, пожалуйста, расходитесь.
 ent-GrenadeIncendiary = зажигательная граната
-    .desc = Гарантированно разогреет толпу.
+    .desc = Зажгите этой ночью.
 ent-GrenadeShrapnel = осколочная граната
     .desc = Выпускает смертоносную шрапнель, вызывающую сильное кровотечение.
