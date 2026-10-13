@@ -1,8 +1,8 @@
 ent-ActionRevenantShop = Магазин
     .desc = Открывает магазин способностей.
 ent-ActionRevenantDefile = Осквернение
-    .desc = Стоит 30 Эссенции.
-ent-ActionRevenantOverloadLights = Перегрузить лампы
-    .desc = Стоит 40 Эссенции.
-ent-ActionRevenantMalfunction = Поломка техники
-    .desc = Стоит 60 Эссенции.
+    .desc = Цена 30 эссенций.
+ent-ActionRevenantOverloadLights = Перегрузка ламп
+    .desc = Цена 40 эссенций.
+ent-ActionRevenantMalfunction = Сбой
+    .desc = Цена 60 эссенций.

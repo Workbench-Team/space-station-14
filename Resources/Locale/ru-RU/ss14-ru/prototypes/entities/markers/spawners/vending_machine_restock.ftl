@@ -1,9 +1,9 @@
-ent-SpawnVendingMachineRestockFoodDrink = Пополнения запасов торгового автомата
-    .suffix = еда или напитки
+ent-SpawnVendingMachineRestockFoodDrink = спавнер набор пополнения торгомата
     .desc = { ent-MarkerBase.desc }
-ent-SpawnVendingMachineRestockFood = Пополнения запасов торгового автомата
-    .suffix = еда
+    .suffix = Еда или Напитки
+ent-SpawnVendingMachineRestockFood = спавнер набор пополнения торгомата
     .desc = { ent-MarkerBase.desc }
-ent-SpawnVendingMachineRestockDrink = Пополнения запасов торгового автомата
-    .suffix = dнапитки
+    .suffix = Еда
+ent-SpawnVendingMachineRestockDrink = спавнер набор пополнения торгомата
     .desc = { ent-MarkerBase.desc }
+    .suffix = Напитки

@@ -1,2 +1,6 @@
-war-ops-infiltrator-unavailable = ОШИБКА: Выполняется перерасчёт БСС маршрута. Расчётное время: { $minutes } минут и { $seconds } секунд
+war-ops-infiltrator-unavailable = ОШИБКА: Выполняется перерасчёт БСС-перемещений. Расчётное время: { $time } { $time ->
+    [one] минута
+    [few] минуты
+    *[other] минут
+}.
 war-ops-shuttle-call-unavailable = Эвакуационный шаттл в настоящее время недоступен. Пожалуйста, подождите

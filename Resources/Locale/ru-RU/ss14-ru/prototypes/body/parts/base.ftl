@@ -1,4 +1,4 @@
-ent-BasePart = базовая часть тела
+ent-BasePart = часть тела
     .desc = { ent-BaseItem.desc }
 ent-BaseTorso = туловище
     .desc = { ent-BasePart.desc }
@@ -8,9 +8,9 @@ ent-BaseLeftArm = левая рука
     .desc = { ent-BasePart.desc }
 ent-BaseRightArm = правая рука
     .desc = { ent-BasePart.desc }
-ent-BaseLeftHand = левая ладонь
+ent-BaseLeftHand = левая кисть
     .desc = { ent-BasePart.desc }
-ent-BaseRightHand = правая ладонь
+ent-BaseRightHand = правая кисть
     .desc = { ent-BasePart.desc }
 ent-BaseLeftLeg = левая нога
     .desc = { ent-BasePart.desc }

@@ -1,2 +1,2 @@
-ent-ActionMindSwap = Обмен разумами
+ent-ActionMindSwap = Перенос разума
     .desc = Обменяйтесь телами с другим человеком!

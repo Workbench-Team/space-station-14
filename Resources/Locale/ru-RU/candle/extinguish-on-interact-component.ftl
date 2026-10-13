@@ -1,1 +1,1 @@
-candle-extinguish-failed = Пламя мерцает, но не гаснет
+candle-extinguish-failed = Пламя колеблется, но не гаснет

@@ -1,2 +1,2 @@
-ent-SpawnPointPirates = спавнер пирата
+ent-SpawnPointPirates = спавнер пират
     .desc = { ent-MarkerBase.desc }

@@ -4,5 +4,5 @@ info-link-discord = Discord
 info-link-forum = Форум
 info-link-github = GitHub
 info-link-website = Сайт
-info-link-wiki = Вики
-info-link-telegram = Телеграм
+info-link-wiki = Wiki
+info-link-telegram = Telegram

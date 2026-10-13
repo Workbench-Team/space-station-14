@@ -1,8 +1,8 @@
-server-shutdown = Выключить
+server-shutdown = Выключить сервер
 server-ooc-toggle = Вкл/Выкл OOC
 server-looc-toggle = Вкл/Выкл LOOC
-server-afk-timers = AFK Timers
-server-afk-time = Player AFK Time
-server-admin-afk-time = Admin AFK Time
-server-afk-confirm-timeout = Confirm Timeout
-server-dead-chat-toggle = Toggle Dead Chat
+server-afk-timers = АФК таймеры
+server-afk-time = АФК таймер игрока
+server-admin-afk-time = АФК таймер админа
+server-afk-confirm-timeout = Время подтверждения
+server-dead-chat-toggle = Вкл/Выкл чат мёртвых

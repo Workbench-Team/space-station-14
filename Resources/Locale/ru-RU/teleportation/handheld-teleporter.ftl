@@ -1,1 +1,1 @@
-handheld-teleporter-instability-fizzle = Портал затухает, когда вы пытаетесь его открыть, разрушая оба конца!
+handheld-teleporter-instability-fizzle = Портал шипит при попытке установить его, уничтожая оба конца!

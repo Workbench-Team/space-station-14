@@ -3,5 +3,5 @@ ent-ClothingEyesBlindfold = повязка на глаза
 ent-ClothingEyesEyepatch = глазная повязка
     .desc = Яррр.
 ent-ClothingEyesEyepatchFlipped = { ent-ClothingEyesEyepatch }
-    .suffix = Перевёрнутая
     .desc = { ent-ClothingEyesEyepatch.desc }
+    .suffix = Перевёрнутый

@@ -1,6 +1,6 @@
 ent-CryoPod = криокапсула
-    .desc = Специальная машина, предназначенная для создания безопасной среды для использования химикатов, реагирующих в холодных условиях.
+    .desc = Специальный агрегат, создающий безопасную среду для применения химикатов, работающих в условиях низких температур.
 ent-SolutionCryoBuffer = { ent-SolutionSmall }
     .desc = { ent-SolutionSmall.desc }
-ent-CryoPodDestroyed = destroyed cryo pod
-    .desc = A cryo pod that has seen better days. It's entirely inoperable; not good for anything but scrap.
+ent-CryoPodDestroyed = разрушенная криокапсула
+    .desc = Криокапсула, которая видела лучшие дни. Она полностью неработоспособна, пригодна только на металлолом.

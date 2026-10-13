@@ -1,20 +1,23 @@
-cargo-gifts-event-announcement = Поздравляем! { $sender } решила отправить на станцию { $description } в { $dest }. Вы сможете это найти в следующей партии груза на карго шаттле.
-cargo-gift-default-description = Набор подарков
-cargo-gift-default-sender = NanoTrasen
-cargo-gift-default-dest = отдел Карго.
-cargo-gift-dest-bar = Бар
-cargo-gift-dest-eng = Инженерный отдел
-cargo-gift-dest-supp = отдел Карго
-cargo-gift-dest-janitor = Сервисный отдел
-cargo-gift-dest-med = Медицинской отдел
-cargo-gift-dest-sec = отдел Службы безопасности
-cargo-gift-pizza-small = Небольшую пицца-вечеринку
-cargo-gift-pizza-large = Большую пицца-вечеринку
-cargo-gift-eng = Ремонтные материалы
-cargo-gift-vending = Пополнение торгоматов
-cargo-gift-cleaning = Уборочное оборудование
-cargo-gift-medical-supply = Медицинские принадлежности
-cargo-gift-space-protection = Защиту от космической угрозы
-cargo-gift-fire-protection = Противопожарную защиту
-cargo-gift-security-guns = Летальное оружие
-cargo-gift-security-riot = Защитное снаряжение
+cargo-gifts-event-announcement = Поздравляем! { $sender } решили отправить { $description } { $dest } станции. Всё прибудет со следующей партией груза.
+cargo-gift-default-description = набор подарков
+cargo-gift-default-sender = Nanotrasen
+cargo-gift-default-dest = отделу снабжения
+
+cargo-gift-dest-bar = бару
+cargo-gift-dest-eng = инженерному отделу
+cargo-gift-dest-supp = отделу снабжения
+cargo-gift-dest-janitor = сервисному отделу
+cargo-gift-dest-med = медицинскому отделу
+cargo-gift-dest-sec = службе безопасности
+
+cargo-gift-pizza-small = маленький набор пицц
+cargo-gift-pizza-large = большой набор пицц
+
+cargo-gift-eng = ремонтные материалы
+cargo-gift-vending = наборы пополнений торгоматов
+cargo-gift-cleaning = уборочное снаряжение
+cargo-gift-medical-supply = медицинские припасы
+cargo-gift-space-protection = средства защиты от космоса
+cargo-gift-fire-protection = средства защиты от огня
+cargo-gift-security-guns = летальное оружие
+cargo-gift-security-riot = нелетальное снаряжение

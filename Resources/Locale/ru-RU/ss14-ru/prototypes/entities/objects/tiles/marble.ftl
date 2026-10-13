@@ -1,8 +1,9 @@
-ent-FloorTileItemWhiteMarble = white marble tile
-    .desc = A chiseled, polished tile of the finest Space Marble. Best not to lose it.
-ent-FloorTileItemWhiteMarbleMono = white marble mono tile
+# Marble
+ent-FloorTileItemWhiteMarble = белая мраморная плитка
+    .desc = Резной полированный квадрат из лучшего космического мрамора. Лучше его не потерять.
+ent-FloorTileItemWhiteMarbleMono = белая мраморная плита
     .desc = { ent-FloorTileItemWhiteMarble.desc }
-ent-FloorTileItemDarkMarble = dark marble tile
+ent-FloorTileItemDarkMarble = чёрная мраморная плитка
     .desc = { ent-FloorTileItemWhiteMarble.desc }
-ent-FloorTileItemDarkMarbleMono = dark marble mono tile
+ent-FloorTileItemDarkMarbleMono = чёрная мраморная плита
     .desc = { ent-FloorTileItemWhiteMarble.desc }

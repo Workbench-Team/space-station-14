@@ -1,2 +1,2 @@
-ent-SpawnPointNukies = спавнер ядерного оперативника
+ent-SpawnPointNukies = спавнер ядерный оперативник
     .desc = { ent-MarkerBase.desc }

@@ -1,10 +1,10 @@
-ent-ReinforcedPlasmaWindow = армированное плазменное окно
-    .desc = { ent-Window.desc }
-ent-PlasmaReinforcedWindowDirectional = направленное армированное плазменное окно
-    .desc = Смотри не заляпай.
+ent-ReinforcedPlasmaWindow = плазменное бронеокно
+    .desc = { ent-BaseWindowStructure.desc }
+ent-PlasmaReinforcedWindowDirectional = направленное плазменное бронеокно
+    .desc = { ent-BaseWindowStructureDirectional.desc }
 ent-PlasmaReinforcedWindowDirectionalCorner = { ent-PlasmaReinforcedWindowDirectional }
-    .suffix = Corner
     .desc = { ent-PlasmaReinforcedWindowDirectional.desc }
+    .suffix = Угол
 ent-ReinforcedPlasmaWindowDiagonal = { ent-ReinforcedPlasmaWindow }
-    .suffix = Диагональное
     .desc = { ent-ReinforcedPlasmaWindow.desc }
+    .suffix = Диагональ

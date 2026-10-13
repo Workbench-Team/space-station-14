@@ -1,6 +1,7 @@
-ent-CrateCargoLuxuryHardsuit = ящик с роскошным шахтёрским скафандром
-    .desc = Наконец-то у Квартирмейстеров появился скафандр, который они могли бы назвать своим. Центком услышал вас, теперь перестаньте запрашивать.
-ent-CrateCargoParcelWrap = parcel wrap crate
-    .desc = All your parcel wrapping needs in one crate, containing three rolls of parcel wrap.
+ent-CrateCargoLuxuryHardsuit = ящик элитного шахтёрского скафандра
+    .desc = Наконец-то, скафандр, который квартирмейстеры могут назвать своим собственным. Центком услышал вас, а теперь перестаньте спрашивать.
+ent-CrateCargoParcelWrap = ящик обёрточной бумаги
+    .desc = Всё необходимое для упаковки посылок в одном ящике, содержащем три рулона обёрточной бумаги.
 ent-CrateCargoGambling = грандиозная лотерея $$$
     .desc = Ящик с сокровищами, не поддающимися воображению!
+    .suffix = { ent-CratePrivateSecure.suffix }

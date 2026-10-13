@@ -1,62 +1,28 @@
 ent-GasUnaryBase = { ent-GasPipeBase }
     .desc = { ent-GasPipeBase.desc }
-ent-{'values': ['GasVentPump', 'GasVentPumpAlt1', 'GasVentPumpAlt2']} = air vent
-
-  .desc = Has a valve and a pump attached to it.
-ent-{'values': ['GasPassiveVent', 'GasPassiveVentAlt1', 'GasPassiveVentAlt2']} = passive vent
-
-  .desc = It's an open vent.
-ent-{'values': ['GasVentScrubber', 'GasVentScrubberAlt1', 'GasVentScrubberAlt2']} = air scrubber
-
-  .desc = Has a valve and pump attached to it.
-ent-{'values': ['GasOutletInjector', 'GasOutletInjectorAlt1', 'GasOutletInjectorAlt2']} = air injector
-
-  .desc = Has a valve and pump attached to it.
 ent-GasVentPump = вентиляция
-    .desc = Имеет клапан и прикрепленный к нему насос.
-ent-{'values': ['GasThermoMachineFreezer', 'GasThermoMachineFreezerAlt1', 'GasThermoMachineFreezerAlt2']} = freezer
-
-  .desc = Cools gas in connected pipes.
-ent-{'values': ['GasThermoMachineFreezerEnabled', 'GasThermoMachineFreezerEnabledAlt1', 'GasThermoMachineFreezerEnabledAlt2']} = { ent-{'values': ['GasThermoMachineFreezer', 'GasThermoMachineFreezerAlt1', 'GasThermoMachineFreezerAlt2']} }
-
-  .suffix = Enabled
-  .desc = { ent-{'values': ['GasThermoMachineFreezer', 'GasThermoMachineFreezerAlt1', 'GasThermoMachineFreezerAlt2']}.desc }
-ent-{'values': ['GasThermoMachineHeater', 'GasThermoMachineHeaterAlt1', 'GasThermoMachineHeaterAlt2']} = heater
-
-  .desc = Heats gas in connected pipes.
-ent-{'values': ['GasThermoMachineHeaterEnabled', 'GasThermoMachineHeaterEnabledAlt1', 'GasThermoMachineHeaterEnabledAlt2']} = { ent-{'values': ['GasThermoMachineHeater', 'GasThermoMachineHeaterAlt1', 'GasThermoMachineHeaterAlt2']} }
-
-  .suffix = Enabled
-  .desc = { ent-{'values': ['GasThermoMachineHeater', 'GasThermoMachineHeaterAlt1', 'GasThermoMachineHeaterAlt2']}.desc }
-ent-{'values': ['GasThermoMachineHellfireFreezer', 'GasThermoMachineHellfireFreezerAlt1', 'GasThermoMachineHellfireFreezerAlt2']} = hellfire freezer
-
-  .desc = An advanced machine that cools gas in connected pipes. Has the side effect of chilling the surrounding area. Cold as Hell!
-ent-{'values': ['GasThermoMachineHellfireHeater', 'GasThermoMachineHellfireHeaterAlt1', 'GasThermoMachineHellfireHeaterAlt2']} = hellfire heater
-
-  .desc = An advanced machine that heats gas in connected pipes. Has the side effect of leaking heat into the surrounding area. Hot as Hell!
-ent-{'values': ['BaseGasCondenser', 'BaseGasCondenserAlt1', 'BaseGasCondenserAlt2']} = condenser
-
-  .desc = Condenses gases into liquids. Now we just need some plumbing.ent-GasPassiveVent = пассивная вентиляция
+    .desc = Имеет клапан и прикреплённый к нему насос.
+ent-GasPassiveVent = пассивная вентиляция
     .desc = Это открытая вентиляция.
 ent-GasVentScrubber = скруббер
-    .desc = Он же вытяжка. Имеет клапан и прикрепленный к нему насос.
+    .desc = Он же вытяжка. Имеет клапан и прикреплённый к нему насос.
 ent-GasOutletInjector = инжектор
-    .desc = Он же форсунка. Имеет клапан и прикрепленный к нему насос.
+    .desc = Он же форсунка. Имеет клапан и прикреплённый к нему насос.
 ent-BaseGasThermoMachine = термомашина
-    .desc = Нагревает или охлаждает газ в подсоединенных трубах.
+    .desc = { ent-BaseMachinePowered.desc }
 ent-GasThermoMachineFreezer = охладитель
-    .desc = { ent-BaseGasThermoMachine.desc }
+    .desc = Охлаждает газ в присоединённых трубах.
 ent-GasThermoMachineFreezerEnabled = { ent-GasThermoMachineFreezer }
-    .suffix = Включено
     .desc = { ent-GasThermoMachineFreezer.desc }
-ent-GasThermoMachineHeater = нагреватель
-    .desc = { ent-BaseGasThermoMachine.desc }
-ent-GasThermoMachineHeaterEnabled = { ent-GasThermoMachineHeater }
     .suffix = Включено
+ent-GasThermoMachineHeater = нагреватель
+    .desc = Нагревает газ в присоединённых трубах.
+ent-GasThermoMachineHeaterEnabled = { ent-GasThermoMachineHeater }
     .desc = { ent-GasThermoMachineHeater.desc }
-ent-GasThermoMachineHellfireFreezer = адскопламенный охладитель
-    .desc = Продвинутая машина, охлаждающая газ в подсоединённых трубах. Побочный эффект - охлаждение окружающего пространства. Холодно как в аду!
-ent-GasThermoMachineHellfireHeater = адскопламенный нагреватель
-    .desc = Продвинутая машина, нагревающая газ в подсоединённых трубах. Побочный эффект - утечка тепла в окружающее пространство. Горячо, как в аду!
+    .suffix = Включено
+ent-GasThermoMachineHellfireFreezer = адский охладитель
+    .desc = Продвинутое устройство, охлаждающее газ в присоединённых трубах. Побочный эффект — охлаждение окружающего пространства. Холодно как в аду!
+ent-GasThermoMachineHellfireHeater = адский нагреватель
+    .desc = Продвинутое устройство, нагревающее газ в присоединённых трубах. Побочный эффект — нагревание окружающего пространства. Жарко как в аду!
 ent-BaseGasCondenser = конденсатор газа
     .desc = Конденсирует газы в жидкости. Осталось только провести водопровод.

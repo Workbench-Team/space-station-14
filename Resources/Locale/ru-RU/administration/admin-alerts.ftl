@@ -1,6 +1,6 @@
-admin-alert-shared-connection = Игрок { $player } имеет общее соединение с { $otherCount } подключенным(и) игроком(ами): { $otherList }
-admin-alert-ipintel-blocked = Игроку { $player } было отказано в присоединении из-за того, что его IP со { TOSTRING($percent, "P0") }% вероятностью является VPN/Дата-центром.
-admin-alert-ipintel-warning = IP игрока { $player } со { TOSTRING($percent, "P0") }% вероятностью является VPN/Дата-центром. Пожалуйста, следите за ним.
-admin-alert-antag-label = { $message } [ANTAG: { $name }, { $subtype }]
-admin-alert-tp-to-players-header = Players:{ " " }
-admin-alert-tp-to-coords-header = Coords:{ " " }
+admin-alert-shared-connection = { $player } имеет общее интернет-соединение с { $otherCount } другим(-и) игроком(-ами): { $otherList }
+admin-alert-ipintel-blocked = Пользователю { $player } было отказано в присоединении из-за того, что его IP с { TOSTRING($percent, "P2") } уверенностью относится к VPN/ЦОДу.
+admin-alert-ipintel-warning = IP пользователя { $player } с { TOSTRING($percent, "P2") } уверенностью относится к VPN/ЦОДу. Пожалуйста, понаблюдайте за ним.
+admin-alert-antag-label = { $message } [АНТАГ: { $name }, { $subtype }]
+admin-alert-tp-to-players-header = Игроки:{ " " }
+admin-alert-tp-to-coords-header = Координаты:{ " " }

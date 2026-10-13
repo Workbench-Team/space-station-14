@@ -1,7 +1,7 @@
 ent-BaseWelder = { ent-SolutionWelder }
     .desc = { ent-SolutionWelder.desc }
 ent-Welder = сварочный аппарат
-    .desc = Плавит всё что угодно, пока заправлен, не забывайте о защите глаз!
+    .desc = Плавит всё что угодно, пока заправлен. Не забывайте о защите глаз!
 ent-SolutionToolWelder = { ent-SolutionWelder }
     .desc = { ent-SolutionWelder.desc }
 ent-WelderIndustrial = промышленный сварочный аппарат
@@ -20,5 +20,5 @@ ent-SolutionToolWelderMiniEmergency = { ent-SolutionWelder }
     .desc = { ent-SolutionWelder.desc }
 ent-SolutionToolWelderMini = { ent-SolutionWelder }
     .desc = { ent-SolutionWelder.desc }
-ent-RefuelingWelder = refuling welding tool
-    .desc = An slow welder that can refuel itself over time.
+ent-RefuelingWelder = самозаполняющийся сварочный аппарат
+    .desc = Медленный сварочный аппарат, восполняющий топливо со временем.

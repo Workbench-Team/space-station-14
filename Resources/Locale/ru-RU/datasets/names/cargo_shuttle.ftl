@@ -1,4 +1,4 @@
-names-cargo-shuttle-dataset-1 = Шаттл Не Прибудет
+names-cargo-shuttle-dataset-1 = Шаттл Не Наблюдается
 names-cargo-shuttle-dataset-2 = Большой Денежный Шаттл
 names-cargo-shuttle-dataset-3 = Замена Двигателя
 names-cargo-shuttle-dataset-4 = Доставляющий-Грузы

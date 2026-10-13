@@ -1,24 +1,27 @@
-verb-categories-antag = Антаг меню
+verb-categories-antag = Антагонисты
 admin-verb-make-traitor = Сделать цель предателем.
-admin-verb-make-initial-infected = Превращает цель в нулевого заражённого.
-admin-verb-make-zombie = Немедленно превратить цель в зомби.
-admin-verb-make-nuclear-operative = Сделать цель одиноким Ядерным Оперативником.
+admin-verb-make-initial-infected = Сделать цель нулевым пациентом.
+admin-verb-make-zombie = Сделать цель зомби.
+admin-verb-make-nuclear-operative = Сделать цель одиноким ядерным оперативником.
 admin-verb-make-pirate = Сделать цель пиратом\капером. Учтите, что это не меняет игровой режим.
-admin-verb-make-head-rev = Превратите цель в Главного Революционера.
+admin-verb-make-head-rev = Сделать цель главой революции.
 admin-verb-make-thief = Сделать цель вором.
 admin-verb-make-paradox-clone = Создать роль призрака парадоксального клона цели.
-admin-verb-make-wizard = Make the target into a Wizard.
-admin-verb-make-space-ninja = Make the target into a Space Ninja.
-admin-verb-make-changeling = Make the target into a Changeling.
-admin-verb-text-make-traitor = Сделать Предателем
-admin-verb-text-make-initial-infected = Сделать нулевым заражённым
-admin-verb-text-make-zombie = Сделать Зомби
-admin-verb-text-make-nuclear-operative = Сделать Ядерным Оперативником
-admin-verb-text-make-pirate = Сделать Пиратом
-admin-verb-text-make-head-rev = Сделать Главным Революционером
-admin-verb-text-make-thief = Сделать Вором
+admin-verb-make-wizard = Сделать цель волшебником.
+admin-verb-make-space-ninja = Сделать цель космическим ниндзя.
+admin-verb-make-changeling = Сделать цель генокрадом.
+
+
+admin-verb-text-make-traitor = Сделать предателем
+admin-verb-text-make-initial-infected = Сделать нулевым пациентом
+admin-verb-text-make-zombie = Сделать зомби
+admin-verb-text-make-nuclear-operative = Сделать ядерным оперативником
+admin-verb-text-make-pirate = Сделать пиратом
+admin-verb-text-make-head-rev = Сделать главой революции
+admin-verb-text-make-thief = Сделать вором
 admin-verb-text-make-paradox-clone = Создать парадоксального клона
-admin-verb-text-make-wizard = Make Wizard
-admin-verb-text-make-space-ninja = Make Ninja
-admin-verb-text-make-changeling = Make Changeling (WIP)
+admin-verb-text-make-wizard = Сделать волшебником
+admin-verb-text-make-space-ninja = Сделать ниндзя
+admin-verb-text-make-changeling = Сделать генокрадом (WIP)
+
 admin-overlay-antag-classic = АНТАГ

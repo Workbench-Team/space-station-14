@@ -1,30 +1,34 @@
 # Uplink
-store-category-debug = дебаг категория
-store-category-debug2 = дебаг категория 2
+store-category-debug = debug category
+store-category-debug2 = debug category 2
 store-category-weapons = Вооружение
 store-category-ammo = Боеприпасы
 store-category-explosives = Взрывчатка
 store-category-chemicals = Химикаты
-store-category-deception = Обманки
-store-category-disruption = Прорыв
-store-category-allies = Союзники
-store-category-wearables = Одежда
-# Wizard
-store-caregory-spellbook-offensive = Наступательные заклинания
-store-caregory-spellbook-defensive = Защитные заклинания
-store-caregory-spellbook-utility = Полезные заклинания
-store-category-objective = Objective
-store-discounted-items = Скидки
-store-caregory-spellbook-equipment = Снаряжение волшебника
-store-caregory-spellbook-events = Заклинания событий
+store-category-deception = Обман
+store-category-disruption = Саботаж
 store-category-implants = Импланты
+store-category-allies = Союзники
 store-category-job = Работа
+store-category-wearables = Экипировка
 store-category-pointless = Безделушки
+store-category-objective = Цель
+store-discounted-items = Скидки
+
 # Revenant
 store-category-abilities = Способности
+
+# Wizard
+store-caregory-spellbook-offensive = Атакующие заклинания
+store-caregory-spellbook-defensive = Защитные заклинания
+store-caregory-spellbook-utility = Вспомогательные заклинания
+store-caregory-spellbook-equipment = Волшебное снаряжение
+store-caregory-spellbook-events = Заклинания событий
+
 # Nukie Delivery
-store-category-nukie-delivery = Offers
+store-category-nukie-delivery = Предложения
+
 # Changeling
-store-category-combat = Combat
-store-category-utility = Utility
-store-category-stealth = Stealth
+store-category-combat = Боевые
+store-category-utility = Вспомогательные
+store-category-stealth = Скрытные

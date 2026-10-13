@@ -1,6 +1,6 @@
-ent-FloorTileItemConcrete = concrete tile
+ent-FloorTileItemConcrete = бетонная плитка
     .desc = { ent-FloorTileItemBase.desc }
-ent-FloorTileItemConcreteMono = concrete mono tile
+ent-FloorTileItemConcreteMono = бетонная плита
     .desc = { ent-FloorTileItemConcrete.desc }
-ent-FloorTileItemConcreteSmooth = concrete smooth
+ent-FloorTileItemConcreteSmooth = бетонный пол
     .desc = { ent-FloorTileItemConcrete.desc }

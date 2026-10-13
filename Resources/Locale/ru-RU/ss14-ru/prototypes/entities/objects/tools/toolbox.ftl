@@ -1,5 +1,5 @@
-ent-ToolboxBase = { ent-BaseItem }
-    .desc = { ent-BaseItem.desc }
+ent-ToolboxBase = { ent-BaseStorageItem }
+    .desc = { ent-BaseStorageItem.desc }
 ent-ToolboxEmergency = аварийный ящик для инструментов
     .desc = Ярко-красный ящик для инструментов, укомплектованный аварийными инструментами.
 ent-ToolboxMechanical = технический ящик для инструментов
@@ -15,5 +15,5 @@ ent-ToolboxSyndicate = подозрительный ящик для инстру
     .desc = Зловеще выглядящий ящик для инструментов, наполненный лучшими инструментами Синдиката.
 ent-ToolboxGolden = золотой ящик для инструментов
     .desc = Ящик для инструментов из чистого золота. Рэперы убили бы за него.
-ent-Foolbox = foolbox
-    .desc = A toolbox for fools, stocked with clowning equipment.
+ent-Foolbox = ящик для приколов
+    .desc = Шутовской ящик для инструментов, наполненный клоунским снаряжением.

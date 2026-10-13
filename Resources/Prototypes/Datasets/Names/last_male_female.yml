@@ -2,11 +2,11 @@
   id: NamesLastMale
   values:
     prefix: names-last-male-dataset-
-    count: 471
+    count: 470
 
 - type: localizedDataset
   id: NamesLastFemale
   values:
     prefix: names-last-female-dataset-
-    count: 250
+    count: 249
 

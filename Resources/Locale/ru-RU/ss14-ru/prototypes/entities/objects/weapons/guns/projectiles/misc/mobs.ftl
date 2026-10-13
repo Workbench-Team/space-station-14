@@ -1,6 +1,6 @@
-ent-WatcherBolt = watcher bolt
+ent-WatcherBolt = заряд наблюдателя
     .desc = { ent-BaseBullet.desc }
-ent-WatcherBoltMagmawing = magmawing watcher bolt
+ent-WatcherBoltMagmawing = заряд наблюдателя-магмакрыла
     .desc = { ent-WatcherBolt.desc }
-ent-BasiliskRay = basilisk ray
+ent-BasiliskRay = луч василиска
     .desc = { ent-BaseBullet.desc }

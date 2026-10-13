@@ -11,4 +11,4 @@ advertisement-goodcleanfun-10 = Играйте с друзьями!
 thankyou-goodcleanfun-1 = Развлекайтесь!
 thankyou-goodcleanfun-2 = Теперь вы играете с силой!
 thankyou-goodcleanfun-3 = Приступайте к игре!
-thankyou-goodcleanfun-4 = Начинайте составлять листы своих персонажей!
+thankyou-goodcleanfun-4 = Начинайте оформлять листы персонажей!

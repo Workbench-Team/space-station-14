@@ -1,11 +1,12 @@
-ent-WeaponEnergyTurretStationControlPanelElectronicsBase = sentry turret control panel electronics
-    .desc = An electronics board used in a sentry turret control panel.
+ent-WeaponEnergyTurretStationControlPanelElectronicsBase = микросхема панели управления охранной турелью
+    .desc = Электронная плата, используемая в панели управления охранной турелью.
+    .suffix = { ent-BaseElectronics.suffix }
 ent-WeaponEnergyTurretSecurityControlPanelElectronics = { ent-WeaponEnergyTurretStationControlPanelElectronicsBase }
-    .suffix = Security
     .desc = { ent-WeaponEnergyTurretStationControlPanelElectronicsBase.desc }
+    .suffix = Служба Безопасности
 ent-WeaponEnergyTurretAIControlPanelElectronics = { ent-WeaponEnergyTurretStationControlPanelElectronicsBase }
-    .suffix = AI, Silicon
     .desc = { ent-WeaponEnergyTurretStationControlPanelElectronicsBase.desc }
+    .suffix = ИИ, Синтетики
 ent-WeaponEnergyTurretCommandControlPanelElectronics = { ent-WeaponEnergyTurretStationControlPanelElectronicsBase }
-    .suffix = Command
     .desc = { ent-WeaponEnergyTurretStationControlPanelElectronicsBase.desc }
+    .suffix = Командование

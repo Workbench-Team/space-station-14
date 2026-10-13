@@ -1,47 +1,27 @@
-ent-GasPipeSansLayersIndestructible = gas pipe
-    .desc = Holds gas.
-ent-GasPipeSansLayers = gas pipe
-    .desc = Holds gas.
+ent-GasPipeSansLayersIndestructible = газовая труба
+    .desc = Удерживает газ.
+ent-GasPipeSansLayers = { ent-GasPipeSansLayersIndestructible }
+    .desc = { ent-GasPipeSansLayersIndestructible.desc }
 ent-BaseGasPipeLayers = { "" }
     .desc = { "" }
-ent-GasPipeBase = труба
-    .desc = Содержит газ.
-ent-{'values': ['GasPipeHalf', 'GasPipeHalfAlt1', 'GasPipeHalfAlt2']} = { ent-GasPipeBase }
-
-  .suffix = Half
-  .desc = { ent-GasPipeBase.desc }
-ent-{'values': ['GasPipeStraight', 'GasPipeStraightAlt1', 'GasPipeStraightAlt2']} = { ent-GasPipeBase }
-
-  .suffix = Straight
-  .desc = { ent-GasPipeBase.desc }
-ent-{'values': ['GasPipeBend', 'GasPipeBendAlt1', 'GasPipeBendAlt2']} = { ent-GasPipeBase }
-
-  .suffix = Bend
-  .desc = { ent-GasPipeBase.desc }
-ent-{'values': ['GasPipeTJunction', 'GasPipeTJunctionAlt1', 'GasPipeTJunctionAlt2']} = { ent-GasPipeBase }
-
-  .suffix = TJunction
-  .desc = { ent-GasPipeBase.desc }
-ent-{'values': ['GasPipeFourway', 'GasPipeFourwayAlt1', 'GasPipeFourwayAlt2']} = { ent-GasPipeBase }
-
-  .suffix = Fourway
-  .desc = { ent-GasPipeBase.desc }
+ent-GasPipeBase = { ent-GasPipeSansLayers }
+    .desc = { ent-GasPipeSansLayers.desc }
 ent-GasPipeHalf = { ent-GasPipeBase }
+    .desc = { ent-GasPipeBase.desc }
     .suffix = Половинная
-    .desc = { ent-GasPipeBase.desc }
 ent-GasPipeStraight = { ent-GasPipeBase }
+    .desc = { ent-GasPipeBase.desc }
     .suffix = Прямая
-    .desc = { ent-GasPipeBase.desc }
 ent-GasPipeBend = { ent-GasPipeBase }
+    .desc = { ent-GasPipeBase.desc }
     .suffix = Угловая
-    .desc = { ent-GasPipeBase.desc }
 ent-GasPipeTJunction = { ent-GasPipeBase }
+    .desc = { ent-GasPipeBase.desc }
     .suffix = Т-образная
-    .desc = { ent-GasPipeBase.desc }
 ent-GasPipeFourway = { ent-GasPipeBase }
-    .suffix = Четверная
     .desc = { ent-GasPipeBase.desc }
+    .suffix = Четверная
 ent-GasPipeBroken = сломанная труба
-    .desc = Раньше в ней содержался газ.
-ent-GasPipeManifold = gas pipe manifold
-    .desc = Allows gas pipes of different configurations to be connected together.
+    .desc = Раньше она удерживала газ.
+ent-GasPipeManifold = газовый коллектор
+    .desc = Позволяет газовым трубам разных конфигураций соединяться вместе.

@@ -1,4 +1,4 @@
 ent-MaterialBase = { ent-SolutionCryo }
-    .desc = A raw material.
+    .desc = Сырьё.
 ent-BaseSheet = { ent-MaterialBase }
     .desc = { ent-MaterialBase.desc }

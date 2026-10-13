@@ -1,9 +1,9 @@
-ent-BaseSimpleMob = { "" }
+ent-BaseSimpleMob = { ent-BaseMob }
+    .desc = { ent-BaseMob.desc }
     .suffix = ИИ
-    .desc = { "" }
-ent-SimpleSpaceMobBase = { "" }
+ent-SimpleSpaceMobBase = { ent-BaseSimpleMob }
+    .desc = { ent-BaseSimpleMob.desc }
     .suffix = ИИ
-    .desc = { "" }
-ent-SimpleMobBase = { ent-SimpleSpaceMobBase }
+ent-SimpleMobBase = { ent-MobRespirator }
+    .desc = { ent-MobRespirator.desc }
     .suffix = ИИ
-    .desc = { ent-SimpleSpaceMobBase.desc }

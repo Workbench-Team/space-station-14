@@ -1,2 +1,2 @@
-ent-EmitterBolt = emitter bolt
+ent-EmitterBolt = заряд эмиттера
     .desc = { ent-BaseBullet.desc }

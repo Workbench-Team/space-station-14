@@ -1,10 +1,10 @@
 ent-ReinforcedUraniumWindow = урановое бронеокно
-    .desc = { ent-Window.desc }
+    .desc = { ent-BaseWindowStructure.desc }
 ent-UraniumReinforcedWindowDirectional = направленное урановое бронеокно
-    .desc = Смотри не заляпай.
+    .desc = { ent-BaseWindowStructureDirectional.desc }
 ent-UraniumReinforcedWindowDirectionalCorner = { ent-UraniumReinforcedWindowDirectional }
-    .suffix = Corner
     .desc = { ent-UraniumReinforcedWindowDirectional.desc }
+    .suffix = Угол
 ent-ReinforcedUraniumWindowDiagonal = { ent-ReinforcedUraniumWindow }
-    .suffix = Диагональное
     .desc = { ent-ReinforcedUraniumWindow.desc }
+    .suffix = Диагональ

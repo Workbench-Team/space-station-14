@@ -1,18 +1,21 @@
 ent-BaseWeaponGravityGun = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
-ent-WeaponTetherGun = tether gun
-    .desc = Manipulates gravity around objects to fling them at high velocities.
+ent-WeaponTetherGun = гравипушка
+    .desc = Манипулирует гравитацией вокруг объектов, чтобы бросать их с высокой скоростью.
 ent-WeaponTetherGunEmpty = { ent-WeaponTetherGun }
-    .suffix = Empty
     .desc = { ent-WeaponTetherGun.desc }
-ent-WeaponForceGun = force gun
-    .desc = Manipulates gravity around objects to fling them at high velocities.
+    .suffix = Пустой
+ent-WeaponForceGun = силовая пушка
+    .desc = Манипулирует гравитацией вокруг объектов, чтобы бросать их с высокой скоростью.
 ent-WeaponForceGunEmpty = { ent-WeaponForceGun }
-    .suffix = Empty
     .desc = { ent-WeaponForceGun.desc }
-ent-WeaponTetherGunAdmin = tether gun
-    .desc = Manipulates gravity around objects to fling them at high velocities.
-    .suffix = Admeme
-ent-WeaponForceGunAdmin = force gun
-    .desc = Manipulates gravity around objects to fling them at high velocities.
-    .suffix = Admeme
+    .suffix = Пустой
+
+# Admeme
+
+ent-WeaponTetherGunAdmin = гравипушка
+    .desc = Манипулирует гравитацией вокруг объектов, чтобы бросать их с высокой скоростью.
+    .suffix = Адмемы
+ent-WeaponForceGunAdmin = силовая пушка
+    .desc = Манипулирует гравитацией вокруг объектов, чтобы бросать их с высокой скоростью.
+    .suffix = Адмемы

@@ -1,2 +1,2 @@
-ent-BedsheetSpawner = спавнер случайного одеяло
+ent-BedsheetSpawner = спавнер случайное одеяло
     .desc = { ent-MarkerBase.desc }

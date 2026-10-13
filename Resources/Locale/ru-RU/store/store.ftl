@@ -1,17 +1,20 @@
 store-ui-default-title = Магазин
 store-ui-default-withdraw-text = Вывести
-store-ui-refund-text = Refund
+store-ui-refund-text = Возврат
 store-ui-balance-display = { $currency }: { $amount }
 store-ui-price-display = { $amount } { $currency }
-store-ui-discount-display-with-currency = скидка { $amount } на { $currency }
-store-ui-discount-display = (Скидка { $amount }!)
-store-ui-traitor-flavor = Все права защищены (C) НТ -30643
-store-ui-traitor-warning = Оперативники должны блокировать свои аплинки после использования, чтобы избежать обнаружения.
+store-ui-discount-display-with-currency =  скидка { $amount }{ $currency }
+store-ui-discount-display =  (скидка { $amount }!)
+store-ui-traitor-flavor = Копирайт (C) NT -30643
+store-ui-traitor-warning = Во избежании обнаружения оперативники должны блокировать свои аплинки после использования.
+
 store-withdraw-button-ui = Вывести { $currency }
 store-ui-button-out-of-stock = { "" } (Нет в наличии)
-store-not-account-owner = Этот { $store } не принадлежит вам!
+store-not-account-owner = Этот { $store } не привязан к вам!
+
 store-preset-name-uplink = Аплинк
 store-preset-name-spellbook = Книга заклинаний
-store-preset-name-nukie-delivery = NukeOps Bluespace Delivery
-store-preset-name-changeling = DNA Store
-store-listing-locked = Locked
+store-preset-name-nukie-delivery = Блюспейс доставка Ядерных Оперативников
+store-preset-name-changeling = Магазин ДНК
+
+store-listing-locked = Заблокировано

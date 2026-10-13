@@ -4,7 +4,8 @@ advertisement-ammo-3 = Качественное оружие по низким �
 advertisement-ammo-4 = Лучше мёртвый, чем красный!
 advertisement-ammo-5 = Парите как астронавт, жалите как пуля!
 advertisement-ammo-6 = Выразите свою вторую поправку сегодня!
-advertisement-ammo-7 = Оружие не убивает людей, но Вы можете!
+advertisement-ammo-7 = Оружие не убивает людей, но вы можете!
 advertisement-ammo-8 = Кому нужны обязанности, когда есть оружие?
-advertisement-ammo-9 = Убивать людей - это весело!
-advertisement-ammo-10 = Расстреляйте их!
+advertisement-ammo-9 = Убивать людей весело!
+advertisement-ammo-10 = Идите и застрелите их!
+

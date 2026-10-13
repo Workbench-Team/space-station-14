@@ -1,11 +1,11 @@
-ent-ShotGunCabinet = shotgun cabinet
-    .desc = There is a small label that reads "For Emergency use only" along with details for safe use of the shotgun. As if.
+ent-ShotGunCabinet = шкаф для дробовика
+    .desc = Имеется небольшая этикетка с надписью "Только для экстренных ситуаций" вместе с инструкцией по безопасному использованию дробовика. Если бы.
 ent-ShotGunCabinetOpen = { ent-ShotGunCabinet }
-    .suffix = Open
     .desc = { ent-ShotGunCabinet.desc }
+    .suffix = Открытый
 ent-ShotGunCabinetFilled = { ent-ShotGunCabinet }
-    .suffix = Filled
     .desc = { ent-ShotGunCabinet.desc }
+    .suffix = Заполненный
 ent-ShotGunCabinetFilledOpen = { ent-ShotGunCabinetFilled }
-    .suffix = Filled, Open
     .desc = { ent-ShotGunCabinetFilled.desc }
+    .suffix = Заполненный, Открытый

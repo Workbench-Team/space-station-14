@@ -1,1 +1,1 @@
-clothing-boots-sidearm = Запасное оружие
+clothing-boots-sidearm = Личное оружие

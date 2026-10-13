@@ -1,5 +1,5 @@
 ent-ShadowBasaltOne = тенекамень
-    .desc = Светящиеся трещины в реальности. Это наверняка норма.
+    .desc = Светящиеся разломы в реальности. Это нормально, наверное.
 ent-ShadowBasaltTwo = { ent-ShadowBasaltOne }
     .desc = { ent-ShadowBasaltOne.desc }
 ent-ShadowBasaltThree = { ent-ShadowBasaltOne }
@@ -9,5 +9,5 @@ ent-ShadowBasaltFour = { ent-ShadowBasaltOne }
 ent-ShadowBasaltFive = { ent-ShadowBasaltOne }
     .desc = { ent-ShadowBasaltOne.desc }
 ent-ShadowBasaltRandom = { ent-ShadowBasaltOne }
-    .suffix = Случайный
     .desc = { ent-ShadowBasaltOne.desc }
+    .suffix = Случайный

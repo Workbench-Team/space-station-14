@@ -1,2 +1,0 @@
-ent-BaseHungerThirstSlowdown = { "" }
-    .desc = { "" }

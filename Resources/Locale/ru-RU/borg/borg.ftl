@@ -1,50 +1,67 @@
 borg-player-not-allowed = Мозг не помещается!
-borg-player-not-allowed-eject = Мозг выбросился из корпуса!
+borg-player-not-allowed-eject = Мозг был извлечён из корпуса!
+
 borg-panel-not-open = Панель киборга не открыта...
-borg-mind-added = { CAPITALIZE($name) } включился!
-borg-mind-removed = { CAPITALIZE($name) } выключился!
-borg-module-too-many = Не хватает места для ещё одного модуля...
-borg-module-duplicate = Этот модуль уже установлен в этом киборге.
-borg-module-whitelist-deny = Этот модуль не подходит для данного типа киборга...
-borg-module-incompatible = This module isn't compatible with { THE($existing) }...
-borg-module-prerequisite-unfulfilled = This module requires another module to function...
-borg-module-action-name = Activate { $moduleName }
-borg-module-action-description = Select the { $moduleName }, enabling you to use the tools it provides.
+
+borg-mind-added = { CAPITALIZE($name) } включается!
+borg-mind-removed = { CAPITALIZE($name) } выключается!
+
+borg-module-too-many = Для ещё одного модуля не хватает места...
+borg-module-duplicate = Этот модуль уже установлен в этого киборга...
+borg-module-whitelist-deny = Этот модуль не подходит для данного типа киборгов...
+borg-module-incompatible = Этот модуль не совместим с { THE($existing) }.
+borg-module-prerequisite-unfulfilled = Для работы этого модуля необходим другой модуль...
+
+borg-module-action-name = Активировать { $moduleName }
+borg-module-action-description = Выбрать { $moduleName }, чтобы использовать предоставляемые им инструменты.
+
 borg-construction-guide-string = Конечности и туловище киборга должны быть прикреплены к эндоскелету.
-borg-ui-menu-title = Интерфейс Киборга
+
+borg-ui-menu-title = Интерфейс киборга
 borg-ui-charge-label = Заряд: { $charge }%
 borg-ui-no-brain = Мозг отсутствует
-borg-ui-remove-battery = Вынуть
+borg-ui-remove-battery = Извлечь
 borg-ui-modules-label = Модули:
 borg-ui-module-counter = { $actual }/{ $max }
+
 # Transponder
 borg-transponder-disabled-popup = Мозг вылетает из верхушки { $name }!
-borg-transponder-disabling-popup = Ваш транспондер начинает блокировать доступ к корпусу!
-borg-transponder-destroying-popup = Механизм самоуничтожения { $name } начинает пищать!
+borg-transponder-disabling-popup = Ваш транспондер начинает отсоединять вас от шасси!
+borg-transponder-destroying-popup = Система самоуничтожения { $name } начинает пикать!
 borg-transponder-emagged-disabled-popup = Огни вашего транспондера погасли!
 borg-transponder-emagged-destroyed-popup = Предохранитель вашего транспондера перегорел!
-borg-select-type-menu-title = Выберите тип оболочки
-borg-select-type-menu-bottom-text = Выбор оболочки необратим
-borg-select-type-menu-available = Доступные типы
+
+## Borg type selection UI.
+borg-select-type-menu-title = Выберите тип шасси
+borg-select-type-menu-bottom-text = Выбор шасси является необратимым
+borg-select-type-menu-available = Доступные:
 borg-select-type-menu-information = Информация
-borg-select-type-menu-select-type = Выберите тип для просмотра информации
-borg-select-type-menu-confirm = Подтвердить выбор
+borg-select-type-menu-select-type = Выберите тип шасси для просмотра информации
+borg-select-type-menu-confirm = Подтвердите выбор
 borg-select-type-menu-guidebook = Руководство
-borg-type-generic-name = Универсальный
-borg-type-generic-desc = Мастер на все руки, мастер ни в чем. Выполняйте различные случайные поручения на станции или помогайте научному отделу, который вас создал.
-borg-type-generic-transponder = универсальный киборг
-borg-type-engineering-name = Инженерный
-borg-type-engineering-desc = Помогайте команде инженеров в строительстве станции, устранении повреждений или устранении электрических и атмосферных неполадок.
-borg-type-engineering-transponder = инженерный киборг
-borg-type-mining-name = Утилизаторский
-borg-type-mining-desc = Присоединяйтесь к утилизаторам и помогайте им добывать материалы, собирать обломки и бороться с враждебной дикой природой.
-borg-type-mining-transponder = утилизаторский киборг
-borg-type-janitor-name = Уборочный
-borg-type-janitor-desc = Поддерживайте чистоту на станции, убирайте лужи, собирайте и надлежащим образом утилизируйте мусор, оставленный ленивыми членами экипажа.
-borg-type-janitor-transponder = уборочный киборг
-borg-type-medical-name = Медицинский
-borg-type-medical-desc = Оказывайте медицинскую помощь экипажу, который в ней нуждается, либо в медицинском отсеке, либо в опасных зонах, куда обычные парамедики не могут добраться.
-borg-type-medical-transponder = медицинский киборг
+
+## Borg type information
+
+borg-type-generic-name = Универсал
+borg-type-generic-desc = Может всё, но одинаково не очень хорошо. Выполняйте различные случайные поручения на станции, или, быть может, окажите помощь научному отделу, который вас построил.
+borg-type-generic-transponder = обычный киборг
+
+borg-type-engineering-name = Инженер
+borg-type-engineering-desc = Помогайте команде инженеров в строительстве станции, ликвидации повреждений или исправлении проблем с электричеством и атмосферой.
+borg-type-engineering-transponder = киборг-инженер
+
+borg-type-mining-name = Утилизатор
+borg-type-mining-desc = Присоединитесь к утилизаторам и окажите им помощь в добыче ресурсов, исследованию обломков и борьбе с враждебной фауной космоса.
+borg-type-mining-transponder = киборг-шахтёр
+
+borg-type-janitor-name = Уборщик
+borg-type-janitor-desc = Поддерживайте порядок на станции, убирайте пролитую жидкость, собирайте и правильно утилизируйте мусор, оставленный ленивыми членами экипажа.
+borg-type-janitor-transponder = киборг-уборщик
+
+borg-type-medical-name = Медик
+borg-type-medical-desc = Оказывайте медицинскую помощь нуждающемуся экипажу в медотсеке или в опасных зонах, куда обычные парамедики не могут добраться.
+borg-type-medical-transponder = киборг-доктор
+
 borg-type-service-name = Сервисный
-borg-type-service-desc = Помогите экипажу с широким спектром услуг, начиная от подачи закусок и напитков, заканчивая ботаникой и развлечениями.
-borg-type-service-transponder = сервисный киборг
+borg-type-service-desc = Помогайте членам экипажа в самых разных ситуациях — от подачи закусок и напитков до занятий ботаникой и развлечений.
+borg-type-service-transponder = киборг-официант

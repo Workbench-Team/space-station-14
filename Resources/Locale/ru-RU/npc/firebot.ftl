@@ -1,1 +1,1 @@
-firebot-fire-detected = Огонь обнаружен!
+firebot-fire-detected = Обнаружено возгорание!

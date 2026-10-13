@@ -1,4 +1,4 @@
 ent-BaseBow = лук
-    .desc = Настоящий, неверноятно старомодный лук для стрельбы.
-ent-BowImprovised = { ent-BaseBow }
+    .desc = Самый первый пример дерзай — налетай, целься и стреляй.
+ent-BowImprovised = самодельный короткий лук
     .desc = { ent-BaseBow.desc }

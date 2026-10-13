@@ -1,10 +1,14 @@
-alerts-adrenaline-name = [color=red]Adrenaline[/color]
-alerts-adrenaline-desc = You're full of adrenaline: pain won't slow you down.
-alerts-drunk-name = [color=yellow]Drunk[/color]
-alerts-drunk-desc = Recreational poison has made things more difficult for you.
-alerts-muted-name = Muted
-alerts-muted-desc = You have lost the ability to speak.
-alerts-stunned-name = [color=yellow]Stunned[/color]
-alerts-stunned-desc = You're [color=yellow]stunned[/color]! Something is impairing your ability to move or interact with objects.
-alerts-vow-silence-name = Vow of Silence
-alerts-vow-silence-desc = You have taken a vow forbidding verbal or written communication as part of initiation into the Mystiko Tagma Mimon. Click to break your vow.
+alerts-adrenaline-name = [color=red]Адреналин[/color]
+alerts-adrenaline-desc = Вы наполнены адреналином: боль не замедляет вас.
+
+alerts-drunk-name = [color=yellow]Опьянение[/color]
+alerts-drunk-desc = Употребление рекреационных наркотиков усложнило вам жизнь.
+
+alerts-muted-name = Безмолвие
+alerts-muted-desc = Вы потеряли способность говорить.
+
+alerts-stunned-name = [color=yellow]Оглушены[/color]
+alerts-stunned-desc = Вы [color=yellow]оглушены[/color]! Что-то мешает вам двигаться или взаимодействовать с объектами.
+
+alerts-vow-silence-name = Обет молчания
+alerts-vow-silence-desc = Вы дали обет, запрещающий устное или письменное общение, в рамках инициации в Мистико Тагма Мимон. Щёлкните по иконке, чтобы нарушить свой обет.

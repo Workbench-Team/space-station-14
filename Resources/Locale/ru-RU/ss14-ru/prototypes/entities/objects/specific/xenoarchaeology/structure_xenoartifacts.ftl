@@ -1,7 +1,7 @@
-ent-BaseXenoArtifactStructure = artifact
-    .desc = { ent-BaseStructureDynamic.desc }
-ent-DummyArtifactStructure = artifact
-    .suffix = Debug
+ent-BaseXenoArtifactStructure = артефакт
+    .desc = { ent-BaseXenoArtifact.desc }
+ent-DummyArtifactStructure = артефакт
     .desc = { ent-BaseXenoArtifactStructure.desc }
+    .suffix = Debug
 ent-ComplexXenoArtifact = { ent-BaseXenoArtifactStructure }
     .desc = { ent-BaseXenoArtifactStructure.desc }

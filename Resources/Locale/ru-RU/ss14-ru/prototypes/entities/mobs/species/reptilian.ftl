@@ -1,4 +1,4 @@
-ent-BaseMobReptilian = Урисст' МакХэндсс
+ent-BaseMobReptilian = Урисст' МссХэндс
     .desc = { ent-BaseMobSpeciesOrganic.desc }
 ent-MobReptilianDummy = { ent-BaseSpeciesDummy }
-    .desc = { ent-BaseSpeciesDummy.desc }
+    .desc = A dummy reptilian meant to be used in character setup.

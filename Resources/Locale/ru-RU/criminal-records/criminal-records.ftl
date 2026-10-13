@@ -3,7 +3,7 @@ criminal-records-console-records-list-title = Члены экипажа
 criminal-records-console-select-record-info = Выбрать запись.
 criminal-records-console-no-records = Записи не найдены!
 criminal-records-console-no-record-found = Записи о выбранном сотруднике не найдены.
-criminal-records-console-flavor-left = Сначала арестуйте! Вопросы задавайте потом.
+criminal-records-console-flavor-left = Сперва арест! Затем вопросы.
 criminal-records-console-flavor-right = v2.1
 criminal-records-console-show-all = Все
 
@@ -16,10 +16,11 @@ criminal-records-status-detained = Под арестом
 criminal-records-status-suspected = Подозревается
 criminal-records-status-discharged = Освобождён
 criminal-records-status-paroled = Освобождён по УДО
-criminal-records-status-hostile = Hostile
-criminal-records-status-eliminated = Eliminated
-criminal-records-console-wanted-reason = [color=gray]Причина розыска[/color]
-criminal-records-console-suspected-reason = [color=gray]Причина подозрения[/color]
+criminal-records-status-hostile = Враждебен
+criminal-records-status-eliminated = Ликвидирован
+
+criminal-records-console-wanted-reason = Причина розыска
+criminal-records-console-suspected-reason = Причина подозрения
 criminal-records-console-reason = Причина
 criminal-records-console-reason-placeholder = Пример: { $placeholder }
 
@@ -30,6 +31,7 @@ criminal-records-history-placeholder = Впишите сюда преступл�
 criminal-records-no-history = У этого сотрудника безупречный послужной список.
 criminal-records-add-history = Добавить
 criminal-records-delete-history = Удалить
+
 criminal-records-permission-denied = Отказано в доступе
 
 ## Security channel notifications
@@ -42,10 +44,10 @@ criminal-records-console-detained = { $name } ({ $job }) арестовали, �
 criminal-records-console-released = { $name } ({ $job }) отпустили, ответственный: { $officer }.
 criminal-records-console-paroled = { $name } ({ $job }) освободили по УДО, ответственный: { $officer }.
 criminal-records-console-not-parole = { $name } ({ $job }) лишили права на УДО, ответственный: { $officer }.
-criminal-records-console-hostile = { $name } ({ $job }) was marked as hostile by { $officer } for: { $reason }.
-criminal-records-console-not-hostile = { $name } ({ $job }) no longer marked as hostile by { $officer }.
-criminal-records-console-eliminated = { $name } ({ $job }) was marked as eliminated by { $officer }.
-criminal-records-console-not-eliminated = { $name } ({ $job }) no longer marked as eliminated by { $officer }.
+criminal-records-console-hostile = { $name } ({ $job }) пометили враждебным, причина: { $reason }, ответственный: { $officer }.
+criminal-records-console-not-hostile = { $name } ({ $job }) больше не помечен враждебным, ответственный: { $officer }.
+criminal-records-console-eliminated = { $name } ({ $job }) пометили ликвидированным, ответственный: { $officer }.
+criminal-records-console-not-eliminated = { $name } ({ $job }) больше не помечен ликвидированным, ответственный: { $officer }.
 criminal-records-console-unknown-officer = <неизвестный>
 
 ## Filters
@@ -54,10 +56,9 @@ criminal-records-filter-placeholder = Введите текст и нажмит�
 criminal-records-name-filter = Имя
 criminal-records-prints-filter = Отпечатки пальцев
 criminal-records-dna-filter = ДНК
-criminal-records-job-filter = Job
-criminal-records-species-filter = Species
+criminal-records-job-filter = Должность
+criminal-records-species-filter = Вид
 
 ## Arrest auto history lines
-
 criminal-records-console-auto-history = АРЕСТОВАН: { $reason }
 criminal-records-console-unspecified-reason = <причина не указана>

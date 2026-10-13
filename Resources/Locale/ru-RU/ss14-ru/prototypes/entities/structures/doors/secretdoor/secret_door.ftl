@@ -1,7 +1,8 @@
-ent-BaseSecretDoor = { ent-WallSolid }
-    .desc = { ent-WallSolid.desc }
+ent-BaseSecretDoor = обычная стена
+    .desc = Удерживает воздух внутри, а ассистентов снаружи.
     .suffix = Потайная дверь
 ent-BaseSecretDoorAssembly = каркас потайной двери
-    .desc = Она открывается, закрывается и, возможно, раздавит вас.
-ent-SolidSecretDoor = { ent-WallSolid }
-    .desc = { ent-WallSolid.desc }
+    .desc = Он открывается, он закрывается и он может вас раздавить.
+ent-SolidSecretDoor = обычная стена
+    .desc = { ent-BaseSecretDoor.desc }
+    .suffix = { ent-BaseSecretDoor.suffix }

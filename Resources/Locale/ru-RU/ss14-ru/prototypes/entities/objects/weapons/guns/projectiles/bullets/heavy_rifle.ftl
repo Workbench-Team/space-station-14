@@ -1,4 +1,4 @@
-ent-BulletHeavyRifle = bullet (.10 rifle)
+ent-BulletHeavyRifle = пуля (.10 винтовочная)
     .desc = { ent-BaseBullet.desc }
-ent-BulletMinigun = minigun bullet (.10 rifle)
+ent-BulletMinigun = пуля минигана (.10 винтовочная)
     .desc = { ent-BulletHeavyRifle.desc }

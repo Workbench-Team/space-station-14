@@ -1,1 +1,1 @@
-examine-pinpointer-linked = Оно указывает на: { $target }
+examine-pinpointer-linked = Он отслеживает: { $target }

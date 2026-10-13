@@ -1,249 +1,397 @@
-marking-MothAntennasDefault-default = Антенны
+marking-MothAntennasDefault-default = Антенна
 marking-MothAntennasDefault = Антенны (Обычные)
-marking-MothAntennasCharred-charred = Антенны
-marking-MothAntennasCharred = Антенны (Обгоревшие)
-marking-MothAntennasDbushy-dbushy = Антенны
+
+marking-MothAntennasCharred-charred = Антенна
+marking-MothAntennasCharred = Антенны (Обугленные)
+
+marking-MothAntennasDbushy-dbushy = Антенна
 marking-MothAntennasDbushy = Антенны (Кустистые)
-marking-MothAntennasDcurvy-dcurvy = Антенны
+
+marking-MothAntennasDcurvy-dcurvy = Антенна
 marking-MothAntennasDcurvy = Антенны (Закрученные)
-marking-MothAntennasDfan-dfan = Антенны
-marking-MothAntennasDfan = Антенны (Веерные)
-marking-MothAntennasDpointy-dpointy = Антенны
+
+marking-MothAntennasDfan-dfan = Антенна
+marking-MothAntennasDfan = Антенны (Вентилятор)
+
+marking-MothAntennasDpointy-dpointy = Антенна
 marking-MothAntennasDpointy = Антенны (Заострённые)
-marking-MothAntennasFeathery-feathery = Антенны
+
+marking-MothAntennasFeathery-feathery = Антенна
 marking-MothAntennasFeathery = Антенны (Перистые)
-marking-MothAntennasFirewatch-firewatch = Антенны
-marking-MothAntennasFirewatch = Антенны (Пожарогляда)
-marking-MothAntennasGray-gray = Антенны
+
+marking-MothAntennasFirewatch-firewatch = Антенна
+marking-MothAntennasFirewatch = Антенны (Файрвотч)
+
+marking-MothAntennasGray-gray = Антенна
 marking-MothAntennasGray = Антенны (Серые)
-marking-MothAntennasJungle-jungle = Антенны
+
+marking-MothAntennasJungle-jungle = Антенна
 marking-MothAntennasJungle = Антенны (Джунгли)
-marking-MothAntennasMaple-maple = Антенны
-marking-MothAntennasMaple = Антенны (Кленовые)
-marking-MothAntennasMoffra-moffra = Антенны
+
+marking-MothAntennasMaple-maple = Антенна
+marking-MothAntennasMaple = Антенны (Клён)
+
+marking-MothAntennasMoffra-moffra = Антенна
 marking-MothAntennasMoffra = Антенны (Мотра)
-marking-MothAntennasOakworm-oakworm = Антенны
+
+marking-MothAntennasOakworm-oakworm = Антенна
 marking-MothAntennasOakworm = Антенны (Дубовый червь)
-marking-MothAntennasPlasmafire-plasmafire = Антенны
-marking-MothAntennasPlasmafire = Антенны (Плазмопламенные)
-marking-MothAntennasRoyal-royal = Антенны
+
+marking-MothAntennasPlasmafire-plasmafire = Антенна
+marking-MothAntennasPlasmafire = Антенны (Пожар плазмы)
+
+marking-MothAntennasRoyal-royal = Антенна
 marking-MothAntennasRoyal = Антенны (Королевские)
-marking-MothAntennasStriped-striped = Антенны
+
+marking-MothAntennasStriped-striped = Антенна
 marking-MothAntennasStriped = Антенны (Полосатые)
-marking-MothAntennasWhitefly-whitefly = Антенны
-marking-MothAntennasWhitefly = Антенны (Белокрылка)
-marking-MothAntennasWitchwing-witchwing = Антенны
-marking-MothAntennasWitchwing = Антенны (Ведьмокрыл)
+
+marking-MothAntennasWhitefly-whitefly = Антенна
+marking-MothAntennasWhitefly = Антенны (Белая муха)
+
+marking-MothAntennasWitchwing-witchwing = Антенна
+marking-MothAntennasWitchwing = Антенны (Ведьмино крыло)
+
 marking-MothAntennasUnderwing-underwing_primary = Основной
 marking-MothAntennasUnderwing-underwing_secondary = Вторичный
-marking-MothAntennasUnderwing = Антенны (Подкрыльник)
+marking-MothAntennasUnderwing = Антенны (Подкрылье)
+
+
+
 marking-MothWingsDefault-default = Крыло
-marking-MothWingsDefault = Крылья (По умолчанию)
+marking-MothWingsDefault = Крылья (Обычные)
+
 marking-MothWingsCharred-charred = Крыло
-marking-MothWingsCharred = Крылья (Обгоревшие)
+marking-MothWingsCharred = Крылья (Обугленные)
+
 marking-MothWingsDbushy-dbushy_primary = Основной
 marking-MothWingsDbushy-dbushy_secondary = Вторичный
 marking-MothWingsDbushy = Крылья (Тёмные и Кустистые)
+
 marking-MothWingsDeathhead-deathhead_primary = Основной
 marking-MothWingsDeathhead-deathhead_secondary = Вторичный
-marking-MothWingsDeathhead = Крылья (Мёртвая голова)
+marking-MothWingsDeathhead = Крылья (Рука Смерти)
+
 marking-MothWingsFan-fan = Крыло
-marking-MothWingsFan = Крылья (Веерные)
+marking-MothWingsFan = Крылья (Вентилятор)
+
 marking-MothWingsDfan-dfan = Крыло
-marking-MothWingsDfan = Крылья (Тёмные и Веерные)
+marking-MothWingsDfan = Крылья (Тёмные и Вентилятор)
+
 marking-MothWingsFeathery-feathery = Крыло
-marking-MothWingsFeathery = Крылья (Перьевые)
+marking-MothWingsFeathery = Крылья (Перистые)
+
 marking-MothWingsFirewatch-firewatch_primary = Основной
 marking-MothWingsFirewatch-firewatch_secondary = Вторичный
-marking-MothWingsFirewatch = Крылья (Пожарогляда)
+marking-MothWingsFirewatch = Крылья (Файрвотч)
+
 marking-MothWingsGothic-gothic = Крыло
 marking-MothWingsGothic = Крылья (Готика)
+
 marking-MothWingsJungle-jungle = Крыло
 marking-MothWingsJungle = Крылья (Джунгли)
+
 marking-MothWingsLadybug-ladybug = Крыло
 marking-MothWingsLadybug = Крылья (Божья коровка)
+
 marking-MothWingsMaple-maple_primary = Основной
 marking-MothWingsMaple-maple_secondary = Вторичный
-marking-MothWingsMaple = Крылья (Кленовые)
+marking-MothWingsMaple = Крылья (Клён)
+
 marking-MothWingsMoffra-moffra_primary = Основной
 marking-MothWingsMoffra-moffra_secondary = Вторичный
 marking-MothWingsMoffra = Крылья (Мотра)
+
 marking-MothWingsOakworm-oakworm = Крыло
 marking-MothWingsOakworm = Крылья (Дубовый червь)
+
 marking-MothWingsPlasmafire-plasmafire_primary = Основной
 marking-MothWingsPlasmafire-plasmafire_secondary = Вторичный
-marking-MothWingsPlasmafire = Крылья (Плазмопламенные)
+marking-MothWingsPlasmafire = Крылья (Пожар плазмы)
+
 marking-MothWingsPointy-pointy = Крыло
 marking-MothWingsPointy = Крылья (Заострённые)
+
 marking-MothWingsRoyal-royal_primary = Основной
 marking-MothWingsRoyal-royal_secondary = Вторичный
 marking-MothWingsRoyal = Крылья (Королевские)
+
 marking-MothWingsStellar-stellar = Крыло
 marking-MothWingsStellar = Крылья (Звёздные)
+
 marking-MothWingsStriped-striped = Крыло
 marking-MothWingsStriped = Крылья (Полосатые)
+
 marking-MothWingsSwirly-swirly = Крыло
-marking-MothWingsSwirly = Крылья (Вихревые)
+marking-MothWingsSwirly = Крылья (Завихрение)
+
 marking-MothWingsWhitefly-whitefly = Крыло
-marking-MothWingsWhitefly = Крылья (Белокрылка)
+marking-MothWingsWhitefly = Крылья (Белая муха)
+
 marking-MothWingsWitchwing-witchwing = Крыло
-marking-MothWingsWitchwing = Крылья (Ведьмокрыл)
+marking-MothWingsWitchwing = Крылья (Ведьмино крыло)
+
 marking-MothWingsUnderwing-underwing_primary = Основной
 marking-MothWingsUnderwing-underwing_secondary = Вторичный
 marking-MothWingsUnderwing = Крылья (Подкрылье)
+
+
+
+
 marking-MothChestCharred-charred_chest = Грудь
-marking-MothChestCharred = Моль, Грудь (Обгоревшая)
+marking-MothChestCharred = Ниан, Грудь (Обугленные)
+
 marking-MothHeadCharred-charred_head = Голова
-marking-MothHeadCharred = Моль, Голова (Обгоревшая)
-marking-MothLLegCharred-charred_l_leg = Левая Нога
-marking-MothLLegCharred = Моль, Левая Нога (Обгоревшая)
+marking-MothHeadCharred = Ниан, Голова (Обугленные)
+
+marking-MothLLegCharred-charred_l_leg =  Левая Нога
+marking-MothLLegCharred = Ниан, Левая нога (Обугленные)
+
 marking-MothRLegCharred-charred_r_leg = Правая Нога
-marking-MothRLegCharred = Моль, Правая Нога (Обгоревшая)
+marking-MothRLegCharred = Ниан, Правая нога (Обугленные)
+
 marking-MothLArmCharred-charred_l_arm = Левая Рука
-marking-MothLArmCharred = Моль, Левая Рука (Обгоревшая)
+marking-MothLArmCharred = Ниан, Левая рука (Обугленные)
+
 marking-MothRArmCharred-charred_r_arm = Правая Рука
-marking-MothRArmCharred = Моль, Правая Рука (Обгоревшая)
+marking-MothRArmCharred = Ниан, Правая рука (Обугленные)
+
+
+
 marking-MothChestDeathhead-deathhead_chest = Грудь
-marking-MothChestDeathhead = Моль, Грудь (Мёртвая голова)
+marking-MothChestDeathhead = Ниан, Грудь (Рука Смерти)
+
 marking-MothHeadDeathhead-deathhead_head = Голова
-marking-MothHeadDeathhead = Моль, Голова (Мёртвая голова)
+marking-MothHeadDeathhead = Ниан, Голова (Рука Смерти)
+
 marking-MothLLegDeathhead-deathhead_l_leg = Левая Нога
-marking-MothLLegDeathhead = Моль, Левая Нога (Мёртвая голова)
+marking-MothLLegDeathhead = Ниан, Левая нога (Рука Смерти)
+
 marking-MothRLegDeathhead-deathhead_r_leg = Правая Нога
-marking-MothRLegDeathhead = Моль, Правая Нога (Мёртвая голова)
+marking-MothRLegDeathhead = Ниан, Правая нога (Рука Смерти)
+
 marking-MothLArmDeathhead-deathhead_l_arm = Левая Рука
-marking-MothLArmDeathhead = Моль, Левая Рука (Мёртвая голова)
+marking-MothLArmDeathhead = Ниан, Левая рука (Рука Смерти)
+
 marking-MothRArmDeathhead-deathhead_r_arm = Правая Рука
-marking-MothRArmDeathhead = Моль, Правая Рука (Мёртвая голова)
+marking-MothRArmDeathhead = Ниан, Правая рука (Рука Смерти)
+
+
+
 marking-MothChestFan-fan_chest = Грудь
-marking-MothChestFan = Моль, Грудь (Веерная)
+marking-MothChestFan = Ниан, Грудь (Вентилятор)
+
 marking-MothHeadFan-fan_head = Голова
-marking-MothHeadFan = Моль, Голова (Веерная)
+marking-MothHeadFan = Ниан, Голова (Вентилятор)
+
 marking-MothLLegFan-fan_l_leg = Левая Нога
-marking-MothLLegFan = Моль, Левая Нога (Веерная)
+marking-MothLLegFan = Ниан, Левая нога (Вентилятор)
+
 marking-MothRLegFan-fan_r_leg = Правая Нога
-marking-MothRLegFan = Моль, Правая Нога (Веерная)
+marking-MothRLegFan = Ниан, Правая нога (Вентилятор)
+
 marking-MothLArmFan-fan_l_arm = Левая Рука
-marking-MothLArmFan = Моль, Левая Рука (Веерная)
+marking-MothLArmFan = Ниан, Левая рука (Вентилятор)
+
 marking-MothRArmFan-fan_r_arm = Правая Рука
-marking-MothRArmFan = Моль, Правая Рука (Веерная)
+marking-MothRArmFan = Ниан, Правая рука (Вентилятор)
+
+
+
 marking-MothChestFirewatch-firewatch_chest = Грудь
-marking-MothChestFirewatch = Моль, Грудь (Пожарогляда)
+marking-MothChestFirewatch = Ниан, Грудь (Файрвотч)
+
 marking-MothHeadFirewatch-firewatch_head = Голова
-marking-MothHeadFirewatch = Моль, Голова (Пожарогляда)
+marking-MothHeadFirewatch = Ниан, Голова (Файрвотч)
+
 marking-MothLLegFirewatch-firewatch_l_leg = Левая Нога
-marking-MothLLegFirewatch = Моль, Левая Нога (Пожарогляда)
+marking-MothLLegFirewatch = Ниан, Левая нога (Файрвотч)
+
 marking-MothRLegFirewatch-firewatch_r_leg = Правая Нога
-marking-MothRLegFirewatch = Моль, Правая Нога (Пожарогляда)
+marking-MothRLegFirewatch = Ниан, Правая нога (Файрвотч)
+
 marking-MothLArmFirewatch-firewatch_l_arm = Левая Рука
-marking-MothLArmFirewatch = Моль, Левая Рука (Пожарогляда)
+marking-MothLArmFirewatch = Ниан, Левая рука (Файрвотч)
+
 marking-MothRArmFirewatch-firewatch_r_arm = Правая Рука
-marking-MothRArmFirewatch = Моль, Правая Рука (Пожарогляда)
+marking-MothRArmFirewatch = Ниан, Правая рука (Файрвотч)
+
+
+
 marking-MothChestGothic-gothic_chest = Грудь
-marking-MothChestGothic = Моль, Грудь (Готика)
+marking-MothChestGothic = Ниан, Грудь (Готика)
+
 marking-MothHeadGothic-gothic_head = Голова
-marking-MothHeadGothic = Моль, Голова (Готика)
+marking-MothHeadGothic = Ниан, Голова (Готика)
+
 marking-MothLLegGothic-gothic_l_leg = Левая Нога
-marking-MothLLegGothic = Моль, Левая Нога (Готика)
+marking-MothLLegGothic = Ниан, Левая нога (Готика)
+
 marking-MothRLegGothic-gothic_r_leg = Правая Нога
-marking-MothRLegGothic = Моль, Правая Нога (Готика)
+marking-MothRLegGothic = Ниан, Правая нога (Готика)
+
 marking-MothLArmGothic-gothic_l_arm = Левая Рука
-marking-MothLArmGothic = Моль, Левая Рука (Готика)
+marking-MothLArmGothic = Ниан, Левая рука (Готика)
+
 marking-MothRArmGothic-gothic_r_arm = Правая Рука
-marking-MothRArmGothic = Моль, Правая Рука (Готика)
+marking-MothRArmGothic = Ниан, Правая рука (Готика)
+
+
+
 marking-MothChestJungle-jungle_chest = Грудь
-marking-MothChestJungle = Моль, Грудь (Джунгли)
+marking-MothChestJungle = Ниан, Грудь (Джунгли)
+
 marking-MothHeadJungle-jungle_head = Голова
-marking-MothHeadJungle = Моль, Голова (Джунгли)
+marking-MothHeadJungle = Ниан, Голова (Джунгли)
+
 marking-MothLLegJungle-jungle_l_leg = Левая Нога
-marking-MothLLegJungle = Моль, Левая Нога (Джунгли)
+marking-MothLLegJungle = Ниан, Левая нога (Джунгли)
+
 marking-MothRLegJungle-jungle_r_leg = Правая Нога
-marking-MothRLegJungle = Моль, Правая Нога (Джунгли)
+marking-MothRLegJungle = Ниан, Правая нога (Джунгли)
+
 marking-MothLArmJungle-jungle_l_arm = Левая Рука
-marking-MothLArmJungle = Моль, Левая Рука (Джунгли)
+marking-MothLArmJungle = Ниан, Левая рука (Джунгли)
+
 marking-MothRArmJungle-jungle_r_arm = Правая Рука
-marking-MothRArmJungle = Моль, Правая Рука (Джунгли)
+marking-MothRArmJungle = Ниан, Правая рука (Джунгли)
+
+
+
 marking-MothChestMoonfly-moonfly_chest = Грудь
-marking-MothChestMoonfly = Моль, Грудь (Луннокрыла)
+marking-MothChestMoonfly = Ниан, Грудь (Мунфлай)
+
 marking-MothHeadMoonfly-moonfly_head = Голова
-marking-MothHeadMoonfly = Моль, Голова (Луннокрыла)
+marking-MothHeadMoonfly = Ниан, Голова (Мунфлай)
+
 marking-MothLLegMoonfly-moonfly_l_leg = Левая Нога
-marking-MothLLegMoonfly = Моль, Левая Нога (Луннокрыла)
+marking-MothLLegMoonfly = Ниан, Левая нога (Мунфлай)
+
 marking-MothRLegMoonfly-moonfly_r_leg = Правая Нога
-marking-MothRLegMoonfly = Моль, Правая Нога (Луннокрыла)
+marking-MothRLegMoonfly = Ниан, Правая нога (Мунфлай)
+
 marking-MothLArmMoonfly-moonfly_l_arm = Левая Рука
-marking-MothLArmMoonfly = Моль, Левая Рука (Луннокрыла)
+marking-MothLArmMoonfly = Ниан, Левая рука (Мунфлай)
+
 marking-MothRArmMoonfly-moonfly_r_arm = Правая Рука
-marking-MothRArmMoonfly = Моль, Правая Рука (Луннокрыла)
+marking-MothRArmMoonfly = Ниан, Правая рука (Мунфлай)
+
+
+
 marking-MothChestOakworm-oakworm_chest = Грудь
-marking-MothChestOakworm = Моль, Грудь (Дубовый червь)
+marking-MothChestOakworm = Ниан, Грудь (Дубовый червь)
+
 marking-MothHeadOakworm-oakworm_head = Голова
-marking-MothHeadOakworm = Моль, Голова (Дубовый червь)
+marking-MothHeadOakworm = Ниан, Голова (Дубовый червь)
+
 marking-MothLLegOakworm-oakworm_l_leg = Левая Нога
-marking-MothLLegOakworm = Моль, Левая Нога (Дубовый червь)
+marking-MothLLegOakworm = Ниан, Левая нога (Дубовый червь)
+
 marking-MothRLegOakworm-oakworm_r_leg = Правая Нога
-marking-MothRLegOakworm = Моль, Правая Нога (Дубовый червь)
+marking-MothRLegOakworm = Ниан, Правая нога (Дубовый червь)
+
 marking-MothLArmOakworm-oakworm_l_arm = Левая Рука
-marking-MothLArmOakworm = Моль, Левая Рука (Дубовый червь)
+marking-MothLArmOakworm = Ниан, Левая рука (Дубовый червь)
+
 marking-MothRArmOakworm-oakworm_r_arm = Правая Рука
-marking-MothRArmOakworm = Моль, Правая Рука (Дубовый червь)
+marking-MothRArmOakworm = Ниан, Правая рука (Дубовый червь)
+
+
+
 marking-MothChestPointy-pointy_chest = Грудь
-marking-MothChestPointy = Моль, Грудь (Заострённые)
+marking-MothChestPointy = Ниан, Грудь (Заострённые)
+
 marking-MothHeadPointy-pointy_head = Голова
-marking-MothHeadPointy = Моль, Голова (Заострённые)
+marking-MothHeadPointy = Ниан, Голова (Заострённые)
+
 marking-MothLLegPointy-pointy_l_leg = Левая Нога
-marking-MothLLegPointy = Моль, Левая Нога (Заострённые)
+marking-MothLLegPointy = Ниан, Левая нога (Заострённые)
+
 marking-MothRLegPointy-pointy_r_leg = Правая Нога
-marking-MothRLegPointy = Моль, Правая Нога (Заострённые)
+marking-MothRLegPointy = Ниан, Правая нога (Заострённые)
+
 marking-MothLArmPointy-pointy_l_arm = Левая Рука
-marking-MothLArmPointy = Моль, Левая Рука (Заострённые)
+marking-MothLArmPointy = Ниан, Левая рука (Заострённые)
+
 marking-MothRArmPointy-pointy_r_arm = Правая Рука
-marking-MothRArmPointy = Моль, Правая Рука (Заострённые)
+marking-MothRArmPointy = Ниан, Правая рука (Заострённые)
+
+
+
 marking-MothChestRagged-ragged_chest = Грудь
-marking-MothChestRagged = Моль, Грудь (Потрёпанные)
+marking-MothChestRagged = Ниан, Грудь (Потрёпанные)
+
 marking-MothHeadRagged-ragged_head = Голова
-marking-MothHeadRagged = Моль, Голова (Потрёпанные)
+marking-MothHeadRagged = Ниан, Голова (Потрёпанные)
+
 marking-MothLLegRagged-ragged_l_leg = Левая Нога
-marking-MothLLegRagged = Моль, Левая Нога (Потрёпанные)
+marking-MothLLegRagged = Ниан, Левая нога (Потрёпанные)
+
 marking-MothRLegRagged-ragged_r_leg = Правая Нога
-marking-MothRLegRagged = Моль, Правая Нога (Потрёпанные)
+marking-MothRLegRagged = Ниан, Правая нога (Потрёпанные)
+
 marking-MothLArmRagged-ragged_l_arm = Левая Рука
-marking-MothLArmRagged = Моль, Левая Рука (Потрёпанные)
+marking-MothLArmRagged = Ниан, Левая рука (Потрёпанные)
+
 marking-MothRArmRagged-ragged_r_arm = Правая Рука
-marking-MothRArmRagged = Моль, Правая Рука (Потрёпанные)
+marking-MothRArmRagged = Ниан, Правая рука (Потрёпанные)
+
+
+
 marking-MothChestRoyal-royal_chest = Грудь
-marking-MothChestRoyal = Моль, Грудь (Королевские)
+marking-MothChestRoyal = Ниан, Грудь (Королевские)
+
 marking-MothHeadRoyal-royal_head = Голова
-marking-MothHeadRoyal = Моль, Голова (Королевские)
+marking-MothHeadRoyal = Ниан, Голова (Королевские)
+
 marking-MothLLegRoyal-royal_l_leg = Левая Нога
-marking-MothLLegRoyal = Моль, Левая Нога (Королевские)
+marking-MothLLegRoyal = Ниан, Левая нога (Королевские)
+
 marking-MothRLegRoyal-royal_r_leg = Правая Нога
-marking-MothRLegRoyal = Моль, Правая Нога (Королевские)
+marking-MothRLegRoyal = Ниан, Правая нога (Королевские)
+
 marking-MothLArmRoyal-royal_l_arm = Левая Рука
-marking-MothLArmRoyal = Моль, Левая Рука (Королевские)
+marking-MothLArmRoyal = Ниан, Левая рука (Королевские)
+
 marking-MothRArmRoyal-royal_r_arm = Правая Рука
-marking-MothRArmRoyal = Моль, Правая Рука (Королевские)
+marking-MothRArmRoyal = Ниан, Правая рука (Королевские)
+
+
+
 marking-MothChestWhitefly-whitefly_chest = Грудь
-marking-MothChestWhitefly = Моль, Грудь (Белокрылка)
+marking-MothChestWhitefly = Ниан, Грудь (Белая муха)
+
 marking-MothHeadWhitefly-whitefly_head = Голова
-marking-MothHeadWhitefly = Моль, Голова (Белокрылка)
+marking-MothHeadWhitefly = Ниан, Голова (Белая муха)
+
 marking-MothLLegWhitefly-whitefly_l_leg = Левая Нога
-marking-MothLLegWhitefly = Моль, Левая Нога (Белокрылка)
+marking-MothLLegWhitefly = Ниан, Левая нога (Белая муха)
+
 marking-MothRLegWhitefly-whitefly_r_leg = Правая Нога
-marking-MothRLegWhitefly = Моль, Правая Нога (Белокрылка)
+marking-MothRLegWhitefly = Ниан, Правая нога (Белая муха)
+
 marking-MothLArmWhitefly-whitefly_l_arm = Левая Рука
-marking-MothLArmWhitefly = Моль, Левая Рука (Белокрылка)
+marking-MothLArmWhitefly = Ниан, Левая рука (Белая муха)
+
 marking-MothRArmWhitefly-whitefly_r_arm = Правая Рука
-marking-MothRArmWhitefly = Моль, Правая Рука (Белокрылка)
+marking-MothRArmWhitefly = Ниан, Правая рука (Белая муха)
+
+
+
 marking-MothChestWitchwing-witchwing_chest = Грудь
-marking-MothChestWitchwing = Моль, Грудь (Ведьмокрыл)
+marking-MothChestWitchwing = Ниан, Грудь (Ведьмино крыло)
+
 marking-MothHeadWitchwing-witchwing_head = Голова
-marking-MothHeadWitchwing = Моль, Голова (Ведьмокрыл)
+marking-MothHeadWitchwing = Ниан, Голова (Ведьмино крыло)
+
 marking-MothLLegWitchwing-witchwing_l_leg = Левая Нога
-marking-MothLLegWitchwing = Моль, Левая Нога (Ведьмокрыл)
+marking-MothLLegWitchwing = Ниан, Левая нога (Ведьмино крыло)
+
 marking-MothRLegWitchwing-witchwing_r_leg = Правая Нога
-marking-MothRLegWitchwing = Моль, Правая Нога (Ведьмокрыл)
+marking-MothRLegWitchwing = Ниан, Правая нога (Ведьмино крыло)
+
 marking-MothLArmWitchwing-witchwing_l_arm = Левая Рука
-marking-MothLArmWitchwing = Моль, Левая Рука (Ведьмокрыл)
+marking-MothLArmWitchwing = Ниан, Левая рука (Ведьмино крыло)
+
 marking-MothRArmWitchwing-witchwing_r_arm = Правая Рука
-marking-MothRArmWitchwing = Моль, Правая Рука (Ведьмокрыл)
+marking-MothRArmWitchwing = Ниан, Правая рука (Ведьмино крыло)

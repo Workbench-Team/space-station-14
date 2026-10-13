@@ -1,3 +1,3 @@
 loadout-window = Снаряжение
-loadout-none = Нету
-loadout-window-title-loadout = { $job } loadout
+loadout-none = Ничего
+loadout-window-title-loadout = Снаряжение: { $job }

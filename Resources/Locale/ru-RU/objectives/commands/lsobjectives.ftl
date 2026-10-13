@@ -1,3 +1,3 @@
 # lsobjectives
-cmd-lsobjectives-desc = Перечисляет все цели в голове игрока.
-cmd-lsobjectives-help = Использование: lsobjectives <ник игрока>
+cmd-lsobjectives-desc = Выводит список всех целей сознания игрока.
+cmd-lsobjectives-help = Использование: lsobjectives <username>

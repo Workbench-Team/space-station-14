@@ -1,18 +1,19 @@
-cmd-jobwhitelist-job-does-not-exist = Работа { $job } не существует.
+cmd-jobwhitelist-job-does-not-exist = Должность { $job } не существует.
 cmd-jobwhitelist-player-not-found = Игрок { $player } не найден.
 cmd-jobwhitelist-hint-player = [player]
 cmd-jobwhitelist-hint-job = [job]
-cmd-jobwhitelistadd-desc = Позволяет игроку играть на, внесенной в белый список, работе.
-cmd-jobwhitelistadd-help = Использование: jobwhitelistadd <никигрока> <работа>
-cmd-jobwhitelistadd-already-whitelisted = { $player } уже внесен в белый список для игры на { $jobId } .({ $jobName }).
-cmd-jobwhitelistadd-added = Добавлен { $player } в белый список { $JobID } ({ $jobName }).
-cmd-jobwhitelistget-desc = Получает все работы, для которых игрок был внесен в белый список.
-cmd-jobwhitelistget-help = Использование: jobwhitelistget <никигрока>
-cmd-jobwhitelistget-whitelisted-none = Игрок { $player } не внесён в белый список ни для какой работы.
-cmd-jobwhitelistget-whitelisted-for =
-    "Игрок { $player } внесен в белый список для:
-    { $jobs }"
-cmd-jobwhitelistremove-desc = Удаляет возможность игрока играть на роли, внесенной в белый список.
-cmd-jobwhitelistremove-help = Использование: jobwhitelistremove <никигрока> <работа>
-cmd-jobwhitelistremove-was-not-whitelisted = { $player } не был включен в белый список для игры в качестве { $jobId } ({ $jobName }).
-cmd-jobwhitelistremove-removed = Удален { $player } из белого списка для { $JobID } ({ $jobName }).
+
+cmd-jobwhitelistadd-desc = Позволяет игроку играть на должности из вайтлиста.
+cmd-jobwhitelistadd-help = Использование: jobwhitelistadd <username> <job>
+cmd-jobwhitelistadd-already-whitelisted = { $player } уже в вайтлисте на должность { $jobId } .({ $jobName }).
+cmd-jobwhitelistadd-added = { $player } добавлен в вайтлист { $jobId } ({ $jobName }).
+
+cmd-jobwhitelistget-desc = Даёт список всех должностей, в вайтлистах на которые игрок состоит.
+cmd-jobwhitelistget-help = Использование: jobwhitelistget <username>
+cmd-jobwhitelistget-whitelisted-none = Игрока { $player } нет в вайтлистах ни на какую должность.
+cmd-jobwhitelistget-whitelisted-for = Игрок { $player } в вайтлистах на следующие должности: { $jobs }
+
+cmd-jobwhitelistremove-desc = Отнимает право игрока играть на должности из вайтлиста.
+cmd-jobwhitelistremove-help = Использование: jobwhitelistremove <username> <job>
+cmd-jobwhitelistremove-was-not-whitelisted = { $player } не был в вайтлисте на игру в должности { $jobId } ({ $jobName }).
+cmd-jobwhitelistremove-removed = { $player } удалён из вайтлиста должности { $jobId } ({ $jobName }).

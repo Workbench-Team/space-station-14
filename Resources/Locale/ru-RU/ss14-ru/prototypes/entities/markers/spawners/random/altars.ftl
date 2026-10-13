@@ -1,6 +1,6 @@
-ent-AltarSpawner = спавнер случайного алтаря
+ent-AltarSpawner = спавнер случайный алтарь
     .desc = { ent-MarkerBase.desc }
-ent-ConvertAltarSpawner = спавнер случайного конверт-алтаря
+ent-ConvertAltarSpawner = спавнер случайный конверт-алтарь
     .desc = { ent-MarkerBase.desc }
-ent-CultAltarSpawner = спавнер случайного культ-алтаря
+ent-CultAltarSpawner = спавнер случайный культ-алтарь
     .desc = { ent-MarkerBase.desc }

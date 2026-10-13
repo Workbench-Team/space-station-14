@@ -1,2 +1,3 @@
 ent-HolopadMachineCircuitboard = голопад (машинная плата)
-    .desc = Машинная плата для голопада.
+    .desc = Печатная плата голопада.
+    .suffix = { ent-BaseMachineCircuitboard.suffix }

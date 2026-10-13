@@ -1,11 +1,11 @@
-ent-FireAxeCabinet = fire axe cabinet
-    .desc = There is a small label that reads "For Emergency use only" along with details for safe use of the axe. As if.
+ent-FireAxeCabinet = шкаф для пожарного топора
+    .desc = Небольшая табличка гласит "Только для экстренных случаев" и содержит инструкцию по безопасной эксплуатации топора. Ага, конечно.
 ent-FireAxeCabinetOpen = { ent-FireAxeCabinet }
-    .suffix = Open
     .desc = { ent-FireAxeCabinet.desc }
+    .suffix = Открытый
 ent-FireAxeCabinetFilled = { ent-FireAxeCabinet }
-    .suffix = Filled
     .desc = { ent-FireAxeCabinet.desc }
+    .suffix = Наполненный
 ent-FireAxeCabinetFilledOpen = { ent-FireAxeCabinetFilled }
-    .suffix = Filled, Open
     .desc = { ent-FireAxeCabinetFilled.desc }
+    .suffix = Открытый, Наполненный

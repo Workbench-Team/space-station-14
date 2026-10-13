@@ -1,26 +1,38 @@
 reagent-name-blood = кровь
 reagent-desc-blood = Я надеюсь, что это кетчуп.
+
 reagent-name-insect-blood = кровь насекомого
 reagent-desc-insect-blood = Окей, а это реально мерзко. Она выглядит почти... живой?
+
 reagent-name-slime = слизь
-reagent-desc-slime = Сначала Вам показалось, что это градиент крови, но Вы ошиблись.
-reagent-name-sap = сок
-reagent-desc-sap = Липкая, сладкая кровь дерева.
-reagent-name-hemocyanin-blood = синяя кровь
-reagent-desc-hemocyanin-blood = Содержит медь, а не железо, что придаёт ей ярко выраженный синий цвет.
+reagent-desc-slime = Сначала вам показалось, что это градиент крови, но вы ошиблись.
+
+reagent-name-sap = древесный сок
+reagent-desc-sap = Липкая, сладкая кровь деревьев.
+
+reagent-name-hemocyanin-blood = голубая кровь
+reagent-desc-hemocyanin-blood = Содержит медь, а не железо, что придаёт ей ярко выраженный голубой цвет.
+
 reagent-name-ammonia-blood = анаэробная кровь
 reagent-desc-ammonia-blood = Ничто другое во всей галактике не пахнет так отвратительно.
-reagent-name-sulfur-blood = sulfuric blood
-reagent-desc-sulfur-blood = Feels almost acidic.
+
+reagent-name-sulfur-blood = сернистая кровь
+reagent-desc-sulfur-blood = Ощущение почти кислотное.
+
 reagent-name-zombie-blood = кровь зомби
 reagent-desc-zombie-blood = Не рекомендуется употреблять в пищу. Может быть использована для создания прививки от инфекции.
+
 reagent-name-ichor = ихор
-reagent-desc-ichor = Чрезвычайно мощное регенеративное химическое вещество, доведенное до совершенства эволюцией космической фауны. Производится в пищеварительной системе дракона и считается экзотическим товаром, поскольку охота на него требует огромных усилий.
+reagent-desc-ichor = Чрезвычайно мощное регенеративное химическое вещество, доведённое до совершенства эволюцией космической фауны. Производится в пищеварительной системе дракона и считается экзотическим товаром, поскольку охота на него требует огромных усилий.
+
 reagent-name-fat = жир
-reagent-desc-fat = Независимо от того, как он был получен, его использование важно.
+reagent-desc-fat = Независимо от того, как он был получен, его применение важно.
+
 reagent-name-vomit = рвота
-reagent-desc-vomit = В ней можно увидеть несколько кусочков чьей-то последней еды.
+reagent-desc-vomit = Вы можете увидеть в ней несколько кусков чьей-то последней еды.
+
 reagent-name-grey-matter = серое вещество
-reagent-desc-grey-matter = Сок мыслей, который сочится из ваших ушей.
-reagent-name-living-tissue = living tissue
-reagent-desc-living-tissue = A mix of visceral matter from an alien species. You can feel it staring at you.
+reagent-desc-grey-matter = Сок мыслей, вытекающий из ушей.
+
+reagent-name-living-tissue = живая плоть
+reagent-desc-living-tissue = Смесь внутренностей инопланетной расы. Вы чувствуете, что она смотрит на вас.

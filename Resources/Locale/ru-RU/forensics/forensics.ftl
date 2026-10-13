@@ -20,10 +20,12 @@ forensic-scanner-match-none = Совпадений не найдено!
 forensic-scanner-printer-not-ready = Принтер не готов.
 forensic-scanner-verb-text = Сканировать
 forensic-scanner-verb-message = Выполняется криминалистическое сканирование
+
 forensics-dna-unknown = неизвестная ДНК
+
 forensics-verb-text = Счистить улики
 forensics-verb-message = Счистить отпечатки пальцев и остатки ДНК с объекта!
-forensics-cleaning-user = You begin cleaning the evidence off of { THE($target) }...
-forensics-cleaning-others = { CAPITALIZE($user) } begins cleaning the evidence off of { THE($target) }.
-forensics-cleaning = Вы начинаете счищать улики с { $target }...
+forensics-cleaning-user = Вы начинаете счищать улики с { $target }...
+forensics-cleaning-others = { CAPITALIZE($user) } начинает счищать улики с { THE($target) }.
+
 forensics-cleaning-cannot-clean = Ничего нельзя счистить с { $target }!

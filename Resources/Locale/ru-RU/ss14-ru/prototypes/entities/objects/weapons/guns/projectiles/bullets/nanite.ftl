@@ -1,6 +1,2 @@
-ent-MuzzleFlashEffectNanite = { "" }
-    .desc = { "" }
-ent-BulletImpactEffectNanite = { "" }
-    .desc = { "" }
-ent-BulletNanite = nanite crystal
+ent-BulletNanite = нанитовый кристалл
     .desc = { ent-BaseBullet.desc }

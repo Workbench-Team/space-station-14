@@ -1,6 +1,6 @@
-ent-ClothingUniformJumpskirtCargo = cargo tech jumpskirt
-    .desc = A sturdy jumpskirt, issued to members of the Cargo department.
-ent-ClothingUniformJumpskirtQM = quartermaster's jumpskirt
-    .desc = What can brown do for you?
-ent-ClothingUniformJumpskirtQMTurtleneck = quartermasters's turtleneck
-    .desc = A sharp turtleneck made for the hardy work environment of supply.
+ent-ClothingUniformJumpskirtCargo = юбка-комбинезон грузчика
+    .desc = Прочная юбка-комбинезон, выдаваемая сотрудникам отдела снабжения.
+ent-ClothingUniformJumpskirtQM = юбка-комбинезон квартирмейстера
+    .desc = Что Браун может сделать для вас?
+ent-ClothingUniformJumpskirtQMTurtleneck = юбка-водолазка квартирмейстера
+    .desc = Строгая водолазка, предназначенная для суровых условий работы в сфере снабжения.

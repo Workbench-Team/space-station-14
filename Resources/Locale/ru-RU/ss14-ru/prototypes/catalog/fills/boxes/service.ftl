@@ -1,10 +1,10 @@
-ent-BoxCleanerGrenades = коробка чистонат
-    .desc = Коробка, полная чистонат.
-ent-BoxMousetrap = mousetrap box
-    .desc = This box is filled with mousetraps. Try not to get your hand stuck in one.
+ent-BoxCleanerGrenades = коробка чистящих гранат
+    .desc = Коробка чистящих гранат.
+ent-BoxMousetrap = коробка мышеловок
+    .desc = Коробка, наполненная мышеловками. Постарайтесь не поймать себя за руку.
 ent-BoxAgrichem = набор NT "АгроХимия это весело"
     .desc = Для начинающих ботаников, готовых узнать о том, как максимизировать урожайность растений. Этой выцветшей коробке лет 50, не меньше.
-ent-BoxLightbulbColorfulMixed = mixed colorful lightbulb box
+ent-BoxLightbulbColorfulMixed = коробка смешанных разноцветных лампочек накаливания
     .desc = { ent-BoxLightbulb.desc }
-ent-BoxLighttubeColorfulMixed = mixed colorful lighttube box
+ent-BoxLighttubeColorfulMixed = коробка смешанных разноцветных лампочек-трубок
     .desc = { ent-BoxLighttube.desc }

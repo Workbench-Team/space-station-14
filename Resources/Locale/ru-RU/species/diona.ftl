@@ -1,1 +1,1 @@
-diona-hurt-by-herbicide-popup = Химикат заставляет завянуть часть вашей зелени!
+diona-hurt-by-herbicide-popup = Химикаты заставляют часть вашей зелени увянуть!

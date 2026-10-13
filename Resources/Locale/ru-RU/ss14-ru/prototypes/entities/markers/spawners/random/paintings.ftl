@@ -1,2 +1,2 @@
-ent-RandomPainting = спавнер случайной картины
+ent-RandomPainting = спавнер случайная картина
     .desc = { ent-MarkerBase.desc }

@@ -1,2 +1,2 @@
-ent-ClothingUniformJumpskirtCentcomFormalDress = central command formal dress
-    .desc = A dress for special occasions.
+ent-ClothingUniformJumpskirtCentcomFormalDress = торжественное платье Центком
+    .desc = Платье для особых случаев.

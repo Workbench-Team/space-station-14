@@ -1,1 +1,1 @@
-skeleton-suffix = АК АК!
+skeleton-suffix = КЛАЦ КЛАЦ!

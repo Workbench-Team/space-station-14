@@ -1,2 +1,2 @@
-ent-ActionConfigureMeleeSpeech = Задать Боевой клич
-    .desc = Установите собственный боевой клич при атаке!
+ent-ActionConfigureMeleeSpeech = Установить боевой клич
+    .desc = Установите собственный боевой клич во время атаки!

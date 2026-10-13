@@ -1,2 +1,2 @@
-ent-StrippingHiddenEntity = спрятанный предмет
+ent-StrippingHiddenEntity = Спрятанный предмет
     .desc = В этом кармане что-то есть.

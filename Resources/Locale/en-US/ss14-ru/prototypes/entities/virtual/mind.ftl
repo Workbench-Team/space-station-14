@@ -1,2 +1,0 @@
-ent-MindBase = mind
-    .desc = { "" }

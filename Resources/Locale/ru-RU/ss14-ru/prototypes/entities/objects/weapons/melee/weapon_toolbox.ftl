@@ -1,2 +1,2 @@
-ent-WeaponMeleeToolboxRobust = робуст тулбокс
-    .desc = Оружие тайдера.
+ent-WeaponMeleeToolboxRobust = робастный тулбокс
+    .desc = Оружие грейтайдера.

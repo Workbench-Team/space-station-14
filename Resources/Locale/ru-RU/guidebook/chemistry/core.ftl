@@ -1,11 +1,15 @@
 guidebook-reagent-effect-description =
     { $chance ->
         [1] { $effect }
-       *[other] Имеет { NATURALPERCENT($chance, 2) } шанс { $effect }
+        *[other] Имеет { NATURALPERCENT($chance, 2) } шанс { $effect }
+    }{$quantity ->
+        [0] { "" }
+        *[other] , если имеется как минимум { $quantity } ед. { $reagent }
     }{ $conditionCount ->
         [0] .
-       *[other] { " " }если { $conditions }.
+        *[other] , пока { $conditions }.
     }
+
 guidebook-reagent-name = [bold][color={ $color }]{ CAPITALIZE($name) }[/color][/bold]
 guidebook-reagent-recipes-header = Рецепт
 guidebook-reagent-recipes-reagent-display = [bold]{ $reagent }[/bold] \[{ $ratio }\]
@@ -13,23 +17,19 @@ guidebook-reagent-sources-header = Источники
 guidebook-reagent-sources-ent-wrapper = [bold]{ $name }[/bold] \[1\]
 guidebook-reagent-sources-gas-wrapper = [bold]{ $name } (газ)[/bold] \[1\]
 guidebook-reagent-effects-header = Эффекты
-guidebook-reagent-effects-metabolism-stage-rate = [bold]{ $stage }[/bold] [color=gray]({ $rate } units per second)[/color]
-guidebook-reagent-effects-metabolite-item = { $reagent } at a rate of { NATURALPERCENT($rate, 2) }
-guidebook-reagent-effects-metabolites = Metabolizes into { $items }.
-guidebook-reagent-effects-metabolism-group-rate = [bold]{ $group }[/bold] [color=gray]({ $rate } единиц в секунду)[/color]
+guidebook-reagent-effects-metabolism-stage-rate = [bold]{ $stage }[/bold] [color=gray]({ $rate } ед. в секунду)[/color]
+guidebook-reagent-effects-metabolite-item = { $reagent } с коэффициентом { NATURALPERCENT($rate, 2) }
+guidebook-reagent-effects-metabolites = Метаболизируется в { $items }.
 guidebook-reagent-plant-metabolisms-header = Метаболизм растений
-guidebook-reagent-plant-metabolisms-rate = [bold]Метаболизм растений[/bold] [color=gray](1 единица каждые 3 секунды в качестве базовой)[/color]
-guidebook-reagent-recipes-mix-info =
-    { $minTemp ->
-        [0]
-            { $hasMax ->
-                [true] { CAPITALIZE($verb) } ниже { NATURALFIXED($maxTemp, 2) }K
-               *[false] { CAPITALIZE($verb) }
-            }
-       *[other]
-            { CAPITALIZE($verb) } { $hasMax ->
-                [true] между { NATURALFIXED($minTemp, 2) }K и { NATURALFIXED($maxTemp, 2) }K
-               *[false] выше { NATURALFIXED($minTemp, 2) }K
-            }
-    }
-guidebook-reagent-physical-description = На вид { $description }.
+guidebook-reagent-plant-metabolisms-rate = [bold]Метаболизм растений[/bold] [color=gray](1 единица каждые 3 секунды базово)[/color]
+guidebook-reagent-physical-description = [italic]На вид вещество { $description }.[/italic].
+guidebook-reagent-recipes-mix-info = { $minTemp ->
+    [0] { $hasMax ->
+            [true] { CAPITALIZE($verb) } ниже { $maxTemp }K
+            *[false] { CAPITALIZE($verb) }
+        }
+    *[other] { CAPITALIZE($verb) } { $hasMax ->
+            [true] между { $minTemp }K и { $maxTemp }K
+            *[false] выше { $minTemp }K
+        }
+}

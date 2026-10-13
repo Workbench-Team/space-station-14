@@ -1,8 +1,12 @@
 ent-MobWatcherBase = наблюдатель
-    .desc = Он словно смотрит прямо сквозь вас.
+    .desc = Он будто смотрит прямо сквозь вас.
+    .suffix = { ent-SimpleSpaceMobBase.suffix }
 ent-MobWatcherLavaland = { ent-MobWatcherBase }
     .desc = { ent-MobWatcherBase.desc }
-ent-MobWatcherIcewing = ледокрылый наблюдатель
+    .suffix = { ent-MobWatcherBase.suffix }
+ent-MobWatcherIcewing = наблюдатель-ледокрыл
     .desc = { ent-MobWatcherBase.desc }
-ent-MobWatcherMagmawing = магмакрылый наблюдатель
+    .suffix = { ent-MobWatcherBase.suffix }
+ent-MobWatcherMagmawing = наблюдатель-магмакрыл
     .desc = { ent-MobWatcherBase.desc }
+    .suffix = { ent-MobWatcherBase.suffix }

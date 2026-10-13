@@ -28,7 +28,7 @@ holiday-name-labor-day = Дня труда
 holiday-name-firefighter-day = Международного дня пожарных
 holiday-name-mothers-day = Международного дня матери
 holiday-name-owl-and-pussycat-day = Дня Совёнка и Кошечки
-holiday-name-towel-day = Дня Полотенца
+holiday-name-towel-day = Дня полотенца
 holiday-name-mommi-day = Дня MoMMI
 holiday-name-garbage-day = Дня мусора
 holiday-name-international-picnic-day = Международного дня пикника
@@ -47,7 +47,6 @@ holiday-name-programmers-day = Дня программиста
 holiday-name-stupid-questions-day = Дня глупых вопросов
 holiday-name-animals-day = Дня защиты животных
 holiday-name-smiling-day = Дня улыбки
-holiday-name-lesbian-day = Дня осведомленности о лесбиянках
 holiday-name-canadian-thanksgiving = Дня благодарения в Канаде
 holiday-name-spirit-day = Дня сильных духом
 holiday-name-halloween = Хэллоуина
@@ -72,8 +71,8 @@ holiday-name-national-coming-out-day = Национального дня кам�
 ## Custom congrats
 
 holiday-custom-cosmonautics-day = В этот день более 600 лет назад товарищ Юрий Гагарин первым полетел в космос!
-holiday-custom-mothers-day = С Днем матери в большинстве стран Северной и Южной Америки, Азии и Океании!
-holiday-custom-bastille-day = Вы слышите, как поет народ?
+holiday-custom-mothers-day = С Днём матери в большинстве стран Северной и Южной Америки, Азии и Океании!
+holiday-custom-bastille-day = Вы слышите, как поёт народ?
 holiday-custom-friendship-day = Волшебного Дня дружбы!
 holiday-custom-talk-like-a-pirate-day = Разрази тебя Дэви Джонс! Говори как пират, иначе прогуляешься по доске, сухопутная крыса!
 holiday-custom-halloween = Ужасного Хэллоуина!

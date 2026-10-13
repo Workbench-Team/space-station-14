@@ -1,6 +1,6 @@
-ent-FloorTileItemGCircuit = green circuit floor
+ent-FloorTileItemGCircuit = плитка зелёных микросхем
     .desc = { ent-FloorTileItemBase.desc }
-ent-FloorTileItemBCircuit = blue circuit floor
+ent-FloorTileItemBCircuit = плитка голубых микросхем
     .desc = { ent-FloorTileItemBase.desc }
-ent-FloorTileItemRCircuit = red circuit floor
+ent-FloorTileItemRCircuit = плитка красных микросхем
     .desc = { ent-FloorTileItemBase.desc }
