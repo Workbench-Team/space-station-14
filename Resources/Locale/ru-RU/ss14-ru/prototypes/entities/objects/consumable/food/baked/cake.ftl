@@ -1,7 +1,7 @@
 ent-FoodCakeBaseNoSecretStash = { ent-SolutionNormal }
     .desc = { ent-SolutionNormal.desc }
-ent-FoodCakeBase = { ent-SolutionNormal }
-    .desc = { ent-SolutionNormal.desc }
+ent-FoodCakeBase = { ent-FoodCakeBaseNoSecretStash }
+    .desc = { ent-FoodCakeBaseNoSecretStash.desc }
 ent-FoodCakeSliceBase = { ent-SolutionVeryTiny }
     .desc = Просто кусок торта, хватит на всех.
 ent-FoodCakeBlueberry = черничный торт

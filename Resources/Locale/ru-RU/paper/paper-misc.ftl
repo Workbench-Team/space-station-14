@@ -70,3 +70,15 @@ book-text-combat-bakery-kit = Спасибо, что выбрали наш на�
       Ломтик масла x 1
       Осколок стекла x 1
       Время приготовления: 5 секунд
+#Starshine-Translate-TODO
+book-text-reinforcement-initiation = [color=red][head=3]WELCOME TO THE SYNDICATE[/head][/color]
+
+    You have been chosen for an essential mission, and are to be discretely teleported into enemy territory. Observe the following upon your arrival:
+
+    - Aid the requester in their objectives, they are your commander. Their life is worth more than yours. Obey them without question.
+
+    - [italic]Do Not[/italic] reveal your identity to the enemies of the Syndicate unless ordered to by your commander. Consider equipping civilian clothing to blend in.
+
+    - Ensure your adaptive Syndicate ID Card properly displays your false identity, ask your commander how to do this if you have failed to remember your training.
+
+    - Above all, remember:[bold] DEATH TO NANOTRASEN. [/bold]

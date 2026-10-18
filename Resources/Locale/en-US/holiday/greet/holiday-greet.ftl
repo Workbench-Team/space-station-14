@@ -47,7 +47,6 @@ holiday-name-programmers-day = Programmers' Day
 holiday-name-stupid-questions-day = Stupid-Questions Day
 holiday-name-animals-day = Animal's Day
 holiday-name-smiling-day = Smiling Day
-holiday-name-lesbian-day = Lesbian Day
 holiday-name-canadian-thanksgiving = Thanksgiving in Canada
 holiday-name-spirit-day = Spirit Day
 holiday-name-halloween = Halloween

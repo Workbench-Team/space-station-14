@@ -6,8 +6,8 @@ verb-description-mask-pull-up = Натянуть маску.
 verb-name-mask-pull-down = Приспустить маску
 verb-description-mask-pull-down = Приспустить маску.
 
-verb-mask-pull-up-popup-message = { CAPITALIZE($puller) } натягивает {$mask} вам на лицо!
-verb-mask-pull-down-popup-message = { CAPITALIZE($puller) } приспускает {$mask} с вашего лица!
+verb-mask-pull-up-popup-message = { CAPITALIZE($puller) } натягивает { $mask } вам на лицо!
+verb-mask-pull-down-popup-message = { CAPITALIZE($puller) } приспускает { $mask } с вашего лица!
 
 verb-mask-pulled-up-popup-message = Вы натянули { $mask } на лицо { $wearer }.
 verb-mask-pulled-down-popup-message = Вы приспустили { $mask } с лица { $wearer }.

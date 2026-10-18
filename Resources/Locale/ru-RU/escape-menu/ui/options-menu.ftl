@@ -63,7 +63,6 @@ ui-options-show-ooc-patron-color = Цветной ник в OOC для патр�
 ui-options-show-looc-on-head = Показывать LOOC-чат над головами персонажей
 ui-options-fancy-speech = Показывать имена в облачках с текстом
 ui-options-fancy-name-background = Добавить фон облачкам с текстом
-ui-options-chat-follow-button = Будучи призраком, показывать кнопку наблюдения рядом с сообщениями чата
 ui-options-vsync = Вертикальная синхронизация
 ui-options-max-fps = Максимум FPS:
 ui-options-max-fps-display-rate = Частота экрана
@@ -404,6 +403,8 @@ ui-options-chat-window-opacity = Непрозрачность окна чата
 ui-options-speech-bubble-text-opacity = Непрозрачность текста речевого пузыря
 ui-options-speech-bubble-speaker-opacity = Непрозрачность диктора речевого пузыря
 ui-options-speech-bubble-background-opacity = Непрозрачность фона речевого пузыря
+ui-options-chat-preview = Показывать предосмотр речевого пузыря во время набора текста
+ui-options-preview-bubble-background-opacity = Предосмотр прозрачности фона речевого пузыря
 ui-options-vacuum-overlay-intensity = Интенсивность вакуумного наложения
 
 ui-options-censor-nudity = Цензура обнажённых персонажей

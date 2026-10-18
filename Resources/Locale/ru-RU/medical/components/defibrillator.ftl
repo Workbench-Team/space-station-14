@@ -1,4 +1,4 @@
-defibrillator-begin = {$name} прикладывает электроды дефибриллятора к { THE($target) }
+defibrillator-begin = { $name } прикладывает электроды дефибриллятора к { THE($target) }
 defibrillator-not-on = Дефибриллятор не включён.
 defibrillator-no-mind = Не удалось обнаружить паттерны мозговой активности пациента. Дальнейшие попытки бесполезны...
 defibrillator-not-living = Внимание: целью дефибрилляции был неодушевленный предмет!

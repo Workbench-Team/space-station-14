@@ -1,3 +1,5 @@
+ent-BaseBoxSurvival = { ent-BoxCardboardSmall }
+    .desc = { ent-BoxCardboardSmall.desc }
 ent-BoxSurvival = аварийный запас O2
     .desc = Небольшая коробка, содержащая дыхательную маску, аварийный кислородный баллон и экстренный медипен. Стандартный набор для большинства членов экипажа, дышащих кислородом.
 ent-BoxSurvivalNitrogen = аварийный запас N2

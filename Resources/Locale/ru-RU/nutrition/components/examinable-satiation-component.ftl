@@ -5,7 +5,7 @@ examinable-satiation-component-examine-hunger-full = { CAPITALIZE(SUBJECT($entit
     [epicene] сытыми
     *[neuter] сытым
 }!
-examinable-satiation-component-examine-hunger-okay  = { CAPITALIZE(SUBJECT($entity)) } { CONJUGATE-BASIC($entity, "выглядят", "выглядит") }
+examinable-satiation-component-examine-hunger-okay = { CAPITALIZE(SUBJECT($entity)) } { CONJUGATE-BASIC($entity, "выглядят", "выглядит") }
     { GENDER($entity) ->
     [male] довольным
     [female] довольной

@@ -2,26 +2,32 @@ cmd-panicbunker-desc = Переключает бункер "паники", ко�
 cmd-panicbunker-help = Использование: panicbunker
 panicbunker-command-enabled = Бункер "Паники" был включен.
 panicbunker-command-disabled = Бункер "Паники" был отключен.
+
 cmd-panicbunker_disable_with_admins-desc = Переключает, будет ли бункер "паники" отключаться при подключении администратора.
 cmd-panicbunker_disable_with_admins-help = Использование: panicbunker_disable_with_admins
 panicbunker-command-disable-with-admins-enabled = Бункер "паники" будет автоматически отключен при наличии администраторов в сети.
 panicbunker-command-disable-with-admins-disabled = Бункер "паники" не будет автоматически отключаться при наличии администраторов в сети.
+
 cmd-panicbunker_enable_without_admins-desc = Переключает, будет ли включаться бункер "паники" при отключении последнего администратора.
 cmd-panicbunker_enable_without_admins-help = Использование: panicbunker_enable_without_admins
 panicbunker-command-enable-without-admins-enabled = Бункер "паники" будет автоматически включаться без участия администраторов.
 panicbunker-command-enable-without-admins-disabled = Бункер "паники" не будет автоматически включаться без присутствия администраторов.
+
 cmd-panicbunker_count_deadminned_admins-desc = Переключает, учитывать или нет администраторов, что в дедмине, при автоматическом включении и выключении бункера "паники".
 cmd-panicbunker_count_deadminned_admins-help = Использование: panicbunker_count_deadminned_admins
 panicbunker-command-count-deadminned-admins-enabled = При автоматическом включении и выключении бункера "паники" будет вестись подсчет админов, что находятся в дедмине.
 panicbunker-command-count-deadminned-admins-disabled = Бункер "паники" не будет учитывать администраторов, что в дедмине, если сделать автоматическое включение и отключение.
+
 cmd-panicbunker_show_reason-desc = Переключает, показывать или нет подключающимся клиентам причину, по которой бункер "паники" заблокировал их подключение.
 cmd-panicbunker_show_reason-help = Использование: panicbunker_show_reason
 panicbunker-command-show-reason-enabled = Теперь бункер "паники" будет показывать причину, по которой пользователям блокируется подключение к серверу.
 panicbunker-command-show-reason-disabled = Бункер "паники" больше не будет показывать причину, по которой пользователям блокируется подключение к серверу.
+
 cmd-panicbunker_min_account_age-desc = Получает или задает минимальный возраст учетной записи в минутах, который должен быть у учетной записи, чтобы ей было разрешено подключаться с включенной функцией бункера "паники".
 cmd-panicbunker_min_account_age-help = Использование: panicbunker_min_account_age <минуты>
 panicbunker-command-min-account-age-is = Минимальный возраст аккаунта для бункера паники составляет { $minutes } минут.
 panicbunker-command-min-account-age-set = Установлено минимальный возраст аккаунта для бункера "паники" равным { $minutes } минут.
+
 cmd-panicbunker_min_overall_minutes-desc = Получает или устанавливает минимальное общее время игры в минутах, которое должно быть у учетной записи, чтобы ей было разрешено подключаться с включенным бункером "паники".
 cmd-panicbunker_min_overall_minutes-help = Использование: panicbunker_min_overall_minutes <минуты>
 panicbunker-command-min-overall-minutes-is = Минимальное общее время игры для бункера "паники" составляет { $minutes } минут.

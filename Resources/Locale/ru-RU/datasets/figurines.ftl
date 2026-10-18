@@ -190,7 +190,7 @@ figurines-chef-2 = Больше кремово-банановых пирогов
 figurines-chef-3 = Как вам суши-карусель?
 figurines-chef-4 = С вас 1000 кредитов.
 figurines-chef-5 = На месте или с собой?
-figurines-chef-6 = Куда пропал Пун Пун? Понятия не имею.
+figurines-chef-6 = Куда пропал Пан Пан? Понятия не имею.
 
 figurines-clown-1 = Хонк!
 figurines-clown-2 = Банан!

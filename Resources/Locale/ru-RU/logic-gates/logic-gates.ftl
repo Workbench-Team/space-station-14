@@ -6,7 +6,6 @@ power-sensor-examine = В данный момент проверяет бата�
     [true] потребителя
     *[false] питания
 }.
-
 power-sensor-voltage-examine = Настроен на { $voltage } сеть.
 
 power-sensor-switch = Изменено на проверку батареи { $output ->

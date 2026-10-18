@@ -72,8 +72,8 @@ entity-effect-guidebook-satiate =
         [1] Утоляет
         *[other] утолить
     } { $relative ->
-        [1] {$type}
-        *[other] {$type} с { NATURALFIXED($relative, 3) }х эффективностью
+        [1] { $type }
+        *[other] { $type } с { NATURALFIXED($relative, 3) }х эффективностью
     }
 
 entity-effect-guidebook-health-change =
@@ -574,30 +574,30 @@ entity-effect-guidebook-plant-seeds-remove =
 entity-effect-guidebook-plant-change-trait =
     { $chance ->
         [1] { $change ->
-            [Add] Добавляет {$trait} в растение
-            [Remove] Удаляет {$trait} из растения
-            [Toggle] Переключает {$trait} в растении
-            *[other] Изменяет {$trait} в растении
-        }
+                [Add] Добавляет { $trait } в растение
+                [Remove] Удаляет { $trait } из растения
+                [Toggle] Переключает { $trait } в растении
+                *[other] Изменяет { $trait } в растении
+            }
         *[other] { $change ->
-            [Add] добавить {$trait} в растение
-            [Remove] удалить {$trait} из растения
-            [Toggle] переключить {$trait} в растении
-            *[other] изменить {$trait} в растении
-        }
+                [Add] добавить { $trait } в растение
+                [Remove] удалить { $trait } из растения
+                [Toggle] переключить { $trait } в растении
+                *[other] изменить { $trait } в растении
+            }
     }
 
 entity-effect-guidebook-plant-mutate-exude-gasses =
     { $chance ->
         [1] Мутирует
         *[other] мутировать
-    } выделение растением газов от {$minValue} до {$maxValue} молей
+    } выделение растением газов от { $minValue } до { $maxValue } молей
 
 entity-effect-guidebook-plant-mutate-consume-gasses =
     { $chance ->
         [1] Мутирует
         *[other] мутировать
-    } потребление растением газов от {$minValue} до {$maxValue} молей
+    } потребление растением газов от { $minValue } до { $maxValue } молей
 
 entity-effect-guidebook-plant-mutate-chemicals =
     { $chance ->

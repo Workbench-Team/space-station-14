@@ -1,5 +1,7 @@
 ent-GasUnaryBase = { ent-GasPipeBase }
     .desc = { ent-GasPipeBase.desc }
+ent-BaseGasThermoMachine = термомашина
+    .desc = { ent-BaseMachinePowered.desc }
 ent-GasVentPump = вентиляция
     .desc = Имеет клапан и прикреплённый к нему насос.
 ent-GasPassiveVent = пассивная вентиляция
@@ -8,8 +10,6 @@ ent-GasVentScrubber = скруббер
     .desc = Он же вытяжка. Имеет клапан и прикреплённый к нему насос.
 ent-GasOutletInjector = инжектор
     .desc = Он же форсунка. Имеет клапан и прикреплённый к нему насос.
-ent-BaseGasThermoMachine = термомашина
-    .desc = { ent-BaseMachinePowered.desc }
 ent-GasThermoMachineFreezer = охладитель
     .desc = Охлаждает газ в присоединённых трубах.
 ent-GasThermoMachineFreezerEnabled = { ent-GasThermoMachineFreezer }

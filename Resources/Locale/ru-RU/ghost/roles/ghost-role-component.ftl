@@ -72,7 +72,7 @@ ghost-role-information-angry-slimes-rules = Вы [color={ role-type-team-antagon
 ghost-role-information-smile-name = Слайм Смайл
 ghost-role-information-smile-description = Самое милое создание в мире. Улыбайся, Смайл!
 
-ghost-role-information-punpun-name = Пун Пун
+ghost-role-information-punpun-name = Пан Пан
 ghost-role-information-punpun-description = Почётный член общины обезьян, ответственный за бар, и помогающий барменам во всём, чем может.
 
 ghost-role-information-xeno-name = Ксено

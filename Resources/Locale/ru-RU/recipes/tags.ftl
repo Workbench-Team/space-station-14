@@ -75,6 +75,7 @@ soil-construction-graph-any-mushroom = любой гриб
 construction-graph-tag-mop-basic = швабра
 construction-graph-tag-paper = офисная бумага
 construction-graph-tag-core-pinpointer-piece = часть пинпоинтера ядра
+construction-graph-tag-glass-lens = стеклянная линза
 
 # toys
 construction-graph-tag-rubber-ducky = резиновая уточка

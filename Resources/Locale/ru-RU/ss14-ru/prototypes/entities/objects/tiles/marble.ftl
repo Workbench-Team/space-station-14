@@ -1,4 +1,3 @@
-# Marble
 ent-FloorTileItemWhiteMarble = белая мраморная плитка
     .desc = Резной полированный квадрат из лучшего космического мрамора. Лучше его не потерять.
 ent-FloorTileItemWhiteMarbleMono = белая мраморная плита

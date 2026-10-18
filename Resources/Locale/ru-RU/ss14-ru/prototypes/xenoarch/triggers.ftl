@@ -1,46 +1,78 @@
 ent-BaseXenoArtifactTrigger = Неизвестно
-
-#Standard triggers
-
+    .desc = { "" }
 ent-TriggerMusic = Гармоничные звуковые вибрации
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerHeat = Газ высокой температуры
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerCold = Газ низкой температуры
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerNoOxygen = Безкислородное окружение
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerWater = Влагочувствительность
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerCO2 = Диоксид углерода
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerPlasma = Нетвёрдая плазма
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerTritium = Тритий
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerAmmonia = Аммиак
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerN2O = Оксид азота
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerFrezon = Фрезон
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerRadiation = Излучение тяжелых ионов
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerPressureHigh = Высокое давление
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerPressureLow = Низкое давление
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerExamine = Внимательное изучение
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerBruteDamage = Физический урон
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerInteraction = Физическое взаимодействие
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerWrenching = Затягивание
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerPrying = Вскрывание
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerScrewing = Свинчивание
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerPulsing = Пульсирование
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerTimer = Регулярная само-активация
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerBlood = Взаимодействие с гематологической жидкостью
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerDeath = Эссенция жизни
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerMagnet = Магнитные волны
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerConsumeMoney = Взяточничество
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerConsumeKnowledge = Усвоение знаний
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerConsumeCarbs = Употребление углеводов
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerConsumeMeat = Употребление протеинов
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerConsumeProduce = Употребление здоровых продуктов
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerInteractStamp = Бюрократическое одобрение
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerInteractShock = Электрический шок
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerAttackParticleEngine = Воздействие частиц
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerAttackParticleAnomaly = Воздействие аномальных частиц
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerAttackStaminaDamage = Органическое истощение
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerAttackLaser = Воздействие фотонов высокой интенсивности
-
-
-#Handheld triggers
-
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerMicrowave = Микроволновое излучение
+    .desc = { ent-BaseXenoArtifactTrigger.desc }
 ent-TriggerThrow = Активное замедление
+    .desc = { ent-BaseXenoArtifactTrigger.desc }

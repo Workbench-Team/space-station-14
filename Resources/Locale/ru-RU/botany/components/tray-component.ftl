@@ -7,3 +7,7 @@ tray-component-water-low-warning = [color=red]Низкий[/color] уровен�
 tray-component-nutrient-low-warning = [color=red]Низкий[/color] уровень [color=orange]питательных веществ[/color]!
 tray-component-toxin-high-level-warning = Горит [color=red]предупреждение уровня токсичности[/color].
 tray-component-pest-high-level-warning = Он заполнен [color=gray]маленькими червячками[/color]!
+tray-component-plant-improper-heat-warning = Мигает [color=orange]предупреждение о неподходящей температуре[/color].
+tray-component-plant-improper-pressure-warning = Мигает [color=lightblue]предупреждение о неподходящем атмосферном давлении[/color].
+tray-component-plant-missing-gas-warning = Мигает [color=skyblue]предупреждение о неподходящем составе атмосферы[/color].
+tray-component-plant-health-warning = Мигает [color=red]предупреждение о здоровье[/color].

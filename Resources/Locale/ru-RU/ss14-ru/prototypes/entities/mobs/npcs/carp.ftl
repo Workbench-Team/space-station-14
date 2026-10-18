@@ -29,5 +29,5 @@ ent-MobSharkSalvage = { ent-MobShark }
     .desc = { ent-MobShark.desc }
     .suffix = Подземелье
 ent-MobSharkDragon = { ent-MobShark }
-    .desc = { ent-MobShark.desc}
+    .desc = { ent-MobShark.desc }
     .suffix = Выводок дракона

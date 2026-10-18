@@ -7,15 +7,16 @@ cmd-changecvar-help = Использование: changecvar <cvar | ? | search>
 cmd-changecvar-available-cvars = Перечисление доступных кваров:
 cmd-changecvar-no-cvars = Не найдено ни одного квара, который можно было бы изменить.
 cmd-changecvar-success = CVar { $cvar } изменён с "{ $old }" на "{ $value }".
+
 cmd-changecvar-search-no-arguments = Вы должны указать искомый запрос.
 cmd-changecvar-search-no-matches = Не найдено ни одного квара, соответствующего запросу.
-cmd-changecvar-search-matches =
-    { $count ->
-        [one] Найден
-       *[other] Найдено
-    } { $count } { $count ->
-        [one] квар
-        [few] квара
-       *[other] кваров
-    }, соответствующих поисковому запросу:
+cmd-changecvar-search-matches = { $count ->
+    [one] Найден
+    *[other] Найдено
+} { $count } { $count ->
+    [one] квар
+    [few] квара
+    *[other] кваров
+}, соответствующих поисковому запросу:
+
 cmd-changecvar-arg-name = <название | ? | search>

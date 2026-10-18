@@ -1,5 +1,5 @@
 ent-BaseStatue = { ent-BaseStructure }
-    .desc = { ent-BaseStructure.des }
+    .desc = { ent-BaseStructure.desc }
 ent-StatueVenusRed = статуя непорочной девы
     .desc = Древняя мраморная статуя. Она изображена с косой до пола и с красным ящиком для инструментов.
     .suffix = Красный

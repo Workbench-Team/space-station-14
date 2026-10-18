@@ -31,7 +31,7 @@ namespace Content.Shared.Localizations
 
             _loc.LoadCulture(culture);
             _loc.LoadCulture(fallbackCulture);
-            _loc.SetFallbackCluture(fallbackCulture);
+            _loc.SetFallbackCulture(fallbackCulture);
             _loc.AddFunction(culture, "PRESSURE", FormatPressure);
             _loc.AddFunction(culture, "POWERWATTS", FormatPowerWatts);
             _loc.AddFunction(culture, "POWERJOULES", FormatPowerJoules);

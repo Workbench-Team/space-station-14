@@ -17,6 +17,7 @@ device-frequency-prototype-name-arrivals-shuttle-timer = Таймер прибы
 device-frequency-prototype-name-shuttle-timer = Таймер эвакуационного шаттла
 
 ## Camera frequencies
+device-frequency-prototype-name-surveillance-camera = Камеры
 device-frequency-prototype-name-surveillance-camera-test = Тест подсети
 device-frequency-prototype-name-surveillance-camera-engineering = Камеры (Инженерный)
 device-frequency-prototype-name-surveillance-camera-security = Камеры (Охрана)

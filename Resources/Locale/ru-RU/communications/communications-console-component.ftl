@@ -19,7 +19,7 @@ comms-console-station-announcements-header = Объявление станции
 comms-console-station-broadcast-header = Трансляция станции
 comms-console-announce-tab-title = Связь
 comms-console-broadcast-tab-title = Экран
-comms-console-char-limit = {$count}/{$max}
+comms-console-char-limit = { $count }/{ $max }
 
 # Popup
 comms-console-permission-denied = В доступе отказано

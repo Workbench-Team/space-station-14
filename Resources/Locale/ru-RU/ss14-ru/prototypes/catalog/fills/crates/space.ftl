@@ -1,6 +1,6 @@
 ent-CrateEvaKit = набор ВКД
     .desc = Набор, состоящий из двух престижных ВКД скафандров и шлемов. Чтобы открыть, требует уровень доступа Командование.
-    .suffix = { ent-CrateCommandSecure.suffix }
+    .suffix = { ent-CrateEVASecure.suffix }
 ent-CrateSpaceJetpack = ящик джетпаков
     .desc = Два джетпака для тех, кто не умеет пользоваться огнетушителями.
 ent-CrateSpaceMiniJetpack = ящик мини-джетпаков
