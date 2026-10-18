@@ -58,6 +58,11 @@ public sealed partial class DeviceListSystem : EntitySystem
             if (!_deviceNetworkQuery.TryComp(deviceUid, out var deviceNet))
                 continue;
 
+            // Starshine-Changes-Start
+            if (deviceNet.Address == 0)
+                continue;
+            // Starshine-Changes-End
+
             var address = MetaData(deviceUid).EntityLifeStage == EntityLifeStage.MapInitialized
                 ? DeviceLocalizationHelpers.GetAddressFromId(deviceNet)
                 : $"UID: {deviceUid.ToString()}";
