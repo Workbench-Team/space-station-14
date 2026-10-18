@@ -94,6 +94,7 @@ guide-entry-defusal = Обезвреживание крупной бомбы
 guide-entry-criminal-records = Криминальные записи
 guide-entry-command = Командование
 guide-entry-service = Сервис
+guide-entry-civilian = Гражданский
 
 guide-entry-newplayer = Новичок? Вам сюда!
 guide-entry-charactercreation = Создание персонажа

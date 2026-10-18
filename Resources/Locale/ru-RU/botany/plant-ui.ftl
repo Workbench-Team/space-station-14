@@ -8,7 +8,7 @@ botany-ui-harvest-type-value = { $type ->
     [NoRepeat] Одиночный
     [Repeat] Цикличный
     [SelfHarvest] Самостоятельный
-   *[other] Неизвестный
+    *[other] Неизвестный
 }
 botany-ui-harvest-ready = Готов к сбору
 
