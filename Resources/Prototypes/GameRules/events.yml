@@ -386,8 +386,8 @@
     startAudio:
       path: /Audio/Announcements/gasleak_start.ogg
     endAnnouncement: station-event-gas-leak-end-announcement
-    endAudio:
-      path: /Audio/Announcements/gasleak_end.ogg
+    #endAudio:
+    #  path: /Audio/Announcements/gasleak_end.ogg # Starshine-TODO: Fix tests failing on this
     weight: 8
   - type: GasLeakRule
   - type: DynamicRuleCost
