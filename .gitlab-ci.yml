@@ -1,4 +1,4 @@
-image: registry.workbench.network/workbench-team/space-station-14:build-image-net9
+image: registry.workbench.network/workbench-team/space-station-14:build-image-net10
 
 stages:
   - test
